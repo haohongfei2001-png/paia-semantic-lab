@@ -159,17 +159,6 @@ class LexicalControl:
         return len(q & d) / len(q | d)
 
 
-class ExactVectorControl:
-    """Exact normalized identity as a vector baseline, not a semantic model."""
-
-    def score(self, query: str, document: str) -> float:
-        q = _normalize(query)
-        d = _normalize(document)
-        if not q or not d:
-            return 0.0
-        return 1.0 if q == d else 0.0
-
-
 class LocalEmbeddingAdapter:
     """Runtime-injected local adapter with explicit token preflight and no download path."""
 
