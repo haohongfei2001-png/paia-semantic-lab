@@ -1,0 +1,790 @@
+{
+  "round": "SEM-01",
+  "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+  "source": "machine disagreement between lexical and exact-vector engineering controls",
+  "total_count": 60,
+  "stored_count": 60,
+  "max_stored": 200,
+  "cases": [
+    {
+      "case_id": "sys.personal_direction.life_goals:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "lexical_top1": "sys.personal_direction.life_goals",
+      "exact_vector_top1": "sys.media_culture.books_literature",
+      "text": "人生目标",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.personal_direction.major_decisions:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "lexical_top1": "sys.personal_direction.major_decisions",
+      "exact_vector_top1": "sys.knowledge_memory.memory_context",
+      "text": "重大决策",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.personal_direction.self_reflection:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "lexical_top1": "sys.personal_direction.self_reflection",
+      "exact_vector_top1": "sys.projects_products.ux_user_research",
+      "text": "自我反思",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.personal_direction.life_planning:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "lexical_top1": "sys.personal_direction.life_planning",
+      "exact_vector_top1": "sys.travel_places.restaurants_travel",
+      "text": "人生规划",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.family_relationships.social_interaction:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "lexical_top1": "sys.family_relationships.social_interaction",
+      "exact_vector_top1": "sys.personal_direction.personal_admin",
+      "text": "社交互动",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.family_relationships.pets:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.health_wellbeing.preventive_health",
+      "text": "宠物",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.family_relationships.pets:en_short",
+      "slice": "en_short",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "lexical_top1": "sys.family_relationships.pets",
+      "exact_vector_top1": "sys.business_entrepreneurship.customer_feedback",
+      "text": "Pets",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.health_wellbeing.fitness:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "lexical_top1": "sys.health_wellbeing.fitness",
+      "exact_vector_top1": "sys.creative_design.illustration_image_creation",
+      "text": "运动与体能",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.health_wellbeing.sleep:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.ai_computing.cybersecurity_privacy",
+      "text": "睡眠",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.education_learning.academic_courses:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.education_learning.academic_courses",
+      "lexical_top1": "sys.education_learning.academic_courses",
+      "exact_vector_top1": "sys.ai_computing.debugging_troubleshooting",
+      "text": "课程学习",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.education_learning.exams_assessments:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.education_learning.exams_assessments",
+      "lexical_top1": "sys.education_learning.exams_assessments",
+      "exact_vector_top1": "sys.career_work.career_strategy",
+      "text": "考试与测评",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.education_learning.language_learning:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.education_learning.language_learning",
+      "lexical_top1": "sys.education_learning.language_learning",
+      "exact_vector_top1": "sys.media_culture.news_media",
+      "text": "语言学习",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.education_learning.academic_admin:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.education_learning.academic_admin",
+      "lexical_top1": "sys.education_learning.academic_admin",
+      "exact_vector_top1": "sys.travel_places.transport_travel",
+      "text": "学业事务",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.career_work.job_search:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.career_work.job_search",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.media_culture.film_tv",
+      "text": "求职",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.career_work.interviews:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.career_work.interviews",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.home_daily.utilities_services",
+      "text": "面试",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.career_work.career_strategy:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.career_work.career_strategy",
+      "lexical_top1": "sys.career_work.career_strategy",
+      "exact_vector_top1": "sys.business_entrepreneurship.sales",
+      "text": "职业规划",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.career_work.workplace_daily:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.career_work.workplace_daily",
+      "lexical_top1": "sys.career_work.workplace_daily",
+      "exact_vector_top1": "sys.home_daily.moving_relocation",
+      "text": "工作日常",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.career_work.networking_professional:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.career_work.networking_professional",
+      "lexical_top1": "sys.career_work.networking_professional",
+      "exact_vector_top1": "sys.legal_civic.civic_public_policy",
+      "text": "职业人脉",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.projects_products.project_planning:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.projects_products.project_planning",
+      "lexical_top1": "sys.projects_products.project_planning",
+      "exact_vector_top1": "sys.creative_design.ux_ui_design",
+      "text": "项目规划",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.projects_products.product_requirements:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.projects_products.product_requirements",
+      "lexical_top1": "sys.projects_products.product_requirements",
+      "exact_vector_top1": "sys.knowledge_memory.files_documents_storage",
+      "text": "产品需求",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.projects_products.engineering_execution:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.projects_products.engineering_execution",
+      "lexical_top1": "sys.projects_products.engineering_execution",
+      "exact_vector_top1": "sys.communication_writing.public_posts",
+      "text": "工程实现",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.ai_computing.networking_connectivity:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.ai_computing.networking_connectivity",
+      "lexical_top1": "sys.ai_computing.networking_connectivity",
+      "exact_vector_top1": "sys.creative_design.branding_identity",
+      "text": "网络与连接",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.finance_purchases.investing:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.finance_purchases.investing",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.communication_writing.documents_reports",
+      "text": "投资",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.finance_purchases.investing:mixed",
+      "slice": "mixed",
+      "expected_topic_id": "sys.finance_purchases.investing",
+      "lexical_top1": "sys.finance_purchases.investing",
+      "exact_vector_top1": "sys.communication_writing.public_posts",
+      "text": "投资 / Investing: 持续讨论、比较、记录或执行与“投资”直接相关的事项。",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.finance_purchases.debt_credit:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.finance_purchases.debt_credit",
+      "lexical_top1": "sys.finance_purchases.debt_credit",
+      "exact_vector_top1": "sys.science_technical.mathematics",
+      "text": "债务与信用",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.finance_purchases.taxes_insurance:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.finance_purchases.taxes_insurance",
+      "lexical_top1": "sys.finance_purchases.taxes_insurance",
+      "exact_vector_top1": "sys.health_wellbeing.medication_treatment",
+      "text": "税务与保险",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.finance_purchases.subscriptions_recurring:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "lexical_top1": "sys.finance_purchases.subscriptions_recurring",
+      "exact_vector_top1": "sys.family_relationships.caregiving_family_support",
+      "text": "订阅与经常性支出",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.finance_purchases.major_purchases:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.finance_purchases.major_purchases",
+      "lexical_top1": "sys.finance_purchases.major_purchases",
+      "exact_vector_top1": "sys.legal_civic.identity_documents",
+      "text": "大额购买",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.home_daily.home_improvement:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.home_daily.home_improvement",
+      "lexical_top1": "sys.home_daily.home_improvement",
+      "exact_vector_top1": "sys.ai_computing.ai_models_tools",
+      "text": "家居与维修",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.home_daily.possessions_organization:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.home_daily.possessions_organization",
+      "lexical_top1": "sys.home_daily.possessions_organization",
+      "exact_vector_top1": "sys.education_learning.exams_assessments",
+      "text": "物品整理",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.travel_places.transport_travel:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "lexical_top1": "sys.travel_places.transport_travel",
+      "exact_vector_top1": "sys.finance_purchases.investing",
+      "text": "旅行交通",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.travel_places.lodging:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.ai_computing.debugging_troubleshooting",
+      "text": "住宿",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.travel_places.trip_records:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "lexical_top1": "sys.travel_places.trip_records",
+      "exact_vector_top1": "sys.business_entrepreneurship.sales",
+      "text": "旅行记录",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.media_culture.music:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.media_culture.music",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.ai_computing.cybersecurity_privacy",
+      "text": "音乐",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.media_culture.music:en_short",
+      "slice": "en_short",
+      "expected_topic_id": "sys.media_culture.music",
+      "lexical_top1": "sys.media_culture.music",
+      "exact_vector_top1": "sys.legal_civic.civic_public_policy",
+      "text": "Music",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.media_culture.games:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.media_culture.games",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.health_wellbeing.sleep",
+      "text": "游戏",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.media_culture.art_culture:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "lexical_top1": "sys.media_culture.art_culture",
+      "exact_vector_top1": "sys.ai_computing.networking_connectivity",
+      "text": "艺术与文化",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.media_culture.online_culture:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "lexical_top1": "sys.media_culture.online_culture",
+      "exact_vector_top1": "sys.creative_design.visual_design",
+      "text": "网络文化",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.communication_writing.email_messages:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "lexical_top1": "sys.communication_writing.email_messages",
+      "exact_vector_top1": "sys.health_wellbeing.medication_treatment",
+      "text": "邮件与消息",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.communication_writing.translation:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.health_wellbeing.medication_treatment",
+      "text": "翻译",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.communication_writing.negotiation_persuasion:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "lexical_top1": "sys.communication_writing.negotiation_persuasion",
+      "exact_vector_top1": "sys.ai_computing.cybersecurity_privacy",
+      "text": "谈判与说服",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.legal_civic.complaints_disputes:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.legal_civic.complaints_disputes",
+      "lexical_top1": "sys.legal_civic.complaints_disputes",
+      "exact_vector_top1": "sys.family_relationships.caregiving_family_support",
+      "text": "投诉与纠纷",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.legal_civic.consumer_rights:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.legal_civic.consumer_rights",
+      "lexical_top1": "sys.legal_civic.consumer_rights",
+      "exact_vector_top1": "sys.time_events.appointments_bookings",
+      "text": "消费者权益",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.science_technical.physics:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.science_technical.physics",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.creative_design.illustration_image_creation",
+      "text": "物理",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.science_technical.mathematics:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.science_technical.mathematics",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.time_events.celebrations_holidays",
+      "text": "数学",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.science_technical.medicine_knowledge:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.science_technical.medicine_knowledge",
+      "lexical_top1": "sys.science_technical.medicine_knowledge",
+      "exact_vector_top1": "sys.communication_writing.presentations",
+      "text": "医学知识",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.creative_design.photography:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.creative_design.photography",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.health_wellbeing.medication_treatment",
+      "text": "摄影",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.creative_design.creative_writing:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.creative_design.creative_writing",
+      "lexical_top1": "sys.creative_design.creative_writing",
+      "exact_vector_top1": "sys.travel_places.attractions_activities",
+      "text": "创意写作",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.business_entrepreneurship.entrepreneurship:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "lexical_top1": "sys.ai_computing.ai_models_tools",
+      "exact_vector_top1": "sys.home_daily.moving_relocation",
+      "text": "创业",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.business_entrepreneurship.business_strategy:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.business_entrepreneurship.business_strategy",
+      "lexical_top1": "sys.business_entrepreneurship.business_strategy",
+      "exact_vector_top1": "sys.creative_design.ideation_concepts",
+      "text": "商业战略",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.time_events.calendar_scheduling:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.time_events.calendar_scheduling",
+      "lexical_top1": "sys.time_events.calendar_scheduling",
+      "exact_vector_top1": "sys.education_learning.academic_admin",
+      "text": "日程与排期",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.time_events.reminders_deadlines:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.time_events.reminders_deadlines",
+      "lexical_top1": "sys.time_events.reminders_deadlines",
+      "exact_vector_top1": "sys.family_relationships.parents_family",
+      "text": "提醒与截止期",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.time_events.time_management:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.time_events.time_management",
+      "lexical_top1": "sys.time_events.time_management",
+      "exact_vector_top1": "sys.career_work.compensation_benefits",
+      "text": "时间管理",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.time_events.routines_recurring:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.time_events.routines_recurring",
+      "lexical_top1": "sys.time_events.routines_recurring",
+      "exact_vector_top1": "sys.personal_direction.personal_admin",
+      "text": "周期性安排",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.time_events.life_events:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.time_events.life_events",
+      "lexical_top1": "sys.time_events.life_events",
+      "exact_vector_top1": "sys.science_technical.medicine_knowledge",
+      "text": "人生事件",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.knowledge_memory.personal_archive:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.knowledge_memory.personal_archive",
+      "lexical_top1": "sys.knowledge_memory.personal_archive",
+      "exact_vector_top1": "sys.projects_products.testing_quality",
+      "text": "个人档案",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.knowledge_memory.journaling:zh_short",
+      "slice": "zh_short",
+      "expected_topic_id": "sys.knowledge_memory.journaling",
+      "lexical_top1": "sys.knowledge_memory.journaling",
+      "exact_vector_top1": "sys.education_learning.skill_learning",
+      "text": "日记与记录",
+      "provenance": {
+        "evidence_class": "catalog_boundary",
+        "source": "system_topic_catalog_v0.2.yaml",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.personal_direction.self_reflection:long_beginning",
+      "slice": "long_beginning",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "lexical_top1": "sys.personal_direction.self_reflection",
+      "exact_vector_top1": "sys.career_work.performance_growth",
+      "text": "自我反思 / Self Reflection 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token ",
+      "provenance": {
+        "evidence_class": "synthetic",
+        "source": "SEM-01 machine-generated long-position fixture",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.personal_direction.self_reflection:long_middle",
+      "slice": "long_middle",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "lexical_top1": "sys.personal_direction.self_reflection",
+      "exact_vector_top1": "sys.career_work.performance_growth",
+      "text": "用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token  自我反思 / Self Reflection 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token ",
+      "provenance": {
+        "evidence_class": "synthetic",
+        "source": "SEM-01 machine-generated long-position fixture",
+        "contains_real_paia_input": false
+      }
+    },
+    {
+      "case_id": "sys.personal_direction.self_reflection:long_end",
+      "slice": "long_end",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "lexical_top1": "sys.personal_direction.self_reflection",
+      "exact_vector_top1": "sys.career_work.performance_growth",
+      "text": "用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token 用于长度位置诊断的合成填充文本 synthetic filler token  自我反思 / Self Reflection",
+      "provenance": {
+        "evidence_class": "synthetic",
+        "source": "SEM-01 machine-generated long-position fixture",
+        "contains_real_paia_input": false
+      }
+    }
+  ]
+}
