@@ -1,0 +1,10 @@
+benchmark_version: "sem02-retrieval-b0-0.1"
+retrieval:
+  chunk_size_codepoints: 240
+  chunk_overlap_codepoints: 48
+  hash_dense_dimensions: 256
+  hybrid_lexical_weight: 0.55
+  hybrid_dense_weight: 0.45
+  exact_term_bonus: 0.15
+  no_answer_threshold: 0.16
+  evaluation_k: 20

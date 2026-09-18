@@ -1,6 +1,6 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: SEM_01_COMPLETE
+phase: SEM_02_IN_PROGRESS
 plan_only: false
 production_paia_modified: false
 real_archive_read: false
@@ -42,11 +42,15 @@ rounds:
     validation_run_id: 35372058408
     validation_job_id: 105688104507
     runtime_bakeoff_run_id: 35372058837
-  SEM-02: { execution_status: READY, capability_verdict: UNTESTED, depends_on: SEM-01, explicit_execution_authorized: false }
+  SEM-02:
+    execution_status: IN_PROGRESS
+    capability_verdict: UNTESTED
+    depends_on: SEM-01
+    explicit_execution_authorized: true
   SEM-03: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-02 }
   SEM-04: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-03 }
   SEM-05: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-04 }
   SEM-06: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-05, owner_semantic_batch: allowed }
   SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
-next_action: "SEM-02 is READY. Stop this execution and await the next supervisor execution message under the package authorization."
+next_action: "SEM-02 implementation is IN_PROGRESS under explicit authorization. Validate only SEM-02; do not start SEM-03."
 product_owner_blockers: []

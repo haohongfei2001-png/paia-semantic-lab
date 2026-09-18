@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paia.local/contracts/sem02-evidence-schema-v0.1.json",
+  "title": "PAIA Semantic Lab SEM-02 Frozen Retrieval Evidence Schema v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "query_id",
+    "query_text",
+    "scoring",
+    "aggregation",
+    "threshold",
+    "top_score",
+    "no_answer",
+    "challenge_tags",
+    "hits",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "query_id": {"type": "string", "minLength": 1},
+    "query_text": {"type": "string"},
+    "scoring": {"enum": ["lexical", "dense", "hybrid"]},
+    "aggregation": {"enum": ["whole", "chunk"]},
+    "threshold": {"type": "number", "minimum": 0},
+    "top_score": {"type": "number", "minimum": 0},
+    "no_answer": {"type": "boolean"},
+    "challenge_tags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "hits": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/RetrievalHit"}
+    },
+    "provenance": {"$ref": "#/$defs/Provenance"}
+  },
+  "$defs": {
+    "Provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_class", "source", "contains_real_paia_input"],
+      "properties": {
+        "evidence_class": {"enum": ["public", "synthetic", "catalog_boundary"]},
+        "source": {"type": "string", "minLength": 1},
+        "contains_real_paia_input": {"const": false}
+      }
+    },
+    "EvidenceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "text", "kind"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "text": {"type": "string"},
+        "kind": {"enum": ["whole", "chunk"]}
+      }
+    },
+    "ScoreComponents": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lexical", "dense", "exact_term_bonus", "hybrid"],
+      "properties": {
+        "lexical": {"type": "number"},
+        "dense": {"type": "number"},
+        "exact_term_bonus": {"type": "number"},
+        "hybrid": {"type": "number"}
+      }
+    },
+    "RetrievalHit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "doc_id",
+        "score",
+        "score_components",
+        "evidence_span",
+        "provenance",
+        "rank"
+      ],
+      "properties": {
+        "doc_id": {"type": "string", "minLength": 1},
+        "score": {"type": "number"},
+        "score_components": {"$ref": "#/$defs/ScoreComponents"},
+        "evidence_span": {"$ref": "#/$defs/EvidenceSpan"},
+        "provenance": {"$ref": "#/$defs/Provenance"},
+        "rank": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

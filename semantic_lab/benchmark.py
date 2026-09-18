@@ -104,12 +104,22 @@ def run_sem00(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Semantic Lab canonical validation")
-    parser.add_argument("--round", choices=("SEM-00", "SEM-01"), default="SEM-00")
-    parser.add_argument("--lab-commit", default=os.environ.get("GITHUB_SHA", "UNCOMMITTED"))
+    parser.add_argument(
+        "--round",
+        choices=("SEM-00", "SEM-01", "SEM-02"),
+        default="SEM-00",
+    )
+    parser.add_argument(
+        "--lab-commit",
+        default=os.environ.get("GITHUB_SHA", "UNCOMMITTED"),
+    )
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
-    if args.round == "SEM-01":
+    if args.round == "SEM-02":
+        from .sem02 import run_sem02
+        result = run_sem02(args.lab_commit)
+    elif args.round == "SEM-01":
         from .sem01 import run_sem01
         result = run_sem01(args.lab_commit)
     else:
