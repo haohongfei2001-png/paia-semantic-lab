@@ -37,6 +37,8 @@ class CandidateSpec:
     prompt_policy: str
     runtime_policy: str
     source_urls: tuple[str, ...]
+    revision: str | None = None
+    trust_remote_code: bool = False
     price_usd_per_million_input_tokens: float | None = None
     price_status: str = "N/A"
 
@@ -55,6 +57,8 @@ class CandidateSpec:
             prompt_policy=str(raw.get("prompt_policy", "none")),
             runtime_policy=str(raw.get("runtime_policy", "PINNED_RUNTIME_REQUIRED")),
             source_urls=tuple(str(value) for value in raw.get("source_urls", [])),
+            revision=str(raw["revision"]) if raw.get("revision") else None,
+            trust_remote_code=bool(raw.get("trust_remote_code", False)),
             price_usd_per_million_input_tokens=(
                 float(raw["price_usd_per_million_input_tokens"])
                 if raw.get("price_usd_per_million_input_tokens") is not None
@@ -71,6 +75,10 @@ def validate_candidate_spec(spec: CandidateSpec) -> None:
         raise ManifestValidationError("Candidate id is required")
     if spec.kind == "local" and not spec.license:
         raise ManifestValidationError(f"Local candidate {spec.candidate_id} lacks license metadata")
+    if spec.kind == "local" and "PINNED" in spec.runtime_policy and not spec.revision:
+        raise ManifestValidationError(f"Local candidate {spec.candidate_id} lacks pinned revision")
+    if spec.trust_remote_code and not spec.revision:
+        raise ManifestValidationError(f"Remote-code candidate {spec.candidate_id} must pin a revision")
     if spec.kind == "api" and not spec.provider:
         raise ManifestValidationError(f"API candidate {spec.candidate_id} lacks provider")
     if not spec.context_tokens or spec.context_tokens <= 0:

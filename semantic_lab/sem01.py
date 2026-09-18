@@ -207,7 +207,8 @@ def run_sem01(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
             "id": spec.candidate_id, "kind": spec.kind, "provider": spec.provider,
             "license": spec.license, "context_tokens": spec.context_tokens,
             "dimensions": list(spec.dimensions), "prompt_policy": spec.prompt_policy,
-            "runtime_policy": spec.runtime_policy,
+            "runtime_policy": spec.runtime_policy, "revision": spec.revision,
+            "trust_remote_code": spec.trust_remote_code,
         }
         fingerprints.append({
             "candidate_id": spec.candidate_id,
@@ -232,6 +233,8 @@ def run_sem01(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         "context_tokens": spec.context_tokens,
         "dimensions": list(spec.dimensions),
         "runtime_policy": spec.runtime_policy,
+        "revision": spec.revision,
+        "trust_remote_code": spec.trust_remote_code,
         "price_usd_per_million_input_tokens": spec.price_usd_per_million_input_tokens,
         "price_status": spec.price_status,
         "adapter_contract": "PASS" if contract["contract_pass"] else "FAIL",
