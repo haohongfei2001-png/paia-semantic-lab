@@ -1,0 +1,23 @@
+benchmark_version: "sem04-router-b0-0.1"
+policy:
+  assignment_score_min: 0.92
+  unassigned_score_max: 0.55
+  uncertainty_margin_max: 0.08
+  minimum_informative_chars: 6
+  max_assignments: 4
+  ambiguity_markers:
+    - "不确定"
+    - "无法判断"
+    - "二选一"
+    - "ambiguous"
+    - "unclear whether"
+  residual_unassigned_markers:
+    - "其他无法归类"
+    - "unrelated remainder"
+  residual_defer_markers:
+    - "信息不完整"
+    - "insufficient remainder"
+acceptance:
+  synthetic_routing_correctness_min: 1.0
+  oracle_candidate_diagnostic_accuracy_min: 1.0
+  same_policy_repeated_disagreement_max: 0
