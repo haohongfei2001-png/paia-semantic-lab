@@ -1,0 +1,24 @@
+benchmark_version: "sem06-personal-gold-infrastructure-0.1"
+sampling:
+  target_min: 100
+  target_max: 200
+  soft_target: 128
+  near_duplicate_jaccard: 0.92
+  coverage_gap_weight: 100
+  priority_weights:
+    model_disagreement: 700
+    confusing_neighbor: 600
+    inactive_topic: 500
+    retrieval_disagreement: 400
+    router_uncertainty: 300
+    unassigned_vs_existing_topic: 200
+    representative_coverage_gap: 100
+splits:
+  calibration: 0.60
+  evaluation: 0.20
+  lockbox: 0.20
+privacy:
+  real_snapshot_git_allowed: false
+  personal_gold_git_allowed: false
+  api_egress_allowed: false
+  required_provider_scope: "LOCAL_ONLY"

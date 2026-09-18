@@ -1,6 +1,6 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: SEM_05_COMPLETE
+phase: SEM_06_BLOCKED
 plan_only: false
 production_paia_modified: false
 real_archive_read: false
@@ -94,7 +94,26 @@ rounds:
     validation_job_id: 105727914512
     evidence_artifact_id: 10562254515
     validated_main_commit: "6066a83a92d917c1f23fa4886890ef49c4211834"
-  SEM-06: { execution_status: READY, capability_verdict: UNTESTED, depends_on: SEM-05, owner_semantic_batch: allowed, explicit_execution_authorized: false }
+  SEM-06:
+    execution_status: BLOCKED
+    capability_verdict: INCONCLUSIVE
+    depends_on: SEM-05
+    owner_semantic_batch: allowed
+    explicit_execution_authorized: true
+    engineering_gates: { G0_isolation: PASS, G7_personal_gold_infrastructure: PASS }
+    personalized_semantic_quality: INCONCLUSIVE
+    benchmark_version: "sem06-personal-gold-infrastructure-0.1"
+    validation_run_id: 35388048170
+    validation_job_id: 105739519384
+    evidence_artifact_id: 10564483180
+    validated_branch_commit: "ba42979c4b8edda4be2ac0940a85c5be2be22507"
+    closure_blocker: "REAL_AUTHORIZED_SNAPSHOT_AND_OWNER_SEMANTIC_BATCH_REQUIRED"
   SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
-next_action: "SEM-06 is READY. Stop this execution and await the next supervisor execution message under the package authorization."
-product_owner_blockers: []
+next_action: "SEM-06 engineering infrastructure is validated, but the round is BLOCKED until an explicitly authorized real read-only PAIA Input snapshot and the single planned blind owner semantic batch are completed. Do not start SEM-07."
+product_owner_blockers:
+  - id: SEM06_REAL_SNAPSHOT_AUTHORIZATION
+    type: owner_authorization
+    detail: "Exact read-only real PAIA Input snapshot scope has not been authorized for ingestion."
+  - id: SEM06_OWNER_SEMANTIC_BATCH
+    type: owner_semantic_labels
+    detail: "The planned one-time blinded reusable-gold batch has not been completed; synthetic fixtures cannot substitute for owner truth."
