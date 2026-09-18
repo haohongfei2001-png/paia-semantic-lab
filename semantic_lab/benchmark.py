@@ -71,7 +71,7 @@ def run_sem00(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         and audit["domains_loaded"] == 18
         and audit["blocking_error_count"] == 0
     )
-    result = {
+    return {
         "round": "SEM-00",
         "manifest": manifest,
         "metrics": {
@@ -100,15 +100,21 @@ def run_sem00(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         },
         "pass": g0 and g1,
     }
-    return result
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="SEM-00 foundation validation")
+    parser = argparse.ArgumentParser(description="Semantic Lab canonical validation")
+    parser.add_argument("--round", choices=("SEM-00", "SEM-01"), default="SEM-00")
     parser.add_argument("--lab-commit", default=os.environ.get("GITHUB_SHA", "UNCOMMITTED"))
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    result = run_sem00(args.lab_commit)
+
+    if args.round == "SEM-01":
+        from .sem01 import run_sem01
+        result = run_sem01(args.lab_commit)
+    else:
+        result = run_sem00(args.lab_commit)
+
     rendered = json.dumps(result, ensure_ascii=False, indent=2)
     print(rendered)
     if args.output:

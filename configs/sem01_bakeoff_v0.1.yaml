@@ -1,0 +1,84 @@
+version: "0.1.0"
+round: "SEM-01"
+benchmark_version: "sem01-b0-catalog-multilingual-0.1"
+metadata_verified_at: "2026-09-19"
+policy:
+  evidence_classes: [public, synthetic, catalog_boundary]
+  real_paia_input_api_egress: DENY
+  live_api_in_ci: DENY
+  automatic_model_download_in_ci: DENY
+  silent_truncation: ERROR
+  owner_semantic_labeling: DENY
+  runtime_model_quality_required_for_winner_claim: true
+candidates:
+  - id: "Qwen/Qwen3-Embedding-0.6B"
+    kind: local
+    license: apache-2.0
+    context_tokens: 32768
+    dimensions: [1024]
+    prompt_policy: qwen_instruct_query
+    runtime_policy: PINNED_RUNTIME_REQUIRED_NO_AUTODOWNLOAD
+    source_urls:
+      - "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B"
+  - id: "BAAI/bge-m3"
+    kind: local
+    license: mit
+    context_tokens: 8192
+    dimensions: [1024]
+    prompt_policy: none
+    runtime_policy: PINNED_RUNTIME_REQUIRED_NO_AUTODOWNLOAD
+    source_urls:
+      - "https://huggingface.co/BAAI/bge-m3"
+  - id: "nomic-ai/nomic-embed-text-v2-moe"
+    kind: local
+    license: apache-2.0
+    context_tokens: 512
+    dimensions: [768, 256]
+    prompt_policy: nomic_search_prefix
+    runtime_policy: PINNED_SANDBOX_REQUIRED_TRUST_REMOTE_CODE
+    source_urls:
+      - "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe"
+  - id: "intfloat/multilingual-e5-large-instruct"
+    kind: local
+    license: mit
+    context_tokens: 512
+    dimensions: [1024]
+    prompt_policy: e5_instruct_query
+    runtime_policy: PINNED_RUNTIME_REQUIRED_NO_AUTODOWNLOAD
+    source_urls:
+      - "https://huggingface.co/intfloat/multilingual-e5-large-instruct"
+  - id: "voyage-4"
+    kind: api
+    provider: voyage
+    context_tokens: 32000
+    dimensions: [1024, 256, 512, 2048]
+    prompt_policy: provider_input_type
+    runtime_policy: AUTHORIZED_SYNTHETIC_PUBLIC_TRANSPORT_REQUIRED
+    price_usd_per_million_input_tokens: 0.06
+    price_status: VERIFIED_2026-09-19
+    source_urls:
+      - "https://docs.voyageai.com/docs/embeddings"
+      - "https://docs.voyageai.com/docs/pricing"
+  - id: "text-embedding-3-large"
+    kind: api
+    provider: openai
+    context_tokens: 8192
+    dimensions: [3072]
+    prompt_policy: provider_input_type
+    runtime_policy: AUTHORIZED_SYNTHETIC_PUBLIC_TRANSPORT_REQUIRED
+    price_usd_per_million_input_tokens: 0.13
+    price_status: VERIFIED_2026-09-19
+    source_urls:
+      - "https://developers.openai.com/api/docs/models/text-embedding-3-large"
+  - id: "embed-v4.0"
+    kind: api
+    provider: cohere
+    context_tokens: 128000
+    dimensions: [1024, 256, 512, 1536]
+    prompt_policy: provider_input_type
+    runtime_policy: AUTHORIZED_SYNTHETIC_PUBLIC_TRANSPORT_REQUIRED
+    price_status: VERIFY_AT_RUNTIME_SELF_SERVE_PRICE_NOT_CONFIRMED
+    source_urls:
+      - "https://docs.cohere.com/docs/embeddings"
+      - "https://docs.cohere.com/reference/embed"
+      - "https://cohere.com/pricing"

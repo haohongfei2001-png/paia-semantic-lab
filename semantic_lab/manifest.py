@@ -17,18 +17,23 @@ def build_run_manifest(
     *,
     lab_commit: str,
     catalog_version: str,
+    round_id: str = "SEM-00",
+    benchmark_version: str | None = None,
+    model_fingerprints: list[dict[str, Any]] | None = None,
+    metrics_ref: str | None = None,
     started_at: str | None = None,
     completed_at: str | None = None,
 ) -> dict[str, Any]:
     now = datetime.now(timezone.utc).isoformat()
+    round_slug = round_id.lower().replace("-", "")
     manifest = {
-        "run_id": f"sem00-{lab_commit[:12]}",
+        "run_id": f"{round_slug}-{lab_commit[:12]}",
         "lab_commit": lab_commit,
-        "round": "SEM-00",
-        "benchmark_version": "sem00-b0-skeleton-0.1",
+        "round": round_id,
+        "benchmark_version": benchmark_version or "sem00-b0-skeleton-0.1",
         "catalog_version": catalog_version,
         "input_snapshot_fingerprint": None,
-        "model_fingerprints": [],
+        "model_fingerprints": model_fingerprints or [],
         "config_fingerprint": _sha256_file(repo_root() / "configs" / "semantic_lab_v0.2.yaml"),
         "authorization_scope": {
             "production_paia_write": False,
@@ -43,7 +48,7 @@ def build_run_manifest(
             "platform": platform.platform(),
             "python": platform.python_version(),
         },
-        "metrics_ref": None,
+        "metrics_ref": metrics_ref,
         "started_at": started_at or now,
         "completed_at": completed_at or now,
     }
