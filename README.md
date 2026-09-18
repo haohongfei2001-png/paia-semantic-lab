@@ -2,7 +2,7 @@
 
 Independent R&D repository for **PAIA Semantic Engine v0**.
 
-Canonical execution state is recorded in `status/SEMANTIC_LAB_STATUS.yaml`. SEM-00 is COMPLETE. SEM-01 is READY as a dependency state only and remains unauthorized.
+Canonical execution state is recorded in `status/SEMANTIC_LAB_STATUS.yaml`. SEM-00 and SEM-01 are COMPLETE. SEM-02 is READY as a dependency state only and remains unauthorized.
 
 Semantic Lab is isolated from PAIA production. It must not modify production runtime, schema, Reader, Thought Library, Capture, ANS status, or real archive data.
 
