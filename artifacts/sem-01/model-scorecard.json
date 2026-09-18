@@ -1,0 +1,632 @@
+{
+  "round": "SEM-01",
+  "generated_from": {
+    "semantic_lab_ci": {
+      "run_id": 35372058408,
+      "job_id": 105688104507,
+      "conclusion": "success"
+    },
+    "local_runtime_bakeoff": {
+      "run_id": 35372058837,
+      "conclusion": "success",
+      "jobs": {
+        "Qwen/Qwen3-Embedding-0.6B": 105688105428,
+        "nomic-ai/nomic-embed-text-v2-moe": 105688105528,
+        "intfloat/multilingual-e5-large-instruct": 105688105619,
+        "BAAI/bge-m3": 105688105622
+      }
+    }
+  },
+  "benchmark": {
+    "version": "sem01-b0-catalog-multilingual-0.1",
+    "fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+    "case_count": 450,
+    "topic_count": 144,
+    "evidence_classes": [
+      "catalog_boundary",
+      "synthetic"
+    ],
+    "contains_real_paia_input": false,
+    "public_benchmark_quality_evaluated": false,
+    "note": "No model score is fabricated for an unexecuted runtime."
+  },
+  "controls": {
+    "lexical": {
+      "control": "lexical_char_trigram_jaccard",
+      "case_count": 450,
+      "metrics": {
+        "recall_at_1": 0.9711111111111111,
+        "recall_at_5": 0.9711111111111111,
+        "recall_at_10": 0.9711111111111111,
+        "recall_at_20": 0.9755555555555555,
+        "mrr": 0.971866566898266
+      },
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_end": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_middle": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 0.9097222222222222,
+          "recall_at_5": 0.9097222222222222,
+          "recall_at_10": 0.9097222222222222,
+          "recall_at_20": 0.9236111111111112,
+          "mrr": 0.9120830215570813
+        }
+      },
+      "performance": {
+        "cold_seconds": 0.018957166000006964,
+        "warm_total_seconds": 20.916495579000014,
+        "throughput_cases_per_second": 21.51412019763943,
+        "peak_python_memory_bytes": 653086,
+        "index_size_bytes": 57435
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "c6e3c04d44b4e0f181a6e56c20e475babefc49ca33fc5ca5a2234d5434102938"
+      }
+    },
+    "exact_vector": {
+      "control": "deterministic_hash_ngram_exact_cosine",
+      "case_count": 450,
+      "metrics": {
+        "recall_at_1": 0.8666666666666667,
+        "recall_at_5": 0.9444444444444444,
+        "recall_at_10": 0.9555555555555556,
+        "recall_at_20": 0.9733333333333334,
+        "mrr": 0.8986652526741519
+      },
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 0.9861111111111112,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 0.9918981481481483
+        },
+        "long_beginning": {
+          "recall_at_1": 0.8333333333333334,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 0.888888888888889
+        },
+        "long_end": {
+          "recall_at_1": 0.8333333333333334,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 0.875
+        },
+        "long_middle": {
+          "recall_at_1": 0.8333333333333334,
+          "recall_at_5": 0.8333333333333334,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 0.861111111111111
+        },
+        "mixed": {
+          "recall_at_1": 0.9930555555555556,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 0.9953703703703705
+        },
+        "zh_short": {
+          "recall_at_1": 0.625,
+          "recall_at_5": 0.8333333333333334,
+          "recall_at_10": 0.8611111111111112,
+          "recall_at_20": 0.9166666666666666,
+          "mrr": 0.7116853960882068
+        }
+      },
+      "performance": {
+        "cold_seconds": 0.0052751580000176546,
+        "warm_total_seconds": 3.437423115999991,
+        "throughput_cases_per_second": 130.9120189206295,
+        "peak_python_memory_bytes": 647622,
+        "index_size_bytes": 147456
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "bfe625737f1a47aaa28d416eb70e41f1b3bc138ef12121e838a6cad4393e9bf3"
+      }
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+      "kind": "local",
+      "provider": null,
+      "license": "apache-2.0",
+      "context_tokens": 32768,
+      "dimensions": [
+        1024
+      ],
+      "runtime_policy": "PINNED_RUNTIME_REQUIRED_NO_AUTODOWNLOAD",
+      "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+      "trust_remote_code": false,
+      "price_usd_per_million_input_tokens": null,
+      "price_status": "N/A",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": true,
+      "runtime_qualification": "QUALIFIED",
+      "quality_metrics": {
+        "recall_at_1": 0.6666666666666666,
+        "recall_at_5": 0.7755555555555556,
+        "recall_at_10": 0.8444444444444444,
+        "recall_at_20": 0.8888888888888888,
+        "mrr": 0.7206468216212045
+      },
+      "personalized_semantic_claim": "WITHHELD",
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 0.4652777777777778,
+          "recall_at_5": 0.6041666666666666,
+          "recall_at_10": 0.7152777777777778,
+          "recall_at_20": 0.8055555555555556,
+          "mrr": 0.5401941270861165
+        },
+        "long_beginning": {
+          "recall_at_1": 0,
+          "recall_at_5": 0.16666666666666666,
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "mrr": 0.10961399711399711
+        },
+        "long_end": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0.014298194465986016
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0.16666666666666666,
+          "mrr": 0.033421058672830024
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 0.6180555555555556,
+          "recall_at_5": 0.8125,
+          "recall_at_10": 0.8958333333333334,
+          "recall_at_20": 0.9375,
+          "mrr": 0.7052716383862808
+        }
+      },
+      "performance": {
+        "model_load_seconds": 6.767725717000005,
+        "document_encode_seconds": 68.90168679799999,
+        "query_encode_seconds": 312.65901828000005,
+        "repeat_query_encode_seconds": 312.416695066,
+        "supported_query_throughput_per_second": 1.439267616445354,
+        "peak_rss_bytes": 7500214272,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "6a4510d7aec0e155e6d879a231b469d45769edf822fa21df1fdaca4c5c28bcf5",
+        "repeat_ranking_digest": "6a4510d7aec0e155e6d879a231b469d45769edf822fa21df1fdaca4c5c28bcf5"
+      },
+      "over_context_case_count": 0,
+      "effective_context_tokens": 32768,
+      "runtime_status": "PASS",
+      "runtime_revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a"
+    },
+    {
+      "candidate_id": "BAAI/bge-m3",
+      "kind": "local",
+      "provider": null,
+      "license": "mit",
+      "context_tokens": 8192,
+      "dimensions": [
+        1024
+      ],
+      "runtime_policy": "PINNED_RUNTIME_REQUIRED_NO_AUTODOWNLOAD",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "trust_remote_code": false,
+      "price_usd_per_million_input_tokens": null,
+      "price_status": "N/A",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": true,
+      "runtime_qualification": "QUALIFIED",
+      "quality_metrics": {
+        "recall_at_1": 0.98,
+        "recall_at_5": 0.98,
+        "recall_at_10": 0.9822222222222222,
+        "recall_at_20": 0.9888888888888889,
+        "mrr": 0.9808657514707837
+      },
+      "personalized_semantic_claim": "WITHHELD",
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_end": {
+          "recall_at_1": 0.5,
+          "recall_at_5": 0.5,
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.8333333333333334,
+          "mrr": 0.5333333333333333
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0.3333333333333333,
+          "mrr": 0.031598026975441756
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        }
+      },
+      "performance": {
+        "model_load_seconds": 12.930739645999992,
+        "document_encode_seconds": 57.87881226699999,
+        "query_encode_seconds": 309.24146470799997,
+        "repeat_query_encode_seconds": 309.989784493,
+        "supported_query_throughput_per_second": 1.4551735499794982,
+        "peak_rss_bytes": 3973406720,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "85bc7174a1f343136a603fa27e8162a998dd56600e9c3e4c0bbfd1a7d393196d",
+        "repeat_ranking_digest": "85bc7174a1f343136a603fa27e8162a998dd56600e9c3e4c0bbfd1a7d393196d"
+      },
+      "over_context_case_count": 0,
+      "effective_context_tokens": 8192,
+      "runtime_status": "PASS",
+      "runtime_revision": "cb1779f90b988b8deb01f9155c790ef9417d7648"
+    },
+    {
+      "candidate_id": "nomic-ai/nomic-embed-text-v2-moe",
+      "kind": "local",
+      "provider": null,
+      "license": "apache-2.0",
+      "context_tokens": 512,
+      "dimensions": [
+        768,
+        256
+      ],
+      "runtime_policy": "PINNED_SANDBOX_REQUIRED_TRUST_REMOTE_CODE",
+      "revision": "c8bdf8c81cb2a168d47cc2265e6cbc99933ef19f",
+      "trust_remote_code": true,
+      "price_usd_per_million_input_tokens": null,
+      "price_status": "N/A",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": true,
+      "runtime_qualification": "QUALIFIED",
+      "quality_metrics": {
+        "recall_at_1": 0.96,
+        "recall_at_5": 0.96,
+        "recall_at_10": 0.96,
+        "recall_at_20": 0.96,
+        "mrr": 0.96
+      },
+      "personalized_semantic_claim": "WITHHELD",
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_end": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        }
+      },
+      "performance": {
+        "model_load_seconds": 25.33886610800002,
+        "document_encode_seconds": 17.952239323000015,
+        "query_encode_seconds": 14.510616003000024,
+        "repeat_query_encode_seconds": 14.473385016000009,
+        "supported_query_throughput_per_second": 29.771306739196003,
+        "peak_rss_bytes": 5046718464,
+        "index_size_bytes_float32": 442368,
+        "embedding_dimensions": 768
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "61fef2a2a1f860567e73deb952c36e27f9801d48d6050c069d76949296cb8c53",
+        "repeat_ranking_digest": "61fef2a2a1f860567e73deb952c36e27f9801d48d6050c069d76949296cb8c53"
+      },
+      "over_context_case_count": 18,
+      "effective_context_tokens": 512,
+      "runtime_status": "PASS",
+      "runtime_revision": "c8bdf8c81cb2a168d47cc2265e6cbc99933ef19f"
+    },
+    {
+      "candidate_id": "intfloat/multilingual-e5-large-instruct",
+      "kind": "local",
+      "provider": null,
+      "license": "mit",
+      "context_tokens": 512,
+      "dimensions": [
+        1024
+      ],
+      "runtime_policy": "PINNED_RUNTIME_REQUIRED_NO_AUTODOWNLOAD",
+      "revision": "9d7f719b76091b81b77635d6b652f87cfb6d1509",
+      "trust_remote_code": false,
+      "price_usd_per_million_input_tokens": null,
+      "price_status": "N/A",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": true,
+      "runtime_qualification": "QUALIFIED",
+      "quality_metrics": {
+        "recall_at_1": 0.96,
+        "recall_at_5": 0.96,
+        "recall_at_10": 0.96,
+        "recall_at_20": 0.96,
+        "mrr": 0.96
+      },
+      "personalized_semantic_claim": "WITHHELD",
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_end": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        }
+      },
+      "performance": {
+        "model_load_seconds": 14.554277081999999,
+        "document_encode_seconds": 39.685345760999994,
+        "query_encode_seconds": 46.72415475399998,
+        "repeat_query_encode_seconds": 47.619131572000015,
+        "supported_query_throughput_per_second": 9.245753128643106,
+        "peak_rss_bytes": 3795173376,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "038c819ae9635eb0f9c89eb7ff0e07d4e3f45c5213a25982c09f9937938330db",
+        "repeat_ranking_digest": "038c819ae9635eb0f9c89eb7ff0e07d4e3f45c5213a25982c09f9937938330db"
+      },
+      "over_context_case_count": 18,
+      "effective_context_tokens": 512,
+      "runtime_status": "PASS",
+      "runtime_revision": "9d7f719b76091b81b77635d6b652f87cfb6d1509"
+    },
+    {
+      "candidate_id": "voyage-4",
+      "kind": "api",
+      "provider": "voyage",
+      "license": null,
+      "context_tokens": 32000,
+      "dimensions": [
+        1024,
+        256,
+        512,
+        2048
+      ],
+      "runtime_policy": "AUTHORIZED_SYNTHETIC_PUBLIC_TRANSPORT_REQUIRED",
+      "revision": null,
+      "trust_remote_code": false,
+      "price_usd_per_million_input_tokens": 0.06,
+      "price_status": "VERIFIED_2026-09-19",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": false,
+      "runtime_qualification": "DEFERRED_NO_AUTHORIZED_TRANSPORT",
+      "quality_metrics": null,
+      "personalized_semantic_claim": "WITHHELD"
+    },
+    {
+      "candidate_id": "text-embedding-3-large",
+      "kind": "api",
+      "provider": "openai",
+      "license": null,
+      "context_tokens": 8192,
+      "dimensions": [
+        3072
+      ],
+      "runtime_policy": "AUTHORIZED_SYNTHETIC_PUBLIC_TRANSPORT_REQUIRED",
+      "revision": null,
+      "trust_remote_code": false,
+      "price_usd_per_million_input_tokens": 0.13,
+      "price_status": "VERIFIED_2026-09-19",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": false,
+      "runtime_qualification": "DEFERRED_NO_AUTHORIZED_TRANSPORT",
+      "quality_metrics": null,
+      "personalized_semantic_claim": "WITHHELD"
+    },
+    {
+      "candidate_id": "embed-v4.0",
+      "kind": "api",
+      "provider": "cohere",
+      "license": null,
+      "context_tokens": 128000,
+      "dimensions": [
+        1024,
+        256,
+        512,
+        1536
+      ],
+      "runtime_policy": "AUTHORIZED_SYNTHETIC_PUBLIC_TRANSPORT_REQUIRED",
+      "revision": null,
+      "trust_remote_code": false,
+      "price_usd_per_million_input_tokens": null,
+      "price_status": "VERIFY_AT_RUNTIME_SELF_SERVE_PRICE_NOT_CONFIRMED",
+      "adapter_contract": "PASS",
+      "runtime_model_evaluated": false,
+      "runtime_qualification": "DEFERRED_NO_AUTHORIZED_TRANSPORT",
+      "quality_metrics": null,
+      "personalized_semantic_claim": "WITHHELD"
+    }
+  ],
+  "qualified_shortlist": {
+    "round": "SEM-01",
+    "basis": "Engineering Pareto frontier on catalog-derived/synthetic B0 only; not personalized semantic quality.",
+    "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+    "runtime_qualified_local_candidates": [
+      "Qwen/Qwen3-Embedding-0.6B",
+      "nomic-ai/nomic-embed-text-v2-moe",
+      "intfloat/multilingual-e5-large-instruct",
+      "BAAI/bge-m3"
+    ],
+    "pareto_shortlist": [
+      "BAAI/bge-m3",
+      "nomic-ai/nomic-embed-text-v2-moe",
+      "intfloat/multilingual-e5-large-instruct"
+    ],
+    "dominated_candidates": [
+      {
+        "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+        "dominated_by": "BAAI/bge-m3",
+        "rationale": "On the same B0, BGE-M3 has higher retrieval quality, slightly higher supported-query throughput, lower peak RSS, and no worse long-input coverage."
+      }
+    ],
+    "api_adapter_qualified_runtime_unexecuted": [
+      "voyage-4",
+      "text-embedding-3-large",
+      "embed-v4.0"
+    ],
+    "api_runtime_reason": "No authorized provider transport/credentials were present; no API model-quality score was fabricated.",
+    "winner": null,
+    "winner_claim": "WITHHELD",
+    "personalized_semantic_quality": "INCONCLUSIVE"
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G2_bakeoff_engineering": "PASS",
+    "pinned_local_runtime_bakeoff": "PASS",
+    "local_runtime_candidates_executed": "4/4",
+    "api_runtime_bakeoff": "NOT_EXECUTED_NO_AUTHORIZED_TRANSPORT",
+    "personalized_semantic_quality": "INCONCLUSIVE"
+  }
+}
