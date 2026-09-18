@@ -1,0 +1,78 @@
+{
+  "round": "SEM-02",
+  "source_run_id": 35374680906,
+  "validated_commit": "ab36a3cc0f62bd4806e6bdfc9cd82dbf1f9c4cf7",
+  "count": 7,
+  "cases": [
+    {
+      "query_id": "q_exact",
+      "query_text": "ZXQ-9174",
+      "challenge_tags": ["exact_term", "hard_negative"],
+      "relevant_doc_ids": ["doc_exact"],
+      "hard_negative_doc_ids": ["doc_exact_hard"],
+      "no_answer": false,
+      "top1": {"doc_id": "doc_exact", "rank": 1, "score": 0.2935030030815927, "evidence_span": {"start": 0, "end": 104, "text": "Synthetic incident ZXQ-9174 records a checksum mismatch and its exact identifier must remain searchable.", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    },
+    {
+      "query_id": "q_mixed",
+      "query_text": "语义检索 evidence span",
+      "challenge_tags": ["mixed_language"],
+      "relevant_doc_ids": ["doc_mixed"],
+      "hard_negative_doc_ids": [],
+      "no_answer": false,
+      "top1": {"doc_id": "doc_mixed", "rank": 1, "score": 0.4960900364874551, "evidence_span": {"start": 0, "end": 67, "text": "语义检索 evidence span 必须保留原始字符偏移，并支持中文 English mixed-language 查询与排序证据。", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    },
+    {
+      "query_id": "q_long_begin",
+      "query_text": "BEGIN-MARKER-ALPHA evidence anchor",
+      "challenge_tags": ["long_beginning"],
+      "relevant_doc_ids": ["doc_long_begin"],
+      "hard_negative_doc_ids": [],
+      "no_answer": false,
+      "top1": {"doc_id": "doc_long_begin", "rank": 1, "score": 0.5377781771703651, "evidence_span": {"start": 0, "end": 240, "text": "BEGIN-MARKER-ALPHA evidence anchor semantic span background archive context schedule metadata unrelated filler 中文背景材料 不相关信息 background archive context schedule metadata unrelated filler 中文背景材料 不相关信息 background archive context schedule metad", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    },
+    {
+      "query_id": "q_long_middle",
+      "query_text": "MIDDLE-MARKER-BETA evidence anchor",
+      "challenge_tags": ["long_middle"],
+      "relevant_doc_ids": ["doc_long_middle"],
+      "hard_negative_doc_ids": [],
+      "no_answer": false,
+      "top1": {"doc_id": "doc_long_middle", "rank": 1, "score": 0.5459705878148301, "evidence_span": {"start": 1344, "end": 1584, "text": "不相关信息 background archive context schedule metadata unrelated filler 中文背景材料 不相关信息 background archive context schedule metadata unrelated filler 中文背景材料 不相关信息  MIDDLE-MARKER-BETA evidence anchor semantic span background archive context schedul", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    },
+    {
+      "query_id": "q_long_end",
+      "query_text": "END-MARKER-GAMMA evidence anchor",
+      "challenge_tags": ["long_end"],
+      "relevant_doc_ids": ["doc_long_end"],
+      "hard_negative_doc_ids": [],
+      "no_answer": false,
+      "top1": {"doc_id": "doc_long_end", "rank": 1, "score": 0.5312411312430524, "evidence_span": {"start": 2880, "end": 3047, "text": "edule metadata unrelated filler 中文背景材料 不相关信息 background archive context schedule metadata unrelated filler 中文背景材料 不相关信息  END-MARKER-GAMMA evidence anchor semantic span", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    },
+    {
+      "query_id": "q_purge",
+      "query_text": "withdrawal stale then purge derived vectors",
+      "challenge_tags": ["hard_negative"],
+      "relevant_doc_ids": ["doc_purge"],
+      "hard_negative_doc_ids": ["doc_purge_hard"],
+      "no_answer": false,
+      "top1": {"doc_id": "doc_purge", "rank": 1, "score": 0.32327167354233977, "evidence_span": {"start": 0, "end": 119, "text": "After authorization withdrawal the semantic index marks derivatives stale first, then purge removes vectors and chunks.", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    },
+    {
+      "query_id": "q_no_answer",
+      "query_text": "volcanic seismology mantle plume tomography",
+      "challenge_tags": ["no_answer"],
+      "relevant_doc_ids": [],
+      "hard_negative_doc_ids": [],
+      "no_answer": true,
+      "top1": {"doc_id": "doc_long_middle", "rank": 1, "score": 0.05469411144296561, "evidence_span": {"start": 1536, "end": 1776, "text": "semantic span background archive context schedule metadata unrelated filler 中文背景材料 不相关信息 background archive context schedule metadata unrelated filler 中文背景材料 不相关信息 background archive context schedule metadata unrelated filler 中文背景材料 不相关信息 b", "kind": "chunk"}},
+      "provenance": {"evidence_class": "synthetic", "source": "SEM-02 deterministic synthetic retrieval fixture", "contains_real_paia_input": false}
+    }
+  ]
+}

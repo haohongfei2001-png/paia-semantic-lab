@@ -1,0 +1,45 @@
+{
+  "round": "SEM-02",
+  "source": "remote-main-github-actions",
+  "validated_commit": "ab36a3cc0f62bd4806e6bdfc9cd82dbf1f9c4cf7",
+  "workflow_run_id": 35374680906,
+  "job_id": 105696473650,
+  "workflow_conclusion": "success",
+  "artifact_id": 10559089411,
+  "artifact_digest": "sha256:e0bf70ac685bb5bafd4ef2936213aa82aa64a5ae4cee78a643a55edb398d4b0b",
+  "manifest": {
+    "run_id": "sem02-ab36a3cc0f62",
+    "lab_commit": "ab36a3cc0f62bd4806e6bdfc9cd82dbf1f9c4cf7",
+    "round": "SEM-02",
+    "benchmark_version": "sem02-retrieval-b0-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": ["public", "synthetic", "catalog_boundary"]
+    },
+    "egress_ledger_ref": null,
+    "hardware": {"platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39", "python": "3.12.14"},
+    "metrics_ref": "artifacts/sem-02/retrieval-engine-report.json",
+    "started_at": "2026-09-18T17:31:43.548332+00:00",
+    "completed_at": "2026-09-18T17:31:43.548332+00:00"
+  },
+  "benchmark": {
+    "version": "sem02-retrieval-b0-0.1",
+    "fixture_pack_version": "0.1.0",
+    "document_count": 10,
+    "query_count": 8,
+    "evidence_classes": ["synthetic"],
+    "contains_real_paia_input": false,
+    "public_benchmark_used": false,
+    "personalized_semantic_claim": "WITHHELD"
+  },
+  "gates": {"G0_isolation": "PASS", "G3_retrieval_engineering": "PASS", "personalized_retrieval_quality": "INCONCLUSIVE"},
+  "pass": true
+}

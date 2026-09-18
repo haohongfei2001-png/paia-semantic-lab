@@ -1,0 +1,69 @@
+{
+  "round": "SEM-02",
+  "source": "GitHub Actions artifact semantic-lab-evidence",
+  "validated_commit": "ab36a3cc0f62bd4806e6bdfc9cd82dbf1f9c4cf7",
+  "workflow_run_id": 35374680906,
+  "job_id": 105696473650,
+  "artifact_id": 10559089411,
+  "artifact_digest": "sha256:e0bf70ac685bb5bafd4ef2936213aa82aa64a5ae4cee78a643a55edb398d4b0b",
+  "benchmark": {
+    "version": "sem02-retrieval-b0-0.1",
+    "fixture_pack_version": "0.1.0",
+    "document_count": 10,
+    "query_count": 8,
+    "evidence_classes": ["synthetic"],
+    "contains_real_paia_input": false,
+    "public_benchmark_used": false,
+    "personalized_semantic_claim": "WITHHELD"
+  },
+  "configuration_metrics": {
+    "lexical/whole": {"ndcg_at_10": 1.0, "recall_at_20": 1.0, "mrr_at_10": 1.0, "evaluated_query_count": 7.0},
+    "lexical/chunk": {"ndcg_at_10": 1.0, "recall_at_20": 1.0, "mrr_at_10": 1.0, "evaluated_query_count": 7.0},
+    "dense/whole": {"ndcg_at_10": 1.0, "recall_at_20": 1.0, "mrr_at_10": 1.0, "evaluated_query_count": 7.0},
+    "dense/chunk": {"ndcg_at_10": 1.0, "recall_at_20": 1.0, "mrr_at_10": 1.0, "evaluated_query_count": 7.0},
+    "hybrid/whole": {"ndcg_at_10": 1.0, "recall_at_20": 1.0, "mrr_at_10": 1.0, "evaluated_query_count": 7.0},
+    "hybrid/chunk": {"ndcg_at_10": 1.0, "recall_at_20": 1.0, "mrr_at_10": 1.0, "evaluated_query_count": 7.0}
+  },
+  "exact_term_regression": {
+    "pass": true,
+    "checks": [
+      {"query_id": "q_exact", "configuration": "lexical/whole", "top1": "doc_exact", "pass": true},
+      {"query_id": "q_exact", "configuration": "lexical/chunk", "top1": "doc_exact", "pass": true},
+      {"query_id": "q_exact", "configuration": "hybrid/whole", "top1": "doc_exact", "pass": true},
+      {"query_id": "q_exact", "configuration": "hybrid/chunk", "top1": "doc_exact", "pass": true}
+    ]
+  },
+  "hard_negative": {"case_count": 2, "failure_count": 0, "failure_rate": 0.0, "failures": []},
+  "no_answer": {"case_count": 1, "false_answer_count": 0, "false_answer_rate": 0.0},
+  "evidence_spans": {
+    "valid": 480,
+    "total": 480,
+    "integrity": 1.0,
+    "long_position_checks": {"long_beginning": true, "long_middle": true, "long_end": true}
+  },
+  "evidence_browser": {
+    "schema_version": "0.1.0",
+    "record_count": 8,
+    "render_sha256": "5e574bc8c53745653337e8eff80c559ff7af09c7013f655810249fc831232731",
+    "read_only": true,
+    "external_assets": false,
+    "correctness_checks_pass": true
+  },
+  "disagreement_queue": {"count": 1, "yield": 0.125},
+  "metrics": {
+    "fixture_provenance_coverage": 1.0,
+    "schema_validation_errors": 0,
+    "owner_attention_policy_violations": 0,
+    "isolation_violations": 0,
+    "real_input_api_egress_events": 0,
+    "live_api_calls": 0,
+    "model_training_runs": 0
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G3_retrieval_engineering": "PASS",
+    "personalized_retrieval_quality": "INCONCLUSIVE"
+  },
+  "pass": true,
+  "note": "Engineering evidence on a small deterministic synthetic fixture set; personalized retrieval quality remains INCONCLUSIVE."
+}
