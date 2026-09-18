@@ -1,0 +1,79 @@
+name: SEM-03 Qualified Runtime Candidate Stability
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  qualified-runtime:
+    if: github.head_ref == 'sem-03-candidate-runtime'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - candidate: Qwen/Qwen3-Embedding-0.6B
+            slug: qwen3-embedding-0.6b
+          - candidate: BAAI/bge-m3
+            slug: bge-m3
+          - candidate: nomic-ai/nomic-embed-text-v2-moe
+            slug: nomic-v2-moe
+          - candidate: intfloat/multilingual-e5-large-instruct
+            slug: multilingual-e5-large-instruct
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      TRANSFORMERS_NO_ADVISORY_WARNINGS: "1"
+      TOKENIZERS_PARALLELISM: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install Semantic Lab
+        run: python -m pip install -e .
+      - name: Install pinned CPU embedding runtime
+        run: |
+          python -m pip install "torch==2.8.0" --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install "sentence-transformers==5.1.1" "transformers==4.56.1" "accelerate==1.10.1" "einops==0.8.1"
+      - name: Run SEM-03 candidate policy with qualified local embedding
+        run: |
+          python -m semantic_lab.sem03_runtime \
+            --candidate-id "${{ matrix.candidate }}" \
+            --lab-commit "$GITHUB_SHA" \
+            --output "artifacts/ci/sem03-${{ matrix.slug }}.json"
+      - name: Upload candidate evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: sem03-runtime-${{ matrix.slug }}
+          path: artifacts/ci/sem03-${{ matrix.slug }}.json
+
+  aggregate-stability:
+    if: github.head_ref == 'sem-03-candidate-runtime'
+    needs: qualified-runtime
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install Semantic Lab
+        run: python -m pip install -e .
+      - name: Download qualified runtime evidence
+        uses: actions/download-artifact@v4
+        with:
+          pattern: sem03-runtime-*
+          path: artifacts/ci/sem03-runtime
+          merge-multiple: false
+      - name: Aggregate inter-model candidate stability
+        run: |
+          python -m semantic_lab.sem03_runtime \
+            --aggregate-dir artifacts/ci/sem03-runtime \
+            --output artifacts/ci/sem03-qualified-runtime-summary.json
+      - name: Upload aggregate evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: sem03-qualified-runtime-summary
+          path: artifacts/ci/sem03-qualified-runtime-summary.json
