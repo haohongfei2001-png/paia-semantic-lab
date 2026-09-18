@@ -1,0 +1,55 @@
+{
+  "round": "SEM-00",
+  "source": "remote-main-github-actions",
+  "validated_commit": "d8fff60f81c0bc6274f8973fd07b6d066fae3741",
+  "workflow_run_id": 35364465215,
+  "job_id": 105663413884,
+  "workflow_conclusion": "success",
+  "unit_tests": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "manifest": {
+    "run_id": "sem00-d8fff60f81c0",
+    "lab_commit": "d8fff60f81c0bc6274f8973fd07b6d066fae3741",
+    "round": "SEM-00",
+    "benchmark_version": "sem00-b0-skeleton-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": [
+        "public",
+        "synthetic",
+        "catalog_boundary"
+      ]
+    },
+    "egress_ledger_ref": null
+  },
+  "metrics": {
+    "schema_valid": true,
+    "catalog_topics_loaded": 144,
+    "catalog_domains_loaded": 18,
+    "catalog_blocking_errors": 0,
+    "catalog_warnings": 0,
+    "safe_fixture_provenance_coverage": 1.0,
+    "catalog_boundary_fixture_count": 432,
+    "catalog_boundary_provenance_coverage": 1.0,
+    "isolation_violations": 0,
+    "permission_fixture_failures": 0,
+    "owner_attention_policy_violations": 0
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G1_catalog_integrity": "PASS",
+    "personalized_semantic_quality": "INCONCLUSIVE"
+  },
+  "pass": true
+}
