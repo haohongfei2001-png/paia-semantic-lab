@@ -1,0 +1,437 @@
+{
+  "round": "SEM-01",
+  "workflow_run_id": 35372058837,
+  "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+  "candidates": [
+    {
+      "round": "SEM-01",
+      "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+      "benchmark_version": "sem01-b0-catalog-multilingual-0.1",
+      "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+      "case_count": 450,
+      "topic_count": 144,
+      "contains_real_paia_input": false,
+      "api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "trust_remote_code": false,
+      "lab_commit": "7a099e43f04a196979b5efc82ef7e6f8ad3ddd09",
+      "runtime_status": "PASS",
+      "runtime_qualified": true,
+      "effective_context_tokens": 32768,
+      "max_topic_document_tokens": 104,
+      "max_query_tokens": 1949,
+      "over_context_case_count": 0,
+      "over_context_case_ids": [],
+      "truncation_policy": "PREFLIGHT_ERROR_SKIP_NO_SILENT_TRUNCATION",
+      "metrics": {
+        "recall_at_1": 0.6666666666666666,
+        "recall_at_5": 0.7755555555555556,
+        "recall_at_10": 0.8444444444444444,
+        "recall_at_20": 0.8888888888888888,
+        "mrr": 0.7206468216212045
+      },
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 0.4652777777777778,
+          "recall_at_5": 0.6041666666666666,
+          "recall_at_10": 0.7152777777777778,
+          "recall_at_20": 0.8055555555555556,
+          "mrr": 0.5401941270861165
+        },
+        "long_beginning": {
+          "recall_at_1": 0,
+          "recall_at_5": 0.16666666666666666,
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "mrr": 0.10961399711399711
+        },
+        "long_end": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0.014298194465986016
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0.16666666666666666,
+          "mrr": 0.033421058672830024
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 0.6180555555555556,
+          "recall_at_5": 0.8125,
+          "recall_at_10": 0.8958333333333334,
+          "recall_at_20": 0.9375,
+          "mrr": 0.7052716383862808
+        }
+      },
+      "performance": {
+        "model_load_seconds": 6.767725717000005,
+        "document_encode_seconds": 68.90168679799999,
+        "query_encode_seconds": 312.65901828000005,
+        "repeat_query_encode_seconds": 312.416695066,
+        "supported_query_throughput_per_second": 1.439267616445354,
+        "peak_rss_bytes": 7500214272,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "6a4510d7aec0e155e6d879a231b469d45769edf822fa21df1fdaca4c5c28bcf5",
+        "repeat_ranking_digest": "6a4510d7aec0e155e6d879a231b469d45769edf822fa21df1fdaca4c5c28bcf5"
+      },
+      "runtime": {
+        "python": "3.11.16",
+        "sentence_transformers": "5.1.1",
+        "transformers": "4.56.1",
+        "torch": "2.8.0+cpu",
+        "numpy": "2.4.6",
+        "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+        "github_runner_os": "Linux"
+      }
+    },
+    {
+      "round": "SEM-01",
+      "candidate_id": "nomic-ai/nomic-embed-text-v2-moe",
+      "revision": "c8bdf8c81cb2a168d47cc2265e6cbc99933ef19f",
+      "benchmark_version": "sem01-b0-catalog-multilingual-0.1",
+      "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+      "case_count": 450,
+      "topic_count": 144,
+      "contains_real_paia_input": false,
+      "api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "trust_remote_code": true,
+      "lab_commit": "7a099e43f04a196979b5efc82ef7e6f8ad3ddd09",
+      "runtime_status": "PASS",
+      "runtime_qualified": true,
+      "effective_context_tokens": 512,
+      "max_topic_document_tokens": 118,
+      "max_query_tokens": 2898,
+      "over_context_case_count": 18,
+      "over_context_case_ids": [
+        "sys.personal_direction.life_goals:long_beginning",
+        "sys.personal_direction.life_goals:long_middle",
+        "sys.personal_direction.life_goals:long_end",
+        "sys.personal_direction.values_principles:long_beginning",
+        "sys.personal_direction.values_principles:long_middle",
+        "sys.personal_direction.values_principles:long_end",
+        "sys.personal_direction.major_decisions:long_beginning",
+        "sys.personal_direction.major_decisions:long_middle",
+        "sys.personal_direction.major_decisions:long_end",
+        "sys.personal_direction.self_reflection:long_beginning",
+        "sys.personal_direction.self_reflection:long_middle",
+        "sys.personal_direction.self_reflection:long_end",
+        "sys.personal_direction.habits_behavior:long_beginning",
+        "sys.personal_direction.habits_behavior:long_middle",
+        "sys.personal_direction.habits_behavior:long_end",
+        "sys.personal_direction.personal_productivity:long_beginning",
+        "sys.personal_direction.personal_productivity:long_middle",
+        "sys.personal_direction.personal_productivity:long_end"
+      ],
+      "truncation_policy": "PREFLIGHT_ERROR_SKIP_NO_SILENT_TRUNCATION",
+      "metrics": {
+        "recall_at_1": 0.96,
+        "recall_at_5": 0.96,
+        "recall_at_10": 0.96,
+        "recall_at_20": 0.96,
+        "mrr": 0.96
+      },
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_end": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        }
+      },
+      "performance": {
+        "model_load_seconds": 25.33886610800002,
+        "document_encode_seconds": 17.952239323000015,
+        "query_encode_seconds": 14.510616003000024,
+        "repeat_query_encode_seconds": 14.473385016000009,
+        "supported_query_throughput_per_second": 29.771306739196003,
+        "peak_rss_bytes": 5046718464,
+        "index_size_bytes_float32": 442368,
+        "embedding_dimensions": 768
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "61fef2a2a1f860567e73deb952c36e27f9801d48d6050c069d76949296cb8c53",
+        "repeat_ranking_digest": "61fef2a2a1f860567e73deb952c36e27f9801d48d6050c069d76949296cb8c53"
+      },
+      "runtime": {
+        "python": "3.11.16",
+        "sentence_transformers": "5.1.1",
+        "transformers": "4.56.1",
+        "torch": "2.8.0+cpu",
+        "numpy": "2.4.6",
+        "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+        "github_runner_os": "Linux"
+      }
+    },
+    {
+      "round": "SEM-01",
+      "candidate_id": "intfloat/multilingual-e5-large-instruct",
+      "revision": "9d7f719b76091b81b77635d6b652f87cfb6d1509",
+      "benchmark_version": "sem01-b0-catalog-multilingual-0.1",
+      "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+      "case_count": 450,
+      "topic_count": 144,
+      "contains_real_paia_input": false,
+      "api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "trust_remote_code": false,
+      "lab_commit": "7a099e43f04a196979b5efc82ef7e6f8ad3ddd09",
+      "runtime_status": "PASS",
+      "runtime_qualified": true,
+      "effective_context_tokens": 512,
+      "max_topic_document_tokens": 114,
+      "max_query_tokens": 2913,
+      "over_context_case_count": 18,
+      "over_context_case_ids": [
+        "sys.personal_direction.life_goals:long_beginning",
+        "sys.personal_direction.life_goals:long_middle",
+        "sys.personal_direction.life_goals:long_end",
+        "sys.personal_direction.values_principles:long_beginning",
+        "sys.personal_direction.values_principles:long_middle",
+        "sys.personal_direction.values_principles:long_end",
+        "sys.personal_direction.major_decisions:long_beginning",
+        "sys.personal_direction.major_decisions:long_middle",
+        "sys.personal_direction.major_decisions:long_end",
+        "sys.personal_direction.self_reflection:long_beginning",
+        "sys.personal_direction.self_reflection:long_middle",
+        "sys.personal_direction.self_reflection:long_end",
+        "sys.personal_direction.habits_behavior:long_beginning",
+        "sys.personal_direction.habits_behavior:long_middle",
+        "sys.personal_direction.habits_behavior:long_end",
+        "sys.personal_direction.personal_productivity:long_beginning",
+        "sys.personal_direction.personal_productivity:long_middle",
+        "sys.personal_direction.personal_productivity:long_end"
+      ],
+      "truncation_policy": "PREFLIGHT_ERROR_SKIP_NO_SILENT_TRUNCATION",
+      "metrics": {
+        "recall_at_1": 0.96,
+        "recall_at_5": 0.96,
+        "recall_at_10": 0.96,
+        "recall_at_20": 0.96,
+        "mrr": 0.96
+      },
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_end": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0,
+          "mrr": 0
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        }
+      },
+      "performance": {
+        "model_load_seconds": 14.554277081999999,
+        "document_encode_seconds": 39.685345760999994,
+        "query_encode_seconds": 46.72415475399998,
+        "repeat_query_encode_seconds": 47.619131572000015,
+        "supported_query_throughput_per_second": 9.245753128643106,
+        "peak_rss_bytes": 3795173376,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "038c819ae9635eb0f9c89eb7ff0e07d4e3f45c5213a25982c09f9937938330db",
+        "repeat_ranking_digest": "038c819ae9635eb0f9c89eb7ff0e07d4e3f45c5213a25982c09f9937938330db"
+      },
+      "runtime": {
+        "python": "3.11.16",
+        "sentence_transformers": "5.1.1",
+        "transformers": "4.56.1",
+        "torch": "2.8.0+cpu",
+        "numpy": "2.4.6",
+        "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+        "github_runner_os": "Linux"
+      }
+    },
+    {
+      "round": "SEM-01",
+      "candidate_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "benchmark_version": "sem01-b0-catalog-multilingual-0.1",
+      "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+      "case_count": 450,
+      "topic_count": 144,
+      "contains_real_paia_input": false,
+      "api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "trust_remote_code": false,
+      "lab_commit": "7a099e43f04a196979b5efc82ef7e6f8ad3ddd09",
+      "runtime_status": "PASS",
+      "runtime_qualified": true,
+      "effective_context_tokens": 8192,
+      "max_topic_document_tokens": 114,
+      "max_query_tokens": 2894,
+      "over_context_case_count": 0,
+      "over_context_case_ids": [],
+      "truncation_policy": "PREFLIGHT_ERROR_SKIP_NO_SILENT_TRUNCATION",
+      "metrics": {
+        "recall_at_1": 0.98,
+        "recall_at_5": 0.98,
+        "recall_at_10": 0.9822222222222222,
+        "recall_at_20": 0.9888888888888889,
+        "mrr": 0.9808657514707837
+      },
+      "slice_metrics": {
+        "en_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_beginning": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "long_end": {
+          "recall_at_1": 0.5,
+          "recall_at_5": 0.5,
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.8333333333333334,
+          "mrr": 0.5333333333333333
+        },
+        "long_middle": {
+          "recall_at_1": 0,
+          "recall_at_5": 0,
+          "recall_at_10": 0,
+          "recall_at_20": 0.3333333333333333,
+          "mrr": 0.031598026975441756
+        },
+        "mixed": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        },
+        "zh_short": {
+          "recall_at_1": 1,
+          "recall_at_5": 1,
+          "recall_at_10": 1,
+          "recall_at_20": 1,
+          "mrr": 1
+        }
+      },
+      "performance": {
+        "model_load_seconds": 12.930739645999992,
+        "document_encode_seconds": 57.87881226699999,
+        "query_encode_seconds": 309.24146470799997,
+        "repeat_query_encode_seconds": 309.989784493,
+        "supported_query_throughput_per_second": 1.4551735499794982,
+        "peak_rss_bytes": 3973406720,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      "reproducibility": {
+        "repeated_run_stable": true,
+        "ranking_digest": "85bc7174a1f343136a603fa27e8162a998dd56600e9c3e4c0bbfd1a7d393196d",
+        "repeat_ranking_digest": "85bc7174a1f343136a603fa27e8162a998dd56600e9c3e4c0bbfd1a7d393196d"
+      },
+      "runtime": {
+        "python": "3.11.16",
+        "sentence_transformers": "5.1.1",
+        "transformers": "4.56.1",
+        "torch": "2.8.0+cpu",
+        "numpy": "2.4.6",
+        "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+        "github_runner_os": "Linux"
+      }
+    }
+  ]
+}

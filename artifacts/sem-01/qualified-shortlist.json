@@ -1,0 +1,32 @@
+{
+  "round": "SEM-01",
+  "basis": "Engineering Pareto frontier on catalog-derived/synthetic B0 only; not personalized semantic quality.",
+  "benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+  "runtime_qualified_local_candidates": [
+    "Qwen/Qwen3-Embedding-0.6B",
+    "nomic-ai/nomic-embed-text-v2-moe",
+    "intfloat/multilingual-e5-large-instruct",
+    "BAAI/bge-m3"
+  ],
+  "pareto_shortlist": [
+    "BAAI/bge-m3",
+    "nomic-ai/nomic-embed-text-v2-moe",
+    "intfloat/multilingual-e5-large-instruct"
+  ],
+  "dominated_candidates": [
+    {
+      "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+      "dominated_by": "BAAI/bge-m3",
+      "rationale": "On the same B0, BGE-M3 has higher retrieval quality, slightly higher supported-query throughput, lower peak RSS, and no worse long-input coverage."
+    }
+  ],
+  "api_adapter_qualified_runtime_unexecuted": [
+    "voyage-4",
+    "text-embedding-3-large",
+    "embed-v4.0"
+  ],
+  "api_runtime_reason": "No authorized provider transport/credentials were present; no API model-quality score was fabricated.",
+  "winner": null,
+  "winner_claim": "WITHHELD",
+  "personalized_semantic_quality": "INCONCLUSIVE"
+}
