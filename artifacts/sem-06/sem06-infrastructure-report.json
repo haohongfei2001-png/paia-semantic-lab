@@ -1,0 +1,168 @@
+{
+  "round": "SEM-06",
+  "manifest": {
+    "run_id": "sem06-0d9b326e8470",
+    "lab_commit": "0d9b326e8470b9fef1aa27b1e41c25744e93dd30",
+    "round": "SEM-06",
+    "benchmark_version": "sem06-personal-gold-infrastructure-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": [
+        "public",
+        "synthetic",
+        "catalog_boundary"
+      ]
+    },
+    "egress_ledger_ref": null,
+    "hardware": {
+      "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+      "python": "3.14.7"
+    },
+    "metrics_ref": "artifacts/sem-06/sem06-infrastructure-report.json",
+    "started_at": "2026-09-18T19:42:40.436905+00:00",
+    "completed_at": "2026-09-18T19:42:40.436905+00:00"
+  },
+  "benchmark": {
+    "version": "sem06-personal-gold-infrastructure-0.1",
+    "contains_real_paia_input": false,
+    "personalized_semantic_claim": "WITHHELD_UNTIL_OWNER_BATCH"
+  },
+  "snapshot_validation": {
+    "snapshot_version": "sem06-synthetic-v0.1",
+    "record_count": 72,
+    "catalog_version": "0.2.0",
+    "contains_real_paia_input": false,
+    "authorization_fingerprint": "f9fb243094ef6969e41cb80c1462a5cc752eb9e8f5298ed5fc0c65f87fda05a5",
+    "snapshot_fingerprint": "c02504b83a9b56645f5de8802c672ae6f15873e82ea3d61169309475280b5bbc",
+    "provenance_revision_catalog_identity_coverage": 1.0
+  },
+  "qualified_local_runtime_evidence": {
+    "source": "artifacts/sem-01/local-runtime-results.json",
+    "source_workflow_run_id": 35372058837,
+    "candidate_count": 4,
+    "all_runtime_qualified": true,
+    "contains_real_paia_input": false,
+    "candidates": [
+      {
+        "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+        "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+        "source_round": "SEM-01",
+        "source_workflow_run_id": 35372058837,
+        "source_benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+        "measurement_reused": true,
+        "contains_real_paia_input": false,
+        "runtime_qualified": true,
+        "cold_model_load_seconds": 6.767725717000005,
+        "first_batch_query_seconds": 312.65901828000005,
+        "repeat_batch_query_seconds": 312.416695066,
+        "throughput_inputs_per_second": 1.439267616445354,
+        "peak_rss_bytes": 7500214272,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      {
+        "candidate_id": "nomic-ai/nomic-embed-text-v2-moe",
+        "revision": "c8bdf8c81cb2a168d47cc2265e6cbc99933ef19f",
+        "source_round": "SEM-01",
+        "source_workflow_run_id": 35372058837,
+        "source_benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+        "measurement_reused": true,
+        "contains_real_paia_input": false,
+        "runtime_qualified": true,
+        "cold_model_load_seconds": 25.33886610800002,
+        "first_batch_query_seconds": 14.510616003000024,
+        "repeat_batch_query_seconds": 14.473385016000009,
+        "throughput_inputs_per_second": 29.771306739196003,
+        "peak_rss_bytes": 5046718464,
+        "index_size_bytes_float32": 442368,
+        "embedding_dimensions": 768
+      },
+      {
+        "candidate_id": "intfloat/multilingual-e5-large-instruct",
+        "revision": "9d7f719b76091b81b77635d6b652f87cfb6d1509",
+        "source_round": "SEM-01",
+        "source_workflow_run_id": 35372058837,
+        "source_benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+        "measurement_reused": true,
+        "contains_real_paia_input": false,
+        "runtime_qualified": true,
+        "cold_model_load_seconds": 14.554277081999999,
+        "first_batch_query_seconds": 46.72415475399998,
+        "repeat_batch_query_seconds": 47.619131572000015,
+        "throughput_inputs_per_second": 9.245753128643106,
+        "peak_rss_bytes": 3795173376,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      },
+      {
+        "candidate_id": "BAAI/bge-m3",
+        "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+        "source_round": "SEM-01",
+        "source_workflow_run_id": 35372058837,
+        "source_benchmark_fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+        "measurement_reused": true,
+        "contains_real_paia_input": false,
+        "runtime_qualified": true,
+        "cold_model_load_seconds": 12.930739645999992,
+        "first_batch_query_seconds": 309.24146470799997,
+        "repeat_batch_query_seconds": 309.989784493,
+        "throughput_inputs_per_second": 1.4551735499794982,
+        "peak_rss_bytes": 3973406720,
+        "index_size_bytes_float32": 589824,
+        "embedding_dimensions": 1024
+      }
+    ]
+  },
+  "sampling_report": {
+    "candidate_count": 72,
+    "requested_judgments": 72,
+    "target_min": 100,
+    "target_max": 200,
+    "soft_target": 128,
+    "deduplicated_count": 0,
+    "duplicate_item_ids": [],
+    "information_gain_saturated_below_target": true,
+    "model_identity_blinded": true,
+    "per_model_duplicate_labeling": 0
+  },
+  "gold_validation": {
+    "owner_judgments_requested": 72,
+    "owner_judgments_completed": 72,
+    "reusable_gold_validity_rate": 1.0,
+    "provenance_revision_catalog_identity_coverage": 1.0,
+    "per_model_duplicate_labeling": 0,
+    "unresolved_topic_boundary_ambiguities": 0,
+    "retrieval_qrel_count": 7,
+    "split_counts": {
+      "calibration": 42,
+      "evaluation": 15,
+      "lockbox": 15
+    }
+  },
+  "metrics": {
+    "owner_attention_policy_violations": 0,
+    "real_input_api_egress_events": 0,
+    "live_api_calls": 0,
+    "model_training_runs": 0,
+    "isolation_violations": 0
+  },
+  "findings": {
+    "isolation": [],
+    "closure_blocker": "REAL_AUTHORIZED_SNAPSHOT_AND_OWNER_SEMANTIC_BATCH_REQUIRED"
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G7_personal_gold_infrastructure": "PASS",
+    "personalized_semantic_quality": "INCONCLUSIVE",
+    "round_closure": "BLOCKED_ON_OWNER_SEMANTIC_BATCH"
+  },
+  "pass": true
+}
