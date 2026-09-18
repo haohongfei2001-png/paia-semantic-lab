@@ -32,10 +32,16 @@ rounds:
     depends_on: SEM-00
     explicit_execution_authorized: true
     engineering_gates: { G0_isolation: PASS, G2_bakeoff_engineering: PASS }
-    runtime_model_qualification: NO_CANDIDATE_QUALIFIED_WITHOUT_EXECUTED_RUNTIME
+    runtime_model_qualification: PASS
+    runtime_qualified_local_candidates:
+      - "Qwen/Qwen3-Embedding-0.6B"
+      - "BAAI/bge-m3"
+      - "nomic-ai/nomic-embed-text-v2-moe"
+      - "intfloat/multilingual-e5-large-instruct"
     personalized_semantic_quality: INCONCLUSIVE
-    validation_run_id: 35371688012
-    validation_job_id: 105686910122
+    validation_run_id: 35372058408
+    validation_job_id: 105688104507
+    runtime_bakeoff_run_id: 35372058837
   SEM-02: { execution_status: READY, capability_verdict: UNTESTED, depends_on: SEM-01, explicit_execution_authorized: false }
   SEM-03: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-02 }
   SEM-04: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-03 }
