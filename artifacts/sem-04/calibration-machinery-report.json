@@ -1,0 +1,50 @@
+{
+  "round": "SEM-04",
+  "source_evidence": {
+    "main_ci": {
+      "run_id": 35379812113,
+      "job_id": 105713054345,
+      "artifact_id": 10561198530,
+      "artifact_digest": "sha256:3ddbc1c62524a89a4cf69829d19e4fb37732c92705d82646cf6dca3a0d8b885e",
+      "validated_commit": "af4c69f95bbd8e86f63d6352740d0cd4ce1beebf"
+    }
+  },
+  "contract": "CalibrationRecord",
+  "storage_model": "append_only_jsonl",
+  "effective_state_rule": "SUPERSEDED is derived from later records' supersedes linkage; prior records are never rewritten",
+  "reusable_identity": [
+    "input_ref",
+    "input_revision",
+    "catalog_version",
+    "context_fingerprint"
+  ],
+  "reusable_states": [
+    "USER_CONFIRMED",
+    "GOLD"
+  ],
+  "precedence": "exact reusable user-confirmed/gold calibration outranks a new model routing decision",
+  "guards": {
+    "unknown_or_non_current_topic_ids": "REJECT",
+    "cross_identity_supersession": "REJECT",
+    "duplicate_calibration_id": "REJECT",
+    "stale_catalog_or_revision": "DEFER",
+    "ai_formal_topic_creation": "FORBIDDEN"
+  },
+  "validation": {
+    "append_only_record_count": 2,
+    "first_record_effective_state": "SUPERSEDED",
+    "latest_record_id": "cal:7751322bfdb878249fec3dc8",
+    "reuse_before_supersession_topic_ids": [
+      "sys.personal_direction.values_principles"
+    ],
+    "reuse_after_supersession_topic_ids": [
+      "sys.personal_direction.life_goals"
+    ],
+    "persistence_reload_pass": true,
+    "override_guard_violations": 0,
+    "stale_revision_catalog_guard_violations": 0
+  },
+  "contains_real_paia_input": false,
+  "owner_semantic_labeling_used": false,
+  "personalized_quality_claim": "INCONCLUSIVE"
+}

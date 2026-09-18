@@ -1,0 +1,131 @@
+{
+  "round": "SEM-04",
+  "source_evidence": {
+    "main_ci": {
+      "run_id": 35379812113,
+      "job_id": 105713054345,
+      "artifact_id": 10561198530,
+      "artifact_digest": "sha256:3ddbc1c62524a89a4cf69829d19e4fb37732c92705d82646cf6dca3a0d8b885e",
+      "validated_commit": "af4c69f95bbd8e86f63d6352740d0cd4ce1beebf"
+    }
+  },
+  "manifest": {
+    "run_id": "sem04-af4c69f95bbd",
+    "lab_commit": "af4c69f95bbd8e86f63d6352740d0cd4ce1beebf",
+    "round": "SEM-04",
+    "benchmark_version": "sem04-router-b0-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": [
+        "public",
+        "synthetic",
+        "catalog_boundary"
+      ]
+    },
+    "egress_ledger_ref": null,
+    "hardware": {
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "python": "3.12.14"
+    },
+    "metrics_ref": "artifacts/sem-04/router-infrastructure-report.json",
+    "started_at": "2026-09-18T18:25:31.408132+00:00",
+    "completed_at": "2026-09-18T18:25:31.408132+00:00"
+  },
+  "benchmark": {
+    "version": "sem04-router-b0-0.1",
+    "fixture_pack_version": "sem04-router-fixtures-0.1",
+    "case_count": 89,
+    "contains_real_paia_input": false,
+    "personalized_semantic_claim": "WITHHELD"
+  },
+  "decision_policy": {
+    "assignment_score_min": 0.92,
+    "unassigned_score_max": 0.55,
+    "uncertainty_margin_max": 0.08,
+    "minimum_informative_chars": 6,
+    "max_assignments": 4,
+    "ambiguity_markers": [
+      "不确定",
+      "无法判断",
+      "二选一",
+      "ambiguous",
+      "unclear whether"
+    ],
+    "residual_unassigned_markers": [
+      "其他无法归类",
+      "unrelated remainder"
+    ],
+    "residual_defer_markers": [
+      "信息不完整",
+      "insufficient remainder"
+    ]
+  },
+  "routing": {
+    "synthetic_correctness": 1,
+    "failed_case_ids": [],
+    "contract_validation_errors": [],
+    "route_state_counts": {
+      "ASSIGNED": 50,
+      "UNASSIGNED": 16,
+      "DEFER": 23
+    }
+  },
+  "calibration": {
+    "append_only_record_count": 2,
+    "first_record_effective_state": "SUPERSEDED",
+    "latest_record_id": "cal:7751322bfdb878249fec3dc8",
+    "persistence_reload_pass": true
+  },
+  "oracle_diagnostics": {
+    "case_count": 12,
+    "candidate_miss_attribution_accuracy": 1,
+    "diagnostic_only": true
+  },
+  "disagreement_uncertainty": {
+    "same_policy_repeat_case_count": 16,
+    "same_policy_repeat_disagreement_count": 0,
+    "policy_sensitivity_disagreement_count": 12,
+    "high_information_signal_count": 47
+  },
+  "metrics": {
+    "synthetic_public_routing_correctness": 1,
+    "evidence_validity": 1,
+    "override_guard_violations": 0,
+    "calibration_persistence_reuse": 1,
+    "stale_revision_catalog_guard_violations": 0,
+    "oracle_candidate_diagnostic_accuracy": 1,
+    "same_policy_repeated_run_disagreements": 0,
+    "policy_sensitivity_disagreement_yield": 1,
+    "uncertainty_sampling_yield": 0.5280898876404494,
+    "decision_latency_median_seconds": 0.00934677999998712,
+    "decision_latency_p95_seconds": 0.010042169000001877,
+    "non_private_api_cost_usd": 0,
+    "owner_attention_policy_violations": 0,
+    "isolation_violations": 0,
+    "real_input_api_egress_events": 0,
+    "live_api_calls": 0,
+    "model_training_runs": 0,
+    "automatic_topic_creation_events": 0
+  },
+  "findings": {
+    "failed_cases": [],
+    "contract_errors": [],
+    "override_guard_violations": [],
+    "owner_attention_policy_violations": [],
+    "isolation": []
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G5_router_calibration_infrastructure": "PASS",
+    "personalized_router_quality": "INCONCLUSIVE"
+  },
+  "pass": true
+}

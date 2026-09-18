@@ -1,0 +1,94 @@
+{
+  "round": "SEM-04",
+  "generated_for": "SEM-06 owner semantic batch selection support",
+  "source_evidence": {
+    "main_ci": {
+      "run_id": 35379812113,
+      "job_id": 105713054345,
+      "artifact_id": 10561198530,
+      "artifact_digest": "sha256:3ddbc1c62524a89a4cf69829d19e4fb37732c92705d82646cf6dca3a0d8b885e",
+      "validated_commit": "af4c69f95bbd8e86f63d6352740d0cd4ce1beebf"
+    }
+  },
+  "contains_real_paia_input": false,
+  "owner_labels_used": false,
+  "signal_count": 47,
+  "priority_counts": {
+    "2": 17,
+    "3": 30
+  },
+  "groups": [
+    {
+      "signal": "router_uncertainty+confusing_neighbor",
+      "priority": 3,
+      "case_ids": [
+        "ambiguous:D01",
+        "ambiguous:D02",
+        "ambiguous:D03",
+        "ambiguous:D04",
+        "ambiguous:D05",
+        "ambiguous:D06",
+        "ambiguous:D07",
+        "ambiguous:D08",
+        "ambiguous:D09",
+        "ambiguous:D10",
+        "ambiguous:D11",
+        "ambiguous:D12",
+        "ambiguous:D13",
+        "ambiguous:D14",
+        "ambiguous:D15",
+        "ambiguous:D16",
+        "ambiguous:D17",
+        "ambiguous:D18"
+      ]
+    },
+    {
+      "signal": "unassigned_vs_existing_topic",
+      "priority": 2,
+      "case_ids": [
+        "unassigned:00",
+        "unassigned:01",
+        "unassigned:02",
+        "unassigned:03",
+        "unassigned:04",
+        "unassigned:05",
+        "unassigned:06",
+        "unassigned:07",
+        "unassigned:08",
+        "unassigned:09",
+        "unassigned:10",
+        "unassigned:11"
+      ]
+    },
+    {
+      "signal": "router_uncertainty",
+      "priority": 2,
+      "case_ids": [
+        "defer-short:00",
+        "defer-short:01",
+        "defer-short:02",
+        "defer-short:03",
+        "defer-short:04"
+      ]
+    },
+    {
+      "signal": "policy_disagreement",
+      "priority": 3,
+      "case_ids": [
+        "multi:sys.personal_direction.life_goals:sys.personal_direction.values_principles",
+        "multi:sys.personal_direction.major_decisions:sys.personal_direction.self_reflection",
+        "multi:sys.personal_direction.habits_behavior:sys.personal_direction.personal_productivity",
+        "multi:sys.personal_direction.life_planning:sys.personal_direction.personal_admin",
+        "multi:sys.family_relationships.parents_family:sys.family_relationships.siblings",
+        "multi:sys.family_relationships.partner_relationship:sys.family_relationships.friendships",
+        "multi:sys.family_relationships.social_interaction:sys.family_relationships.conflict_boundaries",
+        "multi:sys.family_relationships.caregiving_family_support:sys.family_relationships.pets",
+        "multi:sys.health_wellbeing.medical_care:sys.health_wellbeing.symptoms_conditions",
+        "multi:sys.health_wellbeing.medication_treatment:sys.health_wellbeing.mental_wellbeing",
+        "multi:sys.health_wellbeing.fitness:sys.health_wellbeing.nutrition",
+        "multi:sys.health_wellbeing.sleep:sys.health_wellbeing.preventive_health"
+      ]
+    }
+  ],
+  "use_constraint": "These are synthetic/catalog-boundary selection signals only. They are not owner gold and must not be treated as validated personal routing errors."
+}
