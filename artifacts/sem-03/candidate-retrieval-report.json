@@ -1,0 +1,122 @@
+{
+  "round": "SEM-03",
+  "source_evidence": {
+    "main_ci": {
+      "run_id": 35377053749,
+      "job_id": 105704083890,
+      "artifact_id": 10560453507,
+      "validated_commit": "737ea6d82cb6d16a7c23c66909e33a01b3a86701"
+    },
+    "qualified_runtime": {
+      "run_id": 35376532680,
+      "aggregate_job_id": 105703772476,
+      "artifact_id": 10560078405,
+      "validated_pr_head": "602c87e2698b1745bcf4d95df06076b2a4236f5c",
+      "pull_request_merge_ref_commit": "feb84a9336cb4017c9b168c75f63ae50e6d18dc2"
+    }
+  },
+  "manifest": {
+    "run_id": "sem03-737ea6d82cb6",
+    "lab_commit": "737ea6d82cb6d16a7c23c66909e33a01b3a86701",
+    "round": "SEM-03",
+    "benchmark_version": "sem03-full-catalog-candidates-b0-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": [
+        "public",
+        "synthetic",
+        "catalog_boundary"
+      ]
+    },
+    "egress_ledger_ref": null,
+    "hardware": {
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "python": "3.12.14"
+    },
+    "metrics_ref": "artifacts/sem-03/candidate-retrieval-report.json",
+    "started_at": "2026-09-18T17:56:55.182877+00:00",
+    "completed_at": "2026-09-18T17:56:55.182877+00:00"
+  },
+  "benchmark": {
+    "version": "sem03-full-catalog-candidates-b0-0.1",
+    "fixture_pack_version": "0.1.0",
+    "case_count": 576,
+    "system_topic_count": 144,
+    "synthetic_custom_topic_count": 4,
+    "contains_real_paia_input": false,
+    "personalized_semantic_claim": "WITHHELD"
+  },
+  "candidate_policy": {
+    "dense_top_k": 32,
+    "lexical_top_k": 16,
+    "reserved_global_slots": 8,
+    "personalized_slots_max": 4,
+    "custom_safety_lane_max": 4,
+    "max_candidate_count": 64,
+    "activity_prior_can_gate": false,
+    "activity_prior_can_reorder_global_prefix": false,
+    "automatic_topic_creation": false,
+    "eligible_system_lifecycle": [
+      "ACTIVE"
+    ],
+    "eligible_custom_rule": "NON_DEPRECATED"
+  },
+  "metrics": {
+    "recall_at_5": 1,
+    "recall_at_10": 1,
+    "recall_at_20": 1,
+    "inactive_candidate_recall_at_20": 1,
+    "active_candidate_recall_at_20": 1,
+    "active_inactive_recall_gap": 0,
+    "custom_topic_recall_at_20": 1,
+    "confusing_neighbor_case_count": 18,
+    "confusing_neighbor_failure_count": 0,
+    "confusing_neighbor_error_rate": 0,
+    "global_slot_preservation_rate": 1,
+    "candidate_set_size_mean": 46.088541666666664,
+    "candidate_latency_mean_seconds": 0.01672362386631892,
+    "candidate_latency_max_seconds": 0.022913462000019535,
+    "scale_topic_count": 1024,
+    "scale_probe_count": 32,
+    "scale_recall_at_20": 1,
+    "scale_total_seconds": 2.8550200349999955,
+    "engineering_control_disagreement_rate": 1,
+    "owner_attention_policy_violations": 0,
+    "isolation_violations": 0,
+    "real_input_api_egress_events": 0,
+    "live_api_calls": 0,
+    "model_training_runs": 0
+  },
+  "qualified_embedding_stability": {
+    "qualified_candidate_count": 4,
+    "missing_candidates": [],
+    "runtime_unqualified_candidates": [],
+    "pairwise_mean_jaccard_at_20_min": 0.7277945735826197,
+    "pairwise_mean_jaccard_at_20_max": 0.8212142125185619,
+    "inter_model_disagreement_observed": true,
+    "pass": true
+  },
+  "reproducibility": {
+    "activity_on_digest": "0cca6ab6a0c1f6df6d587de8341dc24f59b9fefc647b21790bb16e8fae5682d0",
+    "activity_off_digest": "c9e720ecc2ad78851c05120ed5b0233f928d5a0ef909f7de083c61e233d54606"
+  },
+  "findings": {
+    "owner_attention_policy_violations": [],
+    "isolation": []
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G4_full_catalog_candidates": "PASS",
+    "qualified_embedding_stability": "PASS",
+    "personalized_candidate_recall": "INCONCLUSIVE"
+  },
+  "pass": true
+}

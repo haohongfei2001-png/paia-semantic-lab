@@ -1,6 +1,6 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: SEM_03_IN_PROGRESS
+phase: SEM_03_COMPLETE
 plan_only: false
 production_paia_modified: false
 real_archive_read: false
@@ -55,13 +55,28 @@ rounds:
     validation_job_id: 105696473650
     evidence_artifact_id: 10559089411
   SEM-03:
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: PASS
     depends_on: SEM-02
     explicit_execution_authorized: true
-  SEM-04: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-03 }
+    engineering_gates: { G0_isolation: PASS, G4_full_catalog_candidates: PASS }
+    qualified_embedding_stability: PASS
+    personalized_candidate_recall: INCONCLUSIVE
+    benchmark_version: "sem03-full-catalog-candidates-b0-0.1"
+    validation_run_id: 35377053749
+    validation_job_id: 105704083890
+    evidence_artifact_id: 10560453507
+    qualified_runtime_run_id: 35376532680
+    qualified_runtime_aggregate_job_id: 105703772476
+    qualified_runtime_artifact_id: 10560078405
+    validated_main_commit: "737ea6d82cb6d16a7c23c66909e33a01b3a86701"
+  SEM-04:
+    execution_status: READY
+    capability_verdict: UNTESTED
+    depends_on: SEM-03
+    explicit_execution_authorized: false
   SEM-05: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-04 }
   SEM-06: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-05, owner_semantic_batch: allowed }
   SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
-next_action: "SEM-03 implementation is IN_PROGRESS under explicit authorization. Validate only SEM-03; do not start SEM-04."
+next_action: "SEM-04 is READY. Stop this execution and await the next supervisor execution message under the package authorization."
 product_owner_blockers: []

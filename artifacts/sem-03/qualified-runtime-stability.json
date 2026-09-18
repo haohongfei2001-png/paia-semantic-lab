@@ -1,0 +1,67 @@
+{
+  "round": "SEM-03",
+  "expected_qualified_candidates": [
+    "BAAI/bge-m3",
+    "Qwen/Qwen3-Embedding-0.6B",
+    "intfloat/multilingual-e5-large-instruct",
+    "nomic-ai/nomic-embed-text-v2-moe"
+  ],
+  "found_candidates": [
+    "BAAI/bge-m3",
+    "Qwen/Qwen3-Embedding-0.6B",
+    "intfloat/multilingual-e5-large-instruct",
+    "nomic-ai/nomic-embed-text-v2-moe"
+  ],
+  "missing_candidates": [],
+  "runtime_unqualified_candidates": [],
+  "pairwise_candidate_stability": [
+    {
+      "left": "BAAI/bge-m3",
+      "right": "Qwen/Qwen3-Embedding-0.6B",
+      "case_count": 576,
+      "mean_jaccard_at_20": 0.7277945735826197,
+      "exact_set_rate_at_20": 0.006944444444444444
+    },
+    {
+      "left": "BAAI/bge-m3",
+      "right": "intfloat/multilingual-e5-large-instruct",
+      "case_count": 576,
+      "mean_jaccard_at_20": 0.8173168669092599,
+      "exact_set_rate_at_20": 0.04861111111111111
+    },
+    {
+      "left": "BAAI/bge-m3",
+      "right": "nomic-ai/nomic-embed-text-v2-moe",
+      "case_count": 576,
+      "mean_jaccard_at_20": 0.8212142125185619,
+      "exact_set_rate_at_20": 0.06076388888888889
+    },
+    {
+      "left": "Qwen/Qwen3-Embedding-0.6B",
+      "right": "intfloat/multilingual-e5-large-instruct",
+      "case_count": 576,
+      "mean_jaccard_at_20": 0.7348383550829231,
+      "exact_set_rate_at_20": 0.008680555555555556
+    },
+    {
+      "left": "Qwen/Qwen3-Embedding-0.6B",
+      "right": "nomic-ai/nomic-embed-text-v2-moe",
+      "case_count": 576,
+      "mean_jaccard_at_20": 0.7337613322667698,
+      "exact_set_rate_at_20": 0.006944444444444444
+    },
+    {
+      "left": "intfloat/multilingual-e5-large-instruct",
+      "right": "nomic-ai/nomic-embed-text-v2-moe",
+      "case_count": 576,
+      "mean_jaccard_at_20": 0.8209495315473595,
+      "exact_set_rate_at_20": 0.052083333333333336
+    }
+  ],
+  "inter_model_disagreement_observed": true,
+  "personalized_semantic_claim": "WITHHELD",
+  "contains_real_paia_input": false,
+  "owner_semantic_labeling": false,
+  "model_training": false,
+  "pass": true
+}
