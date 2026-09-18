@@ -1,12 +1,33 @@
-# SEM-01 — Automated Embedding Bake-off + B0
+# SEM-01 — Automated Embedding Bake-off / B0
 
-## Implementation scope / non-scope / tests / metrics / gate / artifacts
-Implementation scope: local/API adapters on public/synthetic data; lexical control; exact-vector baseline; automatic compatibility/latency/memory scorecard; B0 multilingual diagnostics.
-Non-scope: no owner model trial; no real-data API egress; no personalized winner claim; no Router training.
-Tests: every shortlisted candidate on identical B0; task instruction/prefix correctness; truncation=error; repeatability; Chinese/mixed/short/long public or synthetic slices.
-Metrics: public/synthetic retrieval and STS diagnostics; latency; peak memory; dimensions/index size; errors; maintenance/reproducibility risk.
-Acceptance gate: G0 + G2. Broken candidates may be eliminated, but B0 alone cannot establish the personalized winner.
-Artifacts: automatic scorecard; model manifests; qualified candidate set; B1 sampling plan.
+## Implementation scope
+
+Implement local/API embedding adapters for public/synthetic evidence, lexical controls, exact-vector baseline, automatic compatibility/latency/memory scorecard and B0 multilingual diagnostics.
+
+## Non-scope
+
+No owner model trial; no owner semantic labels; no real Input API egress; no personalized winner claim; no Router training.
+
+## Evidence allowed
+
+Public multilingual retrieval/STS benchmarks, synthetic Catalog fixtures, machine-generated Chinese/mixed/short/long challenge sets, reproducibility/performance tests.
+
+## Required tests
+
+Every shortlisted candidate on the same reusable B0; instruction/prefix correctness; truncation=error; repeated-run stability; resource profiling; license/runtime manifest checks.
+
+## Metrics
+
+Public/synthetic retrieval/STS metrics; Chinese/mixed challenge metrics; cold/warm latency; throughput; peak memory; index size; errors; reproducibility/maintenance risk.
+
+## Acceptance gate
+
+Broken/incompatible candidates may be eliminated automatically. B0 may rank engineering candidates but cannot prove personalized semantic quality.
+
+## Artifacts
+
+Automatic model scorecard; candidate manifests; qualified shortlist; machine disagreement dataset for later rounds.
 
 ## Commit protocol
-Read remote HEAD/status → execute this round only → run required tests → write artifacts/status → commit/push → re-read remote HEAD/status/critical files → stop. Do not start the next round.
+
+Execute this round only → tests → artifacts/status → commit/push → re-read remote → stop. Do not request owner labels.

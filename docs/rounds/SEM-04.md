@@ -1,12 +1,33 @@
-# SEM-04 — Personal Semantic Router + Calibration Layer
+# SEM-04 — Personal Router Infrastructure + Calibration Machinery
 
-## Implementation scope / non-scope / tests / metrics / gate / artifacts
-Implementation scope: embedding candidates + strong semantic decision model; ASSIGNED/UNASSIGNED/DEFER; multi-label routing; evidence; user overrides; append-only CalibrationRecord.
-Non-scope: no small classifier/distillation; no AI Topic creation; no production integration.
-Tests: nearest-only vs candidates+semantic decision; oracle candidates; confusing neighbors; UNASSIGNED; DEFER; user corrections; repeated-run stability; prompt-injection fixtures.
-Metrics: G5 Router metrics; evidence validity; calibration reuse; cost/decision; error-source decomposition.
-Acceptance gate: G0 + G5. User override violations and unauthorized mutation must be zero.
-Artifacts: Router report; decision policy; calibration format; frozen decision configuration or INCONCLUSIVE verdict.
+## Implementation scope
+
+Implement the Personal Semantic Router pipeline over existing Topic candidates, ASSIGNED/UNASSIGNED/DEFER output contracts, evidence tracing, user-override guards, CalibrationRecord persistence/reuse, oracle-candidate diagnostics and uncertainty/disagreement instrumentation.
+
+## Non-scope
+
+No owner personal gold; no small classifier/distillation; no AI Topic creation; no production integration; no claim that personal routing quality is proven.
+
+## Evidence allowed
+
+Synthetic/catalog boundary fixtures, generated ambiguous cases, machine disagreement, public semantic tasks, deterministic user-override fixtures, existing reusable gold if available in a future replay.
+
+## Required tests
+
+ASSIGNED/UNASSIGNED/DEFER contract; multi-label fixtures; oracle candidate path; confusing-neighbor cases; synthetic manual overrides; stale revision/catalog guards; prompt-injection fixtures; CalibrationRecord append/supersede/reuse; repeated-run disagreement capture.
+
+## Metrics
+
+Synthetic/public routing correctness; evidence validity; override violations; calibration persistence/reuse; disagreement/uncertainty yield; cost/decision on non-private evidence.
+
+## Acceptance gate
+
+Infrastructure/safety may PASS. Personalized Router quality must remain PROVISIONAL/INCONCLUSIVE until SEM-06/07 gold.
+
+## Artifacts
+
+Router infrastructure report; decision policy implementation contract; calibration machinery report; high-information sampling signals for SEM-06.
 
 ## Commit protocol
-Read remote HEAD/status → execute this round only → run required tests → write artifacts/status → commit/push → re-read remote HEAD/status/critical files → stop. Do not start the next round.
+
+Execute this round only → tests → artifacts/status → commit/push → re-read remote → stop. No owner semantic judgment.

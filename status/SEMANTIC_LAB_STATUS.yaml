@@ -1,10 +1,17 @@
-package_version: "0.2.0"
+architecture_version: "0.2.0"
+sequencing_version: "0.2.1"
 phase: PRE_IMPLEMENTATION_DESIGN_FROZEN
 plan_only: true
 production_paia_modified: false
 real_archive_read: false
 real_input_api_egress: false
 model_training_started: false
+owner_attention_budget:
+  owner_semantic_work_forbidden_through: "SEM-05"
+  first_planned_owner_semantic_round: "SEM-06"
+  first_batch_target_judgments: "100-200"
+  repeated_per_model_labeling: forbidden
+  gold_reuse_required: true
 topic_catalog:
   version: "0.2.0"
   status: DRAFT
@@ -17,7 +24,7 @@ rounds:
   SEM-03: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-02 }
   SEM-04: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-03 }
   SEM-05: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-04 }
-  SEM-06: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-05 }
-  SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06 }
+  SEM-06: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-05, owner_semantic_batch: allowed }
+  SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
 next_action: "Await explicit authorization to execute SEM-00. Do not auto-start."
 product_owner_blockers: []

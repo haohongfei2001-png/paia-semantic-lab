@@ -1,22 +1,33 @@
-# SEM-05 — Activation Policy + Catalog Diagnostics
+# SEM-05 — Incremental Lifecycle + Activation Infrastructure + Local/API Performance/Privacy Trade-off
 
 ## Implementation scope
-Implement deterministic UserTopicProfile replay, inactive→active, decay/reactivation, manual pin/hide/locks, 48 AUTO-active soft budget, and clustering/overlap/outlier diagnostics for catalog maintenance.
+
+Implement incremental embedding/cache invalidation, revision/catalog lifecycle, deletion/withdrawal, deterministic UserTopicProfile activation replay, inactive/reactivation/manual-state logic, clustering diagnostics, and local/API performance/privacy measurement on public/synthetic evidence.
 
 ## Non-scope
-No cluster→Topic conversion; no Router dependency on clustering; no production UI mutation.
 
-## Tests
-One-off mention; sustained new domain; long silence; later return; budget pressure; manual locks; hidden-but-classifiable; overlap/outlier fixtures.
+No owner semantic labels; no authorized personal snapshot; no real-Input API egress; no cluster→Topic conversion; no production synchronization; no training.
+
+## Evidence allowed
+
+Synthetic lifecycle/event streams; Topic Catalog fixtures; public benchmark text; machine-generated load/challenge sets; provider metadata; existing reusable gold if already available.
+
+## Required tests
+
+No-op/append/edit/delete; metadata-only changes; catalog patch/minor/major lineage; crash/recovery; incremental-vs-full parity; one-off activation; sustained activation; 60-day decay; reactivation; 48 AUTO-active budget; pin/hide/locks; hidden-but-classifiable; local/API cold/warm/batch/resource tests using non-private text; egress-deny tests.
 
 ## Metrics
-One-off false activation; sustained activation recall; time-to-activation; auto-inactivation precision; reactivation recall; manual-state violations; inactive classification eligibility violations; diagnostic overlap/stability.
+
+Recomputation correctness; stale-revision leaks; activation-policy deterministic metrics on fixtures; inactive classification violations; p50/p95/throughput/memory/index size; API cost estimates and privacy/retention matrix; clustering diagnostic stability.
 
 ## Acceptance gate
-G0 + G6. Presentation/activity state must never change semantic classification eligibility.
+
+Lifecycle, activation infrastructure, resource measurement and privacy controls may PASS engineering gates. Personalized activation/routing quality remains PROVISIONAL/INCONCLUSIVE without SEM-06 gold.
 
 ## Artifacts
-Activation report; state-machine fixtures; catalog diagnostic queue; data-quality proposals only.
+
+Lifecycle/invalidation report; activation infrastructure report; local/API trade-off report; privacy matrix; machine-selected evidence queues for SEM-06.
 
 ## Commit protocol
-Read remote HEAD/status → execute this round only → tests → artifacts/status → commit/push → re-read remote → stop.
+
+Execute this round only → tests → artifacts/status → commit/push → re-read remote → stop. No owner labels and no real-data API egress.
