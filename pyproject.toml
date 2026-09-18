@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paia-semantic-lab"
+version = "0.2.0"
+description = "Isolated PAIA Semantic Lab research harness"
+requires-python = ">=3.11"
+dependencies = [
+  "PyYAML>=6.0,<7",
+  "jsonschema>=4.23,<5"
+]
+
+[tool.setuptools.packages.find]
+include = ["semantic_lab*"]
