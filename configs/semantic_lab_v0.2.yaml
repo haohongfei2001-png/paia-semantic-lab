@@ -1,0 +1,80 @@
+version: "0.2.0"
+catalog_audit:
+  stable_id_unique: ERROR
+  normalized_primary_name_unique_within_language: ERROR
+  alias_collision_without_ambiguity_declaration: ERROR
+  invalid_neighbor_reference: ERROR
+  lineage_cycle: ERROR
+  assignable_internal_domain: ERROR
+  missing_definition_or_boundaries: ERROR
+  event_specific_system_topic: WARN
+  year_or_version_specific_system_topic: WARN
+  organization_specific_system_topic: WARN
+  lexical_normalized_jaccard_warn: 0.72
+  embedding_similarity_review_threshold: 0.90
+  automatic_merge: false
+  automatic_split: false
+  max_hierarchy_depth_v0: 2
+  historical_assignment_rewrite: forbidden
+
+acceptance_gates:
+  G0_isolation:
+    unauthorized_production_writes: 0
+    unauthorized_real_data_egress: 0
+    provenance_coverage: 1.0
+    silent_truncation: 0
+  G1_catalog_integrity:
+    schema_valid: true
+    duplicate_topic_ids: 0
+    invalid_lineage_refs: 0
+    unresolved_release_blocking_alias_collisions: 0
+    automatic_topic_creation_paths: 0
+  G2_bakeoff_engineering:
+    same_benchmark_for_all_candidates: true
+    model_manifest_coverage: 1.0
+    repeated_run_reproducibility_reported: true
+  G3_input_retrieval:
+    ndcg_at_10_min: 0.75
+    recall_at_20_min: 0.90
+    exact_term_slice_regression_max: 0.02
+  G4_full_catalog_candidates:
+    candidate_recall_at_10_min: 0.96
+    candidate_recall_at_20_min: 0.99
+    inactive_candidate_recall_at_20_min: 0.98
+    active_inactive_recall_gap_max: 0.02
+  G5_personal_router:
+    macro_f1_min: 0.80
+    accepted_precision_min: 0.95
+    accepted_coverage_min: 0.60
+    unassigned_precision_min: 0.90
+    defer_recall_min: 0.90
+    wrong_certain_rate_max: 0.05
+    user_override_violations: 0
+  G6_activation:
+    one_off_false_activation_max: 0.02
+    sustained_activation_recall_min: 0.90
+    manual_state_violations: 0
+    inactive_classification_eligibility_violations: 0
+  G7_incremental_tradeoff:
+    noop_embedding_calls: 0
+    stale_revision_default_retrieval_leaks: 0
+    lifecycle_required_tests_pass_rate: 1.0
+    local_10k_retrieval_p95_seconds_target: 1.0
+  G8_final:
+    contract_safety_pass_rate: 1.0
+    lockbox_required: true
+
+model_candidates:
+  research_date: "2026-09-18"
+  selection_mode: automatic_bakeoff
+  local:
+    - { id: "Qwen/Qwen3-Embedding-0.6B", role: primary_local_modern, license: apache-2.0, languages: "100+", context_tokens: 32768, dimensions_max: 1024 }
+    - { id: "BAAI/bge-m3", role: multilingual_hybrid_reference, license: mit, languages: multilingual, context_tokens: 8192, dimensions: 1024 }
+    - { id: "nomic-ai/nomic-embed-text-v2-moe", role: efficiency_multilingual, license: apache-2.0, languages: 101, runner_default_context_tokens: 512, risk: "pin/sandbox custom code" }
+  control:
+    - { id: "intfloat/multilingual-e5-large-instruct", role: historical_multilingual_control, license: mit, languages: 94 }
+  api:
+    - { id: "voyage-4", provider: voyage, context_tokens: 32000, dimensions: [256,512,1024,2048], price_usd_per_million_input_tokens_research_date: 0.06 }
+    - { id: "text-embedding-3-large", provider: openai, context_tokens: 8192, dimensions_default: 3072, price_usd_per_million_input_tokens_research_date: 0.13 }
+    - { id: "embed-v4.0", provider: cohere, context_tokens: 128000, dimensions: [256,512,1024,1536], price: VERIFY_AT_RUNTIME }
+  api_real_input_default: DENY

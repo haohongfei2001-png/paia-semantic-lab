@@ -1,0 +1,467 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PAIA Semantic Lab v0.2 Contract Bundle",
+  "$defs": {
+    "TopicCatalog": {
+      "type": "object",
+      "required": [
+        "catalog_version",
+        "status",
+        "domains",
+        "topics"
+      ],
+      "properties": {
+        "catalog_version": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "DRAFT",
+            "RELEASED"
+          ]
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name_zh",
+              "name_en",
+              "assignable"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name_zh": {
+                "type": "string"
+              },
+              "name_en": {
+                "type": "string"
+              },
+              "assignable": {
+                "const": false
+              }
+            }
+          }
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "topic_id",
+              "name",
+              "definition",
+              "inclusion_boundary",
+              "exclusion_boundary",
+              "aliases",
+              "representative_examples",
+              "confusing_neighbor_topic_ids",
+              "internal_domain",
+              "lifecycle",
+              "introduced_in"
+            ],
+            "properties": {
+              "topic_id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "object",
+                "required": [
+                  "zh",
+                  "en"
+                ],
+                "properties": {
+                  "zh": {
+                    "type": "string"
+                  },
+                  "en": {
+                    "type": "string"
+                  }
+                }
+              },
+              "definition": {
+                "type": "string"
+              },
+              "inclusion_boundary": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exclusion_boundary": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "aliases": {
+                "type": "object"
+              },
+              "representative_examples": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "confusing_neighbor_topic_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "internal_domain": {
+                "type": "string"
+              },
+              "lifecycle": {
+                "enum": [
+                  "ACTIVE",
+                  "DEPRECATED",
+                  "MERGED",
+                  "SPLIT"
+                ]
+              },
+              "boundary_status": {
+                "enum": [
+                  "PROVISIONAL",
+                  "AUDITED",
+                  "HUMAN_CONFIRMED"
+                ]
+              },
+              "introduced_in": {
+                "type": "string"
+              },
+              "successor_topic_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "TopicAssignment": {
+      "type": "object",
+      "required": [
+        "assignment_id",
+        "input_ref",
+        "input_revision",
+        "catalog_version",
+        "topic_id",
+        "source",
+        "created_at"
+      ],
+      "properties": {
+        "assignment_id": {
+          "type": "string"
+        },
+        "input_ref": {
+          "type": "string"
+        },
+        "input_revision": {
+          "type": "string"
+        },
+        "catalog_version": {
+          "type": "string"
+        },
+        "topic_id": {
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "AI_SUGGESTED",
+            "USER_CONFIRMED",
+            "USER_MANUAL",
+            "MIGRATED"
+          ]
+        },
+        "evidence_spans": {
+          "type": "array"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "supersedes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stale": {
+          "type": "boolean"
+        }
+      }
+    },
+    "UserTopicProfile": {
+      "type": "object",
+      "required": [
+        "user_scope_ref",
+        "topic_id",
+        "activity_state",
+        "visibility",
+        "pinned",
+        "activation_lock",
+        "updated_at"
+      ],
+      "properties": {
+        "user_scope_ref": {
+          "type": "string"
+        },
+        "topic_id": {
+          "type": "string"
+        },
+        "activity_state": {
+          "enum": [
+            "ACTIVE",
+            "INACTIVE"
+          ]
+        },
+        "visibility": {
+          "enum": [
+            "VISIBLE",
+            "HIDDEN"
+          ]
+        },
+        "pinned": {
+          "type": "boolean"
+        },
+        "activation_lock": {
+          "enum": [
+            "AUTO",
+            "FORCE_ACTIVE",
+            "FORCE_INACTIVE"
+          ]
+        },
+        "activation_evidence": {
+          "type": "array"
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      }
+    },
+    "RouterDecision": {
+      "type": "object",
+      "required": [
+        "decision_id",
+        "input_ref",
+        "input_revision",
+        "catalog_version",
+        "route_state",
+        "assignments",
+        "candidate_topic_ids",
+        "provenance"
+      ],
+      "properties": {
+        "decision_id": {
+          "type": "string"
+        },
+        "input_ref": {
+          "type": "string"
+        },
+        "input_revision": {
+          "type": "string"
+        },
+        "catalog_version": {
+          "type": "string"
+        },
+        "route_state": {
+          "enum": [
+            "ASSIGNED",
+            "UNASSIGNED",
+            "DEFER"
+          ]
+        },
+        "assignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "topic_id",
+              "evidence"
+            ],
+            "properties": {
+              "topic_id": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "array"
+              }
+            }
+          }
+        },
+        "residual_state": {
+          "enum": [
+            "NONE",
+            "UNASSIGNED",
+            "DEFER"
+          ]
+        },
+        "candidate_topic_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provenance": {
+          "type": "object"
+        },
+        "requires_user_confirmation": {
+          "const": true
+        },
+        "can_mutate_canonical": {
+          "const": false
+        }
+      }
+    },
+    "CalibrationRecord": {
+      "type": "object",
+      "required": [
+        "calibration_id",
+        "input_ref",
+        "input_revision",
+        "catalog_version",
+        "candidate_topic_ids",
+        "ai_prediction",
+        "user_final_decision",
+        "context_fingerprint",
+        "state",
+        "created_at"
+      ],
+      "properties": {
+        "calibration_id": {
+          "type": "string"
+        },
+        "input_ref": {
+          "type": "string"
+        },
+        "input_revision": {
+          "type": "string"
+        },
+        "catalog_version": {
+          "type": "string"
+        },
+        "candidate_topic_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ai_prediction": {
+          "type": "object"
+        },
+        "user_final_decision": {
+          "type": "object"
+        },
+        "context_fingerprint": {
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "BATCH_ANNOTATION",
+            "EXPLICIT_CORRECTION",
+            "ACCEPTED_SUGGESTION",
+            "MANUAL_ASSIGNMENT"
+          ]
+        },
+        "state": {
+          "enum": [
+            "OBSERVED",
+            "USER_CONFIRMED",
+            "GOLD",
+            "SUPERSEDED"
+          ]
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "supersedes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "RunManifest": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "lab_commit",
+        "round",
+        "benchmark_version",
+        "catalog_version",
+        "config_fingerprint",
+        "started_at"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string"
+        },
+        "lab_commit": {
+          "type": "string"
+        },
+        "round": {
+          "type": "string"
+        },
+        "benchmark_version": {
+          "type": "string"
+        },
+        "catalog_version": {
+          "type": "string"
+        },
+        "input_snapshot_fingerprint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_fingerprints": {
+          "type": "array"
+        },
+        "config_fingerprint": {
+          "type": "string"
+        },
+        "authorization_scope": {
+          "type": "object"
+        },
+        "egress_ledger_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hardware": {
+          "type": "object"
+        },
+        "metrics_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "started_at": {
+          "type": "string"
+        },
+        "completed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1757 @@
+catalog_version: "0.2.0"
+status: DRAFT
+release_eligible: false
+system_topic_count: 144
+internal_domain_count: 18
+notes:
+  - "Domains are audit/navigation metadata and never assignment targets."
+  - "All ACTIVE system topics are classification-eligible regardless of UserTopicProfile state."
+  - "Seed boundaries are provisional until automated audit and reusable human gold validate them."
+domains:
+  - { id: D01, slug: personal_direction, name_zh: "个人方向", name_en: "Personal Direction", assignable: false }
+  - { id: D02, slug: family_relationships, name_zh: "家庭与关系", name_en: "Family & Relationships", assignable: false }
+  - { id: D03, slug: health_wellbeing, name_zh: "健康与身心", name_en: "Health & Wellbeing", assignable: false }
+  - { id: D04, slug: education_learning, name_zh: "教育与学习", name_en: "Education & Learning", assignable: false }
+  - { id: D05, slug: career_work, name_zh: "职业与工作", name_en: "Career & Work", assignable: false }
+  - { id: D06, slug: projects_products, name_zh: "项目与产品", name_en: "Projects & Products", assignable: false }
+  - { id: D07, slug: ai_computing, name_zh: "AI与计算", name_en: "AI & Computing", assignable: false }
+  - { id: D08, slug: finance_purchases, name_zh: "财务与购买", name_en: "Finance & Purchases", assignable: false }
+  - { id: D09, slug: home_daily, name_zh: "居家与日常", name_en: "Home & Daily Life", assignable: false }
+  - { id: D10, slug: travel_places, name_zh: "旅行与地点", name_en: "Travel & Places", assignable: false }
+  - { id: D11, slug: media_culture, name_zh: "媒体与文化", name_en: "Media & Culture", assignable: false }
+  - { id: D12, slug: communication_writing, name_zh: "沟通与写作", name_en: "Communication & Writing", assignable: false }
+  - { id: D13, slug: legal_civic, name_zh: "法律与公共事务", name_en: "Legal & Civic", assignable: false }
+  - { id: D14, slug: science_technical, name_zh: "科学与技术知识", name_en: "Science & Technical Knowledge", assignable: false }
+  - { id: D15, slug: creative_design, name_zh: "创意与设计", name_en: "Creative & Design", assignable: false }
+  - { id: D16, slug: business_entrepreneurship, name_zh: "商业与创业", name_en: "Business & Entrepreneurship", assignable: false }
+  - { id: D17, slug: time_events, name_zh: "时间与事件", name_en: "Time & Events", assignable: false }
+  - { id: D18, slug: knowledge_memory, name_zh: "知识与记忆", name_en: "Knowledge & Memory", assignable: false }
+topics:
+  - topic_id: sys.personal_direction.life_goals
+    name: { zh: "人生目标", en: "Life Goals" }
+    definition: "面向用户长期生活、工作或项目中与“人生目标”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“人生目标”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“人生目标”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“人生目标”归属。"]
+    aliases: { zh: ["人生目标"], en: ["Life Goals"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“人生目标”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.values_principles
+    name: { zh: "价值观与原则", en: "Values & Principles" }
+    definition: "面向用户长期生活、工作或项目中与“价值观与原则”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“价值观与原则”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“价值观与原则”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“价值观与原则”归属。"]
+    aliases: { zh: ["价值观与原则"], en: ["Values & Principles"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“价值观与原则”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.major_decisions
+    name: { zh: "重大决策", en: "Major Decisions" }
+    definition: "面向用户长期生活、工作或项目中与“重大决策”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“重大决策”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“重大决策”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“重大决策”归属。"]
+    aliases: { zh: ["重大决策"], en: ["Major Decisions"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“重大决策”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.self_reflection
+    name: { zh: "自我反思", en: "Self Reflection" }
+    definition: "面向用户长期生活、工作或项目中与“自我反思”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“自我反思”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“自我反思”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“自我反思”归属。"]
+    aliases: { zh: ["自我反思"], en: ["Self Reflection"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“自我反思”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.habits_behavior
+    name: { zh: "习惯与行为", en: "Habits & Behavior" }
+    definition: "面向用户长期生活、工作或项目中与“习惯与行为”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“习惯与行为”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“习惯与行为”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“习惯与行为”归属。"]
+    aliases: { zh: ["习惯与行为"], en: ["Habits & Behavior"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“习惯与行为”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.personal_productivity
+    name: { zh: "个人效率", en: "Personal Productivity" }
+    definition: "面向用户长期生活、工作或项目中与“个人效率”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“个人效率”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“个人效率”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“个人效率”归属。"]
+    aliases: { zh: ["个人效率"], en: ["Personal Productivity"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“个人效率”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.life_planning
+    name: { zh: "人生规划", en: "Life Planning" }
+    definition: "面向用户长期生活、工作或项目中与“人生规划”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“人生规划”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“人生规划”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“人生规划”归属。"]
+    aliases: { zh: ["人生规划"], en: ["Life Planning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“人生规划”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.personal_direction.personal_admin
+    name: { zh: "个人事务管理", en: "Personal Administration" }
+    definition: "面向用户长期生活、工作或项目中与“个人事务管理”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“个人事务管理”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“个人事务管理”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“个人事务管理”归属。"]
+    aliases: { zh: ["个人事务管理"], en: ["Personal Administration"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“个人事务管理”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D01
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.parents_family
+    name: { zh: "父母与原生家庭", en: "Parents & Family of Origin" }
+    definition: "面向用户长期生活、工作或项目中与“父母与原生家庭”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“父母与原生家庭”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“父母与原生家庭”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“父母与原生家庭”归属。"]
+    aliases: { zh: ["父母与原生家庭"], en: ["Parents & Family of Origin"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“父母与原生家庭”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.siblings
+    name: { zh: "兄弟姐妹", en: "Siblings" }
+    definition: "面向用户长期生活、工作或项目中与“兄弟姐妹”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“兄弟姐妹”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“兄弟姐妹”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“兄弟姐妹”归属。"]
+    aliases: { zh: ["兄弟姐妹"], en: ["Siblings"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“兄弟姐妹”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.partner_relationship
+    name: { zh: "伴侣关系", en: "Partner Relationship" }
+    definition: "面向用户长期生活、工作或项目中与“伴侣关系”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“伴侣关系”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“伴侣关系”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“伴侣关系”归属。"]
+    aliases: { zh: ["伴侣关系"], en: ["Partner Relationship"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“伴侣关系”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.friendships
+    name: { zh: "朋友关系", en: "Friendships" }
+    definition: "面向用户长期生活、工作或项目中与“朋友关系”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“朋友关系”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“朋友关系”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“朋友关系”归属。"]
+    aliases: { zh: ["朋友关系"], en: ["Friendships"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“朋友关系”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.social_interaction
+    name: { zh: "社交互动", en: "Social Interaction" }
+    definition: "面向用户长期生活、工作或项目中与“社交互动”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“社交互动”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“社交互动”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“社交互动”归属。"]
+    aliases: { zh: ["社交互动"], en: ["Social Interaction"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“社交互动”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.conflict_boundaries
+    name: { zh: "人际冲突与边界", en: "Conflict & Boundaries" }
+    definition: "面向用户长期生活、工作或项目中与“人际冲突与边界”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“人际冲突与边界”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“人际冲突与边界”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“人际冲突与边界”归属。"]
+    aliases: { zh: ["人际冲突与边界"], en: ["Conflict & Boundaries"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“人际冲突与边界”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.caregiving_family_support
+    name: { zh: "家庭照护与支持", en: "Family Caregiving & Support" }
+    definition: "面向用户长期生活、工作或项目中与“家庭照护与支持”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“家庭照护与支持”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“家庭照护与支持”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“家庭照护与支持”归属。"]
+    aliases: { zh: ["家庭照护与支持"], en: ["Family Caregiving & Support"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“家庭照护与支持”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.family_relationships.pets
+    name: { zh: "宠物", en: "Pets" }
+    definition: "面向用户长期生活、工作或项目中与“宠物”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“宠物”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“宠物”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“宠物”归属。"]
+    aliases: { zh: ["宠物"], en: ["Pets"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“宠物”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D02
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.medical_care
+    name: { zh: "就医与医疗", en: "Medical Care" }
+    definition: "面向用户长期生活、工作或项目中与“就医与医疗”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“就医与医疗”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“就医与医疗”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“就医与医疗”归属。"]
+    aliases: { zh: ["就医与医疗"], en: ["Medical Care"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“就医与医疗”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.symptoms_conditions
+    name: { zh: "症状与健康状况", en: "Symptoms & Conditions" }
+    definition: "面向用户长期生活、工作或项目中与“症状与健康状况”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“症状与健康状况”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“症状与健康状况”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“症状与健康状况”归属。"]
+    aliases: { zh: ["症状与健康状况"], en: ["Symptoms & Conditions"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“症状与健康状况”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.medication_treatment
+    name: { zh: "药物与治疗", en: "Medication & Treatment" }
+    definition: "面向用户长期生活、工作或项目中与“药物与治疗”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“药物与治疗”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“药物与治疗”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“药物与治疗”归属。"]
+    aliases: { zh: ["药物与治疗"], en: ["Medication & Treatment"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“药物与治疗”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.mental_wellbeing
+    name: { zh: "心理与情绪", en: "Mental Wellbeing" }
+    definition: "面向用户长期生活、工作或项目中与“心理与情绪”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“心理与情绪”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“心理与情绪”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“心理与情绪”归属。"]
+    aliases: { zh: ["心理与情绪"], en: ["Mental Wellbeing"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“心理与情绪”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.fitness
+    name: { zh: "运动与体能", en: "Fitness" }
+    definition: "面向用户长期生活、工作或项目中与“运动与体能”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“运动与体能”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“运动与体能”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“运动与体能”归属。"]
+    aliases: { zh: ["运动与体能"], en: ["Fitness"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“运动与体能”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.nutrition
+    name: { zh: "饮食营养", en: "Nutrition" }
+    definition: "面向用户长期生活、工作或项目中与“饮食营养”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“饮食营养”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“饮食营养”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“饮食营养”归属。"]
+    aliases: { zh: ["饮食营养"], en: ["Nutrition"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“饮食营养”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.sleep
+    name: { zh: "睡眠", en: "Sleep" }
+    definition: "面向用户长期生活、工作或项目中与“睡眠”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“睡眠”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“睡眠”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“睡眠”归属。"]
+    aliases: { zh: ["睡眠"], en: ["Sleep"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“睡眠”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.health_wellbeing.preventive_health
+    name: { zh: "体检与预防健康", en: "Preventive Health" }
+    definition: "面向用户长期生活、工作或项目中与“体检与预防健康”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“体检与预防健康”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“体检与预防健康”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“体检与预防健康”归属。"]
+    aliases: { zh: ["体检与预防健康"], en: ["Preventive Health"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“体检与预防健康”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D03
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.academic_courses
+    name: { zh: "课程学习", en: "Academic Courses" }
+    definition: "面向用户长期生活、工作或项目中与“课程学习”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“课程学习”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“课程学习”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“课程学习”归属。"]
+    aliases: { zh: ["课程学习"], en: ["Academic Courses"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“课程学习”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.exams_assessments
+    name: { zh: "考试与测评", en: "Exams & Assessments" }
+    definition: "面向用户长期生活、工作或项目中与“考试与测评”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“考试与测评”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“考试与测评”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“考试与测评”归属。"]
+    aliases: { zh: ["考试与测评"], en: ["Exams & Assessments"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“考试与测评”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.thesis_research
+    name: { zh: "学位论文与科研", en: "Thesis & Research" }
+    definition: "面向用户长期生活、工作或项目中与“学位论文与科研”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“学位论文与科研”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“学位论文与科研”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“学位论文与科研”归属。"]
+    aliases: { zh: ["学位论文与科研"], en: ["Thesis & Research"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“学位论文与科研”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.reading_learning
+    name: { zh: "阅读与自学", en: "Reading & Self-learning" }
+    definition: "面向用户长期生活、工作或项目中与“阅读与自学”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“阅读与自学”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“阅读与自学”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“阅读与自学”归属。"]
+    aliases: { zh: ["阅读与自学"], en: ["Reading & Self-learning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“阅读与自学”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.language_learning
+    name: { zh: "语言学习", en: "Language Learning" }
+    definition: "面向用户长期生活、工作或项目中与“语言学习”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“语言学习”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“语言学习”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“语言学习”归属。"]
+    aliases: { zh: ["语言学习"], en: ["Language Learning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“语言学习”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.skill_learning
+    name: { zh: "技能学习", en: "Skill Learning" }
+    definition: "面向用户长期生活、工作或项目中与“技能学习”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“技能学习”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“技能学习”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“技能学习”归属。"]
+    aliases: { zh: ["技能学习"], en: ["Skill Learning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“技能学习”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.academic_admin
+    name: { zh: "学业事务", en: "Academic Administration" }
+    definition: "面向用户长期生活、工作或项目中与“学业事务”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“学业事务”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“学业事务”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“学业事务”归属。"]
+    aliases: { zh: ["学业事务"], en: ["Academic Administration"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“学业事务”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.education_learning.learning_methods
+    name: { zh: "学习方法", en: "Learning Methods" }
+    definition: "面向用户长期生活、工作或项目中与“学习方法”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“学习方法”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“学习方法”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“学习方法”归属。"]
+    aliases: { zh: ["学习方法"], en: ["Learning Methods"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“学习方法”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D04
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.job_search
+    name: { zh: "求职", en: "Job Search" }
+    definition: "面向用户长期生活、工作或项目中与“求职”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“求职”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“求职”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“求职”归属。"]
+    aliases: { zh: ["求职"], en: ["Job Search"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“求职”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.applications
+    name: { zh: "投递与申请", en: "Applications" }
+    definition: "面向用户长期生活、工作或项目中与“投递与申请”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“投递与申请”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“投递与申请”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“投递与申请”归属。"]
+    aliases: { zh: ["投递与申请"], en: ["Applications"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“投递与申请”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.interviews
+    name: { zh: "面试", en: "Interviews" }
+    definition: "面向用户长期生活、工作或项目中与“面试”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“面试”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“面试”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“面试”归属。"]
+    aliases: { zh: ["面试"], en: ["Interviews"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“面试”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.career_strategy
+    name: { zh: "职业规划", en: "Career Strategy" }
+    definition: "面向用户长期生活、工作或项目中与“职业规划”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“职业规划”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“职业规划”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“职业规划”归属。"]
+    aliases: { zh: ["职业规划"], en: ["Career Strategy"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“职业规划”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.workplace_daily
+    name: { zh: "工作日常", en: "Workplace" }
+    definition: "面向用户长期生活、工作或项目中与“工作日常”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“工作日常”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“工作日常”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“工作日常”归属。"]
+    aliases: { zh: ["工作日常"], en: ["Workplace"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“工作日常”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.compensation_benefits
+    name: { zh: "薪酬福利", en: "Compensation & Benefits" }
+    definition: "面向用户长期生活、工作或项目中与“薪酬福利”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“薪酬福利”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“薪酬福利”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“薪酬福利”归属。"]
+    aliases: { zh: ["薪酬福利"], en: ["Compensation & Benefits"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“薪酬福利”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.performance_growth
+    name: { zh: "工作绩效与成长", en: "Performance & Growth" }
+    definition: "面向用户长期生活、工作或项目中与“工作绩效与成长”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“工作绩效与成长”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“工作绩效与成长”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“工作绩效与成长”归属。"]
+    aliases: { zh: ["工作绩效与成长"], en: ["Performance & Growth"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“工作绩效与成长”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.career_work.networking_professional
+    name: { zh: "职业人脉", en: "Professional Networking" }
+    definition: "面向用户长期生活、工作或项目中与“职业人脉”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“职业人脉”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“职业人脉”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“职业人脉”归属。"]
+    aliases: { zh: ["职业人脉"], en: ["Professional Networking"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“职业人脉”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D05
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.project_planning
+    name: { zh: "项目规划", en: "Project Planning" }
+    definition: "面向用户长期生活、工作或项目中与“项目规划”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“项目规划”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“项目规划”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“项目规划”归属。"]
+    aliases: { zh: ["项目规划"], en: ["Project Planning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“项目规划”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.product_strategy
+    name: { zh: "产品策略", en: "Product Strategy" }
+    definition: "面向用户长期生活、工作或项目中与“产品策略”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“产品策略”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“产品策略”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“产品策略”归属。"]
+    aliases: { zh: ["产品策略"], en: ["Product Strategy"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“产品策略”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.product_requirements
+    name: { zh: "产品需求", en: "Product Requirements" }
+    definition: "面向用户长期生活、工作或项目中与“产品需求”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“产品需求”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“产品需求”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“产品需求”归属。"]
+    aliases: { zh: ["产品需求"], en: ["Product Requirements"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“产品需求”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.ux_user_research
+    name: { zh: "用户研究与体验", en: "User Research & Experience" }
+    definition: "面向用户长期生活、工作或项目中与“用户研究与体验”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“用户研究与体验”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“用户研究与体验”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“用户研究与体验”归属。"]
+    aliases: { zh: ["用户研究与体验"], en: ["User Research & Experience"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“用户研究与体验”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.roadmap_prioritization
+    name: { zh: "路线图与优先级", en: "Roadmap & Prioritization" }
+    definition: "面向用户长期生活、工作或项目中与“路线图与优先级”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“路线图与优先级”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“路线图与优先级”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“路线图与优先级”归属。"]
+    aliases: { zh: ["路线图与优先级"], en: ["Roadmap & Prioritization"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“路线图与优先级”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.engineering_execution
+    name: { zh: "工程实现", en: "Engineering Execution" }
+    definition: "面向用户长期生活、工作或项目中与“工程实现”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“工程实现”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“工程实现”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“工程实现”归属。"]
+    aliases: { zh: ["工程实现"], en: ["Engineering Execution"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“工程实现”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.testing_quality
+    name: { zh: "测试与质量", en: "Testing & Quality" }
+    definition: "面向用户长期生活、工作或项目中与“测试与质量”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“测试与质量”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“测试与质量”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“测试与质量”归属。"]
+    aliases: { zh: ["测试与质量"], en: ["Testing & Quality"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“测试与质量”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.projects_products.launch_operations
+    name: { zh: "发布与运营", en: "Launch & Operations" }
+    definition: "面向用户长期生活、工作或项目中与“发布与运营”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“发布与运营”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“发布与运营”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“发布与运营”归属。"]
+    aliases: { zh: ["发布与运营"], en: ["Launch & Operations"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“发布与运营”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D06
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.ai_models_tools
+    name: { zh: "AI模型与工具", en: "AI Models & Tools" }
+    definition: "面向用户长期生活、工作或项目中与“AI模型与工具”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“AI模型与工具”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“AI模型与工具”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“AI模型与工具”归属。"]
+    aliases: { zh: ["AI模型与工具"], en: ["AI Models & Tools"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“AI模型与工具”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.prompt_workflows
+    name: { zh: "AI工作流与提示设计", en: "AI Workflows & Prompting" }
+    definition: "面向用户长期生活、工作或项目中与“AI工作流与提示设计”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“AI工作流与提示设计”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“AI工作流与提示设计”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“AI工作流与提示设计”归属。"]
+    aliases: { zh: ["AI工作流与提示设计"], en: ["AI Workflows & Prompting"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“AI工作流与提示设计”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.coding_software_development
+    name: { zh: "编程与软件开发", en: "Software Development" }
+    definition: "面向用户长期生活、工作或项目中与“编程与软件开发”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“编程与软件开发”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“编程与软件开发”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“编程与软件开发”归属。"]
+    aliases: { zh: ["编程与软件开发"], en: ["Software Development"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“编程与软件开发”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.debugging_troubleshooting
+    name: { zh: "调试与故障排查", en: "Debugging & Troubleshooting" }
+    definition: "面向用户长期生活、工作或项目中与“调试与故障排查”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“调试与故障排查”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“调试与故障排查”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“调试与故障排查”归属。"]
+    aliases: { zh: ["调试与故障排查"], en: ["Debugging & Troubleshooting"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“调试与故障排查”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.hardware_devices
+    name: { zh: "电脑与硬件设备", en: "Hardware & Devices" }
+    definition: "面向用户长期生活、工作或项目中与“电脑与硬件设备”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“电脑与硬件设备”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“电脑与硬件设备”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“电脑与硬件设备”归属。"]
+    aliases: { zh: ["电脑与硬件设备"], en: ["Hardware & Devices"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“电脑与硬件设备”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.networking_connectivity
+    name: { zh: "网络与连接", en: "Networking & Connectivity" }
+    definition: "面向用户长期生活、工作或项目中与“网络与连接”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“网络与连接”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“网络与连接”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“网络与连接”归属。"]
+    aliases: { zh: ["网络与连接"], en: ["Networking & Connectivity"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“网络与连接”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.cybersecurity_privacy
+    name: { zh: "信息安全与隐私", en: "Cybersecurity & Privacy" }
+    definition: "面向用户长期生活、工作或项目中与“信息安全与隐私”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“信息安全与隐私”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“信息安全与隐私”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“信息安全与隐私”归属。"]
+    aliases: { zh: ["信息安全与隐私"], en: ["Cybersecurity & Privacy"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“信息安全与隐私”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.ai_computing.data_systems
+    name: { zh: "数据与信息系统", en: "Data & Information Systems" }
+    definition: "面向用户长期生活、工作或项目中与“数据与信息系统”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“数据与信息系统”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“数据与信息系统”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“数据与信息系统”归属。"]
+    aliases: { zh: ["数据与信息系统"], en: ["Data & Information Systems"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“数据与信息系统”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D07
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.budgeting_cashflow
+    name: { zh: "预算与现金流", en: "Budgeting & Cash Flow" }
+    definition: "面向用户长期生活、工作或项目中与“预算与现金流”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“预算与现金流”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“预算与现金流”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“预算与现金流”归属。"]
+    aliases: { zh: ["预算与现金流"], en: ["Budgeting & Cash Flow"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“预算与现金流”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.banking_payments
+    name: { zh: "银行与支付", en: "Banking & Payments" }
+    definition: "面向用户长期生活、工作或项目中与“银行与支付”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“银行与支付”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“银行与支付”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“银行与支付”归属。"]
+    aliases: { zh: ["银行与支付"], en: ["Banking & Payments"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“银行与支付”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.investing
+    name: { zh: "投资", en: "Investing" }
+    definition: "面向用户长期生活、工作或项目中与“投资”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“投资”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“投资”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“投资”归属。"]
+    aliases: { zh: ["投资"], en: ["Investing"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“投资”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.debt_credit
+    name: { zh: "债务与信用", en: "Debt & Credit" }
+    definition: "面向用户长期生活、工作或项目中与“债务与信用”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“债务与信用”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“债务与信用”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“债务与信用”归属。"]
+    aliases: { zh: ["债务与信用"], en: ["Debt & Credit"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“债务与信用”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.taxes_insurance
+    name: { zh: "税务与保险", en: "Taxes & Insurance" }
+    definition: "面向用户长期生活、工作或项目中与“税务与保险”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“税务与保险”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“税务与保险”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“税务与保险”归属。"]
+    aliases: { zh: ["税务与保险"], en: ["Taxes & Insurance"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“税务与保险”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.subscriptions_recurring
+    name: { zh: "订阅与经常性支出", en: "Subscriptions & Recurring Spend" }
+    definition: "面向用户长期生活、工作或项目中与“订阅与经常性支出”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“订阅与经常性支出”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“订阅与经常性支出”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“订阅与经常性支出”归属。"]
+    aliases: { zh: ["订阅与经常性支出"], en: ["Subscriptions & Recurring Spend"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“订阅与经常性支出”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.shopping_research
+    name: { zh: "商品研究与购物", en: "Shopping & Product Research" }
+    definition: "面向用户长期生活、工作或项目中与“商品研究与购物”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“商品研究与购物”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“商品研究与购物”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“商品研究与购物”归属。"]
+    aliases: { zh: ["商品研究与购物"], en: ["Shopping & Product Research"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“商品研究与购物”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.finance_purchases.major_purchases
+    name: { zh: "大额购买", en: "Major Purchases" }
+    definition: "面向用户长期生活、工作或项目中与“大额购买”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“大额购买”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“大额购买”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“大额购买”归属。"]
+    aliases: { zh: ["大额购买"], en: ["Major Purchases"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“大额购买”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D08
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.housing
+    name: { zh: "居住与住房", en: "Housing" }
+    definition: "面向用户长期生活、工作或项目中与“居住与住房”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“居住与住房”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“居住与住房”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“居住与住房”归属。"]
+    aliases: { zh: ["居住与住房"], en: ["Housing"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“居住与住房”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.home_improvement
+    name: { zh: "家居与维修", en: "Home Improvement" }
+    definition: "面向用户长期生活、工作或项目中与“家居与维修”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“家居与维修”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“家居与维修”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“家居与维修”归属。"]
+    aliases: { zh: ["家居与维修"], en: ["Home Improvement"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“家居与维修”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.utilities_services
+    name: { zh: "水电网与家庭服务", en: "Utilities & Home Services" }
+    definition: "面向用户长期生活、工作或项目中与“水电网与家庭服务”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“水电网与家庭服务”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“水电网与家庭服务”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“水电网与家庭服务”归属。"]
+    aliases: { zh: ["水电网与家庭服务"], en: ["Utilities & Home Services"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“水电网与家庭服务”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.chores_cleaning
+    name: { zh: "家务与清洁", en: "Chores & Cleaning" }
+    definition: "面向用户长期生活、工作或项目中与“家务与清洁”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“家务与清洁”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“家务与清洁”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“家务与清洁”归属。"]
+    aliases: { zh: ["家务与清洁"], en: ["Chores & Cleaning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“家务与清洁”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.possessions_organization
+    name: { zh: "物品整理", en: "Possessions & Organization" }
+    definition: "面向用户长期生活、工作或项目中与“物品整理”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“物品整理”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“物品整理”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“物品整理”归属。"]
+    aliases: { zh: ["物品整理"], en: ["Possessions & Organization"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“物品整理”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.local_errands
+    name: { zh: "日常跑腿与办事", en: "Local Errands" }
+    definition: "面向用户长期生活、工作或项目中与“日常跑腿与办事”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“日常跑腿与办事”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“日常跑腿与办事”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“日常跑腿与办事”归属。"]
+    aliases: { zh: ["日常跑腿与办事"], en: ["Local Errands"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“日常跑腿与办事”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.transportation_ownership
+    name: { zh: "车辆与个人交通工具", en: "Vehicle & Personal Transport" }
+    definition: "面向用户长期生活、工作或项目中与“车辆与个人交通工具”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“车辆与个人交通工具”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“车辆与个人交通工具”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“车辆与个人交通工具”归属。"]
+    aliases: { zh: ["车辆与个人交通工具"], en: ["Vehicle & Personal Transport"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“车辆与个人交通工具”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.home_daily.moving_relocation
+    name: { zh: "搬家与迁居", en: "Moving & Relocation" }
+    definition: "面向用户长期生活、工作或项目中与“搬家与迁居”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“搬家与迁居”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“搬家与迁居”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“搬家与迁居”归属。"]
+    aliases: { zh: ["搬家与迁居"], en: ["Moving & Relocation"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“搬家与迁居”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D09
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.trip_planning
+    name: { zh: "旅行规划", en: "Trip Planning" }
+    definition: "面向用户长期生活、工作或项目中与“旅行规划”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“旅行规划”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“旅行规划”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“旅行规划”归属。"]
+    aliases: { zh: ["旅行规划"], en: ["Trip Planning"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“旅行规划”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.transport_travel
+    name: { zh: "旅行交通", en: "Travel Transport" }
+    definition: "面向用户长期生活、工作或项目中与“旅行交通”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“旅行交通”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“旅行交通”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“旅行交通”归属。"]
+    aliases: { zh: ["旅行交通"], en: ["Travel Transport"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“旅行交通”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.lodging
+    name: { zh: "住宿", en: "Lodging" }
+    definition: "面向用户长期生活、工作或项目中与“住宿”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“住宿”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“住宿”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“住宿”归属。"]
+    aliases: { zh: ["住宿"], en: ["Lodging"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“住宿”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.restaurants_travel
+    name: { zh: "旅行餐饮", en: "Travel Dining" }
+    definition: "面向用户长期生活、工作或项目中与“旅行餐饮”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“旅行餐饮”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“旅行餐饮”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“旅行餐饮”归属。"]
+    aliases: { zh: ["旅行餐饮"], en: ["Travel Dining"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“旅行餐饮”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.attractions_activities
+    name: { zh: "景点与活动", en: "Attractions & Activities" }
+    definition: "面向用户长期生活、工作或项目中与“景点与活动”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“景点与活动”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“景点与活动”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“景点与活动”归属。"]
+    aliases: { zh: ["景点与活动"], en: ["Attractions & Activities"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“景点与活动”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.visas_border
+    name: { zh: "签证与出入境", en: "Visas & Borders" }
+    definition: "面向用户长期生活、工作或项目中与“签证与出入境”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“签证与出入境”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“签证与出入境”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“签证与出入境”归属。"]
+    aliases: { zh: ["签证与出入境"], en: ["Visas & Borders"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“签证与出入境”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.local_navigation
+    name: { zh: "本地导航", en: "Local Navigation" }
+    definition: "面向用户长期生活、工作或项目中与“本地导航”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“本地导航”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“本地导航”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“本地导航”归属。"]
+    aliases: { zh: ["本地导航"], en: ["Local Navigation"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“本地导航”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.travel_places.trip_records
+    name: { zh: "旅行记录", en: "Trip Records" }
+    definition: "面向用户长期生活、工作或项目中与“旅行记录”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“旅行记录”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“旅行记录”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“旅行记录”归属。"]
+    aliases: { zh: ["旅行记录"], en: ["Trip Records"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“旅行记录”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D10
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.music
+    name: { zh: "音乐", en: "Music" }
+    definition: "面向用户长期生活、工作或项目中与“音乐”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“音乐”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“音乐”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“音乐”归属。"]
+    aliases: { zh: ["音乐"], en: ["Music"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“音乐”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.film_tv
+    name: { zh: "电影与电视剧", en: "Film & TV" }
+    definition: "面向用户长期生活、工作或项目中与“电影与电视剧”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“电影与电视剧”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“电影与电视剧”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“电影与电视剧”归属。"]
+    aliases: { zh: ["电影与电视剧"], en: ["Film & TV"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“电影与电视剧”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.books_literature
+    name: { zh: "书籍与文学", en: "Books & Literature" }
+    definition: "面向用户长期生活、工作或项目中与“书籍与文学”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“书籍与文学”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“书籍与文学”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“书籍与文学”归属。"]
+    aliases: { zh: ["书籍与文学"], en: ["Books & Literature"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“书籍与文学”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.games
+    name: { zh: "游戏", en: "Games" }
+    definition: "面向用户长期生活、工作或项目中与“游戏”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“游戏”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“游戏”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“游戏”归属。"]
+    aliases: { zh: ["游戏"], en: ["Games"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“游戏”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.art_culture
+    name: { zh: "艺术与文化", en: "Arts & Culture" }
+    definition: "面向用户长期生活、工作或项目中与“艺术与文化”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“艺术与文化”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“艺术与文化”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“艺术与文化”归属。"]
+    aliases: { zh: ["艺术与文化"], en: ["Arts & Culture"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“艺术与文化”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.news_media
+    name: { zh: "新闻与媒体", en: "News & Media" }
+    definition: "面向用户长期生活、工作或项目中与“新闻与媒体”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“新闻与媒体”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“新闻与媒体”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“新闻与媒体”归属。"]
+    aliases: { zh: ["新闻与媒体"], en: ["News & Media"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“新闻与媒体”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.online_culture
+    name: { zh: "网络文化", en: "Online Culture" }
+    definition: "面向用户长期生活、工作或项目中与“网络文化”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“网络文化”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“网络文化”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“网络文化”归属。"]
+    aliases: { zh: ["网络文化"], en: ["Online Culture"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“网络文化”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.media_culture.live_events
+    name: { zh: "现场演出与文化活动", en: "Live Cultural Events" }
+    definition: "面向用户长期生活、工作或项目中与“现场演出与文化活动”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“现场演出与文化活动”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“现场演出与文化活动”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“现场演出与文化活动”归属。"]
+    aliases: { zh: ["现场演出与文化活动"], en: ["Live Cultural Events"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“现场演出与文化活动”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D11
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.email_messages
+    name: { zh: "邮件与消息", en: "Email & Messages" }
+    definition: "面向用户长期生活、工作或项目中与“邮件与消息”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“邮件与消息”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“邮件与消息”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“邮件与消息”归属。"]
+    aliases: { zh: ["邮件与消息"], en: ["Email & Messages"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“邮件与消息”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.writing_editing
+    name: { zh: "写作与编辑", en: "Writing & Editing" }
+    definition: "面向用户长期生活、工作或项目中与“写作与编辑”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“写作与编辑”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“写作与编辑”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“写作与编辑”归属。"]
+    aliases: { zh: ["写作与编辑"], en: ["Writing & Editing"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“写作与编辑”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.translation
+    name: { zh: "翻译", en: "Translation" }
+    definition: "面向用户长期生活、工作或项目中与“翻译”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“翻译”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“翻译”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“翻译”归属。"]
+    aliases: { zh: ["翻译"], en: ["Translation"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“翻译”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.presentations
+    name: { zh: "演示与汇报", en: "Presentations" }
+    definition: "面向用户长期生活、工作或项目中与“演示与汇报”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“演示与汇报”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“演示与汇报”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“演示与汇报”归属。"]
+    aliases: { zh: ["演示与汇报"], en: ["Presentations"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“演示与汇报”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.documents_reports
+    name: { zh: "文档与报告", en: "Documents & Reports" }
+    definition: "面向用户长期生活、工作或项目中与“文档与报告”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“文档与报告”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“文档与报告”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“文档与报告”归属。"]
+    aliases: { zh: ["文档与报告"], en: ["Documents & Reports"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“文档与报告”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.public_posts
+    name: { zh: "社交媒体与公开发布", en: "Public Posts" }
+    definition: "面向用户长期生活、工作或项目中与“社交媒体与公开发布”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“社交媒体与公开发布”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“社交媒体与公开发布”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“社交媒体与公开发布”归属。"]
+    aliases: { zh: ["社交媒体与公开发布"], en: ["Public Posts"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“社交媒体与公开发布”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.speaking_conversation
+    name: { zh: "口头表达与对话", en: "Speaking & Conversation" }
+    definition: "面向用户长期生活、工作或项目中与“口头表达与对话”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“口头表达与对话”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“口头表达与对话”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“口头表达与对话”归属。"]
+    aliases: { zh: ["口头表达与对话"], en: ["Speaking & Conversation"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“口头表达与对话”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.communication_writing.negotiation_persuasion
+    name: { zh: "谈判与说服", en: "Negotiation & Persuasion" }
+    definition: "面向用户长期生活、工作或项目中与“谈判与说服”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“谈判与说服”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“谈判与说服”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“谈判与说服”归属。"]
+    aliases: { zh: ["谈判与说服"], en: ["Negotiation & Persuasion"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“谈判与说服”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D12
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.legal_questions
+    name: { zh: "法律问题", en: "Legal Questions" }
+    definition: "面向用户长期生活、工作或项目中与“法律问题”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“法律问题”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“法律问题”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“法律问题”归属。"]
+    aliases: { zh: ["法律问题"], en: ["Legal Questions"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“法律问题”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.contracts_agreements
+    name: { zh: "合同与协议", en: "Contracts & Agreements" }
+    definition: "面向用户长期生活、工作或项目中与“合同与协议”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“合同与协议”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“合同与协议”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“合同与协议”归属。"]
+    aliases: { zh: ["合同与协议"], en: ["Contracts & Agreements"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“合同与协议”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.complaints_disputes
+    name: { zh: "投诉与纠纷", en: "Complaints & Disputes" }
+    definition: "面向用户长期生活、工作或项目中与“投诉与纠纷”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“投诉与纠纷”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“投诉与纠纷”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“投诉与纠纷”归属。"]
+    aliases: { zh: ["投诉与纠纷"], en: ["Complaints & Disputes"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“投诉与纠纷”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.government_services
+    name: { zh: "政务与公共服务", en: "Government Services" }
+    definition: "面向用户长期生活、工作或项目中与“政务与公共服务”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“政务与公共服务”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“政务与公共服务”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“政务与公共服务”归属。"]
+    aliases: { zh: ["政务与公共服务"], en: ["Government Services"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“政务与公共服务”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.identity_documents
+    name: { zh: "身份与证件", en: "Identity Documents" }
+    definition: "面向用户长期生活、工作或项目中与“身份与证件”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“身份与证件”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“身份与证件”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“身份与证件”归属。"]
+    aliases: { zh: ["身份与证件"], en: ["Identity Documents"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“身份与证件”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.immigration_residency
+    name: { zh: "移民与居留", en: "Immigration & Residency" }
+    definition: "面向用户长期生活、工作或项目中与“移民与居留”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“移民与居留”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“移民与居留”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“移民与居留”归属。"]
+    aliases: { zh: ["移民与居留"], en: ["Immigration & Residency"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“移民与居留”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.civic_public_policy
+    name: { zh: "公共政策与社会议题", en: "Public Policy & Social Issues" }
+    definition: "面向用户长期生活、工作或项目中与“公共政策与社会议题”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“公共政策与社会议题”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“公共政策与社会议题”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“公共政策与社会议题”归属。"]
+    aliases: { zh: ["公共政策与社会议题"], en: ["Public Policy & Social Issues"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“公共政策与社会议题”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.legal_civic.consumer_rights
+    name: { zh: "消费者权益", en: "Consumer Rights" }
+    definition: "面向用户长期生活、工作或项目中与“消费者权益”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“消费者权益”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“消费者权益”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“消费者权益”归属。"]
+    aliases: { zh: ["消费者权益"], en: ["Consumer Rights"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“消费者权益”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D13
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.physics
+    name: { zh: "物理", en: "Physics" }
+    definition: "面向用户长期生活、工作或项目中与“物理”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“物理”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“物理”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“物理”归属。"]
+    aliases: { zh: ["物理"], en: ["Physics"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“物理”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.mathematics
+    name: { zh: "数学", en: "Mathematics" }
+    definition: "面向用户长期生活、工作或项目中与“数学”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“数学”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“数学”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“数学”归属。"]
+    aliases: { zh: ["数学"], en: ["Mathematics"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“数学”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.computer_science
+    name: { zh: "计算机科学", en: "Computer Science" }
+    definition: "面向用户长期生活、工作或项目中与“计算机科学”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“计算机科学”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“计算机科学”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“计算机科学”归属。"]
+    aliases: { zh: ["计算机科学"], en: ["Computer Science"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“计算机科学”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.engineering
+    name: { zh: "工程技术", en: "Engineering" }
+    definition: "面向用户长期生活、工作或项目中与“工程技术”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“工程技术”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“工程技术”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“工程技术”归属。"]
+    aliases: { zh: ["工程技术"], en: ["Engineering"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“工程技术”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.biology_life_science
+    name: { zh: "生物与生命科学", en: "Biology & Life Science" }
+    definition: "面向用户长期生活、工作或项目中与“生物与生命科学”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“生物与生命科学”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“生物与生命科学”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“生物与生命科学”归属。"]
+    aliases: { zh: ["生物与生命科学"], en: ["Biology & Life Science"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“生物与生命科学”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.medicine_knowledge
+    name: { zh: "医学知识", en: "Medical Knowledge" }
+    definition: "面向用户长期生活、工作或项目中与“医学知识”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“医学知识”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“医学知识”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“医学知识”归属。"]
+    aliases: { zh: ["医学知识"], en: ["Medical Knowledge"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“医学知识”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.chemistry_materials
+    name: { zh: "化学与材料", en: "Chemistry & Materials" }
+    definition: "面向用户长期生活、工作或项目中与“化学与材料”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“化学与材料”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“化学与材料”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“化学与材料”归属。"]
+    aliases: { zh: ["化学与材料"], en: ["Chemistry & Materials"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“化学与材料”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.science_technical.statistics_data_analysis
+    name: { zh: "统计与数据分析", en: "Statistics & Data Analysis" }
+    definition: "面向用户长期生活、工作或项目中与“统计与数据分析”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“统计与数据分析”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“统计与数据分析”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“统计与数据分析”归属。"]
+    aliases: { zh: ["统计与数据分析"], en: ["Statistics & Data Analysis"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“统计与数据分析”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D14
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.visual_design
+    name: { zh: "视觉设计", en: "Visual Design" }
+    definition: "面向用户长期生活、工作或项目中与“视觉设计”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“视觉设计”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“视觉设计”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“视觉设计”归属。"]
+    aliases: { zh: ["视觉设计"], en: ["Visual Design"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“视觉设计”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.ux_ui_design
+    name: { zh: "UX/UI设计", en: "UX/UI Design" }
+    definition: "面向用户长期生活、工作或项目中与“UX/UI设计”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“UX/UI设计”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“UX/UI设计”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“UX/UI设计”归属。"]
+    aliases: { zh: ["UX/UI设计"], en: ["UX/UI Design"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“UX/UI设计”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.branding_identity
+    name: { zh: "品牌与视觉识别", en: "Branding & Identity" }
+    definition: "面向用户长期生活、工作或项目中与“品牌与视觉识别”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“品牌与视觉识别”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“品牌与视觉识别”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“品牌与视觉识别”归属。"]
+    aliases: { zh: ["品牌与视觉识别"], en: ["Branding & Identity"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“品牌与视觉识别”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.photography
+    name: { zh: "摄影", en: "Photography" }
+    definition: "面向用户长期生活、工作或项目中与“摄影”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“摄影”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“摄影”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“摄影”归属。"]
+    aliases: { zh: ["摄影"], en: ["Photography"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“摄影”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.illustration_image_creation
+    name: { zh: "插画与图像创作", en: "Illustration & Image Creation" }
+    definition: "面向用户长期生活、工作或项目中与“插画与图像创作”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“插画与图像创作”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“插画与图像创作”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“插画与图像创作”归属。"]
+    aliases: { zh: ["插画与图像创作"], en: ["Illustration & Image Creation"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“插画与图像创作”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.creative_writing
+    name: { zh: "创意写作", en: "Creative Writing" }
+    definition: "面向用户长期生活、工作或项目中与“创意写作”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“创意写作”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“创意写作”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“创意写作”归属。"]
+    aliases: { zh: ["创意写作"], en: ["Creative Writing"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“创意写作”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.video_audio_creation
+    name: { zh: "视频与音频创作", en: "Video & Audio Creation" }
+    definition: "面向用户长期生活、工作或项目中与“视频与音频创作”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“视频与音频创作”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“视频与音频创作”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“视频与音频创作”归属。"]
+    aliases: { zh: ["视频与音频创作"], en: ["Video & Audio Creation"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“视频与音频创作”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.creative_design.ideation_concepts
+    name: { zh: "创意构思", en: "Ideation & Concepts" }
+    definition: "面向用户长期生活、工作或项目中与“创意构思”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“创意构思”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“创意构思”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“创意构思”归属。"]
+    aliases: { zh: ["创意构思"], en: ["Ideation & Concepts"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“创意构思”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D15
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.entrepreneurship
+    name: { zh: "创业", en: "Entrepreneurship" }
+    definition: "面向用户长期生活、工作或项目中与“创业”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“创业”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“创业”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“创业”归属。"]
+    aliases: { zh: ["创业"], en: ["Entrepreneurship"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“创业”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.business_strategy
+    name: { zh: "商业战略", en: "Business Strategy" }
+    definition: "面向用户长期生活、工作或项目中与“商业战略”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“商业战略”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“商业战略”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“商业战略”归属。"]
+    aliases: { zh: ["商业战略"], en: ["Business Strategy"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“商业战略”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.market_research
+    name: { zh: "市场研究", en: "Market Research" }
+    definition: "面向用户长期生活、工作或项目中与“市场研究”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“市场研究”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“市场研究”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“市场研究”归属。"]
+    aliases: { zh: ["市场研究"], en: ["Market Research"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“市场研究”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.marketing_growth
+    name: { zh: "营销与增长", en: "Marketing & Growth" }
+    definition: "面向用户长期生活、工作或项目中与“营销与增长”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“营销与增长”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“营销与增长”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“营销与增长”归属。"]
+    aliases: { zh: ["营销与增长"], en: ["Marketing & Growth"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“营销与增长”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.sales
+    name: { zh: "商务与销售", en: "Sales" }
+    definition: "面向用户长期生活、工作或项目中与“商务与销售”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“商务与销售”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“商务与销售”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“商务与销售”归属。"]
+    aliases: { zh: ["商务与销售"], en: ["Sales"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“商务与销售”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.operations_process
+    name: { zh: "业务运营与流程", en: "Operations & Process" }
+    definition: "面向用户长期生活、工作或项目中与“业务运营与流程”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“业务运营与流程”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“业务运营与流程”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“业务运营与流程”归属。"]
+    aliases: { zh: ["业务运营与流程"], en: ["Operations & Process"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“业务运营与流程”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.customer_feedback
+    name: { zh: "客户反馈与客服", en: "Customer Feedback & Support" }
+    definition: "面向用户长期生活、工作或项目中与“客户反馈与客服”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“客户反馈与客服”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“客户反馈与客服”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“客户反馈与客服”归属。"]
+    aliases: { zh: ["客户反馈与客服"], en: ["Customer Feedback & Support"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“客户反馈与客服”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.business_entrepreneurship.partnerships
+    name: { zh: "商务合作", en: "Partnerships" }
+    definition: "面向用户长期生活、工作或项目中与“商务合作”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“商务合作”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“商务合作”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“商务合作”归属。"]
+    aliases: { zh: ["商务合作"], en: ["Partnerships"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“商务合作”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D16
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.calendar_scheduling
+    name: { zh: "日程与排期", en: "Calendar & Scheduling" }
+    definition: "面向用户长期生活、工作或项目中与“日程与排期”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“日程与排期”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“日程与排期”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“日程与排期”归属。"]
+    aliases: { zh: ["日程与排期"], en: ["Calendar & Scheduling"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“日程与排期”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.reminders_deadlines
+    name: { zh: "提醒与截止期", en: "Reminders & Deadlines" }
+    definition: "面向用户长期生活、工作或项目中与“提醒与截止期”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“提醒与截止期”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“提醒与截止期”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“提醒与截止期”归属。"]
+    aliases: { zh: ["提醒与截止期"], en: ["Reminders & Deadlines"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“提醒与截止期”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.time_management
+    name: { zh: "时间管理", en: "Time Management" }
+    definition: "面向用户长期生活、工作或项目中与“时间管理”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“时间管理”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“时间管理”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“时间管理”归属。"]
+    aliases: { zh: ["时间管理"], en: ["Time Management"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“时间管理”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.routines_recurring
+    name: { zh: "周期性安排", en: "Recurring Routines" }
+    definition: "面向用户长期生活、工作或项目中与“周期性安排”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“周期性安排”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“周期性安排”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“周期性安排”归属。"]
+    aliases: { zh: ["周期性安排"], en: ["Recurring Routines"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“周期性安排”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.celebrations_holidays
+    name: { zh: "节日与庆祝", en: "Celebrations & Holidays" }
+    definition: "面向用户长期生活、工作或项目中与“节日与庆祝”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“节日与庆祝”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“节日与庆祝”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“节日与庆祝”归属。"]
+    aliases: { zh: ["节日与庆祝"], en: ["Celebrations & Holidays"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“节日与庆祝”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.life_events
+    name: { zh: "人生事件", en: "Life Events" }
+    definition: "面向用户长期生活、工作或项目中与“人生事件”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“人生事件”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“人生事件”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“人生事件”归属。"]
+    aliases: { zh: ["人生事件"], en: ["Life Events"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“人生事件”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.appointments_bookings
+    name: { zh: "预约与预订", en: "Appointments & Bookings" }
+    definition: "面向用户长期生活、工作或项目中与“预约与预订”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“预约与预订”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“预约与预订”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“预约与预订”归属。"]
+    aliases: { zh: ["预约与预订"], en: ["Appointments & Bookings"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“预约与预订”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.time_events.plans_checklists
+    name: { zh: "计划与清单", en: "Plans & Checklists" }
+    definition: "面向用户长期生活、工作或项目中与“计划与清单”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“计划与清单”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“计划与清单”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“计划与清单”归属。"]
+    aliases: { zh: ["计划与清单"], en: ["Plans & Checklists"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“计划与清单”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D17
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.notes_knowledge_management
+    name: { zh: "笔记与知识管理", en: "Notes & Knowledge Management" }
+    definition: "面向用户长期生活、工作或项目中与“笔记与知识管理”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“笔记与知识管理”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“笔记与知识管理”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“笔记与知识管理”归属。"]
+    aliases: { zh: ["笔记与知识管理"], en: ["Notes & Knowledge Management"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“笔记与知识管理”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.personal_archive
+    name: { zh: "个人档案", en: "Personal Archive" }
+    definition: "面向用户长期生活、工作或项目中与“个人档案”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“个人档案”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“个人档案”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“个人档案”归属。"]
+    aliases: { zh: ["个人档案"], en: ["Personal Archive"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“个人档案”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.journaling
+    name: { zh: "日记与记录", en: "Journaling" }
+    definition: "面向用户长期生活、工作或项目中与“日记与记录”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“日记与记录”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“日记与记录”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“日记与记录”归属。"]
+    aliases: { zh: ["日记与记录"], en: ["Journaling"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“日记与记录”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.photos_media_archive
+    name: { zh: "照片与媒体归档", en: "Photo & Media Archive" }
+    definition: "面向用户长期生活、工作或项目中与“照片与媒体归档”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“照片与媒体归档”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“照片与媒体归档”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“照片与媒体归档”归属。"]
+    aliases: { zh: ["照片与媒体归档"], en: ["Photo & Media Archive"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“照片与媒体归档”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.files_documents_storage
+    name: { zh: "文件与文档存储", en: "File & Document Storage" }
+    definition: "面向用户长期生活、工作或项目中与“文件与文档存储”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“文件与文档存储”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“文件与文档存储”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“文件与文档存储”归属。"]
+    aliases: { zh: ["文件与文档存储"], en: ["File & Document Storage"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“文件与文档存储”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.backup_export
+    name: { zh: "备份与导出", en: "Backup & Export" }
+    definition: "面向用户长期生活、工作或项目中与“备份与导出”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“备份与导出”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“备份与导出”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“备份与导出”归属。"]
+    aliases: { zh: ["备份与导出"], en: ["Backup & Export"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“备份与导出”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.memory_context
+    name: { zh: "AI记忆与上下文", en: "AI Memory & Context" }
+    definition: "面向用户长期生活、工作或项目中与“AI记忆与上下文”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“AI记忆与上下文”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“AI记忆与上下文”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“AI记忆与上下文”归属。"]
+    aliases: { zh: ["AI记忆与上下文"], en: ["AI Memory & Context"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“AI记忆与上下文”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"
+  - topic_id: sys.knowledge_memory.provenance_history
+    name: { zh: "来源、版本与历史", en: "Provenance, Versions & History" }
+    definition: "面向用户长期生活、工作或项目中与“来源、版本与历史”直接相关的持续性信息、问题、决策、资料和行动。"
+    inclusion_boundary: ["输入的主要语义目标、持续事项或需要追踪的对象明确属于“来源、版本与历史”。"]
+    exclusion_boundary: ["仅在背景中偶然提及“来源、版本与历史”，而主要意图属于其他主题。", "只因发生在同一会话、时间窗口或项目中，不构成“来源、版本与历史”归属。"]
+    aliases: { zh: ["来源、版本与历史"], en: ["Provenance, Versions & History"] }
+    representative_examples: ["持续讨论、比较、记录或执行与“来源、版本与历史”直接相关的事项。"]
+    confusing_neighbor_topic_ids: []
+    internal_domain: D18
+    lifecycle: ACTIVE
+    boundary_status: PROVISIONAL
+    introduced_in: "0.2.0"

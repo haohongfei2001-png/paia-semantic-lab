@@ -1,0 +1,23 @@
+package_version: "0.2.0"
+phase: PRE_IMPLEMENTATION_DESIGN_FROZEN
+plan_only: true
+production_paia_modified: false
+real_archive_read: false
+real_input_api_egress: false
+model_training_started: false
+topic_catalog:
+  version: "0.2.0"
+  status: DRAFT
+  system_topics: 144
+  internal_domains: 18
+rounds:
+  SEM-00: { execution_status: READY, capability_verdict: UNTESTED, explicit_execution_authorized: false }
+  SEM-01: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-00 }
+  SEM-02: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-01 }
+  SEM-03: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-02 }
+  SEM-04: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-03 }
+  SEM-05: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-04 }
+  SEM-06: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-05 }
+  SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06 }
+next_action: "Await explicit authorization to execute SEM-00. Do not auto-start."
+product_owner_blockers: []
