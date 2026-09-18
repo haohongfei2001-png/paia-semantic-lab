@@ -1,0 +1,135 @@
+{
+  "round": "SEM-01",
+  "benchmark": {
+    "version": "sem01-b0-catalog-multilingual-0.1",
+    "fingerprint": "daa0c3d7e79377c2edd1eaa8c7ae76405f8aa3449e208f48666847edbfcd1f72",
+    "case_count": 450,
+    "topic_count": 144,
+    "evidence_classes": [
+      "catalog_boundary",
+      "synthetic"
+    ],
+    "contains_real_paia_input": false,
+    "public_benchmark_quality_evaluated": false,
+    "note": "No model score is fabricated for an unexecuted runtime."
+  },
+  "standard_manifest": {
+    "run_id": "sem01-7a099e43f04a",
+    "lab_commit": "7a099e43f04a196979b5efc82ef7e6f8ad3ddd09",
+    "round": "SEM-01",
+    "benchmark_version": "sem01-b0-catalog-multilingual-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [
+      {
+        "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+        "manifest_fingerprint": "18b59e2388d64ec9990592e80e3620c302679e2f5259f63db3d8d975787987e2"
+      },
+      {
+        "candidate_id": "BAAI/bge-m3",
+        "manifest_fingerprint": "f850fbaafb5fc9b26df68f52cceac0713d1b3efc472571c93ff792359cfee8a2"
+      },
+      {
+        "candidate_id": "nomic-ai/nomic-embed-text-v2-moe",
+        "manifest_fingerprint": "2332e1a09d4f7d9327bb610c466e9337278fbf1ecd04c3fc82c24fe2cddb1990"
+      },
+      {
+        "candidate_id": "intfloat/multilingual-e5-large-instruct",
+        "manifest_fingerprint": "2acfd4025270773dadd0164c9ee127910946b12ebdb460eccbba5fc65fcebec8"
+      },
+      {
+        "candidate_id": "voyage-4",
+        "manifest_fingerprint": "4be197b0a930809d093687a149b6dabae6e4c4b8a6a5c6c57caa60cd97e2931f"
+      },
+      {
+        "candidate_id": "text-embedding-3-large",
+        "manifest_fingerprint": "137d571d39d83978a3148031a073bd77b3c790239bfa0a1e4660f07c5c3f024a"
+      },
+      {
+        "candidate_id": "embed-v4.0",
+        "manifest_fingerprint": "587bd7df6f1f1845e8285432d164b70af85148d0764c82e5de6629fe2c963e70"
+      }
+    ],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": [
+        "public",
+        "synthetic",
+        "catalog_boundary"
+      ]
+    },
+    "egress_ledger_ref": null,
+    "hardware": {
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "python": "3.12.14"
+    },
+    "metrics_ref": "artifacts/sem-01/model-scorecard.json",
+    "started_at": "2026-09-18T17:04:29.567628+00:00",
+    "completed_at": "2026-09-18T17:04:29.567628+00:00"
+  },
+  "workflow_runs": [
+    {
+      "run_id": 35372058408,
+      "job_id": 105688104507,
+      "name": "Semantic Lab CI",
+      "conclusion": "success"
+    },
+    {
+      "run_id": 35372058837,
+      "name": "SEM-01 Local Runtime Bakeoff",
+      "conclusion": "success",
+      "jobs": [
+        105688105428,
+        105688105528,
+        105688105619,
+        105688105622
+      ]
+    }
+  ],
+  "runtime_artifacts": [
+    {
+      "id": 10559271551,
+      "name": "sem01-local-bge-m3",
+      "size_in_bytes": 1222,
+      "digest": "sha256:920d538fb81e9a537e0d08367c223d559ed5fb9cd84b0f26d5f791bc48789b5f",
+      "head_sha": "59c5a4bdba05f0017958e5d73d1baf07e0307468"
+    },
+    {
+      "id": 10558995122,
+      "name": "sem01-local-multilingual-e5-large-instruct",
+      "size_in_bytes": 1381,
+      "digest": "sha256:379f17664b9b8d9ca5e29a747f1433b7f39a7c5f4e18db9143c89bca500816c9",
+      "head_sha": "59c5a4bdba05f0017958e5d73d1baf07e0307468"
+    },
+    {
+      "id": 10558064889,
+      "name": "sem01-local-qwen3-embedding-0.6b",
+      "size_in_bytes": 1347,
+      "digest": "sha256:6bc39dcbe30969831c1e3aa028a757e784741a70be32ec9edd9d60cfb6fa9db2",
+      "head_sha": "59c5a4bdba05f0017958e5d73d1baf07e0307468"
+    },
+    {
+      "id": 10558043832,
+      "name": "sem01-local-nomic-v2-moe",
+      "size_in_bytes": 1340,
+      "digest": "sha256:add3c446053c8a0f29bfaeb316ea90c8b92ec58341bac39c7dd7d114d33f2353",
+      "head_sha": "59c5a4bdba05f0017958e5d73d1baf07e0307468"
+    }
+  ],
+  "implementation_main_commits": [
+    "e716ca9873ac97921a88c91aa32a048f24a2224e",
+    "49ebdc4cfec0e97464e1069297a0515c66157fbb"
+  ],
+  "authorization_scope": {
+    "production_paia_write": false,
+    "real_archive_read": false,
+    "real_input_api_egress": false,
+    "model_training": false,
+    "owner_semantic_labeling": false
+  }
+}
