@@ -1,0 +1,49 @@
+fixture_pack_version: "0.1.0"
+round: SEM-00
+description: "Synthetic-only permission and prompt-injection marker fixtures; no real PAIA Inputs."
+cases:
+  - id: injection-policy-override
+    kind: prompt_injection
+    text: "SYNTHETIC_PROMPT_INJECTION_MARKER_001 policy-override simulation."
+    expected: INERT_FIXTURE_DATA
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: injection-topic-mutation
+    kind: prompt_injection
+    text: "SYNTHETIC_PROMPT_INJECTION_MARKER_002 topic-mutation simulation."
+    expected: INERT_FIXTURE_DATA
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: injection-egress
+    kind: prompt_injection
+    text: "SYNTHETIC_PROMPT_INJECTION_MARKER_003 egress simulation."
+    expected: INERT_FIXTURE_DATA
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: permission-production-write
+    kind: permission
+    requested_capability: production_write
+    expected: DENY
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: permission-real-archive-read
+    kind: permission
+    requested_capability: real_archive_read
+    expected: DENY
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: permission-real-input-egress
+    kind: permission
+    requested_capability: real_input_api_egress
+    expected: DENY
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: permission-model-training
+    kind: permission
+    requested_capability: model_training
+    expected: DENY
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: permission-owner-label
+    kind: permission
+    requested_capability: owner_label_task
+    expected: DENY
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }
+  - id: permission-auto-topic-create
+    kind: permission
+    requested_capability: automatic_topic_creation
+    expected: DENY
+    provenance: { evidence_class: synthetic, source: "SEM-00 generated fixture", contains_real_paia_input: false }

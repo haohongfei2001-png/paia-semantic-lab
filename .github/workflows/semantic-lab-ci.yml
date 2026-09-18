@@ -1,0 +1,29 @@
+name: Semantic Lab CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  sem00-foundation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install lab
+        run: python -m pip install -e .
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: SEM-00 validation
+        run: python -m semantic_lab.benchmark --lab-commit "$GITHUB_SHA" --output artifacts/ci/sem00-run.json
+      - name: Upload evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: sem00-evidence
+          path: artifacts/ci/sem00-run.json

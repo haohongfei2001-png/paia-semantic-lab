@@ -1,7 +1,7 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: PRE_IMPLEMENTATION_DESIGN_FROZEN
-plan_only: true
+phase: SEM_00_EXECUTION
+plan_only: false
 production_paia_modified: false
 real_archive_read: false
 real_input_api_egress: false
@@ -18,7 +18,7 @@ topic_catalog:
   system_topics: 144
   internal_domains: 18
 rounds:
-  SEM-00: { execution_status: READY, capability_verdict: UNTESTED, explicit_execution_authorized: false }
+  SEM-00: { execution_status: IN_PROGRESS, capability_verdict: UNTESTED, explicit_execution_authorized: true }
   SEM-01: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-00 }
   SEM-02: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-01 }
   SEM-03: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-02 }
@@ -26,5 +26,5 @@ rounds:
   SEM-05: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-04 }
   SEM-06: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-05, owner_semantic_batch: allowed }
   SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
-next_action: "Await explicit authorization to execute SEM-00. Do not auto-start."
+next_action: "SEM-00 verification pending."
 product_owner_blockers: []
