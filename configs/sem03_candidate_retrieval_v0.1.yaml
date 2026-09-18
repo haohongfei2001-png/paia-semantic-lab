@@ -1,0 +1,32 @@
+version: "0.1.0"
+round: "SEM-03"
+benchmark_version: "sem03-full-catalog-candidates-b0-0.1"
+policy:
+  dense_top_k: 32
+  lexical_top_k: 16
+  reserved_global_slots: 8
+  personalized_slots_max: 4
+  custom_safety_lane_max: 4
+  max_candidate_count: 64
+  activity_prior_can_gate: false
+  activity_prior_can_reorder_global_prefix: false
+  automatic_topic_creation: false
+  eligible_system_lifecycle: [ACTIVE]
+  eligible_custom_rule: NON_DEPRECATED
+acceptance:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  inactive_candidate_recall_at_20_min: 0.98
+  active_inactive_recall_gap_max: 0.02
+  custom_topic_recall_at_20_min: 0.99
+  confusing_neighbor_error_rate_max: 0.02
+  scale_recall_at_20_min: 0.99
+scale_test:
+  topic_count: 1024
+engineering_embedding_controls: [96, 128, 192]
+qualified_runtime_source:
+  shortlist: "artifacts/sem-01/qualified-shortlist.json"
+  require_all_runtime_qualified_local_candidates: true
+  no_api_calls: true
+  no_real_paia_input: true
+  no_owner_labels: true
