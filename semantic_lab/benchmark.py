@@ -106,7 +106,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Semantic Lab canonical validation")
     parser.add_argument(
         "--round",
-        choices=("SEM-00", "SEM-01", "SEM-02", "SEM-03", "SEM-04"),
+        choices=("SEM-00", "SEM-01", "SEM-02", "SEM-03", "SEM-04", "SEM-05"),
         default="SEM-00",
     )
     parser.add_argument(
@@ -116,7 +116,10 @@ def main() -> int:
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
-    if args.round == "SEM-04":
+    if args.round == "SEM-05":
+        from .sem05 import run_sem05
+        result = run_sem05(args.lab_commit)
+    elif args.round == "SEM-04":
         from .sem04 import run_sem04
         result = run_sem04(args.lab_commit)
     elif args.round == "SEM-03":

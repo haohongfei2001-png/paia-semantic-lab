@@ -1,0 +1,49 @@
+benchmark_version: "sem05-lifecycle-b0-0.1"
+incremental:
+  private_namespace: "semantic-lab.synthetic"
+  model_fingerprint: "hash-embedding-v1"
+  representation_fingerprint: "text-view-v1"
+activation:
+  first_time_distinct_inputs_14d: 3
+  first_time_distinct_conversations_14d: 2
+  sustained_inputs_7d: 5
+  reactivation_distinct_inputs_14d: 2
+  inactivity_days: 60
+  auto_active_budget: 48
+performance:
+  synthetic_input_count: 192
+  assumed_tokens_per_input: 64
+providers:
+  - provider: "voyage"
+    model: "voyage-4"
+    price_usd_per_million_tokens: 0.06
+    pricing_verified_at: "2026-09-19"
+    pricing_source: "https://docs.voyageai.com/docs/pricing"
+    retention_summary: "Self-serve privacy policy is not equivalent to zero retention; Customer Content training rights require opt-out/contract review."
+    privacy_source: "https://www.voyageai.com/privacy"
+    real_input_qualification: "DENY_UNTIL_ACCOUNT_AND_RETENTION_VERIFIED"
+  - provider: "openai"
+    model: "text-embedding-3-large"
+    price_usd_per_million_tokens: 0.13
+    pricing_verified_at: "2026-09-19"
+    pricing_source: "https://developers.openai.com/api/docs/models/text-embedding-3-large"
+    retention_summary: "API data is not used for training by default; embeddings have up to 30-day abuse-monitoring retention by default and are Zero Data Retention eligible for approved organizations."
+    privacy_source: "https://platform.openai.com/docs/models/default-usage-policies-by-endpoint"
+    real_input_qualification: "DENY_UNTIL_ACCOUNT_RETENTION_MODE_VERIFIED"
+  - provider: "cohere"
+    model: "embed-v4.0"
+    price_usd_per_million_tokens: null
+    pricing_verified_at: "2026-09-19"
+    pricing_source: "https://cohere.com/pricing"
+    retention_summary: "Verified public material distinguishes private/Model Vault modes from hosted use; exact self-serve Embed retention and token price were not established in this round."
+    privacy_source: "https://docs.cohere.com/docs/model-vault/encrypted/faq"
+    real_input_qualification: "NOT_QUALIFIED_METADATA_INCOMPLETE"
+acceptance:
+  incremental_full_parity_required: true
+  stale_revision_leaks_max: 0
+  activation_manual_violations_max: 0
+  auto_active_budget_max: 48
+  clustering_repeat_disagreement_max: 0
+  real_input_api_egress_max: 0
+  live_api_calls_max: 0
+  owner_attention_policy_violations_max: 0
