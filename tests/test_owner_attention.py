@@ -21,9 +21,10 @@ class OwnerAttentionTests(unittest.TestCase):
             with self.assertRaises(OwnerAttentionViolation):
                 open_owner_task(round_id, "create_formal_topic")
 
-    def test_sem06_policy_can_represent_one_canonical_truth_task(self) -> None:
-        task = open_owner_task("SEM-06", "input_to_topic_label")
-        self.assertEqual("OPEN", task["status"])
+    def test_sem06_allows_canonical_truth_but_not_model_trials(self) -> None:
+        self.assertEqual("OPEN", open_owner_task("SEM-06", "input_to_topic_label")["status"])
+        with self.assertRaises(OwnerAttentionViolation):
+            open_owner_task("SEM-06", "per_model_trial")
 
 
 if __name__ == "__main__":
