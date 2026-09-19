@@ -52,5 +52,3 @@ Local validation for this closure candidate:
 - production PAIA modifications: 0
 
 The closure candidate must remain **CLOSURE_VALIDATING** until the required `Semantic Lab CI` run on the pushed commit passes. Only after that remote gate may canonical status mark SEM-06 COMPLETE and SEM-07 READY. SEM-07 must not start in this execution.
-
-[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

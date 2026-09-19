@@ -628,5 +628,3 @@ def run_sem03(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         },
         "pass": g0 and engineering_pass,
     }
-
-[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

@@ -81,5 +81,3 @@ def classification_text(text: str, allowed_context: dict[str, Any] | None = None
         ])
     lines.extend(["", "[END CONTEXT — CLASSIFY THE CURRENT INPUT, NOT THE CONTEXT]"])
     return "\n".join(lines)
-
-[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

@@ -32,5 +32,3 @@ Context-dependent Gold must bind the allowed-context policy and Input refs into 
 ## Owner-delegated adjudication
 
 The product owner may explicitly delegate fixed-batch judgments to the current ChatGPT. Such judgments must remain distinguishable from direct owner UI judgments in private audit metadata. Delegation is not model A/B evaluation, does not authorize automatic Topic creation, and does not change the default PAIA provider-egress/privacy policy.
-
-[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]
