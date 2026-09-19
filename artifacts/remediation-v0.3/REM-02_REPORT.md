@@ -101,8 +101,12 @@ The detailed calibration private payload did not persist because a residual proc
 - Public-artifact privacy scan: **PASS**.
 - git diff check: **PASS**.
 
+## Remote validation
+
+Closure candidate commit 6385c2e753b00d16ece6742398526865d305c91d passed Semantic Lab CI: run 35452130072, job 105921006853, evidence artifact 10586762983 — **PASS**. Unit tests, SEM-00 through SEM-07, REM-01, REM-02 validation, and evidence upload all passed.
+
 ## Next round
 
-REM-03 may become READY for full-catalog candidate remediation and freeze. It must remain NOT_AUTHORIZED until a new explicit user message starts that round.
+REM-03 is READY for full-catalog candidate remediation and freeze. It must remain NOT_AUTHORIZED until a new explicit user message starts that round.
 
 REM-03 is not started by this REM-02 execution.

@@ -1,7 +1,7 @@
 package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
 package_version: "0.3.0"
 plan_status: FROZEN
-phase: REM_02_CLOSURE_VALIDATING
+phase: REM_03_READY
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -74,8 +74,8 @@ rounds:
     closure_required_ci: PASS
   REM-02:
     title: "Representation and retrieval bake-off"
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: PASS
     depends_on: REM-01
     explicit_execution_authorized: true
     existing_private_artifacts_read: authorized_read_only_80_calibration_13_evaluation
@@ -122,13 +122,19 @@ rounds:
     validated_main_commit: "2c575aca42ba22d432ab5894064940e9b03293ef"
     checkpoint_required_ci: PASS
     private_promotion_targeted_tests: "13/13 PASS"
-    closure_blocker: REQUIRED_CI_PENDING
+    closure_validation_run_id: 35452130072
+    closure_validation_job_id: 105921006853
+    closure_evidence_artifact_id: 10586762983
+    validated_main_commit: "6385c2e753b00d16ece6742398526865d305c91d"
+    closure_required_ci: PASS
   REM-03:
     title: "Full-catalog candidate remediation and freeze"
-    execution_status: NOT_STARTED
+    execution_status: READY
     capability_verdict: UNTESTED
     depends_on: REM-02
     promotion_gate: ORIGINAL_CANDIDATE_THRESHOLDS
+    explicit_execution_authorized: false
+    existing_private_artifacts_read: requires_fresh_explicit_round_authorization
     new_owner_labels: 0
   REM-04:
     title: "Router remediation and pre-lockbox freeze"
@@ -151,5 +157,5 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-02 private promotion evidence is complete. Run full local regression, commit/push the REM-02 closure candidate, require exact-head Semantic Lab CI PASS, then mark REM-02 COMPLETE/PASS and unlock REM-03 READY without starting it."
+next_action: "REM-02 is COMPLETE/PASS. REM-03 is READY but NOT_AUTHORIZED. Stop this execution; do not start REM-03 until a new explicit user message authorizes it and any intended private-artifact reuse. The original candidate gates remain Recall@10 >= 0.96 and Recall@20 >= 0.99."
 product_owner_blockers: []
