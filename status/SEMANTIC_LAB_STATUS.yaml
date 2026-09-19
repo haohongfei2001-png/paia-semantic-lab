@@ -1,6 +1,6 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: SEM_07_READY
+phase: SEM_07_CLOSURE_VALIDATING
 plan_only: false
 production_paia_modified: false
 real_archive_read: true
@@ -123,6 +123,27 @@ rounds:
     closure_evidence_artifact_id: 10576097321
     validated_main_commit: "2936c607e4fb5cbc172462b9a81217ec0f581e90"
     closure_required_ci: PASS
-  SEM-07: { execution_status: READY, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
-next_action: "SEM-06 is COMPLETE after required Semantic Lab CI PASS on validated main commit 2936c607e4fb5cbc172462b9a81217ec0f581e90. SEM-07 is READY but NOT_STARTED. Stop this execution; do not start SEM-07."
+  SEM-07:
+    execution_status: IN_PROGRESS
+    capability_verdict: UNTESTED
+    depends_on: SEM-06
+    new_owner_labels: exception_only
+    explicit_execution_authorized: true
+    benchmark_version: "sem07-personal-final-0.1"
+    semantic_capability_measurement: FAIL
+    engineering_contract: PASS
+    input_retrieval: FAIL
+    full_catalog_candidates: FAIL
+    personal_router: FAIL
+    personal_activation: INCONCLUSIVE
+    privacy_local_processing: PASS
+    candidate_for_separate_integration_review: []
+    small_model_eligibility: NOT_ELIGIBLE
+    lockbox_consumed: true
+    lockbox_cases: 35
+    deterministic_replay: PASS
+    deterministic_result_digest: "dc71239a2b00f7c985062b645d27134059a45793dda542d894b69927d18ca1d6"
+    local_tests: "65/65 PASS"
+    closure_blocker: "REQUIRED_CI_PENDING"
+next_action: "SEM-07 closure candidate is locally validated. Commit/push the candidate, require exact-head Semantic Lab CI PASS, then update canonical status/receipt. Do not start production integration, training or any later package."
 product_owner_blockers: []

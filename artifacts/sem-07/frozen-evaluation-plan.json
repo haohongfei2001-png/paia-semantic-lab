@@ -1,0 +1,41 @@
+{
+  "round": "SEM-07",
+  "baseline_remote_head": "8aa822c14852f9c653eaf7a1276e64d498904bad",
+  "benchmark_version": "sem07-personal-final-0.1",
+  "catalog_version": "0.2.0",
+  "split_counts": {
+    "calibration": 80,
+    "evaluation": 13,
+    "lockbox": 35
+  },
+  "personalized_model_scope": [
+    "BAAI/bge-m3",
+    "Qwen/Qwen3-Embedding-0.6B"
+  ],
+  "sem01_qualified_without_personal_evidence": [
+    "nomic-ai/nomic-embed-text-v2-moe",
+    "intfloat/multilingual-e5-large-instruct"
+  ],
+  "api_real_input_scope": "DENY",
+  "router_variants": [
+    "base",
+    "strict",
+    "permissive"
+  ],
+  "owner_new_labels": 0,
+  "model_training": false,
+  "production_integration": false,
+  "source_hashes": {
+    "gold": "b176a39e7ffbbe210808e80c2145ed79a5bea3be1acc6818843f484bcd66dcdc",
+    "batch": "eb001d019b7b69c7d5705601a131c09bf811bb68b7fdc5cf52e5bc6b0101a8c6",
+    "snapshot": "88659838a7062a98169ecda6fe04e1d972a45c9d8a4bc99b2ef07fe0c2de4753",
+    "machine": "d520ecbf3df5be961600c0d9b369cb404648b95bc19f6044029df9552408390a",
+    "lockbox": "f4cd875f5ebf026522f9bd2f90977098737aec2f1ef80c40d41db959b8bfc035"
+  },
+  "evaluation_code_hashes": {
+    "semantic_lab/sem07.py": "a7355272c04660a3bf873ee0ab0f9cebfdc0cc7dffc1ed5d1643839cabaff718",
+    "scripts/sem07_private_eval.py": "e109a5ce76427984b69ab8c6f239d900ba4c5ad4d4aa73fe68872a56d3626311",
+    "configs/sem07_final_v0.1.yaml": "8ff52f7dadeb278b0fb93f18de34d83901f6418cfb31b6cbd0df4fd7899ea653"
+  },
+  "gate_policy": "Frozen repository acceptance gates; failures and missing slices remain FAIL/INCONCLUSIVE."
+}

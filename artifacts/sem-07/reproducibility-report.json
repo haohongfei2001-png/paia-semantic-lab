@@ -1,0 +1,34 @@
+{
+  "round": "SEM-07",
+  "local_private_replay": {
+    "first_deterministic_result_digest": "dc71239a2b00f7c985062b645d27134059a45793dda542d894b69927d18ca1d6",
+    "second_deterministic_result_digest": "dc71239a2b00f7c985062b645d27134059a45793dda542d894b69927d18ca1d6",
+    "deterministic_match": true,
+    "first_aggregate_digest": "db282932a02dac4f0bcfe2d311cb2b3dec3f12a72058fe16400a61d1ddd73528",
+    "second_aggregate_digest": "8b28bb7fc2702b834ebeb8b7edde061c27f407994a113a2759df765c5f64c78c",
+    "aggregate_digest_expected_to_vary": true,
+    "reason": "aggregate metadata includes runtime duration; deterministic digest covers predictions, judged retrieval ranks and activation replay"
+  },
+  "lockbox_execution_audit": {
+    "full_replays_in_sem07_execution": 4,
+    "model_configuration_changes_after_first_lockbox_exposure": 0,
+    "router_threshold_changes_after_first_lockbox_exposure": 0,
+    "acceptance_gate_reductions": 0,
+    "evaluation_implementation_fixes_after_first_exposure": true,
+    "fix_scope": "metric correctness, critical-slice evidence, activation provenance and reproducibility evidence only"
+  },
+  "clean_environment_exact_head_ci": "PENDING",
+  "local_validation": {
+    "full_repository_tests": "65/65 PASS",
+    "full_repository_seconds": 201.296,
+    "sem07_public_engineering_validation": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "privacy": {
+    "public_scorecard_identifier_scan": "PASS",
+    "raw_input_text_in_git": false,
+    "personal_gold_in_git": false,
+    "private_vectors_in_git": false,
+    "real_input_api_egress_events": 0
+  }
+}

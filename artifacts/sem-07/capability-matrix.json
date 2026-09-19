@@ -1,0 +1,1032 @@
+{
+  "round": "SEM-07",
+  "overall_semantic_capability_verdict": "FAIL",
+  "note": "Execution COMPLETE means evaluation closure, not semantic capability PASS.",
+  "personalized_models": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+      "lockbox_case_count": 35,
+      "retrieval": {
+        "judged_pairs": 25,
+        "positive_pairs": 17,
+        "negative_pairs": 8,
+        "ndcg_at_10": 0.7354322529554403,
+        "recall_at_20": 1.0,
+        "mrr_at_10": 0.6490196078431373,
+        "judged_negative_top10_fpr": 1.0
+      },
+      "router_variants": {
+        "base": {
+          "candidate": {
+            "assigned_cases": 33,
+            "topic_recall_at_5": 0.29848484848484846,
+            "complete_case_recall_at_5": 0.12121212121212122,
+            "topic_recall_at_10": 0.4222222222222222,
+            "complete_case_recall_at_10": 0.24242424242424243,
+            "topic_recall_at_20": 0.6343434343434343,
+            "complete_case_recall_at_20": 0.42424242424242425
+          },
+          "router": {
+            "cases": 35,
+            "micro_precision": 1.0,
+            "micro_recall": 0.01282051282051282,
+            "micro_f1": 0.02531645569620253,
+            "macro_f1": 0.03333333333333333,
+            "route_state_accuracy": 0.02857142857142857,
+            "exact_match_rate": 0.0,
+            "accepted_precision": 1.0,
+            "accepted_coverage": 0.02857142857142857,
+            "unassigned_precision": 0.0,
+            "unassigned_recall": null,
+            "defer_recall": 0.0,
+            "wrong_certain_rate": 0.0,
+            "evidence_validity_rate": 1.0,
+            "true_unassigned_cases": 0,
+            "true_defer_cases": 2
+          },
+          "capabilities": {
+            "input_retrieval": {
+              "verdict": "FAIL",
+              "reasons": [
+                "ndcg_at_10"
+              ]
+            },
+            "full_catalog_candidates": {
+              "verdict": "FAIL",
+              "reasons": [
+                "recall_at_10",
+                "recall_at_20"
+              ]
+            },
+            "router": {
+              "verdict": "FAIL",
+              "reasons": [
+                "macro_f1<0.8",
+                "accepted_coverage<0.6",
+                "unassigned_precision<0.9",
+                "defer_recall<0.9"
+              ]
+            },
+            "activation": {
+              "verdict": "INCONCLUSIVE",
+              "reasons": [
+                "No authorized real UserTopicProfile state or event timestamps."
+              ]
+            },
+            "privacy_local_processing": {
+              "verdict": "PASS",
+              "reasons": []
+            },
+            "critical_slices": {
+              "zh": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9"
+                  ]
+                }
+              },
+              "mixed": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "missing:defer_recall"
+                  ]
+                }
+              },
+              "short": {
+                "input_retrieval": {
+                  "verdict": "PASS",
+                  "reasons": []
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "long": {
+                "input_retrieval": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient judged retrieval families"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                },
+                "router": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "strict": {
+          "candidate": {
+            "assigned_cases": 33,
+            "topic_recall_at_5": 0.29848484848484846,
+            "complete_case_recall_at_5": 0.12121212121212122,
+            "topic_recall_at_10": 0.4222222222222222,
+            "complete_case_recall_at_10": 0.24242424242424243,
+            "topic_recall_at_20": 0.6343434343434343,
+            "complete_case_recall_at_20": 0.42424242424242425
+          },
+          "router": {
+            "cases": 35,
+            "micro_precision": 0.0,
+            "micro_recall": 0.0,
+            "micro_f1": 0.0,
+            "macro_f1": 0.0,
+            "route_state_accuracy": 0.0,
+            "exact_match_rate": 0.0,
+            "accepted_precision": null,
+            "accepted_coverage": 0.0,
+            "unassigned_precision": 0.0,
+            "unassigned_recall": null,
+            "defer_recall": 0.0,
+            "wrong_certain_rate": null,
+            "evidence_validity_rate": 1.0,
+            "true_unassigned_cases": 0,
+            "true_defer_cases": 2
+          },
+          "capabilities": {
+            "input_retrieval": {
+              "verdict": "FAIL",
+              "reasons": [
+                "ndcg_at_10"
+              ]
+            },
+            "full_catalog_candidates": {
+              "verdict": "FAIL",
+              "reasons": [
+                "recall_at_10",
+                "recall_at_20"
+              ]
+            },
+            "router": {
+              "verdict": "FAIL",
+              "reasons": [
+                "macro_f1<0.8",
+                "accepted_coverage<0.6",
+                "unassigned_precision<0.9",
+                "defer_recall<0.9",
+                "missing:accepted_precision",
+                "missing:wrong_certain_rate"
+              ]
+            },
+            "activation": {
+              "verdict": "INCONCLUSIVE",
+              "reasons": [
+                "No authorized real UserTopicProfile state or event timestamps."
+              ]
+            },
+            "privacy_local_processing": {
+              "verdict": "PASS",
+              "reasons": []
+            },
+            "critical_slices": {
+              "zh": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "mixed": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "missing:accepted_precision",
+                    "missing:defer_recall",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "short": {
+                "input_retrieval": {
+                  "verdict": "PASS",
+                  "reasons": []
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "long": {
+                "input_retrieval": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient judged retrieval families"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                },
+                "router": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "permissive": {
+          "candidate": {
+            "assigned_cases": 33,
+            "topic_recall_at_5": 0.29848484848484846,
+            "complete_case_recall_at_5": 0.12121212121212122,
+            "topic_recall_at_10": 0.4222222222222222,
+            "complete_case_recall_at_10": 0.24242424242424243,
+            "topic_recall_at_20": 0.6343434343434343,
+            "complete_case_recall_at_20": 0.42424242424242425
+          },
+          "router": {
+            "cases": 35,
+            "micro_precision": 1.0,
+            "micro_recall": 0.01282051282051282,
+            "micro_f1": 0.02531645569620253,
+            "macro_f1": 0.03333333333333333,
+            "route_state_accuracy": 0.02857142857142857,
+            "exact_match_rate": 0.0,
+            "accepted_precision": 1.0,
+            "accepted_coverage": 0.02857142857142857,
+            "unassigned_precision": 0.0,
+            "unassigned_recall": null,
+            "defer_recall": 0.0,
+            "wrong_certain_rate": 0.0,
+            "evidence_validity_rate": 1.0,
+            "true_unassigned_cases": 0,
+            "true_defer_cases": 2
+          },
+          "capabilities": {
+            "input_retrieval": {
+              "verdict": "FAIL",
+              "reasons": [
+                "ndcg_at_10"
+              ]
+            },
+            "full_catalog_candidates": {
+              "verdict": "FAIL",
+              "reasons": [
+                "recall_at_10",
+                "recall_at_20"
+              ]
+            },
+            "router": {
+              "verdict": "FAIL",
+              "reasons": [
+                "macro_f1<0.8",
+                "accepted_coverage<0.6",
+                "unassigned_precision<0.9",
+                "defer_recall<0.9"
+              ]
+            },
+            "activation": {
+              "verdict": "INCONCLUSIVE",
+              "reasons": [
+                "No authorized real UserTopicProfile state or event timestamps."
+              ]
+            },
+            "privacy_local_processing": {
+              "verdict": "PASS",
+              "reasons": []
+            },
+            "critical_slices": {
+              "zh": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9"
+                  ]
+                }
+              },
+              "mixed": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "missing:defer_recall"
+                  ]
+                }
+              },
+              "short": {
+                "input_retrieval": {
+                  "verdict": "PASS",
+                  "reasons": []
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "long": {
+                "input_retrieval": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient judged retrieval families"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                },
+                "router": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "BAAI/bge-m3": {
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "lockbox_case_count": 35,
+      "retrieval": {
+        "judged_pairs": 25,
+        "positive_pairs": 17,
+        "negative_pairs": 8,
+        "ndcg_at_10": 0.0,
+        "recall_at_20": 0.5294117647058824,
+        "mrr_at_10": 0.0,
+        "judged_negative_top10_fpr": 0.0
+      },
+      "router_variants": {
+        "base": {
+          "candidate": {
+            "assigned_cases": 33,
+            "topic_recall_at_5": 0.34797979797979794,
+            "complete_case_recall_at_5": 0.18181818181818182,
+            "topic_recall_at_10": 0.41717171717171714,
+            "complete_case_recall_at_10": 0.21212121212121213,
+            "topic_recall_at_20": 0.6974747474747475,
+            "complete_case_recall_at_20": 0.48484848484848486
+          },
+          "router": {
+            "cases": 35,
+            "micro_precision": 1.0,
+            "micro_recall": 0.01282051282051282,
+            "micro_f1": 0.02531645569620253,
+            "macro_f1": 0.03333333333333333,
+            "route_state_accuracy": 0.02857142857142857,
+            "exact_match_rate": 0.0,
+            "accepted_precision": 1.0,
+            "accepted_coverage": 0.02857142857142857,
+            "unassigned_precision": 0.0,
+            "unassigned_recall": null,
+            "defer_recall": 0.0,
+            "wrong_certain_rate": 0.0,
+            "evidence_validity_rate": 1.0,
+            "true_unassigned_cases": 0,
+            "true_defer_cases": 2
+          },
+          "capabilities": {
+            "input_retrieval": {
+              "verdict": "FAIL",
+              "reasons": [
+                "ndcg_at_10",
+                "recall_at_20"
+              ]
+            },
+            "full_catalog_candidates": {
+              "verdict": "FAIL",
+              "reasons": [
+                "recall_at_10",
+                "recall_at_20"
+              ]
+            },
+            "router": {
+              "verdict": "FAIL",
+              "reasons": [
+                "macro_f1<0.8",
+                "accepted_coverage<0.6",
+                "unassigned_precision<0.9",
+                "defer_recall<0.9"
+              ]
+            },
+            "activation": {
+              "verdict": "INCONCLUSIVE",
+              "reasons": [
+                "No authorized real UserTopicProfile state or event timestamps."
+              ]
+            },
+            "privacy_local_processing": {
+              "verdict": "PASS",
+              "reasons": []
+            },
+            "critical_slices": {
+              "zh": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9"
+                  ]
+                }
+              },
+              "mixed": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "missing:defer_recall"
+                  ]
+                }
+              },
+              "short": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "long": {
+                "input_retrieval": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient judged retrieval families"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                },
+                "router": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "strict": {
+          "candidate": {
+            "assigned_cases": 33,
+            "topic_recall_at_5": 0.34797979797979794,
+            "complete_case_recall_at_5": 0.18181818181818182,
+            "topic_recall_at_10": 0.41717171717171714,
+            "complete_case_recall_at_10": 0.21212121212121213,
+            "topic_recall_at_20": 0.6974747474747475,
+            "complete_case_recall_at_20": 0.48484848484848486
+          },
+          "router": {
+            "cases": 35,
+            "micro_precision": 0.0,
+            "micro_recall": 0.0,
+            "micro_f1": 0.0,
+            "macro_f1": 0.0,
+            "route_state_accuracy": 0.0,
+            "exact_match_rate": 0.0,
+            "accepted_precision": null,
+            "accepted_coverage": 0.0,
+            "unassigned_precision": 0.0,
+            "unassigned_recall": null,
+            "defer_recall": 0.0,
+            "wrong_certain_rate": null,
+            "evidence_validity_rate": 1.0,
+            "true_unassigned_cases": 0,
+            "true_defer_cases": 2
+          },
+          "capabilities": {
+            "input_retrieval": {
+              "verdict": "FAIL",
+              "reasons": [
+                "ndcg_at_10",
+                "recall_at_20"
+              ]
+            },
+            "full_catalog_candidates": {
+              "verdict": "FAIL",
+              "reasons": [
+                "recall_at_10",
+                "recall_at_20"
+              ]
+            },
+            "router": {
+              "verdict": "FAIL",
+              "reasons": [
+                "macro_f1<0.8",
+                "accepted_coverage<0.6",
+                "unassigned_precision<0.9",
+                "defer_recall<0.9",
+                "missing:accepted_precision",
+                "missing:wrong_certain_rate"
+              ]
+            },
+            "activation": {
+              "verdict": "INCONCLUSIVE",
+              "reasons": [
+                "No authorized real UserTopicProfile state or event timestamps."
+              ]
+            },
+            "privacy_local_processing": {
+              "verdict": "PASS",
+              "reasons": []
+            },
+            "critical_slices": {
+              "zh": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "mixed": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "missing:accepted_precision",
+                    "missing:defer_recall",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "short": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "long": {
+                "input_retrieval": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient judged retrieval families"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                },
+                "router": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "permissive": {
+          "candidate": {
+            "assigned_cases": 33,
+            "topic_recall_at_5": 0.34797979797979794,
+            "complete_case_recall_at_5": 0.18181818181818182,
+            "topic_recall_at_10": 0.41717171717171714,
+            "complete_case_recall_at_10": 0.21212121212121213,
+            "topic_recall_at_20": 0.6974747474747475,
+            "complete_case_recall_at_20": 0.48484848484848486
+          },
+          "router": {
+            "cases": 35,
+            "micro_precision": 1.0,
+            "micro_recall": 0.01282051282051282,
+            "micro_f1": 0.02531645569620253,
+            "macro_f1": 0.03333333333333333,
+            "route_state_accuracy": 0.02857142857142857,
+            "exact_match_rate": 0.0,
+            "accepted_precision": 1.0,
+            "accepted_coverage": 0.02857142857142857,
+            "unassigned_precision": 0.0,
+            "unassigned_recall": null,
+            "defer_recall": 0.0,
+            "wrong_certain_rate": 0.0,
+            "evidence_validity_rate": 1.0,
+            "true_unassigned_cases": 0,
+            "true_defer_cases": 2
+          },
+          "capabilities": {
+            "input_retrieval": {
+              "verdict": "FAIL",
+              "reasons": [
+                "ndcg_at_10",
+                "recall_at_20"
+              ]
+            },
+            "full_catalog_candidates": {
+              "verdict": "FAIL",
+              "reasons": [
+                "recall_at_10",
+                "recall_at_20"
+              ]
+            },
+            "router": {
+              "verdict": "FAIL",
+              "reasons": [
+                "macro_f1<0.8",
+                "accepted_coverage<0.6",
+                "unassigned_precision<0.9",
+                "defer_recall<0.9"
+              ]
+            },
+            "activation": {
+              "verdict": "INCONCLUSIVE",
+              "reasons": [
+                "No authorized real UserTopicProfile state or event timestamps."
+              ]
+            },
+            "privacy_local_processing": {
+              "verdict": "PASS",
+              "reasons": []
+            },
+            "critical_slices": {
+              "zh": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9"
+                  ]
+                }
+              },
+              "mixed": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "missing:defer_recall"
+                  ]
+                }
+              },
+              "short": {
+                "input_retrieval": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "ndcg_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "recall_at_10",
+                    "recall_at_20"
+                  ]
+                },
+                "router": {
+                  "verdict": "FAIL",
+                  "reasons": [
+                    "macro_f1<0.8",
+                    "accepted_coverage<0.6",
+                    "unassigned_precision<0.9",
+                    "defer_recall<0.9",
+                    "missing:accepted_precision",
+                    "missing:wrong_certain_rate"
+                  ]
+                }
+              },
+              "long": {
+                "input_retrieval": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient judged retrieval families"
+                  ]
+                },
+                "full_catalog_candidates": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                },
+                "router": {
+                  "verdict": "INCONCLUSIVE",
+                  "reasons": [
+                    "critical slice has insufficient cases"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "deferred_personal_candidates": {
+    "nomic-ai/nomic-embed-text-v2-moe": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "SEM-01 runtime-qualified but no SEM-06 authorized personal vectors/runtime evidence."
+    },
+    "intfloat/multilingual-e5-large-instruct": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "SEM-01 runtime-qualified but no SEM-06 authorized personal vectors/runtime evidence."
+    },
+    "voyage-4": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "Real-input API egress not authorized; no personal quality score."
+    },
+    "text-embedding-3-large": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "Real-input API egress not authorized; no personal quality score."
+    },
+    "embed-v4.0": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "Real-input API egress not authorized; no personal quality score."
+    }
+  },
+  "candidate_for_separate_integration_review": []
+}

@@ -1,0 +1,17 @@
+{
+  "round": "SEM-07",
+  "verdict": "NOT_ELIGIBLE",
+  "training_started": false,
+  "reasons": [
+    "Frozen personal full-catalog Candidate Recall@20 is 0.6343 for Qwen and 0.6975 for BGE-M3, below the 0.99 gate.",
+    "Router macro-F1 is 0.0333 for base/permissive and 0 for strict, while accepted coverage is only 0.0286 or 0.",
+    "The observed Router failure is confounded by upstream candidate misses, so it is not isolated as a learnable small-model decision problem.",
+    "Reusable gold contains no UNASSIGNED truth cases and only two DEFER cases in the lockbox, so class coverage is insufficient for a new classifier claim.",
+    "No separate training-use authorization exists for a post-SEM-07 research package."
+  ],
+  "next_research_preconditions": [
+    "repair candidate retrieval and context representation first",
+    "collect independent reusable gold only through a separately authorized package if needed",
+    "define measurable latency/cost/privacy target and fallback coverage before any training"
+  ]
+}

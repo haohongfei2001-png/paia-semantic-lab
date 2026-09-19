@@ -1,0 +1,45 @@
+{
+  "round": "SEM-07",
+  "frontier": [
+    {
+      "model_id": "BAAI/bge-m3",
+      "router_variant": "base",
+      "candidate_recall_at_20": 0.6974747474747475,
+      "accepted_precision": 1.0,
+      "macro_f1": 0.03333333333333333,
+      "private_runtime_seconds": 27.523108541965485,
+      "peak_rss_bytes": 3973406720
+    },
+    {
+      "model_id": "BAAI/bge-m3",
+      "router_variant": "permissive",
+      "candidate_recall_at_20": 0.6974747474747475,
+      "accepted_precision": 1.0,
+      "macro_f1": 0.03333333333333333,
+      "private_runtime_seconds": 27.523108541965485,
+      "peak_rss_bytes": 3973406720
+    }
+  ],
+  "noncomparable": [
+    {
+      "model_id": "Qwen/Qwen3-Embedding-0.6B",
+      "router_variant": "strict",
+      "candidate_recall_at_20": 0.6343434343434343,
+      "accepted_precision": null,
+      "macro_f1": 0.0,
+      "private_runtime_seconds": 30.47259808378294,
+      "peak_rss_bytes": 7500214272
+    },
+    {
+      "model_id": "BAAI/bge-m3",
+      "router_variant": "strict",
+      "candidate_recall_at_20": 0.6974747474747475,
+      "accepted_precision": null,
+      "macro_f1": 0.0,
+      "private_runtime_seconds": 27.523108541965485,
+      "peak_rss_bytes": 3973406720
+    }
+  ],
+  "interpretation": "Pareto status does not override capability gates; every measured semantic configuration still fails at least one required semantic gate.",
+  "candidate_for_separate_integration_review": []
+}

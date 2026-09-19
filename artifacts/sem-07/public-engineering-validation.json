@@ -1,0 +1,51 @@
+{
+  "round": "SEM-07",
+  "manifest": {
+    "run_id": "sem07-SEM07_CLOSUR",
+    "lab_commit": "SEM07_CLOSURE_CANDIDATE",
+    "round": "SEM-07",
+    "benchmark_version": "sem07-personal-final-0.1",
+    "catalog_version": "0.2.0",
+    "input_snapshot_fingerprint": null,
+    "model_fingerprints": [],
+    "config_fingerprint": "82bb5828778fc0252debddd5dc642af1c43c68b6c9d78cc5d4064284d76fa9e1",
+    "authorization_scope": {
+      "production_paia_write": false,
+      "real_archive_read": false,
+      "real_input_api_egress": false,
+      "model_training": false,
+      "owner_semantic_labeling": false,
+      "evidence_classes": [
+        "public",
+        "synthetic",
+        "catalog_boundary"
+      ]
+    },
+    "egress_ledger_ref": null,
+    "hardware": {
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "python": "3.12.14"
+    },
+    "metrics_ref": null,
+    "started_at": "2026-09-19T04:10:49.218890+00:00",
+    "completed_at": "2026-09-19T04:10:49.218890+00:00"
+  },
+  "metrics": {
+    "isolation_violations": 0,
+    "owner_attention_policy_violations": 0,
+    "metric_contract_self_test": true,
+    "private_artifacts_git_allowed": false,
+    "real_input_api_egress": "DENY",
+    "model_training": "DENY"
+  },
+  "findings": {
+    "isolation": [],
+    "owner_attention_policy_failures": []
+  },
+  "gates": {
+    "G0_isolation": "PASS",
+    "G8_final_engineering_contract": "PASS",
+    "personal_lockbox": "LOCAL_PRIVATE_EXECUTION_REQUIRED"
+  },
+  "pass": true
+}

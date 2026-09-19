@@ -1,0 +1,36 @@
+benchmark_version: "sem07-personal-final-0.1"
+policy:
+  private_artifacts_git_allowed: false
+  real_input_api_egress: DENY
+  model_training: DENY
+  new_owner_labels: EXCEPTION_ONLY
+  personalized_models:
+    - "Qwen/Qwen3-Embedding-0.6B"
+    - "BAAI/bge-m3"
+  sem01_qualified_without_sem06_personal_vectors:
+    - "nomic-ai/nomic-embed-text-v2-moe"
+    - "intfloat/multilingual-e5-large-instruct"
+  api_candidates: [voyage-4, text-embedding-3-large, embed-v4.0]
+  router_variants: [base, strict, permissive]
+  bootstrap_seed: 20260919
+  bootstrap_resamples: 1000
+  critical_slice_min_n: 3
+  long_codepoints_min: 512
+  short_codepoints_max: 20
+acceptance:
+  input_retrieval:
+    ndcg_at_10_min: 0.75
+    recall_at_20_min: 0.90
+  candidates:
+    recall_at_10_min: 0.96
+    recall_at_20_min: 0.99
+    inactive_recall_at_20_min: 0.98
+    active_inactive_gap_max: 0.02
+  router:
+    macro_f1_min: 0.80
+    accepted_precision_min: 0.95
+    accepted_coverage_min: 0.60
+    unassigned_precision_min: 0.90
+    defer_recall_min: 0.90
+    wrong_certain_rate_max: 0.05
+

@@ -1,0 +1,42 @@
+{
+  "round": "SEM-07",
+  "candidate_state": "CLOSURE_VALIDATING",
+  "semantic_capability_verdict": "FAIL",
+  "engineering_contract": "PASS",
+  "catalog_version": "0.2.0",
+  "gold": {
+    "judgments": 128,
+    "calibration": 80,
+    "evaluation": 13,
+    "lockbox": 35,
+    "lockbox_assigned": 33,
+    "lockbox_defer": 2,
+    "lockbox_unassigned": 0
+  },
+  "personalized_models": [
+    "Qwen/Qwen3-Embedding-0.6B",
+    "BAAI/bge-m3"
+  ],
+  "deterministic_result_digest": "dc71239a2b00f7c985062b645d27134059a45793dda542d894b69927d18ca1d6",
+  "deterministic_repeat": "PASS",
+  "capability_summary": {
+    "input_retrieval": "FAIL",
+    "full_catalog_candidates": "FAIL",
+    "router": "FAIL",
+    "activation": "INCONCLUSIVE",
+    "privacy_local_processing": "PASS",
+    "candidate_for_separate_integration_review": []
+  },
+  "small_model_eligibility": "NOT_ELIGIBLE",
+  "owner_attention_count": 0,
+  "real_input_api_egress_events": 0,
+  "model_training_runs": 0,
+  "production_paia_modified": false,
+  "local_validation": {
+    "full_repository_tests": "65/65 PASS",
+    "full_repository_seconds": 201.296,
+    "sem07_public_engineering_validation": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "required_ci": "PENDING"
+}
