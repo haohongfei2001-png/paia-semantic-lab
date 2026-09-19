@@ -1,0 +1,75 @@
+{
+  "round": "REM-01",
+  "benchmark_version": "rem01-public-diagnostics-0.1",
+  "technical_viability": {
+    "descriptor_variants": {
+      "names_aliases": true,
+      "semantic_core": true,
+      "full_boundaries": true,
+      "fielded_full": true
+    },
+    "topic_multivector_field_max": true,
+    "query_chunk_max": true,
+    "allowed_context": true,
+    "compact_context": true,
+    "fusion_modes": {
+      "dense": true,
+      "lexical": true,
+      "rrf": true
+    }
+  },
+  "selection_status": "NO_MODEL_OR_REPRESENTATION_SELECTED",
+  "legacy_personal_calibration": "INCONCLUSIVE_PRIVATE_EVIDENCE_NOT_AUTHORIZED",
+  "diagnostic_quality": {
+    "descriptor_recall_at_20": {
+      "names_aliases": 0.7222222222222222,
+      "semantic_core": 0.6851851851851852,
+      "full_boundaries": 0.7037037037037037,
+      "fielded_full": 0.7314814814814815
+    },
+    "context_recall_at_20": {
+      "current_only": 0.16666666666666666,
+      "allowed_context": 0.9722222222222222,
+      "compact_context": 1.0
+    },
+    "chunk_recall_at_20": {
+      "whole": 1.0,
+      "chunk_max": 0.9166666666666666
+    },
+    "multivector_recall_at_20": 0.7129629629629629,
+    "fusion_recall_at_20": {
+      "dense": 0.7037037037037037,
+      "lexical": 0.7222222222222222,
+      "rrf": 0.7222222222222222
+    }
+  },
+  "source_attribution": {
+    "cutoff": 20,
+    "case_count": 108,
+    "counts": {
+      "DENSE_AND_LEXICAL": 72,
+      "DENSE_ONLY": 4,
+      "LEXICAL_ONLY": 6,
+      "MISS_ALL": 26
+    },
+    "counts_by_slice": {
+      "boundary_no_alias": {
+        "DENSE_ONLY": 4,
+        "LEXICAL_ONLY": 6,
+        "MISS_ALL": 26
+      },
+      "mixed": {
+        "DENSE_AND_LEXICAL": 36
+      },
+      "zh_short": {
+        "DENSE_AND_LEXICAL": 36
+      }
+    },
+    "rank_summary": {
+      "dense_median": 1.0,
+      "lexical_median": 1.0,
+      "fused_median": 1.0
+    }
+  },
+  "deterministic_result_digest": "631e6cc62f0e213d768848926bf62b7fd68619143e6ac0b07bb99e178c222942"
+}

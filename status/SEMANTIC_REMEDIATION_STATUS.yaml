@@ -1,7 +1,7 @@
 package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
 package_version: "0.3.0"
 plan_status: FROZEN
-phase: REM_01_READY
+phase: REM_01_CLOSURE_VALIDATING
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -44,11 +44,30 @@ rounds:
     closure_required_ci: PASS
   REM-01:
     title: "Diagnostic harness and representation probes"
-    execution_status: READY
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
     depends_on: REM-00
-    explicit_execution_authorized: false
+    explicit_execution_authorized: true
+    existing_private_artifacts_read: not_authorized
+    private_calibration_evidence: INCONCLUSIVE_PRIVATE_EVIDENCE_NOT_AUTHORIZED
     new_owner_labels: 0
+    benchmark_version: "rem01-public-diagnostics-0.1"
+    public_diagnostic_cases: 156
+    synthetic_family_count: 36
+    deterministic_result_digest: "631e6cc62f0e213d768848926bf62b7fd68619143e6ac0b07bb99e178c222942"
+    engineering_contract: PASS
+    personalized_semantic_quality: WITHHELD
+    model_selection: FORBIDDEN_IN_REM01
+    private_artifact_reads: 0
+    live_archive_reads: 0
+    real_input_api_egress_events: 0
+    model_training_runs: 0
+    production_paia_writes: 0
+    consumed_lockbox_tuning_events: 0
+    local_tests: "86/86 PASS"
+    local_test_seconds: 282.883
+    targeted_tests: "9/9 PASS"
+    closure_blocker: "REQUIRED_CI_PENDING"
   REM-02:
     title: "Representation and retrieval bake-off"
     execution_status: NOT_STARTED
@@ -83,5 +102,5 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-00 is COMPLETE/PASS. REM-01 is READY but NOT_AUTHORIZED. Stop this execution; do not start REM-01 until a new explicit user message authorizes it and any intended reuse of private artifacts."
+next_action: "REM-01 public/synthetic diagnostic harness is implemented and targeted-tested. Run full repository regression, commit/push closure candidate, require exact-head CI PASS, then close REM-01 and unlock REM-02 READY without starting it."
 product_owner_blockers: []

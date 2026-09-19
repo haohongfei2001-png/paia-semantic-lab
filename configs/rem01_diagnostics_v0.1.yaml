@@ -1,0 +1,65 @@
+version: "0.1.0"
+round: "REM-01"
+benchmark_version: "rem01-public-diagnostics-0.1"
+
+authorization:
+  private_sem06_sem07_artifacts: false
+  live_archive_read: false
+  real_input_api_egress: false
+  owner_labels: false
+  model_training: false
+  production_paia_write: false
+
+fixture_policy:
+  topics_per_domain: 2
+  long_case_topics: 12
+  context_case_topics: 36
+  family_fold_count: 6
+  long_filler_repetitions: 70
+  provenance_classes: [catalog_boundary, synthetic]
+
+descriptor_variants:
+  - names_aliases
+  - semantic_core
+  - full_boundaries
+  - fielded_full
+
+query_variants:
+  - current_only
+  - allowed_context
+  - compact_context
+
+dense_controls:
+  dimensions: 192
+  max_codepoints: 65536
+
+chunking:
+  size_codepoints: 320
+  overlap_codepoints: 64
+  aggregation_modes: [whole, chunk_max]
+
+fusion:
+  dense_top_k: 32
+  lexical_top_k: 16
+  modes: [dense, lexical, rrf]
+
+diagnostic_cutoffs: [5, 10, 20]
+
+engineering_gates:
+  provenance_coverage_min: 1.0
+  deterministic_repeat_required: true
+  silent_truncation_max: 0
+  context_probe_target_recall_at_20_min: 0.90
+  synthetic_family_fold_count_min: 4
+  descriptor_empty_rate_max: 0.0
+  runtime_failure_count_max: 0
+  unauthorized_private_reads_max: 0
+  unauthorized_egress_max: 0
+  owner_attention_max: 0
+  training_runs_max: 0
+  production_writes_max: 0
+
+claims:
+  personalized_semantic_quality: WITHHELD
+  legacy_family_grouped_calibration: INCONCLUSIVE_PRIVATE_EVIDENCE_NOT_AUTHORIZED
+  model_selection: FORBIDDEN_IN_REM01

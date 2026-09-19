@@ -36,6 +36,8 @@ jobs:
         run: python -m semantic_lab.benchmark --round SEM-06 --lab-commit "$GITHUB_SHA" --output artifacts/ci/sem06-run.json
       - name: SEM-07 final evaluation engineering validation
         run: python -m semantic_lab.benchmark --round SEM-07 --lab-commit "$GITHUB_SHA" --output artifacts/ci/sem07-run.json
+      - name: REM-01 public diagnostic harness validation
+        run: python -m semantic_lab.benchmark --round REM-01 --lab-commit "$GITHUB_SHA" --output artifacts/ci/rem01-run.json
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:

@@ -1,0 +1,31 @@
+{
+  "round": "REM-01",
+  "candidate_state": "CLOSURE_VALIDATING",
+  "capability_verdict": "PASS",
+  "engineering_contract": "PASS",
+  "legacy_family_grouped_calibration": "INCONCLUSIVE_PRIVATE_EVIDENCE_NOT_AUTHORIZED",
+  "personalized_semantic_quality": "WITHHELD",
+  "case_count": 156,
+  "family_count": 36,
+  "config_sha256": "eec8f010ff18d559430dd5b5467005ec24ba6dc7f1790270387d3952f7a169fb",
+  "evaluation_code_sha256": "9d8f74a3e2e4f14c902c67b04ca43838e83ce42dcf0cb9560f5d2b7365aca6d5",
+  "deterministic_result_digest": "631e6cc62f0e213d768848926bf62b7fd68619143e6ac0b07bb99e178c222942",
+  "guards": {
+    "private_sem06_sem07_artifacts": false,
+    "private_artifact_reads": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "owner_semantic_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_sem07_lockbox_tuning_events": 0
+  },
+  "local_validation": {
+    "full_repository_tests": "86/86 PASS",
+    "full_repository_seconds": 282.883,
+    "targeted_rem01_tests": "9/9 PASS",
+    "public_benchmark": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "required_ci": "PENDING"
+}
