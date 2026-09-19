@@ -1,0 +1,259 @@
+{
+  "round": "REM-02",
+  "benchmark_version": "rem02-public-runtime-bakeoff-0.1",
+  "candidate_id": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+  "lab_commit": "PUBLIC-LOCAL",
+  "contains_real_paia_input": false,
+  "private_artifact_reads": 0,
+  "api_egress": false,
+  "owner_semantic_labeling": false,
+  "model_training": false,
+  "production_paia_write": false,
+  "runtime_status": "PASS",
+  "runtime_qualified": true,
+  "cache_snapshot_present": true,
+  "effective_context_tokens": 32768,
+  "max_input_tokens": 2688,
+  "public_runtime_scope": {
+    "selected_family_count": 18,
+    "context_free_cases": 54,
+    "context_dependent_cases": 18,
+    "long_cases": 6,
+    "full_catalog_topic_count": 144,
+    "descriptor_variants": [
+      "full_boundaries"
+    ],
+    "context_query_variants": [
+      "current_only",
+      "allowed_context"
+    ]
+  },
+  "descriptor_bakeoff": {
+    "full_boundaries": {
+      "metrics": {
+        "overall": {
+          "recall_at_5": 0.6481481481481481,
+          "recall_at_10": 0.6481481481481481,
+          "recall_at_20": 0.6851851851851852,
+          "mrr": 0.6328515853306123
+        },
+        "boundary_no_alias": {
+          "recall_at_5": 0.0,
+          "recall_at_10": 0.0,
+          "recall_at_20": 0.05555555555555555,
+          "mrr": 0.019281251718332254
+        },
+        "mixed": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        },
+        "zh_short": {
+          "recall_at_5": 0.9444444444444444,
+          "recall_at_10": 0.9444444444444444,
+          "recall_at_20": 1.0,
+          "mrr": 0.8792735042735043
+        }
+      },
+      "ranking_digest": "3174790372dee4519f4c0f2d120eed0433572a61e3673e4f9141d6fcf40a9291"
+    }
+  },
+  "context_bakeoff": {
+    "current_only": {
+      "metrics": {
+        "overall": {
+          "recall_at_5": 0.0,
+          "recall_at_10": 0.05555555555555555,
+          "recall_at_20": 0.16666666666666666,
+          "mrr": 0.03180399681321741
+        },
+        "context_dependent": {
+          "recall_at_5": 0.0,
+          "recall_at_10": 0.05555555555555555,
+          "recall_at_20": 0.16666666666666666,
+          "mrr": 0.03180399681321741
+        }
+      },
+      "ranking_digest": "689d7962ec7d372bafc6b3237f81ffa05702a37cd4a81739988c3eb49749f830"
+    },
+    "allowed_context": {
+      "metrics": {
+        "overall": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        },
+        "context_dependent": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        }
+      },
+      "ranking_digest": "d254b55bf0efaf445ea2977c8b600368ad29546bfe5ecd033b7472dfbe4dd547"
+    }
+  },
+  "long_input_bakeoff": {
+    "metrics": {
+      "overall": {
+        "recall_at_5": 0.16666666666666666,
+        "recall_at_10": 0.3333333333333333,
+        "recall_at_20": 0.5,
+        "mrr": 0.07703159041394335
+      },
+      "long_beginning": {
+        "recall_at_5": 0.5,
+        "recall_at_10": 1.0,
+        "recall_at_20": 1.0,
+        "mrr": 0.15555555555555556
+      },
+      "long_end": {
+        "recall_at_5": 0.0,
+        "recall_at_10": 0.0,
+        "recall_at_20": 0.0,
+        "mrr": 0.0275
+      },
+      "long_middle": {
+        "recall_at_5": 0.0,
+        "recall_at_10": 0.0,
+        "recall_at_20": 0.5,
+        "mrr": 0.048039215686274506
+      }
+    },
+    "ranking_digest": "2becba4908e5178992366df933a21f8376092e032990cabdb3f2d2536d699e7f"
+  },
+  "fusion_bakeoff": {
+    "dense": {
+      "metrics": {
+        "overall": {
+          "recall_at_5": 0.6481481481481481,
+          "recall_at_10": 0.6481481481481481,
+          "recall_at_20": 0.6851851851851852,
+          "mrr": 0.6328515853306123
+        },
+        "boundary_no_alias": {
+          "recall_at_5": 0.0,
+          "recall_at_10": 0.0,
+          "recall_at_20": 0.05555555555555555,
+          "mrr": 0.019281251718332254
+        },
+        "mixed": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        },
+        "zh_short": {
+          "recall_at_5": 0.9444444444444444,
+          "recall_at_10": 0.9444444444444444,
+          "recall_at_20": 1.0,
+          "mrr": 0.8792735042735043
+        }
+      },
+      "ranking_digest": "3174790372dee4519f4c0f2d120eed0433572a61e3673e4f9141d6fcf40a9291"
+    },
+    "lexical": {
+      "metrics": {
+        "overall": {
+          "recall_at_5": 0.6851851851851852,
+          "recall_at_10": 0.7037037037037037,
+          "recall_at_20": 0.7222222222222222,
+          "mrr": 0.6927267246943843
+        },
+        "boundary_no_alias": {
+          "recall_at_5": 0.05555555555555555,
+          "recall_at_10": 0.1111111111111111,
+          "recall_at_20": 0.16666666666666666,
+          "mrr": 0.07818017408315314
+        },
+        "mixed": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        },
+        "zh_short": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        }
+      },
+      "ranking_digest": "9ab85deb02b86f485a834e464a43a6b29dd2ec616f3caad881748d28d4e45fff"
+    },
+    "rrf": {
+      "metrics": {
+        "overall": {
+          "recall_at_5": 0.7037037037037037,
+          "recall_at_10": 0.7037037037037037,
+          "recall_at_20": 0.7037037037037037,
+          "mrr": 0.6820284644072054
+        },
+        "boundary_no_alias": {
+          "recall_at_5": 0.1111111111111111,
+          "recall_at_10": 0.1111111111111111,
+          "recall_at_20": 0.1111111111111111,
+          "mrr": 0.04608539322161613
+        },
+        "mixed": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        },
+        "zh_short": {
+          "recall_at_5": 1.0,
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "mrr": 1.0
+        }
+      },
+      "ranking_digest": "219c5606d46a390ad4f9aa98ae6a0ecc5d0dc4de08d599d138c65cbb859d4bc1"
+    }
+  },
+  "input_retrieval": {
+    "metrics": {
+      "ndcg_at_10": 0.5239170294157877,
+      "recall_at_20": 1.0,
+      "mrr_at_10": 0.3813492063492064,
+      "hard_negative_top10_fpr": 1.0
+    },
+    "ranking_digest": "895af65bb1aa7db747560aec1c309f3671a9e2e627f47b97e000e5edb446b862"
+  },
+  "public_quality_vector": {
+    "candidate_recall_at_20": 0.7037037037037037,
+    "boundary_no_alias_recall_at_20": 0.1111111111111111,
+    "context_allowed_recall_at_20": 1.0,
+    "input_retrieval_ndcg_at_10": 0.5239170294157877,
+    "input_retrieval_recall_at_20": 1.0
+  },
+  "reproducibility": {
+    "encoding_replay_exact": true
+  },
+  "performance": {
+    "model_load_seconds": 1.6829949589991884,
+    "query_encode_seconds": 212.1234277500007,
+    "document_encode_seconds": {
+      "full_boundaries": 133.3235718750002
+    },
+    "peak_rss_bytes": 7908835328,
+    "embedding_dimensions": 1024
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "sentence_transformers": "5.1.1",
+    "transformers": "4.56.1",
+    "torch": "2.8.0",
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0-arm64-arm-64bit"
+  },
+  "source_hashes": {
+    "rem02_runtime_py_sha256": "ac07243bd0d2d9fe98b4d8216b39a9e729d512132e21daa911b3095f9e20acfc",
+    "rem02_config_sha256": "cc24724d5840a514ab61a24f160b56fe74ccd3b39031a544020f8d5d419303bf",
+    "rem01_harness_sha256": "9d8f74a3e2e4f14c902c67b04ca43838e83ce42dcf0cb9560f5d2b7365aca6d5"
+  },
+  "scope_note": "Public/synthetic runtime evidence only. No private SEM-06/07 artifact was read."
+}

@@ -1,0 +1,56 @@
+version: "0.1.0"
+round: "REM-02"
+benchmark_version: "rem02-public-runtime-bakeoff-0.1"
+
+authorization:
+  private_sem06_sem07_artifacts: false
+  live_archive_read: false
+  real_input_api_egress: false
+  owner_labels: false
+  model_training: false
+  production_paia_write: false
+
+runtime_candidates:
+  - id: "Qwen/Qwen3-Embedding-0.6B"
+    revision: "e692b5a16e45607c7e85d81c53e944ac90e6260a"
+    cache_dir_name: "models--Qwen--Qwen3-Embedding-0.6B"
+  - id: "BAAI/bge-m3"
+    revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+    cache_dir_name: "models--BAAI--bge-m3"
+  - id: "nomic-ai/nomic-embed-text-v2-moe"
+    revision: "c8bdf8c81cb2a168d47cc2265e6cbc99933ef19f"
+    cache_dir_name: "models--nomic-ai--nomic-embed-text-v2-moe"
+  - id: "intfloat/multilingual-e5-large-instruct"
+    revision: "9d7f719b76091b81b77635d6b652f87cfb6d1509"
+    cache_dir_name: "models--intfloat--multilingual-e5-large-instruct"
+
+representation_families_carried_from_rem01:
+  descriptor_variants: [names_aliases, semantic_core, full_boundaries, fielded_full]
+  topic_multivector: field_max
+  long_input: [whole, chunk_max]
+
+public_runtime_matrix:
+  families_per_domain: 1
+  descriptor_variants: [full_boundaries]
+  context_query_variants: [current_only, allowed_context]
+  long_case_limit: 6
+  fusion_modes: [dense, lexical, rrf]
+
+diagnostic_cutoffs: [5, 10, 20]
+batch_size: 16
+
+private_promotion:
+  family_grouped_calibration_required: true
+  bounded_legacy_evaluation_required: true
+  state_without_authorization: "BLOCKED_PRIVATE_EVIDENCE_NOT_AUTHORIZED"
+
+public_runtime:
+  require_pinned_revision: true
+  offline_only: true
+  silent_truncation: ERROR
+  missing_local_cache: NOT_RUN_LOCAL_RUNTIME_UNAVAILABLE
+
+claims:
+  promotion_shortlist: WITHHELD_PRIVATE_EVIDENCE_NOT_AUTHORIZED
+  personalized_semantic_quality: WITHHELD
+  model_selection: FORBIDDEN_WITHOUT_PRIVATE_PROMOTION_EVIDENCE

@@ -1,7 +1,7 @@
 package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
 package_version: "0.3.0"
 plan_status: FROZEN
-phase: REM_02_READY
+phase: REM_02_BLOCKED_PRIVATE_EVIDENCE
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -74,12 +74,32 @@ rounds:
     closure_required_ci: PASS
   REM-02:
     title: "Representation and retrieval bake-off"
-    execution_status: READY
-    capability_verdict: UNTESTED
+    execution_status: BLOCKED
+    capability_verdict: INCONCLUSIVE
     depends_on: REM-01
-    explicit_execution_authorized: false
-    existing_private_artifacts_read: requires_fresh_explicit_round_authorization
+    explicit_execution_authorized: true
+    existing_private_artifacts_read: not_authorized
+    private_promotion_evidence: BLOCKED_PRIVATE_EVIDENCE_NOT_AUTHORIZED
+    public_runtime_evidence: PASS
+    benchmark_version: "rem02-public-runtime-bakeoff-0.1"
+    executed_runtime_candidates: ["Qwen/Qwen3-Embedding-0.6B", "BAAI/bge-m3"]
+    unavailable_runtime_candidates: ["nomic-ai/nomic-embed-text-v2-moe", "intfloat/multilingual-e5-large-instruct"]
+    public_engineering_frontier: ["BAAI/bge-m3"]
+    public_frontier_claim: PUBLIC_SYNTHETIC_ENGINEERING_ONLY_NOT_A_PROMOTION_SHORTLIST
+    promotion_shortlist: WITHHELD_PRIVATE_EVIDENCE_NOT_AUTHORIZED
+    deterministic_result_digest: "37927e5ab3da2286d7384bd50ce2d338b676351bae86a695d95ae51b2aef36b7"
+    private_artifact_reads: 0
+    live_archive_reads: 0
+    real_input_api_egress_events: 0
+    model_training_runs: 0
+    production_paia_writes: 0
+    consumed_lockbox_tuning_events: 0
     new_owner_labels: 0
+    targeted_tests: "9/9 PASS"
+    local_tests: "90/90 PASS"
+    local_test_seconds: 239.757
+    public_runtime_validator: PASS
+    checkpoint_required_ci: PENDING
   REM-03:
     title: "Full-catalog candidate remediation and freeze"
     execution_status: NOT_STARTED
@@ -108,5 +128,9 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-01 is COMPLETE/PASS for the public/synthetic diagnostic engineering capability. Personalized semantic quality remains WITHHELD and legacy personal calibration was not authorized/read. REM-02 is READY but NOT_AUTHORIZED. Stop this execution; do not start REM-02 or reuse private artifacts until a new explicit user message authorizes that round and any intended private-artifact access."
-product_owner_blockers: []
+next_action: "REM-02 public/synthetic runtime evidence is complete and PASS, but REM-02 is BLOCKED/INCONCLUSIVE because private promotion evidence is not authorized. Resume REM-02 only after a new explicit user message authorizes read-only use of the existing 80-calibration + 13-evaluation private artifacts for REM-02. The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion. Do not start REM-03."
+product_owner_blockers:
+  - code: PRIVATE_PROMOTION_EVIDENCE_NOT_AUTHORIZED
+    round: REM-02
+    required_action: "Explicitly authorize REM-02 read-only reuse of existing SEM-06/07 private artifacts for the 80 calibration judgments and one bounded read of the 13 legacy evaluation judgments."
+    excluded_scope: "No consumed SEM-07 lockbox tuning/promotion; no live archive read; no API egress; no new labels; no training; no production write."

@@ -1,0 +1,62 @@
+{
+  "round": "REM-02",
+  "execution_status": "BLOCKED",
+  "capability_verdict": "INCONCLUSIVE",
+  "public_runtime_evidence": "PASS",
+  "public_runtime_digest": "37927e5ab3da2286d7384bd50ce2d338b676351bae86a695d95ae51b2aef36b7",
+  "public_engineering_frontier": ["BAAI/bge-m3"],
+  "public_frontier_claim": "PUBLIC_SYNTHETIC_ENGINEERING_ONLY_NOT_A_PROMOTION_SHORTLIST",
+  "promotion_shortlist": "WITHHELD_PRIVATE_EVIDENCE_NOT_AUTHORIZED",
+  "executed_runtime_candidates": [
+    {
+      "id": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+      "runtime_status": "PASS"
+    },
+    {
+      "id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "runtime_status": "PASS"
+    }
+  ],
+  "unexecuted_runtime_candidates": [
+    {
+      "id": "nomic-ai/nomic-embed-text-v2-moe",
+      "revision": "c8bdf8c81cb2a168d47cc2265e6cbc99933ef19f",
+      "runtime_status": "NOT_RUN_LOCAL_RUNTIME_UNAVAILABLE"
+    },
+    {
+      "id": "intfloat/multilingual-e5-large-instruct",
+      "revision": "9d7f719b76091b81b77635d6b652f87cfb6d1509",
+      "runtime_status": "NOT_RUN_LOCAL_RUNTIME_UNAVAILABLE"
+    }
+  ],
+  "blocker": {
+    "code": "PRIVATE_PROMOTION_EVIDENCE_NOT_AUTHORIZED",
+    "required_authorization": "Read-only use in REM-02 of existing SEM-06/07 private artifacts for the 80-judgment legacy calibration set and one bounded read of the 13-judgment legacy evaluation set.",
+    "consumed_sem07_lockbox_use": "FORBIDDEN_FOR_TUNING_OR_PROMOTION",
+    "live_archive_read": "FORBIDDEN",
+    "real_input_api_egress": "FORBIDDEN",
+    "new_owner_labels": "FORBIDDEN",
+    "model_training": "FORBIDDEN",
+    "production_paia_write": "FORBIDDEN"
+  },
+  "guards": {
+    "private_artifact_reads": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "owner_semantic_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_sem07_lockbox_tuning_events": 0
+  },
+  "local_validation": {
+    "targeted_tests": "9/9 PASS",
+    "full_repository_tests": "90/90 PASS",
+    "full_repository_seconds": 239.757,
+    "public_runtime_validator": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "checkpoint_required_ci": "PENDING",
+  "rem03_unlocked": false
+}
