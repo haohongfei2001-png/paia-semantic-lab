@@ -2,7 +2,7 @@
 
 ## Verdict
 
-REM-01 public/synthetic engineering contract: **PASS candidate**.
+REM-01 execution is **COMPLETE** with public/synthetic diagnostic engineering capability verdict **PASS**.
 
 This round validates the diagnostic harness, not personalized semantic quality. The current execution did **not** authorize reuse of private SEM-06/07 artifacts, so legacy family-grouped personal calibration remains:
 
@@ -127,8 +127,12 @@ This is a candidate set, not an ordering or winner.
 - Full repository regression: **86/86 PASS** in **282.883 s**.
 - Public REM-01 benchmark: **PASS**.
 
+## Remote validation
+
+Closure candidate commit `0c66f35f4152945cd3fb88120c475b2c7a999fb3` passed `Semantic Lab CI`: run `35428949731`, job `105859856082`, evidence artifact `10579784576` — **PASS**. The run passed Unit tests, SEM-00 through SEM-07, the new REM-01 public diagnostic harness validation, and evidence upload.
+
 ## Next round
 
-If required CI passes, REM-02 may become READY for representation/retrieval bake-off. REM-02 should not consume legacy calibration or evaluation evidence unless a new user execution message explicitly authorizes private artifact reuse.
+REM-02 is READY for representation/retrieval bake-off but remains NOT_AUTHORIZED. Legacy calibration/evaluation evidence must not be read unless a new user execution message explicitly authorizes private artifact reuse.
 
 Do not start REM-02 in this execution.
