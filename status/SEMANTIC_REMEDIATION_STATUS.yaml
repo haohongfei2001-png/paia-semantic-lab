@@ -1,7 +1,7 @@
 package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
 package_version: "0.3.0"
 plan_status: FROZEN
-phase: REM_00_READY
+phase: REM_00_CLOSURE_VALIDATING
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -22,12 +22,22 @@ data_roles:
 rounds:
   REM-00:
     title: "Legacy failure attribution and remediation hypotheses"
-    execution_status: READY
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
-    explicit_execution_authorized: false
+    explicit_execution_authorized: true
     live_archive_read: forbidden
-    existing_private_artifacts_read: requires_explicit_round_authorization
+    existing_private_artifacts_read: authorized_read_only_for_rem00
     new_owner_labels: 0
+    attribution_version: "rem00-failure-attribution-0.1"
+    attributed_cases: 35
+    reconciliation: PASS
+    primary_attribution_counts: { CONTEXT_REPRESENTATION: 5, CANDIDATE_MISS: 12, CANDIDATE_LOW_RANK: 8, ROUTER_ABSTENTION: 8, DATA_CLASS_GAP: 2 }
+    private_ledger_sha256: "86881ca24d91766cba63b3110527e9f6a1920867237b965bdd8cde2aec5d1575"
+    owner_question_required: false
+    semantic_model_config_changes: 0
+    consumed_lockbox_tuning_events: 0
+    local_tests: "77/77 PASS"
+    closure_blocker: "REQUIRED_CI_PENDING"
   REM-01:
     title: "Diagnostic harness and representation probes"
     execution_status: NOT_STARTED
@@ -68,5 +78,5 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-00 is READY but NOT_AUTHORIZED. Execute only after a new explicit user message authorizes REM-00 and, if private per-case attribution is desired, read-only access to the existing SEM-06/07 private artifacts. Do not read the live PAIA archive, request new labels, train a model, or start REM-01."
+next_action: "REM-00 closure candidate is locally validated. Commit/push candidate, require exact-head Semantic Lab CI PASS, then update canonical closure receipt and unlock REM-01 READY without starting it."
 product_owner_blockers: []

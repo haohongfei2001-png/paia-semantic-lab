@@ -1,0 +1,46 @@
+{
+  "round": "REM-00",
+  "ranking_basis": "causal dependency first, then measured diagnostic evidence; not a model-selection ranking",
+  "hypotheses": [
+    {
+      "rank": 1,
+      "hypothesis": "REPRESENTATION_AND_CANDIDATE_RECALL_IS_PRIMARY_REMEDIATION_SURFACE",
+      "causal_stage": "representation_candidate",
+      "evidence_cases": 25,
+      "action_for_next_round": "Probe Topic descriptors, Input+context representation, chunk/multi-vector and fusion contribution before Router changes."
+    },
+    {
+      "rank": 2,
+      "hypothesis": "ROUTER_ABSTENTION_REMAINS_A_SEPARATE_DOWNSTREAM_BOTTLENECK",
+      "causal_stage": "router",
+      "evidence_cases": 8,
+      "action_for_next_round": "Measure Router only on cases where at least one model already provides complete truth candidates in top10; do not tune Router yet."
+    },
+    {
+      "rank": 3,
+      "hypothesis": "INPUT_RETRIEVAL_FAILURE_IS_MODEL_SPECIFIC_AND_SEPARATE_FROM_TOPIC_CANDIDATES",
+      "causal_stage": "input_retrieval",
+      "evidence_pairs_by_model": {
+        "Qwen/Qwen3-Embedding-0.6B": 0,
+        "BAAI/bge-m3": 8
+      },
+      "action_for_next_round": "Keep Input retrieval and Topic candidate retrieval as separate objectives in REM-01 diagnostics."
+    },
+    {
+      "rank": 4,
+      "hypothesis": "CONTEXT_DEPENDENT_CASES_REQUIRE_EXPLICIT_REPRESENTATION_PROBES",
+      "causal_stage": "context",
+      "evidence_cases": 9,
+      "primary_context_failures": 5,
+      "action_for_next_round": "Ablate current-input-only versus allowed-context composition without using legacy lockbox for config selection."
+    },
+    {
+      "rank": 5,
+      "hypothesis": "LEGACY_CLASS_SUPPORT_CANNOT_CERTIFY_UNASSIGNED_DEFER",
+      "causal_stage": "benchmark_coverage",
+      "evidence_cases": 2,
+      "action_for_next_round": "Preserve class-specific INCONCLUSIVE semantics until the new independent lockbox; do not create ad-hoc labels now."
+    }
+  ],
+  "next_round_scope": "REM-01 diagnostic harness and representation probes only"
+}

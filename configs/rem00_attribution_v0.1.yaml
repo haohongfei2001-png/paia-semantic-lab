@@ -1,0 +1,61 @@
+attribution_version: "rem00-failure-attribution-0.1"
+scope:
+  split: lockbox
+  expected_cases: 35
+  models:
+    - "Qwen/Qwen3-Embedding-0.6B"
+    - "BAAI/bge-m3"
+  router_variant: base
+  consumed_lockbox_role: LEGACY_DIAGNOSTIC_ONLY
+  tuning_allowed: false
+
+primary_precedence:
+  - DATA_CLASS_GAP
+  - CATALOG_BOUNDARY
+  - CONTEXT_REPRESENTATION
+  - CANDIDATE_MISS
+  - CANDIDATE_LOW_RANK
+  - ROUTER_ABSTENTION
+  - ROUTER_WRONG_ASSIGNMENT
+  - EVIDENCE_GAP
+
+rules:
+  data_class_gap:
+    truth_states: [UNASSIGNED, DEFER]
+    rationale: "Non-ASSIGNED truth cannot diagnose assigned-topic candidate quality; sparse legacy class support is itself a data-class limitation."
+  catalog_boundary:
+    boundary_ambiguity_required: true
+  context_representation:
+    truth_state: ASSIGNED
+    context_dependent: true
+    require_no_model_complete_truth_in_top20: true
+  candidate_miss:
+    truth_state: ASSIGNED
+    require_no_model_complete_truth_in_top20: true
+  candidate_low_rank:
+    truth_state: ASSIGNED
+    require_any_model_complete_truth_in_top20: true
+    require_no_model_complete_truth_in_top10: true
+  router_abstention:
+    require_any_model_complete_truth_in_top10: true
+    require_all_models_non_assigned: true
+  router_wrong_assignment:
+    require_any_model_complete_truth_in_top10: true
+    require_any_model_assigned_not_exact: true
+
+independent_flags:
+  input_retrieval_miss:
+    positive_qrel_rank_gt: 20
+  candidate_partial_miss:
+    top_k: 20
+  router_exact_miss:
+    variant: base
+  context_dependent: true
+
+public_artifact_policy:
+  raw_text: false
+  input_ref: false
+  family_ref: false
+  calibration_id: false
+  raw_topic_ids_per_case: false
+  hashed_case_ids: true

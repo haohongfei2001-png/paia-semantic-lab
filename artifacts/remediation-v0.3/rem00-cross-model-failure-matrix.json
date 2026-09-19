@@ -1,0 +1,130 @@
+{
+  "round": "REM-00",
+  "case_count": 35,
+  "models": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "cases": 35,
+      "assigned_cases": 33,
+      "candidate_complete_top10_cases": 8,
+      "candidate_complete_top20_cases": 14,
+      "candidate_any_partial_miss_top20_cases": 19,
+      "router_assigned_cases": 1,
+      "router_exact_cases": 0,
+      "router_abstention_cases": 32,
+      "positive_qrel_pairs": 17,
+      "positive_qrel_miss_at_20_pairs": 0,
+      "candidate_metrics": {
+        "assigned_cases": 33,
+        "topic_recall_at_5": 0.29848484848484846,
+        "complete_case_recall_at_5": 0.12121212121212122,
+        "topic_recall_at_10": 0.4222222222222222,
+        "complete_case_recall_at_10": 0.24242424242424243,
+        "topic_recall_at_20": 0.6343434343434343,
+        "complete_case_recall_at_20": 0.42424242424242425
+      },
+      "router_metrics": {
+        "cases": 35,
+        "micro_precision": 1.0,
+        "micro_recall": 0.01282051282051282,
+        "micro_f1": 0.02531645569620253,
+        "macro_f1": 0.03333333333333333,
+        "route_state_accuracy": 0.02857142857142857,
+        "exact_match_rate": 0.0,
+        "accepted_precision": 1.0,
+        "accepted_coverage": 0.02857142857142857,
+        "unassigned_precision": 0.0,
+        "unassigned_recall": null,
+        "defer_recall": 0.0,
+        "wrong_certain_rate": 0.0,
+        "evidence_validity_rate": 1.0,
+        "true_unassigned_cases": 0,
+        "true_defer_cases": 2
+      },
+      "retrieval_metrics": {
+        "judged_pairs": 25,
+        "positive_pairs": 17,
+        "negative_pairs": 8,
+        "ndcg_at_10": 0.7354322529554403,
+        "recall_at_20": 1.0,
+        "mrr_at_10": 0.6490196078431373,
+        "judged_negative_top10_fpr": 1.0
+      }
+    },
+    "BAAI/bge-m3": {
+      "cases": 35,
+      "assigned_cases": 33,
+      "candidate_complete_top10_cases": 7,
+      "candidate_complete_top20_cases": 16,
+      "candidate_any_partial_miss_top20_cases": 17,
+      "router_assigned_cases": 1,
+      "router_exact_cases": 0,
+      "router_abstention_cases": 32,
+      "positive_qrel_pairs": 17,
+      "positive_qrel_miss_at_20_pairs": 8,
+      "candidate_metrics": {
+        "assigned_cases": 33,
+        "topic_recall_at_5": 0.34797979797979794,
+        "complete_case_recall_at_5": 0.18181818181818182,
+        "topic_recall_at_10": 0.41717171717171714,
+        "complete_case_recall_at_10": 0.21212121212121213,
+        "topic_recall_at_20": 0.6974747474747475,
+        "complete_case_recall_at_20": 0.48484848484848486
+      },
+      "router_metrics": {
+        "cases": 35,
+        "micro_precision": 1.0,
+        "micro_recall": 0.01282051282051282,
+        "micro_f1": 0.02531645569620253,
+        "macro_f1": 0.03333333333333333,
+        "route_state_accuracy": 0.02857142857142857,
+        "exact_match_rate": 0.0,
+        "accepted_precision": 1.0,
+        "accepted_coverage": 0.02857142857142857,
+        "unassigned_precision": 0.0,
+        "unassigned_recall": null,
+        "defer_recall": 0.0,
+        "wrong_certain_rate": 0.0,
+        "evidence_validity_rate": 1.0,
+        "true_unassigned_cases": 0,
+        "true_defer_cases": 2
+      },
+      "retrieval_metrics": {
+        "judged_pairs": 25,
+        "positive_pairs": 17,
+        "negative_pairs": 8,
+        "ndcg_at_10": 0.0,
+        "recall_at_20": 0.5294117647058824,
+        "mrr_at_10": 0.0,
+        "judged_negative_top10_fpr": 0.0
+      }
+    }
+  },
+  "reconciliation": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "checks": {
+        "candidate_topic_recall_at_10": true,
+        "candidate_topic_recall_at_20": true,
+        "router_macro_f1": true,
+        "router_accepted_coverage": true,
+        "router_exact_match_rate": true,
+        "retrieval_ndcg_at_10": true,
+        "retrieval_recall_at_20": true,
+        "retrieval_mrr_at_10": true
+      },
+      "pass": true
+    },
+    "BAAI/bge-m3": {
+      "checks": {
+        "candidate_topic_recall_at_10": true,
+        "candidate_topic_recall_at_20": true,
+        "router_macro_f1": true,
+        "router_accepted_coverage": true,
+        "router_exact_match_rate": true,
+        "retrieval_ndcg_at_10": true,
+        "retrieval_recall_at_20": true,
+        "retrieval_mrr_at_10": true
+      },
+      "pass": true
+    }
+  }
+}

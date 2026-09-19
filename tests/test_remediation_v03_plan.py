@@ -16,15 +16,27 @@ class RemediationV03PlanTests(unittest.TestCase):
             (ROOT / "status" / "SEMANTIC_REMEDIATION_STATUS.yaml").read_text()
         )
 
-    def test_package_is_frozen_with_only_rem00_ready(self):
+    def test_package_state_machine_has_single_current_round(self):
         self.assertEqual("FROZEN", self.status["plan_status"])
-        self.assertEqual("REM_00_READY", self.status["phase"])
         ready = [
             round_id for round_id, row in self.status["rounds"].items()
             if row["execution_status"] == "READY"
         ]
-        self.assertEqual(["REM-00"], ready)
-        self.assertFalse(self.status["rounds"]["REM-00"]["explicit_execution_authorized"])
+        running = [
+            round_id for round_id, row in self.status["rounds"].items()
+            if row["execution_status"] == "IN_PROGRESS"
+        ]
+        self.assertLessEqual(len(ready), 1)
+        self.assertLessEqual(len(running), 1)
+        self.assertLessEqual(len(ready) + len(running), 1)
+        if running:
+            self.assertTrue(
+                self.status["rounds"][running[0]]["explicit_execution_authorized"]
+            )
+        if ready:
+            self.assertFalse(
+                self.status["rounds"][ready[0]].get("explicit_execution_authorized", False)
+            )
 
     def test_consumed_lockbox_cannot_be_reused_for_tuning(self):
         self.assertEqual(

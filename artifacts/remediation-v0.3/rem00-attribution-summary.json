@@ -1,0 +1,1006 @@
+{
+  "round": "REM-00",
+  "attribution_version": "rem00-failure-attribution-0.1",
+  "consumed_lockbox_role": "LEGACY_DIAGNOSTIC_ONLY",
+  "case_count": 35,
+  "assigned_cases": 33,
+  "context_dependent_cases": 9,
+  "primary_attribution_counts": {
+    "CANDIDATE_LOW_RANK": 8,
+    "CANDIDATE_MISS": 12,
+    "CONTEXT_REPRESENTATION": 5,
+    "DATA_CLASS_GAP": 2,
+    "ROUTER_ABSTENTION": 8
+  },
+  "model_failure_matrix": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "cases": 35,
+      "assigned_cases": 33,
+      "candidate_complete_top10_cases": 8,
+      "candidate_complete_top20_cases": 14,
+      "candidate_any_partial_miss_top20_cases": 19,
+      "router_assigned_cases": 1,
+      "router_exact_cases": 0,
+      "router_abstention_cases": 32,
+      "positive_qrel_pairs": 17,
+      "positive_qrel_miss_at_20_pairs": 0,
+      "candidate_metrics": {
+        "assigned_cases": 33,
+        "topic_recall_at_5": 0.29848484848484846,
+        "complete_case_recall_at_5": 0.12121212121212122,
+        "topic_recall_at_10": 0.4222222222222222,
+        "complete_case_recall_at_10": 0.24242424242424243,
+        "topic_recall_at_20": 0.6343434343434343,
+        "complete_case_recall_at_20": 0.42424242424242425
+      },
+      "router_metrics": {
+        "cases": 35,
+        "micro_precision": 1.0,
+        "micro_recall": 0.01282051282051282,
+        "micro_f1": 0.02531645569620253,
+        "macro_f1": 0.03333333333333333,
+        "route_state_accuracy": 0.02857142857142857,
+        "exact_match_rate": 0.0,
+        "accepted_precision": 1.0,
+        "accepted_coverage": 0.02857142857142857,
+        "unassigned_precision": 0.0,
+        "unassigned_recall": null,
+        "defer_recall": 0.0,
+        "wrong_certain_rate": 0.0,
+        "evidence_validity_rate": 1.0,
+        "true_unassigned_cases": 0,
+        "true_defer_cases": 2
+      },
+      "retrieval_metrics": {
+        "judged_pairs": 25,
+        "positive_pairs": 17,
+        "negative_pairs": 8,
+        "ndcg_at_10": 0.7354322529554403,
+        "recall_at_20": 1.0,
+        "mrr_at_10": 0.6490196078431373,
+        "judged_negative_top10_fpr": 1.0
+      }
+    },
+    "BAAI/bge-m3": {
+      "cases": 35,
+      "assigned_cases": 33,
+      "candidate_complete_top10_cases": 7,
+      "candidate_complete_top20_cases": 16,
+      "candidate_any_partial_miss_top20_cases": 17,
+      "router_assigned_cases": 1,
+      "router_exact_cases": 0,
+      "router_abstention_cases": 32,
+      "positive_qrel_pairs": 17,
+      "positive_qrel_miss_at_20_pairs": 8,
+      "candidate_metrics": {
+        "assigned_cases": 33,
+        "topic_recall_at_5": 0.34797979797979794,
+        "complete_case_recall_at_5": 0.18181818181818182,
+        "topic_recall_at_10": 0.41717171717171714,
+        "complete_case_recall_at_10": 0.21212121212121213,
+        "topic_recall_at_20": 0.6974747474747475,
+        "complete_case_recall_at_20": 0.48484848484848486
+      },
+      "router_metrics": {
+        "cases": 35,
+        "micro_precision": 1.0,
+        "micro_recall": 0.01282051282051282,
+        "micro_f1": 0.02531645569620253,
+        "macro_f1": 0.03333333333333333,
+        "route_state_accuracy": 0.02857142857142857,
+        "exact_match_rate": 0.0,
+        "accepted_precision": 1.0,
+        "accepted_coverage": 0.02857142857142857,
+        "unassigned_precision": 0.0,
+        "unassigned_recall": null,
+        "defer_recall": 0.0,
+        "wrong_certain_rate": 0.0,
+        "evidence_validity_rate": 1.0,
+        "true_unassigned_cases": 0,
+        "true_defer_cases": 2
+      },
+      "retrieval_metrics": {
+        "judged_pairs": 25,
+        "positive_pairs": 17,
+        "negative_pairs": 8,
+        "ndcg_at_10": 0.0,
+        "recall_at_20": 0.5294117647058824,
+        "mrr_at_10": 0.0,
+        "judged_negative_top10_fpr": 0.0
+      }
+    }
+  },
+  "reconciliation": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "checks": {
+        "candidate_topic_recall_at_10": true,
+        "candidate_topic_recall_at_20": true,
+        "router_macro_f1": true,
+        "router_accepted_coverage": true,
+        "router_exact_match_rate": true,
+        "retrieval_ndcg_at_10": true,
+        "retrieval_recall_at_20": true,
+        "retrieval_mrr_at_10": true
+      },
+      "pass": true
+    },
+    "BAAI/bge-m3": {
+      "checks": {
+        "candidate_topic_recall_at_10": true,
+        "candidate_topic_recall_at_20": true,
+        "router_macro_f1": true,
+        "router_accepted_coverage": true,
+        "router_exact_match_rate": true,
+        "retrieval_ndcg_at_10": true,
+        "retrieval_recall_at_20": true,
+        "retrieval_mrr_at_10": true
+      },
+      "pass": true
+    }
+  },
+  "hypotheses": [
+    {
+      "rank": 1,
+      "hypothesis": "REPRESENTATION_AND_CANDIDATE_RECALL_IS_PRIMARY_REMEDIATION_SURFACE",
+      "causal_stage": "representation_candidate",
+      "evidence_cases": 25,
+      "action_for_next_round": "Probe Topic descriptors, Input+context representation, chunk/multi-vector and fusion contribution before Router changes."
+    },
+    {
+      "rank": 2,
+      "hypothesis": "ROUTER_ABSTENTION_REMAINS_A_SEPARATE_DOWNSTREAM_BOTTLENECK",
+      "causal_stage": "router",
+      "evidence_cases": 8,
+      "action_for_next_round": "Measure Router only on cases where at least one model already provides complete truth candidates in top10; do not tune Router yet."
+    },
+    {
+      "rank": 3,
+      "hypothesis": "INPUT_RETRIEVAL_FAILURE_IS_MODEL_SPECIFIC_AND_SEPARATE_FROM_TOPIC_CANDIDATES",
+      "causal_stage": "input_retrieval",
+      "evidence_pairs_by_model": {
+        "Qwen/Qwen3-Embedding-0.6B": 0,
+        "BAAI/bge-m3": 8
+      },
+      "action_for_next_round": "Keep Input retrieval and Topic candidate retrieval as separate objectives in REM-01 diagnostics."
+    },
+    {
+      "rank": 4,
+      "hypothesis": "CONTEXT_DEPENDENT_CASES_REQUIRE_EXPLICIT_REPRESENTATION_PROBES",
+      "causal_stage": "context",
+      "evidence_cases": 9,
+      "primary_context_failures": 5,
+      "action_for_next_round": "Ablate current-input-only versus allowed-context composition without using legacy lockbox for config selection."
+    },
+    {
+      "rank": 5,
+      "hypothesis": "LEGACY_CLASS_SUPPORT_CANNOT_CERTIFY_UNASSIGNED_DEFER",
+      "causal_stage": "benchmark_coverage",
+      "evidence_cases": 2,
+      "action_for_next_round": "Preserve class-specific INCONCLUSIVE semantics until the new independent lockbox; do not create ad-hoc labels now."
+    }
+  ],
+  "sanitized_case_ledger": [
+    {
+      "case_hash": "69b4f77f75428fcf2d3c",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "606a64e1537773a28aa9",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "7fa133e67bf415e5555f",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "fa5c10dbe5045183e5dc",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "fcab67d26bad25a8cc19",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "167669f791f4456a150a",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "f658cda7efdddcaba695",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "ASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "ASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "76a54a806918bc16038b",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "9830bc8695075cd36e47",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "62092c77e6668e75a5aa",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "0ccc6b9c33a16683ae5b",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "6bb5899dfc52f7343353",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "c7baa0e4580ea4022071",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "41c40759eded38fa22db",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "09e94b4b92cfa5e7163d",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "153b9148c5215ba4e296",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "9704576c6497121fbe1a",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "0520ac73a0885ac2c4e6",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "2ae995082c734d87ba34",
+      "truth_state": "DEFER",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "DATA_CLASS_GAP",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "a19e67eba61a8243d5f3",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "eca1e4f67e8cbbea627f",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "6490a14eeca9928b509e",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "d6a36eecea893d8de01a",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "29ffccd221462e223c4c",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "330a97ffcd5b42b3abd9",
+      "truth_state": "DEFER",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "DATA_CLASS_GAP",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "af749bc5e8193be98e4a",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "9b888bc6d0dd981b08a6",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "32e0db55706fba0e49dd",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "f92ff8e2ccf3c6553ed2",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "8a0cdaf152e362c261a1",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "61a53458b456b9d081ca",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "3b5a609ada3d6e715e3e",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "2bc259a5a091f1abaad7",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_MISS",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "216413332ac79c100f05",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "8662cf05e06cbbbee715",
+      "truth_state": "ASSIGNED",
+      "context_dependent": false,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    }
+  ],
+  "guards": {
+    "remediation_config_changes": 0,
+    "new_owner_labels": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "model_training_runs": 0,
+    "production_paia_modifications": 0,
+    "consumed_lockbox_tuning_events": 0
+  },
+  "privacy": {
+    "contains_raw_text": false,
+    "contains_input_ref": false,
+    "contains_family_ref": false,
+    "contains_calibration_id": false,
+    "contains_per_case_topic_ids": false
+  },
+  "summary_digest": "436a0c7d080fb43de042acfa3e34357c9a5bcc0e34764ccf68cdbcf90761deaa"
+}

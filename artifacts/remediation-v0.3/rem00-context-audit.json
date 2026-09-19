@@ -1,0 +1,219 @@
+{
+  "round": "REM-00",
+  "context_dependent_cases": 9,
+  "primary_attribution_counts": {
+    "ROUTER_ABSTENTION": 2,
+    "CONTEXT_REPRESENTATION": 5,
+    "CANDIDATE_LOW_RANK": 2
+  },
+  "sanitized_cases": [
+    {
+      "case_hash": "fa5c10dbe5045183e5dc",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "6bb5899dfc52f7343353",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "41c40759eded38fa22db",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "09e94b4b92cfa5e7163d",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "DEFER",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "DEFER",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "153b9148c5215ba4e296",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "9704576c6497121fbe1a",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CANDIDATE_LOW_RANK",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "eca1e4f67e8cbbea627f",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "ROUTER_ABSTENTION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": true,
+          "candidate_complete_top20": true,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "9b888bc6d0dd981b08a6",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": true,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    },
+    {
+      "case_hash": "61a53458b456b9d081ca",
+      "truth_state": "ASSIGNED",
+      "context_dependent": true,
+      "boundary_ambiguity": false,
+      "primary_attribution": "CONTEXT_REPRESENTATION",
+      "model_flags": {
+        "Qwen/Qwen3-Embedding-0.6B": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        },
+        "BAAI/bge-m3": {
+          "input_retrieval_miss": false,
+          "candidate_complete_top10": false,
+          "candidate_complete_top20": false,
+          "router_state": "UNASSIGNED",
+          "router_exact": false
+        }
+      }
+    }
+  ],
+  "interpretation": "Context dependence is a representation diagnostic, not permission to tune on the consumed lockbox."
+}
