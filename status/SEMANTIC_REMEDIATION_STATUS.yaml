@@ -1,0 +1,72 @@
+package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
+package_version: "0.3.0"
+plan_status: FROZEN
+phase: REM_00_READY
+baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
+architecture_baseline: "v0.2 semantic contract"
+production_paia_modified: false
+real_archive_read: false
+real_input_api_egress: false
+model_training_started: false
+future_lockbox_created: false
+consumed_sem07_lockbox_role: LEGACY_DIAGNOSTIC_ONLY
+owner_attention:
+  new_labels_forbidden_through: "REM-04"
+  planned_label_round: "REM-05"
+  final_round_new_labels: 0
+data_roles:
+  legacy_calibration_judgments: 80
+  legacy_evaluation_judgments: 13
+  consumed_sem07_lockbox_judgments: 35
+  future_rem06_lockbox_target: 96
+rounds:
+  REM-00:
+    title: "Legacy failure attribution and remediation hypotheses"
+    execution_status: READY
+    capability_verdict: UNTESTED
+    explicit_execution_authorized: false
+    live_archive_read: forbidden
+    existing_private_artifacts_read: requires_explicit_round_authorization
+    new_owner_labels: 0
+  REM-01:
+    title: "Diagnostic harness and representation probes"
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    depends_on: REM-00
+    new_owner_labels: 0
+  REM-02:
+    title: "Representation and retrieval bake-off"
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    depends_on: REM-01
+    new_owner_labels: 0
+  REM-03:
+    title: "Full-catalog candidate remediation and freeze"
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    depends_on: REM-02
+    promotion_gate: ORIGINAL_CANDIDATE_THRESHOLDS
+    new_owner_labels: 0
+  REM-04:
+    title: "Router remediation and pre-lockbox freeze"
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    depends_on: REM-03
+    prerequisite: REM_03_CANDIDATE_PROMOTION_PASS
+    new_owner_labels: 0
+  REM-05:
+    title: "New independent personal lockbox construction"
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    depends_on: REM-04
+    fresh_snapshot_authorization_required: true
+    owner_semantic_batch: planned_once
+  REM-06:
+    title: "Frozen v0.3 certification"
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    depends_on: REM-05
+    new_owner_labels: 0
+    production_integration: forbidden
+next_action: "REM-00 is READY but NOT_AUTHORIZED. Execute only after a new explicit user message authorizes REM-00 and, if private per-case attribution is desired, read-only access to the existing SEM-06/07 private artifacts. Do not read the live PAIA archive, request new labels, train a model, or start REM-01."
+product_owner_blockers: []

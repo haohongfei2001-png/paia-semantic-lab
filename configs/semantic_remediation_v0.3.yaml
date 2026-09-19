@@ -1,0 +1,67 @@
+package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
+package_version: "0.3.0"
+architecture_baseline: "v0.2 semantic contract"
+baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
+
+guards:
+  production_paia_write: DENY
+  real_input_api_egress: DENY
+  model_training: DENY
+  automatic_topic_creation: DENY
+  silent_catalog_boundary_change: DENY
+  consumed_sem07_lockbox_for_tuning: DENY
+
+data_roles:
+  legacy_calibration:
+    judgments: 80
+    usage: "family_grouped_development"
+  legacy_evaluation:
+    judgments: 13
+    usage: "bounded_promotion_validation_no_threshold_fit"
+  consumed_sem07_lockbox:
+    judgments: 35
+    usage: "retrospective_diagnostic_only"
+  future_rem06_lockbox:
+    state: NOT_CREATED
+    target_cases: 96
+    representative_cases: 64
+    challenge_cases: 32
+    family_disjoint_from_all_v02_gold: true
+    fixed_before_labels: true
+    label_adaptive_topup: false
+    model_identity_blinded: true
+
+final_gates:
+  input_retrieval:
+    ndcg_at_10_min: 0.75
+    recall_at_20_min: 0.90
+    exact_term_regression_max: 0.02
+  candidates:
+    recall_at_10_min: 0.96
+    recall_at_20_min: 0.99
+    inactive_recall_at_20_min: 0.98
+    active_inactive_gap_max: 0.02
+  router:
+    macro_f1_min: 0.80
+    accepted_precision_min: 0.95
+    accepted_coverage_min: 0.60
+    unassigned_precision_min: 0.90
+    defer_recall_min: 0.90
+    wrong_certain_rate_max: 0.05
+  privacy:
+    unauthorized_production_writes_max: 0
+    unauthorized_real_input_egress_max: 0
+    provenance_coverage_min: 1.0
+    silent_truncation_max: 0
+    stale_default_retrieval_leaks_max: 0
+
+owner_attention:
+  new_labels_forbidden_through: "REM-04"
+  planned_label_round: "REM-05"
+  final_round_new_labels: 0
+
+local_model_policy:
+  require_pinned_revision: true
+  private_eval_offline: true
+  prefetch_public_weights_before_private_eval: true
+  nomic_trust_remote_code_requires_sandbox: true

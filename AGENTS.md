@@ -12,3 +12,7 @@
 10. Cluster IDs are never Topic IDs.
 11. Human gold is reusable and versioned; never request relabeling merely because a model changed.
 12. One execution message authorizes only the current canonical READY round. Complete it, update status, commit/push, re-read remote, then stop.
+13. Semantic Lab v0.2 is closed. v0.3 remediation uses `status/SEMANTIC_REMEDIATION_STATUS.yaml` and `docs/remediation-v0.3/` as its package authority; do not mutate the historical v0.2 status to drive v0.3 rounds.
+14. The consumed 35-case SEM-07 lockbox is `LEGACY_DIAGNOSTIC_ONLY`: it may support retrospective attribution but may not be used for threshold fitting, config/model ranking, promotion or certification.
+15. REM-00 through REM-04 require zero new owner semantic labels. REM-05 is the only planned new-label round and requires fresh snapshot authorization. REM-06 reuses the frozen REM-05 lockbox with zero new labels.
+16. No model training or production integration is authorized by the v0.3 remediation package.

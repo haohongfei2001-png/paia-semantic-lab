@@ -1,0 +1,35 @@
+{
+  "package_id": "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION",
+  "package_version": "0.3.0",
+  "plan_status": "FROZEN",
+  "baseline_remote_commit": "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53",
+  "v02_execution_state": "SEM_07_COMPLETE",
+  "v02_semantic_capability_verdict": "FAIL",
+  "current_round": "REM-00",
+  "current_round_state": "READY_NOT_AUTHORIZED",
+  "production_paia_modified": false,
+  "real_archive_read_for_plan": false,
+  "private_personal_artifacts_read_for_plan": false,
+  "new_owner_labels": 0,
+  "real_input_api_egress_events": 0,
+  "model_training_runs": 0,
+  "consumed_sem07_lockbox_role": "LEGACY_DIAGNOSTIC_ONLY",
+  "future_lockbox_state": "NOT_CREATED",
+  "frozen_principles": [
+    "repair representation/candidate retrieval before Router",
+    "do not lower v0.2 final certification thresholds",
+    "do not use consumed SEM-07 lockbox for tuning or certification",
+    "defer all planned new semantic labeling to REM-05",
+    "freeze all remediation code/config before constructing the new lockbox",
+    "no training or production integration in this package"
+  ],
+  "planned_rounds": [
+    "REM-00",
+    "REM-01",
+    "REM-02",
+    "REM-03",
+    "REM-04",
+    "REM-05",
+    "REM-06"
+  ]
+}
