@@ -103,6 +103,10 @@ The consumed 35-case SEM-07 lockbox remains diagnostic-only and was not used.
 - REM-02 public runtime evidence validator: **PASS**.
 - `git diff --check`: PASS.
 
+## Remote validation
+
+Checkpoint commit `2c575aca42ba22d432ab5894064940e9b03293ef` passed `Semantic Lab CI`: run `35444322684`, job `105900531480`, evidence artifact `10585086878` — **PASS**. The run passed Unit tests, SEM-00 through SEM-07, REM-01 public diagnostics, REM-02 public runtime evidence validation, and evidence upload.
+
 ## Current blocker
 
 Required to resume REM-02:
