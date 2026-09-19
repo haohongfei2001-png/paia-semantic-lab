@@ -1,8 +1,8 @@
-# SEM-07 — Frozen Personal Evaluation / Lockbox Closure Candidate
+# SEM-07 — Frozen Personal Evaluation / Lockbox Closure
 
 ## Verdict
 
-SEM-07 execution candidate is ready for remote CI closure. The measured **semantic capability verdict is FAIL**, while the evaluation/isolation engineering contract is **PASS**. Execution completion must not be interpreted as semantic capability approval.
+SEM-07 execution is **COMPLETE**. The measured **semantic capability verdict is FAIL**, while the evaluation/isolation engineering contract is **PASS**. Execution completion does not mean semantic capability approval.
 
 No capability is currently eligible for production integration. No classifier/distillation training was started.
 
@@ -64,7 +64,7 @@ Canonical public SEM-07 engineering benchmark: **PASS**:
 
 Existing regressions also cover revision/catalog mismatch, stale decisions, incremental rebuild/purge, default-deny external calls, activation lifecycle, and provider-unavailable behavior.
 
-Required exact-head GitHub CI is still **PENDING** for this closure candidate. Canonical status must remain IN_PROGRESS/CLOSURE_VALIDATING until that remote gate succeeds.
+Remote closure validation passed on candidate commit `26f3e1ed31dc9c068e84f1604d94bba0dfac107f`: `Semantic Lab CI` run `35421017814`, job `105838614336`, evidence artifact `10577258290` — **PASS**. Canonical status may therefore mark SEM-07 COMPLETE with capability verdict FAIL.
 
 ## Integration and small-model decision
 

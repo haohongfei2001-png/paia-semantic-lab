@@ -1,6 +1,6 @@
 {
   "round": "SEM-07",
-  "candidate_state": "CLOSURE_VALIDATING",
+  "candidate_state": "COMPLETE",
   "semantic_capability_verdict": "FAIL",
   "engineering_contract": "PASS",
   "catalog_version": "0.2.0",
@@ -38,5 +38,13 @@
     "sem07_public_engineering_validation": "PASS",
     "git_diff_check": "PASS"
   },
-  "required_ci": "PENDING"
+  "required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35421017814,
+    "job_id": 105838614336,
+    "evidence_artifact_id": 10577258290,
+    "validated_commit": "26f3e1ed31dc9c068e84f1604d94bba0dfac107f",
+    "conclusion": "success"
+  }
 }

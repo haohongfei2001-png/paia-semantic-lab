@@ -1,6 +1,6 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: SEM_07_CLOSURE_VALIDATING
+phase: SEM_07_COMPLETE
 plan_only: false
 production_paia_modified: false
 real_archive_read: true
@@ -124,8 +124,8 @@ rounds:
     validated_main_commit: "2936c607e4fb5cbc172462b9a81217ec0f581e90"
     closure_required_ci: PASS
   SEM-07:
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: FAIL
     depends_on: SEM-06
     new_owner_labels: exception_only
     explicit_execution_authorized: true
@@ -144,6 +144,10 @@ rounds:
     deterministic_replay: PASS
     deterministic_result_digest: "dc71239a2b00f7c985062b645d27134059a45793dda542d894b69927d18ca1d6"
     local_tests: "65/65 PASS"
-    closure_blocker: "REQUIRED_CI_PENDING"
-next_action: "SEM-07 closure candidate is locally validated. Commit/push the candidate, require exact-head Semantic Lab CI PASS, then update canonical status/receipt. Do not start production integration, training or any later package."
+    closure_validation_run_id: 35421017814
+    closure_validation_job_id: 105838614336
+    closure_evidence_artifact_id: 10577258290
+    validated_main_commit: "26f3e1ed31dc9c068e84f1604d94bba0dfac107f"
+    closure_required_ci: PASS
+next_action: "SEM-07 is COMPLETE with semantic capability verdict FAIL. No capability is approved for integration and small-model training is NOT_ELIGIBLE. Stop this execution; any remediation/integration/training requires a separately authorized package."
 product_owner_blockers: []
