@@ -1,7 +1,7 @@
 package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
 package_version: "0.3.0"
 plan_status: FROZEN
-phase: REM_00_CLOSURE_VALIDATING
+phase: REM_01_READY
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -22,8 +22,8 @@ data_roles:
 rounds:
   REM-00:
     title: "Legacy failure attribution and remediation hypotheses"
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: PASS
     explicit_execution_authorized: true
     live_archive_read: forbidden
     existing_private_artifacts_read: authorized_read_only_for_rem00
@@ -37,12 +37,17 @@ rounds:
     semantic_model_config_changes: 0
     consumed_lockbox_tuning_events: 0
     local_tests: "77/77 PASS"
-    closure_blocker: "REQUIRED_CI_PENDING"
+    closure_validation_run_id: 35426635003
+    closure_validation_job_id: 105853634027
+    closure_evidence_artifact_id: 10579441302
+    validated_main_commit: "54c44828a3299efff35b878bca88126ea03ecdf0"
+    closure_required_ci: PASS
   REM-01:
     title: "Diagnostic harness and representation probes"
-    execution_status: NOT_STARTED
+    execution_status: READY
     capability_verdict: UNTESTED
     depends_on: REM-00
+    explicit_execution_authorized: false
     new_owner_labels: 0
   REM-02:
     title: "Representation and retrieval bake-off"
@@ -78,5 +83,5 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-00 closure candidate is locally validated. Commit/push candidate, require exact-head Semantic Lab CI PASS, then update canonical closure receipt and unlock REM-01 READY without starting it."
+next_action: "REM-00 is COMPLETE/PASS. REM-01 is READY but NOT_AUTHORIZED. Stop this execution; do not start REM-01 until a new explicit user message authorizes it and any intended reuse of private artifacts."
 product_owner_blockers: []

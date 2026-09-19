@@ -1,8 +1,8 @@
-# REM-00 — Legacy Failure Attribution Closure Candidate
+# REM-00 — Legacy Failure Attribution Closure
 
 ## Verdict
 
-REM-00 diagnostic capability: **PASS candidate**. All 35 consumed SEM-07 lockbox cases received one deterministic primary attribution, and reconstructed candidate/Router/Input-retrieval metrics reconcile exactly to the frozen SEM-07 public scorecard for both personally evaluated models.
+REM-00 execution is **COMPLETE** with diagnostic capability verdict **PASS**. All 35 consumed SEM-07 lockbox cases received one deterministic primary attribution, and reconstructed candidate/Router/Input-retrieval metrics reconcile exactly to the frozen SEM-07 public scorecard for both personally evaluated models.
 
 The consumed lockbox remains **LEGACY_DIAGNOSTIC_ONLY**. No result in this round is a model/config promotion score.
 
@@ -67,6 +67,10 @@ The private per-case ledger remains outside Git. Git contains only anonymous cas
 - Full repository regression: **77/77 PASS** in **146.008 s**.
 - `git diff --check`: PASS.
 
+## Remote validation
+
+Closure candidate commit `54c44828a3299efff35b878bca88126ea03ecdf0` passed `Semantic Lab CI`: run `35426635003`, job `105853634027`, evidence artifact `10579441302` — **PASS**.
+
 ## Next round
 
-If required CI passes, REM-01 may become READY for **diagnostic harness and representation probes only**. Do not start REM-01 in this execution.
+REM-01 is READY for **diagnostic harness and representation probes only**, but remains NOT_AUTHORIZED. Do not start REM-01 in this execution.

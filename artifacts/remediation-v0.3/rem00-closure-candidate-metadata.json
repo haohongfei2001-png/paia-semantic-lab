@@ -1,6 +1,6 @@
 {
   "round": "REM-00",
-  "candidate_state": "CLOSURE_VALIDATING",
+  "candidate_state": "COMPLETE",
   "capability_verdict": "PASS",
   "attribution_version": "rem00-failure-attribution-0.1",
   "legacy_lockbox_role": "LEGACY_DIAGNOSTIC_ONLY",
@@ -30,5 +30,13 @@
     "targeted_tests": "12/12 PASS",
     "git_diff_check": "PASS"
   },
-  "required_ci": "PENDING"
+  "required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35426635003,
+    "job_id": 105853634027,
+    "evidence_artifact_id": 10579441302,
+    "validated_commit": "54c44828a3299efff35b878bca88126ea03ecdf0",
+    "conclusion": "success"
+  }
 }
