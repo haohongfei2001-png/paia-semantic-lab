@@ -1,0 +1,63 @@
+{
+  "round": "REM-02",
+  "plan_version": "rem02-private-promotion-0.1",
+  "status": "FROZEN_BEFORE_PRIVATE_LABEL_EVIDENCE",
+  "authorized_evidence": {
+    "calibration_judgments": 80,
+    "legacy_evaluation_judgments": 13,
+    "legacy_evaluation_max_reads": 1
+  },
+  "forbidden_evidence": {
+    "consumed_sem07_lockbox_tuning_or_promotion": true,
+    "live_archive_read": true,
+    "real_input_api_egress": true,
+    "new_owner_labels": true,
+    "model_training": true,
+    "production_paia_write": true
+  },
+  "models": [
+    {
+      "id": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a"
+    },
+    {
+      "id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648"
+    }
+  ],
+  "matrix": {
+    "descriptor_variants": ["full_boundaries", "fielded_full"],
+    "query_variants": ["current_only", "allowed_context"],
+    "ranking_modes": ["dense", "rrf"],
+    "candidate_cutoffs": [10, 20],
+    "full_catalog_required": true,
+    "activity_prior": "DISABLED"
+  },
+  "calibration_selection": {
+    "folds": 6,
+    "fold_assignment": "sha256(family_ref) modulo 6",
+    "fold_aggregation": "macro_mean_over_nonempty_folds",
+    "selection_pool": "calibration_pareto_frontier",
+    "pareto_dimensions": {
+      "maximize": ["candidate_complete_case_recall_at_20", "candidate_topic_recall_at_20", "context_dependent_complete_case_recall_at_20"],
+      "minimize": ["lower_peak_rss_bytes"]
+    },
+    "objective_order": [
+      "candidate_complete_case_recall_at_20",
+      "candidate_topic_recall_at_20",
+      "candidate_complete_case_recall_at_10",
+      "context_dependent_complete_case_recall_at_20",
+      "lower_peak_rss_bytes"
+    ],
+    "max_shortlist": 3,
+    "no_threshold_fitting": true,
+    "no_router_evaluation": true
+  },
+  "legacy_evaluation": {
+    "read_policy": "ONE_BOUNDED_PASS_AFTER_SHORTLIST_FREEZE",
+    "evaluate_only_frozen_shortlist": true,
+    "no_reselection_after_read": true,
+    "no_threshold_or_representation_changes_after_read": true
+  },
+  "public_output_policy": "aggregate metrics, frozen config identities, hashes and guard counters only; no raw Input, input_ref, family_ref, calibration_id or per-case Topic labels"
+}

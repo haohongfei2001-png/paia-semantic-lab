@@ -1,123 +1,108 @@
-# REM-02 — Representation and Retrieval Bake-off (Blocked Closure)
+# REM-02 — Representation and Retrieval Bake-off Closure
 
-## Status
+## Verdict
 
-REM-02 public/synthetic runtime evidence is **PASS**, but the round is **BLOCKED / INCONCLUSIVE** because this execution did not authorize read-only reuse of the private SEM-06/07 legacy calibration/evaluation artifacts required by the frozen REM-02 contract.
+REM-02 execution is **COMPLETE** with bake-off capability verdict **PASS**.
 
-This is not a semantic capability failure. It is an evidence-authorization blocker.
+This means the representation/retrieval comparison protocol completed correctly, not that the current candidate stack already satisfies the future REM-03 promotion gate. It does not.
 
-## Public runtime scope
+## Evidence consumed
 
-The bounded public runtime matrix used:
-- all 144 ACTIVE System Topics as the candidate universe;
-- 18 synthetic/catalog families, one per internal domain;
-- 54 context-free candidate cases;
-- 18 context-dependent cases;
-- 6 long-position cases;
-- the separate SEM-02 public Input-retrieval fixture;
-- frozen `full_boundaries` Topic descriptor;
-- current-input and allowed-context query views;
-- dense, lexical and RRF candidate paths.
+Authorized private evidence was used exactly within the frozen scope:
 
-The initial broader public Cartesian matrix was stopped before it produced any quality result because its CPU cost was disproportionate while private promotion evidence was unavailable. The bounded matrix was frozen before the successful Qwen/BGE results were observed.
-
-## Local model runtime
-
-### Qwen/Qwen3-Embedding-0.6B
-
-Pinned revision: `e692b5a16e45607c7e85d81c53e944ac90e6260a`.
-
-- candidate RRF Recall@20: **0.7037**
-- boundary-no-alias Recall@20: **0.1111**
-- allowed-context Recall@20: **1.0000**
-- current-input-only context Recall@20: **0.1667**
-- long-input Recall@20: **0.5000**
-- Input retrieval nDCG@10: **0.5239**
-- Input retrieval Recall@20: **1.0000**
-- hard-negative top-10 FPR: **1.0000**
-- encoding replay exact: **PASS**
-- peak RSS: **7,908,835,328 bytes**
-- max observed token count: **2,688**, below effective 32,768-token limit.
-
-### BAAI/bge-m3
-
-Pinned revision: `cb1779f90b988b8deb01f9155c790ef9417d7648`.
-
-- candidate RRF Recall@20: **0.7037**
-- boundary-no-alias Recall@20: **0.1111**
-- allowed-context Recall@20: **1.0000**
-- current-input-only context Recall@20: **0.1667**
-- long-input Recall@20: **0.8333**
-- Input retrieval nDCG@10: **0.8132**
-- Input retrieval Recall@20: **1.0000**
-- hard-negative top-10 FPR: **1.0000**
-- encoding replay exact: **PASS**
-- peak RSS: **4,308,697,088 bytes**
-- max observed token count: **3,510**, below effective 8,192-token limit.
-
-## What the public evidence says
-
-The two executed embedding models produce the same overall candidate Recall@20 and the same extremely low boundary-no-alias Recall@20. This supports the REM-00/01 diagnosis that the main Topic-candidate bottleneck is not resolved by simply switching between these two embedding models.
-
-Allowed same-conversation context changes both models from 0.1667 to 1.0000 Recall@20 on the deliberately context-dependent synthetic slice. Context representation therefore remains a required bake-off axis.
-
-BGE-M3 is on the **public/synthetic engineering frontier** because it matches Qwen on the measured candidate/context dimensions while showing better public Input-retrieval ranking, better long-input results, and lower peak RSS.
-
-That is **not** a promotion shortlist or model winner. The frozen REM-02 plan requires private family-grouped calibration plus one bounded legacy-evaluation pass before any promotion decision.
-
-The public Input-retrieval result also has a warning: both executed models put every judged hard negative inside top 10 on the small public fixture (FPR 1.0). Recall@20 alone therefore cannot be treated as success.
-
-## Candidates not executed
-
-- `nomic-ai/nomic-embed-text-v2-moe@c8bdf8c...`: `NOT_RUN_LOCAL_RUNTIME_UNAVAILABLE`
-- `intfloat/multilingual-e5-large-instruct@9d7f719b...`: `NOT_RUN_LOCAL_RUNTIME_UNAVAILABLE`
-
-No quality penalty is assigned to unexecuted candidates.
-
-## Mechanisms carried from REM-01
-
-REM-01 already established engineering viability for:
-- four Topic descriptor constructions;
-- field-max Topic multi-vector representation;
-- whole and chunk-max long-input handling;
-- dense / lexical / RRF source paths.
-
-REM-02 did not repeat the most expensive public Cartesian combinations because private promotion evidence was unavailable. No quality conclusion is drawn from non-execution.
-
-## Authorization and privacy audit
-
-- private SEM-06/07 artifact reads: **0**
+- legacy calibration: **80 judgments**
+- legacy evaluation: **13 judgments**
+- legacy evaluation read budget: **1**
+- legacy evaluation reads consumed: **1**
+- consumed SEM-07 lockbox labels used for tuning/promotion: **0**
 - live PAIA archive reads: **0**
 - real Input API egress: **0**
-- owner semantic labels: **0**
-- model training runs: **0**
+- new owner labels: **0**
+- model training: **0**
 - production PAIA writes: **0**
-- consumed SEM-07 lockbox tuning events: **0**
 
-The consumed 35-case SEM-07 lockbox remains diagnostic-only and was not used.
+The private-promotion evaluator and plan were hash-frozen before calibration evidence was opened. Evaluation refused plan/code drift and ran only against the calibration-frozen shortlist.
+
+## Public runtime evidence
+
+| Model | Candidate RRF Recall@20 | Boundary-no-alias Recall@20 | Allowed-context Recall@20 | Input retrieval nDCG@10 | Peak RSS |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Qwen3-Embedding-0.6B | 0.7037 | 0.1111 | 1.0000 | 0.5239 | 7.91 GB |
+| BGE-M3 | 0.7037 | 0.1111 | 1.0000 | 0.8132 | 4.31 GB |
+
+Nomic and multilingual-E5 were not present in the local model cache and remain NOT_RUN_LOCAL_RUNTIME_UNAVAILABLE; no quality penalty is assigned.
+
+## Calibration stage
+
+The frozen private matrix evaluated **16 configurations**: 2 models × 2 Topic descriptors × 2 query views × 2 ranking modes. Calibration used six deterministic family-disjoint folds and a Pareto-first selection protocol.
+
+Two configurations remained on the Pareto frontier and were frozen before legacy evaluation:
+
+1. rem02cfg-30ed3156c71fd270 — BGE-M3 / full_boundaries / allowed_context / RRF
+2. rem02cfg-d2af02a6913bddf3 — BGE-M3 / full_boundaries / current_only / RRF
+
+Both produced the same calibration family-macro metrics:
+
+- complete-case Recall@20: **0.3413**
+- topic Recall@20: **0.5349**
+- complete-case Recall@10: **0.0518**
+- context-dependent complete-case Recall@20: **0.4333**
+- minimum fold complete-case Recall@20: **0.2000**
+
+Frozen shortlist hash: c1f19a33ef0ea55f2a272b8d4596cb0db9fc5cd6feaa3fca71700b66b8ade23e
+
+## One bounded legacy-evaluation pass
+
+The evaluation stage consumed the 13-judgment legacy evaluation set exactly once and evaluated only the two frozen shortlist configurations.
+
+Both configurations again produced identical rankings and identical metrics:
+
+- topic Recall@20: **0.5795**
+- complete-case Recall@20: **0.2308**
+- complete-case Recall@10: **0.0000**
+- context-dependent complete-case Recall@20: **0.0000**
+- evaluation ranking digest: 64db54037fdd848929d4bca91c58ec03703a76e4b0bc3adfcb7654d1e95d9615
+
+Only one evaluation case is context-dependent, so the context-specific evaluation metric has very low support and must not be overgeneralized.
+
+The fact that allowed_context and current_only remain identical in this frozen BGE+RRF stack means REM-01's strong synthetic context gain did not translate into a legacy-personal candidate gain under the current candidate construction. That is a remediation target, not permission to tune on the evaluation set.
+
+## Relation to REM-03 gate
+
+The shortlisted baseline family is **not** close to the frozen REM-03 candidate gate.
+
+- legacy evaluation topic Recall@20: **0.5795**
+- future REM-03 required Candidate Recall@20: **0.99**
+
+Therefore REM-03 must perform actual candidate-generation remediation. The current shortlist is a baseline/remediation starting point, not an already-promotable candidate configuration.
+
+REM-03 may explore the bounded remediation surfaces already frozen by the package: context-aware query composition, descriptor composition, fusion/reranking, candidate-width changes, confusing-neighbor handling, and multi-vector/chunk aggregation. It may not lower the .96/.99 candidate gates.
+
+## Input retrieval remains separate
+
+On the public Input-retrieval fixture, BGE-M3 reached nDCG@10 **0.8132** and Recall@20 **1.0000**, but hard-negative top-10 FPR remained **1.0000**. This does not cancel the Topic-candidate failure.
+
+## Reproducibility and privacy
+
+- public runtime digest: 37927e5ab3da2286d7384bd50ce2d338b676351bae86a695d95ae51b2aef36b7
+- calibration result digest: 728e407fb6f0131e1991ad62718f4a36481e74ff0083446e49102007074eb848
+- evaluation result digest: 5bf25955f278fd1fc125e09348d040eda1e75f07322f83250c860c5fe45a0849
+- private-promotion plan SHA-256: 0f99504f278573730c698b95f92303cd0a048cef43cc351900b076242e3a5b1a
+- private evaluator SHA-256: 0f11c84a53ea3c207498e6b17f14fb94b2cd025a69bd6473f6ac3631a6033456
+- evaluation read-consumption marker state: **CONSUMED**
+- consumed lockbox tuning/promotion events: **0**
+
+The detailed calibration private payload did not persist because a residual process was interrupted after the shortlist/public aggregate had already been written. The frozen shortlist, public calibration aggregate, hashes, and one-time evaluation evidence are complete and sufficient for REM-02 closure; calibration was not rerun.
 
 ## Local validation
 
-- REM-02 targeted + package-state tests: **9/9 PASS**.
-- Full repository regression: **90/90 PASS** in **239.757 s**.
-- REM-02 public runtime evidence validator: **PASS**.
-- `git diff --check`: PASS.
+- REM-02 private-promotion targeted tests: **13/13 PASS**.
+- Full repository regression: **94/94 PASS** in **848.958 s**.
+- Public-artifact privacy scan: **PASS**.
+- git diff check: **PASS**.
 
-## Remote validation
+## Next round
 
-Checkpoint commit `2c575aca42ba22d432ab5894064940e9b03293ef` passed `Semantic Lab CI`: run `35444322684`, job `105900531480`, evidence artifact `10585086878` — **PASS**. The run passed Unit tests, SEM-00 through SEM-07, REM-01 public diagnostics, REM-02 public runtime evidence validation, and evidence upload.
+REM-03 may become READY for full-catalog candidate remediation and freeze. It must remain NOT_AUTHORIZED until a new explicit user message starts that round.
 
-## Current blocker
-
-Required to resume REM-02:
-1. fresh explicit authorization for **read-only** use of the existing private SEM-06/07 artifacts in REM-02;
-2. use only the legacy **80 calibration judgments** for family-grouped development comparison;
-3. permit exactly one bounded read of the legacy **13 evaluation judgments** for promotion validation;
-4. continue to forbid the consumed 35-case SEM-07 lockbox for tuning/promotion;
-5. continue to forbid live archive reads, real Input API egress, new labels, training and production writes.
-
-Until that authorization exists, formal promotion shortlist remains:
-
-`WITHHELD_PRIVATE_EVIDENCE_NOT_AUTHORIZED`
-
-REM-03 must not start.
+REM-03 is not started by this REM-02 execution.

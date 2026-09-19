@@ -1,0 +1,68 @@
+version: "0.1.0"
+round: "REM-02"
+promotion_plan_version: "rem02-private-promotion-0.1"
+status: FROZEN_BEFORE_PRIVATE_EVIDENCE
+
+authorization:
+  existing_sem06_sem07_private_artifacts_read_only: true
+  calibration_judgments: 80
+  legacy_evaluation_judgments: 13
+  legacy_evaluation_max_reads: 1
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  production_paia_write: DENY
+
+models:
+  - id: "Qwen/Qwen3-Embedding-0.6B"
+    revision: "e692b5a16e45607c7e85d81c53e944ac90e6260a"
+  - id: "BAAI/bge-m3"
+    revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+
+representation_matrix:
+  descriptor_variants: [full_boundaries, fielded_full]
+  query_variants: [current_only, allowed_context]
+  ranking_modes: [dense, rrf]
+  candidate_cutoffs: [10, 20]
+  full_catalog_required: true
+  lexical_source: "existing alias/name lexical control"
+  activity_prior: DISABLED_FOR_PROMOTION_COMPARISON
+
+development_protocol:
+  split: calibration
+  family_grouped_folds: 6
+  fold_assignment: "sha256(family_ref) modulo 6"
+  fold_aggregation: "macro_mean_over_nonempty_folds"
+  robustness_audit: "minimum_fold_complete_case_recall_at_20"
+  selection_unit: "model+descriptor+query_variant+ranking_mode"
+  selection_pool: "calibration_pareto_frontier"
+  pareto_dimensions:
+    maximize: [candidate_complete_case_recall_at_20, candidate_topic_recall_at_20, context_dependent_complete_case_recall_at_20]
+    minimize: [lower_peak_rss_bytes]
+  objective_order:
+    - candidate_complete_case_recall_at_20
+    - candidate_topic_recall_at_20
+    - candidate_complete_case_recall_at_10
+    - context_dependent_complete_case_recall_at_20
+    - lower_peak_rss_bytes
+  minimum_configs_to_promote: 1
+  maximum_configs_to_promote: 3
+  tie_policy: "retain all exact objective ties up to maximum_configs_to_promote"
+  no_threshold_fitting: true
+  no_router_evaluation: true
+
+legacy_evaluation_protocol:
+  split: evaluation
+  read_policy: ONE_BOUNDED_PASS_AFTER_SHORTLIST_FREEZE
+  evaluate_only_frozen_shortlist: true
+  no_reselection_after_read: true
+  no_threshold_changes_after_read: true
+  no_descriptor_or_query_changes_after_read: true
+
+promotion_output:
+  candidate_for_rem03: "shortlist only; REM-03 remains separately authorized"
+  consumed_lockbox_role: LEGACY_DIAGNOSTIC_ONLY
+  private_case_outputs_stay_outside_git: true
+  public_artifacts_aggregates_only: true

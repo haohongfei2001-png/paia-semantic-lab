@@ -1,0 +1,68 @@
+{
+  "round": "REM-02",
+  "execution_status": "COMPLETE",
+  "capability_verdict": "PASS",
+  "candidate_quality_for_rem03": "REMEDIATION_REQUIRED",
+  "public_runtime_digest": "37927e5ab3da2286d7384bd50ce2d338b676351bae86a695d95ae51b2aef36b7",
+  "calibration_result_digest": "728e407fb6f0131e1991ad62718f4a36481e74ff0083446e49102007074eb848",
+  "evaluation_result_digest": "5bf25955f278fd1fc125e09348d040eda1e75f07322f83250c860c5fe45a0849",
+  "private_promotion_plan_sha256": "0f99504f278573730c698b95f92303cd0a048cef43cc351900b076242e3a5b1a",
+  "private_evaluator_sha256": "0f11c84a53ea3c207498e6b17f14fb94b2cd025a69bd6473f6ac3631a6033456",
+  "calibration_public_sha256": "df3a38c8092392f3b66b96795ca19ceb072f9d6ac0a3aa075def93ca1eeef4d5",
+  "evaluation_public_sha256": "f0e6d9f19c643a934beed8fe291be25e7a6b04e16832b47f4671e720587b4645",
+  "private_provenance_hashes": {
+    "frozen_shortlist_sha256": "a250864228e4d36379a43316cc65b3dd5ff72e3efbb3597e9c8a64045497f8c8",
+    "evaluation_consumption_marker_sha256": "1413ebfc7cbaae75a3d3a54a8aa2975699b10d4a26ce55143002e8b9d3572702",
+    "evaluation_private_sha256": "f0ffd8f1341e091f4b446e10a9674db83c2548a9d7be93c4178fc4c47ff57613"
+  },
+  "authorized_private_evidence": {
+    "calibration_judgments": 80,
+    "evaluation_judgments": 13,
+    "evaluation_reads_consumed": 1,
+    "lockbox_label_records_used": 0
+  },
+  "promotion_shortlist": [
+    {
+      "config_id": "rem02cfg-30ed3156c71fd270",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "allowed_context",
+      "ranking_mode": "rrf"
+    },
+    {
+      "config_id": "rem02cfg-d2af02a6913bddf3",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "current_only",
+      "ranking_mode": "rrf"
+    }
+  ],
+  "legacy_evaluation_metrics": {
+    "topic_recall_at_20": 0.5794871794871794,
+    "complete_case_recall_at_20": 0.23076923076923078,
+    "complete_case_recall_at_10": 0
+  },
+  "guards": {
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_sem07_lockbox_tuning_events": 0,
+    "reselection_after_evaluation": 0,
+    "threshold_or_representation_changes_after_evaluation": 0
+  },
+  "calibration_private_detail_payload": "NOT_PERSISTED_INTERRUPTED_TAIL",
+  "calibration_rerun": false,
+  "local_validation": {
+    "private_promotion_targeted_tests": "13/13 PASS",
+    "full_repository_tests": "94/94 PASS",
+    "full_repository_seconds": 848.958,
+    "git_diff_check": "PASS",
+    "privacy_scan": "PASS"
+  },
+  "closure_required_ci": "PENDING",
+  "rem03_unlocked": false
+}

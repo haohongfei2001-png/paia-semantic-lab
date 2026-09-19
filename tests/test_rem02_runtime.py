@@ -89,18 +89,29 @@ class Rem02RuntimeTests(unittest.TestCase):
         self.assertEqual(0, result["authorization"]["private_artifact_reads"])
         self.assertEqual(0, result["authorization"]["real_input_api_egress_events"])
 
-    def test_committed_public_runtime_evidence_passes_without_unblocking_round(self):
+    def test_committed_rem02_evidence_closes_round_without_lockbox_use(self):
         result = run_rem02("TEST")
         self.assertTrue(result["pass"])
         self.assertEqual("PASS", result["gates"]["REM02_public_runtime_evidence"])
+        self.assertEqual("PASS", result["gates"]["family_grouped_calibration"])
+        self.assertEqual("PASS", result["gates"]["bounded_legacy_evaluation"])
+        self.assertEqual("PASS", result["gates"]["evaluation_single_read_guard"])
+        self.assertEqual("PASS", result["gates"]["consumed_lockbox_exclusion"])
+        self.assertEqual("PASS", result["gates"]["round_completion"])
+        self.assertEqual(80, result["calibration_case_count"])
+        self.assertEqual(13, result["evaluation_case_count"])
+        self.assertEqual(1, result["evaluation_reads_consumed"])
+        self.assertEqual(0, result["consumed_lockbox_label_records"])
         self.assertEqual(
-            "BLOCKED_PRIVATE_EVIDENCE_NOT_AUTHORIZED",
-            result["gates"]["private_promotion_evidence"],
+            {
+                "rem02cfg-30ed3156c71fd270",
+                "rem02cfg-d2af02a6913bddf3",
+            },
+            set(result["promotion_shortlist_config_ids"]),
         )
-        self.assertEqual("BLOCKED", result["gates"]["round_completion"])
         self.assertEqual(
-            "WITHHELD_PRIVATE_EVIDENCE_NOT_AUTHORIZED",
-            result["promotion_shortlist"],
+            "REMEDIATION_REQUIRED",
+            result["gates"]["candidate_quality_for_rem03"],
         )
 
 

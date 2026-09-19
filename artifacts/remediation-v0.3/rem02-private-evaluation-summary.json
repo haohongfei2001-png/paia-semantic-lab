@@ -1,0 +1,261 @@
+{
+  "round": "REM-02",
+  "stage": "BOUNDED_LEGACY_EVALUATION_CONSUMED",
+  "plan_hash": "0f99504f278573730c698b95f92303cd0a048cef43cc351900b076242e3a5b1a",
+  "code_hash": "0f11c84a53ea3c207498e6b17f14fb94b2cd025a69bd6473f6ac3631a6033456",
+  "shortlist_hash": "c1f19a33ef0ea55f2a272b8d4596cb0db9fc5cd6feaa3fca71700b66b8ade23e",
+  "evaluation_case_count": 13,
+  "assigned_case_count": 13,
+  "context_dependent_case_count": 1,
+  "semantic_label_records_parsed": 13,
+  "lockbox_label_records_parsed": 0,
+  "evaluation_reads_consumed": 1,
+  "evaluated_config_count": 2,
+  "validated_shortlist": [
+    {
+      "config_id": "rem02cfg-30ed3156c71fd270",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "allowed_context",
+      "ranking_mode": "rrf",
+      "calibration_family_macro": {
+        "complete_case_recall_at_20": 0.34126246990024084,
+        "topic_recall_at_20": 0.5348501103657838,
+        "complete_case_recall_at_10": 0.051827485380116965,
+        "context_complete_case_recall_at_20": 0.4333333333333333
+      },
+      "calibration_robustness": {
+        "minimum_fold_complete_case_recall_at_20": 0.2
+      },
+      "evaluation_overall": {
+        "assigned_cases": 13,
+        "topic_recall_at_20": 0.5794871794871794,
+        "complete_case_recall_at_20": 0.23076923076923078,
+        "complete_case_recall_at_10": 0.0,
+        "context_complete_case_recall_at_20": 0.0
+      },
+      "evaluation_family_grouped": {
+        "folds": [
+          {
+            "fold": 0,
+            "family_count": 1,
+            "case_count": 2,
+            "assigned_cases": 2,
+            "topic_recall_at_20": 0.75,
+            "complete_case_recall_at_20": 0.5,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 1,
+            "family_count": 0,
+            "case_count": 0,
+            "assigned_cases": 0,
+            "topic_recall_at_20": null,
+            "complete_case_recall_at_20": null,
+            "complete_case_recall_at_10": null,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 2,
+            "family_count": 1,
+            "case_count": 1,
+            "assigned_cases": 1,
+            "topic_recall_at_20": 0.0,
+            "complete_case_recall_at_20": 0.0,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 0.0
+          },
+          {
+            "fold": 3,
+            "family_count": 1,
+            "case_count": 1,
+            "assigned_cases": 1,
+            "topic_recall_at_20": 0.6666666666666666,
+            "complete_case_recall_at_20": 0.0,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 4,
+            "family_count": 3,
+            "case_count": 6,
+            "assigned_cases": 6,
+            "topic_recall_at_20": 0.5611111111111111,
+            "complete_case_recall_at_20": 0.16666666666666666,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 5,
+            "family_count": 2,
+            "case_count": 3,
+            "assigned_cases": 3,
+            "topic_recall_at_20": 0.6666666666666666,
+            "complete_case_recall_at_20": 0.3333333333333333,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          }
+        ],
+        "macro": {
+          "complete_case_recall_at_20": 0.2,
+          "topic_recall_at_20": 0.5288888888888889,
+          "complete_case_recall_at_10": 0.0,
+          "context_complete_case_recall_at_20": 0.0
+        },
+        "robustness": {
+          "minimum_fold_complete_case_recall_at_20": 0.0
+        }
+      },
+      "public_peak_rss_bytes": 4308697088,
+      "evaluation_ranking_digest": "64db54037fdd848929d4bca91c58ec03703a76e4b0bc3adfcb7654d1e95d9615"
+    },
+    {
+      "config_id": "rem02cfg-d2af02a6913bddf3",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "current_only",
+      "ranking_mode": "rrf",
+      "calibration_family_macro": {
+        "complete_case_recall_at_20": 0.34126246990024084,
+        "topic_recall_at_20": 0.5348501103657838,
+        "complete_case_recall_at_10": 0.051827485380116965,
+        "context_complete_case_recall_at_20": 0.4333333333333333
+      },
+      "calibration_robustness": {
+        "minimum_fold_complete_case_recall_at_20": 0.2
+      },
+      "evaluation_overall": {
+        "assigned_cases": 13,
+        "topic_recall_at_20": 0.5794871794871794,
+        "complete_case_recall_at_20": 0.23076923076923078,
+        "complete_case_recall_at_10": 0.0,
+        "context_complete_case_recall_at_20": 0.0
+      },
+      "evaluation_family_grouped": {
+        "folds": [
+          {
+            "fold": 0,
+            "family_count": 1,
+            "case_count": 2,
+            "assigned_cases": 2,
+            "topic_recall_at_20": 0.75,
+            "complete_case_recall_at_20": 0.5,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 1,
+            "family_count": 0,
+            "case_count": 0,
+            "assigned_cases": 0,
+            "topic_recall_at_20": null,
+            "complete_case_recall_at_20": null,
+            "complete_case_recall_at_10": null,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 2,
+            "family_count": 1,
+            "case_count": 1,
+            "assigned_cases": 1,
+            "topic_recall_at_20": 0.0,
+            "complete_case_recall_at_20": 0.0,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 0.0
+          },
+          {
+            "fold": 3,
+            "family_count": 1,
+            "case_count": 1,
+            "assigned_cases": 1,
+            "topic_recall_at_20": 0.6666666666666666,
+            "complete_case_recall_at_20": 0.0,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 4,
+            "family_count": 3,
+            "case_count": 6,
+            "assigned_cases": 6,
+            "topic_recall_at_20": 0.5611111111111111,
+            "complete_case_recall_at_20": 0.16666666666666666,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 5,
+            "family_count": 2,
+            "case_count": 3,
+            "assigned_cases": 3,
+            "topic_recall_at_20": 0.6666666666666666,
+            "complete_case_recall_at_20": 0.3333333333333333,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": null
+          }
+        ],
+        "macro": {
+          "complete_case_recall_at_20": 0.2,
+          "topic_recall_at_20": 0.5288888888888889,
+          "complete_case_recall_at_10": 0.0,
+          "context_complete_case_recall_at_20": 0.0
+        },
+        "robustness": {
+          "minimum_fold_complete_case_recall_at_20": 0.0
+        }
+      },
+      "public_peak_rss_bytes": 4308697088,
+      "evaluation_ranking_digest": "64db54037fdd848929d4bca91c58ec03703a76e4b0bc3adfcb7654d1e95d9615"
+    }
+  ],
+  "runtime": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "model_load_seconds": 7.572629334001249,
+      "python": "3.12.14",
+      "sentence_transformers": "5.1.1",
+      "transformers": "4.56.1",
+      "torch": "2.8.0",
+      "numpy": "2.5.3",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "effective_context_tokens": 32768,
+      "max_input_tokens": 0,
+      "document_encode_seconds": {},
+      "query_encode_seconds": {},
+      "peak_rss_bytes_after_stage": 811761664
+    },
+    "BAAI/bge-m3": {
+      "model_load_seconds": 5.136502957997436,
+      "python": "3.12.14",
+      "sentence_transformers": "5.1.1",
+      "transformers": "4.56.1",
+      "torch": "2.8.0",
+      "numpy": "2.5.3",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "effective_context_tokens": 8192,
+      "max_input_tokens": 164,
+      "document_encode_seconds": {
+        "full_boundaries": 397.9219445419985
+      },
+      "query_encode_seconds": {
+        "allowed_context": 26.792373791999125,
+        "current_only": 32.07095245800156
+      },
+      "peak_rss_bytes_after_stage": 2001174528
+    }
+  },
+  "elapsed_seconds": 491.4888186249991,
+  "guards": {
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_lockbox_tuning_events": 0,
+    "reselection_after_evaluation": 0,
+    "threshold_or_representation_changes_after_evaluation": 0
+  },
+  "result_digest": "5bf25955f278fd1fc125e09348d040eda1e75f07322f83250c860c5fe45a0849"
+}

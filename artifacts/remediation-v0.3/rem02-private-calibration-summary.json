@@ -1,0 +1,287 @@
+{
+  "round": "REM-02",
+  "stage": "CALIBRATION_SHORTLIST_FROZEN",
+  "plan_hash": "0f99504f278573730c698b95f92303cd0a048cef43cc351900b076242e3a5b1a",
+  "code_hash": "0f11c84a53ea3c207498e6b17f14fb94b2cd025a69bd6473f6ac3631a6033456",
+  "calibration_case_count": 80,
+  "assigned_case_count": 80,
+  "context_dependent_case_count": 12,
+  "family_count": 30,
+  "semantic_label_records_parsed": 80,
+  "evaluation_label_records_parsed": 0,
+  "lockbox_label_records_parsed": 0,
+  "config_count": 16,
+  "pareto_frontier": [
+    {
+      "config_id": "rem02cfg-30ed3156c71fd270",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "allowed_context",
+      "ranking_mode": "rrf",
+      "overall": {
+        "assigned_cases": 80,
+        "topic_recall_at_20": 0.5699999999999998,
+        "complete_case_recall_at_20": 0.375,
+        "complete_case_recall_at_10": 0.05,
+        "context_complete_case_recall_at_20": 0.4166666666666667
+      },
+      "family_grouped": {
+        "folds": [
+          {
+            "fold": 0,
+            "family_count": 5,
+            "case_count": 16,
+            "assigned_cases": 16,
+            "topic_recall_at_20": 0.46354166666666674,
+            "complete_case_recall_at_20": 0.25,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 0.3333333333333333
+          },
+          {
+            "fold": 1,
+            "family_count": 7,
+            "case_count": 17,
+            "assigned_cases": 17,
+            "topic_recall_at_20": 0.47058823529411764,
+            "complete_case_recall_at_20": 0.23529411764705882,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 0.3333333333333333
+          },
+          {
+            "fold": 2,
+            "family_count": 5,
+            "case_count": 5,
+            "assigned_cases": 5,
+            "topic_recall_at_20": 0.4,
+            "complete_case_recall_at_20": 0.2,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 1.0
+          },
+          {
+            "fold": 3,
+            "family_count": 6,
+            "case_count": 19,
+            "assigned_cases": 19,
+            "topic_recall_at_20": 0.7438596491228071,
+            "complete_case_recall_at_20": 0.5789473684210527,
+            "complete_case_recall_at_10": 0.05263157894736842,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 4,
+            "family_count": 4,
+            "case_count": 15,
+            "assigned_cases": 15,
+            "topic_recall_at_20": 0.7144444444444444,
+            "complete_case_recall_at_20": 0.5333333333333333,
+            "complete_case_recall_at_10": 0.13333333333333333,
+            "context_complete_case_recall_at_20": 0.5
+          },
+          {
+            "fold": 5,
+            "family_count": 3,
+            "case_count": 8,
+            "assigned_cases": 8,
+            "topic_recall_at_20": 0.41666666666666663,
+            "complete_case_recall_at_20": 0.25,
+            "complete_case_recall_at_10": 0.125,
+            "context_complete_case_recall_at_20": 0.0
+          }
+        ],
+        "macro": {
+          "complete_case_recall_at_20": 0.34126246990024084,
+          "topic_recall_at_20": 0.5348501103657838,
+          "complete_case_recall_at_10": 0.051827485380116965,
+          "context_complete_case_recall_at_20": 0.4333333333333333
+        },
+        "robustness": {
+          "minimum_fold_complete_case_recall_at_20": 0.2
+        }
+      },
+      "public_peak_rss_bytes": 4308697088,
+      "ranking_digest": "6d1f1eca16985cb084b5b7e25a489cabb54049a992eab2adeb6abfd9efb52cca"
+    },
+    {
+      "config_id": "rem02cfg-d2af02a6913bddf3",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "current_only",
+      "ranking_mode": "rrf",
+      "overall": {
+        "assigned_cases": 80,
+        "topic_recall_at_20": 0.5699999999999998,
+        "complete_case_recall_at_20": 0.375,
+        "complete_case_recall_at_10": 0.05,
+        "context_complete_case_recall_at_20": 0.4166666666666667
+      },
+      "family_grouped": {
+        "folds": [
+          {
+            "fold": 0,
+            "family_count": 5,
+            "case_count": 16,
+            "assigned_cases": 16,
+            "topic_recall_at_20": 0.46354166666666674,
+            "complete_case_recall_at_20": 0.25,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 0.3333333333333333
+          },
+          {
+            "fold": 1,
+            "family_count": 7,
+            "case_count": 17,
+            "assigned_cases": 17,
+            "topic_recall_at_20": 0.47058823529411764,
+            "complete_case_recall_at_20": 0.23529411764705882,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 0.3333333333333333
+          },
+          {
+            "fold": 2,
+            "family_count": 5,
+            "case_count": 5,
+            "assigned_cases": 5,
+            "topic_recall_at_20": 0.4,
+            "complete_case_recall_at_20": 0.2,
+            "complete_case_recall_at_10": 0.0,
+            "context_complete_case_recall_at_20": 1.0
+          },
+          {
+            "fold": 3,
+            "family_count": 6,
+            "case_count": 19,
+            "assigned_cases": 19,
+            "topic_recall_at_20": 0.7438596491228071,
+            "complete_case_recall_at_20": 0.5789473684210527,
+            "complete_case_recall_at_10": 0.05263157894736842,
+            "context_complete_case_recall_at_20": null
+          },
+          {
+            "fold": 4,
+            "family_count": 4,
+            "case_count": 15,
+            "assigned_cases": 15,
+            "topic_recall_at_20": 0.7144444444444444,
+            "complete_case_recall_at_20": 0.5333333333333333,
+            "complete_case_recall_at_10": 0.13333333333333333,
+            "context_complete_case_recall_at_20": 0.5
+          },
+          {
+            "fold": 5,
+            "family_count": 3,
+            "case_count": 8,
+            "assigned_cases": 8,
+            "topic_recall_at_20": 0.41666666666666663,
+            "complete_case_recall_at_20": 0.25,
+            "complete_case_recall_at_10": 0.125,
+            "context_complete_case_recall_at_20": 0.0
+          }
+        ],
+        "macro": {
+          "complete_case_recall_at_20": 0.34126246990024084,
+          "topic_recall_at_20": 0.5348501103657838,
+          "complete_case_recall_at_10": 0.051827485380116965,
+          "context_complete_case_recall_at_20": 0.4333333333333333
+        },
+        "robustness": {
+          "minimum_fold_complete_case_recall_at_20": 0.2
+        }
+      },
+      "public_peak_rss_bytes": 4308697088,
+      "ranking_digest": "6d1f1eca16985cb084b5b7e25a489cabb54049a992eab2adeb6abfd9efb52cca"
+    }
+  ],
+  "frozen_shortlist": [
+    {
+      "config_id": "rem02cfg-30ed3156c71fd270",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "allowed_context",
+      "ranking_mode": "rrf",
+      "calibration_family_macro": {
+        "complete_case_recall_at_20": 0.34126246990024084,
+        "topic_recall_at_20": 0.5348501103657838,
+        "complete_case_recall_at_10": 0.051827485380116965,
+        "context_complete_case_recall_at_20": 0.4333333333333333
+      },
+      "calibration_robustness": {
+        "minimum_fold_complete_case_recall_at_20": 0.2
+      },
+      "public_peak_rss_bytes": 4308697088
+    },
+    {
+      "config_id": "rem02cfg-d2af02a6913bddf3",
+      "model_id": "BAAI/bge-m3",
+      "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+      "descriptor": "full_boundaries",
+      "query_variant": "current_only",
+      "ranking_mode": "rrf",
+      "calibration_family_macro": {
+        "complete_case_recall_at_20": 0.34126246990024084,
+        "topic_recall_at_20": 0.5348501103657838,
+        "complete_case_recall_at_10": 0.051827485380116965,
+        "context_complete_case_recall_at_20": 0.4333333333333333
+      },
+      "calibration_robustness": {
+        "minimum_fold_complete_case_recall_at_20": 0.2
+      },
+      "public_peak_rss_bytes": 4308697088
+    }
+  ],
+  "shortlist_hash": "c1f19a33ef0ea55f2a272b8d4596cb0db9fc5cd6feaa3fca71700b66b8ade23e",
+  "runtime": {
+    "Qwen/Qwen3-Embedding-0.6B": {
+      "model_load_seconds": 20.57391325000208,
+      "python": "3.12.14",
+      "sentence_transformers": "5.1.1",
+      "transformers": "4.56.1",
+      "torch": "2.8.0",
+      "numpy": "2.5.3",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "effective_context_tokens": 32768,
+      "max_input_tokens": 653,
+      "document_encode_seconds": {
+        "fielded_full": 1220.707798667001,
+        "full_boundaries": 555.5282980410011
+      },
+      "query_encode_seconds": {
+        "allowed_context": 96.94905837499755,
+        "current_only": 107.08998929200243
+      },
+      "peak_rss_bytes_after_stage": 3567321088
+    },
+    "BAAI/bge-m3": {
+      "model_load_seconds": 3.109331291001581,
+      "python": "3.12.14",
+      "sentence_transformers": "5.1.1",
+      "transformers": "4.56.1",
+      "torch": "2.8.0",
+      "numpy": "2.5.3",
+      "platform": "macOS-27.0-arm64-arm-64bit",
+      "effective_context_tokens": 8192,
+      "max_input_tokens": 626,
+      "document_encode_seconds": {
+        "fielded_full": 183.81889650000085,
+        "full_boundaries": 144.6845339169995
+      },
+      "query_encode_seconds": {
+        "allowed_context": 53.07453191699824,
+        "current_only": 61.90993812499801
+      },
+      "peak_rss_bytes_after_stage": 4043096064
+    }
+  },
+  "elapsed_seconds": 2807.46015825,
+  "guards": {
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_lockbox_tuning_events": 0
+  },
+  "result_digest": "728e407fb6f0131e1991ad62718f4a36481e74ff0083446e49102007074eb848"
+}
