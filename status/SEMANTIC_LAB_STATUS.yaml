@@ -1,6 +1,6 @@
 architecture_version: "0.2.0"
 sequencing_version: "0.2.1"
-phase: SEM_06_CLOSURE_VALIDATING
+phase: SEM_07_READY
 plan_only: false
 production_paia_modified: false
 real_archive_read: true
@@ -96,13 +96,13 @@ rounds:
     evidence_artifact_id: 10562254515
     validated_main_commit: "6066a83a92d917c1f23fa4886890ef49c4211834"
   SEM-06:
-    execution_status: IN_PROGRESS
-    capability_verdict: INCONCLUSIVE
+    execution_status: COMPLETE
+    capability_verdict: PASS
     depends_on: SEM-05
     owner_semantic_batch: completed
     explicit_execution_authorized: true
     engineering_gates: { G0_isolation: PASS, G7_personal_gold_infrastructure: PASS, G7_context_aware_calibration: PASS }
-    personalized_semantic_quality: CALIBRATION_COMPLETE_LOCKBOX_PENDING
+    personalized_semantic_quality: CALIBRATION_COMPLETE_LOCKBOX_FROZEN
     benchmark_version: "sem06-personal-gold-v1-0.2"
     infrastructure_validation_run_id: 35388048170
     infrastructure_validation_job_id: 105739519384
@@ -118,7 +118,11 @@ rounds:
     owner_authorized_chatgpt_delegated_judgments: 127
     direct_owner_ui_judgments: 1
     closure_candidate_local_tests: "58/58 PASS"
-    closure_blocker: "REQUIRED_CI_PENDING"
-  SEM-07: { execution_status: NOT_STARTED, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
-next_action: "SEM-06 real snapshot, fixed personal-gold batch and context-aware calibration are complete locally. Push the closure candidate, require Semantic Lab CI PASS, then record remote workflow/job evidence and only then mark SEM-06 COMPLETE and SEM-07 READY. Do not start SEM-07."
+    closure_validation_run_id: 35417141922
+    closure_validation_job_id: 105827866254
+    closure_evidence_artifact_id: 10576097321
+    validated_main_commit: "2936c607e4fb5cbc172462b9a81217ec0f581e90"
+    closure_required_ci: PASS
+  SEM-07: { execution_status: READY, capability_verdict: UNTESTED, depends_on: SEM-06, new_owner_labels: exception_only }
+next_action: "SEM-06 is COMPLETE after required Semantic Lab CI PASS on validated main commit 2936c607e4fb5cbc172462b9a81217ec0f581e90. SEM-07 is READY but NOT_STARTED. Stop this execution; do not start SEM-07."
 product_owner_blockers: []

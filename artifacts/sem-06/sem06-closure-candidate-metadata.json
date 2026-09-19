@@ -1,6 +1,6 @@
 {
   "round": "SEM-06",
-  "candidate_state": "CLOSURE_VALIDATING",
+  "candidate_state": "COMPLETE",
   "catalog_version": "0.2.0",
   "real_snapshot": {
     "authorized": true,
@@ -64,8 +64,8 @@
       "lockbox": 35
     },
     "lockbox_count": 35,
-    "reusable_gold_validity_rate": 1.0,
-    "provenance_revision_catalog_identity_coverage": 1.0,
+    "reusable_gold_validity_rate": 1,
+    "provenance_revision_catalog_identity_coverage": 1,
     "calibration_file_sha256": "e70a6b172c1811cda4416d2d3af7c2b9ee06fe4702f2d134e9439a5b50b784f2",
     "gold_file_sha256": "b176a39e7ffbbe210808e80c2145ed79a5bea3be1acc6818843f484bcd66dcdc"
   },
@@ -87,5 +87,13 @@
     "full_repository_tests": "58/58 PASS",
     "full_repository_seconds": 140.03
   },
-  "required_ci": "PENDING"
+  "required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35417141922,
+    "job_id": 105827866254,
+    "evidence_artifact_id": 10576097321,
+    "validated_commit": "2936c607e4fb5cbc172462b9a81217ec0f581e90",
+    "conclusion": "success"
+  }
 }

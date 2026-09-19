@@ -1,4 +1,4 @@
-# SEM-06 — Authorized Personal Gold Closure Candidate
+# SEM-06 — Authorized Personal Gold Closure
 
 ## Scope executed
 
@@ -51,4 +51,11 @@ Local validation for this closure candidate:
 - model training runs: 0
 - production PAIA modifications: 0
 
-The closure candidate must remain **CLOSURE_VALIDATING** until the required `Semantic Lab CI` run on the pushed commit passes. Only after that remote gate may canonical status mark SEM-06 COMPLETE and SEM-07 READY. SEM-07 must not start in this execution.
+Remote closure validation:
+- validated main commit: `2936c607e4fb5cbc172462b9a81217ec0f581e90`
+- required workflow: `Semantic Lab CI`
+- workflow run: `35417141922` — **PASS**
+- validation job: `105827866254` — **PASS**
+- evidence artifact: `10576097321`
+
+All SEM-06 closure gates are satisfied. Canonical status marks **SEM-06 COMPLETE** and **SEM-07 READY**. SEM-07 remains **NOT_STARTED** and is not executed in this round.
