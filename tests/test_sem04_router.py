@@ -28,12 +28,17 @@ class Sem04RouterTests(unittest.TestCase):
         cls.result = run_sem04("4" * 40)
 
     def route(self, text: str, *, ref: str = "fixture:test", revision: str = "r1", **kwargs):
+        allowed_context = kwargs.get("allowed_context")
         return route_input(
             input_ref=ref,
             input_revision=revision,
             text=text,
             catalog=self.catalog,
-            candidates=self.index.query(text, profile=None),
+            candidates=self.index.query(
+                text,
+                profile=None,
+                allowed_context=allowed_context,
+            ),
             config=self.config,
             **kwargs,
         )
@@ -122,6 +127,65 @@ class Sem04RouterTests(unittest.TestCase):
             self.assertEqual([left["topic_id"]], [x["topic_id"] for x in final["assignments"]])
             self.assertEqual(2, len(reloaded.records))
 
+    def test_allowed_context_changes_fingerprint_and_calibration_reuse_boundary(self) -> None:
+        left, right = self.topics[0], self.topics[1]
+        text = "继续"
+        left_context = {
+            "policy": "same_conversation_necessary_context_v1",
+            "family_ref": "fixture-family",
+            "inputs": [{
+                "input_ref": "ctx:left",
+                "input_revision": "r1",
+                "text": str(left["name"]["zh"]),
+                "direction": "before",
+                "offset": -1,
+            }],
+        }
+        right_context = {
+            "policy": "same_conversation_necessary_context_v1",
+            "family_ref": "fixture-family",
+            "inputs": [{
+                "input_ref": "ctx:right",
+                "input_revision": "r1",
+                "text": str(right["name"]["zh"]),
+                "direction": "before",
+                "offset": -1,
+            }],
+        }
+        first = self.route(text, ref="ctx:test", allowed_context=left_context)
+        second = self.route(text, ref="ctx:test", allowed_context=right_context)
+        self.assertNotEqual(
+            first["provenance"]["context_fingerprint"],
+            second["provenance"]["context_fingerprint"],
+        )
+        self.assertEqual(["ctx:left"], first["provenance"]["allowed_context_input_refs"])
+        self.assertIn(left["topic_id"], first["candidate_topic_ids"])
+
+        allowed = {topic["topic_id"] for topic in self.topics}
+        with tempfile.TemporaryDirectory() as directory:
+            store = CalibrationStore(Path(directory) / "calibration.jsonl")
+            record = create_calibration_record(
+                first,
+                user_final_decision={"route_state": "ASSIGNED", "topic_ids": [left["topic_id"]]},
+                allowed_topic_ids=allowed,
+                created_at="2026-09-19T00:00:00+00:00",
+            )
+            store.append(record)
+            reused = self.route(
+                text,
+                ref="ctx:test",
+                allowed_context=left_context,
+                calibration_store=store,
+            )
+            self.assertEqual(["CALIBRATION_REUSE"], reused["reason_codes"])
+            different_context = self.route(
+                text,
+                ref="ctx:test",
+                allowed_context=right_context,
+                calibration_store=store,
+            )
+            self.assertNotEqual(["CALIBRATION_REUSE"], different_context["reason_codes"])
+
     def test_override_and_stale_guards(self) -> None:
         topic = self.topics[0]
         decision = self.route(str(topic["name"]["zh"]))
@@ -162,3 +226,5 @@ class Sem04RouterTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

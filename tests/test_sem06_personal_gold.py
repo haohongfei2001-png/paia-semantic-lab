@@ -61,13 +61,34 @@ class Sem06PersonalGoldTests(unittest.TestCase):
         machine = build_machine_context(self.snapshot, catalog=self.catalog, allow_synthetic=True)
         batch = select_annotation_batch(machine)
         answers = []
+        context_item_id = batch["owner_items"][0]["item_id"]
+        context_private = batch["private_context"][context_item_id]
+        context_source_ref = next(
+            ref for ref in context_private["authorized_context_by_ref"]
+            if ref != context_private["input_ref"]
+        )
+        context_source = context_private["authorized_context_by_ref"][context_source_ref]
         for row in batch["owner_items"]:
             truth = batch["private_context"][row["item_id"]]["synthetic_truth"]
-            answers.append({
+            answer = {
                 "item_id": row["item_id"],
                 "route_state": truth["route_state"],
                 "topic_ids": truth["topic_ids"],
-            })
+            }
+            if row["item_id"] == context_item_id:
+                answer["allowed_context"] = {
+                    "policy": "same_conversation_necessary_context_v1",
+                    "family_ref": context_private["family_ref"],
+                    "inputs": [{
+                        "input_ref": context_source_ref,
+                        "input_revision": context_source["input_revision"],
+                        "text": context_source["text"],
+                        "direction": "before",
+                        "offset": -1,
+                    }],
+                }
+                answer["judgment_source"] = "CHATGPT_OWNER_DELEGATED"
+            answers.append(answer)
         result = finalize_personal_gold(
             batch,
             answers,
@@ -81,6 +102,11 @@ class Sem06PersonalGoldTests(unittest.TestCase):
         for row in result["gold_index"]:
             by_family.setdefault(row["family_ref"], set()).add(row["split"])
         self.assertTrue(all(len(values) == 1 for values in by_family.values()))
+        contextual = next(row for row in result["gold_index"] if row["context_dependent"])
+        self.assertEqual("same_conversation_necessary_context_v1", contextual["allowed_context_policy"])
+        self.assertEqual([context_source_ref], contextual["allowed_context_input_refs"])
+        self.assertEqual(1, result["metrics"]["context_dependent_judgments"])
+        self.assertEqual(1, result["metrics"]["delegated_chatgpt_judgments"])
         self.assertTrue(result["lockbox_manifest"]["frozen"])
 
     def test_infrastructure_benchmark_passes_without_personal_claim(self) -> None:
@@ -95,3 +121,5 @@ class Sem06PersonalGoldTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

@@ -23,3 +23,14 @@ Retrieval relevance questions are answered once as canonical relevance truth and
 Accepted answers become versioned `CalibrationRecord` entries with Input revision, catalog version, candidates, prediction provenance, owner decision, context fingerprint, source, timestamp, and supersession lineage. Corrections supersede history rather than overwrite it.
 
 Related Input families are deterministically assigned to calibration, evaluation, or SEM-07 lockbox partitions. SEM-07 reuses the frozen SEM-06 gold and does not routinely ask for new labels.
+## Allowed conversation context
+
+Canonical truth is not forced to be single-Input when the Input is semantically incomplete on its own. If necessary, an annotation may carry an explicit `allowed_context` pack from the same authorized PAIA snapshot and same conversation family. The current Input remains the primary semantic target.
+
+Context-dependent Gold must bind the allowed-context policy and Input refs into the context fingerprint. Revision/text/source-fingerprint mismatches or cross-family context are rejected. Context is omitted for self-sufficient Inputs so unrelated conversation material cannot pollute classification.
+
+## Owner-delegated adjudication
+
+The product owner may explicitly delegate fixed-batch judgments to the current ChatGPT. Such judgments must remain distinguishable from direct owner UI judgments in private audit metadata. Delegation is not model A/B evaluation, does not authorize automatic Topic creation, and does not change the default PAIA provider-egress/privacy policy.
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

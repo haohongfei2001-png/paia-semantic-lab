@@ -1,0 +1,93 @@
+{
+  "round": "SEM-06",
+  "candidate_state": "CLOSURE_VALIDATING",
+  "catalog_version": "0.2.0",
+  "real_snapshot": {
+    "authorized": true,
+    "read_only": true,
+    "record_count": 1522,
+    "snapshot_fingerprint": "d3adf04cb42b1db0ee3d1008527dbba9dd7bd1c1f27b0153cb661cd7d89a9853",
+    "provider_scope_for_local_model_processing": "LOCAL_ONLY",
+    "local_model_api_egress_events": 0
+  },
+  "qualified_local_processing": {
+    "models": {
+      "local_qwen_qualified": {
+        "model_id": "Qwen/Qwen3-Embedding-0.6B",
+        "revision": "e692b5a16e45607c7e85d81c53e944ac90e6260a",
+        "effective_context_tokens": 32768,
+        "supported_count": 1522,
+        "unsupported_count": 0,
+        "max_input_tokens": 2555,
+        "runtime_seconds": 509.642
+      },
+      "local_bge_qualified": {
+        "model_id": "BAAI/bge-m3",
+        "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+        "effective_context_tokens": 8192,
+        "supported_count": 1522,
+        "unsupported_count": 0,
+        "max_input_tokens": 2842,
+        "runtime_seconds": 498.201
+      }
+    },
+    "model_training_runs": 0
+  },
+  "fixed_batch": {
+    "batch_id": "sem06:batch:5ba835b03a19a66262c7",
+    "judgments": 128,
+    "near_duplicate_skips": 11,
+    "signal_counts": {
+      "model_disagreement": 112,
+      "retrieval_disagreement": 124,
+      "router_uncertainty": 126,
+      "unassigned_vs_existing_topic": 113
+    },
+    "model_identity_blinded": true,
+    "per_model_duplicate_labeling": 0,
+    "inactive_topic_signal_available": false,
+    "inactive_topic_signal_reason": "No authorized real UserTopicProfile activation state was present in the SEM-06 snapshot."
+  },
+  "canonical_gold": {
+    "judgments": 128,
+    "assigned_count": 126,
+    "unassigned_count": 0,
+    "defer_count": 2,
+    "context_dependent_judgments": 22,
+    "context_policy": "same_conversation_necessary_context_v1",
+    "delegated_chatgpt_judgments": 127,
+    "direct_owner_judgments": 1,
+    "retrieval_qrel_count": 103,
+    "split_counts": {
+      "calibration": 80,
+      "evaluation": 13,
+      "lockbox": 35
+    },
+    "lockbox_count": 35,
+    "reusable_gold_validity_rate": 1.0,
+    "provenance_revision_catalog_identity_coverage": 1.0,
+    "calibration_file_sha256": "e70a6b172c1811cda4416d2d3af7c2b9ee06fe4702f2d134e9439a5b50b784f2",
+    "gold_file_sha256": "b176a39e7ffbbe210808e80c2145ed79a5bea3be1acc6818843f484bcd66dcdc"
+  },
+  "owner_authorization_amendment": {
+    "current_chatgpt_fixed_batch_adjudication_authorized": true,
+    "scope": "SEM-06 fixed batch and necessary same-conversation context only",
+    "does_not_authorize_general_provider_egress": true,
+    "does_not_change_production_privacy_policy": true
+  },
+  "privacy": {
+    "raw_snapshot_committed": false,
+    "raw_text_committed": false,
+    "personal_gold_committed": false,
+    "embeddings_committed": false,
+    "production_paia_modified": false
+  },
+  "local_validation": {
+    "targeted_tests": "12/12 PASS",
+    "full_repository_tests": "58/58 PASS",
+    "full_repository_seconds": 140.03
+  },
+  "required_ci": "PENDING"
+}
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

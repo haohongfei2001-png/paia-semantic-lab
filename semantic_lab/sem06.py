@@ -12,6 +12,7 @@ import yaml
 
 from .catalog import load_catalog, validate_catalog_contract
 from .contracts import repo_root
+from .context import normalize_allowed_context
 from .isolation import static_runtime_isolation_audit
 from .manifest import build_run_manifest
 from .owner_attention import open_owner_task
@@ -203,9 +204,22 @@ def build_machine_context(
     variants = _policy_variants()
     inactive = {str(v) for v in snapshot.get("inactive_topic_ids", [])}
     cfg = load_sem06_config()
+    family_context: dict[str, dict[str, dict[str, str]]] = {}
+    for context_record in snapshot["records"]:
+        family = _family_ref(context_record)
+        family_context.setdefault(family, {})[str(context_record["input_ref"])] = {
+            "input_revision": str(context_record["input_revision"]),
+            "text": str(context_record["text"]),
+            "source_payload_fingerprint": str(context_record["source_payload_fingerprint"]),
+        }
     items: list[dict[str, Any]] = []
     for record in snapshot["records"]:
-        candidates = index.query(str(record["text"]), profile=None)
+        allowed_context = normalize_allowed_context(record.get("allowed_context"))
+        candidates = index.query(
+            str(record["text"]),
+            profile=None,
+            allowed_context=allowed_context,
+        )
         decisions = [
             route_input(
                 input_ref=str(record["input_ref"]),
@@ -213,6 +227,7 @@ def build_machine_context(
                 text=str(record["text"]),
                 catalog=catalog,
                 candidates=candidates,
+                allowed_context=allowed_context,
                 config=variant_config,
             )
             for _, variant_config in variants
@@ -248,6 +263,8 @@ def build_machine_context(
             "text": str(record["text"]),
             "catalog_version": str(catalog["catalog_version"]),
             "source_payload_fingerprint": str(record["source_payload_fingerprint"]),
+            "allowed_context": allowed_context,
+            "authorized_context_by_ref": deepcopy(family_context[_family_ref(record)]),
             "candidate_topic_ids": candidate_ids,
             "candidate_topics": _candidate_names(catalog, candidate_ids[:16]),
             "signals": signals,
@@ -378,6 +395,10 @@ def finalize_personal_gold(
     retrieval_qrels = 0
     cfg = load_sem06_config()
     timestamp = created_at or _utc_now()
+    context_index = HashTopicCandidateIndex(eligible_topics(catalog))
+    context_dependent_judgments = 0
+    delegated_judgments = 0
+    direct_owner_judgments = 0
     for item_id in sorted(expected):
         item = batch["private_context"][item_id]
         answer = answer_map[item_id]
@@ -387,8 +408,61 @@ def finalize_personal_gold(
         if boundary:
             boundary_ambiguities += 1
             route_state, topic_ids = "DEFER", []
+        allowed_context = normalize_allowed_context(answer.get("allowed_context"))
+        decision = item["base_decision"]
+        if allowed_context:
+            context_dependent_judgments += 1
+            if allowed_context.get("family_ref") not in {None, "", str(item["family_ref"])}:
+                raise Sem06GuardError("Allowed context may not cross family/conversation boundary")
+            authorized = item.get("authorized_context_by_ref", {})
+            for context_row in allowed_context.get("inputs", []):
+                context_ref = str(context_row["input_ref"])
+                source = authorized.get(context_ref)
+                if not isinstance(source, dict):
+                    raise Sem06GuardError(f"Unauthorized context input_ref: {context_ref}")
+                if str(source.get("input_revision")) != str(context_row["input_revision"]):
+                    raise Sem06GuardError(f"Stale context revision: {context_ref}")
+                if str(source.get("text")) != str(context_row["text"]):
+                    raise Sem06GuardError(f"Context text mismatch: {context_ref}")
+                supplied_fp = context_row.get("source_payload_fingerprint")
+                if supplied_fp is not None and str(source.get("source_payload_fingerprint")) != str(supplied_fp):
+                    raise Sem06GuardError(f"Context source fingerprint mismatch: {context_ref}")
+            context_candidates = context_index.query(
+                str(item["text"]),
+                profile=None,
+                allowed_context=allowed_context,
+            )
+            candidates: list[dict[str, Any]] = []
+            seen_candidates: set[str] = set()
+            for rank, topic_id in enumerate(item.get("candidate_topic_ids", []), 1):
+                topic_id = str(topic_id)
+                candidates.append({
+                    "topic_id": topic_id,
+                    "rank": rank,
+                    "sources": ["owner_batch_candidate"],
+                    "activity_prior_contribution": 0.0,
+                })
+                seen_candidates.add(topic_id)
+            for candidate in context_candidates:
+                topic_id = str(candidate["topic_id"])
+                if topic_id not in seen_candidates:
+                    candidates.append(candidate)
+                    seen_candidates.add(topic_id)
+            decision = route_input(
+                input_ref=str(item["input_ref"]),
+                input_revision=str(item["input_revision"]),
+                text=str(item["text"]),
+                catalog=catalog,
+                candidates=candidates,
+                claimed_catalog_version=str(item["catalog_version"]),
+                expected_input_revision=str(item["input_revision"]),
+                allowed_context=allowed_context,
+            )
+        judgment_source = str(answer.get("judgment_source", "DIRECT_OWNER_UI"))
+        delegated_judgments += int(judgment_source == "CHATGPT_OWNER_DELEGATED")
+        direct_owner_judgments += int(judgment_source == "DIRECT_OWNER_UI")
         record = create_calibration_record(
-            item["base_decision"],
+            decision,
             user_final_decision={
                 "route_state": route_state,
                 "topic_ids": topic_ids,
@@ -415,6 +489,13 @@ def finalize_personal_gold(
             "split": split,
             "boundary_ambiguity": boundary,
             "retrieval_qrels": qrels,
+            "context_dependent": bool(allowed_context),
+            "allowed_context_policy": allowed_context.get("policy"),
+            "allowed_context_input_refs": [
+                row["input_ref"] for row in allowed_context.get("inputs", [])
+            ],
+            "context_fingerprint": record["context_fingerprint"],
+            "judgment_source": judgment_source,
         })
 
     split_counts = {
@@ -439,6 +520,9 @@ def finalize_personal_gold(
             "per_model_duplicate_labeling": 0,
             "unresolved_topic_boundary_ambiguities": boundary_ambiguities,
             "retrieval_qrel_count": retrieval_qrels,
+            "context_dependent_judgments": context_dependent_judgments,
+            "delegated_chatgpt_judgments": delegated_judgments,
+            "direct_owner_judgments": direct_owner_judgments,
             "split_counts": split_counts,
         },
     }
@@ -568,3 +652,5 @@ def run_sem06(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         },
         "pass": g0 and g7,
     }
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

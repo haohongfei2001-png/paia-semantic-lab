@@ -12,6 +12,7 @@ import yaml
 from .b0 import topic_document
 from .catalog import load_catalog, normalize, validate_catalog_contract
 from .contracts import repo_root
+from .context import classification_text
 from .embedding_adapters import HashNgramEmbeddingAdapter, LexicalControl, cosine
 from .isolation import static_runtime_isolation_audit, validate_fixture_pack
 from .manifest import build_run_manifest
@@ -251,12 +252,14 @@ class HashTopicCandidateIndex:
         text: str,
         *,
         profile: dict[str, Any] | None = None,
+        allowed_context: dict[str, Any] | None = None,
     ) -> list[dict[str, Any]]:
+        query_text = classification_text(text, allowed_context)
         return assemble_candidates(
-            query=text,
+            query=query_text,
             topics=self.topics,
-            dense_ranking=self.dense_ranking(text),
-            lexical_ids=lexical_ranking(text, self.topics),
+            dense_ranking=self.dense_ranking(query_text),
+            lexical_ids=lexical_ranking(query_text, self.topics),
             profile=profile,
             config=self.config,
         )
@@ -625,3 +628,5 @@ def run_sem03(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         },
         "pass": g0 and engineering_pass,
     }
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

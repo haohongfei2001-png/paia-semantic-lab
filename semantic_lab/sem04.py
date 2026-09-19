@@ -14,6 +14,7 @@ import yaml
 
 from .catalog import load_catalog, normalize, validate_catalog_contract
 from .contracts import repo_root, validate_contract
+from .context import classification_text, normalize_allowed_context
 from .embedding_adapters import LexicalControl
 from .isolation import static_runtime_isolation_audit, treat_as_inert_data, validate_fixture_pack
 from .manifest import build_run_manifest
@@ -44,7 +45,7 @@ def _digest(value: Any) -> str:
 
 
 def context_fingerprint(text: str, allowed_context: dict[str, Any] | None = None) -> str:
-    return _digest({"text": text, "allowed_context": allowed_context or {}})
+    return _digest({"text": text, "allowed_context": normalize_allowed_context(allowed_context)})
 
 
 def _aliases(topic: dict[str, Any]) -> list[str]:
@@ -133,10 +134,12 @@ def _base_decision(
     residual_state: str,
     reason_codes: list[str],
     candidate_evidence: list[dict[str, Any]],
+    allowed_context: dict[str, Any] | None = None,
     calibration_ids: list[str] | None = None,
     diagnostic_only: bool = False,
 ) -> dict[str, Any]:
-    context_fp = context_fingerprint(text)
+    normalized_context = normalize_allowed_context(allowed_context)
+    context_fp = context_fingerprint(text, normalized_context)
     decision = {
         "decision_id": "route:" + _digest(
             {
@@ -162,6 +165,10 @@ def _base_decision(
         "provenance": {
             "router_version": "sem04-router-v0.1",
             "context_fingerprint": context_fp,
+            "allowed_context_policy": normalized_context.get("policy"),
+            "allowed_context_input_refs": [
+                row["input_ref"] for row in normalized_context.get("inputs", [])
+            ],
             "candidate_evidence": candidate_evidence,
             "calibration_evidence_used": calibration_ids or [],
             "diagnostic_only": diagnostic_only,
@@ -311,6 +318,7 @@ def route_input(
     candidates: Sequence[dict[str, Any]],
     claimed_catalog_version: str | None = None,
     expected_input_revision: str | None = None,
+    allowed_context: dict[str, Any] | None = None,
     calibration_store: CalibrationStore | None = None,
     config: dict[str, Any] | None = None,
     diagnostic_only: bool = False,
@@ -320,6 +328,8 @@ def route_input(
     current_catalog_version = str(catalog["catalog_version"])
     candidate_topic_ids = [str(item["topic_id"]) for item in candidates]
     by_id = {str(topic["topic_id"]): topic for topic in eligible_topics(catalog)}
+    normalized_context = normalize_allowed_context(allowed_context)
+    semantic_text = classification_text(text, normalized_context)
 
     if claimed_catalog_version is not None and claimed_catalog_version != current_catalog_version:
         return _base_decision(
@@ -332,6 +342,7 @@ def route_input(
             assignments=[],
             residual_state="NONE",
             reason_codes=["STALE_CATALOG"],
+            allowed_context=normalized_context,
             candidate_evidence=[],
             diagnostic_only=diagnostic_only,
         )
@@ -346,11 +357,12 @@ def route_input(
             assignments=[],
             residual_state="NONE",
             reason_codes=["STALE_REVISION"],
+            allowed_context=normalized_context,
             candidate_evidence=[],
             diagnostic_only=diagnostic_only,
         )
 
-    context_fp = context_fingerprint(text)
+    context_fp = context_fingerprint(text, normalized_context)
     reusable = (
         calibration_store.effective_for(
             input_ref=input_ref,
@@ -377,6 +389,7 @@ def route_input(
                     assignments=[],
                     residual_state="NONE",
                     reason_codes=["CALIBRATION_CATALOG_CONFLICT"],
+                    allowed_context=normalized_context,
                     candidate_evidence=[],
                     calibration_ids=[reusable["calibration_id"]],
                     diagnostic_only=diagnostic_only,
@@ -403,6 +416,7 @@ def route_input(
             assignments=assignments,
             residual_state=str(final.get("residual_state", "NONE")),
             reason_codes=["CALIBRATION_REUSE"],
+            allowed_context=normalized_context,
             candidate_evidence=[],
             calibration_ids=[str(reusable["calibration_id"])],
             diagnostic_only=diagnostic_only,
@@ -413,11 +427,11 @@ def route_input(
         topic_id = str(candidate["topic_id"])
         if topic_id not in by_id:
             continue
-        evidence_rows.append(_score_candidate(text, by_id[topic_id], dict(candidate)))
+        evidence_rows.append(_score_candidate(semantic_text, by_id[topic_id], dict(candidate)))
     evidence_rows.sort(key=lambda item: (-item["score"], item["topic_id"]))
     strong = [item for item in evidence_rows if item["score"] >= float(policy["assignment_score_min"])]
     strong = strong[: int(policy["max_assignments"])]
-    normalized_text = normalize(text)
+    normalized_text = normalize(semantic_text)
     ambiguity = any(marker in normalized_text for marker in policy["ambiguity_markers"])
     compact_len = len(normalized_text.replace(" ", ""))
 
@@ -454,6 +468,7 @@ def route_input(
         assignments=assignments,
         residual_state=residual,
         reason_codes=reasons,
+        allowed_context=normalized_context,
         candidate_evidence=evidence_rows[:10],
         diagnostic_only=diagnostic_only,
     )
@@ -1007,3 +1022,5 @@ def run_sem04(lab_commit: str = "UNCOMMITTED") -> dict[str, Any]:
         },
         "pass": g0 and g5,
     }
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]

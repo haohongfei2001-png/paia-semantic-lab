@@ -1,31 +1,56 @@
-# SEM-06 — Reusable Personal Gold Infrastructure Report
+# SEM-06 — Authorized Personal Gold Closure Candidate
 
 ## Scope executed
 
-SEM-06 engineering infrastructure is implemented and validated without reading a real PAIA archive. The implementation adds an authorization-gated read-only snapshot contract, deterministic high-information sampling, duplicate suppression, model-identity-blind owner items, reusable CalibrationRecord promotion, and family-level calibration/evaluation/lockbox splitting.
+SEM-06 used the product owner's explicitly authorized read-only PAIA Input snapshot and preserved the production isolation boundary. The real snapshot contained **1,522** active Input records with stable Input identity/revision, source provenance and source-payload fingerprints. No PAIA production repository/runtime/schema/Reader/Thought Library/Capture/ANS state was modified.
 
-The canonical Semantic Lab isolation boundary remains intact. No PAIA production repository/runtime/schema/Reader/Thought Library/Capture/ANS state was modified. No real Input was sent to an API. No model was trained.
+Qualified local processing used the already SEM-01-qualified pinned revisions of **Qwen/Qwen3-Embedding-0.6B** and **BAAI/bge-m3**. Both processed 1,522/1,522 Inputs locally with no external embedding/model API calls and no model training.
 
-## Engineering evidence
+The machine-selected fixed batch is `sem06:batch:5ba835b03a19a66262c7`: **128** high-information judgments after **11** near-duplicate skips. Model identity remained blinded and per-model duplicate labeling remained zero.
+## Context-aware routing correction
 
-- Full repository unit regression: 57/57 tests passed.
-- G0 isolation: PASS.
-- G7 personal-gold infrastructure: PASS on synthetic fixtures only.
-- Provenance/revision/catalog identity coverage in the infrastructure validation: 100%.
-- Per-model duplicate labeling: 0.
-- Owner-facing batch is model-identity blind.
-- Existing SEM-01 runtime qualification evidence is reused rather than re-labeled by the owner.
+During canonical adjudication, the product owner clarified that PAIA classification semantics are not always single-Input semantics: when the current Input is not self-sufficient, classification must use the **necessary context from the original project/conversation window**.
 
-## Closure status
+This does not change the frozen architecture. The v0.2 freeze already defines the Personal routing plane as “candidate Topics + allowed context + reusable calibration”. SEM-06 exposed an implementation gap: `context_fingerprint(text, allowed_context)` existed, but candidate retrieval and `route_input()` were not actually consuming allowed context.
 
-The engineering gate does not constitute personal semantic validation. The round cannot be marked COMPLETE until an explicitly authorized real read-only Input snapshot is available and the one planned blinded owner semantic batch is completed once as reusable gold.
+The closure candidate therefore connects the existing contract end-to-end:
+- allowed context is optional and only supplied when the current Input needs disambiguation;
+- the current Input remains the primary semantic target;
+- candidate retrieval and Router scoring consume the same explicit allowed context;
+- context identity is included in the calibration fingerprint, so Gold cannot be reused across incompatible contexts;
+- allowed-context refs must resolve to the same authorized snapshot and same conversation family, with matching revision/text and source fingerprint when supplied;
+- context-free Inputs keep the original single-Input path.
+## Canonical personal gold v1
 
-Current personalized semantic quality verdict: **INCONCLUSIVE**.
+The fixed batch is complete: **128/128** canonical judgments.
 
-Current round closure state: **BLOCKED_ON_OWNER_SEMANTIC_BATCH**.
+- 126 ASSIGNED
+- 0 UNASSIGNED
+- 2 DEFER because the authorized archive lacked the semantic material needed to classify safely
+- 22 context-dependent judgments bound to `same_conversation_necessary_context_v1`
+- 103 retrieval relevance qrels
+- deterministic family split: calibration 80 / evaluation 13 / SEM-07 lockbox 35
+- reusable-gold validity rate: 100%
+- provenance/revision/catalog identity coverage: 100%
+- unresolved frozen Topic-boundary ambiguities: 0
 
-The blocked work is intentionally not replaced with synthetic labels. SEM-07 must remain NOT_STARTED until SEM-06 is genuinely closed.
-
+The product owner explicitly delegated clear fixed-batch judgments to the current ChatGPT and later instructed it to use necessary original-window context for context-dependent cases. The resulting private audit records distinguish **127 owner-authorized ChatGPT-delegated judgments** from **1 direct owner UI judgment**. This narrow adjudication authorization applies only to the fixed SEM-06 batch and necessary context; it does not authorize general provider egress or change PAIA production privacy policy.
 ## Privacy and persistence
 
-Real snapshot content, personal gold, and private annotation data are prohibited from Git. Git contains only code, contracts, synthetic validation evidence, and metadata-only audit artifacts. API egress remains denied for real Inputs.
+Raw snapshot content, raw Input text, personal gold, CalibrationRecord payloads, context text, private vectors and the frozen SEM-07 lockbox content remain outside Git in the local private Semantic Lab area. Git receives only code, tests, hashes, counts and metadata-only audit evidence.
+
+Local embedding/model processing recorded zero API-egress events. The later current-ChatGPT adjudication is recorded separately as the explicit owner-authorized fixed-batch exception rather than being misreported as local model processing.
+
+## Validation
+
+Local validation for this closure candidate:
+- context-aware targeted regression: **12/12 PASS**
+- full repository regression: **58/58 PASS** in 140.03 s
+- G0 isolation: locally preserved
+- G7 personal-gold infrastructure: locally preserved
+- model training runs: 0
+- production PAIA modifications: 0
+
+The closure candidate must remain **CLOSURE_VALIDATING** until the required `Semantic Lab CI` run on the pushed commit passes. Only after that remote gate may canonical status mark SEM-06 COMPLETE and SEM-07 READY. SEM-07 must not start in this execution.
+
+[executed on device: hhfdeMacBook-Air.local (ea7c2cb7-378e-4226-a030-4f3e02a6ba2f)]
