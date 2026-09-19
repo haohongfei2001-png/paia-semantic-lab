@@ -7,7 +7,6 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-import numpy as np
 import yaml
 
 from semantic_lab.sem07 import candidate_metrics, retrieval_metrics, router_metrics
@@ -25,7 +24,7 @@ def case_hash(calibration_id: str) -> str:
     return hashlib.sha256(payload).hexdigest()[:20]
 
 
-def rank_of_pair(matrix: np.ndarray, refs: list[str], query_i: int, target_i: int) -> int:
+def rank_of_pair(matrix: Any, refs: list[str], query_i: int, target_i: int) -> int:
     scores = matrix @ matrix[query_i]
     target = float(scores[target_i])
     target_ref = refs[target_i]
@@ -118,6 +117,8 @@ def analyze(
     public_output: Path,
     config_path: Path,
 ) -> dict[str, Any]:
+    import numpy as np
+
     config = load_config(config_path)
     gold = json.loads((sem06_dir / "personal_gold_v1.json").read_text(encoding="utf-8"))
     snapshot = json.loads((sem06_dir / "snapshot.json").read_text(encoding="utf-8"))

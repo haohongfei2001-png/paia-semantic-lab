@@ -64,7 +64,7 @@ The private per-case ledger remains outside Git. Git contains only anonymous cas
 ## Local validation
 
 - REM-00 + v0.3 targeted tests: **12/12 PASS**.
-- Full repository regression: **77/77 PASS** in **132.825 s**.
+- Full repository regression: **77/77 PASS** in **146.008 s**.
 - `git diff --check`: PASS.
 
 ## Next round
