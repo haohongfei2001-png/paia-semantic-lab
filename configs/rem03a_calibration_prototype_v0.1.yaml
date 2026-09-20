@@ -1,0 +1,54 @@
+version: "0.1.0"
+round: "REM-03A"
+benchmark_version: "rem03a-calibration-prototype-0.1"
+status: FROZEN_BEFORE_PRIVATE_EVIDENCE
+
+baseline:
+  model_id: "BAAI/bge-m3"
+  revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+  base_policy_config: "configs/rem03_candidate_remediation_v0.1.yaml"
+
+development:
+  fold_count: 5
+  query_variants: [current_only, allowed_context]
+  prototype_strategies: [exemplar_max, centroid, hybrid]
+  fusion:
+    method: weighted_rrf
+    constant: 20
+    base_weight: 1.0
+    prototype_weights: [2.0, 4.0]
+  candidate_limit: 96
+
+promotion_gate:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  critical_slice_same_thresholds: true
+  held_out_family_leakage_events_max: 0
+  full_catalog_eligibility_required: true
+  activity_top20_invariance_required: true
+  custom_topic_safety_required: true
+
+evaluation:
+  read_condition: CALIBRATION_GATE_PASS
+  max_reads: 1
+  no_reselection_after_read: true
+  no_threshold_change_after_read: true
+
+authorization:
+  legacy_calibration_read_only: 80
+  legacy_evaluation_read_only_after_gate: 13
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  production_paia_write: DENY
+
+public_output_policy:
+  aggregates_only: true
+  raw_input_text: FORBIDDEN
+  input_ref: FORBIDDEN
+  family_ref: FORBIDDEN
+  calibration_id: FORBIDDEN
+  per_case_truth_topics: FORBIDDEN
+  private_vectors: FORBIDDEN
