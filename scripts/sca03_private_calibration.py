@@ -48,17 +48,23 @@ def matrix_digest(rows: Sequence[dict[str, Any]]) -> str:
     ).hexdigest()
 
 
+def git_blob_sha(path: Path) -> str:
+    data = path.read_bytes()
+    header = f"blob {len(data)}\\0".encode("utf-8")
+    return hashlib.sha1(header + data).hexdigest()
+
+
 def load_freeze(path: Path, config_path: Path, root: Path) -> dict[str, Any]:
     freeze = json.loads(path.read_text(encoding="utf-8"))
     cfg = load_sca03_config(config_path)
     checks = {
-        "config_sha256": sha256_file(config_path),
-        "evaluator_sha256": sha256_file(Path(__file__)),
-        "library_sha256": sha256_file(root / "semantic_lab" / "sca03.py"),
+        "config_git_blob_sha": git_blob_sha(config_path),
+        "evaluator_git_blob_sha": git_blob_sha(Path(__file__)),
+        "library_git_blob_sha": git_blob_sha(root / "semantic_lab" / "sca03.py"),
         "matrix_sha256": matrix_digest(config_matrix(cfg)),
-        "profile_manifest_sha256": sha256_file(root / "semantic_profiles" / "v0.1" / "manifest.json"),
-        "graph_file_sha256": sha256_file(root / "contrastive_graph" / "v0.1" / "graph.json"),
-        "suite_manifest_sha256": sha256_file(root / "synthetic_contrastive" / "v0.1" / "manifest.json"),
+        "profile_manifest_git_blob_sha": git_blob_sha(root / "semantic_profiles" / "v0.1" / "manifest.json"),
+        "graph_git_blob_sha": git_blob_sha(root / "contrastive_graph" / "v0.1" / "graph.json"),
+        "suite_manifest_git_blob_sha": git_blob_sha(root / "synthetic_contrastive" / "v0.1" / "manifest.json"),
     }
     for key, actual in checks.items():
         if freeze.get(key) != actual:

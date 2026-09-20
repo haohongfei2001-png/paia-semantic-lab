@@ -30,9 +30,15 @@ class SCA02StatusTests(unittest.TestCase):
         sca02 = self.status["rounds"]["SCA-02"]
         sca03 = self.status["rounds"]["SCA-03"]
         if sca02["closure_required_ci"] == "PASS":
-            self.assertEqual("SCA_03_READY", self.status["phase"])
-            self.assertEqual("READY", sca03["execution_status"])
-            self.assertFalse(sca03["explicit_execution_authorized"])
+            self.assertIn(
+                self.status["phase"],
+                {"SCA_03_READY", "SCA_03_IN_PROGRESS", "SCA_03_COMPLETE_PENDING_CI", "SCA_04_READY"},
+            )
+            self.assertIn(sca03["execution_status"], {"READY", "IN_PROGRESS", "COMPLETE"})
+            if sca03["execution_status"] == "READY":
+                self.assertFalse(sca03["explicit_execution_authorized"])
+            else:
+                self.assertTrue(sca03["explicit_execution_authorized"])
         else:
             self.assertEqual("SCA_02_COMPLETE_PENDING_CI", self.status["phase"])
             self.assertEqual("BLOCKED", sca03["execution_status"])
