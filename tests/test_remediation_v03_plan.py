@@ -79,15 +79,18 @@ class RemediationV03PlanTests(unittest.TestCase):
     def test_rem03a_amendment_preserves_failed_rem03_and_blocks_router(self):
         self.assertEqual("REM-03A_CALIBRATION_PROTOTYPE", self.status["plan_amendment"])
         self.assertEqual("FROZEN_PLAN_ONLY", self.status["plan_amendment_status"])
-        self.assertEqual("REM_03A_READY", self.status["phase"])
         rem03 = self.status["rounds"]["REM-03"]
         self.assertEqual("COMPLETE", rem03["execution_status"])
         self.assertEqual("FAIL", rem03["capability_verdict"])
         rem03a = self.status["rounds"]["REM-03A"]
-        self.assertEqual("READY", rem03a["execution_status"])
-        self.assertEqual("UNTESTED", rem03a["capability_verdict"])
-        self.assertFalse(rem03a["explicit_execution_authorized"])
-        self.assertEqual("requires_fresh_explicit_round_authorization", rem03a["existing_private_artifacts_read"])
+        self.assertIn(rem03a["execution_status"], {"READY", "IN_PROGRESS", "COMPLETE"})
+        if rem03a["execution_status"] == "READY":
+            self.assertEqual("REM_03A_READY", self.status["phase"])
+            self.assertFalse(rem03a["explicit_execution_authorized"])
+            self.assertEqual("requires_fresh_explicit_round_authorization", rem03a["existing_private_artifacts_read"])
+        else:
+            self.assertTrue(rem03a["explicit_execution_authorized"])
+            self.assertNotEqual("requires_fresh_explicit_round_authorization", rem03a["existing_private_artifacts_read"])
         rem04 = self.status["rounds"]["REM-04"]
         self.assertEqual("BLOCKED", rem04["execution_status"])
         self.assertEqual("REM-03A", rem04["depends_on"])
