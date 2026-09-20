@@ -43,7 +43,7 @@ class Rem03AClosureTests(unittest.TestCase):
         self.assertEqual("BLOCKED", self.status["rounds"]["REM-04"]["execution_status"])
         self.assertIn(
             self.status["rounds"]["REM-04"]["blocked_by"],
-            {"REM_03A_CANDIDATE_PROMOTION_FAIL", "REM_03B_NOT_COMPLETE", "REM_03B_AMENDMENT_CI_PENDING"},
+            {"REM_03A_CANDIDATE_PROMOTION_FAIL", "REM_03B_NOT_COMPLETE", "REM_03B_AMENDMENT_CI_PENDING", "REM_03B_CANDIDATE_PROMOTION_FAIL"},
         )
         self.assertEqual(0, self.summary["guards"]["held_out_family_leakage_events"])
         self.assertEqual(0, self.summary["guards"]["consumed_lockbox_tuning_events"])

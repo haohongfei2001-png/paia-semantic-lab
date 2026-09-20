@@ -1,0 +1,1525 @@
+{
+  "round": "REM-03B",
+  "stage": "CALIBRATION_FAIL",
+  "config_sha256": "4d8cf57e335aabf4adc1a0642bf3d4ad8a0fcbeceb194f05a8f72fd36144f8be",
+  "evaluator_sha256": "98baf7658b5eed639a89f9b4ecee2fb3d83eecaf1ee21b00632d25836244a1d2",
+  "library_sha256": "fce5605f0e37b7c303a94e9636a6852d5baf0f90ab5bbb5a59d663f307efe7b0",
+  "matrix_sha256": "9f9a2f3ce2aaa878d154077d87b7f4157e2995040e667bb51b713d721ef88e19",
+  "matrix_count": 12,
+  "calibration_case_count": 80,
+  "assigned_case_count": 80,
+  "context_dependent_case_count": 12,
+  "results": [
+    {
+      "config": {
+        "query_variant": "allowed_context",
+        "domain_evidence": "centroid",
+        "anchor_mode": "names_aliases_plus_domain_path",
+        "config_id": "rem03b-8ebf70f64667f598"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.38145833333333334,
+          "complete_case_recall_at_5": 0.15,
+          "topic_recall_at_10": 0.5927083333333333,
+          "complete_case_recall_at_10": 0.325,
+          "topic_recall_at_20": 0.8168749999999999,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.375,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.625,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.8194444444444445,
+          "complete_case_recall_at_20": 0.5833333333333334
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.38259803921568625,
+          "complete_case_recall_at_5": 0.1323529411764706,
+          "topic_recall_at_10": 0.5870098039215685,
+          "complete_case_recall_at_10": 0.3088235294117647,
+          "topic_recall_at_20": 0.816421568627451,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.37395833333333334,
+        "complete_case_domain_recall_at_1": 0.1625,
+        "domain_recall_at_2": 0.625,
+        "complete_case_domain_recall_at_2": 0.4625
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.47222222222222227,
+          "topic_recall_at_20": 0.638888888888889,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.8833333333333334,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.43402777777777773,
+          "topic_recall_at_20": 0.7604166666666666,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.4930555555555556
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7763888888888889,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.75
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.728030303030303,
+          "topic_recall_at_20": 0.9053030303030304,
+          "domain_recall_at_1": 0.42424242424242425,
+          "domain_recall_at_2": 0.8181818181818182
+        }
+      ],
+      "ranking_digest": "e81764bdacdd07d06d28cb866f6b65d920004d86351dae7953cdd4f9b0f526fa",
+      "domain_ranking_digest": "87f29a67dbcf9adbdbdc1ce0b10a58fb63e57ac31249766532a5ae3b80639558"
+    },
+    {
+      "config": {
+        "query_variant": "current_only",
+        "domain_evidence": "centroid",
+        "anchor_mode": "names_aliases_plus_domain_path",
+        "config_id": "rem03b-b3dfddf4f7d10d04"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.38145833333333334,
+          "complete_case_recall_at_5": 0.15,
+          "topic_recall_at_10": 0.5927083333333333,
+          "complete_case_recall_at_10": 0.325,
+          "topic_recall_at_20": 0.8168749999999999,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.375,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.625,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.8194444444444445,
+          "complete_case_recall_at_20": 0.5833333333333334
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.38259803921568625,
+          "complete_case_recall_at_5": 0.1323529411764706,
+          "topic_recall_at_10": 0.5870098039215685,
+          "complete_case_recall_at_10": 0.3088235294117647,
+          "topic_recall_at_20": 0.816421568627451,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.37395833333333334,
+        "complete_case_domain_recall_at_1": 0.1625,
+        "domain_recall_at_2": 0.625,
+        "complete_case_domain_recall_at_2": 0.4625
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.47222222222222227,
+          "topic_recall_at_20": 0.638888888888889,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.8833333333333334,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.43402777777777773,
+          "topic_recall_at_20": 0.7604166666666666,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.4930555555555556
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7763888888888889,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.75
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.728030303030303,
+          "topic_recall_at_20": 0.9053030303030304,
+          "domain_recall_at_1": 0.42424242424242425,
+          "domain_recall_at_2": 0.8181818181818182
+        }
+      ],
+      "ranking_digest": "e81764bdacdd07d06d28cb866f6b65d920004d86351dae7953cdd4f9b0f526fa",
+      "domain_ranking_digest": "87f29a67dbcf9adbdbdc1ce0b10a58fb63e57ac31249766532a5ae3b80639558"
+    },
+    {
+      "config": {
+        "query_variant": "allowed_context",
+        "domain_evidence": "centroid",
+        "anchor_mode": "names_aliases",
+        "config_id": "rem03b-688c341987baff19"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.38145833333333334,
+          "complete_case_recall_at_5": 0.15,
+          "topic_recall_at_10": 0.5806250000000001,
+          "complete_case_recall_at_10": 0.3125,
+          "topic_recall_at_20": 0.82,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.375,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.625,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.8194444444444445,
+          "complete_case_recall_at_20": 0.5833333333333334
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.38259803921568625,
+          "complete_case_recall_at_5": 0.1323529411764706,
+          "topic_recall_at_10": 0.5727941176470589,
+          "complete_case_recall_at_10": 0.29411764705882354,
+          "topic_recall_at_20": 0.8200980392156862,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.37395833333333334,
+        "complete_case_domain_recall_at_1": 0.1625,
+        "domain_recall_at_2": 0.625,
+        "complete_case_domain_recall_at_2": 0.4625
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.47222222222222227,
+          "topic_recall_at_20": 0.638888888888889,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.8833333333333334,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.3923611111111111,
+          "topic_recall_at_20": 0.7708333333333334,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.4930555555555556
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7791666666666667,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.75
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.728030303030303,
+          "topic_recall_at_20": 0.9053030303030304,
+          "domain_recall_at_1": 0.42424242424242425,
+          "domain_recall_at_2": 0.8181818181818182
+        }
+      ],
+      "ranking_digest": "b054a21ab3d22515184d7d429766d0b652aa83af9b9703f62830010f94e885c0",
+      "domain_ranking_digest": "87f29a67dbcf9adbdbdc1ce0b10a58fb63e57ac31249766532a5ae3b80639558"
+    },
+    {
+      "config": {
+        "query_variant": "current_only",
+        "domain_evidence": "centroid",
+        "anchor_mode": "names_aliases",
+        "config_id": "rem03b-8141ccc8b7f095a7"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.38145833333333334,
+          "complete_case_recall_at_5": 0.15,
+          "topic_recall_at_10": 0.5806250000000001,
+          "complete_case_recall_at_10": 0.3125,
+          "topic_recall_at_20": 0.82,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.375,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.625,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.8194444444444445,
+          "complete_case_recall_at_20": 0.5833333333333334
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.38259803921568625,
+          "complete_case_recall_at_5": 0.1323529411764706,
+          "topic_recall_at_10": 0.5727941176470589,
+          "complete_case_recall_at_10": 0.29411764705882354,
+          "topic_recall_at_20": 0.8200980392156862,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.37395833333333334,
+        "complete_case_domain_recall_at_1": 0.1625,
+        "domain_recall_at_2": 0.625,
+        "complete_case_domain_recall_at_2": 0.4625
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.47222222222222227,
+          "topic_recall_at_20": 0.638888888888889,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.8833333333333334,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.3923611111111111,
+          "topic_recall_at_20": 0.7708333333333334,
+          "domain_recall_at_1": 0.2916666666666667,
+          "domain_recall_at_2": 0.4930555555555556
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7791666666666667,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.75
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.728030303030303,
+          "topic_recall_at_20": 0.9053030303030304,
+          "domain_recall_at_1": 0.42424242424242425,
+          "domain_recall_at_2": 0.8181818181818182
+        }
+      ],
+      "ranking_digest": "b054a21ab3d22515184d7d429766d0b652aa83af9b9703f62830010f94e885c0",
+      "domain_ranking_digest": "87f29a67dbcf9adbdbdc1ce0b10a58fb63e57ac31249766532a5ae3b80639558"
+    },
+    {
+      "config": {
+        "query_variant": "allowed_context",
+        "domain_evidence": "exemplar_vote",
+        "anchor_mode": "names_aliases_plus_domain_path",
+        "config_id": "rem03b-9f7fc93a83af6c10"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.3122916666666667,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.5739583333333333,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8231249999999999,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.34722222222222227,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.611111111111111,
+          "complete_case_recall_at_10": 0.3333333333333333,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.3061274509803922,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.5674019607843137,
+          "complete_case_recall_at_10": 0.25,
+          "topic_recall_at_20": 0.8311274509803921,
+          "complete_case_recall_at_20": 0.6764705882352942
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.33229166666666665,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.5583333333333333,
+        "complete_case_domain_recall_at_2": 0.3875
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.16666666666666666,
+          "domain_recall_at_2": 0.2916666666666667
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.44097222222222227,
+          "topic_recall_at_20": 0.7465277777777778,
+          "domain_recall_at_1": 0.2986111111111111,
+          "domain_recall_at_2": 0.513888888888889
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7555555555555555,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6409090909090909,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.3333333333333333,
+          "domain_recall_at_2": 0.6439393939393939
+        }
+      ],
+      "ranking_digest": "29bc9121abd645cc97bd4fca629374409a27c8deba43d26387a2f978f68b3419",
+      "domain_ranking_digest": "4c09556be5c6cc6a6d834193c5f712b47d67401bd19d661f0579431c049e9416"
+    },
+    {
+      "config": {
+        "query_variant": "current_only",
+        "domain_evidence": "exemplar_vote",
+        "anchor_mode": "names_aliases_plus_domain_path",
+        "config_id": "rem03b-d02c500695accbef"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.3122916666666667,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.5739583333333333,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8231249999999999,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.34722222222222227,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.611111111111111,
+          "complete_case_recall_at_10": 0.3333333333333333,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.3061274509803922,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.5674019607843137,
+          "complete_case_recall_at_10": 0.25,
+          "topic_recall_at_20": 0.8311274509803921,
+          "complete_case_recall_at_20": 0.6764705882352942
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.33229166666666665,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.5583333333333333,
+        "complete_case_domain_recall_at_2": 0.3875
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.16666666666666666,
+          "domain_recall_at_2": 0.2916666666666667
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.44097222222222227,
+          "topic_recall_at_20": 0.7465277777777778,
+          "domain_recall_at_1": 0.2986111111111111,
+          "domain_recall_at_2": 0.513888888888889
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7555555555555555,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6409090909090909,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.3333333333333333,
+          "domain_recall_at_2": 0.6439393939393939
+        }
+      ],
+      "ranking_digest": "29bc9121abd645cc97bd4fca629374409a27c8deba43d26387a2f978f68b3419",
+      "domain_ranking_digest": "4c09556be5c6cc6a6d834193c5f712b47d67401bd19d661f0579431c049e9416"
+    },
+    {
+      "config": {
+        "query_variant": "current_only",
+        "domain_evidence": "exemplar_vote",
+        "anchor_mode": "names_aliases",
+        "config_id": "rem03b-57f0c52e7d942b9a"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.3122916666666667,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.571875,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8231249999999999,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.34722222222222227,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.611111111111111,
+          "complete_case_recall_at_10": 0.3333333333333333,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.3061274509803922,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.5649509803921569,
+          "complete_case_recall_at_10": 0.25,
+          "topic_recall_at_20": 0.8311274509803921,
+          "complete_case_recall_at_20": 0.6764705882352942
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.33229166666666665,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.5583333333333333,
+        "complete_case_domain_recall_at_2": 0.3875
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.16666666666666666,
+          "domain_recall_at_2": 0.2916666666666667
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.44097222222222227,
+          "topic_recall_at_20": 0.7465277777777778,
+          "domain_recall_at_1": 0.2986111111111111,
+          "domain_recall_at_2": 0.513888888888889
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7416666666666667,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6409090909090909,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.3333333333333333,
+          "domain_recall_at_2": 0.6439393939393939
+        }
+      ],
+      "ranking_digest": "49d23ae86576ed2960c0214f87e8105135e519305a5a66403ce4948102af10cf",
+      "domain_ranking_digest": "4c09556be5c6cc6a6d834193c5f712b47d67401bd19d661f0579431c049e9416"
+    },
+    {
+      "config": {
+        "query_variant": "allowed_context",
+        "domain_evidence": "exemplar_vote",
+        "anchor_mode": "names_aliases",
+        "config_id": "rem03b-b79d63991cb3d674"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.3122916666666667,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.571875,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8231249999999999,
+          "complete_case_recall_at_20": 0.65
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.34722222222222227,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.611111111111111,
+          "complete_case_recall_at_10": 0.3333333333333333,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.3061274509803922,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.5649509803921569,
+          "complete_case_recall_at_10": 0.25,
+          "topic_recall_at_20": 0.8311274509803921,
+          "complete_case_recall_at_20": 0.6764705882352942
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.33229166666666665,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.5583333333333333,
+        "complete_case_domain_recall_at_2": 0.3875
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.16666666666666666,
+          "domain_recall_at_2": 0.2916666666666667
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.44097222222222227,
+          "topic_recall_at_20": 0.7465277777777778,
+          "domain_recall_at_1": 0.2986111111111111,
+          "domain_recall_at_2": 0.513888888888889
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7416666666666667,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6409090909090909,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.3333333333333333,
+          "domain_recall_at_2": 0.6439393939393939
+        }
+      ],
+      "ranking_digest": "49d23ae86576ed2960c0214f87e8105135e519305a5a66403ce4948102af10cf",
+      "domain_ranking_digest": "4c09556be5c6cc6a6d834193c5f712b47d67401bd19d661f0579431c049e9416"
+    },
+    {
+      "config": {
+        "query_variant": "current_only",
+        "domain_evidence": "hybrid",
+        "anchor_mode": "names_aliases",
+        "config_id": "rem03b-dbda1d1a2fc82401"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.323125,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.568125,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8168749999999999,
+          "complete_case_recall_at_20": 0.6375
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.3888888888888889,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.6527777777777778,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.31151960784313726,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.553186274509804,
+          "complete_case_recall_at_10": 0.23529411764705882,
+          "topic_recall_at_20": 0.8237745098039215,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.340625,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.6,
+        "complete_case_domain_recall_at_2": 0.425
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.25,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.3993055555555556,
+          "topic_recall_at_20": 0.7256944444444445,
+          "domain_recall_at_1": 0.2569444444444445,
+          "domain_recall_at_2": 0.5277777777777778
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7583333333333333,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6636363636363636,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.36363636363636365,
+          "domain_recall_at_2": 0.7348484848484849
+        }
+      ],
+      "ranking_digest": "c38a85f37a1cb7786e8da481c538ee362492aed0374ad645dd8f27ade618ccb2",
+      "domain_ranking_digest": "d36a48a1e315df8499e8781a2b283c2637175784675a39ac5e072e34968cc25f"
+    },
+    {
+      "config": {
+        "query_variant": "allowed_context",
+        "domain_evidence": "hybrid",
+        "anchor_mode": "names_aliases",
+        "config_id": "rem03b-e95ec81bb15cd8c6"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.323125,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.568125,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8168749999999999,
+          "complete_case_recall_at_20": 0.6375
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.3888888888888889,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.6527777777777778,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.31151960784313726,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.553186274509804,
+          "complete_case_recall_at_10": 0.23529411764705882,
+          "topic_recall_at_20": 0.8237745098039215,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.340625,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.6,
+        "complete_case_domain_recall_at_2": 0.425
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.25,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.3993055555555556,
+          "topic_recall_at_20": 0.7256944444444445,
+          "domain_recall_at_1": 0.2569444444444445,
+          "domain_recall_at_2": 0.5277777777777778
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7583333333333333,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6636363636363636,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.36363636363636365,
+          "domain_recall_at_2": 0.7348484848484849
+        }
+      ],
+      "ranking_digest": "c38a85f37a1cb7786e8da481c538ee362492aed0374ad645dd8f27ade618ccb2",
+      "domain_ranking_digest": "d36a48a1e315df8499e8781a2b283c2637175784675a39ac5e072e34968cc25f"
+    },
+    {
+      "config": {
+        "query_variant": "current_only",
+        "domain_evidence": "hybrid",
+        "anchor_mode": "names_aliases_plus_domain_path",
+        "config_id": "rem03b-73dfae268a75128a"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.323125,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.5677083333333333,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8168749999999999,
+          "complete_case_recall_at_20": 0.6375
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.3888888888888889,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.6527777777777778,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.31151960784313726,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.5526960784313726,
+          "complete_case_recall_at_10": 0.23529411764705882,
+          "topic_recall_at_20": 0.8237745098039215,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.340625,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.6,
+        "complete_case_domain_recall_at_2": 0.425
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.25,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.3993055555555556,
+          "topic_recall_at_20": 0.7256944444444445,
+          "domain_recall_at_1": 0.2569444444444445,
+          "domain_recall_at_2": 0.5277777777777778
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7555555555555555,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6636363636363636,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.36363636363636365,
+          "domain_recall_at_2": 0.7348484848484849
+        }
+      ],
+      "ranking_digest": "b6a0d80f548552c475fe8e1e4f4e156ed7d0abc2a4f3756394b0df8dc6c68375",
+      "domain_ranking_digest": "d36a48a1e315df8499e8781a2b283c2637175784675a39ac5e072e34968cc25f"
+    },
+    {
+      "config": {
+        "query_variant": "allowed_context",
+        "domain_evidence": "hybrid",
+        "anchor_mode": "names_aliases_plus_domain_path",
+        "config_id": "rem03b-e4812a7ec2ad5b6a"
+      },
+      "metrics": {
+        "overall": {
+          "assigned_cases": 80,
+          "topic_recall_at_5": 0.323125,
+          "complete_case_recall_at_5": 0.125,
+          "topic_recall_at_10": 0.5677083333333333,
+          "complete_case_recall_at_10": 0.2625,
+          "topic_recall_at_20": 0.8168749999999999,
+          "complete_case_recall_at_20": 0.6375
+        },
+        "context_dependent": {
+          "assigned_cases": 12,
+          "topic_recall_at_5": 0.3888888888888889,
+          "complete_case_recall_at_5": 0.25,
+          "topic_recall_at_10": 0.6527777777777778,
+          "complete_case_recall_at_10": 0.4166666666666667,
+          "topic_recall_at_20": 0.7777777777777778,
+          "complete_case_recall_at_20": 0.5
+        },
+        "context_free": {
+          "assigned_cases": 68,
+          "topic_recall_at_5": 0.31151960784313726,
+          "complete_case_recall_at_5": 0.10294117647058823,
+          "topic_recall_at_10": 0.5526960784313726,
+          "complete_case_recall_at_10": 0.23529411764705882,
+          "topic_recall_at_20": 0.8237745098039215,
+          "complete_case_recall_at_20": 0.6617647058823529
+        }
+      },
+      "domain_metrics": {
+        "assigned_cases": 80,
+        "domain_recall_at_1": 0.340625,
+        "complete_case_domain_recall_at_1": 0.1375,
+        "domain_recall_at_2": 0.6,
+        "complete_case_domain_recall_at_2": 0.425
+      },
+      "gate": {
+        "overall_pass": false,
+        "critical_slices_pass": false,
+        "pass": false,
+        "failures": [
+          "overall_recall_at_10",
+          "overall_recall_at_20",
+          "critical_slice:context_dependent",
+          "critical_slice:context_free"
+        ],
+        "slice_failures": {
+          "context_dependent": [
+            "recall_at_10",
+            "recall_at_20"
+          ],
+          "context_free": [
+            "recall_at_10",
+            "recall_at_20"
+          ]
+        },
+        "leakage_pass": true,
+        "structural_pass": true
+      },
+      "held_out_family_leakage_events": 0,
+      "structural_failure_count": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.513888888888889,
+          "topic_recall_at_20": 0.6805555555555555,
+          "domain_recall_at_1": 0.25,
+          "domain_recall_at_2": 0.375
+        },
+        {
+          "fold": 1,
+          "case_count": 10,
+          "family_count": 4,
+          "assigned_cases": 10,
+          "topic_recall_at_10": 0.6,
+          "topic_recall_at_20": 0.9333333333333333,
+          "domain_recall_at_1": 0.5333333333333333,
+          "domain_recall_at_2": 0.6666666666666667
+        },
+        {
+          "fold": 2,
+          "case_count": 24,
+          "family_count": 7,
+          "assigned_cases": 24,
+          "topic_recall_at_10": 0.3993055555555556,
+          "topic_recall_at_20": 0.7256944444444445,
+          "domain_recall_at_1": 0.2569444444444445,
+          "domain_recall_at_2": 0.5277777777777778
+        },
+        {
+          "fold": 3,
+          "case_count": 12,
+          "family_count": 6,
+          "assigned_cases": 12,
+          "topic_recall_at_10": 0.7555555555555555,
+          "topic_recall_at_20": 0.8902777777777778,
+          "domain_recall_at_1": 0.3958333333333333,
+          "domain_recall_at_2": 0.6666666666666666
+        },
+        {
+          "fold": 4,
+          "case_count": 22,
+          "family_count": 7,
+          "assigned_cases": 22,
+          "topic_recall_at_10": 0.6636363636363636,
+          "topic_recall_at_20": 0.8977272727272727,
+          "domain_recall_at_1": 0.36363636363636365,
+          "domain_recall_at_2": 0.7348484848484849
+        }
+      ],
+      "ranking_digest": "b6a0d80f548552c475fe8e1e4f4e156ed7d0abc2a4f3756394b0df8dc6c68375",
+      "domain_ranking_digest": "d36a48a1e315df8499e8781a2b283c2637175784675a39ac5e072e34968cc25f"
+    }
+  ],
+  "selected_config": null,
+  "selected_metrics": null,
+  "selected_domain_metrics": null,
+  "evaluation_open_permitted": false,
+  "guards": {
+    "held_out_family_leakage_events": 0,
+    "structural_failure_events": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_lockbox_tuning_events": 0,
+    "generated_semantic_expansion_events": 0,
+    "catalog_edit_events": 0
+  },
+  "runtime": {
+    "model_load_seconds": 2.9848824170039734,
+    "python": "3.12.14",
+    "sentence_transformers": "5.1.1",
+    "transformers": "4.56.1",
+    "torch": "2.8.0",
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "effective_context_tokens": 8192,
+    "max_input_tokens": 626,
+    "query_encode_seconds": 94.82920320899575,
+    "anchor_encode_seconds": 76.79871216700121,
+    "topic_anchor_vector_count": 864,
+    "domain_anchor_vector_count": 38,
+    "embedding_dimensions": 1024,
+    "peak_rss_bytes": 1883815936,
+    "elapsed_seconds": 192.51033516600728
+  },
+  "result_digest": "dceba486fdf5a7568c8acfd5d5c4924b07a3a5dae32693002236137e0e366523"
+}

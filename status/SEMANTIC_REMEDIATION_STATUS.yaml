@@ -12,7 +12,7 @@ plan_amendment_validation_job_id: 106060395332
 plan_amendment_evidence_artifact_id: 10603521953
 plan_amendment_validated_commit: c48b944d241cfe664ef937b8f5f45c18d8e04f97
 plan_amendment_required_ci: PASS
-phase: REM_03B_IN_PROGRESS
+phase: REM_03B_COMPLETE_FAIL
 baseline_remote_commit: 28c82a95fd1ee6d642fc6a033ce1bf734cc8df53
 architecture_baseline: v0.2 semantic contract
 production_paia_modified: false
@@ -265,8 +265,8 @@ rounds:
     closure_local_test_seconds: 282.631
   REM-03B:
     title: Structured Domain-backoff candidate remediation
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: FAIL
     depends_on: REM-03A
     amendment: REM-03B_STRUCTURED_DOMAIN_BACKOFF
     explicit_execution_authorized: true
@@ -309,13 +309,34 @@ rounds:
     checkpoint_validation_job_id: 106067478033
     checkpoint_evidence_artifact_id: 10603832013
     checkpoint_validated_commit: 6e33633dbc4cec976e2514062984375c6d7a49c3
+    private_calibration_evidence: FAIL_CALIBRATION_GATE
+    calibration_records_read: 80
+    calibration_passing_configs: 0
+    best_observed_config_id: rem03b-8ebf70f64667f598
+    best_query_variant: allowed_context
+    best_domain_evidence: centroid
+    best_anchor_mode: names_aliases_plus_domain_path
+    best_candidate_recall_at_10: 0.5927083333333333
+    best_candidate_recall_at_20: 0.8168749999999999
+    best_domain_recall_at_1: 0.37395833333333334
+    best_domain_recall_at_2: 0.625
+    critical_slices_pass: false
+    held_out_family_leakage_events: 0
+    structural_failure_events: 0
+    calibration_result_digest: dceba486fdf5a7568c8acfd5d5c4924b07a3a5dae32693002236137e0e366523
+    catalog_semantic_information_deficiency_review_required: true
+    closure_required_ci: PENDING
+    closure_targeted_tests: 35/35 PASS
+    closure_state_tests: 21/21 PASS
+    closure_local_tests: 145/145 PASS
+    closure_local_test_seconds: 301.625
   REM-04:
     title: Router remediation and pre-lockbox freeze
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     depends_on: REM-03B
     prerequisite: REM_03B_CANDIDATE_PROMOTION_PASS
-    blocked_by: REM_03B_NOT_COMPLETE
+    blocked_by: REM_03B_CANDIDATE_PROMOTION_FAIL
     new_owner_labels: 0
   REM-05:
     title: New independent personal lockbox construction
@@ -331,10 +352,11 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: REM-03B execution freeze has passed exact-head CI and remains IN_PROGRESS.
-  Before opening the authorized 80-case calibration, validate this metadata-only checkpoint
-  state on exact-head CI once more. The 13-case evaluation remains closed unless calibration
-  passes all candidate gates.
+next_action: REM-03B is COMPLETE/FAIL. The structured Domain-backoff lane did not
+  meet candidate gates and Domain recovery itself remained weak. The 13-case legacy
+  evaluation set was not opened. Per frozen REM-03B escalation, stop retrieval-weight
+  remediation and open a separate catalog/architecture package for CATALOG_SEMANTIC_INFORMATION_DEFICIENCY_REVIEW
+  before any Router work. Do not lower gates.
 product_owner_blockers: []
 prior_plan_amendments:
   REM-03A_CALIBRATION_PROTOTYPE:

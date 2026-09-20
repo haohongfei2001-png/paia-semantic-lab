@@ -1,0 +1,48 @@
+{
+  "best_candidate_recall_at_10": 0.5927083333333333,
+  "best_candidate_recall_at_20": 0.8168749999999999,
+  "best_config": {
+    "anchor_mode": "names_aliases_plus_domain_path",
+    "config_id": "rem03b-8ebf70f64667f598",
+    "domain_evidence": "centroid",
+    "query_variant": "allowed_context"
+  },
+  "best_domain_recall_at_1": 0.37395833333333334,
+  "best_domain_recall_at_2": 0.625,
+  "calibration_result_digest": "dceba486fdf5a7568c8acfd5d5c4924b07a3a5dae32693002236137e0e366523",
+  "calibration_stage": "CALIBRATION_FAIL",
+  "capability_verdict": "FAIL",
+  "closure_required_ci": "PENDING",
+  "consumed_sem07_lockbox_tuning_or_promotion_events": 0,
+  "critical_slices_pass": false,
+  "evaluation_opened": false,
+  "evaluation_records_read": 0,
+  "execution_status": "COMPLETE",
+  "failure_escalation": "CATALOG_SEMANTIC_INFORMATION_DEFICIENCY_REVIEW",
+  "guards": {
+    "catalog_edit_events": 0,
+    "consumed_lockbox_tuning_events": 0,
+    "generated_semantic_expansion_events": 0,
+    "held_out_family_leakage_events": 0,
+    "live_archive_reads": 0,
+    "model_training_runs": 0,
+    "new_owner_labels": 0,
+    "production_paia_writes": 0,
+    "real_input_api_egress_events": 0,
+    "structural_failure_events": 0
+  },
+  "held_out_family_leakage_events": 0,
+  "local_validation": {
+    "closure_targeted_tests": "35/35 PASS",
+    "full_repository_seconds": 301.625,
+    "full_repository_tests": "145/145 PASS",
+    "git_diff_check": "PASS",
+    "state_targeted_tests": "21/21 PASS"
+  },
+  "matrix_count": 12,
+  "passing_config_count": 0,
+  "required_candidate_recall_at_10": 0.96,
+  "required_candidate_recall_at_20": 0.99,
+  "round": "REM-03B",
+  "structural_failure_events": 0
+}
