@@ -54,6 +54,10 @@ jobs:
         run: |
           python -m scripts.sca01_compile_profiles --output artifacts/ci/sca01-profile-compile.json
           python -m unittest tests.test_sca01_profiles -v
+      - name: SCA-02 contrastive graph and synthetic validation
+        run: |
+          python -m scripts.sca02_validate_contrastive --output artifacts/ci/sca02-contrastive-validation.json
+          python -m unittest tests.test_sca02_contrastive tests.test_sca02_status -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:

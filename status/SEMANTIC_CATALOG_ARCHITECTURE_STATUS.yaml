@@ -1,7 +1,7 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_02_READY
+phase: SCA_02_COMPLETE_PENDING_CI
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
@@ -61,16 +61,34 @@ rounds:
     closure_required_ci: PASS
   SCA-02:
     title: Contrastive boundary graph and synthetic validation
-    execution_status: READY
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: PASS
     depends_on: SCA-01
-    explicit_execution_authorized: false
+    explicit_execution_authorized: true
+    authorization_source: user_continue_execute_sca02
     private_artifact_reads: 0
+    formal_catalog_edits: 0
+    formal_semantic_mutation_events: 0
+    formal_review_required_count: 0
+    profile_bundle_sha256: 018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b
+    graph_path: contrastive_graph/v0.1/graph.json
+    graph_node_count: 144
+    graph_edge_count: 504
+    min_node_degree: 7
+    max_node_degree: 7
+    synthetic_suite_manifest: synthetic_contrastive/v0.1/manifest.json
+    positive_case_count: 288
+    hard_negative_case_count: 1008
+    total_case_count: 1296
+    validator: scripts/sca02_validate_contrastive.py
+    closure_required_ci: PENDING
   SCA-03:
     title: Family-grouped personal calibration grounding
-    execution_status: NOT_STARTED
+    execution_status: BLOCKED
     capability_verdict: UNTESTED
     depends_on: SCA-02
+    blocked_by: SCA_02_CLOSURE_CI_PENDING
+    explicit_execution_authorized: false
     fresh_private_artifact_authorization_required: true
     calibration_read_budget: 80
     evaluation_opened: false
@@ -89,5 +107,5 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "SCA-01 is COMPLETE/PASS and CI-validated with 144/144 Derived Semantic Profiles. SCA-02 is READY but NOT_AUTHORIZED. The next round may build the derived contrastive-neighbor graph and synthetic positive/hard-negative suite using public/derived data only; do not read private artifacts or modify formal Topic semantics."
+next_action: "SCA-02 built the complete sibling-contrast graph and 1296-case public/synthetic validation suite and is COMPLETE/PASS pending exact-head CI. SCA-03 remains BLOCKED and private calibration remains unread until SCA-02 validation passes."
 product_owner_blockers: []

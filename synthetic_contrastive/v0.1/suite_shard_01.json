@@ -1,0 +1,3852 @@
+{
+  "suite_version": "0.1.0",
+  "round": "SCA-02",
+  "domains": [
+    "D01",
+    "D02",
+    "D03"
+  ],
+  "case_count": 216,
+  "cases": [
+    {
+      "case_id": "P-sys.family_relationships.caregiving_family_support-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理家庭照护与支持相关的问题，重点是照护家人和赡养，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.caregiving_family_support-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with family caregiving & support, especially caregiving and family support.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.conflict_boundaries-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理人际冲突与边界相关的问题，重点是人际边界和冲突，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.conflict_boundaries-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with conflict & boundaries, especially boundary and conflict.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.friendships-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理朋友关系相关的问题，重点是朋友和友谊，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.friendships-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with friendships, especially friendship and friend.",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.parents_family-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理父母与原生家庭相关的问题，重点是父母和原生家庭，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.parents_family-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with parents & family of origin, especially parents and family of origin.",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.partner_relationship-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理伴侣关系相关的问题，重点是伴侣和恋爱，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.partner_relationship-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with partner relationship, especially partner and romantic relationship.",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.pets-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理宠物相关的问题，重点是猫和狗，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.pets-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with pets, especially pet and cat.",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.siblings-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理兄弟姐妹相关的问题，重点是哥哥和姐姐，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.siblings-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with siblings, especially siblings and brother.",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.social_interaction-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理社交互动相关的问题，重点是社交和人际交往，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.family_relationships.social_interaction-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with social interaction, especially social interaction and social situation.",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.fitness-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理运动与体能相关的问题，重点是健身和运动，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.fitness-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with fitness, especially fitness and exercise.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.medical_care-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理就医与医疗相关的问题，重点是就医和医生，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.medical_care-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with medical care, especially medical care and doctor.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.medication_treatment-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理药物与治疗相关的问题，重点是用药和药物，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.medication_treatment-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with medication & treatment, especially medication and treatment.",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.mental_wellbeing-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理心理与情绪相关的问题，重点是心理健康和情绪，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.mental_wellbeing-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with mental wellbeing, especially mental wellbeing and mood.",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.nutrition-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理饮食营养相关的问题，重点是营养和饮食，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.nutrition-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with nutrition, especially nutrition and diet.",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.preventive_health-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理体检与预防健康相关的问题，重点是预防保健和体检，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.preventive_health-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with preventive health, especially preventive health and checkup.",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.sleep-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理睡眠相关的问题，重点是失眠和作息，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.sleep-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with sleep, especially sleep and insomnia.",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.symptoms_conditions-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理症状与健康状况相关的问题，重点是症状和疾病，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.health_wellbeing.symptoms_conditions-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with symptoms & conditions, especially symptom and condition.",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.habits_behavior-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理习惯与行为相关的问题，重点是习惯养成和行为改变，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.habits_behavior-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with habits & behavior, especially habit and behavior change.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.life_goals-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理人生目标相关的问题，重点是长期目标和人生愿景，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.life_goals-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with life goals, especially aspiration and long-term goal.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.life_planning-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理人生规划相关的问题，重点是未来几年和人生阶段，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.life_planning-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with life planning, especially life plan and multi-year plan.",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.major_decisions-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理重大决策相关的问题，重点是重大选择和高风险决策，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.major_decisions-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with major decisions, especially major decision and high-stakes choice.",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.personal_admin-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理个人事务管理相关的问题，重点是个人手续和个人事务，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.personal_admin-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with personal administration, especially personal admin and paperwork.",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.personal_productivity-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理个人效率相关的问题，重点是专注和拖延，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.personal_productivity-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with personal productivity, especially productivity and focus.",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.self_reflection-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理自我反思相关的问题，重点是自我认知和性格，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.self_reflection-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with self reflection, especially self reflection and self awareness.",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.values_principles-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理价值观与原则相关的问题，重点是价值观和原则，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.personal_direction.values_principles-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with values & principles, especially values and principles.",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E01-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“人生目标”：人生目标：长期愿景、人生优先级、目标分解、里程碑与想实现的长期结果。",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E01-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Life Goals\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E02-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“人生规划”：人生规划：人生阶段、长期生活路径、未来几年安排、生活结构和阶段性规划。",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E02-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Life Planning\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E03-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“重大决策”：重大决策：高影响、难逆转或需要权衡多个长期后果的重要选择。",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E03-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Major Decisions\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E04-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“个人事务管理”：个人事务管理：个人手续、账户、证明、表单、个人事务办理和行政性琐事。",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E04-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Administration\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E05-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“个人效率”：个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E05-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Productivity\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E06-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“自我反思”：自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E06-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Self Reflection\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E07-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“习惯与行为”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.habits_behavior",
+      "edge_id": "D01-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E07-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Habits & Behavior\": Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits.",
+      "expected_topic_id": "sys.personal_direction.habits_behavior",
+      "source_topic_id": "sys.personal_direction.habits_behavior",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E08-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生目标”，但它只是背景。主要目标是“人生规划”：人生规划：人生阶段、长期生活路径、未来几年安排、生活结构和阶段性规划。",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E08-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Life Planning\" is mentioned as context, the primary goal is \"Life Goals\": Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E09-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生目标”，但它只是背景。主要目标是“重大决策”：重大决策：高影响、难逆转或需要权衡多个长期后果的重要选择。",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E09-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Major Decisions\" is mentioned as context, the primary goal is \"Life Goals\": Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E10-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生目标”，但它只是背景。主要目标是“个人事务管理”：个人事务管理：个人手续、账户、证明、表单、个人事务办理和行政性琐事。",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E10-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Administration\" is mentioned as context, the primary goal is \"Life Goals\": Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E11-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生目标”，但它只是背景。主要目标是“个人效率”：个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E11-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Productivity\" is mentioned as context, the primary goal is \"Life Goals\": Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E12-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生目标”，但它只是背景。主要目标是“自我反思”：自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E12-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Self Reflection\" is mentioned as context, the primary goal is \"Life Goals\": Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E13-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生目标”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.life_goals",
+      "edge_id": "D01-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E13-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Life Goals\": Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes.",
+      "expected_topic_id": "sys.personal_direction.life_goals",
+      "source_topic_id": "sys.personal_direction.life_goals",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E14-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生规划”，但它只是背景。主要目标是“重大决策”：重大决策：高影响、难逆转或需要权衡多个长期后果的重要选择。",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E14-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Major Decisions\" is mentioned as context, the primary goal is \"Life Planning\": Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes.",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E15-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生规划”，但它只是背景。主要目标是“个人事务管理”：个人事务管理：个人手续、账户、证明、表单、个人事务办理和行政性琐事。",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E15-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Administration\" is mentioned as context, the primary goal is \"Life Planning\": Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes.",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E16-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生规划”，但它只是背景。主要目标是“个人效率”：个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E16-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Productivity\" is mentioned as context, the primary goal is \"Life Planning\": Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes.",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E17-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生规划”，但它只是背景。主要目标是“自我反思”：自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E17-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Self Reflection\" is mentioned as context, the primary goal is \"Life Planning\": Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes.",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E18-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人生规划”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.life_planning",
+      "edge_id": "D01-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E18-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Life Planning\": Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes.",
+      "expected_topic_id": "sys.personal_direction.life_planning",
+      "source_topic_id": "sys.personal_direction.life_planning",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E19-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“重大决策”，但它只是背景。主要目标是“个人事务管理”：个人事务管理：个人手续、账户、证明、表单、个人事务办理和行政性琐事。",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E19-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Administration\" is mentioned as context, the primary goal is \"Major Decisions\": Major Decisions: high-impact or hard-to-reverse choices involving alternatives, consequences and commitment.",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E20-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“重大决策”，但它只是背景。主要目标是“个人效率”：个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E20-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Productivity\" is mentioned as context, the primary goal is \"Major Decisions\": Major Decisions: high-impact or hard-to-reverse choices involving alternatives, consequences and commitment.",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E21-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“重大决策”，但它只是背景。主要目标是“自我反思”：自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E21-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Self Reflection\" is mentioned as context, the primary goal is \"Major Decisions\": Major Decisions: high-impact or hard-to-reverse choices involving alternatives, consequences and commitment.",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E22-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“重大决策”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.major_decisions",
+      "edge_id": "D01-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E22-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Major Decisions\": Major Decisions: high-impact or hard-to-reverse choices involving alternatives, consequences and commitment.",
+      "expected_topic_id": "sys.personal_direction.major_decisions",
+      "source_topic_id": "sys.personal_direction.major_decisions",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E23-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“个人事务管理”，但它只是背景。主要目标是“个人效率”：个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E23-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Personal Productivity\" is mentioned as context, the primary goal is \"Personal Administration\": Personal Administration: personal paperwork, accounts, forms, records and administrative chores.",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E24-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“个人事务管理”，但它只是背景。主要目标是“自我反思”：自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E24-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Self Reflection\" is mentioned as context, the primary goal is \"Personal Administration\": Personal Administration: personal paperwork, accounts, forms, records and administrative chores.",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E25-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“个人事务管理”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.personal_admin",
+      "edge_id": "D01-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E25-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Personal Administration\": Personal Administration: personal paperwork, accounts, forms, records and administrative chores.",
+      "expected_topic_id": "sys.personal_direction.personal_admin",
+      "source_topic_id": "sys.personal_direction.personal_admin",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E26-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“个人效率”，但它只是背景。主要目标是“自我反思”：自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E26-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Self Reflection\" is mentioned as context, the primary goal is \"Personal Productivity\": Personal Productivity: personal task execution, focus, efficiency, workflow, procrastination and output cadence.",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E27-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“个人效率”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.personal_productivity",
+      "edge_id": "D01-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E27-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Personal Productivity\": Personal Productivity: personal task execution, focus, efficiency, workflow, procrastination and output cadence.",
+      "expected_topic_id": "sys.personal_direction.personal_productivity",
+      "source_topic_id": "sys.personal_direction.personal_productivity",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E28-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“自我反思”，但它只是背景。主要目标是“价值观与原则”：价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+      "expected_topic_id": "sys.personal_direction.values_principles",
+      "source_topic_id": "sys.personal_direction.values_principles",
+      "distractor_topic_id": "sys.personal_direction.self_reflection",
+      "edge_id": "D01-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D01-E28-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Values & Principles\" is mentioned as context, the primary goal is \"Self Reflection\": Self Reflection: reflection on identity, motives, strengths, weaknesses, experiences and personal patterns.",
+      "expected_topic_id": "sys.personal_direction.self_reflection",
+      "source_topic_id": "sys.personal_direction.self_reflection",
+      "distractor_topic_id": "sys.personal_direction.values_principles",
+      "edge_id": "D01-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E01-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“人际冲突与边界”：人际冲突与边界：人际冲突、拒绝、边界设定、矛盾处理、权利义务和不适互动的限制。",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E01-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Conflict & Boundaries\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E02-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“朋友关系”：朋友关系：朋友关系、友谊维护、交友、疏远、支持和朋友间互动。",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E02-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Friendships\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E03-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“父母与原生家庭”：父母与原生家庭：父母、原生家庭、代际关系、家庭背景以及与父母相处和支持相关的问题。",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E03-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Parents & Family of Origin\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E04-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“伴侣关系”：伴侣关系：恋爱、伴侣、婚姻、亲密关系中的沟通、承诺、相处和共同生活。",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E04-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Partner Relationship\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E05-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“宠物”：宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E05-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Pets\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E06-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“兄弟姐妹”：兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E06-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Siblings\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E07-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“家庭照护与支持”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.caregiving_family_support",
+      "edge_id": "D02-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E07-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Family Caregiving & Support\": Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities.",
+      "expected_topic_id": "sys.family_relationships.caregiving_family_support",
+      "source_topic_id": "sys.family_relationships.caregiving_family_support",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E08-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人际冲突与边界”，但它只是背景。主要目标是“朋友关系”：朋友关系：朋友关系、友谊维护、交友、疏远、支持和朋友间互动。",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E08-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Friendships\" is mentioned as context, the primary goal is \"Conflict & Boundaries\": Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E09-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人际冲突与边界”，但它只是背景。主要目标是“父母与原生家庭”：父母与原生家庭：父母、原生家庭、代际关系、家庭背景以及与父母相处和支持相关的问题。",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E09-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Parents & Family of Origin\" is mentioned as context, the primary goal is \"Conflict & Boundaries\": Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E10-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人际冲突与边界”，但它只是背景。主要目标是“伴侣关系”：伴侣关系：恋爱、伴侣、婚姻、亲密关系中的沟通、承诺、相处和共同生活。",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E10-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Partner Relationship\" is mentioned as context, the primary goal is \"Conflict & Boundaries\": Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E11-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人际冲突与边界”，但它只是背景。主要目标是“宠物”：宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E11-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Pets\" is mentioned as context, the primary goal is \"Conflict & Boundaries\": Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E12-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人际冲突与边界”，但它只是背景。主要目标是“兄弟姐妹”：兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E12-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Siblings\" is mentioned as context, the primary goal is \"Conflict & Boundaries\": Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E13-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“人际冲突与边界”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.conflict_boundaries",
+      "edge_id": "D02-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E13-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Conflict & Boundaries\": Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships.",
+      "expected_topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_topic_id": "sys.family_relationships.conflict_boundaries",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E14-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“朋友关系”，但它只是背景。主要目标是“父母与原生家庭”：父母与原生家庭：父母、原生家庭、代际关系、家庭背景以及与父母相处和支持相关的问题。",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E14-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Parents & Family of Origin\" is mentioned as context, the primary goal is \"Friendships\": Friendships: friendship formation, maintenance, distance, support and interactions with friends.",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E15-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“朋友关系”，但它只是背景。主要目标是“伴侣关系”：伴侣关系：恋爱、伴侣、婚姻、亲密关系中的沟通、承诺、相处和共同生活。",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E15-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Partner Relationship\" is mentioned as context, the primary goal is \"Friendships\": Friendships: friendship formation, maintenance, distance, support and interactions with friends.",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E16-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“朋友关系”，但它只是背景。主要目标是“宠物”：宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E16-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Pets\" is mentioned as context, the primary goal is \"Friendships\": Friendships: friendship formation, maintenance, distance, support and interactions with friends.",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E17-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“朋友关系”，但它只是背景。主要目标是“兄弟姐妹”：兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E17-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Siblings\" is mentioned as context, the primary goal is \"Friendships\": Friendships: friendship formation, maintenance, distance, support and interactions with friends.",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E18-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“朋友关系”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.friendships",
+      "edge_id": "D02-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E18-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Friendships\": Friendships: friendship formation, maintenance, distance, support and interactions with friends.",
+      "expected_topic_id": "sys.family_relationships.friendships",
+      "source_topic_id": "sys.family_relationships.friendships",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E19-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“父母与原生家庭”，但它只是背景。主要目标是“伴侣关系”：伴侣关系：恋爱、伴侣、婚姻、亲密关系中的沟通、承诺、相处和共同生活。",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E19-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Partner Relationship\" is mentioned as context, the primary goal is \"Parents & Family of Origin\": Parents & Family of Origin: parents, family of origin, intergenerational relationships and support involving parents.",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E20-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“父母与原生家庭”，但它只是背景。主要目标是“宠物”：宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E20-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Pets\" is mentioned as context, the primary goal is \"Parents & Family of Origin\": Parents & Family of Origin: parents, family of origin, intergenerational relationships and support involving parents.",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E21-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“父母与原生家庭”，但它只是背景。主要目标是“兄弟姐妹”：兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E21-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Siblings\" is mentioned as context, the primary goal is \"Parents & Family of Origin\": Parents & Family of Origin: parents, family of origin, intergenerational relationships and support involving parents.",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E22-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“父母与原生家庭”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.parents_family",
+      "edge_id": "D02-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E22-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Parents & Family of Origin\": Parents & Family of Origin: parents, family of origin, intergenerational relationships and support involving parents.",
+      "expected_topic_id": "sys.family_relationships.parents_family",
+      "source_topic_id": "sys.family_relationships.parents_family",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E23-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“伴侣关系”，但它只是背景。主要目标是“宠物”：宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E23-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Pets\" is mentioned as context, the primary goal is \"Partner Relationship\": Partner Relationship: romantic partnership, marriage, intimacy, commitment and shared life with a partner.",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E24-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“伴侣关系”，但它只是背景。主要目标是“兄弟姐妹”：兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E24-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Siblings\" is mentioned as context, the primary goal is \"Partner Relationship\": Partner Relationship: romantic partnership, marriage, intimacy, commitment and shared life with a partner.",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E25-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“伴侣关系”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.partner_relationship",
+      "edge_id": "D02-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E25-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Partner Relationship\": Partner Relationship: romantic partnership, marriage, intimacy, commitment and shared life with a partner.",
+      "expected_topic_id": "sys.family_relationships.partner_relationship",
+      "source_topic_id": "sys.family_relationships.partner_relationship",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E26-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“宠物”，但它只是背景。主要目标是“兄弟姐妹”：兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E26-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Siblings\" is mentioned as context, the primary goal is \"Pets\": Pets: pet care, health, behavior, supplies, training and everyday life with animals.",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E27-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“宠物”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.pets",
+      "edge_id": "D02-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E27-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Pets\": Pets: pet care, health, behavior, supplies, training and everyday life with animals.",
+      "expected_topic_id": "sys.family_relationships.pets",
+      "source_topic_id": "sys.family_relationships.pets",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E28-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“兄弟姐妹”，但它只是背景。主要目标是“社交互动”：社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+      "expected_topic_id": "sys.family_relationships.social_interaction",
+      "source_topic_id": "sys.family_relationships.social_interaction",
+      "distractor_topic_id": "sys.family_relationships.siblings",
+      "edge_id": "D02-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D02-E28-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Social Interaction\" is mentioned as context, the primary goal is \"Siblings\": Siblings: relationships, support, conflict and shared family matters involving siblings.",
+      "expected_topic_id": "sys.family_relationships.siblings",
+      "source_topic_id": "sys.family_relationships.siblings",
+      "distractor_topic_id": "sys.family_relationships.social_interaction",
+      "edge_id": "D02-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E01-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“就医与医疗”：就医与医疗：就医、医生、医院、挂号、检查、诊断流程和医疗服务选择。",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E01-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Medical Care\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E02-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“药物与治疗”：药物与治疗：药物、用药方案、治疗方式、疗程、副作用、剂量和治疗依从性。",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E02-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Medication & Treatment\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E03-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“心理与情绪”：心理与情绪：情绪、压力、焦虑、抑郁、心理状态、自我调节和心理支持。",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E03-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Mental Wellbeing\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E04-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“饮食营养”：饮食营养：饮食结构、营养摄入、热量、宏量营养、餐食和饮食目标。",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E04-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Nutrition\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E05-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“体检与预防健康”：体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E05-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Preventive Health\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E06-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“睡眠”：睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E06-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Sleep\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E07-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“运动与体能”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.fitness",
+      "edge_id": "D03-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E07-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Fitness\": Fitness: exercise, strength, cardio, training plans, technique and physical performance.",
+      "expected_topic_id": "sys.health_wellbeing.fitness",
+      "source_topic_id": "sys.health_wellbeing.fitness",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E08-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“就医与医疗”，但它只是背景。主要目标是“药物与治疗”：药物与治疗：药物、用药方案、治疗方式、疗程、副作用、剂量和治疗依从性。",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E08-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Medication & Treatment\" is mentioned as context, the primary goal is \"Medical Care\": Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E09-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“就医与医疗”，但它只是背景。主要目标是“心理与情绪”：心理与情绪：情绪、压力、焦虑、抑郁、心理状态、自我调节和心理支持。",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E09-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Mental Wellbeing\" is mentioned as context, the primary goal is \"Medical Care\": Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E10-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“就医与医疗”，但它只是背景。主要目标是“饮食营养”：饮食营养：饮食结构、营养摄入、热量、宏量营养、餐食和饮食目标。",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E10-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Nutrition\" is mentioned as context, the primary goal is \"Medical Care\": Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E11-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“就医与医疗”，但它只是背景。主要目标是“体检与预防健康”：体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E11-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Preventive Health\" is mentioned as context, the primary goal is \"Medical Care\": Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E12-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“就医与医疗”，但它只是背景。主要目标是“睡眠”：睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E12-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Sleep\" is mentioned as context, the primary goal is \"Medical Care\": Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E13-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“就医与医疗”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.medical_care",
+      "edge_id": "D03-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E13-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Medical Care\": Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services.",
+      "expected_topic_id": "sys.health_wellbeing.medical_care",
+      "source_topic_id": "sys.health_wellbeing.medical_care",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E14-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“药物与治疗”，但它只是背景。主要目标是“心理与情绪”：心理与情绪：情绪、压力、焦虑、抑郁、心理状态、自我调节和心理支持。",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E14-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Mental Wellbeing\" is mentioned as context, the primary goal is \"Medication & Treatment\": Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence.",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E15-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“药物与治疗”，但它只是背景。主要目标是“饮食营养”：饮食营养：饮食结构、营养摄入、热量、宏量营养、餐食和饮食目标。",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E15-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Nutrition\" is mentioned as context, the primary goal is \"Medication & Treatment\": Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence.",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E16-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“药物与治疗”，但它只是背景。主要目标是“体检与预防健康”：体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E16-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Preventive Health\" is mentioned as context, the primary goal is \"Medication & Treatment\": Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence.",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E17-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“药物与治疗”，但它只是背景。主要目标是“睡眠”：睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E17-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Sleep\" is mentioned as context, the primary goal is \"Medication & Treatment\": Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence.",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E18-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“药物与治疗”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.medication_treatment",
+      "edge_id": "D03-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E18-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Medication & Treatment\": Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence.",
+      "expected_topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_topic_id": "sys.health_wellbeing.medication_treatment",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E19-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“心理与情绪”，但它只是背景。主要目标是“饮食营养”：饮食营养：饮食结构、营养摄入、热量、宏量营养、餐食和饮食目标。",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E19-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Nutrition\" is mentioned as context, the primary goal is \"Mental Wellbeing\": Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support.",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E20-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“心理与情绪”，但它只是背景。主要目标是“体检与预防健康”：体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E20-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Preventive Health\" is mentioned as context, the primary goal is \"Mental Wellbeing\": Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support.",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E21-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“心理与情绪”，但它只是背景。主要目标是“睡眠”：睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E21-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Sleep\" is mentioned as context, the primary goal is \"Mental Wellbeing\": Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support.",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E22-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“心理与情绪”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "edge_id": "D03-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E22-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Mental Wellbeing\": Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support.",
+      "expected_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E23-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“饮食营养”，但它只是背景。主要目标是“体检与预防健康”：体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E23-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Preventive Health\" is mentioned as context, the primary goal is \"Nutrition\": Nutrition: diet, nutrient intake, calories, macronutrients, meals and nutrition goals.",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E24-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“饮食营养”，但它只是背景。主要目标是“睡眠”：睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E24-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Sleep\" is mentioned as context, the primary goal is \"Nutrition\": Nutrition: diet, nutrient intake, calories, macronutrients, meals and nutrition goals.",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E25-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“饮食营养”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.nutrition",
+      "edge_id": "D03-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E25-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Nutrition\": Nutrition: diet, nutrient intake, calories, macronutrients, meals and nutrition goals.",
+      "expected_topic_id": "sys.health_wellbeing.nutrition",
+      "source_topic_id": "sys.health_wellbeing.nutrition",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E26-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“体检与预防健康”，但它只是背景。主要目标是“睡眠”：睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E26-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Sleep\" is mentioned as context, the primary goal is \"Preventive Health\": Preventive Health: checkups, screening, vaccination, risk reduction, health monitoring and prevention.",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E27-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“体检与预防健康”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.preventive_health",
+      "edge_id": "D03-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E27-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Preventive Health\": Preventive Health: checkups, screening, vaccination, risk reduction, health monitoring and prevention.",
+      "expected_topic_id": "sys.health_wellbeing.preventive_health",
+      "source_topic_id": "sys.health_wellbeing.preventive_health",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E28-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“睡眠”，但它只是背景。主要目标是“症状与健康状况”：症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+      "expected_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "distractor_topic_id": "sys.health_wellbeing.sleep",
+      "edge_id": "D03-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D03-E28-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Symptoms & Conditions\" is mentioned as context, the primary goal is \"Sleep\": Sleep: sleep duration, falling asleep, waking, sleep schedule, quality and sleep habits.",
+      "expected_topic_id": "sys.health_wellbeing.sleep",
+      "source_topic_id": "sys.health_wellbeing.sleep",
+      "distractor_topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "edge_id": "D03-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    }
+  ]
+}

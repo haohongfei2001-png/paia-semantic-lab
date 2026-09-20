@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PAIA Derived Contrastive Boundary Graph v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["graph_id","graph_version","round","profile_bundle_sha256","formal_semantics_unchanged","private_artifact_reads","node_count","edge_count","nodes","edges"],
+  "properties": {
+    "graph_id": {"const": "paia-derived-contrastive-boundary-graph-v0.1"},
+    "graph_version": {"const": "0.1.0"},
+    "round": {"const": "SCA-02"},
+    "profile_bundle_sha256": {"type":"string","pattern":"^[0-9a-f]{64}$"},
+    "formal_semantics_unchanged": {"const": true},
+    "private_artifact_reads": {"const": 0},
+    "node_count": {"const": 144},
+    "edge_count": {"type":"integer","minimum":1},
+    "nodes": {"type":"array","minItems":144,"maxItems":144,"items":{"type":"string","minLength":1},"uniqueItems":true},
+    "edges": {
+      "type":"array",
+      "minItems":1,
+      "items":{
+        "type":"object",
+        "additionalProperties":false,
+        "required":["edge_id","topic_a","topic_b","domain_id","relation_type","boundary_rule","provenance"],
+        "properties":{
+          "edge_id":{"type":"string","minLength":1},
+          "topic_a":{"type":"string","minLength":1},
+          "topic_b":{"type":"string","minLength":1},
+          "domain_id":{"type":"string","pattern":"^D[0-9]{2}$"},
+          "relation_type":{"const":"SIBLING_CONTRAST"},
+          "boundary_rule":{
+            "type":"object",
+            "additionalProperties":false,
+            "required":["zh","en"],
+            "properties":{
+              "zh":{"type":"string","minLength":1},
+              "en":{"type":"string","minLength":1}
+            }
+          },
+          "provenance":{
+            "type":"object",
+            "additionalProperties":false,
+            "required":["source_classes","generator","formal_fields_overridden"],
+            "properties":{
+              "source_classes":{"type":"array","minItems":2,"items":{"enum":["DERIVED_SEMANTIC_PROFILE","SYNTHETIC_CONTRASTIVE"]}},
+              "generator":{"const":"GPT-5.6 Sol / SCA-02"},
+              "formal_fields_overridden":{"const":false}
+            }
+          }
+        }
+      }
+    }
+  }
+}

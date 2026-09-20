@@ -1,0 +1,3852 @@
+{
+  "suite_version": "0.1.0",
+  "round": "SCA-02",
+  "domains": [
+    "D10",
+    "D11",
+    "D12"
+  ],
+  "case_count": 216,
+  "cases": [
+    {
+      "case_id": "P-sys.communication_writing.documents_reports-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理文档与报告相关的问题，重点是文档和报告，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.documents_reports-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with documents & reports, especially document and report.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.email_messages-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理邮件与消息相关的问题，重点是邮件和消息，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.email_messages-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with email & messages, especially email and message.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.negotiation_persuasion-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理谈判与说服相关的问题，重点是谈判和说服，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.negotiation_persuasion-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with negotiation & persuasion, especially negotiation and persuasion.",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.presentations-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理演示与汇报相关的问题，重点是PPT和演示文稿，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.presentations-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with presentations, especially presentation and slides.",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.public_posts-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理社交媒体与公开发布相关的问题，重点是社交媒体和帖子，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.public_posts-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with public posts, especially social post and public post.",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.speaking_conversation-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理口头表达与对话相关的问题，重点是口语和对话，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.speaking_conversation-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with speaking & conversation, especially speaking and conversation.",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.translation-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理翻译相关的问题，重点是中英互译和本地化，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.translation-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with translation, especially translation and translate.",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.writing_editing-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理写作与编辑相关的问题，重点是写作和润色，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.communication_writing.writing_editing-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with writing & editing, especially writing and editing.",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.art_culture-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理艺术与文化相关的问题，重点是艺术和文化，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.art_culture-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with arts & culture, especially arts and culture.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.books_literature-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理书籍与文学相关的问题，重点是书籍和小说，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.books_literature-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with books & literature, especially book and novel.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.film_tv-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理电影与电视剧相关的问题，重点是电影和电视剧，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.film_tv-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with film & tv, especially film and movie.",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.games-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理游戏相关的问题，重点是电子游戏和桌游，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.games-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with games, especially game and gaming.",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.live_events-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理现场演出与文化活动相关的问题，重点是演唱会和演出，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.live_events-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with live cultural events, especially concert and live event.",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.music-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理音乐相关的问题，重点是歌曲和歌手，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.music-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with music, especially music and song.",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.news_media-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理新闻与媒体相关的问题，重点是新闻和媒体报道，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.news_media-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with news & media, especially news and media.",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.online_culture-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理网络文化相关的问题，重点是梗和网红，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.media_culture.online_culture-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with online culture, especially online culture and meme.",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.attractions_activities-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理景点与活动相关的问题，重点是景点和游玩，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.attractions_activities-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with attractions & activities, especially attraction and activity.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.local_navigation-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理本地导航相关的问题，重点是导航和路线，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.local_navigation-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with local navigation, especially navigation and route.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.lodging-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理住宿相关的问题，重点是酒店和民宿，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.lodging-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with lodging, especially lodging and hotel.",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.restaurants_travel-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理旅行餐饮相关的问题，重点是餐厅和美食，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.restaurants_travel-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with travel dining, especially travel dining and restaurant.",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.transport_travel-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理旅行交通相关的问题，重点是机票和航班，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.transport_travel-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with travel transport, especially flight and train.",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.trip_planning-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理旅行规划相关的问题，重点是旅行计划和行程，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.trip_planning-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with trip planning, especially trip planning and itinerary.",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.trip_records-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理旅行记录相关的问题，重点是游记和行程回顾，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.trip_records-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with trip records, especially trip record and travel journal.",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.visas_border-zh",
+      "case_type": "POSITIVE",
+      "language": "zh",
+      "text": "我想处理签证与出入境相关的问题，重点是签证和入境，帮我梳理判断与下一步。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "P-sys.travel_places.visas_border-en",
+      "case_type": "POSITIVE",
+      "language": "en",
+      "text": "Help me with visas & borders, especially visa and entry requirement.",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": null,
+      "edge_id": null,
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E01-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“本地导航”：本地导航：当地路线、地图、公交、步行、打车、位置和城市内移动。",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E01-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Local Navigation\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E02-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“住宿”：住宿：酒店、民宿、住宿选择、入住、房型和住宿预订。",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E02-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Lodging\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E03-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“旅行餐饮”：旅行餐饮：旅行中的餐厅、美食、用餐选择、本地菜和餐饮安排。",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E03-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Dining\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E04-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“旅行交通”：旅行交通：机票、火车、长途交通、机场、航班和旅行中的跨地运输。",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E04-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Transport\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E05-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“旅行规划”：旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E05-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Planning\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E06-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“旅行记录”：旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E06-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Records\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E07-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“景点与活动”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.attractions_activities",
+      "edge_id": "D10-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E07-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Attractions & Activities\": Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do.",
+      "expected_topic_id": "sys.travel_places.attractions_activities",
+      "source_topic_id": "sys.travel_places.attractions_activities",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E08-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“本地导航”，但它只是背景。主要目标是“住宿”：住宿：酒店、民宿、住宿选择、入住、房型和住宿预订。",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E08-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Lodging\" is mentioned as context, the primary goal is \"Local Navigation\": Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E09-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“本地导航”，但它只是背景。主要目标是“旅行餐饮”：旅行餐饮：旅行中的餐厅、美食、用餐选择、本地菜和餐饮安排。",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E09-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Dining\" is mentioned as context, the primary goal is \"Local Navigation\": Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E10-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“本地导航”，但它只是背景。主要目标是“旅行交通”：旅行交通：机票、火车、长途交通、机场、航班和旅行中的跨地运输。",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E10-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Transport\" is mentioned as context, the primary goal is \"Local Navigation\": Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E11-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“本地导航”，但它只是背景。主要目标是“旅行规划”：旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E11-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Planning\" is mentioned as context, the primary goal is \"Local Navigation\": Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E12-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“本地导航”，但它只是背景。主要目标是“旅行记录”：旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E12-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Records\" is mentioned as context, the primary goal is \"Local Navigation\": Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E13-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“本地导航”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.local_navigation",
+      "edge_id": "D10-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E13-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Local Navigation\": Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place.",
+      "expected_topic_id": "sys.travel_places.local_navigation",
+      "source_topic_id": "sys.travel_places.local_navigation",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E14-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“住宿”，但它只是背景。主要目标是“旅行餐饮”：旅行餐饮：旅行中的餐厅、美食、用餐选择、本地菜和餐饮安排。",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E14-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Dining\" is mentioned as context, the primary goal is \"Lodging\": Lodging: hotels, rentals, accommodation choice, check-in, room types and lodging booking.",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E15-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“住宿”，但它只是背景。主要目标是“旅行交通”：旅行交通：机票、火车、长途交通、机场、航班和旅行中的跨地运输。",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E15-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Transport\" is mentioned as context, the primary goal is \"Lodging\": Lodging: hotels, rentals, accommodation choice, check-in, room types and lodging booking.",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E16-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“住宿”，但它只是背景。主要目标是“旅行规划”：旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E16-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Planning\" is mentioned as context, the primary goal is \"Lodging\": Lodging: hotels, rentals, accommodation choice, check-in, room types and lodging booking.",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E17-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“住宿”，但它只是背景。主要目标是“旅行记录”：旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E17-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Records\" is mentioned as context, the primary goal is \"Lodging\": Lodging: hotels, rentals, accommodation choice, check-in, room types and lodging booking.",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E18-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“住宿”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.lodging",
+      "edge_id": "D10-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E18-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Lodging\": Lodging: hotels, rentals, accommodation choice, check-in, room types and lodging booking.",
+      "expected_topic_id": "sys.travel_places.lodging",
+      "source_topic_id": "sys.travel_places.lodging",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E19-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行餐饮”，但它只是背景。主要目标是“旅行交通”：旅行交通：机票、火车、长途交通、机场、航班和旅行中的跨地运输。",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E19-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Travel Transport\" is mentioned as context, the primary goal is \"Travel Dining\": Travel Dining: restaurants, food, local cuisine and dining choices while traveling.",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E20-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行餐饮”，但它只是背景。主要目标是“旅行规划”：旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E20-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Planning\" is mentioned as context, the primary goal is \"Travel Dining\": Travel Dining: restaurants, food, local cuisine and dining choices while traveling.",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E21-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行餐饮”，但它只是背景。主要目标是“旅行记录”：旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E21-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Records\" is mentioned as context, the primary goal is \"Travel Dining\": Travel Dining: restaurants, food, local cuisine and dining choices while traveling.",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E22-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行餐饮”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.restaurants_travel",
+      "edge_id": "D10-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E22-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Travel Dining\": Travel Dining: restaurants, food, local cuisine and dining choices while traveling.",
+      "expected_topic_id": "sys.travel_places.restaurants_travel",
+      "source_topic_id": "sys.travel_places.restaurants_travel",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E23-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行交通”，但它只是背景。主要目标是“旅行规划”：旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E23-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Planning\" is mentioned as context, the primary goal is \"Travel Transport\": Travel Transport: flights, trains, airports, long-distance transportation and intercity travel.",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E24-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行交通”，但它只是背景。主要目标是“旅行记录”：旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E24-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Records\" is mentioned as context, the primary goal is \"Travel Transport\": Travel Transport: flights, trains, airports, long-distance transportation and intercity travel.",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E25-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行交通”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.transport_travel",
+      "edge_id": "D10-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E25-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Travel Transport\": Travel Transport: flights, trains, airports, long-distance transportation and intercity travel.",
+      "expected_topic_id": "sys.travel_places.transport_travel",
+      "source_topic_id": "sys.travel_places.transport_travel",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E26-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行规划”，但它只是背景。主要目标是“旅行记录”：旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E26-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Trip Records\" is mentioned as context, the primary goal is \"Trip Planning\": Trip Planning: itinerary design, destination planning, trip duration, budget and travel preparation.",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E27-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行规划”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.trip_planning",
+      "edge_id": "D10-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E27-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Trip Planning\": Trip Planning: itinerary design, destination planning, trip duration, budget and travel preparation.",
+      "expected_topic_id": "sys.travel_places.trip_planning",
+      "source_topic_id": "sys.travel_places.trip_planning",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E28-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“旅行记录”，但它只是背景。主要目标是“签证与出入境”：签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+      "expected_topic_id": "sys.travel_places.visas_border",
+      "source_topic_id": "sys.travel_places.visas_border",
+      "distractor_topic_id": "sys.travel_places.trip_records",
+      "edge_id": "D10-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D10-E28-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Visas & Borders\" is mentioned as context, the primary goal is \"Trip Records\": Trip Records: travel records, trip journals, photo organization and post-trip documentation.",
+      "expected_topic_id": "sys.travel_places.trip_records",
+      "source_topic_id": "sys.travel_places.trip_records",
+      "distractor_topic_id": "sys.travel_places.visas_border",
+      "edge_id": "D10-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E01-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“书籍与文学”：书籍与文学：书籍、小说、文学作品、作者、阅读体验和文学讨论。",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E01-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Books & Literature\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E02-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“电影与电视剧”：电影与电视剧：电影、电视剧、综艺、影视作品、观看和剧情讨论。",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E02-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Film & TV\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E03-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“游戏”：游戏：电子游戏、桌游、玩法、游戏攻略、游戏平台和游戏体验。",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E03-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Games\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E04-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“现场演出与文化活动”：现场演出与文化活动：演唱会、演出、戏剧、音乐节、线下文化活动和现场体验。",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E04-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Live Cultural Events\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E05-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“音乐”：音乐：歌曲、音乐人、专辑、播放、音乐推荐、音乐风格和听歌体验。",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E05-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Music\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E06-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“新闻与媒体”：新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E06-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"News & Media\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E07-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“艺术与文化”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.art_culture",
+      "edge_id": "D11-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E07-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"Arts & Culture\": Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena.",
+      "expected_topic_id": "sys.media_culture.art_culture",
+      "source_topic_id": "sys.media_culture.art_culture",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E08-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“书籍与文学”，但它只是背景。主要目标是“电影与电视剧”：电影与电视剧：电影、电视剧、综艺、影视作品、观看和剧情讨论。",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E08-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Film & TV\" is mentioned as context, the primary goal is \"Books & Literature\": Books & Literature: books, novels, literature, authors, reading experience and literary discussion.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E09-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“书籍与文学”，但它只是背景。主要目标是“游戏”：游戏：电子游戏、桌游、玩法、游戏攻略、游戏平台和游戏体验。",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E09-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Games\" is mentioned as context, the primary goal is \"Books & Literature\": Books & Literature: books, novels, literature, authors, reading experience and literary discussion.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E10-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“书籍与文学”，但它只是背景。主要目标是“现场演出与文化活动”：现场演出与文化活动：演唱会、演出、戏剧、音乐节、线下文化活动和现场体验。",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E10-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Live Cultural Events\" is mentioned as context, the primary goal is \"Books & Literature\": Books & Literature: books, novels, literature, authors, reading experience and literary discussion.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E11-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“书籍与文学”，但它只是背景。主要目标是“音乐”：音乐：歌曲、音乐人、专辑、播放、音乐推荐、音乐风格和听歌体验。",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E11-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Music\" is mentioned as context, the primary goal is \"Books & Literature\": Books & Literature: books, novels, literature, authors, reading experience and literary discussion.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E12-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“书籍与文学”，但它只是背景。主要目标是“新闻与媒体”：新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E12-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"News & Media\" is mentioned as context, the primary goal is \"Books & Literature\": Books & Literature: books, novels, literature, authors, reading experience and literary discussion.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E13-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“书籍与文学”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.books_literature",
+      "edge_id": "D11-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E13-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"Books & Literature\": Books & Literature: books, novels, literature, authors, reading experience and literary discussion.",
+      "expected_topic_id": "sys.media_culture.books_literature",
+      "source_topic_id": "sys.media_culture.books_literature",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E14-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“电影与电视剧”，但它只是背景。主要目标是“游戏”：游戏：电子游戏、桌游、玩法、游戏攻略、游戏平台和游戏体验。",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E14-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Games\" is mentioned as context, the primary goal is \"Film & TV\": Film & TV: movies, television, shows, viewing and discussion of screen works.",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E15-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“电影与电视剧”，但它只是背景。主要目标是“现场演出与文化活动”：现场演出与文化活动：演唱会、演出、戏剧、音乐节、线下文化活动和现场体验。",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E15-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Live Cultural Events\" is mentioned as context, the primary goal is \"Film & TV\": Film & TV: movies, television, shows, viewing and discussion of screen works.",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E16-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“电影与电视剧”，但它只是背景。主要目标是“音乐”：音乐：歌曲、音乐人、专辑、播放、音乐推荐、音乐风格和听歌体验。",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E16-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Music\" is mentioned as context, the primary goal is \"Film & TV\": Film & TV: movies, television, shows, viewing and discussion of screen works.",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E17-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“电影与电视剧”，但它只是背景。主要目标是“新闻与媒体”：新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E17-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"News & Media\" is mentioned as context, the primary goal is \"Film & TV\": Film & TV: movies, television, shows, viewing and discussion of screen works.",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E18-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“电影与电视剧”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.film_tv",
+      "edge_id": "D11-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E18-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"Film & TV\": Film & TV: movies, television, shows, viewing and discussion of screen works.",
+      "expected_topic_id": "sys.media_culture.film_tv",
+      "source_topic_id": "sys.media_culture.film_tv",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E19-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“游戏”，但它只是背景。主要目标是“现场演出与文化活动”：现场演出与文化活动：演唱会、演出、戏剧、音乐节、线下文化活动和现场体验。",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E19-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Live Cultural Events\" is mentioned as context, the primary goal is \"Games\": Games: video games, board games, gameplay, guides, platforms and gaming experience.",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E20-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“游戏”，但它只是背景。主要目标是“音乐”：音乐：歌曲、音乐人、专辑、播放、音乐推荐、音乐风格和听歌体验。",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E20-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Music\" is mentioned as context, the primary goal is \"Games\": Games: video games, board games, gameplay, guides, platforms and gaming experience.",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E21-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“游戏”，但它只是背景。主要目标是“新闻与媒体”：新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E21-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"News & Media\" is mentioned as context, the primary goal is \"Games\": Games: video games, board games, gameplay, guides, platforms and gaming experience.",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E22-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“游戏”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.games",
+      "edge_id": "D11-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E22-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"Games\": Games: video games, board games, gameplay, guides, platforms and gaming experience.",
+      "expected_topic_id": "sys.media_culture.games",
+      "source_topic_id": "sys.media_culture.games",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E23-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“现场演出与文化活动”，但它只是背景。主要目标是“音乐”：音乐：歌曲、音乐人、专辑、播放、音乐推荐、音乐风格和听歌体验。",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E23-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Music\" is mentioned as context, the primary goal is \"Live Cultural Events\": Live Cultural Events: concerts, performances, theater, festivals and live cultural experiences.",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E24-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“现场演出与文化活动”，但它只是背景。主要目标是“新闻与媒体”：新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E24-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"News & Media\" is mentioned as context, the primary goal is \"Live Cultural Events\": Live Cultural Events: concerts, performances, theater, festivals and live cultural experiences.",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E25-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“现场演出与文化活动”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.live_events",
+      "edge_id": "D11-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E25-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"Live Cultural Events\": Live Cultural Events: concerts, performances, theater, festivals and live cultural experiences.",
+      "expected_topic_id": "sys.media_culture.live_events",
+      "source_topic_id": "sys.media_culture.live_events",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E26-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“音乐”，但它只是背景。主要目标是“新闻与媒体”：新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E26-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"News & Media\" is mentioned as context, the primary goal is \"Music\": Music: songs, artists, albums, listening, recommendations, genres and music experience.",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E27-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“音乐”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.music",
+      "edge_id": "D11-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E27-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"Music\": Music: songs, artists, albums, listening, recommendations, genres and music experience.",
+      "expected_topic_id": "sys.media_culture.music",
+      "source_topic_id": "sys.media_culture.music",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E28-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“新闻与媒体”，但它只是背景。主要目标是“网络文化”：网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+      "expected_topic_id": "sys.media_culture.online_culture",
+      "source_topic_id": "sys.media_culture.online_culture",
+      "distractor_topic_id": "sys.media_culture.news_media",
+      "edge_id": "D11-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D11-E28-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Online Culture\" is mentioned as context, the primary goal is \"News & Media\": News & Media: news events, reporting, media outlets, information distribution and news consumption.",
+      "expected_topic_id": "sys.media_culture.news_media",
+      "source_topic_id": "sys.media_culture.news_media",
+      "distractor_topic_id": "sys.media_culture.online_culture",
+      "edge_id": "D11-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E01-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“邮件与消息”：邮件与消息：邮件、短信、私信、聊天消息、回复、发送和消息措辞。",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E01-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Email & Messages\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E01",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E02-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“谈判与说服”：谈判与说服：谈判、说服、议价、利益交换、立场表达和影响他人决策。",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E02-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Negotiation & Persuasion\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E02",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E03-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“演示与汇报”：演示与汇报：演示文稿、PPT、幻灯片结构、讲稿、视觉叙事和汇报表达。",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E03-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Presentations\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E03",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E04-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“社交媒体与公开发布”：社交媒体与公开发布：社交媒体公开内容、帖子、动态、公开文案、标题和平台发布。",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E04-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Public Posts\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E04",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E05-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“口头表达与对话”：口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E05-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Speaking & Conversation\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E05",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E06-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“翻译”：翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E06-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Translation\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E06",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E07-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“文档与报告”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.documents_reports",
+      "edge_id": "D12-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E07-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Documents & Reports\": Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables.",
+      "expected_topic_id": "sys.communication_writing.documents_reports",
+      "source_topic_id": "sys.communication_writing.documents_reports",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E07",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E08-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“邮件与消息”，但它只是背景。主要目标是“谈判与说服”：谈判与说服：谈判、说服、议价、利益交换、立场表达和影响他人决策。",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E08-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Negotiation & Persuasion\" is mentioned as context, the primary goal is \"Email & Messages\": Email & Messages: emails, texts, DMs, chat messages, replies and message wording.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E08",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E09-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“邮件与消息”，但它只是背景。主要目标是“演示与汇报”：演示与汇报：演示文稿、PPT、幻灯片结构、讲稿、视觉叙事和汇报表达。",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E09-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Presentations\" is mentioned as context, the primary goal is \"Email & Messages\": Email & Messages: emails, texts, DMs, chat messages, replies and message wording.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E09",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E10-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“邮件与消息”，但它只是背景。主要目标是“社交媒体与公开发布”：社交媒体与公开发布：社交媒体公开内容、帖子、动态、公开文案、标题和平台发布。",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E10-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Public Posts\" is mentioned as context, the primary goal is \"Email & Messages\": Email & Messages: emails, texts, DMs, chat messages, replies and message wording.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E10",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E11-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“邮件与消息”，但它只是背景。主要目标是“口头表达与对话”：口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E11-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Speaking & Conversation\" is mentioned as context, the primary goal is \"Email & Messages\": Email & Messages: emails, texts, DMs, chat messages, replies and message wording.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E11",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E12-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“邮件与消息”，但它只是背景。主要目标是“翻译”：翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E12-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Translation\" is mentioned as context, the primary goal is \"Email & Messages\": Email & Messages: emails, texts, DMs, chat messages, replies and message wording.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E12",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E13-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“邮件与消息”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.email_messages",
+      "edge_id": "D12-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E13-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Email & Messages\": Email & Messages: emails, texts, DMs, chat messages, replies and message wording.",
+      "expected_topic_id": "sys.communication_writing.email_messages",
+      "source_topic_id": "sys.communication_writing.email_messages",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E13",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E14-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“谈判与说服”，但它只是背景。主要目标是“演示与汇报”：演示与汇报：演示文稿、PPT、幻灯片结构、讲稿、视觉叙事和汇报表达。",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E14-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Presentations\" is mentioned as context, the primary goal is \"Negotiation & Persuasion\": Negotiation & Persuasion: negotiation, persuasion, bargaining, interests, positions and influencing decisions.",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E14",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E15-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“谈判与说服”，但它只是背景。主要目标是“社交媒体与公开发布”：社交媒体与公开发布：社交媒体公开内容、帖子、动态、公开文案、标题和平台发布。",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E15-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Public Posts\" is mentioned as context, the primary goal is \"Negotiation & Persuasion\": Negotiation & Persuasion: negotiation, persuasion, bargaining, interests, positions and influencing decisions.",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E15",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E16-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“谈判与说服”，但它只是背景。主要目标是“口头表达与对话”：口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E16-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Speaking & Conversation\" is mentioned as context, the primary goal is \"Negotiation & Persuasion\": Negotiation & Persuasion: negotiation, persuasion, bargaining, interests, positions and influencing decisions.",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E16",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E17-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“谈判与说服”，但它只是背景。主要目标是“翻译”：翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E17-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Translation\" is mentioned as context, the primary goal is \"Negotiation & Persuasion\": Negotiation & Persuasion: negotiation, persuasion, bargaining, interests, positions and influencing decisions.",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E17",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E18-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“谈判与说服”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "edge_id": "D12-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E18-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Negotiation & Persuasion\": Negotiation & Persuasion: negotiation, persuasion, bargaining, interests, positions and influencing decisions.",
+      "expected_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_topic_id": "sys.communication_writing.negotiation_persuasion",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E18",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E19-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“演示与汇报”，但它只是背景。主要目标是“社交媒体与公开发布”：社交媒体与公开发布：社交媒体公开内容、帖子、动态、公开文案、标题和平台发布。",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E19-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Public Posts\" is mentioned as context, the primary goal is \"Presentations\": Presentations: presentations, slides, decks, presentation structure, speaker notes and visual storytelling.",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E19",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E20-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“演示与汇报”，但它只是背景。主要目标是“口头表达与对话”：口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E20-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Speaking & Conversation\" is mentioned as context, the primary goal is \"Presentations\": Presentations: presentations, slides, decks, presentation structure, speaker notes and visual storytelling.",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E20",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E21-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“演示与汇报”，但它只是背景。主要目标是“翻译”：翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E21-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Translation\" is mentioned as context, the primary goal is \"Presentations\": Presentations: presentations, slides, decks, presentation structure, speaker notes and visual storytelling.",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E21",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E22-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“演示与汇报”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.presentations",
+      "edge_id": "D12-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E22-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Presentations\": Presentations: presentations, slides, decks, presentation structure, speaker notes and visual storytelling.",
+      "expected_topic_id": "sys.communication_writing.presentations",
+      "source_topic_id": "sys.communication_writing.presentations",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E22",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E23-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“社交媒体与公开发布”，但它只是背景。主要目标是“口头表达与对话”：口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E23-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Speaking & Conversation\" is mentioned as context, the primary goal is \"Public Posts\": Public Posts: public social posts, platform content, captions, posts and published copy.",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E23",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E24-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“社交媒体与公开发布”，但它只是背景。主要目标是“翻译”：翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E24-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Translation\" is mentioned as context, the primary goal is \"Public Posts\": Public Posts: public social posts, platform content, captions, posts and published copy.",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E24",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E25-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“社交媒体与公开发布”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.public_posts",
+      "edge_id": "D12-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E25-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Public Posts\": Public Posts: public social posts, platform content, captions, posts and published copy.",
+      "expected_topic_id": "sys.communication_writing.public_posts",
+      "source_topic_id": "sys.communication_writing.public_posts",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E25",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E26-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“口头表达与对话”，但它只是背景。主要目标是“翻译”：翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E26-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Translation\" is mentioned as context, the primary goal is \"Speaking & Conversation\": Speaking & Conversation: spoken communication, conversation, oral expression and live interpersonal language.",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E26",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E27-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“口头表达与对话”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.speaking_conversation",
+      "edge_id": "D12-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E27-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Speaking & Conversation\": Speaking & Conversation: spoken communication, conversation, oral expression and live interpersonal language.",
+      "expected_topic_id": "sys.communication_writing.speaking_conversation",
+      "source_topic_id": "sys.communication_writing.speaking_conversation",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E27",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E28-zh",
+      "case_type": "HARD_NEGATIVE",
+      "language": "zh",
+      "text": "虽然提到了“翻译”，但它只是背景。主要目标是“写作与编辑”：写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+      "expected_topic_id": "sys.communication_writing.writing_editing",
+      "source_topic_id": "sys.communication_writing.writing_editing",
+      "distractor_topic_id": "sys.communication_writing.translation",
+      "edge_id": "D12-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    },
+    {
+      "case_id": "HN-D12-E28-en",
+      "case_type": "HARD_NEGATIVE",
+      "language": "en",
+      "text": "Although \"Writing & Editing\" is mentioned as context, the primary goal is \"Translation\": Translation: translation between languages, localization and bilingual expression.",
+      "expected_topic_id": "sys.communication_writing.translation",
+      "source_topic_id": "sys.communication_writing.translation",
+      "distractor_topic_id": "sys.communication_writing.writing_editing",
+      "edge_id": "D12-E28",
+      "provenance": {
+        "source_classes": [
+          "DERIVED_SEMANTIC_PROFILE",
+          "SYNTHETIC_CONTRASTIVE"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-02",
+        "formal_fields_overridden": false
+      }
+    }
+  ]
+}
