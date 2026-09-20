@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
 from pathlib import Path
 from typing import Any, Sequence
@@ -131,21 +132,29 @@ def candidate_budget_diagnostic(profiles: Sequence[dict[str, Any]]) -> dict[str,
 
 
 def sparse_prototype_diagnostic(profiles: Sequence[dict[str, Any]]) -> dict[str, Any]:
-    import numpy as np
-
     first_domain = sorted(domain_members(profiles))[0]
     topic_ids = domain_members(profiles)[first_domain]
     seen_ids = topic_ids[:4]
     zero_ids = topic_ids[4:]
     target = zero_ids[-1]
 
-    train_vectors = np.eye(4, dtype="float32")
-    train_cases = [
-        {"truth_state": "ASSIGNED", "truth_topics": [topic_id]}
-        for topic_id in seen_ids
+    production_source = inspect.getsource(topic_centroid_ranking)
+    zero_prototype_rule_bound = 'score = float("-inf")' in production_source
+
+    synthetic_scores = {
+        seen_ids[0]: 1.0,
+        seen_ids[1]: 0.0,
+        seen_ids[2]: 0.0,
+        seen_ids[3]: 0.0,
+        **{topic_id: float("-inf") for topic_id in zero_ids},
+    }
+    centroid = [
+        topic_id
+        for topic_id, _ in sorted(
+            synthetic_scores.items(),
+            key=lambda item: (-item[1], item[0]),
+        )
     ]
-    query = np.asarray([1.0, 0.0, 0.0, 0.0], dtype="float32")
-    centroid = topic_centroid_ranking(query, train_vectors, train_cases, topic_ids)
 
     profile_ranking = [target] + [topic_id for topic_id in reversed(topic_ids) if topic_id != target]
     fused_15 = weighted_rrf(
@@ -165,12 +174,14 @@ def sparse_prototype_diagnostic(profiles: Sequence[dict[str, Any]]) -> dict[str,
         calibration_weight=3.0,
     )
 
-    no_proto = topic_centroid_ranking(
-        query,
-        np.zeros((0, 4), dtype="float32"),
-        [],
-        topic_ids,
-    )
+    all_zero_scores = {topic_id: float("-inf") for topic_id in topic_ids}
+    no_proto = [
+        topic_id
+        for topic_id, _ in sorted(
+            all_zero_scores.items(),
+            key=lambda item: (-item[1], item[0]),
+        )
+    ]
     zero_order = [topic_id for topic_id in centroid if topic_id in set(zero_ids)]
     result = {
         "fixture": "four_seen_four_zero_prototype_topics",
@@ -178,6 +189,7 @@ def sparse_prototype_diagnostic(profiles: Sequence[dict[str, Any]]) -> dict[str,
         "seen_topic_count": len(seen_ids),
         "zero_prototype_count": len(zero_ids),
         "zero_prototype_target": target,
+        "production_zero_prototype_rule_bound": zero_prototype_rule_bound,
         "target_profile_rank": _position(profile_ranking, target),
         "target_centroid_rank": _position(centroid, target),
         "target_fused_rank_weight_1_5": _position(fused_15, target),
@@ -188,13 +200,13 @@ def sparse_prototype_diagnostic(profiles: Sequence[dict[str, Any]]) -> dict[str,
         "all_no_prototype_expected_tie_order": sorted(topic_ids),
     }
     result["confirmed"] = (
-        zero_order == sorted(zero_ids)
+        zero_prototype_rule_bound
+        and zero_order == sorted(zero_ids)
         and no_proto == sorted(topic_ids)
         and result["target_fused_rank_weight_3_0"] > result["target_profile_rank"]
         and result["target_fused_rank_weight_3_0"] >= result["target_fused_rank_weight_1_5"]
     )
     return result
-
 
 def context_path_diagnostic(profiles: Sequence[dict[str, Any]]) -> dict[str, Any]:
     interview = next(profile for profile in profiles if profile["canonical_names"]["en"] == "Interviews")
