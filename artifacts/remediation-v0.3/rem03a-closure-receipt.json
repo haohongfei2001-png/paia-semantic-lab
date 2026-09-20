@@ -1,0 +1,41 @@
+{
+  "best_candidate_recall_at_10": 0.7435416666666667,
+  "best_candidate_recall_at_20": 0.8568749999999999,
+  "calibration_result_digest": "361b7f101d9f4552d539bd218b2bb454034d09209e2f17d22fda1f5191fe37b8",
+  "calibration_stage": "CALIBRATION_FAIL",
+  "capability_verdict": "FAIL",
+  "closure_required_ci": "PENDING",
+  "consumed_sem07_lockbox_tuning_or_promotion_events": 0,
+  "critical_slices_pass": false,
+  "evaluation_opened": false,
+  "evaluation_records_read": 0,
+  "execution_status": "COMPLETE",
+  "freeze_required_ci": {
+    "evidence_artifact_id": 10601932880,
+    "job_id": 106052270898,
+    "run_id": 35500865402,
+    "status": "PASS",
+    "validated_commit": "694f33f7c23961a825dbba50efa72aab85664a2f"
+  },
+  "guards": {
+    "consumed_lockbox_tuning_events": 0,
+    "held_out_family_leakage_events": 0,
+    "live_archive_reads": 0,
+    "model_training_runs": 0,
+    "new_owner_labels": 0,
+    "production_paia_writes": 0,
+    "real_input_api_egress_events": 0
+  },
+  "held_out_family_leakage_events": 0,
+  "local_validation": {
+    "full_repository_seconds": 282.631,
+    "full_repository_tests": "117/117 PASS",
+    "git_diff_check": "PASS",
+    "targeted_tests": "16/16 PASS"
+  },
+  "matrix_count": 12,
+  "passing_config_count": 0,
+  "required_candidate_recall_at_10": 0.96,
+  "required_candidate_recall_at_20": 0.99,
+  "round": "REM-03A"
+}
