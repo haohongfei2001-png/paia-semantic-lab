@@ -12,7 +12,7 @@ plan_amendment_validation_job_id: 106026662167
 plan_amendment_evidence_artifact_id: 10598858687
 plan_amendment_validated_commit: "4ce572d8f07c4e0effa77967b0cad371cead2c5d"
 plan_amendment_required_ci: PASS
-phase: REM_03A_READY
+phase: REM_03A_IN_PROGRESS
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -198,12 +198,18 @@ rounds:
     closure_required_ci: PASS
   REM-03A:
     title: "Calibration-prototype candidate remediation"
-    execution_status: READY
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
     depends_on: REM-03
     amendment: REM-03A_CALIBRATION_PROTOTYPE
-    explicit_execution_authorized: false
-    existing_private_artifacts_read: requires_fresh_explicit_round_authorization
+    explicit_execution_authorized: true
+    existing_private_artifacts_read: authorized_read_only_80_calibration_13_evaluation_if_gate
+    configuration_matrix_frozen: true
+    configuration_matrix_count: 12
+    freeze_targeted_tests: "13/13 PASS"
+    freeze_local_tests: "114/114 PASS"
+    freeze_local_test_seconds: 256.231
+    private_freeze_receipt: "artifacts/remediation-v0.3/rem03a-private-freeze.json"
     promotion_gate: ORIGINAL_CANDIDATE_THRESHOLDS
     candidate_recall_at_10_min: 0.96
     candidate_recall_at_20_min: 0.99
@@ -234,5 +240,5 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-03A plan amendment is frozen and REM-03A is READY but NOT_AUTHORIZED. Do not start REM-03A until a new explicit user execution message authorizes the round and any intended read-only private-artifact reuse. REM-04 remains BLOCKED. Candidate gates remain Recall@10 >= 0.96 and Recall@20 >= 0.99."
+next_action: "REM-03A is IN_PROGRESS with a 12-config calibration-prototype matrix frozen before private evidence. Run only the authorized 80-case family-grouped calibration. Open the 13-case legacy evaluation at most once and only if calibration passes Recall@10 >= 0.96, Recall@20 >= 0.99 and critical-slice gates. REM-04 remains BLOCKED."
 product_owner_blockers: []
