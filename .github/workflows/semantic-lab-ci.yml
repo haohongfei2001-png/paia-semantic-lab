@@ -60,6 +60,10 @@ jobs:
           python -m unittest tests.test_sca02_contrastive tests.test_sca02_status -v
       - name: SCA-03 execution checkpoint validation
         run: python -m unittest tests.test_sca03_plan tests.test_sca03_checkpoint -v
+      - name: SCA-03 public synthetic diagnostics
+        run: |
+          python -m scripts.sca03_public_synthetic_diagnostics --output artifacts/ci/sca03-public-synthetic-diagnostics.json
+          python -m unittest tests.test_sca03_public_synthetic_diagnostics -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:
