@@ -1,0 +1,55 @@
+{
+  "authorization": {
+    "calibration_read_only": 80,
+    "consumed_sem07_lockbox_tuning_or_promotion": "DENY",
+    "evaluation_read_only_after_gate": 13
+  },
+  "baseline_remote_main": "80ede07166e06e5dd36ea6fb673734a8e32ae49b",
+  "checkpoint_required_ci": "PENDING",
+  "config_sha256": "cdeb703d65a8eb3ae9ed8a414d838d463276898a1e3ec13d214155dfcd3a9efb",
+  "evaluator_sha256": "98baf7658b5eed639a89f9b4ecee2fb3d83eecaf1ee21b00632d25836244a1d2",
+  "frozen_constants": {
+    "candidate_limit": 96,
+    "domain_calibration_weight": 2.0,
+    "domain_catalog_anchor_weight": 1.0,
+    "domain_exemplar_vote_neighbor_count": 8,
+    "domain_hybrid_rrf_constant": 20,
+    "exact_alias_slots_max": 2,
+    "second_domain_topic_count": 8,
+    "top10_fill_target": 10,
+    "top20_fill_target": 20,
+    "top_domain_topic_count": 8,
+    "topic_anchor_weight": 1.0,
+    "topic_centroid_weight": 2.0
+  },
+  "gates": {
+    "candidate_recall_at_10_min": 0.96,
+    "candidate_recall_at_20_min": 0.99,
+    "critical_slice_same_thresholds": true,
+    "held_out_family_leakage_events_max": 0
+  },
+  "guards": {
+    "catalog_edits": "DENY",
+    "generated_examples": "DENY",
+    "generated_synonyms": "DENY",
+    "live_archive_read": "DENY",
+    "model_training": "DENY",
+    "new_owner_labels": 0,
+    "production_paia_write": "DENY",
+    "real_input_api_egress": "DENY"
+  },
+  "library_sha256": "fce5605f0e37b7c303a94e9636a6852d5baf0f90ab5bbb5a59d663f307efe7b0",
+  "local_validation": {
+    "full_repository_seconds": 349.653,
+    "full_repository_tests": "141/141 PASS",
+    "git_diff_check": "PASS",
+    "targeted_tests": "31/31 PASS"
+  },
+  "matrix_count": 12,
+  "matrix_sha256": "9f9a2f3ce2aaa878d154077d87b7f4157e2995040e667bb51b713d721ef88e19",
+  "plan_config_sha256": "a941c40da6cad6df94ed321ea42431830e73ca537d6fc25faf3b415dc187aad6",
+  "private_artifact_reads_before_freeze": 0,
+  "private_metrics_opened": false,
+  "round": "REM-03B",
+  "state": "FROZEN_BEFORE_PRIVATE_EVIDENCE"
+}

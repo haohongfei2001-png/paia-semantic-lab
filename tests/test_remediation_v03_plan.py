@@ -90,8 +90,11 @@ class RemediationV03PlanTests(unittest.TestCase):
         prior = self.status["prior_plan_amendments"]["REM-03A_CALIBRATION_PROTOTYPE"]
         self.assertEqual("PASS", prior["required_ci"])
         rem03b = self.status["rounds"]["REM-03B"]
-        self.assertIn(rem03b["execution_status"], {"BLOCKED", "READY"})
-        self.assertFalse(rem03b["explicit_execution_authorized"])
+        self.assertIn(rem03b["execution_status"], {"BLOCKED", "READY", "IN_PROGRESS", "COMPLETE"})
+        if rem03b["execution_status"] in {"IN_PROGRESS", "COMPLETE"}:
+            self.assertTrue(rem03b["explicit_execution_authorized"])
+        else:
+            self.assertFalse(rem03b["explicit_execution_authorized"])
         rem04 = self.status["rounds"]["REM-04"]
         self.assertEqual("BLOCKED", rem04["execution_status"])
         self.assertEqual("REM-03B", rem04["depends_on"])

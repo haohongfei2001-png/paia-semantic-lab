@@ -12,7 +12,7 @@ plan_amendment_validation_job_id: 106060395332
 plan_amendment_evidence_artifact_id: 10603521953
 plan_amendment_validated_commit: c48b944d241cfe664ef937b8f5f45c18d8e04f97
 plan_amendment_required_ci: PASS
-phase: REM_03B_READY
+phase: REM_03B_IN_PROGRESS
 baseline_remote_commit: 28c82a95fd1ee6d642fc6a033ce1bf734cc8df53
 architecture_baseline: v0.2 semantic contract
 production_paia_modified: false
@@ -265,12 +265,12 @@ rounds:
     closure_local_test_seconds: 282.631
   REM-03B:
     title: Structured Domain-backoff candidate remediation
-    execution_status: READY
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
     depends_on: REM-03A
     amendment: REM-03B_STRUCTURED_DOMAIN_BACKOFF
-    explicit_execution_authorized: false
-    existing_private_artifacts_read: requires_fresh_explicit_round_authorization
+    explicit_execution_authorized: true
+    existing_private_artifacts_read: authorized_read_only_80_calibration_13_evaluation_if_gate
     promotion_gate: ORIGINAL_CANDIDATE_THRESHOLDS
     candidate_recall_at_10_min: 0.96
     candidate_recall_at_20_min: 0.99
@@ -287,6 +287,21 @@ rounds:
     consumed_sem07_lockbox_use: FORBIDDEN_FOR_TUNING_OR_PROMOTION
     generated_semantic_expansion: FORBIDDEN
     new_owner_labels: 0
+    execution_config: configs/rem03b_private_promotion_v0.1.yaml
+    configuration_matrix_frozen: true
+    configuration_matrix_count: 12
+    private_freeze_receipt: artifacts/remediation-v0.3/rem03b-private-freeze.json
+    private_metrics_opened: false
+    calibration_read_budget: 80
+    evaluation_read_budget: 13
+    evaluation_read_condition: CALIBRATION_GATE_PASS
+    evaluation_records_read: 0
+    evaluation_opened: false
+    lockbox_label_records_read: 0
+    checkpoint_required_ci: PENDING
+    freeze_targeted_tests: 31/31 PASS
+    freeze_local_tests: 141/141 PASS
+    freeze_local_test_seconds: 349.653
   REM-04:
     title: Router remediation and pre-lockbox freeze
     execution_status: BLOCKED
@@ -309,7 +324,11 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-03B plan amendment is frozen and CI-validated; REM-03B is READY but NOT_AUTHORIZED. Do not execute or read private calibration/evaluation artifacts until a fresh explicit user execution message authorizes REM-03B and intended read-only private-artifact reuse. REM-04 remains BLOCKED. Candidate gates remain Recall@10 >= 0.96 and Recall@20 >= 0.99."
+next_action: REM-03B is IN_PROGRESS with its 12-config structured Domain-backoff execution
+  matrix frozen before private evidence. Validate the exact implementation/config
+  freeze through local regression and exact-head CI before reading the authorized
+  80-case calibration. The 13-case legacy evaluation remains closed unless calibration
+  passes all candidate gates. REM-04 remains BLOCKED.
 product_owner_blockers: []
 prior_plan_amendments:
   REM-03A_CALIBRATION_PROTOTYPE:

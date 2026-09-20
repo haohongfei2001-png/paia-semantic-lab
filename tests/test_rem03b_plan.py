@@ -80,11 +80,16 @@ class Rem03BPlanTests(unittest.TestCase):
         self.assertEqual("COMPLETE", self.status["rounds"]["REM-03A"]["execution_status"])
         self.assertEqual("FAIL", self.status["rounds"]["REM-03A"]["capability_verdict"])
         rem03b = self.status["rounds"]["REM-03B"]
-        self.assertEqual("UNTESTED", rem03b["capability_verdict"])
-        self.assertFalse(rem03b["explicit_execution_authorized"])
-        if self.status["plan_amendment_required_ci"] == "PASS":
-            self.assertEqual("READY", rem03b["execution_status"])
+        self.assertIn(rem03b["capability_verdict"], {"UNTESTED", "PASS", "FAIL"})
+        if rem03b["execution_status"] == "READY":
+            self.assertFalse(rem03b["explicit_execution_authorized"])
             self.assertEqual("REM_03B_READY", self.status["phase"])
+        elif rem03b["execution_status"] in {"IN_PROGRESS", "COMPLETE"}:
+            self.assertTrue(rem03b["explicit_execution_authorized"])
+            self.assertNotEqual(
+                "requires_fresh_explicit_round_authorization",
+                rem03b["existing_private_artifacts_read"],
+            )
         else:
             self.assertEqual("BLOCKED", rem03b["execution_status"])
             self.assertEqual("REM_03B_AMENDMENT_CI_PENDING", self.status["phase"])

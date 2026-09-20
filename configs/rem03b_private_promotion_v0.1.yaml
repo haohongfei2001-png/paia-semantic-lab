@@ -1,0 +1,83 @@
+version: 0.1.0
+round: REM-03B
+promotion_plan_version: rem03b-structured-domain-backoff-private-0.1
+status: FROZEN_BEFORE_PRIVATE_EVIDENCE
+plan:
+  plan_config: configs/rem03b_structured_candidate_v0.1.yaml
+  plan_config_sha256: a941c40da6cad6df94ed321ea42431830e73ca537d6fc25faf3b415dc187aad6
+  amendment_validated_commit: c48b944d241cfe664ef937b8f5f45c18d8e04f97
+  canonical_ready_commit: 80ede07166e06e5dd36ea6fb673734a8e32ae49b
+baseline:
+  model_id: BAAI/bge-m3
+  revision: cb1779f90b988b8deb01f9155c790ef9417d7648
+development:
+  fold_count: 5
+  query_variants:
+  - current_only
+  - allowed_context
+  domain_evidence:
+  - exemplar_vote
+  - centroid
+  - hybrid
+  anchor_modes:
+  - names_aliases
+  - names_aliases_plus_domain_path
+  maximum_matrix_size: 12
+domain_policy:
+  exemplar_vote_neighbor_count: 8
+  hybrid_rrf_constant: 20
+  catalog_calibration_fusion:
+    rrf_constant: 20
+    catalog_anchor_weight: 1.0
+    calibration_weight: 2.0
+topic_policy:
+  direct_fusion:
+    rrf_constant: 20
+    anchor_weight: 1.0
+    topic_centroid_weight: 2.0
+candidate_policy:
+  exact_alias_slots_max: 2
+  top_domain_topic_count: 8
+  top10_fill_target: 10
+  second_domain_topic_count: 8
+  top20_fill_target: 20
+  candidate_limit: 96
+  domain_ids_assignable: false
+  zero_prototype_topics_remain_eligible: true
+  common_template_text_suppressed: true
+  generated_synonyms: DENY
+  generated_examples: DENY
+  catalog_edits: DENY
+  automatic_topic_creation: false
+  exact_alias_query_source: current_only
+promotion_gate:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  critical_slice_same_thresholds: true
+  held_out_family_leakage_events_max: 0
+  full_catalog_eligibility_required: true
+  activity_top20_invariance_required: true
+  custom_topic_safety_required: true
+evaluation:
+  read_condition: CALIBRATION_GATE_PASS
+  max_reads: 1
+  no_reselection_after_read: true
+  no_threshold_change_after_read: true
+authorization:
+  execution_authorized: true
+  legacy_calibration_read_only: 80
+  legacy_evaluation_read_only_after_gate: 13
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  production_paia_write: DENY
+public_output_policy:
+  aggregates_only: true
+  raw_input_text: FORBIDDEN
+  input_ref: FORBIDDEN
+  family_ref: FORBIDDEN
+  calibration_id: FORBIDDEN
+  per_case_truth_topics: FORBIDDEN
+  private_vectors: FORBIDDEN
