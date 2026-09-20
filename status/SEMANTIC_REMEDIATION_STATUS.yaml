@@ -356,11 +356,13 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: REM-03B is COMPLETE/FAIL. The structured Domain-backoff lane did not
-  meet candidate gates and Domain recovery itself remained weak. The 13-case legacy
-  evaluation set was not opened. Per frozen REM-03B escalation, stop retrieval-weight
-  remediation and open a separate catalog/architecture package for CATALOG_SEMANTIC_INFORMATION_DEFICIENCY_REVIEW
-  before any Router work. Do not lower gates.
+next_action: "REM-03B remains COMPLETE/FAIL and REM-04 remains BLOCKED. Continue only through PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1. SCA-00 audits/freezes the two-layer semantic architecture; a future promoted SCA handoff plus a separate v0.3 amendment is required before REM-04 can become READY."
+external_blocker_package:
+  package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
+  status_path: status/SEMANTIC_CATALOG_ARCHITECTURE_STATUS.yaml
+  required_before_rem04: true
+  trigger: CATALOG_SEMANTIC_INFORMATION_DEFICIENCY_REVIEW
+  formal_catalog_auto_edit: false
 product_owner_blockers: []
 prior_plan_amendments:
   REM-03A_CALIBRATION_PROTOTYPE:

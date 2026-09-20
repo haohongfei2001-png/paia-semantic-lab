@@ -1,0 +1,59 @@
+package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
+package_version: 0.1.0
+status: FROZEN_PLAN_ONLY
+baseline:
+  remediation_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
+  catalog_path: catalog/system_topic_catalog_v0.2.yaml
+  catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
+  catalog_version: 0.2.0
+  system_topic_count: 144
+  internal_domain_count: 18
+architecture:
+  formal_topic_contract:
+    canonical: true
+    ai_formal_topic_creation: DENY
+    ai_silent_formal_mutation: DENY
+    formal_boundary_change_requires_explicit_owner_authorization: true
+  derived_semantic_profile:
+    rebuildable: true
+    versioned: true
+    provenance_required: true
+    generated_semantic_core: ALLOW_DERIVED_ONLY
+    generated_lexical_anchors: ALLOW_DERIVED_ONLY
+    generated_synthetic_examples: ALLOW_DERIVED_ONLY
+    generated_contrastive_neighbors: ALLOW_DERIVED_ONLY
+    may_override_formal_boundary: false
+profile_schema:
+  path: schemas/topic_semantic_profile_v0.1.schema.json
+  one_profile_per_existing_topic: true
+  new_topic_ids: DENY
+  merge_split_delete_topics: DENY
+owner_attention:
+  new_owner_semantic_labels_sca00_through_sca04: 0
+  formal_change_requires_separate_explicit_authorization: true
+  derived_profile_generation_requires_owner_review: false
+  unresolved_formal_boundary_action: FORMAL_CATALOG_REVIEW_REQUIRED
+data_roles:
+  sca00_through_sca02_private_reads: 0
+  legacy_calibration_judgments: 80
+  legacy_calibration_access: REQUIRES_FRESH_EXPLICIT_AUTHORIZATION_IN_SCA03
+  legacy_evaluation_judgments: 13
+  legacy_evaluation_policy: ONE_READ_AFTER_SCA03_PASS
+  consumed_sem07_lockbox_judgments: 35
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+guards:
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  model_training: DENY
+  production_paia_write: DENY
+  raw_private_data_in_git: DENY
+candidate_gates:
+  recall_at_10_min: 0.96
+  recall_at_20_min: 0.99
+  critical_slice_same_thresholds: true
+  leakage_events_max: 0
+handoff:
+  target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
+  target_round: REM-04
+  automatic_unblock: false
+  separate_v03_amendment_required: true

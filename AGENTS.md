@@ -16,3 +16,8 @@
 14. The consumed 35-case SEM-07 lockbox is `LEGACY_DIAGNOSTIC_ONLY`: it may support retrospective attribution but may not be used for threshold fitting, config/model ranking, promotion or certification.
 15. REM-00 through REM-04 require zero new owner semantic labels. REM-05 is the only planned new-label round and requires fresh snapshot authorization. REM-06 reuses the frozen REM-05 lockbox with zero new labels.
 16. No model training or production integration is authorized by the v0.3 remediation package.
+
+17. REM-03B closed COMPLETE/FAIL and escalated semantic-information insufficiency to PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1. That package uses status/SEMANTIC_CATALOG_ARCHITECTURE_STATUS.yaml and docs/catalog-architecture-v0.1/ as its authority.
+18. Formal Topic Contract and Derived Semantic Profile are distinct. AI may generate semantic expansion only in the derived layer when the catalog-architecture package authorizes it and provenance is explicit.
+19. AI may not silently mutate, create, merge, split or delete formal Topics. A formal boundary change requires separate explicit owner authorization.
+20. v0.3 REM-04 remains blocked until the catalog-architecture package produces a promoted immutable semantic-profile handoff and a separate v0.3 amendment consumes it.
