@@ -24,8 +24,7 @@
   },
   "new_round": {
     "id": "REM-03B",
-    "execution_status": "BLOCKED",
-    "blocked_by": "REM_03B_AMENDMENT_CI_PENDING",
+    "execution_status": "READY",
     "explicit_execution_authorized": false,
     "private_artifact_access": "REQUIRES_FRESH_EXPLICIT_AUTHORIZATION"
   },
@@ -73,7 +72,15 @@
     "yaml_json_parse": "PASS",
     "git_diff_check": "PASS"
   },
-  "required_ci": "PENDING",
+  "required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35503922720,
+    "job_id": 106060395332,
+    "evidence_artifact_id": 10603521953,
+    "validated_commit": "c48b944d241cfe664ef937b8f5f45c18d8e04f97",
+    "conclusion": "success"
+  },
   "source_hashes": {
     "amendment": "d31b07f07061232750469aa2c70c1b072479c35e6822cba9913cdeffc9e8e30b",
     "round": "a20caab93075eb9113d3e75cafc048ade3d8ae5198d6deb7cd787cfdc28027fc",

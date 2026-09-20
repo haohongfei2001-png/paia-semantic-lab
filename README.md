@@ -8,7 +8,7 @@ Semantic Lab is isolated from PAIA production. It must not modify production run
 
 Semantic Lab v0.2 is closed at SEM-07 with execution COMPLETE and semantic capability verdict FAIL. Its historical state remains in `status/SEMANTIC_LAB_STATUS.yaml`.
 
-The current research package is **PAIA-SEMANTIC-LAB-v0.3-REMEDIATION**. REM-03A closed COMPLETE/FAIL after materially improving but not passing candidate recall. A plan-only REM-03B structured Domain-backoff amendment is now being frozen as the next candidate-remediation prerequisite before Router work. Its canonical state is `status/SEMANTIC_REMEDIATION_STATUS.yaml`.
+The current research package is **PAIA-SEMANTIC-LAB-v0.3-REMEDIATION**. REM-03A closed COMPLETE/FAIL after materially improving but not passing candidate recall. The REM-03B structured Domain-backoff amendment is frozen and CI-validated; REM-03B is READY but not authorized. Its canonical state is `status/SEMANTIC_REMEDIATION_STATUS.yaml`.
 
 Start v0.3 work with:
 - `docs/remediation-v0.3/PRE_IMPLEMENTATION_FREEZE.md`

@@ -7,8 +7,12 @@ plan_amendment_receipt: artifacts/remediation-v0.3/REM03B_AMENDMENT_FREEZE_RECEI
 plan_amendment_targeted_tests: 7/7 PASS
 plan_amendment_local_tests: 124/124 PASS
 plan_amendment_local_test_seconds: 267.6
-plan_amendment_required_ci: PENDING
-phase: REM_03B_AMENDMENT_CI_PENDING
+plan_amendment_validation_run_id: 35503922720
+plan_amendment_validation_job_id: 106060395332
+plan_amendment_evidence_artifact_id: 10603521953
+plan_amendment_validated_commit: c48b944d241cfe664ef937b8f5f45c18d8e04f97
+plan_amendment_required_ci: PASS
+phase: REM_03B_READY
 baseline_remote_commit: 28c82a95fd1ee6d642fc6a033ce1bf734cc8df53
 architecture_baseline: v0.2 semantic contract
 production_paia_modified: false
@@ -261,7 +265,7 @@ rounds:
     closure_local_test_seconds: 282.631
   REM-03B:
     title: Structured Domain-backoff candidate remediation
-    execution_status: BLOCKED
+    execution_status: READY
     capability_verdict: UNTESTED
     depends_on: REM-03A
     amendment: REM-03B_STRUCTURED_DOMAIN_BACKOFF
@@ -283,7 +287,6 @@ rounds:
     consumed_sem07_lockbox_use: FORBIDDEN_FOR_TUNING_OR_PROMOTION
     generated_semantic_expansion: FORBIDDEN
     new_owner_labels: 0
-    blocked_by: REM_03B_AMENDMENT_CI_PENDING
   REM-04:
     title: Router remediation and pre-lockbox freeze
     execution_status: BLOCKED
@@ -306,9 +309,7 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: REM-03B amendment freeze candidate requires exact-head CI. Do not execute
-  REM-03B or read private calibration/evaluation artifacts. After amendment CI PASS,
-  set REM-03B READY but NOT_AUTHORIZED; REM-04 remains BLOCKED.
+next_action: "REM-03B plan amendment is frozen and CI-validated; REM-03B is READY but NOT_AUTHORIZED. Do not execute or read private calibration/evaluation artifacts until a fresh explicit user execution message authorizes REM-03B and intended read-only private-artifact reuse. REM-04 remains BLOCKED. Candidate gates remain Recall@10 >= 0.96 and Recall@20 >= 0.99."
 product_owner_blockers: []
 prior_plan_amendments:
   REM-03A_CALIBRATION_PROTOTYPE:

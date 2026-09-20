@@ -2,7 +2,7 @@
 
 Package ID: `PAIA-SEMANTIC-LAB-v0.3-REMEDIATION`
 
-Status: **FROZEN WITH REM-03A AMENDMENT / REM-03A READY / NOT AUTHORIZED**
+Status: **FROZEN WITH REM-03B AMENDMENT / REM-03B READY / NOT AUTHORIZED**
 
 Baseline: Semantic Lab v0.2 closed at remote main commit `28c82a95fd1ee6d642fc6a033ce1bf734cc8df53` with SEM-07 execution COMPLETE and semantic capability verdict FAIL.
 
@@ -38,6 +38,7 @@ Any production integration or model-training package requires separate authoriza
 - `EXECUTION_PROTOCOL.md`
 - `VERIFICATION.md`
 - `rounds/REM-00.md` through `rounds/REM-06.md`
-- `AMENDMENT_REM03A.md` and `rounds/REM-03A.md` for the frozen post-REM-03 candidate-remediation amendment
+- `AMENDMENT_REM03A.md` and `rounds/REM-03A.md` for the historical post-REM-03 calibration-prototype amendment
+- `AMENDMENT_REM03B.md` and `rounds/REM-03B.md` for the current structured Domain-backoff candidate-remediation amendment
 - `../../status/SEMANTIC_REMEDIATION_STATUS.yaml`
 - `../../configs/semantic_remediation_v0.3.yaml`
