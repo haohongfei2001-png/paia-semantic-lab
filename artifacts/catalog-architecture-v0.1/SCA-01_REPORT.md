@@ -35,3 +35,21 @@ Generated content is a rebuildable retrieval derivative. It does not create, mer
 The compiler validates every profile against the frozen JSON Schema, checks exact Topic-ID equality against catalog v0.2.0, verifies canonical names and Domains, verifies Git blob SHAs, checks provenance coverage, checks semantic-core uniqueness, and computes a canonical SHA-256 over the sorted profile set.
 
 SCA-02 remains blocked until the SCA-01 closure candidate passes exact-head CI.
+
+## Validation result
+
+The exact-head compiler/schema/catalog gate passed.
+
+- profile coverage: 144 / 144;
+- Topic ID set exact match: PASS;
+- semantic-core unique count: 144;
+- provenance coverage: 1.0;
+- formal semantic mutation events: 0;
+- private artifact reads: 0;
+- canonical profile bundle SHA-256: 018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b;
+- Semantic Lab CI run: 35513261633;
+- job: 106084790257;
+- evidence artifact: 10605668165;
+- validated commit: 4bbb283f2ea97ef85e36cf6a96e1c546d7623e96.
+
+SCA-01 is COMPLETE/PASS. SCA-02 is READY / NOT_AUTHORIZED.

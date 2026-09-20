@@ -23,4 +23,4 @@ The v0.3 remediation package remains historical evidence and REM-04 remains bloc
 
 ## Current round
 
-SCA-01 generated the complete 144-profile derived semantic bundle and is awaiting exact-head closure CI. SCA-02 is blocked until compiler/schema/catalog validation passes.
+SCA-01 is COMPLETE/PASS: the 144-profile derived semantic bundle is compiler/schema/catalog validated. SCA-02 is READY but not authorized; it will build and validate the derived contrastive-neighbor graph and synthetic hard-negative/positive suite.

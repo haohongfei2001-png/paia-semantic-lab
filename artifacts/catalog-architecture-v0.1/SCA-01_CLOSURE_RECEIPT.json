@@ -1,0 +1,31 @@
+{
+  "package_id": "PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1",
+  "round": "SCA-01",
+  "execution_status": "COMPLETE",
+  "capability_verdict": "PASS",
+  "profile_count": 144,
+  "system_topic_count": 144,
+  "topic_id_set_exact_match": true,
+  "semantic_core_unique_count": 144,
+  "provenance_coverage": 1,
+  "formal_semantic_mutation_events": 0,
+  "formal_catalog_modified": false,
+  "private_artifact_reads": 0,
+  "bundle_manifest": "semantic_profiles/v0.1/manifest.json",
+  "compiler": "scripts/sca01_compile_profiles.py",
+  "canonical_profiles_sha256": "018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b",
+  "next_round": {
+    "id": "SCA-02",
+    "execution_status": "READY",
+    "explicit_execution_authorized": false
+  },
+  "closure_required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35513261633,
+    "job_id": 106084790257,
+    "evidence_artifact_id": 10605668165,
+    "validated_commit": "4bbb283f2ea97ef85e36cf6a96e1c546d7623e96",
+    "conclusion": "success"
+  }
+}
