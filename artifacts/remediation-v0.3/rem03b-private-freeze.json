@@ -5,8 +5,18 @@
     "evaluation_read_only_after_gate": 13
   },
   "baseline_remote_main": "80ede07166e06e5dd36ea6fb673734a8e32ae49b",
+  "checkpoint_attempts": [
+    {
+      "conclusion": "failure",
+      "failure": "execution_plan_hash_bound_to_pretransfer_bytes",
+      "job_id": 106066633184,
+      "private_metrics_opened": false,
+      "run_id": 35506317896,
+      "validated_commit": "0ad03e17f5fe6a53f6d4e39aac353b016c13d1a6"
+    }
+  ],
   "checkpoint_required_ci": "PENDING",
-  "config_sha256": "cdeb703d65a8eb3ae9ed8a414d838d463276898a1e3ec13d214155dfcd3a9efb",
+  "config_sha256": "4d8cf57e335aabf4adc1a0642bf3d4ad8a0fcbeceb194f05a8f72fd36144f8be",
   "evaluator_sha256": "98baf7658b5eed639a89f9b4ecee2fb3d83eecaf1ee21b00632d25836244a1d2",
   "frozen_constants": {
     "candidate_limit": 96,
@@ -47,7 +57,13 @@
   },
   "matrix_count": 12,
   "matrix_sha256": "9f9a2f3ce2aaa878d154077d87b7f4157e2995040e667bb51b713d721ef88e19",
-  "plan_config_sha256": "a941c40da6cad6df94ed321ea42431830e73ca537d6fc25faf3b415dc187aad6",
+  "plan_config_sha256": "df0494294372e698bbda835bfe419763426598024e8e72211b63e3a932c7c70b",
+  "plan_hash_reconciliation": {
+    "actual_remote_blob_sha256": "df0494294372e698bbda835bfe419763426598024e8e72211b63e3a932c7c70b",
+    "cause": "terminal_newline_difference_between_pretransfer_local_file_and_atomic_remote_blob",
+    "historical_receipt_pretransfer_sha256": "a941c40da6cad6df94ed321ea42431830e73ca537d6fc25faf3b415dc187aad6",
+    "semantic_change": false
+  },
   "private_artifact_reads_before_freeze": 0,
   "private_metrics_opened": false,
   "round": "REM-03B",
