@@ -1,0 +1,39 @@
+{
+  "package_id": "PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1",
+  "round": "SCA-02",
+  "execution_status": "COMPLETE",
+  "capability_verdict": "PASS",
+  "profile_bundle_sha256": "018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b",
+  "graph_path": "contrastive_graph/v0.1/graph.json",
+  "graph_node_count": 144,
+  "graph_edge_count": 504,
+  "min_node_degree": 7,
+  "max_node_degree": 7,
+  "synthetic_suite_manifest": "synthetic_contrastive/v0.1/manifest.json",
+  "positive_case_count": 288,
+  "hard_negative_case_count": 1008,
+  "total_case_count": 1296,
+  "synthetic_boundary_oracle_accuracy": 1,
+  "graph_sha256": "630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711",
+  "synthetic_suite_sha256": "f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7",
+  "formal_semantic_mutation_events": 0,
+  "formal_review_required_count": 0,
+  "formal_catalog_modified": false,
+  "private_artifact_reads": 0,
+  "next_round": {
+    "id": "SCA-03",
+    "execution_status": "READY",
+    "explicit_execution_authorized": false,
+    "fresh_private_artifact_authorization_required": true,
+    "calibration_read_budget": 80
+  },
+  "closure_required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35514912032,
+    "job_id": 106089101681,
+    "evidence_artifact_id": 10607085159,
+    "validated_commit": "670eab1de2c8dd797ed2aeb9ea2bee145bf36d07",
+    "conclusion": "success"
+  }
+}

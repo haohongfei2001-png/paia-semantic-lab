@@ -1,7 +1,7 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_02_COMPLETE_PENDING_CI
+phase: SCA_03_READY
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
@@ -81,13 +81,19 @@ rounds:
     hard_negative_case_count: 1008
     total_case_count: 1296
     validator: scripts/sca02_validate_contrastive.py
-    closure_required_ci: PENDING
+    graph_sha256: 630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711
+    synthetic_suite_sha256: f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7
+    synthetic_boundary_oracle_accuracy: 1.0
+    closure_validation_run_id: 35514912032
+    closure_validation_job_id: 106089101681
+    closure_evidence_artifact_id: 10607085159
+    closure_validated_commit: 670eab1de2c8dd797ed2aeb9ea2bee145bf36d07
+    closure_required_ci: PASS
   SCA-03:
     title: Family-grouped personal calibration grounding
-    execution_status: BLOCKED
+    execution_status: READY
     capability_verdict: UNTESTED
     depends_on: SCA-02
-    blocked_by: SCA_02_CLOSURE_CI_PENDING
     explicit_execution_authorized: false
     fresh_private_artifact_authorization_required: true
     calibration_read_budget: 80
@@ -107,5 +113,5 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "SCA-02 built the complete sibling-contrast graph and 1296-case public/synthetic validation suite and is COMPLETE/PASS pending exact-head CI. SCA-03 remains BLOCKED and private calibration remains unread until SCA-02 validation passes."
+next_action: "SCA-02 is COMPLETE/PASS and CI-validated. SCA-03 is READY but NOT_AUTHORIZED and requires a fresh explicit user authorization before reading the existing 80 legacy calibration judgments. Freeze the SCA-03 profile/graph/retrieval plan before private metrics. The 13-case legacy evaluation remains closed unless SCA-03 calibration passes."
 product_owner_blockers: []

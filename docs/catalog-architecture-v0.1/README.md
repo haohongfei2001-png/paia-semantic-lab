@@ -23,4 +23,4 @@ The v0.3 remediation package remains historical evidence and REM-04 remains bloc
 
 ## Current round
 
-SCA-01 is COMPLETE/PASS. SCA-02 has built a complete 504-edge sibling-contrast graph and a 1296-case bilingual synthetic suite; its closure candidate is awaiting exact-head CI. SCA-03 remains blocked and private calibration is still unread.
+SCA-01 and SCA-02 are COMPLETE/PASS. The 504-edge sibling-contrast graph and 1296-case bilingual synthetic suite are CI-validated. SCA-03 is READY but not authorized and requires fresh explicit read-only authorization before using the 80 legacy calibration judgments.

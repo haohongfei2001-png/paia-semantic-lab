@@ -43,3 +43,27 @@ The validator must prove:
 - private artifact reads = 0.
 
 SCA-03 remains blocked until SCA-02 exact-head CI passes.
+
+## Validation result
+
+The exact-head graph/schema/suite validator passed.
+
+- graph nodes: 144;
+- sibling-contrast edges: 504;
+- every Topic degree: 7;
+- every Domain edge count: 28;
+- positive synthetic cases: 288;
+- directional hard negatives: 1008;
+- total synthetic cases: 1296;
+- synthetic boundary-oracle consistency: 1.0;
+- formal semantic mutation events: 0;
+- formal review required count: 0;
+- private artifact reads: 0;
+- graph SHA-256: 630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711;
+- synthetic suite SHA-256: f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7;
+- Semantic Lab CI run: 35514912032;
+- job: 106089101681;
+- evidence artifact: 10607085159;
+- validated commit: 670eab1de2c8dd797ed2aeb9ea2bee145bf36d07.
+
+SCA-02 is COMPLETE/PASS. SCA-03 is READY / NOT_AUTHORIZED and still requires fresh explicit authorization before any calibration read.
