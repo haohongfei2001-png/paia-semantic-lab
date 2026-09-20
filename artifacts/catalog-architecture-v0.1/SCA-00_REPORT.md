@@ -39,3 +39,11 @@ The 35 consumed SEM-07 lockbox cases remain forbidden for tuning/promotion.
 After exact-head package-freeze CI PASS, SCA-01 may become READY / NOT_AUTHORIZED.
 
 SCA-01 will generate the full 144-profile derived semantic bundle using public/formal information only.
+
+## Closure CI
+
+SCA-00 freeze candidate f4ed999ac89df46e821bb1086c5990b25f1fc5fc passed Semantic Lab CI run 35511810914, job 106080901966, evidence artifact 10606092150.
+
+Unit tests, SEM-00 through SEM-07, REM-01/02/03/03A/03B validation, the SCA-v0.1 package validation and evidence upload all passed.
+
+SCA-01 is therefore READY / NOT_AUTHORIZED.

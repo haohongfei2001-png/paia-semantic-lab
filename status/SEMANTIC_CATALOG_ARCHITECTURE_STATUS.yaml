@@ -1,12 +1,16 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_00_COMPLETE_PENDING_CI
+phase: SCA_01_READY
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
 catalog_version: 0.2.0
-package_freeze_required_ci: PENDING
+package_freeze_validation_run_id: 35511810914
+package_freeze_validation_job_id: 106080901966
+package_freeze_evidence_artifact_id: 10606092150
+package_freeze_validated_commit: f4ed999ac89df46e821bb1086c5990b25f1fc5fc
+package_freeze_required_ci: PASS
 formal_catalog_modified: false
 private_artifact_reads: 0
 real_archive_read: false
@@ -28,12 +32,16 @@ rounds:
     audit_artifact: artifacts/catalog-architecture-v0.1/SCA-00_AUDIT.json
     report: artifacts/catalog-architecture-v0.1/SCA-00_REPORT.md
     schema: schemas/topic_semantic_profile_v0.1.schema.json
+    closure_validation_run_id: 35511810914
+    closure_validation_job_id: 106080901966
+    closure_evidence_artifact_id: 10606092150
+    closure_validated_commit: f4ed999ac89df46e821bb1086c5990b25f1fc5fc
+    closure_required_ci: PASS
   SCA-01:
     title: Full derived semantic-profile generation
-    execution_status: BLOCKED
+    execution_status: READY
     capability_verdict: UNTESTED
     depends_on: SCA-00
-    blocked_by: SCA_PACKAGE_FREEZE_CI_PENDING
     explicit_execution_authorized: false
     private_artifact_reads: 0
   SCA-02:
@@ -65,5 +73,5 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "Validate the SCA-00 bootstrap/package freeze on exact-head CI. After CI PASS, make SCA-01 READY but NOT_AUTHORIZED. Do not read private artifacts or modify the formal catalog."
+next_action: "SCA-00 is COMPLETE/PASS and the package freeze is CI-validated. SCA-01 is READY but NOT_AUTHORIZED. The next round may generate 144 Derived Semantic Profiles using public/formal information only; do not read private artifacts or modify the formal catalog."
 product_owner_blockers: []
