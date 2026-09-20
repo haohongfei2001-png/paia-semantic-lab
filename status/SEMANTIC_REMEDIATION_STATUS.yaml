@@ -298,13 +298,17 @@ rounds:
     evaluation_records_read: 0
     evaluation_opened: false
     lockbox_label_records_read: 0
-    checkpoint_required_ci: PENDING
+    checkpoint_required_ci: PASS
     freeze_targeted_tests: 31/31 PASS
     freeze_local_tests: 141/141 PASS
     freeze_local_test_seconds: 349.653
     checkpoint_failed_run_id: 35506317896
     checkpoint_failed_job_id: 106066633184
     checkpoint_failure: PLAN_CONFIG_PRETRANSFER_HASH_NEWLINE_MISMATCH
+    checkpoint_validation_run_id: 35506645217
+    checkpoint_validation_job_id: 106067478033
+    checkpoint_evidence_artifact_id: 10603832013
+    checkpoint_validated_commit: 6e33633dbc4cec976e2514062984375c6d7a49c3
   REM-04:
     title: Router remediation and pre-lockbox freeze
     execution_status: BLOCKED
@@ -327,11 +331,10 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: REM-03B is IN_PROGRESS with its 12-config structured Domain-backoff execution
-  matrix frozen before private evidence. Validate the exact implementation/config
-  freeze through local regression and exact-head CI before reading the authorized
-  80-case calibration. The 13-case legacy evaluation remains closed unless calibration
-  passes all candidate gates. REM-04 remains BLOCKED.
+next_action: REM-03B execution freeze has passed exact-head CI and remains IN_PROGRESS.
+  Before opening the authorized 80-case calibration, validate this metadata-only checkpoint
+  state on exact-head CI once more. The 13-case evaluation remains closed unless calibration
+  passes all candidate gates.
 product_owner_blockers: []
 prior_plan_amendments:
   REM-03A_CALIBRATION_PROTOTYPE:
