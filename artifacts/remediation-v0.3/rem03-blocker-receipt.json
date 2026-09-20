@@ -62,5 +62,20 @@
     "required_action": "Fresh REM-03-specific authorization for read-only reuse of existing legacy private calibration/promotion artifacts.",
     "consumed_sem07_lockbox_use": "FORBIDDEN_FOR_TUNING_OR_PROMOTION"
   },
-  "checkpoint_required_ci": "PENDING"
+  "local_validation": {
+    "targeted_tests": "15/15 PASS",
+    "full_repository_tests": "100/100 PASS",
+    "full_repository_seconds": 545.692,
+    "privacy_scan": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "checkpoint_required_ci": {
+    "status": "PASS",
+    "workflow": "Semantic Lab CI",
+    "run_id": 35486432088,
+    "job_id": 106013561070,
+    "evidence_artifact_id": 10598445239,
+    "validated_commit": "c3108c77080f0053d1e2582f7b3e8654ce569c43",
+    "conclusion": "success"
+  }
 }

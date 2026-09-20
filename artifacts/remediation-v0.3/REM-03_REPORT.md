@@ -90,6 +90,14 @@ These private promotion gates were **not run** in this execution because existin
 - final public validation SHA-256: `82bf17e072179941605c27bccfbe54971dddf8908306754f7b5e9a0ee6f1b2cb`
 - deterministic result digest: `02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e`
 
+## Validation
+
+- REM-03 targeted + package-state tests: **15/15 PASS**.
+- Full repository regression: **100/100 PASS** in **545.692 s**.
+- Privacy scan: **PASS**.
+- `git diff --check`: **PASS**.
+- Checkpoint commit `c3108c77080f0053d1e2582f7b3e8654ce569c43` passed `Semantic Lab CI`: run `35486432088`, job `106013561070`, evidence artifact `10598445239` — **PASS**.
+
 ## Blocker
 
 To resume REM-03 and decide PASS vs FAIL, a new explicit authorization is required for read-only reuse of existing private legacy promotion evidence in this round. Development/config selection must use the legacy calibration set; any legacy-evaluation use must be bounded and frozen before read. The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion.

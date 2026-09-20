@@ -156,8 +156,14 @@ rounds:
     production_paia_writes: 0
     consumed_lockbox_tuning_events: 0
     new_owner_labels: 0
-    targeted_tests: "11/11 PASS"
-    checkpoint_required_ci: PENDING
+    targeted_tests: "15/15 PASS"
+    local_tests: "100/100 PASS"
+    local_test_seconds: 545.692
+    checkpoint_validation_run_id: 35486432088
+    checkpoint_validation_job_id: 106013561070
+    checkpoint_evidence_artifact_id: 10598445239
+    validated_main_commit: "c3108c77080f0053d1e2582f7b3e8654ce569c43"
+    checkpoint_required_ci: PASS
   REM-04:
     title: "Router remediation and pre-lockbox freeze"
     execution_status: NOT_STARTED
