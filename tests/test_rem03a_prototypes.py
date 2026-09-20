@@ -1,8 +1,7 @@
 from __future__ import annotations
 
+import importlib.util
 import unittest
-
-import numpy as np
 
 from semantic_lab.rem03a import (
     config_matrix,
@@ -54,7 +53,13 @@ class Rem03APrototypeTests(unittest.TestCase):
             1,
         )
 
+    @unittest.skipUnless(
+        importlib.util.find_spec("numpy"),
+        "numpy is available only in the REM-03A private runtime",
+    )
     def test_prototype_strategies_rank_supported_topics(self) -> None:
+        import numpy as np
+
         train_vectors = np.asarray(
             [[1.0, 0.0], [0.9, 0.1], [0.0, 1.0]],
             dtype="float32",
