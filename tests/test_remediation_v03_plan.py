@@ -76,25 +76,26 @@ class RemediationV03PlanTests(unittest.TestCase):
         self.assertTrue(box["model_identity_blinded"])
         self.assertEqual(96, box["target_cases"])
 
-    def test_rem03a_amendment_preserves_failed_rem03_and_blocks_router(self):
-        self.assertEqual("REM-03A_CALIBRATION_PROTOTYPE", self.status["plan_amendment"])
+    def test_failed_candidate_history_is_preserved_before_rem03b(self):
+        self.assertEqual("REM-03B_STRUCTURED_DOMAIN_BACKOFF", self.status["plan_amendment"])
         self.assertEqual("FROZEN_PLAN_ONLY", self.status["plan_amendment_status"])
         rem03 = self.status["rounds"]["REM-03"]
         self.assertEqual("COMPLETE", rem03["execution_status"])
         self.assertEqual("FAIL", rem03["capability_verdict"])
         rem03a = self.status["rounds"]["REM-03A"]
-        self.assertIn(rem03a["execution_status"], {"READY", "IN_PROGRESS", "COMPLETE"})
-        if rem03a["execution_status"] == "READY":
-            self.assertEqual("REM_03A_READY", self.status["phase"])
-            self.assertFalse(rem03a["explicit_execution_authorized"])
-            self.assertEqual("requires_fresh_explicit_round_authorization", rem03a["existing_private_artifacts_read"])
-        else:
-            self.assertTrue(rem03a["explicit_execution_authorized"])
-            self.assertNotEqual("requires_fresh_explicit_round_authorization", rem03a["existing_private_artifacts_read"])
+        self.assertEqual("COMPLETE", rem03a["execution_status"])
+        self.assertEqual("FAIL", rem03a["capability_verdict"])
+        self.assertEqual(0, rem03a["evaluation_records_read"])
+        self.assertFalse(rem03a["evaluation_opened"])
+        prior = self.status["prior_plan_amendments"]["REM-03A_CALIBRATION_PROTOTYPE"]
+        self.assertEqual("PASS", prior["required_ci"])
+        rem03b = self.status["rounds"]["REM-03B"]
+        self.assertIn(rem03b["execution_status"], {"BLOCKED", "READY"})
+        self.assertFalse(rem03b["explicit_execution_authorized"])
         rem04 = self.status["rounds"]["REM-04"]
         self.assertEqual("BLOCKED", rem04["execution_status"])
-        self.assertEqual("REM-03A", rem04["depends_on"])
-        self.assertEqual("REM_03A_CANDIDATE_PROMOTION_PASS", rem04["prerequisite"])
+        self.assertEqual("REM-03B", rem04["depends_on"])
+        self.assertEqual("REM_03B_CANDIDATE_PROMOTION_PASS", rem04["prerequisite"])
 
     def test_rem03a_amendment_keeps_candidate_gates_and_bounded_surface(self):
         rem03a = self.status["rounds"]["REM-03A"]

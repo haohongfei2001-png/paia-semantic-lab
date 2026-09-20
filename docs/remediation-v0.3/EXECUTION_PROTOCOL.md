@@ -79,7 +79,7 @@ An amendment:
 - does not itself authorize execution of the new round;
 - must preserve all historical round evidence rather than rewriting a failed round into PASS.
 
-REM-03A is such an amendment. It preserves REM-03 COMPLETE/FAIL as historical evidence and adds a new candidate-remediation prerequisite before REM-04.
+REM-03A and REM-03B are such amendments. REM-03A preserves REM-03 COMPLETE/FAIL; REM-03B preserves both failed predecessor rounds and adds a structured Domain-backoff candidate-remediation prerequisite before REM-04. Each amendment must be independently frozen and CI-validated before its new round is READY.
 
 ## Failure handling
 

@@ -1,0 +1,84 @@
+version: "0.1.0"
+round: "REM-03B"
+benchmark_version: "rem03b-structured-domain-backoff-0.1"
+status: FROZEN_PLAN_ONLY
+
+baseline:
+  rem03a_result_digest: "361b7f101d9f4552d539bd218b2bb454034d09209e2f17d22fda1f5191fe37b8"
+  best_rem03a_recall_at_10: 0.7435416666666667
+  best_rem03a_recall_at_20: 0.8568749999999999
+  model_id: "BAAI/bge-m3"
+  revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+
+catalog_audit:
+  system_topics: 144
+  domains: 18
+  topics_per_domain: 8
+  definition_templates_after_topic_mask: 1
+  inclusion_templates_after_topic_mask: 1
+  representative_example_templates_after_topic_mask: 1
+  exclusion_templates_after_topic_mask: 2
+  confusing_neighbor_edges: 0
+  zh_aliases_per_topic: 1
+  en_aliases_per_topic: 1
+
+development:
+  family_grouped: true
+  fold_count: 5
+  query_variants: [current_only, allowed_context]
+  domain_evidence: [exemplar_vote, centroid, hybrid]
+  anchor_modes: [names_aliases, names_aliases_plus_domain_path]
+  maximum_matrix_size: 12
+candidate_policy:
+  exact_alias_priority: true
+  domain_ids_assignable: false
+  top_domain_full_lane_enabled: true
+  top_domain_topic_count: 8
+  top_domain_must_fit_within_top_10: true
+  second_domain_full_lane_enabled: true
+  second_domain_must_fit_within_top_20: true
+  zero_prototype_topics_remain_eligible: true
+  common_template_text_suppressed: true
+  generated_synonyms: DENY
+  generated_examples: DENY
+  catalog_edits: DENY
+  automatic_topic_creation: false
+
+promotion_gate:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  critical_slice_same_thresholds: true
+  held_out_family_leakage_events_max: 0
+  full_catalog_eligibility_required: true
+  activity_top20_invariance_required: true
+  custom_topic_safety_required: true
+
+evaluation:
+  read_condition: CALIBRATION_GATE_PASS
+  max_reads: 1
+  no_reselection_after_read: true
+  no_threshold_change_after_read: true
+authorization:
+  execution_authorized: false
+  private_artifact_access: REQUIRES_FRESH_EXPLICIT_AUTHORIZATION
+  legacy_calibration_read_only: 80
+  legacy_evaluation_read_only_after_gate: 13
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  production_paia_write: DENY
+
+failure_escalation:
+  if_rem03b_fails: CATALOG_SEMANTIC_INFORMATION_DEFICIENCY_REVIEW
+  formal_catalog_enrichment_requires_separate_package: true
+
+public_output_policy:
+  aggregates_only: true
+  raw_input_text: FORBIDDEN
+  input_ref: FORBIDDEN
+  family_ref: FORBIDDEN
+  calibration_id: FORBIDDEN
+  per_case_truth_topics: FORBIDDEN
+  private_vectors: FORBIDDEN

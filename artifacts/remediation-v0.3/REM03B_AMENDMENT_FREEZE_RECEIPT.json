@@ -1,0 +1,87 @@
+{
+  "amendment_id": "REM-03B_STRUCTURED_DOMAIN_BACKOFF",
+  "status": "FROZEN_PLAN_ONLY",
+  "baseline_remote_main": "2fcb5825bea7b79bf2f02c9cced80ddbe7883c87",
+  "trigger": {
+    "round": "REM-03A",
+    "execution_status": "COMPLETE",
+    "capability_verdict": "FAIL",
+    "best_recall_at_10": 0.7435416666666667,
+    "best_recall_at_20": 0.8568749999999999,
+    "evaluation_opened": false
+  },
+  "catalog_audit": {
+    "system_topics": 144,
+    "domains": 18,
+    "topics_per_domain": 8,
+    "definition_templates_after_topic_mask": 1,
+    "inclusion_templates_after_topic_mask": 1,
+    "representative_example_templates_after_topic_mask": 1,
+    "exclusion_templates_after_topic_mask": 2,
+    "confusing_neighbor_edges": 0,
+    "zh_aliases_per_topic": 1,
+    "en_aliases_per_topic": 1
+  },
+  "new_round": {
+    "id": "REM-03B",
+    "execution_status": "BLOCKED",
+    "blocked_by": "REM_03B_AMENDMENT_CI_PENDING",
+    "explicit_execution_authorized": false,
+    "private_artifact_access": "REQUIRES_FRESH_EXPLICIT_AUTHORIZATION"
+  },
+  "bounded_surface": {
+    "query_variants": [
+      "current_only",
+      "allowed_context"
+    ],
+    "domain_evidence": [
+      "exemplar_vote",
+      "centroid",
+      "hybrid"
+    ],
+    "anchor_modes": [
+      "names_aliases",
+      "names_aliases_plus_domain_path"
+    ],
+    "maximum_matrix_size": 12,
+    "top_domain_topic_count": 8
+  },
+  "gates": {
+    "candidate_recall_at_10_min": 0.96,
+    "candidate_recall_at_20_min": 0.99,
+    "critical_slice_same_thresholds": true,
+    "held_out_family_leakage_events_max": 0
+  },
+  "guards": {
+    "generated_synonyms": "DENY",
+    "generated_examples": "DENY",
+    "catalog_edits": "DENY",
+    "new_owner_labels": 0,
+    "model_training": "DENY",
+    "production_paia_write": "DENY",
+    "real_input_api_egress": "DENY",
+    "live_archive_read": "DENY",
+    "consumed_sem07_lockbox_tuning_or_promotion": "DENY"
+  },
+  "private_artifact_reads": 0,
+  "implementation_code_changes": 0,
+  "local_validation": {
+    "rem03b_targeted_tests": "7/7 PASS",
+    "plan_targeted_tests": "14/14 PASS",
+    "full_repository_tests": "124/124 PASS",
+    "full_repository_seconds": 267.6,
+    "yaml_json_parse": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "required_ci": "PENDING",
+  "source_hashes": {
+    "amendment": "d31b07f07061232750469aa2c70c1b072479c35e6822cba9913cdeffc9e8e30b",
+    "round": "a20caab93075eb9113d3e75cafc048ade3d8ae5198d6deb7cd787cfdc28027fc",
+    "development_plan": "c816a5554cc8288f768b6539498fd67c19ab071c21a255d9c9b94d8bfa4c9968",
+    "execution_protocol": "677f4171f5cc71cbbaabe52f50ca3990e61bb24f6c00f47a3cfb9f5b0fc90cfc",
+    "verification": "e169b2a576a837a47da3864ac61608b40ea8af9824f710d6338c97c7627d17fa",
+    "structured_config": "a941c40da6cad6df94ed321ea42431830e73ca537d6fc25faf3b415dc187aad6",
+    "plan_test": "8b622e8303fccdde968485df0c40f8601fc6374ee803737ae4fd9c96bd656b37",
+    "workflow": "75ad7ad1428170295145ce0855da81d72db406f71e69782fb921d756745d1cf5"
+  }
+}

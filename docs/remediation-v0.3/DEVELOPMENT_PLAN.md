@@ -82,9 +82,21 @@ Only after calibration PASS may one frozen configuration rebuild prototypes from
 
 The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion.
 
+## REM-03B — Structured Domain-backoff candidate remediation amendment
+
+Runs only because REM-03A closed COMPLETE/FAIL without meeting the original candidate gates.
+
+REM-03B suppresses non-discriminative catalog boilerplate and uses only existing catalog facts as retrieval anchors: names/aliases, domain-name + Topic-name paths, and residual formal-field text only when it survives a corpus-level discriminativeness audit.
+
+Calibration evidence may derive Domain exemplar votes, Domain centroids, or one deterministic hybrid under family-grouped leakage isolation. Because every current system Domain contains exactly 8 Topics, a top Domain may provide complete Topic coverage within top-10, and a second Domain may provide complete coverage within top-20. This is a bounded recall backoff for zero-prototype Topics; Domain IDs are never assignment targets.
+
+The development matrix is capped at 12 pre-frozen configurations. No generated synonym, invented representative example, formal catalog edit, model training, learned reranker or post-result matrix expansion is allowed.
+
+If no frozen configuration reaches Candidate Recall@10 >= 0.96 and Recall@20 >= 0.99 on calibration with all critical slices passing, REM-03B closes COMPLETE/FAIL and the 13-case legacy evaluation remains unopened. A failure after Domain recovery escalates to catalog semantic-information review rather than another retrieval-weight search.
+
 ## REM-04 — Router remediation and pre-lockbox freeze
 
-Runs only with the frozen candidate configuration from REM-03.
+Runs only after the latest candidate-remediation prerequisite (currently REM-03B) has a frozen candidate configuration that passed promotion.
 
 May change non-trained Router scoring, evidence aggregation, calibration use and abstention logic. Development uses legacy calibration; legacy evaluation is bounded promotion evidence.
 

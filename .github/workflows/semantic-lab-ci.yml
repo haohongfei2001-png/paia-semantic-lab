@@ -44,6 +44,8 @@ jobs:
         run: python -m semantic_lab.benchmark --round REM-03 --lab-commit "$GITHUB_SHA" --output artifacts/ci/rem03-run.json
       - name: REM-03A plan amendment validation
         run: python -m unittest tests.test_remediation_v03_plan -v
+      - name: REM-03B plan amendment validation
+        run: python -m unittest tests.test_rem03b_plan -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:

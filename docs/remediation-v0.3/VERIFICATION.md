@@ -70,9 +70,32 @@ Only after calibration PASS may the frozen configuration be evaluated once on le
 
 Prototype vectors, exemplar embeddings and raw private identifiers remain outside Git.
 
+## REM-03B structured candidate promotion gate
+
+REM-03B preserves the same candidate thresholds and adds structural Domain-backoff checks.
+
+Required before REM-04 may become READY:
+- family-grouped Candidate Recall@10 >= 0.96;
+- family-grouped Candidate Recall@20 >= 0.99;
+- no measurable critical slice fails those same thresholds;
+- held-out-family Domain/prototype leakage events = 0;
+- the top-Domain 8-Topic lane fits inside top-10 by construction;
+- the second-Domain lane fits inside top-20 by construction;
+- Domain IDs are never assignment targets;
+- Topics with zero direct calibration prototypes remain eligible;
+- common catalog boilerplate is excluded from discriminative anchors;
+- full-catalog eligibility and activity-state top-20 invariance remain PASS;
+- custom Topic safety remains PASS;
+- automatic Topic creation = 0;
+- consumed-lockbox tuning/promotion events = 0.
+
+Only after calibration PASS may the frozen configuration consume the 13-case legacy evaluation set once. The same 0.96 / 0.99 thresholds apply and post-evaluation reselection is forbidden.
+
+If REM-03B fails after Domain recovery, the next action is catalog semantic-information deficiency review, not additional retrieval-weight search.
+
 ## REM-04 Router promotion gate
 
-With the REM-03 candidate configuration frozen:
+With the promoted REM-03B candidate configuration frozen:
 - macro-F1 >= 0.80 where estimable;
 - accepted precision >= 0.95;
 - accepted coverage >= 0.60;
