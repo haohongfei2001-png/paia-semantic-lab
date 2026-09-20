@@ -1,7 +1,14 @@
 package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
 package_version: "0.3.0"
 plan_status: FROZEN
-phase: REM_03_COMPLETE_FAIL
+plan_amendment: REM-03A_CALIBRATION_PROTOTYPE
+plan_amendment_status: FROZEN_PLAN_ONLY
+plan_amendment_receipt: "artifacts/remediation-v0.3/REM03A_AMENDMENT_FREEZE_RECEIPT.json"
+plan_amendment_targeted_tests: "9/9 PASS"
+plan_amendment_local_tests: "108/108 PASS"
+plan_amendment_local_test_seconds: 381.771
+plan_amendment_required_ci: PENDING
+phase: REM_03A_READY
 baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
 architecture_baseline: "v0.2 semantic contract"
 production_paia_modified: false
@@ -185,13 +192,29 @@ rounds:
     closure_evidence_artifact_id: 10598518750
     validated_main_commit: "917853bd75af84d1f78586c027b281c573043587"
     closure_required_ci: PASS
+  REM-03A:
+    title: "Calibration-prototype candidate remediation"
+    execution_status: READY
+    capability_verdict: UNTESTED
+    depends_on: REM-03
+    amendment: REM-03A_CALIBRATION_PROTOTYPE
+    explicit_execution_authorized: false
+    existing_private_artifacts_read: requires_fresh_explicit_round_authorization
+    promotion_gate: ORIGINAL_CANDIDATE_THRESHOLDS
+    candidate_recall_at_10_min: 0.96
+    candidate_recall_at_20_min: 0.99
+    allowed_prototype_strategies: [exemplar_max, centroid, hybrid]
+    family_grouped_leakage_required_zero: true
+    legacy_evaluation_policy: BOUNDED_AFTER_CALIBRATION_PASS
+    consumed_sem07_lockbox_use: FORBIDDEN_FOR_TUNING_OR_PROMOTION
+    new_owner_labels: 0
   REM-04:
     title: "Router remediation and pre-lockbox freeze"
     execution_status: BLOCKED
     capability_verdict: UNTESTED
-    depends_on: REM-03
-    prerequisite: REM_03_CANDIDATE_PROMOTION_PASS
-    blocked_by: REM_03_CANDIDATE_PROMOTION_FAIL
+    depends_on: REM-03A
+    prerequisite: REM_03A_CANDIDATE_PROMOTION_PASS
+    blocked_by: REM_03A_NOT_COMPLETE
     new_owner_labels: 0
   REM-05:
     title: "New independent personal lockbox construction"
@@ -207,5 +230,5 @@ rounds:
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-03 is COMPLETE/FAIL: private calibration topic Recall@10=0.391875 and Recall@20=0.566875 fail the frozen 0.96/0.99 gates. The 13-case legacy evaluation set was not opened. REM-04 is BLOCKED and must not start. Further work requires a new or amended candidate-remediation design; do not lower the candidate gates."
+next_action: "REM-03A plan amendment is frozen and REM-03A is READY but NOT_AUTHORIZED. Do not start REM-03A until a new explicit user execution message authorizes the round and any intended read-only private-artifact reuse. REM-04 remains BLOCKED. Candidate gates remain Recall@10 >= 0.96 and Recall@20 >= 0.99."
 product_owner_blockers: []

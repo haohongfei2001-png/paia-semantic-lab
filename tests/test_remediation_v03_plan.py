@@ -76,6 +76,36 @@ class RemediationV03PlanTests(unittest.TestCase):
         self.assertTrue(box["model_identity_blinded"])
         self.assertEqual(96, box["target_cases"])
 
+    def test_rem03a_amendment_preserves_failed_rem03_and_blocks_router(self):
+        self.assertEqual("REM-03A_CALIBRATION_PROTOTYPE", self.status["plan_amendment"])
+        self.assertEqual("FROZEN_PLAN_ONLY", self.status["plan_amendment_status"])
+        self.assertEqual("REM_03A_READY", self.status["phase"])
+        rem03 = self.status["rounds"]["REM-03"]
+        self.assertEqual("COMPLETE", rem03["execution_status"])
+        self.assertEqual("FAIL", rem03["capability_verdict"])
+        rem03a = self.status["rounds"]["REM-03A"]
+        self.assertEqual("READY", rem03a["execution_status"])
+        self.assertEqual("UNTESTED", rem03a["capability_verdict"])
+        self.assertFalse(rem03a["explicit_execution_authorized"])
+        self.assertEqual("requires_fresh_explicit_round_authorization", rem03a["existing_private_artifacts_read"])
+        rem04 = self.status["rounds"]["REM-04"]
+        self.assertEqual("BLOCKED", rem04["execution_status"])
+        self.assertEqual("REM-03A", rem04["depends_on"])
+        self.assertEqual("REM_03A_CANDIDATE_PROMOTION_PASS", rem04["prerequisite"])
+
+    def test_rem03a_amendment_keeps_candidate_gates_and_bounded_surface(self):
+        rem03a = self.status["rounds"]["REM-03A"]
+        self.assertGreaterEqual(rem03a["candidate_recall_at_10_min"], 0.96)
+        self.assertGreaterEqual(rem03a["candidate_recall_at_20_min"], 0.99)
+        self.assertEqual(
+            {"exemplar_max", "centroid", "hybrid"},
+            set(rem03a["allowed_prototype_strategies"]),
+        )
+        self.assertTrue(rem03a["family_grouped_leakage_required_zero"])
+        self.assertEqual("BOUNDED_AFTER_CALIBRATION_PASS", rem03a["legacy_evaluation_policy"])
+        self.assertEqual("FORBIDDEN_FOR_TUNING_OR_PROMOTION", rem03a["consumed_sem07_lockbox_use"])
+        self.assertEqual(0, rem03a["new_owner_labels"])
+
 
 if __name__ == "__main__":
     unittest.main()

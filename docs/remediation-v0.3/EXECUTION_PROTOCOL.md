@@ -68,6 +68,19 @@ REM-00 may inspect them for root-cause attribution. Later rounds may cite the fr
 
 Any tool that accidentally uses these cases for threshold fitting, model ranking, promotion or certification is a blocking leakage defect.
 
+## Frozen-plan amendments
+
+A completed capability FAIL may be followed by a plan-only amendment when the existing package has no legal READY execution path.
+
+An amendment:
+- must preserve frozen product semantics and final gates unless the product owner explicitly authorizes a new architecture package;
+- may add a new remediation round before a blocked dependent round;
+- must be committed and exact-head CI validated before the new round becomes canonical READY;
+- does not itself authorize execution of the new round;
+- must preserve all historical round evidence rather than rewriting a failed round into PASS.
+
+REM-03A is such an amendment. It preserves REM-03 COMPLETE/FAIL as historical evidence and adds a new candidate-remediation prerequisite before REM-04.
+
 ## Failure handling
 
 Do not lower assertions, gates, timeout, privacy checks or sample-isolation rules to obtain green CI.

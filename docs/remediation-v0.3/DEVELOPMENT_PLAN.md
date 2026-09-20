@@ -68,6 +68,20 @@ Before REM-04 can become READY, at least one frozen candidate configuration must
 
 If no candidate configuration clears that promotion gate, REM-03 closes with capability FAIL and REM-04 remains BLOCKED. Do not spend Router work on an unresolved candidate bottleneck.
 
+## REM-03A — Calibration-prototype candidate remediation amendment
+
+Runs only because REM-03 closed COMPLETE/FAIL without meeting the frozen candidate gates.
+
+Adds one bounded, non-trained candidate evidence source: reusable calibration exemplar/prototype retrieval. Existing catalog/alias/domain candidate lanes remain available and full-catalog eligibility remains invariant.
+
+Development uses legacy calibration through family-grouped folds with strict leakage isolation: held-out families contribute zero exemplars/prototypes to their own fold. Allowed prototype aggregation is bounded to exemplar-max, centroid and one deterministic hybrid.
+
+If no frozen configuration reaches Candidate Recall@10 >= 0.96 and Recall@20 >= 0.99 on family-grouped calibration without critical-slice failure, REM-03A closes capability FAIL and REM-04 remains BLOCKED.
+
+Only after calibration PASS may one frozen configuration rebuild prototypes from all 80 calibration judgments and consume the 13-case legacy evaluation set once. The same .96/.99 gates apply. No post-evaluation reselection or threshold changes are permitted.
+
+The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion.
+
 ## REM-04 — Router remediation and pre-lockbox freeze
 
 Runs only with the frozen candidate configuration from REM-03.

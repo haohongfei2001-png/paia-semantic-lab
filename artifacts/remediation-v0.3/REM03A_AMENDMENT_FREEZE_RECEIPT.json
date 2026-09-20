@@ -1,0 +1,53 @@
+{
+  "amendment_id": "REM-03A_CALIBRATION_PROTOTYPE",
+  "status": "FROZEN_PLAN_ONLY",
+  "baseline_remote_main": "a76f49c6524801082e6a3ddb687632ef4aa19207",
+  "trigger": {
+    "round": "REM-03",
+    "execution_status": "COMPLETE",
+    "capability_verdict": "FAIL",
+    "recall_at_10": 0.391875,
+    "recall_at_20": 0.566875
+  },
+  "new_round": {
+    "id": "REM-03A",
+    "execution_status": "READY",
+    "explicit_execution_authorized": false,
+    "private_artifact_access": "REQUIRES_FRESH_EXPLICIT_AUTHORIZATION"
+  },
+  "gates": {
+    "candidate_recall_at_10_min": 0.96,
+    "candidate_recall_at_20_min": 0.99
+  },
+  "allowed_prototype_strategies": [
+    "exemplar_max",
+    "centroid",
+    "hybrid"
+  ],
+  "guards": {
+    "new_owner_labels": 0,
+    "model_training": "DENY",
+    "production_paia_write": "DENY",
+    "real_input_api_egress": "DENY",
+    "consumed_sem07_lockbox_tuning_or_promotion": "DENY"
+  },
+  "execution_authorized": false,
+  "private_artifact_reads": 0,
+  "implementation_code_changes": 0,
+  "local_validation": {
+    "targeted_tests": "9/9 PASS",
+    "full_repository_tests": "108/108 PASS",
+    "full_repository_seconds": 381.771,
+    "yaml_json_parse": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "required_ci": "PENDING",
+  "source_hashes": {
+    "amendment": "8fd0b58c13aead39b7fac768aa67591dc131b7971597a71108cc48993a7cf477",
+    "round": "32bea85e41bba8d7491331ad41475ddb8a957b3df5560df5b50d282451b83793",
+    "development_plan": "7b63a4cb3ad795ef07b71b8dcea60451a90fd1359c96873ccf015ec32104f3aa",
+    "execution_protocol": "9832a3324447fadc609e62206d26acb8df6b488bab0e3024f79337cabbdcd3b5",
+    "verification": "499474129867ee164bde384786037a1eee69b784e7160e6727be7c352ecc4d10",
+    "package_config": "2915a04de5161bef649fa7f015e05b9c3d90e78c6699949834a059f9e1f37323"
+  }
+}

@@ -51,6 +51,25 @@ A candidate configuration may unlock REM-04 only if:
 
 If real inactive-profile evidence is unavailable, inactive Recall/gap remains INCONCLUSIVE for personal quality, but synthetic structural tests must still prove that inactive Topics are never excluded.
 
+## REM-03A amended candidate promotion gate
+
+REM-03A preserves the REM-03 candidate thresholds and adds prototype-specific leakage checks.
+
+Required before REM-04 may become READY:
+- family-grouped Candidate Recall@10 >= 0.96;
+- family-grouped Candidate Recall@20 >= 0.99;
+- no measurable critical slice fails those same thresholds;
+- held-out-family prototype/exemplar leakage events = 0;
+- full-catalog eligibility remains invariant;
+- activity-state top-20 invariance = PASS;
+- custom Topic safety lane = PASS;
+- automatic Topic creation = 0;
+- consumed-lockbox tuning/promotion events = 0.
+
+Only after calibration PASS may the frozen configuration be evaluated once on legacy evaluation. The bounded evaluation must also satisfy Recall@10 >= 0.96 and Recall@20 >= 0.99. A failed calibration must not consume evaluation.
+
+Prototype vectors, exemplar embeddings and raw private identifiers remain outside Git.
+
 ## REM-04 Router promotion gate
 
 With the REM-03 candidate configuration frozen:
