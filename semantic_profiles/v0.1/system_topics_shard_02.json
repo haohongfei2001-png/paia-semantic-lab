@@ -1,0 +1,1541 @@
+{
+  "bundle_version": "0.1.0",
+  "profile_schema": "schemas/topic_semantic_profile_v0.1.schema.json",
+  "formal_catalog_version": "0.2.0",
+  "domains": [
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "profile_count": 24,
+  "profiles": [
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.applications",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "投递与申请",
+        "en": "Applications"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "投递与申请：职位投递、申请表、简历提交、网申、材料准备和申请状态。",
+        "Applications: job applications, application forms, resume submission, materials and application status."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“投递与申请”，常见线索包括投递、网申、申请职位。",
+        "The user's primary goal concerns applications, with signals such as application, apply for job, resume submission."
+      ],
+      "exclusion_cues": [
+        "若“投递与申请”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Applications\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "投递与申请",
+          "投递",
+          "网申",
+          "申请职位",
+          "简历提交",
+          "申请状态"
+        ],
+        "en": [
+          "Applications",
+          "application",
+          "apply for job",
+          "resume submission",
+          "job application",
+          "application status"
+        ],
+        "mixed": [
+          "投递与申请 Applications",
+          "职业与工作 > 投递与申请",
+          "Career & Work > Applications"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理投递与申请相关的问题，重点是投递和网申，帮我梳理判断与下一步。",
+        "Help me with applications, especially application and apply for job."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.career_strategy",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "职业规划",
+        "en": "Career Strategy"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "职业规划：职业方向、行业岗位选择、长期职业路径、转型和职业定位。",
+        "Career Strategy: career direction, role and industry choice, long-term path, transitions and positioning."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“职业规划”，常见线索包括职业方向、转行、行业选择。",
+        "The user's primary goal concerns career strategy, with signals such as career strategy, career path, career direction."
+      ],
+      "exclusion_cues": [
+        "若“职业规划”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Career Strategy\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "职业规划",
+          "职业方向",
+          "转行",
+          "行业选择",
+          "职业定位"
+        ],
+        "en": [
+          "Career Strategy",
+          "career strategy",
+          "career path",
+          "career direction",
+          "career transition",
+          "positioning"
+        ],
+        "mixed": [
+          "职业规划 Career Strategy",
+          "职业与工作 > 职业规划",
+          "Career & Work > Career Strategy"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理职业规划相关的问题，重点是职业方向和转行，帮我梳理判断与下一步。",
+        "Help me with career strategy, especially career strategy and career path."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.compensation_benefits",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "薪酬福利",
+        "en": "Compensation & Benefits"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "薪酬福利：工资、奖金、薪酬结构、福利、五险一金、待遇和薪酬谈判。",
+        "Compensation & Benefits: salary, bonuses, compensation structure, benefits and employment remuneration."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“薪酬福利”，常见线索包括薪资、工资、奖金。",
+        "The user's primary goal concerns compensation & benefits, with signals such as compensation, salary, pay."
+      ],
+      "exclusion_cues": [
+        "若“薪酬福利”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Compensation & Benefits\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "薪酬福利",
+          "薪资",
+          "工资",
+          "奖金",
+          "福利",
+          "待遇"
+        ],
+        "en": [
+          "Compensation & Benefits",
+          "compensation",
+          "salary",
+          "pay",
+          "bonus",
+          "benefits"
+        ],
+        "mixed": [
+          "薪酬福利 Compensation & Benefits",
+          "职业与工作 > 薪酬福利",
+          "Career & Work > Compensation & Benefits"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理薪酬福利相关的问题，重点是薪资和工资，帮我梳理判断与下一步。",
+        "Help me with compensation & benefits, especially compensation and salary."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.interviews",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "面试",
+        "en": "Interviews"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "面试：面试流程、面试问题、面试准备、面试表现和面试反馈。",
+        "Interviews: interview process, interview questions, preparation, performance and feedback."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“面试”，常见线索包括面试题、面试准备、面试反馈。",
+        "The user's primary goal concerns interviews, with signals such as interview, interview prep, interview question."
+      ],
+      "exclusion_cues": [
+        "若“面试”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Interviews\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "面试",
+          "面试题",
+          "面试准备",
+          "面试反馈",
+          "终面"
+        ],
+        "en": [
+          "Interviews",
+          "interview",
+          "interview prep",
+          "interview question",
+          "interview feedback",
+          "final interview"
+        ],
+        "mixed": [
+          "面试 Interviews",
+          "职业与工作 > 面试",
+          "Career & Work > Interviews"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理面试相关的问题，重点是面试题和面试准备，帮我梳理判断与下一步。",
+        "Help me with interviews, especially interview and interview prep."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.job_search",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "求职",
+        "en": "Job Search"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "求职：寻找职位、筛选机会、求职渠道、招聘市场和职位发现。",
+        "Job Search: finding roles, job opportunities, recruiting channels and job-market discovery."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“求职”，常见线索包括找工作、职位、招聘。",
+        "The user's primary goal concerns job search, with signals such as job search, job opening, role."
+      ],
+      "exclusion_cues": [
+        "若“求职”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Job Search\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "求职",
+          "找工作",
+          "职位",
+          "招聘",
+          "岗位搜索"
+        ],
+        "en": [
+          "Job Search",
+          "job search",
+          "job opening",
+          "role",
+          "recruiting",
+          "career opportunity"
+        ],
+        "mixed": [
+          "求职 Job Search",
+          "职业与工作 > 求职",
+          "Career & Work > Job Search"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理求职相关的问题，重点是找工作和职位，帮我梳理判断与下一步。",
+        "Help me with job search, especially job search and job opening."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.networking_professional",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "职业人脉",
+        "en": "Professional Networking"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "职业人脉：职业人脉、行业联系人、内推、导师、社交拓展和职业关系维护。",
+        "Professional Networking: professional networking, referrals, mentors, industry contacts and relationship building."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“职业人脉”，常见线索包括内推、行业联系人、导师。",
+        "The user's primary goal concerns professional networking, with signals such as professional networking, referral, mentor."
+      ],
+      "exclusion_cues": [
+        "若“职业人脉”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Professional Networking\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "职业人脉",
+          "内推",
+          "行业联系人",
+          "导师",
+          "Networking"
+        ],
+        "en": [
+          "Professional Networking",
+          "professional networking",
+          "referral",
+          "mentor",
+          "industry contact",
+          "network"
+        ],
+        "mixed": [
+          "职业人脉 Professional Networking",
+          "职业与工作 > 职业人脉",
+          "Career & Work > Professional Networking"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理职业人脉相关的问题，重点是内推和行业联系人，帮我梳理判断与下一步。",
+        "Help me with professional networking, especially professional networking and referral."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.performance_growth",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "工作绩效与成长",
+        "en": "Performance & Growth"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "工作绩效与成长：工作绩效、晋升、能力成长、反馈、目标考核和职业发展。",
+        "Performance & Growth: performance, promotion, professional growth, feedback, objectives and advancement."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“工作绩效与成长”，常见线索包括绩效、晋升、职业成长。",
+        "The user's primary goal concerns performance & growth, with signals such as performance, promotion, professional growth."
+      ],
+      "exclusion_cues": [
+        "若“工作绩效与成长”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Performance & Growth\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "工作绩效与成长",
+          "绩效",
+          "晋升",
+          "职业成长",
+          "考核",
+          "工作表现"
+        ],
+        "en": [
+          "Performance & Growth",
+          "performance",
+          "promotion",
+          "professional growth",
+          "review",
+          "career advancement"
+        ],
+        "mixed": [
+          "工作绩效与成长 Performance & Growth",
+          "职业与工作 > 工作绩效与成长",
+          "Career & Work > Performance & Growth"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理工作绩效与成长相关的问题，重点是绩效和晋升，帮我梳理判断与下一步。",
+        "Help me with performance & growth, especially performance and promotion."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.career_work.workplace_daily",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "工作日常",
+        "en": "Workplace"
+      },
+      "domain": {
+        "id": "D05",
+        "name_zh": "职业与工作",
+        "name_en": "Career & Work"
+      },
+      "semantic_core": [
+        "工作日常：日常工作环境、同事、组织协作、职场关系、工作制度和职场问题。",
+        "Workplace: day-to-day workplace environment, colleagues, organizational collaboration and workplace issues."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“工作日常”，常见线索包括职场、同事、工作环境。",
+        "The user's primary goal concerns workplace, with signals such as workplace, colleague, office."
+      ],
+      "exclusion_cues": [
+        "若“工作日常”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Workplace\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "工作日常",
+          "职场",
+          "同事",
+          "工作环境",
+          "公司内部",
+          "职场关系"
+        ],
+        "en": [
+          "Workplace",
+          "workplace",
+          "colleague",
+          "office",
+          "work environment",
+          "workplace issue"
+        ],
+        "mixed": [
+          "工作日常 Workplace",
+          "职业与工作 > 工作日常",
+          "Career & Work > Workplace"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理工作日常相关的问题，重点是职场和同事，帮我梳理判断与下一步。",
+        "Help me with workplace, especially workplace and colleague."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.academic_admin",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "学业事务",
+        "en": "Academic Administration"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "学业事务：学校行政、注册、选课、学籍、奖助、毕业手续和教务流程。",
+        "Academic Administration: academic administration, enrollment, registration, student status, aid and graduation procedures."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“学业事务”，常见线索包括教务、学籍、选课。",
+        "The user's primary goal concerns academic administration, with signals such as academic administration, enrollment, registration."
+      ],
+      "exclusion_cues": [
+        "若“学业事务”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Academic Administration\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "学业事务",
+          "教务",
+          "学籍",
+          "选课",
+          "注册",
+          "毕业手续"
+        ],
+        "en": [
+          "Academic Administration",
+          "academic administration",
+          "enrollment",
+          "registration",
+          "student status",
+          "graduation procedure"
+        ],
+        "mixed": [
+          "学业事务 Academic Administration",
+          "教育与学习 > 学业事务",
+          "Education & Learning > Academic Administration"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理学业事务相关的问题，重点是教务和学籍，帮我梳理判断与下一步。",
+        "Help me with academic administration, especially academic administration and enrollment."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.academic_courses",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "课程学习",
+        "en": "Academic Courses"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "课程学习：学校课程、课堂学习、课程内容、作业、学分和课程安排。",
+        "Academic Courses: formal courses, classes, coursework, assignments, credits and course content."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“课程学习”，常见线索包括课程、上课、学分。",
+        "The user's primary goal concerns academic courses, with signals such as course, class, coursework."
+      ],
+      "exclusion_cues": [
+        "若“课程学习”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Academic Courses\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "课程学习",
+          "课程",
+          "上课",
+          "学分",
+          "作业",
+          "课程内容"
+        ],
+        "en": [
+          "Academic Courses",
+          "course",
+          "class",
+          "coursework",
+          "assignment",
+          "credit"
+        ],
+        "mixed": [
+          "课程学习 Academic Courses",
+          "教育与学习 > 课程学习",
+          "Education & Learning > Academic Courses"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理课程学习相关的问题，重点是课程和上课，帮我梳理判断与下一步。",
+        "Help me with academic courses, especially course and class."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.exams_assessments",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "考试与测评",
+        "en": "Exams & Assessments"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "考试与测评：考试、测验、测评、成绩、备考、考试规则和评估结果。",
+        "Exams & Assessments: exams, tests, assessments, grades, preparation and evaluation results."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“考试与测评”，常见线索包括考试、测验、测评。",
+        "The user's primary goal concerns exams & assessments, with signals such as exam, test, assessment."
+      ],
+      "exclusion_cues": [
+        "若“考试与测评”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Exams & Assessments\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "考试与测评",
+          "考试",
+          "测验",
+          "测评",
+          "成绩",
+          "备考"
+        ],
+        "en": [
+          "Exams & Assessments",
+          "exam",
+          "test",
+          "assessment",
+          "grade",
+          "exam prep"
+        ],
+        "mixed": [
+          "考试与测评 Exams & Assessments",
+          "教育与学习 > 考试与测评",
+          "Education & Learning > Exams & Assessments"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理考试与测评相关的问题，重点是考试和测验，帮我梳理判断与下一步。",
+        "Help me with exams & assessments, especially exam and test."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.language_learning",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "语言学习",
+        "en": "Language Learning"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "语言学习：语言学习、词汇、语法、听说读写、发音和语言能力提升。",
+        "Language Learning: language acquisition, vocabulary, grammar, listening, speaking, reading, writing and pronunciation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“语言学习”，常见线索包括英语学习、词汇、语法。",
+        "The user's primary goal concerns language learning, with signals such as language learning, vocabulary, grammar."
+      ],
+      "exclusion_cues": [
+        "若“语言学习”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Language Learning\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "语言学习",
+          "英语学习",
+          "词汇",
+          "语法",
+          "口语"
+        ],
+        "en": [
+          "Language Learning",
+          "language learning",
+          "vocabulary",
+          "grammar",
+          "speaking",
+          "pronunciation"
+        ],
+        "mixed": [
+          "语言学习 Language Learning",
+          "教育与学习 > 语言学习",
+          "Education & Learning > Language Learning"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理语言学习相关的问题，重点是英语学习和词汇，帮我梳理判断与下一步。",
+        "Help me with language learning, especially language learning and vocabulary."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.learning_methods",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "学习方法",
+        "en": "Learning Methods"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "学习方法：学习策略、记忆方法、复习方式、知识组织、学习效率和学习习惯。",
+        "Learning Methods: study strategies, memory methods, review techniques, knowledge organization and learning efficiency."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“学习方法”，常见线索包括记忆方法、复习、学习策略。",
+        "The user's primary goal concerns learning methods, with signals such as learning method, study strategy, memory technique."
+      ],
+      "exclusion_cues": [
+        "若“学习方法”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Learning Methods\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "学习方法",
+          "记忆方法",
+          "复习",
+          "学习策略",
+          "学习效率"
+        ],
+        "en": [
+          "Learning Methods",
+          "learning method",
+          "study strategy",
+          "memory technique",
+          "review method",
+          "learning efficiency"
+        ],
+        "mixed": [
+          "学习方法 Learning Methods",
+          "教育与学习 > 学习方法",
+          "Education & Learning > Learning Methods"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理学习方法相关的问题，重点是记忆方法和复习，帮我梳理判断与下一步。",
+        "Help me with learning methods, especially learning method and study strategy."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.reading_learning",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "阅读与自学",
+        "en": "Reading & Self-learning"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "阅读与自学：自主阅读、自学材料、书籍、教程、学习路径和个人知识获取。",
+        "Reading & Self-learning: independent reading, self-study resources, books, tutorials and self-directed learning paths."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“阅读与自学”，常见线索包括自学、阅读学习、教程。",
+        "The user's primary goal concerns reading & self-learning, with signals such as self learning, reading, tutorial."
+      ],
+      "exclusion_cues": [
+        "若“阅读与自学”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Reading & Self-learning\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "阅读与自学",
+          "自学",
+          "阅读学习",
+          "教程",
+          "教材",
+          "自主学习"
+        ],
+        "en": [
+          "Reading & Self-learning",
+          "self learning",
+          "reading",
+          "tutorial",
+          "study resource",
+          "independent study"
+        ],
+        "mixed": [
+          "阅读与自学 Reading & Self-learning",
+          "教育与学习 > 阅读与自学",
+          "Education & Learning > Reading & Self-learning"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理阅读与自学相关的问题，重点是自学和阅读学习，帮我梳理判断与下一步。",
+        "Help me with reading & self-learning, especially self learning and reading."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.skill_learning",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "技能学习",
+        "en": "Skill Learning"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "技能学习：非语言技能的学习、练习、掌握、训练计划和能力提升。",
+        "Skill Learning: learning and practicing practical or professional skills other than language study."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“技能学习”，常见线索包括练技能、掌握技能、训练。",
+        "The user's primary goal concerns skill learning, with signals such as skill learning, practice a skill, training."
+      ],
+      "exclusion_cues": [
+        "若“技能学习”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Skill Learning\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "技能学习",
+          "练技能",
+          "掌握技能",
+          "训练",
+          "能力提升"
+        ],
+        "en": [
+          "Skill Learning",
+          "skill learning",
+          "practice a skill",
+          "training",
+          "skill development",
+          "mastery"
+        ],
+        "mixed": [
+          "技能学习 Skill Learning",
+          "教育与学习 > 技能学习",
+          "Education & Learning > Skill Learning"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理技能学习相关的问题，重点是练技能和掌握技能，帮我梳理判断与下一步。",
+        "Help me with skill learning, especially skill learning and practice a skill."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.education_learning.thesis_research",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "学位论文与科研",
+        "en": "Thesis & Research"
+      },
+      "domain": {
+        "id": "D04",
+        "name_zh": "教育与学习",
+        "name_en": "Education & Learning"
+      },
+      "semantic_core": [
+        "学位论文与科研：论文、科研课题、研究问题、文献、方法、实验或理论研究推进。",
+        "Thesis & Research: thesis work, research questions, literature, methods, experiments and scholarly research."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“学位论文与科研”，常见线索包括论文、科研、课题。",
+        "The user's primary goal concerns thesis & research, with signals such as thesis, research, paper."
+      ],
+      "exclusion_cues": [
+        "若“学位论文与科研”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Thesis & Research\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "学位论文与科研",
+          "论文",
+          "科研",
+          "课题",
+          "文献",
+          "研究方法"
+        ],
+        "en": [
+          "Thesis & Research",
+          "thesis",
+          "research",
+          "paper",
+          "literature",
+          "methodology"
+        ],
+        "mixed": [
+          "学位论文与科研 Thesis & Research",
+          "教育与学习 > 学位论文与科研",
+          "Education & Learning > Thesis & Research"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理学位论文与科研相关的问题，重点是论文和科研，帮我梳理判断与下一步。",
+        "Help me with thesis & research, especially thesis and research."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.engineering_execution",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "工程实现",
+        "en": "Engineering Execution"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "工程实现：工程实施、开发推进、技术任务、代码交付和研发协作。",
+        "Engineering Execution: engineering implementation, development execution, technical tasks, code delivery and collaboration."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“工程实现”，常见线索包括研发执行、开发推进、工程实施。",
+        "The user's primary goal concerns engineering execution, with signals such as engineering execution, implementation, development task."
+      ],
+      "exclusion_cues": [
+        "若“工程实现”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Engineering Execution\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "工程实现",
+          "研发执行",
+          "开发推进",
+          "工程实施",
+          "代码交付",
+          "技术任务"
+        ],
+        "en": [
+          "Engineering Execution",
+          "engineering execution",
+          "implementation",
+          "development task",
+          "code delivery",
+          "engineering work"
+        ],
+        "mixed": [
+          "工程实现 Engineering Execution",
+          "项目与产品 > 工程实现",
+          "Projects & Products > Engineering Execution"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理工程实现相关的问题，重点是研发执行和开发推进，帮我梳理判断与下一步。",
+        "Help me with engineering execution, especially engineering execution and implementation."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.launch_operations",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "发布与运营",
+        "en": "Launch & Operations"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "发布与运营：上线、发布、部署后的运营、监控、反馈和持续运行。",
+        "Launch & Operations: launch, release, post-launch operations, monitoring and ongoing product operation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“发布与运营”，常见线索包括上线、发布、产品运营。",
+        "The user's primary goal concerns launch & operations, with signals such as launch, release, operations."
+      ],
+      "exclusion_cues": [
+        "若“发布与运营”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Launch & Operations\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "发布与运营",
+          "上线",
+          "发布",
+          "产品运营",
+          "上线后",
+          "运行监控"
+        ],
+        "en": [
+          "Launch & Operations",
+          "launch",
+          "release",
+          "operations",
+          "post-launch",
+          "monitoring"
+        ],
+        "mixed": [
+          "发布与运营 Launch & Operations",
+          "项目与产品 > 发布与运营",
+          "Projects & Products > Launch & Operations"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理发布与运营相关的问题，重点是上线和发布，帮我梳理判断与下一步。",
+        "Help me with launch & operations, especially launch and release."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.product_requirements",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "产品需求",
+        "en": "Product Requirements"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "产品需求：需求定义、功能范围、用户故事、验收标准和PRD。",
+        "Product Requirements: requirements definition, feature scope, user stories, acceptance criteria and PRDs."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“产品需求”，常见线索包括PRD、功能需求、用户故事。",
+        "The user's primary goal concerns product requirements, with signals such as product requirement, PRD, feature requirement."
+      ],
+      "exclusion_cues": [
+        "若“产品需求”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Product Requirements\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "产品需求",
+          "PRD",
+          "功能需求",
+          "用户故事",
+          "验收标准"
+        ],
+        "en": [
+          "Product Requirements",
+          "product requirement",
+          "PRD",
+          "feature requirement",
+          "user story",
+          "acceptance criteria"
+        ],
+        "mixed": [
+          "产品需求 Product Requirements",
+          "项目与产品 > 产品需求",
+          "Projects & Products > Product Requirements"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理产品需求相关的问题，重点是PRD和功能需求，帮我梳理判断与下一步。",
+        "Help me with product requirements, especially product requirement and PRD."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.product_strategy",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "产品策略",
+        "en": "Product Strategy"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "产品策略：产品定位、目标用户、价值主张、竞争策略和产品方向。",
+        "Product Strategy: product positioning, target users, value proposition, competitive strategy and product direction."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“产品策略”，常见线索包括产品战略、产品定位、目标用户。",
+        "The user's primary goal concerns product strategy, with signals such as product strategy, positioning, target user."
+      ],
+      "exclusion_cues": [
+        "若“产品策略”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Product Strategy\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "产品策略",
+          "产品战略",
+          "产品定位",
+          "目标用户",
+          "价值主张",
+          "产品方向"
+        ],
+        "en": [
+          "Product Strategy",
+          "product strategy",
+          "positioning",
+          "target user",
+          "value proposition",
+          "product direction"
+        ],
+        "mixed": [
+          "产品策略 Product Strategy",
+          "项目与产品 > 产品策略",
+          "Projects & Products > Product Strategy"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理产品策略相关的问题，重点是产品战略和产品定位，帮我梳理判断与下一步。",
+        "Help me with product strategy, especially product strategy and positioning."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.project_planning",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "项目规划",
+        "en": "Project Planning"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "项目规划：项目目标、范围、里程碑、资源、风险、计划和项目组织。",
+        "Project Planning: project goals, scope, milestones, resources, risks, planning and project organization."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“项目规划”，常见线索包括项目计划、项目目标、范围。",
+        "The user's primary goal concerns project planning, with signals such as project planning, scope, milestone."
+      ],
+      "exclusion_cues": [
+        "若“项目规划”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Project Planning\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "项目规划",
+          "项目计划",
+          "项目目标",
+          "范围",
+          "里程碑",
+          "项目风险"
+        ],
+        "en": [
+          "Project Planning",
+          "project planning",
+          "scope",
+          "milestone",
+          "project risk",
+          "resource plan"
+        ],
+        "mixed": [
+          "项目规划 Project Planning",
+          "项目与产品 > 项目规划",
+          "Projects & Products > Project Planning"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理项目规划相关的问题，重点是项目计划和项目目标，帮我梳理判断与下一步。",
+        "Help me with project planning, especially project planning and scope."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "路线图与优先级",
+        "en": "Roadmap & Prioritization"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "路线图与优先级：产品或项目路线图、优先级、资源取舍、排序和版本规划。",
+        "Roadmap & Prioritization: roadmaps, prioritization, sequencing, tradeoffs and release planning."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“路线图与优先级”，常见线索包括路线图、优先级、需求排序。",
+        "The user's primary goal concerns roadmap & prioritization, with signals such as roadmap, prioritization, backlog priority."
+      ],
+      "exclusion_cues": [
+        "若“路线图与优先级”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Roadmap & Prioritization\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "路线图与优先级",
+          "路线图",
+          "优先级",
+          "需求排序",
+          "版本规划",
+          "资源取舍"
+        ],
+        "en": [
+          "Roadmap & Prioritization",
+          "roadmap",
+          "prioritization",
+          "backlog priority",
+          "release planning",
+          "tradeoff"
+        ],
+        "mixed": [
+          "路线图与优先级 Roadmap & Prioritization",
+          "项目与产品 > 路线图与优先级",
+          "Projects & Products > Roadmap & Prioritization"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理路线图与优先级相关的问题，重点是路线图和优先级，帮我梳理判断与下一步。",
+        "Help me with roadmap & prioritization, especially roadmap and prioritization."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.testing_quality",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "测试与质量",
+        "en": "Testing & Quality"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "测试与质量：测试策略、缺陷、验证、质量保证、回归和验收。",
+        "Testing & Quality: testing strategy, defects, validation, quality assurance, regression and acceptance."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“测试与质量”，常见线索包括测试、质量、缺陷。",
+        "The user's primary goal concerns testing & quality, with signals such as testing, quality, bug."
+      ],
+      "exclusion_cues": [
+        "若“测试与质量”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Testing & Quality\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "测试与质量",
+          "测试",
+          "质量",
+          "缺陷",
+          "回归测试",
+          "验收"
+        ],
+        "en": [
+          "Testing & Quality",
+          "testing",
+          "quality",
+          "bug",
+          "QA",
+          "regression"
+        ],
+        "mixed": [
+          "测试与质量 Testing & Quality",
+          "项目与产品 > 测试与质量",
+          "Projects & Products > Testing & Quality"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理测试与质量相关的问题，重点是测试和质量，帮我梳理判断与下一步。",
+        "Help me with testing & quality, especially testing and quality."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.projects_products.ux_user_research",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "用户研究与体验",
+        "en": "User Research & Experience"
+      },
+      "domain": {
+        "id": "D06",
+        "name_zh": "项目与产品",
+        "name_en": "Projects & Products"
+      },
+      "semantic_core": [
+        "用户研究与体验：用户研究、访谈、可用性、用户行为、体验问题和体验洞察。",
+        "User Research & Experience: user research, interviews, usability, behavior, experience problems and UX insights."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“用户研究与体验”，常见线索包括用户研究、用户访谈、可用性。",
+        "The user's primary goal concerns user research & experience, with signals such as user research, interview, usability."
+      ],
+      "exclusion_cues": [
+        "若“用户研究与体验”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"User Research & Experience\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "用户研究与体验",
+          "用户研究",
+          "用户访谈",
+          "可用性",
+          "用户体验",
+          "用户洞察"
+        ],
+        "en": [
+          "User Research & Experience",
+          "user research",
+          "interview",
+          "usability",
+          "user experience",
+          "UX insight"
+        ],
+        "mixed": [
+          "用户研究与体验 User Research & Experience",
+          "项目与产品 > 用户研究与体验",
+          "Projects & Products > User Research & Experience"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理用户研究与体验相关的问题，重点是用户研究和用户访谈，帮我梳理判断与下一步。",
+        "Help me with user research & experience, especially user research and interview."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    }
+  ]
+}

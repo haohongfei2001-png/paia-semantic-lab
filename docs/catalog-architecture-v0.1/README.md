@@ -20,3 +20,7 @@ Authority documents:
 - rounds/SCA-00.md through rounds/SCA-05.md
 
 The v0.3 remediation package remains historical evidence and REM-04 remains blocked until this package produces a promoted semantic-profile handoff.
+
+## Current round
+
+SCA-01 generated the complete 144-profile derived semantic bundle and is awaiting exact-head closure CI. SCA-02 is blocked until compiler/schema/catalog validation passes.

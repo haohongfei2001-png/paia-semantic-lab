@@ -1,0 +1,1540 @@
+{
+  "bundle_version": "0.1.0",
+  "profile_schema": "schemas/topic_semantic_profile_v0.1.schema.json",
+  "formal_catalog_version": "0.2.0",
+  "domains": [
+    "D13",
+    "D14",
+    "D15"
+  ],
+  "profile_count": 24,
+  "profiles": [
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.branding_identity",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "品牌与视觉识别",
+        "en": "Branding & Identity"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "品牌与视觉识别：品牌定位、名称、Logo、视觉识别、品牌系统和品牌一致性。",
+        "Branding & Identity: brand positioning, naming, logo, visual identity, brand systems and consistency."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“品牌与视觉识别”，常见线索包括品牌、Logo、视觉识别。",
+        "The user's primary goal concerns branding & identity, with signals such as branding, brand identity, logo."
+      ],
+      "exclusion_cues": [
+        "若“品牌与视觉识别”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Branding & Identity\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "品牌与视觉识别",
+          "品牌",
+          "Logo",
+          "视觉识别",
+          "品牌定位",
+          "品牌系统"
+        ],
+        "en": [
+          "Branding & Identity",
+          "branding",
+          "brand identity",
+          "logo",
+          "naming",
+          "brand system"
+        ],
+        "mixed": [
+          "品牌与视觉识别 Branding & Identity",
+          "创意与设计 > 品牌与视觉识别",
+          "Creative & Design > Branding & Identity"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理品牌与视觉识别相关的问题，重点是品牌和Logo，帮我梳理判断与下一步。",
+        "Help me with branding & identity, especially branding and brand identity."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.creative_writing",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "创意写作",
+        "en": "Creative Writing"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "创意写作：小说、故事、诗歌、剧本、人物、情节和文学性创作。",
+        "Creative Writing: fiction, stories, poetry, scripts, characters, plots and literary creation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“创意写作”，常见线索包括小说、故事、诗歌。",
+        "The user's primary goal concerns creative writing, with signals such as creative writing, fiction, story."
+      ],
+      "exclusion_cues": [
+        "若“创意写作”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Creative Writing\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "创意写作",
+          "小说",
+          "故事",
+          "诗歌",
+          "剧本"
+        ],
+        "en": [
+          "Creative Writing",
+          "creative writing",
+          "fiction",
+          "story",
+          "poetry",
+          "script"
+        ],
+        "mixed": [
+          "创意写作 Creative Writing",
+          "创意与设计 > 创意写作",
+          "Creative & Design > Creative Writing"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理创意写作相关的问题，重点是小说和故事，帮我梳理判断与下一步。",
+        "Help me with creative writing, especially creative writing and fiction."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.ideation_concepts",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "创意构思",
+        "en": "Ideation & Concepts"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "创意构思：创意发散、概念设计、头脑风暴、点子生成和创意方向探索。",
+        "Ideation & Concepts: ideation, concept development, brainstorming, idea generation and creative direction."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“创意构思”，常见线索包括创意、点子、头脑风暴。",
+        "The user's primary goal concerns ideation & concepts, with signals such as ideation, brainstorming, concept."
+      ],
+      "exclusion_cues": [
+        "若“创意构思”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Ideation & Concepts\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "创意构思",
+          "创意",
+          "点子",
+          "头脑风暴",
+          "概念",
+          "灵感"
+        ],
+        "en": [
+          "Ideation & Concepts",
+          "ideation",
+          "brainstorming",
+          "concept",
+          "idea generation",
+          "creative direction"
+        ],
+        "mixed": [
+          "创意构思 Ideation & Concepts",
+          "创意与设计 > 创意构思",
+          "Creative & Design > Ideation & Concepts"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理创意构思相关的问题，重点是创意和点子，帮我梳理判断与下一步。",
+        "Help me with ideation & concepts, especially ideation and brainstorming."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "插画与图像创作",
+        "en": "Illustration & Image Creation"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "插画与图像创作：插画、绘图、图像生成、图像编辑、风格化和视觉创作。",
+        "Illustration & Image Creation: illustration, drawing, image generation, image editing, stylization and visual creation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“插画与图像创作”，常见线索包括插画、绘图、图像生成。",
+        "The user's primary goal concerns illustration & image creation, with signals such as illustration, drawing, image generation."
+      ],
+      "exclusion_cues": [
+        "若“插画与图像创作”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Illustration & Image Creation\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "插画与图像创作",
+          "插画",
+          "绘图",
+          "图像生成",
+          "图像编辑",
+          "画图"
+        ],
+        "en": [
+          "Illustration & Image Creation",
+          "illustration",
+          "drawing",
+          "image generation",
+          "image editing",
+          "artwork"
+        ],
+        "mixed": [
+          "插画与图像创作 Illustration & Image Creation",
+          "创意与设计 > 插画与图像创作",
+          "Creative & Design > Illustration & Image Creation"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理插画与图像创作相关的问题，重点是插画和绘图，帮我梳理判断与下一步。",
+        "Help me with illustration & image creation, especially illustration and drawing."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.photography",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "摄影",
+        "en": "Photography"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "摄影：摄影拍摄、相机、镜头、曝光、构图、后期和照片创作。",
+        "Photography: photography, cameras, lenses, exposure, composition, editing and photo creation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“摄影”，常见线索包括相机、镜头、曝光。",
+        "The user's primary goal concerns photography, with signals such as photography, camera, lens."
+      ],
+      "exclusion_cues": [
+        "若“摄影”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Photography\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "摄影",
+          "相机",
+          "镜头",
+          "曝光",
+          "拍照"
+        ],
+        "en": [
+          "Photography",
+          "photography",
+          "camera",
+          "lens",
+          "exposure",
+          "photo"
+        ],
+        "mixed": [
+          "摄影 Photography",
+          "创意与设计 > 摄影",
+          "Creative & Design > Photography"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理摄影相关的问题，重点是相机和镜头，帮我梳理判断与下一步。",
+        "Help me with photography, especially photography and camera."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "UX/UI设计",
+        "en": "UX/UI Design"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "UX/UI设计：界面、交互、信息架构、用户流程、组件、可用性和数字产品体验设计。",
+        "UX/UI Design: interfaces, interaction, information architecture, user flows, components and product UX."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“UX/UI设计”，常见线索包括UX、UI、界面设计。",
+        "The user's primary goal concerns ux/ui design, with signals such as UX design, UI design, interface."
+      ],
+      "exclusion_cues": [
+        "若“UX/UI设计”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"UX/UI Design\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "UX/UI设计",
+          "UX",
+          "UI",
+          "界面设计",
+          "交互设计",
+          "信息架构"
+        ],
+        "en": [
+          "UX/UI Design",
+          "UX design",
+          "UI design",
+          "interface",
+          "interaction",
+          "information architecture"
+        ],
+        "mixed": [
+          "UX/UI设计 UX/UI Design",
+          "创意与设计 > UX/UI设计",
+          "Creative & Design > UX/UI Design"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理UX/UI设计相关的问题，重点是UX和UI，帮我梳理判断与下一步。",
+        "Help me with ux/ui design, especially UX design and UI design."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "视频与音频创作",
+        "en": "Video & Audio Creation"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "视频与音频创作：视频制作、剪辑、音频、录音、配音、后期和多媒体内容创作。",
+        "Video & Audio Creation: video production, editing, audio, recording, voiceover and multimedia creation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“视频与音频创作”，常见线索包括视频制作、剪辑、音频。",
+        "The user's primary goal concerns video & audio creation, with signals such as video creation, video editing, audio."
+      ],
+      "exclusion_cues": [
+        "若“视频与音频创作”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Video & Audio Creation\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "视频与音频创作",
+          "视频制作",
+          "剪辑",
+          "音频",
+          "录音",
+          "配音"
+        ],
+        "en": [
+          "Video & Audio Creation",
+          "video creation",
+          "video editing",
+          "audio",
+          "recording",
+          "voiceover"
+        ],
+        "mixed": [
+          "视频与音频创作 Video & Audio Creation",
+          "创意与设计 > 视频与音频创作",
+          "Creative & Design > Video & Audio Creation"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理视频与音频创作相关的问题，重点是视频制作和剪辑，帮我梳理判断与下一步。",
+        "Help me with video & audio creation, especially video creation and video editing."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.creative_design.visual_design",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "视觉设计",
+        "en": "Visual Design"
+      },
+      "domain": {
+        "id": "D15",
+        "name_zh": "创意与设计",
+        "name_en": "Creative & Design"
+      },
+      "semantic_core": [
+        "视觉设计：视觉构图、版式、色彩、字体、图形、视觉层级和视觉成品。",
+        "Visual Design: visual composition, layout, color, typography, graphics and visual hierarchy."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“视觉设计”，常见线索包括版式、配色、字体。",
+        "The user's primary goal concerns visual design, with signals such as visual design, layout, color."
+      ],
+      "exclusion_cues": [
+        "若“视觉设计”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Visual Design\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "视觉设计",
+          "版式",
+          "配色",
+          "字体",
+          "构图"
+        ],
+        "en": [
+          "Visual Design",
+          "visual design",
+          "layout",
+          "color",
+          "typography",
+          "composition"
+        ],
+        "mixed": [
+          "视觉设计 Visual Design",
+          "创意与设计 > 视觉设计",
+          "Creative & Design > Visual Design"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理视觉设计相关的问题，重点是版式和配色，帮我梳理判断与下一步。",
+        "Help me with visual design, especially visual design and layout."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "公共政策与社会议题",
+        "en": "Public Policy & Social Issues"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "公共政策与社会议题：公共政策、社会议题、制度影响、公共治理和社会问题。",
+        "Public Policy & Social Issues: public policy, social issues, governance, institutional effects and societal questions."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“公共政策与社会议题”，常见线索包括公共政策、社会议题、治理。",
+        "The user's primary goal concerns public policy & social issues, with signals such as public policy, social issue, governance."
+      ],
+      "exclusion_cues": [
+        "若“公共政策与社会议题”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Public Policy & Social Issues\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "公共政策与社会议题",
+          "公共政策",
+          "社会议题",
+          "治理",
+          "制度",
+          "社会问题"
+        ],
+        "en": [
+          "Public Policy & Social Issues",
+          "public policy",
+          "social issue",
+          "governance",
+          "institution",
+          "societal issue"
+        ],
+        "mixed": [
+          "公共政策与社会议题 Public Policy & Social Issues",
+          "法律与公共事务 > 公共政策与社会议题",
+          "Legal & Civic > Public Policy & Social Issues"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理公共政策与社会议题相关的问题，重点是公共政策和社会议题，帮我梳理判断与下一步。",
+        "Help me with public policy & social issues, especially public policy and social issue."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "投诉与纠纷",
+        "en": "Complaints & Disputes"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "投诉与纠纷：投诉、争议、纠纷、维权过程、申诉和冲突处理。",
+        "Complaints & Disputes: complaints, disputes, grievances, appeals and dispute-resolution processes."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“投诉与纠纷”，常见线索包括投诉、纠纷、争议。",
+        "The user's primary goal concerns complaints & disputes, with signals such as complaint, dispute, grievance."
+      ],
+      "exclusion_cues": [
+        "若“投诉与纠纷”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Complaints & Disputes\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "投诉与纠纷",
+          "投诉",
+          "纠纷",
+          "争议",
+          "申诉",
+          "维权"
+        ],
+        "en": [
+          "Complaints & Disputes",
+          "complaint",
+          "dispute",
+          "grievance",
+          "appeal",
+          "resolution"
+        ],
+        "mixed": [
+          "投诉与纠纷 Complaints & Disputes",
+          "法律与公共事务 > 投诉与纠纷",
+          "Legal & Civic > Complaints & Disputes"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理投诉与纠纷相关的问题，重点是投诉和纠纷，帮我梳理判断与下一步。",
+        "Help me with complaints & disputes, especially complaint and dispute."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "消费者权益",
+        "en": "Consumer Rights"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "消费者权益：消费者权益、退换货、商家责任、质量争议和消费维权。",
+        "Consumer Rights: consumer protection, refunds, merchant obligations, quality disputes and buyer rights."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“消费者权益”，常见线索包括退货、退款、商家责任。",
+        "The user's primary goal concerns consumer rights, with signals such as consumer rights, refund, return."
+      ],
+      "exclusion_cues": [
+        "若“消费者权益”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Consumer Rights\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "消费者权益",
+          "退货",
+          "退款",
+          "商家责任",
+          "消费维权"
+        ],
+        "en": [
+          "Consumer Rights",
+          "consumer rights",
+          "refund",
+          "return",
+          "merchant obligation",
+          "consumer protection"
+        ],
+        "mixed": [
+          "消费者权益 Consumer Rights",
+          "法律与公共事务 > 消费者权益",
+          "Legal & Civic > Consumer Rights"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理消费者权益相关的问题，重点是退货和退款，帮我梳理判断与下一步。",
+        "Help me with consumer rights, especially consumer rights and refund."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "合同与协议",
+        "en": "Contracts & Agreements"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "合同与协议：合同、协议、条款、签署、违约、履约和合同风险。",
+        "Contracts & Agreements: contracts, agreements, terms, signing, breach, performance and contractual risk."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“合同与协议”，常见线索包括合同、协议、条款。",
+        "The user's primary goal concerns contracts & agreements, with signals such as contract, agreement, term."
+      ],
+      "exclusion_cues": [
+        "若“合同与协议”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Contracts & Agreements\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "合同与协议",
+          "合同",
+          "协议",
+          "条款",
+          "违约",
+          "签署"
+        ],
+        "en": [
+          "Contracts & Agreements",
+          "contract",
+          "agreement",
+          "term",
+          "breach",
+          "signing"
+        ],
+        "mixed": [
+          "合同与协议 Contracts & Agreements",
+          "法律与公共事务 > 合同与协议",
+          "Legal & Civic > Contracts & Agreements"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理合同与协议相关的问题，重点是合同和协议，帮我梳理判断与下一步。",
+        "Help me with contracts & agreements, especially contract and agreement."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.government_services",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "政务与公共服务",
+        "en": "Government Services"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "政务与公共服务：政务办理、政府部门、公共服务、行政申请和官方办事流程。",
+        "Government Services: government services, agencies, administrative applications and official procedures."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“政务与公共服务”，常见线索包括政务、政府部门、公共服务。",
+        "The user's primary goal concerns government services, with signals such as government service, agency, public service."
+      ],
+      "exclusion_cues": [
+        "若“政务与公共服务”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Government Services\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "政务与公共服务",
+          "政务",
+          "政府部门",
+          "公共服务",
+          "行政办理",
+          "官方流程"
+        ],
+        "en": [
+          "Government Services",
+          "government service",
+          "agency",
+          "public service",
+          "administrative application",
+          "official process"
+        ],
+        "mixed": [
+          "政务与公共服务 Government Services",
+          "法律与公共事务 > 政务与公共服务",
+          "Legal & Civic > Government Services"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理政务与公共服务相关的问题，重点是政务和政府部门，帮我梳理判断与下一步。",
+        "Help me with government services, especially government service and agency."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.identity_documents",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "身份与证件",
+        "en": "Identity Documents"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "身份与证件：身份证、护照、户籍、证件办理、证件更新和身份材料。",
+        "Identity Documents: identity cards, passports, household registration and identity-document procedures."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“身份与证件”，常见线索包括身份证、护照、户籍。",
+        "The user's primary goal concerns identity documents, with signals such as identity document, passport, ID card."
+      ],
+      "exclusion_cues": [
+        "若“身份与证件”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Identity Documents\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "身份与证件",
+          "身份证",
+          "护照",
+          "户籍",
+          "证件",
+          "身份材料"
+        ],
+        "en": [
+          "Identity Documents",
+          "identity document",
+          "passport",
+          "ID card",
+          "registration",
+          "identity record"
+        ],
+        "mixed": [
+          "身份与证件 Identity Documents",
+          "法律与公共事务 > 身份与证件",
+          "Legal & Civic > Identity Documents"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理身份与证件相关的问题，重点是身份证和护照，帮我梳理判断与下一步。",
+        "Help me with identity documents, especially identity document and passport."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "移民与居留",
+        "en": "Immigration & Residency"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "移民与居留：移民、居留、长期签证、永居、公民身份和跨国居住资格。",
+        "Immigration & Residency: immigration, residency, long-term visas, permanent residence and citizenship status."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“移民与居留”，常见线索包括移民、居留、永居。",
+        "The user's primary goal concerns immigration & residency, with signals such as immigration, residency, permanent residence."
+      ],
+      "exclusion_cues": [
+        "若“移民与居留”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Immigration & Residency\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "移民与居留",
+          "移民",
+          "居留",
+          "永居",
+          "公民身份",
+          "长期签证"
+        ],
+        "en": [
+          "Immigration & Residency",
+          "immigration",
+          "residency",
+          "permanent residence",
+          "citizenship",
+          "long-term visa"
+        ],
+        "mixed": [
+          "移民与居留 Immigration & Residency",
+          "法律与公共事务 > 移民与居留",
+          "Legal & Civic > Immigration & Residency"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理移民与居留相关的问题，重点是移民和居留，帮我梳理判断与下一步。",
+        "Help me with immigration & residency, especially immigration and residency."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "法律问题",
+        "en": "Legal Questions"
+      },
+      "domain": {
+        "id": "D13",
+        "name_zh": "法律与公共事务",
+        "name_en": "Legal & Civic"
+      },
+      "semantic_core": [
+        "法律问题：法律概念、法律责任、权利义务、法规适用和一般法律问题。",
+        "Legal Questions: legal concepts, liability, rights and obligations, law applicability and legal questions."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“法律问题”，常见线索包括法律责任、权利义务、法规。",
+        "The user's primary goal concerns legal questions, with signals such as legal question, liability, rights."
+      ],
+      "exclusion_cues": [
+        "若“法律问题”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Legal Questions\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "法律问题",
+          "法律责任",
+          "权利义务",
+          "法规",
+          "是否合法"
+        ],
+        "en": [
+          "Legal Questions",
+          "legal question",
+          "liability",
+          "rights",
+          "law",
+          "legal obligation"
+        ],
+        "mixed": [
+          "法律问题 Legal Questions",
+          "法律与公共事务 > 法律问题",
+          "Legal & Civic > Legal Questions"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理法律问题相关的问题，重点是法律责任和权利义务，帮我梳理判断与下一步。",
+        "Help me with legal questions, especially legal question and liability."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.biology_life_science",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "生物与生命科学",
+        "en": "Biology & Life Science"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "生物与生命科学：生物学、遗传、细胞、生态、分子生物和生命科学知识。",
+        "Biology & Life Science: biology, genetics, cells, ecology, molecular biology and life-science knowledge."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“生物与生命科学”，常见线索包括生物学、遗传、细胞。",
+        "The user's primary goal concerns biology & life science, with signals such as biology, genetics, cell."
+      ],
+      "exclusion_cues": [
+        "若“生物与生命科学”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Biology & Life Science\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "生物与生命科学",
+          "生物学",
+          "遗传",
+          "细胞",
+          "生态",
+          "分子生物"
+        ],
+        "en": [
+          "Biology & Life Science",
+          "biology",
+          "genetics",
+          "cell",
+          "ecology",
+          "molecular biology"
+        ],
+        "mixed": [
+          "生物与生命科学 Biology & Life Science",
+          "科学与技术知识 > 生物与生命科学",
+          "Science & Technical Knowledge > Biology & Life Science"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理生物与生命科学相关的问题，重点是生物学和遗传，帮我梳理判断与下一步。",
+        "Help me with biology & life science, especially biology and genetics."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "化学与材料",
+        "en": "Chemistry & Materials"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "化学与材料：化学反应、分子、材料性质、化学结构、材料科学和实验化学。",
+        "Chemistry & Materials: chemical reactions, molecules, material properties, structures and materials science."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“化学与材料”，常见线索包括化学、材料、化学反应。",
+        "The user's primary goal concerns chemistry & materials, with signals such as chemistry, materials, chemical reaction."
+      ],
+      "exclusion_cues": [
+        "若“化学与材料”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Chemistry & Materials\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "化学与材料",
+          "化学",
+          "材料",
+          "化学反应",
+          "分子",
+          "材料科学"
+        ],
+        "en": [
+          "Chemistry & Materials",
+          "chemistry",
+          "materials",
+          "chemical reaction",
+          "molecule",
+          "materials science"
+        ],
+        "mixed": [
+          "化学与材料 Chemistry & Materials",
+          "科学与技术知识 > 化学与材料",
+          "Science & Technical Knowledge > Chemistry & Materials"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理化学与材料相关的问题，重点是化学和材料，帮我梳理判断与下一步。",
+        "Help me with chemistry & materials, especially chemistry and materials."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.computer_science",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "计算机科学",
+        "en": "Computer Science"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "计算机科学：算法、数据结构、计算理论、操作系统、编译、计算机科学原理。",
+        "Computer Science: algorithms, data structures, theory of computation, operating systems and CS principles."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“计算机科学”，常见线索包括算法、数据结构、操作系统。",
+        "The user's primary goal concerns computer science, with signals such as computer science, algorithm, data structure."
+      ],
+      "exclusion_cues": [
+        "若“计算机科学”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Computer Science\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "计算机科学",
+          "算法",
+          "数据结构",
+          "操作系统",
+          "计算理论"
+        ],
+        "en": [
+          "Computer Science",
+          "computer science",
+          "algorithm",
+          "data structure",
+          "operating system",
+          "computation"
+        ],
+        "mixed": [
+          "计算机科学 Computer Science",
+          "科学与技术知识 > 计算机科学",
+          "Science & Technical Knowledge > Computer Science"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理计算机科学相关的问题，重点是算法和数据结构，帮我梳理判断与下一步。",
+        "Help me with computer science, especially computer science and algorithm."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.engineering",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "工程技术",
+        "en": "Engineering"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "工程技术：工程原理、工程设计、机械、电气、结构、制造和系统工程知识。",
+        "Engineering: engineering principles, design, mechanical, electrical, structural and systems engineering."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“工程技术”，常见线索包括工程、机械、电气。",
+        "The user's primary goal concerns engineering, with signals such as engineering, mechanical, electrical."
+      ],
+      "exclusion_cues": [
+        "若“工程技术”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Engineering\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "工程技术",
+          "工程",
+          "机械",
+          "电气",
+          "结构",
+          "制造"
+        ],
+        "en": [
+          "Engineering",
+          "engineering",
+          "mechanical",
+          "electrical",
+          "structural",
+          "systems engineering"
+        ],
+        "mixed": [
+          "工程技术 Engineering",
+          "科学与技术知识 > 工程技术",
+          "Science & Technical Knowledge > Engineering"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理工程技术相关的问题，重点是工程和机械，帮我梳理判断与下一步。",
+        "Help me with engineering, especially engineering and mechanical."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.mathematics",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "数学",
+        "en": "Mathematics"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "数学：数学概念、证明、代数、几何、分析、数论和数学推导。",
+        "Mathematics: mathematical concepts, proofs, algebra, geometry, analysis, number theory and derivations."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“数学”，常见线索包括证明、代数、几何。",
+        "The user's primary goal concerns mathematics, with signals such as mathematics, proof, algebra."
+      ],
+      "exclusion_cues": [
+        "若“数学”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Mathematics\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "数学",
+          "证明",
+          "代数",
+          "几何",
+          "分析"
+        ],
+        "en": [
+          "Mathematics",
+          "mathematics",
+          "proof",
+          "algebra",
+          "geometry",
+          "analysis"
+        ],
+        "mixed": [
+          "数学 Mathematics",
+          "科学与技术知识 > 数学",
+          "Science & Technical Knowledge > Mathematics"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理数学相关的问题，重点是证明和代数，帮我梳理判断与下一步。",
+        "Help me with mathematics, especially mathematics and proof."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "医学知识",
+        "en": "Medical Knowledge"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "医学知识：医学原理、疾病机制、诊断知识、药理、解剖和临床医学知识。",
+        "Medical Knowledge: medical science, disease mechanisms, diagnostic knowledge, pharmacology and anatomy."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“医学知识”，常见线索包括病理、药理、解剖。",
+        "The user's primary goal concerns medical knowledge, with signals such as medical knowledge, pathology, pharmacology."
+      ],
+      "exclusion_cues": [
+        "若“医学知识”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Medical Knowledge\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "医学知识",
+          "病理",
+          "药理",
+          "解剖",
+          "临床医学"
+        ],
+        "en": [
+          "Medical Knowledge",
+          "medical knowledge",
+          "pathology",
+          "pharmacology",
+          "anatomy",
+          "clinical medicine"
+        ],
+        "mixed": [
+          "医学知识 Medical Knowledge",
+          "科学与技术知识 > 医学知识",
+          "Science & Technical Knowledge > Medical Knowledge"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理医学知识相关的问题，重点是病理和药理，帮我梳理判断与下一步。",
+        "Help me with medical knowledge, especially medical knowledge and pathology."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.physics",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "物理",
+        "en": "Physics"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "物理：物理学理论、现象、力学、电磁、量子、粒子、凝聚态等物理知识。",
+        "Physics: physics theory and phenomena including mechanics, electromagnetism, quantum, particle and condensed matter."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“物理”，常见线索包括量子力学、粒子物理、电磁学。",
+        "The user's primary goal concerns physics, with signals such as physics, quantum mechanics, particle physics."
+      ],
+      "exclusion_cues": [
+        "若“物理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Physics\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "物理",
+          "量子力学",
+          "粒子物理",
+          "电磁学",
+          "力学"
+        ],
+        "en": [
+          "Physics",
+          "physics",
+          "quantum mechanics",
+          "particle physics",
+          "electromagnetism",
+          "mechanics"
+        ],
+        "mixed": [
+          "物理 Physics",
+          "科学与技术知识 > 物理",
+          "Science & Technical Knowledge > Physics"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理物理相关的问题，重点是量子力学和粒子物理，帮我梳理判断与下一步。",
+        "Help me with physics, especially physics and quantum mechanics."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.science_technical.statistics_data_analysis",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "统计与数据分析",
+        "en": "Statistics & Data Analysis"
+      },
+      "domain": {
+        "id": "D14",
+        "name_zh": "科学与技术知识",
+        "name_en": "Science & Technical Knowledge"
+      },
+      "semantic_core": [
+        "统计与数据分析：统计推断、概率、数据分析、回归、假设检验和数据解释。",
+        "Statistics & Data Analysis: statistical inference, probability, data analysis, regression, hypothesis testing and interpretation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“统计与数据分析”，常见线索包括统计、数据分析、概率。",
+        "The user's primary goal concerns statistics & data analysis, with signals such as statistics, data analysis, probability."
+      ],
+      "exclusion_cues": [
+        "若“统计与数据分析”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Statistics & Data Analysis\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "统计与数据分析",
+          "统计",
+          "数据分析",
+          "概率",
+          "回归",
+          "假设检验"
+        ],
+        "en": [
+          "Statistics & Data Analysis",
+          "statistics",
+          "data analysis",
+          "probability",
+          "regression",
+          "hypothesis test"
+        ],
+        "mixed": [
+          "统计与数据分析 Statistics & Data Analysis",
+          "科学与技术知识 > 统计与数据分析",
+          "Science & Technical Knowledge > Statistics & Data Analysis"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理统计与数据分析相关的问题，重点是统计和数据分析，帮我梳理判断与下一步。",
+        "Help me with statistics & data analysis, especially statistics and data analysis."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    }
+  ]
+}

@@ -50,6 +50,10 @@ jobs:
         run: python -m unittest tests.test_rem03b_candidates tests.test_rem03b_private_promotion -v
       - name: SCA-v0.1 catalog architecture package validation
         run: python -m unittest tests.test_catalog_architecture_v01_plan -v
+      - name: SCA-01 derived semantic profile validation
+        run: |
+          python -m scripts.sca01_compile_profiles --output artifacts/ci/sca01-profile-compile.json
+          python -m unittest tests.test_sca01_profiles -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:

@@ -1,0 +1,1542 @@
+{
+  "bundle_version": "0.1.0",
+  "profile_schema": "schemas/topic_semantic_profile_v0.1.schema.json",
+  "formal_catalog_version": "0.2.0",
+  "domains": [
+    "D16",
+    "D17",
+    "D18"
+  ],
+  "profile_count": 24,
+  "profiles": [
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "商业战略",
+        "en": "Business Strategy"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "商业战略：企业方向、竞争优势、战略选择、业务组合、增长路径和长期经营策略。",
+        "Business Strategy: business direction, competitive advantage, strategic choices, portfolio and growth paths."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“商业战略”，常见线索包括竞争优势、业务方向、战略选择。",
+        "The user's primary goal concerns business strategy, with signals such as business strategy, competitive advantage, strategic choice."
+      ],
+      "exclusion_cues": [
+        "若“商业战略”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Business Strategy\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "商业战略",
+          "竞争优势",
+          "业务方向",
+          "战略选择",
+          "增长路径"
+        ],
+        "en": [
+          "Business Strategy",
+          "business strategy",
+          "competitive advantage",
+          "strategic choice",
+          "growth path",
+          "business direction"
+        ],
+        "mixed": [
+          "商业战略 Business Strategy",
+          "商业与创业 > 商业战略",
+          "Business & Entrepreneurship > Business Strategy"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理商业战略相关的问题，重点是竞争优势和业务方向，帮我梳理判断与下一步。",
+        "Help me with business strategy, especially business strategy and competitive advantage."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "客户反馈与客服",
+        "en": "Customer Feedback & Support"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "客户反馈与客服：客户反馈、客服、工单、满意度、问题响应和客户体验闭环。",
+        "Customer Feedback & Support: customer feedback, support, tickets, satisfaction, issue response and service loops."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“客户反馈与客服”，常见线索包括客户反馈、客服、工单。",
+        "The user's primary goal concerns customer feedback & support, with signals such as customer feedback, support, ticket."
+      ],
+      "exclusion_cues": [
+        "若“客户反馈与客服”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Customer Feedback & Support\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "客户反馈与客服",
+          "客户反馈",
+          "客服",
+          "工单",
+          "满意度",
+          "客户问题"
+        ],
+        "en": [
+          "Customer Feedback & Support",
+          "customer feedback",
+          "support",
+          "ticket",
+          "customer satisfaction",
+          "service issue"
+        ],
+        "mixed": [
+          "客户反馈与客服 Customer Feedback & Support",
+          "商业与创业 > 客户反馈与客服",
+          "Business & Entrepreneurship > Customer Feedback & Support"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理客户反馈与客服相关的问题，重点是客户反馈和客服，帮我梳理判断与下一步。",
+        "Help me with customer feedback & support, especially customer feedback and support."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "创业",
+        "en": "Entrepreneurship"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "创业：创业想法、创业过程、创始人问题、商业启动和早期公司建设。",
+        "Entrepreneurship: startup creation, founder problems, venture formation and early company building."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“创业”，常见线索包括创业项目、创始人、初创公司。",
+        "The user's primary goal concerns entrepreneurship, with signals such as entrepreneurship, startup, founder."
+      ],
+      "exclusion_cues": [
+        "若“创业”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Entrepreneurship\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "创业",
+          "创业项目",
+          "创始人",
+          "初创公司",
+          "创业想法"
+        ],
+        "en": [
+          "Entrepreneurship",
+          "entrepreneurship",
+          "startup",
+          "founder",
+          "venture",
+          "new business"
+        ],
+        "mixed": [
+          "创业 Entrepreneurship",
+          "商业与创业 > 创业",
+          "Business & Entrepreneurship > Entrepreneurship"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理创业相关的问题，重点是创业项目和创始人，帮我梳理判断与下一步。",
+        "Help me with entrepreneurship, especially entrepreneurship and startup."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "市场研究",
+        "en": "Market Research"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "市场研究：市场规模、行业研究、竞争格局、用户市场、趋势和市场验证。",
+        "Market Research: market sizing, industry research, competition, customer markets, trends and market validation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“市场研究”，常见线索包括行业研究、市场规模、竞品。",
+        "The user's primary goal concerns market research, with signals such as market research, market size, industry research."
+      ],
+      "exclusion_cues": [
+        "若“市场研究”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Market Research\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "市场研究",
+          "行业研究",
+          "市场规模",
+          "竞品",
+          "市场趋势"
+        ],
+        "en": [
+          "Market Research",
+          "market research",
+          "market size",
+          "industry research",
+          "competition",
+          "market trend"
+        ],
+        "mixed": [
+          "市场研究 Market Research",
+          "商业与创业 > 市场研究",
+          "Business & Entrepreneurship > Market Research"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理市场研究相关的问题，重点是行业研究和市场规模，帮我梳理判断与下一步。",
+        "Help me with market research, especially market research and market size."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "营销与增长",
+        "en": "Marketing & Growth"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "营销与增长：获客、增长、营销渠道、传播、转化、留存和增长实验。",
+        "Marketing & Growth: acquisition, growth, marketing channels, conversion, retention and growth experiments."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“营销与增长”，常见线索包括营销、增长、获客。",
+        "The user's primary goal concerns marketing & growth, with signals such as marketing, growth, acquisition."
+      ],
+      "exclusion_cues": [
+        "若“营销与增长”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Marketing & Growth\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "营销与增长",
+          "营销",
+          "增长",
+          "获客",
+          "转化",
+          "留存"
+        ],
+        "en": [
+          "Marketing & Growth",
+          "marketing",
+          "growth",
+          "acquisition",
+          "conversion",
+          "retention"
+        ],
+        "mixed": [
+          "营销与增长 Marketing & Growth",
+          "商业与创业 > 营销与增长",
+          "Business & Entrepreneurship > Marketing & Growth"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理营销与增长相关的问题，重点是营销和增长，帮我梳理判断与下一步。",
+        "Help me with marketing & growth, especially marketing and growth."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "业务运营与流程",
+        "en": "Operations & Process"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "业务运营与流程：业务运营、流程设计、SOP、效率、跨团队执行和运营机制。",
+        "Operations & Process: business operations, process design, SOPs, efficiency and cross-team execution."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“业务运营与流程”，常见线索包括业务运营、流程、SOP。",
+        "The user's primary goal concerns operations & process, with signals such as operations, process, SOP."
+      ],
+      "exclusion_cues": [
+        "若“业务运营与流程”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Operations & Process\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "业务运营与流程",
+          "业务运营",
+          "流程",
+          "SOP",
+          "运营机制",
+          "执行效率"
+        ],
+        "en": [
+          "Operations & Process",
+          "operations",
+          "process",
+          "SOP",
+          "operational efficiency",
+          "workflow"
+        ],
+        "mixed": [
+          "业务运营与流程 Operations & Process",
+          "商业与创业 > 业务运营与流程",
+          "Business & Entrepreneurship > Operations & Process"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理业务运营与流程相关的问题，重点是业务运营和流程，帮我梳理判断与下一步。",
+        "Help me with operations & process, especially operations and process."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "商务合作",
+        "en": "Partnerships"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "商务合作：合作伙伴、渠道合作、联合项目、商务合作关系和伙伴协议。",
+        "Partnerships: business partnerships, channel alliances, joint initiatives and partner relationships."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“商务合作”，常见线索包括合作伙伴、渠道合作、联合项目。",
+        "The user's primary goal concerns partnerships, with signals such as partnership, business partner, alliance."
+      ],
+      "exclusion_cues": [
+        "若“商务合作”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Partnerships\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "商务合作",
+          "合作伙伴",
+          "渠道合作",
+          "联合项目",
+          "伙伴关系"
+        ],
+        "en": [
+          "Partnerships",
+          "partnership",
+          "business partner",
+          "alliance",
+          "channel partner",
+          "joint initiative"
+        ],
+        "mixed": [
+          "商务合作 Partnerships",
+          "商业与创业 > 商务合作",
+          "Business & Entrepreneurship > Partnerships"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理商务合作相关的问题，重点是合作伙伴和渠道合作，帮我梳理判断与下一步。",
+        "Help me with partnerships, especially partnership and business partner."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "商务与销售",
+        "en": "Sales"
+      },
+      "domain": {
+        "id": "D16",
+        "name_zh": "商业与创业",
+        "name_en": "Business & Entrepreneurship"
+      },
+      "semantic_core": [
+        "商务与销售：销售线索、客户开发、成交、报价、销售流程和收入机会。",
+        "Sales: leads, prospecting, deals, quotations, sales process and revenue opportunities."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“商务与销售”，常见线索包括销售、客户开发、成交。",
+        "The user's primary goal concerns sales, with signals such as sales, lead, prospecting."
+      ],
+      "exclusion_cues": [
+        "若“商务与销售”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Sales\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "商务与销售",
+          "销售",
+          "客户开发",
+          "成交",
+          "报价",
+          "销售线索"
+        ],
+        "en": [
+          "Sales",
+          "sales",
+          "lead",
+          "prospecting",
+          "deal",
+          "quotation"
+        ],
+        "mixed": [
+          "商务与销售 Sales",
+          "商业与创业 > 商务与销售",
+          "Business & Entrepreneurship > Sales"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理商务与销售相关的问题，重点是销售和客户开发，帮我梳理判断与下一步。",
+        "Help me with sales, especially sales and lead."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "备份与导出",
+        "en": "Backup & Export"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "备份与导出：数据备份、恢复、副本、导出、迁移文件和可恢复性。",
+        "Backup & Export: backup, recovery, copies, export, data transfer and recoverability."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“备份与导出”，常见线索包括备份、导出、恢复。",
+        "The user's primary goal concerns backup & export, with signals such as backup, export, restore."
+      ],
+      "exclusion_cues": [
+        "若“备份与导出”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Backup & Export\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "备份与导出",
+          "备份",
+          "导出",
+          "恢复",
+          "数据副本",
+          "迁移"
+        ],
+        "en": [
+          "Backup & Export",
+          "backup",
+          "export",
+          "restore",
+          "copy",
+          "data transfer"
+        ],
+        "mixed": [
+          "备份与导出 Backup & Export",
+          "知识与记忆 > 备份与导出",
+          "Knowledge & Memory > Backup & Export"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理备份与导出相关的问题，重点是备份和导出，帮我梳理判断与下一步。",
+        "Help me with backup & export, especially backup and export."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "文件与文档存储",
+        "en": "File & Document Storage"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "文件与文档存储：文件夹、文档存储、文件系统、云盘、路径和文件组织。",
+        "File & Document Storage: files, folders, document storage, cloud drives, paths and file organization."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“文件与文档存储”，常见线索包括文件存储、文档存储、文件夹。",
+        "The user's primary goal concerns file & document storage, with signals such as file storage, document storage, folder."
+      ],
+      "exclusion_cues": [
+        "若“文件与文档存储”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"File & Document Storage\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "文件与文档存储",
+          "文件存储",
+          "文档存储",
+          "文件夹",
+          "云盘",
+          "文件组织"
+        ],
+        "en": [
+          "File & Document Storage",
+          "file storage",
+          "document storage",
+          "folder",
+          "cloud drive",
+          "file organization"
+        ],
+        "mixed": [
+          "文件与文档存储 File & Document Storage",
+          "知识与记忆 > 文件与文档存储",
+          "Knowledge & Memory > File & Document Storage"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理文件与文档存储相关的问题，重点是文件存储和文档存储，帮我梳理判断与下一步。",
+        "Help me with file & document storage, especially file storage and document storage."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.journaling",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "日记与记录",
+        "en": "Journaling"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "日记与记录：日常日记、感受记录、每日回顾、私人书写和连续生活记录。",
+        "Journaling: diary entries, daily reflections, personal writing and ongoing life journaling."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“日记与记录”，常见线索包括日记、每日记录、感受记录。",
+        "The user's primary goal concerns journaling, with signals such as journaling, diary, daily reflection."
+      ],
+      "exclusion_cues": [
+        "若“日记与记录”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Journaling\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "日记与记录",
+          "日记",
+          "每日记录",
+          "感受记录",
+          "日常回顾",
+          "私人记录"
+        ],
+        "en": [
+          "Journaling",
+          "journaling",
+          "diary",
+          "daily reflection",
+          "journal entry",
+          "personal writing"
+        ],
+        "mixed": [
+          "日记与记录 Journaling",
+          "知识与记忆 > 日记与记录",
+          "Knowledge & Memory > Journaling"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理日记与记录相关的问题，重点是日记和每日记录，帮我梳理判断与下一步。",
+        "Help me with journaling, especially journaling and diary."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "AI记忆与上下文",
+        "en": "AI Memory & Context"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "AI记忆与上下文：AI系统记忆、个人上下文、长期记忆、上下文注入和记忆管理。",
+        "AI Memory & Context: AI memory, personal context, long-term memory, context injection and memory management."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“AI记忆与上下文”，常见线索包括AI记忆、上下文、长期记忆。",
+        "The user's primary goal concerns ai memory & context, with signals such as AI memory, context, long-term memory."
+      ],
+      "exclusion_cues": [
+        "若“AI记忆与上下文”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"AI Memory & Context\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "AI记忆与上下文",
+          "AI记忆",
+          "上下文",
+          "长期记忆",
+          "个人上下文",
+          "记忆管理"
+        ],
+        "en": [
+          "AI Memory & Context",
+          "AI memory",
+          "context",
+          "long-term memory",
+          "personal context",
+          "memory management"
+        ],
+        "mixed": [
+          "AI记忆与上下文 AI Memory & Context",
+          "知识与记忆 > AI记忆与上下文",
+          "Knowledge & Memory > AI Memory & Context"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理AI记忆与上下文相关的问题，重点是AI记忆和上下文，帮我梳理判断与下一步。",
+        "Help me with ai memory & context, especially AI memory and context."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "笔记与知识管理",
+        "en": "Notes & Knowledge Management"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "笔记与知识管理：笔记系统、知识库、标签、链接、知识组织、检索和个人知识管理。",
+        "Notes & Knowledge Management: notes systems, knowledge bases, tagging, linking, organization and personal knowledge management."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“笔记与知识管理”，常见线索包括笔记、知识管理、知识库。",
+        "The user's primary goal concerns notes & knowledge management, with signals such as notes, knowledge management, knowledge base."
+      ],
+      "exclusion_cues": [
+        "若“笔记与知识管理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Notes & Knowledge Management\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "笔记与知识管理",
+          "笔记",
+          "知识管理",
+          "知识库",
+          "标签",
+          "双链"
+        ],
+        "en": [
+          "Notes & Knowledge Management",
+          "notes",
+          "knowledge management",
+          "knowledge base",
+          "tag",
+          "linking"
+        ],
+        "mixed": [
+          "笔记与知识管理 Notes & Knowledge Management",
+          "知识与记忆 > 笔记与知识管理",
+          "Knowledge & Memory > Notes & Knowledge Management"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理笔记与知识管理相关的问题，重点是笔记和知识管理，帮我梳理判断与下一步。",
+        "Help me with notes & knowledge management, especially notes and knowledge management."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "个人档案",
+        "en": "Personal Archive"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "个人档案：长期保存的个人资料、经历、记录、文档和个人历史档案。",
+        "Personal Archive: long-term preservation of personal records, experiences, documents and personal history."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“个人档案”，常见线索包括个人资料、历史记录、档案。",
+        "The user's primary goal concerns personal archive, with signals such as personal archive, personal record, personal history."
+      ],
+      "exclusion_cues": [
+        "若“个人档案”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Personal Archive\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "个人档案",
+          "个人资料",
+          "历史记录",
+          "档案",
+          "长期保存"
+        ],
+        "en": [
+          "Personal Archive",
+          "personal archive",
+          "personal record",
+          "personal history",
+          "archive",
+          "long-term record"
+        ],
+        "mixed": [
+          "个人档案 Personal Archive",
+          "知识与记忆 > 个人档案",
+          "Knowledge & Memory > Personal Archive"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理个人档案相关的问题，重点是个人资料和历史记录，帮我梳理判断与下一步。",
+        "Help me with personal archive, especially personal archive and personal record."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "照片与媒体归档",
+        "en": "Photo & Media Archive"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "照片与媒体归档：照片、视频、音频等个人媒体的整理、归档、检索和长期保存。",
+        "Photo & Media Archive: organization, archiving, retrieval and preservation of personal photos, video and audio."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“照片与媒体归档”，常见线索包括照片归档、媒体归档、相册整理。",
+        "The user's primary goal concerns photo & media archive, with signals such as photo archive, media archive, photo library."
+      ],
+      "exclusion_cues": [
+        "若“照片与媒体归档”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Photo & Media Archive\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "照片与媒体归档",
+          "照片归档",
+          "媒体归档",
+          "相册整理",
+          "视频归档",
+          "媒体库"
+        ],
+        "en": [
+          "Photo & Media Archive",
+          "photo archive",
+          "media archive",
+          "photo library",
+          "video archive",
+          "media organization"
+        ],
+        "mixed": [
+          "照片与媒体归档 Photo & Media Archive",
+          "知识与记忆 > 照片与媒体归档",
+          "Knowledge & Memory > Photo & Media Archive"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理照片与媒体归档相关的问题，重点是照片归档和媒体归档，帮我梳理判断与下一步。",
+        "Help me with photo & media archive, especially photo archive and media archive."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "来源、版本与历史",
+        "en": "Provenance, Versions & History"
+      },
+      "domain": {
+        "id": "D18",
+        "name_zh": "知识与记忆",
+        "name_en": "Knowledge & Memory"
+      },
+      "semantic_core": [
+        "来源、版本与历史：来源追踪、版本历史、修改记录、审计链、变更来源和历史恢复。",
+        "Provenance, Versions & History: provenance, version history, change records, audit trails and historical restoration."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“来源、版本与历史”，常见线索包括来源追踪、版本历史、修改记录。",
+        "The user's primary goal concerns provenance, versions & history, with signals such as provenance, version history, change log."
+      ],
+      "exclusion_cues": [
+        "若“来源、版本与历史”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Provenance, Versions & History\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "来源、版本与历史",
+          "来源追踪",
+          "版本历史",
+          "修改记录",
+          "审计链",
+          "历史版本"
+        ],
+        "en": [
+          "Provenance, Versions & History",
+          "provenance",
+          "version history",
+          "change log",
+          "audit trail",
+          "revision"
+        ],
+        "mixed": [
+          "来源、版本与历史 Provenance, Versions & History",
+          "知识与记忆 > 来源、版本与历史",
+          "Knowledge & Memory > Provenance, Versions & History"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理来源、版本与历史相关的问题，重点是来源追踪和版本历史，帮我梳理判断与下一步。",
+        "Help me with provenance, versions & history, especially provenance and version history."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.appointments_bookings",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "预约与预订",
+        "en": "Appointments & Bookings"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "预约与预订：预约医生、服务、餐厅、场馆等具体席位或时段的预订行为。",
+        "Appointments & Bookings: booking specific appointments, services, restaurants, venues or time slots."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“预约与预订”，常见线索包括预约、预订、订位。",
+        "The user's primary goal concerns appointments & bookings, with signals such as appointment, booking, reservation."
+      ],
+      "exclusion_cues": [
+        "若“预约与预订”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Appointments & Bookings\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "预约与预订",
+          "预约",
+          "预订",
+          "订位",
+          "挂号预约",
+          "Booking"
+        ],
+        "en": [
+          "Appointments & Bookings",
+          "appointment",
+          "booking",
+          "reservation",
+          "reserve",
+          "time slot"
+        ],
+        "mixed": [
+          "预约与预订 Appointments & Bookings",
+          "时间与事件 > 预约与预订",
+          "Time & Events > Appointments & Bookings"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理预约与预订相关的问题，重点是预约和预订，帮我梳理判断与下一步。",
+        "Help me with appointments & bookings, especially appointment and booking."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "日程与排期",
+        "en": "Calendar & Scheduling"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "日程与排期：具体日期时间安排、会议日程、时间槽、排期冲突和日历管理。",
+        "Calendar & Scheduling: specific date-time scheduling, meetings, time slots, schedule conflicts and calendar management."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“日程与排期”，常见线索包括日程、排期、会议时间。",
+        "The user's primary goal concerns calendar & scheduling, with signals such as calendar, scheduling, meeting time."
+      ],
+      "exclusion_cues": [
+        "若“日程与排期”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Calendar & Scheduling\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "日程与排期",
+          "日程",
+          "排期",
+          "会议时间",
+          "日历",
+          "时间槽"
+        ],
+        "en": [
+          "Calendar & Scheduling",
+          "calendar",
+          "scheduling",
+          "meeting time",
+          "time slot",
+          "schedule conflict"
+        ],
+        "mixed": [
+          "日程与排期 Calendar & Scheduling",
+          "时间与事件 > 日程与排期",
+          "Time & Events > Calendar & Scheduling"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理日程与排期相关的问题，重点是日程和排期，帮我梳理判断与下一步。",
+        "Help me with calendar & scheduling, especially calendar and scheduling."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "节日与庆祝",
+        "en": "Celebrations & Holidays"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "节日与庆祝：节日、生日、纪念日、庆祝活动、礼物和节庆安排。",
+        "Celebrations & Holidays: holidays, birthdays, anniversaries, celebrations, gifts and festive planning."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“节日与庆祝”，常见线索包括节日、庆祝、生日。",
+        "The user's primary goal concerns celebrations & holidays, with signals such as holiday, celebration, birthday."
+      ],
+      "exclusion_cues": [
+        "若“节日与庆祝”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Celebrations & Holidays\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "节日与庆祝",
+          "节日",
+          "庆祝",
+          "生日",
+          "纪念日",
+          "节庆"
+        ],
+        "en": [
+          "Celebrations & Holidays",
+          "holiday",
+          "celebration",
+          "birthday",
+          "anniversary",
+          "festival"
+        ],
+        "mixed": [
+          "节日与庆祝 Celebrations & Holidays",
+          "时间与事件 > 节日与庆祝",
+          "Time & Events > Celebrations & Holidays"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理节日与庆祝相关的问题，重点是节日和庆祝，帮我梳理判断与下一步。",
+        "Help me with celebrations & holidays, especially holiday and celebration."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.life_events",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "人生事件",
+        "en": "Life Events"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "人生事件：毕业、入职、结婚、生育、搬迁等人生阶段事件和重要个人事件。",
+        "Life Events: graduation, starting work, marriage, birth, relocation and major life-stage events."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“人生事件”，常见线索包括毕业、结婚、入职。",
+        "The user's primary goal concerns life events, with signals such as life event, graduation, marriage."
+      ],
+      "exclusion_cues": [
+        "若“人生事件”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Life Events\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "人生事件",
+          "毕业",
+          "结婚",
+          "入职",
+          "重要事件"
+        ],
+        "en": [
+          "Life Events",
+          "life event",
+          "graduation",
+          "marriage",
+          "milestone event",
+          "life transition"
+        ],
+        "mixed": [
+          "人生事件 Life Events",
+          "时间与事件 > 人生事件",
+          "Time & Events > Life Events"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理人生事件相关的问题，重点是毕业和结婚，帮我梳理判断与下一步。",
+        "Help me with life events, especially life event and graduation."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.plans_checklists",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "计划与清单",
+        "en": "Plans & Checklists"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "计划与清单：可执行计划、步骤清单、待办列表、准备事项和完成检查。",
+        "Plans & Checklists: actionable plans, step lists, checklists, preparation items and completion tracking."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“计划与清单”，常见线索包括计划、清单、待办。",
+        "The user's primary goal concerns plans & checklists, with signals such as plan, checklist, to-do."
+      ],
+      "exclusion_cues": [
+        "若“计划与清单”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Plans & Checklists\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "计划与清单",
+          "计划",
+          "清单",
+          "待办",
+          "步骤",
+          "检查表"
+        ],
+        "en": [
+          "Plans & Checklists",
+          "plan",
+          "checklist",
+          "to-do",
+          "steps",
+          "task list"
+        ],
+        "mixed": [
+          "计划与清单 Plans & Checklists",
+          "时间与事件 > 计划与清单",
+          "Time & Events > Plans & Checklists"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理计划与清单相关的问题，重点是计划和清单，帮我梳理判断与下一步。",
+        "Help me with plans & checklists, especially plan and checklist."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "提醒与截止期",
+        "en": "Reminders & Deadlines"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "提醒与截止期：提醒、截止日期、到期时间、催办、倒计时和不能错过的节点。",
+        "Reminders & Deadlines: reminders, deadlines, due dates, follow-ups, countdowns and time-critical milestones."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“提醒与截止期”，常见线索包括提醒、截止期、截止日期。",
+        "The user's primary goal concerns reminders & deadlines, with signals such as reminder, deadline, due date."
+      ],
+      "exclusion_cues": [
+        "若“提醒与截止期”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Reminders & Deadlines\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "提醒与截止期",
+          "提醒",
+          "截止期",
+          "截止日期",
+          "到期",
+          "催办"
+        ],
+        "en": [
+          "Reminders & Deadlines",
+          "reminder",
+          "deadline",
+          "due date",
+          "follow-up",
+          "time limit"
+        ],
+        "mixed": [
+          "提醒与截止期 Reminders & Deadlines",
+          "时间与事件 > 提醒与截止期",
+          "Time & Events > Reminders & Deadlines"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理提醒与截止期相关的问题，重点是提醒和截止期，帮我梳理判断与下一步。",
+        "Help me with reminders & deadlines, especially reminder and deadline."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.routines_recurring",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "周期性安排",
+        "en": "Recurring Routines"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "周期性安排：按天周月重复的安排、周期习惯、重复任务和固定节奏。",
+        "Recurring Routines: daily, weekly or monthly recurring schedules, repeated tasks and recurring routines."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“周期性安排”，常见线索包括周期安排、每周、每天。",
+        "The user's primary goal concerns recurring routines, with signals such as recurring routine, weekly, daily."
+      ],
+      "exclusion_cues": [
+        "若“周期性安排”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Recurring Routines\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "周期性安排",
+          "周期安排",
+          "每周",
+          "每天",
+          "重复任务",
+          "固定节奏"
+        ],
+        "en": [
+          "Recurring Routines",
+          "recurring routine",
+          "weekly",
+          "daily",
+          "repeating task",
+          "recurrence"
+        ],
+        "mixed": [
+          "周期性安排 Recurring Routines",
+          "时间与事件 > 周期性安排",
+          "Time & Events > Recurring Routines"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理周期性安排相关的问题，重点是周期安排和每周，帮我梳理判断与下一步。",
+        "Help me with recurring routines, especially recurring routine and weekly."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.time_events.time_management",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "时间管理",
+        "en": "Time Management"
+      },
+      "domain": {
+        "id": "D17",
+        "name_zh": "时间与事件",
+        "name_en": "Time & Events"
+      },
+      "semantic_core": [
+        "时间管理：时间分配、优先级、专注时段、时间预算、拖延和时间使用效率。",
+        "Time Management: time allocation, priorities, focus blocks, time budgeting and use of time."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“时间管理”，常见线索包括时间分配、优先级、时间预算。",
+        "The user's primary goal concerns time management, with signals such as time management, time allocation, priority."
+      ],
+      "exclusion_cues": [
+        "若“时间管理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Time Management\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "时间管理",
+          "时间分配",
+          "优先级",
+          "时间预算",
+          "拖延"
+        ],
+        "en": [
+          "Time Management",
+          "time management",
+          "time allocation",
+          "priority",
+          "time budget",
+          "procrastination"
+        ],
+        "mixed": [
+          "时间管理 Time Management",
+          "时间与事件 > 时间管理",
+          "Time & Events > Time Management"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理时间管理相关的问题，重点是时间分配和优先级，帮我梳理判断与下一步。",
+        "Help me with time management, especially time management and time allocation."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    }
+  ]
+}

@@ -1,0 +1,1542 @@
+{
+  "bundle_version": "0.1.0",
+  "profile_schema": "schemas/topic_semantic_profile_v0.1.schema.json",
+  "formal_catalog_version": "0.2.0",
+  "domains": [
+    "D01",
+    "D02",
+    "D03"
+  ],
+  "profile_count": 24,
+  "profiles": [
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "家庭照护与支持",
+        "en": "Family Caregiving & Support"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "家庭照护与支持：照护家人、赡养、陪护、家庭成员支持以及照料责任分配。",
+        "Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“家庭照护与支持”，常见线索包括照护家人、赡养、陪护。",
+        "The user's primary goal concerns family caregiving & support, with signals such as caregiving, family support, elder care."
+      ],
+      "exclusion_cues": [
+        "若“家庭照护与支持”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Family Caregiving & Support\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "家庭照护与支持",
+          "照护家人",
+          "赡养",
+          "陪护",
+          "家庭支持",
+          "照料责任"
+        ],
+        "en": [
+          "Family Caregiving & Support",
+          "caregiving",
+          "family support",
+          "elder care",
+          "care responsibility",
+          "family assistance"
+        ],
+        "mixed": [
+          "家庭照护与支持 Family Caregiving & Support",
+          "家庭与关系 > 家庭照护与支持",
+          "Family & Relationships > Family Caregiving & Support"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理家庭照护与支持相关的问题，重点是照护家人和赡养，帮我梳理判断与下一步。",
+        "Help me with family caregiving & support, especially caregiving and family support."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "人际冲突与边界",
+        "en": "Conflict & Boundaries"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "人际冲突与边界：人际冲突、拒绝、边界设定、矛盾处理、权利义务和不适互动的限制。",
+        "Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“人际冲突与边界”，常见线索包括人际边界、冲突、拒绝。",
+        "The user's primary goal concerns conflict & boundaries, with signals such as boundary, conflict, say no."
+      ],
+      "exclusion_cues": [
+        "若“人际冲突与边界”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Conflict & Boundaries\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "人际冲突与边界",
+          "人际边界",
+          "冲突",
+          "拒绝",
+          "矛盾",
+          "界限"
+        ],
+        "en": [
+          "Conflict & Boundaries",
+          "boundary",
+          "conflict",
+          "say no",
+          "interpersonal dispute",
+          "limits"
+        ],
+        "mixed": [
+          "人际冲突与边界 Conflict & Boundaries",
+          "家庭与关系 > 人际冲突与边界",
+          "Family & Relationships > Conflict & Boundaries"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理人际冲突与边界相关的问题，重点是人际边界和冲突，帮我梳理判断与下一步。",
+        "Help me with conflict & boundaries, especially boundary and conflict."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.friendships",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "朋友关系",
+        "en": "Friendships"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "朋友关系：朋友关系、友谊维护、交友、疏远、支持和朋友间互动。",
+        "Friendships: friendship formation, maintenance, distance, support and interactions with friends."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“朋友关系”，常见线索包括朋友、友谊、交友。",
+        "The user's primary goal concerns friendships, with signals such as friendship, friend, social bond."
+      ],
+      "exclusion_cues": [
+        "若“朋友关系”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Friendships\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "朋友关系",
+          "朋友",
+          "友谊",
+          "交友",
+          "友情"
+        ],
+        "en": [
+          "Friendships",
+          "friendship",
+          "friend",
+          "social bond",
+          "maintain friendship",
+          "friend conflict"
+        ],
+        "mixed": [
+          "朋友关系 Friendships",
+          "家庭与关系 > 朋友关系",
+          "Family & Relationships > Friendships"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理朋友关系相关的问题，重点是朋友和友谊，帮我梳理判断与下一步。",
+        "Help me with friendships, especially friendship and friend."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.parents_family",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "父母与原生家庭",
+        "en": "Parents & Family of Origin"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "父母与原生家庭：父母、原生家庭、代际关系、家庭背景以及与父母相处和支持相关的问题。",
+        "Parents & Family of Origin: parents, family of origin, intergenerational relationships and support involving parents."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“父母与原生家庭”，常见线索包括父母、原生家庭、爸妈。",
+        "The user's primary goal concerns parents & family of origin, with signals such as parents, family of origin, mother."
+      ],
+      "exclusion_cues": [
+        "若“父母与原生家庭”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Parents & Family of Origin\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "父母与原生家庭",
+          "父母",
+          "原生家庭",
+          "爸妈",
+          "代际关系",
+          "家庭背景"
+        ],
+        "en": [
+          "Parents & Family of Origin",
+          "parents",
+          "family of origin",
+          "mother",
+          "father",
+          "intergenerational"
+        ],
+        "mixed": [
+          "父母与原生家庭 Parents & Family of Origin",
+          "家庭与关系 > 父母与原生家庭",
+          "Family & Relationships > Parents & Family of Origin"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理父母与原生家庭相关的问题，重点是父母和原生家庭，帮我梳理判断与下一步。",
+        "Help me with parents & family of origin, especially parents and family of origin."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "伴侣关系",
+        "en": "Partner Relationship"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "伴侣关系：恋爱、伴侣、婚姻、亲密关系中的沟通、承诺、相处和共同生活。",
+        "Partner Relationship: romantic partnership, marriage, intimacy, commitment and shared life with a partner."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“伴侣关系”，常见线索包括伴侣、恋爱、婚姻。",
+        "The user's primary goal concerns partner relationship, with signals such as partner, romantic relationship, marriage."
+      ],
+      "exclusion_cues": [
+        "若“伴侣关系”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Partner Relationship\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "伴侣关系",
+          "伴侣",
+          "恋爱",
+          "婚姻",
+          "亲密关系",
+          "对象"
+        ],
+        "en": [
+          "Partner Relationship",
+          "partner",
+          "romantic relationship",
+          "marriage",
+          "couple",
+          "intimacy"
+        ],
+        "mixed": [
+          "伴侣关系 Partner Relationship",
+          "家庭与关系 > 伴侣关系",
+          "Family & Relationships > Partner Relationship"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理伴侣关系相关的问题，重点是伴侣和恋爱，帮我梳理判断与下一步。",
+        "Help me with partner relationship, especially partner and romantic relationship."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.pets",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "宠物",
+        "en": "Pets"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+        "Pets: pet care, health, behavior, supplies, training and everyday life with animals."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“宠物”，常见线索包括猫、狗、养宠。",
+        "The user's primary goal concerns pets, with signals such as pet, cat, dog."
+      ],
+      "exclusion_cues": [
+        "若“宠物”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Pets\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "宠物",
+          "猫",
+          "狗",
+          "养宠",
+          "宠物健康"
+        ],
+        "en": [
+          "Pets",
+          "pet",
+          "cat",
+          "dog",
+          "pet care",
+          "animal companion"
+        ],
+        "mixed": [
+          "宠物 Pets",
+          "家庭与关系 > 宠物",
+          "Family & Relationships > Pets"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理宠物相关的问题，重点是猫和狗，帮我梳理判断与下一步。",
+        "Help me with pets, especially pet and cat."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.siblings",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "兄弟姐妹",
+        "en": "Siblings"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+        "Siblings: relationships, support, conflict and shared family matters involving siblings."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“兄弟姐妹”，常见线索包括哥哥、姐姐、弟弟。",
+        "The user's primary goal concerns siblings, with signals such as siblings, brother, sister."
+      ],
+      "exclusion_cues": [
+        "若“兄弟姐妹”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Siblings\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "兄弟姐妹",
+          "哥哥",
+          "姐姐",
+          "弟弟",
+          "妹妹"
+        ],
+        "en": [
+          "Siblings",
+          "siblings",
+          "brother",
+          "sister",
+          "sibling relationship",
+          "sibling conflict"
+        ],
+        "mixed": [
+          "兄弟姐妹 Siblings",
+          "家庭与关系 > 兄弟姐妹",
+          "Family & Relationships > Siblings"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理兄弟姐妹相关的问题，重点是哥哥和姐姐，帮我梳理判断与下一步。",
+        "Help me with siblings, especially siblings and brother."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.family_relationships.social_interaction",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "社交互动",
+        "en": "Social Interaction"
+      },
+      "domain": {
+        "id": "D02",
+        "name_zh": "家庭与关系",
+        "name_en": "Family & Relationships"
+      },
+      "semantic_core": [
+        "社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+        "Social Interaction: general social interaction, group dynamics, social situations and interpersonal behavior."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“社交互动”，常见线索包括社交、人际交往、社交场合。",
+        "The user's primary goal concerns social interaction, with signals such as social interaction, social situation, interpersonal."
+      ],
+      "exclusion_cues": [
+        "若“社交互动”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Social Interaction\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "社交互动",
+          "社交",
+          "人际交往",
+          "社交场合",
+          "群体互动",
+          "与人相处"
+        ],
+        "en": [
+          "Social Interaction",
+          "social interaction",
+          "social situation",
+          "interpersonal",
+          "group dynamics",
+          "social skills"
+        ],
+        "mixed": [
+          "社交互动 Social Interaction",
+          "家庭与关系 > 社交互动",
+          "Family & Relationships > Social Interaction"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理社交互动相关的问题，重点是社交和人际交往，帮我梳理判断与下一步。",
+        "Help me with social interaction, especially social interaction and social situation."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.fitness",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "运动与体能",
+        "en": "Fitness"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "运动与体能：运动训练、体能、力量、有氧、健身计划、动作和运动表现。",
+        "Fitness: exercise, strength, cardio, training plans, technique and physical performance."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“运动与体能”，常见线索包括健身、运动、力量训练。",
+        "The user's primary goal concerns fitness, with signals such as fitness, exercise, strength training."
+      ],
+      "exclusion_cues": [
+        "若“运动与体能”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Fitness\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "运动与体能",
+          "健身",
+          "运动",
+          "力量训练",
+          "有氧",
+          "训练计划"
+        ],
+        "en": [
+          "Fitness",
+          "fitness",
+          "exercise",
+          "strength training",
+          "cardio",
+          "workout"
+        ],
+        "mixed": [
+          "运动与体能 Fitness",
+          "健康与身心 > 运动与体能",
+          "Health & Wellbeing > Fitness"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理运动与体能相关的问题，重点是健身和运动，帮我梳理判断与下一步。",
+        "Help me with fitness, especially fitness and exercise."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "就医与医疗",
+        "en": "Medical Care"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "就医与医疗：就医、医生、医院、挂号、检查、诊断流程和医疗服务选择。",
+        "Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“就医与医疗”，常见线索包括就医、医生、医院。",
+        "The user's primary goal concerns medical care, with signals such as medical care, doctor, clinic."
+      ],
+      "exclusion_cues": [
+        "若“就医与医疗”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Medical Care\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "就医与医疗",
+          "就医",
+          "医生",
+          "医院",
+          "挂号",
+          "看病"
+        ],
+        "en": [
+          "Medical Care",
+          "medical care",
+          "doctor",
+          "clinic",
+          "hospital",
+          "diagnosis"
+        ],
+        "mixed": [
+          "就医与医疗 Medical Care",
+          "健康与身心 > 就医与医疗",
+          "Health & Wellbeing > Medical Care"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理就医与医疗相关的问题，重点是就医和医生，帮我梳理判断与下一步。",
+        "Help me with medical care, especially medical care and doctor."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "药物与治疗",
+        "en": "Medication & Treatment"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "药物与治疗：药物、用药方案、治疗方式、疗程、副作用、剂量和治疗依从性。",
+        "Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“药物与治疗”，常见线索包括用药、药物、治疗。",
+        "The user's primary goal concerns medication & treatment, with signals such as medication, treatment, dose."
+      ],
+      "exclusion_cues": [
+        "若“药物与治疗”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Medication & Treatment\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "药物与治疗",
+          "用药",
+          "药物",
+          "治疗",
+          "剂量",
+          "副作用"
+        ],
+        "en": [
+          "Medication & Treatment",
+          "medication",
+          "treatment",
+          "dose",
+          "side effect",
+          "therapy"
+        ],
+        "mixed": [
+          "药物与治疗 Medication & Treatment",
+          "健康与身心 > 药物与治疗",
+          "Health & Wellbeing > Medication & Treatment"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理药物与治疗相关的问题，重点是用药和药物，帮我梳理判断与下一步。",
+        "Help me with medication & treatment, especially medication and treatment."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "心理与情绪",
+        "en": "Mental Wellbeing"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "心理与情绪：情绪、压力、焦虑、抑郁、心理状态、自我调节和心理支持。",
+        "Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“心理与情绪”，常见线索包括心理健康、情绪、焦虑。",
+        "The user's primary goal concerns mental wellbeing, with signals such as mental wellbeing, mood, anxiety."
+      ],
+      "exclusion_cues": [
+        "若“心理与情绪”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Mental Wellbeing\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "心理与情绪",
+          "心理健康",
+          "情绪",
+          "焦虑",
+          "压力",
+          "抑郁"
+        ],
+        "en": [
+          "Mental Wellbeing",
+          "mental wellbeing",
+          "mood",
+          "anxiety",
+          "stress",
+          "depression"
+        ],
+        "mixed": [
+          "心理与情绪 Mental Wellbeing",
+          "健康与身心 > 心理与情绪",
+          "Health & Wellbeing > Mental Wellbeing"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理心理与情绪相关的问题，重点是心理健康和情绪，帮我梳理判断与下一步。",
+        "Help me with mental wellbeing, especially mental wellbeing and mood."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "饮食营养",
+        "en": "Nutrition"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "饮食营养：饮食结构、营养摄入、热量、宏量营养、餐食和饮食目标。",
+        "Nutrition: diet, nutrient intake, calories, macronutrients, meals and nutrition goals."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“饮食营养”，常见线索包括营养、饮食、热量。",
+        "The user's primary goal concerns nutrition, with signals such as nutrition, diet, calorie."
+      ],
+      "exclusion_cues": [
+        "若“饮食营养”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Nutrition\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "饮食营养",
+          "营养",
+          "饮食",
+          "热量",
+          "蛋白质",
+          "膳食"
+        ],
+        "en": [
+          "Nutrition",
+          "nutrition",
+          "diet",
+          "calorie",
+          "protein",
+          "meal"
+        ],
+        "mixed": [
+          "饮食营养 Nutrition",
+          "健康与身心 > 饮食营养",
+          "Health & Wellbeing > Nutrition"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理饮食营养相关的问题，重点是营养和饮食，帮我梳理判断与下一步。",
+        "Help me with nutrition, especially nutrition and diet."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "体检与预防健康",
+        "en": "Preventive Health"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+        "Preventive Health: checkups, screening, vaccination, risk reduction, health monitoring and prevention."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“体检与预防健康”，常见线索包括预防保健、体检、筛查。",
+        "The user's primary goal concerns preventive health, with signals such as preventive health, checkup, screening."
+      ],
+      "exclusion_cues": [
+        "若“体检与预防健康”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Preventive Health\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "体检与预防健康",
+          "预防保健",
+          "体检",
+          "筛查",
+          "疫苗",
+          "健康监测"
+        ],
+        "en": [
+          "Preventive Health",
+          "preventive health",
+          "checkup",
+          "screening",
+          "vaccine",
+          "prevention"
+        ],
+        "mixed": [
+          "体检与预防健康 Preventive Health",
+          "健康与身心 > 体检与预防健康",
+          "Health & Wellbeing > Preventive Health"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理体检与预防健康相关的问题，重点是预防保健和体检，帮我梳理判断与下一步。",
+        "Help me with preventive health, especially preventive health and checkup."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.sleep",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "睡眠",
+        "en": "Sleep"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+        "Sleep: sleep duration, falling asleep, waking, sleep schedule, quality and sleep habits."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“睡眠”，常见线索包括失眠、作息、睡眠质量。",
+        "The user's primary goal concerns sleep, with signals such as sleep, insomnia, sleep schedule."
+      ],
+      "exclusion_cues": [
+        "若“睡眠”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Sleep\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "睡眠",
+          "失眠",
+          "作息",
+          "睡眠质量",
+          "熬夜"
+        ],
+        "en": [
+          "Sleep",
+          "sleep",
+          "insomnia",
+          "sleep schedule",
+          "sleep quality",
+          "bedtime"
+        ],
+        "mixed": [
+          "睡眠 Sleep",
+          "健康与身心 > 睡眠",
+          "Health & Wellbeing > Sleep"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理睡眠相关的问题，重点是失眠和作息，帮我梳理判断与下一步。",
+        "Help me with sleep, especially sleep and insomnia."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "症状与健康状况",
+        "en": "Symptoms & Conditions"
+      },
+      "domain": {
+        "id": "D03",
+        "name_zh": "健康与身心",
+        "name_en": "Health & Wellbeing"
+      },
+      "semantic_core": [
+        "症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+        "Symptoms & Conditions: symptoms, conditions, abnormal signs, possible causes and changes in health status."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“症状与健康状况”，常见线索包括症状、疾病、不舒服。",
+        "The user's primary goal concerns symptoms & conditions, with signals such as symptom, condition, illness."
+      ],
+      "exclusion_cues": [
+        "若“症状与健康状况”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Symptoms & Conditions\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "症状与健康状况",
+          "症状",
+          "疾病",
+          "不舒服",
+          "病情",
+          "异常表现"
+        ],
+        "en": [
+          "Symptoms & Conditions",
+          "symptom",
+          "condition",
+          "illness",
+          "sign",
+          "health problem"
+        ],
+        "mixed": [
+          "症状与健康状况 Symptoms & Conditions",
+          "健康与身心 > 症状与健康状况",
+          "Health & Wellbeing > Symptoms & Conditions"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理症状与健康状况相关的问题，重点是症状和疾病，帮我梳理判断与下一步。",
+        "Help me with symptoms & conditions, especially symptom and condition."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "习惯与行为",
+        "en": "Habits & Behavior"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "习惯与行为：习惯形成、行为改变、触发因素、重复模式、坚持与戒除。",
+        "Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“习惯与行为”，常见线索包括习惯养成、行为改变、坏习惯。",
+        "The user's primary goal concerns habits & behavior, with signals such as habit, behavior change, routine trigger."
+      ],
+      "exclusion_cues": [
+        "若“习惯与行为”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Habits & Behavior\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "习惯与行为",
+          "习惯养成",
+          "行为改变",
+          "坏习惯",
+          "坚持",
+          "触发因素"
+        ],
+        "en": [
+          "Habits & Behavior",
+          "habit",
+          "behavior change",
+          "routine trigger",
+          "consistency",
+          "break a habit"
+        ],
+        "mixed": [
+          "习惯与行为 Habits & Behavior",
+          "个人方向 > 习惯与行为",
+          "Personal Direction > Habits & Behavior"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理习惯与行为相关的问题，重点是习惯养成和行为改变，帮我梳理判断与下一步。",
+        "Help me with habits & behavior, especially habit and behavior change."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.life_goals",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "人生目标",
+        "en": "Life Goals"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "人生目标：长期愿景、人生优先级、目标分解、里程碑与想实现的长期结果。",
+        "Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“人生目标”，常见线索包括长期目标、人生愿景、优先级。",
+        "The user's primary goal concerns life goals, with signals such as aspiration, long-term goal, life priority."
+      ],
+      "exclusion_cues": [
+        "若“人生目标”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Life Goals\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "人生目标",
+          "长期目标",
+          "人生愿景",
+          "优先级",
+          "里程碑",
+          "目标分解"
+        ],
+        "en": [
+          "Life Goals",
+          "aspiration",
+          "long-term goal",
+          "life priority",
+          "milestone",
+          "goal setting"
+        ],
+        "mixed": [
+          "人生目标 Life Goals",
+          "个人方向 > 人生目标",
+          "Personal Direction > Life Goals"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理人生目标相关的问题，重点是长期目标和人生愿景，帮我梳理判断与下一步。",
+        "Help me with life goals, especially aspiration and long-term goal."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.life_planning",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "人生规划",
+        "en": "Life Planning"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "人生规划：人生阶段、长期生活路径、未来几年安排、生活结构和阶段性规划。",
+        "Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“人生规划”，常见线索包括未来几年、人生阶段、长期安排。",
+        "The user's primary goal concerns life planning, with signals such as life plan, multi-year plan, life stage."
+      ],
+      "exclusion_cues": [
+        "若“人生规划”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Life Planning\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "人生规划",
+          "未来几年",
+          "人生阶段",
+          "长期安排",
+          "生活路径"
+        ],
+        "en": [
+          "Life Planning",
+          "life plan",
+          "multi-year plan",
+          "life stage",
+          "future path",
+          "long-term planning"
+        ],
+        "mixed": [
+          "人生规划 Life Planning",
+          "个人方向 > 人生规划",
+          "Personal Direction > Life Planning"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理人生规划相关的问题，重点是未来几年和人生阶段，帮我梳理判断与下一步。",
+        "Help me with life planning, especially life plan and multi-year plan."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.major_decisions",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "重大决策",
+        "en": "Major Decisions"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "重大决策：高影响、难逆转或需要权衡多个长期后果的重要选择。",
+        "Major Decisions: high-impact or hard-to-reverse choices involving alternatives, consequences and commitment."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“重大决策”，常见线索包括重大选择、高风险决策、方案权衡。",
+        "The user's primary goal concerns major decisions, with signals such as major decision, high-stakes choice, tradeoff."
+      ],
+      "exclusion_cues": [
+        "若“重大决策”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Major Decisions\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "重大决策",
+          "重大选择",
+          "高风险决策",
+          "方案权衡",
+          "长期后果",
+          "是否选择"
+        ],
+        "en": [
+          "Major Decisions",
+          "major decision",
+          "high-stakes choice",
+          "tradeoff",
+          "consequence",
+          "commitment"
+        ],
+        "mixed": [
+          "重大决策 Major Decisions",
+          "个人方向 > 重大决策",
+          "Personal Direction > Major Decisions"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理重大决策相关的问题，重点是重大选择和高风险决策，帮我梳理判断与下一步。",
+        "Help me with major decisions, especially major decision and high-stakes choice."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.personal_admin",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "个人事务管理",
+        "en": "Personal Administration"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "个人事务管理：个人手续、账户、证明、表单、个人事务办理和行政性琐事。",
+        "Personal Administration: personal paperwork, accounts, forms, records and administrative chores."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“个人事务管理”，常见线索包括个人手续、个人事务、表格。",
+        "The user's primary goal concerns personal administration, with signals such as personal admin, paperwork, form."
+      ],
+      "exclusion_cues": [
+        "若“个人事务管理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Personal Administration\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "个人事务管理",
+          "个人手续",
+          "个人事务",
+          "表格",
+          "证明",
+          "账户管理"
+        ],
+        "en": [
+          "Personal Administration",
+          "personal admin",
+          "paperwork",
+          "form",
+          "personal account",
+          "administrative task"
+        ],
+        "mixed": [
+          "个人事务管理 Personal Administration",
+          "个人方向 > 个人事务管理",
+          "Personal Direction > Personal Administration"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理个人事务管理相关的问题，重点是个人手续和个人事务，帮我梳理判断与下一步。",
+        "Help me with personal administration, especially personal admin and paperwork."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "个人效率",
+        "en": "Personal Productivity"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+        "Personal Productivity: personal task execution, focus, efficiency, workflow, procrastination and output cadence."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“个人效率”，常见线索包括专注、拖延、任务执行。",
+        "The user's primary goal concerns personal productivity, with signals such as productivity, focus, procrastination."
+      ],
+      "exclusion_cues": [
+        "若“个人效率”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Personal Productivity\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "个人效率",
+          "专注",
+          "拖延",
+          "任务执行",
+          "工作流"
+        ],
+        "en": [
+          "Personal Productivity",
+          "productivity",
+          "focus",
+          "procrastination",
+          "task execution",
+          "workflow"
+        ],
+        "mixed": [
+          "个人效率 Personal Productivity",
+          "个人方向 > 个人效率",
+          "Personal Direction > Personal Productivity"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理个人效率相关的问题，重点是专注和拖延，帮我梳理判断与下一步。",
+        "Help me with personal productivity, especially productivity and focus."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.self_reflection",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "自我反思",
+        "en": "Self Reflection"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+        "Self Reflection: reflection on identity, motives, strengths, weaknesses, experiences and personal patterns."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“自我反思”，常见线索包括自我认知、性格、动机。",
+        "The user's primary goal concerns self reflection, with signals such as self reflection, self awareness, identity."
+      ],
+      "exclusion_cues": [
+        "若“自我反思”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Self Reflection\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "自我反思",
+          "自我认知",
+          "性格",
+          "动机",
+          "复盘自己"
+        ],
+        "en": [
+          "Self Reflection",
+          "self reflection",
+          "self awareness",
+          "identity",
+          "motivation",
+          "personal pattern"
+        ],
+        "mixed": [
+          "自我反思 Self Reflection",
+          "个人方向 > 自我反思",
+          "Personal Direction > Self Reflection"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理自我反思相关的问题，重点是自我认知和性格，帮我梳理判断与下一步。",
+        "Help me with self reflection, especially self reflection and self awareness."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.personal_direction.values_principles",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "价值观与原则",
+        "en": "Values & Principles"
+      },
+      "domain": {
+        "id": "D01",
+        "name_zh": "个人方向",
+        "name_en": "Personal Direction"
+      },
+      "semantic_core": [
+        "价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+        "Values & Principles: personal values, guiding principles, ethical tradeoffs and decision criteria."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“价值观与原则”，常见线索包括价值观、原则、底线。",
+        "The user's primary goal concerns values & principles, with signals such as values, principles, beliefs."
+      ],
+      "exclusion_cues": [
+        "若“价值观与原则”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Values & Principles\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "价值观与原则",
+          "价值观",
+          "原则",
+          "底线",
+          "信念",
+          "取舍标准"
+        ],
+        "en": [
+          "Values & Principles",
+          "values",
+          "principles",
+          "beliefs",
+          "decision criteria",
+          "ethical tradeoff"
+        ],
+        "mixed": [
+          "价值观与原则 Values & Principles",
+          "个人方向 > 价值观与原则",
+          "Personal Direction > Values & Principles"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理价值观与原则相关的问题，重点是价值观和原则，帮我梳理判断与下一步。",
+        "Help me with values & principles, especially values and principles."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    }
+  ]
+}

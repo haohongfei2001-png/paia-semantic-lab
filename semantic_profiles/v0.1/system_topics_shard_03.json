@@ -1,0 +1,1547 @@
+{
+  "bundle_version": "0.1.0",
+  "profile_schema": "schemas/topic_semantic_profile_v0.1.schema.json",
+  "formal_catalog_version": "0.2.0",
+  "domains": [
+    "D07",
+    "D08",
+    "D09"
+  ],
+  "profile_count": 24,
+  "profiles": [
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "AI模型与工具",
+        "en": "AI Models & Tools"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "AI模型与工具：AI模型、模型能力、模型选择、AI工具、模型使用和能力比较。",
+        "AI Models & Tools: AI models, model capabilities, model selection, AI tools and model comparison."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“AI模型与工具”，常见线索包括AI模型、大模型、模型能力。",
+        "The user's primary goal concerns ai models & tools, with signals such as AI model, LLM, model capability."
+      ],
+      "exclusion_cues": [
+        "若“AI模型与工具”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"AI Models & Tools\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "AI模型与工具",
+          "AI模型",
+          "大模型",
+          "模型能力",
+          "AI工具",
+          "模型选择"
+        ],
+        "en": [
+          "AI Models & Tools",
+          "AI model",
+          "LLM",
+          "model capability",
+          "AI tool",
+          "model selection"
+        ],
+        "mixed": [
+          "AI模型与工具 AI Models & Tools",
+          "AI与计算 > AI模型与工具",
+          "AI & Computing > AI Models & Tools"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理AI模型与工具相关的问题，重点是AI模型和大模型，帮我梳理判断与下一步。",
+        "Help me with ai models & tools, especially AI model and LLM."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "编程与软件开发",
+        "en": "Software Development"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "编程与软件开发：编程、代码实现、软件架构、库、API和开发实践。",
+        "Software Development: programming, code implementation, software architecture, libraries, APIs and development practice."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“编程与软件开发”，常见线索包括编程、代码、软件开发。",
+        "The user's primary goal concerns software development, with signals such as software development, programming, code."
+      ],
+      "exclusion_cues": [
+        "若“编程与软件开发”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Software Development\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "编程与软件开发",
+          "编程",
+          "代码",
+          "软件开发",
+          "API",
+          "开发框架"
+        ],
+        "en": [
+          "Software Development",
+          "software development",
+          "programming",
+          "code",
+          "API",
+          "software architecture"
+        ],
+        "mixed": [
+          "编程与软件开发 Software Development",
+          "AI与计算 > 编程与软件开发",
+          "AI & Computing > Software Development"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理编程与软件开发相关的问题，重点是编程和代码，帮我梳理判断与下一步。",
+        "Help me with software development, especially software development and programming."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "信息安全与隐私",
+        "en": "Cybersecurity & Privacy"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "信息安全与隐私：账号安全、隐私保护、权限、认证、数据泄露、攻击与安全风险。",
+        "Cybersecurity & Privacy: account security, privacy, permissions, authentication, breaches and cyber risk."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“信息安全与隐私”，常见线索包括网络安全、隐私、账号安全。",
+        "The user's primary goal concerns cybersecurity & privacy, with signals such as cybersecurity, privacy, account security."
+      ],
+      "exclusion_cues": [
+        "若“信息安全与隐私”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Cybersecurity & Privacy\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "信息安全与隐私",
+          "网络安全",
+          "隐私",
+          "账号安全",
+          "权限",
+          "数据泄露"
+        ],
+        "en": [
+          "Cybersecurity & Privacy",
+          "cybersecurity",
+          "privacy",
+          "account security",
+          "permission",
+          "data breach"
+        ],
+        "mixed": [
+          "信息安全与隐私 Cybersecurity & Privacy",
+          "AI与计算 > 信息安全与隐私",
+          "AI & Computing > Cybersecurity & Privacy"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理信息安全与隐私相关的问题，重点是网络安全和隐私，帮我梳理判断与下一步。",
+        "Help me with cybersecurity & privacy, especially cybersecurity and privacy."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.data_systems",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "数据与信息系统",
+        "en": "Data & Information Systems"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "数据与信息系统：数据库、数据模型、信息系统、数据管道、存储和数据处理架构。",
+        "Data & Information Systems: databases, data models, information systems, pipelines, storage and data-processing architecture."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“数据与信息系统”，常见线索包括数据系统、数据库、数据模型。",
+        "The user's primary goal concerns data & information systems, with signals such as data system, database, data model."
+      ],
+      "exclusion_cues": [
+        "若“数据与信息系统”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Data & Information Systems\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "数据与信息系统",
+          "数据系统",
+          "数据库",
+          "数据模型",
+          "数据管道",
+          "信息系统"
+        ],
+        "en": [
+          "Data & Information Systems",
+          "data system",
+          "database",
+          "data model",
+          "pipeline",
+          "information system"
+        ],
+        "mixed": [
+          "数据与信息系统 Data & Information Systems",
+          "AI与计算 > 数据与信息系统",
+          "AI & Computing > Data & Information Systems"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理数据与信息系统相关的问题，重点是数据系统和数据库，帮我梳理判断与下一步。",
+        "Help me with data & information systems, especially data system and database."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "调试与故障排查",
+        "en": "Debugging & Troubleshooting"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "调试与故障排查：错误定位、故障排查、日志、异常、修复和根因分析。",
+        "Debugging & Troubleshooting: debugging, troubleshooting, logs, errors, fixes and root-cause analysis."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“调试与故障排查”，常见线索包括调试、报错、故障排查。",
+        "The user's primary goal concerns debugging & troubleshooting, with signals such as debugging, troubleshooting, error."
+      ],
+      "exclusion_cues": [
+        "若“调试与故障排查”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Debugging & Troubleshooting\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "调试与故障排查",
+          "调试",
+          "报错",
+          "故障排查",
+          "日志",
+          "修复"
+        ],
+        "en": [
+          "Debugging & Troubleshooting",
+          "debugging",
+          "troubleshooting",
+          "error",
+          "log",
+          "root cause"
+        ],
+        "mixed": [
+          "调试与故障排查 Debugging & Troubleshooting",
+          "AI与计算 > 调试与故障排查",
+          "AI & Computing > Debugging & Troubleshooting"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理调试与故障排查相关的问题，重点是调试和报错，帮我梳理判断与下一步。",
+        "Help me with debugging & troubleshooting, especially debugging and troubleshooting."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "电脑与硬件设备",
+        "en": "Hardware & Devices"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "电脑与硬件设备：电脑、手机、外设、硬件配置、性能、设备选择和设备问题。",
+        "Hardware & Devices: computers, phones, peripherals, hardware configuration, performance and device issues."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“电脑与硬件设备”，常见线索包括硬件、电脑、手机。",
+        "The user's primary goal concerns hardware & devices, with signals such as hardware, device, computer."
+      ],
+      "exclusion_cues": [
+        "若“电脑与硬件设备”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Hardware & Devices\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "电脑与硬件设备",
+          "硬件",
+          "电脑",
+          "手机",
+          "外设",
+          "设备性能"
+        ],
+        "en": [
+          "Hardware & Devices",
+          "hardware",
+          "device",
+          "computer",
+          "phone",
+          "peripheral"
+        ],
+        "mixed": [
+          "电脑与硬件设备 Hardware & Devices",
+          "AI与计算 > 电脑与硬件设备",
+          "AI & Computing > Hardware & Devices"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理电脑与硬件设备相关的问题，重点是硬件和电脑，帮我梳理判断与下一步。",
+        "Help me with hardware & devices, especially hardware and device."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.networking_connectivity",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "网络与连接",
+        "en": "Networking & Connectivity"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "网络与连接：网络连接、Wi-Fi、蜂窝网络、路由、VPN、带宽和连接故障。",
+        "Networking & Connectivity: network connectivity, Wi-Fi, cellular, routing, VPN, bandwidth and connection problems."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“网络与连接”，常见线索包括网络、WiFi、VPN。",
+        "The user's primary goal concerns networking & connectivity, with signals such as networking, Wi-Fi, VPN."
+      ],
+      "exclusion_cues": [
+        "若“网络与连接”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Networking & Connectivity\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "网络与连接",
+          "网络",
+          "WiFi",
+          "VPN",
+          "路由",
+          "网速"
+        ],
+        "en": [
+          "Networking & Connectivity",
+          "networking",
+          "Wi-Fi",
+          "VPN",
+          "router",
+          "connectivity"
+        ],
+        "mixed": [
+          "网络与连接 Networking & Connectivity",
+          "AI与计算 > 网络与连接",
+          "AI & Computing > Networking & Connectivity"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理网络与连接相关的问题，重点是网络和WiFi，帮我梳理判断与下一步。",
+        "Help me with networking & connectivity, especially networking and Wi-Fi."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.ai_computing.prompt_workflows",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "AI工作流与提示设计",
+        "en": "AI Workflows & Prompting"
+      },
+      "domain": {
+        "id": "D07",
+        "name_zh": "AI与计算",
+        "name_en": "AI & Computing"
+      },
+      "semantic_core": [
+        "AI工作流与提示设计：提示词、AI工作流、agent流程、自动化调用、上下文编排和模型协作。",
+        "AI Workflows & Prompting: prompting, AI workflows, agents, automation, context orchestration and model collaboration."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“AI工作流与提示设计”，常见线索包括提示词、AI工作流、Agent。",
+        "The user's primary goal concerns ai workflows & prompting, with signals such as prompting, AI workflow, agent."
+      ],
+      "exclusion_cues": [
+        "若“AI工作流与提示设计”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"AI Workflows & Prompting\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "AI工作流与提示设计",
+          "提示词",
+          "AI工作流",
+          "Agent",
+          "上下文编排",
+          "自动化AI"
+        ],
+        "en": [
+          "AI Workflows & Prompting",
+          "prompting",
+          "AI workflow",
+          "agent",
+          "context orchestration",
+          "AI automation"
+        ],
+        "mixed": [
+          "AI工作流与提示设计 AI Workflows & Prompting",
+          "AI与计算 > AI工作流与提示设计",
+          "AI & Computing > AI Workflows & Prompting"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理AI工作流与提示设计相关的问题，重点是提示词和AI工作流，帮我梳理判断与下一步。",
+        "Help me with ai workflows & prompting, especially prompting and AI workflow."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "银行与支付",
+        "en": "Banking & Payments"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "银行与支付：银行账户、转账、支付、银行卡、收付款和支付渠道。",
+        "Banking & Payments: bank accounts, transfers, payments, cards and payment rails."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“银行与支付”，常见线索包括银行、支付、转账。",
+        "The user's primary goal concerns banking & payments, with signals such as banking, payment, transfer."
+      ],
+      "exclusion_cues": [
+        "若“银行与支付”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Banking & Payments\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "银行与支付",
+          "银行",
+          "支付",
+          "转账",
+          "银行卡",
+          "收付款"
+        ],
+        "en": [
+          "Banking & Payments",
+          "banking",
+          "payment",
+          "transfer",
+          "bank account",
+          "card"
+        ],
+        "mixed": [
+          "银行与支付 Banking & Payments",
+          "财务与购买 > 银行与支付",
+          "Finance & Purchases > Banking & Payments"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理银行与支付相关的问题，重点是银行和支付，帮我梳理判断与下一步。",
+        "Help me with banking & payments, especially banking and payment."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "预算与现金流",
+        "en": "Budgeting & Cash Flow"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "预算与现金流：预算、收入支出、现金流、月度资金安排和财务计划。",
+        "Budgeting & Cash Flow: budgets, income and expenses, cash flow, monthly allocation and financial planning."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“预算与现金流”，常见线索包括预算、现金流、收入支出。",
+        "The user's primary goal concerns budgeting & cash flow, with signals such as budget, cash flow, income expense."
+      ],
+      "exclusion_cues": [
+        "若“预算与现金流”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Budgeting & Cash Flow\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "预算与现金流",
+          "预算",
+          "现金流",
+          "收入支出",
+          "月度预算",
+          "财务计划"
+        ],
+        "en": [
+          "Budgeting & Cash Flow",
+          "budget",
+          "cash flow",
+          "income expense",
+          "monthly budget",
+          "financial plan"
+        ],
+        "mixed": [
+          "预算与现金流 Budgeting & Cash Flow",
+          "财务与购买 > 预算与现金流",
+          "Finance & Purchases > Budgeting & Cash Flow"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理预算与现金流相关的问题，重点是预算和现金流，帮我梳理判断与下一步。",
+        "Help me with budgeting & cash flow, especially budget and cash flow."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "债务与信用",
+        "en": "Debt & Credit"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "债务与信用：借款、贷款、信用卡、利息、债务偿还和信用状况。",
+        "Debt & Credit: debt, loans, credit cards, interest, repayment and credit standing."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“债务与信用”，常见线索包括债务、贷款、信用卡。",
+        "The user's primary goal concerns debt & credit, with signals such as debt, loan, credit card."
+      ],
+      "exclusion_cues": [
+        "若“债务与信用”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Debt & Credit\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "债务与信用",
+          "债务",
+          "贷款",
+          "信用卡",
+          "利息",
+          "还款"
+        ],
+        "en": [
+          "Debt & Credit",
+          "debt",
+          "loan",
+          "credit card",
+          "interest",
+          "repayment"
+        ],
+        "mixed": [
+          "债务与信用 Debt & Credit",
+          "财务与购买 > 债务与信用",
+          "Finance & Purchases > Debt & Credit"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理债务与信用相关的问题，重点是债务和贷款，帮我梳理判断与下一步。",
+        "Help me with debt & credit, especially debt and loan."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.investing",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "投资",
+        "en": "Investing"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "投资：投资组合、证券、基金、股票、收益风险和资产配置。",
+        "Investing: investments, portfolios, securities, funds, stocks, risk and asset allocation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“投资”，常见线索包括股票、基金、资产配置。",
+        "The user's primary goal concerns investing, with signals such as investing, stock, fund."
+      ],
+      "exclusion_cues": [
+        "若“投资”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Investing\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "投资",
+          "股票",
+          "基金",
+          "资产配置",
+          "收益风险"
+        ],
+        "en": [
+          "Investing",
+          "investing",
+          "stock",
+          "fund",
+          "portfolio",
+          "asset allocation"
+        ],
+        "mixed": [
+          "投资 Investing",
+          "财务与购买 > 投资",
+          "Finance & Purchases > Investing"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理投资相关的问题，重点是股票和基金，帮我梳理判断与下一步。",
+        "Help me with investing, especially investing and stock."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "大额购买",
+        "en": "Major Purchases"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "大额购买：高金额或高影响购买、长期使用产品、购置决策和大额支出权衡。",
+        "Major Purchases: high-cost or high-impact purchases, long-lived products and major spending decisions."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“大额购买”，常见线索包括大件、高价产品、购置决策。",
+        "The user's primary goal concerns major purchases, with signals such as major purchase, expensive purchase, big-ticket."
+      ],
+      "exclusion_cues": [
+        "若“大额购买”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Major Purchases\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "大额购买",
+          "大件",
+          "高价产品",
+          "购置决策",
+          "长期使用"
+        ],
+        "en": [
+          "Major Purchases",
+          "major purchase",
+          "expensive purchase",
+          "big-ticket",
+          "buying decision",
+          "long-term purchase"
+        ],
+        "mixed": [
+          "大额购买 Major Purchases",
+          "财务与购买 > 大额购买",
+          "Finance & Purchases > Major Purchases"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理大额购买相关的问题，重点是大件和高价产品，帮我梳理判断与下一步。",
+        "Help me with major purchases, especially major purchase and expensive purchase."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "商品研究与购物",
+        "en": "Shopping & Product Research"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "商品研究与购物：商品搜索、价格比较、规格、评价、购买前研究和选品。",
+        "Shopping & Product Research: product search, price comparison, specifications, reviews and purchase research."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“商品研究与购物”，常见线索包括购物、产品对比、价格比较。",
+        "The user's primary goal concerns shopping & product research, with signals such as shopping, product research, price comparison."
+      ],
+      "exclusion_cues": [
+        "若“商品研究与购物”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Shopping & Product Research\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "商品研究与购物",
+          "购物",
+          "产品对比",
+          "价格比较",
+          "商品研究",
+          "选购"
+        ],
+        "en": [
+          "Shopping & Product Research",
+          "shopping",
+          "product research",
+          "price comparison",
+          "review",
+          "buying guide"
+        ],
+        "mixed": [
+          "商品研究与购物 Shopping & Product Research",
+          "财务与购买 > 商品研究与购物",
+          "Finance & Purchases > Shopping & Product Research"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理商品研究与购物相关的问题，重点是购物和产品对比，帮我梳理判断与下一步。",
+        "Help me with shopping & product research, especially shopping and product research."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "订阅与经常性支出",
+        "en": "Subscriptions & Recurring Spend"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "订阅与经常性支出：订阅服务、自动续费、周期性账单、会员和固定重复支出。",
+        "Subscriptions & Recurring Spend: subscriptions, auto-renewal, recurring bills, memberships and repeated spending."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“订阅与经常性支出”，常见线索包括订阅、自动续费、周期账单。",
+        "The user's primary goal concerns subscriptions & recurring spend, with signals such as subscription, recurring bill, auto renewal."
+      ],
+      "exclusion_cues": [
+        "若“订阅与经常性支出”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Subscriptions & Recurring Spend\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "订阅与经常性支出",
+          "订阅",
+          "自动续费",
+          "周期账单",
+          "会员",
+          "重复支出"
+        ],
+        "en": [
+          "Subscriptions & Recurring Spend",
+          "subscription",
+          "recurring bill",
+          "auto renewal",
+          "membership",
+          "recurring spend"
+        ],
+        "mixed": [
+          "订阅与经常性支出 Subscriptions & Recurring Spend",
+          "财务与购买 > 订阅与经常性支出",
+          "Finance & Purchases > Subscriptions & Recurring Spend"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理订阅与经常性支出相关的问题，重点是订阅和自动续费，帮我梳理判断与下一步。",
+        "Help me with subscriptions & recurring spend, especially subscription and recurring bill."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "税务与保险",
+        "en": "Taxes & Insurance"
+      },
+      "domain": {
+        "id": "D08",
+        "name_zh": "财务与购买",
+        "name_en": "Finance & Purchases"
+      },
+      "semantic_core": [
+        "税务与保险：税务、报税、保险、保单、保费、理赔和保障规划。",
+        "Taxes & Insurance: taxes, tax filing, insurance policies, premiums, claims and coverage planning."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“税务与保险”，常见线索包括税务、报税、保险。",
+        "The user's primary goal concerns taxes & insurance, with signals such as tax, tax filing, insurance."
+      ],
+      "exclusion_cues": [
+        "若“税务与保险”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Taxes & Insurance\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "税务与保险",
+          "税务",
+          "报税",
+          "保险",
+          "保单",
+          "理赔"
+        ],
+        "en": [
+          "Taxes & Insurance",
+          "tax",
+          "tax filing",
+          "insurance",
+          "policy",
+          "claim"
+        ],
+        "mixed": [
+          "税务与保险 Taxes & Insurance",
+          "财务与购买 > 税务与保险",
+          "Finance & Purchases > Taxes & Insurance"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理税务与保险相关的问题，重点是税务和报税，帮我梳理判断与下一步。",
+        "Help me with taxes & insurance, especially tax and tax filing."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "家务与清洁",
+        "en": "Chores & Cleaning"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "家务与清洁：家务、清洁、洗衣、整理、打扫和日常维护。",
+        "Chores & Cleaning: household chores, cleaning, laundry, tidying and routine maintenance."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“家务与清洁”，常见线索包括家务、清洁、洗衣。",
+        "The user's primary goal concerns chores & cleaning, with signals such as chores, cleaning, laundry."
+      ],
+      "exclusion_cues": [
+        "若“家务与清洁”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Chores & Cleaning\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "家务与清洁",
+          "家务",
+          "清洁",
+          "洗衣",
+          "打扫",
+          "整理"
+        ],
+        "en": [
+          "Chores & Cleaning",
+          "chores",
+          "cleaning",
+          "laundry",
+          "tidying",
+          "housework"
+        ],
+        "mixed": [
+          "家务与清洁 Chores & Cleaning",
+          "居家与日常 > 家务与清洁",
+          "Home & Daily Life > Chores & Cleaning"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理家务与清洁相关的问题，重点是家务和清洁，帮我梳理判断与下一步。",
+        "Help me with chores & cleaning, especially chores and cleaning."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.home_improvement",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "家居与维修",
+        "en": "Home Improvement"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "家居与维修：装修、维修、改造、家具安装、空间改善和房屋工程。",
+        "Home Improvement: renovation, repairs, remodeling, installation and physical home improvement."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“家居与维修”，常见线索包括装修、维修、改造。",
+        "The user's primary goal concerns home improvement, with signals such as home improvement, renovation, repair."
+      ],
+      "exclusion_cues": [
+        "若“家居与维修”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Home Improvement\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "家居与维修",
+          "装修",
+          "维修",
+          "改造",
+          "家装",
+          "房屋工程"
+        ],
+        "en": [
+          "Home Improvement",
+          "home improvement",
+          "renovation",
+          "repair",
+          "remodel",
+          "installation"
+        ],
+        "mixed": [
+          "家居与维修 Home Improvement",
+          "居家与日常 > 家居与维修",
+          "Home & Daily Life > Home Improvement"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理家居与维修相关的问题，重点是装修和维修，帮我梳理判断与下一步。",
+        "Help me with home improvement, especially home improvement and renovation."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.housing",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "居住与住房",
+        "en": "Housing"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "居住与住房：租房、买房、居住空间、房屋条件、房东租客和住房安排。",
+        "Housing: housing, renting, home ownership, living space, landlords and housing arrangements."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“居住与住房”，常见线索包括住房、租房、买房。",
+        "The user's primary goal concerns housing, with signals such as housing, rent, home."
+      ],
+      "exclusion_cues": [
+        "若“居住与住房”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Housing\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "居住与住房",
+          "住房",
+          "租房",
+          "买房",
+          "房屋",
+          "居住"
+        ],
+        "en": [
+          "Housing",
+          "housing",
+          "rent",
+          "home",
+          "landlord",
+          "apartment"
+        ],
+        "mixed": [
+          "居住与住房 Housing",
+          "居家与日常 > 居住与住房",
+          "Home & Daily Life > Housing"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理居住与住房相关的问题，重点是住房和租房，帮我梳理判断与下一步。",
+        "Help me with housing, especially housing and rent."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.local_errands",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "日常跑腿与办事",
+        "en": "Local Errands"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "日常跑腿与办事：本地跑腿、取件、办事、采购、线下任务和附近服务。",
+        "Local Errands: local errands, pickups, in-person tasks, small purchases and nearby services."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“日常跑腿与办事”，常见线索包括跑腿、取快递、办事。",
+        "The user's primary goal concerns local errands, with signals such as errand, pickup, local task."
+      ],
+      "exclusion_cues": [
+        "若“日常跑腿与办事”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Local Errands\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "日常跑腿与办事",
+          "跑腿",
+          "取快递",
+          "办事",
+          "附近",
+          "线下任务"
+        ],
+        "en": [
+          "Local Errands",
+          "errand",
+          "pickup",
+          "local task",
+          "nearby service",
+          "in-person"
+        ],
+        "mixed": [
+          "日常跑腿与办事 Local Errands",
+          "居家与日常 > 日常跑腿与办事",
+          "Home & Daily Life > Local Errands"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理日常跑腿与办事相关的问题，重点是跑腿和取快递，帮我梳理判断与下一步。",
+        "Help me with local errands, especially errand and pickup."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.moving_relocation",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "搬家与迁居",
+        "en": "Moving & Relocation"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "搬家与迁居：搬家、迁居、换城市、打包、物流和居住地迁移。",
+        "Moving & Relocation: moving, relocation, changing cities, packing, logistics and residence changes."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“搬家与迁居”，常见线索包括搬家、迁居、换城市。",
+        "The user's primary goal concerns moving & relocation, with signals such as moving, relocation, packing."
+      ],
+      "exclusion_cues": [
+        "若“搬家与迁居”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Moving & Relocation\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "搬家与迁居",
+          "搬家",
+          "迁居",
+          "换城市",
+          "打包",
+          "搬迁"
+        ],
+        "en": [
+          "Moving & Relocation",
+          "moving",
+          "relocation",
+          "packing",
+          "move house",
+          "change city"
+        ],
+        "mixed": [
+          "搬家与迁居 Moving & Relocation",
+          "居家与日常 > 搬家与迁居",
+          "Home & Daily Life > Moving & Relocation"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理搬家与迁居相关的问题，重点是搬家和迁居，帮我梳理判断与下一步。",
+        "Help me with moving & relocation, especially moving and relocation."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.possessions_organization",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "物品整理",
+        "en": "Possessions & Organization"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "物品整理：个人物品、收纳、整理、断舍离、库存和物品管理。",
+        "Possessions & Organization: personal belongings, organization, decluttering, storage and item management."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“物品整理”，常见线索包括物品、收纳、整理。",
+        "The user's primary goal concerns possessions & organization, with signals such as possessions, organization, declutter."
+      ],
+      "exclusion_cues": [
+        "若“物品整理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Possessions & Organization\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "物品整理",
+          "物品",
+          "收纳",
+          "整理",
+          "断舍离",
+          "库存"
+        ],
+        "en": [
+          "Possessions & Organization",
+          "possessions",
+          "organization",
+          "declutter",
+          "storage",
+          "belongings"
+        ],
+        "mixed": [
+          "物品整理 Possessions & Organization",
+          "居家与日常 > 物品整理",
+          "Home & Daily Life > Possessions & Organization"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理物品整理相关的问题，重点是物品和收纳，帮我梳理判断与下一步。",
+        "Help me with possessions & organization, especially possessions and organization."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "车辆与个人交通工具",
+        "en": "Vehicle & Personal Transport"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "车辆与个人交通工具：汽车、自行车、电动车、车辆维护、驾车和个人交通工具。",
+        "Vehicle & Personal Transport: cars, bikes, personal vehicles, maintenance, driving and individual transport."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“车辆与个人交通工具”，常见线索包括汽车、车辆、自行车。",
+        "The user's primary goal concerns vehicle & personal transport, with signals such as vehicle, car, bike."
+      ],
+      "exclusion_cues": [
+        "若“车辆与个人交通工具”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Vehicle & Personal Transport\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "车辆与个人交通工具",
+          "汽车",
+          "车辆",
+          "自行车",
+          "电动车",
+          "驾车"
+        ],
+        "en": [
+          "Vehicle & Personal Transport",
+          "vehicle",
+          "car",
+          "bike",
+          "driving",
+          "vehicle maintenance"
+        ],
+        "mixed": [
+          "车辆与个人交通工具 Vehicle & Personal Transport",
+          "居家与日常 > 车辆与个人交通工具",
+          "Home & Daily Life > Vehicle & Personal Transport"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理车辆与个人交通工具相关的问题，重点是汽车和车辆，帮我梳理判断与下一步。",
+        "Help me with vehicle & personal transport, especially vehicle and car."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    },
+    {
+      "profile_version": "0.1.0",
+      "topic_id": "sys.home_daily.utilities_services",
+      "formal_catalog_version": "0.2.0",
+      "formal_semantics_unchanged": true,
+      "canonical_names": {
+        "zh": "水电网与家庭服务",
+        "en": "Utilities & Home Services"
+      },
+      "domain": {
+        "id": "D09",
+        "name_zh": "居家与日常",
+        "name_en": "Home & Daily Life"
+      },
+      "semantic_core": [
+        "水电网与家庭服务：水电气网、物业、保洁、维修服务和家庭公共服务。",
+        "Utilities & Home Services: utilities, property services, cleaning, maintenance services and home-service providers."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“水电网与家庭服务”，常见线索包括水电、燃气、宽带。",
+        "The user's primary goal concerns utilities & home services, with signals such as utilities, electricity, gas."
+      ],
+      "exclusion_cues": [
+        "若“水电网与家庭服务”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Utilities & Home Services\" is mentioned when the actual intent belongs to another topic."
+      ],
+      "lexical_anchors": {
+        "zh": [
+          "水电网与家庭服务",
+          "水电",
+          "燃气",
+          "宽带",
+          "物业",
+          "家庭服务"
+        ],
+        "en": [
+          "Utilities & Home Services",
+          "utilities",
+          "electricity",
+          "gas",
+          "internet service",
+          "home service"
+        ],
+        "mixed": [
+          "水电网与家庭服务 Utilities & Home Services",
+          "居家与日常 > 水电网与家庭服务",
+          "Home & Daily Life > Utilities & Home Services"
+        ]
+      },
+      "synthetic_utterance_patterns": [
+        "我想处理水电网与家庭服务相关的问题，重点是水电和燃气，帮我梳理判断与下一步。",
+        "Help me with utilities & home services, especially utilities and electricity."
+      ],
+      "contrastive_neighbors": [],
+      "provenance": {
+        "source_classes": [
+          "FORMAL_CATALOG",
+          "GENERAL_SEMANTIC_REASONING"
+        ],
+        "generator": "GPT-5.6 Sol / SCA-01",
+        "formal_fields_overridden": false
+      },
+      "status": "DRAFT"
+    }
+  ]
+}

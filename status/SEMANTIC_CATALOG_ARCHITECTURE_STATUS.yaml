@@ -1,7 +1,7 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_01_READY
+phase: SCA_01_COMPLETE_PENDING_CI
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
@@ -39,16 +39,28 @@ rounds:
     closure_required_ci: PASS
   SCA-01:
     title: Full derived semantic-profile generation
-    execution_status: READY
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: PASS
     depends_on: SCA-00
-    explicit_execution_authorized: false
+    explicit_execution_authorized: true
+    authorization_source: user_continue_execute_sca01
     private_artifact_reads: 0
+    formal_catalog_edits: 0
+    generated_formal_topic_ids: 0
+    profile_count: 144
+    system_topic_count: 144
+    topic_id_set_exact_match: true
+    semantic_core_unique_count: 144
+    bundle_manifest: semantic_profiles/v0.1/manifest.json
+    compiler: scripts/sca01_compile_profiles.py
+    closure_required_ci: PENDING
   SCA-02:
     title: Contrastive boundary graph and synthetic validation
-    execution_status: NOT_STARTED
+    execution_status: BLOCKED
     capability_verdict: UNTESTED
     depends_on: SCA-01
+    blocked_by: SCA_01_CLOSURE_CI_PENDING
+    explicit_execution_authorized: false
     private_artifact_reads: 0
   SCA-03:
     title: Family-grouped personal calibration grounding
@@ -73,5 +85,5 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "SCA-00 is COMPLETE/PASS and the package freeze is CI-validated. SCA-01 is READY but NOT_AUTHORIZED. The next round may generate 144 Derived Semantic Profiles using public/formal information only; do not read private artifacts or modify the formal catalog."
+next_action: "SCA-01 generated 144/144 Derived Semantic Profiles and is COMPLETE/PASS pending exact-head closure CI. SCA-02 remains BLOCKED until the compiler/schema/catalog validation passes. No private artifacts were read and the formal catalog was not modified."
 product_owner_blockers: []

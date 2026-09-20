@@ -87,18 +87,22 @@ class CatalogArchitectureV01PlanTests(unittest.TestCase):
             self.config["data_roles"]["consumed_sem07_lockbox_tuning_or_promotion"],
         )
 
-    def test_sca00_is_complete_and_sca01_waits_for_package_ci(self):
+    def test_sca00_is_complete_and_sca01_has_legal_lifecycle(self):
         self.assertEqual("COMPLETE", self.status["rounds"]["SCA-00"]["execution_status"])
         self.assertEqual("PASS", self.status["rounds"]["SCA-00"]["capability_verdict"])
         self.assertEqual(0, self.status["rounds"]["SCA-00"]["private_artifact_reads"])
         sca01 = self.status["rounds"]["SCA-01"]
-        if self.status["package_freeze_required_ci"] == "PASS":
-            self.assertEqual("READY", sca01["execution_status"])
+        self.assertIn(sca01["execution_status"], {"READY", "COMPLETE"})
+        if sca01["execution_status"] == "READY":
             self.assertEqual("SCA_01_READY", self.status["phase"])
             self.assertFalse(sca01["explicit_execution_authorized"])
         else:
-            self.assertEqual("BLOCKED", sca01["execution_status"])
-            self.assertEqual("SCA_00_COMPLETE_PENDING_CI", self.status["phase"])
+            self.assertTrue(sca01["explicit_execution_authorized"])
+            self.assertEqual("PASS", sca01["capability_verdict"])
+            self.assertIn(
+                self.status["phase"],
+                {"SCA_01_COMPLETE_PENDING_CI", "SCA_02_READY"},
+            )
 
     def test_v03_router_remains_blocked_by_external_catalog_package(self):
         self.assertEqual("REM_03B_COMPLETE_FAIL", self.remediation["phase"])
