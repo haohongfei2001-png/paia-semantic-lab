@@ -23,12 +23,19 @@ class SCA03CheckpointTests(unittest.TestCase):
         )
         cls.freeze = json.loads(cls.freeze_path.read_text())
 
-    def test_round_is_in_progress_only(self):
+    def test_round_closure_preserves_failed_gate(self):
         sca03 = self.status["rounds"]["SCA-03"]
-        self.assertEqual("SCA_03_IN_PROGRESS", self.status["phase"])
-        self.assertEqual("IN_PROGRESS", sca03["execution_status"])
+        self.assertIn(self.status["phase"], {"SCA_03_COMPLETE_PENDING_CI", "SCA_03_COMPLETE_FAIL"})
+        self.assertEqual("COMPLETE", sca03["execution_status"])
         self.assertTrue(sca03["explicit_execution_authorized"])
-        self.assertEqual(0, sca03["calibration_records_read"])
+        self.assertEqual(80, sca03["calibration_records_read"])
+        self.assertEqual("FAIL", sca03["capability_verdict"])
+        self.assertEqual("BLOCKED", self.status["rounds"]["SCA-04"]["execution_status"])
+        result = json.loads((ROOT / sca03["calibration_report"]).read_text())
+        self.assertEqual(12, len(result["results"]))
+        self.assertTrue(all(not row["gate"]["pass"] for row in result["results"]))
+        self.assertIsNone(result["selected_config"])
+        self.assertFalse(result["evaluation_open_permitted"])
         self.assertFalse(sca03["evaluation_opened"])
         self.assertEqual(0, sca03["evaluation_records_read"])
 

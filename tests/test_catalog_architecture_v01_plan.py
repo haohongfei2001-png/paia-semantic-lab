@@ -107,7 +107,7 @@ class CatalogArchitectureV01PlanTests(unittest.TestCase):
                     "SCA_02_COMPLETE_PENDING_CI",
                     "SCA_03_READY",
                     "SCA_03_IN_PROGRESS",
-                    "SCA_03_COMPLETE_PENDING_CI",
+                    "SCA_03_COMPLETE_PENDING_CI", "SCA_03_COMPLETE_FAIL",
                     "SCA_04_READY",
                 },
             )

@@ -1,7 +1,7 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_03_IN_PROGRESS
+phase: SCA_03_COMPLETE_PENDING_CI
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
@@ -12,7 +12,7 @@ package_freeze_evidence_artifact_id: 10606092150
 package_freeze_validated_commit: f4ed999ac89df46e821bb1086c5990b25f1fc5fc
 package_freeze_required_ci: PASS
 formal_catalog_modified: false
-private_artifact_reads: 0
+private_artifact_reads: 80
 real_archive_read: false
 real_input_api_egress: false
 model_training_started: false
@@ -91,15 +91,15 @@ rounds:
     closure_required_ci: PASS
   SCA-03:
     title: Family-grouped personal calibration grounding
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: FAIL
     depends_on: SCA-02
     explicit_execution_authorized: true
     authorization_source: user_authorized_read_only_80_calibration_eval_after_pass
     fresh_private_artifact_authorization_required: true
     private_artifact_access: authorized_read_only_80_calibration
     calibration_read_budget: 80
-    calibration_records_read: 0
+    calibration_records_read: 80
     evaluation_opened: false
     evaluation_records_read: 0
     profile_bundle_sha256: 018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b
@@ -113,14 +113,21 @@ rounds:
     checkpoint_validated_commit: 291f9453d661e2ccf252d625662cb58bf592105f
     checkpoint_required_ci: PASS
     private_freeze_receipt: artifacts/catalog-architecture-v0.1/sca03-private-freeze.json
-    execution_blocker: LOCAL_PRIVATE_RUNTIME_CONNECTOR_QUOTA_EXHAUSTED
+    closure_required_ci: PENDING
+    calibration_report: artifacts/catalog-architecture-v0.1/SCA-03_CALIBRATION.json
+    closure_receipt: artifacts/catalog-architecture-v0.1/SCA-03_CLOSURE.json
+    report: artifacts/catalog-architecture-v0.1/SCA-03_REPORT.md
+    selected_config: null
+    passing_config_count: 0
   SCA-04:
     title: One-time legacy evaluation promotion
-    execution_status: NOT_STARTED
+    execution_status: BLOCKED
     capability_verdict: UNTESTED
     depends_on: SCA-03
     evaluation_read_budget: 13
     evaluation_read_condition: SCA_03_PASS
+    blocked_by: SCA_03_CALIBRATION_FAIL
+    evaluation_records_read: 0
   SCA-05:
     title: Immutable semantic-profile handoff
     execution_status: NOT_STARTED
@@ -128,5 +135,8 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "SCA-03 checkpoint CI is PASS and the frozen 12-config matrix is eligible to read the authorized 80 calibration judgments. Execution is temporarily blocked only because the local private-runtime connector quota is exhausted. Calibration remains unread (0/80) and SCA-04/evaluation remains closed (0/13). Resume from the same frozen checkpoint when local private-runtime access is available; no new semantic authorization is required."
+next_action: 'SCA-03 calibration completed FAIL: 0/12 frozen configurations pass.
+  Preserve raw aggregate evidence and original gates; verify closure exact-head CI.
+  SCA-04 remains BLOCKED and evaluation unopened. No matrix/profile/graph retuning
+  or promotion under this execution.'
 product_owner_blockers: []

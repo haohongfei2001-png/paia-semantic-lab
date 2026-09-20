@@ -32,7 +32,7 @@ class SCA02StatusTests(unittest.TestCase):
         if sca02["closure_required_ci"] == "PASS":
             self.assertIn(
                 self.status["phase"],
-                {"SCA_03_READY", "SCA_03_IN_PROGRESS", "SCA_03_COMPLETE_PENDING_CI", "SCA_04_READY"},
+                {"SCA_03_READY", "SCA_03_IN_PROGRESS", "SCA_03_COMPLETE_PENDING_CI", "SCA_03_COMPLETE_FAIL", "SCA_04_READY"},
             )
             self.assertIn(sca03["execution_status"], {"READY", "IN_PROGRESS", "COMPLETE"})
             if sca03["execution_status"] == "READY":
