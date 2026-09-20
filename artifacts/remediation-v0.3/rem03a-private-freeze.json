@@ -1,0 +1,36 @@
+{
+  "authorization": {
+    "calibration_read_only": 80,
+    "consumed_sem07_lockbox_tuning_or_promotion": "DENY",
+    "evaluation_read_only_after_gate": 13
+  },
+  "base_candidate_sha256": "65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4",
+  "baseline_remote_main": "dc681126f1c396ed1df92970529e3bda7cd95acc",
+  "config_sha256": "07b5b970d080cf428f3f18b0cdf072738317c2c51ddc3b9a8aedf0e3f1845823",
+  "evaluator_sha256": "1d9e75b1e88ee2739c37b08af5a369fe1cc5d9d0b17b26aa724a11e1e511b4f4",
+  "gates": {
+    "candidate_recall_at_10_min": 0.96,
+    "candidate_recall_at_20_min": 0.99,
+    "critical_slices_same_thresholds": true,
+    "held_out_family_leakage_events_max": 0
+  },
+  "guards": {
+    "live_archive_read": "DENY",
+    "model_training": "DENY",
+    "new_owner_labels": 0,
+    "production_paia_write": "DENY",
+    "real_input_api_egress": "DENY"
+  },
+  "local_validation": {
+    "full_repository_seconds": 256.231,
+    "full_repository_tests": "114/114 PASS",
+    "git_diff_check": "PASS",
+    "targeted_tests": "13/13 PASS"
+  },
+  "matrix_count": 12,
+  "matrix_sha256": "7fdd50289de6b9cdf55af937487ae9e205f002656f3a78ca7317200954e1c42d",
+  "private_metrics_opened": false,
+  "prototype_library_sha256": "eb38da394282cb0eb310e917d922f9fecb4c23e4aff346e7eb2c302e219032b2",
+  "round": "REM-03A",
+  "state": "FROZEN_BEFORE_PRIVATE_EVIDENCE"
+}
