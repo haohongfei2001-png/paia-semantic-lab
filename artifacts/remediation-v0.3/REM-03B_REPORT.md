@@ -48,3 +48,6 @@ The frozen REM-03B contract requires failure after Domain recovery to be treated
 The public catalog audit already showed that formal definition/inclusion/example text is almost entirely shared boilerplate, aliases are one-per-language, and confusing-neighbor edges are absent. REM-03B now adds private calibration evidence that even Domain-level recovery from the available discriminative anchors plus 80 calibration judgments is insufficient.
 
 REM-04 remains BLOCKED. Further work requires a separate catalog/architecture package; the existing candidate gates must not be lowered.
+## Closure CI
+
+Closure candidate b2869d9f129c483b50b18ad8f967fecba8b8a31a passed Semantic Lab CI run 35510446539, job 106077296734, evidence artifact 10606085419. Unit tests, SEM-00 through SEM-07, REM-01, REM-02, REM-03, REM-03A, REM-03B plan/checkpoint validation, and evidence upload all passed.
