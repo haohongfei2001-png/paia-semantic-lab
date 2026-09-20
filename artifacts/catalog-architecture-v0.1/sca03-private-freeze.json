@@ -1,0 +1,39 @@
+{
+  "authorization": {
+    "calibration_read_only_count": 80,
+    "consumed_sem07_lockbox_tuning_or_promotion": "DENY",
+    "evaluation_read_only_after_gate": 13,
+    "formal_catalog_write": "DENY",
+    "live_archive_read": "DENY",
+    "model_training": "DENY",
+    "production_paia_write": "DENY",
+    "real_input_api_egress": "DENY"
+  },
+  "baseline_remote_main": "b8a1dcbcdd2ab0755adfee69b505357a109ada71",
+  "config_sha256": "c26c6fcf5fe3576b147fb12dc0ae8680d2e6c42bc14d87e67a635710b7fbe91d",
+  "evaluator_sha256": "679b74df6abe0422b0fadb69762f668d3b51e73aa484d31c457d6d4d22ce374b",
+  "frozen_inputs": {
+    "graph_sha256": "630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711",
+    "model_id": "BAAI/bge-m3",
+    "model_revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+    "profile_bundle_sha256": "018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b",
+    "synthetic_suite_sha256": "f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7"
+  },
+  "gates": {
+    "candidate_recall_at_10_min": 0.96,
+    "candidate_recall_at_20_min": 0.99,
+    "critical_slice_same_thresholds": true,
+    "family_leakage_events_max": 0,
+    "full_catalog_eligibility_required": true,
+    "graph_structural_invariants_required": true
+  },
+  "graph_file_sha256": "cb6bc3c9fe8c976aeb573153510daee5e81cf48c577b48ab73305cfbba0a6c8d",
+  "library_sha256": "c1759ddb9cbcfa6926587499b568cff25badf6a9fbfde5ca043017f6ee7a7db4",
+  "matrix_count": 12,
+  "matrix_sha256": "64c9ce8e0a0fde2597bd5b6ec55cfad84c0dc38c04864fc66ab943ce124181e9",
+  "private_metrics_opened": false,
+  "profile_manifest_sha256": "eb391c16ce0cfa275ee106e7a20efe933600c20447a74eaceabc62c4b4db253c",
+  "round": "SCA-03",
+  "state": "FROZEN_BEFORE_PRIVATE_EVIDENCE",
+  "suite_manifest_sha256": "7aa4b7fc2e76a75e0e5d3044a9b1c244f7822b15d3718ada92e15f80aeba77cd"
+}

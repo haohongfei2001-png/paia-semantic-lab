@@ -1,0 +1,57 @@
+version: "0.1.0"
+round: "SCA-03"
+status: FROZEN_BEFORE_PRIVATE_EVIDENCE
+
+frozen_inputs:
+  profile_bundle_sha256: "018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b"
+  graph_sha256: "630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711"
+  synthetic_suite_sha256: "f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7"
+  model_id: "BAAI/bge-m3"
+  model_revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+
+development:
+  family_grouped: true
+  fold_count: 5
+  query_variants: [current_only, allowed_context]
+  profile_modes: [core, core_anchors, full_derived]
+  calibration_centroid_weights: [1.5, 3.0]
+  maximum_matrix_size: 12
+
+fusion:
+  method: weighted_rrf
+  constant: 20
+  profile_weight: 1.0
+
+graph_safety_lane:
+  enabled: true
+  top_seed_domain_full_in_top10: true
+  second_distinct_seed_domain_full_in_top20: true
+  candidate_limit: 144
+  exact_alias_priority: false
+
+promotion_gate:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  critical_slice_same_thresholds: true
+  family_leakage_events_max: 0
+  full_catalog_eligibility_required: true
+  graph_structural_invariants_required: true
+
+evaluation:
+  read_condition: SCA03_CALIBRATION_PASS
+  legacy_evaluation_count: 13
+  max_reads: 1
+  no_reselection_after_read: true
+  no_threshold_change_after_read: true
+
+authorization:
+  execution_authorized: true
+  calibration_read_only_count: 80
+  evaluation_read_only_after_gate: 13
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  formal_catalog_write: DENY
+  production_paia_write: DENY

@@ -1,7 +1,7 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_03_READY
+phase: SCA_03_IN_PROGRESS
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
@@ -91,14 +91,24 @@ rounds:
     closure_required_ci: PASS
   SCA-03:
     title: Family-grouped personal calibration grounding
-    execution_status: READY
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
     depends_on: SCA-02
-    explicit_execution_authorized: false
+    explicit_execution_authorized: true
+    authorization_source: user_authorized_read_only_80_calibration_eval_after_pass
     fresh_private_artifact_authorization_required: true
+    private_artifact_access: authorized_read_only_80_calibration
     calibration_read_budget: 80
+    calibration_records_read: 0
     evaluation_opened: false
     evaluation_records_read: 0
+    profile_bundle_sha256: 018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b
+    graph_sha256: 630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711
+    synthetic_suite_sha256: f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7
+    configuration_matrix_frozen: true
+    configuration_matrix_count: 12
+    checkpoint_required_ci: PENDING
+    private_freeze_receipt: artifacts/catalog-architecture-v0.1/sca03-private-freeze.json
   SCA-04:
     title: One-time legacy evaluation promotion
     execution_status: NOT_STARTED
@@ -113,5 +123,5 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "SCA-02 is COMPLETE/PASS and CI-validated. SCA-03 is READY but NOT_AUTHORIZED and requires a fresh explicit user authorization before reading the existing 80 legacy calibration judgments. Freeze the SCA-03 profile/graph/retrieval plan before private metrics. The 13-case legacy evaluation remains closed unless SCA-03 calibration passes."
+next_action: "SCA-03 is IN_PROGRESS with a 12-config retrieval matrix frozen before private evidence. Run exact-head checkpoint CI first. Only after checkpoint PASS may the authorized 80 calibration judgments be read. SCA-04/evaluation remains closed unless SCA-03 calibration passes the original 0.96/0.99 gates."
 product_owner_blockers: []
