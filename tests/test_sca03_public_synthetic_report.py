@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import unittest
 
@@ -9,6 +10,10 @@ from scripts.sca03_public_synthetic_diagnostics import run_diagnostics
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 
+@unittest.skipUnless(
+    os.environ.get("SCA03_PUBLIC_DIAG_NUMPY") == "1",
+    "Runs only in the isolated public diagnostic step with pinned NumPy.",
+)
 class SCA03PublicSyntheticReportTests(unittest.TestCase):
     def test_committed_result_matches_executable_diagnostic(self):
         committed = json.loads(

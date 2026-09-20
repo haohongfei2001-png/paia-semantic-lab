@@ -22,13 +22,13 @@ Fixture: place one real public Topic from each of ten distinct Domains in direct
 Measure:
 - how many original direct top-10 Topics remain in expanded top-10/top-20;
 - whether a direct rank-4 cross-Domain Topic is displaced beyond top-10;
-- bounded sibling-cap 4 and sibling-cap 2 ablations.
+- bounded sibling-cap 4 and sibling-cap 2 ablations, where the seed is preserved separately and the cap counts **additional siblings only**.
 
 Interpretation boundary: this can confirm a structural counterexample and budget pressure. It does not estimate private-data recall.
 
 ## Diagnostic 2 — Sparse-prototype displacement
 
-Fixture: use eight real public Topic IDs from one Domain. Give four Topics synthetic calibration prototypes and leave four with no prototype.
+Fixture: use all 144 real public Topic IDs. Call the real `topic_centroid_ranking()` with a partial-prototype synthetic matrix and again with `np.empty((0, 2))` / empty cases for the all-no-prototype control; feed both returned rankings into the real `weighted_rrf()`.
 
 Controls:
 - zero-prototype Topics all receive the same negative-infinity centroid score;

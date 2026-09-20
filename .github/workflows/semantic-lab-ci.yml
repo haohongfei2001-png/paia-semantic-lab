@@ -61,7 +61,10 @@ jobs:
       - name: SCA-03 execution checkpoint validation
         run: python -m unittest tests.test_sca03_plan tests.test_sca03_checkpoint -v
       - name: SCA-03 public synthetic diagnostics
+        env:
+          SCA03_PUBLIC_DIAG_NUMPY: "1"
         run: |
+          python -m pip install --only-binary=:all: "numpy==2.5.3"
           python -m scripts.sca03_public_synthetic_diagnostics --output artifacts/ci/sca03-public-synthetic-diagnostics.json
           python -m unittest tests.test_sca03_public_synthetic_diagnostics -v
       - name: Upload evidence
