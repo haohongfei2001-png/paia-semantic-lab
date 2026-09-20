@@ -1,6 +1,6 @@
 # SCA-03 calibration closure
 
-Capability verdict: **FAIL**. Execution completed; remote closure CI pending.
+Capability verdict: **FAIL**. Execution completed; closure CI PASS on `86120f8f94f957b42769265b9755200b70e971e0`.
 
 All 80 authorized calibration records were evaluated once through the frozen 12-configuration, five-fold family-grouped evaluator. No configuration passed the unchanged Recall@10 >= 0.96 and Recall@20 >= 0.99 gates or critical-slice gates. No winner is promoted. SCA-04 is BLOCKED; 13 evaluation judgments remain unopened.
 
@@ -28,3 +28,5 @@ A local transport filter scanned shared JSON structure and input/revision metada
 Local full regression before closure: 176 passed. Closure regression and exact-head remote CI are tracked in canonical status. Real Input API egress, live archive reads, model training, formal catalog writes and production PAIA writes are zero.
 
 Current-only and allowed-context metric pairs are identical. This observation is preserved; it is not evidence of context effectiveness and does not authorize retuning. Any subsequent repair must be a separately frozen, documented action rather than reinterpretation of this failed run.
+
+Closure CI run `35524118979`, job `106113176162`, evidence artifact `10609279112`: SUCCESS. The metadata update is verified separately after publication.

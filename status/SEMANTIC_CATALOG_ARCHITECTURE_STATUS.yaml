@@ -1,7 +1,7 @@
 package_id: PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1
 package_version: 0.1.0
 package_status: FROZEN_PLAN_ONLY
-phase: SCA_03_COMPLETE_PENDING_CI
+phase: SCA_03_COMPLETE_FAIL
 baseline_remote_commit: aa68493ff0386d6f44ca2b442e14de43adcfec4e
 catalog_path: catalog/system_topic_catalog_v0.2.yaml
 catalog_blob_sha: 6bcdd2af66879d7ac098cf237b5586c3c9818aad
@@ -113,12 +113,16 @@ rounds:
     checkpoint_validated_commit: 291f9453d661e2ccf252d625662cb58bf592105f
     checkpoint_required_ci: PASS
     private_freeze_receipt: artifacts/catalog-architecture-v0.1/sca03-private-freeze.json
-    closure_required_ci: PENDING
+    closure_required_ci: PASS
     calibration_report: artifacts/catalog-architecture-v0.1/SCA-03_CALIBRATION.json
     closure_receipt: artifacts/catalog-architecture-v0.1/SCA-03_CLOSURE.json
     report: artifacts/catalog-architecture-v0.1/SCA-03_REPORT.md
     selected_config: null
     passing_config_count: 0
+    closure_validation_run_id: 35524118979
+    closure_validation_job_id: 106113176162
+    closure_evidence_artifact_id: 10609279112
+    closure_validated_commit: 86120f8f94f957b42769265b9755200b70e971e0
   SCA-04:
     title: One-time legacy evaluation promotion
     execution_status: BLOCKED
@@ -135,8 +139,8 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: 'SCA-03 calibration completed FAIL: 0/12 frozen configurations pass.
-  Preserve raw aggregate evidence and original gates; verify closure exact-head CI.
-  SCA-04 remains BLOCKED and evaluation unopened. No matrix/profile/graph retuning
-  or promotion under this execution.'
+next_action: 'SCA-03 COMPLETE/FAIL with closure CI PASS: 0/12 frozen configurations
+  pass. SCA-04 remains BLOCKED; 13 evaluation judgments remain unopened. Preserve
+  failed evidence and original gates. No matrix/profile/graph retuning or promotion
+  under this execution.'
 product_owner_blockers: []
