@@ -40,6 +40,8 @@ jobs:
         run: python -m semantic_lab.benchmark --round REM-01 --lab-commit "$GITHUB_SHA" --output artifacts/ci/rem01-run.json
       - name: REM-02 public runtime evidence validation
         run: python -m semantic_lab.benchmark --round REM-02 --lab-commit "$GITHUB_SHA" --output artifacts/ci/rem02-run.json
+      - name: REM-03 public candidate remediation validation
+        run: python -m semantic_lab.benchmark --round REM-03 --lab-commit "$GITHUB_SHA" --output artifacts/ci/rem03-run.json
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:

@@ -1,0 +1,65 @@
+version: "0.1.0"
+round: "REM-03"
+benchmark_version: "rem03-domain-scaffold-candidates-0.1"
+
+baseline:
+  model_id: "BAAI/bge-m3"
+  revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+  descriptor: full_boundaries
+  ranking_mode: rrf
+  rem02_shortlist:
+    - rem02cfg-30ed3156c71fd270
+    - rem02cfg-d2af02a6913bddf3
+
+policy:
+  max_candidate_count: 96
+  activity_invariant_prefix: 20
+  direct_seed_slots: 2
+  primary_domain_full_lane: true
+  secondary_domain_full_lane: true
+  domain_scaffold_member_cap: 8
+  domain_rrf_depth: 48
+  domain_rrf_constant: 30
+  direct_rrf_depth: 64
+  direct_rrf_constant: 60
+  exact_alias_priority: true
+  contained_alias_priority: true
+  contained_alias_max: 4
+  declared_neighbor_expansion: true
+  domain_sibling_scaffold: true
+  custom_safety_lane_max: 4
+  personalized_slots_max: 4
+  activity_prior_can_gate: false
+  activity_prior_can_reorder_prefix: false
+  automatic_topic_creation: false
+
+representation:
+  descriptor_channels: [full_boundaries, names_aliases]
+  query_channels: [current_only, allowed_context]
+  long_query_chunking:
+    enabled: true
+    size_codepoints: 320
+    overlap_codepoints: 64
+    trigger_codepoints: 640
+  lexical_channels: [aliases, full_descriptor]
+
+promotion_gate:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  full_catalog_eligibility_required: true
+  activity_invariance_required: true
+  hidden_critical_slice_failures_max: 0
+
+authorization:
+  existing_private_artifacts: false
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  production_paia_write: DENY
+
+claims:
+  public_structural_validation: ALLOWED
+  private_promotion: NOT_RUN_PRIVATE_EVIDENCE_NOT_AUTHORIZED
+  rem04_unlock: FORBIDDEN_UNTIL_PRIVATE_GATE_PASS

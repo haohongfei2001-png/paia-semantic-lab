@@ -1,0 +1,66 @@
+{
+  "round": "REM-03",
+  "execution_status": "BLOCKED",
+  "capability_verdict": "INCONCLUSIVE",
+  "public_structural_evidence": "PASS",
+  "private_promotion_evidence": "NOT_RUN_PRIVATE_EVIDENCE_NOT_AUTHORIZED",
+  "rem04_unlocked": false,
+  "candidate_gates": {
+    "recall_at_10_min": 0.96,
+    "recall_at_20_min": 0.99
+  },
+  "final_public_metrics": {
+    "standard_recall_at_10": 1,
+    "standard_recall_at_20": 1,
+    "boundary_no_alias_recall_at_10": 0.08333333333333333,
+    "boundary_no_alias_recall_at_20": 0.1388888888888889,
+    "context_current_recall_at_20": 0.16666666666666666,
+    "context_allowed_recall_at_20": 1,
+    "long_recall_at_20": 1
+  },
+  "structural_audits": {
+    "full_catalog_reachability_rate": 1,
+    "primary_domain_members_fit_top10": true,
+    "declared_neighbor_top20": true,
+    "custom_topic_top20": true,
+    "top20_activity_invariant": true,
+    "scale_1024": true
+  },
+  "catalog_diagnostics": {
+    "active_topics": 144,
+    "internal_domains": 18,
+    "topics_per_domain": 8,
+    "declared_neighbor_edges": 0,
+    "boundary_template_unique_after_alias_removal": 1
+  },
+  "source_hashes": {
+    "config_sha256": "81132e9267e4956e396fd38f324112d3f68b2a68553cd7818bf3c85837ec557d",
+    "policy_sha256": "65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4",
+    "runtime_harness_sha256": "b3973f218b920874a0821e8e5a7a2fc65148061194af5ea76a72d14fb199684e",
+    "public_validation_sha256": "82bf17e072179941605c27bccfbe54971dddf8908306754f7b5e9a0ee6f1b2cb"
+  },
+  "deterministic_result_digest": "02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e",
+  "exploratory_bge_pre_safeguard": {
+    "result_digest": "993c074e76159d5ebf095d841d2b601fce6525e5abc40c03477e7ae7fd5237d4",
+    "context_free_recall_at_20": 0.7037037037037037,
+    "boundary_no_alias_recall_at_20": 0.1111111111111111,
+    "context_allowed_recall_at_20": 0.6666666666666666,
+    "long_recall_at_20": 0.8333333333333334,
+    "claim": "DEVELOPMENT_EVIDENCE_PRE_FINAL_SAFEGUARD"
+  },
+  "guards": {
+    "private_artifact_reads": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_sem07_lockbox_tuning_events": 0
+  },
+  "blocker": {
+    "code": "PRIVATE_PROMOTION_EVIDENCE_NOT_AUTHORIZED",
+    "required_action": "Fresh REM-03-specific authorization for read-only reuse of existing legacy private calibration/promotion artifacts.",
+    "consumed_sem07_lockbox_use": "FORBIDDEN_FOR_TUNING_OR_PROMOTION"
+  },
+  "checkpoint_required_ci": "PENDING"
+}
