@@ -1,105 +1,125 @@
-# REM-03 — Full-Catalog Candidate Remediation Checkpoint
+# REM-03 — Full-Catalog Candidate Remediation and Freeze — Final Closure
 
-## Status
+## Final verdict
 
-REM-03 public/synthetic candidate-remediation implementation is **PASS**, but the round is **BLOCKED / INCONCLUSIVE** because this execution did not authorize reuse of the private SEM-06/07 promotion artifacts required to measure the frozen Recall@10 >= 0.96 and Recall@20 >= 0.99 gates.
+REM-03 execution is **COMPLETE** with capability verdict **FAIL**.
 
-REM-04 remains locked.
+The public/synthetic remediation implementation is structurally valid, but the frozen candidate policy does not meet the required private Candidate Recall@10 >= 0.96 and Recall@20 >= 0.99 promotion gate.
 
-## Candidate policy implemented
+REM-04 is therefore **BLOCKED** and must not start.
 
-The v0.3 candidate layer is independent from historical SEM-03 and preserves full-catalog eligibility. It combines:
+## Frozen candidate policy
 
-- full-catalog direct dense/fusion channels;
-- exact and contained Topic-name/alias hard evidence;
-- primary-domain sibling scaffold: up to all 8 Topics in the strongest internal domain;
-- secondary-domain scaffold inside top 20;
-- declared confusing-neighbor expansion when relations exist;
-- custom Topic safety lane;
-- long-input chunk channel;
-- activity/pin/calibration priors only after the top-20 invariant prefix.
+The evaluated candidate policy remained exactly the REM-03 public checkpoint policy:
 
-Internal domains are retrieval scaffolds only. They are never assignment targets.
+- model: BAAI/bge-m3 @ cb1779f90b988b8deb01f9155c790ef9417d7648
+- candidate policy version: rem03-domain-scaffold-candidates-0.1
+- full-catalog multi-channel retrieval
+- exact/contained alias hard evidence
+- primary and secondary domain scaffolds
+- declared-neighbor expansion
+- custom Topic safety lane
+- long-input chunk lane
+- activity/pin/calibration priors excluded from reordering the top-20 invariant prefix
 
-## Why domain scaffolding was added
+No config search or threshold fitting was performed after private evidence was opened.
 
-The current catalog has 144 ACTIVE Topics arranged as exactly 18 domains × 8 Topics. However, all 144 Topics currently have zero declared confusing-neighbor edges. More importantly, after Topic names/aliases are removed, the definition + inclusion + representative-example text collapses to **one identical template across all 144 Topics**.
+## Private promotion protocol
 
-Therefore the current catalog cannot supply enough discriminative semantic descriptor text by itself. REM-03 uses domain membership as a recall scaffold while preserving direct full-catalog retrieval.
+Before private evidence was opened, the following were frozen:
 
-## Public structural validation
+- private promotion plan SHA-256: a73f657e378e4d817e825d93ad2711262e9288a78e741e07a8c1d026fdcb31bb
+- private evaluator SHA-256: db98038637a50715fcbf0305caa04a5843fc4e2cd5b556d1b968cb9745cc4467
+- candidate policy SHA-256: 81132e9267e4956e396fd38f324112d3f68b2a68553cd7818bf3c85837ec557d
+- candidate code SHA-256: 65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4
 
-- all 18 domains contain exactly 8 active Topics;
-- every primary-domain member fits inside the top-10 scaffold: **PASS**;
-- secondary-domain scaffold fits inside top 20: **PASS**;
-- full-catalog top-20 reachability: **144/144**;
-- declared-neighbor expansion can enter top 20: **PASS**;
-- custom Topic top-20 safety path: **PASS**;
-- top-20 activity-state invariance: **PASS**;
-- 1024-Topic scale probe: **PASS**;
-- automatic formal Topic creation: **0**;
-- production PAIA modifications: **0**.
+The protocol required calibration to pass both candidate gates before the 13-case legacy evaluation set could be opened.
 
-Final deterministic public metrics after the contained-alias safeguard:
+## Calibration promotion result
 
-- standard Recall@10: **1.0000**
-- standard Recall@20: **1.0000**
-- boundary-no-alias Recall@10: **0.0833**
-- boundary-no-alias Recall@20: **0.1389**
-- current-only context Recall@20: **0.1667**
-- allowed-context Recall@20: **1.0000**
-- long-input Recall@20: **1.0000**
+All **80 calibration judgments** were evaluated. All 80 are ASSIGNED cases for candidate-gate purposes.
 
-The low boundary-no-alias result is expected from the catalog audit: after alias removal, all Topic semantic boundary text is the same template. It is not hidden by the aggregate result.
+Overall candidate metrics:
 
-## Real BGE development evidence
+- topic Recall@10: **0.391875**
+- required Recall@10: **0.96**
+- topic Recall@20: **0.566875**
+- required Recall@20: **0.99**
+- complete-case Recall@10: **0.1750**
+- complete-case Recall@20: **0.3375**
 
-A pinned/offline BGE-M3 public development run was executed before the final contained-alias safeguard. It showed that domain injection alone did **not** improve context-free or boundary-no-alias recall and reduced allowed-context Recall@20 from the REM-02 public baseline 1.0 to 0.6667.
+Both frozen candidate gates fail by a large margin.
 
-That public regression directly motivated the contained-alias hard-evidence safeguard. The final safeguard is structurally deterministic: whenever an allowed context explicitly contains an existing Topic name/alias, that Topic is inserted before domain scaffolding. The final deterministic public suite confirms allowed-context Recall@20 = 1.0 and long Recall@20 = 1.0.
+### Critical slices
 
-The pre-safeguard exploratory BGE run is development evidence only and is not presented as the final REM-03 runtime score.
+Context-dependent slice (12 assigned cases):
 
-## Frozen quality gates
+- topic Recall@10: **0.3333**
+- topic Recall@20: **0.6389**
+- complete-case Recall@20: **0.5000**
 
-The package gates remain unchanged:
+Context-free slice (68 assigned cases):
 
-- Candidate Recall@10 >= **0.96**
-- Candidate Recall@20 >= **0.99**
-- no hidden critical-slice failure;
-- full-catalog eligibility preserved under activity-state perturbation;
-- consumed SEM-07 lockbox not used for selection.
+- topic Recall@10: **0.4022**
+- topic Recall@20: **0.5542**
+- complete-case Recall@20: **0.3088**
 
-These private promotion gates were **not run** in this execution because existing private artifact reuse requires fresh round-specific authorization.
+Both measurable critical slices fail the same `.96/.99` candidate thresholds. No aggregate result hides those failures.
 
-## Guards
+## Evaluation was not opened
 
-- private SEM-06/07 artifact reads: **0**
+Because the calibration gate failed, the frozen protocol forbade opening the 13-case legacy evaluation set.
+
+- legacy evaluation reads consumed: **0**
+- evaluation public artifact created: **no**
+- evaluation consumption marker created: **no**
+
+This preserves the bounded promotion evidence instead of spending it on a candidate that already failed development calibration.
+
+## Lockbox and safety guards
+
+- consumed SEM-07 lockbox label records used: **0**
+- consumed SEM-07 lockbox tuning/promotion events: **0**
 - live PAIA archive reads: **0**
 - real Input API egress: **0**
 - new owner labels: **0**
 - model training: **0**
 - production PAIA writes: **0**
-- consumed SEM-07 lockbox tuning/promotion events: **0**
+- config-search events after private evidence: **0**
+- threshold-fit events after private evidence: **0**
+
+## Public structural evidence remains valid
+
+The earlier REM-03 public checkpoint remains PASS for engineering structure:
+
+- standard synthetic Recall@10/20: 1.0 / 1.0
+- allowed-context synthetic Recall@20: 1.0
+- long-input synthetic Recall@20: 1.0
+- full-catalog top-20 reachability: 144/144
+- top-20 activity-state invariance: PASS
+- custom Topic safety path: PASS
+- declared-neighbor structural lane: PASS
+- 1024-Topic scale probe: PASS
+
+However, the private calibration result demonstrates that those structural/public results do not translate into adequate personalized full-catalog candidate recall.
 
 ## Reproducibility
 
-- REM-03 config SHA-256: `81132e9267e4956e396fd38f324112d3f68b2a68553cd7818bf3c85837ec557d`
-- REM-03 policy SHA-256: `65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4`
-- REM-03 runtime harness SHA-256: `b3973f218b920874a0821e8e5a7a2fc65148061194af5ea76a72d14fb199684e`
-- final public validation SHA-256: `82bf17e072179941605c27bccfbe54971dddf8908306754f7b5e9a0ee6f1b2cb`
-- deterministic result digest: `02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e`
+- public structural digest: 02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e
+- private calibration result digest: 9b7b2b8bf20add2b1ce191ec117940234264ab3bccbb26fc39b7312cc09f2bba
+- public calibration summary SHA-256: 701b1cbf00fc64432f85ed39db512ec47a812d0f110ecf31d3330c7c9005c1db
+- private calibration payload SHA-256: 64654693e6ef6f4329ebbf069b176b30896d6b66492b13cccf25b1ccdc14f41d
+- private gate receipt SHA-256: 22cb1788ff026831c24d762705601d8d4fb3bc317890e3403d1334c2da18643d
 
-## Validation
+Local validation:
 
-- REM-03 targeted + package-state tests: **15/15 PASS**.
-- Full repository regression: **100/100 PASS** in **545.692 s**.
-- Privacy scan: **PASS**.
-- `git diff --check`: **PASS**.
-- Checkpoint commit `c3108c77080f0053d1e2582f7b3e8654ce569c43` passed `Semantic Lab CI`: run `35486432088`, job `106013561070`, evidence artifact `10598445239` — **PASS**.
+- REM-03 targeted/package closure tests: **17/17 PASS**
+- full repository regression: **106/106 PASS** in **447.981 s**
+- privacy scan: **PASS**
+- git diff check: **PASS**
 
-## Blocker
+## Package consequence
 
-To resume REM-03 and decide PASS vs FAIL, a new explicit authorization is required for read-only reuse of existing private legacy promotion evidence in this round. Development/config selection must use the legacy calibration set; any legacy-evaluation use must be bounded and frozen before read. The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion.
+REM-03 failed its required candidate capability. Under the frozen remediation plan, REM-04 cannot compensate for an unresolved candidate bottleneck and remains BLOCKED.
 
-Do not start REM-04.
+Further work requires a new or amended candidate-remediation design/execution authorization. It must not proceed by lowering the Recall@10/20 gates or by starting Router remediation.

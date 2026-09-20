@@ -1,0 +1,51 @@
+version: "0.1.0"
+round: "REM-03"
+promotion_plan_version: "rem03-private-promotion-0.1"
+status: FROZEN_BEFORE_PRIVATE_EVIDENCE
+
+authorization:
+  existing_legacy_private_artifacts_read_only: true
+  calibration_judgments: 80
+  evaluation_judgments: 13
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  production_paia_write: DENY
+
+frozen_candidate:
+  model_id: "BAAI/bge-m3"
+  revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+  policy_config: "configs/rem03_candidate_remediation_v0.1.yaml"
+  policy_version: "rem03-domain-scaffold-candidates-0.1"
+  allow_config_search: false
+  allow_threshold_fit: false
+
+candidate_gate:
+  metric_definition: "SEM-07 topic-level candidate recall on ASSIGNED truth topics"
+  recall_at_10_min: 0.96
+  recall_at_20_min: 0.99
+
+calibration_protocol:
+  split: calibration
+  read_count: 80
+  critical_slices: [context_dependent, context_free]
+  critical_slice_gate: "when assigned_cases > 0, apply the same recall@10 >= 0.96 and recall@20 >= 0.99 thresholds"
+  evaluation_policy: "consume evaluation only if calibration recall@10 and recall@20 both pass"
+  failure_policy: "if calibration gate fails, close REM-03 FAIL without opening evaluation"
+
+evaluation_protocol:
+  split: evaluation
+  max_reads: 1
+  read_condition: CALIBRATION_GATE_PASS
+  no_reselection_after_read: true
+  no_policy_changes_after_read: true
+
+public_output_policy:
+  aggregates_only: true
+  raw_input_text: FORBIDDEN
+  input_ref: FORBIDDEN
+  family_ref: FORBIDDEN
+  calibration_id: FORBIDDEN
+  per_case_truth_topics: FORBIDDEN

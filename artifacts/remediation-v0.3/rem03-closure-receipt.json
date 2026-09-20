@@ -1,0 +1,70 @@
+{
+  "round": "REM-03",
+  "execution_status": "COMPLETE",
+  "capability_verdict": "FAIL",
+  "public_structural_evidence": "PASS",
+  "private_calibration_evidence": "PASS",
+  "private_candidate_gate": "FAIL",
+  "rem04_unlocked": false,
+  "rem04_status": "BLOCKED",
+  "candidate_gates": {
+    "recall_at_10_min": 0.96,
+    "recall_at_20_min": 0.99
+  },
+  "calibration": {
+    "judgments_read": 80,
+    "assigned_cases": 80,
+    "topic_recall_at_10": 0.391875,
+    "topic_recall_at_20": 0.566875,
+    "complete_case_recall_at_10": 0.175,
+    "complete_case_recall_at_20": 0.3375,
+    "context_dependent": {
+      "assigned_cases": 12,
+      "topic_recall_at_10": 0.3333333333333333,
+      "topic_recall_at_20": 0.638888888888889,
+      "complete_case_recall_at_20": 0.5
+    },
+    "context_free": {
+      "assigned_cases": 68,
+      "topic_recall_at_10": 0.4022058823529412,
+      "topic_recall_at_20": 0.5541666666666666,
+      "complete_case_recall_at_20": 0.3088235294117647
+    }
+  },
+  "evaluation": {
+    "read_condition": "CALIBRATION_GATE_PASS",
+    "reads_consumed": 0,
+    "opened": false,
+    "public_artifact_created": false
+  },
+  "guards": {
+    "consumed_sem07_lockbox_label_records": 0,
+    "consumed_sem07_lockbox_tuning_events": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "config_search_events": 0,
+    "threshold_fit_events": 0
+  },
+  "hashes": {
+    "private_promotion_plan_sha256": "a73f657e378e4d817e825d93ad2711262e9288a78e741e07a8c1d026fdcb31bb",
+    "private_evaluator_sha256": "db98038637a50715fcbf0305caa04a5843fc4e2cd5b556d1b968cb9745cc4467",
+    "candidate_policy_sha256": "81132e9267e4956e396fd38f324112d3f68b2a68553cd7818bf3c85837ec557d",
+    "candidate_code_sha256": "65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4",
+    "public_structural_digest": "02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e",
+    "private_calibration_result_digest": "9b7b2b8bf20add2b1ce191ec117940234264ab3bccbb26fc39b7312cc09f2bba",
+    "public_calibration_summary_sha256": "701b1cbf00fc64432f85ed39db512ec47a812d0f110ecf31d3330c7c9005c1db",
+    "private_calibration_payload_sha256": "64654693e6ef6f4329ebbf069b176b30896d6b66492b13cccf25b1ccdc14f41d",
+    "private_gate_receipt_sha256": "22cb1788ff026831c24d762705601d8d4fb3bc317890e3403d1334c2da18643d"
+  },
+  "local_validation": {
+    "targeted_tests": "17/17 PASS",
+    "full_repository_tests": "106/106 PASS",
+    "full_repository_seconds": 447.981,
+    "privacy_scan": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "closure_required_ci": "PENDING"
+}

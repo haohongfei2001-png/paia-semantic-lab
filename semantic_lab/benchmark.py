@@ -117,8 +117,8 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.round == "REM-03":
-        from .rem03 import run_rem03
-        result = run_rem03(args.lab_commit)
+        from .rem03_closure import run_rem03_closure
+        result = run_rem03_closure(args.lab_commit)
     elif args.round == "REM-02":
         from .rem02 import run_rem02
         result = run_rem02(args.lab_commit)

@@ -1,0 +1,40 @@
+{
+  "round": "REM-03",
+  "plan_version": "rem03-private-promotion-0.1",
+  "status": "FROZEN_BEFORE_PRIVATE_EVIDENCE",
+  "candidate_gate": {
+    "metric_definition": "SEM-07 topic-level candidate recall",
+    "recall_at_10_min": 0.96,
+    "recall_at_20_min": 0.99
+  },
+  "frozen_candidate": {
+    "model_id": "BAAI/bge-m3",
+    "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+    "policy_version": "rem03-domain-scaffold-candidates-0.1",
+    "allow_config_search": false,
+    "allow_threshold_fit": false
+  },
+  "calibration": {
+    "judgments": 80,
+    "critical_slices": [
+      "context_dependent",
+      "context_free"
+    ],
+    "critical_slice_gate": "when assigned_cases > 0, apply recall@10 >= 0.96 and recall@20 >= 0.99"
+  },
+  "evaluation": {
+    "judgments": 13,
+    "max_reads": 1,
+    "read_condition": "CALIBRATION_GATE_PASS",
+    "failure_policy": "DO_NOT_OPEN_IF_CALIBRATION_FAILS"
+  },
+  "guards": {
+    "consumed_sem07_lockbox_tuning_or_promotion": "DENY",
+    "live_archive_read": "DENY",
+    "real_input_api_egress": "DENY",
+    "new_owner_labels": "DENY",
+    "model_training": "DENY",
+    "production_paia_write": "DENY"
+  },
+  "public_output_policy": "aggregates/hashes only; no raw private identifiers or text"
+}

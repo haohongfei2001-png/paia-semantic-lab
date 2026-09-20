@@ -1,0 +1,94 @@
+{
+  "round": "REM-03",
+  "stage": "CALIBRATION_GATE_FAIL",
+  "plan_hash": "a73f657e378e4d817e825d93ad2711262e9288a78e741e07a8c1d026fdcb31bb",
+  "code_hash": "db98038637a50715fcbf0305caa04a5843fc4e2cd5b556d1b968cb9745cc4467",
+  "candidate_policy_version": "rem03-domain-scaffold-candidates-0.1",
+  "model_id": "BAAI/bge-m3",
+  "revision": "cb1779f90b988b8deb01f9155c790ef9417d7648",
+  "case_count": 80,
+  "assigned_cases": 80,
+  "metrics": {
+    "overall": {
+      "assigned_cases": 80,
+      "topic_recall_at_5": 0.26437499999999997,
+      "complete_case_recall_at_5": 0.0875,
+      "topic_recall_at_10": 0.391875,
+      "complete_case_recall_at_10": 0.175,
+      "topic_recall_at_20": 0.566875,
+      "complete_case_recall_at_20": 0.3375
+    },
+    "context_dependent": {
+      "assigned_cases": 12,
+      "topic_recall_at_5": 0.13888888888888887,
+      "complete_case_recall_at_5": 0.0,
+      "topic_recall_at_10": 0.3333333333333333,
+      "complete_case_recall_at_10": 0.16666666666666666,
+      "topic_recall_at_20": 0.638888888888889,
+      "complete_case_recall_at_20": 0.5
+    },
+    "context_free": {
+      "assigned_cases": 68,
+      "topic_recall_at_5": 0.2865196078431373,
+      "complete_case_recall_at_5": 0.10294117647058823,
+      "topic_recall_at_10": 0.4022058823529412,
+      "complete_case_recall_at_10": 0.17647058823529413,
+      "topic_recall_at_20": 0.5541666666666666,
+      "complete_case_recall_at_20": 0.3088235294117647
+    }
+  },
+  "gate": {
+    "overall_pass": false,
+    "critical_slices_pass": false,
+    "pass": false,
+    "failures": [
+      "overall_recall_at_10",
+      "overall_recall_at_20",
+      "critical_slice:context_dependent",
+      "critical_slice:context_free"
+    ],
+    "slice_failures": {
+      "context_dependent": [
+        "recall_at_10",
+        "recall_at_20"
+      ],
+      "context_free": [
+        "recall_at_10",
+        "recall_at_20"
+      ]
+    }
+  },
+  "ranking_digest": "8cf12e676a8df0a3071e400b7a56a3b8c5474afbf7775603d424da6239779201",
+  "evaluation_reads_consumed": 0,
+  "guards": {
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "new_owner_labels": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0,
+    "consumed_sem07_lockbox_tuning_events": 0,
+    "config_search_events": 0,
+    "threshold_fit_events": 0
+  },
+  "runtime": {
+    "model_load_seconds": 5.130333833993063,
+    "python": "3.12.14",
+    "sentence_transformers": "5.1.1",
+    "transformers": "4.56.1",
+    "torch": "2.8.0",
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0-arm64-arm-64bit",
+    "effective_context_tokens": 8192,
+    "max_input_tokens": 626,
+    "document_encode_seconds": 219.33806087500125,
+    "query_encode_seconds": 166.51191299999482,
+    "peak_rss_bytes": 1696448512,
+    "embedding_dimensions": 1024,
+    "elapsed_seconds": 432.149124500007
+  },
+  "result_digest": "9b7b2b8bf20add2b1ce191ec117940234264ab3bccbb26fc39b7312cc09f2bba",
+  "semantic_label_records_parsed": 80,
+  "evaluation_label_records_parsed": 0,
+  "lockbox_label_records_parsed": 0,
+  "evaluation_open_permitted": false
+}
