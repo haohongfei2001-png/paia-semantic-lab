@@ -107,8 +107,13 @@ rounds:
     synthetic_suite_sha256: f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7
     configuration_matrix_frozen: true
     configuration_matrix_count: 12
-    checkpoint_required_ci: PENDING
+    checkpoint_validation_run_id: 35518395926
+    checkpoint_validation_job_id: 106098121572
+    checkpoint_evidence_artifact_id: 10607662220
+    checkpoint_validated_commit: 291f9453d661e2ccf252d625662cb58bf592105f
+    checkpoint_required_ci: PASS
     private_freeze_receipt: artifacts/catalog-architecture-v0.1/sca03-private-freeze.json
+    execution_blocker: LOCAL_PRIVATE_RUNTIME_CONNECTOR_QUOTA_EXHAUSTED
   SCA-04:
     title: One-time legacy evaluation promotion
     execution_status: NOT_STARTED
@@ -123,5 +128,5 @@ rounds:
     depends_on: SCA-04
     target_package: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
     target_round: REM-04
-next_action: "SCA-03 is IN_PROGRESS with a 12-config retrieval matrix frozen before private evidence. Run exact-head checkpoint CI first. Only after checkpoint PASS may the authorized 80 calibration judgments be read. SCA-04/evaluation remains closed unless SCA-03 calibration passes the original 0.96/0.99 gates."
+next_action: "SCA-03 checkpoint CI is PASS and the frozen 12-config matrix is eligible to read the authorized 80 calibration judgments. Execution is temporarily blocked only because the local private-runtime connector quota is exhausted. Calibration remains unread (0/80) and SCA-04/evaluation remains closed (0/13). Resume from the same frozen checkpoint when local private-runtime access is available; no new semantic authorization is required."
 product_owner_blockers: []
