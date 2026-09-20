@@ -118,6 +118,10 @@ Local validation:
 - privacy scan: **PASS**
 - git diff check: **PASS**
 
+## Remote validation
+
+Closure candidate `917853bd75af84d1f78586c027b281c573043587` passed `Semantic Lab CI`: run `35489843309`, job `106022786918`, evidence artifact `10598518750` — **PASS**. The run passed Unit tests, SEM-00 through SEM-07, REM-01, REM-02, REM-03 closure validation, and evidence upload.
+
 ## Package consequence
 
 REM-03 failed its required candidate capability. Under the frozen remediation plan, REM-04 cannot compensate for an unresolved candidate bottleneck and remains BLOCKED.
