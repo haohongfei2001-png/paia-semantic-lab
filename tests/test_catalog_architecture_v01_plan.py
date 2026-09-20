@@ -101,7 +101,12 @@ class CatalogArchitectureV01PlanTests(unittest.TestCase):
             self.assertEqual("PASS", sca01["capability_verdict"])
             self.assertIn(
                 self.status["phase"],
-                {"SCA_01_COMPLETE_PENDING_CI", "SCA_02_READY"},
+                {
+                    "SCA_01_COMPLETE_PENDING_CI",
+                    "SCA_02_READY",
+                    "SCA_02_COMPLETE_PENDING_CI",
+                    "SCA_03_READY",
+                },
             )
 
     def test_v03_router_remains_blocked_by_external_catalog_package(self):
