@@ -1,20 +1,20 @@
-package_id: "PAIA-SEMANTIC-LAB-v0.3-REMEDIATION"
-package_version: "0.3.0"
+package_id: PAIA-SEMANTIC-LAB-v0.3-REMEDIATION
+package_version: 0.3.0
 plan_status: FROZEN
 plan_amendment: REM-03A_CALIBRATION_PROTOTYPE
 plan_amendment_status: FROZEN_PLAN_ONLY
-plan_amendment_receipt: "artifacts/remediation-v0.3/REM03A_AMENDMENT_FREEZE_RECEIPT.json"
-plan_amendment_targeted_tests: "9/9 PASS"
-plan_amendment_local_tests: "108/108 PASS"
+plan_amendment_receipt: artifacts/remediation-v0.3/REM03A_AMENDMENT_FREEZE_RECEIPT.json
+plan_amendment_targeted_tests: 9/9 PASS
+plan_amendment_local_tests: 108/108 PASS
 plan_amendment_local_test_seconds: 381.771
 plan_amendment_validation_run_id: 35491330633
 plan_amendment_validation_job_id: 106026662167
 plan_amendment_evidence_artifact_id: 10598858687
-plan_amendment_validated_commit: "4ce572d8f07c4e0effa77967b0cad371cead2c5d"
+plan_amendment_validated_commit: 4ce572d8f07c4e0effa77967b0cad371cead2c5d
 plan_amendment_required_ci: PASS
-phase: REM_03A_IN_PROGRESS
-baseline_remote_commit: "28c82a95fd1ee6d642fc6a033ce1bf734cc8df53"
-architecture_baseline: "v0.2 semantic contract"
+phase: REM_03A_COMPLETE_FAIL
+baseline_remote_commit: 28c82a95fd1ee6d642fc6a033ce1bf734cc8df53
+architecture_baseline: v0.2 semantic contract
 production_paia_modified: false
 real_archive_read: false
 real_input_api_egress: false
@@ -22,8 +22,8 @@ model_training_started: false
 future_lockbox_created: false
 consumed_sem07_lockbox_role: LEGACY_DIAGNOSTIC_ONLY
 owner_attention:
-  new_labels_forbidden_through: "REM-04"
-  planned_label_round: "REM-05"
+  new_labels_forbidden_through: REM-04
+  planned_label_round: REM-05
   final_round_new_labels: 0
 data_roles:
   legacy_calibration_judgments: 80
@@ -32,29 +32,34 @@ data_roles:
   future_rem06_lockbox_target: 96
 rounds:
   REM-00:
-    title: "Legacy failure attribution and remediation hypotheses"
+    title: Legacy failure attribution and remediation hypotheses
     execution_status: COMPLETE
     capability_verdict: PASS
     explicit_execution_authorized: true
     live_archive_read: forbidden
     existing_private_artifacts_read: authorized_read_only_for_rem00
     new_owner_labels: 0
-    attribution_version: "rem00-failure-attribution-0.1"
+    attribution_version: rem00-failure-attribution-0.1
     attributed_cases: 35
     reconciliation: PASS
-    primary_attribution_counts: { CONTEXT_REPRESENTATION: 5, CANDIDATE_MISS: 12, CANDIDATE_LOW_RANK: 8, ROUTER_ABSTENTION: 8, DATA_CLASS_GAP: 2 }
-    private_ledger_sha256: "86881ca24d91766cba63b3110527e9f6a1920867237b965bdd8cde2aec5d1575"
+    primary_attribution_counts:
+      CONTEXT_REPRESENTATION: 5
+      CANDIDATE_MISS: 12
+      CANDIDATE_LOW_RANK: 8
+      ROUTER_ABSTENTION: 8
+      DATA_CLASS_GAP: 2
+    private_ledger_sha256: 86881ca24d91766cba63b3110527e9f6a1920867237b965bdd8cde2aec5d1575
     owner_question_required: false
     semantic_model_config_changes: 0
     consumed_lockbox_tuning_events: 0
-    local_tests: "77/77 PASS"
+    local_tests: 77/77 PASS
     closure_validation_run_id: 35426635003
     closure_validation_job_id: 105853634027
     closure_evidence_artifact_id: 10579441302
-    validated_main_commit: "54c44828a3299efff35b878bca88126ea03ecdf0"
+    validated_main_commit: 54c44828a3299efff35b878bca88126ea03ecdf0
     closure_required_ci: PASS
   REM-01:
-    title: "Diagnostic harness and representation probes"
+    title: Diagnostic harness and representation probes
     execution_status: COMPLETE
     capability_verdict: PASS
     depends_on: REM-00
@@ -62,10 +67,10 @@ rounds:
     existing_private_artifacts_read: not_authorized
     private_calibration_evidence: INCONCLUSIVE_PRIVATE_EVIDENCE_NOT_AUTHORIZED
     new_owner_labels: 0
-    benchmark_version: "rem01-public-diagnostics-0.1"
+    benchmark_version: rem01-public-diagnostics-0.1
     public_diagnostic_cases: 156
     synthetic_family_count: 36
-    deterministic_result_digest: "631e6cc62f0e213d768848926bf62b7fd68619143e6ac0b07bb99e178c222942"
+    deterministic_result_digest: 631e6cc62f0e213d768848926bf62b7fd68619143e6ac0b07bb99e178c222942
     engineering_contract: PASS
     personalized_semantic_quality: WITHHELD
     model_selection: FORBIDDEN_IN_REM01
@@ -75,16 +80,16 @@ rounds:
     model_training_runs: 0
     production_paia_writes: 0
     consumed_lockbox_tuning_events: 0
-    local_tests: "86/86 PASS"
+    local_tests: 86/86 PASS
     local_test_seconds: 282.883
-    targeted_tests: "9/9 PASS"
+    targeted_tests: 9/9 PASS
     closure_validation_run_id: 35428949731
     closure_validation_job_id: 105859856082
     closure_evidence_artifact_id: 10579784576
-    validated_main_commit: "0c66f35f4152945cd3fb88120c475b2c7a999fb3"
+    validated_main_commit: 0c66f35f4152945cd3fb88120c475b2c7a999fb3
     closure_required_ci: PASS
   REM-02:
-    title: "Representation and retrieval bake-off"
+    title: Representation and retrieval bake-off
     execution_status: COMPLETE
     capability_verdict: PASS
     depends_on: REM-01
@@ -98,24 +103,31 @@ rounds:
     evaluation_label_records_read: 13
     lockbox_label_records_read: 0
     private_artifact_access: AUTHORIZED_READ_ONLY
-    private_promotion_plan_sha256: "0f99504f278573730c698b95f92303cd0a048cef43cc351900b076242e3a5b1a"
-    private_evaluator_sha256: "0f11c84a53ea3c207498e6b17f14fb94b2cd025a69bd6473f6ac3631a6033456"
-    calibration_result_digest: "728e407fb6f0131e1991ad62718f4a36481e74ff0083446e49102007074eb848"
-    evaluation_result_digest: "5bf25955f278fd1fc125e09348d040eda1e75f07322f83250c860c5fe45a0849"
+    private_promotion_plan_sha256: 0f99504f278573730c698b95f92303cd0a048cef43cc351900b076242e3a5b1a
+    private_evaluator_sha256: 0f11c84a53ea3c207498e6b17f14fb94b2cd025a69bd6473f6ac3631a6033456
+    calibration_result_digest: 728e407fb6f0131e1991ad62718f4a36481e74ff0083446e49102007074eb848
+    evaluation_result_digest: 5bf25955f278fd1fc125e09348d040eda1e75f07322f83250c860c5fe45a0849
     public_runtime_evidence: PASS
-    benchmark_version: "rem02-public-runtime-bakeoff-0.1"
-    executed_runtime_candidates: ["Qwen/Qwen3-Embedding-0.6B", "BAAI/bge-m3"]
-    unavailable_runtime_candidates: ["nomic-ai/nomic-embed-text-v2-moe", "intfloat/multilingual-e5-large-instruct"]
-    public_engineering_frontier: ["BAAI/bge-m3"]
+    benchmark_version: rem02-public-runtime-bakeoff-0.1
+    executed_runtime_candidates:
+    - Qwen/Qwen3-Embedding-0.6B
+    - BAAI/bge-m3
+    unavailable_runtime_candidates:
+    - nomic-ai/nomic-embed-text-v2-moe
+    - intfloat/multilingual-e5-large-instruct
+    public_engineering_frontier:
+    - BAAI/bge-m3
     public_frontier_claim: PUBLIC_SYNTHETIC_ENGINEERING_ONLY_NOT_A_PROMOTION_SHORTLIST
-    promotion_shortlist: ["rem02cfg-30ed3156c71fd270", "rem02cfg-d2af02a6913bddf3"]
-    promotion_baseline_model: "BAAI/bge-m3@cb1779f90b988b8deb01f9155c790ef9417d7648"
+    promotion_shortlist:
+    - rem02cfg-30ed3156c71fd270
+    - rem02cfg-d2af02a6913bddf3
+    promotion_baseline_model: BAAI/bge-m3@cb1779f90b988b8deb01f9155c790ef9417d7648
     promotion_baseline_descriptor: full_boundaries
     promotion_baseline_ranking: rrf
     evaluation_topic_recall_at_20: 0.5794871794871794
     evaluation_complete_case_recall_at_20: 0.23076923076923078
     candidate_quality_for_rem03: REMEDIATION_REQUIRED
-    deterministic_result_digest: "37927e5ab3da2286d7384bd50ce2d338b676351bae86a695d95ae51b2aef36b7"
+    deterministic_result_digest: 37927e5ab3da2286d7384bd50ce2d338b676351bae86a695d95ae51b2aef36b7
     private_artifact_reads: AUTHORIZED_READ_ONLY
     live_archive_reads: 0
     real_input_api_egress_events: 0
@@ -123,23 +135,22 @@ rounds:
     production_paia_writes: 0
     consumed_lockbox_tuning_events: 0
     new_owner_labels: 0
-    targeted_tests: "9/9 PASS"
-    local_tests: "94/94 PASS"
+    targeted_tests: 9/9 PASS
+    local_tests: 94/94 PASS
     local_test_seconds: 848.958
     public_runtime_validator: PASS
     checkpoint_validation_run_id: 35444322684
     checkpoint_validation_job_id: 105900531480
     checkpoint_evidence_artifact_id: 10585086878
-    validated_main_commit: "2c575aca42ba22d432ab5894064940e9b03293ef"
+    validated_main_commit: 6385c2e753b00d16ece6742398526865d305c91d
     checkpoint_required_ci: PASS
-    private_promotion_targeted_tests: "13/13 PASS"
+    private_promotion_targeted_tests: 13/13 PASS
     closure_validation_run_id: 35452130072
     closure_validation_job_id: 105921006853
     closure_evidence_artifact_id: 10586762983
-    validated_main_commit: "6385c2e753b00d16ece6742398526865d305c91d"
     closure_required_ci: PASS
   REM-03:
-    title: "Full-catalog candidate remediation and freeze"
+    title: Full-catalog candidate remediation and freeze
     execution_status: COMPLETE
     capability_verdict: FAIL
     depends_on: REM-02
@@ -156,8 +167,8 @@ rounds:
     lockbox_label_records_read: 0
     consumed_sem07_lockbox_use: FORBIDDEN_FOR_TUNING_OR_PROMOTION
     public_structural_evidence: PASS
-    candidate_policy_version: "rem03-domain-scaffold-candidates-0.1"
-    deterministic_result_digest: "02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e"
+    candidate_policy_version: rem03-domain-scaffold-candidates-0.1
+    deterministic_result_digest: 02f7d15d71af908bf82e0aee0a19003766b7b6329e701f679590880ec915a25e
     public_standard_recall_at_10: 1.0
     public_standard_recall_at_20: 1.0
     public_boundary_no_alias_recall_at_20: 0.1388888888888889
@@ -166,8 +177,8 @@ rounds:
     full_catalog_reachability_rate: 1.0
     top20_activity_invariant: true
     scale_1024_pass: true
-    config_sha256: "81132e9267e4956e396fd38f324112d3f68b2a68553cd7818bf3c85837ec557d"
-    policy_sha256: "65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4"
+    config_sha256: 81132e9267e4956e396fd38f324112d3f68b2a68553cd7818bf3c85837ec557d
+    policy_sha256: 65f96d552cb0c499f1440b0e88e71b25d40e6e1d2812177cbf87e599ba8654d4
     private_artifact_reads: AUTHORIZED_READ_ONLY_CALIBRATION
     live_archive_reads: 0
     real_input_api_egress_events: 0
@@ -175,70 +186,104 @@ rounds:
     production_paia_writes: 0
     consumed_lockbox_tuning_events: 0
     new_owner_labels: 0
-    private_promotion_plan_sha256: "a73f657e378e4d817e825d93ad2711262e9288a78e741e07a8c1d026fdcb31bb"
-    private_evaluator_sha256: "db98038637a50715fcbf0305caa04a5843fc4e2cd5b556d1b968cb9745cc4467"
-    private_calibration_result_digest: "9b7b2b8bf20add2b1ce191ec117940234264ab3bccbb26fc39b7312cc09f2bba"
+    private_promotion_plan_sha256: a73f657e378e4d817e825d93ad2711262e9288a78e741e07a8c1d026fdcb31bb
+    private_evaluator_sha256: db98038637a50715fcbf0305caa04a5843fc4e2cd5b556d1b968cb9745cc4467
+    private_calibration_result_digest: 9b7b2b8bf20add2b1ce191ec117940234264ab3bccbb26fc39b7312cc09f2bba
     private_candidate_recall_at_10: 0.391875
     private_candidate_recall_at_20: 0.566875
     required_candidate_recall_at_10: 0.96
     required_candidate_recall_at_20: 0.99
     critical_slices_pass: false
-    targeted_tests: "17/17 PASS"
-    local_tests: "106/106 PASS"
+    targeted_tests: 17/17 PASS
+    local_tests: 106/106 PASS
     local_test_seconds: 447.981
     checkpoint_validation_run_id: 35486432088
     checkpoint_validation_job_id: 106013561070
     checkpoint_evidence_artifact_id: 10598445239
-    validated_main_commit: "c3108c77080f0053d1e2582f7b3e8654ce569c43"
+    validated_main_commit: 917853bd75af84d1f78586c027b281c573043587
     checkpoint_required_ci: PASS
     closure_validation_run_id: 35489843309
     closure_validation_job_id: 106022786918
     closure_evidence_artifact_id: 10598518750
-    validated_main_commit: "917853bd75af84d1f78586c027b281c573043587"
     closure_required_ci: PASS
   REM-03A:
-    title: "Calibration-prototype candidate remediation"
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    title: Calibration-prototype candidate remediation
+    execution_status: COMPLETE
+    capability_verdict: FAIL
     depends_on: REM-03
     amendment: REM-03A_CALIBRATION_PROTOTYPE
     explicit_execution_authorized: true
     existing_private_artifacts_read: authorized_read_only_80_calibration_13_evaluation_if_gate
     configuration_matrix_frozen: true
     configuration_matrix_count: 12
-    freeze_targeted_tests: "13/13 PASS"
-    freeze_local_tests: "114/114 PASS"
+    freeze_targeted_tests: 13/13 PASS
+    freeze_local_tests: 114/114 PASS
     freeze_local_test_seconds: 256.231
-    private_freeze_receipt: "artifacts/remediation-v0.3/rem03a-private-freeze.json"
+    private_freeze_receipt: artifacts/remediation-v0.3/rem03a-private-freeze.json
     promotion_gate: ORIGINAL_CANDIDATE_THRESHOLDS
     candidate_recall_at_10_min: 0.96
     candidate_recall_at_20_min: 0.99
-    allowed_prototype_strategies: [exemplar_max, centroid, hybrid]
+    allowed_prototype_strategies:
+    - exemplar_max
+    - centroid
+    - hybrid
     family_grouped_leakage_required_zero: true
     legacy_evaluation_policy: BOUNDED_AFTER_CALIBRATION_PASS
     consumed_sem07_lockbox_use: FORBIDDEN_FOR_TUNING_OR_PROMOTION
     new_owner_labels: 0
+    private_calibration_evidence: FAIL_CALIBRATION_GATE
+    calibration_records_read: 80
+    calibration_passing_configs: 0
+    evaluation_read_budget: 13
+    evaluation_records_read: 0
+    evaluation_opened: false
+    lockbox_label_records_read: 0
+    best_observed_config_ids:
+    - rem03a-6e40b76ac6cae32b
+    - rem03a-c551eca296f32f4f
+    best_candidate_recall_at_10: 0.7435416666666667
+    best_candidate_recall_at_20: 0.8568749999999999
+    best_context_dependent_recall_at_10: 0.8055555555555555
+    best_context_dependent_recall_at_20: 0.9166666666666666
+    best_context_free_recall_at_10: 0.7325980392156862
+    best_context_free_recall_at_20: 0.8463235294117647
+    critical_slices_pass: false
+    held_out_family_leakage_events: 0
+    calibration_result_digest: 361b7f101d9f4552d539bd218b2bb454034d09209e2f17d22fda1f5191fe37b8
+    freeze_validation_run_id: 35500865402
+    freeze_validation_job_id: 106052270898
+    freeze_evidence_artifact_id: 10601932880
+    freeze_validated_commit: 694f33f7c23961a825dbba50efa72aab85664a2f
+    freeze_required_ci: PASS
+    closure_required_ci: PENDING
+    closure_targeted_tests: 16/16 PASS
+    closure_local_tests: 117/117 PASS
+    closure_local_test_seconds: 282.631
   REM-04:
-    title: "Router remediation and pre-lockbox freeze"
+    title: Router remediation and pre-lockbox freeze
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     depends_on: REM-03A
     prerequisite: REM_03A_CANDIDATE_PROMOTION_PASS
-    blocked_by: REM_03A_NOT_COMPLETE
+    blocked_by: REM_03A_CANDIDATE_PROMOTION_FAIL
     new_owner_labels: 0
   REM-05:
-    title: "New independent personal lockbox construction"
+    title: New independent personal lockbox construction
     execution_status: NOT_STARTED
     capability_verdict: UNTESTED
     depends_on: REM-04
     fresh_snapshot_authorization_required: true
     owner_semantic_batch: planned_once
   REM-06:
-    title: "Frozen v0.3 certification"
+    title: Frozen v0.3 certification
     execution_status: NOT_STARTED
     capability_verdict: UNTESTED
     depends_on: REM-05
     new_owner_labels: 0
     production_integration: forbidden
-next_action: "REM-03A is IN_PROGRESS with a 12-config calibration-prototype matrix frozen before private evidence. Run only the authorized 80-case family-grouped calibration. Open the 13-case legacy evaluation at most once and only if calibration passes Recall@10 >= 0.96, Recall@20 >= 0.99 and critical-slice gates. REM-04 remains BLOCKED."
+next_action: 'REM-03A is COMPLETE/FAIL: the frozen 12-config calibration-prototype
+  matrix improved candidate recall but no configuration met Recall@10 >= 0.96 and
+  Recall@20 >= 0.99 with critical-slice gates. The 13-case legacy evaluation set was
+  not opened. REM-04 remains BLOCKED. Further work requires a new explicitly authorized
+  candidate-remediation design; do not lower gates.'
 product_owner_blockers: []
