@@ -1,0 +1,100 @@
+{
+  "confirmed_count": 3,
+  "diagnostics": {
+    "allowed_context_path": {
+      "allowed_context_top5": [
+        "sys.ai_computing.cybersecurity_privacy",
+        "sys.knowledge_memory.journaling",
+        "sys.education_learning.skill_learning",
+        "sys.knowledge_memory.memory_context",
+        "sys.home_daily.transportation_ownership"
+      ],
+      "confirmed": true,
+      "control_adapter": "HashNgramEmbeddingAdapter",
+      "current_text_changed_by_allowed_context": true,
+      "current_top5": [
+        "sys.science_technical.computer_science",
+        "sys.family_relationships.social_interaction",
+        "sys.communication_writing.public_posts",
+        "sys.health_wellbeing.mental_wellbeing",
+        "sys.family_relationships.siblings"
+      ],
+      "fixture": "ambiguous_current_input_with_interview_context",
+      "interview_rank_allowed_context": 9,
+      "interview_rank_current_only": 71,
+      "interview_topic_id": "sys.career_work.interviews",
+      "private_causality_inference_permitted": false,
+      "query_embedding_cosine": 0.2965855070008698,
+      "query_entry_point": "semantic_lab.rem01.query_representation",
+      "ranking_changed": true
+    },
+    "candidate_budget": {
+      "confirmed": true,
+      "current_top10_first_domain_count": 8,
+      "direct_rank4_position_after_current_k8": 18,
+      "direct_rank4_topic": "sys.education_learning.academic_admin",
+      "direct_top10_domains": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "direct_top10_retained_at_10": {
+        "current_k8": 3,
+        "direct_only": 10,
+        "sibling_cap2": 8,
+        "sibling_cap4": 6
+      },
+      "direct_top10_retained_at_20": {
+        "current_k8": 6,
+        "direct_only": 10,
+        "sibling_cap2": 10,
+        "sibling_cap4": 10
+      },
+      "fixture": "ten_distinct_domain_representatives_in_direct_top10"
+    },
+    "sparse_prototype": {
+      "all_no_prototype": {
+        "centroid_ranking_equals_topic_id_order": true,
+        "input_shape": [
+          0,
+          2
+        ],
+        "target_centroid_rank": 144,
+        "target_fused_rank_weight_1_5": 10,
+        "target_fused_rank_weight_3_0": 32
+      },
+      "confirmed": true,
+      "fixture": "real_centroid_function_144_topics_partial_and_zero_prototype_controls",
+      "numpy_version": "2.5.3",
+      "partial_prototype": {
+        "target_centroid_rank": 144,
+        "target_fused_rank_weight_1_5": 10,
+        "target_fused_rank_weight_3_0": 32,
+        "target_profile_rank": 1,
+        "zero_prototype_tail_is_topic_id_sorted": true
+      },
+      "profile_only_control": {
+        "calibration_weight": 0,
+        "ranking_equals_profile_ranking": true,
+        "target_rank": 1
+      },
+      "seen_topic_count": 4,
+      "topic_count": 144,
+      "zero_prototype_count": 140,
+      "zero_prototype_target": "sys.travel_places.visas_border"
+    }
+  },
+  "evaluation_reads": 0,
+  "evidence_class": "PUBLIC_SYNTHETIC_ONLY",
+  "lockbox_reads": 0,
+  "package": "SCA03-PUBLIC-SYNTHETIC-DIAGNOSTICS-v0.1",
+  "private_artifact_reads": 0,
+  "production_algorithm_modified": false
+}
