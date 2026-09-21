@@ -23,4 +23,8 @@ The v0.3 remediation package remains historical evidence and REM-04 remains bloc
 
 ## Current round
 
-SCA-01 and SCA-02 are COMPLETE/PASS. The 504-edge sibling-contrast graph and 1296-case bilingual synthetic suite are CI-validated. SCA-03 is READY but not authorized and requires fresh explicit read-only authorization before using the 80 legacy calibration judgments.
+SCA-01 and SCA-02 are COMPLETE/PASS. The 504-edge sibling-contrast graph and 1296-case bilingual synthetic suite are CI-validated.
+
+According to the [canonical package status](../../status/SEMANTIC_CATALOG_ARCHITECTURE_STATUS.yaml), SCA-03 is COMPLETE/FAIL: all 80 authorized calibration judgments have already been consumed, and none of the 12 frozen configurations passed. SCA-04 remains BLOCKED; the 13 evaluation judgments remain unopened. Preserve the failed evidence and original gates; this status does not authorize calibration rereads, evaluation, retuning or promotion.
+
+The [public diagnostic closure](../../artifacts/diagnostics/sca03-public-synthetic-v0.1/CLOSURE.md) is COMPLETE. The architecture amendment remains DESIGN_ONLY_NOT_AUTHORIZED, with implementation_authorized=false and private_run_authorized=false. No additional stage is authorized by that closure.
