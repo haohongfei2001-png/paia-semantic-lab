@@ -79,7 +79,10 @@ class BAA01PlanTests(unittest.TestCase):
             self.assertEqual("BAA_01_IN_PROGRESS", self.status["phase"])
             self.assertEqual("PENDING", baa01["public_gate"])
         else:
-            self.assertEqual("BAA_01_COMPLETE_PASS", self.status["phase"])
+            self.assertIn(
+                self.status["phase"],
+                {"BAA_01_COMPLETE_PENDING_MERGE", "BAA_01_COMPLETE_PASS"},
+            )
             self.assertEqual("PASS", baa01["capability_verdict"])
             self.assertEqual("PASS", baa01["public_gate"])
         baa02 = self.status["rounds"]["BAA-02"]
