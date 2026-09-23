@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 import pathlib
 import unittest
@@ -37,10 +38,9 @@ class PAD01PlanTests(unittest.TestCase):
         self.assertEqual("ACTIVE_PUBLIC_SYNTHETIC_ONLY", self.config["status"])
         self.assertFalse(self.config["future_private"]["authorized"])
         self.assertFalse(self.config["future_private"]["automatic_transition"])
-        self.assertEqual(
-            "DENY",
-            self.config["evidence"]["forbidden"][0] and "DENY",
-        )
+        self.assertIn("raw_private_calibration", self.config["evidence"]["forbidden"])
+        self.assertIn("legacy_evaluation", self.config["evidence"]["forbidden"])
+        self.assertIn("consumed_sem07_lockbox", self.config["evidence"]["forbidden"])
 
     def test_frozen_controls_are_bounded(self):
         self.assertEqual(
@@ -69,11 +69,12 @@ class PAD01PlanTests(unittest.TestCase):
         self.assertFalse(self.status["sca04_started"])
 
     @unittest.skipUnless(
-        os.environ.get("PAD01_PUBLIC_NUMPY") == "1",
-        "PAD-01 executable public diagnostic runs only in its isolated CI step",
+        os.environ.get("PAD01_PUBLIC_RESULT") == "1",
+        "PAD-01 executable result is checked only in its isolated CI step",
     )
-    def test_public_architecture_decomposition_executes(self):
-        result = run_diagnostics(ROOT)
+    def test_public_architecture_decomposition_result(self):
+        path = ROOT / "artifacts" / "ci" / "pad01-post-failure-architecture.json"
+        result = json.loads(path.read_text(encoding="utf-8"))
         self.assertTrue(result["diagnostic_pass"])
         self.assertEqual("PUBLIC_SYNTHETIC_ONLY", result["evidence_class"])
         self.assertEqual(144, result["architecture_decomposition"]["topic_count"])
