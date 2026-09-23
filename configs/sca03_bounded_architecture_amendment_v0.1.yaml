@@ -1,0 +1,52 @@
+package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
+package_version: 0.1.0
+status: ACTIVE_PUBLIC_ONLY
+source_design:
+  document: docs/diagnostics/SCA03_BOUNDED_ARCHITECTURE_AMENDMENT_DESIGN_v0.1.md
+  config: configs/sca03_bounded_architecture_amendment_design_v0.1.yaml
+  source_evidence_class: PUBLIC_SYNTHETIC_ONLY
+authorization:
+  baa01_implementation_authorized: true
+  authorization_source: user_authorized_baa01_public_implementation
+  private_run_authorized: false
+  sca04_authorized: false
+scope:
+  direct_evidence_preservation: true
+  missing_evidence_neutral_fusion: true
+  allowed_context_changes: false
+  embedding_model_changes: false
+  profile_changes: false
+  graph_content_changes: false
+  formal_catalog_changes: false
+  multivector_changes: false
+candidate_policies:
+  allowed_variants:
+    - direct_reserve6_sibling_cap2
+    - direct_reserve6_sibling_cap4
+  direct_top6_in_top10_required: true
+  direct_top10_in_top20_required: true
+  sibling_cap_counts_seed: false
+  full_catalog_candidate_count: 144
+  duplicate_candidates: 0
+  domain_ids_as_candidates: 0
+prototype_fusion:
+  missing_evidence_semantics: NEUTRAL_ABSENT
+  zero_prototype_in_prototype_stream: false
+  zero_prototype_receives_rrf_term: false
+  all_no_prototype_fused_equals_profile: true
+  zero_prototype_id_order_may_affect_relative_order: false
+public_gate:
+  existing_sca01_sca02_required: PASS
+  historical_sem_rem_regression_required: PASS
+  private_artifact_reads_max: 0
+  evaluation_reads_max: 0
+  consumed_lockbox_reads_max: 0
+future_private_gate:
+  automatically_authorized: false
+  requires_separate_owner_authorization: true
+  newly_frozen_configuration_required: true
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  critical_slices_same_thresholds: true
+  family_leakage_events_max: 0
+  evaluation_remains_closed_until_new_calibration_pass: true

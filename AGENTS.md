@@ -21,3 +21,6 @@
 18. Formal Topic Contract and Derived Semantic Profile are distinct. AI may generate semantic expansion only in the derived layer when the catalog-architecture package authorizes it and provenance is explicit.
 19. AI may not silently mutate, create, merge, split or delete formal Topics. A formal boundary change requires separate explicit owner authorization.
 20. v0.3 REM-04 remains blocked until the catalog-architecture package produces a promoted immutable semantic-profile handoff and a separate v0.3 amendment consumes it.
+
+21. After the reviewed SCA-03 public diagnostics, SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1 is the authority for the separately authorized bounded repair. BAA-01 is PUBLIC/SYNTHETIC-only and may implement only direct-evidence preservation and missing-evidence-neutral prototype fusion.
+22. BAA-01 may not read calibration/evaluation/lockbox private artifacts, may not mutate closed SCA-03 evidence or SCA-01/SCA-02 assets, and may not start SCA-04. Any future private validation requires a separate owner authorization and a new pre-evidence freeze.
