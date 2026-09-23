@@ -1,0 +1,159 @@
+{
+  "package": "SCA03-POST-FAILURE-ARCHITECTURE-DIAGNOSTICS-v0.1",
+  "round": "PAD-01",
+  "stage": "PUBLIC_SYNTHETIC_ARCHITECTURE_DECOMPOSITION_COMPLETE",
+  "diagnostic_verdict": "PASS",
+  "evidence_class": "PUBLIC_SYNTHETIC_ONLY",
+  "execution_result_digest": "99b3c64107bc0668f20227a6fcb15e76c5a2a66a1e1713eed1becd0e608a3e1b",
+  "deterministic_repeat_byte_identical": true,
+  "source_failure_reference": {
+    "baa02_stage": "BAA02_CALIBRATION_FAIL",
+    "baa02_highest_recall_at_10": 0.7735416666666667,
+    "baa02_highest_recall_at_20": 0.8854166666666666,
+    "raw_private_payload_read": false
+  },
+  "representation_control": {
+    "concat_full_derived": {
+      "hit_at_5": 0.9675925925925926,
+      "hit_at_10": 0.9868827160493827,
+      "hit_at_20": 0.9969135802469136
+    },
+    "concat_positive_fields": {
+      "hit_at_5": 0.9699074074074074,
+      "hit_at_10": 0.9907407407407407,
+      "hit_at_20": 0.9969135802469136
+    },
+    "multivector_positive_max": {
+      "hit_at_5": 1,
+      "hit_at_10": 1,
+      "hit_at_20": 1
+    },
+    "deltas": {
+      "remove_exclusion_from_positive_concat": {
+        "hit_at_5": 0.0023148148148148806,
+        "hit_at_10": 0.0038580246913579863,
+        "hit_at_20": 0
+      },
+      "field_separation_same_positive_content": {
+        "hit_at_5": 0.03009259259259256,
+        "hit_at_10": 0.0092592592592593,
+        "hit_at_20": 0.0030864197530864335
+      }
+    }
+  },
+  "candidate_stage_control": {
+    "concat_full_derived": {
+      "full_catalog_direct": {
+        "hit_at_10": 0.9868827160493827,
+        "hit_at_20": 0.9969135802469136
+      },
+      "cap2": {
+        "hit_at_10": 0.9830246913580247,
+        "hit_at_20": 0.9876543209876543,
+        "lost_direct_hits_at_10": 5,
+        "lost_direct_hits_at_20": 12,
+        "gained_hits_at_10": 0,
+        "gained_hits_at_20": 0
+      },
+      "cap4": {
+        "hit_at_10": 0.9745370370370371,
+        "hit_at_20": 0.9876543209876543,
+        "lost_direct_hits_at_10": 17,
+        "lost_direct_hits_at_20": 12,
+        "gained_hits_at_10": 1,
+        "gained_hits_at_20": 0
+      }
+    },
+    "concat_positive_fields": {
+      "full_catalog_direct": {
+        "hit_at_10": 0.9907407407407407,
+        "hit_at_20": 0.9969135802469136
+      },
+      "cap2": {
+        "hit_at_10": 0.9845679012345679,
+        "hit_at_20": 0.9915123456790124,
+        "lost_direct_hits_at_10": 8,
+        "lost_direct_hits_at_20": 7,
+        "gained_hits_at_10": 0,
+        "gained_hits_at_20": 0
+      },
+      "cap4": {
+        "hit_at_10": 0.9783950617283951,
+        "hit_at_20": 0.9907407407407407,
+        "lost_direct_hits_at_10": 16,
+        "lost_direct_hits_at_20": 8,
+        "gained_hits_at_10": 0,
+        "gained_hits_at_20": 0
+      }
+    },
+    "multivector_positive_max": {
+      "full_catalog_direct": {
+        "hit_at_10": 1,
+        "hit_at_20": 1
+      },
+      "cap2": {
+        "hit_at_10": 1,
+        "hit_at_20": 1,
+        "lost_direct_hits_at_10": 0,
+        "lost_direct_hits_at_20": 0
+      },
+      "cap4": {
+        "hit_at_10": 1,
+        "hit_at_20": 1,
+        "lost_direct_hits_at_10": 0,
+        "lost_direct_hits_at_20": 0
+      }
+    }
+  },
+  "context_control": {
+    "probe_count": 288,
+    "rendered_query_changed_count": 288,
+    "control_embedding_changed_count": 288,
+    "pair_identical_full_ranking_count": 0,
+    "target_rank_better_count": 286,
+    "target_rank_worse_count": 0,
+    "median_target_rank_improvement": 71.5,
+    "current_only_hit_at_10": 0.06944444444444445,
+    "current_only_hit_at_20": 0.1388888888888889,
+    "allowed_context_hit_at_10": 1,
+    "allowed_context_hit_at_20": 1
+  },
+  "signals": {
+    "exclusion_mixing_signal": true,
+    "field_separation_signal": true,
+    "candidate_stage_changes_topk_signal": true,
+    "context_survives_public_control_pipeline": true,
+    "public_control_upstream_error_present": false
+  },
+  "interpretation": {
+    "exclusion_mixing": "Small negative signal under the deterministic public control; not sufficient by itself to explain the private gap.",
+    "multivector": "Strong structural signal under the public synthetic control, but the synthetic suite and semantic-profile fields share derived source semantics. The 100% result is therefore not independent evidence of private/BGE capability.",
+    "candidate_stage": "When the direct ranking is imperfect, BAA-01 sibling expansion loses more existing top-k truth hits than it gains in these public controls. Full-catalog direct scoring remains the cleaner control at 144 Topics.",
+    "context": "Nonempty context demonstrably survives rendering, embedding, ranking and candidate assembly in public controls. This does not identify why current_only and allowed_context were equal in the closed private aggregate."
+  },
+  "validation": {
+    "pr": 12,
+    "pr_head": "0f64d0e4af742693b1078a77ddd94215f4fb94f9",
+    "pr_head_run_id": 35851418804,
+    "pr_head_job_id": 107149744471,
+    "pr_head_artifact_id": 10745876522,
+    "pr_head_required_ci": "PASS",
+    "merged_main": "3175db1e8e950a4c3b4731769b40061443030273",
+    "merged_main_run_id": 35852183687,
+    "merged_main_artifact_id": 10746013756,
+    "merged_main_required_ci": "PASS"
+  },
+  "guards": {
+    "private_artifact_reads": 0,
+    "evaluation_records_read": 0,
+    "consumed_lockbox_reads": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "model_training_runs": 0,
+    "formal_catalog_writes": 0,
+    "production_paia_writes": 0,
+    "sca04_started": false
+  },
+  "future_private_authorized": false,
+  "future_architecture_amendment_authorized": false
+}
