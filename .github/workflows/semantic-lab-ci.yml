@@ -84,6 +84,8 @@ jobs:
           python -m scripts.sca03_post_failure_architecture_diagnostics --output artifacts/ci/pad01-post-failure-architecture-repeat.json
           cmp artifacts/ci/pad01-post-failure-architecture.json artifacts/ci/pad01-post-failure-architecture-repeat.json
           python -m unittest tests.test_sca03_post_failure_architecture_diagnostics -v
+      - name: LSR-v1 lightweight router package validation
+        run: python -m unittest tests.test_lightweight_semantic_router_v1_plan -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:
