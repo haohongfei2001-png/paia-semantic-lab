@@ -74,6 +74,8 @@ jobs:
           python -m pip install --only-binary=:all: "numpy==2.5.3"
           python -m scripts.baa01_public_verification --output artifacts/ci/baa01-public-verification.json
           python -m unittest tests.test_baa01_public tests.test_baa01_result -v
+      - name: BAA-02 pre-evidence freeze validation
+        run: python -m unittest tests.test_baa02_plan -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:
