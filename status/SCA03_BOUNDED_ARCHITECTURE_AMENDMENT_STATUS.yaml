@@ -1,11 +1,11 @@
 package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
 package_version: 0.1.0
-package_status: BAA_02_FREEZE_CLOSURE_PENDING_CI
-phase: BAA_02_FREEZE_CLOSURE_PENDING_CI
+package_status: BAA_02_COMPLETE_FAIL
+phase: BAA_02_COMPLETE_FAIL
 baseline_remote_commit: 8aef610ef4b1199da98ccb1dfad79c2f352a58f8
 source_design_status: DESIGN_ONLY_NOT_AUTHORIZED_AT_BASELINE
 current_authorization_supersedes_design_implementation_guard: true
-private_artifact_reads: 0
+private_artifact_reads: 80
 evaluation_records_read: 0
 consumed_lockbox_reads: 0
 live_archive_read: false
@@ -53,8 +53,8 @@ rounds:
     consumed_lockbox_reads: 0
   BAA-02:
     title: Frozen private calibration validation
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: FAIL
     explicit_execution_authorized: true
     authorization_source: user_continue_per_recommended_baa02_plan
     new_freeze_before_private_evidence_required: true
@@ -68,7 +68,7 @@ rounds:
       - direct_reserve6_sibling_cap4
     missing_evidence_neutral_fusion: true
     calibration_read_budget: 80
-    calibration_records_read: 0
+    calibration_records_read: 80
     pre_evidence_pr_head_commit: debf71f567e47fb9f7a7b065ca294919c70d5c71
     pre_evidence_pr_head_validation_run_id: 35832019570
     pre_evidence_pr_head_validation_job_id: 107086604524
@@ -80,10 +80,25 @@ rounds:
     pre_evidence_merged_main_evidence_artifact_id: 10738470035
     pre_evidence_merged_main_required_ci: PASS
     pre_evidence_freeze_required_ci: PASS
-    freeze_closure_required_ci: PENDING
+    freeze_closure_required_ci: PASS
+    calibration_stage: BAA02_CALIBRATION_FAIL
+    passing_config_count: 0
+    selected_config: null
+    best_candidate_recall_at_10: 0.7735416666666667
+    best_candidate_recall_at_20: 0.8854166666666666
+    critical_slices_pass: false
+    family_leakage_events: 0
+    structural_failure_events: 0
+    calibration_result: artifacts/bounded-architecture-amendment-v0.1/BAA-02_CALIBRATION_RESULT.json
+    closure_receipt: artifacts/bounded-architecture-amendment-v0.1/BAA-02_CLOSURE.md
+    calibration_result_sha256: 70ce74f822f3a12e6b7bb54837a3a3ccfbd68f5857c060618be64db560b06327
+    closure_validation_run_id: 35848156684
+    closure_validation_job_id: 107139207264
+    closure_validated_commit: 039ba9b921a3e52a6bfb2c29f7a250d1088afae5
+    closure_required_ci: PASS
     evaluation_opened: false
     evaluation_authorized: false
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
-next_action: "Require exact freeze-closure-head CI PASS on the current main commit. Only then read exactly the existing 80 calibration records once with the frozen BAA-02 evaluator. Evaluation, the consumed lockbox, and SCA-04 remain unauthorized."
+next_action: "STOP. BAA-02 is COMPLETE/FAIL after its one frozen 80-case calibration run. Evaluation remains closed; the consumed lockbox and SCA-04 remain unauthorized."
 product_owner_blockers: []
