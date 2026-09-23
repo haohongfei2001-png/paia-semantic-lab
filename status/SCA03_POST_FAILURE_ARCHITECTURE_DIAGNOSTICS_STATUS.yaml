@@ -1,0 +1,36 @@
+package_id: SCA03-POST-FAILURE-ARCHITECTURE-DIAGNOSTICS-v0.1
+package_version: 0.1.0
+package_status: PAD_01_IN_PROGRESS
+phase: PAD_01_IN_PROGRESS
+baseline_remote_main: 115d3c66b98c0eef46c857fbb03548eac16c0d06
+source_baa02_status: COMPLETE_FAIL
+evidence_class: PUBLIC_SYNTHETIC_ONLY
+private_artifact_reads: 0
+evaluation_records_read: 0
+consumed_lockbox_reads: 0
+live_archive_read: false
+real_input_api_egress: false
+model_training_started: false
+production_paia_modified: false
+formal_catalog_modified: false
+sca04_started: false
+rounds:
+  PAD-01:
+    title: Public/synthetic architecture decomposition
+    execution_status: IN_PROGRESS
+    diagnostic_verdict: UNTESTED
+    explicit_execution_authorized: true
+    authorization_source: user_authorized_follow_recommended_public_diagnostics
+    config: configs/sca03_post_failure_architecture_diagnostics_v0.1.yaml
+    script: scripts/sca03_post_failure_architecture_diagnostics.py
+    public_suite_case_count: 1296
+    public_topic_count: 144
+    context_probe_count: 288
+    private_artifact_reads: 0
+    evaluation_records_read: 0
+    consumed_lockbox_reads: 0
+    required_ci: PENDING
+future_private_authorized: false
+future_architecture_amendment_authorized: false
+next_action: "Run PAD-01 on PUBLIC/SYNTHETIC evidence only, require exact-head CI PASS, publish the decomposition, and STOP. Do not read private calibration/evaluation/lockbox data."
+product_owner_blockers: []
