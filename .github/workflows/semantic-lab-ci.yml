@@ -76,6 +76,12 @@ jobs:
           python -m unittest tests.test_baa01_public tests.test_baa01_result -v
       - name: BAA-02 pre-evidence freeze validation
         run: python -m unittest tests.test_baa02_plan -v
+      - name: PAD-01 public architecture decomposition
+        env:
+          PAD01_PUBLIC_NUMPY: "1"
+        run: |
+          python -m scripts.sca03_post_failure_architecture_diagnostics --output artifacts/ci/pad01-post-failure-architecture.json
+          python -m unittest tests.test_sca03_post_failure_architecture_diagnostics -v
       - name: Upload evidence
         uses: actions/upload-artifact@v4
         with:
