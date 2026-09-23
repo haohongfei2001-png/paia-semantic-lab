@@ -1,0 +1,43 @@
+package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
+package_version: 0.1.0
+package_status: ACTIVE_PUBLIC_ONLY
+phase: BAA_01_IN_PROGRESS
+baseline_remote_commit: 8aef610ef4b1199da98ccb1dfad79c2f352a58f8
+source_design_status: DESIGN_ONLY_NOT_AUTHORIZED_AT_BASELINE
+current_authorization_supersedes_design_implementation_guard: true
+private_artifact_reads: 0
+evaluation_records_read: 0
+consumed_lockbox_reads: 0
+live_archive_read: false
+real_input_api_egress: false
+model_training_started: false
+production_paia_modified: false
+formal_catalog_modified: false
+closed_sca03_modified: false
+sca04_started: false
+rounds:
+  BAA-01:
+    title: Public implementation and verification
+    execution_status: IN_PROGRESS
+    capability_verdict: UNTESTED
+    explicit_execution_authorized: true
+    authorization_source: user_authorized_baa01_public_implementation
+    allowed_candidate_variants:
+      - direct_reserve6_sibling_cap2
+      - direct_reserve6_sibling_cap4
+    missing_evidence_neutral_fusion: true
+    public_gate: PENDING
+    private_artifact_reads: 0
+    evaluation_records_read: 0
+    consumed_lockbox_reads: 0
+  BAA-02:
+    title: Future private calibration validation
+    execution_status: NOT_STARTED
+    capability_verdict: UNTESTED
+    explicit_execution_authorized: false
+    fresh_private_authorization_required: true
+    new_freeze_before_private_evidence_required: true
+    evaluation_opened: false
+    evaluation_records_read: 0
+next_action: "Execute only BAA-01 public implementation and verification. If all public gates pass, close BAA-01 and STOP. BAA-02/private calibration and SCA-04 remain unauthorized."
+product_owner_blockers: []
