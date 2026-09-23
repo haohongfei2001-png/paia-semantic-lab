@@ -1,0 +1,296 @@
+{
+  "candidate_assembly": {
+    "fixture_count": 3,
+    "pass": true,
+    "policies": {
+      "direct_reserve6_sibling_cap2": {
+        "fixtures": {
+          "alternating_two_domains": {
+            "candidate_count": 144,
+            "direct_top10_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              8,
+              10
+            ],
+            "direct_top6_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "injected_counts_within_cap": true,
+            "injected_sibling_counts": {
+              "D04": 2,
+              "D05": 2
+            },
+            "invariants": {
+              "direct_top10_in_top20": true,
+              "direct_top6_in_top10": true,
+              "domain_ids_absent": true,
+              "full_catalog_144": true,
+              "unique_candidates": true
+            },
+            "pass": true,
+            "sibling_cap_counts_seed": false,
+            "unique_candidate_count": 144
+          },
+          "dense_first_domain": {
+            "candidate_count": 144,
+            "direct_top10_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "direct_top6_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "injected_counts_within_cap": true,
+            "injected_sibling_counts": {
+              "D01": 2,
+              "D02": 2,
+              "D03": 2
+            },
+            "invariants": {
+              "direct_top10_in_top20": true,
+              "direct_top6_in_top10": true,
+              "domain_ids_absent": true,
+              "full_catalog_144": true,
+              "unique_candidates": true
+            },
+            "pass": true,
+            "sibling_cap_counts_seed": false,
+            "unique_candidate_count": 144
+          },
+          "ten_distinct_domains": {
+            "candidate_count": 144,
+            "direct_top10_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12
+            ],
+            "direct_top6_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "injected_counts_within_cap": true,
+            "injected_sibling_counts": {
+              "D01": 2,
+              "D02": 2,
+              "D03": 2,
+              "D04": 2,
+              "D05": 2
+            },
+            "invariants": {
+              "direct_top10_in_top20": true,
+              "direct_top6_in_top10": true,
+              "domain_ids_absent": true,
+              "full_catalog_144": true,
+              "unique_candidates": true
+            },
+            "pass": true,
+            "sibling_cap_counts_seed": false,
+            "unique_candidate_count": 144
+          }
+        },
+        "pass": true,
+        "sibling_cap": 2
+      },
+      "direct_reserve6_sibling_cap4": {
+        "fixtures": {
+          "alternating_two_domains": {
+            "candidate_count": 144,
+            "direct_top10_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              11,
+              8,
+              12
+            ],
+            "direct_top6_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "injected_counts_within_cap": true,
+            "injected_sibling_counts": {
+              "D04": 4,
+              "D05": 3
+            },
+            "invariants": {
+              "direct_top10_in_top20": true,
+              "direct_top6_in_top10": true,
+              "domain_ids_absent": true,
+              "full_catalog_144": true,
+              "unique_candidates": true
+            },
+            "pass": true,
+            "sibling_cap_counts_seed": false,
+            "unique_candidate_count": 144
+          },
+          "dense_first_domain": {
+            "candidate_count": 144,
+            "direct_top10_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "direct_top6_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "injected_counts_within_cap": true,
+            "injected_sibling_counts": {
+              "D01": 2,
+              "D02": 4,
+              "D03": 4
+            },
+            "invariants": {
+              "direct_top10_in_top20": true,
+              "direct_top6_in_top10": true,
+              "domain_ids_absent": true,
+              "full_catalog_144": true,
+              "unique_candidates": true
+            },
+            "pass": true,
+            "sibling_cap_counts_seed": false,
+            "unique_candidate_count": 144
+          },
+          "ten_distinct_domains": {
+            "candidate_count": 144,
+            "direct_top10_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              11,
+              12,
+              13,
+              14
+            ],
+            "direct_top6_positions": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "injected_counts_within_cap": true,
+            "injected_sibling_counts": {
+              "D01": 4,
+              "D02": 4,
+              "D03": 2
+            },
+            "invariants": {
+              "direct_top10_in_top20": true,
+              "direct_top6_in_top10": true,
+              "domain_ids_absent": true,
+              "full_catalog_144": true,
+              "unique_candidates": true
+            },
+            "pass": true,
+            "sibling_cap_counts_seed": false,
+            "unique_candidate_count": 144
+          }
+        },
+        "pass": true,
+        "sibling_cap": 4
+      }
+    }
+  },
+  "guards": {
+    "closed_sca03_mutations": 0,
+    "consumed_lockbox_reads": 0,
+    "evaluation_records_read": 0,
+    "formal_catalog_mutations": 0,
+    "live_archive_reads": 0,
+    "model_training_runs": 0,
+    "private_artifact_reads": 0,
+    "production_paia_writes": 0,
+    "real_input_api_egress_events": 0,
+    "sca04_started": false
+  },
+  "missing_evidence_neutral_fusion": {
+    "all_no_prototype_fused_equals_profile": true,
+    "all_no_prototype_stream_empty": true,
+    "numpy_version": "2.5.3",
+    "partial_stream_count": 4,
+    "partial_stream_exact_observed_set": true,
+    "pass": true,
+    "profile_weight_only_equals_profile": true,
+    "seen_topic_count": 4,
+    "target_absent_from_prototype_stream": true,
+    "target_positions": {
+      "all_none_weight_1_5": 1,
+      "all_none_weight_3_0": 1,
+      "partial_weight_1_5": 5,
+      "partial_weight_3_0": 5,
+      "profile": 1,
+      "profile_only": 1
+    },
+    "topic_count": 144,
+    "zero_prototype_count": 140,
+    "zero_prototype_id_rename_position_invariant": true,
+    "zero_prototype_relative_order_preserved": true
+  },
+  "package_id": "SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1",
+  "private_run_authorized": false,
+  "public_gate_pass": true,
+  "round": "BAA-01",
+  "sca04_authorized": false,
+  "stage": "PUBLIC_GATE_PASS",
+  "winner_selected_for_private_run": false
+}

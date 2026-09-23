@@ -1,7 +1,7 @@
 package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
 package_version: 0.1.0
 package_status: ACTIVE_PUBLIC_ONLY
-phase: BAA_01_IN_PROGRESS
+phase: BAA_01_COMPLETE_PENDING_MERGE
 baseline_remote_commit: 8aef610ef4b1199da98ccb1dfad79c2f352a58f8
 source_design_status: DESIGN_ONLY_NOT_AUTHORIZED_AT_BASELINE
 current_authorization_supersedes_design_implementation_guard: true
@@ -18,15 +18,23 @@ sca04_started: false
 rounds:
   BAA-01:
     title: Public implementation and verification
-    execution_status: IN_PROGRESS
-    capability_verdict: UNTESTED
+    execution_status: COMPLETE
+    capability_verdict: PASS
     explicit_execution_authorized: true
     authorization_source: user_authorized_baa01_public_implementation
     allowed_candidate_variants:
       - direct_reserve6_sibling_cap2
       - direct_reserve6_sibling_cap4
     missing_evidence_neutral_fusion: true
-    public_gate: PENDING
+    public_gate: PASS
+    implementation_checkpoint_commit: bd00ab29ca6773c0d31a0e08c3972812ccf804d6
+    implementation_validation_run_id: 35815451386
+    implementation_validation_job_id: 107035898215
+    implementation_evidence_artifact_id: 10730544877
+    implementation_required_ci: PASS
+    result: artifacts/bounded-architecture-amendment-v0.1/BAA-01_RESULT.json
+    report: artifacts/bounded-architecture-amendment-v0.1/BAA-01_REPORT.md
+    final_pr_head_required_ci: PENDING
     private_artifact_reads: 0
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
@@ -39,5 +47,5 @@ rounds:
     new_freeze_before_private_evidence_required: true
     evaluation_opened: false
     evaluation_records_read: 0
-next_action: "Execute only BAA-01 public implementation and verification. If all public gates pass, close BAA-01 and STOP. BAA-02/private calibration and SCA-04 remain unauthorized."
+next_action: "BAA-01 PUBLIC gate passed on the implementation checkpoint. Revalidate the committed result/report on the final PR head, merge only after required CI PASS, require exact merged-main CI PASS, then publish closure metadata and STOP. BAA-02/private calibration and SCA-04 remain unauthorized."
 product_owner_blockers: []
