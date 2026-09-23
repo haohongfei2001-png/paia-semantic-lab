@@ -1,0 +1,80 @@
+version: "0.1.0"
+package_id: SCA03-POST-FAILURE-ARCHITECTURE-DIAGNOSTICS-v0.1
+round: PAD-01
+status: ACTIVE_PUBLIC_SYNTHETIC_ONLY
+
+source_failure:
+  package: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
+  round: BAA-02
+  sanitized_result: artifacts/bounded-architecture-amendment-v0.1/BAA-02_CALIBRATION_RESULT.json
+  private_payload_reads: DENY
+
+evidence:
+  allowed:
+    - formal_topic_catalog
+    - derived_semantic_profiles
+    - synthetic_contrastive_suite
+    - deterministic_public_context_probes
+    - sanitized_baa02_aggregate
+  forbidden:
+    - raw_private_calibration
+    - private_case_metadata
+    - legacy_evaluation
+    - consumed_sem07_lockbox
+    - live_paia_archive
+    - real_input_api_egress
+
+control_embedding:
+  adapter: HashNgramEmbeddingAdapter
+  dimensions: 256
+  claim_boundary: SYNTHETIC_ARCHITECTURE_CONTROL_NOT_BGE_RESULT
+
+representation_controls:
+  - concat_full_derived
+  - concat_positive_fields
+  - multivector_positive_max
+
+positive_vector_lanes:
+  - names_and_domain
+  - semantic_core
+  - positive_intents
+  - lexical_anchors
+  - synthetic_utterance_patterns
+
+candidate_controls:
+  - full_catalog_direct
+  - baa01_sibling_cap2
+  - baa01_sibling_cap4
+
+cutoffs: [5, 10, 20]
+
+context_probes:
+  languages: [zh, en]
+  topics: ALL_144
+  current_text:
+    zh: "接下来我应该重点处理什么？"
+    en: "What should I focus on next?"
+  allowed_context_source:
+    - canonical_names
+    - semantic_core
+    - positive_intents
+
+diagnostic_questions:
+  - "Does concatenating exclusion cues into a positive retrieval document create measurable public-control loss?"
+  - "With identical positive semantic content, does field-separated multi-vector max scoring differ from one-vector concatenation?"
+  - "How much top-k quality is gained or lost when full-catalog direct ranking is passed through BAA-01 cap2/cap4 candidate assembly?"
+  - "Does nonempty allowed context survive text, embedding, full-catalog ranking, and candidate assembly on deterministic public probes?"
+
+pass_definition:
+  requires_architecture_winner: false
+  requires_complete_comparison: true
+  deterministic_repeat_required: true
+  private_reads_max: 0
+  evaluation_reads_max: 0
+  lockbox_reads_max: 0
+  production_writes_max: 0
+  model_training_runs_max: 0
+
+future_private:
+  authorized: false
+  automatic_transition: false
