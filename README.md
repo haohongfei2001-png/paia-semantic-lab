@@ -8,9 +8,9 @@ Semantic Lab is isolated from PAIA production. It must not modify production run
 
 Semantic Lab v0.2 is closed at SEM-07 with execution COMPLETE and semantic capability verdict FAIL. Its historical state remains in `status/SEMANTIC_LAB_STATUS.yaml`.
 
-PAIA-SEMANTIC-LAB-v0.3-REMEDIATION is blocked at REM-03B COMPLETE/FAIL. PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1 reached SCA-03 COMPLETE/FAIL and keeps SCA-04 blocked. The currently authorized bounded repair package is **SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1**; BAA-01 is PUBLIC/SYNTHETIC-only and implements direct-evidence preservation plus missing-evidence-neutral prototype fusion without reopening SCA-03. Its canonical state is `status/SCA03_BOUNDED_ARCHITECTURE_AMENDMENT_STATUS.yaml`.
+PAIA-SEMANTIC-LAB-v0.3-REMEDIATION is blocked at REM-03B COMPLETE/FAIL. PAIA-SEMANTIC-CATALOG-ARCHITECTURE-v0.1 reached SCA-03 COMPLETE/FAIL and keeps SCA-04 blocked. The bounded repair package **SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1** has closed BAA-01 COMPLETE/PASS on PUBLIC/SYNTHETIC gates, implementing direct-evidence preservation plus missing-evidence-neutral prototype fusion without reopening SCA-03. BAA-02/private calibration is NOT_STARTED/NOT_AUTHORIZED, and SCA-04 remains BLOCKED. Its canonical state is `status/SCA03_BOUNDED_ARCHITECTURE_AMENDMENT_STATUS.yaml`.
 
-Start the current bounded repair work with:
+Review the closed BAA-01 bounded repair with:
 - `docs/bounded-architecture-amendment-v0.1/README.md`
 - `docs/bounded-architecture-amendment-v0.1/EXECUTION_PROTOCOL.md`
 - `docs/bounded-architecture-amendment-v0.1/VERIFICATION.md`

@@ -1,7 +1,7 @@
 package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
 package_version: 0.1.0
-package_status: ACTIVE_PUBLIC_ONLY
-phase: BAA_01_COMPLETE_PENDING_MERGE
+package_status: BAA_01_COMPLETE_PASS
+phase: BAA_01_COMPLETE_PASS
 baseline_remote_commit: 8aef610ef4b1199da98ccb1dfad79c2f352a58f8
 source_design_status: DESIGN_ONLY_NOT_AUTHORIZED_AT_BASELINE
 current_authorization_supersedes_design_implementation_guard: true
@@ -34,7 +34,17 @@ rounds:
     implementation_required_ci: PASS
     result: artifacts/bounded-architecture-amendment-v0.1/BAA-01_RESULT.json
     report: artifacts/bounded-architecture-amendment-v0.1/BAA-01_REPORT.md
-    final_pr_head_required_ci: PENDING
+    final_pr_head_validation_run_id: 35816370084
+    final_pr_head_validation_job_id: 107038649794
+    final_pr_head_evidence_artifact_id: 10731387311
+    final_pr_head_validated_commit: 4bce539057064330a93ff7cf648bda04bd5fec9e
+    final_pr_head_required_ci: PASS
+    merged_main_commit: 70d67dd7ae14f6576675dc1e0b2cdd2efce986b6
+    merged_main_validation_run_id: 35827543280
+    merged_main_validation_job_id: 107072495709
+    merged_main_evidence_artifact_id: 10735836767
+    merged_main_required_ci: PASS
+    closure_receipt: artifacts/bounded-architecture-amendment-v0.1/BAA-01_CLOSURE.md
     private_artifact_reads: 0
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
@@ -47,5 +57,5 @@ rounds:
     new_freeze_before_private_evidence_required: true
     evaluation_opened: false
     evaluation_records_read: 0
-next_action: "BAA-01 PUBLIC gate passed on the implementation checkpoint. Revalidate the committed result/report on the final PR head, merge only after required CI PASS, require exact merged-main CI PASS, then publish closure metadata and STOP. BAA-02/private calibration and SCA-04 remain unauthorized."
+next_action: "BAA-01 is COMPLETE/PASS on PUBLIC/SYNTHETIC gates and merged-main CI. STOP. BAA-02/private calibration is NOT_STARTED/NOT_AUTHORIZED and requires a separate owner authorization plus a new pre-evidence freeze. SCA-04 remains BLOCKED and unauthorized."
 product_owner_blockers: []
