@@ -75,29 +75,37 @@ class BAA01PlanTests(unittest.TestCase):
     def test_baa01_lifecycle_and_future_private_guard(self):
         baa01 = self.status["rounds"]["BAA-01"]
         self.assertIn(baa01["execution_status"], {"IN_PROGRESS", "COMPLETE"})
+        phase = self.status["phase"]
         if baa01["execution_status"] == "IN_PROGRESS":
-            self.assertEqual("BAA_01_IN_PROGRESS", self.status["phase"])
+            self.assertEqual("BAA_01_IN_PROGRESS", phase)
             self.assertEqual("PENDING", baa01["public_gate"])
         else:
             self.assertIn(
-                self.status["phase"],
+                phase,
                 {
                     "BAA_01_COMPLETE_PENDING_MERGE",
                     "BAA_01_COMPLETE_PASS",
                     "BAA_02_PRE_EVIDENCE_FREEZE",
+                    "BAA_02_FREEZE_CLOSURE_PENDING_CI",
+                    "BAA_02_COMPLETE_FAIL",
+                    "BAA_02_CALIBRATION_PASS",
                 },
             )
             self.assertEqual("PASS", baa01["capability_verdict"])
             self.assertEqual("PASS", baa01["public_gate"])
 
         baa02 = self.status["rounds"]["BAA-02"]
-        if self.status["phase"] == "BAA_02_PRE_EVIDENCE_FREEZE":
-            self.assertEqual("IN_PROGRESS", baa02["execution_status"])
+        if phase.startswith("BAA_02_"):
             self.assertTrue(baa02["explicit_execution_authorized"])
-            self.assertEqual(0, baa02["calibration_records_read"])
             self.assertFalse(baa02["evaluation_authorized"])
             self.assertFalse(baa02["evaluation_opened"])
             self.assertEqual(0, baa02["evaluation_records_read"])
+            if phase in {"BAA_02_COMPLETE_FAIL", "BAA_02_CALIBRATION_PASS"}:
+                self.assertEqual("COMPLETE", baa02["execution_status"])
+                self.assertEqual(80, baa02["calibration_records_read"])
+            else:
+                self.assertEqual("IN_PROGRESS", baa02["execution_status"])
+                self.assertEqual(0, baa02["calibration_records_read"])
         else:
             self.assertEqual("NOT_STARTED", baa02["execution_status"])
             self.assertFalse(baa02["explicit_execution_authorized"])

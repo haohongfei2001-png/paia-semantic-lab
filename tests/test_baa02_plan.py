@@ -67,15 +67,36 @@ class BAA02PlanTests(unittest.TestCase):
                 ),
             )
 
-    def test_status_registers_only_pre_evidence_baa02(self):
-        self.assertEqual("BAA_02_PRE_EVIDENCE_FREEZE", self.status["phase"])
+    def test_status_preserves_bounded_baa02_lifecycle(self):
+        phase = self.status["phase"]
+        self.assertIn(
+            phase,
+            {
+                "BAA_02_PRE_EVIDENCE_FREEZE",
+                "BAA_02_FREEZE_CLOSURE_PENDING_CI",
+                "BAA_02_COMPLETE_FAIL",
+                "BAA_02_CALIBRATION_PASS",
+            },
+        )
         baa02 = self.status["rounds"]["BAA-02"]
-        self.assertEqual("IN_PROGRESS", baa02["execution_status"])
         self.assertTrue(baa02["explicit_execution_authorized"])
-        self.assertEqual(0, baa02["calibration_records_read"])
+        self.assertFalse(baa02["evaluation_authorized"])
         self.assertFalse(baa02["evaluation_opened"])
         self.assertEqual(0, baa02["evaluation_records_read"])
-        self.assertEqual("PENDING", baa02["pre_evidence_freeze_required_ci"])
+
+        if phase == "BAA_02_PRE_EVIDENCE_FREEZE":
+            self.assertEqual("IN_PROGRESS", baa02["execution_status"])
+            self.assertEqual(0, baa02["calibration_records_read"])
+            self.assertEqual("PENDING", baa02["pre_evidence_freeze_required_ci"])
+        elif phase == "BAA_02_FREEZE_CLOSURE_PENDING_CI":
+            self.assertEqual("IN_PROGRESS", baa02["execution_status"])
+            self.assertEqual(0, baa02["calibration_records_read"])
+            self.assertEqual("PASS", baa02["pre_evidence_freeze_required_ci"])
+            self.assertEqual("PENDING", baa02["freeze_closure_required_ci"])
+        else:
+            self.assertEqual("COMPLETE", baa02["execution_status"])
+            self.assertEqual(80, baa02["calibration_records_read"])
+            self.assertEqual("PASS", baa02["pre_evidence_freeze_required_ci"])
 
 
 if __name__ == "__main__":
