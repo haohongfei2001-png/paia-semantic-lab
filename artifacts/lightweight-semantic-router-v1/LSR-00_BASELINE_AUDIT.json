@@ -1,0 +1,58 @@
+{
+  "package_id": "PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1",
+  "round": "LSR-00",
+  "verdict": "PASS",
+  "baseline_remote_main": "5099347a763c8c71e07a88a703f8200c91a43278",
+  "catalog_topic_count": 144,
+  "reusable_assets": {
+    "formal_catalog": {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "bytes": 139570
+    },
+    "semantic_profiles": {
+      "path": "semantic_profiles/v0.1/",
+      "bytes": 348284
+    },
+    "production_source_material_total_bytes": 487854,
+    "synthetic_contrastive": {
+      "path": "synthetic_contrastive/v0.1/",
+      "bytes": 971551,
+      "production_payload": false
+    },
+    "context_separation": true,
+    "calibration_record_infrastructure": true,
+    "family_grouped_split": true,
+    "provenance_guards": true
+  },
+  "product_freeze": {
+    "production_direction": "ZERO_MODEL_LOCAL_FIRST",
+    "neural_model_assets_bytes_max": 0,
+    "semantic_network_dependency": false,
+    "heavyweight_ml_runtime": false,
+    "generated_index_bytes_max": 1048576,
+    "router_plus_index_bytes_max": 2097152,
+    "incremental_memory_bytes_max": 33554432,
+    "warm_p95_ms_target": 20,
+    "cold_init_ms_target": 100,
+    "full_catalog_scoring": true,
+    "title_lane": true,
+    "bounded_recent_user_context": true,
+    "defer_supported": true
+  },
+  "legacy_embedding": {
+    "role": "RESEARCH_ORACLE_ONLY",
+    "production_dependency": false,
+    "automatic_fallback": false
+  },
+  "guards": {
+    "private_artifact_reads": 0,
+    "evaluation_records_read": 0,
+    "consumed_lockbox_reads": 0,
+    "live_archive_reads": 0,
+    "real_input_api_egress_events": 0,
+    "model_training_runs": 0,
+    "production_paia_writes": 0
+  },
+  "next_round": "LSR-01",
+  "next_round_status": "READY_NOT_STARTED"
+}
