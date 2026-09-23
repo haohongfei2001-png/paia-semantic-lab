@@ -1,7 +1,7 @@
 package_id: SCA03-POST-FAILURE-ARCHITECTURE-DIAGNOSTICS-v0.1
 package_version: 0.1.0
-package_status: PAD_01_COMPLETE_PENDING_CLOSURE_CI
-phase: PAD_01_COMPLETE_PENDING_CLOSURE_CI
+package_status: PAD_01_COMPLETE_PASS
+phase: PAD_01_COMPLETE_PASS
 baseline_remote_main: 115d3c66b98c0eef46c857fbb03548eac16c0d06
 source_baa02_status: COMPLETE_FAIL
 evidence_class: PUBLIC_SYNTHETIC_ONLY
@@ -25,6 +25,7 @@ rounds:
     script: scripts/sca03_post_failure_architecture_diagnostics.py
     result: artifacts/post-failure-architecture-diagnostics-v0.1/PAD-01_RESULT.json
     report: artifacts/post-failure-architecture-diagnostics-v0.1/PAD-01_REPORT.md
+    closure_receipt: artifacts/post-failure-architecture-diagnostics-v0.1/PAD-01_CLOSURE.md
     public_suite_case_count: 1296
     public_topic_count: 144
     context_probe_count: 288
@@ -39,11 +40,15 @@ rounds:
     merged_main_validation_run_id: 35852183687
     merged_main_evidence_artifact_id: 10746013756
     merged_main_required_ci: PASS
-    closure_required_ci: PENDING
+    closure_commit: 202a203ce4b587ad82d4b69ee28621bd841e36c3
+    closure_validation_run_id: 35879316607
+    closure_validation_job_id: 107243342812
+    closure_evidence_artifact_id: 10759249071
+    closure_required_ci: PASS
     private_artifact_reads: 0
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
 future_private_authorized: false
 future_architecture_amendment_authorized: false
-next_action: "Require exact closure-head CI PASS, then STOP. A future multi-vector/full-catalog architecture amendment or any private validation requires a new explicit owner authorization."
+next_action: "STOP. PAD-01 is COMPLETE/PASS on PUBLIC/SYNTHETIC diagnostics. A future multi-vector/full-catalog architecture amendment or any private validation requires a new explicit owner authorization."
 product_owner_blockers: []
