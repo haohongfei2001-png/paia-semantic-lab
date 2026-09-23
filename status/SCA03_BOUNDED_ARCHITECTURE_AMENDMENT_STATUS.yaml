@@ -1,7 +1,7 @@
 package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
 package_version: 0.1.0
-package_status: BAA_02_PRE_EVIDENCE_FREEZE
-phase: BAA_02_PRE_EVIDENCE_FREEZE
+package_status: BAA_02_FREEZE_CLOSURE_PENDING_CI
+phase: BAA_02_FREEZE_CLOSURE_PENDING_CI
 baseline_remote_commit: 8aef610ef4b1199da98ccb1dfad79c2f352a58f8
 source_design_status: DESIGN_ONLY_NOT_AUTHORIZED_AT_BASELINE
 current_authorization_supersedes_design_implementation_guard: true
@@ -61,6 +61,7 @@ rounds:
     config: configs/baa02_private_calibration_v0.1.yaml
     evaluator: scripts/baa02_private_calibration.py
     freeze_receipt: artifacts/bounded-architecture-amendment-v0.1/BAA-02_PRE_EVIDENCE_FREEZE.json
+    freeze_closure_receipt: artifacts/bounded-architecture-amendment-v0.1/BAA-02_FREEZE_CLOSURE.md
     matrix_count: 24
     allowed_candidate_variants:
       - direct_reserve6_sibling_cap2
@@ -68,10 +69,21 @@ rounds:
     missing_evidence_neutral_fusion: true
     calibration_read_budget: 80
     calibration_records_read: 0
-    pre_evidence_freeze_required_ci: PENDING
+    pre_evidence_pr_head_commit: debf71f567e47fb9f7a7b065ca294919c70d5c71
+    pre_evidence_pr_head_validation_run_id: 35832019570
+    pre_evidence_pr_head_validation_job_id: 107086604524
+    pre_evidence_pr_head_evidence_artifact_id: 10738081772
+    pre_evidence_pr_head_required_ci: PASS
+    pre_evidence_merged_main_commit: a1ee83d22e34dfbebe20d2a60c859c6458f8b306
+    pre_evidence_merged_main_validation_run_id: 35832519683
+    pre_evidence_merged_main_validation_job_id: 107088193693
+    pre_evidence_merged_main_evidence_artifact_id: 10738470035
+    pre_evidence_merged_main_required_ci: PASS
+    pre_evidence_freeze_required_ci: PASS
+    freeze_closure_required_ci: PENDING
     evaluation_opened: false
     evaluation_authorized: false
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
-next_action: "Validate the BAA-02 pre-evidence freeze on the exact PR head, merge only after PASS, require exact merged-main and freeze-closure-head CI PASS, then read exactly the existing 80 calibration records once. Evaluation and SCA-04 remain unauthorized."
+next_action: "Require exact freeze-closure-head CI PASS on the current main commit. Only then read exactly the existing 80 calibration records once with the frozen BAA-02 evaluator. Evaluation, the consumed lockbox, and SCA-04 remain unauthorized."
 product_owner_blockers: []
