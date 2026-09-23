@@ -8,43 +8,64 @@ Canonical status:
 
 `status/SCA03_BOUNDED_ARCHITECTURE_AMENDMENT_STATUS.yaml`
 
-## BAA-01 authorization
+## Closed BAA-01
 
-The current user authorization permits registration and execution of BAA-01
-only.
+BAA-01 is COMPLETE/PASS on PUBLIC/SYNTHETIC gates. Its historical scope,
+results, merged-main CI and closure-head CI remain immutable. BAA-01 itself
+does not authorize private calibration.
 
-BAA-01 may:
+## Current BAA-02 authorization
 
-- add a new bounded candidate assembler;
-- add a missing-evidence-neutral prototype evidence stream/fusion;
-- add PUBLIC/SYNTHETIC fixtures, tests and reports;
-- run the existing public/historical regression chain.
+The current user authorization permits BAA-02 private calibration validation
+only, after a new pre-evidence freeze is merged and exact-main required CI
+passes.
 
-BAA-01 may not:
+BAA-02 may:
 
-- read any of the 80 calibration judgments;
-- read the 13 legacy evaluation judgments;
-- read/use the 35 consumed SEM-07 lockbox cases;
-- mutate SCA-01 profiles or the SCA-02 graph;
-- mutate closed SCA-03 config/freeze/results;
-- change allowed-context handling;
-- change the embedding model;
-- change formal Topic semantics;
-- lower promotion gates;
-- start SCA-04;
-- modify PAIA production.
+- reuse exactly the existing 80 calibration judgments read-only;
+- reconstruct those same calibration cases from their existing private context;
+- evaluate exactly the 24 pre-registered combinations in
+  `configs/baa02_private_calibration_v0.1.yaml`;
+- use only the BAA-01 direct-evidence-preserving assembler and
+  missing-evidence-neutral observed-prototype fusion;
+- publish sanitized aggregate metrics, digests and closure metadata.
 
-## Closure
+BAA-02 may not:
 
-1. re-read remote main and this package status;
-2. implement only BAA-01;
-3. validate both bounded candidate variants and neutral prototype fusion on
-   PUBLIC/SYNTHETIC fixtures;
-4. run required regression CI;
-5. merge only after PR-head checks pass;
-6. require exact merged-main CI PASS;
-7. publish sanitized public closure metadata;
-8. require exact closure-head CI PASS;
-9. re-read remote state and STOP.
+- read any of the 13 legacy evaluation judgments;
+- read/use the 35 consumed SEM-07 lockbox cases for tuning or promotion;
+- add configurations or edit parameters after private evidence is opened;
+- lower Candidate Recall@10 >= 0.96 or Recall@20 >= 0.99;
+- weaken context-dependent/context-free critical-slice thresholds;
+- change family-grouped folds;
+- mutate SCA-01 profiles, the SCA-02 graph, formal Topic semantics or the
+  closed SCA-03 evidence;
+- change allowed-context handling or the embedding model;
+- train a model;
+- read the live archive or perform real Input API egress;
+- modify PAIA production;
+- start SCA-04.
 
-A passing BAA-01 public gate does not authorize a private calibration run.
+## Pre-evidence sequence
+
+1. re-read remote main and canonical status;
+2. register the BAA-02 config/evaluator/round contract;
+3. freeze the exact 24-config matrix and deterministic selection policy;
+4. keep private/evaluation/lockbox read counters at zero;
+5. run the full PUBLIC/historical regression CI on the PR head;
+6. merge only after exact PR-head required CI PASS;
+7. require exact merged-main CI PASS;
+8. publish freeze closure metadata without changing frozen evaluator/config;
+9. require exact freeze-closure-head CI PASS;
+10. only then read the 80 calibration records once.
+
+## Private result stop rules
+
+If no frozen configuration passes every original gate, close BAA-02
+COMPLETE/FAIL and STOP. Evaluation remains closed.
+
+If one or more frozen configurations pass, select only by the pre-registered
+selection rule, record the selected configuration, keep evaluation closed, and
+STOP for a separate owner authorization.
+
+BAA-02 never opens evaluation automatically and never starts SCA-04.

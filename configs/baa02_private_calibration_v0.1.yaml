@@ -1,0 +1,87 @@
+version: "0.1.0"
+round: "BAA-02"
+status: FROZEN_BEFORE_PRIVATE_EVIDENCE
+package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
+
+source_public_closure:
+  baa01_main_commit: "1b7bb3ec8fe8bd7ae16dbc2f5faa609b3c5e4daa"
+  baa01_closure_ci_run_id: 35828107482
+  baa01_closure_ci_conclusion: PASS
+  source_design: "docs/diagnostics/SCA03_BOUNDED_ARCHITECTURE_AMENDMENT_DESIGN_v0.1.md"
+
+frozen_inputs:
+  profile_bundle_sha256: "018738035c10e23faea18719a26a395dc6fb22297d0c6df3a8f93100d331d37b"
+  graph_sha256: "630ca65335265e5e3b4a55118ea68fcfc6e3e7077bd467b3d47d21c1dd5cd711"
+  synthetic_suite_sha256: "f24331adcfca3c575ba3e3bcaff758c17a4fc18de3d4e112ac5e9c5376f759b7"
+  model_id: "BAAI/bge-m3"
+  model_revision: "cb1779f90b988b8deb01f9155c790ef9417d7648"
+
+development:
+  family_grouped: true
+  fold_count: 5
+  query_variants: [current_only, allowed_context]
+  profile_modes: [core, core_anchors, full_derived]
+  prototype_weights: [1.5, 3.0]
+  sibling_caps: [2, 4]
+  expected_matrix_size: 24
+  maximum_matrix_size: 24
+
+fusion:
+  method: neutral_observed_prototype_weighted_rrf
+  constant: 20
+  profile_weight: 1.0
+  missing_evidence_semantics: NEUTRAL_ABSENT
+  zero_prototype_receives_rrf_term: false
+
+candidate_assembly:
+  method: direct_evidence_preserving_bounded_siblings
+  direct_top6_in_top10_required: true
+  direct_top10_in_top20_required: true
+  sibling_cap_counts_seed: false
+  candidate_limit: 144
+
+selection_policy:
+  eligible_only_if_all_gates_pass: true
+  order:
+    - highest_candidate_recall_at_10
+    - highest_candidate_recall_at_20
+    - lower_sibling_cap
+    - lower_prototype_weight
+    - lexical_query_variant
+    - lexical_profile_mode
+    - config_id
+  post_evidence_parameter_changes: DENY
+  rerun_after_failure_without_new_owner_authorization: DENY
+
+promotion_gate:
+  candidate_recall_at_10_min: 0.96
+  candidate_recall_at_20_min: 0.99
+  critical_slice_same_thresholds: true
+  family_leakage_events_max: 0
+  full_catalog_eligibility_required: true
+  baa01_structural_invariants_required: true
+
+evaluation:
+  read_authorized: false
+  read_condition: BAA02_CALIBRATION_PASS_AND_SEPARATE_OWNER_AUTHORIZATION
+  legacy_evaluation_count: 13
+  no_automatic_open_after_calibration_pass: true
+  no_reselection_after_future_evaluation_read: true
+  no_threshold_change_after_future_evaluation_read: true
+
+authorization:
+  private_calibration_execution_authorized: true
+  authorization_source: user_continue_per_recommended_baa02_plan
+  calibration_read_only_count: 80
+  evaluation_read_authorized: false
+  consumed_sem07_lockbox_tuning_or_promotion: DENY
+  live_archive_read: DENY
+  real_input_api_egress: DENY
+  new_owner_labels: DENY
+  model_training: DENY
+  formal_catalog_write: DENY
+  production_paia_write: DENY
+
+stop_conditions:
+  calibration_fail: STOP_NO_EVALUATION
+  calibration_pass: STOP_REQUEST_SEPARATE_OWNER_AUTHORIZATION_FOR_EVALUATION

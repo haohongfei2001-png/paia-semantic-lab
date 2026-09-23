@@ -1,7 +1,7 @@
 package_id: SCA03-BOUNDED-ARCHITECTURE-AMENDMENT-v0.1
 package_version: 0.1.0
-package_status: BAA_01_COMPLETE_PASS
-phase: BAA_01_COMPLETE_PASS
+package_status: BAA_02_PRE_EVIDENCE_FREEZE
+phase: BAA_02_PRE_EVIDENCE_FREEZE
 baseline_remote_commit: 8aef610ef4b1199da98ccb1dfad79c2f352a58f8
 source_design_status: DESIGN_ONLY_NOT_AUTHORIZED_AT_BASELINE
 current_authorization_supersedes_design_implementation_guard: true
@@ -44,18 +44,34 @@ rounds:
     merged_main_validation_job_id: 107072495709
     merged_main_evidence_artifact_id: 10735836767
     merged_main_required_ci: PASS
+    closure_commit: 1b7bb3ec8fe8bd7ae16dbc2f5faa609b3c5e4daa
+    closure_validation_run_id: 35828107482
+    closure_required_ci: PASS
     closure_receipt: artifacts/bounded-architecture-amendment-v0.1/BAA-01_CLOSURE.md
     private_artifact_reads: 0
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
   BAA-02:
-    title: Future private calibration validation
-    execution_status: NOT_STARTED
+    title: Frozen private calibration validation
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
-    explicit_execution_authorized: false
-    fresh_private_authorization_required: true
+    explicit_execution_authorized: true
+    authorization_source: user_continue_per_recommended_baa02_plan
     new_freeze_before_private_evidence_required: true
+    config: configs/baa02_private_calibration_v0.1.yaml
+    evaluator: scripts/baa02_private_calibration.py
+    freeze_receipt: artifacts/bounded-architecture-amendment-v0.1/BAA-02_PRE_EVIDENCE_FREEZE.json
+    matrix_count: 24
+    allowed_candidate_variants:
+      - direct_reserve6_sibling_cap2
+      - direct_reserve6_sibling_cap4
+    missing_evidence_neutral_fusion: true
+    calibration_read_budget: 80
+    calibration_records_read: 0
+    pre_evidence_freeze_required_ci: PENDING
     evaluation_opened: false
+    evaluation_authorized: false
     evaluation_records_read: 0
-next_action: "BAA-01 is COMPLETE/PASS on PUBLIC/SYNTHETIC gates and merged-main CI. STOP. BAA-02/private calibration is NOT_STARTED/NOT_AUTHORIZED and requires a separate owner authorization plus a new pre-evidence freeze. SCA-04 remains BLOCKED and unauthorized."
+    consumed_lockbox_reads: 0
+next_action: "Validate the BAA-02 pre-evidence freeze on the exact PR head, merge only after PASS, require exact merged-main and freeze-closure-head CI PASS, then read exactly the existing 80 calibration records once. Evaluation and SCA-04 remain unauthorized."
 product_owner_blockers: []

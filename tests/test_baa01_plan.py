@@ -81,14 +81,27 @@ class BAA01PlanTests(unittest.TestCase):
         else:
             self.assertIn(
                 self.status["phase"],
-                {"BAA_01_COMPLETE_PENDING_MERGE", "BAA_01_COMPLETE_PASS"},
+                {
+                    "BAA_01_COMPLETE_PENDING_MERGE",
+                    "BAA_01_COMPLETE_PASS",
+                    "BAA_02_PRE_EVIDENCE_FREEZE",
+                },
             )
             self.assertEqual("PASS", baa01["capability_verdict"])
             self.assertEqual("PASS", baa01["public_gate"])
+
         baa02 = self.status["rounds"]["BAA-02"]
-        self.assertEqual("NOT_STARTED", baa02["execution_status"])
-        self.assertFalse(baa02["explicit_execution_authorized"])
-        self.assertTrue(baa02["fresh_private_authorization_required"])
+        if self.status["phase"] == "BAA_02_PRE_EVIDENCE_FREEZE":
+            self.assertEqual("IN_PROGRESS", baa02["execution_status"])
+            self.assertTrue(baa02["explicit_execution_authorized"])
+            self.assertEqual(0, baa02["calibration_records_read"])
+            self.assertFalse(baa02["evaluation_authorized"])
+            self.assertFalse(baa02["evaluation_opened"])
+            self.assertEqual(0, baa02["evaluation_records_read"])
+        else:
+            self.assertEqual("NOT_STARTED", baa02["execution_status"])
+            self.assertFalse(baa02["explicit_execution_authorized"])
+            self.assertTrue(baa02["fresh_private_authorization_required"])
 
 
 if __name__ == "__main__":
