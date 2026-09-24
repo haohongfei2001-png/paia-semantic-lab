@@ -60,7 +60,7 @@ const result={
     index:sha(cBytes),defer_controls:sha(controlBytes)},
   baseline_cig02c_balanced:summarize(c),candidate_cig02d_balanced:summarize(d),
   interpretation_scope:"FRESH_SOURCE_SEPARATED_PUBLIC_TRAIN_DEV_PLUS_SAME_WRITER_DEFER_NOT_CAPABILITY_TEST",
-  consumed_prior_clinc_selection_reads:0,private_artifact_reads:0,legacy_evaluation_reads:0,
+  prior_clinc_rank_0_9_used_only_for_disjointness_check:true,private_artifact_reads:0,legacy_evaluation_reads:0,
   consumed_lockbox_reads:0,real_paia_archive_reads:0,cig03_test_invocations:0
 };
 console.log("CIG02D_FRESH_DEV_RESULT_JSON="+JSON.stringify(result));
