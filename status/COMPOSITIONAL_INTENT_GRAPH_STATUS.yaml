@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02B_GROUNDER_DESIGN
+phase: CIG_02B_PUBLIC_DEV_UNQUALIFIED
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -34,9 +34,14 @@ rounds:
   CIG-02:
     title: New public natural-expression development
     execution_status: IN_PROGRESS
-    dev_diagnostic: GROUNDING_UNQUALIFIED
+    dev_diagnostic: TYPED_GROUNDING_UNQUALIFIED
     dev_result: artifacts/compositional-intent-graph-v1/CIG-02_DEV_DIAGNOSTIC.json
-    next_substage: CIG-02B_TYPED_GROUNDER
+    cig02b_execution_status: COMPLETE
+    cig02b_verdict: DEV_UNQUALIFIED
+    cig02b_result: artifacts/compositional-intent-graph-v1/CIG-02B_DEV_RESULT.json
+    cig02b_report: docs/compositional-intent-graph-v1/CIG-02B_DEV_REPORT.md
+    cig02_frozen: false
+    next_substage: CIG-02_FRESH_SOURCE_SEPARATED_DEVELOPMENT
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -45,4 +50,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Implement CIG-02B typed grounding for all 144 Topics and validate on a new public DEV slice; CIG-03 remains blocked."
+next_action: "Review the CIG-02B DEV information gap and use only fresh source-separated public development evidence for any next CIG-02 candidate; CIG-02 is not frozen and CIG-03 remains blocked."
