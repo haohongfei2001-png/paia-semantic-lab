@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D06_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "工程实现：工程实施、开发推进、技术任务、代码交付和研发协作。",
+        "en": "Engineering Execution: engineering implementation, development execution, technical tasks, code delivery and collaboration."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "开发实现",
+            "交付代码"
+          ],
+          "en": [
+            "implement",
+            "deliver code"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "技术任务",
+            "代码"
+          ],
+          "en": [
+            "technical task",
+            "code"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "研发推进",
+            "代码交付"
+          ],
+          "en": [
+            "development progress",
+            "code delivery"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "发布与运营：上线、发布、部署后的运营、监控、反馈和持续运行。",
+        "en": "Launch & Operations: launch, release, post-launch operations, monitoring and ongoing product operation."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "发布上线",
+            "监控运行"
+          ],
+          "en": [
+            "launch",
+            "monitor operation"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "产品发布",
+            "运行状态"
+          ],
+          "en": [
+            "product release",
+            "operational state"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "持续运行",
+            "发布反馈"
+          ],
+          "en": [
+            "ongoing operation",
+            "release feedback"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "产品需求：需求定义、功能范围、用户故事、验收标准和PRD。",
+        "en": "Product Requirements: requirements definition, feature scope, user stories, acceptance criteria and PRDs."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "定义需求",
+            "编写用户故事"
+          ],
+          "en": [
+            "define requirements",
+            "write user stories"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "功能范围",
+            "用户故事"
+          ],
+          "en": [
+            "feature scope",
+            "user story"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "验收标准",
+            "产品需求文档"
+          ],
+          "en": [
+            "acceptance criteria",
+            "product requirements document"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "产品策略：产品定位、目标用户、价值主张、竞争策略和产品方向。",
+        "en": "Product Strategy: product positioning, target users, value proposition, competitive strategy and product direction."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "定位产品",
+            "选择方向"
+          ],
+          "en": [
+            "position product",
+            "choose direction"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "目标用户",
+            "产品"
+          ],
+          "en": [
+            "target user",
+            "product"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "价值主张",
+            "产品方向"
+          ],
+          "en": [
+            "value proposition",
+            "product direction"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "项目规划：项目目标、范围、里程碑、资源、风险、计划和项目组织。",
+        "en": "Project Planning: project goals, scope, milestones, resources, risks, planning and project organization."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "规划项目",
+            "组织资源"
+          ],
+          "en": [
+            "plan project",
+            "organize resources"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "项目目标",
+            "资源"
+          ],
+          "en": [
+            "project goal",
+            "resource"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "里程碑",
+            "风险计划"
+          ],
+          "en": [
+            "milestone",
+            "risk plan"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "路线图与优先级：产品或项目路线图、优先级、资源取舍、排序和版本规划。",
+        "en": "Roadmap & Prioritization: roadmaps, prioritization, sequencing, tradeoffs and release planning."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "排序",
+            "设定优先级"
+          ],
+          "en": [
+            "sequence",
+            "prioritize"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "路线图",
+            "版本计划"
+          ],
+          "en": [
+            "roadmap",
+            "release plan"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "资源取舍",
+            "优先级安排"
+          ],
+          "en": [
+            "resource tradeoff",
+            "priority order"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.testing_quality",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "测试与质量：测试策略、缺陷、验证、质量保证、回归和验收。",
+        "en": "Testing & Quality: testing strategy, defects, validation, quality assurance, regression and acceptance."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "测试",
+            "验证"
+          ],
+          "en": [
+            "test",
+            "validate"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "缺陷",
+            "功能"
+          ],
+          "en": [
+            "defect",
+            "feature"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "质量保证",
+            "验收"
+          ],
+          "en": [
+            "quality assurance",
+            "acceptance"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.projects_products.ux_user_research",
+      "domain_id": "D06",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "用户研究与体验：用户研究、访谈、可用性、用户行为、体验问题和体验洞察。",
+        "en": "User Research & Experience: user research, interviews, usability, behavior, experience problems and UX insights."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "访谈用户",
+            "研究体验"
+          ],
+          "en": [
+            "interview users",
+            "research experience"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "用户行为",
+            "可用性"
+          ],
+          "en": [
+            "user behavior",
+            "usability"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "体验洞察",
+            "体验改进"
+          ],
+          "en": [
+            "UX insight",
+            "experience improvement"
+          ]
+        }
+      }
+    }
+  ]
+}
