@@ -1,21 +1,26 @@
 import fs from "node:fs";
 import crypto from "node:crypto";
 
-const labels=["transfer","calories","calendar_update","reminder","play_music","tire_pressure",
-  "international_visa","book_hotel","book_flight","translate","todo_list"].sort();
+const mapping={transfer:"sys.finance_purchases.banking_payments",calories:"sys.health_wellbeing.nutrition",
+  calendar_update:"sys.time_events.calendar_scheduling",reminder:"sys.time_events.reminders_deadlines",
+  play_music:"sys.media_culture.music",tire_pressure:"sys.home_daily.transportation_ownership",
+  international_visa:"sys.travel_places.visas_border",book_hotel:"sys.travel_places.lodging",
+  book_flight:"sys.travel_places.transport_travel",translate:"sys.communication_writing.translation",
+  todo_list:"sys.time_events.plans_checklists"};
+const labels=Object.keys(mapping).sort();
 const sha=value=>crypto.createHash("sha256").update(value).digest("hex");
 const data=JSON.parse(fs.readFileSync(process.argv[2]??"external-clinc/data/data_full.json","utf8"));
 const index=JSON.parse(fs.readFileSync(process.argv[3]??".cig02b-index.json","utf8"));
 const selected=[];
 for (const label of labels) {
   const rows=data.train.filter(row=>Array.isArray(row)&&row.length===2&&row[1]===label)
-    .map(row=>({current:String(row[0]),label}))
+    .map(row=>({current:String(row[0]),label,gold_topic:mapping[label]}))
     .sort((a,b)=>sha(a.current+"\0"+label).localeCompare(sha(b.current+"\0"+label)));
   selected.push(...rows.slice(0,10));
 }
 const expected="d1a9795706df705b20a9e6663e69bbf90a888501da7ba097e00f33bffa67cf04";
 const result=JSON.parse(fs.readFileSync("artifacts/compositional-intent-graph-v1/CIG-02C_CLINC_TRAIN_DEV_RESULT.json","utf8"));
-if (result.source_sha256.selected_train_rows!==expected || selected.length!==110) throw new Error("selected DEV changed");
+if (result.source_sha256.selected_train_rows!==expected || sha(JSON.stringify(selected))!==expected || selected.length!==110) throw new Error("selected DEV changed");
 const lower=value=>String(value).normalize("NFKC").toLowerCase().replace(/\s+/gu," ").trim();
 function contains(span,atom) {
   if (/^[\x00-\x7f]+$/u.test(atom)) {
