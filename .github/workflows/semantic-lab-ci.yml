@@ -124,6 +124,15 @@ jobs:
           python -m scripts.csl04_build_fixture --check
           sha256sum runtime/compiled_semantic_v1/router_v2.mjs scripts/csl04_score_once.mjs scripts/csl04_build_fixture.py fixtures/compiled_semantic_v1/blind_v2_authored.tsv fixtures/compiled_semantic_v1/blind_v2.json
           sha256sum artifacts/compiled-semantic-lexicon-v1/CSL-04_PRE_OPEN_FREEZE.json
+      - name: CSL-04 frozen TEST v2 one-shot or stored-result verification
+        run: |
+          node --check scripts/csl04_score_once.mjs
+          if [ -f artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V2_RESULT.json ]; then
+            node scripts/csl04_score_once.mjs --verify-result
+          else
+            node scripts/csl04_score_once.mjs
+            node -e 'const fs=require("fs");console.log("CSL04_RESULT_JSON="+JSON.stringify(JSON.parse(fs.readFileSync("artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V2_RESULT.json","utf8"))))'
+          fi
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -170,3 +179,12 @@ jobs:
           python -m scripts.csl04_build_fixture --check
           sha256sum runtime/compiled_semantic_v1/router_v2.mjs scripts/csl04_score_once.mjs scripts/csl04_build_fixture.py fixtures/compiled_semantic_v1/blind_v2_authored.tsv fixtures/compiled_semantic_v1/blind_v2.json
           sha256sum artifacts/compiled-semantic-lexicon-v1/CSL-04_PRE_OPEN_FREEZE.json
+      - name: CSL-04 frozen TEST v2 one-shot or stored-result verification
+        run: |
+          node --check scripts/csl04_score_once.mjs
+          if [ -f artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V2_RESULT.json ]; then
+            node scripts/csl04_score_once.mjs --verify-result
+          else
+            node scripts/csl04_score_once.mjs
+            node -e 'const fs=require("fs");console.log("CSL04_RESULT_JSON="+JSON.stringify(JSON.parse(fs.readFileSync("artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V2_RESULT.json","utf8"))))'
+          fi
