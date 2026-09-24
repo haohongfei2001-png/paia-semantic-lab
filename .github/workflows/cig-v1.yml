@@ -12,6 +12,7 @@ on:
       - "scripts/cig02_catalog_eligibility.mjs"
       - "scripts/cig02c_compile.mjs"
       - "scripts/cig02e_*.mjs"
+      - "semantic_frames/cig02e_v1/**"
       - "artifacts/compositional-intent-graph-v1/**"
   push:
     branches: [main]
@@ -25,6 +26,7 @@ on:
       - "scripts/cig02_catalog_eligibility.mjs"
       - "scripts/cig02c_compile.mjs"
       - "scripts/cig02e_*.mjs"
+      - "semantic_frames/cig02e_v1/**"
       - "artifacts/compositional-intent-graph-v1/**"
 permissions:
   contents: read
@@ -49,6 +51,10 @@ jobs:
         run: |
           node --check scripts/cig02e_public_source_audit.mjs
           node scripts/cig02e_public_source_audit.mjs
+      - name: Validate CIG-02E public profile predicate-frame provenance
+        run: |
+          node --check scripts/cig02e_validate_frames.mjs
+          node scripts/cig02e_validate_frames.mjs
       - name: Compile all public Topics twice and verify deterministic bytes
         run: |
           node scripts/cig02b_compile.mjs .cig02b-index.json
