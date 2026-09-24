@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D07_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "AI模型与工具：AI模型、模型能力、模型选择、AI工具、模型使用和能力比较。",
+        "en": "AI Models & Tools: AI models, model capabilities, model selection, AI tools and model comparison."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "选择模型",
+            "比较能力"
+          ],
+          "en": [
+            "select model",
+            "compare capabilities"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "AI模型",
+            "AI工具"
+          ],
+          "en": [
+            "AI model",
+            "AI tool"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "模型选择",
+            "能力比较"
+          ],
+          "en": [
+            "model selection",
+            "capability comparison"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "编程与软件开发：编程、代码实现、软件架构、库、API和开发实践。",
+        "en": "Software Development: programming, code implementation, software architecture, libraries, APIs and development practice."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "编程",
+            "实现代码"
+          ],
+          "en": [
+            "program",
+            "implement code"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "代码",
+            "API"
+          ],
+          "en": [
+            "code",
+            "API"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "软件架构",
+            "开发实践"
+          ],
+          "en": [
+            "software architecture",
+            "development practice"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "信息安全与隐私：账号安全、隐私保护、权限、认证、数据泄露、攻击与安全风险。",
+        "en": "Cybersecurity & Privacy: account security, privacy, permissions, authentication, breaches and cyber risk."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "保护隐私",
+            "管理权限"
+          ],
+          "en": [
+            "protect privacy",
+            "manage permissions"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "账号",
+            "数据"
+          ],
+          "en": [
+            "account",
+            "data"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "账号安全",
+            "安全风险降低"
+          ],
+          "en": [
+            "account security",
+            "cyber risk reduction"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "数据与信息系统：数据库、数据模型、信息系统、数据管道、存储和数据处理架构。",
+        "en": "Data & Information Systems: databases, data models, information systems, pipelines, storage and data-processing architecture."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "建模数据",
+            "设计存储"
+          ],
+          "en": [
+            "model data",
+            "design storage"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "数据库",
+            "数据管道"
+          ],
+          "en": [
+            "database",
+            "data pipeline"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "数据处理架构",
+            "信息系统"
+          ],
+          "en": [
+            "data-processing architecture",
+            "information system"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "调试与故障排查：错误定位、故障排查、日志、异常、修复和根因分析。",
+        "en": "Debugging & Troubleshooting: debugging, troubleshooting, logs, errors, fixes and root-cause analysis."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "调试",
+            "分析日志"
+          ],
+          "en": [
+            "debug",
+            "analyze logs"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "错误",
+            "异常"
+          ],
+          "en": [
+            "error",
+            "exception"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "根因定位",
+            "故障修复"
+          ],
+          "en": [
+            "root-cause analysis",
+            "fix"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "电脑与硬件设备：电脑、手机、外设、硬件配置、性能、设备选择和设备问题。",
+        "en": "Hardware & Devices: computers, phones, peripherals, hardware configuration, performance and device issues."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "配置设备",
+            "选择硬件"
+          ],
+          "en": [
+            "configure device",
+            "choose hardware"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "电脑",
+            "外设"
+          ],
+          "en": [
+            "computer",
+            "peripheral"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "设备性能",
+            "设备选择"
+          ],
+          "en": [
+            "device performance",
+            "device choice"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.networking_connectivity",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "网络与连接：网络连接、Wi-Fi、蜂窝网络、路由、VPN、带宽和连接故障。",
+        "en": "Networking & Connectivity: network connectivity, Wi-Fi, cellular, routing, VPN, bandwidth and connection problems."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "连接网络",
+            "排查连接"
+          ],
+          "en": [
+            "connect network",
+            "troubleshoot connection"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "Wi-Fi",
+            "VPN"
+          ],
+          "en": [
+            "Wi-Fi",
+            "VPN"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "连接恢复",
+            "带宽改善"
+          ],
+          "en": [
+            "connectivity restoration",
+            "bandwidth improvement"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.ai_computing.prompt_workflows",
+      "domain_id": "D07",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "AI工作流与提示设计：提示词、AI工作流、agent流程、自动化调用、上下文编排和模型协作。",
+        "en": "AI Workflows & Prompting: prompting, AI workflows, agents, automation, context orchestration and model collaboration."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "设计提示词",
+            "编排上下文"
+          ],
+          "en": [
+            "design prompt",
+            "orchestrate context"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "AI工作流",
+            "agent流程"
+          ],
+          "en": [
+            "AI workflow",
+            "agent process"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "自动化调用",
+            "模型协作"
+          ],
+          "en": [
+            "automation",
+            "model collaboration"
+          ]
+        }
+      }
+    }
+  ]
+}

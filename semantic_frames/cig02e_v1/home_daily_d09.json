@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D09_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "家务与清洁：家务、清洁、洗衣、整理、打扫和日常维护。",
+        "en": "Chores & Cleaning: household chores, cleaning, laundry, tidying and routine maintenance."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "清洁",
+            "洗衣"
+          ],
+          "en": [
+            "clean",
+            "do laundry"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "家务",
+            "居住空间"
+          ],
+          "en": [
+            "household chore",
+            "living space"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "日常维护",
+            "整洁"
+          ],
+          "en": [
+            "routine maintenance",
+            "tidiness"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.home_improvement",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "家居与维修：装修、维修、改造、家具安装、空间改善和房屋工程。",
+        "en": "Home Improvement: renovation, repairs, remodeling, installation and physical home improvement."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "装修",
+            "维修"
+          ],
+          "en": [
+            "renovate",
+            "repair"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "房屋",
+            "家具"
+          ],
+          "en": [
+            "home",
+            "furniture"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "空间改善",
+            "房屋修复"
+          ],
+          "en": [
+            "physical home improvement",
+            "home repair"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "居住与住房：租房、买房、居住空间、房屋条件、房东租客和住房安排。",
+        "en": "Housing: housing, renting, home ownership, living space, landlords and housing arrangements."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "租房",
+            "买房"
+          ],
+          "en": [
+            "rent",
+            "buy a home"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "住房",
+            "居住空间"
+          ],
+          "en": [
+            "housing",
+            "living space"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "住房安排",
+            "居住条件"
+          ],
+          "en": [
+            "housing arrangement",
+            "living conditions"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "日常跑腿与办事：本地跑腿、取件、办事、采购、线下任务和附近服务。",
+        "en": "Local Errands: local errands, pickups, in-person tasks, small purchases and nearby services."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "取件",
+            "跑腿"
+          ],
+          "en": [
+            "pick up",
+            "run errands"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "线下任务",
+            "附近服务"
+          ],
+          "en": [
+            "in-person task",
+            "nearby service"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "本地办事完成",
+            "日常采购"
+          ],
+          "en": [
+            "local task completion",
+            "small purchase"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.moving_relocation",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "搬家与迁居：搬家、迁居、换城市、打包、物流和居住地迁移。",
+        "en": "Moving & Relocation: moving, relocation, changing cities, packing, logistics and residence changes."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "搬家",
+            "打包"
+          ],
+          "en": [
+            "move",
+            "pack"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "物品",
+            "居住地"
+          ],
+          "en": [
+            "belongings",
+            "residence"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "迁居",
+            "居住地迁移"
+          ],
+          "en": [
+            "relocation",
+            "residence change"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.possessions_organization",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "物品整理：个人物品、收纳、整理、断舍离、库存和物品管理。",
+        "en": "Possessions & Organization: personal belongings, organization, decluttering, storage and item management."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "收纳",
+            "断舍离"
+          ],
+          "en": [
+            "organize",
+            "declutter"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "个人物品",
+            "库存"
+          ],
+          "en": [
+            "personal belongings",
+            "inventory"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "物品管理",
+            "储物整理"
+          ],
+          "en": [
+            "item management",
+            "storage organization"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "车辆与个人交通工具：汽车、自行车、电动车、车辆维护、驾车和个人交通工具。",
+        "en": "Vehicle & Personal Transport: cars, bikes, personal vehicles, maintenance, driving and individual transport."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "维护车辆",
+            "选择交通工具"
+          ],
+          "en": [
+            "maintain vehicle",
+            "choose personal transport"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "汽车",
+            "自行车"
+          ],
+          "en": [
+            "car",
+            "bike"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "车辆维护",
+            "个人交通安排"
+          ],
+          "en": [
+            "vehicle maintenance",
+            "individual transport"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.home_daily.utilities_services",
+      "domain_id": "D09",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "水电网与家庭服务：水电气网、物业、保洁、维修服务和家庭公共服务。",
+        "en": "Utilities & Home Services: utilities, property services, cleaning, maintenance services and home-service providers."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "管理水电网",
+            "安排家庭服务"
+          ],
+          "en": [
+            "manage utilities",
+            "arrange home service"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "水电气网",
+            "物业服务"
+          ],
+          "en": [
+            "utilities",
+            "property service"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "家庭服务持续",
+            "维修服务安排"
+          ],
+          "en": [
+            "home-service continuity",
+            "maintenance service arrangement"
+          ]
+        }
+      }
+    }
+  ]
+}
