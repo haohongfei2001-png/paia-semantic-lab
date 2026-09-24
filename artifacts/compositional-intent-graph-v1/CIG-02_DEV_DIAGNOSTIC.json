@@ -1,0 +1,119 @@
+{
+  "format": "cig02-fresh-public-dev-diagnostic-v1",
+  "cases": {
+    "role": 18,
+    "natural": 18,
+    "defer": 18
+  },
+  "source_sha256": {
+    "fixture": "7e0c22e1a6a9d824c1f8bc4bbce14171ca9ecb9d5d0030d92cc4229db0660036",
+    "index": "64cc0d577ff55b2d732422ff4fa545e381fe07b1074b254b62193dc36d467a55",
+    "parser": "df702bd27464cd6d73596ee0e2d5fd27edc05297810fb547f2944a94857f9f43",
+    "frozen_csl_control": "29dd6c61f7fc4482d9771c4aff3775eed96cbab80101e4ff09285ab99776197d"
+  },
+  "parser_role_found": 18,
+  "parser_role_exact": 18,
+  "baseline": {
+    "assigned_labels": 18,
+    "correct_labels": 14,
+    "role_correct": 7,
+    "role_assigned": 7,
+    "natural_correct": 7,
+    "natural_assigned": 9,
+    "defer_false_assignment": 2,
+    "role_means_assignments": 0,
+    "errors": [
+      {
+        "id": "n08",
+        "kind": "natural",
+        "predicted": [
+          "sys.family_relationships.social_interaction"
+        ]
+      },
+      {
+        "id": "n18",
+        "kind": "natural",
+        "predicted": [
+          "sys.knowledge_memory.backup_export"
+        ]
+      },
+      {
+        "id": "d01",
+        "kind": "defer",
+        "predicted": [
+          "sys.home_daily.moving_relocation"
+        ]
+      },
+      {
+        "id": "d12",
+        "kind": "defer",
+        "predicted": [
+          "sys.home_daily.moving_relocation"
+        ]
+      }
+    ],
+    "assigned_precision": 0.7777777777777778,
+    "role_coverage": 0.3888888888888889,
+    "role_recall": 0.3888888888888889,
+    "natural_coverage": 0.5,
+    "natural_recall": 0.3888888888888889,
+    "defer_false_assignment_rate": 0.1111111111111111
+  },
+  "role_first": {
+    "assigned_labels": 19,
+    "correct_labels": 14,
+    "role_correct": 7,
+    "role_assigned": 8,
+    "natural_correct": 7,
+    "natural_assigned": 9,
+    "defer_false_assignment": 2,
+    "role_means_assignments": 0,
+    "errors": [
+      {
+        "id": "r01",
+        "kind": "role",
+        "predicted": [
+          "sys.personal_direction.life_planning"
+        ]
+      },
+      {
+        "id": "n08",
+        "kind": "natural",
+        "predicted": [
+          "sys.family_relationships.social_interaction"
+        ]
+      },
+      {
+        "id": "n18",
+        "kind": "natural",
+        "predicted": [
+          "sys.knowledge_memory.backup_export"
+        ]
+      },
+      {
+        "id": "d01",
+        "kind": "defer",
+        "predicted": [
+          "sys.home_daily.moving_relocation"
+        ]
+      },
+      {
+        "id": "d12",
+        "kind": "defer",
+        "predicted": [
+          "sys.home_daily.moving_relocation"
+        ]
+      }
+    ],
+    "assigned_precision": 0.7368421052631579,
+    "role_coverage": 0.4444444444444444,
+    "role_recall": 0.3888888888888889,
+    "natural_coverage": 0.5,
+    "natural_recall": 0.3888888888888889,
+    "defer_false_assignment_rate": 0.1111111111111111
+  },
+  "interpretation_scope": "PUBLIC_DEV_DIAGNOSTIC_NOT_PROMOTION",
+  "consumed_cig01_case_reads": 0,
+  "consumed_lsr_csl_test_reads": 0,
+  "private_artifact_reads": 0
+}

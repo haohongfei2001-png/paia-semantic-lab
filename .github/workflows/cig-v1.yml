@@ -9,6 +9,7 @@ on:
       - "runtime/compositional_intent_graph_v1/**"
       - "fixtures/cig_v1/**"
       - "scripts/cig01_score_once.mjs"
+      - "scripts/cig02_dev.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
   push:
     branches: [main]
@@ -19,6 +20,7 @@ on:
       - "runtime/compositional_intent_graph_v1/**"
       - "fixtures/cig_v1/**"
       - "scripts/cig01_score_once.mjs"
+      - "scripts/cig02_dev.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
 permissions:
   contents: read
@@ -51,3 +53,7 @@ jobs:
               node -e 'const fs=require("fs");console.log("CIG01_RESULT_JSON="+JSON.stringify(JSON.parse(fs.readFileSync("artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json","utf8"))))'
             fi
           fi
+      - name: Fresh CIG-02 public DEV comparison
+        run: |
+          node --check scripts/cig02_dev.mjs
+          node scripts/cig02_dev.mjs

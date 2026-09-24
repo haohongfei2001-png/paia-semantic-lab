@@ -1,0 +1,352 @@
+{
+  "format": "cig02-fresh-public-dev-v1",
+  "source_class": "new_public_natural_and_contrastive_dev",
+  "role": [
+    {
+      "id": "r01",
+      "kind": "role",
+      "current": "I want to set a direction for the next five years by using a calendar.",
+      "goal_span": "set a direction for the next five years",
+      "gold_topic": "sys.personal_direction.life_goals",
+      "means_topic": "sys.time_events.calendar_scheduling"
+    },
+    {
+      "id": "r02",
+      "kind": "role",
+      "current": "为了缓和与姐姐的关系，我用日记记录争执。",
+      "goal_span": "缓和与姐姐的关系",
+      "gold_topic": "sys.family_relationships.siblings",
+      "means_topic": "sys.knowledge_memory.journaling"
+    },
+    {
+      "id": "r03",
+      "kind": "role",
+      "current": "I want to reduce waking at night by using a tracking chart.",
+      "goal_span": "reduce waking at night",
+      "gold_topic": "sys.health_wellbeing.sleep",
+      "means_topic": "sys.science_technical.statistics_data_analysis"
+    },
+    {
+      "id": "r04",
+      "kind": "role",
+      "current": "用闪卡来改进外语发音。",
+      "goal_span": "外语发音",
+      "gold_topic": "sys.education_learning.language_learning",
+      "means_topic": "sys.education_learning.learning_methods"
+    },
+    {
+      "id": "r05",
+      "kind": "role",
+      "current": "Using a spreadsheet, I plan to compare two job offers.",
+      "goal_span": "compare two job offers",
+      "gold_topic": "sys.career_work.compensation_benefits",
+      "means_topic": "sys.science_technical.statistics_data_analysis"
+    },
+    {
+      "id": "r06",
+      "kind": "role",
+      "current": "为了明确产品要解决的痛点，我用访谈做记录。",
+      "goal_span": "明确产品要解决的痛点",
+      "gold_topic": "sys.projects_products.product_strategy",
+      "means_topic": "sys.projects_products.ux_user_research"
+    },
+    {
+      "id": "r07",
+      "kind": "role",
+      "current": "I need to trace a startup exception by using log files.",
+      "goal_span": "trace a startup exception",
+      "gold_topic": "sys.ai_computing.debugging_troubleshooting",
+      "means_topic": "sys.knowledge_memory.files_documents_storage"
+    },
+    {
+      "id": "r08",
+      "kind": "role",
+      "current": "用表格来改进每月房租和开销分配。",
+      "goal_span": "每月房租和开销分配",
+      "gold_topic": "sys.finance_purchases.budgeting_cashflow",
+      "means_topic": "sys.science_technical.statistics_data_analysis"
+    },
+    {
+      "id": "r09",
+      "kind": "role",
+      "current": "I want to repair a leaking sink by using a video guide.",
+      "goal_span": "repair a leaking sink",
+      "gold_topic": "sys.home_daily.home_improvement",
+      "means_topic": "sys.creative_design.video_audio_creation"
+    },
+    {
+      "id": "r10",
+      "kind": "role",
+      "current": "为了确认入境手续，我用航班邮件核对信息。",
+      "goal_span": "确认入境手续",
+      "gold_topic": "sys.travel_places.visas_border",
+      "means_topic": "sys.communication_writing.email_messages"
+    },
+    {
+      "id": "r11",
+      "kind": "role",
+      "current": "I use subtitles to improve understanding of a film ending.",
+      "goal_span": "understanding of a film ending",
+      "gold_topic": "sys.media_culture.film_tv",
+      "means_topic": "sys.communication_writing.translation"
+    },
+    {
+      "id": "r12",
+      "kind": "role",
+      "current": "为了写一封清晰的回复，我用客户反馈做背景。",
+      "goal_span": "写一封清晰的回复",
+      "gold_topic": "sys.communication_writing.email_messages",
+      "means_topic": "sys.business_entrepreneurship.customer_feedback"
+    },
+    {
+      "id": "r13",
+      "kind": "role",
+      "current": "I want to check a contract's exit clause by using notes from a call.",
+      "goal_span": "check a contract's exit clause",
+      "gold_topic": "sys.legal_civic.contracts_agreements",
+      "means_topic": "sys.knowledge_memory.notes_knowledge_management"
+    },
+    {
+      "id": "r14",
+      "kind": "role",
+      "current": "用模拟数据来改进统计检验的方法。",
+      "goal_span": "统计检验的方法",
+      "gold_topic": "sys.science_technical.statistics_data_analysis",
+      "means_topic": "sys.ai_computing.data_systems"
+    },
+    {
+      "id": "r15",
+      "kind": "role",
+      "current": "I need to adjust portrait lighting by using a sample image.",
+      "goal_span": "adjust portrait lighting",
+      "gold_topic": "sys.creative_design.photography",
+      "means_topic": "sys.creative_design.illustration_image_creation"
+    },
+    {
+      "id": "r16",
+      "kind": "role",
+      "current": "为了判断新市场的规模，我用销售记录做参考。",
+      "goal_span": "判断新市场的规模",
+      "gold_topic": "sys.business_entrepreneurship.market_research",
+      "means_topic": "sys.business_entrepreneurship.sales"
+    },
+    {
+      "id": "r17",
+      "kind": "role",
+      "current": "I want to reserve a meeting slot by using the team calendar.",
+      "goal_span": "reserve a meeting slot",
+      "gold_topic": "sys.time_events.calendar_scheduling",
+      "means_topic": "sys.projects_products.project_planning"
+    },
+    {
+      "id": "r18",
+      "kind": "role",
+      "current": "为了整理旧照片，我用备份文件核对重复内容。",
+      "goal_span": "整理旧照片",
+      "gold_topic": "sys.knowledge_memory.photos_media_archive",
+      "means_topic": "sys.knowledge_memory.backup_export"
+    }
+  ],
+  "natural": [
+    {
+      "id": "n01",
+      "kind": "natural",
+      "current": "最近总觉得日子缺少方向，想理清什么值得长期投入。",
+      "gold_topic": "sys.personal_direction.life_goals"
+    },
+    {
+      "id": "n02",
+      "kind": "natural",
+      "current": "父母总替我做决定，这种相处方式该怎么调整？",
+      "gold_topic": "sys.family_relationships.parents_family"
+    },
+    {
+      "id": "n03",
+      "kind": "natural",
+      "current": "爬两层楼就喘，想循序渐进增加体力。",
+      "gold_topic": "sys.health_wellbeing.fitness"
+    },
+    {
+      "id": "n04",
+      "kind": "natural",
+      "current": "这门课的作业都拖到最后一晚，学习节奏怎么安排？",
+      "gold_topic": "sys.education_learning.academic_courses"
+    },
+    {
+      "id": "n05",
+      "kind": "natural",
+      "current": "投了很多岗位却没有回音，简历经历怎样呈现？",
+      "gold_topic": "sys.career_work.applications"
+    },
+    {
+      "id": "n06",
+      "kind": "natural",
+      "current": "团队对下一季度先做哪个功能争论不休。",
+      "gold_topic": "sys.projects_products.roadmap_prioritization"
+    },
+    {
+      "id": "n07",
+      "kind": "natural",
+      "current": "手机接上家里的无线网络后时断时续。",
+      "gold_topic": "sys.ai_computing.networking_connectivity"
+    },
+    {
+      "id": "n08",
+      "kind": "natural",
+      "current": "每个月扣掉固定开支后总不知道钱去了哪里。",
+      "gold_topic": "sys.finance_purchases.budgeting_cashflow"
+    },
+    {
+      "id": "n09",
+      "kind": "natural",
+      "current": "厨房水龙头滴水，我想自己先检查原因。",
+      "gold_topic": "sys.home_daily.home_improvement"
+    },
+    {
+      "id": "n10",
+      "kind": "natural",
+      "current": "三天的短途行程怎样把车次和住处衔接好？",
+      "gold_topic": "sys.travel_places.trip_planning"
+    },
+    {
+      "id": "n11",
+      "kind": "natural",
+      "current": "这本小说里的叙述者到底有没有隐瞒事实？",
+      "gold_topic": "sys.media_culture.books_literature"
+    },
+    {
+      "id": "n12",
+      "kind": "natural",
+      "current": "给客户写的回复太生硬，怎么让语气更妥当？",
+      "gold_topic": "sys.communication_writing.email_messages"
+    },
+    {
+      "id": "n13",
+      "kind": "natural",
+      "current": "商品到货后就坏了，店家坚持不退。",
+      "gold_topic": "sys.legal_civic.consumer_rights"
+    },
+    {
+      "id": "n14",
+      "kind": "natural",
+      "current": "这组实验样本的差异能说明什么？",
+      "gold_topic": "sys.science_technical.statistics_data_analysis"
+    },
+    {
+      "id": "n15",
+      "kind": "natural",
+      "current": "海报文字挤在一起，看不出主次。",
+      "gold_topic": "sys.creative_design.visual_design"
+    },
+    {
+      "id": "n16",
+      "kind": "natural",
+      "current": "老客户说操作步骤麻烦，怎样系统整理这些意见？",
+      "gold_topic": "sys.business_entrepreneurship.customer_feedback"
+    },
+    {
+      "id": "n17",
+      "kind": "natural",
+      "current": "下周有三个截止日期，先做哪一个？",
+      "gold_topic": "sys.time_events.reminders_deadlines"
+    },
+    {
+      "id": "n18",
+      "kind": "natural",
+      "current": "几年前的文件散落在不同设备里，怎样统一保存？",
+      "gold_topic": "sys.knowledge_memory.files_documents_storage"
+    }
+  ],
+  "defer": [
+    {
+      "id": "d01",
+      "kind": "defer",
+      "current": "我看过那份预算表，暂时没有需要处理的事。"
+    },
+    {
+      "id": "d02",
+      "kind": "defer",
+      "current": "The contract was mentioned in yesterday's meeting."
+    },
+    {
+      "id": "d03",
+      "kind": "defer",
+      "current": "照片只是这篇文章里的一个例子。"
+    },
+    {
+      "id": "d04",
+      "kind": "defer",
+      "current": "My friend talked about a job interview."
+    },
+    {
+      "id": "d05",
+      "kind": "defer",
+      "current": "行程单和电影票都放在桌上。"
+    },
+    {
+      "id": "d06",
+      "kind": "defer",
+      "current": "The product name appeared in a news headline."
+    },
+    {
+      "id": "d07",
+      "kind": "defer",
+      "current": "稍后再说。"
+    },
+    {
+      "id": "d08",
+      "kind": "defer",
+      "current": "Okay, noted."
+    },
+    {
+      "id": "d09",
+      "kind": "defer",
+      "current": "那个项目早就结束了。"
+    },
+    {
+      "id": "d10",
+      "kind": "defer",
+      "current": "The note contains several unrelated topics."
+    },
+    {
+      "id": "d11",
+      "kind": "defer",
+      "current": "I am only quoting someone else's request."
+    },
+    {
+      "id": "d12",
+      "kind": "defer",
+      "current": "这不是我要处理的目标，只是背景。"
+    },
+    {
+      "id": "d13",
+      "kind": "defer",
+      "current": "Maybe we can discuss it another time."
+    },
+    {
+      "id": "d14",
+      "kind": "defer",
+      "current": "表格里同时列了旅行和支出。"
+    },
+    {
+      "id": "d15",
+      "kind": "defer",
+      "current": "I have not chosen a task yet."
+    },
+    {
+      "id": "d16",
+      "kind": "defer",
+      "current": "先看看，不用分类。"
+    },
+    {
+      "id": "d17",
+      "kind": "defer",
+      "current": "这段话只是在列举概念。"
+    },
+    {
+      "id": "d18",
+      "kind": "defer",
+      "current": "The two examples are both hypothetical."
+    }
+  ]
+}
