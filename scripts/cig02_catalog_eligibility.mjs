@@ -6,10 +6,13 @@ const manifest = JSON.parse(fs.readFileSync("semantic_profiles/v0.1/manifest.jso
 const profiles = manifest.shards.flatMap(shard => JSON.parse(fs.readFileSync(shard.path, "utf8")).profiles);
 const router = createTypedGrounder(index, "balanced");
 const misses = [];
-for (const profile of profiles) {
+for (let i=0;i<profiles.length;i++) {
+  const profile=profiles[i], decoy=profiles[(i+1)%profiles.length];
   const probes = [
     ["en", "Help me with " + profile.canonical_names.en + "."],
-    ["zh", "我想处理" + profile.canonical_names.zh + "。"]
+    ["zh", "我想处理" + profile.canonical_names.zh + "。"],
+    ["en_role", "I want to understand " + profile.canonical_names.en + " by using " + decoy.canonical_names.en + "."],
+    ["zh_role", "为了理解" + profile.canonical_names.zh + "，我用" + decoy.canonical_names.zh + "做记录。"]
   ];
   for (const [language, current] of probes) {
     const predicted = router.classify({current}).topics;
@@ -19,7 +22,7 @@ for (const profile of profiles) {
   }
 }
 const summary={format:"cig02-source-derived-catalog-eligibility-smoke-v1",
-  topic_count:profiles.length,probe_count:profiles.length*2,miss_count:misses.length,misses,
+  topic_count:profiles.length,probe_count:profiles.length*4,miss_count:misses.length,misses,
   interpretation_scope:"SOURCE_DERIVED_ELIGIBILITY_ONLY_NOT_PUBLIC_DEV_OR_CAPABILITY"};
 console.log("CIG02_CATALOG_ELIGIBILITY_JSON="+JSON.stringify(summary));
 if (profiles.length!==144 || misses.length) process.exitCode=1;
