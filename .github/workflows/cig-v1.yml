@@ -9,6 +9,7 @@ on:
       - "runtime/compositional_intent_graph_v1/**"
       - "fixtures/cig_v1/public_dev_cig02b_v1.json"
       - "scripts/cig02b_*.mjs"
+      - "scripts/cig02_catalog_eligibility.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
   push:
     branches: [main]
@@ -19,6 +20,7 @@ on:
       - "runtime/compositional_intent_graph_v1/**"
       - "fixtures/cig_v1/public_dev_cig02b_v1.json"
       - "scripts/cig02b_*.mjs"
+      - "scripts/cig02_catalog_eligibility.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
 permissions:
   contents: read
@@ -35,12 +37,15 @@ jobs:
         run: |
           node --check scripts/cig02b_compile.mjs
           node --check scripts/cig02b_dev.mjs
+          node --check scripts/cig02_catalog_eligibility.mjs
           node --check runtime/compositional_intent_graph_v1/typed_grounder.mjs
       - name: Compile all public Topics twice and verify deterministic bytes
         run: |
           node scripts/cig02b_compile.mjs .cig02b-index.json
           node scripts/cig02b_compile.mjs .cig02b-index-repeat.json
           cmp .cig02b-index.json .cig02b-index-repeat.json
+      - name: Verify 144-Topic bilingual source-derived eligibility
+        run: node scripts/cig02_catalog_eligibility.mjs .cig02b-index.json
       - name: Score new public DEV only
         run: node scripts/cig02b_dev.mjs .cig02b-index.json
       - name: Verify recorded CIG-02B source digests
