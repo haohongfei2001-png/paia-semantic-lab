@@ -1,0 +1,34 @@
+{
+  "package_id": "PAIA-COMPOSITIONAL-INTENT-GRAPH-v1",
+  "round": "CIG-01",
+  "stage": "CIG01_FROZEN_BEFORE_PROBE",
+  "candidate_head_sha": "db81089d24fb234587c7c082a7b9458833a3fa9d",
+  "parser_sha256": "df702bd27464cd6d73596ee0e2d5fd27edc05297810fb547f2944a94857f9f43",
+  "fixture_sha256": "c4aa6d87775531f73bfe8b56f24b213940bdfa0f39e9f247476a3df7aee90bbf",
+  "manifest_sha256": "b249bbbb4cf3d66b9e5236625d9f0c625a70c3757bd3cf29533506bfa6085851",
+  "scorer_sha256": "22b40eb7432407303ad2ac54f465a7eefb8b3f6a429ddf3d73ab6ddca0174bdb",
+  "pair_groups": 24,
+  "pair_cases": 48,
+  "heldout_cases": 12,
+  "ambiguous_controls": 12,
+  "metric_freeze": {
+    "bag_only_accuracy_ceiling": 0.5,
+    "pair_goal_span_accuracy_min": 0.9,
+    "ambiguous_false_goal_rate_max": 0,
+    "deterministic_repeat_required": true,
+    "formal_name_grounding_diagnostic_only": true,
+    "full_catalog_product_promotion": false
+  },
+  "evaluator_limitations": {
+    "same_writer_candidate_and_fixture": true,
+    "balanced_pairs_share_explicit_templates": true,
+    "heldout_wording_reported_separately": true
+  },
+  "evaluation_invocations": 0,
+  "consumed_lsr_csl_test_text_reads": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "production_paia_modified": false
+}
