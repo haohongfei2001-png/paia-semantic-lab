@@ -9,7 +9,7 @@ const paths = {
   fixture: new URL("../fixtures/compiled_semantic_v1/blind_v2.json", import.meta.url),
   index: new URL("../artifacts/compiled-semantic-lexicon-v1/CSL-01_INDEX.json", import.meta.url),
   runtime: new URL("../runtime/compiled_semantic_v1/router_v2.mjs", import.meta.url),
-  result: new URL("../artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V1_RESULT.json", import.meta.url),
+  result: new URL("../artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V2_RESULT.json", import.meta.url),
 };
 const sha = bytes => crypto.createHash("sha256").update(bytes).digest("hex");
 const bytes = key => fs.readFileSync(paths[key]);
@@ -106,7 +106,7 @@ if (process.argv.includes("--verify-result")) {
     metrics.topic_macro_recall >= gates.topic_macro_recall_min &&
     metrics.insufficient_evidence_false_assignment <= gates.insufficient_evidence_false_assignment_max &&
     metrics.context_harm_events <= gates.context_harm_events_max && deterministic;
-  const artifact = { format: "csl04-blind-result-v1", verdict: pass ? "PASS" : "FAIL",
+  const artifact = { format: "csl04-blind-result-v2", verdict: pass ? "PASS" : "FAIL",
     pre_open_freeze_sha256: sha(bytes("freeze")), fixture_sha256: sha(bytes("fixture")),
     candidate_head_sha: freeze.candidate_head_sha, evaluation_invocations: 1,
     counts: fixture.counts, metrics, failure_classes: failureClasses,
