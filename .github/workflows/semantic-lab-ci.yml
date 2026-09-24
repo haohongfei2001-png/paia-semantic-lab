@@ -114,6 +114,8 @@ jobs:
           python -m unittest tests.test_csl00_freeze tests.test_csl01_compile -v
           node scripts/csl02_dev.mjs --check
           node --test tests-js/csl02_router.test.mjs
+          python -m scripts.csl03_build_fixture --check
+          python -m unittest tests.test_csl03_freeze -v
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -148,3 +150,7 @@ jobs:
         run: |
           node scripts/csl02_dev.mjs --check
           node --test tests-js/csl02_router.test.mjs
+      - name: CSL-03 evaluator fixture source separation
+        run: |
+          python -m scripts.csl03_build_fixture --check
+          python -m unittest tests.test_csl03_freeze -v
