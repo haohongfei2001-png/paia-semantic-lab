@@ -1,0 +1,53 @@
+name: CIG public diagnostic
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig-v1.yml"
+      - "docs/compositional-intent-graph-v1/**"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+      - "runtime/compositional_intent_graph_v1/**"
+      - "fixtures/cig_v1/**"
+      - "scripts/cig01_score_once.mjs"
+      - "artifacts/compositional-intent-graph-v1/**"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig-v1.yml"
+      - "docs/compositional-intent-graph-v1/**"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+      - "runtime/compositional_intent_graph_v1/**"
+      - "fixtures/cig_v1/**"
+      - "scripts/cig01_score_once.mjs"
+      - "artifacts/compositional-intent-graph-v1/**"
+permissions:
+  contents: read
+jobs:
+  cig-public-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify parser and one-shot scorer syntax
+        run: |
+          node --check runtime/compositional_intent_graph_v1/goal_parser.mjs
+          node --check scripts/cig01_score_once.mjs
+      - name: Emit pre-evidence input hashes
+        run: |
+          sha256sum runtime/compositional_intent_graph_v1/goal_parser.mjs
+          sha256sum fixtures/cig_v1/public_synthetic_probe.json
+          sha256sum artifacts/compiled-semantic-lexicon-v1/CSL-00_EVALUATOR_MANIFEST.json
+          sha256sum scripts/cig01_score_once.mjs
+      - name: Frozen diagnostic or stored-result verification
+        run: |
+          if [ -f artifacts/compositional-intent-graph-v1/CIG-01_PRE_EVIDENCE_FREEZE.json ]; then
+            if [ -f artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json ]; then
+              node scripts/cig01_score_once.mjs --verify-result
+            else
+              node scripts/cig01_score_once.mjs
+              node -e 'const fs=require("fs");console.log("CIG01_RESULT_JSON="+JSON.stringify(JSON.parse(fs.readFileSync("artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json","utf8"))))'
+            fi
+          fi
