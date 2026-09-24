@@ -8,9 +8,10 @@ SHA-256 and the compiler index SHA-256 are in CSL-02_DEV_RESULT.json.
 Exactly three global policies were compared on this DEV fixture. The selected
 policy is specific_only (minimumWeight=3, margin=0.25) as the highest
 precision of the three, but **none qualified** under the 0.95 assignment
-constraint. It covered only **3 of 60** assignable DEV cases (5%), assigned
+constraint. It assigned **4 of 60** eligible DEV cases (6.67%), of which
+three were correct; assigned
 precision was 0.75, and macro recall was 3.70% across represented Topics.
-The broader policies reached 35% and 31.67% coverage, at 65.63% and 63.33%
+The broader policies reached 53.33% and 50% coverage, at 65.63% and 63.33%
 assigned precision. None is credible for the frozen public capability floor.
 
 The selection is a frozen research candidate, not a claim of success. The

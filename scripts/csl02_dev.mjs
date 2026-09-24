@@ -22,7 +22,7 @@ const variants = [
 
 function evaluate(policy) {
   const router = createCompiledRouter(index, policy);
-  let assigned = 0, correct = 0, target = 0, targetCorrect = 0, falseDefer = 0, deferCount = 0, contextHarm = 0;
+  let assigned = 0, correct = 0, target = 0, targetAssigned = 0, targetCorrect = 0, falseDefer = 0, deferCount = 0, contextHarm = 0;
   const byTopic = new Map();
   for (const row of cases) {
     const result = router.classify(row.input);
@@ -33,6 +33,7 @@ function evaluate(policy) {
       falseDefer += topics.length > 0 ? 1 : 0;
     } else {
       target++;
+      if (topics.length) targetAssigned++;
       const hit = topics.length === 1 && topics[0] === row.expected;
       if (hit) { correct++; targetCorrect++; }
       if (row.kind === "context" && topics.length && !hit) contextHarm++;
@@ -43,7 +44,7 @@ function evaluate(policy) {
   }
   const macroRecall = [...byTopic.values()].reduce((sum, values) => sum + values.reduce((a, b) => a + b, 0) / values.length, 0) / byTopic.size;
   return { policy, assigned_precision: assigned ? correct / assigned : 1,
-    auto_assignment_coverage: targetCorrect / target, topic_macro_recall: macroRecall,
+    auto_assignment_coverage: targetAssigned / target, topic_macro_recall: macroRecall,
     insufficient_evidence_false_assignment: falseDefer / deferCount, context_harm_events: contextHarm,
     assigned_labels: assigned, correct_labels: correct, target_cases: target, defer_cases: deferCount };
 }

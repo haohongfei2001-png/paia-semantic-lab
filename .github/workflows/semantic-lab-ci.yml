@@ -107,6 +107,13 @@ jobs:
           fi
       - name: CSL-v1 compiled lexicon package plan validation
         run: python -m unittest tests.test_compiled_semantic_lexicon_v1_plan -v
+      - name: CSL-v1 public source and DEV validation
+        run: |
+          python -m scripts.csl00_freeze --check
+          python -m scripts.csl01_compile --check
+          python -m unittest tests.test_csl00_freeze tests.test_csl01_compile -v
+          node scripts/csl02_dev.mjs --check
+          node --test tests-js/csl02_router.test.mjs
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4

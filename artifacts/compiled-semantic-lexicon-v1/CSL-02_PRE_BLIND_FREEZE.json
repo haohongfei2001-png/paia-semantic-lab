@@ -17,6 +17,15 @@
     "context_harm_events_max": 0,
     "deterministic_repeat": true
   },
+  "metric_definitions": {
+    "assigned_precision": "Correct assigned Topic labels divided by all assigned Topic labels on single-label, context, and should-DEFER cases; multi-label reported separately.",
+    "auto_assignment_coverage": "Single-label cases with at least one auto-assigned Topic divided by all 288 single-label cases, irrespective of correctness.",
+    "topic_macro_recall": "Arithmetic mean over 144 Topics of correctly assigned single-label cases divided by the two gold cases for that Topic.",
+    "insufficient_evidence_false_assignment": "Should-DEFER cases with any assigned Topic divided by all should-DEFER cases.",
+    "context_harm_events": "Context cases with an incorrect assigned Topic, including assignment where gold is DEFER.",
+    "multi_label": "Reported separately and excluded from the single-label macro-recall denominator.",
+    "deterministic_repeat": "Compare two outputs per case within one frozen evaluation invocation without changing runtime or policy."
+  },
   "test_v1_minimums": {
     "single_label_total": 288,
     "single_label_per_topic": 2,
