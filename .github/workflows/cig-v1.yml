@@ -43,3 +43,13 @@ jobs:
           cmp .cig02b-index.json .cig02b-index-repeat.json
       - name: Score new public DEV only
         run: node scripts/cig02b_dev.mjs .cig02b-index.json
+      - name: Verify recorded CIG-02B source digests
+        run: |
+          node -e 'const fs=require("fs"),crypto=require("crypto");const r=require("./artifacts/compositional-intent-graph-v1/CIG-02B_DEV_RESULT.json");const files={fixture:"fixtures/cig_v1/public_dev_cig02b_v1.json",index:".cig02b-index.json",runtime:"runtime/compositional_intent_graph_v1/typed_grounder.mjs",parser:"runtime/compositional_intent_graph_v1/goal_parser.mjs"};for(const [k,p] of Object.entries(files)){const h=crypto.createHash("sha256").update(fs.readFileSync(p)).digest("hex");if(h!==r.source_sha256[k])throw Error(k+" changed after DEV evidence")}'
+      - name: Preserve compiled public index
+        uses: actions/upload-artifact@v4
+        with:
+          name: cig02b-typed-index
+          path: .cig02b-index.json
+          if-no-files-found: error
+          retention-days: 30
