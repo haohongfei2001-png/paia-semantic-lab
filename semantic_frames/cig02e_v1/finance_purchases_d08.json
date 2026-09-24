@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D08_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "银行与支付：银行账户、转账、支付、银行卡、收付款和支付渠道。",
+        "en": "Banking & Payments: bank accounts, transfers, payments, cards and payment rails."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "转账",
+            "支付"
+          ],
+          "en": [
+            "transfer money",
+            "make payment"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "银行账户",
+            "银行卡"
+          ],
+          "en": [
+            "bank account",
+            "payment card"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "收付款",
+            "支付渠道选择"
+          ],
+          "en": [
+            "completed payment",
+            "payment rail choice"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "预算与现金流：预算、收入支出、现金流、月度资金安排和财务计划。",
+        "en": "Budgeting & Cash Flow: budgets, income and expenses, cash flow, monthly allocation and financial planning."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "制定预算",
+            "安排资金"
+          ],
+          "en": [
+            "budget",
+            "allocate funds"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "收入支出",
+            "现金流"
+          ],
+          "en": [
+            "income and expenses",
+            "cash flow"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "财务计划",
+            "月度资金安排"
+          ],
+          "en": [
+            "financial plan",
+            "monthly allocation"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "债务与信用：借款、贷款、信用卡、利息、债务偿还和信用状况。",
+        "en": "Debt & Credit: debt, loans, credit cards, interest, repayment and credit standing."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "偿还债务",
+            "管理信用"
+          ],
+          "en": [
+            "repay debt",
+            "manage credit"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "贷款",
+            "信用卡"
+          ],
+          "en": [
+            "loan",
+            "credit card"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "债务偿还",
+            "信用状况"
+          ],
+          "en": [
+            "repayment",
+            "credit standing"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "投资：投资组合、证券、基金、股票、收益风险和资产配置。",
+        "en": "Investing: investments, portfolios, securities, funds, stocks, risk and asset allocation."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "配置资产",
+            "比较投资"
+          ],
+          "en": [
+            "allocate assets",
+            "compare investments"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "投资组合",
+            "证券"
+          ],
+          "en": [
+            "portfolio",
+            "security"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "收益风险权衡",
+            "资产配置"
+          ],
+          "en": [
+            "risk-return tradeoff",
+            "asset allocation"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "大额购买：高金额或高影响购买、长期使用产品、购置决策和大额支出权衡。",
+        "en": "Major Purchases: high-cost or high-impact purchases, long-lived products and major spending decisions."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "评估购买",
+            "选择产品"
+          ],
+          "en": [
+            "evaluate purchase",
+            "choose product"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "大额商品",
+            "长期使用产品"
+          ],
+          "en": [
+            "high-cost product",
+            "long-lived product"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "购置决策",
+            "大额支出权衡"
+          ],
+          "en": [
+            "purchase decision",
+            "major spending tradeoff"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "商品研究与购物：商品搜索、价格比较、规格、评价、购买前研究和选品。",
+        "en": "Shopping & Product Research: product search, price comparison, specifications, reviews and purchase research."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "搜索商品",
+            "比较价格"
+          ],
+          "en": [
+            "search products",
+            "compare prices"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "商品",
+            "规格"
+          ],
+          "en": [
+            "product",
+            "specification"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "选品",
+            "购买前研究"
+          ],
+          "en": [
+            "product selection",
+            "purchase research"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "订阅与经常性支出：订阅服务、自动续费、周期性账单、会员和固定重复支出。",
+        "en": "Subscriptions & Recurring Spend: subscriptions, auto-renewal, recurring bills, memberships and repeated spending."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "管理订阅",
+            "检查续费"
+          ],
+          "en": [
+            "manage subscription",
+            "check renewal"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "会员",
+            "周期性账单"
+          ],
+          "en": [
+            "membership",
+            "recurring bill"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "续费控制",
+            "重复支出管理"
+          ],
+          "en": [
+            "renewal control",
+            "repeated spending management"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "domain_id": "D08",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "税务与保险：税务、报税、保险、保单、保费、理赔和保障规划。",
+        "en": "Taxes & Insurance: taxes, tax filing, insurance policies, premiums, claims and coverage planning."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "报税",
+            "申请理赔"
+          ],
+          "en": [
+            "file taxes",
+            "make insurance claim"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "税务",
+            "保单"
+          ],
+          "en": [
+            "tax filing",
+            "insurance policy"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "保障规划",
+            "理赔处理"
+          ],
+          "en": [
+            "coverage planning",
+            "claim handling"
+          ]
+        }
+      }
+    }
+  ]
+}
