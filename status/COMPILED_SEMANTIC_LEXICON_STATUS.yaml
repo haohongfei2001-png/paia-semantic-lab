@@ -1,7 +1,7 @@
 package_id: PAIA-COMPILED-SEMANTIC-LEXICON-v1
 package_version: 1.0.0
 package_status: PUBLIC_IN_PROGRESS
-phase: CSL_04_READY
+phase: CSL_04_FAIL_PENDING_CLOSURE
 baseline_main_at_registration: c72d929fdac129dd0d8d39092ab3141e1a79419d
 parent_package: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
 parent_result: LSR_01_COMPLETE_FAIL
@@ -44,7 +44,8 @@ rounds:
     closure_receipt: artifacts/compiled-semantic-lexicon-v1/CSL-03_CLOSURE.json
   CSL-04:
     title: Bounded repair plus fresh blind test v2
-    execution_status: READY
+    execution_status: IN_PROGRESS
+    verdict: FAIL_PENDING_EXACT_HEAD_AND_MAIN_CI
     trigger: CSL-03_FAIL
   CSL-05:
     title: Browser runtime compression and hardening
@@ -69,4 +70,4 @@ rounds:
     execution_status: BLOCKED
     explicit_execution_authorized: false
     blocked_on: CSL-08_PASS_AND_OWNER_AUTH
-next_action: "Execute the sole CSL-04 bounded structural repair; freeze and run independent fresh blind TEST v2 once."
+next_action: "Close genuine CSL-04 FAIL with exact-head PR CI and merged-main CI; then stop PUBLIC_COMPLETE_FAIL."
