@@ -1,0 +1,54 @@
+{
+  "package_id": "PAIA-COMPILED-SEMANTIC-LEXICON-v1",
+  "round": "CSL-04",
+  "execution_status": "COMPLETE",
+  "verdict": "FAIL",
+  "package_status": "PUBLIC_COMPLETE_FAIL",
+  "closure_parent_main_sha": "bfd5c488a426ad8d0267361e735e0fc0bc960ba6",
+  "pr": {
+    "number": 20,
+    "head_sha": "df394c644f10b03e55f5aa0fd1a2349a48183590",
+    "merged": true,
+    "merge_commit_sha": "bfd5c488a426ad8d0267361e735e0fc0bc960ba6",
+    "exact_head_ci": {
+      "run_id": 36002756366,
+      "conclusion": "success",
+      "required_job": "csl-public-pr-validation",
+      "job_conclusion": "success"
+    }
+  },
+  "merged_main_ci": {
+    "run_id": 36002905315,
+    "head_sha": "bfd5c488a426ad8d0267361e735e0fc0bc960ba6",
+    "conclusion": "success",
+    "required_job": "semantic-lab-validation",
+    "job_conclusion": "success"
+  },
+  "test_v2": {
+    "result_path": "artifacts/compiled-semantic-lexicon-v1/CSL-04_TEST_V2_RESULT.json",
+    "scoring_run_id": 36002512446,
+    "evaluation_invocations": 1,
+    "verdict": "FAIL",
+    "assigned_precision": 0.9396984924623115,
+    "auto_assignment_coverage": 0.5902777777777778,
+    "topic_macro_recall": 0.5555555555555556,
+    "insufficient_evidence_false_assignment": 0,
+    "context_harm_events": 2,
+    "deterministic_repeat": true
+  },
+  "evaluator_independence_limitations": {
+    "same_writer_authored_candidate_and_evaluator": true,
+    "authored_v2_expressions_exactly_matching_public_dev": 2,
+    "fail_verdict_robust_to_two_case_overlap": true
+  },
+  "boundary": {
+    "further_post_test_repair_rounds_allowed": 0,
+    "csl_05": "BLOCKED",
+    "csl_06": "BLOCKED",
+    "csl_07_through_09": "UNAUTHORIZED",
+    "private_artifact_reads": 0,
+    "evaluation_records_read": 0,
+    "consumed_lockbox_reads": 0,
+    "production_paia_modified": false
+  }
+}
