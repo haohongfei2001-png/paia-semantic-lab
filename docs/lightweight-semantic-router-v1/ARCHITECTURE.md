@@ -3,77 +3,111 @@
 ## Production pipeline
 
 ```text
-current user input --------------------┐
-conversation title (optional) ---------┤
-recent user inputs (bounded, optional)-┤
-                                      v
-                           deterministic normalization
-                                      |
-                     +----------------+----------------+
-                     |                |                |
-                 alias/phrase      char n-gram      BM25/TF-IDF
-                     |                |                |
-                     +----------------+----------------+
-                                      |
-                         context-lane weighting
-                                      |
-                    inclusion / exclusion / boundary
-                                      |
-                       full-catalog Topic scoring
-                            across all 144 Topics
-                                      |
-                         multi-label + confidence
-                                      |
-                         ASSIGN / DEFER / NONE
+current input / title / bounded recent user inputs
+                  |
+                  v
+        deterministic normalization
+                  |
+                  v
+           evidence extraction
+      (typed phrase + sparse overlap)
+                  |
+                  v
+       full 144-Topic sparse ranking
+                  |
+                  v
+     evidence eligibility + boundaries
+                  |
+          +-------+-------+
+          |               |
+   ordinary input     content-poor
+   context-gated      continuation
+          |               |
+          +-------+-------+
+                  v
+       ASSIGNED / DEFER / UNASSIGNED
 ```
 
-## Design rules
+LSR-v1 is an **evidence-constrained sparse classifier**, not a generic
+similarity engine and not an ensemble of many scorers.
 
-### 1. Current input remains authoritative
+## Separation of responsibilities
 
-Context exists to resolve ambiguity, not to hijack classification. A strong
-explicit topic switch in the current input must be able to defeat stale title
-or prior-context evidence.
+### Evidence extraction
 
-### 2. Title is a separate evidence lane
+Each match preserves its source lane and evidence type. Multiple mechanisms
+matching the same source span are one evidence group, not multiple votes.
 
-The title must never be concatenated invisibly into the current input. Its
-contribution is independently measurable and ablatable.
+### Sparse ranking
 
-### 3. Recent context is bounded
+All 144 eligible Topics are scored directly. Domain metadata does not
+participate in assignment. There is no sibling expansion.
 
-Only a bounded number of recent user inputs may contribute. Position/recency
-weighting must be deterministic. The cap and decay policy are frozen on public
-evidence before private calibration.
+### Decision
 
-### 4. Full catalog is cheap enough
+A Topic ranking first does not make it assignable. It needs sufficient,
+non-conflicting evidence. No evidence remains no evidence.
 
-With 144 Topics, v1 scores the complete eligible catalog. It does not need a
-neural candidate-retrieval stage or sibling-domain injection to reduce search
-space.
+## Context rules
 
-### 5. Positive and negative semantics stay distinct
+Current input is authoritative.
 
-Names, aliases, definitions, inclusion cues and positive phrases contribute
-positive evidence. Exclusion/boundary cues contribute a separate penalty or
-contrastive signal; they are not mixed into a single opaque representation.
+For ordinary content-bearing inputs:
+- title and recent context cannot create Topic eligibility;
+- they may provide bounded support only to a Topic already supported by the
+  current input;
+- stale context must not override a strong current-topic switch.
 
-### 6. No forced assignment
+For content-poor continuations such as “继续 / 这个呢 / 做”:
+- use a separate continuation path;
+- search at most three recent user inputs for the nearest independently
+  classifiable content anchor;
+- do not inherit from another content-poor continuation;
+- ambiguous references DEFER;
+- a clear title is a weaker title-only fallback.
 
-Weak, flat or conflicting scores produce DEFER/UNASSIGNED rather than a false
-high-confidence Topic.
+## Multi-label and ambiguity
 
-## Candidate scoring families
+Multiple independent supported tasks may produce multiple labels.
+Competing explanations for the same evidence produce DEFER rather than fake
+multi-label recall.
 
-LSR-01 may implement and compare only deterministic, zero-model scoring
-families predeclared in its round contract, such as:
+Confidence is evidence provenance, sparse score and competition information.
+It is not a softmax probability.
 
-- exact normalized alias match;
-- phrase/substring match with token/character boundaries;
-- character n-gram similarity;
-- BM25 or equivalent sparse lexical score;
-- deterministic weighted fusion of current/title/recent-context lanes;
-- inclusion bonus and exclusion/boundary penalty.
+## Production index
 
-No neural embedding, LLM call, learned classifier, trained weights or
-private-derived feature engineering is part of the v1 production architecture.
+The research Catalog/Profile bundle is build input, not the shipped index.
+
+Allowed scoring material:
+- topic/version/lifecycle identity;
+- canonical names/aliases;
+- filtered zh/en lexical anchors;
+- semantic core;
+- concrete positive intents;
+- only explicitly executable local exclusions;
+- contrastive neighbor IDs for diagnostics only.
+
+Excluded:
+- synthetic utterance patterns;
+- representative benchmark examples;
+- mixed domain-path strings;
+- internal-domain positive terms;
+- generator/case metadata;
+- private/evaluation/lockbox-derived information.
+
+## LSR-01 candidate contract
+
+Exactly three candidates are evaluated:
+
+- A: conservative typed phrase evidence + decision/continuation gates;
+- B: A + field-separated binary TF-IDF, zh character 2/3-grams and Latin word
+  features; **pre-registered primary hypothesis**;
+- C: A + fixed BM25(k1=1.2,b=0.75) as an alternative control.
+
+A/B/C are alternatives, not a production ensemble. Only one global threshold
+per candidate may be calibrated on source-separated PUBLIC DEV, and the
+threshold is frozen before PUBLIC TEST.
+
+The existing 1,296-case synthetic contrastive suite is regression/integrity
+evidence only because it shares source semantics with the profile bundle.
