@@ -45,6 +45,7 @@ function summarize(router) {
     correct+=hit?1:0;
     const bucket=perLabel[row.label]??{count:0,correct:0,assigned:0};
     bucket.count++;bucket.correct+=hit?1:0;bucket.assigned+=topics.length?1:0;
+    perLabel[row.label]=bucket;
   }
   return {assigned_precision:assigned?correct/assigned:0,coverage:assigned/selected.length,
     represented_topic_macro_recall:classes.reduce((n,label)=>n+perLabel[label].correct/10,0)/classes.length,
