@@ -6,6 +6,7 @@ const lines = fs.readFileSync(new URL("../fixtures/compiled_semantic_v1/public_d
 const router = createRepairedRouter(index);
 let assigned = 0, correct = 0, targets = 0, covered = 0, deferTotal = 0, falseDefer = 0, contextHarm = 0, deterministic = true;
 const topics = new Map();
+const errors = [];
 for (const line of lines) {
   const [kind, expected, current, title, recent] = line.split("\t");
   const input = { current, title, recent_user_inputs: recent ? [recent] : [] };
@@ -14,13 +15,14 @@ for (const line of lines) {
   assigned += a.topics.length;
   if (kind === "defer") {
     deferTotal++;
-    if (a.topics.length) falseDefer++;
+    if (a.topics.length) { falseDefer++; errors.push({ kind, expected, predicted: a.topics, reason: a.reason }); }
     continue;
   }
   targets++;
   if (a.topics.length) covered++;
   const hit = a.topics.length === 1 && a.topics[0] === expected;
   if (hit) correct++;
+  else if (a.topics.length) errors.push({ kind, expected, predicted: a.topics, reason: a.reason });
   if (kind === "context" && a.topics.length && !hit) contextHarm++;
   const values = topics.get(expected) ?? [];
   values.push(hit ? 1 : 0);
@@ -39,5 +41,6 @@ console.log(JSON.stringify({
   assigned_labels: assigned,
   correct_labels: correct,
   target_cases: targets,
-  defer_cases: deferTotal
+  defer_cases: deferTotal,
+  errors
 }));
