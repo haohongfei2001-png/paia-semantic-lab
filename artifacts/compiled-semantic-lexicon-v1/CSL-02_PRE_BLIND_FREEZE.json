@@ -1,0 +1,30 @@
+{
+  "package_id": "PAIA-COMPILED-SEMANTIC-LEXICON-v1",
+  "round": "CSL-02",
+  "freeze_stage": "BEFORE_TEST_V1_FIXTURE_OPEN",
+  "index_sha256": "64cc0d577ff55b2d732422ff4fa545e381fe07b1074b254b62193dc36d467a55",
+  "runtime_sha256": "588d890aae0ecf58aef193a315619204b250261110144407fda7874d3a197068",
+  "evaluator_manifest_sha256": "b249bbbb4cf3d66b9e5236625d9f0c625a70c3757bd3cf29533506bfa6085851",
+  "public_dev_sha256": "f4798f5f444a30a9c61dbcb9f29e3611ec70ccfc97cec8d4a6106bcf36350218",
+  "selected_policy": {"minimumWeight": 3, "margin": 0.25},
+  "variants_compared": 3,
+  "dev_selection_qualified": false,
+  "capability_gates": {
+    "assigned_precision_min": 0.95,
+    "auto_assignment_coverage_min": 0.70,
+    "topic_macro_recall_min": 0.70,
+    "insufficient_evidence_false_assignment_max": 0.02,
+    "context_harm_events_max": 0,
+    "deterministic_repeat": true
+  },
+  "test_v1_minimums": {
+    "single_label_total": 288,
+    "single_label_per_topic": 2,
+    "context_cases": 72,
+    "multi_label_ambiguous_or_defer_cases": 36
+  },
+  "blind_test_reads": 0,
+  "private_artifact_reads": 0,
+  "evaluation_records_read": 0,
+  "consumed_lockbox_reads": 0
+}

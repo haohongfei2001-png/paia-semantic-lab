@@ -137,3 +137,7 @@ jobs:
         run: |
           python -m scripts.lsr01_compile_index --output artifacts/ci/lsr01-topic-index.json
           node --test tests-js/lsr01_router.test.mjs
+      - name: CSL-02 public DEV and pre-blind freeze
+        run: |
+          node scripts/csl02_dev.mjs --check
+          node --test tests-js/csl02_router.test.mjs
