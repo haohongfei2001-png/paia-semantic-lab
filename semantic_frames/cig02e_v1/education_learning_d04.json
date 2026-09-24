@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D04_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "学业事务：学校行政、注册、选课、学籍、奖助、毕业手续和教务流程。",
+        "en": "Academic Administration: academic administration, enrollment, registration, student status, aid and graduation procedures."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "注册",
+            "办理手续"
+          ],
+          "en": [
+            "register",
+            "complete academic procedures"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "学籍",
+            "选课"
+          ],
+          "en": [
+            "student status",
+            "course enrollment"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "毕业手续",
+            "教务流程完成"
+          ],
+          "en": [
+            "graduation procedure",
+            "academic administration completion"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.academic_courses",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "课程学习：学校课程、课堂学习、课程内容、作业、学分和课程安排。",
+        "en": "Academic Courses: formal courses, classes, coursework, assignments, credits and course content."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "学习课程",
+            "完成作业"
+          ],
+          "en": [
+            "study a course",
+            "complete coursework"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "课程内容",
+            "作业"
+          ],
+          "en": [
+            "course content",
+            "assignment"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "学分",
+            "课程掌握"
+          ],
+          "en": [
+            "course credits",
+            "course understanding"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.exams_assessments",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "考试与测评：考试、测验、测评、成绩、备考、考试规则和评估结果。",
+        "en": "Exams & Assessments: exams, tests, assessments, grades, preparation and evaluation results."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "备考",
+            "参加测评"
+          ],
+          "en": [
+            "prepare for exam",
+            "take assessment"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "考试",
+            "测验"
+          ],
+          "en": [
+            "exam",
+            "test"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "成绩",
+            "评估结果"
+          ],
+          "en": [
+            "grade",
+            "evaluation result"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.language_learning",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "语言学习：语言学习、词汇、语法、听说读写、发音和语言能力提升。",
+        "en": "Language Learning: language acquisition, vocabulary, grammar, listening, speaking, reading, writing and pronunciation."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "学习语言",
+            "练习发音"
+          ],
+          "en": [
+            "learn a language",
+            "practice pronunciation"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "词汇",
+            "语法"
+          ],
+          "en": [
+            "vocabulary",
+            "grammar"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "语言能力提升",
+            "听说读写能力"
+          ],
+          "en": [
+            "language proficiency",
+            "listening and speaking ability"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "学习方法：学习策略、记忆方法、复习方式、知识组织、学习效率和学习习惯。",
+        "en": "Learning Methods: study strategies, memory methods, review techniques, knowledge organization and learning efficiency."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "复习",
+            "组织知识"
+          ],
+          "en": [
+            "review",
+            "organize knowledge"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "学习策略",
+            "记忆方法"
+          ],
+          "en": [
+            "study strategy",
+            "memory method"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "学习效率",
+            "知识掌握"
+          ],
+          "en": [
+            "learning efficiency",
+            "knowledge retention"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.reading_learning",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "阅读与自学：自主阅读、自学材料、书籍、教程、学习路径和个人知识获取。",
+        "en": "Reading & Self-learning: independent reading, self-study resources, books, tutorials and self-directed learning paths."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "阅读",
+            "自学"
+          ],
+          "en": [
+            "read",
+            "self-study"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "书籍",
+            "教程"
+          ],
+          "en": [
+            "book",
+            "tutorial"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "个人知识获取",
+            "自学路径"
+          ],
+          "en": [
+            "self-directed knowledge",
+            "self-study path"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.skill_learning",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "技能学习：非语言技能的学习、练习、掌握、训练计划和能力提升。",
+        "en": "Skill Learning: learning and practicing practical or professional skills other than language study."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "学习技能",
+            "练习"
+          ],
+          "en": [
+            "learn a skill",
+            "practice"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "非语言技能",
+            "训练计划"
+          ],
+          "en": [
+            "non-language skill",
+            "practice plan"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "技能掌握",
+            "能力提升"
+          ],
+          "en": [
+            "skill mastery",
+            "ability improvement"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.education_learning.thesis_research",
+      "domain_id": "D04",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "学位论文与科研：论文、科研课题、研究问题、文献、方法、实验或理论研究推进。",
+        "en": "Thesis & Research: thesis work, research questions, literature, methods, experiments and scholarly research."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "研究",
+            "撰写论文"
+          ],
+          "en": [
+            "research",
+            "write a thesis"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "研究问题",
+            "文献"
+          ],
+          "en": [
+            "research question",
+            "literature"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "论文推进",
+            "实验结果"
+          ],
+          "en": [
+            "thesis progress",
+            "experimental result"
+          ]
+        }
+      }
+    }
+  ]
+}
