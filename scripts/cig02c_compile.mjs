@@ -5,7 +5,7 @@ const baseBytes = fs.readFileSync(process.argv[2] ?? ".cig02b-index.json");
 const base = JSON.parse(baseBytes);
 if (base.format !== "cig02b-typed-index-v1" || base.topic_count !== 144) throw new Error("invalid base index");
 const manifest = JSON.parse(fs.readFileSync("semantic_profiles/v0.1/manifest.json", "utf8"));
-const profiles = manifest.shards.flatMap(shard => JSON.parse(fs.readFileSync(shard.path, "utf8")).profiles));
+const profiles = manifest.shards.flatMap(shard => JSON.parse(fs.readFileSync(shard.path, "utf8")).profiles);
 const byId = new Map(profiles.map(profile => [profile.topic_id, profile.canonical_names]));
 if (byId.size !== 144) throw new Error("profile ID mismatch");
 const index = {
