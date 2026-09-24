@@ -1,0 +1,57 @@
+name: CIG-02C source-separated public train DEV
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02c-clinc-dev.yml"
+      - "scripts/cig02c_clinc_train_dev.mjs"
+      - "scripts/cig02c_clinc_aggregate_diagnostic.mjs"
+      - "scripts/cig02c_compile.mjs"
+      - "runtime/compositional_intent_graph_v1/**"
+      - "docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02c-clinc-dev.yml"
+      - "scripts/cig02c_clinc_train_dev.mjs"
+      - "scripts/cig02c_clinc_aggregate_diagnostic.mjs"
+      - "scripts/cig02c_compile.mjs"
+      - "runtime/compositional_intent_graph_v1/**"
+      - "docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+permissions:
+  contents: read
+jobs:
+  source-separated-public-train-dev:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: lab
+      - uses: actions/checkout@v4
+        with:
+          repository: clinc/oos-eval
+          ref: 828f8093932c8fe6ca7936c3d2e52903b1c523de
+          path: lab/external-clinc
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate frozen scorer syntax
+        working-directory: lab
+        run: |
+          node --check scripts/cig02c_clinc_train_dev.mjs
+          node --check scripts/cig02c_clinc_aggregate_diagnostic.mjs
+      - name: Compile candidate indexes
+        working-directory: lab
+        run: |
+          node scripts/cig02b_compile.mjs .cig02b-index.json
+          node scripts/cig02c_compile.mjs .cig02b-index.json .cig02c-index.json
+      - name: Score pinned CLINC train rows only
+        working-directory: lab
+        run: node scripts/cig02c_clinc_train_dev.mjs external-clinc/data/data_full.json .cig02b-index.json .cig02c-index.json
+      - name: Attribute DEV failure by aggregate evidence availability
+        working-directory: lab
+        run: node scripts/cig02c_clinc_aggregate_diagnostic.mjs external-clinc/data/data_full.json .cig02b-index.json

@@ -1,0 +1,47 @@
+{
+  "format": "cig02c-public-train-dev-pre-open-freeze-v1",
+  "source_repository": "clinc/oos-eval",
+  "source_commit": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+  "source_path": "data/data_full.json",
+  "source_split": "train",
+  "source_license": "CC-BY-3.0",
+  "selection": "For each of 11 fixed labels, sort train utterances by SHA-256(utterance + NUL + label), take first 10.",
+  "mapping_labels": [
+    "book_flight",
+    "book_hotel",
+    "calendar_update",
+    "calories",
+    "international_visa",
+    "play_music",
+    "reminder",
+    "tire_pressure",
+    "todo_list",
+    "transfer",
+    "translate"
+  ],
+  "mapping_source": "scripts/cig02c_clinc_train_dev.mjs",
+  "scorer_git_blob_sha": "9eabd7908113fc909414ab2a34461ec4b5026fc3",
+  "compiler_git_blob_sha": "83142f2eb6bcaf130e1cbe6586c6ed22dbcebe4d",
+  "runtime_git_blob_sha": "ddfc443b620467541227707d569a7accc61e0e47",
+  "candidates": [
+    "CIG02B_BALANCED_FROZEN",
+    "CIG02C_BALANCED_FORMAL_NAME_GATE"
+  ],
+  "metrics": [
+    "assigned_precision",
+    "auto_assignment_coverage",
+    "represented_topic_macro_recall",
+    "per_label_correct"
+  ],
+  "interpretation_scope": "SOURCE_SEPARATED_ENGLISH_PUBLIC_TRAIN_DEV_SUBSET_NOT_144_TOPIC_CAPABILITY",
+  "capability_floor_unchanged": true,
+  "cig02_frozen": false,
+  "cig03_not_started": true,
+  "pre_score_technical_failure": {
+    "run_id": 36030593812,
+    "job_id": 107738041988,
+    "cause": "Missing per-label accumulator assignment; no score/result emitted.",
+    "selection_mapping_changed": false,
+    "metric_definition_changed": false
+  }
+}

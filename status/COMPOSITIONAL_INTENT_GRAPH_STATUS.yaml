@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02C_SOURCE_ELIGIBILITY_IN_PROGRESS
+phase: CIG_02C_SOURCE_SEPARATED_DEV_UNQUALIFIED
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -45,8 +45,12 @@ rounds:
     cig02c_candidate: GLOBAL_EXACT_FORMAL_NAME_GATE
     cig02c_source_eligibility: PASS_576_OF_576_SOURCE_ONLY_NOT_CAPABILITY
     cig02c_source_result: artifacts/compositional-intent-graph-v1/CIG-02C_SOURCE_ELIGIBILITY.json
-    cig02c_new_public_dev: NOT_STARTED
-    next_substage: CIG-02C_FRESH_SOURCE_SEPARATED_DEVELOPMENT
+    cig02c_new_public_dev: COMPLETE_UNQUALIFIED
+    cig02c_dev_result: artifacts/compositional-intent-graph-v1/CIG-02C_CLINC_TRAIN_DEV_RESULT.json
+    cig02c_aggregate_diagnostic: artifacts/compositional-intent-graph-v1/CIG-02C_CLINC_AGGREGATE_DIAGNOSTIC.json
+    cig02c_report: docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md
+    cig02c_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02C_MERGED_MAIN_RECEIPT.json
+    next_substage: CIG-02D_GLOBAL_GRAMMAR_AND_PARAPHRASE_DESIGN
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -55,4 +59,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Verify the CIG-02C source-derived eligibility repair, then evaluate it only on fresh source-separated public DEV; CIG-02 is not frozen and CIG-03 remains blocked."
+next_action: "Design a provenance-bound global request-grammar and object-paraphrase candidate, then evaluate only on a new public DEV; CIG-02 remains unfrozen and CIG-03 blocked."
