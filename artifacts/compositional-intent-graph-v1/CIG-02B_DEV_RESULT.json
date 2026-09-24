@@ -1,0 +1,73 @@
+{
+  "format": "cig02b-new-public-dev-diagnostic-v1",
+  "case_counts": {
+    "role": 18,
+    "natural": 18,
+    "defer": 18
+  },
+  "source_sha256": {
+    "fixture": "7ac82e868dd85f08ecd5e6d22b6fc36f47d66a4c4e007daecf629e2a1d0e221c",
+    "index": "13b89be38f1a6ee8f324df7711d6e597b6cf4a6ad93bec67c3aac166d52276d7",
+    "runtime": "cb709949fd2bafc4885da731f9d86f67c447efa537ccdf2b42dc2542b441d2a3",
+    "parser": "df702bd27464cd6d73596ee0e2d5fd27edc05297810fb547f2944a94857f9f43"
+  },
+  "index_bytes": 319147,
+  "router_plus_index_bytes": 323926,
+  "policies": [
+    {
+      "policy": "strict",
+      "assigned_precision": 1,
+      "auto_assignment_coverage": 0.4444444444444444,
+      "represented_topic_macro_recall": 0.4444444444444444,
+      "represented_topic_count": 36,
+      "full_catalog_topic_count": 144,
+      "role_correct": 6,
+      "natural_correct": 10,
+      "defer_false_assignment": 0,
+      "means_false_assignment": 0,
+      "context_harm": 0,
+      "deterministic_repeat": true,
+      "resource": {
+        "cold_init_ms": 1.3876869999999997,
+        "warm_p95_ms": 0.8728140000000053,
+        "incremental_heap_bytes": 14082056
+      },
+      "errors": []
+    },
+    {
+      "policy": "balanced",
+      "assigned_precision": 1,
+      "auto_assignment_coverage": 0.6666666666666666,
+      "represented_topic_macro_recall": 0.6666666666666666,
+      "represented_topic_count": 36,
+      "full_catalog_topic_count": 144,
+      "role_correct": 11,
+      "natural_correct": 13,
+      "defer_false_assignment": 0,
+      "means_false_assignment": 0,
+      "context_harm": 0,
+      "deterministic_repeat": true,
+      "resource": {
+        "cold_init_ms": 1.0040190000000848,
+        "warm_p95_ms": 0.8454320000000735,
+        "incremental_heap_bytes": 0
+      },
+      "errors": []
+    }
+  ],
+  "source_scope": "PUBLIC_CATALOG_AND_DRAFT_PROFILES_ONLY",
+  "interpretation_scope": "SAME_WRITER_PUBLIC_DEV_ONLY_NOT_CAPABILITY_OR_PROMOTION",
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_archive_reads": 0,
+  "consumed_lsr_csl_test_reads": 0,
+  "consumed_cig01_case_reads": 0,
+  "cig03_test_invocations": 0,
+  "github_actions": {
+    "run_id": 36026633525,
+    "job_id": 107724722165,
+    "head_sha": "911a41edc0b7c5a42ba6cd5c037a3292d10b1be4",
+    "conclusion": "success"
+  }
+}
