@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02E_PUBLIC_SOURCE_INVENTORY
+phase: CIG_02E_PARTIAL_PUBLIC_SOURCE_AUTHORING
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -61,8 +61,12 @@ rounds:
     cig02e_public_source_audit: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_SOURCE_AUDIT.json
     cig02e_public_source_audit_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_SOURCE_AUDIT.md
     cig02e_public_source_audit_classification: SOURCE_INVENTORY_ONLY_NOT_CAPABILITY
-    cig02e_candidate_status: DESIGN_ONLY_NO_DEV_OPENED
-    next_substage: CIG-02E_PUBLIC_SOURCE_AUTHORING
+    cig02e_public_source_audit_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_SOURCE_AUDIT_MERGED_MAIN_RECEIPT.json
+    cig02e_frame_authoring: semantic_frames/cig02e_v1/family_relationships_d02.json
+    cig02e_frame_authoring_report: docs/compositional-intent-graph-v1/CIG-02E_FRAME_AUTHORING.md
+    cig02e_authored_topic_count: 8
+    cig02e_candidate_status: PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE
+    next_substage: CIG-02E_REMAINING_PUBLIC_SOURCE_AUTHORING
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -71,4 +75,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Author provenance-bound predicate frames only from public Catalog/Profile sources, then register new source-separated full-Catalog public DEV before any CIG-02 freeze. CIG-03 remains blocked."
+next_action: "Author the remaining 136 provenance-bound public-source Topic frames, then build a compact global-rule candidate and register new source-separated full-Catalog public DEV before any CIG-02 freeze. CIG-03 remains blocked."
