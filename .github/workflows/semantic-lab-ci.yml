@@ -122,6 +122,7 @@ jobs:
         run: |
           node scripts/csl04_dev.mjs
           python -m scripts.csl04_build_fixture --check
+          sha256sum runtime/compiled_semantic_v1/router_v2.mjs scripts/csl04_score_once.mjs scripts/csl04_build_fixture.py fixtures/compiled_semantic_v1/blind_v2_authored.tsv fixtures/compiled_semantic_v1/blind_v2.json
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -166,3 +167,4 @@ jobs:
         run: |
           node scripts/csl04_dev.mjs
           python -m scripts.csl04_build_fixture --check
+          sha256sum runtime/compiled_semantic_v1/router_v2.mjs scripts/csl04_score_once.mjs scripts/csl04_build_fixture.py fixtures/compiled_semantic_v1/blind_v2_authored.tsv fixtures/compiled_semantic_v1/blind_v2.json
