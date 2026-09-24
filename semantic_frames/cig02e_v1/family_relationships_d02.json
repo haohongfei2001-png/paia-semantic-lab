@@ -1,0 +1,374 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D02_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "家庭照护与支持：照护家人、赡养、陪护、家庭成员支持以及照料责任分配。",
+        "en": "Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "照护",
+            "陪护"
+          ],
+          "en": [
+            "care for",
+            "support"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "家人",
+            "家庭成员"
+          ],
+          "en": [
+            "family member",
+            "older relative"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "照料责任分配",
+            "家庭成员支持"
+          ],
+          "en": [
+            "care responsibility",
+            "family support"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "人际冲突与边界：人际冲突、拒绝、边界设定、矛盾处理、权利义务和不适互动的限制。",
+        "en": "Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "拒绝",
+            "处理冲突"
+          ],
+          "en": [
+            "refuse",
+            "resolve dispute"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "人际冲突",
+            "不适互动"
+          ],
+          "en": [
+            "interpersonal conflict",
+            "unwanted interaction"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "边界设定",
+            "互动限制"
+          ],
+          "en": [
+            "boundary setting",
+            "relationship limits"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.friendships",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "朋友关系：朋友关系、友谊维护、交友、疏远、支持和朋友间互动。",
+        "en": "Friendships: friendship formation, maintenance, distance, support and interactions with friends."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "交友",
+            "维护友谊"
+          ],
+          "en": [
+            "make friends",
+            "maintain friendship"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "朋友",
+            "友谊"
+          ],
+          "en": [
+            "friend",
+            "friendship"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "友谊维护",
+            "朋友间互动"
+          ],
+          "en": [
+            "friendship maintenance",
+            "friend interaction"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.parents_family",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "父母与原生家庭：父母、原生家庭、代际关系、家庭背景以及与父母相处和支持相关的问题。",
+        "en": "Parents & Family of Origin: parents, family of origin, intergenerational relationships and support involving parents."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "与父母相处",
+            "支持父母"
+          ],
+          "en": [
+            "relate to parents",
+            "support parents"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "父母",
+            "原生家庭"
+          ],
+          "en": [
+            "parents",
+            "family of origin"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "代际关系",
+            "父母支持"
+          ],
+          "en": [
+            "intergenerational relationship",
+            "support involving parents"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "伴侣关系：恋爱、伴侣、婚姻、亲密关系中的沟通、承诺、相处和共同生活。",
+        "en": "Partner Relationship: romantic partnership, marriage, intimacy, commitment and shared life with a partner."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "沟通",
+            "共同生活"
+          ],
+          "en": [
+            "communicate",
+            "live together"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "伴侣",
+            "亲密关系"
+          ],
+          "en": [
+            "partner",
+            "intimate relationship"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "承诺",
+            "共同生活"
+          ],
+          "en": [
+            "commitment",
+            "shared life"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "宠物：宠物饲养、健康、行为、用品、训练以及人与宠物的日常关系。",
+        "en": "Pets: pet care, health, behavior, supplies, training and everyday life with animals."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "饲养",
+            "训练"
+          ],
+          "en": [
+            "care for",
+            "train"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "宠物",
+            "猫狗"
+          ],
+          "en": [
+            "pet",
+            "companion animal"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "宠物健康",
+            "行为改善"
+          ],
+          "en": [
+            "pet health",
+            "pet behavior"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.siblings",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "兄弟姐妹：兄弟姐妹之间的关系、相处、支持、冲突和共同家庭事务。",
+        "en": "Siblings: relationships, support, conflict and shared family matters involving siblings."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "相处",
+            "支持"
+          ],
+          "en": [
+            "relate to",
+            "support"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "兄弟姐妹"
+          ],
+          "en": [
+            "sibling"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "兄弟姐妹关系",
+            "共同家庭事务"
+          ],
+          "en": [
+            "sibling relationship",
+            "shared family matters"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "domain_id": "D02",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+        "en": "Social Interaction: general social interaction, group dynamics, social situations and interpersonal behavior."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "社交",
+            "与人相处"
+          ],
+          "en": [
+            "socialize",
+            "interact"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "群体",
+            "非特定关系对象"
+          ],
+          "en": [
+            "group",
+            "general social contact"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "社交互动",
+            "人际往来"
+          ],
+          "en": [
+            "social interaction",
+            "interpersonal behavior"
+          ]
+        }
+      }
+    }
+  ]
+}
