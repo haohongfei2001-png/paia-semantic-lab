@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02B_PUBLIC_DEV_UNQUALIFIED
+phase: CIG_02C_SOURCE_ELIGIBILITY_IN_PROGRESS
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -41,7 +41,12 @@ rounds:
     cig02b_result: artifacts/compositional-intent-graph-v1/CIG-02B_DEV_RESULT.json
     cig02b_report: docs/compositional-intent-graph-v1/CIG-02B_DEV_REPORT.md
     cig02_frozen: false
-    next_substage: CIG-02_FRESH_SOURCE_SEPARATED_DEVELOPMENT
+    cig02b_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02B_MERGED_MAIN_RECEIPT.json
+    cig02c_candidate: GLOBAL_EXACT_FORMAL_NAME_GATE
+    cig02c_source_eligibility: PASS_576_OF_576_SOURCE_ONLY_NOT_CAPABILITY
+    cig02c_source_result: artifacts/compositional-intent-graph-v1/CIG-02C_SOURCE_ELIGIBILITY.json
+    cig02c_new_public_dev: NOT_STARTED
+    next_substage: CIG-02C_FRESH_SOURCE_SEPARATED_DEVELOPMENT
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -50,4 +55,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Review the CIG-02B DEV information gap and use only fresh source-separated public development evidence for any next CIG-02 candidate; CIG-02 is not frozen and CIG-03 remains blocked."
+next_action: "Verify the CIG-02C source-derived eligibility repair, then evaluate it only on fresh source-separated public DEV; CIG-02 is not frozen and CIG-03 remains blocked."
