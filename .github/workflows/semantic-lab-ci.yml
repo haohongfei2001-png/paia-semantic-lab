@@ -8,6 +8,7 @@ permissions:
   contents: read
 jobs:
   semantic-lab-validation:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -112,3 +113,27 @@ jobs:
         with:
           name: semantic-lab-evidence
           path: artifacts/ci/*.json
+  csl-public-pr-validation:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install lab
+        run: python -m pip install -e .
+      - name: CSL source separation and compiler reproducibility
+        run: |
+          python -m scripts.csl00_freeze --check
+          python -m scripts.csl01_compile --check
+          python -m unittest tests.test_csl00_freeze tests.test_csl01_compile tests.test_compiled_semantic_lexicon_v1_plan tests.test_isolation tests.test_catalog -v
+      - name: Critical zero-model router guards
+        run: |
+          python -m scripts.lsr01_compile_index --output artifacts/ci/lsr01-topic-index.json
+          node --test tests-js/lsr01_router.test.mjs
