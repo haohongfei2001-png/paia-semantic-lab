@@ -118,6 +118,8 @@ jobs:
           python -m unittest tests.test_csl03_freeze -v
           node --check scripts/csl03_score_once.mjs
           node scripts/csl03_score_once.mjs --verify-result
+      - name: CSL-04 permitted DEV diagnostic
+        run: node scripts/csl04_dev.mjs
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -158,3 +160,5 @@ jobs:
           python -m unittest tests.test_csl03_freeze -v
           node --check scripts/csl03_score_once.mjs
           node scripts/csl03_score_once.mjs --verify-result
+      - name: CSL-04 permitted DEV diagnostic
+        run: node scripts/csl04_dev.mjs
