@@ -1,7 +1,7 @@
 package_id: PAIA-COMPILED-SEMANTIC-LEXICON-v1
 package_version: 1.0.0
 package_status: PUBLIC_IN_PROGRESS
-phase: CSL_00_IN_PROGRESS
+phase: CSL_01_READY
 baseline_main_at_registration: c72d929fdac129dd0d8d39092ab3141e1a79419d
 parent_package: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
 parent_result: LSR_01_COMPLETE_FAIL
@@ -26,12 +26,11 @@ production_paia_modified: false
 rounds:
   CSL-00:
     title: Protocol and source-separation freeze
-    execution_status: IN_PROGRESS
-    verdict: PENDING_EXACT_HEAD_AND_MAIN_CI
+    execution_status: COMPLETE
+    verdict: PASS
   CSL-01:
     title: Multi-source lexicon generation and compiler
-    execution_status: BLOCKED
-    blocked_on: CSL-00
+    execution_status: READY
   CSL-02:
     title: Public DEV optimization and compression
     execution_status: BLOCKED
@@ -67,4 +66,4 @@ rounds:
     execution_status: BLOCKED
     explicit_execution_authorized: false
     blocked_on: CSL-08_PASS_AND_OWNER_AUTH
-next_action: "Complete CSL-00 exact-head CI, merge and exact-main closure; then proceed to CSL-01 without another owner prompt."
+next_action: "Begin CSL-01 on one round branch; preserve public-only source separation and stop before private evidence."

@@ -38,7 +38,6 @@ class CompiledSemanticLexiconV1PlanTests(unittest.TestCase):
         self.assertTrue(
             self.status["public_rounds"]["continuous_after_package_authorization"]
         )
-        self.assertEqual("IN_PROGRESS", self.status["rounds"]["CSL-00"]["execution_status"])
         self.assertEqual(1, self.status["max_post_blind_test_repair_rounds"])
 
     def test_private_and_production_rounds_remain_hard_blocked(self):
