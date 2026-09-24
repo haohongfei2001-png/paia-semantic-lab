@@ -1,12 +1,12 @@
 package_id: PAIA-COMPILED-SEMANTIC-LEXICON-v1
 package_version: 1.0.0
-package_status: REGISTERED_NOT_STARTED
-phase: CSL_00_READY
+package_status: PUBLIC_IN_PROGRESS
+phase: CSL_00_IN_PROGRESS
 baseline_main_at_registration: c72d929fdac129dd0d8d39092ab3141e1a79419d
 parent_package: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
 parent_result: LSR_01_COMPLETE_FAIL
 production_direction: ZERO_MODEL_COMPILED_STATIC_SEMANTICS
-public_package_preauthorized: false
+public_package_preauthorized: true
 public_rounds:
   start: CSL-00
   end: CSL-06
@@ -26,8 +26,8 @@ production_paia_modified: false
 rounds:
   CSL-00:
     title: Protocol and source-separation freeze
-    execution_status: READY
-    verdict: UNTESTED
+    execution_status: IN_PROGRESS
+    verdict: PENDING_EXACT_HEAD_AND_MAIN_CI
   CSL-01:
     title: Multi-source lexicon generation and compiler
     execution_status: BLOCKED
@@ -67,4 +67,4 @@ rounds:
     execution_status: BLOCKED
     explicit_execution_authorized: false
     blocked_on: CSL-08_PASS_AND_OWNER_AUTH
-next_action: "Await one explicit owner authorization for the CSL-00..CSL-06 PUBLIC package. After that authorization, Work should execute public rounds continuously under EXECUTION_PROTOCOL.md and stop only at a hard stop/terminal public failure/private boundary."
+next_action: "Complete CSL-00 exact-head CI, merge and exact-main closure; then proceed to CSL-01 without another owner prompt."
