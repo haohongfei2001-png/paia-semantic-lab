@@ -1,42 +1,66 @@
-# LSR-01 — Zero-Model Full-Catalog Baseline
+# LSR-01 — Evidence-Constrained Zero-Model Full-Catalog Baseline
 
-Status: READY / NOT_STARTED.
+Status: IN_PROGRESS.
 
-LSR-01 requires a separate explicit execution authorization.
+Execution authorization: granted by the owner after independent Pro capability
+architecture review.
 
-## Scope
+Canonical execution design:
+- `configs/lsr01_execution_design_v0.1.yaml`
+- `docs/lightweight-semantic-router-v1/LSR-01_EXECUTION_DESIGN_AMENDMENT_v0.1.md`
 
-Implement a deterministic reference classifier over the canonical 144 Topics
-using PUBLIC/SYNTHETIC/catalog evidence only.
+## Product implementation
 
-Required lanes:
-- current user input;
-- optional conversation title;
-- bounded recent user inputs.
+LSR-01 implements the actual dependency-free JavaScript/ESM scoring core now,
+rather than maintaining a Python reference algorithm that would later need to
+be translated.
 
-Required candidate families:
-- exact alias/phrase evidence;
-- character n-gram similarity;
-- sparse lexical/BM25-style score;
-- explicit inclusion/exclusion/boundary evidence;
-- deterministic lane fusion;
-- full-catalog ranking;
-- multi-label + DEFER output.
+Python is build/test tooling only for deterministic Topic-index compilation.
 
-## Required evidence
+## Architecture
 
-- public/synthetic quality metrics;
-- current/title/context ablations;
-- topic-switch fixtures;
-- deterministic repeat;
-- generated index size estimate;
-- warm/cold latency;
-- memory measurement.
+Evidence extraction, sparse ranking and assignment decision are separate.
+
+No Topic may become ASSIGNED merely because it ranks first. Ordinary context
+may support a Topic only if current-input evidence already makes that Topic
+eligible. Content-poor continuations use a separate recent-anchor/title
+fallback branch. Ambiguity is DEFER, not multi-label.
+
+Domain prior and sibling expansion are disabled.
+
+## Frozen candidates
+
+- A: conservative typed exact alias/phrase + evidence/continuation gates;
+- B: A + field-separated binary TF-IDF + fixed zh 2/3-grams and Latin word
+  features; **pre-registered primary hypothesis**;
+- C: A + fixed BM25(k1=1.2,b=0.75) control.
+
+A/C are diagnostic controls. LSR-01 does not select a new winner after viewing
+public TEST. Primary candidate B determines PASS/FAIL.
+
+## Evaluation sequence
+
+1. compile production index from allowed Catalog/Profile fields;
+2. run structural/invariant tests;
+3. use source-separated PUBLIC DEV to choose exactly one global threshold per
+   candidate under the frozen error-first/coverage-second procedure;
+4. freeze those thresholds in the result;
+5. evaluate PUBLIC TEST once;
+6. run old 1,296-case contrastive suite only as regression/integrity evidence;
+7. measure deterministic repeat, size, cold/warm latency and incremental memory;
+8. PASS only if candidate B satisfies every LSR-01 credibility/resource gate.
+
+If B fails public TEST capability, close LSR-01 COMPLETE/FAIL and stop. Do not
+change features, weights, margin, context policy or thresholds after seeing the
+held-out result under this authorization.
 
 ## Forbidden
 
-- BGE/other neural model in the production candidate;
-- private calibration/evaluation/lockbox reads;
+- private 80 calibration reads;
+- 13 legacy evaluation reads;
+- consumed 35-case lockbox reads;
 - new owner labels;
+- neural embeddings/models;
+- semantic network/API calls;
 - PAIA production writes;
-- automatic transition to LSR-02.
+- automatic LSR-02 start.
