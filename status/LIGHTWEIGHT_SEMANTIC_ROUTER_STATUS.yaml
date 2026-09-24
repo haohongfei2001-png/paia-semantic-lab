@@ -1,8 +1,8 @@
 package_id: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
 package_version: 1.0.0
 package_status: ACTIVE
-phase: LSR_01_READY
-baseline_remote_main: 5099347a763c8c71e07a88a703f8200c91a43278
+phase: LSR_01_IN_PROGRESS
+baseline_remote_main: 5d77056ac92b75baf7d744e7038211e1469d31b0
 production_direction: ZERO_MODEL_LOCAL_FIRST
 production_neural_model_assets_bytes_max: 0
 production_semantic_network_dependency: false
@@ -27,36 +27,39 @@ rounds:
     execution_status: COMPLETE
     capability_verdict: PASS
     explicit_execution_authorized: true
-    authorization_source: user_open_recommended_lightweight_direction
     baseline_audit: artifacts/lightweight-semantic-router-v1/LSR-00_BASELINE_AUDIT.json
     closure_receipt: artifacts/lightweight-semantic-router-v1/LSR-00_CLOSURE.md
     registration_pr: 13
-    registration_pr_head_commit: ccf52aca29fd2c2aabe8ce4539618c18ddbaf723
-    registration_pr_head_validation_run_id: 35887673918
-    registration_pr_head_validation_job_id: 107271874344
-    registration_pr_head_evidence_artifact_id: 10764325698
     registration_pr_head_required_ci: PASS
-    merged_main_commit: 07acfa805df7a715d320b138a3262fe0c9326c2a
-    merged_main_validation_run_id: 35888173480
-    merged_main_validation_job_id: 107273591581
-    merged_main_evidence_artifact_id: 10763563043
     merged_main_required_ci: PASS
     private_artifact_reads: 0
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
   LSR-01:
-    title: Zero-model full-catalog baseline
-    execution_status: READY
+    title: Evidence-constrained zero-model full-catalog baseline
+    execution_status: IN_PROGRESS
     capability_verdict: UNTESTED
-    explicit_execution_authorized: false
-    evidence_class: PUBLIC_SYNTHETIC_ONLY
+    explicit_execution_authorized: true
+    authorization_source: user_approved_pro_review_adoption_and_execution
+    evidence_class: PUBLIC_SOURCE_SEPARATED_PLUS_REGRESSION
+    execution_design: configs/lsr01_execution_design_v0.1.yaml
+    design_amendment: docs/lightweight-semantic-router-v1/LSR-01_EXECUTION_DESIGN_AMENDMENT_v0.1.md
+    source_separated_fixture: fixtures/lightweight_router_v1/source_separated_v0.1.json
+    production_core: runtime/lightweight_router_v1/router.mjs
+    index_compiler: scripts/lsr01_compile_index.py
+    public_benchmark: scripts/lsr01_public_benchmark.mjs
+    primary_candidate: B
+    private_artifact_reads: 0
+    evaluation_records_read: 0
+    consumed_lockbox_reads: 0
+    required_ci: PENDING
   LSR-02:
     title: Context and boundary robustness
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     blocked_on: LSR-01
   LSR-03:
-    title: Browser-ready runtime parity
+    title: Browser-ready runtime parity and packaging hardening
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     blocked_on: LSR-02
@@ -77,5 +80,5 @@ rounds:
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     blocked_on: LSR-05
-next_action: "LSR-01 is READY but NOT_STARTED. Await explicit execution authorization. Implement only the PUBLIC/SYNTHETIC zero-model full-catalog baseline; do not read private/evaluation/lockbox data or modify PAIA production."
+next_action: "Run exact frozen LSR-01 PUBLIC/SOURCE-SEPARATED validation once. If primary candidate B misses the credibility floor, close LSR-01 FAIL rather than tuning on held-out TEST. Do not read private/evaluation/lockbox data."
 product_owner_blockers: []
