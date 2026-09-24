@@ -4,7 +4,7 @@ import { createCatalogNameGrounder } from "../runtime/compositional_intent_graph
 const index = JSON.parse(fs.readFileSync(process.argv[2] ?? ".cig02c-index.json", "utf8"));
 const manifest = JSON.parse(fs.readFileSync("semantic_profiles/v0.1/manifest.json", "utf8"));
 const profiles = manifest.shards.flatMap(shard => JSON.parse(fs.readFileSync(shard.path, "utf8")).profiles);
-const router = createTypedGrounder(index, "balanced");
+const router = createCatalogNameGrounder(index, "balanced");
 const misses = [];
 for (let i=0;i<profiles.length;i++) {
   const profile=profiles[i], decoy=profiles[(i+1)%profiles.length];
