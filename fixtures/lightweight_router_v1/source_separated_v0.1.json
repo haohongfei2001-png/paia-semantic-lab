@@ -1,0 +1,587 @@
+{
+  "version": "0.1.0",
+  "evidence_class": "PUBLIC_SOURCE_SEPARATED",
+  "construction_note": "Authored from the canonical Topic Catalog names/task definitions before reading production semantic profiles. Does not copy semantic_profile anchors, synthetic_utterance_patterns, or old benchmark text.",
+  "cases": [
+    {
+      "id": "ss01",
+      "family": "sleep_schedule",
+      "split": "dev",
+      "current": "昨晚拖到两点多才睡，今天想把作息慢慢往前挪。",
+      "expected": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss02",
+      "family": "interview_reflection",
+      "split": "dev",
+      "current": "一面只有十五分钟就结束了，我的反问是不是太短了？",
+      "expected": [
+        "sys.career_work.interviews"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss03",
+      "family": "application_deadline",
+      "split": "dev",
+      "current": "这个职位网申今晚截止，我还要不要现在递交？",
+      "expected": [
+        "sys.career_work.applications"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss04",
+      "family": "salary_expectation",
+      "split": "dev",
+      "current": "这个岗位硕士应届生年包大概谈到多少比较合理？",
+      "expected": [
+        "sys.career_work.compensation_benefits"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss05",
+      "family": "code_refactor",
+      "split": "dev",
+      "current": "这个函数现在循环了三遍，能不能改成一次遍历？",
+      "expected": [
+        "sys.ai_computing.coding_software_development"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss06",
+      "family": "program_bug",
+      "split": "dev",
+      "current": "程序一启动就报空指针，我应该先从哪里定位？",
+      "expected": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss07",
+      "family": "network_outage",
+      "split": "dev",
+      "current": "校园网显示已经连上，但手机和电脑都打不开网页。",
+      "expected": [
+        "sys.ai_computing.networking_connectivity"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss08",
+      "family": "mouse_purchase",
+      "split": "dev",
+      "current": "这款鼠标七百块值不值，和另一款比哪个更适合长期办公？",
+      "expected": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss09",
+      "family": "major_laptop_purchase",
+      "split": "dev",
+      "current": "现在花一万多换一台新电脑值得吗，还是再等半年？",
+      "expected": [
+        "sys.finance_purchases.major_purchases"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss10",
+      "family": "trip_itinerary",
+      "split": "dev",
+      "current": "去东京五天的话，几个区域怎么排顺序比较省时间？",
+      "expected": [
+        "sys.travel_places.trip_planning"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss11",
+      "family": "hotel_area",
+      "split": "dev",
+      "current": "住新宿还是上野更方便，晚上回来也安全一点？",
+      "expected": [
+        "sys.travel_places.lodging"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss12",
+      "family": "translation_request",
+      "split": "dev",
+      "current": "把这段申请材料翻成英文，保持正式但不要太生硬。",
+      "expected": [
+        "sys.communication_writing.translation"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss13",
+      "family": "edit_intro",
+      "split": "dev",
+      "current": "这段自我介绍太啰嗦了，帮我压到一分钟以内。",
+      "expected": [
+        "sys.communication_writing.writing_editing"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss14",
+      "family": "formal_report",
+      "split": "dev",
+      "current": "把这次调研的结论和证据整理成一份正式报告。",
+      "expected": [
+        "sys.communication_writing.documents_reports"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss15",
+      "family": "file_organization",
+      "split": "dev",
+      "current": "这些 PDF 和 Word 应该按项目还是按年份放文件夹？",
+      "expected": [
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss16",
+      "family": "deadline_reminder",
+      "split": "dev",
+      "current": "后天就是材料截止日，别让我忘了。",
+      "expected": [
+        "sys.time_events.reminders_deadlines"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss17",
+      "family": "calendar_conflict",
+      "split": "dev",
+      "current": "周三下午有两场会议撞在一起，帮我把时间重新排开。",
+      "expected": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss18",
+      "family": "medical_department",
+      "split": "dev",
+      "current": "这种症状去医院应该挂哪个科？",
+      "expected": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss19",
+      "family": "symptom_report",
+      "split": "dev",
+      "current": "右手食指这两天点鼠标的时候会酸痛。",
+      "expected": [
+        "sys.health_wellbeing.symptoms_conditions"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss20",
+      "family": "fitness_progression",
+      "split": "dev",
+      "current": "我想把每次跑步从三公里慢慢加到五公里，怎么加量稳一点？",
+      "expected": [
+        "sys.health_wellbeing.fitness"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss21",
+      "family": "nutrition_dinner",
+      "split": "dev",
+      "current": "减脂期晚饭怎么搭配更合适，又不至于晚上太饿？",
+      "expected": [
+        "sys.health_wellbeing.nutrition"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss22",
+      "family": "stats_tool_not_topic",
+      "split": "dev",
+      "title": "Python 数据处理",
+      "current": "用 Python 帮我算一下这组数据的均值、标准差和置信区间。",
+      "expected": [
+        "sys.science_technical.statistics_data_analysis"
+      ],
+      "forbidden": [
+        "sys.ai_computing.coding_software_development"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss23",
+      "family": "continuation_interview",
+      "split": "dev",
+      "title": "中芯国际面试",
+      "recent_user_inputs": [
+        "我刚结束一面，面试官最后问我还有什么想了解的。"
+      ],
+      "current": "继续",
+      "expected": [
+        "sys.career_work.interviews"
+      ],
+      "state": "ASSIGNED",
+      "evidence_expectation": "recent_anchor"
+    },
+    {
+      "id": "ss24",
+      "family": "continuation_translation",
+      "split": "dev",
+      "title": "申请材料",
+      "recent_user_inputs": [
+        "把上面这段中文改成英文，保持简洁。"
+      ],
+      "current": "做",
+      "expected": [
+        "sys.communication_writing.translation"
+      ],
+      "state": "ASSIGNED",
+      "evidence_expectation": "recent_anchor"
+    },
+    {
+      "id": "ss25",
+      "family": "title_fallback_sleep",
+      "split": "dev",
+      "title": "睡眠调整",
+      "recent_user_inputs": [],
+      "current": "继续",
+      "expected": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "state": "ASSIGNED",
+      "evidence_expectation": "title_only"
+    },
+    {
+      "id": "ss26",
+      "family": "topic_switch_network",
+      "split": "dev",
+      "title": "OPPO 校招投递",
+      "recent_user_inputs": [
+        "这个岗位今晚截止，我准备提交。"
+      ],
+      "current": "家里路由器突然断网，手机和电脑都连不上了。",
+      "expected": [
+        "sys.ai_computing.networking_connectivity"
+      ],
+      "forbidden": [
+        "sys.career_work.applications"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss27",
+      "family": "topic_switch_interview",
+      "split": "dev",
+      "title": "代码调试",
+      "recent_user_inputs": [
+        "刚才一直在修登录报错。"
+      ],
+      "current": "明天一面我应该准备哪些反问？",
+      "expected": [
+        "sys.career_work.interviews"
+      ],
+      "forbidden": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss28",
+      "family": "ambiguous_reference",
+      "split": "dev",
+      "title": "岗位选择",
+      "recent_user_inputs": [
+        "我在比较产品经理和项目管理两个方向，都各有优缺点。"
+      ],
+      "current": "那第二个呢？",
+      "expected": [],
+      "state": "DEFER"
+    },
+    {
+      "id": "ss29",
+      "family": "no_anchor_continue",
+      "split": "dev",
+      "title": "随便聊聊",
+      "recent_user_inputs": [
+        "继续"
+      ],
+      "current": "继续",
+      "expected": [],
+      "state": "DEFER"
+    },
+    {
+      "id": "ss30",
+      "family": "no_semantic_content",
+      "split": "dev",
+      "current": "好的。",
+      "expected": [],
+      "state": "UNASSIGNED"
+    },
+    {
+      "id": "ss31",
+      "family": "sleep_schedule_holdout",
+      "split": "test",
+      "title": "秋招规划",
+      "current": "最近总是凌晨三点才睡着，白天精神很差。",
+      "expected": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "forbidden": [
+        "sys.career_work.career_strategy"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss32",
+      "family": "job_search_holdout",
+      "split": "test",
+      "current": "我想先筛一批适合应届生的 AI 产品岗位，不急着提交。",
+      "expected": [
+        "sys.career_work.job_search"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss33",
+      "family": "application_holdout",
+      "split": "test",
+      "current": "这家公司我已经选好职位了，现在主要是把网申表填完并提交。",
+      "expected": [
+        "sys.career_work.applications"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss34",
+      "family": "debug_holdout",
+      "split": "test",
+      "current": "页面点击保存没有反应，控制台也没报错，怎么查是哪层卡住了？",
+      "expected": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss35",
+      "family": "shopping_holdout",
+      "split": "test",
+      "current": "同价位这两把键盘的手感和售后怎么选？",
+      "expected": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss36",
+      "family": "trip_holdout",
+      "split": "test",
+      "current": "第一次去大阪和京都，六天怎么分配天数比较顺？",
+      "expected": [
+        "sys.travel_places.trip_planning"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss37",
+      "family": "writing_holdout",
+      "split": "test",
+      "current": "这段项目介绍逻辑有点散，帮我重写得更紧凑。",
+      "expected": [
+        "sys.communication_writing.writing_editing"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss38",
+      "family": "storage_vs_report_holdout",
+      "split": "test",
+      "current": "报告内容不用改，我只是想把几个版本放到一个清晰的目录里。",
+      "expected": [
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "forbidden": [
+        "sys.communication_writing.documents_reports"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss39",
+      "family": "calendar_holdout",
+      "split": "test",
+      "current": "把周五上午的答辩和下午的面谈都安排进当天时间表。",
+      "expected": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss40",
+      "family": "multilabel_career",
+      "split": "test",
+      "current": "先帮我筛两个更适合的岗位，再准备明天面试的自我介绍。",
+      "expected": [
+        "sys.career_work.job_search",
+        "sys.career_work.interviews"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss41",
+      "family": "multilabel_travel",
+      "split": "test",
+      "current": "先把酒店定下来，再查机场到市区坐什么车。",
+      "expected": [
+        "sys.travel_places.lodging",
+        "sys.travel_places.transport_travel"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss42",
+      "family": "multilabel_language",
+      "split": "test",
+      "current": "把这份中文说明翻成英文，同时把英文措辞润色自然一点。",
+      "expected": [
+        "sys.communication_writing.translation",
+        "sys.communication_writing.writing_editing"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss43",
+      "family": "multilabel_archive",
+      "split": "test",
+      "current": "把这些照片先备份一份，然后按年份整理到相册里。",
+      "expected": [
+        "sys.knowledge_memory.backup_export",
+        "sys.knowledge_memory.photos_media_archive"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss44",
+      "family": "continuation_application_holdout",
+      "split": "test",
+      "title": "校招投递",
+      "recent_user_inputs": [
+        "这个职位已经选好了，现在只差填完网申信息。"
+      ],
+      "current": "这个呢？",
+      "expected": [
+        "sys.career_work.applications"
+      ],
+      "state": "ASSIGNED",
+      "evidence_expectation": "recent_anchor"
+    },
+    {
+      "id": "ss45",
+      "family": "topic_switch_sleep_holdout",
+      "split": "test",
+      "title": "代码开发",
+      "recent_user_inputs": [
+        "刚才还在处理接口报错。"
+      ],
+      "current": "先不看代码了，我昨晚又到三点才睡着。",
+      "expected": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "forbidden": [
+        "sys.ai_computing.coding_software_development",
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss46",
+      "family": "tool_phrase_ai_holdout",
+      "split": "test",
+      "title": "AI 工具",
+      "current": "用 AI 帮我把这封给 HR 的邮件改得礼貌一些。",
+      "expected": [
+        "sys.communication_writing.email_messages",
+        "sys.communication_writing.writing_editing"
+      ],
+      "forbidden": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss47",
+      "family": "misleading_title_holdout",
+      "split": "test",
+      "title": "面试准备",
+      "recent_user_inputs": [
+        "前面一直在聊面试。"
+      ],
+      "current": "我现在只想比较这两款显示器的价格、参数和售后。",
+      "expected": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "forbidden": [
+        "sys.career_work.interviews"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss48",
+      "family": "explicit_clear_context_holdout",
+      "split": "test",
+      "title": "求职",
+      "recent_user_inputs": [
+        "我在比较几个岗位。"
+      ],
+      "current": "换个话题，家里的 Wi-Fi 最近经常掉线。",
+      "expected": [
+        "sys.ai_computing.networking_connectivity"
+      ],
+      "forbidden": [
+        "sys.career_work.job_search"
+      ],
+      "state": "ASSIGNED"
+    },
+    {
+      "id": "ss49",
+      "family": "ambiguous_continue_holdout",
+      "split": "test",
+      "title": "计划讨论",
+      "recent_user_inputs": [
+        "我一边在安排旅行，一边在准备面试，两件事都还没定。"
+      ],
+      "current": "继续这个。",
+      "expected": [],
+      "state": "DEFER"
+    },
+    {
+      "id": "ss50",
+      "family": "empty_input_holdout",
+      "split": "test",
+      "title": "任何标题",
+      "recent_user_inputs": [
+        "之前讨论过很多事情。"
+      ],
+      "current": "",
+      "expected": [],
+      "state": "UNASSIGNED"
+    }
+  ]
+}
