@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D05_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.career_work.applications",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "投递与申请：职位投递、申请表、简历提交、网申、材料准备和申请状态。",
+        "en": "Applications: job applications, application forms, resume submission, materials and application status."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "投递职位",
+            "提交申请"
+          ],
+          "en": [
+            "apply for a job",
+            "submit application"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "申请表",
+            "简历"
+          ],
+          "en": [
+            "application form",
+            "resume"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "申请状态",
+            "材料准备完成"
+          ],
+          "en": [
+            "application status",
+            "prepared application materials"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "职业规划：职业方向、行业岗位选择、长期职业路径、转型和职业定位。",
+        "en": "Career Strategy: career direction, role and industry choice, long-term path, transitions and positioning."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "规划职业",
+            "选择岗位"
+          ],
+          "en": [
+            "plan career",
+            "choose role"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "职业方向",
+            "行业岗位"
+          ],
+          "en": [
+            "career direction",
+            "industry role"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "长期职业路径",
+            "职业定位"
+          ],
+          "en": [
+            "long-term career path",
+            "career positioning"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.compensation_benefits",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "薪酬福利：工资、奖金、薪酬结构、福利、五险一金、待遇和薪酬谈判。",
+        "en": "Compensation & Benefits: salary, bonuses, compensation structure, benefits and employment remuneration."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "谈判薪酬",
+            "比较待遇"
+          ],
+          "en": [
+            "negotiate compensation",
+            "compare benefits"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "工资",
+            "福利"
+          ],
+          "en": [
+            "salary",
+            "benefits"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "薪酬结构",
+            "就业待遇"
+          ],
+          "en": [
+            "compensation structure",
+            "employment remuneration"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.interviews",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "面试：面试流程、面试问题、面试准备、面试表现和面试反馈。",
+        "en": "Interviews: interview process, interview questions, preparation, performance and feedback."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "准备面试",
+            "练习回答"
+          ],
+          "en": [
+            "prepare for interview",
+            "practice answers"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "面试问题",
+            "面试流程"
+          ],
+          "en": [
+            "interview question",
+            "interview process"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "面试表现",
+            "面试反馈"
+          ],
+          "en": [
+            "interview performance",
+            "interview feedback"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.job_search",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "求职：寻找职位、筛选机会、求职渠道、招聘市场和职位发现。",
+        "en": "Job Search: finding roles, job opportunities, recruiting channels and job-market discovery."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "寻找职位",
+            "筛选机会"
+          ],
+          "en": [
+            "find roles",
+            "filter job opportunities"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "职位",
+            "招聘渠道"
+          ],
+          "en": [
+            "job role",
+            "recruiting channel"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "职位发现",
+            "求职机会"
+          ],
+          "en": [
+            "job discovery",
+            "job opportunity"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.networking_professional",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "职业人脉：职业人脉、行业联系人、内推、导师、社交拓展和职业关系维护。",
+        "en": "Professional Networking: professional networking, referrals, mentors, industry contacts and relationship building."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "拓展人脉",
+            "请求内推"
+          ],
+          "en": [
+            "build professional network",
+            "seek referral"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "行业联系人",
+            "导师"
+          ],
+          "en": [
+            "industry contact",
+            "mentor"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "职业关系维护",
+            "内推机会"
+          ],
+          "en": [
+            "professional relationship",
+            "referral opportunity"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.performance_growth",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "工作绩效与成长：工作绩效、晋升、能力成长、反馈、目标考核和职业发展。",
+        "en": "Performance & Growth: performance, promotion, professional growth, feedback, objectives and advancement."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "提升绩效",
+            "寻求反馈"
+          ],
+          "en": [
+            "improve performance",
+            "seek feedback"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "工作目标",
+            "职业能力"
+          ],
+          "en": [
+            "work objective",
+            "professional skill"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "晋升",
+            "职业成长"
+          ],
+          "en": [
+            "promotion",
+            "professional growth"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.career_work.workplace_daily",
+      "domain_id": "D05",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "工作日常：日常工作环境、同事、组织协作、职场关系、工作制度和职场问题。",
+        "en": "Workplace: day-to-day workplace environment, colleagues, organizational collaboration and workplace issues."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "协作",
+            "处理职场问题"
+          ],
+          "en": [
+            "collaborate",
+            "address workplace issue"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "同事",
+            "工作环境"
+          ],
+          "en": [
+            "colleague",
+            "workplace environment"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "组织协作",
+            "职场关系"
+          ],
+          "en": [
+            "organizational collaboration",
+            "workplace relationship"
+          ]
+        }
+      }
+    }
+  ]
+}

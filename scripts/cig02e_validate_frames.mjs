@@ -2,38 +2,46 @@ import fs from "node:fs";
 import assert from "node:assert/strict";
 
 const frameDir = "semantic_frames/cig02e_v1";
-const profilePath = "semantic_profiles/v0.1/system_topics_shard_01.json";
 const catalog = fs.readFileSync("catalog/system_topic_catalog_v0.2.yaml", "utf8");
 const catalogIds = new Set([...catalog.matchAll(/^  - topic_id: ([^\s]+)$/gm)].map(match => match[1]));
 assert.equal(catalogIds.size, 144, "formal Catalog ID set changed");
-const source = JSON.parse(fs.readFileSync(profilePath, "utf8"));
-assert.equal(source.profiles.length, 24, "public source shard changed");
-const byId = new Map(source.profiles.map(profile => [profile.topic_id, profile]));
-assert.equal(byId.size, 24, "duplicate public source Topic");
+const sourcePaths = [
+  "semantic_profiles/v0.1/system_topics_shard_01.json",
+  "semantic_profiles/v0.1/system_topics_shard_02.json"
+];
+const sources = new Map(sourcePaths.map(path => [path,
+  JSON.parse(fs.readFileSync(path, "utf8")).profiles]));
+for (const [path, profiles] of sources) assert.equal(profiles.length, 24, "public source shard changed: " + path);
+const profiles = sourcePaths.flatMap(path => sources.get(path));
+const byId = new Map(profiles.map(profile => [profile.topic_id, profile]));
+assert.equal(byId.size, 48, "duplicate public source Topic");
 const expectedFiles = new Map([
-  ["personal_direction_d01.json", "D01"],
-  ["family_relationships_d02.json", "D02"],
-  ["health_wellbeing_d03.json", "D03"]
+  ["personal_direction_d01.json", ["D01", sourcePaths[0]]],
+  ["family_relationships_d02.json", ["D02", sourcePaths[0]]],
+  ["health_wellbeing_d03.json", ["D03", sourcePaths[0]]],
+  ["education_learning_d04.json", ["D04", sourcePaths[1]]],
+  ["career_work_d05.json", ["D05", sourcePaths[1]]],
+  ["projects_products_d06.json", ["D06", sourcePaths[1]]]
 ]);
 const files = fs.readdirSync(frameDir).filter(name => name.endsWith(".json")).sort();
 assert.deepEqual(files, [...expectedFiles.keys()].sort(), "unexpected authored source files");
 const seen = new Set();
 for (const file of files) {
-  const domain = expectedFiles.get(file);
+  const [domain, profilePath] = expectedFiles.get(file);
   const authored = JSON.parse(fs.readFileSync(frameDir + "/" + file, "utf8"));
   assert.equal(authored.format, "cig02e-predicate-frames-v1");
   assert.equal(authored.status, "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE");
   assert.equal(authored.authoring_scope, "PUBLIC_PROFILE_" + domain + "_ONLY");
   assert.equal(authored.frame_count, 8);
   assert.equal(authored.frames.length, 8);
-  const domainProfiles = source.profiles.filter(profile => profile.domain.id === domain);
+  const domainProfiles = sources.get(profilePath).filter(profile => profile.domain.id === domain);
   assert.equal(domainProfiles.length, 8, "public source domain changed");
   for (const frame of authored.frames) {
     assert.ok(catalogIds.has(frame.topic_id), "non-Catalog Topic");
     assert.ok(!seen.has(frame.topic_id), "duplicate frame");
     seen.add(frame.topic_id);
     const profile = byId.get(frame.topic_id);
-    assert.ok(profile, "frame outside public source shard");
+    assert.ok(profile, "frame outside public source shards");
     assert.equal(profile.domain.id, domain);
     assert.equal(frame.domain_id, domain);
     assert.equal(frame.source_profile_path, profilePath);
@@ -58,7 +66,7 @@ for (const file of files) {
   assert.equal(authored.frames.filter(frame => frame.domain_id === domain).length,
     domainProfiles.length, "domain source authoring incomplete");
 }
-assert.equal(seen.size, byId.size, "public source shard authoring incomplete");
+assert.equal(seen.size, 48, "authored public source Topic count changed");
 console.log(JSON.stringify({
   classification: "SOURCE_AUTHORING_ONLY_NOT_CAPABILITY",
   authored_topics: seen.size, catalog_topics: catalogIds.size,
