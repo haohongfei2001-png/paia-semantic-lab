@@ -1,0 +1,54 @@
+name: CIG-02D fresh public train DEV
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02d-fresh-dev.yml"
+      - "runtime/compositional_intent_graph_v1/graded_grounder.mjs"
+      - "scripts/cig02d_fresh_dev.mjs"
+      - "fixtures/cig_v1/public_dev_cig02d_defer.json"
+      - "docs/compositional-intent-graph-v1/CIG-02D_*"
+      - "artifacts/compositional-intent-graph-v1/CIG-02D_*"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02d-fresh-dev.yml"
+      - "runtime/compositional_intent_graph_v1/graded_grounder.mjs"
+      - "scripts/cig02d_fresh_dev.mjs"
+      - "fixtures/cig_v1/public_dev_cig02d_defer.json"
+      - "docs/compositional-intent-graph-v1/CIG-02D_*"
+      - "artifacts/compositional-intent-graph-v1/CIG-02D_*"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+permissions:
+  contents: read
+jobs:
+  fresh-public-train-dev:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: lab
+      - uses: actions/checkout@v4
+        with:
+          repository: clinc/oos-eval
+          ref: 828f8093932c8fe6ca7936c3d2e52903b1c523de
+          path: lab/external-clinc
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify global candidate syntax
+        working-directory: lab
+        run: |
+          node --check runtime/compositional_intent_graph_v1/graded_grounder.mjs
+          node --check scripts/cig02d_fresh_dev.mjs
+      - name: Compile provenance-bound public index
+        working-directory: lab
+        run: |
+          node scripts/cig02b_compile.mjs .cig02b-index.json
+          node scripts/cig02c_compile.mjs .cig02b-index.json .cig02c-index.json
+      - name: Score disjoint public train DEV and new DEFER controls
+        working-directory: lab
+        run: node scripts/cig02d_fresh_dev.mjs external-clinc/data/data_full.json .cig02c-index.json

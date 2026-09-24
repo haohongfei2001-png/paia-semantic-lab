@@ -1,0 +1,31 @@
+{
+  "format": "cig02d-public-dev-preopen-freeze-v1",
+  "source_repository": "clinc/oos-eval",
+  "source_commit": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+  "source_split": "train",
+  "source_license": "CC-BY-3.0",
+  "selection": "SHA-256 ranks 10-19 for each of the 11 unchanged CIG-02C mapped intent labels; previous ranks 0-9 checked for disjointness only.",
+  "positive_count": 110,
+  "synthetic_defer_count": 22,
+  "candidates": [
+    "CIG02C_BALANCED_FROZEN",
+    "CIG02D_BALANCED_GLOBAL_TYPED_OVERLAP"
+  ],
+  "runtime_git_blob_sha": "af3f5a7d6acb6de2047fce67fa5bc5642f559c0e",
+  "scorer_git_blob_sha": "6d02c43797133582f52b8e812838b8e9b3665008",
+  "defer_fixture_git_blob_sha": "41dcd0cc86ffa03236b40b507fbfaa481dee5298",
+  "workflow_git_blob_sha": "2cd015997e79a88f46e016e1708b3a57655a6eb9",
+  "metrics": [
+    "assigned_precision",
+    "auto_assignment_coverage",
+    "represented_topic_macro_recall",
+    "defer_false_assignment",
+    "context_harm",
+    "per_label"
+  ],
+  "source_scope": "PUBLIC_CATALOG_AND_PUBLIC_PROFILES_ONLY_FOR_INDEX",
+  "interpretation_scope": "FRESH_PUBLIC_TRAIN_DEV_11_TOPICS_PLUS_SAME_WRITER_DEFER_NOT_CAPABILITY_TEST",
+  "capability_floor_unchanged": true,
+  "cig02_frozen": false,
+  "cig03_not_started": true
+}

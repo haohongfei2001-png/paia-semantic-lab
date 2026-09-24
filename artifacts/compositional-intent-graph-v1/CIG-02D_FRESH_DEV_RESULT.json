@@ -1,0 +1,166 @@
+{
+  "format": "cig02d-fresh-clinc-train-public-dev-v1",
+  "upstream": "clinc/oos-eval",
+  "upstream_commit": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+  "upstream_license": "CC-BY-3.0",
+  "upstream_split_used": "train",
+  "selection": "sha256-ranks-10-through-19-per-label",
+  "case_counts": {
+    "crowd_train_positive": 110,
+    "same_writer_defer": 22
+  },
+  "represented_topics": 11,
+  "source_sha256": {
+    "upstream_data_full": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "selected_train_rows": "9c45f93b5333d89d10b36b1e723fdec1a452e68730c9c5ffd41bda8a78e17f42",
+    "index": "4378bb3274d3ee49f2ce289d7fddb18689e8a9e80e78d7cd5873b7ee02fca316",
+    "defer_controls": "bbf747e35fdbb6ac0ae6c80aa106542c1b587542fee854356047c4390230d5a7"
+  },
+  "baseline_cig02c_balanced": {
+    "assigned_precision": 1,
+    "auto_assignment_coverage": 0.00909090909090909,
+    "represented_topic_macro_recall": 0.009090909090909092,
+    "correct": 1,
+    "assigned": 1,
+    "defer_false_assignment": 0,
+    "defer_case_count": 22,
+    "context_harm": 0,
+    "per_label": {
+      "book_flight": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "book_hotel": {
+        "count": 10,
+        "assigned": 1,
+        "correct": 1
+      },
+      "calendar_update": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "calories": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "international_visa": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "play_music": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "reminder": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "tire_pressure": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "todo_list": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "transfer": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "translate": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      }
+    }
+  },
+  "candidate_cig02d_balanced": {
+    "assigned_precision": 0.9411764705882353,
+    "auto_assignment_coverage": 0.15454545454545454,
+    "represented_topic_macro_recall": 0.14545454545454548,
+    "correct": 16,
+    "assigned": 17,
+    "defer_false_assignment": 1,
+    "defer_case_count": 22,
+    "context_harm": 0,
+    "per_label": {
+      "book_flight": {
+        "count": 10,
+        "assigned": 1,
+        "correct": 1
+      },
+      "book_hotel": {
+        "count": 10,
+        "assigned": 3,
+        "correct": 3
+      },
+      "calendar_update": {
+        "count": 10,
+        "assigned": 3,
+        "correct": 3
+      },
+      "calories": {
+        "count": 10,
+        "assigned": 1,
+        "correct": 1
+      },
+      "international_visa": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "play_music": {
+        "count": 10,
+        "assigned": 5,
+        "correct": 4
+      },
+      "reminder": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "tire_pressure": {
+        "count": 10,
+        "assigned": 3,
+        "correct": 3
+      },
+      "todo_list": {
+        "count": 10,
+        "assigned": 1,
+        "correct": 1
+      },
+      "transfer": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      },
+      "translate": {
+        "count": 10,
+        "assigned": 0,
+        "correct": 0
+      }
+    }
+  },
+  "interpretation_scope": "FRESH_SOURCE_SEPARATED_PUBLIC_TRAIN_DEV_PLUS_SAME_WRITER_DEFER_NOT_CAPABILITY_TEST",
+  "prior_clinc_rank_0_9_used_only_for_disjointness_check": true,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig03_test_invocations": 0,
+  "github_actions": {
+    "run_id": 36031966375,
+    "job_id": 107742658232,
+    "head_sha": "e651bc8876eb5605cf66a33f63dd7ae98ea5dd2a",
+    "conclusion": "success"
+  }
+}
