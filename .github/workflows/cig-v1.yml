@@ -11,6 +11,7 @@ on:
       - "scripts/cig02b_*.mjs"
       - "scripts/cig02_catalog_eligibility.mjs"
       - "scripts/cig02c_compile.mjs"
+      - "scripts/cig02e_*.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
   push:
     branches: [main]
@@ -23,6 +24,7 @@ on:
       - "scripts/cig02b_*.mjs"
       - "scripts/cig02_catalog_eligibility.mjs"
       - "scripts/cig02c_compile.mjs"
+      - "scripts/cig02e_*.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
 permissions:
   contents: read
@@ -43,6 +45,10 @@ jobs:
           node --check scripts/cig02c_compile.mjs
           node --check runtime/compositional_intent_graph_v1/catalog_name_grounder.mjs
           node --check runtime/compositional_intent_graph_v1/typed_grounder.mjs
+      - name: Audit 144 public Catalog/Profile sources without DEV reads
+        run: |
+          node --check scripts/cig02e_public_source_audit.mjs
+          node scripts/cig02e_public_source_audit.mjs
       - name: Compile all public Topics twice and verify deterministic bytes
         run: |
           node scripts/cig02b_compile.mjs .cig02b-index.json
