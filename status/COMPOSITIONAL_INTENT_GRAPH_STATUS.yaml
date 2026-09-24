@@ -65,9 +65,10 @@ rounds:
     cig02e_frame_authoring_d01: semantic_frames/cig02e_v1/personal_direction_d01.json
     cig02e_frame_authoring_d02: semantic_frames/cig02e_v1/family_relationships_d02.json
     cig02e_frame_authoring_d03: semantic_frames/cig02e_v1/health_wellbeing_d03.json
+    cig02e_frame_authoring_d04: semantic_frames/cig02e_v1/education_learning_d04.json
     cig02e_frame_authoring_report: docs/compositional-intent-graph-v1/CIG-02E_FRAME_AUTHORING.md
     cig02e_d02_frame_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_D02_FRAMES_MERGED_MAIN_RECEIPT.json
-    cig02e_authored_topic_count: 24
+    cig02e_authored_topic_count: 32
     cig02e_candidate_status: PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE
     next_substage: CIG-02E_REMAINING_PUBLIC_SOURCE_AUTHORING
   CIG-03:
@@ -78,4 +79,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Author the remaining 120 provenance-bound public-source Topic frames, then build a compact global-rule candidate and register new source-separated full-Catalog public DEV before any CIG-02 freeze. CIG-03 remains blocked."
+next_action: "Author the remaining 112 provenance-bound public-source Topic frames, then build a compact global-rule candidate and register new source-separated full-Catalog public DEV before any CIG-02 freeze. CIG-03 remains blocked."
