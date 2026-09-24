@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_00_01_EXECUTION
+phase: CIG_02_READY
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -23,14 +23,18 @@ production_paia_modified: false
 rounds:
   CIG-00:
     title: Bounded failure attribution and architecture registration
-    execution_status: IN_PROGRESS
+    execution_status: COMPLETE
+    verdict: PASS_ANALYSIS_ONLY
   CIG-01:
     title: Fresh public synthetic identifiability probe
-    execution_status: READY
+    execution_status: COMPLETE
+    verdict: ROLE_MECHANISM_SUPPORTED_DIAGNOSTIC_ONLY
+    result: artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json
+    evaluation_invocations: 1
   CIG-02:
     title: New public natural-expression development
-    execution_status: BLOCKED
-    blocked_on: CIG-01 interpretation
+    execution_status: READY
+    prerequisite: CIG-01 diagnostic interpreted
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -39,4 +43,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Freeze and run CIG-01 once on new public synthetic evidence; preserve all closed LSR/CSL results."
+next_action: "Begin CIG-02 with new public natural-expression DEV; never tune on consumed CIG-01 or LSR/CSL TESTs."
