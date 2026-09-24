@@ -1,0 +1,46 @@
+package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
+package_version: 1.0.0
+package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
+phase: CIG_02_READY
+baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
+parent_evidence:
+  lsr_01: COMPLETE_FAIL
+  csl_03: COMPLETE_FAIL
+  csl_04: COMPLETE_FAIL
+production_direction: ZERO_MODEL_LOCAL_FIRST_TINY_COMPOSITIONAL
+production_neural_model_assets_bytes_max: 0
+production_semantic_network_dependency: false
+production_generated_index_bytes_max: 1048576
+production_router_plus_index_bytes_max: 2097152
+production_incremental_memory_bytes_max: 33554432
+production_warm_p95_ms_max: 20
+production_cold_init_ms_max: 100
+private_artifact_reads: 0
+legacy_evaluation_reads: 0
+consumed_lockbox_reads: 0
+real_paia_archive_reads: 0
+production_paia_modified: false
+rounds:
+  CIG-00:
+    title: Bounded failure attribution and architecture registration
+    execution_status: COMPLETE
+    verdict: PASS_ANALYSIS_ONLY
+  CIG-01:
+    title: Fresh public synthetic identifiability probe
+    execution_status: COMPLETE
+    verdict: ROLE_MECHANISM_SUPPORTED_DIAGNOSTIC_ONLY
+    result: artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json
+    evaluation_invocations: 1
+  CIG-02:
+    title: New public natural-expression development
+    execution_status: READY
+    prerequisite: CIG-01 diagnostic interpreted
+  CIG-03:
+    title: Fresh independent public capability test
+    execution_status: BLOCKED
+    blocked_on: CIG-02 freeze
+  CIG-04:
+    title: Consumer footprint and browser certification
+    execution_status: BLOCKED
+    blocked_on: CIG-03 PASS
+next_action: "Begin CIG-02 with new public natural-expression DEV; never tune on consumed CIG-01 or LSR/CSL TESTs."

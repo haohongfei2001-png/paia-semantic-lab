@@ -1,0 +1,33 @@
+{
+  "format": "cig01-public-synthetic-result-v1",
+  "verdict": "ROLE_MECHANISM_SUPPORTED_DIAGNOSTIC_ONLY",
+  "freeze_sha256": "ac311ccd3979174dfc60f318ed0dc5e304e1b1fcb37b0470956224f762aff025",
+  "fixture_sha256": "c4aa6d87775531f73bfe8b56f24b213940bdfa0f39e9f247476a3df7aee90bbf",
+  "evaluation_invocations": 1,
+  "metrics": {
+    "pair_count": 48,
+    "pair_groups": 24,
+    "identical_bag_opposite_gold_groups": 24,
+    "bag_only_accuracy_ceiling": 0.5,
+    "pair_goal_span_accuracy": 1,
+    "heldout_goal_span_accuracy": 0.9166666666666666,
+    "ambiguous_false_goal_rate": 0,
+    "oracle_role_topic_accuracy": 1,
+    "formal_name_grounding_coverage": 0.2,
+    "formal_name_grounding_precision": 1,
+    "deterministic_repeat": true,
+    "parser_bytes": 1260
+  },
+  "failure_ids": {
+    "pair": [],
+    "heldout": [
+      "h04"
+    ]
+  },
+  "evidence_scope": "NEW_PUBLIC_SYNTHETIC_DIAGNOSTIC_ONLY",
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "production_paia_modified": false
+}
