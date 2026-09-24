@@ -1,0 +1,7 @@
+# CIG-02E public source inventory
+
+This audit reads only the public 144-Topic formal Catalog and six public semantic-profile shards. It does not read any DEV utterance, prior blind TEST, private/legacy/lockbox item, or PAIA archive. The CI script verifies the recorded inventory from those sources.
+
+At main `a0714b85562d773425c2107a3904d4679472f74d`, all 144 formal Topic IDs have one profile with Chinese and English names and semantic-core text. The profiles contain 1,612 distinct language-qualified lexical anchor strings. Twenty-eight strings occur in more than one Topic; the complete anchor-to-Topic list is in [the source-only artifact](../../artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_SOURCE_AUDIT.json). Examples include English `interview` across career interviews and user research, and Chinese `优先级` across life goals, roadmaps and time management. A shared anchor is legitimate context-dependent evidence, not a source defect.
+
+This is an **inventory check**, not a routing score. It establishes the source boundary and exposes why a unique-token shortcut cannot resolve every Topic. It does not measure natural-expression coverage, prove that missing paraphrases caused a specific DEV error, or qualify CIG-02. Existing CIG-02B/C/D DEV verdicts remain unqualified. CIG-02E predicate frames, if authored, must come from public Catalog/Profile semantics with explicit action/object/outcome roles and provenance, not from scored utterances. A new source-separated 144-Topic public DEV remains required before freeze; CIG-03 stays blocked.

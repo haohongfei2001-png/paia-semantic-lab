@@ -1,0 +1,225 @@
+{
+  "format": "cig02e-public-profile-source-audit-v1",
+  "input_main_sha": "a0714b85562d773425c2107a3904d4679472f74d",
+  "source_classes": [
+    "FORMAL_CATALOG",
+    "GENERAL_SEMANTIC_REASONING"
+  ],
+  "source_paths": [
+    "catalog/system_topic_catalog_v0.2.yaml",
+    "semantic_profiles/v0.1/manifest.json",
+    "semantic_profiles/v0.1/system_topics_shard_01.json",
+    "semantic_profiles/v0.1/system_topics_shard_02.json",
+    "semantic_profiles/v0.1/system_topics_shard_03.json",
+    "semantic_profiles/v0.1/system_topics_shard_04.json",
+    "semantic_profiles/v0.1/system_topics_shard_05.json",
+    "semantic_profiles/v0.1/system_topics_shard_06.json"
+  ],
+  "topic_count": 144,
+  "unique_topic_ids": 144,
+  "profiles_missing_names_or_core": [],
+  "distinct_language_qualified_anchors": 1612,
+  "shared_anchor_count": 28,
+  "shared_anchors": [
+    {
+      "anchor": "en:marriage",
+      "topics": [
+        "sys.family_relationships.partner_relationship",
+        "sys.time_events.life_events"
+      ]
+    },
+    {
+      "anchor": "en:milestone",
+      "topics": [
+        "sys.personal_direction.life_goals",
+        "sys.projects_products.project_planning"
+      ]
+    },
+    {
+      "anchor": "zh:优先级",
+      "topics": [
+        "sys.personal_direction.life_goals",
+        "sys.projects_products.roadmap_prioritization",
+        "sys.time_events.time_management"
+      ]
+    },
+    {
+      "anchor": "zh:里程碑",
+      "topics": [
+        "sys.personal_direction.life_goals",
+        "sys.projects_products.project_planning"
+      ]
+    },
+    {
+      "anchor": "en:tradeoff",
+      "topics": [
+        "sys.personal_direction.major_decisions",
+        "sys.projects_products.roadmap_prioritization"
+      ]
+    },
+    {
+      "anchor": "zh:证明",
+      "topics": [
+        "sys.personal_direction.personal_admin",
+        "sys.science_technical.mathematics"
+      ]
+    },
+    {
+      "anchor": "en:procrastination",
+      "topics": [
+        "sys.personal_direction.personal_productivity",
+        "sys.time_events.time_management"
+      ]
+    },
+    {
+      "anchor": "en:workflow",
+      "topics": [
+        "sys.personal_direction.personal_productivity",
+        "sys.business_entrepreneurship.operations_process"
+      ]
+    },
+    {
+      "anchor": "zh:拖延",
+      "topics": [
+        "sys.personal_direction.personal_productivity",
+        "sys.time_events.time_management"
+      ]
+    },
+    {
+      "anchor": "en:positioning",
+      "topics": [
+        "sys.career_work.career_strategy",
+        "sys.projects_products.product_strategy"
+      ]
+    },
+    {
+      "anchor": "en:interview",
+      "topics": [
+        "sys.career_work.interviews",
+        "sys.projects_products.ux_user_research"
+      ]
+    },
+    {
+      "anchor": "en:performance",
+      "topics": [
+        "sys.career_work.performance_growth",
+        "sys.media_culture.live_events"
+      ]
+    },
+    {
+      "anchor": "en:review",
+      "topics": [
+        "sys.career_work.performance_growth",
+        "sys.finance_purchases.shopping_research"
+      ]
+    },
+    {
+      "anchor": "en:registration",
+      "topics": [
+        "sys.education_learning.academic_admin",
+        "sys.legal_civic.identity_documents"
+      ]
+    },
+    {
+      "anchor": "en:speaking",
+      "topics": [
+        "sys.education_learning.language_learning",
+        "sys.communication_writing.speaking_conversation"
+      ]
+    },
+    {
+      "anchor": "zh:口语",
+      "topics": [
+        "sys.education_learning.language_learning",
+        "sys.communication_writing.speaking_conversation"
+      ]
+    },
+    {
+      "anchor": "en:reading",
+      "topics": [
+        "sys.education_learning.reading_learning",
+        "sys.media_culture.books_literature"
+      ]
+    },
+    {
+      "anchor": "en:literature",
+      "topics": [
+        "sys.education_learning.thesis_research",
+        "sys.media_culture.books_literature"
+      ]
+    },
+    {
+      "anchor": "en:operations",
+      "topics": [
+        "sys.projects_products.launch_operations",
+        "sys.business_entrepreneurship.operations_process"
+      ]
+    },
+    {
+      "anchor": "zh:发布",
+      "topics": [
+        "sys.projects_products.launch_operations",
+        "sys.communication_writing.public_posts"
+      ]
+    },
+    {
+      "anchor": "en:regression",
+      "topics": [
+        "sys.projects_products.testing_quality",
+        "sys.science_technical.statistics_data_analysis"
+      ]
+    },
+    {
+      "anchor": "zh:整理",
+      "topics": [
+        "sys.home_daily.chores_cleaning",
+        "sys.home_daily.possessions_organization"
+      ]
+    },
+    {
+      "anchor": "en:copy",
+      "topics": [
+        "sys.communication_writing.writing_editing",
+        "sys.knowledge_memory.backup_export"
+      ]
+    },
+    {
+      "anchor": "zh:小说",
+      "topics": [
+        "sys.media_culture.books_literature",
+        "sys.creative_design.creative_writing"
+      ]
+    },
+    {
+      "anchor": "en:festival",
+      "topics": [
+        "sys.media_culture.live_events",
+        "sys.time_events.celebrations_holidays"
+      ]
+    },
+    {
+      "anchor": "en:ticket",
+      "topics": [
+        "sys.travel_places.attractions_activities",
+        "sys.business_entrepreneurship.customer_feedback"
+      ]
+    },
+    {
+      "anchor": "en:immigration",
+      "topics": [
+        "sys.travel_places.visas_border",
+        "sys.legal_civic.immigration_residency"
+      ]
+    },
+    {
+      "anchor": "en:time slot",
+      "topics": [
+        "sys.time_events.appointments_bookings",
+        "sys.time_events.calendar_scheduling"
+      ]
+    }
+  ],
+  "classification": "SOURCE_INVENTORY_ONLY_NOT_CAPABILITY",
+  "dev_rows_read": 0,
+  "capability_test_rows_read": 0
+}
