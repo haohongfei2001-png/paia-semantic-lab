@@ -1,0 +1,165 @@
+{
+  "package": "PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1",
+  "round": "LSR-01",
+  "stage": "PUBLIC_BASELINE_FAIL",
+  "capability_verdict": "FAIL",
+  "primary_candidate": "B",
+  "public_test_consumed": true,
+  "public_test_first_capability_run": {
+    "run_id": 35967311368,
+    "job_id": 107528713534,
+    "exact_head": "66d6fe309cac96e90afadec05c05b1795c148543",
+    "evidence_artifact_id": 10794424772,
+    "evidence_artifact_digest": "sha256:98d677fe61d95773bdba0fd75d713791a6c8824a0d4b9947e29fa4e28e1225e3",
+    "raw_benchmark_sha256": "50da32e12fb1cc2a0825d70bba22f82996d17f7e28d01c416979c07ba37e726a",
+    "raw_benchmark_bytes": 64012,
+    "infrastructure_before_capability": "PASS",
+    "benchmark_exit_code": 2,
+    "meaning": "pre-registered primary candidate B missed the frozen public credibility/resource gates"
+  },
+  "thresholds": {
+    "A": 1,
+    "B": 1,
+    "C": 1
+  },
+  "candidates": {
+    "A": {
+      "dev": {
+        "assigned_precision": 1,
+        "coverage": 0.07407407407407407,
+        "topic_macro_recall": 0.03787878787878787,
+        "insufficient_evidence_false_assignment_rate": 0,
+        "context_harm_events": 0
+      },
+      "test": {
+        "assigned_precision": 0.5,
+        "coverage": 0.05555555555555555,
+        "topic_macro_recall": 0.058823529411764705,
+        "insufficient_evidence_false_assignment_rate": 0.5,
+        "context_harm_events": 0
+      }
+    },
+    "B": {
+      "preregistered_primary": true,
+      "dev": {
+        "case_count": 30,
+        "assigned_precision": 1,
+        "coverage": 0.07407407407407407,
+        "topic_macro_recall": 0.03787878787878787,
+        "insufficient_evidence_false_assignment_rate": 0,
+        "context_harm_events": 0,
+        "predicted_assigned_count": 2,
+        "assignable_case_count": 27,
+        "insufficient_case_count": 3
+      },
+      "test": {
+        "case_count": 20,
+        "assigned_precision": 0.5,
+        "coverage": 0.05555555555555555,
+        "topic_macro_recall": 0.058823529411764705,
+        "insufficient_evidence_false_assignment_rate": 0.5,
+        "context_harm_events": 0,
+        "exact_set_case_rate": 0.05,
+        "state_accuracy": 0.1,
+        "predicted_assigned_count": 2,
+        "assignable_case_count": 18,
+        "insufficient_case_count": 2
+      }
+    },
+    "C": {
+      "dev": {
+        "assigned_precision": 1,
+        "coverage": 0.07407407407407407,
+        "topic_macro_recall": 0.03787878787878787,
+        "insufficient_evidence_false_assignment_rate": 0,
+        "context_harm_events": 0
+      },
+      "test": {
+        "assigned_precision": 0.5,
+        "coverage": 0.05555555555555555,
+        "topic_macro_recall": 0.058823529411764705,
+        "insufficient_evidence_false_assignment_rate": 0.5,
+        "context_harm_events": 0
+      }
+    }
+  },
+  "frozen_credibility_floor": {
+    "assigned_precision_min": 0.95,
+    "coverage_min": 0.6,
+    "topic_macro_recall_min": 0.6,
+    "insufficient_false_assignment_max": 0.02,
+    "context_harm_events_max": 0
+  },
+  "resources": {
+    "generated_index_bytes": 106675,
+    "router_core_bytes": 16411,
+    "router_plus_index_bytes": 123086,
+    "cold_init_ms": 29.807501999999992,
+    "warm_p95_ms": 20.495036999999684,
+    "incremental_heap_bytes": 2066976,
+    "index_gate_pass": true,
+    "total_size_gate_pass": true,
+    "cold_init_gate_pass": true,
+    "memory_gate_pass": true,
+    "warm_p95_gate_pass": false
+  },
+  "legacy_contrastive": {
+    "role": "REGRESSION_INTEGRITY_ONLY",
+    "selection_authority": false,
+    "case_count": 1296,
+    "hit_at_10": 1,
+    "hit_at_20": 1
+  },
+  "deterministic_repeat": true,
+  "observed_test_outcomes": {
+    "assigned_correct_or_partial_case_ids": [
+      "ss40"
+    ],
+    "assigned_false_case_ids": [
+      "ss49"
+    ],
+    "unassigned_correct_case_ids": [
+      "ss50"
+    ],
+    "remaining_cases_deferred": [
+      "ss31",
+      "ss32",
+      "ss33",
+      "ss34",
+      "ss35",
+      "ss36",
+      "ss37",
+      "ss38",
+      "ss39",
+      "ss41",
+      "ss42",
+      "ss43",
+      "ss44",
+      "ss45",
+      "ss46",
+      "ss47",
+      "ss48"
+    ]
+  },
+  "interpretation": {
+    "same_source_synthetic": "The legacy same-source synthetic suite remained 100% Hit@10/20 while source-separated capability collapsed; the legacy suite is therefore unsuitable as independent product-capability evidence.",
+    "capability": "The frozen zero-model sparse baseline is far too conservative/lexically brittle to provide credible production coverage under the registered evidence gate.",
+    "deployment": "The lightweight deployment footprint is feasible; capability, not package size, is the dominant failure. Warm p95 also narrowly missed the 20 ms target."
+  },
+  "guards": {
+    "neural_model_assets_bytes": 0,
+    "semantic_network_calls": 0,
+    "private_calibration_reads": 0,
+    "evaluation_reads": 0,
+    "consumed_lockbox_reads": 0,
+    "production_paia_writes": 0,
+    "domain_prior": false,
+    "sibling_expansion": false
+  },
+  "post_test_policy": {
+    "candidate_reselection": "DENY",
+    "tune_on_consumed_test": "DENY",
+    "automatic_lsr02": "DENY",
+    "future_work_requires_new_authorized_experiment": true
+  }
+}
