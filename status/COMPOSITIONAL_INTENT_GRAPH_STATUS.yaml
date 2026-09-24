@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02D_FRESH_DEV_UNQUALIFIED
+phase: CIG_02E_INFORMATION_BOUNDARY_DESIGN
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -55,7 +55,10 @@ rounds:
     cig02d_verdict: DEV_UNQUALIFIED
     cig02d_result: artifacts/compositional-intent-graph-v1/CIG-02D_FRESH_DEV_RESULT.json
     cig02d_report: docs/compositional-intent-graph-v1/CIG-02D_DEV_REPORT.md
-    next_substage: CIG-02E_ARCHITECTURE_REVIEW
+    cig02d_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02D_MERGED_MAIN_RECEIPT.json
+    cig02e_information_boundary: docs/compositional-intent-graph-v1/CIG-02E_INFORMATION_BOUNDARY.md
+    cig02e_candidate_status: DESIGN_ONLY_NO_DEV_OPENED
+    next_substage: CIG-02E_PUBLIC_SOURCE_AUTHORING
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -64,4 +67,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Review whether another zero-model, local-first, tiny CIG-02 candidate has a credible information source; use only new public DEV for any candidate. CIG-02 remains unfrozen and CIG-03 blocked."
+next_action: "Author provenance-bound predicate frames only from public Catalog/Profile sources, then register new source-separated full-Catalog public DEV before any CIG-02 freeze. CIG-03 remains blocked."
