@@ -20,7 +20,7 @@
     "translate"
   ],
   "mapping_source": "scripts/cig02c_clinc_train_dev.mjs",
-  "scorer_git_blob_sha": "c5a03baee3cd403004a110c02585555e5ce1bd49",
+  "scorer_git_blob_sha": "9eabd7908113fc909414ab2a34461ec4b5026fc3",
   "compiler_git_blob_sha": "83142f2eb6bcaf130e1cbe6586c6ed22dbcebe4d",
   "runtime_git_blob_sha": "ddfc443b620467541227707d569a7accc61e0e47",
   "candidates": [
@@ -36,5 +36,12 @@
   "interpretation_scope": "SOURCE_SEPARATED_ENGLISH_PUBLIC_TRAIN_DEV_SUBSET_NOT_144_TOPIC_CAPABILITY",
   "capability_floor_unchanged": true,
   "cig02_frozen": false,
-  "cig03_not_started": true
+  "cig03_not_started": true,
+  "pre_score_technical_failure": {
+    "run_id": 36030593812,
+    "job_id": 107738041988,
+    "cause": "Missing per-label accumulator assignment; no score/result emitted.",
+    "selection_mapping_changed": false,
+    "metric_definition_changed": false
+  }
 }
