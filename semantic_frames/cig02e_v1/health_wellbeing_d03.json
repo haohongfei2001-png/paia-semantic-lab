@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D03_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "运动与体能：运动训练、体能、力量、有氧、健身计划、动作和运动表现。",
+        "en": "Fitness: exercise, strength, cardio, training plans, technique and physical performance."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "运动",
+            "训练"
+          ],
+          "en": [
+            "exercise",
+            "train"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "体能",
+            "力量"
+          ],
+          "en": [
+            "fitness",
+            "strength"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "运动表现",
+            "体能改善"
+          ],
+          "en": [
+            "physical performance",
+            "fitness improvement"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "就医与医疗：就医、医生、医院、挂号、检查、诊断流程和医疗服务选择。",
+        "en": "Medical Care: seeking professional medical care, clinicians, clinics, diagnosis workflows and healthcare services."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "就医",
+            "挂号"
+          ],
+          "en": [
+            "seek medical care",
+            "book a clinic"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "医生",
+            "医疗服务"
+          ],
+          "en": [
+            "clinician",
+            "healthcare service"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "诊断流程",
+            "医疗服务选择"
+          ],
+          "en": [
+            "diagnosis workflow",
+            "care choice"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "药物与治疗：药物、用药方案、治疗方式、疗程、副作用、剂量和治疗依从性。",
+        "en": "Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "用药",
+            "接受治疗"
+          ],
+          "en": [
+            "take medication",
+            "follow treatment"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "药物",
+            "治疗方案"
+          ],
+          "en": [
+            "medication",
+            "treatment plan"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "治疗依从性",
+            "疗程管理"
+          ],
+          "en": [
+            "treatment adherence",
+            "therapy course"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "心理与情绪：情绪、压力、焦虑、抑郁、心理状态、自我调节和心理支持。",
+        "en": "Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "调节情绪",
+            "寻求心理支持"
+          ],
+          "en": [
+            "regulate emotions",
+            "seek psychological support"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "情绪",
+            "压力"
+          ],
+          "en": [
+            "mood",
+            "stress"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "情绪调节",
+            "心理支持"
+          ],
+          "en": [
+            "emotional regulation",
+            "psychological support"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "饮食营养：饮食结构、营养摄入、热量、宏量营养、餐食和饮食目标。",
+        "en": "Nutrition: diet, nutrient intake, calories, macronutrients, meals and nutrition goals."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "调整饮食",
+            "规划餐食"
+          ],
+          "en": [
+            "adjust diet",
+            "plan meals"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "营养摄入",
+            "餐食"
+          ],
+          "en": [
+            "nutrient intake",
+            "meal"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "饮食目标",
+            "营养摄入管理"
+          ],
+          "en": [
+            "nutrition goal",
+            "nutrient intake management"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+        "en": "Preventive Health: checkups, screening, vaccination, risk reduction, health monitoring and prevention."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "体检",
+            "筛查"
+          ],
+          "en": [
+            "get a checkup",
+            "screen"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "健康风险",
+            "疾病预防"
+          ],
+          "en": [
+            "health risk",
+            "disease prevention"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "风险预防",
+            "健康监测"
+          ],
+          "en": [
+            "risk reduction",
+            "health monitoring"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.sleep",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "睡眠：睡眠时长、入睡、醒来、作息、睡眠质量和睡眠习惯。",
+        "en": "Sleep: sleep duration, falling asleep, waking, sleep schedule, quality and sleep habits."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "调整作息",
+            "追踪睡眠"
+          ],
+          "en": [
+            "adjust sleep schedule",
+            "track sleep"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "睡眠时长",
+            "作息"
+          ],
+          "en": [
+            "sleep duration",
+            "sleep schedule"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "睡眠质量",
+            "睡眠习惯"
+          ],
+          "en": [
+            "sleep quality",
+            "sleep habit"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "domain_id": "D03",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "症状与健康状况：身体或心理症状、疾病状态、异常表现、可能病因和病情变化。",
+        "en": "Symptoms & Conditions: symptoms, conditions, abnormal signs, possible causes and changes in health status."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "描述症状",
+            "追踪变化"
+          ],
+          "en": [
+            "describe symptoms",
+            "track changes"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "症状",
+            "异常表现"
+          ],
+          "en": [
+            "symptom",
+            "abnormal sign"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "可能病因理解",
+            "健康状态变化"
+          ],
+          "en": [
+            "understanding possible causes",
+            "health status change"
+          ]
+        }
+      }
+    }
+  ]
+}
