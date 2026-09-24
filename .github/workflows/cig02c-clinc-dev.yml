@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/cig02c-clinc-dev.yml"
       - "scripts/cig02c_clinc_train_dev.mjs"
+      - "scripts/cig02c_clinc_aggregate_diagnostic.mjs"
       - "scripts/cig02c_compile.mjs"
       - "runtime/compositional_intent_graph_v1/**"
       - "docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md"
@@ -14,6 +15,7 @@ on:
     paths:
       - ".github/workflows/cig02c-clinc-dev.yml"
       - "scripts/cig02c_clinc_train_dev.mjs"
+      - "scripts/cig02c_clinc_aggregate_diagnostic.mjs"
       - "scripts/cig02c_compile.mjs"
       - "runtime/compositional_intent_graph_v1/**"
       - "docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md"
@@ -39,7 +41,9 @@ jobs:
           node-version: "22"
       - name: Validate frozen scorer syntax
         working-directory: lab
-        run: node --check scripts/cig02c_clinc_train_dev.mjs
+        run: |
+          node --check scripts/cig02c_clinc_train_dev.mjs
+          node --check scripts/cig02c_clinc_aggregate_diagnostic.mjs
       - name: Compile candidate indexes
         working-directory: lab
         run: |
@@ -48,3 +52,6 @@ jobs:
       - name: Score pinned CLINC train rows only
         working-directory: lab
         run: node scripts/cig02c_clinc_train_dev.mjs external-clinc/data/data_full.json .cig02b-index.json .cig02c-index.json
+      - name: Attribute DEV failure by aggregate evidence availability
+        working-directory: lab
+        run: node scripts/cig02c_clinc_aggregate_diagnostic.mjs external-clinc/data/data_full.json .cig02b-index.json
