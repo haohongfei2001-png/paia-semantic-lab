@@ -116,6 +116,7 @@ jobs:
           node --test tests-js/csl02_router.test.mjs
           python -m scripts.csl03_build_fixture --check
           python -m unittest tests.test_csl03_freeze -v
+          node --check scripts/csl03_score_once.mjs
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -154,3 +155,4 @@ jobs:
         run: |
           python -m scripts.csl03_build_fixture --check
           python -m unittest tests.test_csl03_freeze -v
+          node --check scripts/csl03_score_once.mjs
