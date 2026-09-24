@@ -7,9 +7,8 @@ on:
       - "docs/compositional-intent-graph-v1/**"
       - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
       - "runtime/compositional_intent_graph_v1/**"
-      - "fixtures/cig_v1/**"
-      - "scripts/cig01_score_once.mjs"
-      - "scripts/cig02_dev.mjs"
+      - "fixtures/cig_v1/public_dev_cig02b_v1.json"
+      - "scripts/cig02b_*.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
   push:
     branches: [main]
@@ -18,14 +17,13 @@ on:
       - "docs/compositional-intent-graph-v1/**"
       - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
       - "runtime/compositional_intent_graph_v1/**"
-      - "fixtures/cig_v1/**"
-      - "scripts/cig01_score_once.mjs"
-      - "scripts/cig02_dev.mjs"
+      - "fixtures/cig_v1/public_dev_cig02b_v1.json"
+      - "scripts/cig02b_*.mjs"
       - "artifacts/compositional-intent-graph-v1/**"
 permissions:
   contents: read
 jobs:
-  cig-public-validation:
+  cig02b-public-dev:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -33,27 +31,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Verify parser and one-shot scorer syntax
+      - name: Verify CIG-02B source syntax
         run: |
-          node --check runtime/compositional_intent_graph_v1/goal_parser.mjs
-          node --check scripts/cig01_score_once.mjs
-      - name: Emit pre-evidence input hashes
+          node --check scripts/cig02b_compile.mjs
+          node --check scripts/cig02b_dev.mjs
+          node --check runtime/compositional_intent_graph_v1/typed_grounder.mjs
+      - name: Compile all public Topics twice and verify deterministic bytes
         run: |
-          sha256sum runtime/compositional_intent_graph_v1/goal_parser.mjs
-          sha256sum fixtures/cig_v1/public_synthetic_probe.json
-          sha256sum artifacts/compiled-semantic-lexicon-v1/CSL-00_EVALUATOR_MANIFEST.json
-          sha256sum scripts/cig01_score_once.mjs
-      - name: Frozen diagnostic or stored-result verification
-        run: |
-          if [ -f artifacts/compositional-intent-graph-v1/CIG-01_PRE_EVIDENCE_FREEZE.json ]; then
-            if [ -f artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json ]; then
-              node scripts/cig01_score_once.mjs --verify-result
-            else
-              node scripts/cig01_score_once.mjs
-              node -e 'const fs=require("fs");console.log("CIG01_RESULT_JSON="+JSON.stringify(JSON.parse(fs.readFileSync("artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json","utf8"))))'
-            fi
-          fi
-      - name: Fresh CIG-02 public DEV comparison
-        run: |
-          node --check scripts/cig02_dev.mjs
-          node scripts/cig02_dev.mjs
+          node scripts/cig02b_compile.mjs .cig02b-index.json
+          node scripts/cig02b_compile.mjs .cig02b-index-repeat.json
+          cmp .cig02b-index.json .cig02b-index-repeat.json
+      - name: Score new public DEV only
+        run: node scripts/cig02b_dev.mjs .cig02b-index.json
