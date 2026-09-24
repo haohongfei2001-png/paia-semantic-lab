@@ -1,0 +1,110 @@
+version: "0.1.0"
+package_id: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
+round: LSR-01
+status: FROZEN_BEFORE_IMPLEMENTATION
+authorization:
+  execution_authorized: true
+  authorization_source: user_approved_pro_review_adoption_and_execution
+  private_calibration_reads: DENY
+  evaluation_reads: DENY
+  consumed_lockbox_reads: DENY
+  new_owner_labels: DENY
+  production_paia_write: DENY
+  neural_model_runtime: DENY
+  semantic_network_api: DENY
+
+production_core:
+  language: javascript
+  runtime: node_browser_compatible_es_modules
+  python_runtime_required_in_product: false
+  full_catalog_scoring: true
+  domain_prior: false
+  sibling_expansion: false
+  production_model_assets_bytes: 0
+
+evidence_contract:
+  principle: evidence_constrained_sparse_classifier
+  no_evidence_no_assignment: true
+  same_span_multi_match_deduplicated: true
+  context_cannot_create_ordinary_topic_eligibility: true
+  continuation_branch_separate: true
+  inherited_decision_cannot_chain: true
+  ambiguity_is_not_multilabel: true
+  negative_boundary_cannot_create_other_topic_evidence: true
+
+production_index:
+  include:
+    - topic_id
+    - catalog_profile_version
+    - lifecycle
+    - canonical_names
+    - canonical_aliases
+    - lexical_anchors_filtered
+    - semantic_core_filtered
+    - concrete_positive_intents_filtered
+    - executable_exclusion_cues_filtered
+    - contrastive_neighbor_ids_for_diagnostics
+  exclude:
+    - synthetic_utterance_patterns
+    - benchmark_text
+    - representative_examples
+    - internal_domain_positive_terms
+    - generator_metadata
+    - private_or_evaluation_derived_information
+
+candidates:
+  A:
+    name: conservative_lexical
+    mechanisms: [typed_exact_alias, typed_phrase, evidence_gate, continuation_gate]
+  B:
+    name: field_separated_binary_tfidf
+    preregistered_primary_hypothesis: true
+    mechanisms: [candidate_A, binary_tfidf, zh_char_2_3gram, latin_word_phrase]
+  C:
+    name: fixed_bm25_control
+    mechanisms: [candidate_A, fixed_bm25, zh_char_2_3gram, latin_word_phrase]
+    bm25: {k1: 1.2, b: 0.75}
+
+context_hypotheses:
+  recent_user_inputs_max: 3
+  recent_decay: [1.0, 0.5, 0.25]
+  title_relative_support_max: 0.5
+  ordinary_context_bonus_max: 0.2
+  provisional_competition_margin: 0.10
+  note: THESE_ARE_PREREGISTERED_BASELINE_HYPOTHESES_NOT_PROVEN_PRODUCT_CONSTANTS
+
+threshold_selection:
+  per_candidate_global_threshold_count: 1
+  development_source: source_separated_public_dev
+  objective_order:
+    - assignment_error_constraint
+    - maximize_coverage
+  freeze_before_public_test: true
+  per_topic_thresholds: DENY
+  per_language_thresholds: DENY
+  parameter_sweep: DENY
+
+benchmarks:
+  legacy_contrastive:
+    role: REGRESSION_INTEGRITY_ONLY
+    selection_authority: false
+  source_separated:
+    fixture: fixtures/lightweight_router_v1/source_separated_v0.1.json
+    dev_and_test_family_separated: true
+  behavioral_counterfactual:
+    required: true
+
+quality_floor_for_lsr01:
+  source_separated_assigned_precision_min: 0.95
+  source_separated_coverage_min: 0.60
+  source_separated_topic_macro_recall_min: 0.60
+  insufficient_evidence_false_assignment_max: 0.02
+  context_harm_events_max: 0
+  note: LSR01_CREDIBILITY_FLOOR_NOT_FINAL_PRODUCT_CERTIFICATION
+
+resource_gates:
+  generated_index_bytes_max: 1048576
+  router_plus_index_bytes_max: 2097152
+  incremental_memory_bytes_max: 33554432
+  warm_p95_ms_max: 20
+  cold_init_ms_max: 100

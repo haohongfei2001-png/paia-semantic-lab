@@ -16,6 +16,9 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Install lab
         run: python -m pip install -e .
       - name: Unit tests
@@ -86,7 +89,23 @@ jobs:
           python -m unittest tests.test_sca03_post_failure_architecture_diagnostics -v
       - name: LSR-v1 lightweight router package validation
         run: python -m unittest tests.test_lightweight_semantic_router_v1_plan -v
+      - name: LSR-01 evidence-constrained zero-model validation
+        env:
+          LSR01_INDEX: artifacts/ci/lsr01-topic-index.json
+        run: |
+          python -m scripts.lsr01_compile_index --output "$LSR01_INDEX"
+          python -m unittest tests.test_lsr01_execution_design -v
+          node --test tests-js/lsr01_router.test.mjs
+          if [ -f artifacts/lightweight-semantic-router-v1/LSR-01_PUBLIC_RESULT.json ]; then
+            python -m unittest tests.test_lsr01_closed_result -v
+          else
+            node --expose-gc scripts/lsr01_public_benchmark.mjs \
+              --index "$LSR01_INDEX" \
+              --fixtures fixtures/lightweight_router_v1/source_separated_v0.1.json \
+              --output artifacts/ci/lsr01-public-benchmark.json
+          fi
       - name: Upload evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: semantic-lab-evidence

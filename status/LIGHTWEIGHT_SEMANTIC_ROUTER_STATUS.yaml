@@ -1,8 +1,8 @@
 package_id: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
 package_version: 1.0.0
 package_status: ACTIVE
-phase: LSR_01_READY
-baseline_remote_main: 5099347a763c8c71e07a88a703f8200c91a43278
+phase: LSR_01_COMPLETE_FAIL
+baseline_remote_main: 5d77056ac92b75baf7d744e7038211e1469d31b0
 production_direction: ZERO_MODEL_LOCAL_FIRST
 production_neural_model_assets_bytes_max: 0
 production_semantic_network_dependency: false
@@ -27,55 +27,74 @@ rounds:
     execution_status: COMPLETE
     capability_verdict: PASS
     explicit_execution_authorized: true
-    authorization_source: user_open_recommended_lightweight_direction
-    baseline_audit: artifacts/lightweight-semantic-router-v1/LSR-00_BASELINE_AUDIT.json
-    closure_receipt: artifacts/lightweight-semantic-router-v1/LSR-00_CLOSURE.md
     registration_pr: 13
-    registration_pr_head_commit: ccf52aca29fd2c2aabe8ce4539618c18ddbaf723
-    registration_pr_head_validation_run_id: 35887673918
-    registration_pr_head_validation_job_id: 107271874344
-    registration_pr_head_evidence_artifact_id: 10764325698
     registration_pr_head_required_ci: PASS
-    merged_main_commit: 07acfa805df7a715d320b138a3262fe0c9326c2a
-    merged_main_validation_run_id: 35888173480
-    merged_main_validation_job_id: 107273591581
-    merged_main_evidence_artifact_id: 10763563043
     merged_main_required_ci: PASS
+  LSR-01:
+    title: Evidence-constrained zero-model full-catalog baseline
+    execution_status: COMPLETE
+    capability_verdict: FAIL
+    explicit_execution_authorized: true
+    authorization_source: user_approved_pro_review_adoption_and_execution
+    evidence_class: PUBLIC_SOURCE_SEPARATED_PLUS_REGRESSION
+    execution_design: configs/lsr01_execution_design_v0.1.yaml
+    pre_public_test_freeze: artifacts/lightweight-semantic-router-v1/LSR-01_PRE_PUBLIC_TEST_FREEZE.json
+    public_result: artifacts/lightweight-semantic-router-v1/LSR-01_PUBLIC_RESULT.json
+    public_report: artifacts/lightweight-semantic-router-v1/LSR-01_REPORT.md
+    primary_candidate: B
+    public_test_consumed: true
+    first_capability_run_id: 35967311368
+    first_capability_job_id: 107528713534
+    first_capability_head: 66d6fe309cac96e90afadec05c05b1795c148543
+    evidence_artifact_id: 10794424772
+    evidence_artifact_digest: sha256:98d677fe61d95773bdba0fd75d713791a6c8824a0d4b9947e29fa4e28e1225e3
+    primary_test_assigned_precision: 0.5
+    primary_test_coverage: 0.05555555555555555
+    primary_test_topic_macro_recall: 0.058823529411764705
+    primary_test_insufficient_false_assignment_rate: 0.5
+    primary_test_context_harm_events: 0
+    generated_index_bytes: 106675
+    router_plus_index_bytes: 123086
+    cold_init_ms: 29.807501999999992
+    warm_p95_ms: 20.495036999999684
+    incremental_heap_bytes: 2066976
+    legacy_contrastive_hit_at_10: 1.0
+    legacy_contrastive_hit_at_20: 1.0
     private_artifact_reads: 0
     evaluation_records_read: 0
     consumed_lockbox_reads: 0
-  LSR-01:
-    title: Zero-model full-catalog baseline
-    execution_status: READY
-    capability_verdict: UNTESTED
-    explicit_execution_authorized: false
-    evidence_class: PUBLIC_SYNTHETIC_ONLY
+    closure_ci: PASS
+    closure_validation_run_id: 35968313774
+    closure_validation_job_id: 107531877173
+    closure_validation_head: da111ac465e0b18f873adc2b84ab96f2e703e01a
+    closure_evidence_artifact_id: 10794943858
+    closure_evidence_artifact_digest: sha256:25c81a04b29bf191c3b61334561c78908c7f2c22310e40c99a6346cb6cb3862a
   LSR-02:
     title: Context and boundary robustness
     execution_status: BLOCKED
     capability_verdict: UNTESTED
-    blocked_on: LSR-01
+    blocked_on: LSR-01_FAIL
   LSR-03:
-    title: Browser-ready runtime parity
+    title: Browser-ready runtime parity and packaging hardening
     execution_status: BLOCKED
     capability_verdict: UNTESTED
-    blocked_on: LSR-02
+    blocked_on: LSR-01_FAIL
   LSR-04:
     title: Frozen private calibration validation
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     explicit_execution_authorized: false
-    blocked_on: LSR-03
+    blocked_on: LSR-01_FAIL
   LSR-05:
     title: Legacy evaluation
     execution_status: BLOCKED
     capability_verdict: UNTESTED
     explicit_execution_authorized: false
-    blocked_on: LSR-04
+    blocked_on: LSR-01_FAIL
   LSR-06:
     title: PAIA handoff contract
     execution_status: BLOCKED
     capability_verdict: UNTESTED
-    blocked_on: LSR-05
-next_action: "LSR-01 is READY but NOT_STARTED. Await explicit execution authorization. Implement only the PUBLIC/SYNTHETIC zero-model full-catalog baseline; do not read private/evaluation/lockbox data or modify PAIA production."
+    blocked_on: LSR-01_FAIL
+next_action: "STOP. LSR-01 is COMPLETE/FAIL. Do not tune on the consumed public TEST or start LSR-02. A future lightweight architecture experiment requires a new explicit owner authorization and fresh independent public evidence."
 product_owner_blockers: []

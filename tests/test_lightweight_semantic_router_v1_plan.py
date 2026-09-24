@@ -71,10 +71,17 @@ class LightweightSemanticRouterV1PlanTests(unittest.TestCase):
     def test_round_sequence_starts_at_public_lsr01(self):
         self.assertEqual("COMPLETE", self.status["rounds"]["LSR-00"]["execution_status"])
         self.assertEqual("PASS", self.status["rounds"]["LSR-00"]["capability_verdict"])
-        self.assertEqual("READY", self.status["rounds"]["LSR-01"]["execution_status"])
-        self.assertFalse(
-            self.status["rounds"]["LSR-01"]["explicit_execution_authorized"]
+
+        lsr01 = self.status["rounds"]["LSR-01"]
+        self.assertIn(
+            lsr01["execution_status"],
+            {"READY", "IN_PROGRESS", "COMPLETE"},
         )
+        if lsr01["execution_status"] == "READY":
+            self.assertFalse(lsr01["explicit_execution_authorized"])
+        else:
+            self.assertTrue(lsr01["explicit_execution_authorized"])
+
         for round_id in ("LSR-02", "LSR-03", "LSR-04", "LSR-05", "LSR-06"):
             self.assertEqual(
                 "BLOCKED", self.status["rounds"][round_id]["execution_status"]
