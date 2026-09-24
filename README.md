@@ -6,43 +6,55 @@ Semantic Lab is isolated from PAIA production. It must not modify production
 runtime, schema, Reader, Thought Library, Capture, ANS status, or real archive
 data unless an authority document explicitly changes that boundary.
 
-## Current direction
+## Current state
 
-The active product-development direction is
-**PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1**.
+The lightweight zero-model sparse baseline has closed:
 
-Its purpose is a small, deterministic, fully local semantic classifier for the
-finite PAIA Topic Catalog using current input plus bounded local context such as
-conversation title and recent user inputs.
+- PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1 / LSR-01 = COMPLETE/FAIL;
+- production footprint was very small, but source-separated semantic coverage
+  and recall were not credible;
+- the 80 private calibration records, 13 legacy evaluation records and consumed
+  35-case lockbox were not opened by LSR-01.
 
-Production constraints are now first-class:
-- zero neural-model assets;
-- zero semantic network/API dependency;
-- no heavyweight ML runtime;
-- full-catalog scoring over the current 144 Topics;
-- generated semantic index <= 1 MiB;
-- total added semantic-router runtime + index <= 2 MiB;
-- bounded latency/memory gates;
-- explicit DEFER instead of forced assignment.
+The next registered direction is:
+
+**PAIA-COMPILED-SEMANTIC-LEXICON-v1**
+
+It tests whether a rich but compact **build-time generated static semantic
+lexicon** can supply the semantic knowledge missing from the sparse baseline
+while preserving a zero-model, zero-network, deterministic local PAIA runtime.
 
 Canonical package:
-- `docs/lightweight-semantic-router-v1/`
-- `status/LIGHTWEIGHT_SEMANTIC_ROUTER_STATUS.yaml`
+- `docs/compiled-semantic-lexicon-v1/`
+- `status/COMPILED_SEMANTIC_LEXICON_STATUS.yaml`
 
-LSR-00 is COMPLETE/PASS. LSR-01 is READY but NOT_STARTED and requires an
-explicit execution authorization.
+CSL-00 is READY but NOT_STARTED. Registration alone does not authorize
+execution.
 
-## Historical research state
+## Public unattended execution
 
-Semantic Lab v0.2, v0.3 remediation, catalog architecture SCA, bounded BAA
-repairs and PAD-01 remain preserved as historical evidence.
+After one explicit whole-public-package authorization, ChatGPT Work may execute
+CSL-00 through CSL-06 continuously, including ordinary implementation fixes,
+PR/CI/merge work and the predeclared CSL-03 -> CSL-04 failure path.
 
-BAA-02 closed COMPLETE/FAIL after one frozen 80-record calibration run.
-PAD-01 closed COMPLETE/PASS on PUBLIC/SYNTHETIC architecture diagnostics.
+Hard stops remain before:
+- CSL-07: existing 80 private calibration;
+- CSL-08: 13 legacy evaluation records;
+- CSL-09: PAIA production integration.
 
-The historical BGE-M3/Qwen/E5/Nomic embedding work is retained as
-**research-oracle evidence only** for the lightweight package. It is not a
-production dependency and is not an automatic fallback.
+The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion.
 
-The 13 legacy evaluation records remain unopened. The 35 consumed SEM-07
-lockbox records remain forbidden for tuning/promotion.
+## Product constraints preserved
+
+The compiled-lexicon direction still requires:
+- 0-byte production neural model assets;
+- no semantic API/network dependency;
+- JS/browser-ready deterministic runtime;
+- generated semantic index <= 1 MiB;
+- router + index <= 2 MiB;
+- incremental memory <= 32 MiB;
+- warm p95 <= 20 ms;
+- cold initialization <= 100 ms.
+
+Historical BGE-M3/Qwen/E5/Nomic work remains research-oracle evidence only and
+is not an automatic production fallback.

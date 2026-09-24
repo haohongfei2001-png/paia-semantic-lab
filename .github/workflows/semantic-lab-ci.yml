@@ -104,6 +104,8 @@ jobs:
               --fixtures fixtures/lightweight_router_v1/source_separated_v0.1.json \
               --output artifacts/ci/lsr01-public-benchmark.json
           fi
+      - name: CSL-v1 compiled lexicon package plan validation
+        run: python -m unittest tests.test_compiled_semantic_lexicon_v1_plan -v
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4

@@ -1,0 +1,70 @@
+package_id: PAIA-COMPILED-SEMANTIC-LEXICON-v1
+package_version: 1.0.0
+package_status: REGISTERED_NOT_STARTED
+phase: CSL_00_READY
+baseline_main_at_registration: c72d929fdac129dd0d8d39092ab3141e1a79419d
+parent_package: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
+parent_result: LSR_01_COMPLETE_FAIL
+production_direction: ZERO_MODEL_COMPILED_STATIC_SEMANTICS
+public_package_preauthorized: false
+public_rounds:
+  start: CSL-00
+  end: CSL-06
+  continuous_after_package_authorization: true
+max_post_blind_test_repair_rounds: 1
+production_neural_model_assets_bytes_max: 0
+production_semantic_network_dependency: false
+production_generated_index_bytes_max: 1048576
+production_router_plus_index_bytes_max: 2097152
+production_incremental_memory_bytes_max: 33554432
+production_warm_p95_ms_max: 20
+production_cold_init_ms_max: 100
+private_artifact_reads: 0
+evaluation_records_read: 0
+consumed_lockbox_reads: 0
+production_paia_modified: false
+rounds:
+  CSL-00:
+    title: Protocol and source-separation freeze
+    execution_status: READY
+    verdict: UNTESTED
+  CSL-01:
+    title: Multi-source lexicon generation and compiler
+    execution_status: BLOCKED
+    blocked_on: CSL-00
+  CSL-02:
+    title: Public DEV optimization and compression
+    execution_status: BLOCKED
+    blocked_on: CSL-01
+  CSL-03:
+    title: Fresh blind public test v1
+    execution_status: BLOCKED
+    blocked_on: CSL-02
+  CSL-04:
+    title: Bounded repair plus fresh blind test v2
+    execution_status: CONDITIONAL_BLOCKED
+    trigger: CSL-03_FAIL
+  CSL-05:
+    title: Browser runtime compression and hardening
+    execution_status: BLOCKED
+    trigger: CSL-03_PASS_OR_CSL-04_PASS
+  CSL-06:
+    title: Public consumer-behavior certification
+    execution_status: BLOCKED
+    blocked_on: CSL-05
+  CSL-07:
+    title: Existing 80 private calibration validation
+    execution_status: BLOCKED
+    explicit_execution_authorized: false
+    blocked_on: CSL-06_PASS_AND_OWNER_AUTH
+  CSL-08:
+    title: Legacy 13-record evaluation
+    execution_status: BLOCKED
+    explicit_execution_authorized: false
+    blocked_on: CSL-07_PASS_AND_OWNER_AUTH
+  CSL-09:
+    title: PAIA handoff and production integration
+    execution_status: BLOCKED
+    explicit_execution_authorized: false
+    blocked_on: CSL-08_PASS_AND_OWNER_AUTH
+next_action: "Await one explicit owner authorization for the CSL-00..CSL-06 PUBLIC package. After that authorization, Work should execute public rounds continuously under EXECUTION_PROTOCOL.md and stop only at a hard stop/terminal public failure/private boundary."
