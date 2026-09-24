@@ -1,7 +1,7 @@
 import fs from "node:fs";
-import { createTypedGrounder } from "../runtime/compositional_intent_graph_v1/typed_grounder.mjs";
+import { createCatalogNameGrounder } from "../runtime/compositional_intent_graph_v1/catalog_name_grounder.mjs";
 
-const index = JSON.parse(fs.readFileSync(process.argv[2] ?? ".cig02b-index.json", "utf8"));
+const index = JSON.parse(fs.readFileSync(process.argv[2] ?? ".cig02c-index.json", "utf8"));
 const manifest = JSON.parse(fs.readFileSync("semantic_profiles/v0.1/manifest.json", "utf8"));
 const profiles = manifest.shards.flatMap(shard => JSON.parse(fs.readFileSync(shard.path, "utf8")).profiles);
 const router = createTypedGrounder(index, "balanced");
