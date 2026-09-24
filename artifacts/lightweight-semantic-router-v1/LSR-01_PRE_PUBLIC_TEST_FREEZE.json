@@ -1,0 +1,37 @@
+{
+  "package": "PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1",
+  "round": "LSR-01",
+  "stage": "PRE_PUBLIC_TEST_FREEZE",
+  "branch": "exec/lsr01-zero-model-v1",
+  "implementation_head_before_receipt": "6855130a3afb82e116813ed16b5778fca589836a",
+  "public_test_opened": false,
+  "primary_candidate": "B",
+  "candidate_reselection_after_test": "DENY",
+  "post_test_feature_weight_margin_context_changes": "DENY_UNDER_CURRENT_AUTHORIZATION",
+  "threshold_policy": "one global threshold per candidate selected on source-separated PUBLIC DEV only; frozen before PUBLIC TEST scoring",
+  "frozen_blobs": {
+    "config": "2155c01ada19856aa2f1b0c5ad9a4e51665d4ca7",
+    "source_separated_fixture": "ffd7e1559363768a4ddd2dde093cc6f6a49f1351",
+    "design_amendment": "2dec4b14d33b343458baec7707b96ac53609292c",
+    "round_contract": "0a77ae6e0b57e5b49a4a53544aba26c5918b4428",
+    "js_router_core": "d992ec25cad9437b7365389bb35a0d507e71d518",
+    "index_compiler": "3b4df97a3a0308aa31e0789afdb1b41c49e0cf18",
+    "public_benchmark": "12d2dd8238dcd1a5b60e975a428583206c1d1b68",
+    "python_guards": "8b5dd225c815009ed490e7526a7c7449fb3f4b81",
+    "js_invariants": "8cba21189af7c7982cbbd54285ab7c099a1bb8a6",
+    "ci_workflow": "c3b3f26b3f57f24b93c13a2547af8053626dd74a"
+  },
+  "source_separation": {
+    "fixture_frozen_before_profile_read": true,
+    "production_profile_text_copied_into_fixture": false,
+    "old_synthetic_text_reused": false
+  },
+  "guards": {
+    "private_calibration_reads": 0,
+    "evaluation_reads": 0,
+    "consumed_lockbox_reads": 0,
+    "neural_model_runs": 0,
+    "semantic_network_calls": 0,
+    "production_paia_writes": 0
+  }
+}
