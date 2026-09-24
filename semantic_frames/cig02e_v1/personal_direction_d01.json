@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D01_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "习惯与行为：习惯形成、行为改变、触发因素、重复模式、坚持与戒除。",
+        "en": "Habits & Behavior: habit formation, behavior change, triggers, repeated patterns, consistency and breaking habits."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "养成",
+            "改变"
+          ],
+          "en": [
+            "form",
+            "change"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "习惯",
+            "重复行为"
+          ],
+          "en": [
+            "habit",
+            "repeated behavior"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "坚持",
+            "戒除习惯"
+          ],
+          "en": [
+            "consistency",
+            "breaking habits"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.life_goals",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "人生目标：长期愿景、人生优先级、目标分解、里程碑与想实现的长期结果。",
+        "en": "Life Goals: long-term aspirations, priorities, goal decomposition, milestones and desired life outcomes."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "设定目标",
+            "分解目标"
+          ],
+          "en": [
+            "set goals",
+            "decompose goals"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "长期愿景",
+            "人生目标"
+          ],
+          "en": [
+            "long-term aspiration",
+            "life goal"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "里程碑",
+            "长期结果"
+          ],
+          "en": [
+            "milestone",
+            "desired life outcome"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "人生规划：人生阶段、长期生活路径、未来几年安排、生活结构和阶段性规划。",
+        "en": "Life Planning: life-stage planning, multi-year paths, future arrangements and sequencing of life changes."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "规划",
+            "安排"
+          ],
+          "en": [
+            "plan",
+            "sequence"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "人生阶段",
+            "未来几年"
+          ],
+          "en": [
+            "life stage",
+            "future years"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "长期生活路径",
+            "未来安排"
+          ],
+          "en": [
+            "multi-year path",
+            "future arrangement"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.major_decisions",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "重大决策：高影响、难逆转或需要权衡多个长期后果的重要选择。",
+        "en": "Major Decisions: high-impact or hard-to-reverse choices involving alternatives, consequences and commitment."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "权衡",
+            "选择"
+          ],
+          "en": [
+            "weigh alternatives",
+            "choose"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "重大选择",
+            "长期后果"
+          ],
+          "en": [
+            "high-impact choice",
+            "long-term consequence"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "决策承诺",
+            "后果判断"
+          ],
+          "en": [
+            "commitment",
+            "consequence assessment"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_admin",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "个人事务管理：个人手续、账户、证明、表单、个人事务办理和行政性琐事。",
+        "en": "Personal Administration: personal paperwork, accounts, forms, records and administrative chores."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "办理",
+            "整理"
+          ],
+          "en": [
+            "complete",
+            "organize"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "个人手续",
+            "账户"
+          ],
+          "en": [
+            "personal paperwork",
+            "account"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "个人记录",
+            "行政事务完成"
+          ],
+          "en": [
+            "personal record",
+            "completed administration"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+        "en": "Personal Productivity: personal task execution, focus, efficiency, workflow, procrastination and output cadence."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "执行任务",
+            "专注"
+          ],
+          "en": [
+            "execute tasks",
+            "focus"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "个人任务",
+            "工作流"
+          ],
+          "en": [
+            "personal task",
+            "workflow"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "效率",
+            "产出节奏"
+          ],
+          "en": [
+            "efficiency",
+            "output cadence"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.self_reflection",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "自我反思：对自我状态、性格、动机、优缺点、经历与身份的反思和自我理解。",
+        "en": "Self Reflection: reflection on identity, motives, strengths, weaknesses, experiences and personal patterns."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "反思",
+            "审视"
+          ],
+          "en": [
+            "reflect",
+            "examine"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "自我状态",
+            "动机"
+          ],
+          "en": [
+            "personal state",
+            "motive"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "自我理解",
+            "认识个人模式"
+          ],
+          "en": [
+            "self understanding",
+            "understanding personal patterns"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.personal_direction.values_principles",
+      "domain_id": "D01",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "价值观与原则：个人价值观、行为原则、道德取舍与做决定时坚持的底线。",
+        "en": "Values & Principles: personal values, guiding principles, ethical tradeoffs and decision criteria."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "权衡",
+            "明确原则"
+          ],
+          "en": [
+            "weigh",
+            "define principles"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "价值观",
+            "行为原则"
+          ],
+          "en": [
+            "personal values",
+            "guiding principle"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "决策标准",
+            "道德取舍"
+          ],
+          "en": [
+            "decision criteria",
+            "ethical tradeoff"
+          ]
+        }
+      }
+    }
+  ]
+}
