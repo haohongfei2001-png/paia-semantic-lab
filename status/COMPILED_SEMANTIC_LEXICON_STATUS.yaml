@@ -1,7 +1,7 @@
 package_id: PAIA-COMPILED-SEMANTIC-LEXICON-v1
 package_version: 1.0.0
 package_status: PUBLIC_IN_PROGRESS
-phase: CSL_03_FIXTURE_FROZEN
+phase: CSL_03_FAIL_PENDING_CLOSURE
 baseline_main_at_registration: c72d929fdac129dd0d8d39092ab3141e1a79419d
 parent_package: PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1
 parent_result: LSR_01_COMPLETE_FAIL
@@ -40,7 +40,7 @@ rounds:
   CSL-03:
     title: Fresh blind public test v1
     execution_status: IN_PROGRESS
-    verdict: PRE_OPEN_FROZEN_NOT_RUN
+    verdict: FAIL_PENDING_EXACT_HEAD_AND_MAIN_CI
   CSL-04:
     title: Bounded repair plus fresh blind test v2
     execution_status: CONDITIONAL_BLOCKED
@@ -68,4 +68,4 @@ rounds:
     execution_status: BLOCKED
     explicit_execution_authorized: false
     blocked_on: CSL-08_PASS_AND_OWNER_AUTH
-next_action: "Run frozen TEST v1 exactly once against the frozen CSL-02 candidate after the pre-open fixture receipt; on FAIL transition to CSL-04."
+next_action: "Close CSL-03 genuine FAIL with exact-head/main evidence, then automatically begin one CSL-04 bounded repair and fresh TEST v2."

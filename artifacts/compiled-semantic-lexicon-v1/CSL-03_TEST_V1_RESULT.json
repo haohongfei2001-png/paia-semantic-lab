@@ -1,0 +1,37 @@
+{
+  "format": "csl03-blind-result-v1",
+  "verdict": "FAIL",
+  "pre_open_freeze_sha256": "dae0356d630d7a499b2085239f4850ae9500abf25ffd62f26c6a264b469c4efc",
+  "fixture_sha256": "ad7b9715deeef81e370da644b15085fd29a73022f54877870d3ae7bcc9812ab7",
+  "candidate_main_sha": "58ec76b84f9730f102657e6b5b5439707757c3c6",
+  "evaluation_invocations": 1,
+  "counts": {
+    "context": 72,
+    "multi_label": 18,
+    "should_defer": 18,
+    "single_label": 288
+  },
+  "metrics": {
+    "assigned_precision": 1,
+    "auto_assignment_coverage": 0.020833333333333332,
+    "topic_macro_recall": 0.020833333333333332,
+    "insufficient_evidence_false_assignment": 0,
+    "context_harm_events": 0,
+    "deterministic_repeat": true,
+    "multi_label_precision": 0,
+    "multi_label_recall": 0,
+    "assigned_labels": 30,
+    "correct_labels": 30,
+    "single_assigned": 6
+  },
+  "failure_classes": {
+    "single_no_assignment": 282,
+    "single_wrong_assignment": 0,
+    "context_no_assignment": 48,
+    "context_wrong_assignment": 0,
+    "defer_false_assignment": 0
+  },
+  "private_artifact_reads": 0,
+  "evaluation_records_read": 0,
+  "consumed_lockbox_reads": 0
+}
