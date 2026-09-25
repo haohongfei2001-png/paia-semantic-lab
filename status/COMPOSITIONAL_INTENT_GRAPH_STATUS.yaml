@@ -104,12 +104,14 @@ rounds:
     cig02e_public_dev_fixture_status: NOT_REGISTERED
     cig02e_source_review: scripts/cig02e_source_review.mjs
     cig02e_self_instruct_source_audit: scripts/cig02e_self_instruct_source_audit.mjs
+    cig02e_full_catalog_source_triage: scripts/cig02e_full_catalog_source_triage.mjs
+    cig02e_supplemental_source_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SUPPLEMENTAL_SOURCE_MERGED_MAIN_RECEIPT.json
     cig02e_source_review_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_REVIEW_MERGED_MAIN_RECEIPT.json
     cig02e_public_source_inventory_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_SOURCE_INVENTORY_MERGED_MAIN_RECEIPT.json
     cig02e_compiler_design_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_COMPILER_DESIGN_MERGED_MAIN_RECEIPT.json
     cig02e_authored_topic_count: 144
     cig02e_candidate_status: UNSCORED_GLOBAL_RUNTIME_ENGINEERING_NOT_CAPABILITY
-    next_substage: CIG-02E_SUPPLEMENTAL_SOURCE_FEASIBILITY
+    next_substage: CIG-02E_FULL_CATALOG_SOURCE_TRIAGE
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -118,4 +120,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Review the pinned Self-Instruct source-only inventory and source excerpts alongside Dolly and Alpaca; adjudicate natural requests and DEFER/ambiguity controls for all 144 Topics before registering full-Catalog DEV with pre-open candidate/fixture/gold/scorer hashes. CIG-02 unfrozen; CIG-03 blocked."
+next_action: "Review deterministic source-only queue across all 144 Topics, reject off-topic/template rows, and find independent human requests for sparse Topics and DEFER/ambiguity controls. Register full-Catalog DEV only after pre-open candidate/fixture/gold/scorer hashes. CIG-02 unfrozen; CIG-03 blocked."
