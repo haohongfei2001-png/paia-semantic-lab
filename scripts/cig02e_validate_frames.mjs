@@ -10,14 +10,15 @@ const sourcePaths = [
   "semantic_profiles/v0.1/system_topics_shard_02.json",
   "semantic_profiles/v0.1/system_topics_shard_03.json",
   "semantic_profiles/v0.1/system_topics_shard_04.json",
-  "semantic_profiles/v0.1/system_topics_shard_05.json"
+  "semantic_profiles/v0.1/system_topics_shard_05.json",
+  "semantic_profiles/v0.1/system_topics_shard_06.json"
 ];
 const sources = new Map(sourcePaths.map(path => [path,
   JSON.parse(fs.readFileSync(path, "utf8")).profiles]));
 for (const [path, profiles] of sources) assert.equal(profiles.length, 24, "public source shard changed: " + path);
 const profiles = sourcePaths.flatMap(path => sources.get(path));
 const byId = new Map(profiles.map(profile => [profile.topic_id, profile]));
-assert.equal(byId.size, 120, "duplicate public source Topic");
+assert.equal(byId.size, 144, "duplicate public source Topic");
 const expectedFiles = new Map([
   ["personal_direction_d01.json", ["D01", sourcePaths[0]]],
   ["family_relationships_d02.json", ["D02", sourcePaths[0]]],
@@ -33,7 +34,10 @@ const expectedFiles = new Map([
   ["communication_writing_d12.json", ["D12", sourcePaths[3]]],
   ["legal_civic_d13.json", ["D13", sourcePaths[4]]],
   ["science_technical_d14.json", ["D14", sourcePaths[4]]],
-  ["creative_design_d15.json", ["D15", sourcePaths[4]]]
+  ["creative_design_d15.json", ["D15", sourcePaths[4]]],
+  ["business_entrepreneurship_d16.json", ["D16", sourcePaths[5]]],
+  ["time_events_d17.json", ["D17", sourcePaths[5]]],
+  ["knowledge_memory_d18.json", ["D18", sourcePaths[5]]]
 ]);
 const files = fs.readdirSync(frameDir).filter(name => name.endsWith(".json")).sort();
 assert.deepEqual(files, [...expectedFiles.keys()].sort(), "unexpected authored source files");
@@ -78,7 +82,8 @@ for (const file of files) {
   assert.equal(authored.frames.filter(frame => frame.domain_id === domain).length,
     domainProfiles.length, "domain source authoring incomplete");
 }
-assert.equal(seen.size, 120, "authored public source Topic count changed");
+assert.equal(seen.size, 144, "authored public source Topic count changed");
+assert.deepEqual([...seen].sort(), [...catalogIds].sort(), "authored Topic set must equal formal Catalog");
 console.log(JSON.stringify({
   classification: "SOURCE_AUTHORING_ONLY_NOT_CAPABILITY",
   authored_topics: seen.size, catalog_topics: catalogIds.size,
