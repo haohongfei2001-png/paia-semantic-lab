@@ -55,6 +55,12 @@ jobs:
         run: |
           node --check scripts/cig02e_validate_frames.mjs
           node scripts/cig02e_validate_frames.mjs
+      - name: Compile CIG-02E public source frames twice without DEV reads
+        run: |
+          node --check scripts/cig02e_compile.mjs
+          node scripts/cig02e_compile.mjs .cig02e-index.json
+          node scripts/cig02e_compile.mjs .cig02e-index-repeat.json
+          cmp .cig02e-index.json .cig02e-index-repeat.json
       - name: Compile all public Topics twice and verify deterministic bytes
         run: |
           node scripts/cig02b_compile.mjs .cig02b-index.json
