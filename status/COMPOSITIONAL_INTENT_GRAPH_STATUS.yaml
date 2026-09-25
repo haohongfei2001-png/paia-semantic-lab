@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02E_UNSCORED_GLOBAL_RUNTIME_ENGINEERING
+phase: CIG_02E_PUBLIC_DEV_SOURCE_AUDIT
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -94,10 +94,18 @@ rounds:
     cig02e_global_runtime: runtime/compositional_intent_graph_v1/frame_grounder.mjs
     cig02e_global_runtime_synthetic_tests: tests-js/cig02e_frame_grounder.test.mjs
     cig02e_global_runtime_report: docs/compositional-intent-graph-v1/CIG-02E_GLOBAL_RUNTIME.md
+    cig02e_source_compiler_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COMPILER_MERGED_MAIN_RECEIPT.json
+    cig02e_global_runtime_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_GLOBAL_RUNTIME_MERGED_MAIN_RECEIPT.json
+    cig02e_public_dev_source_plan: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_DEV_SOURCE_PLAN.md
+    cig02e_public_dev_source_audit: scripts/cig02e_dolly_source_audit.mjs
+    cig02e_alpaca_source_audit: scripts/cig02e_alpaca_source_audit.mjs
+    cig02e_dolly_source_inventory_summary: artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_SOURCE_INVENTORY_SUMMARY.json
+    cig02e_public_dev_source_classification: SOURCE_RETRIEVAL_ONLY_NOT_GOLD_OR_CAPABILITY
+    cig02e_public_dev_fixture_status: NOT_REGISTERED
     cig02e_compiler_design_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_COMPILER_DESIGN_MERGED_MAIN_RECEIPT.json
     cig02e_authored_topic_count: 144
     cig02e_candidate_status: UNSCORED_GLOBAL_RUNTIME_ENGINEERING_NOT_CAPABILITY
-    next_substage: CIG-02E_NEW_PUBLIC_DEV_REGISTRATION
+    next_substage: CIG-02E_PUBLIC_DEV_SOURCE_FEASIBILITY
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -106,4 +114,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Review unscored global runtime safety and resources, then register a new source-separated full-Catalog public DEV with stable gold and pre-open hashes before any CIG-02 freeze. CIG-03 remains blocked."
+next_action: "Review pinned human-authored and supplemental synthetic public source inventories without candidate predictions; adjudicate coverage and controls before registering full-Catalog DEV with stable gold and pre-open candidate/fixture/scorer hashes. CIG-02 unfrozen; CIG-03 blocked."
