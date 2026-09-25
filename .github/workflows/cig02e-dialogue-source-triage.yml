@@ -1,0 +1,44 @@
+name: CIG-02E pinned dialogue source triage
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02e-dialogue-source-triage.yml"
+      - "scripts/cig02e_dialogue_source_triage.mjs"
+      - "docs/compositional-intent-graph-v1/CIG-02E_DIALOGUE_SOURCE_TRIAGE.md"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02e-dialogue-source-triage.yml"
+      - "scripts/cig02e_dialogue_source_triage.mjs"
+      - "docs/compositional-intent-graph-v1/CIG-02E_DIALOGUE_SOURCE_TRIAGE.md"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+permissions:
+  contents: read
+jobs:
+  pinned-dialogue-source-triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Fetch pinned GitHub-hosted dialogue source
+        run: |
+          curl --fail --silent --show-error --location --retry 2 \
+            https://raw.githubusercontent.com/diixo/daily-dialogs-dataset/d74f69c3184b1771f5f92bd06bebffbe42b541bb/dataset/dialogues_text.txt \
+            --output .cig02e-dialogue-source.txt
+          test "$(git hash-object .cig02e-dialogue-source.txt)" = "22674013988cfca4cf2069f6971ad6b049a9d79d"
+      - name: Triage eight sparse Topics without gold or router predictions
+        run: |
+          node --check scripts/cig02e_dialogue_source_triage.mjs
+          node scripts/cig02e_dialogue_source_triage.mjs .cig02e-dialogue-source.txt artifacts/ci/cig02e-dialogue-source-triage.json
+      - name: Preserve source-only row IDs and counts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cig02e-dialogue-source-triage
+          path: artifacts/ci/cig02e-dialogue-source-triage.json
+          if-no-files-found: error
+          retention-days: 30
