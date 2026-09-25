@@ -6,6 +6,7 @@ on:
       - ".github/workflows/cig02e-public-dev-source-audit.yml"
       - "scripts/cig02e_dolly_source_audit.mjs"
       - "scripts/cig02e_alpaca_source_audit.mjs"
+      - "scripts/cig02e_source_review.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_DEV_SOURCE_PLAN.md"
 permissions:
   contents: read
@@ -38,6 +39,10 @@ jobs:
         run: |
           node --check scripts/cig02e_alpaca_source_audit.mjs
           node scripts/cig02e_alpaca_source_audit.mjs .cig02e-alpaca-source.json artifacts/ci/cig02e-alpaca-source-inventory.json
+      - name: Review broad source candidates for three lexical retrieval gaps
+        run: |
+          node --check scripts/cig02e_source_review.mjs
+          node scripts/cig02e_source_review.mjs .cig02e-dolly-source.jsonl .cig02e-alpaca-source.json
       - name: Preserve source-only inventory
         uses: actions/upload-artifact@v4
         with:

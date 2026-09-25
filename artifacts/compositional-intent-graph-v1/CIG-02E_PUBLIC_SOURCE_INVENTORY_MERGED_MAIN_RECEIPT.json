@@ -1,0 +1,44 @@
+{
+  "format": "cig02e-public-source-inventory-merged-main-receipt-v1",
+  "pr_number": 39,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/39",
+  "merged_main_sha": "1d9595abae9b8cda8e9d4f3dca3d6965c1a8d2c8",
+  "exact_main_checks": [
+    {
+      "name": "cig02b-public-dev",
+      "run_id": 36095223908,
+      "job_id": 107945976242,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "run_id": 36095223914,
+      "job_id": 107945976128,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "run_id": 36095223938,
+      "job_id": 107945976034,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "run_id": 36095223927,
+      "job_id": 107945975967,
+      "conclusion": "success"
+    }
+  ],
+  "source_audit_exact_head_run_id": 36095071678,
+  "source_audit_exact_head_job_id": 107945502268,
+  "classification": "SOURCE_RETRIEVAL_ONLY_NOT_GOLD_OR_CAPABILITY",
+  "dolly_topics_with_lexical_candidate": 131,
+  "alpaca_topics_with_lexical_candidate": 141,
+  "union_topics_without_lexical_candidate": [
+    "sys.family_relationships.caregiving_family_support",
+    "sys.finance_purchases.major_purchases",
+    "sys.knowledge_memory.photos_media_archive"
+  ],
+  "cig02_frozen": false,
+  "cig03_started": false
+}
