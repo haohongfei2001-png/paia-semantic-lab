@@ -1,0 +1,36 @@
+name: CIG-02E public DEV source inventory
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02e-public-dev-source-audit.yml"
+      - "scripts/cig02e_dolly_source_audit.mjs"
+      - "docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_DEV_SOURCE_PLAN.md"
+permissions:
+  contents: read
+jobs:
+  cig02e-public-dev-source-inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Fetch pinned public Dolly source from GitHub
+        run: |
+          curl --fail --silent --show-error --location --retry 2 \
+            https://raw.githubusercontent.com/buayism/dolly-15k-dataset/6d7ebf384c5e588ee1b0dff816557489bc16089c/databricks-dolly-15k.jsonl \
+            --output .cig02e-dolly-source.jsonl
+          test "$(git hash-object .cig02e-dolly-source.jsonl)" = "7c507d16b055ae32107a6dd0585779678565dcd2"
+      - name: Audit source retrieval only without gold or candidate predictions
+        run: |
+          node --check scripts/cig02e_dolly_source_audit.mjs
+          node scripts/cig02e_dolly_source_audit.mjs .cig02e-dolly-source.jsonl artifacts/ci/cig02e-dolly-source-inventory.json
+      - name: Preserve source-only inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: cig02e-dolly-source-inventory
+          path: artifacts/ci/cig02e-dolly-source-inventory.json
+          if-no-files-found: error
+          retention-days: 30
