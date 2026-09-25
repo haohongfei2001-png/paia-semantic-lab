@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D12_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "文档与报告：正式文档、报告、方案、说明书、长文结构和文档交付。",
+        "en": "Documents & Reports: formal documents, reports, proposals, specifications and long-form deliverables."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "撰写报告",
+            "起草方案"
+          ],
+          "en": [
+            "write report",
+            "draft proposal"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "正式文档",
+            "说明书"
+          ],
+          "en": [
+            "formal document",
+            "specification"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "文档交付",
+            "长文结构"
+          ],
+          "en": [
+            "document deliverable",
+            "long-form structure"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.email_messages",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "邮件与消息：邮件、短信、私信、聊天消息、回复、发送和消息措辞。",
+        "en": "Email & Messages: emails, texts, DMs, chat messages, replies and message wording."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "写邮件",
+            "回复消息"
+          ],
+          "en": [
+            "write email",
+            "reply to message"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "邮件",
+            "聊天消息"
+          ],
+          "en": [
+            "email",
+            "chat message"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "消息措辞",
+            "回复内容"
+          ],
+          "en": [
+            "message wording",
+            "reply content"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.negotiation_persuasion",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "谈判与说服：谈判、说服、议价、利益交换、立场表达和影响他人决策。",
+        "en": "Negotiation & Persuasion: negotiation, persuasion, bargaining, interests, positions and influencing decisions."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "谈判",
+            "说服"
+          ],
+          "en": [
+            "negotiate",
+            "persuade"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "利益",
+            "立场"
+          ],
+          "en": [
+            "interest",
+            "position"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "影响决策",
+            "议价结果"
+          ],
+          "en": [
+            "influenced decision",
+            "bargaining outcome"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "演示与汇报：演示文稿、PPT、幻灯片结构、讲稿、视觉叙事和汇报表达。",
+        "en": "Presentations: presentations, slides, decks, presentation structure, speaker notes and visual storytelling."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "制作幻灯片",
+            "演示汇报"
+          ],
+          "en": [
+            "make slides",
+            "present"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "演示文稿",
+            "讲稿"
+          ],
+          "en": [
+            "slide deck",
+            "speaker notes"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "视觉叙事",
+            "汇报结构"
+          ],
+          "en": [
+            "visual storytelling",
+            "presentation structure"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "社交媒体与公开发布：社交媒体公开内容、帖子、动态、公开文案、标题和平台发布。",
+        "en": "Public Posts: public social posts, platform content, captions, posts and published copy."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "撰写帖子",
+            "公开发布"
+          ],
+          "en": [
+            "draft post",
+            "publish"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "公开文案",
+            "社交帖子"
+          ],
+          "en": [
+            "public copy",
+            "social post"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "平台内容",
+            "发布文案"
+          ],
+          "en": [
+            "platform content",
+            "published copy"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+        "en": "Speaking & Conversation: spoken communication, conversation, oral expression and live interpersonal language."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "口头表达",
+            "对话"
+          ],
+          "en": [
+            "speak",
+            "converse"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "现场交流",
+            "口语措辞"
+          ],
+          "en": [
+            "live conversation",
+            "oral wording"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "口头沟通",
+            "对话表达"
+          ],
+          "en": [
+            "spoken communication",
+            "conversational expression"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.translation",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "翻译：不同语言之间的翻译、语义转换、本地化和双语表达。",
+        "en": "Translation: translation between languages, localization and bilingual expression."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "翻译",
+            "本地化"
+          ],
+          "en": [
+            "translate",
+            "localize"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "原文",
+            "语言表达"
+          ],
+          "en": [
+            "source text",
+            "language expression"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "语义转换",
+            "双语表达"
+          ],
+          "en": [
+            "semantic translation",
+            "bilingual expression"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "domain_id": "D12",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "写作与编辑：通用文字撰写、润色、改写、校对、结构和表达质量。",
+        "en": "Writing & Editing: general writing, rewriting, editing, proofreading, structure and prose quality."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "撰写",
+            "润色"
+          ],
+          "en": [
+            "write",
+            "edit"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "文字",
+            "文章结构"
+          ],
+          "en": [
+            "prose",
+            "text structure"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "表达质量",
+            "校对完成"
+          ],
+          "en": [
+            "prose quality",
+            "proofread text"
+          ]
+        }
+      }
+    }
+  ]
+}
