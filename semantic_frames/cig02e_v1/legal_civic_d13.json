@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D13_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "公共政策与社会议题：公共政策、社会议题、制度影响、公共治理和社会问题。",
+        "en": "Public Policy & Social Issues: public policy, social issues, governance, institutional effects and societal questions."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "分析政策",
+            "讨论社会议题"
+          ],
+          "en": [
+            "analyze policy",
+            "discuss social issue"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "公共政策",
+            "社会议题"
+          ],
+          "en": [
+            "public policy",
+            "social issue"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "制度影响理解",
+            "公共治理讨论"
+          ],
+          "en": [
+            "institutional-effects understanding",
+            "governance discussion"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "投诉与纠纷：投诉、争议、纠纷、维权过程、申诉和冲突处理。",
+        "en": "Complaints & Disputes: complaints, disputes, grievances, appeals and dispute-resolution processes."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "投诉",
+            "申诉"
+          ],
+          "en": [
+            "file complaint",
+            "appeal"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "纠纷",
+            "争议"
+          ],
+          "en": [
+            "dispute",
+            "grievance"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "纠纷处理",
+            "争议解决流程"
+          ],
+          "en": [
+            "dispute handling",
+            "resolution process"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "消费者权益：消费者权益、退换货、商家责任、质量争议和消费维权。",
+        "en": "Consumer Rights: consumer protection, refunds, merchant obligations, quality disputes and buyer rights."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "申请退款",
+            "主张消费者权益"
+          ],
+          "en": [
+            "request refund",
+            "assert consumer rights"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "商品质量争议",
+            "商家责任"
+          ],
+          "en": [
+            "quality dispute",
+            "merchant obligation"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "消费者权益保护",
+            "退换货处理"
+          ],
+          "en": [
+            "consumer protection",
+            "refund handling"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "合同与协议：合同、协议、条款、签署、违约、履约和合同风险。",
+        "en": "Contracts & Agreements: contracts, agreements, terms, signing, breach, performance and contractual risk."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "审阅合同",
+            "签署协议"
+          ],
+          "en": [
+            "review contract",
+            "sign agreement"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "合同条款",
+            "协议"
+          ],
+          "en": [
+            "contract term",
+            "agreement"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "合同风险识别",
+            "履约安排"
+          ],
+          "en": [
+            "contractual risk identification",
+            "performance arrangement"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.government_services",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "政务与公共服务：政务办理、政府部门、公共服务、行政申请和官方办事流程。",
+        "en": "Government Services: government services, agencies, administrative applications and official procedures."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "办理政务",
+            "提交行政申请"
+          ],
+          "en": [
+            "use government service",
+            "submit administrative application"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "政府部门",
+            "公共服务"
+          ],
+          "en": [
+            "government agency",
+            "public service"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "官方流程完成",
+            "政务办理"
+          ],
+          "en": [
+            "official procedure",
+            "government-service completion"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "身份与证件：身份证、护照、户籍、证件办理、证件更新和身份材料。",
+        "en": "Identity Documents: identity cards, passports, household registration and identity-document procedures."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "办理证件",
+            "更新证件"
+          ],
+          "en": [
+            "obtain identity document",
+            "renew document"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "身份证",
+            "护照"
+          ],
+          "en": [
+            "identity card",
+            "passport"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "证件办理",
+            "身份材料准备"
+          ],
+          "en": [
+            "identity-document procedure",
+            "identity material preparation"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "移民与居留：移民、居留、长期签证、永居、公民身份和跨国居住资格。",
+        "en": "Immigration & Residency: immigration, residency, long-term visas, permanent residence and citizenship status."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "申请居留",
+            "规划移民"
+          ],
+          "en": [
+            "apply for residency",
+            "plan immigration"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "长期签证",
+            "永居资格"
+          ],
+          "en": [
+            "long-term visa",
+            "permanent residence"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "居留身份",
+            "跨国居住资格"
+          ],
+          "en": [
+            "residency status",
+            "cross-border residence eligibility"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.legal_civic.legal_questions",
+      "domain_id": "D13",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "法律问题：法律概念、法律责任、权利义务、法规适用和一般法律问题。",
+        "en": "Legal Questions: legal concepts, liability, rights and obligations, law applicability and legal questions."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "询问法律问题",
+            "澄清责任"
+          ],
+          "en": [
+            "ask legal question",
+            "clarify liability"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "法律概念",
+            "权利义务"
+          ],
+          "en": [
+            "legal concept",
+            "rights and obligations"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "法规适用理解",
+            "法律责任理解"
+          ],
+          "en": [
+            "law-applicability understanding",
+            "liability understanding"
+          ]
+        }
+      }
+    }
+  ]
+}
