@@ -1,0 +1,401 @@
+{
+  "format": "cig02e-eighteen-sparse-source-excerpt-triage-v1",
+  "classification": "SOURCE_EXCERPT_TRIAGE_ONLY_NOT_GOLD_OR_CAPABILITY",
+  "queue_run_id": 36113518112,
+  "queue_job_id": 108002125705,
+  "source_queue_main_sha": "977666497e86610c130ab91cf3afd26b23df5c2b",
+  "topics_reviewed": 18,
+  "rows": [
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 9,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:48073",
+          "instruction_sha256": "014361134e2c59fc268772b7cda7abbed6b72dc8dc9c5c0fe588fc038b130737"
+        },
+        {
+          "source_row": "alpaca:20103",
+          "instruction_sha256": "35d72eb80f4bbf1d856f0fdf161b8ecd0e7fe7a6414ee96028d77ca738f75ea1"
+        },
+        {
+          "source_row": "alpaca:32219",
+          "instruction_sha256": "38d95fb6f4cdd9a13b6c652bbdde73de8d3f08a64f7f21d0b5ef6f7c727e757f"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Only synthetic sampled rows; two ask for strategy generation, one asks for a definition."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "lexical_candidate_counts": {
+        "dolly": 5,
+        "alpaca": 2,
+        "self_instruct": 1
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:6028",
+          "instruction_sha256": "70473737d28e11e3dbe7df68cd7816971c1da5a84b391d7c3cc2c3270424d080"
+        },
+        {
+          "source_row": "dolly:1697",
+          "instruction_sha256": "a4bb35769931140dad69a003d7674ea882aa7c579bdbf29b167c1cccd8b1c807"
+        },
+        {
+          "source_row": "dolly:1213",
+          "instruction_sha256": "eeb55d18f999988bc0752ca2fe02c620aa20d161cc17deba10f0faf529031ca8"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Three shown Dolly rows request title writing, colleague praise, or alliance facts; two other Dolly lexical hits remain unreviewed."
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "lexical_candidate_counts": {
+        "dolly": 1,
+        "alpaca": 4,
+        "self_instruct": 2
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:13515",
+          "instruction_sha256": "a17e8c7f5b825f04af07bc407c05d8bb23c790891ab14fefde58be93a1a24300"
+        },
+        {
+          "source_row": "alpaca:13460",
+          "instruction_sha256": "0985dd9b4e8562a2abd06c8997dfadf9b43bb5aff077d88b24ad4f4169cd01fc"
+        },
+        {
+          "source_row": "alpaca:10723",
+          "instruction_sha256": "53ff9205bddf0dbf1ce5325f6f66e2422c9bc943cfda8da544cb20c384454c38"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "The one shown Dolly row concerns civic voter registration; synthetic rows concern generic forms and emails."
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 2,
+        "self_instruct": 2
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:39399",
+          "instruction_sha256": "152f6cfe860cf9af55d17738643504342cd2de03e0cb5e6c47c83baeac79ee2a"
+        },
+        {
+          "source_row": "alpaca:19856",
+          "instruction_sha256": "53414dd92a2c57270ddcfc0a669621faf31da9f0fbb8925ddd51ecc51c4c1fb2"
+        },
+        {
+          "source_row": "self_instruct:41311",
+          "instruction_sha256": "0d393630bbb4422a7b46d95a84a30186befbeb62324f895423f6fbb097183e51"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Synthetic rows use machine-learning methods, a lexical collision with personal study methods."
+    },
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 0,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "No exact-anchor source candidate in the three pinned corpora."
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "lexical_candidate_counts": {
+        "dolly": 1,
+        "alpaca": 1,
+        "self_instruct": 3
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:14044",
+          "instruction_sha256": "550f6155a4e23adf75ea3ccf01b5cc94a9ef88143cc8dc33af213ef5cd2b2675"
+        },
+        {
+          "source_row": "alpaca:31999",
+          "instruction_sha256": "459e41357c0a115f714879af0b6ac5ea590cc20178d4330c2ea23b52a506574f"
+        },
+        {
+          "source_row": "self_instruct:965",
+          "instruction_sha256": "2f80038d2a7d11134116accb170895dfe6c24aebe2cf09eb93bb7f53a38113f1"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "The truncated Dolly excerpt is an autism paper/enrollment question; Topic fit cannot be established from it."
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 0,
+        "self_instruct": 1
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "self_instruct:37002",
+          "instruction_sha256": "55758179e95cb1e713de3bfd83fc8a736afad2aef7ffa774ecf29d7ebf1a0002"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "The sole synthetic hit asks about a purchase already made, not a current high-impact decision."
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "lexical_candidate_counts": {
+        "dolly": 3,
+        "alpaca": 5,
+        "self_instruct": 1
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:9127",
+          "instruction_sha256": "9f0f0c26b4533f8926081a4e9e0a362a45521aec8c2da0df7ce09811c1cd46c2"
+        },
+        {
+          "source_row": "dolly:11080",
+          "instruction_sha256": "b5c9d39bc724d959fb9df1d94194cc16cae13038a9b0dc6924f7beb3b98a4c5a"
+        },
+        {
+          "source_row": "dolly:9564",
+          "instruction_sha256": "e81bbf5c6280916090d6369f625fb32544367b73454e0d635e31a8d33a148a93"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Shown Dolly excerpts concern in-person learning, contact, and blog titles, not errands."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "lexical_candidate_counts": {
+        "dolly": 1,
+        "alpaca": 2,
+        "self_instruct": 3
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:5735",
+          "instruction_sha256": "ebf5352cc0e58a6695d0cbbae22795fd543d91d3f991912bd9fcb8ae27919f5c"
+        },
+        {
+          "source_row": "alpaca:33060",
+          "instruction_sha256": "cda6616fb2937ac6a20a917fed6edf6f092c1096541e0849c91aa0d64f99ab73"
+        },
+        {
+          "source_row": "alpaca:38354",
+          "instruction_sha256": "fcd046b4143a1ea3f7a2cb970604493af5a7cd1bbe56ec460d05ef5d73c9efaa"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "The shown Dolly row concerns soccer equipment; synthetic rows are file-operation commands."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 1,
+        "self_instruct": 2
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:15445",
+          "instruction_sha256": "5848398a11735a764a26a705954fb3c2dc17bfc7ae15385951bffebb8c79c99e"
+        },
+        {
+          "source_row": "self_instruct:26348",
+          "instruction_sha256": "801612ecae2fdafa6adbbc1aac88ae217809cd2a83e53bc431fc1594dc027770"
+        },
+        {
+          "source_row": "self_instruct:53082",
+          "instruction_sha256": "f56bd6cb1bf7d184ee3018181ac8ee7f96e4637019e287065798f4da6b509696"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Shown synthetic hits are article archive URLs, not personal records."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 0,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "No exact-anchor source candidate in the three pinned corpora."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 2,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:22767",
+          "instruction_sha256": "2ed2d407b10c2db2dfa7a03b810f0159e41d6d83146ef598c4f3f069f5153fb6"
+        },
+        {
+          "source_row": "alpaca:19359",
+          "instruction_sha256": "3d009eb48546a92cd29948021c7353c48a5bfb1952527b0c0286936751c87596"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Synthetic revision/change-log tasks need full boundary review; no human-source hit."
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 1,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:34453",
+          "instruction_sha256": "c8cf4ded223f8f1791d259a3994daaa3db23c387d068b76f094110f617783d7c"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "The sole synthetic hit concerns business planning, not personal life stages."
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 3,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:14917",
+          "instruction_sha256": "3510d356a394272fde0dbb4ff1fb32b83623fc086340e6d44759e3f3f6316e95"
+        },
+        {
+          "source_row": "alpaca:45484",
+          "instruction_sha256": "36b9c0c1f22bef53270067bc0419416517a0d2da4ee9ca7427677d2c129e808f"
+        },
+        {
+          "source_row": "alpaca:44519",
+          "instruction_sha256": "aa1d68d323cdd4c5aa8e665df84431a7466a5a10f785b30068d776ed1291e9d3"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Synthetic user-story/feature templates may be topic-related but are not independently human-authored natural requests."
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 6,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:14810",
+          "instruction_sha256": "0a275f75b33cf8e84a88b73ea4eb06e80dfa57cfca13f42d0fc0ce341cdbb059"
+        },
+        {
+          "source_row": "alpaca:11547",
+          "instruction_sha256": "574fd5bc01b58d38583d51114d6aa0eba02fd53790046d29df08a2091e93ed97"
+        },
+        {
+          "source_row": "alpaca:50465",
+          "instruction_sha256": "772906696853272c960e3815c38291c2857159483fc55c7d4caa78324d333195"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Synthetic value-proposition templates may be topic-related but are not independently human-authored natural requests."
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "lexical_candidate_counts": {
+        "dolly": 2,
+        "alpaca": 5,
+        "self_instruct": 2
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:11517",
+          "instruction_sha256": "37e22f5b547fc2e7e363f7d61f2bb117626b70a9e216be111bd28315efd2ba2d"
+        },
+        {
+          "source_row": "dolly:13177",
+          "instruction_sha256": "7af11e423c98886e757a5917961f8f263b5e0a99e838bf6e925f6c88f5798648"
+        },
+        {
+          "source_row": "alpaca:12618",
+          "instruction_sha256": "19f0c25b7760c27879133b84cd775b3f3001dff7bad152b79aca106e50653f03"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Shown Dolly rows ask for milestones or a definition without a concrete project; source context is insufficient."
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "lexical_candidate_counts": {
+        "dolly": 1,
+        "alpaca": 5,
+        "self_instruct": 1
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "dolly:2486",
+          "instruction_sha256": "197ca2a3e5bc267cadd62ba1be116adbee35c4a5e06373b6810d908a1e3d3700"
+        },
+        {
+          "source_row": "alpaca:14192",
+          "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14"
+        },
+        {
+          "source_row": "alpaca:8136",
+          "instruction_sha256": "79bdf75cdb6ab27b6d958c81e9100bb8fe8329c246fa56ec90b66b067659658f"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Shown Dolly excerpt is bike-use advice; synthetic roadmap prompts are generic templates."
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 1,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:34879",
+          "instruction_sha256": "28bcb99d8bb70e56c8f858eb206591939e58bd77d79aad866fa721e76416283d"
+        }
+      ],
+      "sample_review": "EXCERPT_ONLY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "The synthetic Rome journal prompt asks for a generated entry, not an observed personal trip record."
+    }
+  ],
+  "accepted_fixture_rows": 0,
+  "full_source_rows_adjudicated": 0,
+  "notes": "Capped deterministic excerpts were reviewed, not full source rows. All sampled rows remain unqualified; unseen candidates are not judged. Synthetic status is a source class, not a semantic failure.",
+  "candidate_predictions_read": 0,
+  "gold_rows_created": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
