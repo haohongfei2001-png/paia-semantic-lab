@@ -7,6 +7,7 @@ on:
       - "scripts/cig02e_dolly_source_audit.mjs"
       - "scripts/cig02e_alpaca_source_audit.mjs"
       - "scripts/cig02e_source_review.mjs"
+      - "scripts/cig02e_self_instruct_source_audit.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_DEV_SOURCE_PLAN.md"
 permissions:
   contents: read
@@ -43,6 +44,16 @@ jobs:
         run: |
           node --check scripts/cig02e_source_review.mjs
           node scripts/cig02e_source_review.mjs .cig02e-dolly-source.jsonl .cig02e-alpaca-source.json
+      - name: Fetch pinned public Self-Instruct source from GitHub
+        run: |
+          curl --fail --silent --show-error --location --retry 2 \
+            https://raw.githubusercontent.com/yizhongw/self-instruct/0b26ccaa415992100fa32df62d41b994cf928e23/data/gpt3_generations/batch_221203/all_instances_82K.jsonl \
+            --output .cig02e-self-instruct-source.jsonl
+          test "$(git hash-object .cig02e-self-instruct-source.jsonl)" = "ccceb2677cbafcac4c996be47520b5581dd10295"
+      - name: Audit independent supplemental synthetic source without gold or predictions
+        run: |
+          node --check scripts/cig02e_self_instruct_source_audit.mjs
+          node scripts/cig02e_self_instruct_source_audit.mjs .cig02e-self-instruct-source.jsonl artifacts/ci/cig02e-self-instruct-source-inventory.json
       - name: Preserve source-only inventory
         uses: actions/upload-artifact@v4
         with:
@@ -50,5 +61,6 @@ jobs:
           path: |
             artifacts/ci/cig02e-dolly-source-inventory.json
             artifacts/ci/cig02e-alpaca-source-inventory.json
+            artifacts/ci/cig02e-self-instruct-source-inventory.json
           if-no-files-found: error
           retention-days: 30
