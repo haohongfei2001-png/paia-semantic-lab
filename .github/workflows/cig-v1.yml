@@ -12,6 +12,7 @@ on:
       - "scripts/cig02_catalog_eligibility.mjs"
       - "scripts/cig02c_compile.mjs"
       - "scripts/cig02e_*.mjs"
+      - "tests-js/cig02e_*.test.mjs"
       - "semantic_frames/cig02e_v1/**"
       - "artifacts/compositional-intent-graph-v1/**"
   push:
@@ -26,6 +27,7 @@ on:
       - "scripts/cig02_catalog_eligibility.mjs"
       - "scripts/cig02c_compile.mjs"
       - "scripts/cig02e_*.mjs"
+      - "tests-js/cig02e_*.test.mjs"
       - "semantic_frames/cig02e_v1/**"
       - "artifacts/compositional-intent-graph-v1/**"
 permissions:
@@ -61,6 +63,11 @@ jobs:
           node scripts/cig02e_compile.mjs .cig02e-index.json
           node scripts/cig02e_compile.mjs .cig02e-index-repeat.json
           cmp .cig02e-index.json .cig02e-index-repeat.json
+      - name: Verify CIG-02E global runtime safety on source-only synthetic controls
+        run: |
+          node --check runtime/compositional_intent_graph_v1/frame_grounder.mjs
+          node --test tests-js/cig02e_frame_grounder.test.mjs
+          node -e 'const fs=require("fs");const size=fs.statSync(".cig02e-index.json").size+fs.statSync("runtime/compositional_intent_graph_v1/frame_grounder.mjs").size;if(size>2097152)throw Error("router plus index exceeds 2 MiB");console.log("CIG02E_ROUTER_PLUS_INDEX_BYTES="+size)'
       - name: Compile all public Topics twice and verify deterministic bytes
         run: |
           node scripts/cig02b_compile.mjs .cig02b-index.json

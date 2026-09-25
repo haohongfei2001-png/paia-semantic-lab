@@ -1,0 +1,9 @@
+# CIG-02E unscored global runtime engineering
+
+The runtime consumes only the deterministic 144-Topic public-source frame index. It has no model, network call, persistent state, private data, or PAIA production dependency. Its output is deterministic for the same current input and index.
+
+Eligibility follows the current-input GOAL parser. A recognized request form may use the whole current input; bare mentions, quoted/incidental examples, and acknowledgements DEFER. Context is ignored as assignment evidence. Within an eligible span, two or more formal Topic names DEFER. A single exact formal name may assign; otherwise a Topic needs an OBJECT phrase paired with ACTION or OUTCOME evidence. At least one matching phrase must be unique across the 144 Topic inventory. More than one qualified Topic DEFERs. The evidence trace records the source frame and matched typed roles.
+
+The accompanying synthetic unit tests check request eligibility, object and role pairing, shared-phrase ambiguity, competing formal names, means versus goal, context independence, deterministic repeat, and index integrity. These tests are source-only engineering checks. They are not a public natural-expression DEV or an independent capability TEST, and no precision or coverage is claimed.
+
+GitHub Actions builds the index twice and compares exact bytes, runs the synthetic safety tests, and checks index <= 1 MiB and router plus index <= 2 MiB. The remaining frozen memory, cold-init, and warm-p95 limits require later runtime measurement. CIG-02 remains unfrozen. Before any freeze, register a new source-separated full-Catalog public DEV with stable gold and candidate/fixture/scorer hashes, score it under the original 0.95 precision, 0.70 coverage, 0.70 Topic macro recall, 0.02 false assignment, and zero context-harm floors. CIG-03 remains blocked pending that freeze and owner authorization for the independent capability TEST.
