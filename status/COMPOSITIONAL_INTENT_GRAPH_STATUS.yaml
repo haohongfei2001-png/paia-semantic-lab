@@ -110,6 +110,10 @@ rounds:
     cig02e_source_feasibility_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_FEASIBILITY_MERGED_MAIN_RECEIPT.json
     cig02e_targeted_issue_source_adjudication: docs/compositional-intent-graph-v1/CIG-02E_TARGETED_ISSUE_SOURCE_ADJUDICATION.md
     cig02e_targeted_issue_source_verdict: NO_ACCEPTED_FIXTURE_ROWS_DISCOVERY_ONLY
+    cig02e_targeted_issue_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_TARGETED_ISSUE_MERGED_MAIN_RECEIPT.json
+    cig02e_dialogue_source_triage: scripts/cig02e_dialogue_source_triage.mjs
+    cig02e_dialogue_source_triage_plan: docs/compositional-intent-graph-v1/CIG-02E_DIALOGUE_SOURCE_TRIAGE.md
+    cig02e_dialogue_source_classification: SOURCE_DISCOVERY_ONLY_NOT_GOLD_OR_CAPABILITY
     cig02e_source_feasibility_verdict: SOURCE_FEASIBILITY_UNQUALIFIED_NOT_ROUTER_CAPABILITY
     cig02e_full_catalog_triage_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_TRIAGE_MERGED_MAIN_RECEIPT.json
     cig02e_supplemental_source_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SUPPLEMENTAL_SOURCE_MERGED_MAIN_RECEIPT.json
@@ -127,4 +131,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Continue targeted, source-separated natural-request sourcing for the 18 sparse Topics and new DEFER/ambiguity controls. GitHub feature issues reviewed so far yield no accepted fixture rows. Do not register or score DEV until full-Catalog fixture/gold/candidate/scorer hashes are frozen. CIG-02 unfrozen; CIG-03 blocked."
+next_action: "Audit pinned DailyDialog dialogue turns for lexical candidates in eight sparse Topics, then adjudicate any full source turns as requests or background and verify reuse/provenance. Continue independent natural-request sourcing for all 18 sparse Topics and DEFER/ambiguity controls. No DEV registration or score until full-Catalog fixture/gold/candidate/scorer hashes freeze. CIG-02 unfrozen; CIG-03 blocked."
