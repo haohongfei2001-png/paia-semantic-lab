@@ -1,0 +1,84 @@
+{
+  "format": "cig02e-dialogue-source-merged-main-receipt-v1",
+  "pr_number": 45,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/45",
+  "exact_head_sha": "d3bf32439e524eaf23f9f81d33ec6010c3fa4346",
+  "merged_main_sha": "1ccf1afdfe001c5873bda1627bee72bc4154833e",
+  "source_only_result": {
+    "run_id": 36162118754,
+    "job_id": 108160960318,
+    "conclusion": "success",
+    "dialogue_rows": 13118,
+    "utterance_turns": 102980,
+    "unique_normalized_turns": 79488,
+    "selected_topics": 8,
+    "topics_with_lexical_candidate": 0
+  },
+  "exact_head_required_checks": [
+    {
+      "name": "pinned-dialogue-source-triage",
+      "run_id": 36162118754,
+      "job_id": 108160960318,
+      "conclusion": "success"
+    },
+    {
+      "name": "csl-public-pr-validation",
+      "run_id": 36162118668,
+      "job_id": 108160960194,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "run_id": 36162118567,
+      "job_id": 108160959646,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "run_id": 36162118595,
+      "job_id": 108160960172,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "run_id": 36162118818,
+      "job_id": 108160960959,
+      "conclusion": "success"
+    }
+  ],
+  "exact_main_required_checks": [
+    {
+      "name": "pinned-dialogue-source-triage",
+      "run_id": 36168212708,
+      "job_id": 108181059617,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "run_id": 36168212765,
+      "job_id": 108181060325,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "run_id": 36168212835,
+      "job_id": 108181060441,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "run_id": 36168212640,
+      "job_id": 108181059273,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "run_id": 36168212776,
+      "job_id": 108181060375,
+      "conclusion": "success"
+    }
+  ],
+  "classification": "SOURCE_DISCOVERY_ONLY_NOT_GOLD_OR_CAPABILITY",
+  "cig02_frozen": false,
+  "cig03_started": false
+}
