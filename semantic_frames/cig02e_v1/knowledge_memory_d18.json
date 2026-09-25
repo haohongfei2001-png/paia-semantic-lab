@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D18_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "备份与导出：数据备份、恢复、副本、导出、迁移文件和可恢复性。",
+        "en": "Backup & Export: backup, recovery, copies, export, data transfer and recoverability."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "备份数据",
+            "导出文件"
+          ],
+          "en": [
+            "back up data",
+            "export files"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "数据副本",
+            "迁移文件"
+          ],
+          "en": [
+            "data copy",
+            "transfer file"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "数据恢复",
+            "可恢复性"
+          ],
+          "en": [
+            "data recovery",
+            "recoverability"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "文件与文档存储：文件夹、文档存储、文件系统、云盘、路径和文件组织。",
+        "en": "File & Document Storage: files, folders, document storage, cloud drives, paths and file organization."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "存储文件",
+            "整理文件夹"
+          ],
+          "en": [
+            "store file",
+            "organize folder"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "文档",
+            "云盘"
+          ],
+          "en": [
+            "document",
+            "cloud drive"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "文件组织",
+            "路径管理"
+          ],
+          "en": [
+            "file organization",
+            "path management"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.journaling",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "日记与记录：日常日记、感受记录、每日回顾、私人书写和连续生活记录。",
+        "en": "Journaling: diary entries, daily reflections, personal writing and ongoing life journaling."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "写日记",
+            "每日回顾"
+          ],
+          "en": [
+            "write diary",
+            "reflect daily"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "日常经历",
+            "感受"
+          ],
+          "en": [
+            "daily experience",
+            "feeling"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "连续生活记录",
+            "私人书写"
+          ],
+          "en": [
+            "ongoing life journal",
+            "personal writing"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "AI记忆与上下文：AI系统记忆、个人上下文、长期记忆、上下文注入和记忆管理。",
+        "en": "AI Memory & Context: AI memory, personal context, long-term memory, context injection and memory management."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "管理记忆",
+            "注入上下文"
+          ],
+          "en": [
+            "manage memory",
+            "inject context"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "个人上下文",
+            "长期记忆"
+          ],
+          "en": [
+            "personal context",
+            "long-term memory"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "上下文管理",
+            "AI记忆维护"
+          ],
+          "en": [
+            "context management",
+            "AI memory maintenance"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "笔记与知识管理：笔记系统、知识库、标签、链接、知识组织、检索和个人知识管理。",
+        "en": "Notes & Knowledge Management: notes systems, knowledge bases, tagging, linking, organization and personal knowledge management."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "记笔记",
+            "组织知识"
+          ],
+          "en": [
+            "take notes",
+            "organize knowledge"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "知识库",
+            "标签"
+          ],
+          "en": [
+            "knowledge base",
+            "tag"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "知识检索",
+            "个人知识管理"
+          ],
+          "en": [
+            "knowledge retrieval",
+            "personal knowledge management"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "个人档案：长期保存的个人资料、经历、记录、文档和个人历史档案。",
+        "en": "Personal Archive: long-term preservation of personal records, experiences, documents and personal history."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "归档个人资料",
+            "长期保存"
+          ],
+          "en": [
+            "archive personal records",
+            "preserve long term"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "个人记录",
+            "历史档案"
+          ],
+          "en": [
+            "personal record",
+            "personal history"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "长期保存",
+            "个人档案"
+          ],
+          "en": [
+            "long-term preservation",
+            "personal archive"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "照片与媒体归档：照片、视频、音频等个人媒体的整理、归档、检索和长期保存。",
+        "en": "Photo & Media Archive: organization, archiving, retrieval and preservation of personal photos, video and audio."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "整理照片",
+            "归档媒体"
+          ],
+          "en": [
+            "organize photos",
+            "archive media"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "照片",
+            "视频"
+          ],
+          "en": [
+            "photo",
+            "video"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "媒体检索",
+            "长期保存"
+          ],
+          "en": [
+            "media retrieval",
+            "long-term preservation"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "domain_id": "D18",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "来源、版本与历史：来源追踪、版本历史、修改记录、审计链、变更来源和历史恢复。",
+        "en": "Provenance, Versions & History: provenance, version history, change records, audit trails and historical restoration."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "追踪来源",
+            "审计变更"
+          ],
+          "en": [
+            "track provenance",
+            "audit change"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "版本历史",
+            "修改记录"
+          ],
+          "en": [
+            "version history",
+            "change record"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "审计链",
+            "历史恢复"
+          ],
+          "en": [
+            "audit trail",
+            "historical restoration"
+          ]
+        }
+      }
+    }
+  ]
+}

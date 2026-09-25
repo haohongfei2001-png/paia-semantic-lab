@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D16_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "商业战略：企业方向、竞争优势、战略选择、业务组合、增长路径和长期经营策略。",
+        "en": "Business Strategy: business direction, competitive advantage, strategic choices, portfolio and growth paths."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "制定战略",
+            "选择业务方向"
+          ],
+          "en": [
+            "set strategy",
+            "choose business direction"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "企业方向",
+            "业务组合"
+          ],
+          "en": [
+            "business direction",
+            "portfolio"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "竞争优势",
+            "增长路径"
+          ],
+          "en": [
+            "competitive advantage",
+            "growth path"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "客户反馈与客服：客户反馈、客服、工单、满意度、问题响应和客户体验闭环。",
+        "en": "Customer Feedback & Support: customer feedback, support, tickets, satisfaction, issue response and service loops."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "收集反馈",
+            "响应工单"
+          ],
+          "en": [
+            "collect feedback",
+            "respond to ticket"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "客户反馈",
+            "客服工单"
+          ],
+          "en": [
+            "customer feedback",
+            "support ticket"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "客户满意度",
+            "问题闭环"
+          ],
+          "en": [
+            "customer satisfaction",
+            "service loop"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "创业：创业想法、创业过程、创始人问题、商业启动和早期公司建设。",
+        "en": "Entrepreneurship: startup creation, founder problems, venture formation and early company building."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "启动创业",
+            "建设公司"
+          ],
+          "en": [
+            "start venture",
+            "build company"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "创业想法",
+            "创始人问题"
+          ],
+          "en": [
+            "startup idea",
+            "founder problem"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "商业启动",
+            "早期公司建设"
+          ],
+          "en": [
+            "venture formation",
+            "early company building"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "市场研究：市场规模、行业研究、竞争格局、用户市场、趋势和市场验证。",
+        "en": "Market Research: market sizing, industry research, competition, customer markets, trends and market validation."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "研究市场",
+            "分析竞争"
+          ],
+          "en": [
+            "research market",
+            "analyze competition"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "市场规模",
+            "行业趋势"
+          ],
+          "en": [
+            "market size",
+            "industry trend"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "市场验证",
+            "竞争格局理解"
+          ],
+          "en": [
+            "market validation",
+            "competitive landscape"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "营销与增长：获客、增长、营销渠道、传播、转化、留存和增长实验。",
+        "en": "Marketing & Growth: acquisition, growth, marketing channels, conversion, retention and growth experiments."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "获取客户",
+            "开展增长实验"
+          ],
+          "en": [
+            "acquire customers",
+            "run growth experiment"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "营销渠道",
+            "转化路径"
+          ],
+          "en": [
+            "marketing channel",
+            "conversion path"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "转化",
+            "留存"
+          ],
+          "en": [
+            "conversion",
+            "retention"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "业务运营与流程：业务运营、流程设计、SOP、效率、跨团队执行和运营机制。",
+        "en": "Operations & Process: business operations, process design, SOPs, efficiency and cross-team execution."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "设计流程",
+            "运营业务"
+          ],
+          "en": [
+            "design process",
+            "operate business"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "业务流程",
+            "SOP"
+          ],
+          "en": [
+            "business process",
+            "SOP"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "运营效率",
+            "跨团队执行"
+          ],
+          "en": [
+            "operational efficiency",
+            "cross-team execution"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "商务合作：合作伙伴、渠道合作、联合项目、商务合作关系和伙伴协议。",
+        "en": "Partnerships: business partnerships, channel alliances, joint initiatives and partner relationships."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "建立合作",
+            "协商伙伴关系"
+          ],
+          "en": [
+            "build partnership",
+            "negotiate alliance"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "合作伙伴",
+            "渠道合作"
+          ],
+          "en": [
+            "business partner",
+            "channel alliance"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "联合项目",
+            "伙伴关系"
+          ],
+          "en": [
+            "joint initiative",
+            "partner relationship"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "domain_id": "D16",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "商务与销售：销售线索、客户开发、成交、报价、销售流程和收入机会。",
+        "en": "Sales: leads, prospecting, deals, quotations, sales process and revenue opportunities."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "开发客户",
+            "提出报价"
+          ],
+          "en": [
+            "prospect",
+            "make quotation"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "销售线索",
+            "客户交易"
+          ],
+          "en": [
+            "sales lead",
+            "customer deal"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "成交",
+            "收入机会"
+          ],
+          "en": [
+            "closed deal",
+            "revenue opportunity"
+          ]
+        }
+      }
+    }
+  ]
+}
