@@ -98,6 +98,8 @@ rounds:
     cig02e_global_runtime_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_GLOBAL_RUNTIME_MERGED_MAIN_RECEIPT.json
     cig02e_public_dev_source_plan: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_DEV_SOURCE_PLAN.md
     cig02e_public_dev_source_audit: scripts/cig02e_dolly_source_audit.mjs
+    cig02e_alpaca_source_audit: scripts/cig02e_alpaca_source_audit.mjs
+    cig02e_dolly_source_inventory_summary: artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_SOURCE_INVENTORY_SUMMARY.json
     cig02e_public_dev_source_classification: SOURCE_RETRIEVAL_ONLY_NOT_GOLD_OR_CAPABILITY
     cig02e_public_dev_fixture_status: NOT_REGISTERED
     cig02e_compiler_design_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_COMPILER_DESIGN_MERGED_MAIN_RECEIPT.json
@@ -112,4 +114,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Review pinned human-authored public source inventory without candidate predictions; if insufficient, add independent public source, then register full-Catalog DEV with stable gold and pre-open candidate/fixture/scorer hashes. CIG-02 unfrozen; CIG-03 blocked."
+next_action: "Review pinned human-authored and supplemental synthetic public source inventories without candidate predictions; adjudicate coverage and controls before registering full-Catalog DEV with stable gold and pre-open candidate/fixture/scorer hashes. CIG-02 unfrozen; CIG-03 blocked."

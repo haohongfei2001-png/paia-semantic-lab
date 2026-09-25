@@ -3,8 +3,8 @@ import crypto from "node:crypto";
 import assert from "node:assert/strict";
 import path from "node:path";
 
-const dataPath = process.argv[2] ?? ".cig02e-dolly-source.jsonl";
-const outputPath = process.argv[3] ?? "artifacts/ci/cig02e-dolly-source-inventory.json";
+const dataPath = process.argv[2] ?? ".cig02e-alpaca-source.json";
+const outputPath = process.argv[3] ?? "artifacts/ci/cig02e-alpaca-source-inventory.json";
 const sha256 = value => crypto.createHash("sha256").update(value).digest("hex");
 const normalize = value => String(value ?? "").normalize("NFKC").toLowerCase()
   .replace(/\s+/gu, " ").trim();
@@ -35,13 +35,13 @@ const topicQueries = [...byId].sort(([a], [b]) => a.localeCompare(b)).map(([topi
 });
 
 const dataBytes = fs.readFileSync(dataPath);
-const lines = dataBytes.toString("utf8").trim().split(/\r?\n/u);
-assert.ok(lines.length >= 15000 && lines.length <= 16000, "unexpected Dolly source size");
+const rows = JSON.parse(dataBytes.toString("utf8"));
+assert.ok(Array.isArray(rows) && rows.length >= 52000 && rows.length <= 53000,
+  "unexpected Alpaca source size");
 const counts = new Map(topicQueries.map(topic => [topic.topic_id, 0]));
 let nonempty = 0;
 let matchedRows = 0;
-for (const line of lines) {
-  const row = JSON.parse(line);
+for (const row of rows) {
   assert.equal(typeof row.instruction, "string", "missing public instruction");
   const instruction = normalize(row.instruction);
   if (!instruction) continue;
@@ -58,14 +58,14 @@ for (const line of lines) {
 const perTopic = Object.fromEntries([...counts].sort(([a], [b]) => a.localeCompare(b)));
 const zero = [...counts].filter(([, count]) => count === 0).map(([id]) => id);
 const result = {
-  format: "cig02e-dolly-public-source-retrieval-inventory-v1",
+  format: "cig02e-alpaca-public-source-retrieval-inventory-v1",
   classification: "SOURCE_RETRIEVAL_ONLY_NOT_GOLD_OR_CAPABILITY",
-  upstream: "Databricks Dolly 15k, public GitHub mirror buayism/dolly-15k-dataset",
-  upstream_commit: "6d7ebf384c5e588ee1b0dff816557489bc16089c",
-  upstream_blob_sha1: "7c507d16b055ae32107a6dd0585779678565dcd2",
-  upstream_license_declared: "CC-BY-SA-3.0",
+  upstream: "Stanford Alpaca public synthetic instructions",
+  upstream_commit: "761dc5bfbdeeffa89b8bff5d038781a4055f796a",
+  upstream_blob_sha1: "3779ddbc040543ab1834ef216c983d6fcc06cc9a",
+  upstream_license_declared: "CC-BY-NC-4.0",
   data_sha256: sha256(dataBytes),
-  source_rows: lines.length,
+  source_rows: rows.length,
   nonempty_instruction_rows: nonempty,
   lexical_retrieval_matched_rows: matchedRows,
   formal_topics: 144,
