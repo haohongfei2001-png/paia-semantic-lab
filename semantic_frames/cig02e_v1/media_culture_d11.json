@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D11_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.media_culture.art_culture",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "艺术与文化：艺术、展览、博物馆、文化传统、审美和文化现象。",
+        "en": "Arts & Culture: art, exhibitions, museums, cultural traditions, aesthetics and cultural phenomena."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "参观展览",
+            "欣赏艺术"
+          ],
+          "en": [
+            "visit exhibition",
+            "explore art"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "艺术",
+            "文化传统"
+          ],
+          "en": [
+            "art",
+            "cultural tradition"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "审美体验",
+            "文化理解"
+          ],
+          "en": [
+            "aesthetic experience",
+            "cultural understanding"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.books_literature",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "书籍与文学：书籍、小说、文学作品、作者、阅读体验和文学讨论。",
+        "en": "Books & Literature: books, novels, literature, authors, reading experience and literary discussion."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "阅读",
+            "讨论文学"
+          ],
+          "en": [
+            "read",
+            "discuss literature"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "书籍",
+            "小说"
+          ],
+          "en": [
+            "book",
+            "novel"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "阅读体验",
+            "文学讨论"
+          ],
+          "en": [
+            "reading experience",
+            "literary discussion"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "电影与电视剧：电影、电视剧、综艺、影视作品、观看和剧情讨论。",
+        "en": "Film & TV: movies, television, shows, viewing and discussion of screen works."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "观看影视",
+            "讨论剧情"
+          ],
+          "en": [
+            "watch screen work",
+            "discuss plot"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "电影",
+            "电视剧"
+          ],
+          "en": [
+            "movie",
+            "television show"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "观影体验",
+            "影视讨论"
+          ],
+          "en": [
+            "viewing experience",
+            "screen-work discussion"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "游戏：电子游戏、桌游、玩法、游戏攻略、游戏平台和游戏体验。",
+        "en": "Games: video games, board games, gameplay, guides, platforms and gaming experience."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "玩游戏",
+            "研究玩法"
+          ],
+          "en": [
+            "play game",
+            "learn gameplay"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "电子游戏",
+            "桌游"
+          ],
+          "en": [
+            "video game",
+            "board game"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "游戏体验",
+            "玩法掌握"
+          ],
+          "en": [
+            "gaming experience",
+            "gameplay understanding"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "现场演出与文化活动：演唱会、演出、戏剧、音乐节、线下文化活动和现场体验。",
+        "en": "Live Cultural Events: concerts, performances, theater, festivals and live cultural experiences."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "观看演出",
+            "参加活动"
+          ],
+          "en": [
+            "attend performance",
+            "join event"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "演唱会",
+            "戏剧"
+          ],
+          "en": [
+            "concert",
+            "theater"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "现场体验",
+            "文化活动参与"
+          ],
+          "en": [
+            "live experience",
+            "cultural event experience"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "音乐：歌曲、音乐人、专辑、播放、音乐推荐、音乐风格和听歌体验。",
+        "en": "Music: songs, artists, albums, listening, recommendations, genres and music experience."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "听歌",
+            "探索音乐"
+          ],
+          "en": [
+            "listen to music",
+            "explore music"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "歌曲",
+            "专辑"
+          ],
+          "en": [
+            "song",
+            "album"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "听歌体验",
+            "音乐推荐"
+          ],
+          "en": [
+            "listening experience",
+            "music recommendation"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.news_media",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "新闻与媒体：新闻事件、媒体报道、媒体机构、信息传播和新闻消费。",
+        "en": "News & Media: news events, reporting, media outlets, information distribution and news consumption."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "阅读新闻",
+            "了解报道"
+          ],
+          "en": [
+            "read news",
+            "review reporting"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "新闻事件",
+            "媒体报道"
+          ],
+          "en": [
+            "news event",
+            "media report"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "新闻理解",
+            "信息获取"
+          ],
+          "en": [
+            "news understanding",
+            "information access"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "domain_id": "D11",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "网络文化：网络社区、梗、平台文化、网红、网络现象和线上亚文化。",
+        "en": "Online Culture: online communities, memes, platform culture, influencers and internet subculture."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "浏览社区",
+            "讨论网络现象"
+          ],
+          "en": [
+            "browse community",
+            "discuss online phenomenon"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "网络社区",
+            "梗"
+          ],
+          "en": [
+            "online community",
+            "meme"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "平台文化理解",
+            "网络亚文化讨论"
+          ],
+          "en": [
+            "platform-culture understanding",
+            "internet subculture discussion"
+          ]
+        }
+      }
+    }
+  ]
+}
