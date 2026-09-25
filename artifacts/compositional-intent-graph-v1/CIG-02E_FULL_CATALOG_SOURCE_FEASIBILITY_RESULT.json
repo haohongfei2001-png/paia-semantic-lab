@@ -1,0 +1,157 @@
+{
+  "format": "cig02e-full-catalog-source-feasibility-result-v1",
+  "classification": "SOURCE_FEASIBILITY_UNQUALIFIED_NOT_ROUTER_CAPABILITY",
+  "main_source_queue_sha": "977666497e86610c130ab91cf3afd26b23df5c2b",
+  "source_queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "actions_run_id": 36113518112,
+  "actions_job_id": 108002125705,
+  "formal_topics": 144,
+  "human_source_topics_without_lexical_candidate": 13,
+  "three_source_topics_without_lexical_candidate": 2,
+  "three_source_topics_at_most_three_lexical_candidates": 8,
+  "three_source_topics_at_most_ten_lexical_candidates": 18,
+  "source_examples_selected": {
+    "dolly": 373,
+    "alpaca": 41,
+    "self_instruct": 5
+  },
+  "zero_candidate_topics": [
+    "sys.family_relationships.caregiving_family_support",
+    "sys.knowledge_memory.photos_media_archive"
+  ],
+  "sparse_topic_sample_rows": [
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 0,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": []
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 0,
+        "self_instruct": 1
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "self_instruct:37002",
+          "instruction_sha256": "55758179e95cb1e713de3bfd83fc8a736afad2aef7ffa774ecf29d7ebf1a0002"
+        }
+      ]
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 1,
+        "self_instruct": 2
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:15445",
+          "instruction_sha256": "5848398a11735a764a26a705954fb3c2dc17bfc7ae15385951bffebb8c79c99e"
+        },
+        {
+          "source_row": "self_instruct:26348",
+          "instruction_sha256": "801612ecae2fdafa6adbbc1aac88ae217809cd2a83e53bc431fc1594dc027770"
+        },
+        {
+          "source_row": "self_instruct:53082",
+          "instruction_sha256": "f56bd6cb1bf7d184ee3018181ac8ee7f96e4637019e287065798f4da6b509696"
+        }
+      ]
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 0,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": []
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 2,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:22767",
+          "instruction_sha256": "2ed2d407b10c2db2dfa7a03b810f0159e41d6d83146ef598c4f3f069f5153fb6"
+        },
+        {
+          "source_row": "alpaca:19359",
+          "instruction_sha256": "3d009eb48546a92cd29948021c7353c48a5bfb1952527b0c0286936751c87596"
+        }
+      ]
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 1,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:34453",
+          "instruction_sha256": "c8cf4ded223f8f1791d259a3994daaa3db23c387d068b76f094110f617783d7c"
+        }
+      ]
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 3,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:14917",
+          "instruction_sha256": "3510d356a394272fde0dbb4ff1fb32b83623fc086340e6d44759e3f3f6316e95"
+        },
+        {
+          "source_row": "alpaca:45484",
+          "instruction_sha256": "36b9c0c1f22bef53270067bc0419416517a0d2da4ee9ca7427677d2c129e808f"
+        },
+        {
+          "source_row": "alpaca:44519",
+          "instruction_sha256": "aa1d68d323cdd4c5aa8e665df84431a7466a5a10f785b30068d776ed1291e9d3"
+        }
+      ]
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "lexical_candidate_counts": {
+        "dolly": 0,
+        "alpaca": 1,
+        "self_instruct": 0
+      },
+      "sampled_source_rows": [
+        {
+          "source_row": "alpaca:34879",
+          "instruction_sha256": "28bcb99d8bb70e56c8f858eb206591939e58bd77d79aad866fa721e76416283d"
+        }
+      ]
+    }
+  ],
+  "interpretation": "These are lexical source-retrieval and sampled-row findings, not gold, DEV coverage, router scores or proof of semantic absence. Reviewed sparse samples include off-topic/task-template hits.",
+  "candidate_predictions_read": 0,
+  "gold_rows_created": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
