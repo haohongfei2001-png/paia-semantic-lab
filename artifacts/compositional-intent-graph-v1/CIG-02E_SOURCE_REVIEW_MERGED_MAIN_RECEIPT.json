@@ -1,0 +1,53 @@
+{
+  "format": "cig02e-source-review-merged-main-receipt-v1",
+  "pr_number": 40,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/40",
+  "merged_main_sha": "3a8cd6ac4027274a187b6858c5f6eface8850831",
+  "exact_head_sha": "e40040379fa60c5ec8d47c6df0405c4fe9e02fa7",
+  "exact_head_source_review": {
+    "run_id": 36098892939,
+    "job_id": 107956935430,
+    "conclusion": "success"
+  },
+  "exact_main_checks": [
+    {
+      "name": "cig02b-public-dev",
+      "run_id": 36099011091,
+      "job_id": 107957291205,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "run_id": 36099011140,
+      "job_id": 107957291244,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "run_id": 36099011117,
+      "job_id": 107957291243,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "run_id": 36099011118,
+      "job_id": 107957291188,
+      "conclusion": "success"
+    }
+  ],
+  "broad_query_counts": {
+    "dolly": {
+      "caregiving": 3,
+      "major_purchases": 20,
+      "photos_media_archive": 0
+    },
+    "alpaca": {
+      "caregiving": 2,
+      "major_purchases": 34,
+      "photos_media_archive": 4
+    }
+  },
+  "classification": "SOURCE_REVIEW_DISCOVERY_NOT_GOLD_OR_CAPABILITY",
+  "cig02_frozen": false,
+  "cig03_started": false
+}
