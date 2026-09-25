@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D10_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.travel_places.attractions_activities",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "景点与活动：景点、游玩项目、体验活动、门票和旅行中的活动安排。",
+        "en": "Attractions & Activities: attractions, tours, experiences, activities, tickets and things to do."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "游览景点",
+            "安排活动"
+          ],
+          "en": [
+            "visit attraction",
+            "plan activity"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "景点",
+            "体验活动"
+          ],
+          "en": [
+            "attraction",
+            "travel activity"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "游玩安排",
+            "门票选择"
+          ],
+          "en": [
+            "things to do",
+            "ticket choice"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.local_navigation",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "本地导航：当地路线、地图、公交、步行、打车、位置和城市内移动。",
+        "en": "Local Navigation: local routes, maps, transit, walking, ride-hailing and navigation within a place."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "导航",
+            "乘坐公交"
+          ],
+          "en": [
+            "navigate",
+            "take transit"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "当地路线",
+            "地图"
+          ],
+          "en": [
+            "local route",
+            "map"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "城市内移动",
+            "到达目的地"
+          ],
+          "en": [
+            "local movement",
+            "destination arrival"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.lodging",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "住宿：酒店、民宿、住宿选择、入住、房型和住宿预订。",
+        "en": "Lodging: hotels, rentals, accommodation choice, check-in, room types and lodging booking."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "预订住宿",
+            "办理入住"
+          ],
+          "en": [
+            "book lodging",
+            "check in"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "酒店",
+            "房型"
+          ],
+          "en": [
+            "hotel",
+            "room type"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "住宿选择",
+            "住宿预订"
+          ],
+          "en": [
+            "accommodation choice",
+            "lodging booking"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "旅行餐饮：旅行中的餐厅、美食、用餐选择、本地菜和餐饮安排。",
+        "en": "Travel Dining: restaurants, food, local cuisine and dining choices while traveling."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "选择餐厅",
+            "安排用餐"
+          ],
+          "en": [
+            "choose restaurant",
+            "plan dining"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "餐厅",
+            "本地菜"
+          ],
+          "en": [
+            "restaurant",
+            "local cuisine"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "旅行用餐选择",
+            "餐饮安排"
+          ],
+          "en": [
+            "travel dining choice",
+            "dining arrangement"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.transport_travel",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "旅行交通：机票、火车、长途交通、机场、航班和旅行中的跨地运输。",
+        "en": "Travel Transport: flights, trains, airports, long-distance transportation and intercity travel."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "预订机票",
+            "乘坐火车"
+          ],
+          "en": [
+            "book flight",
+            "take train"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "航班",
+            "火车"
+          ],
+          "en": [
+            "flight",
+            "train"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "跨地运输",
+            "长途交通安排"
+          ],
+          "en": [
+            "intercity travel",
+            "long-distance transport"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.trip_planning",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+        "en": "Trip Planning: itinerary design, destination planning, trip duration, budget and travel preparation."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "规划行程",
+            "准备旅行"
+          ],
+          "en": [
+            "plan itinerary",
+            "prepare trip"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "目的地",
+            "旅行天数"
+          ],
+          "en": [
+            "destination",
+            "trip duration"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "旅行计划",
+            "行程设计"
+          ],
+          "en": [
+            "trip plan",
+            "itinerary design"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "旅行记录：旅行记录、游记、照片整理、行程回顾和旅行资料归档。",
+        "en": "Trip Records: travel records, trip journals, photo organization and post-trip documentation."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "记录旅行",
+            "整理照片"
+          ],
+          "en": [
+            "document trip",
+            "organize photos"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "旅行记录",
+            "照片"
+          ],
+          "en": [
+            "travel record",
+            "photo"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "游记",
+            "旅行资料归档"
+          ],
+          "en": [
+            "trip journal",
+            "post-trip documentation"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.travel_places.visas_border",
+      "domain_id": "D10",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+        "en": "Visas & Borders: visas, entry, exit, customs, border rules and travel-document requirements."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "申请签证",
+            "核对入境要求"
+          ],
+          "en": [
+            "apply for visa",
+            "check entry requirements"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "签证",
+            "旅行证件"
+          ],
+          "en": [
+            "visa",
+            "travel document"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "出入境准备",
+            "证件要求核对"
+          ],
+          "en": [
+            "border preparation",
+            "document requirement check"
+          ]
+        }
+      }
+    }
+  ]
+}
