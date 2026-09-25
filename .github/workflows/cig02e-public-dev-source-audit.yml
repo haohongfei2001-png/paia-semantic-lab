@@ -8,6 +8,7 @@ on:
       - "scripts/cig02e_alpaca_source_audit.mjs"
       - "scripts/cig02e_source_review.mjs"
       - "scripts/cig02e_self_instruct_source_audit.mjs"
+      - "scripts/cig02e_full_catalog_source_triage.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_DEV_SOURCE_PLAN.md"
 permissions:
   contents: read
@@ -54,6 +55,10 @@ jobs:
         run: |
           node --check scripts/cig02e_self_instruct_source_audit.mjs
           node scripts/cig02e_self_instruct_source_audit.mjs .cig02e-self-instruct-source.jsonl artifacts/ci/cig02e-self-instruct-source-inventory.json
+      - name: Build deterministic full-Catalog source review queue without gold or predictions
+        run: |
+          node --check scripts/cig02e_full_catalog_source_triage.mjs
+          node scripts/cig02e_full_catalog_source_triage.mjs .cig02e-dolly-source.jsonl .cig02e-alpaca-source.json .cig02e-self-instruct-source.jsonl artifacts/ci/cig02e-full-catalog-source-triage.json
       - name: Preserve source-only inventory
         uses: actions/upload-artifact@v4
         with:
@@ -62,5 +67,6 @@ jobs:
             artifacts/ci/cig02e-dolly-source-inventory.json
             artifacts/ci/cig02e-alpaca-source-inventory.json
             artifacts/ci/cig02e-self-instruct-source-inventory.json
+            artifacts/ci/cig02e-full-catalog-source-triage.json
           if-no-files-found: error
           retention-days: 30
