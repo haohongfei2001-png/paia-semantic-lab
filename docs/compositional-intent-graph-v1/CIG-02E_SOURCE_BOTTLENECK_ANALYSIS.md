@@ -14,7 +14,7 @@ These are different source classes with the same practical intake failure: gener
 
 The immediate bottleneck is a **verified request-to-Topic mapping**, not another runtime threshold. For a qualifying full-Catalog DEV, each row needs a genuine current goal, independent source authorship, stable text provenance and reuse basis, a formal Topic boundary decision, and ambiguity/insufficient-evidence controls. A word match alone answers none of those questions. Mining issue motivation as if it were the requested goal would contaminate gold. Treating a scripted conversation or synthetic template as independently observed natural expression would overstate source separation.
 
-The exact-anchor search is useful as a cheap discovery filter but is visibly underinclusive for natural dialogue and overinclusive for multi-goal technical text. Repeating it on another broad corpus would produce another count without resolving annotation and rights. Changing formal anchors or runtime behavior in response to these source-only zeros would be premature; changing thresholds on consumed CIG-02B/C/D DEV is prohibited. No capability floor is relaxed.
+The exact-anchor search is a cheap discovery filter, but the zero-hit dialogue result leaves semantic recall unknown; the reviewed technical issues show that lexical hits can also point at a background goal. Repeating it on another broad corpus would produce another count without resolving annotation and rights. Changing formal anchors or runtime behavior in response to these source-only zeros would be premature; changing thresholds on consumed CIG-02B/C/D DEV is prohibited. No capability floor is relaxed.
 
 ## Source intake gate for the next batch
 
