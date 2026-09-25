@@ -8,14 +8,15 @@ assert.equal(catalogIds.size, 144, "formal Catalog ID set changed");
 const sourcePaths = [
   "semantic_profiles/v0.1/system_topics_shard_01.json",
   "semantic_profiles/v0.1/system_topics_shard_02.json",
-  "semantic_profiles/v0.1/system_topics_shard_03.json"
+  "semantic_profiles/v0.1/system_topics_shard_03.json",
+  "semantic_profiles/v0.1/system_topics_shard_04.json"
 ];
 const sources = new Map(sourcePaths.map(path => [path,
   JSON.parse(fs.readFileSync(path, "utf8")).profiles]));
 for (const [path, profiles] of sources) assert.equal(profiles.length, 24, "public source shard changed: " + path);
 const profiles = sourcePaths.flatMap(path => sources.get(path));
 const byId = new Map(profiles.map(profile => [profile.topic_id, profile]));
-assert.equal(byId.size, 72, "duplicate public source Topic");
+assert.equal(byId.size, 96, "duplicate public source Topic");
 const expectedFiles = new Map([
   ["personal_direction_d01.json", ["D01", sourcePaths[0]]],
   ["family_relationships_d02.json", ["D02", sourcePaths[0]]],
@@ -25,7 +26,10 @@ const expectedFiles = new Map([
   ["projects_products_d06.json", ["D06", sourcePaths[1]]],
   ["ai_computing_d07.json", ["D07", sourcePaths[2]]],
   ["finance_purchases_d08.json", ["D08", sourcePaths[2]]],
-  ["home_daily_d09.json", ["D09", sourcePaths[2]]]
+  ["home_daily_d09.json", ["D09", sourcePaths[2]]],
+  ["travel_places_d10.json", ["D10", sourcePaths[3]]],
+  ["media_culture_d11.json", ["D11", sourcePaths[3]]],
+  ["communication_writing_d12.json", ["D12", sourcePaths[3]]]
 ]);
 const files = fs.readdirSync(frameDir).filter(name => name.endsWith(".json")).sort();
 assert.deepEqual(files, [...expectedFiles.keys()].sort(), "unexpected authored source files");
@@ -70,7 +74,7 @@ for (const file of files) {
   assert.equal(authored.frames.filter(frame => frame.domain_id === domain).length,
     domainProfiles.length, "domain source authoring incomplete");
 }
-assert.equal(seen.size, 72, "authored public source Topic count changed");
+assert.equal(seen.size, 96, "authored public source Topic count changed");
 console.log(JSON.stringify({
   classification: "SOURCE_AUTHORING_ONLY_NOT_CAPABILITY",
   authored_topics: seen.size, catalog_topics: catalogIds.size,
