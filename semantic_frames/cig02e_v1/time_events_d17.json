@@ -1,0 +1,376 @@
+{
+  "format": "cig02e-predicate-frames-v1",
+  "status": "PARTIAL_SOURCE_AUTHORING_NOT_RUNTIME_CANDIDATE",
+  "authoring_scope": "PUBLIC_PROFILE_D17_ONLY",
+  "frame_count": 8,
+  "frames": [
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "预约与预订：预约医生、服务、餐厅、场馆等具体席位或时段的预订行为。",
+        "en": "Appointments & Bookings: booking specific appointments, services, restaurants, venues or time slots."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "预约",
+            "预订时段"
+          ],
+          "en": [
+            "book appointment",
+            "reserve time slot"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "服务",
+            "具体时段"
+          ],
+          "en": [
+            "service",
+            "time slot"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "预约完成",
+            "席位预订"
+          ],
+          "en": [
+            "appointment booking",
+            "reserved place"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "日程与排期：具体日期时间安排、会议日程、时间槽、排期冲突和日历管理。",
+        "en": "Calendar & Scheduling: specific date-time scheduling, meetings, time slots, schedule conflicts and calendar management."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "安排日程",
+            "调整排期"
+          ],
+          "en": [
+            "schedule",
+            "reschedule"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "会议时间",
+            "日历"
+          ],
+          "en": [
+            "meeting time",
+            "calendar"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "日程安排",
+            "排期冲突处理"
+          ],
+          "en": [
+            "calendar schedule",
+            "schedule conflict resolution"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "节日与庆祝：节日、生日、纪念日、庆祝活动、礼物和节庆安排。",
+        "en": "Celebrations & Holidays: holidays, birthdays, anniversaries, celebrations, gifts and festive planning."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "筹划庆祝",
+            "安排节日"
+          ],
+          "en": [
+            "plan celebration",
+            "arrange holiday"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "生日",
+            "纪念日"
+          ],
+          "en": [
+            "birthday",
+            "anniversary"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "节庆安排",
+            "礼物计划"
+          ],
+          "en": [
+            "festive plan",
+            "gift plan"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.life_events",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "人生事件：毕业、入职、结婚、生育、搬迁等人生阶段事件和重要个人事件。",
+        "en": "Life Events: graduation, starting work, marriage, birth, relocation and major life-stage events."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "准备人生事件",
+            "记录阶段变化"
+          ],
+          "en": [
+            "prepare life event",
+            "record life transition"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "毕业",
+            "结婚"
+          ],
+          "en": [
+            "graduation",
+            "marriage"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "人生阶段变化",
+            "重要事件安排"
+          ],
+          "en": [
+            "life-stage transition",
+            "major event plan"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "计划与清单：可执行计划、步骤清单、待办列表、准备事项和完成检查。",
+        "en": "Plans & Checklists: actionable plans, step lists, checklists, preparation items and completion tracking."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "制定计划",
+            "核对清单"
+          ],
+          "en": [
+            "make plan",
+            "check list"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "步骤清单",
+            "待办事项"
+          ],
+          "en": [
+            "step list",
+            "to-do item"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "完成检查",
+            "执行计划"
+          ],
+          "en": [
+            "completion tracking",
+            "actionable plan"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "提醒与截止期：提醒、截止日期、到期时间、催办、倒计时和不能错过的节点。",
+        "en": "Reminders & Deadlines: reminders, deadlines, due dates, follow-ups, countdowns and time-critical milestones."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "设置提醒",
+            "催办"
+          ],
+          "en": [
+            "set reminder",
+            "follow up"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "截止日期",
+            "到期事项"
+          ],
+          "en": [
+            "deadline",
+            "due item"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "节点不遗漏",
+            "到期跟进"
+          ],
+          "en": [
+            "time-critical follow-up",
+            "deadline tracking"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "周期性安排：按天周月重复的安排、周期习惯、重复任务和固定节奏。",
+        "en": "Recurring Routines: daily, weekly or monthly recurring schedules, repeated tasks and recurring routines."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "安排重复任务",
+            "设定周期"
+          ],
+          "en": [
+            "schedule repeated task",
+            "set recurrence"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "周期习惯",
+            "固定日程"
+          ],
+          "en": [
+            "recurring habit",
+            "regular schedule"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "固定节奏",
+            "周期性安排"
+          ],
+          "en": [
+            "recurring routine",
+            "repeated schedule"
+          ]
+        }
+      }
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "domain_id": "D17",
+      "source_profile_path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "source_field": "semantic_core",
+      "basis": {
+        "zh": "时间管理：时间分配、优先级、专注时段、时间预算、拖延和时间使用效率。",
+        "en": "Time Management: time allocation, priorities, focus blocks, time budgeting and use of time."
+      },
+      "source_classes": [
+        "FORMAL_CATALOG",
+        "GENERAL_SEMANTIC_REASONING"
+      ],
+      "roles": {
+        "ACTION": {
+          "zh": [
+            "分配时间",
+            "设定优先级"
+          ],
+          "en": [
+            "allocate time",
+            "prioritize"
+          ]
+        },
+        "OBJECT": {
+          "zh": [
+            "专注时段",
+            "时间预算"
+          ],
+          "en": [
+            "focus block",
+            "time budget"
+          ]
+        },
+        "OUTCOME": {
+          "zh": [
+            "时间使用效率",
+            "优先级安排"
+          ],
+          "en": [
+            "time-use efficiency",
+            "priority order"
+          ]
+        }
+      }
+    }
+  ]
+}
