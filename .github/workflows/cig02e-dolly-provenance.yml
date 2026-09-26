@@ -1,0 +1,46 @@
+name: CIG-02E Dolly provenance reconciliation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02e-dolly-provenance.yml"
+      - "scripts/cig02e_dolly_provenance.mjs"
+      - "tests-js/cig02e_dolly_provenance.test.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02e-dolly-provenance.yml"
+      - "scripts/cig02e_dolly_provenance.mjs"
+      - "tests-js/cig02e_dolly_provenance.test.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"
+permissions:
+  contents: read
+concurrency:
+  group: cig02e-dolly-provenance-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  pinned-dolly-provenance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check identity reconciliation edge cases
+        run: node --test tests-js/cig02e_dolly_provenance.test.mjs
+      - name: Fetch and verify two immutable public GitHub snapshots
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/buayism/dolly-15k-dataset/6d7ebf384c5e588ee1b0dff816557489bc16089c/databricks-dolly-15k.jsonl --output .cig02e-dolly-mirror.jsonl
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/databrickslabs/dolly/2305eb7f2f4b3beb2379f34c6addf335b46c4b43/data/databricks-dolly-15k.jsonl --output .cig02e-dolly-official.jsonl
+          test "$(git hash-object .cig02e-dolly-mirror.jsonl)" = "7c507d16b055ae32107a6dd0585779678565dcd2"
+          test "$(git hash-object .cig02e-dolly-official.jsonl)" = "9b0b912c478e7ccd61ce741ebb409ddf8c7c22e6"
+      - name: Reconcile source identities without Topic retrieval or router scoring
+        run: node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cig02e-dolly-provenance
+          path: artifacts/ci/cig02e-dolly-provenance.json
+          if-no-files-found: error
+          retention-days: 30
