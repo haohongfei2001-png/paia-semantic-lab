@@ -1,0 +1,772 @@
+{
+  "format": "cig02e-finance-media-communication-legal-source-pilot-v1",
+  "classification": "PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "selection": "First two existing deterministic samples per D08/D11/D12/D13 Topic, or all selected samples if fewer; no replacement. Retrieval counts do not establish semantic coverage.",
+  "topic_count": 32,
+  "topic_nominations": 63,
+  "distinct_source_rows": 59,
+  "topics": [
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.email_messages",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.negotiation_persuasion",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.translation",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "selected_nominations": 1
+    },
+    {
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.government_services",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.legal_civic.legal_questions",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.art_culture",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.books_literature",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.news_media",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "selected_nominations": 2
+    }
+  ],
+  "decision_counts": {
+    "PLAUSIBLE_SOURCE_CANDIDATE": 12,
+    "REJECT_FOR_NOMINATED_TOPIC": 28,
+    "QUARANTINED_SOURCE_INPUT_MISMATCH": 9,
+    "UNCERTAIN_TASK_VS_TOPIC": 5,
+    "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 7
+  },
+  "decisions": [
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "source_row": "dolly:490",
+      "instruction_sha256": "08822bf437cb7c74a715287f258adee7fb0585799a858ad3315f37dc0e5c55aa",
+      "official_input_rows": [
+        490
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Explicitly requests success-factor text for a formal enterprise integration proposal."
+    },
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "source_row": "dolly:12575",
+      "instruction_sha256": "51693e0ed0723013fc07f431281c8f5f6fc041e283ec17c7873d97224f69000e",
+      "official_input_rows": [
+        12578
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks the basis of a development indicator/report, not authoring or delivering a formal document."
+    },
+    {
+      "topic_id": "sys.communication_writing.email_messages",
+      "source_row": "dolly:9206",
+      "instruction_sha256": "00205a1bc25cc00cf4d179b5b0f5ed96b8eb07e4f4894e92857705f3b748a930",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.communication_writing.email_messages",
+      "source_row": "dolly:10843",
+      "instruction_sha256": "003157e0ac8639c2cf01e24ac63645b66a1b6bba9967f81e216da10478a530d7",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_row": "dolly:6879",
+      "instruction_sha256": "35eee13328168068811d5d3967045a26b47b26214fe6bc8077f3b2d206dfed2c",
+      "official_input_rows": [
+        6879
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests an email declining an interview after accepting another offer; no bargaining or persuasion goal is shown."
+    },
+    {
+      "topic_id": "sys.communication_writing.negotiation_persuasion",
+      "source_row": "dolly:2721",
+      "instruction_sha256": "4a36547f82b6cc9e2d6892ecff1d2ec91c4dbeaf2a3824e80fc026c52389f548",
+      "official_input_rows": [
+        2721
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a spatial displacement calculation; process is mathematical reasoning, not influencing another person."
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "source_row": "dolly:13141",
+      "instruction_sha256": "2443a2346e61a9d5d9bf3151b726c11dbb88ea2fc8ef00f8f9f2c5805de5c592",
+      "official_input_rows": [
+        13144
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks how to make a workplace presentation effective."
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "source_row": "dolly:13129",
+      "instruction_sha256": "6ab6d7530aebb12d7d44c4e3ff694a72f53c5614ad651a7f26c56e1088ce0776",
+      "official_input_rows": [
+        13132
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks how to give a good presentation."
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "source_row": "dolly:3330",
+      "instruction_sha256": "9bb93e07c3fe3e731d399c7de24ab1c64eeba3ac71ae7f8529b5731ec1b99cdb",
+      "official_input_rows": [
+        3330
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Explicit tweet format but fictional animal perspective; public-post goal versus creative writing requires adjudication."
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "source_row": "alpaca:39370",
+      "instruction_sha256": "003d83f642f9e28ea8a0268e5c983b1f81d476ed58b7ff8f39be06d83343ca01",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "source_row": "dolly:11358",
+      "instruction_sha256": "01f49922b535b320fe2f1af6d32af97f9ce3ec6ed1a03873080d35a650f537a9",
+      "official_input_rows": [
+        11361
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests an introduction intended for spoken delivery to a recruiter; employment is audience context."
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "source_row": "dolly:5021",
+      "instruction_sha256": "043f428c799168162c66fefbb5bfe1964bcbef42902f2ebfb2c97e3ad6a9ebde",
+      "official_input_rows": [
+        5021,
+        12641
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Requests a fictional dialogue, not live interpersonal conversation; spoken form versus creative writing requires adjudication."
+    },
+    {
+      "topic_id": "sys.communication_writing.translation",
+      "source_row": "dolly:3238",
+      "instruction_sha256": "533aad0f5acdff4f2f482257058141ee627f4a47286a6e58d7836bbdc452be28",
+      "official_input_rows": [
+        3238
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Lost in Translation is a film title; request classifies actors and movies, not language conversion."
+    },
+    {
+      "topic_id": "sys.communication_writing.translation",
+      "source_row": "dolly:6596",
+      "instruction_sha256": "aa19d4a07a73558c289fbd06cfebeaa3964ce05e9423de1fa34984ffc11e57aa",
+      "official_input_rows": [
+        6596
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests film performance awards; translation is only in the film title."
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "source_row": "dolly:10126",
+      "instruction_sha256": "0c57cc26c4a923e2ced5c46acd9126aeb81b9bdf3fff5ca5269dd1a6d63354d5",
+      "official_input_rows": [
+        10129
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Provides a family message draft without an explicit editing request; writing intent versus pet-care instruction needs adjudication."
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "source_row": "dolly:13039",
+      "instruction_sha256": "2951a554114e7735a991b54ee783578c42e216d010c81da69e2e90f8c5037edd",
+      "official_input_rows": [
+        13042
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests non-writing uses of a pencil, not prose authoring or editing."
+    },
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "source_row": "dolly:7308",
+      "instruction_sha256": "0057b18ba40712041c271f48ef1ab106e5e79c9858931439776630feffdb3de1",
+      "official_input_rows": [
+        7308
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks about peer-to-peer money transfer applications."
+    },
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "source_row": "dolly:6347",
+      "instruction_sha256": "0833ecd4aab9751abfd5a7393394cc78cae395a0d36468dd3b11da1a94bc9154",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "source_row": "dolly:5405",
+      "instruction_sha256": "06c0557cb86db1235d81bcfc59aae80e0350366b2d9d825118debb6bc43d722f",
+      "official_input_rows": [
+        5405
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests understanding of free cash flow, included in the formal profile."
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "source_row": "dolly:6057",
+      "instruction_sha256": "168f936d0ab88e1d745c757a48f17c26a83b6d91cf97df935a97a963cef1d3cc",
+      "official_input_rows": [
+        6057
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Primary goal is a San Francisco trip plan; budget is one component of that travel output."
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "source_row": "dolly:629",
+      "instruction_sha256": "00e764c81fc9b6ab62e7030aac251f9da5c1d504caf457253b817772fcc0a1a5",
+      "official_input_rows": [
+        629
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks the meaning of an unsecured loan."
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "source_row": "dolly:7720",
+      "instruction_sha256": "03063517c6006a162716cf96158d0cb27984e18a1be8d02b1a41cf43e17a93b6",
+      "official_input_rows": [
+        7721
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Interest rates and macroeconomy are related to credit but no borrowing or repayment goal is shown; economic understanding boundary requires adjudication."
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "source_row": "dolly:11718",
+      "instruction_sha256": "0234a23278e65eb182e747769e34ef907e4d2a60d9824c71ee750ee206ea3b3c",
+      "official_input_rows": [
+        11721
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Direct request for investment asset allocation using a three-fund portfolio context."
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "source_row": "dolly:14478",
+      "instruction_sha256": "0589707852afba8e31d6ce43147fbc99f8183b352eb8751441be55c996addb96",
+      "official_input_rows": [
+        14481
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks the meaning of a hedge fund, an investment vehicle."
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "source_row": "self_instruct:37002",
+      "instruction_sha256": "55758179e95cb1e713de3bfd83fc8a736afad2aef7ffa774ecf29d7ebf1a0002",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "source_row": "dolly:11711",
+      "instruction_sha256": "0483fb1af3cb14dbbb31eaacc3b4e6c4e1c5873b78f4db27cbe707fd278b0f31",
+      "official_input_rows": [
+        11714
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests writing an accommodation review after a stay, not selecting or researching a purchase."
+    },
+    {
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "source_row": "dolly:2561",
+      "instruction_sha256": "1027b0208165be06ea17dd7aa524a54d74076c588968e0f388befead268674e7",
+      "official_input_rows": [
+        2561
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests writing a restaurant review, not purchase research or selection."
+    },
+    {
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "source_row": "dolly:4476",
+      "instruction_sha256": "7191b3a9c5cfd9cf98e05ec6ff3dde6937f1b0e5eafb3e168fdbbfa5c3bbd8eb",
+      "official_input_rows": [
+        4476
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a startup press release; subscription economy is product background, not managing recurring spending."
+    },
+    {
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "source_row": "dolly:3859",
+      "instruction_sha256": "752af71df89f11e359e5449bbef4f9beadf8288d73cce893ac37a5a2f808cf2f",
+      "official_input_rows": [
+        3859
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests household wedding-gift classification; gym membership is one listed item, not a recurring-spend goal."
+    },
+    {
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "source_row": "dolly:6347",
+      "instruction_sha256": "0833ecd4aab9751abfd5a7393394cc78cae395a0d36468dd3b11da1a94bc9154",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "source_row": "dolly:12424",
+      "instruction_sha256": "0c8f0c558e9222cb90108e103a68c999052dff9fe9e1b749fd6c4883476d1215",
+      "official_input_rows": [
+        12427
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a public-policy essay about pandemic measures; no tax or insurance goal."
+    },
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "source_row": "dolly:8986",
+      "instruction_sha256": "4e79e76303103b2bece625989ba384b70f8a6ad53d033de12c09355859d2ce1c",
+      "official_input_rows": [
+        8988
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Governance names a software data-platform security model, not public governance."
+    },
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "source_row": "dolly:355",
+      "instruction_sha256": "5e2a472be28cac728042fa058e2708fe2c2048ea3467312bdbfc0864ca114cf1",
+      "official_input_rows": [
+        355
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests understanding of a municipal governance system from supplied source text."
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "source_row": "dolly:10893",
+      "instruction_sha256": "16674190f720c4cc206fa0dc364eb91212c1d389a2a411f83ac612941e341612",
+      "official_input_rows": [
+        10896
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Explicitly drafts a legal complaint jurisdiction section; complaint-process versus legal/document authoring boundary requires adjudication."
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "source_row": "dolly:7138",
+      "instruction_sha256": "2e0435618236374ffc3a145df53f65d92fda3a7738138f4dc3fec2c3d8c0a3de",
+      "official_input_rows": [
+        7138
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Appeal means university attractiveness; request is alumni post authoring, not filing an appeal or dispute."
+    },
+    {
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "source_row": "dolly:10938",
+      "instruction_sha256": "12f35e252c84b422da0ca8b3ef26e6e680d4d0d1c2d51f12ee01bfa22ad470e6",
+      "official_input_rows": [
+        10941
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests income/spending classification with no buyer-rights or merchant-dispute goal."
+    },
+    {
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "source_row": "dolly:13815",
+      "instruction_sha256": "31778c78be92825cb17cb72d32b80baaa4d15dd8de575c3ac0a384925b90eb23",
+      "official_input_rows": [
+        13818
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests compression of political-investigation news, not consumer rights."
+    },
+    {
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "source_row": "dolly:10980",
+      "instruction_sha256": "1730684702bb7b21532ccf6554f1f42556005801dedbe895403ecccb1240a839",
+      "official_input_rows": [
+        10983
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a bitcoin definition; protocol is not a contract or agreement goal."
+    },
+    {
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "source_row": "dolly:13281",
+      "instruction_sha256": "1750a8195b7adc878b974a09b56e5bf7bb6ab26a680863e035d8210a0da634f6",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.legal_civic.government_services",
+      "source_row": "dolly:11010",
+      "instruction_sha256": "560f1efb95fe883cc8c771e6a118d4405d0c23df7706e07b88ea713ce7c8fbd8",
+      "official_input_rows": [
+        11013
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests attribution of a public-service motto, not accessing administrative services."
+    },
+    {
+      "topic_id": "sys.legal_civic.government_services",
+      "source_row": "dolly:12720",
+      "instruction_sha256": "91696579a5ee11daff65c8cb80c25e11126d5e84e25bf28cb996b7b2ad2b7efe",
+      "official_input_rows": [
+        12723
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "News agency is an employer in an award-name question, not a government agency service."
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "source_row": "dolly:633",
+      "instruction_sha256": "5e08d578fb79a3837be0c0224341d177719937ba351a9724d8f8266b3e69635f",
+      "official_input_rows": [
+        633
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Passport checks are news background; task extracts and sorts person names."
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "source_row": "dolly:13682",
+      "instruction_sha256": "6a910ae5157dbb09b301c374f697b966248c0b7aa08d15456880c0e98ba664b4",
+      "official_input_rows": [
+        13685
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Passport is one item in a travel-packing classification; identity-document procedures versus travel preparation requires adjudication."
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "source_row": "dolly:5213",
+      "instruction_sha256": "02d27e6c734af68b0d1e24af0a5ab3f659b6f61daebc36b2cde16e4ec6616383",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "source_row": "dolly:1123",
+      "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+      "official_input_rows": [
+        1123
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Asks systemic immigration-policy critique rather than an individual's residence eligibility; public-policy neighbor requires adjudication."
+    },
+    {
+      "topic_id": "sys.legal_civic.legal_questions",
+      "source_row": "dolly:12405",
+      "instruction_sha256": "029823865905a335801aad29ce2f26a7ecc283a1f80357c26538f0dad66cd34a",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.legal_civic.legal_questions",
+      "source_row": "dolly:5213",
+      "instruction_sha256": "02d27e6c734af68b0d1e24af0a5ab3f659b6f61daebc36b2cde16e4ec6616383",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.media_culture.art_culture",
+      "source_row": "dolly:396",
+      "instruction_sha256": "05d488e84415e2dc49c994336585a4f241a12616bab467d748f02949f8426289",
+      "official_input_rows": [
+        396
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Engineering culture concerns workplace engineering practices, not artistic or cultural experiences."
+    },
+    {
+      "topic_id": "sys.media_culture.art_culture",
+      "source_row": "dolly:9524",
+      "instruction_sha256": "0dd8298ce72b745a4fc99af49d17570b08cbe62246b14eb4287d063b0eb203e0",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.media_culture.books_literature",
+      "source_row": "dolly:2967",
+      "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+      "official_input_rows": [
+        2967
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Book is a packing option; goal is flight packing."
+    },
+    {
+      "topic_id": "sys.media_culture.books_literature",
+      "source_row": "dolly:4682",
+      "instruction_sha256": "030c480127ae6852288aec2e74ea126a19d25a8cdc7882d28f5e4ef8dd58985f",
+      "official_input_rows": [
+        4682
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Book is a distractor in exercise-equipment classification, not literature."
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "source_row": "dolly:13573",
+      "instruction_sha256": "0042bb572bff8c15a57a41513247762f516ad00c3f7890b8fa6db7e41e7a4718",
+      "official_input_rows": [
+        13576
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "World Series is a baseball competition, not a television series."
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "source_row": "dolly:3006",
+      "instruction_sha256": "00607ebd1bfa6a4ec622a1b78d822fdeec5234ce318176bc3d85d7a1595a9400",
+      "official_input_rows": [
+        3006
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Asks a film-awards multiple-choice question; screen-work understanding versus artificial classification eligibility requires adjudication."
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "source_row": "dolly:2173",
+      "instruction_sha256": "04ed2f644da7990fc6cf0f3992c549b3ff62ee4094804351e3dcb3db9ed2c65c",
+      "official_input_rows": [
+        2173
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Classifies games by publisher; game understanding versus artificial classification eligibility requires adjudication."
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "source_row": "dolly:7881",
+      "instruction_sha256": "05443337d9fb28667986569b616ba0d7ca6cf90cb97a9b3bd31660fc9e0a29df",
+      "official_input_rows": [
+        7882
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests card games to play, an explicit gameplay choice."
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "source_row": "dolly:6777",
+      "instruction_sha256": "073fa5d9efd6c4305919365cc16b0226a32a23965fac2aec401816c207f03cb9",
+      "official_input_rows": [
+        6777
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Asks feasibility of acting in local theater alongside a career; cultural participation versus creative performance/work-life boundary requires adjudication."
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "source_row": "dolly:2035",
+      "instruction_sha256": "0e1c876419b438e55bf23341a297eb01ed420f99d62e725ad85d346aed693237",
+      "official_input_rows": [
+        2035
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests financial-metric extraction from corporate revenue text; performance obligations are not cultural performances."
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "source_row": "dolly:3006",
+      "instruction_sha256": "00607ebd1bfa6a4ec622a1b78d822fdeec5234ce318176bc3d85d7a1595a9400",
+      "official_input_rows": [
+        3006
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Primary question is which film won awards; a song appears only as a distractor and context detail."
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "source_row": "dolly:4191",
+      "instruction_sha256": "010d02338faac78c30d3e71f3b96b54cc2e87fac24dbeb0a5c1db14c5c80239b",
+      "official_input_rows": [
+        4191
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks about a named musical group's song and performance history."
+    },
+    {
+      "topic_id": "sys.media_culture.news_media",
+      "source_row": "dolly:9820",
+      "instruction_sha256": "016affea9c042119ba81f3ba8adec42cf37bccd7600cf96b7e881448d5eb9516",
+      "official_input_rows": [
+        9823
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Primary goal is business use of social-media data, not news reporting or consumption."
+    },
+    {
+      "topic_id": "sys.media_culture.news_media",
+      "source_row": "dolly:5021",
+      "instruction_sha256": "043f428c799168162c66fefbb5bfe1964bcbef42902f2ebfb2c97e3ad6a9ebde",
+      "official_input_rows": [
+        5021,
+        12641
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a fictional dialogue about social-media effects, not news consumption or reporting."
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "source_row": "dolly:652",
+      "instruction_sha256": "83b033e725b90c1933cbe712c32a42866ec3b1218c60e31998d7251c7af95e86",
+      "official_input_rows": [
+        652
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Meme modifies a cryptocurrency; investing/coin fact versus internet culture requires adjudication."
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "source_row": "dolly:6198",
+      "instruction_sha256": "95fe251f3299e52e3756f9ddacf7d4e8d4a8d1e157f930de27874f1a01e6d9f3",
+      "official_input_rows": [
+        6198
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Influencer career decision intersects online culture and career choice; primary-goal boundary requires adjudication."
+    }
+  ],
+  "annotation_independence": "Source-language authorship independent of CIG; developer boundary review is not independent gold.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
