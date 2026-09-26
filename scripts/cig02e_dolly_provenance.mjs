@@ -56,14 +56,16 @@ export function reconcile(mirror, official, selectedRows = []) {
   };
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const [mirrorPath, officialPath, outputPath = "artifacts/ci/cig02e-dolly-provenance.json"] = process.argv.slice(2);
+  const [mirrorPath, officialPath, outputPath = "artifacts/ci/cig02e-dolly-provenance.json", reviewPath = "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"] = process.argv.slice(2);
+  assert.ok(["artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json",
+    "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json"].includes(reviewPath), "unregistered source review path");
   assert.ok(mirrorPath && officialPath, "two pinned source files required");
   const read = file => {
     const bytes = fs.readFileSync(file);
     return { bytes, rows: bytes.toString("utf8").trim().split(/\r?\n/u).map(JSON.parse) };
   };
   const mirror = read(mirrorPath), official = read(officialPath);
-  const review = JSON.parse(fs.readFileSync("artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json", "utf8"));
+  const review = JSON.parse(fs.readFileSync(reviewPath, "utf8"));
   const ids = review.decisions.map(item => Number(item.source_row.split(":")[1]));
   const reconciliation = reconcile(mirror.rows, official.rows, ids);
   assert.equal(mirror.rows.length, 15011);
@@ -71,10 +73,14 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   for (const item of reconciliation.selected_rows) {
     const decision = review.decisions.find(row => row.source_row === "dolly:" + item.mirror_row_id);
     assert.equal(item.instruction_sha256, decision.instruction_sha256, "reviewed row identity changed");
+    if (decision.official_input_rows) {
+      assert.deepEqual(item.official_instruction_and_context_ids, decision.official_input_rows, "official input mapping changed");
+    }
   }
   const result = {
     format: "cig02e-dolly-provenance-reconciliation-v1",
     classification: "SOURCE_IDENTITY_ONLY_NOT_GOLD_OR_CAPABILITY",
+    review_manifest: reviewPath,
     mirror: { repo: "buayism/dolly-15k-dataset", commit: "6d7ebf384c5e588ee1b0dff816557489bc16089c", blob: "7c507d16b055ae32107a6dd0585779678565dcd2", sha256: sha256(mirror.bytes) },
     official: { repo: "databrickslabs/dolly", commit: "2305eb7f2f4b3beb2379f34c6addf335b46c4b43", blob: "9b0b912c478e7ccd61ce741ebb409ddf8c7c22e6", sha256: sha256(official.bytes) },
     reconciliation,
