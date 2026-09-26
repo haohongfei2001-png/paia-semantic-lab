@@ -1,0 +1,36 @@
+name: CIG-02E intake matrix integrity
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/cig02e_intake_matrix.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json"
+      - ".github/workflows/cig02e-intake-matrix.yml"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_*SOURCE_PILOT.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_EIGHTEEN_SPARSE_EXCERPT_TRIAGE.json"
+      - "semantic_profiles/v0.1/system_topics_shard_*.json"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/cig02e_intake_matrix.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json"
+      - ".github/workflows/cig02e-intake-matrix.yml"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_*SOURCE_PILOT.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_EIGHTEEN_SPARSE_EXCERPT_TRIAGE.json"
+      - "semantic_profiles/v0.1/system_topics_shard_*.json"
+permissions:
+  contents: read
+concurrency:
+  group: cig02e-intake-matrix-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  intake-matrix-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Recompute source-only matrix and verify committed evidence
+        run: node scripts/cig02e_intake_matrix.mjs

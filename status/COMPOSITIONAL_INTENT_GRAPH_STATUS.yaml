@@ -146,6 +146,12 @@ rounds:
     cig02e_finance_media_communication_legal_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT_MERGED_MAIN_RECEIPT.json
     cig02e_science_creative_business_time_source_pilot: artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json
     cig02e_science_creative_business_time_report: docs/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.md
+    cig02e_science_creative_business_time_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT_MERGED_MAIN_RECEIPT.json
+    cig02e_full_catalog_intake_matrix: artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json
+    cig02e_full_catalog_intake_matrix_report: docs/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.md
+    cig02e_intake_recorded_topic_count: 144
+    cig02e_intake_topics_with_prospective_candidates: 33
+    cig02e_intake_accepted_gold_rows: 0
     cig02e_science_creative_business_time_classification: PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY
     cig02e_finance_media_communication_legal_classification: PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY
     cig02e_personal_family_projects_memory_classification: PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY
@@ -166,4 +172,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Verify the final 32-Topic source identities and consolidate all 144 Topic intake statuses into a full-Catalog source feasibility matrix. Distinguish nominations, distinct inputs, plausible candidates and accepted gold; keep sparse gaps, quarantines, pending synthetic rows and missing natural DEFER/context controls explicit. Independently adjudicate candidates before gold. No accepted full-Catalog fixture or fresh score before text/gold/candidate/scorer hash freeze; CIG-02 unfrozen, CIG-03 blocked."
+next_action: "Verify full-Catalog intake matrix integrity; then review the 26 existing synthetic nominations in one coherent source-only batch and consolidate prospective candidates/uncertainties for independent gold adjudication. Keep 111 Topics without prospective candidates, 18 sparse gaps, quarantines and unregistered natural DEFER/context controls explicit. No fixture freeze or fresh score before source/gold/candidate/scorer readiness; CIG-02 unfrozen, CIG-03 blocked."
