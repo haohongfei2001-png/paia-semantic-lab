@@ -1,0 +1,485 @@
+{
+  "format": "cig02e-education-career-travel-source-pilot-v1",
+  "classification": "PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "selection": "First two existing deterministic samples per Topic in D04/D05/D10, or every existing sample if fewer than two; no replacement.",
+  "topic_count": 24,
+  "topic_nominations": 47,
+  "distinct_source_rows": 45,
+  "decision_counts": {
+    "REJECT_FOR_NOMINATED_TOPIC": 23,
+    "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 6,
+    "QUARANTINED_SOURCE_INPUT_MISMATCH": 9,
+    "PLAUSIBLE_SOURCE_CANDIDATE": 3,
+    "ALREADY_REJECTED_NO_NEW_ADJUDICATION": 1,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 4,
+    "UNCERTAIN_TASK_VS_TOPIC": 1
+  },
+  "decisions": [
+    {
+      "topic_id": "sys.career_work.applications",
+      "source_row": "dolly:490",
+      "instruction_sha256": "08822bf437cb7c74a715287f258adee7fb0585799a858ad3315f37dc0e5c55aa",
+      "official_input_rows": [
+        490
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests business proposal authoring for software integration, not a job application."
+    },
+    {
+      "topic_id": "sys.career_work.applications",
+      "source_row": "dolly:2718",
+      "instruction_sha256": "156e3a20e5adafc055d28262fd5dc3c00cdd4b8d9b1d703109eb36aebced9470",
+      "official_input_rows": [
+        2718
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Applications means uses of game theory in basketball, not job applications."
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "source_row": "alpaca:19606",
+      "instruction_sha256": "1672a3988388a32c049088a2c4b976a38bbc0d4e93a13415e343a65ce8d9bd5b",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Only an existing queue ID/hash is carried forward; full source, reuse basis and semantic boundary are not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "source_row": "alpaca:43723",
+      "instruction_sha256": "1e7dd1e40d37969048db7395e5a23b79c561f3bf0fd20c6c8c155eb1cacd0823",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Only an existing queue ID/hash is carried forward; full source, reuse basis and semantic boundary are not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.career_work.compensation_benefits",
+      "source_row": "dolly:14577",
+      "instruction_sha256": "0480fe9c0a5fcd14283c7c61a7423f7785e2c1bd779f8e90b722c9ccb2af4f8f",
+      "official_input_rows": [
+        14580
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "LLM organizational benefits are not employment remuneration; prior rejection for a different Topic is not reused as gold."
+    },
+    {
+      "topic_id": "sys.career_work.compensation_benefits",
+      "source_row": "dolly:8110",
+      "instruction_sha256": "063692934c3a13a79e9b40124c3baa025e0c3cd1bd27c4e624344287e7f6990e",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.career_work.interviews",
+      "source_row": "dolly:3357",
+      "instruction_sha256": "197cc8f2c0f8bc48e26630f666c1a880926121aba8a508f0cfd14ddaa336a6b5",
+      "official_input_rows": [
+        3357
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks reasons for a civic scooter-ban proposal; an interview occurs inside supplied news, not a job-interview goal."
+    },
+    {
+      "topic_id": "sys.career_work.interviews",
+      "source_row": "dolly:2779",
+      "instruction_sha256": "304358b40e37610c98d3c1e00a9835b3dfd9c7ea7e0ab34a20d813b8980e029a",
+      "official_input_rows": [
+        2779
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests questions to use in a job interview."
+    },
+    {
+      "topic_id": "sys.career_work.job_search",
+      "source_row": "dolly:6729",
+      "instruction_sha256": "15b152febdebc15f1d3f90540842d102a4e652927d826141317c684f880133a2",
+      "official_input_rows": [
+        6729
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks duties of a football official; role does not establish job discovery."
+    },
+    {
+      "topic_id": "sys.career_work.job_search",
+      "source_row": "dolly:13981",
+      "instruction_sha256": "315148ea26d61a0bd0ae36e6bdf0d493e350a2b4254381f0d729ca77b5957a81",
+      "official_input_rows": [
+        13984
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests weapons for role-playing games, not job discovery."
+    },
+    {
+      "topic_id": "sys.career_work.networking_professional",
+      "source_row": "dolly:2798",
+      "instruction_sha256": "259c750ee2a4841fa08a80f4daa127c7b9cf56baf237ecc3b3254df684d76ccc",
+      "official_input_rows": [
+        2798
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Food Network is a television channel, not professional relationship building."
+    },
+    {
+      "topic_id": "sys.career_work.networking_professional",
+      "source_row": "dolly:10962",
+      "instruction_sha256": "433616fe2e05e7b38e5cb2f2139d36ac50e9deb8caa15e0dfc7eec8f988ca6d1",
+      "official_input_rows": [
+        10965
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests home WiFi network understanding, not professional contacts."
+    },
+    {
+      "topic_id": "sys.career_work.performance_growth",
+      "source_row": "dolly:11711",
+      "instruction_sha256": "0483fb1af3cb14dbbb31eaacc3b4e6c4e1c5873b78f4db27cbe707fd278b0f31",
+      "official_input_rows": [
+        11714
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests an accommodation review, not employee performance feedback."
+    },
+    {
+      "topic_id": "sys.career_work.performance_growth",
+      "source_row": "dolly:2035",
+      "instruction_sha256": "0e1c876419b438e55bf23341a297eb01ed420f99d62e725ad85d346aed693237",
+      "official_input_rows": [
+        2035
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Extracts corporate revenue metrics, not personal workplace performance."
+    },
+    {
+      "topic_id": "sys.career_work.workplace_daily",
+      "source_row": "dolly:13081",
+      "instruction_sha256": "03aa06b02d3454d7c29247232fd362330cc61a0d5a44a764c37b0a567b12eb0e",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.career_work.workplace_daily",
+      "source_row": "dolly:12165",
+      "instruction_sha256": "08084d068f3e54a76925f67fd68664b858c1b6f0ee9497124b4e62f65e905eaa",
+      "official_input_rows": [
+        12168
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a corporate office location, not a day-to-day workplace issue."
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "source_row": "dolly:13515",
+      "instruction_sha256": "a17e8c7f5b825f04af07bc407c05d8bb23c790891ab14fefde58be93a1a24300",
+      "official_input_rows": [
+        13518
+      ],
+      "decision": "ALREADY_REJECTED_NO_NEW_ADJUDICATION",
+      "reason": "PR #48 rejected this exact nomination: civic voter registration is not academic administration."
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "source_row": "alpaca:13460",
+      "instruction_sha256": "0985dd9b4e8562a2abd06c8997dfadf9b43bb5aff077d88b24ad4f4169cd01fc",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Only an existing queue ID/hash is carried forward; full source, reuse basis and semantic boundary are not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.education_learning.academic_courses",
+      "source_row": "dolly:4515",
+      "instruction_sha256": "043a846a6be84162657b8eff3bf69aabf0991ff3ee2526d017de55c5f9c63901",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.education_learning.academic_courses",
+      "source_row": "dolly:2511",
+      "instruction_sha256": "083b2b86d941c13143ddf843b06af5abd4f5a9de503e890e270741b1d0d48971",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.education_learning.exams_assessments",
+      "source_row": "dolly:12315",
+      "instruction_sha256": "0199245603f8d7b83efa37764754e9065d0dc3393e9024b73b6ffaee9b0282df",
+      "official_input_rows": [
+        12318
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Grade-10 ratio-problem authoring could be coursework or assessment material; no exam use is stated."
+    },
+    {
+      "topic_id": "sys.education_learning.exams_assessments",
+      "source_row": "dolly:12374",
+      "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+      "official_input_rows": [
+        12377
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Exercise test and training physiology do not establish academic exam preparation or skill-acquisition intent."
+    },
+    {
+      "topic_id": "sys.education_learning.language_learning",
+      "source_row": "dolly:11358",
+      "instruction_sha256": "01f49922b535b320fe2f1af6d32af97f9ce3ec6ed1a03873080d35a650f537a9",
+      "official_input_rows": [
+        11361
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests recruiter self-introduction drafting, not language acquisition."
+    },
+    {
+      "topic_id": "sys.education_learning.language_learning",
+      "source_row": "dolly:9344",
+      "instruction_sha256": "060e32fbc59a1391420ad9843b46d7a67fd5a9a3136e397863ca878bfed3db32",
+      "official_input_rows": [
+        9347
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Grammar correction could be proofreading or language learning; no learning purpose is explicit."
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "source_row": "alpaca:39399",
+      "instruction_sha256": "152f6cfe860cf9af55d17738643504342cd2de03e0cb5e6c47c83baeac79ee2a",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Only an existing queue ID/hash is carried forward; full source, reuse basis and semantic boundary are not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "source_row": "alpaca:19856",
+      "instruction_sha256": "53414dd92a2c57270ddcfc0a669621faf31da9f0fbb8925ddd51ecc51c4c1fb2",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Only an existing queue ID/hash is carried forward; full source, reuse basis and semantic boundary are not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.education_learning.reading_learning",
+      "source_row": "dolly:11101",
+      "instruction_sha256": "1a1a88ae1ba343c095e1675e6c4a0751129d5f082e064ff3716eedb25e87282d",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.education_learning.reading_learning",
+      "source_row": "dolly:12290",
+      "instruction_sha256": "1f54d1c21aeb48fc379451e60cc88ffd74e1a41c3161ccb32f29d31c4668f10f",
+      "official_input_rows": [
+        12293
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests persuading a parent to allow a cellphone; reading books is a concern, not the current learning goal."
+    },
+    {
+      "topic_id": "sys.education_learning.skill_learning",
+      "source_row": "dolly:12374",
+      "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+      "official_input_rows": [
+        12377
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Exercise test and training physiology do not establish academic exam preparation or skill-acquisition intent."
+    },
+    {
+      "topic_id": "sys.education_learning.skill_learning",
+      "source_row": "dolly:14888",
+      "instruction_sha256": "10254ae3310af7482f2907f7ff258dcf1f913faf63eb42bf132efe5ec6007661",
+      "official_input_rows": [
+        14891
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests exercise-training rationale, not acquiring a practical or professional skill."
+    },
+    {
+      "topic_id": "sys.education_learning.thesis_research",
+      "source_row": "dolly:12105",
+      "instruction_sha256": "106da2d270c5c8a162a085f3aae6f6ce6600d1aaf5a2b2e45105f0c54b6adf22",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.education_learning.thesis_research",
+      "source_row": "dolly:11622",
+      "instruction_sha256": "10cffb3910892c10e82ae553520531aba3b7be02ef0e64958cee17fd088b8ae3",
+      "official_input_rows": [
+        11625
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests household waste sorting, not scholarly research."
+    },
+    {
+      "topic_id": "sys.travel_places.attractions_activities",
+      "source_row": "dolly:3293",
+      "instruction_sha256": "011ca1bc08c64002af5db4dfda19b9426ef2fddf37d2dd0eb8592abd28b5a0c5",
+      "official_input_rows": [
+        3293
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests activities in a named destination, directly within travel attractions and things to do."
+    },
+    {
+      "topic_id": "sys.travel_places.attractions_activities",
+      "source_row": "dolly:13874",
+      "instruction_sha256": "0988ab567867c6f275bb2262dc264c3e9fd0a7ea34394df9b9c760ff53ae696d",
+      "official_input_rows": [
+        13877
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests driving performance technique on a track, not destination attraction planning."
+    },
+    {
+      "topic_id": "sys.travel_places.local_navigation",
+      "source_row": "dolly:10340",
+      "instruction_sha256": "02ca7d47d79f1525d341458a24eb39039537e143b2645a75653561921e48ba0f",
+      "official_input_rows": [
+        10343
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests earthquake safety classification; an evacuation route is one possible action, not a local navigation goal."
+    },
+    {
+      "topic_id": "sys.travel_places.local_navigation",
+      "source_row": "dolly:193",
+      "instruction_sha256": "0c7f597c6402e336efd8067d191184a90cda0e147591b3416f1027eb60caaedd",
+      "official_input_rows": [
+        193
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a historical accident-route fact, not navigating a current local route."
+    },
+    {
+      "topic_id": "sys.travel_places.lodging",
+      "source_row": "dolly:5785",
+      "instruction_sha256": "0b72ee6dc626f773f12e908c123056c62d3dacf809a05f98dfff09db9f53ca22",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.travel_places.lodging",
+      "source_row": "dolly:2725",
+      "instruction_sha256": "1eaa7e0554137a18511ed7c274eb5813353b8fe59c2466a05bef0fd25364d1d4",
+      "official_input_rows": [
+        2725
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Gym/bar item sorting does not concern accommodation choice or booking."
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "source_row": "dolly:1301",
+      "instruction_sha256": "031191a52a0024f7d6824a356e627c65f8f02df7fe723f2a89a4983f11ef4754",
+      "official_input_rows": [
+        1301
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Cuisine-category sorting lacks a travel dining decision; generic task-versus-Topic review remains necessary."
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "source_row": "dolly:2561",
+      "instruction_sha256": "1027b0208165be06ea17dd7aa524a54d74076c588968e0f388befead268674e7",
+      "official_input_rows": [
+        2561
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests restaurant review authoring without a travel dining choice."
+    },
+    {
+      "topic_id": "sys.travel_places.transport_travel",
+      "source_row": "dolly:2967",
+      "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+      "official_input_rows": [
+        2967
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Flight packing is travel preparation, but intercity transport versus Trip Planning is unresolved."
+    },
+    {
+      "topic_id": "sys.travel_places.transport_travel",
+      "source_row": "dolly:4515",
+      "instruction_sha256": "043a846a6be84162657b8eff3bf69aabf0991ff3ee2526d017de55c5f9c63901",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.travel_places.trip_planning",
+      "source_row": "dolly:5031",
+      "instruction_sha256": "0b4dcd93d4ead1d3ffba1670064ebb0c2d1848e94730e265aa583fc1d7b7885d",
+      "official_input_rows": [
+        5031
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests a travel plan for a named destination; no competing authoring-only context is supplied."
+    },
+    {
+      "topic_id": "sys.travel_places.trip_planning",
+      "source_row": "dolly:12279",
+      "instruction_sha256": "1624fb166abc9990c6f5e38f51a27b02f7dd6ca8e316524891057a061e7cf4ca",
+      "official_input_rows": [
+        12282
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Extracts historical emigration destinations, not designing a current trip."
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "source_row": "alpaca:34879",
+      "instruction_sha256": "28bcb99d8bb70e56c8f858eb206591939e58bd77d79aad866fa721e76416283d",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Only an existing queue ID/hash is carried forward; full source, reuse basis and semantic boundary are not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.travel_places.visas_border",
+      "source_row": "dolly:12485",
+      "instruction_sha256": "03900f416b1d342de1ac3d066fa1a1904a13ca56077263db208908d1e64ab01b",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or source substitution."
+    },
+    {
+      "topic_id": "sys.travel_places.visas_border",
+      "source_row": "dolly:1123",
+      "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+      "official_input_rows": [
+        1123
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Broad immigration-system judgment could be civic policy rather than personal visa or travel-document requirements."
+    }
+  ],
+  "supplemental_followups": [
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "source_row": "dolly:10835",
+      "instruction_sha256": "0fe8eda91219ccd854adbe51b92d2fef522e1e4b4b50849934f3a77257398935",
+      "official_input_rows": [
+        10838
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Full official instruction at row 10838 was read in the preceding recovery turn: it requests JVM log summarization and significant anomaly identification. The formal Debugging Topic includes logs and anomalies. This is a developer source-boundary follow-up, not independent gold; the prior NOT_FULLY_REVIEWED record is preserved."
+    }
+  ],
+  "annotation_independence": "Source language is independent of CIG; boundary review is by the CIG developer and is not independent gold.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
