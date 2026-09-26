@@ -1,0 +1,3849 @@
+{
+  "format": "cig02e-full-catalog-intake-matrix-v1",
+  "classification": "SOURCE_FEASIBILITY_MATRIX_NOT_GOLD_OR_CAPABILITY",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "topic_count": 144,
+  "selected_nominations": 281,
+  "distinct_selected_source_rows": 244,
+  "decision_counts": {
+    "PLAUSIBLE_SOURCE_CANDIDATE": 36,
+    "QUARANTINED_SOURCE_INPUT_MISMATCH": 40,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 30,
+    "NOT_FULLY_REVIEWED": 1,
+    "REJECT_FOR_NOMINATED_TOPIC": 126,
+    "UNCERTAIN_TASK_VS_TOPIC": 12,
+    "ALREADY_REJECTED_NO_NEW_ADJUDICATION": 3,
+    "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 26,
+    "PRIOR_DECISION_PRESERVED": 7
+  },
+  "base_plausible_nominations": 36,
+  "base_topics_with_plausible_candidates": 33,
+  "supplemental_followup_records": 1,
+  "topics_with_plausible_candidates_including_followups": 33,
+  "topics_without_plausible_candidates": 111,
+  "topics_with_zero_selected_nominations": [
+    "sys.family_relationships.caregiving_family_support",
+    "sys.knowledge_memory.photos_media_archive"
+  ],
+  "sparse_retrieval_gap_topics": [
+    "sys.business_entrepreneurship.business_strategy",
+    "sys.business_entrepreneurship.partnerships",
+    "sys.education_learning.academic_admin",
+    "sys.education_learning.learning_methods",
+    "sys.family_relationships.caregiving_family_support",
+    "sys.family_relationships.social_interaction",
+    "sys.finance_purchases.major_purchases",
+    "sys.home_daily.local_errands",
+    "sys.knowledge_memory.files_documents_storage",
+    "sys.knowledge_memory.personal_archive",
+    "sys.knowledge_memory.photos_media_archive",
+    "sys.knowledge_memory.provenance_history",
+    "sys.personal_direction.life_planning",
+    "sys.projects_products.product_requirements",
+    "sys.projects_products.product_strategy",
+    "sys.projects_products.project_planning",
+    "sys.projects_products.roadmap_prioritization",
+    "sys.travel_places.trip_records"
+  ],
+  "topics": [
+    {
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:1015",
+          "instruction_sha256": "114dc20a10bf59211c5073690dc625a0f4e6bed0184aefbd47b105a4451d300a",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:2572",
+          "instruction_sha256": "7f8437e6a8b158ff4754d77dd8d392f5ccba49cc81bc25908533be3f58ba5a8e",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5120",
+          "instruction_sha256": "00243fffaae742cd7b6087c6e7867279f1f69bed327c737f1b615bd3c5687114",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:9488",
+          "instruction_sha256": "09ec2e8d9ade15d6d9f2c27db6b383d500fa93d833827181fbdbd111f195a7f3",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14298",
+          "instruction_sha256": "38e9d3a268758f8c5ca9ee49e96f5f8dadeaa626e79218f5b8c07313d90cb48e",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:6426",
+          "instruction_sha256": "61bfe68e81e58bf618c2c37f3e3ccc85319acd621db3d8376bff1cfb59eac0b4",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10560",
+          "instruction_sha256": "04a772769c80b5fc206e425fe2e25586ca0178128e9615eb755263533560126d",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:4323",
+          "instruction_sha256": "10adee5914d63382959fd342f78d38659ba3354988703a3abc369c0eacb6e16b",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "NOT_FULLY_REVIEWED": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4970",
+          "instruction_sha256": "0bdd63aa6da45a1d1daa3a074630a1252332abac68c9270207f2c5603847b247",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:10835",
+          "instruction_sha256": "0fe8eda91219ccd854adbe51b92d2fef522e1e4b4b50849934f3a77257398935",
+          "decision": "NOT_FULLY_REVIEWED"
+        }
+      ],
+      "supplemental_followups": [
+        {
+          "source_row": "dolly:10835",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2967",
+          "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:9681",
+          "instruction_sha256": "09a970821500361679a5ab4afbdb975c3c33faae2baad5b87bcc0a9834819bba",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.networking_connectivity",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12082",
+          "instruction_sha256": "23ffca303a1cae4a162589b49124e891c953fdd2c0be635139e72821a1464912",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:8586",
+          "instruction_sha256": "27f7231cf5bec79e064e32d9ee7a4f1c336ffa1d4299931c14d85669cc121d2e",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.prompt_workflows",
+      "domain_id": "D07",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6649",
+          "instruction_sha256": "306a7ab3ce4cbc71da42bf6a836755b9041087113435df1f555132c61a81d143",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:4333",
+          "instruction_sha256": "81c65a6df6560127116c66ecc727c22bfa5b8d2c9c42986d730604e0203924e6",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:48073",
+          "instruction_sha256": "014361134e2c59fc268772b7cda7abbed6b72dc8dc9c5c0fe588fc038b130737",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:20103",
+          "instruction_sha256": "35d72eb80f4bbf1d856f0fdf161b8ecd0e7fe7a6414ee96028d77ca738f75ea1",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4033",
+          "instruction_sha256": "11486042eebcea5d5045e1effb1b305d0adaa17f92f157784390469639b513e9",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:7892",
+          "instruction_sha256": "149c062d8766d99693ad500d3e7548b89f20655cd213f1cf7e4a985d5bf5f360",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5937",
+          "instruction_sha256": "024d71c8ec2ad99067bdc948262d852fc5320a373a6ab384306405b7cc5a1b8a",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:174",
+          "instruction_sha256": "03729cd48eb5e082861394aace99a40a147f6683f36092da7f1ccb3c498a45cd",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6286",
+          "instruction_sha256": "1d91404123e2dc4a0e6fab7b156d20bb42560deac9146257f7bdf6fb0d7c79d2",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:5162",
+          "instruction_sha256": "27bf129ec08a24c600a9571353fe324c68edc82c2ed542b26e92cc6ceea19a9b",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:1338",
+          "instruction_sha256": "098dee3743453f594475c8165df5b3bdb96a0989ef21ee6781e4acdcd8ec67f1",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:2035",
+          "instruction_sha256": "0e1c876419b438e55bf23341a297eb01ed420f99d62e725ad85d346aed693237",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6347",
+          "instruction_sha256": "0833ecd4aab9751abfd5a7393394cc78cae395a0d36468dd3b11da1a94bc9154",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:2150",
+          "instruction_sha256": "0a128a3a712a62c1b2b5568705f76ae977549f29ed69a7cfe7e5f20643279cea",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PRIOR_DECISION_PRESERVED": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6028",
+          "instruction_sha256": "70473737d28e11e3dbe7df68cd7816971c1da5a84b391d7c3cc2c3270424d080",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        },
+        {
+          "source_row": "dolly:1697",
+          "instruction_sha256": "a4bb35769931140dad69a003d7674ea882aa7c579bdbf29b167c1cccd8b1c807",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "domain_id": "D16",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11926",
+          "instruction_sha256": "005cb224a819c836205fee3bd5295a440fb0f55e7448b04e106b387c4f8b3100",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:12474",
+          "instruction_sha256": "00ece04bd4fc49174c3e9959d75cf8b067143570cc4555863912e6158eddbb9f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.applications",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:490",
+          "instruction_sha256": "08822bf437cb7c74a715287f258adee7fb0585799a858ad3315f37dc0e5c55aa",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2718",
+          "instruction_sha256": "156e3a20e5adafc055d28262fd5dc3c00cdd4b8d9b1d703109eb36aebced9470",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:19606",
+          "instruction_sha256": "1672a3988388a32c049088a2c4b976a38bbc0d4e93a13415e343a65ce8d9bd5b",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:43723",
+          "instruction_sha256": "1e7dd1e40d37969048db7395e5a23b79c561f3bf0fd20c6c8c155eb1cacd0823",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.compensation_benefits",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14577",
+          "instruction_sha256": "0480fe9c0a5fcd14283c7c61a7423f7785e2c1bd779f8e90b722c9ccb2af4f8f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:8110",
+          "instruction_sha256": "063692934c3a13a79e9b40124c3baa025e0c3cd1bd27c4e624344287e7f6990e",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.interviews",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3357",
+          "instruction_sha256": "197cc8f2c0f8bc48e26630f666c1a880926121aba8a508f0cfd14ddaa336a6b5",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2779",
+          "instruction_sha256": "304358b40e37610c98d3c1e00a9835b3dfd9c7ea7e0ab34a20d813b8980e029a",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.job_search",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6729",
+          "instruction_sha256": "15b152febdebc15f1d3f90540842d102a4e652927d826141317c684f880133a2",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:13981",
+          "instruction_sha256": "315148ea26d61a0bd0ae36e6bdf0d493e350a2b4254381f0d729ca77b5957a81",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.networking_professional",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2798",
+          "instruction_sha256": "259c750ee2a4841fa08a80f4daa127c7b9cf56baf237ecc3b3254df684d76ccc",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:10962",
+          "instruction_sha256": "433616fe2e05e7b38e5cb2f2139d36ac50e9deb8caa15e0dfc7eec8f988ca6d1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.performance_growth",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11711",
+          "instruction_sha256": "0483fb1af3cb14dbbb31eaacc3b4e6c4e1c5873b78f4db27cbe707fd278b0f31",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2035",
+          "instruction_sha256": "0e1c876419b438e55bf23341a297eb01ed420f99d62e725ad85d346aed693237",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.workplace_daily",
+      "domain_id": "D05",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13081",
+          "instruction_sha256": "03aa06b02d3454d7c29247232fd362330cc61a0d5a44a764c37b0a567b12eb0e",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:12165",
+          "instruction_sha256": "08084d068f3e54a76925f67fd68664b858c1b6f0ee9497124b4e62f65e905eaa",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:490",
+          "instruction_sha256": "08822bf437cb7c74a715287f258adee7fb0585799a858ad3315f37dc0e5c55aa",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:12575",
+          "instruction_sha256": "51693e0ed0723013fc07f431281c8f5f6fc041e283ec17c7873d97224f69000e",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.email_messages",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:9206",
+          "instruction_sha256": "00205a1bc25cc00cf4d179b5b0f5ed96b8eb07e4f4894e92857705f3b748a930",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:10843",
+          "instruction_sha256": "003157e0ac8639c2cf01e24ac63645b66a1b6bba9967f81e216da10478a530d7",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.negotiation_persuasion",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6879",
+          "instruction_sha256": "35eee13328168068811d5d3967045a26b47b26214fe6bc8077f3b2d206dfed2c",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2721",
+          "instruction_sha256": "4a36547f82b6cc9e2d6892ecff1d2ec91c4dbeaf2a3824e80fc026c52389f548",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13141",
+          "instruction_sha256": "2443a2346e61a9d5d9bf3151b726c11dbb88ea2fc8ef00f8f9f2c5805de5c592",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:13129",
+          "instruction_sha256": "6ab6d7530aebb12d7d44c4e3ff694a72f53c5614ad651a7f26c56e1088ce0776",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_TASK_VS_TOPIC": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3330",
+          "instruction_sha256": "9bb93e07c3fe3e731d399c7de24ab1c64eeba3ac71ae7f8529b5731ec1b99cdb",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        },
+        {
+          "source_row": "alpaca:39370",
+          "instruction_sha256": "003d83f642f9e28ea8a0268e5c983b1f81d476ed58b7ff8f39be06d83343ca01",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "UNCERTAIN_TASK_VS_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11358",
+          "instruction_sha256": "01f49922b535b320fe2f1af6d32af97f9ce3ec6ed1a03873080d35a650f537a9",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:5021",
+          "instruction_sha256": "043f428c799168162c66fefbb5bfe1964bcbef42902f2ebfb2c97e3ad6a9ebde",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.translation",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3238",
+          "instruction_sha256": "533aad0f5acdff4f2f482257058141ee627f4a47286a6e58d7836bbdc452be28",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:6596",
+          "instruction_sha256": "aa19d4a07a73558c289fbd06cfebeaa3964ce05e9423de1fa34984ffc11e57aa",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "domain_id": "D12",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10126",
+          "instruction_sha256": "0c57cc26c4a923e2ced5c46acd9126aeb81b9bdf3fff5ca5269dd1a6d63354d5",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:13039",
+          "instruction_sha256": "2951a554114e7735a991b54ee783578c42e216d010c81da69e2e90f8c5037edd",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.branding_identity",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:8254",
+          "instruction_sha256": "c69a019b130502489767f2c647558396becadd5ded6c9d69813c6b33c22c0af6",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:11804",
+          "instruction_sha256": "cdd9441a70dd6e9932595ca0fd7f0dd00fb77a48f2ffbdd7df6d29493904a57b",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.creative_writing",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:1151",
+          "instruction_sha256": "014cb5384b65dc03b59a978fc6e42325d35b4997272bb1e9df632e0aff938ea6",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:8202",
+          "instruction_sha256": "07e51469134cdc9e577c9011af92a378f2b0bfe0ff41ec7a55af9764c6b8c395",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.ideation_concepts",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6749",
+          "instruction_sha256": "0acf6a2a9f7a577c10dd9064fae040762ad0c996af91a78d0c30f18fefe259ee",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:6465",
+          "instruction_sha256": "4e01aa3c1874110efb47d863c06dd1f8219278f26cadeb850bc4333263c556f1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13747",
+          "instruction_sha256": "af621f23a74d8a183cf307bab533090ad1489f847b353b21e514b4cac4e602f1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "alpaca:28170",
+          "instruction_sha256": "005379a847bd2a187c720c524b3fb6dd1bc04723f56eca4a6d9192d21e73e8de",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.photography",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6771",
+          "instruction_sha256": "37281fdbde227dc3f889e2406a463448645065c525fc59cc41103d96a546fe0e",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:7323",
+          "instruction_sha256": "38452b4d5b21027a80c94a023495e2cd34fbd360f92ed180102815faa17a965e",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:460",
+          "instruction_sha256": "6caab5a4d63efb6fff1efdfafaa5f32836e1867f46906100287b966ddcc40728",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:10148",
+          "instruction_sha256": "81281d47aa93553a6a625cc96f94c05b7bc6490bcf9cbdaa063dee95e18d1a4c",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14668",
+          "instruction_sha256": "09b6a9c68577c39181c99ed38f05b4357d3d253da67bac6087c67a47cb775ec7",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:3382",
+          "instruction_sha256": "196917ce1f7a4695ccd6094ac09d0f3ddb158a8b549a46dfbb5042e73aae7fc6",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.visual_design",
+      "domain_id": "D15",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3292",
+          "instruction_sha256": "0100df299aab1c508313624116cd38a5999f07a3a71309580d6125563fae2eac",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:2591",
+          "instruction_sha256": "082e81e0b9f9a1781dadc36bcf91d6eada63847a89dca4ed8045cbf4f9fa739f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "ALREADY_REJECTED_NO_NEW_ADJUDICATION": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13515",
+          "instruction_sha256": "a17e8c7f5b825f04af07bc407c05d8bb23c790891ab14fefde58be93a1a24300",
+          "decision": "ALREADY_REJECTED_NO_NEW_ADJUDICATION"
+        },
+        {
+          "source_row": "alpaca:13460",
+          "instruction_sha256": "0985dd9b4e8562a2abd06c8997dfadf9b43bb5aff077d88b24ad4f4169cd01fc",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.academic_courses",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4515",
+          "instruction_sha256": "043a846a6be84162657b8eff3bf69aabf0991ff3ee2526d017de55c5f9c63901",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:2511",
+          "instruction_sha256": "083b2b86d941c13143ddf843b06af5abd4f5a9de503e890e270741b1d0d48971",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.exams_assessments",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12315",
+          "instruction_sha256": "0199245603f8d7b83efa37764754e9065d0dc3393e9024b73b6ffaee9b0282df",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:12374",
+          "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.language_learning",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11358",
+          "instruction_sha256": "01f49922b535b320fe2f1af6d32af97f9ce3ec6ed1a03873080d35a650f537a9",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:9344",
+          "instruction_sha256": "060e32fbc59a1391420ad9843b46d7a67fd5a9a3136e397863ca878bfed3db32",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:39399",
+          "instruction_sha256": "152f6cfe860cf9af55d17738643504342cd2de03e0cb5e6c47c83baeac79ee2a",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:19856",
+          "instruction_sha256": "53414dd92a2c57270ddcfc0a669621faf31da9f0fbb8925ddd51ecc51c4c1fb2",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.reading_learning",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11101",
+          "instruction_sha256": "1a1a88ae1ba343c095e1675e6c4a0751129d5f082e064ff3716eedb25e87282d",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:12290",
+          "instruction_sha256": "1f54d1c21aeb48fc379451e60cc88ffd74e1a41c3161ccb32f29d31c4668f10f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.skill_learning",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12374",
+          "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14888",
+          "instruction_sha256": "10254ae3310af7482f2907f7ff258dcf1f913faf63eb42bf132efe5ec6007661",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.thesis_research",
+      "domain_id": "D04",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12105",
+          "instruction_sha256": "106da2d270c5c8a162a085f3aae6f6ce6600d1aaf5a2b2e45105f0c54b6adf22",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:11622",
+          "instruction_sha256": "10cffb3910892c10e82ae553520531aba3b7be02ef0e64958cee17fd088b8ae3",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 0,
+      "distinct_selected_source_rows": 0,
+      "decision_counts": {},
+      "source_rows": [],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:1971",
+          "instruction_sha256": "2023544c8e25d37f5260cb13e5bed1c06d4dac620945d2341103ae0f1d54683b",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:12392",
+          "instruction_sha256": "24419d459f32c5e5e1927ca47a1855200114dbcb923d811517a3153fd0df4ec4",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.friendships",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11669",
+          "instruction_sha256": "076919baaf551ecbbbeada9c2df0ebb945cd55024ae3e01d01e3e9286000aa80",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:9811",
+          "instruction_sha256": "102b0a32952a44408eb37dc0d77b5f66b7392c97403010fd3cfb5e9239c7366b",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.parents_family",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13081",
+          "instruction_sha256": "03aa06b02d3454d7c29247232fd362330cc61a0d5a44a764c37b0a567b12eb0e",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:4909",
+          "instruction_sha256": "05a05f5a8c1eead9cad4d0e416c2a4681e4bf14edb9f426369eef7795bdbd6ff",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14635",
+          "instruction_sha256": "0172c2a33de4315638769349c643c4246d1107d3d0812b686c26d35e5e5c7307",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:13470",
+          "instruction_sha256": "07295190575c8f713b17976a557ac151f5087b8cf78ffa46c09adc8b37d3706a",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:9748",
+          "instruction_sha256": "01462dcc0401b52469ed60835fad55c351360e2094fb72c2f29780fbfeabbe15",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:9165",
+          "instruction_sha256": "014c6f3c68336110b7725a418b88f9d3666cb0e83970f907a45840c859c45fb6",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.siblings",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10843",
+          "instruction_sha256": "003157e0ac8639c2cf01e24ac63645b66a1b6bba9967f81e216da10478a530d7",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:250",
+          "instruction_sha256": "0101afb42fefbbd280d2a8d78586665fa5c7342988f8f933ff7a8fcec2553cff",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "domain_id": "D02",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PRIOR_DECISION_PRESERVED": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14044",
+          "instruction_sha256": "550f6155a4e23adf75ea3ccf01b5cc94a9ef88143cc8dc33af213ef5cd2b2675",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        },
+        {
+          "source_row": "alpaca:31999",
+          "instruction_sha256": "459e41357c0a115f714879af0b6ac5ea590cc20178d4330c2ea23b52a506574f",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:7308",
+          "instruction_sha256": "0057b18ba40712041c271f48ef1ab106e5e79c9858931439776630feffdb3de1",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:6347",
+          "instruction_sha256": "0833ecd4aab9751abfd5a7393394cc78cae395a0d36468dd3b11da1a94bc9154",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5405",
+          "instruction_sha256": "06c0557cb86db1235d81bcfc59aae80e0350366b2d9d825118debb6bc43d722f",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:6057",
+          "instruction_sha256": "168f936d0ab88e1d745c757a48f17c26a83b6d91cf97df935a97a963cef1d3cc",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:629",
+          "instruction_sha256": "00e764c81fc9b6ab62e7030aac251f9da5c1d504caf457253b817772fcc0a1a5",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:7720",
+          "instruction_sha256": "03063517c6006a162716cf96158d0cb27984e18a1be8d02b1a41cf43e17a93b6",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11718",
+          "instruction_sha256": "0234a23278e65eb182e747769e34ef907e4d2a60d9824c71ee750ee206ea3b3c",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:14478",
+          "instruction_sha256": "0589707852afba8e31d6ce43147fbc99f8183b352eb8751441be55c996addb96",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 1,
+      "distinct_selected_source_rows": 1,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "self_instruct:37002",
+          "instruction_sha256": "55758179e95cb1e713de3bfd83fc8a736afad2aef7ffa774ecf29d7ebf1a0002",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11711",
+          "instruction_sha256": "0483fb1af3cb14dbbb31eaacc3b4e6c4e1c5873b78f4db27cbe707fd278b0f31",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2561",
+          "instruction_sha256": "1027b0208165be06ea17dd7aa524a54d74076c588968e0f388befead268674e7",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4476",
+          "instruction_sha256": "7191b3a9c5cfd9cf98e05ec6ff3dde6937f1b0e5eafb3e168fdbbfa5c3bbd8eb",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:3859",
+          "instruction_sha256": "752af71df89f11e359e5449bbef4f9beadf8288d73cce893ac37a5a2f808cf2f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "domain_id": "D08",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6347",
+          "instruction_sha256": "0833ecd4aab9751abfd5a7393394cc78cae395a0d36468dd3b11da1a94bc9154",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:12424",
+          "instruction_sha256": "0c8f0c558e9222cb90108e103a68c999052dff9fe9e1b749fd6c4883476d1215",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_TASK_VS_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4682",
+          "instruction_sha256": "030c480127ae6852288aec2e74ea126a19d25a8cdc7882d28f5e4ef8dd58985f",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        },
+        {
+          "source_row": "dolly:12374",
+          "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12557",
+          "instruction_sha256": "084c03e54e434806db83ca90a5b4da72aebfa39b84593d22b9a76a11600de40e",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:7723",
+          "instruction_sha256": "117c7928f81fbe4979a56e525cb1ad7dde8599c4f8b5772cdc3f7b45ce0bd62a",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4013",
+          "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:620",
+          "instruction_sha256": "07fb1ae2e1acd4b8f626c691ee05f381dfb536fe690880c4c21a9ecb4b92d4b7",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "UNCERTAIN_TASK_VS_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13679",
+          "instruction_sha256": "006f14e0914764efe5e6ce84a831fbe095ac815b6210e9776a093a1e6cb40a48",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:9833",
+          "instruction_sha256": "0d8e620b15dac03864aeefdd6f2ecaf44bf1c84bba89b914edcb20219353fd71",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5447",
+          "instruction_sha256": "00ec4d19dd9b7e2347b701c92c001278eccbb916cbd853e359122a0c775f27dc",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:12373",
+          "instruction_sha256": "039cce72d3234625b6737f78e5cd4bee6afc0d56cd98c9e77376c10dcb582553",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4013",
+          "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:9778",
+          "instruction_sha256": "04bcdd8646f4e1fdcb23cbda68f28b353faa5be1ea5da55759c53fe6342212e3",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.sleep",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12487",
+          "instruction_sha256": "053d74d14bbe4051aa148fb981273d7886ba0170def4f861173ff6577e98893c",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:939",
+          "instruction_sha256": "0715178d8aa6cc98be5410092fc8cb4d1df0f9e583cdb13c03da948f2a32f4a9",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "domain_id": "D03",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4027",
+          "instruction_sha256": "0f47d8c13913f3e1c58450335486b349c65940840bac328ea4edf68c44ed8365",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:8009",
+          "instruction_sha256": "1219e4984ab202528523006e4da1069a1bb9e332ebb4e883b42794a47cabf54f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "UNCERTAIN_TASK_VS_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6817",
+          "instruction_sha256": "bb60dfc0f2a64cc1ab794a2a5257446f698dbd1c3a562ac679d95ee6edd5d6b1",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:12031",
+          "instruction_sha256": "d443add8d8e2cd427d20873ed1c045533b1aca5c8bb6c4125289b9db0b396af9",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.home_improvement",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12992",
+          "instruction_sha256": "816ab00948ef0ea0486cc052f70fb850fcbce5bfaa9a57444733eef66a7f5881",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14421",
+          "instruction_sha256": "92ddf69f54530f59d7a59aead10606976cc7861433493d92fd248c44b7baff99",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11926",
+          "instruction_sha256": "005cb224a819c836205fee3bd5295a440fb0f55e7448b04e106b387c4f8b3100",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:10565",
+          "instruction_sha256": "044741a7e0d4fba157e657ce3be20e598008927c0626a6ad23eea0c4302c0397",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "ALREADY_REJECTED_NO_NEW_ADJUDICATION": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:9127",
+          "instruction_sha256": "9f0f0c26b4533f8926081a4e9e0a362a45521aec8c2da0df7ce09811c1cd46c2",
+          "decision": "ALREADY_REJECTED_NO_NEW_ADJUDICATION"
+        },
+        {
+          "source_row": "dolly:11080",
+          "instruction_sha256": "b5c9d39bc724d959fb9df1d94194cc16cae13038a9b0dc6924f7beb3b98a4c5a",
+          "decision": "ALREADY_REJECTED_NO_NEW_ADJUDICATION"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.moving_relocation",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10181",
+          "instruction_sha256": "0f67e1f5bfd6fd39c332596cc23c171c4b36d62b34899c6f8506867266f3fc9f",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:6800",
+          "instruction_sha256": "55f2ef0b19636804d8efa1676d607fbf5aa04d89f6debc8d91984253c8ee96db",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.possessions_organization",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14577",
+          "instruction_sha256": "0480fe9c0a5fcd14283c7c61a7423f7785e2c1bd779f8e90b722c9ccb2af4f8f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2976",
+          "instruction_sha256": "04cba949de5987d8bdfcafc22c565509d76741e16b295b8d4b2385bdb3719357",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_TASK_VS_TOPIC": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4269",
+          "instruction_sha256": "02a69de6ada322af48245ff64efe833e278277d825102cacaf2f3e774ebaab83",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        },
+        {
+          "source_row": "dolly:10340",
+          "instruction_sha256": "02ca7d47d79f1525d341458a24eb39039537e143b2645a75653561921e48ba0f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.utilities_services",
+      "domain_id": "D09",
+      "batch_index": 1,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10667",
+          "instruction_sha256": "0351b3e9315689ceb690fabbc17879d37f9f63e1778f892fabda0a158ed2f7f7",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:5026",
+          "instruction_sha256": "0619d5b9d8f18de4cc3ecb077f86500adeae73927046b1ee5202d284944cb580",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6059",
+          "instruction_sha256": "52889d960ee3bf404e58c695d886595f4dd930f0f30359d6ec0d1844d8451435",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:633",
+          "instruction_sha256": "5e08d578fb79a3837be0c0224341d177719937ba351a9724d8f8266b3e69635f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PRIOR_DECISION_PRESERVED": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5735",
+          "instruction_sha256": "ebf5352cc0e58a6695d0cbbae22795fd543d91d3f991912bd9fcb8ae27919f5c",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        },
+        {
+          "source_row": "alpaca:33060",
+          "instruction_sha256": "cda6616fb2937ac6a20a917fed6edf6f092c1096541e0849c91aa0d64f99ab73",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.journaling",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11873",
+          "instruction_sha256": "02a47836d739d3f44fe367fc362c058f380f297e975819c4522554ab9a8c0034",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14972",
+          "instruction_sha256": "07d11df616d01ad470247bf3af2df06940bb3e05796feb815d76694b025e4620",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:902",
+          "instruction_sha256": "04e84206402762a14237750403c1b18f60fb92ec39a27a07848311c71c6f33e2",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14883",
+          "instruction_sha256": "190c6f3becccc57c4dbe79b9724ec46c97fd7707d4d7d319647ed584ae92d5be",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4593",
+          "instruction_sha256": "4424b8683520d6c9f9df6e98d4bb5f8c0ab2621ae1456cceb36a4a02c46934b3",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14910",
+          "instruction_sha256": "7ce82716ad7ea97cef1a83980dd0fd1c2b247ae98661da2afdc795781def28d4",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:15445",
+          "instruction_sha256": "5848398a11735a764a26a705954fb3c2dc17bfc7ae15385951bffebb8c79c99e",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "self_instruct:26348",
+          "instruction_sha256": "801612ecae2fdafa6adbbc1aac88ae217809cd2a83e53bc431fc1594dc027770",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 0,
+      "distinct_selected_source_rows": 0,
+      "decision_counts": {},
+      "source_rows": [],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "domain_id": "D18",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:22767",
+          "instruction_sha256": "2ed2d407b10c2db2dfa7a03b810f0159e41d6d83146ef598c4f3f069f5153fb6",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:19359",
+          "instruction_sha256": "3d009eb48546a92cd29948021c7353c48a5bfb1952527b0c0286936751c87596",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:8986",
+          "instruction_sha256": "4e79e76303103b2bece625989ba384b70f8a6ad53d033de12c09355859d2ce1c",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:355",
+          "instruction_sha256": "5e2a472be28cac728042fa058e2708fe2c2048ea3467312bdbfc0864ca114cf1",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10893",
+          "instruction_sha256": "16674190f720c4cc206fa0dc364eb91212c1d389a2a411f83ac612941e341612",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:7138",
+          "instruction_sha256": "2e0435618236374ffc3a145df53f65d92fda3a7738138f4dc3fec2c3d8c0a3de",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10938",
+          "instruction_sha256": "12f35e252c84b422da0ca8b3ef26e6e680d4d0d1c2d51f12ee01bfa22ad470e6",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:13815",
+          "instruction_sha256": "31778c78be92825cb17cb72d32b80baaa4d15dd8de575c3ac0a384925b90eb23",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10980",
+          "instruction_sha256": "1730684702bb7b21532ccf6554f1f42556005801dedbe895403ecccb1240a839",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:13281",
+          "instruction_sha256": "1750a8195b7adc878b974a09b56e5bf7bb6ab26a680863e035d8210a0da634f6",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.government_services",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11010",
+          "instruction_sha256": "560f1efb95fe883cc8c771e6a118d4405d0c23df7706e07b88ea713ce7c8fbd8",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:12720",
+          "instruction_sha256": "91696579a5ee11daff65c8cb80c25e11126d5e84e25bf28cb996b7b2ad2b7efe",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_TASK_VS_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:633",
+          "instruction_sha256": "5e08d578fb79a3837be0c0224341d177719937ba351a9724d8f8266b3e69635f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:13682",
+          "instruction_sha256": "6a910ae5157dbb09b301c374f697b966248c0b7aa08d15456880c0e98ba664b4",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5213",
+          "instruction_sha256": "02d27e6c734af68b0d1e24af0a5ab3f659b6f61daebc36b2cde16e4ec6616383",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:1123",
+          "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.legal_questions",
+      "domain_id": "D13",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12405",
+          "instruction_sha256": "029823865905a335801aad29ce2f26a7ecc283a1f80357c26538f0dad66cd34a",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:5213",
+          "instruction_sha256": "02d27e6c734af68b0d1e24af0a5ab3f659b6f61daebc36b2cde16e4ec6616383",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.art_culture",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:396",
+          "instruction_sha256": "05d488e84415e2dc49c994336585a4f241a12616bab467d748f02949f8426289",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:9524",
+          "instruction_sha256": "0dd8298ce72b745a4fc99af49d17570b08cbe62246b14eb4287d063b0eb203e0",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.books_literature",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2967",
+          "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:4682",
+          "instruction_sha256": "030c480127ae6852288aec2e74ea126a19d25a8cdc7882d28f5e4ef8dd58985f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_TASK_VS_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13573",
+          "instruction_sha256": "0042bb572bff8c15a57a41513247762f516ad00c3f7890b8fa6db7e41e7a4718",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:3006",
+          "instruction_sha256": "00607ebd1bfa6a4ec622a1b78d822fdeec5234ce318176bc3d85d7a1595a9400",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_TASK_VS_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2173",
+          "instruction_sha256": "04ed2f644da7990fc6cf0f3992c549b3ff62ee4094804351e3dcb3db9ed2c65c",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        },
+        {
+          "source_row": "dolly:7881",
+          "instruction_sha256": "05443337d9fb28667986569b616ba0d7ca6cf90cb97a9b3bd31660fc9e0a29df",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6777",
+          "instruction_sha256": "073fa5d9efd6c4305919365cc16b0226a32a23965fac2aec401816c207f03cb9",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:2035",
+          "instruction_sha256": "0e1c876419b438e55bf23341a297eb01ed420f99d62e725ad85d346aed693237",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3006",
+          "instruction_sha256": "00607ebd1bfa6a4ec622a1b78d822fdeec5234ce318176bc3d85d7a1595a9400",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:4191",
+          "instruction_sha256": "010d02338faac78c30d3e71f3b96b54cc2e87fac24dbeb0a5c1db14c5c80239b",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.news_media",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:9820",
+          "instruction_sha256": "016affea9c042119ba81f3ba8adec42cf37bccd7600cf96b7e881448d5eb9516",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:5021",
+          "instruction_sha256": "043f428c799168162c66fefbb5bfe1964bcbef42902f2ebfb2c97e3ad6a9ebde",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "domain_id": "D11",
+      "batch_index": 4,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:652",
+          "instruction_sha256": "83b033e725b90c1933cbe712c32a42866ec3b1218c60e31998d7251c7af95e86",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:6198",
+          "instruction_sha256": "95fe251f3299e52e3756f9ddacf7d4e8d4a8d1e157f930de27874f1a01e6d9f3",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10804",
+          "instruction_sha256": "10228d9a358bb3f55a2cb39e5467e9d410ba457d57d4048e85329dd2127bf086",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:14831",
+          "instruction_sha256": "595e4cfd8bc1d65ca9b1e14609f408df24c994dcab4643e5bf620f19773eeaf7",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.life_goals",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11517",
+          "instruction_sha256": "37e22f5b547fc2e7e363f7d61f2bb117626b70a9e216be111bd28315efd2ba2d",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:13177",
+          "instruction_sha256": "7af11e423c98886e757a5917961f8f263b5e0a99e838bf6e925f6c88f5798648",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 1,
+      "distinct_selected_source_rows": 1,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:34453",
+          "instruction_sha256": "c8cf4ded223f8f1791d259a3994daaa3db23c387d068b76f094110f617783d7c",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.major_decisions",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2486",
+          "instruction_sha256": "197ca2a3e5bc267cadd62ba1be116adbee35c4a5e06373b6810d908a1e3d3700",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:9022",
+          "instruction_sha256": "264c9c1bea2e8321fd57cdd04814c0dbe34564b32539820992fb098b45267405",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_admin",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4252",
+          "instruction_sha256": "097127665a71ac1520fce45f7ee38f14299bf9460dee4926b86f2785cd079001",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:393",
+          "instruction_sha256": "0c0f02ef0a180d606fd04ea550854c3266a274ae4a08160dab8e6107fa19a338",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3729",
+          "instruction_sha256": "03be3b78320fe5696c8c9bb4d3047e0e86b9d57590f784b1bf52830522dc8a13",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:9313",
+          "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.self_reflection",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:13042",
+          "instruction_sha256": "474425cd21f854cb5d671d1a7949c3d9c4e6ad96350a973d674cf987108b5802",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:8337",
+          "instruction_sha256": "7ddd5dde3685ecedd271d8be2fdd48d4ec21d0c02a38994d655e2325847d7fbe",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.values_principles",
+      "domain_id": "D01",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3501",
+          "instruction_sha256": "1d10b2075c22c08314f871e1e525794ab7cf332b52419a9bedf33209a2e0e67a",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:6498",
+          "instruction_sha256": "2a085bace93781089fe01b4fee84edf136fdee9f472668f5eb29aba939679c27",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:34018",
+          "instruction_sha256": "1a8885caf80a6b67a0813f08f7fe0e7f702c708829460c85408fbfc181f72bc2",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:14192",
+          "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11229",
+          "instruction_sha256": "015ff97974a7d0be98831504dd392867ffd263c2a83bc0a98bbd20f76a1173b6",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:1990",
+          "instruction_sha256": "0892ee23a0699509dd1130646b1ad14bf60038a3a3740c050377bc4b75b17c88",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:14917",
+          "instruction_sha256": "3510d356a394272fde0dbb4ff1fb32b83623fc086340e6d44759e3f3f6316e95",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:45484",
+          "instruction_sha256": "36b9c0c1f22bef53270067bc0419416517a0d2da4ee9ca7427677d2c129e808f",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:14810",
+          "instruction_sha256": "0a275f75b33cf8e84a88b73ea4eb06e80dfa57cfca13f42d0fc0ce341cdbb059",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        },
+        {
+          "source_row": "alpaca:11547",
+          "instruction_sha256": "574fd5bc01b58d38583d51114d6aa0eba02fd53790046d29df08a2091e93ed97",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PRIOR_DECISION_PRESERVED": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11517",
+          "instruction_sha256": "37e22f5b547fc2e7e363f7d61f2bb117626b70a9e216be111bd28315efd2ba2d",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        },
+        {
+          "source_row": "dolly:13177",
+          "instruction_sha256": "7af11e423c98886e757a5917961f8f263b5e0a99e838bf6e925f6c88f5798648",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PRIOR_DECISION_PRESERVED": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2486",
+          "instruction_sha256": "197ca2a3e5bc267cadd62ba1be116adbee35c4a5e06373b6810d908a1e3d3700",
+          "decision": "PRIOR_DECISION_PRESERVED"
+        },
+        {
+          "source_row": "alpaca:14192",
+          "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.testing_quality",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6151",
+          "instruction_sha256": "10d0f45aa95019d56e455239d0e5229291b4455cf1b19d787cbdcc473c03fe00",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:6085",
+          "instruction_sha256": "33a4e10543d052ec4cdb6e1bf341ecbe48485b9e00ad36f931b6106d59ee5f62",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.ux_user_research",
+      "domain_id": "D06",
+      "batch_index": 3,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3357",
+          "instruction_sha256": "197cc8f2c0f8bc48e26630f666c1a880926121aba8a508f0cfd14ddaa336a6b5",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:2779",
+          "instruction_sha256": "304358b40e37610c98d3c1e00a9835b3dfd9c7ea7e0ab34a20d813b8980e029a",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.biology_life_science",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12049",
+          "instruction_sha256": "16a388e7a79ae6431db12b252647367b4d6e6c176a9cb94920397ea372bfd6c7",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:13771",
+          "instruction_sha256": "183f46ffebec7573b016f843dbede80a56563c07b8237b2a1d6a18b1286c4428",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12995",
+          "instruction_sha256": "0ef8f05821347ec3d2ea345c9764502d0ff3e69c9e9b8444153f6f59a148f676",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:2910",
+          "instruction_sha256": "14f2be780ba8092b4b9b9e6339744deb42f2ce61f5767eef1a7b4cf680366902",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.computer_science",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14106",
+          "instruction_sha256": "217300fa075031973b188814a2c44cab056579b6f721962fd46216a2e7b47f50",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:864",
+          "instruction_sha256": "2555847e0f62128a89e54f4c4d6a4d70b5f217f6f7fe21036930c904213e7dbd",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:4674",
+          "instruction_sha256": "02b2db6bb6b569c70eeaebea59c196e21ea48f93dd21c9b426f4e6cdbff69c2c",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:396",
+          "instruction_sha256": "05d488e84415e2dc49c994336585a4f241a12616bab467d748f02949f8426289",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.mathematics",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6670",
+          "instruction_sha256": "001b72bb4ed54579bedab380a463ad5fa9939d97c0a1e98e496d4c787c1b46cd",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:634",
+          "instruction_sha256": "08d2c83c03757629489e78cb240ed83194d4476fc131bc5e33fc4f92c31444e1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14615",
+          "instruction_sha256": "5941d3b668711600bedbb26586854671d56f335e75640c4610b3c3fd22e5da78",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:10878",
+          "instruction_sha256": "922c490b322b7a141e8e7f68e22b4ddea450f600e4a1628d3b811af8f57cf196",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.physics",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:634",
+          "instruction_sha256": "08d2c83c03757629489e78cb240ed83194d4476fc131bc5e33fc4f92c31444e1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:13771",
+          "instruction_sha256": "183f46ffebec7573b016f843dbede80a56563c07b8237b2a1d6a18b1286c4428",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.statistics_data_analysis",
+      "domain_id": "D14",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:634",
+          "instruction_sha256": "08d2c83c03757629489e78cb240ed83194d4476fc131bc5e33fc4f92c31444e1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14766",
+          "instruction_sha256": "26256197fe19d778d5aadbc752baf3257b6f20771f689037228f606474b4423a",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_TASK_VS_TOPIC": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:7723",
+          "instruction_sha256": "117c7928f81fbe4979a56e525cb1ad7dde8599c4f8b5772cdc3f7b45ce0bd62a",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        },
+        {
+          "source_row": "dolly:11704",
+          "instruction_sha256": "14ca92b5d7a093cdc079e3b96f369b412ba56d7aa4f550eea3dbec3da186db39",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:6585",
+          "instruction_sha256": "996b54793dc0cd7535fc45b5e31e5c482ef536443666c0c55751e09aeb49791b",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:14930",
+          "instruction_sha256": "c63e668d35c325210634e9a1a79bbe9c7f0c72ac1bde2fbdc289ed048a9ed28a",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14967",
+          "instruction_sha256": "126decf4d2f2f2c72e20d5f9563d95e37468772575ff19e60164c5aad48f3ab1",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:8690",
+          "instruction_sha256": "17b1218d2dd71cb0d9aa5c73af74586db8f483753bd5d1b9c45523afb6bcfa72",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.life_events",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:11154",
+          "instruction_sha256": "225369de4462c31a81ecc0e8b15b2e79e69a59194af103436b0787db9ac664ef",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:10575",
+          "instruction_sha256": "3f09c7b25f22fa4f62415888b5d6d0dcd299ecb10cc581e9d7b40da1964bff29",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12836",
+          "instruction_sha256": "00ed0218049dcf04276978bad31212949395047901b344f014fdc19a3c8caba0",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:9178",
+          "instruction_sha256": "02bb9e609a40335094dfa7116a88b3752dd72e34fcd3db28e96e47443d168bdb",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 1,
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:14874",
+          "instruction_sha256": "2675512ab314c114bc7c710f81bb25a94bac3d79c9c463e334baad1c9529c099",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "alpaca:32888",
+          "instruction_sha256": "031aa760ec7a62fdbe7e2e9749c9f0369c48b8b316f614908186f8bf35b47e61",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5509",
+          "instruction_sha256": "0b9500f1bc2b5d55571acf8fc9cf14c520b3b9f93de24af4f6bdb31784ea3a75",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:12086",
+          "instruction_sha256": "0e29678112455d8b856e4d3bd65c4fe83a280ac8f92a68ed9ea1673055b8d99b",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "domain_id": "D17",
+      "batch_index": 5,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "UNCERTAIN_TASK_VS_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:9313",
+          "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:4045",
+          "instruction_sha256": "aad49d50e7c79d6d62b9d4bc3e0c57e8ddfa69a68616581bd1607ec82654ddac",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.attractions_activities",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:3293",
+          "instruction_sha256": "011ca1bc08c64002af5db4dfda19b9426ef2fddf37d2dd0eb8592abd28b5a0c5",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:13874",
+          "instruction_sha256": "0988ab567867c6f275bb2262dc264c3e9fd0a7ea34394df9b9c760ff53ae696d",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.local_navigation",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "REJECT_FOR_NOMINATED_TOPIC": 2
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:10340",
+          "instruction_sha256": "02ca7d47d79f1525d341458a24eb39039537e143b2645a75653561921e48ba0f",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "source_row": "dolly:193",
+          "instruction_sha256": "0c7f597c6402e336efd8067d191184a90cda0e147591b3416f1027eb60caaedd",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.lodging",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5785",
+          "instruction_sha256": "0b72ee6dc626f773f12e908c123056c62d3dacf809a05f98dfff09db9f53ca22",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:2725",
+          "instruction_sha256": "1eaa7e0554137a18511ed7c274eb5813353b8fe59c2466a05bef0fd25364d1d4",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_TASK_VS_TOPIC": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:1301",
+          "instruction_sha256": "031191a52a0024f7d6824a356e627c65f8f02df7fe723f2a89a4983f11ef4754",
+          "decision": "UNCERTAIN_TASK_VS_TOPIC"
+        },
+        {
+          "source_row": "dolly:2561",
+          "instruction_sha256": "1027b0208165be06ea17dd7aa524a54d74076c588968e0f388befead268674e7",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.transport_travel",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1,
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:2967",
+          "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        },
+        {
+          "source_row": "dolly:4515",
+          "instruction_sha256": "043a846a6be84162657b8eff3bf69aabf0991ff3ee2526d017de55c5f9c63901",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.trip_planning",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "PLAUSIBLE_SOURCE_CANDIDATE": 1,
+        "REJECT_FOR_NOMINATED_TOPIC": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:5031",
+          "instruction_sha256": "0b4dcd93d4ead1d3ffba1670064ebb0c2d1848e94730e265aa583fc1d7b7885d",
+          "decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        },
+        {
+          "source_row": "dolly:12279",
+          "instruction_sha256": "1624fb166abc9990c6f5e38f51a27b02f7dd6ca8e316524891057a061e7cf4ca",
+          "decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": true,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 1,
+      "distinct_selected_source_rows": 1,
+      "decision_counts": {
+        "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "alpaca:34879",
+          "instruction_sha256": "28bcb99d8bb70e56c8f858eb206591939e58bd77d79aad866fa721e76416283d",
+          "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": true,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.visas_border",
+      "domain_id": "D10",
+      "batch_index": 2,
+      "selected_nominations": 2,
+      "distinct_selected_source_rows": 2,
+      "decision_counts": {
+        "QUARANTINED_SOURCE_INPUT_MISMATCH": 1,
+        "UNCERTAIN_NEIGHBOR_BOUNDARY": 1
+      },
+      "source_rows": [
+        {
+          "source_row": "dolly:12485",
+          "instruction_sha256": "03900f416b1d342de1ac3d066fa1a1904a13ca56077263db208908d1e64ab01b",
+          "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH"
+        },
+        {
+          "source_row": "dolly:1123",
+          "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+          "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "supplemental_followups": [],
+      "has_prospective_plausible_candidate": false,
+      "sparse_retrieval_gap": false,
+      "accepted_gold_rows": 0
+    }
+  ],
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "natural_defer_controls_status": "NOT_REGISTERED",
+  "natural_context_controls_status": "NOT_REGISTERED",
+  "source_feasibility_verdict": "SOURCE_FEASIBILITY_UNQUALIFIED_NOT_ROUTER_CAPABILITY",
+  "annotation_independence": "Independent source-language authorship; developer boundary annotations are not independent gold.",
+  "cig02_frozen": false,
+  "cig03_started": false
+}
