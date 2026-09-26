@@ -1,0 +1,778 @@
+{
+  "format": "cig02e-science-creative-business-time-source-pilot-v1",
+  "classification": "PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "selection": "First two existing deterministic samples per D14/D15/D16/D17 Topic; no replacement or new lexical scan. Retrieval does not establish semantic coverage.",
+  "topic_count": 32,
+  "topic_nominations": 64,
+  "distinct_source_rows": 61,
+  "topics": [
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.branding_identity",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.creative_writing",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.ideation_concepts",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.photography",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.creative_design.visual_design",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.biology_life_science",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.computer_science",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.mathematics",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.physics",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.science_technical.statistics_data_analysis",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.life_events",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "selected_nominations": 2
+    }
+  ],
+  "decision_counts": {
+    "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 4,
+    "REJECT_FOR_NOMINATED_TOPIC": 28,
+    "QUARANTINED_SOURCE_INPUT_MISMATCH": 11,
+    "PLAUSIBLE_SOURCE_CANDIDATE": 9,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 8,
+    "PRIOR_DECISION_PRESERVED": 2,
+    "UNCERTAIN_TASK_VS_TOPIC": 2
+  },
+  "decisions": [
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "source_row": "alpaca:48073",
+      "instruction_sha256": "014361134e2c59fc268772b7cda7abbed6b72dc8dc9c5c0fe588fc038b130737",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "source_row": "alpaca:20103",
+      "instruction_sha256": "35d72eb80f4bbf1d856f0fdf161b8ecd0e7fe7a6414ee96028d77ca738f75ea1",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "source_row": "dolly:4033",
+      "instruction_sha256": "11486042eebcea5d5045e1effb1b305d0adaa17f92f157784390469639b513e9",
+      "official_input_rows": [
+        4033
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Support means a programming language supported by Spark, not customer service."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "source_row": "dolly:7892",
+      "instruction_sha256": "149c062d8766d99693ad500d3e7548b89f20655cd213f1cf7e4a985d5bf5f360",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "source_row": "dolly:5937",
+      "instruction_sha256": "024d71c8ec2ad99067bdc948262d852fc5320a373a6ab384306405b7cc5a1b8a",
+      "official_input_rows": [
+        5937
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Founder refers to a fictional noble house, not forming a business."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "source_row": "dolly:174",
+      "instruction_sha256": "03729cd48eb5e082861394aace99a40a147f6683f36092da7f1ccb3c498a45cd",
+      "official_input_rows": [
+        174
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests new business ideas and how to start them."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "source_row": "dolly:6286",
+      "instruction_sha256": "1d91404123e2dc4a0e6fab7b156d20bb42560deac9146257f7bdf6fb0d7c79d2",
+      "official_input_rows": [
+        6286
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Competition is a wrestling event, not researching a business market."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "source_row": "dolly:5162",
+      "instruction_sha256": "27bf129ec08a24c600a9571353fe324c68edc82c2ed542b26e92cc6ceea19a9b",
+      "official_input_rows": [
+        5162
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Generic competition definition lacks an explicit market or competitor-research scope; domain sense requires adjudication."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "source_row": "dolly:1338",
+      "instruction_sha256": "098dee3743453f594475c8165df5b3bdb96a0989ef21ee6781e4acdcd8ec67f1",
+      "official_input_rows": [
+        1338
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks about two digital marketing channels, SEO and SEM."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "source_row": "dolly:2035",
+      "instruction_sha256": "0e1c876419b438e55bf23341a297eb01ed420f99d62e725ad85d346aed693237",
+      "official_input_rows": [
+        2035
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests extraction of reported financial metrics, not a marketing or growth-channel decision."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "source_row": "dolly:6347",
+      "instruction_sha256": "0833ecd4aab9751abfd5a7393394cc78cae395a0d36468dd3b11da1a94bc9154",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "source_row": "dolly:2150",
+      "instruction_sha256": "0a128a3a712a62c1b2b5568705f76ae977549f29ed69a7cfe7e5f20643279cea",
+      "official_input_rows": [
+        2150
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Process refers to physical phase transitions, not business operations."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "source_row": "dolly:6028",
+      "instruction_sha256": "70473737d28e11e3dbe7df68cd7816971c1da5a84b391d7c3cc2c3270424d080",
+      "official_input_rows": [
+        6028
+      ],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing REJECT_FOR_NOMINATED_TOPIC is preserved; title authoring with coaching partnership background. No new gold.",
+      "prior_decision": "REJECT_FOR_NOMINATED_TOPIC"
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "source_row": "dolly:1697",
+      "instruction_sha256": "a4bb35769931140dad69a003d7674ea882aa7c579bdbf29b167c1cccd8b1c807",
+      "official_input_rows": [
+        1697
+      ],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing REJECT_FOR_NOMINATED_TOPIC is preserved; colleague-recognition message with partnership background. No new gold.",
+      "prior_decision": "REJECT_FOR_NOMINATED_TOPIC"
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "source_row": "dolly:11926",
+      "instruction_sha256": "005cb224a819c836205fee3bd5295a440fb0f55e7448b04e106b387c4f8b3100",
+      "official_input_rows": [
+        11929
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests homeowner property maintenance, not sales leads or deals."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "source_row": "dolly:12474",
+      "instruction_sha256": "00ece04bd4fc49174c3e9959d75cf8b067143570cc4555863912e6158eddbb9f",
+      "official_input_rows": [
+        12477
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests surf-trip packing; a sales process is absent."
+    },
+    {
+      "topic_id": "sys.creative_design.branding_identity",
+      "source_row": "dolly:8254",
+      "instruction_sha256": "c69a019b130502489767f2c647558396becadd5ded6c9d69813c6b33c22c0af6",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.creative_design.branding_identity",
+      "source_row": "dolly:11804",
+      "instruction_sha256": "cdd9441a70dd6e9932595ca0fd7f0dd00fb77a48f2ffbdd7df6d29493904a57b",
+      "official_input_rows": [
+        11807
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests understanding of a brand logo, included in the formal profile."
+    },
+    {
+      "topic_id": "sys.creative_design.creative_writing",
+      "source_row": "dolly:1151",
+      "instruction_sha256": "014cb5384b65dc03b59a978fc6e42325d35b4997272bb1e9df632e0aff938ea6",
+      "official_input_rows": [
+        1151
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests facts about an existing game plot, not literary creation."
+    },
+    {
+      "topic_id": "sys.creative_design.creative_writing",
+      "source_row": "dolly:8202",
+      "instruction_sha256": "07e51469134cdc9e577c9011af92a378f2b0bfe0ff41ec7a55af9764c6b8c395",
+      "official_input_rows": [
+        8203
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests genre classification of existing books, not creative authoring."
+    },
+    {
+      "topic_id": "sys.creative_design.ideation_concepts",
+      "source_row": "dolly:6749",
+      "instruction_sha256": "0acf6a2a9f7a577c10dd9064fae040762ad0c996af91a78d0c30f18fefe259ee",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.creative_design.ideation_concepts",
+      "source_row": "dolly:6465",
+      "instruction_sha256": "4e01aa3c1874110efb47d863c06dd1f8219278f26cadeb850bc4333263c556f1",
+      "official_input_rows": [
+        6465
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests historical origin of democracy, not generating creative concepts."
+    },
+    {
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "source_row": "dolly:13747",
+      "instruction_sha256": "af621f23a74d8a183cf307bab533090ad1489f847b353b21e514b4cac4e602f1",
+      "official_input_rows": [
+        13750
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Drawing and painting are listed in task-type classification; no image-creation goal."
+    },
+    {
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "source_row": "alpaca:28170",
+      "instruction_sha256": "005379a847bd2a187c720c524b3fb6dd1bc04723f56eca4a6d9192d21e73e8de",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.creative_design.photography",
+      "source_row": "dolly:6771",
+      "instruction_sha256": "37281fdbde227dc3f889e2406a463448645065c525fc59cc41103d96a546fe0e",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.creative_design.photography",
+      "source_row": "dolly:7323",
+      "instruction_sha256": "38452b4d5b21027a80c94a023495e2cd34fbd360f92ed180102815faa17a965e",
+      "official_input_rows": [
+        7323
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks camera depth-of-focus knowledge, within photography."
+    },
+    {
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "source_row": "dolly:460",
+      "instruction_sha256": "6caab5a4d63efb6fff1efdfafaa5f32836e1867f46906100287b966ddcc40728",
+      "official_input_rows": [
+        460
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Interface names a payments system, not interface or interaction design."
+    },
+    {
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "source_row": "dolly:10148",
+      "instruction_sha256": "81281d47aa93553a6a625cc96f94c05b7bc6490bcf9cbdaa063dee95e18d1a4c",
+      "official_input_rows": [
+        10151
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks distinctions among UI, UX and product design."
+    },
+    {
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "source_row": "dolly:14668",
+      "instruction_sha256": "09b6a9c68577c39181c99ed38f05b4357d3d253da67bac6087c67a47cb775ec7",
+      "official_input_rows": [
+        14671
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests classification of household devices, not multimedia production."
+    },
+    {
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "source_row": "dolly:3382",
+      "instruction_sha256": "196917ce1f7a4695ccd6094ac09d0f3ddb158a8b549a46dfbb5042e73aae7fc6",
+      "official_input_rows": [
+        3382,
+        3875,
+        7886
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests microphone selection for podcast/video recording and streaming."
+    },
+    {
+      "topic_id": "sys.creative_design.visual_design",
+      "source_row": "dolly:3292",
+      "instruction_sha256": "0100df299aab1c508313624116cd38a5999f07a3a71309580d6125563fae2eac",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.creative_design.visual_design",
+      "source_row": "dolly:2591",
+      "instruction_sha256": "082e81e0b9f9a1781dadc36bcf91d6eada63847a89dca4ed8045cbf4f9fa739f",
+      "official_input_rows": [
+        2591
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests an element's physical color, not visual composition or design."
+    },
+    {
+      "topic_id": "sys.science_technical.biology_life_science",
+      "source_row": "dolly:12049",
+      "instruction_sha256": "16a388e7a79ae6431db12b252647367b4d6e6c176a9cb94920397ea372bfd6c7",
+      "official_input_rows": [
+        12052
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks the meaning of molecular biology."
+    },
+    {
+      "topic_id": "sys.science_technical.biology_life_science",
+      "source_row": "dolly:13771",
+      "instruction_sha256": "183f46ffebec7573b016f843dbede80a56563c07b8237b2a1d6a18b1286c4428",
+      "official_input_rows": [
+        13774
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a historical research-field attribution; biology is one option, not the goal of learning biological mechanisms."
+    },
+    {
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "source_row": "dolly:12995",
+      "instruction_sha256": "0ef8f05821347ec3d2ea345c9764502d0ff3e69c9e9b8444153f6f59a148f676",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "source_row": "dolly:2910",
+      "instruction_sha256": "14f2be780ba8092b4b9b9e6339744deb42f2ce61f5767eef1a7b4cf680366902",
+      "official_input_rows": [
+        2910
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Requests house-building material options; materials science versus engineering/home-construction goal requires adjudication."
+    },
+    {
+      "topic_id": "sys.science_technical.computer_science",
+      "source_row": "dolly:14106",
+      "instruction_sha256": "217300fa075031973b188814a2c44cab056579b6f721962fd46216a2e7b47f50",
+      "official_input_rows": [
+        14109
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks an algorithm's greedy versus dynamic-programming classification, an explicit CS principle."
+    },
+    {
+      "topic_id": "sys.science_technical.computer_science",
+      "source_row": "dolly:864",
+      "instruction_sha256": "2555847e0f62128a89e54f4c4d6a4d70b5f217f6f7fe21036930c904213e7dbd",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "source_row": "dolly:4674",
+      "instruction_sha256": "02b2db6bb6b569c70eeaebea59c196e21ea48f93dd21c9b426f4e6cdbff69c2c",
+      "official_input_rows": [
+        4674
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests an RV electrical-system choice, explicitly electrical/systems engineering."
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "source_row": "dolly:396",
+      "instruction_sha256": "05d488e84415e2dc49c994336585a4f241a12616bab467d748f02949f8426289",
+      "official_input_rows": [
+        396
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Engineering culture may concern workplace practices rather than engineering principles; boundary requires adjudication."
+    },
+    {
+      "topic_id": "sys.science_technical.mathematics",
+      "source_row": "dolly:6670",
+      "instruction_sha256": "001b72bb4ed54579bedab380a463ad5fa9939d97c0a1e98e496d4c787c1b46cd",
+      "official_input_rows": [
+        6670,
+        6703
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Categorization and sentiment analysis could concern NLP or statistics; no specific mathematical concept is stated."
+    },
+    {
+      "topic_id": "sys.science_technical.mathematics",
+      "source_row": "dolly:634",
+      "instruction_sha256": "08d2c83c03757629489e78cb240ed83194d4476fc131bc5e33fc4f92c31444e1",
+      "official_input_rows": [
+        634
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Mathematics is one major in academic-field classification, not mathematical reasoning."
+    },
+    {
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "source_row": "dolly:14615",
+      "instruction_sha256": "5941d3b668711600bedbb26586854671d56f335e75640c4610b3c3fd22e5da78",
+      "official_input_rows": [
+        14618
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "An anatomy app is one item in app-category classification, not medical-science knowledge."
+    },
+    {
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "source_row": "dolly:10878",
+      "instruction_sha256": "922c490b322b7a141e8e7f68e22b4ddea450f600e4a1628d3b811af8f57cf196",
+      "official_input_rows": [
+        10881
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Medical dramas are titles in broadcast-network classification, not medical mechanisms."
+    },
+    {
+      "topic_id": "sys.science_technical.physics",
+      "source_row": "dolly:634",
+      "instruction_sha256": "08d2c83c03757629489e78cb240ed83194d4476fc131bc5e33fc4f92c31444e1",
+      "official_input_rows": [
+        634
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Physics is one major in academic-field classification, not physical phenomena."
+    },
+    {
+      "topic_id": "sys.science_technical.physics",
+      "source_row": "dolly:13771",
+      "instruction_sha256": "183f46ffebec7573b016f843dbede80a56563c07b8237b2a1d6a18b1286c4428",
+      "official_input_rows": [
+        13774
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests historical research-field attribution; physics is an answer option, not the goal of learning physical theory."
+    },
+    {
+      "topic_id": "sys.science_technical.statistics_data_analysis",
+      "source_row": "dolly:634",
+      "instruction_sha256": "08d2c83c03757629489e78cb240ed83194d4476fc131bc5e33fc4f92c31444e1",
+      "official_input_rows": [
+        634
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Statistics is one major in academic-field classification, not statistical inference."
+    },
+    {
+      "topic_id": "sys.science_technical.statistics_data_analysis",
+      "source_row": "dolly:14766",
+      "instruction_sha256": "26256197fe19d778d5aadbc752baf3257b6f20771f689037228f606474b4423a",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "source_row": "dolly:7723",
+      "instruction_sha256": "117c7928f81fbe4979a56e525cb1ad7dde8599c4f8b5772cdc3f7b45ce0bd62a",
+      "official_input_rows": [
+        7724
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Requests a fictional appointment phone-call dialogue; booking goal versus dialogue authoring requires adjudication."
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "source_row": "dolly:11704",
+      "instruction_sha256": "14ca92b5d7a093cdc079e3b96f369b412ba56d7aa4f550eea3dbec3da186db39",
+      "official_input_rows": [
+        11707
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Raise concerns interest-rate policy, not reserving an appointment."
+    },
+    {
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "source_row": "dolly:6585",
+      "instruction_sha256": "996b54793dc0cd7535fc45b5e31e5c482ef536443666c0c55751e09aeb49791b",
+      "official_input_rows": [
+        6585
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests calendar history, not arranging dates or time slots."
+    },
+    {
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "source_row": "dolly:14930",
+      "instruction_sha256": "c63e668d35c325210634e9a1a79bbe9c7f0c72ac1bde2fbdc289ed048a9ed28a",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "source_row": "dolly:14967",
+      "instruction_sha256": "126decf4d2f2f2c72e20d5f9563d95e37468772575ff19e60164c5aad48f3ab1",
+      "official_input_rows": [
+        14970
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Holiday means a vacation destination, not festive or anniversary planning."
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "source_row": "dolly:8690",
+      "instruction_sha256": "17b1218d2dd71cb0d9aa5c73af74586db8f483753bd5d1b9c45523afb6bcfa72",
+      "official_input_rows": [
+        8692
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Anniversary venue inquiry has a celebration goal but asks for email drafting; primary-output boundary requires adjudication."
+    },
+    {
+      "topic_id": "sys.time_events.life_events",
+      "source_row": "dolly:11154",
+      "instruction_sha256": "225369de4462c31a81ecc0e8b15b2e79e69a59194af103436b0787db9ac664ef",
+      "official_input_rows": [
+        11157
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests historical biography summarization, not managing the user's life-stage event."
+    },
+    {
+      "topic_id": "sys.time_events.life_events",
+      "source_row": "dolly:10575",
+      "instruction_sha256": "3f09c7b25f22fa4f62415888b5d6d0dcd299ecb10cc581e9d7b40da1964bff29",
+      "official_input_rows": [
+        10578
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Graduation is background to an allergy reasoning question, not event preparation."
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "source_row": "dolly:12836",
+      "instruction_sha256": "00ed0218049dcf04276978bad31212949395047901b344f014fdc19a3c8caba0",
+      "official_input_rows": [
+        12839
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Fragment requests steps showcasing a security key; generic checklist versus computing-specific guide needs adjudication."
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "source_row": "dolly:9178",
+      "instruction_sha256": "02bb9e609a40335094dfa7116a88b3752dd72e34fcd3db28e96e47443d168bdb",
+      "official_input_rows": [
+        9180
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Explicit vacation planning belongs to a trip plan; generic planning form alone does not establish this Topic."
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "source_row": "dolly:14874",
+      "instruction_sha256": "2675512ab314c114bc7c710f81bb25a94bac3d79c9c463e334baad1c9529c099",
+      "official_input_rows": [
+        14877
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Follow-up refers to clinical screening, not reminders or time-critical due dates."
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "source_row": "alpaca:32888",
+      "instruction_sha256": "031aa760ec7a62fdbe7e2e9749c9f0369c48b8b316f614908186f8bf35b47e61",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "source_row": "dolly:5509",
+      "instruction_sha256": "0b9500f1bc2b5d55571acf8fc9cf14c520b3b9f93de24af4f6bdb31784ea3a75",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "source_row": "dolly:12086",
+      "instruction_sha256": "0e29678112455d8b856e4d3bd65c4fe83a280ac8f92a68ed9ea1673055b8d99b",
+      "official_input_rows": [
+        12089
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Daily exercise integration intersects recurring schedule and fitness goal; primary-goal boundary requires adjudication."
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "source_row": "dolly:9313",
+      "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+      "official_input_rows": [
+        9315
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Procrastination prevention is explicit personal productivity but no time allocation is specified; time-management neighbor requires adjudication."
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "source_row": "dolly:4045",
+      "instruction_sha256": "aad49d50e7c79d6d62b9d4bc3e0c57e8ddfa69a68616581bd1607ec82654ddac",
+      "official_input_rows": [
+        4045
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Requests extraction of behavioral traits from text, not allocating time; informational understanding versus task-form eligibility requires adjudication."
+    }
+  ],
+  "annotation_independence": "Source-language authorship independent of CIG; developer boundary review is not independent gold.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
