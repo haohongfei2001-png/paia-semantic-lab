@@ -59,7 +59,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const [mirrorPath, officialPath, outputPath = "artifacts/ci/cig02e-dolly-provenance.json", reviewPath = "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"] = process.argv.slice(2);
   assert.ok(["artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json",
     "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
-    "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json"].includes(reviewPath), "unregistered source review path");
+    "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+    "artifacts/compositional-intent-graph-v1/CIG-02E_PERSONAL_FAMILY_PROJECTS_MEMORY_SOURCE_PILOT.json"].includes(reviewPath), "unregistered source review path");
   assert.ok(mirrorPath && officialPath, "two pinned source files required");
   const read = file => {
     const bytes = fs.readFileSync(file);

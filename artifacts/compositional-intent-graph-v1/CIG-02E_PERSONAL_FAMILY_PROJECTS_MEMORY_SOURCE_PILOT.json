@@ -1,0 +1,717 @@
+{
+  "format": "cig02e-personal-family-projects-memory-source-pilot-v1",
+  "classification": "PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "selection": "First two existing deterministic samples per D01/D02/D06/D18 Topic, or all selected samples if fewer; no replacement. Zero selected samples do not imply semantic absence.",
+  "topic_count": 32,
+  "topic_nominations": 59,
+  "distinct_source_rows": 55,
+  "topics": [
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "selected_nominations": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.family_relationships.friendships",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.family_relationships.parents_family",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.family_relationships.siblings",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.journaling",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "selected_nominations": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.life_goals",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "selected_nominations": 1
+    },
+    {
+      "topic_id": "sys.personal_direction.major_decisions",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_admin",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.self_reflection",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.personal_direction.values_principles",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.testing_quality",
+      "selected_nominations": 2
+    },
+    {
+      "topic_id": "sys.projects_products.ux_user_research",
+      "selected_nominations": 2
+    }
+  ],
+  "decision_counts": {
+    "REJECT_FOR_NOMINATED_TOPIC": 31,
+    "QUARANTINED_SOURCE_INPUT_MISMATCH": 5,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 2,
+    "PRIOR_DECISION_PRESERVED": 5,
+    "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING": 14,
+    "PLAUSIBLE_SOURCE_CANDIDATE": 2
+  },
+  "decisions": [
+    {
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_row": "dolly:1971",
+      "instruction_sha256": "2023544c8e25d37f5260cb13e5bed1c06d4dac620945d2341103ae0f1d54683b",
+      "official_input_rows": [
+        1971
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Cricket terminology sorting does not concern interpersonal boundaries."
+    },
+    {
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "source_row": "dolly:12392",
+      "instruction_sha256": "24419d459f32c5e5e1927ca47a1855200114dbcb923d811517a3153fd0df4ec4",
+      "official_input_rows": [
+        12395
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "No is part of a film title; the request asks release history, not interpersonal refusal."
+    },
+    {
+      "topic_id": "sys.family_relationships.friendships",
+      "source_row": "dolly:11669",
+      "instruction_sha256": "076919baaf551ecbbbeada9c2df0ebb945cd55024ae3e01d01e3e9286000aa80",
+      "official_input_rows": [
+        11672
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests motivational note authoring; friendship and weight loss are message context, not friendship maintenance as a distinct current task."
+    },
+    {
+      "topic_id": "sys.family_relationships.friendships",
+      "source_row": "dolly:9811",
+      "instruction_sha256": "102b0a32952a44408eb37dc0d77b5f66b7392c97403010fd3cfb5e9239c7366b",
+      "official_input_rows": [
+        9814
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests consoling message authoring; the friend's job outcome is background, not a relationship-management request."
+    },
+    {
+      "topic_id": "sys.family_relationships.parents_family",
+      "source_row": "dolly:13081",
+      "instruction_sha256": "03aa06b02d3454d7c29247232fd362330cc61a0d5a44a764c37b0a567b12eb0e",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.family_relationships.parents_family",
+      "source_row": "dolly:4909",
+      "instruction_sha256": "05a05f5a8c1eead9cad4d0e416c2a4681e4bf14edb9f426369eef7795bdbd6ff",
+      "official_input_rows": [
+        4909
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Mother is an honorific in a biographical fact question, not a family-of-origin goal."
+    },
+    {
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "source_row": "dolly:14635",
+      "instruction_sha256": "0172c2a33de4315638769349c643c4246d1107d3d0812b686c26d35e5e5c7307",
+      "official_input_rows": [
+        14638
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a vacation suggestion; a couple is the traveler group, not a romantic-relationship goal."
+    },
+    {
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "source_row": "dolly:13470",
+      "instruction_sha256": "07295190575c8f713b17976a557ac151f5087b8cf78ffa46c09adc8b37d3706a",
+      "official_input_rows": [
+        13473
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Celebrity couple reference is a song fact, not the user's partnership goal."
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "source_row": "dolly:9748",
+      "instruction_sha256": "01462dcc0401b52469ed60835fad55c351360e2094fb72c2f29780fbfeabbe15",
+      "official_input_rows": [
+        9751
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Hot dog is a food term, not a pet."
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "source_row": "dolly:9165",
+      "instruction_sha256": "014c6f3c68336110b7725a418b88f9d3666cb0e83970f907a45840c859c45fb6",
+      "official_input_rows": [
+        9167
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Dog-name popularity is pet-related but does not show pet care or naming a current pet; generic fact versus Pets needs adjudication."
+    },
+    {
+      "topic_id": "sys.family_relationships.siblings",
+      "source_row": "dolly:10843",
+      "instruction_sha256": "003157e0ac8639c2cf01e24ac63645b66a1b6bba9967f81e216da10478a530d7",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.family_relationships.siblings",
+      "source_row": "dolly:250",
+      "instruction_sha256": "0101afb42fefbbd280d2a8d78586665fa5c7342988f8f933ff7a8fcec2553cff",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "source_row": "dolly:14044",
+      "instruction_sha256": "550f6155a4e23adf75ea3ccf01b5cc94a9ef88143cc8dc33af213ef5cd2b2675",
+      "official_input_rows": [
+        14047
+      ],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing UNCERTAIN_BOUNDARY_NO_FIXTURE_ACCEPTANCE is preserved; no new adjudication or gold. See prior immutable manifest.",
+      "prior_decision": "UNCERTAIN_BOUNDARY_NO_FIXTURE_ACCEPTANCE"
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "source_row": "alpaca:31999",
+      "instruction_sha256": "459e41357c0a115f714879af0b6ac5ea590cc20178d4330c2ea23b52a506574f",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "source_row": "dolly:6059",
+      "instruction_sha256": "52889d960ee3bf404e58c695d886595f4dd930f0f30359d6ec0d1844d8451435",
+      "official_input_rows": [
+        6059
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Copy is a riddle clue, not data backup or recovery."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "source_row": "dolly:633",
+      "instruction_sha256": "5e08d578fb79a3837be0c0224341d177719937ba351a9724d8f8266b3e69635f",
+      "official_input_rows": [
+        633
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests alphabetic person-name extraction from border-queue news; backup describes congestion."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "source_row": "dolly:5735",
+      "instruction_sha256": "ebf5352cc0e58a6695d0cbbae22795fd543d91d3f991912bd9fcb8ae27919f5c",
+      "official_input_rows": [
+        5735
+      ],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing REJECT_FOR_NOMINATED_TOPIC is preserved; no new adjudication or gold. See prior immutable manifest.",
+      "prior_decision": "REJECT_FOR_NOMINATED_TOPIC"
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "source_row": "alpaca:33060",
+      "instruction_sha256": "cda6616fb2937ac6a20a917fed6edf6f092c1096541e0849c91aa0d64f99ab73",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.journaling",
+      "source_row": "dolly:11873",
+      "instruction_sha256": "02a47836d739d3f44fe367fc362c058f380f297e975819c4522554ab9a8c0034",
+      "official_input_rows": [
+        11876
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a fictional dog's diary, not the user's ongoing personal journaling."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.journaling",
+      "source_row": "dolly:14972",
+      "instruction_sha256": "07d11df616d01ad470247bf3af2df06940bb3e05796feb815d76694b025e4620",
+      "official_input_rows": [
+        14975
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a hypothetical last-person diary, not an independently observed personal journaling goal."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "source_row": "dolly:902",
+      "instruction_sha256": "04e84206402762a14237750403c1b18f60fb92ec39a27a07848311c71c6f33e2",
+      "official_input_rows": [
+        902
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Context modifies a business-intelligence definition, not AI memory management."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "source_row": "dolly:14883",
+      "instruction_sha256": "190c6f3becccc57c4dbe79b9724ec46c97fd7707d4d7d319647ed584ae92d5be",
+      "official_input_rows": [
+        14886
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks a fictional-world term's meaning in a plot paragraph, not AI memory or personal-context storage."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "source_row": "dolly:4593",
+      "instruction_sha256": "4424b8683520d6c9f9df6e98d4bb5f8c0ab2621ae1456cceb36a4a02c46934b3",
+      "official_input_rows": [
+        4593
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Notes are musical pitches, not a knowledge-management system."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "source_row": "dolly:14910",
+      "instruction_sha256": "7ce82716ad7ea97cef1a83980dd0fd1c2b247ae98661da2afdc795781def28d4",
+      "official_input_rows": [
+        14913
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Tag is a fictional graffiti signature, not knowledge-base tagging."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "source_row": "alpaca:15445",
+      "instruction_sha256": "5848398a11735a764a26a705954fb3c2dc17bfc7ae15385951bffebb8c79c99e",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "source_row": "self_instruct:26348",
+      "instruction_sha256": "801612ecae2fdafa6adbbc1aac88ae217809cd2a83e53bc431fc1594dc027770",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "source_row": "alpaca:22767",
+      "instruction_sha256": "2ed2d407b10c2db2dfa7a03b810f0159e41d6d83146ef598c4f3f069f5153fb6",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "source_row": "alpaca:19359",
+      "instruction_sha256": "3d009eb48546a92cd29948021c7353c48a5bfb1952527b0c0286936751c87596",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "source_row": "dolly:10804",
+      "instruction_sha256": "10228d9a358bb3f55a2cb39e5467e9d410ba457d57d4048e85329dd2127bf086",
+      "official_input_rows": [
+        10807
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly asks how to change a bad habit; the behavior-change goal is explicit."
+    },
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "source_row": "dolly:14831",
+      "instruction_sha256": "595e4cfd8bc1d65ca9b1e14609f408df24c994dcab4643e5bf620f19773eeaf7",
+      "official_input_rows": [
+        14834
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks political public-opinion concepts, not changing personal habits."
+    },
+    {
+      "topic_id": "sys.personal_direction.life_goals",
+      "source_row": "dolly:11517",
+      "instruction_sha256": "37e22f5b547fc2e7e363f7d61f2bb117626b70a9e216be111bd28315efd2ba2d",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.personal_direction.life_goals",
+      "source_row": "dolly:13177",
+      "instruction_sha256": "7af11e423c98886e757a5917961f8f263b5e0a99e838bf6e925f6c88f5798648",
+      "official_input_rows": [
+        13180
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Generic project-milestone definition does not establish long-term personal life aspirations. The separate Project Planning uncertainty remains unchanged."
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "source_row": "alpaca:34453",
+      "instruction_sha256": "c8cf4ded223f8f1791d259a3994daaa3db23c387d068b76f094110f617783d7c",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.personal_direction.major_decisions",
+      "source_row": "dolly:2486",
+      "instruction_sha256": "197ca2a3e5bc267cadd62ba1be116adbee35c4a5e06373b6810d908a1e3d3700",
+      "official_input_rows": [
+        2486
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Text gives bicycle-choice advice rather than a current high-impact or hard-to-reverse personal decision request."
+    },
+    {
+      "topic_id": "sys.personal_direction.major_decisions",
+      "source_row": "dolly:9022",
+      "instruction_sha256": "264c9c1bea2e8321fd57cdd04814c0dbe34564b32539820992fb098b45267405",
+      "official_input_rows": [
+        9024
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks historical battle parties and consequences, not making a current major personal decision."
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_admin",
+      "source_row": "dolly:4252",
+      "instruction_sha256": "097127665a71ac1520fce45f7ee38f14299bf9460dee4926b86f2785cd079001",
+      "official_input_rows": [
+        4252
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks national government form, not personal paperwork or administrative chores."
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_admin",
+      "source_row": "dolly:393",
+      "instruction_sha256": "0c0f02ef0a180d606fd04ea550854c3266a274ae4a08160dab8e6107fa19a338",
+      "official_input_rows": [
+        393
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Form means bland food preparation; current goal is cooking, not personal administrative forms."
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "source_row": "dolly:3729",
+      "instruction_sha256": "03be3b78320fe5696c8c9bb4d3047e0e86b9d57590f784b1bf52830522dc8a13",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context match; no semantic verdict or silent replacement."
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "source_row": "dolly:9313",
+      "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+      "official_input_rows": [
+        9315
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly requests procrastination-prevention strategies, explicitly within Personal Productivity."
+    },
+    {
+      "topic_id": "sys.personal_direction.self_reflection",
+      "source_row": "dolly:13042",
+      "instruction_sha256": "474425cd21f854cb5d671d1a7949c3d9c4e6ad96350a973d674cf987108b5802",
+      "official_input_rows": [
+        13045
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests learning-motivation techniques, not reflection on the user's own identity or experiences."
+    },
+    {
+      "topic_id": "sys.personal_direction.self_reflection",
+      "source_row": "dolly:8337",
+      "instruction_sha256": "7ddd5dde3685ecedd271d8be2fdd48d4ec21d0c02a38994d655e2325847d7fbe",
+      "official_input_rows": [
+        8339
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a disorder's signs and symptoms; identity in medical context does not establish personal self-reflection."
+    },
+    {
+      "topic_id": "sys.personal_direction.values_principles",
+      "source_row": "dolly:3501",
+      "instruction_sha256": "1d10b2075c22c08314f871e1e525794ab7cf332b52419a9bedf33209a2e0e67a",
+      "official_input_rows": [
+        3501
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Accounting principles are technical standards in the supplied text, not personal values or ethical decision criteria."
+    },
+    {
+      "topic_id": "sys.personal_direction.values_principles",
+      "source_row": "dolly:6498",
+      "instruction_sha256": "2a085bace93781089fe01b4fee84edf136fdee9f472668f5eb29aba939679c27",
+      "official_input_rows": [
+        6498
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests views on a named book, not articulation of personal guiding values."
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "source_row": "alpaca:34018",
+      "instruction_sha256": "1a8885caf80a6b67a0813f08f7fe0e7f702c708829460c85408fbfc181f72bc2",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "source_row": "alpaca:14192",
+      "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "source_row": "dolly:11229",
+      "instruction_sha256": "015ff97974a7d0be98831504dd392867ffd263c2a83bc0a98bbd20f76a1173b6",
+      "official_input_rows": [
+        11232
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks availability of Lego sets, not planning or operating a product launch."
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "source_row": "dolly:1990",
+      "instruction_sha256": "0892ee23a0699509dd1130646b1ad14bf60038a3a3740c050377bc4b75b17c88",
+      "official_input_rows": [
+        1990
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Asks historical launch timing and geography; understanding a launch may fit the profile, but no operations or product-execution goal is shown."
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "source_row": "alpaca:14917",
+      "instruction_sha256": "3510d356a394272fde0dbb4ff1fb32b83623fc086340e6d44759e3f3f6316e95",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "source_row": "alpaca:45484",
+      "instruction_sha256": "36b9c0c1f22bef53270067bc0419416517a0d2da4ee9ca7427677d2c129e808f",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "source_row": "alpaca:14810",
+      "instruction_sha256": "0a275f75b33cf8e84a88b73ea4eb06e80dfa57cfca13f42d0fc0ce341cdbb059",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "source_row": "alpaca:11547",
+      "instruction_sha256": "574fd5bc01b58d38583d51114d6aa0eba02fd53790046d29df08a2091e93ed97",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "source_row": "dolly:11517",
+      "instruction_sha256": "37e22f5b547fc2e7e363f7d61f2bb117626b70a9e216be111bd28315efd2ba2d",
+      "official_input_rows": [],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing REJECT_FOR_NOMINATED_TOPIC is preserved; no new adjudication or gold. See prior immutable manifest.",
+      "prior_decision": "REJECT_FOR_NOMINATED_TOPIC"
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "source_row": "dolly:13177",
+      "instruction_sha256": "7af11e423c98886e757a5917961f8f263b5e0a99e838bf6e925f6c88f5798648",
+      "official_input_rows": [
+        13180
+      ],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing UNCERTAIN_BOUNDARY_NO_FIXTURE_ACCEPTANCE is preserved; no new adjudication or gold. See prior immutable manifest.",
+      "prior_decision": "UNCERTAIN_BOUNDARY_NO_FIXTURE_ACCEPTANCE"
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "source_row": "dolly:2486",
+      "instruction_sha256": "197ca2a3e5bc267cadd62ba1be116adbee35c4a5e06373b6810d908a1e3d3700",
+      "official_input_rows": [
+        2486
+      ],
+      "decision": "PRIOR_DECISION_PRESERVED",
+      "reason": "Existing REJECT_FOR_NOMINATED_TOPIC is preserved; no new adjudication or gold. See prior immutable manifest.",
+      "prior_decision": "REJECT_FOR_NOMINATED_TOPIC"
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "source_row": "alpaca:14192",
+      "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14",
+      "official_input_rows": [],
+      "decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Existing queue ID/hash only; full synthetic source and semantic eligibility not reviewed in this human-source batch."
+    },
+    {
+      "topic_id": "sys.projects_products.testing_quality",
+      "source_row": "dolly:6151",
+      "instruction_sha256": "10d0f45aa95019d56e455239d0e5229291b4455cf1b19d787cbdcc473c03fe00",
+      "official_input_rows": [
+        6151
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Bug means gastrointestinal illness, not software defects or quality assurance."
+    },
+    {
+      "topic_id": "sys.projects_products.testing_quality",
+      "source_row": "dolly:6085",
+      "instruction_sha256": "33a4e10543d052ec4cdb6e1bf341ecbe48485b9e00ad36f931b6106d59ee5f62",
+      "official_input_rows": [
+        6085
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests PII masking with structured output; picture quality is quoted review background, not testing or QA."
+    },
+    {
+      "topic_id": "sys.projects_products.ux_user_research",
+      "source_row": "dolly:3357",
+      "instruction_sha256": "197cc8f2c0f8bc48e26630f666c1a880926121aba8a508f0cfd14ddaa336a6b5",
+      "official_input_rows": [
+        3357
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests reasons from a civic scooter-ban article, not conducting user research or analyzing product usability as a current UX task."
+    },
+    {
+      "topic_id": "sys.projects_products.ux_user_research",
+      "source_row": "dolly:2779",
+      "instruction_sha256": "304358b40e37610c98d3c1e00a9835b3dfd9c7ea7e0ab34a20d813b8980e029a",
+      "official_input_rows": [
+        2779
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Explicit job interview questions belong to employment interview preparation, not UX research interviews."
+    }
+  ],
+  "annotation_independence": "Source-language authorship independent of CIG; developer boundary review is not independent gold.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
