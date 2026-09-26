@@ -8,6 +8,7 @@ on:
       - "tests-js/cig02e_dolly_provenance.test.mjs"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json"
   push:
     branches: [main]
     paths:
@@ -16,6 +17,7 @@ on:
       - "tests-js/cig02e_dolly_provenance.test.mjs"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json"
 permissions:
   contents: read
 concurrency:
@@ -42,11 +44,13 @@ jobs:
         run: |
           node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl
           node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl artifacts/ci/cig02e-three-domain-identities.json artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json
+          node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl artifacts/ci/cig02e-education-career-travel-identities.json artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json
       - uses: actions/upload-artifact@v4
         with:
           name: cig02e-dolly-provenance
           path: |
             artifacts/ci/cig02e-dolly-provenance.json
             artifacts/ci/cig02e-three-domain-identities.json
+            artifacts/ci/cig02e-education-career-travel-identities.json
           if-no-files-found: error
           retention-days: 30

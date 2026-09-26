@@ -58,7 +58,8 @@ export function reconcile(mirror, official, selectedRows = []) {
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const [mirrorPath, officialPath, outputPath = "artifacts/ci/cig02e-dolly-provenance.json", reviewPath = "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"] = process.argv.slice(2);
   assert.ok(["artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json",
-    "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json"].includes(reviewPath), "unregistered source review path");
+    "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+    "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json"].includes(reviewPath), "unregistered source review path");
   assert.ok(mirrorPath && officialPath, "two pinned source files required");
   const read = file => {
     const bytes = fs.readFileSync(file);
@@ -66,12 +67,14 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   };
   const mirror = read(mirrorPath), official = read(officialPath);
   const review = JSON.parse(fs.readFileSync(reviewPath, "utf8"));
-  const ids = review.decisions.map(item => Number(item.source_row.split(":")[1]));
+  const allDecisions = [...review.decisions, ...(review.supplemental_followups ?? [])];
+  const dollyDecisions = allDecisions.filter(item => item.source_row.startsWith("dolly:"));
+  const ids = dollyDecisions.map(item => Number(item.source_row.split(":")[1]));
   const reconciliation = reconcile(mirror.rows, official.rows, ids);
   assert.equal(mirror.rows.length, 15011);
   assert.equal(official.rows.length, 15014);
   for (const item of reconciliation.selected_rows) {
-    const decision = review.decisions.find(row => row.source_row === "dolly:" + item.mirror_row_id);
+    const decision = dollyDecisions.find(row => row.source_row === "dolly:" + item.mirror_row_id);
     assert.equal(item.instruction_sha256, decision.instruction_sha256, "reviewed row identity changed");
     if (decision.official_input_rows) {
       assert.deepEqual(item.official_instruction_and_context_ids, decision.official_input_rows, "official input mapping changed");
@@ -81,6 +84,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     format: "cig02e-dolly-provenance-reconciliation-v1",
     classification: "SOURCE_IDENTITY_ONLY_NOT_GOLD_OR_CAPABILITY",
     review_manifest: reviewPath,
+    non_dolly_nominations_not_verified: allDecisions.length - dollyDecisions.length,
     mirror: { repo: "buayism/dolly-15k-dataset", commit: "6d7ebf384c5e588ee1b0dff816557489bc16089c", blob: "7c507d16b055ae32107a6dd0585779678565dcd2", sha256: sha256(mirror.bytes) },
     official: { repo: "databrickslabs/dolly", commit: "2305eb7f2f4b3beb2379f34c6addf335b46c4b43", blob: "9b0b912c478e7ccd61ce741ebb409ddf8c7c22e6", sha256: sha256(official.bytes) },
     reconciliation,

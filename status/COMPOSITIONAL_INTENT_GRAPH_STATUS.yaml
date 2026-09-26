@@ -133,6 +133,10 @@ rounds:
     cig02e_three_domain_source_pilot: artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json
     cig02e_three_domain_source_pilot_report: docs/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.md
     cig02e_three_domain_source_pilot_classification: PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY
+    cig02e_three_domain_source_pilot_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT_MERGED_MAIN_RECEIPT.json
+    cig02e_education_career_travel_source_pilot: artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json
+    cig02e_education_career_travel_source_pilot_report: docs/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.md
+    cig02e_education_career_travel_classification: PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY
     cig02e_source_feasibility_verdict: SOURCE_FEASIBILITY_UNQUALIFIED_NOT_ROUTER_CAPABILITY
     cig02e_full_catalog_triage_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_TRIAGE_MERGED_MAIN_RECEIPT.json
     cig02e_supplemental_source_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SUPPLEMENTAL_SOURCE_MERGED_MAIN_RECEIPT.json
@@ -150,4 +154,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Verify source identities for the 48-nomination three-domain intake batch, then independently adjudicate the ten plausible candidates and thirteen uncertain nominations; fully review the long GC-log request. Keep six mismatched inputs quarantined and all earlier rejects/uncertainties immutable. Continue the 18 sparse gaps and remaining 120 Topics plus natural DEFER/context controls in coherent batches. No fresh DEV score before full fixture/gold/candidate/scorer hash freeze; CIG-02 unfrozen, CIG-03 blocked."
+next_action: "Verify the education/career/travel source identities and continue remaining 96 Topic intake statuses plus the 18 sparse gaps and natural DEFER/context controls in coherent batches. Independently adjudicate plausible and uncertain candidates; keep mismatched inputs quarantined and synthetic nominations unverified until full source review. Prior decisions remain immutable. No registered full-Catalog fixture or fresh score before text/gold/candidate/scorer hash freeze; CIG-02 unfrozen, CIG-03 blocked."
