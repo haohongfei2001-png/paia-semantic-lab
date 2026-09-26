@@ -1,0 +1,511 @@
+{
+  "format": "cig02e-three-domain-source-pilot-v1",
+  "classification": "PROSPECTIVE_SOURCE_BOUNDARY_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "selection": "First two existing deterministic sampled rows for every Topic in D03/D07/D09 from Actions job 108002125705, without replacement or semantic re-selection.",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "topic_count": 24,
+  "topic_nominations": 48,
+  "distinct_mirror_rows": 47,
+  "mirror": {
+    "repo": "buayism/dolly-15k-dataset",
+    "commit": "6d7ebf384c5e588ee1b0dff816557489bc16089c",
+    "blob": "7c507d16b055ae32107a6dd0585779678565dcd2"
+  },
+  "official": {
+    "repo": "databrickslabs/dolly",
+    "commit": "2305eb7f2f4b3beb2379f34c6addf335b46c4b43",
+    "blob": "9b0b912c478e7ccd61ce741ebb409ddf8c7c22e6"
+  },
+  "decision_counts": {
+    "PLAUSIBLE_SOURCE_CANDIDATE": 10,
+    "QUARANTINED_SOURCE_INPUT_MISMATCH": 6,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 9,
+    "NOT_FULLY_REVIEWED": 1,
+    "REJECT_FOR_NOMINATED_TOPIC": 16,
+    "UNCERTAIN_TASK_VS_TOPIC": 4,
+    "ALREADY_REJECTED_NO_NEW_ADJUDICATION": 2
+  },
+  "decisions": [
+    {
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "source_row": "dolly:1015",
+      "instruction_sha256": "114dc20a10bf59211c5073690dc625a0f4e6bed0184aefbd47b105a4451d300a",
+      "official_input_rows": [
+        1015
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests understanding of the Transformer model's central mechanism, rather than merely using AI as background."
+    },
+    {
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "source_row": "dolly:2572",
+      "instruction_sha256": "7f8437e6a8b158ff4754d77dd8d392f5ccba49cc81bc25908533be3f58ba5a8e",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context pair at the pinned snapshot; no semantic verdict or silent source substitution."
+    },
+    {
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "source_row": "dolly:5120",
+      "instruction_sha256": "00243fffaae742cd7b6087c6e7867279f1f69bed327c737f1b615bd3c5687114",
+      "official_input_rows": [
+        5120
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Directly compares programming languages; broad wording lacks selection criteria but the software-development subject is explicit."
+    },
+    {
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "source_row": "dolly:9488",
+      "instruction_sha256": "09ec2e8d9ade15d6d9f2c27db6b383d500fa93d833827181fbdbd111f195a7f3",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context pair at the pinned snapshot; no semantic verdict or silent source substitution."
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "source_row": "dolly:14298",
+      "instruction_sha256": "38e9d3a268758f8c5ca9ee49e96f5f8dadeaa626e79218f5b8c07313d90cb48e",
+      "official_input_rows": [
+        14301
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests browser options specifically for privacy protection; device/platform context does not replace that goal."
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "source_row": "dolly:6426",
+      "instruction_sha256": "61bfe68e81e58bf618c2c37f3e3ccc85319acd621db3d8376bff1cfb59eac0b4",
+      "official_input_rows": [
+        6426
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Privacy-policy judgment concerns census statistics as well as privacy; independent neighboring-Topic gold adjudication is required."
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "source_row": "dolly:10560",
+      "instruction_sha256": "04a772769c80b5fc206e425fe2e25586ca0178128e9615eb755263533560126d",
+      "official_input_rows": [
+        10563
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests an explanation of a database schema, directly within data models and databases."
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "source_row": "dolly:4323",
+      "instruction_sha256": "10adee5914d63382959fd342f78d38659ba3354988703a3abc369c0eacb6e16b",
+      "official_input_rows": [
+        4323
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests an explanation of a data pipeline, directly within data-processing architecture."
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "source_row": "dolly:4970",
+      "instruction_sha256": "0bdd63aa6da45a1d1daa3a074630a1252332abac68c9270207f2c5603847b247",
+      "official_input_rows": [
+        4970
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests understanding of log rotation; the Debugging profile explicitly includes logs, not only active error repair."
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "source_row": "dolly:10835",
+      "instruction_sha256": "0fe8eda91219ccd854adbe51b92d2fef522e1e4b4b50849934f3a77257398935",
+      "official_input_rows": [
+        10838
+      ],
+      "decision": "NOT_FULLY_REVIEWED",
+      "reason": "The 11,698-character log request was not completely displayed in the bounded review; no semantic eligibility decision is recorded."
+    },
+    {
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "source_row": "dolly:2967",
+      "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+      "official_input_rows": [
+        2967
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Flight packing is the requested decision; the phone is only one possible item, not a device goal."
+    },
+    {
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "source_row": "dolly:9681",
+      "instruction_sha256": "09a970821500361679a5ab4afbdb975c3c33faae2baad5b87bcc0a9834819bba",
+      "official_input_rows": [
+        9684
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Ways to make a phone call can concern device use, connectivity, or communication; no specific hardware decision is supplied."
+    },
+    {
+      "topic_id": "sys.ai_computing.networking_connectivity",
+      "source_row": "dolly:12082",
+      "instruction_sha256": "23ffca303a1cae4a162589b49124e891c953fdd2c0be635139e72821a1464912",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context pair at the pinned snapshot; no semantic verdict or silent source substitution."
+    },
+    {
+      "topic_id": "sys.ai_computing.networking_connectivity",
+      "source_row": "dolly:8586",
+      "instruction_sha256": "27f7231cf5bec79e064e32d9ee7a4f1c336ffa1d4299931c14d85669cc121d2e",
+      "official_input_rows": [
+        8588
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Primary task assesses security controls; VPN is one item, not a connectivity goal."
+    },
+    {
+      "topic_id": "sys.ai_computing.prompt_workflows",
+      "source_row": "dolly:6649",
+      "instruction_sha256": "306a7ab3ce4cbc71da42bf6a836755b9041087113435df1f555132c61a81d143",
+      "official_input_rows": [
+        6649
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Fictional character's education is the requested fact; agent is not an AI workflow."
+    },
+    {
+      "topic_id": "sys.ai_computing.prompt_workflows",
+      "source_row": "dolly:4333",
+      "instruction_sha256": "81c65a6df6560127116c66ecc727c22bfa5b8d2c9c42986d730604e0203924e6",
+      "official_input_rows": [
+        4333
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Fictional character's diagnosis is the requested fact; agent is not an AI workflow."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "source_row": "dolly:4682",
+      "instruction_sha256": "030c480127ae6852288aec2e74ea126a19d25a8cdc7882d28f5e4ef8dd58985f",
+      "official_input_rows": [
+        4682
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "A generic item-classification exercise includes exercise equipment, but its eligibility as a fitness goal requires separate adjudication."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "source_row": "dolly:12374",
+      "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+      "official_input_rows": [
+        12377
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Exercise adaptation explanation is relevant, but coaching response generation, fitness, and physiological knowledge overlap."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "source_row": "dolly:12557",
+      "instruction_sha256": "084c03e54e434806db83ca90a5b4da72aebfa39b84593d22b9a76a11600de40e",
+      "official_input_rows": [
+        12560
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Classifies game characters; Doctor is part of a name, not a healthcare goal."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "source_row": "dolly:7723",
+      "instruction_sha256": "117c7928f81fbe4979a56e525cb1ad7dde8599c4f8b5772cdc3f7b45ce0bd62a",
+      "official_input_rows": [
+        7724
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests authoring a fictional dialogue; the appointment is story content, not current care seeking."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_row": "dolly:4013",
+      "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+      "official_input_rows": [
+        4013
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "The same request is nominated for both treatment and prevention. Vaccination eligibility and product selection cannot be assigned twice by lexical nomination."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_row": "dolly:620",
+      "instruction_sha256": "07fb1ae2e1acd4b8f626c691ee05f381dfb536fe690880c4c21a9ecb4b92d4b7",
+      "official_input_rows": [
+        620
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Generic therapy benefits lack the intended condition or purpose; treatment, preventive health, and cosmetic goals may compete."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_row": "dolly:13679",
+      "instruction_sha256": "006f14e0914764efe5e6ce84a831fbe095ac815b6210e9776a093a1e6cb40a48",
+      "official_input_rows": [
+        13682
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests understanding of an effect on mood, directly within mental wellbeing; no personal diagnosis is inferred."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_row": "dolly:9833",
+      "instruction_sha256": "0d8e620b15dac03864aeefdd6f2ecaf44bf1c84bba89b914edcb20219353fd71",
+      "official_input_rows": [
+        9836
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Generic disease-category sorting is not clearly an emotional-regulation/support goal; medicine knowledge is a neighboring possibility."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "source_row": "dolly:5447",
+      "instruction_sha256": "00ec4d19dd9b7e2347b701c92c001278eccbb916cbd853e359122a0c775f27dc",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context pair at the pinned snapshot; no semantic verdict or silent source substitution."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "source_row": "dolly:12373",
+      "instruction_sha256": "039cce72d3234625b6737f78e5cd4bee6afc0d56cd98c9e77376c10dcb582553",
+      "official_input_rows": [
+        12376
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests dietary item choice for an explicit weight-loss diet. Source answer correctness is not evaluated or used."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "source_row": "dolly:4013",
+      "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+      "official_input_rows": [
+        4013
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "The same request is nominated for both treatment and prevention. Vaccination eligibility and product selection cannot be assigned twice by lexical nomination."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "source_row": "dolly:9778",
+      "instruction_sha256": "04bcdd8646f4e1fdcb23cbda68f28b353faa5be1ea5da55759c53fe6342212e3",
+      "official_input_rows": [
+        9781
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Asks vaccine efficacy knowledge without a current prevention decision; prevention and medicine knowledge need gold boundary review."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.sleep",
+      "source_row": "dolly:12487",
+      "instruction_sha256": "053d74d14bbe4051aa148fb981273d7886ba0170def4f861173ff6577e98893c",
+      "official_input_rows": [
+        12490
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks bird behavior, not a human sleep habit or sleep-quality goal."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.sleep",
+      "source_row": "dolly:939",
+      "instruction_sha256": "0715178d8aa6cc98be5410092fc8cb4d1df0f9e583cdb13c03da948f2a32f4a9",
+      "official_input_rows": [
+        939
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Classifies Stephen King works; sleep terms occur only in titles."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_row": "dolly:4027",
+      "instruction_sha256": "0f47d8c13913f3e1c58450335486b349c65940840bac328ea4edf68c44ed8365",
+      "official_input_rows": [
+        4027
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests paraphrase/summarization of news; health conditions are background in the quoted story."
+    },
+    {
+      "topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "source_row": "dolly:8009",
+      "instruction_sha256": "1219e4984ab202528523006e4da1069a1bb9e332ebb4e883b42794a47cabf54f",
+      "official_input_rows": [
+        8010
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Classifies cold-weather gear; condition occurs in air conditioning rather than a symptom goal."
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "source_row": "dolly:6817",
+      "instruction_sha256": "bb60dfc0f2a64cc1ab794a2a5257446f698dbd1c3a562ac679d95ee6edd5d6b1",
+      "official_input_rows": [
+        6817
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Requests laundry detergent options, directly relevant to performing laundry; purchase-versus-chore boundary remains for later gold review."
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "source_row": "dolly:12031",
+      "instruction_sha256": "d443add8d8e2cd427d20873ed1c045533b1aca5c8bb6c4125289b9db0b396af9",
+      "official_input_rows": [
+        12034
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Generic useful/not-useful sorting in a cleaning scenario requires the same task-versus-Topic adjudication as exercise-equipment sorting."
+    },
+    {
+      "topic_id": "sys.home_daily.home_improvement",
+      "source_row": "dolly:12992",
+      "instruction_sha256": "816ab00948ef0ea0486cc052f70fb850fcbce5bfaa9a57444733eef66a7f5881",
+      "official_input_rows": [
+        12995
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Current request is letter drafting; faucet repair is the message's content. Do not replace the writing goal with its motivation."
+    },
+    {
+      "topic_id": "sys.home_daily.home_improvement",
+      "source_row": "dolly:14421",
+      "instruction_sha256": "92ddf69f54530f59d7a59aead10606976cc7861433493d92fd248c44b7baff99",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context pair at the pinned snapshot; no semantic verdict or silent source substitution."
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "source_row": "dolly:11926",
+      "instruction_sha256": "005cb224a819c836205fee3bd5295a440fb0f55e7448b04e106b387c4f8b3100",
+      "official_input_rows": [
+        11929
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Homeowner maintenance responsibilities overlap Housing, Home Improvement, and Chores rather than unambiguously establishing Housing."
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "source_row": "dolly:10565",
+      "instruction_sha256": "044741a7e0d4fba157e657ce3be20e598008927c0626a6ad23eea0c4302c0397",
+      "official_input_rows": [
+        10568
+      ],
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Home automation explanation overlaps hardware, networking and home improvement; home mention alone does not establish Housing."
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "source_row": "dolly:9127",
+      "instruction_sha256": "9f0f0c26b4533f8926081a4e9e0a362a45521aec8c2da0df7ce09811c1cd46c2",
+      "official_input_rows": [
+        9129
+      ],
+      "decision": "ALREADY_REJECTED_NO_NEW_ADJUDICATION",
+      "reason": "PR #48 rejected the same row for Local Errands; preserve the existing decision rather than count repeated review as new evidence."
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "source_row": "dolly:11080",
+      "instruction_sha256": "b5c9d39bc724d959fb9df1d94194cc16cae13038a9b0dc6924f7beb3b98a4c5a",
+      "official_input_rows": [
+        11083
+      ],
+      "decision": "ALREADY_REJECTED_NO_NEW_ADJUDICATION",
+      "reason": "PR #48 rejected the same row for Local Errands; preserve the existing decision rather than count repeated review as new evidence."
+    },
+    {
+      "topic_id": "sys.home_daily.moving_relocation",
+      "source_row": "dolly:10181",
+      "instruction_sha256": "0f67e1f5bfd6fd39c332596cc23c171c4b36d62b34899c6f8506867266f3fc9f",
+      "official_input_rows": [
+        10184
+      ],
+      "decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "Asks about living in a different city explicitly for a person relocating, rather than merely sightseeing."
+    },
+    {
+      "topic_id": "sys.home_daily.moving_relocation",
+      "source_row": "dolly:6800",
+      "instruction_sha256": "55f2ef0b19636804d8efa1676d607fbf5aa04d89f6debc8d91984253c8ee96db",
+      "official_input_rows": [],
+      "decision": "QUARANTINED_SOURCE_INPUT_MISMATCH",
+      "reason": "No exact official instruction/context pair at the pinned snapshot; no semantic verdict or silent source substitution."
+    },
+    {
+      "topic_id": "sys.home_daily.possessions_organization",
+      "source_row": "dolly:14577",
+      "instruction_sha256": "0480fe9c0a5fcd14283c7c61a7423f7785e2c1bd779f8e90b722c9ccb2af4f8f",
+      "official_input_rows": [
+        14580
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests organizational LLM build-versus-buy benefits; organization does not mean organizing personal possessions."
+    },
+    {
+      "topic_id": "sys.home_daily.possessions_organization",
+      "source_row": "dolly:2976",
+      "instruction_sha256": "04cba949de5987d8bdfcafc22c565509d76741e16b295b8d4b2385bdb3719357",
+      "official_input_rows": [
+        2976
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests hydrogen's boiling point; industrial hydrogen storage is not management of personal belongings."
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "source_row": "dolly:4269",
+      "instruction_sha256": "02a69de6ada322af48245ff64efe833e278277d825102cacaf2f3e774ebaab83",
+      "official_input_rows": [
+        4269
+      ],
+      "decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "reason": "Car-manufacturer origin classification does not clearly establish vehicle use, choice, maintenance or ownership."
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "source_row": "dolly:10340",
+      "instruction_sha256": "02ca7d47d79f1525d341458a24eb39039537e143b2645a75653561921e48ba0f",
+      "official_input_rows": [
+        10343
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests earthquake safety classification; a car is one candidate action, not the primary transport goal."
+    },
+    {
+      "topic_id": "sys.home_daily.utilities_services",
+      "source_row": "dolly:10667",
+      "instruction_sha256": "0351b3e9315689ceb690fabbc17879d37f9f63e1778f892fabda0a158ed2f7f7",
+      "official_input_rows": [
+        10670
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests energy-source classification, not household utility service management."
+    },
+    {
+      "topic_id": "sys.home_daily.utilities_services",
+      "source_row": "dolly:5026",
+      "instruction_sha256": "0619d5b9d8f18de4cc3ecb077f86500adeae73927046b1ee5202d284944cb580",
+      "official_input_rows": [
+        5026
+      ],
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests national electricity-generation facts, not a household service decision."
+    }
+  ],
+  "annotation_independence": "Source language authored by Databricks contributors; this source-boundary review is by the CIG developer and is not an independent gold adjudication.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}

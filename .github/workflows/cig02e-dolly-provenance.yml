@@ -7,6 +7,7 @@ on:
       - "scripts/cig02e_dolly_provenance.mjs"
       - "tests-js/cig02e_dolly_provenance.test.mjs"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json"
   push:
     branches: [main]
     paths:
@@ -14,6 +15,7 @@ on:
       - "scripts/cig02e_dolly_provenance.mjs"
       - "tests-js/cig02e_dolly_provenance.test.mjs"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_DOLLY_FULL_ROW_REVIEW.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json"
 permissions:
   contents: read
 concurrency:
@@ -37,10 +39,14 @@ jobs:
           test "$(git hash-object .cig02e-dolly-mirror.jsonl)" = "7c507d16b055ae32107a6dd0585779678565dcd2"
           test "$(git hash-object .cig02e-dolly-official.jsonl)" = "9b0b912c478e7ccd61ce741ebb409ddf8c7c22e6"
       - name: Reconcile source identities without Topic retrieval or router scoring
-        run: node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl
+        run: |
+          node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl
+          node scripts/cig02e_dolly_provenance.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl artifacts/ci/cig02e-three-domain-identities.json artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json
       - uses: actions/upload-artifact@v4
         with:
           name: cig02e-dolly-provenance
-          path: artifacts/ci/cig02e-dolly-provenance.json
+          path: |
+            artifacts/ci/cig02e-dolly-provenance.json
+            artifacts/ci/cig02e-three-domain-identities.json
           if-no-files-found: error
           retention-days: 30
