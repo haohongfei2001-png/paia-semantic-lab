@@ -1,0 +1,112 @@
+{
+  "format": "cig02e-dolly-full-row-adjudication-v1",
+  "classification": "BOUNDED_PUBLIC_SOURCE_ROW_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "source_repo": "buayism/dolly-15k-dataset",
+  "source_commit": "6d7ebf384c5e588ee1b0dff816557489bc16089c",
+  "source_path": "databricks-dolly-15k.jsonl",
+  "source_blob": "7c507d16b055ae32107a6dd0585779678565dcd2",
+  "source_rows_total": 15011,
+  "selected_existing_queue_job_id": 108002125705,
+  "reviewed_rows": 12,
+  "rejected_for_nominated_topic": 10,
+  "uncertain_boundary": 2,
+  "accepted_fixture_rows": 0,
+  "unselected_or_unsampled_rows_adjudicated": 0,
+  "decisions": [
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "source_row": "dolly:6028",
+      "instruction_sha256": "70473737d28e11e3dbe7df68cd7816971c1da5a84b391d7c3cc2c3270424d080",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a title for supplied coaching prose; a business partnership is only mentioned in background."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "source_row": "dolly:1697",
+      "instruction_sha256": "a4bb35769931140dad69a003d7674ea882aa7c579bdbf29b167c1cccd8b1c807",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests a colleague-recognition message; the customer partnership is background to writing."
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "source_row": "dolly:1213",
+      "instruction_sha256": "eeb55d18f999988bc0752ca2fe02c620aa20d161cc17deba10f0faf529031ca8",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks a factual question about an intelligence alliance, not a business partnership."
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "source_row": "dolly:13515",
+      "instruction_sha256": "a17e8c7f5b825f04af07bc407c05d8bb23c790891ab14fefde58be93a1a24300",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks about civic voter registration, not academic administration."
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "source_row": "dolly:14044",
+      "instruction_sha256": "550f6155a4e23adf75ea3ccf01b5cc94a9ef88143cc8dc33af213ef5cd2b2675",
+      "decision": "UNCERTAIN_BOUNDARY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Asks whether a child with ASD should join group sport based on a cited study; social-skills benefit is relevant, but the immediate decision and health/education boundary require independent gold review."
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "source_row": "dolly:9127",
+      "instruction_sha256": "9f0f0c26b4533f8926081a4e9e0a362a45521aec8c2da0df7ce09811c1cd46c2",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Compares in-person and online learning; it does not ask to complete a local errand."
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "source_row": "dolly:11080",
+      "instruction_sha256": "b5c9d39bc724d959fb9df1d94194cc16cae13038a9b0dc6924f7beb3b98a4c5a",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Asks about in-person human contact; it does not ask to complete a local errand."
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "source_row": "dolly:9564",
+      "instruction_sha256": "e81bbf5c6280916090d6369f625fb32544367b73454e0d635e31a8d33a148a93",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Requests titles for a blog post; in-person relationships are background, not errands."
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "source_row": "dolly:5735",
+      "instruction_sha256": "ebf5352cc0e58a6695d0cbbae22795fd543d91d3f991912bd9fcb8ae27919f5c",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Classifies soccer equipment; a folder is merely one candidate item, not a document-storage goal."
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "source_row": "dolly:11517",
+      "instruction_sha256": "37e22f5b547fc2e7e363f7d61f2bb117626b70a9e216be111bd28315efd2ba2d",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Extracts chronological milestones from supplied Tesla history; it does not plan a current project."
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "source_row": "dolly:13177",
+      "instruction_sha256": "7af11e423c98886e757a5917961f8f263b5e0a99e838bf6e925f6c88f5798648",
+      "decision": "UNCERTAIN_BOUNDARY_NO_FIXTURE_ACCEPTANCE",
+      "reason": "Asks for a generic milestone definition; the formal Project Planning Topic permits understanding, but no current project goal is shown."
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "source_row": "dolly:2486",
+      "instruction_sha256": "197ca2a3e5bc267cadd62ba1be116adbee35c4a5e06373b6810d908a1e3d3700",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "reason": "Supplies bicycle choice advice; the tradeoff word is unrelated to product or project roadmap prioritization."
+    }
+  ],
+  "notes": "Only 12 previously selected Dolly rows were reviewed against their nominated sparse Topics. No source text is copied. An UNCERTAIN row is not fixture eligible. This is not a random or representative sample.",
+  "candidate_predictions_read": 0,
+  "gold_rows_created": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
