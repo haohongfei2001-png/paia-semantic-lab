@@ -27,8 +27,12 @@ This separate registration preserves selection before acquisition; it does not c
 
 ## Remote receipts and research state
 
-PR #66 merged at `70b61a00de48a7ffbb17c460c7793a201f7127b4` after six applicable exact-head checks PASS at `9e16a87769668de8982bfaac50707ad82c243de5`. The new integrity check ran successfully in Actions. One exact-main snapshot recorded **five PASS / one running**, with CSL skipped separately; no completion claim or repeated poll.
+PR #66 merged at `70b61a00de48a7ffbb17c460c7793a201f7127b4` after six applicable exact-head checks PASS at `9e16a87769668de8982bfaac50707ad82c243de5`. The new integrity check ran successfully in Actions. The preserved initial exact-main snapshot recorded **five PASS / one running**. Fresh restoration confirms **six applicable exact-main checks PASS**, with CSL skipped separately; the final receipt is additive, leaving the earlier observation unchanged.
 
 PR #65 exact-main is now five applicable checks PASS, with a new final receipt beside its preserved pending observation. Prior observations remain immutable.
 
 Current prospective ledger stays **41 nominations / 35 Topics / 109 missing / 28 unresolved**; accepted fixtures and independent gold remain **zero**. Preserve LSR/CSL FAIL and CIG B/C/D unqualified evidence. CIG-02 is unfrozen; CIG-03 stays blocked and a new independent capability TEST still needs owner authorization.
+
+## Connector publication recovery
+
+The original coherent batch survives at remote commit `0d384cb46b6be1c86c38abe1aa27efcac6b45cf0`. Two update-ref attempts returned object-not-found despite successful Git commit/tree/ref reads; creation on the existing branch returned reference-already-exists. The original branch still has zero delta from main and no PR. This publication attempts one new ref directly at the recovered candidate, incorporating the now-final #66 receipt before any PR CI. No code or source-analysis work is repeated, and only the recovered branch is an active writer.

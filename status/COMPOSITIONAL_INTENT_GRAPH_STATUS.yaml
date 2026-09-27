@@ -204,7 +204,8 @@ rounds:
     cig02e_fixed_prefix_root_audit_exact_main_verdict: FIVE_APPLICABLE_CHECKS_PASS
     cig02e_fixed_prefix_root_audit_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_FIXED_PREFIX_ROOT_AUDIT_MERGED_MAIN_RECEIPT.json
     cig02e_fixed_prefix_boundary_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_BOUNDARY_MERGED_MAIN_OBSERVATION.json
-    cig02e_fixed_prefix_boundary_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK_AT_SINGLE_SNAPSHOT
+    cig02e_fixed_prefix_boundary_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
+    cig02e_fixed_prefix_boundary_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_BOUNDARY_MERGED_MAIN_RECEIPT.json
     cig02e_hh_source_action: CLOSE_FIXED_PREFIX_SOURCE_ONLY_NO_EXPANSION
     cig02e_public_train_definition_feasibility_plan: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY_PLAN.json
     cig02e_public_train_definition_feasibility_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY.md
@@ -237,4 +238,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Resolve PR #66 exact-main receipt on restoration. After the metadata registration PR passes exact-head and merges, implement/review a bounded streaming extractor with synthetic targeted tests in one batch for the fixed first 24 multilingual-track Natural Instructions TRAIN task definitions. Enforce pinned source identity, TRAIN membership, byte limits and structural skip of instances/examples; retain source-excerpt/authorship/completeness holds. Do not acquire TEST tasks or outputs, score a candidate, chase source coverage with changed selections, expand HH or retune its hints. Current ledger remains 41 nominations across 35 Topics, 109 missing, 28 unresolved, zero gold. Product constraints and frozen capability gates remain unchanged; CIG-02 unfrozen, CIG-03 blocked and owner-gated."
+next_action: "After the metadata registration PR passes exact-head and merges, implement/review a bounded streaming extractor with synthetic targeted tests in one batch for the fixed first 24 multilingual-track Natural Instructions TRAIN task definitions. Enforce pinned source identity, TRAIN membership, byte limits and structural skip of instances/examples; retain source-excerpt/authorship/completeness holds. Do not acquire TEST tasks or outputs, score a candidate, chase source coverage with changed selections, expand HH or retune its hints. Current ledger remains 41 nominations across 35 Topics, 109 missing, 28 unresolved, zero gold. Product constraints and frozen capability gates remain unchanged; CIG-02 unfrozen, CIG-03 blocked and owner-gated."
