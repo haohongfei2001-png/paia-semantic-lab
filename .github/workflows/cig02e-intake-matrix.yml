@@ -5,6 +5,9 @@ on:
     paths:
       - "scripts/cig02e_intake_matrix.mjs"
       - "scripts/cig02e_adjudication_ledger.mjs"
+      - "scripts/cig02e_repeated_input_boundary_integrity.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_LEDGER_INPUT_IDENTITY_OBSERVATION.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json"
       - ".github/workflows/cig02e-intake-matrix.yml"
@@ -16,6 +19,9 @@ on:
     paths:
       - "scripts/cig02e_intake_matrix.mjs"
       - "scripts/cig02e_adjudication_ledger.mjs"
+      - "scripts/cig02e_repeated_input_boundary_integrity.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_LEDGER_INPUT_IDENTITY_OBSERVATION.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json"
       - ".github/workflows/cig02e-intake-matrix.yml"
@@ -40,3 +46,5 @@ jobs:
         run: node scripts/cig02e_intake_matrix.mjs
       - name: Verify consolidated source adjudication ledger
         run: node scripts/cig02e_adjudication_ledger.mjs
+      - name: Verify preserved input identities and bounded profile review
+        run: node scripts/cig02e_repeated_input_boundary_integrity.mjs

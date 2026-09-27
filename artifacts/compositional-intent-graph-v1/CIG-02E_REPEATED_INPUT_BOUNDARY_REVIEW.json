@@ -1,0 +1,241 @@
+{
+  "format": "CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW_V1",
+  "classification": "BOUNDED_FORMAL_PROFILE_OVERLAP_ANALYSIS_NOT_GOLD_OR_CAPABILITY",
+  "base_main": "8d165e701e97f804f74660c9b5b1307873a22a29",
+  "ledger": "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json",
+  "identity_evidence": "artifacts/compositional-intent-graph-v1/CIG-02E_LEDGER_INPUT_IDENTITY_OBSERVATION.json",
+  "selection": "All three repeated-input groups in the fixed 79-nomination identity result; six historical nominations, three distinct complete inputs. No replacement or new retrieval.",
+  "reviews": [
+    {
+      "source_row": "dolly:4013",
+      "official_input_rows": [
+        4013
+      ],
+      "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "fe102c69c5272fac831d10cc1823b32fa1a82141baef0355aa8446046e505aa4",
+      "full_instruction_and_context_read": true,
+      "goal": "Determine COVID booster eligibility and product choice.",
+      "bottleneck": "Preventive Health explicitly includes vaccination. Medication & Treatment includes dosage and medication choice. The request combines booster-dose eligibility and product selection; a current-input GOAL exists but the formal scopes overlap. No protocol precedence chooses a unique Topic.",
+      "missing": "Clarified goal distinguishing vaccination prevention from medication/dose management, or independently justified multi-label/DEFER gold under the existing protocol.",
+      "nominations": [
+        {
+          "topic_id": "sys.health_wellbeing.medication_treatment",
+          "origin_kind": "BASE_NOMINATION",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+          "followup_decision": "UNRESOLVED_FORMAL_PROFILE_OVERLAP",
+          "accepted_gold": false
+        },
+        {
+          "topic_id": "sys.health_wellbeing.preventive_health",
+          "origin_kind": "BASE_NOMINATION",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+          "followup_decision": "UNRESOLVED_FORMAL_PROFILE_OVERLAP",
+          "accepted_gold": false
+        }
+      ],
+      "other_profile_considered": null,
+      "outcome": "NO_UNIQUE_INDEPENDENT_GOLD_ESTABLISHED"
+    },
+    {
+      "source_row": "dolly:1123",
+      "official_input_rows": [
+        1123
+      ],
+      "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "9fd47c453f17dee639521fb0680573ad1f85614f1d21ac58fa92c05891eff119",
+      "full_instruction_and_context_read": true,
+      "goal": "Explain why the immigration system is dysfunctional.",
+      "bottleneck": "Public Policy & Social Issues includes governance and institutional effects. Immigration & Residency includes understanding immigration. Its profile does not require a personal residency application, so absence of personal context alone cannot exclude it. Visas & Borders has no explicit visa, travel-document or border-procedure goal in the input.",
+      "missing": "A more specific institutional-policy versus residency/immigration-procedure goal; source text cannot be rewritten or supplemented to force a label.",
+      "nominations": [
+        {
+          "topic_id": "sys.travel_places.visas_border",
+          "origin_kind": "BASE_NOMINATION",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+          "followup_decision": "NO_EXPLICIT_NOMINATED_GOAL_SOURCE_ONLY",
+          "accepted_gold": false
+        },
+        {
+          "topic_id": "sys.legal_civic.immigration_residency",
+          "origin_kind": "BASE_NOMINATION",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+          "followup_decision": "UNRESOLVED_FORMAL_PROFILE_OVERLAP",
+          "accepted_gold": false
+        }
+      ],
+      "other_profile_considered": "sys.legal_civic.civic_public_policy",
+      "outcome": "NO_UNIQUE_INDEPENDENT_GOLD_ESTABLISHED"
+    },
+    {
+      "source_row": "dolly:9313",
+      "official_input_rows": [
+        9315
+      ],
+      "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "4bcb23604552841f35647a2b2aba22c6045f39c9bfae3b31fecd92f9601eb942",
+      "full_instruction_and_context_read": true,
+      "goal": "Suggest strategies to prevent procrastination.",
+      "bottleneck": "Personal Productivity explicitly includes procrastination. The Chinese Time Management semantic core and both-language lexical anchors also include procrastination; its English semantic core emphasizes time allocation. Absence of time allocation cannot silently override the broader Chinese core. The input supplies no differentiating goal.",
+      "missing": "A clarified task-execution versus time-allocation goal, or independently adjudicated ambiguity under the unchanged bilingual profiles.",
+      "nominations": [
+        {
+          "topic_id": "sys.personal_direction.personal_productivity",
+          "origin_kind": "BASE_NOMINATION",
+          "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+          "followup_decision": "UNRESOLVED_FORMAL_PROFILE_OVERLAP",
+          "accepted_gold": false
+        },
+        {
+          "topic_id": "sys.time_events.time_management",
+          "origin_kind": "BASE_NOMINATION",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+          "followup_decision": "UNRESOLVED_FORMAL_PROFILE_OVERLAP",
+          "accepted_gold": false
+        }
+      ],
+      "other_profile_considered": null,
+      "outcome": "NO_UNIQUE_INDEPENDENT_GOLD_ESTABLISHED"
+    }
+  ],
+  "profile_snapshots": [
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "药物与治疗：药物、用药方案、治疗方式、疗程、副作用、剂量和治疗依从性。",
+        "Medication & Treatment: medications, treatment plans, dosage, side effects, therapy and adherence."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“药物与治疗”，常见线索包括用药、药物、治疗。",
+        "The user's primary goal concerns medication & treatment, with signals such as medication, treatment, dose."
+      ],
+      "exclusion_cues": [
+        "若“药物与治疗”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Medication & Treatment\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "体检与预防健康：体检、筛查、疫苗、风险预防、健康监测和疾病预防。",
+        "Preventive Health: checkups, screening, vaccination, risk reduction, health monitoring and prevention."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“体检与预防健康”，常见线索包括预防保健、体检、筛查。",
+        "The user's primary goal concerns preventive health, with signals such as preventive health, checkup, screening."
+      ],
+      "exclusion_cues": [
+        "若“体检与预防健康”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Preventive Health\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+        "Personal Productivity: personal task execution, focus, efficiency, workflow, procrastination and output cadence."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“个人效率”，常见线索包括专注、拖延、任务执行。",
+        "The user's primary goal concerns personal productivity, with signals such as productivity, focus, procrastination."
+      ],
+      "exclusion_cues": [
+        "若“个人效率”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Personal Productivity\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.travel_places.visas_border",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "签证与出入境：签证、入境、出境、海关、边境规则和旅行证件要求。",
+        "Visas & Borders: visas, entry, exit, customs, border rules and travel-document requirements."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“签证与出入境”，常见线索包括签证、入境、出境。",
+        "The user's primary goal concerns visas & borders, with signals such as visa, entry requirement, border."
+      ],
+      "exclusion_cues": [
+        "若“签证与出入境”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Visas & Borders\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "公共政策与社会议题：公共政策、社会议题、制度影响、公共治理和社会问题。",
+        "Public Policy & Social Issues: public policy, social issues, governance, institutional effects and societal questions."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“公共政策与社会议题”，常见线索包括公共政策、社会议题、治理。",
+        "The user's primary goal concerns public policy & social issues, with signals such as public policy, social issue, governance."
+      ],
+      "exclusion_cues": [
+        "若“公共政策与社会议题”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Public Policy & Social Issues\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "移民与居留：移民、居留、长期签证、永居、公民身份和跨国居住资格。",
+        "Immigration & Residency: immigration, residency, long-term visas, permanent residence and citizenship status."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“移民与居留”，常见线索包括移民、居留、永居。",
+        "The user's primary goal concerns immigration & residency, with signals such as immigration, residency, permanent residence."
+      ],
+      "exclusion_cues": [
+        "若“移民与居留”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Immigration & Residency\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "topic_id": "sys.time_events.time_management",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "时间管理：时间分配、优先级、专注时段、时间预算、拖延和时间使用效率。",
+        "Time Management: time allocation, priorities, focus blocks, time budgeting and use of time."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“时间管理”，常见线索包括时间分配、优先级、时间预算。",
+        "The user's primary goal concerns time management, with signals such as time management, time allocation, priority."
+      ],
+      "exclusion_cues": [
+        "若“时间管理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Time Management\" is mentioned when the actual intent belongs to another topic."
+      ]
+    }
+  ],
+  "annotations": "Developer follow-up reasoning, not independent gold. Historical matrix, ledger, source decisions and profiles unchanged.",
+  "conclusion": "Identity duplication and semantic ambiguity are different bottlenecks. These current-input goals exist, but formal scopes overlap or requested specificity is insufficient. Do not add a tie-breaker, narrow bilingual profiles or count same-input nominations as independent single-label evidence.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "external_urls_followed": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
