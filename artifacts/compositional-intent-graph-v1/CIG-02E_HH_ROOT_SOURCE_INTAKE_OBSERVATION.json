@@ -1,0 +1,45 @@
+{
+  "classification": "BOUNDED_PUBLIC_TRAIN_ROOT_DISCOVERY_NOT_GOLD_OR_CAPABILITY",
+  "source": {
+    "repository": "anthropics/hh-rlhf",
+    "commit": "c72f5cee8eb7b4d2ea5617657f4430d5e333af07",
+    "path": "harmless-base/train.jsonl.gz",
+    "git_blob_sha": "df7c90b1bbd6093bda9c996e8aab9a46fa557dcf",
+    "compressed_bytes": 13197306,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2022 Anthropic; preserve full upstream MIT notice with any substantial copied source text."
+  },
+  "first_pairs": 240,
+  "pairs_inspected": 240,
+  "extractable_root_pairs": 240,
+  "rejected_roots": {},
+  "distinct_extracted_roots": 236,
+  "selected_root_records": [],
+  "selected_counts": {
+    "sys.family_relationships.caregiving_family_support": 0,
+    "sys.knowledge_memory.photos_media_archive": 0,
+    "sys.education_learning.learning_methods": 0,
+    "sys.education_learning.academic_admin": 0,
+    "sys.projects_products.project_planning": 0,
+    "sys.projects_products.product_requirements": 0
+  },
+  "authorship_class": "TEXTUAL_HUMAN_ROLE_UPSTREAM_PREFERENCE_DATA_NOT_VERIFIED_CATALOG_GOLD",
+  "role_limitations": "Delimiter-encoded Human/Assistant segments can contain quoted role markers; extracted root is an upstream-format observation, not a certified full natural instruction.",
+  "full_instruction_certified": false,
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "cig02_frozen": false,
+  "cig03_started": false,
+  "observation_provenance": {
+    "associated_head": "960c6b4a9e39e68ca6e4bb9df4abb67f32214b07",
+    "checkout_sha": "8c12884850c1fbac90e5396c39594e4d7657e2c3",
+    "job_id": 108625749154,
+    "job_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/actions/runs/36321379541/job/108625749154",
+    "artifact_id": 10931753550,
+    "artifact_zip_sha256": "84c013e1aab46e0df821671de9c5ff30e6f804440ca55bfbe85c64c04c35635a",
+    "result_logged_at": "2026-09-27T13:08:52.7989228Z"
+  }
+}

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {extractSharedRoot,selectRoots} from "../scripts/cig02e_public_corpus_roots.mjs";
+import {extractSharedRoot,selectRoots,validateRootInventory} from "../scripts/cig02e_public_corpus_roots.mjs";
 const pair=(root,answer)=>({chosen:"\n\nHuman:"+root+"\n\nAssistant:"+answer,rejected:"\n\nHuman:"+root+"\n\nAssistant:other answer"});
 test("shared first root preserves source whitespace; assistant and continuation are excluded",()=>{
  const p=pair("  How do I study?  ","a\n\nHuman:fake later question\n\nAssistant:later");
@@ -19,4 +19,22 @@ test("retrieval is bounded, deduplicated, and never manufactures nominated gold"
  const selected=selectRoots([{row:1,root:"study one"},{row:2,root:"study one"},{row:3,root:"study two"},{row:4,root:"other"}],[{topic_id:"t",retrieval_hint:"study"}],1);
  assert.equal(selected.length,1);assert.equal(selected[0].row,1);
  assert.equal(selected[0].nominated_topic,null);assert.equal(selected[0].accepted_gold,false);
+});
+
+test("complete root inventory preserves duplicate texts under different source IDs without gold promotion",()=>{
+ const hash=s=>"identity:"+s,root=" same root ";
+ const inventory=[1,2].map(row=>({row,root,instruction_sha256:hash(root),nominated_topic:null,accepted_gold:false,full_instruction_certified:false}));
+ assert.equal(validateRootInventory(inventory,{pairs:240,extractable:2,distinct:1},hash),true);
+ for(const [change,reason] of [
+  [r=>r[1].row=1,"INVALID_SOURCE_ROW_IDENTITY"],
+  [r=>r[0].instruction_sha256="stale","INVALID_ROOT_IDENTITY"],
+  [r=>r[0].accepted_gold=true,"SOURCE_PROMOTION_FORBIDDEN"],
+  [r=>r[0].assistant_output="must not leak","UNEXPECTED_ROOT_FIELDS"],
+  [r=>r[0].full_instruction_certified=true,"SOURCE_PROMOTION_FORBIDDEN"]
+ ]) {
+  const bad=JSON.parse(JSON.stringify(inventory));change(bad);
+  assert.throws(()=>validateRootInventory(bad,{pairs:240,extractable:2,distinct:1},hash),new RegExp(reason));
+ }
+ assert.throws(()=>validateRootInventory(inventory,{pairs:241,extractable:2,distinct:1},hash),/INVENTORY_COUNT_MISMATCH/);
+ assert.throws(()=>validateRootInventory(inventory,{pairs:240,extractable:2,distinct:2},hash),/DISTINCT_ROOT_COUNT_MISMATCH/);
 });

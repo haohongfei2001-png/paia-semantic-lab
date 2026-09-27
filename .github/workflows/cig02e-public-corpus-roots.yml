@@ -8,6 +8,7 @@ on:
       - "scripts/cig02e_hh_root_source_intake.mjs"
       - "tests-js/cig02e_public_corpus_roots.test.mjs"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE.json"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_HH_ROOT_SOURCE_INTAKE_OBSERVATION.json"
 permissions:
   contents: read
 concurrency:
@@ -19,6 +20,8 @@ jobs:
     timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
