@@ -77,3 +77,17 @@ test('bad TRAIN identity cannot trigger a task request or retry',async()=>{
   }),/Git blob mismatch/);
   assert.equal(calls,0);
 });
+
+test('failed TRAIN verification preserves metadata-only consumption state without task requests',async()=>{
+  const bytes=Buffer.from('SYNTHETIC_SECRET_NOT_RETAINED');
+  const desc={path:plan.source.train_list_path,sha:plan.source.train_list_blob,size:bytes.length,type:'blob'};
+  let error,calls=0;
+  try {await acquireFixedTrainDefinitions(plan,{trainDescriptor:desc,
+    trainResponse:response(bytes,rawSourceURL(plan,desc.path)),taskDescriptors:plan.source.selected_paths.map(path=>({...d,path})),
+    fetchTask:async()=>{calls++;throw Error('unexpected request');}});}catch(e){error=e;}
+  assert.match(error.message,/Git blob mismatch/);
+  assert.deepEqual(error.intakeProgress,{stage:'TRAIN_LIST',currentTask:null,taskRequests:0,
+    verifiedTaskCount:0,sourceBytesReceived:bytes.length,trainListVerified:false});
+  assert.equal(calls,0);
+  assert.ok(!JSON.stringify(error).includes('SYNTHETIC_SECRET_NOT_RETAINED'));
+});

@@ -12,18 +12,24 @@ export async function extractTaskMetadata(chunks, options = {}) {
   const maxRetainedNodes = options.maxRetainedNodes ?? 4096;
   for (const limit of [maxInputChars,maxKeptChars,maxDefinitionChars,maxDepth,maxRetainedNodes])
     if (!Number.isSafeInteger(limit) || limit < 1) throw new Error('SELECTIVE_JSON_REJECT: invalid limit');
-  let retainedNodes = 0;
+  let retainedNodes = 0, chunksRead = 0;
   const iterator = chunks[Symbol.asyncIterator]();
   let chunk = '', offset = 0, inputChars = 0, keptChars = 0, eof = false;
   const stats = { excludedValueStringsDecoded: 0, keptValueStringsDecoded: 0, skippedTopLevelFields: [] };
   const allowed = new Set(NI_METADATA_FIELDS);
-  const fail = reason => { throw new Error('SELECTIVE_JSON_REJECT: ' + reason); };
+  const fail = reason => {
+    const error = new Error('SELECTIVE_JSON_REJECT: ' + reason);
+    error.selectiveDiagnostic = {reason, consumedTextChars:inputChars-chunk.length+offset,
+      chunksRead, retainedNodes, keptValueStringsDecoded:stats.keptValueStringsDecoded,
+      excludedValueStringsDecoded:stats.excludedValueStringsDecoded};
+    throw error;
+  };
   async function peek() {
     while (offset === chunk.length && !eof) {
       const next = await iterator.next();
       if (next.done) { eof = true; break; }
       if (typeof next.value !== 'string') fail('chunks must be decoded text');
-      chunk = next.value; offset = 0;
+      chunk = next.value; offset = 0; chunksRead++;
       inputChars += chunk.length;
       if (inputChars > maxInputChars) fail('input limit');
     }
@@ -62,7 +68,9 @@ export async function extractTaskMetadata(chunks, options = {}) {
     }
     if (!retain) return undefined;
     if (raw.length > maxKeptChars) fail('string limit');
-    const decoded = JSON.parse(raw); // Only retained metadata strings or structural object keys.
+    let decoded;
+    try { decoded = JSON.parse(raw); } catch { fail('retained string syntax'); }
+    // Only retained metadata strings or structural object keys.
     keptChars += decoded.length;
     if (keptChars > maxKeptChars) fail('retained metadata limit');
     if (valueString) stats.keptValueStringsDecoded++;

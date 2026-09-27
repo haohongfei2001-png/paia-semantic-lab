@@ -84,3 +84,16 @@ test('valid scalar and pretty nested structure survives varied stream boundaries
     assert.equal(result.stats.excludedValueStringsDecoded,0);
   }
 });
+
+test('malformed stream reports location and counters without leaking discarded text',async()=>{
+  const source='{"Definition":["x"],"Instances":["SECRET_EXCLUDED_VALUE",?]}';
+  for(const width of [1,7,127]){
+    let error;
+    try {await parse(source,undefined,width);} catch(e){error=e;}
+    assert.match(error.message,/value syntax/);
+    assert.equal(error.selectiveDiagnostic.consumedTextChars,source.indexOf('?'));
+    assert.ok(error.selectiveDiagnostic.chunksRead>0);
+    assert.equal(error.selectiveDiagnostic.excludedValueStringsDecoded,0);
+    assert.ok(!JSON.stringify(error).includes('SECRET_EXCLUDED_VALUE'));
+  }
+});

@@ -86,6 +86,9 @@ export function verifyTrainMembership(plan,names) {
 }
 
 export async function acquireFixedTrainDefinitions(plan,{trainDescriptor,trainResponse,taskDescriptors,fetchTask}) {
+  const progress={stage:'PLAN',currentTask:null,taskRequests:0,verifiedTaskCount:0,
+    sourceBytesReceived:0,trainListVerified:false};
+  let budget;
   try {
   const paths=validateIntakePlan(plan), l=plan.limits;
   descriptor(trainDescriptor,plan.source.train_list_path,l.max_task_download_bytes);
@@ -94,11 +97,13 @@ export async function acquireFixedTrainDefinitions(plan,{trainDescriptor,trainRe
   taskDescriptors.forEach((d,i)=>descriptor(d,paths[i],l.max_task_download_bytes));
   if (trainDescriptor.size+taskDescriptors.reduce((n,d)=>n+d.size,0)>l.max_total_download_bytes)
     reject('total planned byte limit');
-  const budget={maxBytes:l.max_total_download_bytes,usedBytes:0};
+  budget={maxBytes:l.max_total_download_bytes,usedBytes:0};
+  progress.stage='TRAIN_LIST';
   const train=await consumeVerifiedResponse(trainResponse,trainDescriptor,{
     url:rawSourceURL(plan,trainDescriptor.path),budget,maxBytes:l.max_task_download_bytes,
     consume:async stream=>{let text='';for await(const chunk of stream){text+=chunk;if(text.length>1000000)reject('TRAIN list text limit');}return text;}
   });
+  progress.trainListVerified=true;
   const names=train.result.trim().split(/\r?\n/).filter(Boolean);
   verifyTrainMembership(plan,names);
   const records=[], attempted=new Set();
@@ -106,9 +111,13 @@ export async function acquireFixedTrainDefinitions(plan,{trainDescriptor,trainRe
     if (attempted.has(d.path)) reject('duplicate request'); attempted.add(d.path);
     // The injected transport must make one request with redirects disabled and a finite timeout.
     const url=rawSourceURL(plan,d.path);
+    progress.stage='TASK_STREAM';
+    progress.currentTask={path:d.path,gitBlob:d.sha,declaredBytes:d.size};
+    progress.taskRequests=attempted.size;
     const response=await fetchTask(url);
     const value=await consumeVerifiedResponse(response,d,{url,budget,maxBytes:l.max_task_download_bytes,
       consume:chunks=>extractTaskMetadata(chunks,{maxInputChars:l.max_task_download_bytes,maxDefinitionChars:l.max_definition_chars_per_task})});
+    progress.verifiedTaskCount++;
     records.push({path:d.path,gitBlob:value.verifiedBlob,sourceBytes:value.receivedBytes,metadata:value.result.metadata,
       skippedFields:value.result.stats.skippedTopLevelFields,excludedValueStringsDecoded:value.result.stats.excludedValueStringsDecoded,
       fullInstructionCertified:false,acceptedGold:false});
@@ -116,5 +125,10 @@ export async function acquireFixedTrainDefinitions(plan,{trainDescriptor,trainRe
   return {classification:'FIXED_PUBLIC_TRAIN_DEFINITION_EXCERPTS_NOT_GOLD_OR_CAPABILITY',records,sourceBytes:budget.usedBytes,
     taskRequests:attempted.size,retries:0,accepted_fixture_rows:0,gold_rows_created:0,candidate_predictions_read:0,
     dev_scores_computed:0,capability_test_rows_read:0,cig02_frozen:false,cig03_started:false};
+  } catch(error) {
+    progress.sourceBytesReceived=budget?.usedBytes ?? 0;
+    // Descriptor/counters only: never retain partial parsed records, values or source snippets.
+    error.intakeProgress={...progress};
+    throw error;
   } finally { await trainResponse?.body?.cancel?.(); }
 }
