@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - "scripts/cig02e_intake_matrix.mjs"
+      - "scripts/cig02e_adjudication_ledger.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json"
       - ".github/workflows/cig02e-intake-matrix.yml"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_*SOURCE_PILOT.json"
@@ -13,6 +15,8 @@ on:
     branches: [main]
     paths:
       - "scripts/cig02e_intake_matrix.mjs"
+      - "scripts/cig02e_adjudication_ledger.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json"
       - ".github/workflows/cig02e-intake-matrix.yml"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_*SOURCE_PILOT.json"
@@ -34,3 +38,5 @@ jobs:
           node-version: "22"
       - name: Recompute source-only matrix and verify committed evidence
         run: node scripts/cig02e_intake_matrix.mjs
+      - name: Verify consolidated source adjudication ledger
+        run: node scripts/cig02e_adjudication_ledger.mjs

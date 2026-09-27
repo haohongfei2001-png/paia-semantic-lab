@@ -1,0 +1,1557 @@
+{
+  "format": "CIG-02E_ADJUDICATION_LEDGER_V1",
+  "classification": "SOURCE_REVIEW_WORK_QUEUE_NOT_GOLD_OR_CAPABILITY",
+  "parent_matrix": "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json",
+  "queue_job_id": 108002125705,
+  "queue_exact_head_sha": "e5a6f4c56ef882208b9bf6fe06a209058045689b",
+  "entries": [
+    {
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "source_row": "dolly:1015",
+      "instruction_sha256": "114dc20a10bf59211c5073690dc625a0f4e6bed0184aefbd47b105a4451d300a",
+      "official_input_rows": [
+        1015
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests understanding of the Transformer model's central mechanism, rather than merely using AI as background.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "source_row": "dolly:5120",
+      "instruction_sha256": "00243fffaae742cd7b6087c6e7867279f1f69bed327c737f1b615bd3c5687114",
+      "official_input_rows": [
+        5120
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly compares programming languages; broad wording lacks selection criteria but the software-development subject is explicit.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "source_row": "dolly:14298",
+      "instruction_sha256": "38e9d3a268758f8c5ca9ee49e96f5f8dadeaa626e79218f5b8c07313d90cb48e",
+      "official_input_rows": [
+        14301
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests browser options specifically for privacy protection; device/platform context does not replace that goal.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "source_row": "dolly:6426",
+      "instruction_sha256": "61bfe68e81e58bf618c2c37f3e3ccc85319acd621db3d8376bff1cfb59eac0b4",
+      "official_input_rows": [
+        6426
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Privacy-policy judgment concerns census statistics as well as privacy; independent neighboring-Topic gold adjudication is required.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "source_row": "dolly:10560",
+      "instruction_sha256": "04a772769c80b5fc206e425fe2e25586ca0178128e9615eb755263533560126d",
+      "official_input_rows": [
+        10563
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests an explanation of a database schema, directly within data models and databases.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "source_row": "dolly:4323",
+      "instruction_sha256": "10adee5914d63382959fd342f78d38659ba3354988703a3abc369c0eacb6e16b",
+      "official_input_rows": [
+        4323
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests an explanation of a data pipeline, directly within data-processing architecture.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "source_row": "dolly:4970",
+      "instruction_sha256": "0bdd63aa6da45a1d1daa3a074630a1252332abac68c9270207f2c5603847b247",
+      "official_input_rows": [
+        4970
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests understanding of log rotation; the Debugging profile explicitly includes logs, not only active error repair.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "source_row": "dolly:9681",
+      "instruction_sha256": "09a970821500361679a5ab4afbdb975c3c33faae2baad5b87bcc0a9834819bba",
+      "official_input_rows": [
+        9684
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Ways to make a phone call can concern device use, connectivity, or communication; no specific hardware decision is supplied.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "source_row": "dolly:4682",
+      "instruction_sha256": "030c480127ae6852288aec2e74ea126a19d25a8cdc7882d28f5e4ef8dd58985f",
+      "official_input_rows": [
+        4682
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "A generic item-classification exercise includes exercise equipment, but its eligibility as a fitness goal requires separate adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.media_culture.books_literature",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "source_row": "dolly:12374",
+      "instruction_sha256": "0318179dddd2f39156c59135a27f38492e9de25ffeb141407beff0e15dcb1e80",
+      "official_input_rows": [
+        12377
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Exercise adaptation explanation is relevant, but coaching response generation, fitness, and physiological knowledge overlap.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.education_learning.exams_assessments",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "topic_id": "sys.education_learning.skill_learning",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_row": "dolly:4013",
+      "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+      "official_input_rows": [
+        4013
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "The same request is nominated for both treatment and prevention. Vaccination eligibility and product selection cannot be assigned twice by lexical nomination.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.health_wellbeing.preventive_health",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "source_row": "dolly:620",
+      "instruction_sha256": "07fb1ae2e1acd4b8f626c691ee05f381dfb536fe690880c4c21a9ecb4b92d4b7",
+      "official_input_rows": [
+        620
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Generic therapy benefits lack the intended condition or purpose; treatment, preventive health, and cosmetic goals may compete.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_row": "dolly:13679",
+      "instruction_sha256": "006f14e0914764efe5e6ce84a831fbe095ac815b6210e9776a093a1e6cb40a48",
+      "official_input_rows": [
+        13682
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests understanding of an effect on mood, directly within mental wellbeing; no personal diagnosis is inferred.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_row": "dolly:9833",
+      "instruction_sha256": "0d8e620b15dac03864aeefdd6f2ecaf44bf1c84bba89b914edcb20219353fd71",
+      "official_input_rows": [
+        9836
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Generic disease-category sorting is not clearly an emotional-regulation/support goal; medicine knowledge is a neighboring possibility.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "source_row": "dolly:12373",
+      "instruction_sha256": "039cce72d3234625b6737f78e5cd4bee6afc0d56cd98c9e77376c10dcb582553",
+      "official_input_rows": [
+        12376
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests dietary item choice for an explicit weight-loss diet. Source answer correctness is not evaluated or used.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "source_row": "dolly:4013",
+      "instruction_sha256": "004e4da6e1200944b02b938e772f30fba656214ba94008512b5ae7baa14e7665",
+      "official_input_rows": [
+        4013
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "The same request is nominated for both treatment and prevention. Vaccination eligibility and product selection cannot be assigned twice by lexical nomination.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.health_wellbeing.medication_treatment",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "source_row": "dolly:9778",
+      "instruction_sha256": "04bcdd8646f4e1fdcb23cbda68f28b353faa5be1ea5da55759c53fe6342212e3",
+      "official_input_rows": [
+        9781
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Asks vaccine efficacy knowledge without a current prevention decision; prevention and medicine knowledge need gold boundary review.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "source_row": "dolly:6817",
+      "instruction_sha256": "bb60dfc0f2a64cc1ab794a2a5257446f698dbd1c3a562ac679d95ee6edd5d6b1",
+      "official_input_rows": [
+        6817
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests laundry detergent options, directly relevant to performing laundry; purchase-versus-chore boundary remains for later gold review.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "source_row": "dolly:12031",
+      "instruction_sha256": "d443add8d8e2cd427d20873ed1c045533b1aca5c8bb6c4125289b9db0b396af9",
+      "official_input_rows": [
+        12034
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Generic useful/not-useful sorting in a cleaning scenario requires the same task-versus-Topic adjudication as exercise-equipment sorting.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "source_row": "dolly:11926",
+      "instruction_sha256": "005cb224a819c836205fee3bd5295a440fb0f55e7448b04e106b387c4f8b3100",
+      "official_input_rows": [
+        11929
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Homeowner maintenance responsibilities overlap Housing, Home Improvement, and Chores rather than unambiguously establishing Housing.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.business_entrepreneurship.sales",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "source_row": "dolly:10565",
+      "instruction_sha256": "044741a7e0d4fba157e657ce3be20e598008927c0626a6ad23eea0c4302c0397",
+      "official_input_rows": [
+        10568
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Home automation explanation overlaps hardware, networking and home improvement; home mention alone does not establish Housing.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.moving_relocation",
+      "source_row": "dolly:10181",
+      "instruction_sha256": "0f67e1f5bfd6fd39c332596cc23c171c4b36d62b34899c6f8506867266f3fc9f",
+      "official_input_rows": [
+        10184
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Asks about living in a different city explicitly for a person relocating, rather than merely sightseeing.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "source_row": "dolly:4269",
+      "instruction_sha256": "02a69de6ada322af48245ff64efe833e278277d825102cacaf2f3e774ebaab83",
+      "official_input_rows": [
+        4269
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_THREE_DOMAIN_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Car-manufacturer origin classification does not clearly establish vehicle use, choice, maintenance or ownership.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.career_work.interviews",
+      "source_row": "dolly:2779",
+      "instruction_sha256": "304358b40e37610c98d3c1e00a9835b3dfd9c7ea7e0ab34a20d813b8980e029a",
+      "official_input_rows": [
+        2779
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests questions to use in a job interview.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.projects_products.ux_user_research",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.education_learning.exams_assessments",
+      "source_row": "dolly:12315",
+      "instruction_sha256": "0199245603f8d7b83efa37764754e9065d0dc3393e9024b73b6ffaee9b0282df",
+      "official_input_rows": [
+        12318
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Grade-10 ratio-problem authoring could be coursework or assessment material; no exam use is stated.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.education_learning.language_learning",
+      "source_row": "dolly:9344",
+      "instruction_sha256": "060e32fbc59a1391420ad9843b46d7a67fd5a9a3136e397863ca878bfed3db32",
+      "official_input_rows": [
+        9347
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Grammar correction could be proofreading or language learning; no learning purpose is explicit.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.travel_places.attractions_activities",
+      "source_row": "dolly:3293",
+      "instruction_sha256": "011ca1bc08c64002af5db4dfda19b9426ef2fddf37d2dd0eb8592abd28b5a0c5",
+      "official_input_rows": [
+        3293
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests activities in a named destination, directly within travel attractions and things to do.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "source_row": "dolly:1301",
+      "instruction_sha256": "031191a52a0024f7d6824a356e627c65f8f02df7fe723f2a89a4983f11ef4754",
+      "official_input_rows": [
+        1301
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Cuisine-category sorting lacks a travel dining decision; generic task-versus-Topic review remains necessary.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.travel_places.transport_travel",
+      "source_row": "dolly:2967",
+      "instruction_sha256": "0007e30357d663fa248b617319709376db55ed30a0e7055bbfecbabf4443cd31",
+      "official_input_rows": [
+        2967
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Flight packing is travel preparation, but intercity transport versus Trip Planning is unresolved.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.ai_computing.hardware_devices",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        },
+        {
+          "topic_id": "sys.media_culture.books_literature",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.travel_places.trip_planning",
+      "source_row": "dolly:5031",
+      "instruction_sha256": "0b4dcd93d4ead1d3ffba1670064ebb0c2d1848e94730e265aa583fc1d7b7885d",
+      "official_input_rows": [
+        5031
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests a travel plan for a named destination; no competing authoring-only context is supplied.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.travel_places.visas_border",
+      "source_row": "dolly:1123",
+      "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+      "official_input_rows": [
+        1123
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Broad immigration-system judgment could be civic policy rather than personal visa or travel-document requirements.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.legal_civic.immigration_residency",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "source_row": "dolly:10835",
+      "instruction_sha256": "0fe8eda91219ccd854adbe51b92d2fef522e1e4b4b50849934f3a77257398935",
+      "official_input_rows": [
+        10838
+      ],
+      "origin_kind": "SUPPLEMENTAL_FOLLOWUP",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_EDUCATION_CAREER_TRAVEL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Full official instruction at row 10838 was read in the preceding recovery turn: it requests JVM log summarization and significant anomaly identification. The formal Debugging Topic includes logs and anomalies. This is a developer source-boundary follow-up, not independent gold; the prior NOT_FULLY_REVIEWED record is preserved.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "source_row": "dolly:9165",
+      "instruction_sha256": "014c6f3c68336110b7725a418b88f9d3666cb0e83970f907a45840c859c45fb6",
+      "official_input_rows": [
+        9167
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_PERSONAL_FAMILY_PROJECTS_MEMORY_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Dog-name popularity is pet-related but does not show pet care or naming a current pet; generic fact versus Pets needs adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "source_row": "dolly:10804",
+      "instruction_sha256": "10228d9a358bb3f55a2cb39e5467e9d410ba457d57d4048e85329dd2127bf086",
+      "official_input_rows": [
+        10807
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_PERSONAL_FAMILY_PROJECTS_MEMORY_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks how to change a bad habit; the behavior-change goal is explicit.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "source_row": "dolly:9313",
+      "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+      "official_input_rows": [
+        9315
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_PERSONAL_FAMILY_PROJECTS_MEMORY_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests procrastination-prevention strategies, explicitly within Personal Productivity.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.time_events.time_management",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "source_row": "dolly:1990",
+      "instruction_sha256": "0892ee23a0699509dd1130646b1ad14bf60038a3a3740c050377bc4b75b17c88",
+      "official_input_rows": [
+        1990
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_PERSONAL_FAMILY_PROJECTS_MEMORY_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Asks historical launch timing and geography; understanding a launch may fit the profile, but no operations or product-execution goal is shown.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "source_row": "dolly:490",
+      "instruction_sha256": "08822bf437cb7c74a715287f258adee7fb0585799a858ad3315f37dc0e5c55aa",
+      "official_input_rows": [
+        490
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Explicitly requests success-factor text for a formal enterprise integration proposal.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.career_work.applications",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "source_row": "dolly:13141",
+      "instruction_sha256": "2443a2346e61a9d5d9bf3151b726c11dbb88ea2fc8ef00f8f9f2c5805de5c592",
+      "official_input_rows": [
+        13144
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks how to make a workplace presentation effective.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "source_row": "dolly:13129",
+      "instruction_sha256": "6ab6d7530aebb12d7d44c4e3ff694a72f53c5614ad651a7f26c56e1088ce0776",
+      "official_input_rows": [
+        13132
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks how to give a good presentation.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "source_row": "dolly:3330",
+      "instruction_sha256": "9bb93e07c3fe3e731d399c7de24ab1c64eeba3ac71ae7f8529b5731ec1b99cdb",
+      "official_input_rows": [
+        3330
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Explicit tweet format but fictional animal perspective; public-post goal versus creative writing requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "source_row": "dolly:11358",
+      "instruction_sha256": "01f49922b535b320fe2f1af6d32af97f9ce3ec6ed1a03873080d35a650f537a9",
+      "official_input_rows": [
+        11361
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests an introduction intended for spoken delivery to a recruiter; employment is audience context.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.education_learning.language_learning",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "source_row": "dolly:5021",
+      "instruction_sha256": "043f428c799168162c66fefbb5bfe1964bcbef42902f2ebfb2c97e3ad6a9ebde",
+      "official_input_rows": [
+        5021,
+        12641
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Requests a fictional dialogue, not live interpersonal conversation; spoken form versus creative writing requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.media_culture.news_media",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 2,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "source_row": "dolly:10126",
+      "instruction_sha256": "0c57cc26c4a923e2ced5c46acd9126aeb81b9bdf3fff5ca5269dd1a6d63354d5",
+      "official_input_rows": [
+        10129
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Provides a family message draft without an explicit editing request; writing intent versus pet-care instruction needs adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "source_row": "dolly:7308",
+      "instruction_sha256": "0057b18ba40712041c271f48ef1ab106e5e79c9858931439776630feffdb3de1",
+      "official_input_rows": [
+        7308
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks about peer-to-peer money transfer applications.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "source_row": "dolly:5405",
+      "instruction_sha256": "06c0557cb86db1235d81bcfc59aae80e0350366b2d9d825118debb6bc43d722f",
+      "official_input_rows": [
+        5405
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests understanding of free cash flow, included in the formal profile.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "source_row": "dolly:629",
+      "instruction_sha256": "00e764c81fc9b6ab62e7030aac251f9da5c1d504caf457253b817772fcc0a1a5",
+      "official_input_rows": [
+        629
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks the meaning of an unsecured loan.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "source_row": "dolly:7720",
+      "instruction_sha256": "03063517c6006a162716cf96158d0cb27984e18a1be8d02b1a41cf43e17a93b6",
+      "official_input_rows": [
+        7721
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Interest rates and macroeconomy are related to credit but no borrowing or repayment goal is shown; economic understanding boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "source_row": "dolly:11718",
+      "instruction_sha256": "0234a23278e65eb182e747769e34ef907e4d2a60d9824c71ee750ee206ea3b3c",
+      "official_input_rows": [
+        11721
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Direct request for investment asset allocation using a three-fund portfolio context.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "source_row": "dolly:14478",
+      "instruction_sha256": "0589707852afba8e31d6ce43147fbc99f8183b352eb8751441be55c996addb96",
+      "official_input_rows": [
+        14481
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks the meaning of a hedge fund, an investment vehicle.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "source_row": "dolly:355",
+      "instruction_sha256": "5e2a472be28cac728042fa058e2708fe2c2048ea3467312bdbfc0864ca114cf1",
+      "official_input_rows": [
+        355
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests understanding of a municipal governance system from supplied source text.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "source_row": "dolly:10893",
+      "instruction_sha256": "16674190f720c4cc206fa0dc364eb91212c1d389a2a411f83ac612941e341612",
+      "official_input_rows": [
+        10896
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Explicitly drafts a legal complaint jurisdiction section; complaint-process versus legal/document authoring boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "source_row": "dolly:13682",
+      "instruction_sha256": "6a910ae5157dbb09b301c374f697b966248c0b7aa08d15456880c0e98ba664b4",
+      "official_input_rows": [
+        13685
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Passport is one item in a travel-packing classification; identity-document procedures versus travel preparation requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "source_row": "dolly:1123",
+      "instruction_sha256": "0e597f806068c79d229b876173e35c9173de77d1c8b91d25a83a3c71863f7e73",
+      "official_input_rows": [
+        1123
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Asks systemic immigration-policy critique rather than an individual's residence eligibility; public-policy neighbor requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.travel_places.visas_border",
+          "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "source_row": "dolly:3006",
+      "instruction_sha256": "00607ebd1bfa6a4ec622a1b78d822fdeec5234ce318176bc3d85d7a1595a9400",
+      "official_input_rows": [
+        3006
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Asks a film-awards multiple-choice question; screen-work understanding versus artificial classification eligibility requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.media_culture.music",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "source_row": "dolly:2173",
+      "instruction_sha256": "04ed2f644da7990fc6cf0f3992c549b3ff62ee4094804351e3dcb3db9ed2c65c",
+      "official_input_rows": [
+        2173
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Classifies games by publisher; game understanding versus artificial classification eligibility requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "source_row": "dolly:7881",
+      "instruction_sha256": "05443337d9fb28667986569b616ba0d7ca6cf90cb97a9b3bd31660fc9e0a29df",
+      "official_input_rows": [
+        7882
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests card games to play, an explicit gameplay choice.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "source_row": "dolly:6777",
+      "instruction_sha256": "073fa5d9efd6c4305919365cc16b0226a32a23965fac2aec401816c207f03cb9",
+      "official_input_rows": [
+        6777
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Asks feasibility of acting in local theater alongside a career; cultural participation versus creative performance/work-life boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "source_row": "dolly:4191",
+      "instruction_sha256": "010d02338faac78c30d3e71f3b96b54cc2e87fac24dbeb0a5c1db14c5c80239b",
+      "official_input_rows": [
+        4191
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks about a named musical group's song and performance history.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "source_row": "dolly:652",
+      "instruction_sha256": "83b033e725b90c1933cbe712c32a42866ec3b1218c60e31998d7251c7af95e86",
+      "official_input_rows": [
+        652
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Meme modifies a cryptocurrency; investing/coin fact versus internet culture requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "source_row": "dolly:6198",
+      "instruction_sha256": "95fe251f3299e52e3756f9ddacf7d4e8d4a8d1e157f930de27874f1a01e6d9f3",
+      "official_input_rows": [
+        6198
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_FINANCE_MEDIA_COMMUNICATION_LEGAL_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Influencer career decision intersects online culture and career choice; primary-goal boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "source_row": "dolly:174",
+      "instruction_sha256": "03729cd48eb5e082861394aace99a40a147f6683f36092da7f1ccb3c498a45cd",
+      "official_input_rows": [
+        174
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests new business ideas and how to start them.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "source_row": "dolly:5162",
+      "instruction_sha256": "27bf129ec08a24c600a9571353fe324c68edc82c2ed542b26e92cc6ceea19a9b",
+      "official_input_rows": [
+        5162
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Generic competition definition lacks an explicit market or competitor-research scope; domain sense requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "source_row": "dolly:1338",
+      "instruction_sha256": "098dee3743453f594475c8165df5b3bdb96a0989ef21ee6781e4acdcd8ec67f1",
+      "official_input_rows": [
+        1338
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks about two digital marketing channels, SEO and SEM.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.creative_design.branding_identity",
+      "source_row": "dolly:11804",
+      "instruction_sha256": "cdd9441a70dd6e9932595ca0fd7f0dd00fb77a48f2ffbdd7df6d29493904a57b",
+      "official_input_rows": [
+        11807
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly requests understanding of a brand logo, included in the formal profile.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.creative_design.photography",
+      "source_row": "dolly:7323",
+      "instruction_sha256": "38452b4d5b21027a80c94a023495e2cd34fbd360f92ed180102815faa17a965e",
+      "official_input_rows": [
+        7323
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks camera depth-of-focus knowledge, within photography.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "source_row": "dolly:10148",
+      "instruction_sha256": "81281d47aa93553a6a625cc96f94c05b7bc6490bcf9cbdaa063dee95e18d1a4c",
+      "official_input_rows": [
+        10151
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks distinctions among UI, UX and product design.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "source_row": "dolly:3382",
+      "instruction_sha256": "196917ce1f7a4695ccd6094ac09d0f3ddb158a8b549a46dfbb5042e73aae7fc6",
+      "official_input_rows": [
+        3382,
+        3875,
+        7886
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests microphone selection for podcast/video recording and streaming.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 3,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.science_technical.biology_life_science",
+      "source_row": "dolly:12049",
+      "instruction_sha256": "16a388e7a79ae6431db12b252647367b4d6e6c176a9cb94920397ea372bfd6c7",
+      "official_input_rows": [
+        12052
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks the meaning of molecular biology.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "source_row": "dolly:2910",
+      "instruction_sha256": "14f2be780ba8092b4b9b9e6339744deb42f2ce61f5767eef1a7b4cf680366902",
+      "official_input_rows": [
+        2910
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Requests house-building material options; materials science versus engineering/home-construction goal requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.science_technical.computer_science",
+      "source_row": "dolly:14106",
+      "instruction_sha256": "217300fa075031973b188814a2c44cab056579b6f721962fd46216a2e7b47f50",
+      "official_input_rows": [
+        14109
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Directly asks an algorithm's greedy versus dynamic-programming classification, an explicit CS principle.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "source_row": "dolly:4674",
+      "instruction_sha256": "02b2db6bb6b569c70eeaebea59c196e21ea48f93dd21c9b426f4e6cdbff69c2c",
+      "official_input_rows": [
+        4674
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "historical_reason": "Requests an RV electrical-system choice, explicitly electrical/systems engineering.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "INDEPENDENT_GOLD_AND_INPUT_IDENTITY_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "source_row": "dolly:396",
+      "instruction_sha256": "05d488e84415e2dc49c994336585a4f241a12616bab467d748f02949f8426289",
+      "official_input_rows": [
+        396
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Engineering culture may concern workplace practices rather than engineering principles; boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.media_culture.art_culture",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.science_technical.mathematics",
+      "source_row": "dolly:6670",
+      "instruction_sha256": "001b72bb4ed54579bedab380a463ad5fa9939d97c0a1e98e496d4c787c1b46cd",
+      "official_input_rows": [
+        6670,
+        6703
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Categorization and sentiment analysis could concern NLP or statistics; no specific mathematical concept is stated.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 2,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "source_row": "dolly:7723",
+      "instruction_sha256": "117c7928f81fbe4979a56e525cb1ad7dde8599c4f8b5772cdc3f7b45ce0bd62a",
+      "official_input_rows": [
+        7724
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Requests a fictional appointment phone-call dialogue; booking goal versus dialogue authoring requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.health_wellbeing.medical_care",
+          "historical_decision": "REJECT_FOR_NOMINATED_TOPIC"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "source_row": "dolly:8690",
+      "instruction_sha256": "17b1218d2dd71cb0d9aa5c73af74586db8f483753bd5d1b9c45523afb6bcfa72",
+      "official_input_rows": [
+        8692
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Anniversary venue inquiry has a celebration goal but asks for email drafting; primary-output boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "source_row": "dolly:12836",
+      "instruction_sha256": "00ed0218049dcf04276978bad31212949395047901b344f014fdc19a3c8caba0",
+      "official_input_rows": [
+        12839
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Fragment requests steps showcasing a security key; generic checklist versus computing-specific guide needs adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "source_row": "dolly:12086",
+      "instruction_sha256": "0e29678112455d8b856e4d3bd65c4fe83a280ac8f92a68ed9ea1673055b8d99b",
+      "official_input_rows": [
+        12089
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Daily exercise integration intersects recurring schedule and fitness goal; primary-goal boundary requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "source_row": "dolly:9313",
+      "instruction_sha256": "044944bd861672185b85b4744eec426b87e703f14add6952f3d2a144767d7ace",
+      "official_input_rows": [
+        9315
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "historical_reason": "Procrastination prevention is explicit personal productivity but no time allocation is specified; time-management neighbor requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [
+        {
+          "topic_id": "sys.personal_direction.personal_productivity",
+          "historical_decision": "PLAUSIBLE_SOURCE_CANDIDATE"
+        }
+      ],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "source_row": "dolly:4045",
+      "instruction_sha256": "aad49d50e7c79d6d62b9d4bc3e0c57e8ddfa69a68616581bd1607ec82654ddac",
+      "official_input_rows": [
+        4045
+      ],
+      "origin_kind": "BASE_NOMINATION",
+      "origin_manifest": "artifacts/compositional-intent-graph-v1/CIG-02E_SCIENCE_CREATIVE_BUSINESS_TIME_SOURCE_PILOT.json",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "historical_reason": "Requests extraction of behavioral traits from text, not allocating time; informational understanding versus task-form eligibility requires adjudication.",
+      "source_class": "PUBLIC_HUMAN_AUTHORED_UPSTREAM_DOLLY",
+      "review_queue": "SOURCE_BOUNDARY_REVIEW_PENDING",
+      "other_catalog_nominations": [],
+      "official_duplicate_input_count": 1,
+      "annotation_independence": "DEVELOPER_SOURCE_ANNOTATION_NOT_INDEPENDENT_GOLD",
+      "accepted_gold": false
+    }
+  ],
+  "entry_count": 79,
+  "base_prospective_nominations": 36,
+  "supplemental_prospective_nominations": 1,
+  "uncertain_nominations": 42,
+  "distinct_selected_source_rows": 76,
+  "topics_with_prospective_candidates": 33,
+  "topics_without_prospective_candidates": 111,
+  "excluded_classes": [
+    "QUARANTINED_SOURCE_INPUT_MISMATCH",
+    "REJECT_FOR_NOMINATED_TOPIC",
+    "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING"
+  ],
+  "synthetic_review": "artifacts/compositional-intent-graph-v1/CIG-02E_SYNTHETIC_FULL_INPUT_REVIEW.json",
+  "identity_boundary": "Queue instruction hashes and historical exact official input row mappings are preserved. Full instruction/context pair digests are not yet registered in this ledger. Source IDs, official duplicate positions and lexical nominations are not independent language or gold units.",
+  "required_before_fixture": [
+    "RECHECK_PINNED_FULL_INPUT_PAIR_IDENTITIES",
+    "RESOLVE_TOPIC_AND_TASK_BOUNDARIES_UNDER_CURRENT_PROFILES",
+    "INDEPENDENT_GOLD_ADJUDICATION_WITHOUT_CANDIDATE_PREDICTIONS",
+    "DEDUPLICATE_INPUTS_AND_SEPARATE_SOURCE_UNITS",
+    "REGISTER_NATURAL_DEFER_AND_CONTEXT_CONTROLS",
+    "FREEZE_SOURCE_GOLD_CANDIDATE_SCORER_BEFORE_NEW_DIAGNOSTIC"
+  ],
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
