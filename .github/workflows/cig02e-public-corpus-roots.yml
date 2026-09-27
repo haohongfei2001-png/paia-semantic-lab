@@ -1,0 +1,35 @@
+name: CIG-02E bounded public corpus root intake
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02e-public-corpus-roots.yml"
+      - "scripts/cig02e_public_corpus_roots.mjs"
+      - "scripts/cig02e_hh_root_source_intake.mjs"
+      - "tests-js/cig02e_public_corpus_roots.test.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE.json"
+permissions:
+  contents: read
+concurrency:
+  group: cig02e-public-corpus-roots-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  bounded-public-corpus-root-intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check paired-root boundaries with fresh synthetic unit inputs
+        run: node --test tests-js/cig02e_public_corpus_roots.test.mjs
+      - name: Inspect fixed public train prefix after exact blob verification
+        run: node scripts/cig02e_hh_root_source_intake.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cig02e-public-train-root-source-observation
+          retention-days: 30
+          path: |
+            artifacts/compositional-intent-graph-v1/CIG-02E_HH_ROOT_SOURCE_INTAKE_RESULT.json
+            docs/compositional-intent-graph-v1/CIG-02E_HH_SOURCE_LICENSE_NOTICE.txt
