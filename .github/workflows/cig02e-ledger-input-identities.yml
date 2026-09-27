@@ -1,0 +1,46 @@
+name: CIG-02E fixed ledger input identities
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/cig02e_ledger_input_identity.mjs"
+      - "tests-js/cig02e_ledger_input_identity.test.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json"
+      - ".github/workflows/cig02e-ledger-input-identities.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/cig02e_ledger_input_identity.mjs"
+      - "tests-js/cig02e_ledger_input_identity.test.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json"
+      - ".github/workflows/cig02e-ledger-input-identities.yml"
+permissions:
+  contents: read
+concurrency:
+  group: cig02e-ledger-input-identities-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  fixed-ledger-input-identities:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check fail-closed identity and duplicate-input boundaries
+        run: node --test tests-js/cig02e_ledger_input_identity.test.mjs
+      - name: Fetch two pinned public GitHub inputs once
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/buayism/dolly-15k-dataset/6d7ebf384c5e588ee1b0dff816557489bc16089c/databricks-dolly-15k.jsonl --output .cig02e-dolly-mirror.jsonl
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/databrickslabs/dolly/2305eb7f2f4b3beb2379f34c6addf335b46c4b43/data/databricks-dolly-15k.jsonl --output .cig02e-dolly-official.jsonl
+          test "$(git hash-object .cig02e-dolly-mirror.jsonl)" = "7c507d16b055ae32107a6dd0585779678565dcd2"
+          test "$(git hash-object .cig02e-dolly-official.jsonl)" = "9b0b912c478e7ccd61ce741ebb409ddf8c7c22e6"
+      - name: Verify only fixed ledger inputs without retrieval or scoring
+        run: node scripts/cig02e_ledger_input_identity.mjs .cig02e-dolly-mirror.jsonl .cig02e-dolly-official.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cig02e-ledger-input-identities
+          path: artifacts/ci/cig02e-ledger-input-identities.json
+          if-no-files-found: error
+          retention-days: 30
