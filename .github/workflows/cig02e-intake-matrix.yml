@@ -7,6 +7,8 @@ on:
       - "scripts/cig02e_adjudication_ledger.mjs"
       - "scripts/cig02e_repeated_input_boundary_integrity.mjs"
       - "scripts/cig02e_task_topic_boundary_integrity.mjs"
+      - "scripts/cig02e_neighbor_boundary_integrity.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_LEDGER_INPUT_IDENTITY_OBSERVATION.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW.json"
@@ -23,6 +25,8 @@ on:
       - "scripts/cig02e_adjudication_ledger.mjs"
       - "scripts/cig02e_repeated_input_boundary_integrity.mjs"
       - "scripts/cig02e_task_topic_boundary_integrity.mjs"
+      - "scripts/cig02e_neighbor_boundary_integrity.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_LEDGER_INPUT_IDENTITY_OBSERVATION.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW.json"
@@ -54,3 +58,5 @@ jobs:
         run: node scripts/cig02e_repeated_input_boundary_integrity.mjs
       - name: Verify complete task versus Topic follow-up batch
         run: node scripts/cig02e_task_topic_boundary_integrity.mjs
+      - name: Verify complete remaining neighboring Topic follow-up batch
+        run: node scripts/cig02e_neighbor_boundary_integrity.mjs
