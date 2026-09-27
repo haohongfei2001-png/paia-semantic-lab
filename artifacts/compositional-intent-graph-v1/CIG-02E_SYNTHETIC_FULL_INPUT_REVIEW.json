@@ -1,0 +1,331 @@
+{
+  "format": "cig02e-supplemental-synthetic-full-input-review-v1",
+  "classification": "SYNTHETIC_SOURCE_BOUNDARY_REVIEW_NOT_INDEPENDENT_GOLD_OR_CAPABILITY",
+  "base_main_sha": "d964b55a4207c05a3e6950a8d23b490dc249ae59",
+  "parent_matrix": "artifacts/compositional-intent-graph-v1/CIG-02E_FULL_CATALOG_INTAKE_MATRIX.json",
+  "selected_nominations": 26,
+  "distinct_source_rows": 25,
+  "sources": {
+    "alpaca": {
+      "repo": "tatsu-lab/stanford_alpaca",
+      "commit": "761dc5bfbdeeffa89b8bff5d038781a4055f796a",
+      "blob": "3779ddbc040543ab1834ef216c983d6fcc06cc9a",
+      "path": "alpaca_data.json",
+      "rows": 52002,
+      "declared_data_license": "CC-BY-NC-4.0"
+    },
+    "self_instruct": {
+      "repo": "yizhongw/self-instruct",
+      "commit": "0b26ccaa415992100fa32df62d41b994cf928e23",
+      "blob": "ccceb2677cbafcac4c996be47520b5581dd10295",
+      "path": "data/gpt3_generations/batch_221203/all_instances_82K.jsonl",
+      "rows": 82439,
+      "declared_repo_license": "Apache-2.0",
+      "quality_caveat": "Upstream reports possible quality problems in 46% of a 200-instruction sample."
+    }
+  },
+  "decision_counts": {
+    "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE": 11,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 5,
+    "INSUFFICIENT_SOURCE_INPUT": 2,
+    "REJECT_FOR_NOMINATED_TOPIC": 8
+  },
+  "decisions": [
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "source_row": "alpaca:48073",
+      "instruction_sha256": "014361134e2c59fc268772b7cda7abbed6b72dc8dc9c5c0fe588fc038b130737",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit business strategy request for a coffee shop.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "source_row": "alpaca:20103",
+      "instruction_sha256": "35d72eb80f4bbf1d856f0fdf161b8ecd0e7fe7a6414ee96028d77ca738f75ea1",
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Customer acquisition strategy for an online clothing store overlaps Business Strategy and Marketing; primary boundary requires adjudication.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "source_row": "alpaca:19606",
+      "instruction_sha256": "1672a3988388a32c049088a2c4b976a38bbc0d4e93a13415e343a65ce8d9bd5b",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicitly requests a machine-learning career path; technical field is context, career direction is the goal.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "source_row": "alpaca:43723",
+      "instruction_sha256": "1e7dd1e40d37969048db7395e5a23b79c561f3bf0fd20c6c8c155eb1cacd0823",
+      "decision": "INSUFFICIENT_SOURCE_INPUT",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Asks the respondent to describe a desired career path without a user's direction or constraints; generic role-play does not establish personal career intent.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "source_row": "alpaca:39370",
+      "instruction_sha256": "003d83f642f9e28ea8a0268e5c983b1f81d476ed58b7ff8f39be06d83343ca01",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit tweet-authoring request; children's reading is content background.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "source_row": "alpaca:28170",
+      "instruction_sha256": "005379a847bd2a187c720c524b3fb6dd1bc04723f56eca4a6d9192d21e73e8de",
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Artwork creation is explicit but medium is unspecified; illustration/image versus broader creative direction needs adjudication without relying on generated output.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "source_row": "alpaca:13460",
+      "instruction_sha256": "0985dd9b4e8562a2abd06c8997dfadf9b43bb5aff077d88b24ad4f4169cd01fc",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Requests HTML implementation of a generic registration form, not academic enrollment administration.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "source_row": "alpaca:39399",
+      "instruction_sha256": "152f6cfe860cf9af55d17738643504342cd2de03e0cb5e6c47c83baeac79ee2a",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Learning methods refers to machine learning in an article-summary task, not study strategies.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "source_row": "alpaca:19856",
+      "instruction_sha256": "53414dd92a2c57270ddcfc0a669621faf31da9f0fbb8925ddd51ecc51c4c1fb2",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Machine learning is the requested method for a sales prediction task, not personal learning methods.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "source_row": "alpaca:31999",
+      "instruction_sha256": "459e41357c0a115f714879af0b6ac5ea590cc20178d4330c2ea23b52a506574f",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicitly requests workplace social skills, within general interpersonal behavior.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "source_row": "self_instruct:37002",
+      "instruction_sha256": "55758179e95cb1e713de3bfd83fc8a736afad2aef7ffa774ecf29d7ebf1a0002",
+      "decision": "INSUFFICIENT_SOURCE_INPUT",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Asks about the respondent's past expensive purchase, without a current user's purchasing decision; do not infer user intent from generated answer.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "source_row": "alpaca:33060",
+      "instruction_sha256": "cda6616fb2937ac6a20a917fed6edf6f092c1096541e0849c91aa0d64f99ab73",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit file/folder movement request with source and destination paths; no path is accessed or action executed.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "source_row": "alpaca:15445",
+      "instruction_sha256": "5848398a11735a764a26a705954fb3c2dc17bfc7ae15385951bffebb8c79c99e",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Archive occurs in an article URL; request is summarization, not preserving personal records. Linked page not fetched.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "source_row": "self_instruct:26348",
+      "instruction_sha256": "801612ecae2fdafa6adbbc1aac88ae217809cd2a83e53bc431fc1594dc027770",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Archive occurs in an article URL; request asks an opinion on an article, not a personal archive. Linked page not fetched.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "source_row": "alpaca:22767",
+      "instruction_sha256": "2ed2d407b10c2db2dfa7a03b810f0159e41d6d83146ef598c4f3f069f5153fb6",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Requests editor questions for prose revision, not provenance or version-history tracking.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "source_row": "alpaca:19359",
+      "instruction_sha256": "3d009eb48546a92cd29948021c7353c48a5bfb1952527b0c0286936751c87596",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit software change-log authoring from update context; fits change-record history, pending diagnostic adjudication.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "source_row": "alpaca:34453",
+      "instruction_sha256": "c8cf4ded223f8f1791d259a3994daaa3db23c387d068b76f094110f617783d7c",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Long-term planning concerns businesses, not personal life-stage arrangements.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "source_row": "alpaca:34018",
+      "instruction_sha256": "1a8885caf80a6b67a0813f08f7fe0e7f702c708829460c85408fbfc181f72bc2",
+      "decision": "REJECT_FOR_NOMINATED_TOPIC",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Implementation plan concerns transport cost policy nationally, not software/project engineering execution.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "source_row": "alpaca:14192",
+      "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14",
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Roadmap request concerns system implementation but asks sequencing rather than code delivery; Engineering Execution versus Roadmap requires adjudication.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "source_row": "alpaca:14917",
+      "instruction_sha256": "3510d356a394272fde0dbb4ff1fb32b83623fc086340e6d44759e3f3f6316e95",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit user-story authoring for contact-management application requirements.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "source_row": "alpaca:45484",
+      "instruction_sha256": "36b9c0c1f22bef53270067bc0419416517a0d2da4ee9ca7427677d2c129e808f",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit feature-requirement request with employee-management application context.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "source_row": "alpaca:14810",
+      "instruction_sha256": "0a275f75b33cf8e84a88b73ea4eb06e80dfa57cfca13f42d0fc0ce341cdbb059",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicitly requests explanation of a product value proposition; generic claim limits quality but does not remove the stated concept.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "source_row": "alpaca:11547",
+      "instruction_sha256": "574fd5bc01b58d38583d51114d6aa0eba02fd53790046d29df08a2091e93ed97",
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Product concept and value proposition combine ideation and product strategy; competing-Topic boundary requires adjudication.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "source_row": "alpaca:14192",
+      "instruction_sha256": "1bf4c6d0270f90d768e2de3ce202d4adb4c3ef0b4719ccafc71b80bdbc365b14",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit implementation roadmap and sequencing request for a health-management system.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "source_row": "alpaca:32888",
+      "instruction_sha256": "031aa760ec7a62fdbe7e2e9749c9f0369c48b8b316f614908186f8bf35b47e61",
+      "decision": "PLAUSIBLE_SYNTHETIC_DIAGNOSTIC_CANDIDATE",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Explicit time-bound reminder request; generated refusal is not used to judge intent or router capability.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "source_row": "alpaca:34879",
+      "instruction_sha256": "28bcb99d8bb70e56c8f858eb206591939e58bd77d79aad866fa721e76416283d",
+      "decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "prior_decision": "SUPPLEMENTAL_SYNTHETIC_REVIEW_PENDING",
+      "reason": "Requests a generated Rome experience journal without observed travel facts; trip-record versus fictional creative-writing boundary remains uncertain.",
+      "source_class": "PUBLIC_MODEL_GENERATED_INDEPENDENT_UPSTREAM_NOT_HUMAN",
+      "full_instruction_and_input_reviewed": true,
+      "generated_output_used_for_intent": false
+    }
+  ],
+  "annotation_independence": "Developer annotation; not independent gold. Upstream language is synthetic, not human-authored.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "dev_scores_computed": 0,
+  "candidate_predictions_read": 0,
+  "capability_test_rows_read": 0,
+  "external_urls_followed": 0,
+  "filesystem_paths_accessed": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
