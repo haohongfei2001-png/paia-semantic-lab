@@ -180,10 +180,16 @@ rounds:
     cig02e_source_coverage_reconciliation_report: docs/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.md
     cig02e_neighbor_boundary_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_MERGED_MAIN_RECEIPT.json
     cig02e_source_reconciliation_merged_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_RECONCILIATION_MERGED_MAIN_OBSERVATION.json
-    cig02e_source_reconciliation_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK
+    cig02e_source_reconciliation_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_six_topic_public_issue_source_gate: artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.json
     cig02e_six_topic_public_issue_source_report: docs/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.md
     cig02e_issue_source_family_action: STOP_EXPANDING_ISSUE_SEARCH_FOR_PERSONAL_TOPIC_GAPS
+    cig02e_source_reconciliation_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_RECONCILIATION_MERGED_MAIN_RECEIPT.json
+    cig02e_six_topic_source_gate_merged_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_SOURCE_GATE_MERGED_MAIN_OBSERVATION.json
+    cig02e_six_topic_source_gate_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK
+    cig02e_public_corpus_root_intake: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE.json
+    cig02e_public_corpus_root_intake_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE.md
+    cig02e_public_corpus_root_intake_verdict: REGISTERED_SOURCE_ONLY_AWAITING_ACTIONS
     cig02e_current_prospective_source_nominations: 41
     cig02e_current_prospective_source_topics: 35
     cig02e_topics_without_current_prospective_sources: 109
@@ -211,4 +217,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Complete PR #62 exact-main receipt after its remaining applicable CI; verify six-Topic bounded source-gate batch. Stop expanding GitHub issue searches for personal Topic gaps after repeated means/goal and reuse-provenance bottlenecks. Inspect at most two GitHub-hosted public request/conversation corpus candidates with documented participant roles and explicit data reuse licenses; pin only eligible source artifacts, use complete user input, and preserve unqualified outcomes when gaps remain. No new gold, broad repeated scans, fixture freeze, score, or capability TEST before source/gold/candidate/scorer readiness. Current prospective coverage remains 35 Topics, 109 missing; CIG-02 unfrozen, CIG-03 blocked."
+next_action: "Complete PR #63 exact-main receipt when its remaining applicable CI finishes. Verify the single pinned public TRAIN root-intake job: exact compressed Git blob, first 240 pairs only, shared first Human segments, no assistant-answer or TEST use. Read its source-only artifact and retain prefix-encoding/authorship/goal uncertainty; retrieval hints are not labels or gold. Stop if the fixed prefix supplies no eligible natural requests rather than repeatedly expanding the same corpus. No external-host acquisition, fixture freeze, score or independent capability TEST. Current prospective coverage remains 35 Topics, 109 missing, zero gold; CIG-02 unfrozen, CIG-03 blocked."

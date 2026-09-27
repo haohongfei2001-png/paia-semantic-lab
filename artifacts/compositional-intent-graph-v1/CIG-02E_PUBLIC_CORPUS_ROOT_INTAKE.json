@@ -1,0 +1,72 @@
+{
+  "format": "CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE_V1",
+  "classification": "PUBLIC_TRAIN_SOURCE_DISCOVERY_NOT_GOLD_OR_CAPABILITY",
+  "base_main": "3584c56b1d387b19fd95955d82c551f5c49268c8",
+  "candidates": [
+    {
+      "repository": "LAION-AI/Open-Assistant",
+      "commit": "f1e6ed9526f5817531f3ab85441a40b3671ddccb",
+      "readme_blob": "f8ed80496f6ab688dd27b724478c983fa72abd9e",
+      "decision": "HOLD_NO_PINNED_RELEASED_TRAIN_CORPUS_IN_REPOSITORY",
+      "reason": "README points to external-hosted released corpus. Repository manual evaluation/prompt files are excluded, and no external host is used."
+    },
+    {
+      "repository": "anthropics/hh-rlhf",
+      "commit": "c72f5cee8eb7b4d2ea5617657f4430d5e333af07",
+      "readme_blob": "3c48441c8e66844b05fefc98418c10012aecdde3",
+      "license_blob": "9b5ecf167745746037bf42e61f9fb7e96d0e318f",
+      "decision": "REGISTER_BOUNDED_TRAIN_ROLE_EXTRACTION_SOURCE_ONLY",
+      "reason": "Published preference data contains paired transcripts; inspect identical first Human segments only. Prefix role evidence and preference-worker provenance are not independent Catalog gold."
+    }
+  ],
+  "source": {
+    "repository": "anthropics/hh-rlhf",
+    "commit": "c72f5cee8eb7b4d2ea5617657f4430d5e333af07",
+    "path": "harmless-base/train.jsonl.gz",
+    "git_blob_sha": "df7c90b1bbd6093bda9c996e8aab9a46fa557dcf",
+    "compressed_bytes": 13197306,
+    "license": "MIT",
+    "attribution": "Copyright (c) 2022 Anthropic; preserve full upstream MIT notice with any substantial copied source text."
+  },
+  "limits": {
+    "first_pairs": 240,
+    "max_compressed_bytes": 20000000,
+    "max_decompressed_bytes": 134217728,
+    "max_root_chars": 4000,
+    "max_selected_per_topic": 3
+  },
+  "topics": [
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "retrieval_hint": "caregiv|elder care|care for (?:my|our) (?:mother|father|parent)"
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "retrieval_hint": "photo.{0,40}(?:organiz|archiv|album|preserv)|(?:organiz|archiv|album|preserv).{0,40}photo"
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "retrieval_hint": "spaced repetition|study (?:method|strateg)|memor(?:iz|y technique)|learn.{0,20}efficient"
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "retrieval_hint": "enroll|graduation|student (?:status|aid)|course registration"
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "retrieval_hint": "project (?:plan|scope)|milestone|project.{0,30}(?:resource|risk)"
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "retrieval_hint": "product requirement|user stor(?:y|ies)|acceptance criteria|feature (?:scope|requirement)"
+    }
+  ],
+  "authorship_class": "TEXTUAL_HUMAN_ROLE_UPSTREAM_PREFERENCE_DATA_NOT_VERIFIED_CATALOG_GOLD",
+  "role_limitations": "Delimiter-encoded Human/Assistant segments can contain quoted role markers; extracted root is an upstream-format observation, not a certified full natural instruction.",
+  "assistant_text_used_for_intent": false,
+  "test_inputs_read": 0,
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
