@@ -9,6 +9,8 @@ on:
       - "scripts/cig02e_task_topic_boundary_integrity.mjs"
       - "scripts/cig02e_neighbor_boundary_integrity.mjs"
       - "scripts/cig02e_source_coverage_reconciliation.mjs"
+      - "scripts/cig02e_public_issue_source_gate.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW.json"
@@ -29,6 +31,8 @@ on:
       - "scripts/cig02e_task_topic_boundary_integrity.mjs"
       - "scripts/cig02e_neighbor_boundary_integrity.mjs"
       - "scripts/cig02e_source_coverage_reconciliation.mjs"
+      - "scripts/cig02e_public_issue_source_gate.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW.json"
@@ -66,3 +70,5 @@ jobs:
         run: node scripts/cig02e_neighbor_boundary_integrity.mjs
       - name: Recompute current source coverage without promoting gold
         run: node scripts/cig02e_source_coverage_reconciliation.mjs
+      - name: Verify bounded public issue source holds and preserved profiles
+        run: node scripts/cig02e_public_issue_source_gate.mjs
