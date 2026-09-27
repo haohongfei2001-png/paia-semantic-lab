@@ -209,7 +209,12 @@ rounds:
     cig02e_hh_source_action: CLOSE_FIXED_PREFIX_SOURCE_ONLY_NO_EXPANSION
     cig02e_public_train_definition_feasibility_plan: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY_PLAN.json
     cig02e_public_train_definition_feasibility_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY.md
-    cig02e_public_train_definition_feasibility_status: REGISTERED_METADATA_ONLY_NOT_ACQUIRED
+    cig02e_public_train_definition_feasibility_status: SELECTIVE_PARSER_IMPLEMENTED_SYNTHETIC_CI_PENDING_NOT_ACQUIRED
+    cig02e_public_train_definition_registration_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_REGISTRATION_MERGED_MAIN_OBSERVATION.json
+    cig02e_public_train_definition_registration_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK_AT_SINGLE_SNAPSHOT
+    cig02e_selective_metadata_parser: scripts/cig02e_selective_task_metadata.mjs
+    cig02e_selective_metadata_parser_tests: tests-js/cig02e_selective_task_metadata.test.mjs
+    cig02e_selective_metadata_parser_report: docs/compositional-intent-graph-v1/CIG-02E_SELECTIVE_TASK_METADATA.md
     cig02e_fixed_prefix_source_goal_finding: LEXICAL_HINT_FALSE_NEGATIVE_SOURCE_ONLY_PROVENANCE_HELD
     cig02e_current_prospective_source_nominations: 41
     cig02e_current_prospective_source_topics: 35
@@ -238,4 +243,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "After the metadata registration PR passes exact-head and merges, implement/review a bounded streaming extractor with synthetic targeted tests in one batch for the fixed first 24 multilingual-track Natural Instructions TRAIN task definitions. Enforce pinned source identity, TRAIN membership, byte limits and structural skip of instances/examples; retain source-excerpt/authorship/completeness holds. Do not acquire TEST tasks or outputs, score a candidate, chase source coverage with changed selections, expand HH or retune its hints. Current ledger remains 41 nominations across 35 Topics, 109 missing, 28 unresolved, zero gold. Product constraints and frozen capability gates remain unchanged; CIG-02 unfrozen, CIG-03 blocked and owner-gated."
+next_action: "Resolve PR #67 exact-main receipt and verify selective parser exact-head CI on restoration. After parser engineering passes, implement/review the pinned acquisition harness with synthetic integration tests in one coherent batch: Git blob identity, fixed multilingual TRAIN membership, fatal UTF-8, byte limits, cancellation and no retries. Acquire the 24 fixed definitions once only on a stable passing Actions candidate. Retain excerpt/authorship/completeness holds; do not read TEST tasks, decode/retain Instances or examples, score, change selection, expand HH or tune its hints. Current ledger remains 41 nominations across 35 Topics, 109 missing, 28 unresolved, zero gold. Product and frozen protocol unchanged; CIG-02 unfrozen, CIG-03 blocked and owner-gated."

@@ -1,0 +1,32 @@
+name: CIG-02E selective metadata parser
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/cig02e_selective_task_metadata.mjs"
+      - "tests-js/cig02e_selective_task_metadata.test.mjs"
+      - ".github/workflows/cig02e-selective-metadata.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/cig02e_selective_task_metadata.mjs"
+      - "tests-js/cig02e_selective_task_metadata.test.mjs"
+      - ".github/workflows/cig02e-selective-metadata.yml"
+permissions:
+  contents: read
+concurrency:
+  group: cig02e-selective-metadata-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  selective-metadata-synthetic-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test selective metadata parser without any source acquisition
+        run: node --test tests-js/cig02e_selective_task_metadata.test.mjs
