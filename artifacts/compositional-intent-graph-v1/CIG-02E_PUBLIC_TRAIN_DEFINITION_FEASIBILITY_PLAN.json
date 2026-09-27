@@ -1,0 +1,154 @@
+{
+  "format": "CIG02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY_PLAN_V1",
+  "classification": "METADATA_REGISTRATION_NOT_GOLD_OR_CAPABILITY",
+  "base_main": "70b61a00de48a7ffbb17c460c7793a201f7127b4",
+  "previous_source_closure": {
+    "repository": "anthropics/hh-rlhf",
+    "commit": "c72f5cee8eb7b4d2ea5617657f4430d5e333af07",
+    "readme_path": "README.md",
+    "readme_blob": "3c48441c8e66844b05fefc98418c10012aecdde3",
+    "decision": "CLOSE_FIXED_PREFIX_SOURCE_ONLY_NO_EXPANSION",
+    "reason": "README describes overall preference collection, not per-root author, delimiter completeness or independent Catalog adjudication; keep row 192 and all uncertainty holds."
+  },
+  "metadata_candidates": [
+    {
+      "repository": "google-research-datasets/Taskmaster",
+      "commit": "d92cb6af3005f1dc09c39e75e7daf4a04905e00b",
+      "readme_paths": [
+        "README.md",
+        "TM-1-2019/README.md",
+        "TM-4-2024/README.md"
+      ],
+      "decision": "HOLD_NO_CORPUS_ACQUISITION",
+      "human_provenance": "TM1 distinguishes spoken crowdworker USER turns and self-dialogues; TM4 uses one worker for both speakers.",
+      "license": "CC-BY-4.0 according to dataset READMEs",
+      "reason": "TM1 one-person corpus mixes official train/dev/test IDs in a 65,748,638-byte JSON. No subset acquisition path established. Domains are six transaction scenarios; TM4 is coffee-only. Human roles alone do not establish normal full-catalog coverage or independent Catalog labels.",
+      "test_content_read": false
+    },
+    {
+      "repository": "allenai/natural-instructions",
+      "commit": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+      "readme_paths": [
+        "README.md",
+        "splits/README.md"
+      ],
+      "decision": "REGISTER_BOUNDED_TRAIN_DEFINITION_ONLY_FEASIBILITY",
+      "human_provenance": "Community-contributed task definitions and Contributor/Source metadata; individual human authorship still needs verification, not assumed from a role marker.",
+      "license": "Apache-2.0 for task definitions/metadata; Instances retain individual source licenses and are excluded.",
+      "reason": "Official xlingual TRAIN task list permits multilingual source selection without opening TEST tasks. Task instructions describe NLP goals; document subject matter must not be treated as the task goal. No personal-action or English-only restriction is introduced.",
+      "test_content_read": false
+    }
+  ],
+  "source": {
+    "repository": "allenai/natural-instructions",
+    "commit": "55a365637381ce7f3748fa2eac7aef1a113bbb82",
+    "train_list_path": "splits/xlingual/train_tasks.txt",
+    "train_list_blob": "42dfa619f1f4c3be5f5da3546260dc7afdf3acf9",
+    "train_task_count": 1270,
+    "selection": "FIRST_24_NONEMPTY_LINES_IN_PUBLISHED_TRAIN_ORDER",
+    "selected_task_names": [
+      "task1012_pib_translation_punjabi_hindi",
+      "task1605_ethos_text_classification",
+      "task482_cls_french_books_classification",
+      "task861_asdiv_addsub_question_answering",
+      "task126_scan_structured_text_generation_command_action_all",
+      "task1645_medical_question_pair_dataset_text_classification",
+      "task1080_pib_translation_gujarati_english",
+      "task606_sum_of_all_numbers_in_list_between_positions_i_and_j",
+      "task365_synthetic_remove_vowels",
+      "task820_protoqa_answer_generation",
+      "task1139_xcsr_ru_commonsense_mc_classification",
+      "task913_bianet_translation",
+      "task469_mrqa_answer_generation",
+      "task1257_ted_translation_pl_ja",
+      "task181_outcome_extraction",
+      "task764_emea_bg_el_classification",
+      "task1053_pib_translation_hindi_urdu",
+      "task817_pawsx_japanese_german_translation",
+      "task027_drop_answer_type_generation",
+      "task725_mmmlu_answer_generation_nutrition",
+      "task490_mwsc_options_generation",
+      "task1427_country_region_in_world",
+      "task1381_quarel_incorrect_option_generation",
+      "task1453_person_entity_extraction_btc_corpus"
+    ],
+    "selected_paths": [
+      "tasks/task1012_pib_translation_punjabi_hindi.json",
+      "tasks/task1605_ethos_text_classification.json",
+      "tasks/task482_cls_french_books_classification.json",
+      "tasks/task861_asdiv_addsub_question_answering.json",
+      "tasks/task126_scan_structured_text_generation_command_action_all.json",
+      "tasks/task1645_medical_question_pair_dataset_text_classification.json",
+      "tasks/task1080_pib_translation_gujarati_english.json",
+      "tasks/task606_sum_of_all_numbers_in_list_between_positions_i_and_j.json",
+      "tasks/task365_synthetic_remove_vowels.json",
+      "tasks/task820_protoqa_answer_generation.json",
+      "tasks/task1139_xcsr_ru_commonsense_mc_classification.json",
+      "tasks/task913_bianet_translation.json",
+      "tasks/task469_mrqa_answer_generation.json",
+      "tasks/task1257_ted_translation_pl_ja.json",
+      "tasks/task181_outcome_extraction.json",
+      "tasks/task764_emea_bg_el_classification.json",
+      "tasks/task1053_pib_translation_hindi_urdu.json",
+      "tasks/task817_pawsx_japanese_german_translation.json",
+      "tasks/task027_drop_answer_type_generation.json",
+      "tasks/task725_mmmlu_answer_generation_nutrition.json",
+      "tasks/task490_mwsc_options_generation.json",
+      "tasks/task1427_country_region_in_world.json",
+      "tasks/task1381_quarel_incorrect_option_generation.json",
+      "tasks/task1453_person_entity_extraction_btc_corpus.json"
+    ]
+  },
+  "limits": {
+    "max_tasks": 24,
+    "max_total_download_bytes": 134217728,
+    "max_task_download_bytes": 50331648,
+    "max_definition_chars_per_task": 20000,
+    "requests_per_task": 1,
+    "retries": 0
+  },
+  "extraction_contract": {
+    "allowed_fields": [
+      "Contributors",
+      "Source",
+      "URL",
+      "Categories",
+      "Domains",
+      "Definition",
+      "Instruction_language",
+      "Input_language",
+      "Output_language",
+      "Instance License"
+    ],
+    "excluded_fields": [
+      "Positive Examples",
+      "Negative Examples",
+      "Instances"
+    ],
+    "assistant_outputs_used": false,
+    "whole_task_parse_allowed": false,
+    "method": "Stream top-level properties. Materialize allowlisted metadata/Definition only; skip excluded values structurally without decoding or retaining their strings. Enforce byte, nesting and string limits; fail closed on malformed structure.",
+    "definition_only_is_full_instruction": false
+  },
+  "engineering_requirements": [
+    "Use synthetic parser fixtures only to verify escaped strings, nested excluded values, malformed JSON, duplicate properties, truncation and byte/character limits.",
+    "Verify Git blob identity and fixed train membership before extraction. Do not fetch default or xlingual TEST lists/tasks or sample outputs.",
+    "Do not score, run candidate predictions, search definitions by Topic hints, change the 24-task selection, or retry superseded source heads.",
+    "Retain each definition as source excerpt with missing input/completeness and author/license holds; do not convert a task source name, document domain or format into gold.",
+    "After one fixed source result, do bounded feasibility/root-cause analysis before any new acquisition; no trial-and-error CI to chase Topic coverage."
+  ],
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "cig02_frozen": false,
+  "cig03_started": false,
+  "current_coverage": {
+    "prospective_source_nominations": 41,
+    "prospective_source_topics": 35,
+    "topics_without_prospective_sources": 109,
+    "unresolved_source_nominations": 28
+  },
+  "next_action": "After exact-head CI and this registration merge, implement and review the bounded streaming metadata extractor with synthetic targeted tests in one coherent engineering batch. Acquire the fixed TRAIN definitions once on a stable Actions candidate; inspect only source feasibility. CIG-02 capability floor and CIG-03 owner gate are unchanged."
+}
