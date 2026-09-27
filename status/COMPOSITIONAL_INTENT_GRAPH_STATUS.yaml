@@ -209,7 +209,7 @@ rounds:
     cig02e_hh_source_action: CLOSE_FIXED_PREFIX_SOURCE_ONLY_NO_EXPANSION
     cig02e_public_train_definition_feasibility_plan: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY_PLAN.json
     cig02e_public_train_definition_feasibility_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY.md
-    cig02e_public_train_definition_feasibility_status: SOURCE_ENTRYPOINT_IMPLEMENTED_SYNTHETIC_CI_PENDING_NOT_ACQUIRED
+    cig02e_public_train_definition_feasibility_status: FIXED_TRAIN_SOURCE_INTAKE_FAIL_ROOT_CAUSE_UNDETERMINED_NO_RETRY
     cig02e_public_train_definition_registration_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_REGISTRATION_MERGED_MAIN_OBSERVATION.json
     cig02e_public_train_definition_registration_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_public_train_definition_registration_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_REGISTRATION_MERGED_MAIN_RECEIPT.json
@@ -217,7 +217,12 @@ rounds:
     cig02e_selective_parser_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_selective_parser_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SELECTIVE_PARSER_MERGED_MAIN_RECEIPT.json
     cig02e_verified_train_intake_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_VERIFIED_TRAIN_INTAKE_MERGED_MAIN_OBSERVATION.json
-    cig02e_verified_train_intake_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK_AT_SINGLE_SNAPSHOT
+    cig02e_verified_train_intake_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
+    cig02e_verified_train_intake_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_VERIFIED_TRAIN_INTAKE_MERGED_MAIN_RECEIPT.json
+    cig02e_ni_definition_source_failure: artifacts/compositional-intent-graph-v1/CIG-02E_NI_DEFINITION_SOURCE_FAILURE.json
+    cig02e_ni_definition_source_failure_report: docs/compositional-intent-graph-v1/CIG-02E_NI_DEFINITION_SOURCE_FAILURE.md
+    cig02e_ni_definition_source_run: 36346751629
+    cig02e_ni_definition_source_rerun_allowed: false
     cig02e_ni_definition_source_job: scripts/cig02e_ni_definition_source_job.mjs
     cig02e_ni_definition_source_job_tests: tests-js/cig02e_ni_definition_source_job.test.mjs
     cig02e_ni_definition_source_workflow: .github/workflows/cig02e-ni-definition-intake.yml
@@ -256,4 +261,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Resolve PR #69 exact-main receipt on restoration. Verify all six applicable exact-head checks on the sole writer cig02e-ni-fixed-definition-acquisition. Only after PASS, mark its draft PR ready exactly once to trigger the registered source-only Actions job. Inspect source result or genuine failure and license artifact before merge; do not rerun acquisition. Preserve provenance/complete-input/independent-gold holds and 41 nominations / 35 Topics / 109 missing / 28 unresolved / zero gold. No independent capability TEST, source reselection, HH expansion, consumed TEST tuning or product/protocol changes; CIG-02 unfrozen and CIG-03 blocked/owner-gated."
+next_action: "Verify coherent PR #70 failure-evidence and expanded synthetic regression exact-head CI. Preserve original source run 36346751629 FAIL, disable its acquisition trigger, and merge only the passing engineering closure candidate; take one exact-main snapshot. Do not rerun/re-fetch selected TRAIN task payloads. Root cause is undetermined because failed path/partial consumption were not recorded; continue offline synthetic/schema diagnostic work without guessing parser fixes or silently registering replacement acquisition. Preserve 41 nominations / 35 Topics / 109 missing / 28 unresolved / zero gold; CIG-02 unfrozen, CIG-03 blocked/owner-gated and product/protocol unchanged."

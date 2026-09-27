@@ -11,7 +11,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   fixed-public-train-definitions:
-    if: github.event.pull_request.head.ref == 'cig02e-ni-fixed-definition-acquisition'
+    # Run 36346751629 failed; preserve the consumed attempt. No automatic repeat.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
