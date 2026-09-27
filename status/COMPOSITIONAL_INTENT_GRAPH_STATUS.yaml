@@ -201,7 +201,15 @@ rounds:
     cig02e_fixed_prefix_boundary_review: artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_BOUNDARY_REVIEW.json
     cig02e_fixed_prefix_boundary_report: docs/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_BOUNDARY_REVIEW.md
     cig02e_fixed_prefix_root_audit_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_FIXED_PREFIX_ROOT_AUDIT_MERGED_MAIN_OBSERVATION.json
-    cig02e_fixed_prefix_root_audit_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK_AT_SINGLE_SNAPSHOT
+    cig02e_fixed_prefix_root_audit_exact_main_verdict: FIVE_APPLICABLE_CHECKS_PASS
+    cig02e_fixed_prefix_root_audit_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_FIXED_PREFIX_ROOT_AUDIT_MERGED_MAIN_RECEIPT.json
+    cig02e_fixed_prefix_boundary_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_BOUNDARY_MERGED_MAIN_OBSERVATION.json
+    cig02e_fixed_prefix_boundary_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
+    cig02e_fixed_prefix_boundary_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_BOUNDARY_MERGED_MAIN_RECEIPT.json
+    cig02e_hh_source_action: CLOSE_FIXED_PREFIX_SOURCE_ONLY_NO_EXPANSION
+    cig02e_public_train_definition_feasibility_plan: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY_PLAN.json
+    cig02e_public_train_definition_feasibility_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_TRAIN_DEFINITION_FEASIBILITY.md
+    cig02e_public_train_definition_feasibility_status: REGISTERED_METADATA_ONLY_NOT_ACQUIRED
     cig02e_fixed_prefix_source_goal_finding: LEXICAL_HINT_FALSE_NEGATIVE_SOURCE_ONLY_PROVENANCE_HELD
     cig02e_current_prospective_source_nominations: 41
     cig02e_current_prospective_source_topics: 35
@@ -230,4 +238,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Resolve PR #65 exact-main receipt from remote on restoration. Fixed HH prefix review is complete: 240 roots, 236 identities, zero original hint hits, one plausible care-goal observation held for provenance, two scope/neighbor uncertainties and two underspecified roots. No gold or coverage promotion. Close this prefix without expansion or hint tuning. Check pinned metadata for row-level author/completeness and independent adjudication eligibility; if unavailable, assess a distinct GitHub-hosted human-authored public TRAIN/DEV corpus before acquisition. Current reconciled counts remain 41 nominations across 35 Topics, 109 missing, 28 unresolved; zero gold; CIG-02 unfrozen and CIG-03 blocked. Do not reopen failed routes or consume capability TEST."
+next_action: "After the metadata registration PR passes exact-head and merges, implement/review a bounded streaming extractor with synthetic targeted tests in one batch for the fixed first 24 multilingual-track Natural Instructions TRAIN task definitions. Enforce pinned source identity, TRAIN membership, byte limits and structural skip of instances/examples; retain source-excerpt/authorship/completeness holds. Do not acquire TEST tasks or outputs, score a candidate, chase source coverage with changed selections, expand HH or retune its hints. Current ledger remains 41 nominations across 35 Topics, 109 missing, 28 unresolved, zero gold. Product constraints and frozen capability gates remain unchanged; CIG-02 unfrozen, CIG-03 blocked and owner-gated."
