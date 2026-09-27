@@ -68,3 +68,19 @@ test('large excluded strings are scanned without being retained and input is clo
   await assert.rejects(extractTaskMetadata(input(),{maxInputChars:40}),/input limit/);
   assert.equal(closed,true);
 });
+
+test('valid scalar and pretty nested structure survives varied stream boundaries',async()=>{
+  const values=[null,true,false,0,-1,1.2,1e10,'',{},[],{k:'x'},{k:null},[[],{},null,true,false,0,''],'long'.repeat(1000)];
+  for(const item of values) for(const width of [1,2,7,127,65536]){
+    const source=JSON.stringify({Definition:['x'],Instances:[item]});
+    const result=await parse(source,undefined,width);
+    assert.deepEqual(result.metadata.Definition,['x']);
+    assert.equal(result.stats.excludedValueStringsDecoded,0);
+  }
+  const object={Definition:['x'],Instances:[{input:'quote " slash '+String.fromCharCode(92)+' newline\n unicode ü',output:[null,true,0,[],{}]}]};
+  for(const pad of [undefined,2,4,'\t']) for(const width of [1,2,3,7,127,1024,65536]){
+    const result=await parse(JSON.stringify(object,null,pad),undefined,width);
+    assert.deepEqual(result.metadata.Definition,['x']);
+    assert.equal(result.stats.excludedValueStringsDecoded,0);
+  }
+});
