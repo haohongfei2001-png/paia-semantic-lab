@@ -166,6 +166,10 @@ rounds:
     cig02e_repeated_input_boundary_review: artifacts/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW.json
     cig02e_repeated_input_boundary_report: docs/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_REVIEW.md
     cig02e_repeated_input_boundary_classification: BOUNDED_FORMAL_PROFILE_OVERLAP_ANALYSIS_NOT_GOLD_OR_CAPABILITY
+    cig02e_repeated_input_boundary_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_REPEATED_INPUT_BOUNDARY_MERGED_MAIN_RECEIPT.json
+    cig02e_task_topic_boundary_review: artifacts/compositional-intent-graph-v1/CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW.json
+    cig02e_task_topic_boundary_report: docs/compositional-intent-graph-v1/CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW.md
+    cig02e_task_topic_boundary_classification: SOURCE_TASK_TOPIC_FOLLOWUP_NOT_GOLD_OR_CAPABILITY
     cig02e_intake_recorded_topic_count: 144
     cig02e_intake_topics_with_prospective_candidates: 33
     cig02e_intake_accepted_gold_rows: 0
@@ -189,4 +193,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Verify saved fixed-input identity and repeated-group boundary evidence; continue coherent task/Topic source-boundary review of remaining uncertain inputs under unchanged bilingual profiles. Preserve unresolved formal overlaps, original annotations and independent gold requirements; do not invent tie-breaking precedence. Continue bounded sourcing for 111 missing natural Topics and DEFER/context controls. No fixture freeze or fresh score before source/gold/candidate/scorer readiness; CIG-02 unfrozen, CIG-03 blocked."
+next_action: "Verify the full 12-record task/Topic follow-up batch, then review the remaining 25 fixed neighboring-Topic uncertainties coherently under unchanged bilingual profiles. Preserve original annotations, unresolved scopes and independent gold requirements. Reconcile prospective coverage only after all follow-ups; continue bounded sourcing for missing natural Topics and DEFER/context controls. No fixture freeze or fresh score before source/gold/candidate/scorer readiness; CIG-02 unfrozen, CIG-03 blocked."

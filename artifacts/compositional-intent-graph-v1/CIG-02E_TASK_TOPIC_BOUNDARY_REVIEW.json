@@ -1,0 +1,545 @@
+{
+  "format": "CIG-02E_TASK_TOPIC_BOUNDARY_REVIEW_V1",
+  "classification": "SOURCE_TASK_TOPIC_FOLLOWUP_NOT_GOLD_OR_CAPABILITY",
+  "base_main": "417749372f4b13ae3bb2f917ac64055beb572776",
+  "ledger": "artifacts/compositional-intent-graph-v1/CIG-02E_ADJUDICATION_LEDGER.json",
+  "identity_evidence": "artifacts/compositional-intent-graph-v1/CIG-02E_LEDGER_INPUT_IDENTITY_OBSERVATION.json",
+  "selection": "All 12 historical UNCERTAIN_TASK_VS_TOPIC ledger nominations; fixed source IDs, no replacements or new retrieval.",
+  "reviews": [
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "source_row": "dolly:4682",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "030c480127ae6852288aec2e74ea126a19d25a8cdc7882d28f5e4ef8dd58985f",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "9ad40107445cc3d1bed57d0c44829aa42aebedfb6bc8300922c72c7c148fd445",
+      "official_input_rows": [
+        4682
+      ],
+      "followup_decision": "UNCERTAIN_TOPIC_SCOPE",
+      "reason": "Exercise-equipment identification directly concerns exercise concepts, so classification form alone is not exclusion. The profile emphasizes training, technique and performance; equipment knowledge eligibility still needs independent boundary review.",
+      "competing_profiles_considered": [],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "source_row": "dolly:9833",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "0d8e620b15dac03864aeefdd6f2ecaf44bf1c84bba89b914edcb20219353fd71",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "b29e892cdbac6017de6538e232d6e40e17ea2b1c3f61f27da92dea0902ddc749",
+      "official_input_rows": [
+        9836
+      ],
+      "followup_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "The requested distinction is diagnostic categories spanning mental disorders and cancers. Mental Wellbeing includes anxiety/psychological states, while Medical Knowledge covers diagnostic knowledge. Do not infer a support goal from disorder names.",
+      "competing_profiles_considered": [
+        "sys.science_technical.medicine_knowledge"
+      ],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "source_row": "dolly:12031",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "d443add8d8e2cd427d20873ed1c045533b1aca5c8bb6c4125289b9db0b396af9",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "2a0aafd3f294bee8e2a68bf7d9b7126d9f46956adeccd0a9d0c667baff60daac",
+      "official_input_rows": [
+        12034
+      ],
+      "followup_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "The requested useful/not-useful distinction is explicitly for cleaning a house. Cleaning is the stated goal context and tool suitability directly serves it; classification format does not erase the cleaning goal.",
+      "competing_profiles_considered": [],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "source_row": "dolly:4269",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "02a69de6ada322af48245ff64efe833e278277d825102cacaf2f3e774ebaab83",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "6fa5a20e89e760f458494f4dcd4cb49a9353bebe9772ce8bf4299f0a0643e20f",
+      "official_input_rows": [
+        4269
+      ],
+      "followup_decision": "UNCERTAIN_TOPIC_SCOPE",
+      "reason": "Manufacturer nationality is directly queried, and Vehicle & Personal Transport broadly includes cars and understanding. Its profile does not impose an ownership transaction requirement. Vehicle-topic versus general entity/geography fact eligibility remains unresolved.",
+      "competing_profiles_considered": [],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "source_row": "dolly:1301",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "031191a52a0024f7d6824a356e627c65f8f02df7fe723f2a89a4983f11ef4754",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "3fbf933d8e4ddd1c299c7719049e8b351ebc4eabc10a408721585bdfec91a58e",
+      "official_input_rows": [
+        1301
+      ],
+      "followup_decision": "NO_EXPLICIT_NOMINATED_GOAL_SOURCE_ONLY",
+      "reason": "Cuisine origins are queried without travel, restaurant choice or dining-arrangement intent. Travel Dining's travel scope is not established by dish names.",
+      "competing_profiles_considered": [],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "source_row": "dolly:3330",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "9bb93e07c3fe3e731d399c7de24ab1c64eeba3ac71ae7f8529b5731ec1b99cdb",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "4e2f9ad19ed896f43352e26616175d711fa7ebd9083c0944866c26e5733c31d8",
+      "official_input_rows": [
+        3330
+      ],
+      "followup_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Explicit tweet authoring fits Public Posts, while fictional dog perspective supplies character-based creative writing. Format and fictional content both concern the requested output; no frozen priority resolves the overlap.",
+      "competing_profiles_considered": [
+        "sys.creative_design.creative_writing"
+      ],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "source_row": "dolly:5021",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "043f428c799168162c66fefbb5bfe1964bcbef42902f2ebfb2c97e3ad6a9ebde",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "12c7f8e6449851a838d8d7e0ba88f8da5ec4a3c109fcbc8796ddfa11670effd1",
+      "official_input_rows": [
+        5021,
+        12641
+      ],
+      "followup_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "The requested output is an authored fictional-character dialogue. Creative Writing includes scripts/characters; Speaking & Conversation also includes dialogue. Live communication is absent, but its broader dialogue scope cannot silently be narrowed.",
+      "competing_profiles_considered": [
+        "sys.creative_design.creative_writing"
+      ],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "source_row": "dolly:13682",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "6a910ae5157dbb09b301c374f697b966248c0b7aa08d15456880c0e98ba664b4",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "d47115f2ff1dddde967ca76009e4177ef3fbddaba57167fe636d5f8b364227f1",
+      "official_input_rows": [
+        13685
+      ],
+      "followup_decision": "NO_EXPLICIT_NOMINATED_GOAL_SOURCE_ONLY",
+      "reason": "The actual goal is travel-packing necessity classification across multiple items. Passport is one item/background mention, without an identity-document procedure or document-specific goal. Trip Planning explicitly includes travel preparation.",
+      "competing_profiles_considered": [
+        "sys.travel_places.trip_planning"
+      ],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "source_row": "dolly:3006",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "00607ebd1bfa6a4ec622a1b78d822fdeec5234ce318176bc3d85d7a1595a9400",
+      "context_sha256": "7be1be195f64ec6e06322eb20e7a22dda214134e7947090337ebab525f2154dd",
+      "instruction_context_sha256": "f4efb74d76ca0bde39edf0c2332ce23a82586ce63dea27929b4f11b7f951e35d",
+      "official_input_rows": [
+        3006
+      ],
+      "followup_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "The current instruction asks which film won awards; the supplied context describes the screen work. Understanding screen works is eligible. Multiple-choice format alone is not a reason to exclude Film & TV; unrelated plot details remain background.",
+      "competing_profiles_considered": [],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "source_row": "dolly:2173",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "04ed2f644da7990fc6cf0f3992c549b3ff62ee4094804351e3dcb3db9ed2c65c",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "23147d4760e1aed2ccb25aa39e4af84159cb58f992907282e03139b33648b88b",
+      "official_input_rows": [
+        2173
+      ],
+      "followup_decision": "PLAUSIBLE_SOURCE_CANDIDATE",
+      "reason": "The requested game-to-platform/publisher categorization concerns video-game identities and platforms, explicitly within the Games core. Classification format does not remove the game-understanding goal.",
+      "competing_profiles_considered": [],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "source_row": "dolly:7723",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "117c7928f81fbe4979a56e525cb1ad7dde8599c4f8b5772cdc3f7b45ce0bd62a",
+      "context_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "instruction_context_sha256": "cb7cf8ea3ca2eb347d2303ed64f2446fda1c9331d7634f67567486b5a254e95e",
+      "official_input_rows": [
+        7724
+      ],
+      "followup_decision": "NO_EXPLICIT_NOMINATED_GOAL_SOURCE_ONLY",
+      "reason": "The current action is writing a fictional phone dialogue; arranging a doctor's appointment occurs inside that authored scene. No booking action or current user's appointment request exists. This does not establish a unique alternate gold label.",
+      "competing_profiles_considered": [
+        "sys.creative_design.creative_writing",
+        "sys.communication_writing.speaking_conversation"
+      ],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "source_row": "dolly:4045",
+      "origin_kind": "BASE_NOMINATION",
+      "historical_decision": "UNCERTAIN_TASK_VS_TOPIC",
+      "instruction_sha256": "aad49d50e7c79d6d62b9d4bc3e0c57e8ddfa69a68616581bd1607ec82654ddac",
+      "context_sha256": "034e1ef704ca94b2e5d6716bb39cf9974b25a776a681b1e5cc3b8ffc16f7936a",
+      "instruction_context_sha256": "6433f3fc88cae91a7bc27c33fe41573efa3ac456ef0f2c1d345fc3c096545c95",
+      "official_input_rows": [
+        4045
+      ],
+      "followup_decision": "UNCERTAIN_NEIGHBOR_BOUNDARY",
+      "reason": "Extraction concerns procrastination traits, permitted as understanding rather than execution. Personal Productivity and Chinese Time Management both include procrastination; general extraction form alone cannot reject either or supply a unique boundary.",
+      "competing_profiles_considered": [
+        "sys.personal_direction.personal_productivity"
+      ],
+      "full_instruction_and_context_read": true,
+      "generated_response_used": false,
+      "accepted_gold": false
+    }
+  ],
+  "profile_snapshots": [
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "topic_id": "sys.health_wellbeing.fitness",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "运动与体能：运动训练、体能、力量、有氧、健身计划、动作和运动表现。",
+        "Fitness: exercise, strength, cardio, training plans, technique and physical performance."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“运动与体能”，常见线索包括健身、运动、力量训练。",
+        "The user's primary goal concerns fitness, with signals such as fitness, exercise, strength training."
+      ],
+      "exclusion_cues": [
+        "若“运动与体能”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Fitness\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "心理与情绪：情绪、压力、焦虑、抑郁、心理状态、自我调节和心理支持。",
+        "Mental Wellbeing: mood, stress, anxiety, depression, emotional regulation and psychological support."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“心理与情绪”，常见线索包括心理健康、情绪、焦虑。",
+        "The user's primary goal concerns mental wellbeing, with signals such as mental wellbeing, mood, anxiety."
+      ],
+      "exclusion_cues": [
+        "若“心理与情绪”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Mental Wellbeing\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "个人效率：个人任务执行、专注、效率、工作流、拖延和产出节奏。",
+        "Personal Productivity: personal task execution, focus, efficiency, workflow, procrastination and output cadence."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“个人效率”，常见线索包括专注、拖延、任务执行。",
+        "The user's primary goal concerns personal productivity, with signals such as productivity, focus, procrastination."
+      ],
+      "exclusion_cues": [
+        "若“个人效率”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Personal Productivity\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "家务与清洁：家务、清洁、洗衣、整理、打扫和日常维护。",
+        "Chores & Cleaning: household chores, cleaning, laundry, tidying and routine maintenance."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“家务与清洁”，常见线索包括家务、清洁、洗衣。",
+        "The user's primary goal concerns chores & cleaning, with signals such as chores, cleaning, laundry."
+      ],
+      "exclusion_cues": [
+        "若“家务与清洁”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Chores & Cleaning\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "车辆与个人交通工具：汽车、自行车、电动车、车辆维护、驾车和个人交通工具。",
+        "Vehicle & Personal Transport: cars, bikes, personal vehicles, maintenance, driving and individual transport."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“车辆与个人交通工具”，常见线索包括汽车、车辆、自行车。",
+        "The user's primary goal concerns vehicle & personal transport, with signals such as vehicle, car, bike."
+      ],
+      "exclusion_cues": [
+        "若“车辆与个人交通工具”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Vehicle & Personal Transport\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.communication_writing.public_posts",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "社交媒体与公开发布：社交媒体公开内容、帖子、动态、公开文案、标题和平台发布。",
+        "Public Posts: public social posts, platform content, captions, posts and published copy."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“社交媒体与公开发布”，常见线索包括社交媒体、帖子、动态。",
+        "The user's primary goal concerns public posts, with signals such as social post, public post, caption."
+      ],
+      "exclusion_cues": [
+        "若“社交媒体与公开发布”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Public Posts\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "口头表达与对话：口头表达、对话、演讲口语、社交措辞和现场交流。",
+        "Speaking & Conversation: spoken communication, conversation, oral expression and live interpersonal language."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“口头表达与对话”，常见线索包括口语、对话、怎么说。",
+        "The user's primary goal concerns speaking & conversation, with signals such as speaking, conversation, oral communication."
+      ],
+      "exclusion_cues": [
+        "若“口头表达与对话”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Speaking & Conversation\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.media_culture.film_tv",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "电影与电视剧：电影、电视剧、综艺、影视作品、观看和剧情讨论。",
+        "Film & TV: movies, television, shows, viewing and discussion of screen works."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“电影与电视剧”，常见线索包括电影、电视剧、影视。",
+        "The user's primary goal concerns film & tv, with signals such as film, movie, TV."
+      ],
+      "exclusion_cues": [
+        "若“电影与电视剧”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Film & TV\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.media_culture.games",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "游戏：电子游戏、桌游、玩法、游戏攻略、游戏平台和游戏体验。",
+        "Games: video games, board games, gameplay, guides, platforms and gaming experience."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“游戏”，常见线索包括电子游戏、桌游、攻略。",
+        "The user's primary goal concerns games, with signals such as game, gaming, video game."
+      ],
+      "exclusion_cues": [
+        "若“游戏”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Games\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "旅行餐饮：旅行中的餐厅、美食、用餐选择、本地菜和餐饮安排。",
+        "Travel Dining: restaurants, food, local cuisine and dining choices while traveling."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“旅行餐饮”，常见线索包括餐厅、美食、当地菜。",
+        "The user's primary goal concerns travel dining, with signals such as travel dining, restaurant, local food."
+      ],
+      "exclusion_cues": [
+        "若“旅行餐饮”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Travel Dining\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "topic_id": "sys.travel_places.trip_planning",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "旅行规划：行程设计、旅行计划、目的地组合、天数安排、预算和旅行准备。",
+        "Trip Planning: itinerary design, destination planning, trip duration, budget and travel preparation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“旅行规划”，常见线索包括旅行计划、行程、目的地。",
+        "The user's primary goal concerns trip planning, with signals such as trip planning, itinerary, destination."
+      ],
+      "exclusion_cues": [
+        "若“旅行规划”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Trip Planning\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "topic_id": "sys.creative_design.creative_writing",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "创意写作：小说、故事、诗歌、剧本、人物、情节和文学性创作。",
+        "Creative Writing: fiction, stories, poetry, scripts, characters, plots and literary creation."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“创意写作”，常见线索包括小说、故事、诗歌。",
+        "The user's primary goal concerns creative writing, with signals such as creative writing, fiction, story."
+      ],
+      "exclusion_cues": [
+        "若“创意写作”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Creative Writing\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "topic_id": "sys.legal_civic.identity_documents",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "身份与证件：身份证、护照、户籍、证件办理、证件更新和身份材料。",
+        "Identity Documents: identity cards, passports, household registration and identity-document procedures."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“身份与证件”，常见线索包括身份证、护照、户籍。",
+        "The user's primary goal concerns identity documents, with signals such as identity document, passport, ID card."
+      ],
+      "exclusion_cues": [
+        "若“身份与证件”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Identity Documents\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "医学知识：医学原理、疾病机制、诊断知识、药理、解剖和临床医学知识。",
+        "Medical Knowledge: medical science, disease mechanisms, diagnostic knowledge, pharmacology and anatomy."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“医学知识”，常见线索包括病理、药理、解剖。",
+        "The user's primary goal concerns medical knowledge, with signals such as medical knowledge, pathology, pharmacology."
+      ],
+      "exclusion_cues": [
+        "若“医学知识”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Medical Knowledge\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "topic_id": "sys.time_events.appointments_bookings",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "预约与预订：预约医生、服务、餐厅、场馆等具体席位或时段的预订行为。",
+        "Appointments & Bookings: booking specific appointments, services, restaurants, venues or time slots."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“预约与预订”，常见线索包括预约、预订、订位。",
+        "The user's primary goal concerns appointments & bookings, with signals such as appointment, booking, reservation."
+      ],
+      "exclusion_cues": [
+        "若“预约与预订”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Appointments & Bookings\" is mentioned when the actual intent belongs to another topic."
+      ]
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "topic_id": "sys.time_events.time_management",
+      "profile_version": "0.1.0",
+      "formal_catalog_version": "0.2.0",
+      "semantic_core": [
+        "时间管理：时间分配、优先级、专注时段、时间预算、拖延和时间使用效率。",
+        "Time Management: time allocation, priorities, focus blocks, time budgeting and use of time."
+      ],
+      "positive_intents": [
+        "主要目标是理解、比较、规划、执行或持续追踪“时间管理”，常见线索包括时间分配、优先级、时间预算。",
+        "The user's primary goal concerns time management, with signals such as time management, time allocation, priority."
+      ],
+      "exclusion_cues": [
+        "若“时间管理”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+        "Do not assign solely because \"Time Management\" is mentioned when the actual intent belongs to another topic."
+      ]
+    }
+  ],
+  "decision_counts": {
+    "UNCERTAIN_TOPIC_SCOPE": 2,
+    "UNCERTAIN_NEIGHBOR_BOUNDARY": 4,
+    "PLAUSIBLE_SOURCE_CANDIDATE": 3,
+    "NO_EXPLICIT_NOMINATED_GOAL_SOURCE_ONLY": 3
+  },
+  "annotation_independence": "Developer source follow-up; not independent gold or runtime predictions. Historical annotations and bilingual formal profiles unchanged.",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "external_urls_followed": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
