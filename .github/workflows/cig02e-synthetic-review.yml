@@ -1,0 +1,42 @@
+name: CIG-02E synthetic review identities
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_SYNTHETIC_FULL_INPUT_REVIEW.json"
+      - "scripts/cig02e_synthetic_review_identity.mjs"
+      - ".github/workflows/cig02e-synthetic-review.yml"
+  push:
+    branches: [main]
+    paths:
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_SYNTHETIC_FULL_INPUT_REVIEW.json"
+      - "scripts/cig02e_synthetic_review_identity.mjs"
+      - ".github/workflows/cig02e-synthetic-review.yml"
+permissions:
+  contents: read
+concurrency:
+  group: cig02e-synthetic-review-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  synthetic-review-identities:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify immutable GitHub source bytes once
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/tatsu-lab/stanford_alpaca/761dc5bfbdeeffa89b8bff5d038781a4055f796a/alpaca_data.json --output .cig02e-alpaca.json
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/yizhongw/self-instruct/0b26ccaa415992100fa32df62d41b994cf928e23/data/gpt3_generations/batch_221203/all_instances_82K.jsonl --output .cig02e-self.jsonl
+          test "$(git hash-object .cig02e-alpaca.json)" = "3779ddbc040543ab1834ef216c983d6fcc06cc9a"
+          test "$(git hash-object .cig02e-self.jsonl)" = "ccceb2677cbafcac4c996be47520b5581dd10295"
+      - name: Check fixed selection and source input identities without scoring
+        run: node scripts/cig02e_synthetic_review_identity.mjs .cig02e-alpaca.json .cig02e-self.jsonl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cig02e-synthetic-review-identities
+          path: artifacts/ci/cig02e-synthetic-review-identities.json
+          if-no-files-found: error
+          retention-days: 30
