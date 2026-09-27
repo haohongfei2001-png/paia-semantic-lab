@@ -92,6 +92,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href){
   runDefinitionIntake().catch(error=>{
     const result={classification:'FIXED_PUBLIC_TRAIN_SOURCE_INTAKE_FAIL_NOT_CAPABILITY',
       error:String(error.message).slice(0,500),exactHead:process.env.CANDIDATE_SHA,
+      selectiveDiagnostic:error.selectiveDiagnostic??null,intakeProgress:error.intakeProgress??null,
       accepted_fixture_rows:0,gold_rows_created:0,candidate_predictions_read:0,dev_scores_computed:0,
       capability_test_rows_read:0,cig02_frozen:false,cig03_started:false};
     fs.writeFileSync('source-intake/NI_DEFINITION_FAILURE.json',JSON.stringify(result,null,2)+'\n');
