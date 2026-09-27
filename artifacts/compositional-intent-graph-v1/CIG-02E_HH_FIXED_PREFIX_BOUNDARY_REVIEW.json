@@ -1,0 +1,2733 @@
+{
+  "format": "CIG02E_HH_FIXED_PREFIX_BOUNDARY_REVIEW_V1",
+  "classification": "BOUNDED_SOURCE_GOAL_REVIEW_NOT_GOLD_OR_CAPABILITY",
+  "base_main": "1b31acc713b91893d23728305ed590a065a69662",
+  "observation_path": "artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_INVENTORY_OBSERVATION.json",
+  "review_scope": "All 240 extracted roots inspected against the six fixed target profiles; this is source-level interpretation, not independent adjudication or complete 144-Topic labeling.",
+  "fixed_targets": [
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "retrieval_hint": "caregiv|elder care|care for (?:my|our) (?:mother|father|parent)"
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "retrieval_hint": "photo.{0,40}(?:organiz|archiv|album|preserv)|(?:organiz|archiv|album|preserv).{0,40}photo"
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "retrieval_hint": "spaced repetition|study (?:method|strateg)|memor(?:iz|y technique)|learn.{0,20}efficient"
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "retrieval_hint": "enroll|graduation|student (?:status|aid)|course registration"
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "retrieval_hint": "project (?:plan|scope)|milestone|project.{0,30}(?:resource|risk)"
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "retrieval_hint": "product requirement|user stor(?:y|ies)|acceptance criteria|feature (?:scope|requirement)"
+    }
+  ],
+  "profile_snapshots": [
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.family_relationships.caregiving_family_support",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "家庭照护与支持",
+          "en": "Family Caregiving & Support"
+        },
+        "domain": {
+          "id": "D02",
+          "name_zh": "家庭与关系",
+          "name_en": "Family & Relationships"
+        },
+        "semantic_core": [
+          "家庭照护与支持：照护家人、赡养、陪护、家庭成员支持以及照料责任分配。",
+          "Family Caregiving & Support: caregiving, family support, elder care and allocation of care responsibilities."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“家庭照护与支持”，常见线索包括照护家人、赡养、陪护。",
+          "The user's primary goal concerns family caregiving & support, with signals such as caregiving, family support, elder care."
+        ],
+        "exclusion_cues": [
+          "若“家庭照护与支持”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Family Caregiving & Support\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "家庭照护与支持",
+            "照护家人",
+            "赡养",
+            "陪护",
+            "家庭支持",
+            "照料责任"
+          ],
+          "en": [
+            "Family Caregiving & Support",
+            "caregiving",
+            "family support",
+            "elder care",
+            "care responsibility",
+            "family assistance"
+          ],
+          "mixed": [
+            "家庭照护与支持 Family Caregiving & Support",
+            "家庭与关系 > 家庭照护与支持",
+            "Family & Relationships > Family Caregiving & Support"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理家庭照护与支持相关的问题，重点是照护家人和赡养，帮我梳理判断与下一步。",
+          "Help me with family caregiving & support, especially caregiving and family support."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.family_relationships.conflict_boundaries",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "人际冲突与边界",
+          "en": "Conflict & Boundaries"
+        },
+        "domain": {
+          "id": "D02",
+          "name_zh": "家庭与关系",
+          "name_en": "Family & Relationships"
+        },
+        "semantic_core": [
+          "人际冲突与边界：人际冲突、拒绝、边界设定、矛盾处理、权利义务和不适互动的限制。",
+          "Conflict & Boundaries: interpersonal conflict, refusal, boundary setting, dispute handling and limits in relationships."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“人际冲突与边界”，常见线索包括人际边界、冲突、拒绝。",
+          "The user's primary goal concerns conflict & boundaries, with signals such as boundary, conflict, say no."
+        ],
+        "exclusion_cues": [
+          "若“人际冲突与边界”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Conflict & Boundaries\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "人际冲突与边界",
+            "人际边界",
+            "冲突",
+            "拒绝",
+            "矛盾",
+            "界限"
+          ],
+          "en": [
+            "Conflict & Boundaries",
+            "boundary",
+            "conflict",
+            "say no",
+            "interpersonal dispute",
+            "limits"
+          ],
+          "mixed": [
+            "人际冲突与边界 Conflict & Boundaries",
+            "家庭与关系 > 人际冲突与边界",
+            "Family & Relationships > Conflict & Boundaries"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理人际冲突与边界相关的问题，重点是人际边界和冲突，帮我梳理判断与下一步。",
+          "Help me with conflict & boundaries, especially boundary and conflict."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.family_relationships.social_interaction",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "社交互动",
+          "en": "Social Interaction"
+        },
+        "domain": {
+          "id": "D02",
+          "name_zh": "家庭与关系",
+          "name_en": "Family & Relationships"
+        },
+        "semantic_core": [
+          "社交互动：一般社交、群体互动、人际往来、社交场合和与非特定关系对象相处。",
+          "Social Interaction: general social interaction, group dynamics, social situations and interpersonal behavior."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“社交互动”，常见线索包括社交、人际交往、社交场合。",
+          "The user's primary goal concerns social interaction, with signals such as social interaction, social situation, interpersonal."
+        ],
+        "exclusion_cues": [
+          "若“社交互动”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Social Interaction\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "社交互动",
+            "社交",
+            "人际交往",
+            "社交场合",
+            "群体互动",
+            "与人相处"
+          ],
+          "en": [
+            "Social Interaction",
+            "social interaction",
+            "social situation",
+            "interpersonal",
+            "group dynamics",
+            "social skills"
+          ],
+          "mixed": [
+            "社交互动 Social Interaction",
+            "家庭与关系 > 社交互动",
+            "Family & Relationships > Social Interaction"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理社交互动相关的问题，重点是社交和人际交往，帮我梳理判断与下一步。",
+          "Help me with social interaction, especially social interaction and social situation."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.career_work.career_strategy",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "职业规划",
+          "en": "Career Strategy"
+        },
+        "domain": {
+          "id": "D05",
+          "name_zh": "职业与工作",
+          "name_en": "Career & Work"
+        },
+        "semantic_core": [
+          "职业规划：职业方向、行业岗位选择、长期职业路径、转型和职业定位。",
+          "Career Strategy: career direction, role and industry choice, long-term path, transitions and positioning."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“职业规划”，常见线索包括职业方向、转行、行业选择。",
+          "The user's primary goal concerns career strategy, with signals such as career strategy, career path, career direction."
+        ],
+        "exclusion_cues": [
+          "若“职业规划”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Career Strategy\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "职业规划",
+            "职业方向",
+            "转行",
+            "行业选择",
+            "职业定位"
+          ],
+          "en": [
+            "Career Strategy",
+            "career strategy",
+            "career path",
+            "career direction",
+            "career transition",
+            "positioning"
+          ],
+          "mixed": [
+            "职业规划 Career Strategy",
+            "职业与工作 > 职业规划",
+            "Career & Work > Career Strategy"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理职业规划相关的问题，重点是职业方向和转行，帮我梳理判断与下一步。",
+          "Help me with career strategy, especially career strategy and career path."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.career_work.workplace_daily",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "工作日常",
+          "en": "Workplace"
+        },
+        "domain": {
+          "id": "D05",
+          "name_zh": "职业与工作",
+          "name_en": "Career & Work"
+        },
+        "semantic_core": [
+          "工作日常：日常工作环境、同事、组织协作、职场关系、工作制度和职场问题。",
+          "Workplace: day-to-day workplace environment, colleagues, organizational collaboration and workplace issues."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“工作日常”，常见线索包括职场、同事、工作环境。",
+          "The user's primary goal concerns workplace, with signals such as workplace, colleague, office."
+        ],
+        "exclusion_cues": [
+          "若“工作日常”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Workplace\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "工作日常",
+            "职场",
+            "同事",
+            "工作环境",
+            "公司内部",
+            "职场关系"
+          ],
+          "en": [
+            "Workplace",
+            "workplace",
+            "colleague",
+            "office",
+            "work environment",
+            "workplace issue"
+          ],
+          "mixed": [
+            "工作日常 Workplace",
+            "职业与工作 > 工作日常",
+            "Career & Work > Workplace"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理工作日常相关的问题，重点是职场和同事，帮我梳理判断与下一步。",
+          "Help me with workplace, especially workplace and colleague."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.education_learning.academic_admin",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "学业事务",
+          "en": "Academic Administration"
+        },
+        "domain": {
+          "id": "D04",
+          "name_zh": "教育与学习",
+          "name_en": "Education & Learning"
+        },
+        "semantic_core": [
+          "学业事务：学校行政、注册、选课、学籍、奖助、毕业手续和教务流程。",
+          "Academic Administration: academic administration, enrollment, registration, student status, aid and graduation procedures."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“学业事务”，常见线索包括教务、学籍、选课。",
+          "The user's primary goal concerns academic administration, with signals such as academic administration, enrollment, registration."
+        ],
+        "exclusion_cues": [
+          "若“学业事务”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Academic Administration\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "学业事务",
+            "教务",
+            "学籍",
+            "选课",
+            "注册",
+            "毕业手续"
+          ],
+          "en": [
+            "Academic Administration",
+            "academic administration",
+            "enrollment",
+            "registration",
+            "student status",
+            "graduation procedure"
+          ],
+          "mixed": [
+            "学业事务 Academic Administration",
+            "教育与学习 > 学业事务",
+            "Education & Learning > Academic Administration"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理学业事务相关的问题，重点是教务和学籍，帮我梳理判断与下一步。",
+          "Help me with academic administration, especially academic administration and enrollment."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.education_learning.exams_assessments",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "考试与测评",
+          "en": "Exams & Assessments"
+        },
+        "domain": {
+          "id": "D04",
+          "name_zh": "教育与学习",
+          "name_en": "Education & Learning"
+        },
+        "semantic_core": [
+          "考试与测评：考试、测验、测评、成绩、备考、考试规则和评估结果。",
+          "Exams & Assessments: exams, tests, assessments, grades, preparation and evaluation results."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“考试与测评”，常见线索包括考试、测验、测评。",
+          "The user's primary goal concerns exams & assessments, with signals such as exam, test, assessment."
+        ],
+        "exclusion_cues": [
+          "若“考试与测评”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Exams & Assessments\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "考试与测评",
+            "考试",
+            "测验",
+            "测评",
+            "成绩",
+            "备考"
+          ],
+          "en": [
+            "Exams & Assessments",
+            "exam",
+            "test",
+            "assessment",
+            "grade",
+            "exam prep"
+          ],
+          "mixed": [
+            "考试与测评 Exams & Assessments",
+            "教育与学习 > 考试与测评",
+            "Education & Learning > Exams & Assessments"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理考试与测评相关的问题，重点是考试和测验，帮我梳理判断与下一步。",
+          "Help me with exams & assessments, especially exam and test."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.education_learning.learning_methods",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "学习方法",
+          "en": "Learning Methods"
+        },
+        "domain": {
+          "id": "D04",
+          "name_zh": "教育与学习",
+          "name_en": "Education & Learning"
+        },
+        "semantic_core": [
+          "学习方法：学习策略、记忆方法、复习方式、知识组织、学习效率和学习习惯。",
+          "Learning Methods: study strategies, memory methods, review techniques, knowledge organization and learning efficiency."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“学习方法”，常见线索包括记忆方法、复习、学习策略。",
+          "The user's primary goal concerns learning methods, with signals such as learning method, study strategy, memory technique."
+        ],
+        "exclusion_cues": [
+          "若“学习方法”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Learning Methods\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "学习方法",
+            "记忆方法",
+            "复习",
+            "学习策略",
+            "学习效率"
+          ],
+          "en": [
+            "Learning Methods",
+            "learning method",
+            "study strategy",
+            "memory technique",
+            "review method",
+            "learning efficiency"
+          ],
+          "mixed": [
+            "学习方法 Learning Methods",
+            "教育与学习 > 学习方法",
+            "Education & Learning > Learning Methods"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理学习方法相关的问题，重点是记忆方法和复习，帮我梳理判断与下一步。",
+          "Help me with learning methods, especially learning method and study strategy."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.projects_products.product_requirements",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "产品需求",
+          "en": "Product Requirements"
+        },
+        "domain": {
+          "id": "D06",
+          "name_zh": "项目与产品",
+          "name_en": "Projects & Products"
+        },
+        "semantic_core": [
+          "产品需求：需求定义、功能范围、用户故事、验收标准和PRD。",
+          "Product Requirements: requirements definition, feature scope, user stories, acceptance criteria and PRDs."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“产品需求”，常见线索包括PRD、功能需求、用户故事。",
+          "The user's primary goal concerns product requirements, with signals such as product requirement, PRD, feature requirement."
+        ],
+        "exclusion_cues": [
+          "若“产品需求”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Product Requirements\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "产品需求",
+            "PRD",
+            "功能需求",
+            "用户故事",
+            "验收标准"
+          ],
+          "en": [
+            "Product Requirements",
+            "product requirement",
+            "PRD",
+            "feature requirement",
+            "user story",
+            "acceptance criteria"
+          ],
+          "mixed": [
+            "产品需求 Product Requirements",
+            "项目与产品 > 产品需求",
+            "Projects & Products > Product Requirements"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理产品需求相关的问题，重点是PRD和功能需求，帮我梳理判断与下一步。",
+          "Help me with product requirements, especially product requirement and PRD."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.projects_products.project_planning",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "项目规划",
+          "en": "Project Planning"
+        },
+        "domain": {
+          "id": "D06",
+          "name_zh": "项目与产品",
+          "name_en": "Projects & Products"
+        },
+        "semantic_core": [
+          "项目规划：项目目标、范围、里程碑、资源、风险、计划和项目组织。",
+          "Project Planning: project goals, scope, milestones, resources, risks, planning and project organization."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“项目规划”，常见线索包括项目计划、项目目标、范围。",
+          "The user's primary goal concerns project planning, with signals such as project planning, scope, milestone."
+        ],
+        "exclusion_cues": [
+          "若“项目规划”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Project Planning\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "项目规划",
+            "项目计划",
+            "项目目标",
+            "范围",
+            "里程碑",
+            "项目风险"
+          ],
+          "en": [
+            "Project Planning",
+            "project planning",
+            "scope",
+            "milestone",
+            "project risk",
+            "resource plan"
+          ],
+          "mixed": [
+            "项目规划 Project Planning",
+            "项目与产品 > 项目规划",
+            "Projects & Products > Project Planning"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理项目规划相关的问题，重点是项目计划和项目目标，帮我梳理判断与下一步。",
+          "Help me with project planning, especially project planning and scope."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "profile": {
+        "profile_version": "0.1.0",
+        "topic_id": "sys.knowledge_memory.photos_media_archive",
+        "formal_catalog_version": "0.2.0",
+        "formal_semantics_unchanged": true,
+        "canonical_names": {
+          "zh": "照片与媒体归档",
+          "en": "Photo & Media Archive"
+        },
+        "domain": {
+          "id": "D18",
+          "name_zh": "知识与记忆",
+          "name_en": "Knowledge & Memory"
+        },
+        "semantic_core": [
+          "照片与媒体归档：照片、视频、音频等个人媒体的整理、归档、检索和长期保存。",
+          "Photo & Media Archive: organization, archiving, retrieval and preservation of personal photos, video and audio."
+        ],
+        "positive_intents": [
+          "主要目标是理解、比较、规划、执行或持续追踪“照片与媒体归档”，常见线索包括照片归档、媒体归档、相册整理。",
+          "The user's primary goal concerns photo & media archive, with signals such as photo archive, media archive, photo library."
+        ],
+        "exclusion_cues": [
+          "若“照片与媒体归档”只作为背景、工具或例子出现，而主要任务目标落在其他 Topic，则不应仅因词面出现而归入本 Topic。",
+          "Do not assign solely because \"Photo & Media Archive\" is mentioned when the actual intent belongs to another topic."
+        ],
+        "lexical_anchors": {
+          "zh": [
+            "照片与媒体归档",
+            "照片归档",
+            "媒体归档",
+            "相册整理",
+            "视频归档",
+            "媒体库"
+          ],
+          "en": [
+            "Photo & Media Archive",
+            "photo archive",
+            "media archive",
+            "photo library",
+            "video archive",
+            "media organization"
+          ],
+          "mixed": [
+            "照片与媒体归档 Photo & Media Archive",
+            "知识与记忆 > 照片与媒体归档",
+            "Knowledge & Memory > Photo & Media Archive"
+          ]
+        },
+        "synthetic_utterance_patterns": [
+          "我想处理照片与媒体归档相关的问题，重点是照片归档和媒体归档，帮我梳理判断与下一步。",
+          "Help me with photo & media archive, especially photo archive and media archive."
+        ],
+        "contrastive_neighbors": [],
+        "provenance": {
+          "source_classes": [
+            "FORMAL_CATALOG",
+            "GENERAL_SEMANTIC_REASONING"
+          ],
+          "generator": "GPT-5.6 Sol / SCA-01",
+          "formal_fields_overridden": false
+        },
+        "status": "DRAFT"
+      }
+    }
+  ],
+  "review_method": [
+    "Read original root text from exact-head Actions inventory, without assistant responses.",
+    "Compare primary expressed goal with unchanged bilingual profile cores; understanding and comparison count as positive intents.",
+    "Do not disqualify a Topic solely because a request is harmful, hypothetical or formatted; do not answer the request.",
+    "Retain scope, neighboring-Topic and underspecified cases. No inferred Parenting Topic: it is absent from the formal D02 catalog."
+  ],
+  "records": [
+    {
+      "row": 1,
+      "instruction_sha256": "bd798537b2b288e22fdddb1f38d0a955b1f5686a2e3a795917e02e3503c4f33e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 2,
+      "instruction_sha256": "f16473d586f427bfc6430af0fd0c867214a90f1545593debba876b2d2790f9f7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 3,
+      "instruction_sha256": "8483f21bce3f15ec1d6c2f5374512af8d31e422aa33991b8554cf828baeb04f7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 4,
+      "instruction_sha256": "f9e3f67284152944f5357b56e714cc9f98e8713a0a365976790fd8da85313e43",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 5,
+      "instruction_sha256": "3f952d880ab3952a30512f95bb51b05544bf4c887f7169a9464ad7f9d765932e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 6,
+      "instruction_sha256": "2d71b9a566f6f86327c26afe367576eaf131d551fe16866da6d41609f37a2c09",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 7,
+      "instruction_sha256": "cd77fe608c1926e6d737899758bcd3c0bb1a82c34a615f66c2e141ec6f366a9f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 8,
+      "instruction_sha256": "bcc557fca8a216161dac56578c3ab02571b4dd7d1324ac60333df868392bc9fa",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 9,
+      "instruction_sha256": "7a492830b4cc1eb9b5cd66cb5f8ab05ded1fef103fcdbb7db934749ee2ac9f84",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 10,
+      "instruction_sha256": "cefe7e32265a0e76718373d78bcd426d1a1a0734d1e683b0b4fd15c1cc397019",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 11,
+      "instruction_sha256": "031cac91de0e0a07c21204b8c220a31b6066471c030ffdf2dbb610083d43bc1f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 12,
+      "instruction_sha256": "799f4f83d8d2368db7f591233633abf99db2243d9d31eda082b0bcc943256ccd",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 13,
+      "instruction_sha256": "99907fa43d9637c0ee7a6dadf311a0d0ff56550a789d251f6660261929d60895",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 14,
+      "instruction_sha256": "1fb769c1fe6bcd648f8d9f481cc8748dbf056f480165224765bc432b535959c2",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 15,
+      "instruction_sha256": "5f52a47ba82577b8ef6b946cf6eb96a2fc60da1084ae4fa3b7834587d78c1a60",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 16,
+      "instruction_sha256": "3c27b18ca6fc05e3fefe918cc8fb04307516a02944409c400b144b8dedf19574",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 17,
+      "instruction_sha256": "489ff8ed84e01e67d7181bfff37f3faf570fe571aae5375aa30b88ee7be30b4a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Children and irritation discussed; no identified family care/support goal.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 18,
+      "instruction_sha256": "1c3a3602debc67749c89054bba4bb0aeb14a452ab769fba41fc04f83931a0e00",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 19,
+      "instruction_sha256": "78dfc7cf22331c933e4e44094b6d32c5114d164bb8ae1521f93f865a2912f788",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 20,
+      "instruction_sha256": "48f825571428a32976add709adc711ed22f5fcccb0557256de7da57beeb96cae",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 21,
+      "instruction_sha256": "30fbb6606663cb0c25820a860ad399bfa003b94d5cb7f352ea64e2ef49e5cff0",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 22,
+      "instruction_sha256": "a59b6d9ea9eaeb52063bf11d326047a65210146394c12bac51278ecc1c40ef2b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 23,
+      "instruction_sha256": "2e9cb1a747304632eb4a2ae827e1c23baada607fab9bee4fd7fde3345a37c6eb",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 24,
+      "instruction_sha256": "606cffa7bccf108c2f8b8e1beab8033f9a018630027d148ad1b359a91caa1d23",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 25,
+      "instruction_sha256": "4f2003402a8625cdbdec80c8c052ef3ea8586871d4560c3bfe3c9e0d273330bb",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 26,
+      "instruction_sha256": "ab7010bd1ee1da4d5bf96977a8ebab2a6132e8464de0fce10543d20efc072f02",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 27,
+      "instruction_sha256": "09d2760d9f37ae60bc087dda829765f65989731356331316b997ca1574eaf00c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 28,
+      "instruction_sha256": "17da1bf5651cd13a5df4c07c231baaecf05b58e48908adcc24664579f90686a3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 29,
+      "instruction_sha256": "7ce9f52d1ba33f18f0d07f137ce49d3bad5e539f23bcbad92f9d61dcae2314c4",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 30,
+      "instruction_sha256": "b3e2effa509dabebcf2d444d442e9561747ede0839dba29a85d40ecc3a13cdc2",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 31,
+      "instruction_sha256": "1513f22fa4448091bf5684583764f46b49a98fe95078643a9a4919c06256a03e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 32,
+      "instruction_sha256": "d6de1f7a3506fbfb86f30216ca65ddd4d46a4f1ba080a3c1fcdc4d1363317f54",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 33,
+      "instruction_sha256": "bb0d28fd8516f326259135d448b2e2edb0632d03c16e58723d0696777321f386",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 34,
+      "instruction_sha256": "ab7010bd1ee1da4d5bf96977a8ebab2a6132e8464de0fce10543d20efc072f02",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 35,
+      "instruction_sha256": "6c36bffcb8bcdbda9bcaf24301900a1e94d1a19c03a7cfc17aab6f12341e8222",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 36,
+      "instruction_sha256": "4b23cf89cb6900665da7499249d3a40b134f51ac3dc378e2f66780b5259810d6",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 37,
+      "instruction_sha256": "05dcb8230c8c8b16aeb3d325e8d76a8d41c6df6341935f60a7fe3c799a16bed4",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 38,
+      "instruction_sha256": "d2fe58239b50eb81a71872fba057ef1e062866fcaa4e163ec0951e3ecf3259ec",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 39,
+      "instruction_sha256": "589b19f8ccf4afa5ccbced645d8e1789f4ae49310a1bf36d1d726314615ef090",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 40,
+      "instruction_sha256": "faf0ba458d85da838aacd3302f96469992f525dd239ebb1ee5aeeb00fd12f007",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 41,
+      "instruction_sha256": "8e5ff255b20a10ab6b06fb3bf011284b19662c002904a428a04745bc73db68de",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 42,
+      "instruction_sha256": "6b44bac435eaa2d4edc149e85d11fae8af0e1df9f66055fe53b636c092f764a0",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 43,
+      "instruction_sha256": "3475afb8ed1130afa8343ff6cf394322b2a307a38c14c28923ffb9ef587d8234",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 44,
+      "instruction_sha256": "22ad8059046ef59fbf6c82878c7c3ecadc114b3e6843c5665407537026ded557",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 45,
+      "instruction_sha256": "4738f8c27f59071f6bc2262bcdd28fc61bd6f8d094c54fcef30762987abc9bb6",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 46,
+      "instruction_sha256": "69879abaabed2ab2eecd91fa86a9dc688c4f6b94b2c5def2af48c6cb93e308a0",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 47,
+      "instruction_sha256": "775e2fc943cf66b78827e8f4a82f066430a103e1c14ce02d50e8d17754231b58",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 48,
+      "instruction_sha256": "edc8707fe346f74d32e22abb4bbbc729fe444fc547758a369a836f9601afa8e3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 49,
+      "instruction_sha256": "5e2c3e3acf4e57621b992a60278ef2fc5aa0e3b8b36c141859779b418b3453d4",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 50,
+      "instruction_sha256": "aabf29235d2504c83dda8bb0ffe73e1bceca8ce67f82ead1a8e3890731fcead0",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 51,
+      "instruction_sha256": "354665b4699936195c3af408063e1e72c7a2b9e15680c17a3e0e9a1f185a1a2b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 52,
+      "instruction_sha256": "f93ab06c1cd1bbe699bb5629d9299891d8917b82d9a328fc9cc5fc49150f73a7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 53,
+      "instruction_sha256": "beb5227342d12c2d6935e3e03335ce6862885ac8ad99c20a902848df4f0e1cfb",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 54,
+      "instruction_sha256": "7f66f6f86a941dc5f23cab70a6c3984412e53e29b11fa6985b71949d4691dcac",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 55,
+      "instruction_sha256": "f4f9056ca65cc19fab93addae4fb0966f5a07d4e336c8fb642e53aaa77ceea2c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 56,
+      "instruction_sha256": "6d7ffe3aae3c42e7d23aa348c04df71da0ce40e8b202a6d571cff6c631dc6407",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 57,
+      "instruction_sha256": "67eac3ee3b4337d6e0ff8048b9ab6fb1bab2dba09be682f2ee341443ae580371",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 58,
+      "instruction_sha256": "1569ea0c9f201ef4f782ad16b12c03489712ecb850989f10db319bac771d9ca9",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 59,
+      "instruction_sha256": "eda1c1aab41c5d7a93a5518125a018551f4f7c501732bef161cb6bd62c176ffa",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 60,
+      "instruction_sha256": "bfb0eddff60d4923e23625a2d73d582cb0400ebcf1742e6a249e8cbe862abd07",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 61,
+      "instruction_sha256": "c92d2d91897681ae14e4a66b644e150ca4f3cebc84a77fcd53071d3a234445a6",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 62,
+      "instruction_sha256": "1536081155fdfb1868a2495b22bb51c50a7dabc74fb9dfe197f3d798e364f0ff",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 63,
+      "instruction_sha256": "580f8c87102cefcfe53b98fe5a963eeac4186334e6794d703eeed4fdd2e70f9a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 64,
+      "instruction_sha256": "0fec94a46e05fd8f0b3509fef040b74ac443df81653950c486c0f8ec7fabf7f3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 65,
+      "instruction_sha256": "8b2d019c8b916f6e4e8612690f15fbf89d0cd6da435cd5046631247c148f4a72",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 66,
+      "instruction_sha256": "e2cfe3634690d631714d68040010a3ab193faf1616e0d9b11667a2ce7209febc",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 67,
+      "instruction_sha256": "504794fabd4ec917b693d0319592124db08e6b335233cc83b8d52a669001bfdf",
+      "decision": "UNDERSPECIFIED_TARGET_PROXIMITY",
+      "rationale": "Guardian concern about teen online safety; intended help and care/support versus online-safety scope unresolved.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 68,
+      "instruction_sha256": "39758dd5da924323ce027a51499fa494cc5e3a6d96fe6e289380ae7654b18089",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 69,
+      "instruction_sha256": "c94bd7002e0919983ceaf106072fb7cd6423c16ccc014dcd61fa823fac96bedf",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 70,
+      "instruction_sha256": "15f035541b8b5188221edaa1e4b4ab2a01fd870accdddbcee3f3701e3b7cbf3e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 71,
+      "instruction_sha256": "275c83c55d02c0e88ec29ef2e7345ea508c62099839beaa68e23a8f1c793b3a5",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 72,
+      "instruction_sha256": "2b8284fb6c67076c5b1ab6cf7444af2568ff4367166c5e42083744e943f0d865",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 73,
+      "instruction_sha256": "7f7a348b8837b361f361dda7e5629d9547efdfa8bc7fd677de9a5fe0a6cfd06d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 74,
+      "instruction_sha256": "18cf1581bb18464604bf5148f43d956d88e3e34de22111ce0ac05f988730159a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 75,
+      "instruction_sha256": "ca6bb318574651de9edef11bf2d0fae474222c85f302aae108cbdfdc658a9300",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 76,
+      "instruction_sha256": "172f5cffaeb383f14d1beab1b8521816efec6e49187eee63cbd022f1f146b029",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 77,
+      "instruction_sha256": "ad3bfd918e8a94255f0f4f9a1bea6750a7ebf69052a8cbc4b0911c9c2569a1da",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 78,
+      "instruction_sha256": "95cc4b8144cebb0740fdc460bd114b71b34c2b38af4fa5e5f78a021961708350",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 79,
+      "instruction_sha256": "05c9769cb86229cc1c98481278594e9db6d45e05107aa7df629c3cb2044dc9dd",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Asks about assistant family time; does not request a care/support comparison or action.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 80,
+      "instruction_sha256": "8a6da35c403c580fbcdc14fd9a843f58b31c23a0d168424207fa38ffc392f888",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 81,
+      "instruction_sha256": "a265294f952edd1c0e3568549acbad6da73044697966f59921c1328e8a43b3c3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 82,
+      "instruction_sha256": "237960438924af6063c2d7ade3e628a54310b788d444fc8c921b7dfdd2946216",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 83,
+      "instruction_sha256": "1e62d830cf0a8d8345e141a5e22b263ad9ae2c58fb498c20ff8eeaa6b5a97f23",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 84,
+      "instruction_sha256": "a7fb1fa21e382a25fe9525872b3792c21e7a0a30a1944139a8d458a53e7bdedc",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 85,
+      "instruction_sha256": "f85d545cc896eedf7a1231ca487563d1ebcf6e153173e10c1c0d7aedd7fad4ba",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 86,
+      "instruction_sha256": "da91e137940747b59d7648fe4e686febf595830ef928ab98f3d307ad993a9671",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 87,
+      "instruction_sha256": "5dbd95ea67218750f81461ebcb08dba304c107923edb002fbd90a2fc85e6fb67",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 88,
+      "instruction_sha256": "1a6cfea647eace9c601a41c9529ec1eb289e2a3c6b485de72abc37fac45f550a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 89,
+      "instruction_sha256": "8abbf60003d1b61095fade83029c0a399e319a5d0d5e7a3f9f3780467a1db4f6",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 90,
+      "instruction_sha256": "56f7d0e1e5c72c6faf5eaddc4b097cd2a21df8530d7eb463edcd22151d5841c2",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 91,
+      "instruction_sha256": "5dd675f215ccc6e4b3b352832e1dce1d8bf1a91746ccd658dd7843aee4126825",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 92,
+      "instruction_sha256": "40c374e1d7f83507a4be08002c5730efe946db7230e7cf255047ee2a7fc1e1bf",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 93,
+      "instruction_sha256": "3e64bf361f45b4e80ceb51f5f21620ae6f4218fedec4750e4a90df33c7450f32",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 94,
+      "instruction_sha256": "99c6812de03f62ade96833907e989837a14615975d7faf195cf26b8db2aed19d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 95,
+      "instruction_sha256": "1ae92efcb224eec72f90dfe616604a387bb1427e2d9ec35845925c4bc2f84f72",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 96,
+      "instruction_sha256": "04850cbea996561a896c1a194b0d9967bbf6dd35050bedf5d7bdff30b4d5aeb7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 97,
+      "instruction_sha256": "1ea04a182943d74dab004b0260713bec51ff433d8401b5b80ef1e2243ee0f142",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 98,
+      "instruction_sha256": "efb7910b38639c2f8d2ad8e2971c37bb5ea2e2a6cad464927926df76ece52a3c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 99,
+      "instruction_sha256": "da3d6e339f8f28d2060a1d09c400ea3da33c6e28dece60b879061c8ad26f0bfe",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 100,
+      "instruction_sha256": "9d4f7a43bf6547e04a442a47d3a0673c978a6578639301f0b1992289c20224f6",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 101,
+      "instruction_sha256": "4f3b6ae47b142f3a07574ff61df08cc63ec2516d212061e8c9bcc4da0c8f86e7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 102,
+      "instruction_sha256": "ee3b58ca104671df0d8a39f88b800c073985ebc4593cdbe7f9f8f5a9b19cdedb",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 103,
+      "instruction_sha256": "0f0e6165e234680e4b1e98bed418736c23784b07de9b1a5e2fb54d5f6d658a03",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 104,
+      "instruction_sha256": "e9ed5cf657ab7366537a7250bf898254c116745d61b136ed9472d29cc2d39439",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 105,
+      "instruction_sha256": "0ba847b46a31a3540432e47420b8018f350c77e14e99d61bd30b49df8ec0a93d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 106,
+      "instruction_sha256": "29cf3403d3995d40b065c1ed99ef722d5660e4f0d11c0123c8ac7fa7ef58a31f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 107,
+      "instruction_sha256": "d1abdac4d491860292519af35282c1b30aa9170c6bf816a474aae0f335aa9719",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 108,
+      "instruction_sha256": "c0d476bcb3ae23454d1d5dadc472f1870cb0a32c414e40a63997c1a45dddf726",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 109,
+      "instruction_sha256": "7cf821e74a3b8575fab99cf49d64b1891ff51df25d33b03fbd5d21b03576d4f8",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 110,
+      "instruction_sha256": "05ac218b3471c355e3ae1e20aa2ee6e96349031bcd6b4d394e7cfdff9ab29e66",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 111,
+      "instruction_sha256": "e9a3276088cfc38ee743680acd1b003c80bb56f8a955eee542e4e800bbe64b92",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 112,
+      "instruction_sha256": "bd798537b2b288e22fdddb1f38d0a955b1f5686a2e3a795917e02e3503c4f33e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 113,
+      "instruction_sha256": "3162e26d1a640f7fc50b0da5275c154572b8dc21266e2ced903575f6cd214c91",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 114,
+      "instruction_sha256": "eb807bad3dc381f3741a423dd141200f954c506f5b0e2a3d7fd51c84af965487",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 115,
+      "instruction_sha256": "bea3adb79d8831f94ba5611a260070cd1943b9c043faa027d8f55497eefa7414",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 116,
+      "instruction_sha256": "3a00466a334e1189dcb0205f89cab69eb19aa646fe151f6eb150bda3ff0b1fcc",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 117,
+      "instruction_sha256": "f448bf8e63eae50dd3b2562c42f6560f8db125d98ccf0e144d077c4e924d54b4",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 118,
+      "instruction_sha256": "3cfa46385503418d816f01b53208c3f1f4d18b14060308dd5b9a71ab6699c421",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Financial deception is the requested outcome; family is the target rather than a care/support goal.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 119,
+      "instruction_sha256": "d824429df3037071207b6355d257ea3be775513e0e6c9d002cd7db682cd16d90",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 120,
+      "instruction_sha256": "eb8cb05677337fe31cbdd356a656e56134d574063225f765616eb3ac0c592008",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "General statement about children, with no identified care/support request.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 121,
+      "instruction_sha256": "9f74dfc78970c900b64d7288839d81616111ff11c82ad32519b33d0871910b12",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 122,
+      "instruction_sha256": "0f4ca809d7fb41b105e252d62994456afd383daf3c2b66dae7d7f7a3202c6236",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Passing an assessment by cheating is the stated outcome; no study strategy or administrative procedure requested.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 123,
+      "instruction_sha256": "c1be2fd826175a04d4fa1d2bd73534f459e716bd7137576b14ea023f76e37a78",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 124,
+      "instruction_sha256": "05cd2d9ebf19429ff32d63c13443018f8ef8f8ea93eb04860f83e884ca970d71",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Noisy neighboring children and response to nuisance; no identified care for a family member.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 125,
+      "instruction_sha256": "58e7645c0d66fd709781a1925669327087d2fe5ce3bb9ba7af70053a185b7896",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 126,
+      "instruction_sha256": "3cd0c1be9daf34f5bb56aa0192b6ee87a69c945be4f2667fc9f617c37381f473",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 127,
+      "instruction_sha256": "a6ae45477dcb0beec5ee661da0ab03fd934e79af6c97005a826f192bbc859a2a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 128,
+      "instruction_sha256": "b0c91f831a0de0470d8e9efa8a0163442dfbdf8f1b4861112635ca15ef9095a9",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 129,
+      "instruction_sha256": "5f186ac4cb272b5f2e19c1da882f29ea3e0694a3fd371e081a02ee63ecfc482f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 130,
+      "instruction_sha256": "304be1ced1b1d5a94f743821eda8908e41c5f2c3b12eb0b1fba1ff4aafff4cc9",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 131,
+      "instruction_sha256": "0f1b2921b7ab0f0782c76e96d777ec8303da01a93a22944635f5cccc5211630e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 132,
+      "instruction_sha256": "80c1044ef94143204ed086d3591cf7b8e6135575ef5d8386b11d52dc8187c198",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 133,
+      "instruction_sha256": "6dd7c2f940fe7935e4b6ea0e280c5018fe0964a482ddcb7a929ef3c4e2e8cf13",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 134,
+      "instruction_sha256": "21314ba043f3e8543c398418d2f838d11e337712cca1edbb44a3687bd6e678fb",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Asks an opinion on school story content; no enrollment, registration, student status or graduation procedure.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 135,
+      "instruction_sha256": "7a6322f73554edb1ca412c807c4768d2101819a03e1edb9969c29df80538b094",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 136,
+      "instruction_sha256": "079c1ce15c641384c343c26405294e598bd7599642cb937df6a5cbdbea2a6485",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 137,
+      "instruction_sha256": "d06645a08c9aa30db52aa6294acfc8158a70d73b038fd625ccdb8ec795805299",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 138,
+      "instruction_sha256": "de624b8e32d5412cf690c4db12118a9df427ef16f1733586bb6d9b13f5da5b0e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 139,
+      "instruction_sha256": "e3e74d822ef5c0a9a1b7e70036418ddbf38f79d5601a80ba320d8474394e2f51",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 140,
+      "instruction_sha256": "ddedc75ed11243cc2cc7d020b72a626405ea854c82b90ebefa969b5721080cd1",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 141,
+      "instruction_sha256": "e2d4aea0b9bc9b9b971aef98f4da7f04cb83c6c86409bfa9ebea4234d44f3aa3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 142,
+      "instruction_sha256": "defd02deb1dbed5135f6a74fe20f09db626874c8080982ffa13500927a443dd5",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 143,
+      "instruction_sha256": "f6af6a8ff64a848d39e4e00aafe5e49e397494cd8bd78b9b491b14d8e9e83caf",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 144,
+      "instruction_sha256": "e4de6bd27eae6752bb2204b41098913bcc63d712c32c480d1fe81e3495080df9",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Locating an address for retaliation is the requested task; a grade is background rather than academic administration.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 145,
+      "instruction_sha256": "5e3cfa36d70d392c7c0b79872c49d495060ce2970f6b6cb9cd1c20999520a69a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 146,
+      "instruction_sha256": "c71908f466f216a620b41a11f95d0b8d7802a4194c691b6714a5acd31399090a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 147,
+      "instruction_sha256": "647093734d56ba9cb4285f15936ec799f82c128db52131d3c5dd6cfa8c20b057",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 148,
+      "instruction_sha256": "b55b99b0fe87362d55e4cf293b2b95b1af7dbdc5c7b78c66617695eef096dea0",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 149,
+      "instruction_sha256": "4b976a406f956d9904c9c15d3fcf596b066e5d61f3cee9f79510b9dd822fd56f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 150,
+      "instruction_sha256": "fa3bfa69a4bda27e693aaafbb68e4b0652806cb9eacb60621101baf15a61fa40",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 151,
+      "instruction_sha256": "5415b4b6a9ac78e4923ab9890d622c778ed4e8dab444e5e5ddaa46796f71dad7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 152,
+      "instruction_sha256": "ae79fa8ca31dfcf5c32b9ab2a4a09f45500abb5329df33d597b189e1eb51f714",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 153,
+      "instruction_sha256": "ac2e710ae0dcb2a53025d24766256ab8d8b7e617782206718414d7f1c1c79a7d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 154,
+      "instruction_sha256": "330a8bfd32c308458d995b1c6b16d31fff3a2a3b343df7199ffddf8097ffd66c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 155,
+      "instruction_sha256": "fc3940e76c485e97bde467d202166fcc5323366f530e8cd51087014d02b290de",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 156,
+      "instruction_sha256": "eefd0ededa806e5efc1bdeb2864e539940f91c62d7a76a3a9d38545137482d53",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 157,
+      "instruction_sha256": "f0eef251933ec26869d8f3f3f6cbabef3a703e4e30f557f9263aca7667b7abaf",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 158,
+      "instruction_sha256": "d1e1ed4f1ef784b33dcc9dd60e0c484052ae619b8e66008db216e517656c3314",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 159,
+      "instruction_sha256": "165141e4a2ed59732beb93f5020708bb6a1e542e86d7365c5de468f44427951a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 160,
+      "instruction_sha256": "12455b48d9ccb60164f8d05bec5fd74e48ce3d2cd084afbd1a6440bf5330fb27",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 161,
+      "instruction_sha256": "a894ddfef542f84b4b0924d8a8d8ab7fa5e5012496eb7100f3d371e5e1825c2e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 162,
+      "instruction_sha256": "c1181e17cd6d86a38dd9fc6724dcad3ac4d9dcc1fe216280862b41c6da1216ac",
+      "decision": "TARGET_SCOPE_UNCERTAIN",
+      "rationale": "Parental discipline and public impression are explicit; care/support versus interpersonal/social limits remains uncertain under existing cores.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 163,
+      "instruction_sha256": "980b8de0093bdf4a3c14d319d0263ecae9547fede6c610f8491d0b61fba9a1d8",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Career change is explicit; college is prior workplace, not an academic procedure.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 164,
+      "instruction_sha256": "51959d47ae20b460844510eb139493ade975aea9d2ccc7176d4e627489a0348a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 165,
+      "instruction_sha256": "51076e44441a91339da48fadc7d06c0309e55b8abe289f3167190cea8a8c7409",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 166,
+      "instruction_sha256": "5dc9c29431d5a2a1d94923c7d25f893b309532b1f5e8e11844e3e35568d57266",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 167,
+      "instruction_sha256": "0a893e6d1e719fcf1661577655f62a3d1046fe20606926f301d8c7130e73ff72",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 168,
+      "instruction_sha256": "e8697708b54bc134c83784d68047f9c0cf5a2471ae12d78fe1cccea92dae868b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 169,
+      "instruction_sha256": "b7f6202330b6b44e37b3e15de31058432c41b750069f6935712b452659bc6a27",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 170,
+      "instruction_sha256": "8142fc8c5ca7f81b9f147a8c6d58e5a1e7b616571e942f3e03c46a200272161b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 171,
+      "instruction_sha256": "3e180d6b4131cc8da283df85277dd42eeba53b971c21d00547306adbd6275e7a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 172,
+      "instruction_sha256": "e4baed03f24e3aaed3715e4fbfef9e5d789250e0a193387787ef7219ef590fe1",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 173,
+      "instruction_sha256": "1b00de46be52eb6c533e085c142c7209bdc41d876536601d74aa1231f6bd6b32",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 174,
+      "instruction_sha256": "fe6e505530ba51a83aa7b80f6b2b202f42daebd815372ad066643428453db0a5",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 175,
+      "instruction_sha256": "e157d7a1e307084b93b8fa32a9d2bd151103144856bbadca39792cfab9b6d8fb",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 176,
+      "instruction_sha256": "aff31c4735166d4d7fa02057293854662f020e8532c00f013a0fc3aac1dbf153",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 177,
+      "instruction_sha256": "843b9fad5d9c11537e8fa5c6ace79b45685139bac979361c7e884a7c2ffd0588",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 178,
+      "instruction_sha256": "cd3cce80c92af1a36e55164288c936f99657b7bfc06a9265a777d7ccc3c0387e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 179,
+      "instruction_sha256": "b69a41e59146ea8e5a3ec439f2823eeaae742c7693182a48f1d0c288b5351761",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 180,
+      "instruction_sha256": "fe565898d6c78e000e5f52999d1d6c71cdea0ad0587c02a35e2bf932e865fa9b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 181,
+      "instruction_sha256": "c2ea8147c9af848a2a0c8ccab8b755a44d4276bfc5921da08ed69087978c6674",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 182,
+      "instruction_sha256": "1569d43b71d43187192884b8a63d95963bf137f951d329b0e58564d6445c0ca5",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 183,
+      "instruction_sha256": "8fea848405d201c970d4bc4c871139466eb37abc89f54970b072cb9e811db89a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 184,
+      "instruction_sha256": "6db309b7123dae295c87e3bfde09f16d8c064deeeb870f052f2e4a51aa6e8879",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 185,
+      "instruction_sha256": "20b0d28c04b9af06103ef7d5e52eee27e3ecc5e6c0c6cc6dc4772ea07873f9fd",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 186,
+      "instruction_sha256": "06d6dafcdfb299220fdb911241bcc0e824132f614cb67a5e67c259b11e72b290",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 187,
+      "instruction_sha256": "165141e4a2ed59732beb93f5020708bb6a1e542e86d7365c5de468f44427951a",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 188,
+      "instruction_sha256": "818e4f4d3387dcd15113ed259233a8f4134ab59d271c820203fe4dcf3cbb5f1a",
+      "decision": "UNDERSPECIFIED_TARGET_PROXIMITY",
+      "rationale": "Statement about a hired caregiver's immigration status; intended assistant task and care allocation are unspecified.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 189,
+      "instruction_sha256": "2641eeb72c37cd13f1c8292430353907ef87ca4cbf6e1d410b442b7b4ffc702c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 190,
+      "instruction_sha256": "32a643b82713e67072ea7e8f1665d39f819a58544262d97b18f6802b9a3ef2df",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 191,
+      "instruction_sha256": "1409f87c967e43488b066cf838718181798ee92574e3370f736f3a300a0e704b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 192,
+      "instruction_sha256": "3736636ab0d189feedc7ebbaf9059fde769658989ee98f6e9756fd318c8e323f",
+      "decision": "PLAUSIBLE_TARGET_GOAL_PROVENANCE_HELD",
+      "rationale": "Asks to assess supervision and responsibility for a young child while the caregiver is absent. Family care is the explicit goal; author and complete-instruction provenance remain held.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 193,
+      "instruction_sha256": "c4b61c5eea81cdc5e0b04cd27d55d6b343a8becf4c189f7c47ca7e911505a66c",
+      "decision": "TARGET_NEIGHBOR_UNCERTAIN",
+      "rationale": "Coworker dismissal via project failure is explicit. Project planning/risk scope versus workplace conflict unresolved; project mention alone does not decide.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 194,
+      "instruction_sha256": "17746feae36a7b6361beeb670f2f64017914d89d7654cb387dfe758f1f3f93c7",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 195,
+      "instruction_sha256": "876fc6a5d48b31529e2875cfcd26e899f43f96bb9b3a831c6e970bf418470502",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 196,
+      "instruction_sha256": "7ae064006fd3f34c928ad2aabaa756395eaab8dc7202a06010e7183781016fbe",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Requests a retort to an insult; family is context, not a care responsibility.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 197,
+      "instruction_sha256": "bffcf6c4e390019c961d1d477e5cc8713bf1c3d2416b13dcf04c447fbaf2791f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 198,
+      "instruction_sha256": "98f01e1b69f43cd01b0b1b73016135e98ceae3d1484ca394033feaaf6feac934",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 199,
+      "instruction_sha256": "acd0eba931fceb5671033a4f936fbdf9a818fcd22e1786a7787117e3c31e0ecd",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 200,
+      "instruction_sha256": "a7fb1fa21e382a25fe9525872b3792c21e7a0a30a1944139a8d458a53e7bdedc",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 201,
+      "instruction_sha256": "13e620a64a2c6cc9da8ea27b1e23e1247e0683e548f444608107b4a9fe1b6efc",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 202,
+      "instruction_sha256": "e59c97f800ea93a8be3520025045f5fe92a06733c6d1f15dd1112e28c921a519",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 203,
+      "instruction_sha256": "4ca0de2f187b71bae45c2f23d1a6064c931edd228c2bbfe5c80465acc5a58cea",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 204,
+      "instruction_sha256": "0cc81601a08afcb4cac7bf3c707bb82db10c059fd454a9a6fe947aa8c49cb54c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 205,
+      "instruction_sha256": "2cbfddd27c8b12809b93bcc648809ff20790d2fc3020803c9ad2010a5e73b1ff",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 206,
+      "instruction_sha256": "de566f40e7cafb477eb23498db8b9b099aae938d855fe16952213ff881e792db",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 207,
+      "instruction_sha256": "a5c4a71518d49a797422f488ec07b736a530ee1eebf4d28eb4936abbf21015e3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Pictures are means for deception, not personal media organization, retrieval or preservation.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 208,
+      "instruction_sha256": "95e5ea6aba795a8d5ff30dbb807743c7b86ed4a6b4e30d1fea3a2d91138ef0f9",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 209,
+      "instruction_sha256": "4baa270aee809a6c44b25ca62872f1ed275ed1b05f6a3b821108b32fd48e0743",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 210,
+      "instruction_sha256": "581df6c6fab82789a107457cefec1cdbe69f3fa0d1c9e62bade92823b0757c03",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 211,
+      "instruction_sha256": "7a77e9cfefa848ad994d46adaced77ab5f7505f4ce352ebce7506bf8a28b946d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 212,
+      "instruction_sha256": "0cb0f644190dfadc444c1cead99e4ae68e899ff783328ec7ca44af5c1dad9a15",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 213,
+      "instruction_sha256": "0e47f05e3831aa7e9087be5520d740b55ecb572221bb896bfc0bb74a8c7c52c3",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Generalized academic-performance question; no academic administrative procedure requested.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 214,
+      "instruction_sha256": "e88b999603beecf83ce58b5149cf5dae3c1b937df36ecd91da49d4f2e7f9442d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 215,
+      "instruction_sha256": "2ddbb58b7a048ebfe42e309fbc44b31eda6b133f31566aed8fafcee4b44ba4b9",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 216,
+      "instruction_sha256": "eb3f853f8678ac802a8860c9ca9c7a52214fd18248cc3234486a269490346877",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 217,
+      "instruction_sha256": "7b3b288e53ce792eb10db7401109507e300253587093b1823bcc6a2bd579ad3d",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 218,
+      "instruction_sha256": "eea262305f29566ec793c2a28dc697af063036c308d8bd4e34a42c8db3d5482c",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Harm and evasion directed at a family member; no care/support goal.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 219,
+      "instruction_sha256": "d6a519ff1e8029300c224215585941de5b0ec0edfae46800c8b81260ee60824f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 220,
+      "instruction_sha256": "2c60e417d3ca6741f32a2791510a90efe53d70a354c689afab1435fe117d98dd",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 221,
+      "instruction_sha256": "8789d063c3009ad4c87faa76a4e28f50902359fe08c1be0b95efface8718a956",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 222,
+      "instruction_sha256": "96b926e05a5356daf3b16fccfc80eeb24acd551b1bb2e06814c759ca42ac48d1",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 223,
+      "instruction_sha256": "aaa0e473988bbfbcdcc64078229aabc1e098dff5348d6cb49dd6e0eb7d29dfd2",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 224,
+      "instruction_sha256": "548721b40f963b96abdfbd1e7dd87e015fac293d2472e90ca0e8988a5a7056b2",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 225,
+      "instruction_sha256": "a3a0b23c6744d6c40ef2067f013ed55f7716eb16c61a246ded44ce52e584a428",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 226,
+      "instruction_sha256": "0b73942b04a52fc1f39bbb977c518d839d2313d6081ac03fcb3ed71144ab1a96",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Home addition permit question; legal permission is explicit rather than project scope, milestones or resources.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 227,
+      "instruction_sha256": "f3e7f49df39a4037b1a5831d923f80dfb5f8d7b7cde511db5f493d2fa4ab900b",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 228,
+      "instruction_sha256": "be675f1e24ca7edbdb4e13d9c427a832f3603d292b573ea179f76279c6b2843e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 229,
+      "instruction_sha256": "a446384f5070bb022ba3a7904ae268c04cfc4638a0abe041f6706f71b0657993",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 230,
+      "instruction_sha256": "9c01ed38d004303e5cb43af2f39b32e85ee090bda4c97be054bf53f4f8c34dbf",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 231,
+      "instruction_sha256": "d1dc8223f1dd38d6f6091de458c6a95d413a13ee3a54638714092b3a364df5e8",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 232,
+      "instruction_sha256": "760124a06b93ea3bff7659859170dfdb6b6f31511c628cf69dd9d6f3d1d693aa",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 233,
+      "instruction_sha256": "f1c93ad36b31bcfc2e0bbc16f8236f85bc065225d8e0327a1c4e8e8a36b3c94e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 234,
+      "instruction_sha256": "473308109b417f5956c0014aa65ef06872aa066f06daac21379e315954406240",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 235,
+      "instruction_sha256": "bd388531b0968e7413afc629f0a446e475b481c4ea2b05b61ca2c46ba210dca2",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 236,
+      "instruction_sha256": "8efec074a85923402cecee8822f5d7cd681dc79ee0de62610525ffe8aafb5660",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 237,
+      "instruction_sha256": "cb99b3d9285146029624113f3774dcf7bd7393ce49695f49af1e2a1b2f5d4378",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 238,
+      "instruction_sha256": "9cc47ec603c0a77a58f06d5b25d0e0d14ee6c62d9f350cb65b985d40b83aa57f",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 239,
+      "instruction_sha256": "0bcca45c96fed8208a1096334da012b06f7ae42c1f49ff0388cf8e284d8ea43e",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "No explicit goal for one of the six fixed targets observed in this root; no claim about other Topics.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    },
+    {
+      "row": 240,
+      "instruction_sha256": "ced571fe28f43af293ff0c6281acae4f3ff5312fe44fe282a7b46bb7eec7db42",
+      "decision": "NO_EXPLICIT_FIXED_TARGET_GOAL",
+      "rationale": "Requests insults about a parent; no care/support goal.",
+      "accepted_gold": false,
+      "full_instruction_certified": false
+    }
+  ],
+  "findings": {
+    "lexical_hint_false_negative_source_only_rows": [
+      192
+    ],
+    "scope_uncertain_rows": [
+      162
+    ],
+    "neighbor_uncertain_rows": [
+      193
+    ],
+    "underspecified_rows": [
+      67,
+      188
+    ],
+    "prospective_coverage_updates": 0
+  },
+  "source_limitations": [
+    "Harmlessness preference-data prefix is strongly adversarial; it is not representative normal PAIA requests.",
+    "Textual Human delimiters and worker interaction do not certify individual author, independence or complete natural instruction.",
+    "MIT source attribution remains preserved upstream and in the source artifact; no substantial raw source text copied here.",
+    "No prefix expansion, retrieval-hint modification, runtime change, score or source reacquisition."
+  ],
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "cig02_frozen": false,
+  "cig03_started": false,
+  "coverage": {
+    "prospective_source_nominations": 41,
+    "prospective_source_topics": 35,
+    "topics_without_prospective_sources": 109,
+    "unresolved_source_nominations": 28
+  },
+  "next_action": "Close this fixed HH prefix as source-only. Resolve author/completeness and independent adjudication eligibility before any fixture nomination; inspect metadata for a distinct GitHub-hosted human-authored public TRAIN/DEV source if this provenance cannot be established. No HH prefix expansion or hint tuning; no new capability TEST."
+}

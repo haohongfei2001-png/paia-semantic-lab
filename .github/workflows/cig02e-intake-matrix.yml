@@ -10,6 +10,8 @@ on:
       - "scripts/cig02e_neighbor_boundary_integrity.mjs"
       - "scripts/cig02e_source_coverage_reconciliation.mjs"
       - "scripts/cig02e_public_issue_source_gate.mjs"
+      - "scripts/cig02e_hh_fixed_prefix_review_integrity.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_*.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.json"
@@ -32,6 +34,8 @@ on:
       - "scripts/cig02e_neighbor_boundary_integrity.mjs"
       - "scripts/cig02e_source_coverage_reconciliation.mjs"
       - "scripts/cig02e_public_issue_source_gate.mjs"
+      - "scripts/cig02e_hh_fixed_prefix_review_integrity.mjs"
+      - "artifacts/compositional-intent-graph-v1/CIG-02E_HH_FIXED_PREFIX_*.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json"
       - "artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.json"
@@ -72,3 +76,5 @@ jobs:
         run: node scripts/cig02e_source_coverage_reconciliation.mjs
       - name: Verify bounded public issue source holds and preserved profiles
         run: node scripts/cig02e_public_issue_source_gate.mjs
+      - name: Verify complete fixed HH prefix review without gold promotion
+        run: node scripts/cig02e_hh_fixed_prefix_review_integrity.mjs
