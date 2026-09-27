@@ -175,9 +175,15 @@ rounds:
     cig02e_neighbor_boundary_report: docs/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_REVIEW.md
     cig02e_neighbor_boundary_classification: SOURCE_NEIGHBOR_FOLLOWUP_NOT_GOLD_OR_CAPABILITY
     cig02e_neighbor_boundary_merged_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_MERGED_MAIN_OBSERVATION.json
-    cig02e_neighbor_boundary_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK
+    cig02e_neighbor_boundary_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_source_coverage_reconciliation: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json
     cig02e_source_coverage_reconciliation_report: docs/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.md
+    cig02e_neighbor_boundary_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_NEIGHBOR_BOUNDARY_MERGED_MAIN_RECEIPT.json
+    cig02e_source_reconciliation_merged_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_RECONCILIATION_MERGED_MAIN_OBSERVATION.json
+    cig02e_source_reconciliation_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK
+    cig02e_six_topic_public_issue_source_gate: artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.json
+    cig02e_six_topic_public_issue_source_report: docs/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_PUBLIC_ISSUE_SOURCE_GATE.md
+    cig02e_issue_source_family_action: STOP_EXPANDING_ISSUE_SEARCH_FOR_PERSONAL_TOPIC_GAPS
     cig02e_current_prospective_source_nominations: 41
     cig02e_current_prospective_source_topics: 35
     cig02e_topics_without_current_prospective_sources: 109
@@ -205,4 +211,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Complete PR #61 exact-main receipt when its remaining applicable CI finishes; verify the coherent coverage reconciliation batch. Historical intake counts remain the immutable original snapshot; current 41 prospective source nominations cover 35 Topics with zero gold, 109 Topics still lack prospective sources, and 28 nominations remain unresolved. Next bounded natural-source batch prioritizes the two zero-nomination Topics plus learning methods, academic administration, project planning and product requirements; review provenance/license and complete user inputs before nomination, disclose scope ambiguity, and retain DEFER/context control gaps. No broad repeated lexical scan, source rewriting, frozen-protocol change or fresh score. CIG-02 unfrozen, CIG-03 blocked."
+next_action: "Complete PR #62 exact-main receipt after its remaining applicable CI; verify six-Topic bounded source-gate batch. Stop expanding GitHub issue searches for personal Topic gaps after repeated means/goal and reuse-provenance bottlenecks. Inspect at most two GitHub-hosted public request/conversation corpus candidates with documented participant roles and explicit data reuse licenses; pin only eligible source artifacts, use complete user input, and preserve unqualified outcomes when gaps remain. No new gold, broad repeated scans, fixture freeze, score, or capability TEST before source/gold/candidate/scorer readiness. Current prospective coverage remains 35 Topics, 109 missing; CIG-02 unfrozen, CIG-03 blocked."
