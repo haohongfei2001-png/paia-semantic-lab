@@ -29,3 +29,18 @@ export function selectRoots(rows,topics,maxPerTopic=3) {
  }
  return selected;
 }
+
+export function validateRootInventory(inventory,counts,sha256) {
+ if(!Array.isArray(inventory)||typeof sha256!=="function")throw new Error("INVALID_INVENTORY");
+ if(counts.pairs!==240||inventory.length!==counts.extractable)throw new Error("INVENTORY_COUNT_MISMATCH");
+ const rows=new Set();let previous=0;
+ for(const r of inventory) {
+  if(Object.keys(r).sort().join("|")!=="accepted_gold|full_instruction_certified|instruction_sha256|nominated_topic|root|row")throw new Error("UNEXPECTED_ROOT_FIELDS");
+  if(!Number.isInteger(r.row)||r.row<=previous||r.row>counts.pairs||rows.has(r.row))throw new Error("INVALID_SOURCE_ROW_IDENTITY");
+  rows.add(r.row);previous=r.row;
+  if(typeof r.root!=="string"||!r.root.trim()||r.root.length>4000||sha256(r.root)!==r.instruction_sha256)throw new Error("INVALID_ROOT_IDENTITY");
+  if(r.nominated_topic!==null||r.accepted_gold!==false||r.full_instruction_certified!==false)throw new Error("SOURCE_PROMOTION_FORBIDDEN");
+ }
+ if(new Set(inventory.map(r=>r.root)).size!==counts.distinct)throw new Error("DISTINCT_ROOT_COUNT_MISMATCH");
+ return true;
+}

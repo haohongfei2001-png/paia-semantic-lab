@@ -186,10 +186,16 @@ rounds:
     cig02e_issue_source_family_action: STOP_EXPANDING_ISSUE_SEARCH_FOR_PERSONAL_TOPIC_GAPS
     cig02e_source_reconciliation_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_RECONCILIATION_MERGED_MAIN_RECEIPT.json
     cig02e_six_topic_source_gate_merged_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_SOURCE_GATE_MERGED_MAIN_OBSERVATION.json
-    cig02e_six_topic_source_gate_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK
+    cig02e_six_topic_source_gate_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_public_corpus_root_intake: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE.json
     cig02e_public_corpus_root_intake_report: docs/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE.md
-    cig02e_public_corpus_root_intake_verdict: REGISTERED_SOURCE_ONLY_AWAITING_ACTIONS
+    cig02e_public_corpus_root_intake_verdict: FIXED_PREFIX_240_PAIRS_236_DISTINCT_ROOTS_ZERO_HINT_HITS_NOT_CAPABILITY
+    cig02e_six_topic_source_gate_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SIX_TOPIC_SOURCE_GATE_MERGED_MAIN_RECEIPT.json
+    cig02e_public_corpus_root_intake_observation: artifacts/compositional-intent-graph-v1/CIG-02E_HH_ROOT_SOURCE_INTAKE_OBSERVATION.json
+    cig02e_public_corpus_root_intake_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_PUBLIC_CORPUS_ROOT_INTAKE_MERGED_MAIN_OBSERVATION.json
+    cig02e_public_corpus_root_intake_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK
+    cig02e_fixed_prefix_root_audit_report: docs/compositional-intent-graph-v1/CIG-02E_FIXED_PREFIX_ROOT_AUDIT.md
+    cig02e_fixed_prefix_root_audit_status: INVENTORY_INSTRUMENTATION_AWAITING_ACTIONS
     cig02e_current_prospective_source_nominations: 41
     cig02e_current_prospective_source_topics: 35
     cig02e_topics_without_current_prospective_sources: 109
@@ -217,4 +223,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Complete PR #63 exact-main receipt when its remaining applicable CI finishes. Verify the single pinned public TRAIN root-intake job: exact compressed Git blob, first 240 pairs only, shared first Human segments, no assistant-answer or TEST use. Read its source-only artifact and retain prefix-encoding/authorship/goal uncertainty; retrieval hints are not labels or gold. Stop if the fixed prefix supplies no eligible natural requests rather than repeatedly expanding the same corpus. No external-host acquisition, fixture freeze, score or independent capability TEST. Current prospective coverage remains 35 Topics, 109 missing, zero gold; CIG-02 unfrozen, CIG-03 blocked."
+next_action: "Complete PR #64 exact-main receipt after its remaining applicable CI; verify the fixed-prefix inventory instrumentation. Preserve the first source observation: 240 pairs, 236 distinct roots, zero retrieval-hint hits. This is not proof of source absence. Inspect the complete same-prefix root inventory for a bounded source-goal/provenance audit before any source-family conclusion; compare unchanged extraction counts, identities and zero-hit result. Do not extend prefix, alter retrieval hints, rerun the prior head or compute a score to chase coverage. No fixture freeze or independent capability TEST. Current prospective coverage remains 35 Topics, 109 missing, zero gold; CIG-02 unfrozen, CIG-03 blocked."
