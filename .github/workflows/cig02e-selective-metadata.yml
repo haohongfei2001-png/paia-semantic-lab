@@ -5,12 +5,16 @@ on:
     paths:
       - "scripts/cig02e_selective_task_metadata.mjs"
       - "tests-js/cig02e_selective_task_metadata.test.mjs"
+      - "scripts/cig02e_verified_train_intake.mjs"
+      - "tests-js/cig02e_verified_train_intake.test.mjs"
       - ".github/workflows/cig02e-selective-metadata.yml"
   push:
     branches: [main]
     paths:
       - "scripts/cig02e_selective_task_metadata.mjs"
       - "tests-js/cig02e_selective_task_metadata.test.mjs"
+      - "scripts/cig02e_verified_train_intake.mjs"
+      - "tests-js/cig02e_verified_train_intake.test.mjs"
       - ".github/workflows/cig02e-selective-metadata.yml"
 permissions:
   contents: read
@@ -29,4 +33,4 @@ jobs:
         with:
           node-version: "22"
       - name: Test selective metadata parser without any source acquisition
-        run: node --test tests-js/cig02e_selective_task_metadata.test.mjs
+        run: node --test tests-js/cig02e_selective_task_metadata.test.mjs tests-js/cig02e_verified_train_intake.test.mjs
