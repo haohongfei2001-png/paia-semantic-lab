@@ -35,7 +35,15 @@ export async function extractTaskMetadata(chunks, options = {}) {
   async function string(retain, valueString = false) {
     await expect('"');
     let raw = retain ? '"' : '';
+    const special = /["\\\\\x00-\x1f]/g;
     while (true) {
+      if (!retain) {
+        if (await peek() === '') fail('truncated');
+        special.lastIndex = offset;
+        const match = special.exec(chunk);
+        if (!match) { offset = chunk.length; continue; }
+        offset = match.index;
+      }
       const c = await take();
       if (c.charCodeAt(0) < 32) fail('control in string');
       if (retain) { raw += c; if (raw.length > maxKeptChars) fail('string limit'); }
