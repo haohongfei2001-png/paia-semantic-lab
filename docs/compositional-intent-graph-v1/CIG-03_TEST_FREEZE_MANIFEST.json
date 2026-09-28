@@ -1,0 +1,476 @@
+{
+  "schema_version": "cig03-test-freeze-v1",
+  "protocol": "PAIA-COMPOSITIONAL-INTENT-GRAPH-v1/1.1.0",
+  "test_started": false,
+  "candidate_test_executed": false,
+  "authoring_commit": "ab5eafa714389a724aa30a6898360f9339758a74",
+  "authoring_tree": "e0298614c16eb69257ba9650b3b547f95621b83e",
+  "pull_request": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/83",
+  "candidate": {
+    "source_ref": "2c218ccfb478f9538cc30b5e50e5f07291ae422b",
+    "index_sha256": "2448842ddd49614f7b0581b6584fb19d4eb3693d227c0b68d3887412d1eb3427",
+    "full_topic_count": 144,
+    "zero_model": true,
+    "local_first": true,
+    "tiny_product_contract_unchanged": true
+  },
+  "curator": {
+    "identity": "/root/cig03_blind_curator_v2",
+    "role": "independent blind curator/test author",
+    "context_start": "fresh isolated context, separate from candidate/TRAIN/DEV writer",
+    "authorship": "single isolated agent authored and adjudicated; self-review is not a second independent person",
+    "gold_review": "formal Catalog primary-goal inclusion/exclusion scope; derived profiles interpreted unchanged semantics; current decides gold; means/background/context do not create assignment",
+    "candidate_writer_blind": true,
+    "per_case_information_shared_with_manager": false,
+    "forbidden_context_exposed": false,
+    "environment": "GitHub connector remote and Actions only",
+    "external_semantic_api_calls": 0,
+    "local_repository_or_terminal_or_browser_access": false,
+    "read_allowlist": [
+      "AGENTS.md",
+      "catalog/system_topic_catalog_v0.2.yaml",
+      "semantic_profiles/v0.1/manifest.json",
+      "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "docs/compositional-intent-graph-v1/DEVELOPMENT_PLAN.md",
+      "docs/compositional-intent-graph-v1/CIG-02G_INDEPENDENT_TEST_HANDOFF.md"
+    ],
+    "metadata_attestation": "Branch/commit metadata was printed in full once before output projection was corrected; no forbidden file or candidate/DEV diff content was exposed. Task-specified create_pull_request response carried a diff field but its body was not read, projected or printed. Subsequent reads used raw fetch URLs and metadata/aggregate projection.",
+    "actions_only_development_allowlist": [
+      "fixtures/cig_v1/cig02g_train_v1.json",
+      "fixtures/cig_v1/cig02g_dev_v1.json"
+    ],
+    "development_fixture_read_by_curator": false,
+    "development_feedback": "aggregate equality counts only; no row information received; packet not revised to improve any candidate score",
+    "vocabulary_disclosure": "Shared public formal Catalog/Profile vocabulary is inevitable. This does not claim zero lexical overlap. No published Profile example copied."
+  },
+  "topic_ids": [
+    "sys.ai_computing.ai_models_tools",
+    "sys.ai_computing.coding_software_development",
+    "sys.ai_computing.cybersecurity_privacy",
+    "sys.ai_computing.data_systems",
+    "sys.ai_computing.debugging_troubleshooting",
+    "sys.ai_computing.hardware_devices",
+    "sys.ai_computing.networking_connectivity",
+    "sys.ai_computing.prompt_workflows",
+    "sys.business_entrepreneurship.business_strategy",
+    "sys.business_entrepreneurship.customer_feedback",
+    "sys.business_entrepreneurship.entrepreneurship",
+    "sys.business_entrepreneurship.market_research",
+    "sys.business_entrepreneurship.marketing_growth",
+    "sys.business_entrepreneurship.operations_process",
+    "sys.business_entrepreneurship.partnerships",
+    "sys.business_entrepreneurship.sales",
+    "sys.career_work.applications",
+    "sys.career_work.career_strategy",
+    "sys.career_work.compensation_benefits",
+    "sys.career_work.interviews",
+    "sys.career_work.job_search",
+    "sys.career_work.networking_professional",
+    "sys.career_work.performance_growth",
+    "sys.career_work.workplace_daily",
+    "sys.communication_writing.documents_reports",
+    "sys.communication_writing.email_messages",
+    "sys.communication_writing.negotiation_persuasion",
+    "sys.communication_writing.presentations",
+    "sys.communication_writing.public_posts",
+    "sys.communication_writing.speaking_conversation",
+    "sys.communication_writing.translation",
+    "sys.communication_writing.writing_editing",
+    "sys.creative_design.branding_identity",
+    "sys.creative_design.creative_writing",
+    "sys.creative_design.ideation_concepts",
+    "sys.creative_design.illustration_image_creation",
+    "sys.creative_design.photography",
+    "sys.creative_design.ux_ui_design",
+    "sys.creative_design.video_audio_creation",
+    "sys.creative_design.visual_design",
+    "sys.education_learning.academic_admin",
+    "sys.education_learning.academic_courses",
+    "sys.education_learning.exams_assessments",
+    "sys.education_learning.language_learning",
+    "sys.education_learning.learning_methods",
+    "sys.education_learning.reading_learning",
+    "sys.education_learning.skill_learning",
+    "sys.education_learning.thesis_research",
+    "sys.family_relationships.caregiving_family_support",
+    "sys.family_relationships.conflict_boundaries",
+    "sys.family_relationships.friendships",
+    "sys.family_relationships.parents_family",
+    "sys.family_relationships.partner_relationship",
+    "sys.family_relationships.pets",
+    "sys.family_relationships.siblings",
+    "sys.family_relationships.social_interaction",
+    "sys.finance_purchases.banking_payments",
+    "sys.finance_purchases.budgeting_cashflow",
+    "sys.finance_purchases.debt_credit",
+    "sys.finance_purchases.investing",
+    "sys.finance_purchases.major_purchases",
+    "sys.finance_purchases.shopping_research",
+    "sys.finance_purchases.subscriptions_recurring",
+    "sys.finance_purchases.taxes_insurance",
+    "sys.health_wellbeing.fitness",
+    "sys.health_wellbeing.medical_care",
+    "sys.health_wellbeing.medication_treatment",
+    "sys.health_wellbeing.mental_wellbeing",
+    "sys.health_wellbeing.nutrition",
+    "sys.health_wellbeing.preventive_health",
+    "sys.health_wellbeing.sleep",
+    "sys.health_wellbeing.symptoms_conditions",
+    "sys.home_daily.chores_cleaning",
+    "sys.home_daily.home_improvement",
+    "sys.home_daily.housing",
+    "sys.home_daily.local_errands",
+    "sys.home_daily.moving_relocation",
+    "sys.home_daily.possessions_organization",
+    "sys.home_daily.transportation_ownership",
+    "sys.home_daily.utilities_services",
+    "sys.knowledge_memory.backup_export",
+    "sys.knowledge_memory.files_documents_storage",
+    "sys.knowledge_memory.journaling",
+    "sys.knowledge_memory.memory_context",
+    "sys.knowledge_memory.notes_knowledge_management",
+    "sys.knowledge_memory.personal_archive",
+    "sys.knowledge_memory.photos_media_archive",
+    "sys.knowledge_memory.provenance_history",
+    "sys.legal_civic.civic_public_policy",
+    "sys.legal_civic.complaints_disputes",
+    "sys.legal_civic.consumer_rights",
+    "sys.legal_civic.contracts_agreements",
+    "sys.legal_civic.government_services",
+    "sys.legal_civic.identity_documents",
+    "sys.legal_civic.immigration_residency",
+    "sys.legal_civic.legal_questions",
+    "sys.media_culture.art_culture",
+    "sys.media_culture.books_literature",
+    "sys.media_culture.film_tv",
+    "sys.media_culture.games",
+    "sys.media_culture.live_events",
+    "sys.media_culture.music",
+    "sys.media_culture.news_media",
+    "sys.media_culture.online_culture",
+    "sys.personal_direction.habits_behavior",
+    "sys.personal_direction.life_goals",
+    "sys.personal_direction.life_planning",
+    "sys.personal_direction.major_decisions",
+    "sys.personal_direction.personal_admin",
+    "sys.personal_direction.personal_productivity",
+    "sys.personal_direction.self_reflection",
+    "sys.personal_direction.values_principles",
+    "sys.projects_products.engineering_execution",
+    "sys.projects_products.launch_operations",
+    "sys.projects_products.product_requirements",
+    "sys.projects_products.product_strategy",
+    "sys.projects_products.project_planning",
+    "sys.projects_products.roadmap_prioritization",
+    "sys.projects_products.testing_quality",
+    "sys.projects_products.ux_user_research",
+    "sys.science_technical.biology_life_science",
+    "sys.science_technical.chemistry_materials",
+    "sys.science_technical.computer_science",
+    "sys.science_technical.engineering",
+    "sys.science_technical.mathematics",
+    "sys.science_technical.medicine_knowledge",
+    "sys.science_technical.physics",
+    "sys.science_technical.statistics_data_analysis",
+    "sys.time_events.appointments_bookings",
+    "sys.time_events.calendar_scheduling",
+    "sys.time_events.celebrations_holidays",
+    "sys.time_events.life_events",
+    "sys.time_events.plans_checklists",
+    "sys.time_events.reminders_deadlines",
+    "sys.time_events.routines_recurring",
+    "sys.time_events.time_management",
+    "sys.travel_places.attractions_activities",
+    "sys.travel_places.local_navigation",
+    "sys.travel_places.lodging",
+    "sys.travel_places.restaurants_travel",
+    "sys.travel_places.transport_travel",
+    "sys.travel_places.trip_planning",
+    "sys.travel_places.trip_records",
+    "sys.travel_places.visas_border"
+  ],
+  "allocation": {
+    "single_label": 288,
+    "context_pairs": 72,
+    "controls": 36,
+    "single_per_topic": 2,
+    "context_per_domain": 4,
+    "languages": {
+      "single_label": {
+        "zh": 144,
+        "en": 144
+      },
+      "context": {
+        "zh": 36,
+        "en": 36
+      },
+      "controls": {
+        "zh": 18,
+        "en": 18
+      }
+    },
+    "controls_by_type": {
+      "multi_goal": 9,
+      "ambiguous": 9,
+      "insufficient": 9,
+      "non_topic": 9
+    },
+    "scenarios": "18 Catalog domains balanced; everyday personal/family/home, education/work, product/computing, finance/travel, communication/culture, law/science/design/business, scheduling/memory; requests, troubleshooting, comparison, planning, explanation, reflection and editing are naturally varied"
+  },
+  "gates": {
+    "assigned_precision": {
+      "floor": 0.95,
+      "unit": "single_label exact-set correct ASSIGN / single_label ASSIGN; zero assigned => 0"
+    },
+    "single_label_auto_coverage": {
+      "floor": 0.7,
+      "unit": "single_label ASSIGN / single_label cases"
+    },
+    "full144_macro_recall": {
+      "floor": 0.7,
+      "unit": "mean exact single-label recall across all 144; uncovered or incorrect/deferred Topics count as misses"
+    },
+    "controls_false_assignment": {
+      "ceiling": 0.02,
+      "unit": "any ASSIGN controls / 36 DEFER controls"
+    },
+    "context_harm": {
+      "ceiling": 0,
+      "unit": "count of pairs whose base and perturbed complete native JSON SHA256 differs"
+    },
+    "deterministic_repeat": {
+      "required": "PASS",
+      "unit": "all 468 native inputs: scored observation/first/second full native digest, state and topic set match"
+    }
+  },
+  "scorer_contract": {
+    "path": "scripts/cig03_score.mjs",
+    "exports": [
+      "GATES",
+      "score(packet,predictions)"
+    ],
+    "state_enum": [
+      "ASSIGN",
+      "DEFER"
+    ],
+    "decision_fields": [
+      "state",
+      "topics",
+      "raw_output_digest"
+    ],
+    "raw_output_digest": "lowercase SHA256 of complete native JSON.stringify output from manager adapter; no topic-only summary",
+    "prediction_groups": {
+      "single_label": [
+        "id",
+        "state",
+        "topics",
+        "raw_output_digest"
+      ],
+      "context": [
+        "id",
+        "base",
+        "perturbed"
+      ],
+      "controls": [
+        "id",
+        "state",
+        "topics",
+        "raw_output_digest"
+      ],
+      "repeats": [
+        "id",
+        "first",
+        "second"
+      ]
+    },
+    "repeat_ids": "single/control id; context id+'-base' and id+'-perturbed'",
+    "input_counts": {
+      "unique_currents": 396,
+      "native_inputs": 468,
+      "repeat_rows": 468
+    },
+    "context_input_schema": {
+      "current": "same string in both variants",
+      "base": "no context",
+      "perturbed": {
+        "recent_inputs": "array of authored strings",
+        "activity_topic_ids": "array of formal IDs"
+      }
+    },
+    "result": "aggregate metrics, gates, passed, counts, metric_units; overall_assigned_precision diagnostic does not alter formal single precision gate"
+  },
+  "files": [
+    {
+      "path": "fixtures/cig_v1/cig03_independent_test_v1.json",
+      "git_blob_sha": "f0661b537843d08a3d2782f63ffb7c634f04651c",
+      "sha256": "8c3210ca3b0d5664e4f7d79e8b06f2848fc5f5b393ff33922f8a61b3799e4701",
+      "bytes": 434583
+    },
+    {
+      "path": "scripts/cig03_score.mjs",
+      "git_blob_sha": "228e18af81374d5b0ec1b3c9e00024672c0d75bd",
+      "sha256": "c9ea01637fadd18c70f8d06905829c44dc2a6788068d077560fb17416cd0c536",
+      "bytes": 6064
+    },
+    {
+      "path": "scripts/cig03_validate.mjs",
+      "git_blob_sha": "09015bc13ee1c8d5159e8dbfe6cd08f693ecccf8",
+      "sha256": "62fd5b7379411fbd611e2adabb55a6c5fbed33a580543a46d1db4a69af443fa6",
+      "bytes": 3959
+    },
+    {
+      "path": "scripts/cig03_score.test.mjs",
+      "git_blob_sha": "41e5df21ecbea16954a2e9e12bc819c658d5bbc1",
+      "sha256": "114fb0c0881084351454450836698d162791b0dd722373252bf6fc06e2cc47fe",
+      "bytes": 3558
+    },
+    {
+      "path": "scripts/cig03_validate.test.mjs",
+      "git_blob_sha": "b3e2be39d022accd6b6438237e7035c18698176b",
+      "sha256": "96ad392fff119509b4f4a925cc7d342e24afbc662e6ba8d707fad2e709f915b9",
+      "bytes": 1895
+    },
+    {
+      "path": "scripts/cig03_audit.mjs",
+      "git_blob_sha": "af5104075f8cf8df229df1663181fe0a2fbbef26",
+      "sha256": "4ad5d1bdeeee0eefc7789cf0465a366ee9612733c424b52f6b393399fd4f7314",
+      "bytes": 5058
+    },
+    {
+      "path": ".github/workflows/cig03-independent-test-schema.yml",
+      "git_blob_sha": "4a1e06a9459ebc034aaf3330ee0e1f196255d475",
+      "sha256": "4af6db6c80fef640f3cd420321a8d2acd7e25611d4ef9fe2da8a85acd251d09b",
+      "bytes": 1340
+    }
+  ],
+  "formal_source_identities": [
+    {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "git_blob_sha": "6bcdd2af66879d7ac098cf237b5586c3c9818aad",
+      "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "bytes": 139570
+    },
+    {
+      "path": "semantic_profiles/v0.1/manifest.json",
+      "git_blob_sha": "e192be6a62e2c7ae8d5f4d998efd5da3f494165e",
+      "sha256": "eb391c16ce0cfa275ee106e7a20efe933600c20447a74eaceabc62c4b4db253c",
+      "bytes": 2585
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_01.json",
+      "git_blob_sha": "76cb2f17d94c4753a957dce7a62095d51128db89",
+      "sha256": "4daafab51d39fd5969cd09dd1484e50579e565074da326cc33bb587ddece2e6f",
+      "bytes": 57360
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_02.json",
+      "git_blob_sha": "5916203b06a26201b89254b08da324a588973737",
+      "sha256": "1fb2f52fc6ef37522dfc913dffa3e6c0569391e159d9dafa3a706c18bc900ed2",
+      "bytes": 57826
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_03.json",
+      "git_blob_sha": "1a889bfbb9d962ef7eaddddd9181e3b6f97a0613",
+      "sha256": "1abe93e8b1973f2defab660f4085a2e82dc1e165ac66f2605fc6ba49025341ea",
+      "bytes": 58149
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_04.json",
+      "git_blob_sha": "50127a200653c9abab942afeb8f00881e3e77d31",
+      "sha256": "87b4f92740b42c702aedee1ae02bcd13e1129c85f0a097dae874ebfc55c92e9a",
+      "bytes": 55883
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_05.json",
+      "git_blob_sha": "e619c0e796b5a74c976621d3f4765414e14da65d",
+      "sha256": "74a4458b5743a8c7a1a4352bf7ec2760b93bb6e5bf83591ae14fb7e274cd8319",
+      "bytes": 57978
+    },
+    {
+      "path": "semantic_profiles/v0.1/system_topics_shard_06.json",
+      "git_blob_sha": "41dc51e7d6f2599d4b4a9c2bde72ddeaca5f7e99",
+      "sha256": "e3825b824d06e5576283e9aae7f530c4e98a405f231d35f702a4559cb07a7b93",
+      "bytes": 58503
+    }
+  ],
+  "curation_audit_receipt": {
+    "head_sha": "ab5eafa714389a724aa30a6898360f9339758a74",
+    "workflow": "CIG03 Independent TEST Schema",
+    "run_id": 36459133916,
+    "job_id": 109052972565,
+    "artifact_id": 10986932760,
+    "artifact_digest": "sha256:7a0e736a6373819c5b404ef3dc97a7e839f51d0d5224db8583df0cfe39724e00",
+    "artifact_name": "cig03-curation-audit",
+    "validation": {
+      "passed": true,
+      "issues": [],
+      "counts": {
+        "single_label": 288,
+        "context_pairs": 72,
+        "controls": 36,
+        "topics": 144,
+        "covered_topics": 144,
+        "minimum_per_topic": 2,
+        "languages": {
+          "single_label": {
+            "zh": 144,
+            "en": 144
+          },
+          "context": {
+            "zh": 36,
+            "en": 36
+          },
+          "controls": {
+            "zh": 18,
+            "en": 18
+          }
+        },
+        "controls_by_type": {
+          "multi_goal": 9,
+          "ambiguous": 9,
+          "insufficient": 9,
+          "non_topic": 9
+        },
+        "context_domains": 18
+      }
+    },
+    "semantic_free_unit_count": 13,
+    "semantic_free_unit_result": "PASS",
+    "disjointness": {
+      "passed": true,
+      "method": "exact text; NFKC lower-case punctuation/whitespace normalized; normalized template skeleton with published Catalog/Profile names and lexical anchors replaced, then numbers normalized",
+      "development_strings_extracted": 468,
+      "test_currents": 396,
+      "overlap_counts": {
+        "exact": 0,
+        "normalized": 0,
+        "template_skeleton": 0
+      },
+      "internal_normalized_duplicates": 0,
+      "limitation": "mechanical equality audit only, not proof of zero semantic or lexical overlap; shared public vocabulary inevitable; no row feedback"
+    },
+    "development_file_identities": [
+      {
+        "path": "fixtures/cig_v1/cig02g_train_v1.json",
+        "git_blob_sha": "96ba721c39af11b20bec9c9a6be94cb313bb13aa",
+        "sha256": "6c6e6f1366ee72eff5ac779383e8644d45aa4445000a349a49203385edf3e35d",
+        "bytes": 68114
+      },
+      {
+        "path": "fixtures/cig_v1/cig02g_dev_v1.json",
+        "git_blob_sha": "ea5e5ee35d4cde7a80b087ed6a62ef55c756c4fe",
+        "sha256": "3f5eb16ac60d4570878b66c275e8ad88ef033f78fd533d1e33b5114ac46b4d6b",
+        "bytes": 111103
+      }
+    ],
+    "test_started": false,
+    "candidate_executed": false
+  },
+  "execution_boundary": "The candidate TEST remains unopened. Manifest freeze is separate from manager adapter/pre-open arm and one-shot evaluator. Ordinary CI only validates schema, provenance, coverage, pure stub units, mechanical disjointness and hashes. No candidate predictions are generated.",
+  "post_consumption": "One-shot result must be honestly PASS/FAIL at fixed gates; no repair or promotion replay on consumed TEST."
+}
