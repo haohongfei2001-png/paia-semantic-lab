@@ -110,7 +110,8 @@ function verifyResult(state) {
 async function main() {
  const mode=process.argv[2],state=identities();
  if(mode==="--preflight") {
-  if(fs.existsSync(ARM_PATH))checkArm(state);
+  // Once consumed, stored-result verification no longer depends on shallow Git history.
+  if(fs.existsSync(ARM_PATH)&&!fs.existsSync(RESULT))checkArm(state);
   console.log("CIG03_PRE_OPEN_VERIFIED_JSON="+JSON.stringify({pre_open_git_blob_sha:state.pre_open_git_blob_sha,
    packet_sha256:state.m.packet_sha256,topic_count:144,index_bytes:state.index_bytes,
    router_plus_index_bytes:state.router_plus_index_bytes,candidate_test_executed:false}));
