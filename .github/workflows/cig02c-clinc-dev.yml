@@ -7,9 +7,10 @@ on:
       - "scripts/cig02c_clinc_train_dev.mjs"
       - "scripts/cig02c_clinc_aggregate_diagnostic.mjs"
       - "scripts/cig02c_compile.mjs"
-      - "runtime/compositional_intent_graph_v1/**"
+      - "runtime/compositional_intent_graph_v1/catalog_name_grounder.mjs"
+      - "runtime/compositional_intent_graph_v1/typed_grounder.mjs"
+      - "runtime/compositional_intent_graph_v1/goal_parser.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md"
-      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
   push:
     branches: [main]
     paths:
@@ -17,9 +18,10 @@ on:
       - "scripts/cig02c_clinc_train_dev.mjs"
       - "scripts/cig02c_clinc_aggregate_diagnostic.mjs"
       - "scripts/cig02c_compile.mjs"
-      - "runtime/compositional_intent_graph_v1/**"
+      - "runtime/compositional_intent_graph_v1/catalog_name_grounder.mjs"
+      - "runtime/compositional_intent_graph_v1/typed_grounder.mjs"
+      - "runtime/compositional_intent_graph_v1/goal_parser.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02C_CLINC_DEV_REPORT.md"
-      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
 permissions:
   contents: read
 jobs:

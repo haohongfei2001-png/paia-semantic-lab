@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
-package_version: 1.0.0
+package_version: 1.1.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02F_MINIMAL_TOPIC_ROUTER_DEV
+phase: CIG_02G_AUTHORED_DEV_CAPABILITY_ENGINEERING
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -32,7 +32,7 @@ rounds:
     result: artifacts/compositional-intent-graph-v1/CIG-01_RESULT.json
     evaluation_invocations: 1
   CIG-02:
-    title: New public natural-expression development
+    title: Public and isolated authored DEV capability engineering
     execution_status: IN_PROGRESS
     dev_diagnostic: TYPED_GROUNDING_UNQUALIFIED
     dev_result: artifacts/compositional-intent-graph-v1/CIG-02_DEV_DIAGNOSTIC.json
@@ -234,9 +234,9 @@ rounds:
     cig02f_current_scope_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02F_CURRENT_SCOPE_MERGED_MAIN_RECEIPT.json
     cig02f_frozen_mask_capability_bound: artifacts/compositional-intent-graph-v1/CIG-02F_FROZEN_MASK_CAPABILITY_BOUND.json
     cig02f_full_catalog_macro_recall_upper_bound: 0.24305555555555555
-    cig02f_capability_floor_status: STRUCTURALLY_UNREACHABLE_UNDER_CURRENT_FROZEN_MASK
+    cig02f_capability_floor_status: HISTORICAL_STRUCTURALLY_UNREACHABLE_UNDER_CIG02F_MASK
     cig02f_capability_limit_report: docs/compositional-intent-graph-v1/CIG-02F_CAPABILITY_LIMIT.md
-    cig02f_next_capability_direction: OWNER_REQUIRED_FOR_SCOPE_OR_PROTOCOL_CHANGE
+    cig02f_next_capability_direction: OWNER_AUTHORIZED_CIG02G_AUTHORED_DEV_PROTOCOL_AMENDMENT
     cig02f_current_scope_report: docs/compositional-intent-graph-v1/CIG-02F_CURRENT_GOAL_SCOPE.md
     cig02f_current_scope_diagnostic: scripts/cig02f_current_scope_dev.mjs
     cig02f_name_echo_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02F_NAME_ECHO_MERGED_MAIN_RECEIPT.json
@@ -289,13 +289,30 @@ rounds:
     cig02e_compiler_design_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_COMPILER_DESIGN_MERGED_MAIN_RECEIPT.json
     cig02e_authored_topic_count: 144
     cig02e_candidate_status: UNSCORED_GLOBAL_RUNTIME_ENGINEERING_NOT_CAPABILITY
-    next_substage: CIG_02F_MINIMAL_TOPIC_ROUTER_DEV
+    cig02g_protocol_amendment: artifacts/compositional-intent-graph-v1/CIG-02G_PROTOCOL_AMENDMENT.json
+    cig02g_protocol_report: docs/compositional-intent-graph-v1/CIG-02G_AUTHORED_DEV_AMENDMENT.md
+    cig02g_train: fixtures/cig_v1/cig02g_train_v1.json
+    cig02g_dev: fixtures/cig_v1/cig02g_dev_v1.json
+    cig02g_runtime: runtime/compositional_intent_graph_v1/authored_topic_router.mjs
+    cig02g_compiler: scripts/cig02g_compile.mjs
+    cig02g_dev_scorer: scripts/cig02g_dev.mjs
+    cig02g_dev_status: PENDING_EXACT_HEAD_ACTIONS_NOT_CAPABILITY
+    cig02g_natural_source_readiness_role: IMMUTABLE_PROVENANCE_NOT_RUNTIME_VETO
+    cig02g_formal_topic_count: 144
+    cig02g_train_topic_count: 144
+    cig02g_single_label_dev_count: 288
+    cig02g_safety_dev_count: 36
+    cig02g_context_perturbation_pair_count: 72
+    cig02g_authorship: SAME_WRITER_NOT_INDEPENDENT_NOT_BLIND
+    next_substage: CIG_02G_AUTHORED_DEV_CAPABILITY_ENGINEERING
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
-    blocked_on: CIG-02 freeze
+    blocked_on: CIG-02 completion and committed pre-open freeze with independent blind curator
+    owner_authorization: CONDITIONAL_AFTER_CIG02_COMPLETE_CURRENT_OWNER_DIRECTION
+    test_started: false
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Complete the current-scope receipt/capability-bound batch after exact-head CI PASS and check its exact-main once; do not create a recursive receipt PR. Current engineering repair is complete, but 109 forced-DEFER Topics bound full-Catalog macro recall to 35/144 (24.31%), below the unchanged 70% floor. Await owner direction before narrowing the capability protocol or starting a new independent TEST. Keep source exploration stopped, CIG-02 unfrozen, CIG-03 blocked, all real FAIL and product constraints intact."
+next_action: "Review the coherent CIG-02G protocol/TRAIN/compiler/runtime/DEV batch from exact-head Actions. Record DEV metrics and failures without capability claims; perform bounded root-cause on misses before further repair. Freeze CIG-02 only after the unchanged full-144 floor and candidate review/digests. Then execute the owner-authorized fresh independent blind CIG-03 under a committed pre-open freeze. Stop public source search and repeated unchanged synthetic certification; preserve all old failures and product constraints."
