@@ -7,6 +7,7 @@ on:
       - "scripts/cig02g_*.mjs"
       - "scripts/cig02e_compile.mjs"
       - "runtime/compositional_intent_graph_v1/authored_topic_router.mjs"
+      - "runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs"
       - "runtime/compositional_intent_graph_v1/frame_grounder.mjs"
       - "runtime/compositional_intent_graph_v1/current_goal_scope.mjs"
       - "runtime/compositional_intent_graph_v1/goal_parser.mjs"
@@ -26,6 +27,7 @@ on:
       - "scripts/cig02g_*.mjs"
       - "scripts/cig02e_compile.mjs"
       - "runtime/compositional_intent_graph_v1/authored_topic_router.mjs"
+      - "runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs"
       - "runtime/compositional_intent_graph_v1/frame_grounder.mjs"
       - "runtime/compositional_intent_graph_v1/current_goal_scope.mjs"
       - "runtime/compositional_intent_graph_v1/goal_parser.mjs"
@@ -57,6 +59,7 @@ jobs:
           node --check scripts/cig02g_compile.mjs
           node --check scripts/cig02g_dev.mjs
           node --check runtime/compositional_intent_graph_v1/authored_topic_router.mjs
+          node --check runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs
       - name: Compile full Catalog from allowlisted TRAIN only
         run: |
           node scripts/cig02e_compile.mjs

@@ -65,3 +65,16 @@ test("owner amendment pins unchanged product gates and historical public source 
     assert.equal(sha, expected, path + " changed after owner amendment");
   }
 });
+
+test("Chinese lexical identification compounds are not negation; real negation stays DEFER", async () => {
+  const { authoredCurrentGoalScopeReason } = await import("../runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs");
+  const router = createAuthoredTopicRouter(index);
+  for (const current of ["请帮我设计品牌与视觉识别", "请帮我识别品牌与视觉识别", "请分别比较这些类别"]) {
+    assert.equal(authoredCurrentGoalScopeReason(current), null);
+  }
+  for (const current of ["请别帮我设计品牌与视觉识别", "别识别品牌与视觉识别", "请不要识别品牌与视觉识别"]) {
+    assert.equal(authoredCurrentGoalScopeReason(current), "NEGATED_CURRENT_SCOPE");
+    assert.deepEqual(router.classify({ current }).topics, []);
+  }
+  assert.deepEqual(router.classify({ current: "请帮我设计品牌与视觉识别" }).topics, ["sys.creative_design.branding_identity"]);
+});

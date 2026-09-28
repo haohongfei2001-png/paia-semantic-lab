@@ -35,3 +35,9 @@ All prohibited private/legacy/lockbox/real PAIA reads and production writes rema
 ## CI cost and evidence discipline
 
 Legacy CLINC DEV, fresh DEV and dialogue source triage no longer trigger on unrelated canonical STATUS changes; their own implementation/input paths still trigger their checks. The legacy CIG workflow checks immutable source digests and runtime guard units without rescoring the historical CIG-02B/F diagnostics. CIG-02G uses one coherent PR candidate with new targeted compiler/admission/current-goal tests and one DEV diagnostic. Its exact-main CI compiles and tests but does not repeat the synthetic DEV score. The existing repository main validation remains at the stable merge boundary. No required product gate or scientific metric is relaxed.
+
+## Initial engineering FAIL and bounded repair
+
+Exact head 65215311a07a02d8cf0b03bf41801fcb0553e82a / Actions run 36453648820 compiled all 144 Topics into 76,827 bytes and passed DEV-removal byte identity, admission rejection, current-goal safety and historical source pins. The full-Catalog formal-name test failed on sys.creative_design.branding_identity: the historical guard interpreted the character 别 inside 识别 as negation. DEV scoring did not execute, so this is an engineering FAIL, not a capability result.
+
+The bounded repair leaves the historical guard unchanged. A new wrapper masks only eleven explicitly listed non-negation compounds for scope validation, then passes original text unchanged into grounding. Contrastive unit cases retain DEFER for 别识别 / 请别 / 不要 and admit affirmative 识别/类别. The failure artifact remains committed; no gold, metric or floor was edited.

@@ -67,7 +67,7 @@ const gates = {
   topic_macro_recall: macroRecall >= 0.70, insufficient_false_assignment: safetyRate <= 0.02,
   context_harm: contextHarm === 0, deterministic_repeat: nondeterministic === 0
 };
-const runtimePaths = ["authored_topic_router.mjs", "frame_grounder.mjs", "goal_parser.mjs", "current_goal_scope.mjs"]
+const runtimePaths = ["authored_topic_router.mjs", "authored_current_goal_scope.mjs", "frame_grounder.mjs", "goal_parser.mjs", "current_goal_scope.mjs"]
   .map(name => "runtime/compositional_intent_graph_v1/" + name);
 const hashes = Object.fromEntries(runtimePaths.map(path => [path, hash(fs.readFileSync(path))]));
 const runtimeBytes = runtimePaths.reduce((sum, path) => sum + fs.statSync(path).size, 0);
