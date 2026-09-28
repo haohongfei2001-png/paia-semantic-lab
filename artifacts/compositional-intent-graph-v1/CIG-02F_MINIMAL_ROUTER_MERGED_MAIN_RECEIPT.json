@@ -1,0 +1,65 @@
+{
+  "format": "CIG02F_MINIMAL_ROUTER_MERGED_MAIN_RECEIPT_V1",
+  "pr_number": 75,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/75",
+  "exact_head_sha": "eb819c056d840b1267fc2fa094207df555b67b41",
+  "merged_main_sha": "68c391db2afc57711a2d0920cba3735481e9059d",
+  "exact_main_checks": [
+    {
+      "name": "semantic-lab-validation",
+      "job_id": 108798194281,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "job_id": 108798194222,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "job_id": 108798194105,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "job_id": 108798193621,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "job_id": 108798193565,
+      "conclusion": "success"
+    }
+  ],
+  "diagnostic_run_id": 36381558687,
+  "exact_head_diagnostic_run_id": 36381436632,
+  "diagnostic_artifact_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/actions/runs/36381436632/artifacts/10953110975",
+  "diagnostic": {
+    "classification": "SAME_SOURCE_SYNTHETIC_ENGINEERING_NOT_CAPABILITY",
+    "formal_sparse": {
+      "ASSIGNED": 35,
+      "DEFER": 0
+    },
+    "typed_role_probes": {
+      "ASSIGNED_BY_FORMAL_NAME_ECHO": 2,
+      "DEFER": 33
+    },
+    "masked_exact_defer_topics": {
+      "ASSIGNED": 0,
+      "DEFER": 109
+    },
+    "context_mismatches": 0,
+    "repeat_mismatches": 0,
+    "independent_gold_rows": 0,
+    "index_bytes": 71972,
+    "router_and_index_bytes": 79990,
+    "product_neural_assets_bytes": 0,
+    "semantic_network_calls": 0,
+    "public_natural_dev_qualified": false,
+    "full_catalog_capability_floor_assessed": false
+  },
+  "classification": "MINIMAL_ROUTER_ENGINEERING_ONLY_NOT_CAPABILITY",
+  "applicable_checks_verdict": "FIVE_APPLICABLE_CHECKS_PASS",
+  "cig02_frozen": false,
+  "cig03_started": false
+}
