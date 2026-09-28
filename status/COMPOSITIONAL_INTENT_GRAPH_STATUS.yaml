@@ -228,6 +228,7 @@ rounds:
     cig02f_minimal_router_diagnostic: scripts/cig02f_minimal_dev.mjs
     cig02f_minimal_router_report: docs/compositional-intent-graph-v1/CIG-02F_MINIMAL_TOPIC_ROUTER.md
     cig02f_diagnostic_status: SYNTHETIC_EXACT_HEAD_AND_MAIN_PASS_NOT_CAPABILITY
+    cig02f_typed_probe_attribution: TWO_FORMAL_NAME_ECHO_ASSIGNMENTS_FITNESS_AND_MUSIC_NOT_ROLE_CAPABILITY
     cig02f_diagnostic_result: artifacts/compositional-intent-graph-v1/CIG-02F_MINIMAL_ROUTER_MERGED_MAIN_RECEIPT.json
     cig02_source_readiness_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_MERGED_MAIN_RECEIPT.json
     cig02_source_readiness_freeze: artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.json
@@ -286,4 +287,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "CIG-02F minimal Router is merged and same-source synthetic CI passed; inspect the two typed-role probes that echoed exact formal names as a bounded diagnostic, without treating them as independent gold or tuning on consumed TEST. Source search remains stopped at READY 0 / SPARSE 35 / DEFER 109. No qualifying natural DEV exists, so CIG-02 capability floor is unassessed and CIG-02 remains unfrozen; CIG-03 remains blocked and no new independent capability TEST is authorized."
+next_action: "CIG-02F bounded typed-probe attribution is complete; its two assignments used exact formal names, not role-only evidence. Preserve the source stop rule READY 0 / SPARSE 35 / DEFER 109 and all prior genuine FAIL. No independent natural gold or qualified public DEV exists, so CIG-02 capability floor remains unassessed and CIG-02 unfrozen. Do not start CIG-03 or a fresh capability TEST without the owner gate; avoid further unbounded source search or duplicate synthetic certification."
