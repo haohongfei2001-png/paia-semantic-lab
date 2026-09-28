@@ -1,0 +1,44 @@
+{
+  "format": "CIG02_SOURCE_READINESS_MERGED_MAIN_RECEIPT_V1",
+  "pr_number": 74,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/74",
+  "merged_main_sha": "67222f952902e59634751a350e981fdc4dba0c20",
+  "exact_main_checks": [
+    {
+      "name": "source-separated-public-train-dev",
+      "job_id": 108796887432,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "job_id": 108796887356,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "job_id": 108796887351,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "job_id": 108796887264,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "job_id": 108796887140,
+      "conclusion": "success"
+    }
+  ],
+  "source_readiness_counts": {
+    "READY": 0,
+    "SPARSE": 35,
+    "DEFER": 109
+  },
+  "source_only_frozen": true,
+  "source_search_stop_rule": "NO_MORE_UNBOUNDED_TOPIC_COVERAGE_SOURCE_SEARCH",
+  "classification": "SOURCE_READINESS_ONLY_NOT_CAPABILITY",
+  "applicable_checks_verdict": "FIVE_APPLICABLE_CHECKS_PASS",
+  "cig02_frozen": false,
+  "cig03_started": false
+}
