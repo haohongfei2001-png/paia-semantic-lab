@@ -43,3 +43,37 @@ test('malformed, drifted, or unsupported readiness masks fail closed',()=>{
   assert.throws(()=>createMinimalTopicRouter(index,uncounted),/counts/);
   assert.throws(()=>createMinimalTopicRouter({...index,topic_count:143},freeze),/index/);
 });
+
+test('current-scope controls cannot establish assignment through formal-name mentions',()=>{
+  const controls=[
+    ['Please do not help me with '+sparseName,'NEGATED_CURRENT_SCOPE'],
+    ["Please don't help me with "+sparseName,'NEGATED_CURRENT_SCOPE'],
+    ['我不想处理'+index.topics.find(t=>t.topic_id===sparse.topic_id).names.zh,'NEGATED_CURRENT_SCOPE'],
+    ['Please read the quote "'+sparseName+'" aloud.','QUOTED_CURRENT_SCOPE'],
+    ['请朗读「'+sparseName+'」','QUOTED_CURRENT_SCOPE'],
+    ['My friend says they want to explore '+sparseName+'.','REPORTED_CURRENT_SCOPE'],
+    ['If I want to explore '+sparseName+', what would happen?','CONDITIONAL_CURRENT_SCOPE'],
+    ['Please explain whether I should want to explore '+sparseName+'.','CONDITIONAL_CURRENT_SCOPE'],
+    ['Please read this note. I want to explore '+sparseName+'.','MULTI_SENTENCE_CURRENT_SCOPE'],
+    ['A plan to explore '+sparseName+' was mentioned.','UNSUPPORTED_CURRENT_GOAL_SCOPE']
+  ];
+  for(const [current,reason] of controls){
+    const result=router.classify({current});
+    assert.deepEqual(result,{topics:[],state:'DEFER',reason},current);
+    assert.deepEqual(router.classify({current,context:'Please help me with '+sparseName}),result);
+    assert.deepEqual(router.classify({current}),result);
+  }
+});
+test('direct goals and supported means-to-goal requests still route',()=>{
+  for(const current of [
+    'Please help me with '+sparseName,
+    'I want to explore '+sparseName+'.',
+    'Use a timer to improve '+sparseName+'.',
+    'Using a timer, I plan to explore '+sparseName+'.',
+    '请帮我处理'+index.topics.find(t=>t.topic_id===sparse.topic_id).names.zh
+  ]) assert.deepEqual(router.classify({current}).topics,[sparse.topic_id],current);
+  // NFKC input normalization is performed before the safety guard.
+  assert.equal(router.classify({current:'Ｐｌｅａｓｅ ｄｏ ｎｏｔ ｈｅｌｐ ｍｅ ｗｉｔｈ '+sparseName}).state,'DEFER');
+  for(const current of [undefined,null,42,{toString:()=> 'Please help me with '+sparseName}])
+    assert.deepEqual(router.classify({current}),{topics:[],state:'DEFER',reason:'INVALID_CURRENT_INPUT'});
+});

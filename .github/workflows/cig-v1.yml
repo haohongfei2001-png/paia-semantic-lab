@@ -76,15 +76,20 @@ jobs:
           node -e 'const fs=require("fs");const size=fs.statSync(".cig02e-index.json").size+fs.statSync("runtime/compositional_intent_graph_v1/frame_grounder.mjs").size;if(size>2097152)throw Error("router plus index exceeds 2 MiB");console.log("CIG02E_ROUTER_PLUS_INDEX_BYTES="+size)'
       - name: Evaluate CIG-02F minimal Router on fresh public synthetic diagnostics
         run: |
+          node --check runtime/compositional_intent_graph_v1/current_goal_scope.mjs
           node --check runtime/compositional_intent_graph_v1/minimal_topic_router.mjs
           node --check scripts/cig02f_minimal_dev.mjs
           node --test tests-js/cig02f_minimal_router.test.mjs
           node scripts/cig02f_minimal_dev.mjs .cig02e-index.json
+          node --check scripts/cig02f_current_scope_dev.mjs
+          node scripts/cig02f_current_scope_dev.mjs .cig02e-index.json
       - name: Preserve non-capability CIG-02F diagnostic
         uses: actions/upload-artifact@v4
         with:
           name: cig02f-minimal-router-synthetic-diagnostic
-          path: .cig02f-minimal-result.json
+          path: |
+            .cig02f-minimal-result.json
+            .cig02f-current-scope-result.json
           if-no-files-found: error
           include-hidden-files: true
           retention-days: 30
