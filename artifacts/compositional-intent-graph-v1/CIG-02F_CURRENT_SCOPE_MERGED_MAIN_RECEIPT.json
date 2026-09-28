@@ -1,0 +1,110 @@
+{
+  "format": "CIG02F_CURRENT_SCOPE_MERGED_MAIN_RECEIPT_V1",
+  "pr_number": 79,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/79",
+  "exact_head_sha": "5a8b39ace66d7490a06a2a9d7eb51579ae87561a",
+  "merged_main_sha": "e493b62509db748e5814513c2c7a71404b38b09d",
+  "exact_head_checks": [
+    {
+      "name": "fresh-public-train-dev",
+      "job_id": 108973894676,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "job_id": 108973894623,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "job_id": 108973894607,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "job_id": 108973894582,
+      "conclusion": "success"
+    },
+    {
+      "name": "csl-public-pr-validation",
+      "job_id": 108973894429,
+      "conclusion": "success"
+    }
+  ],
+  "exact_main_checks": [
+    {
+      "name": "semantic-lab-validation",
+      "job_id": 108974819275,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "job_id": 108974816490,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "job_id": 108974815866,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "job_id": 108974815626,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "job_id": 108974815528,
+      "conclusion": "success"
+    }
+  ],
+  "exact_head_diagnostic_run_id": 36435981269,
+  "exact_main_diagnostic_run_id": 36436249547,
+  "exact_main_diagnostic_job_id": 108974816490,
+  "baseline_safety_fail": {
+    "source_main": "03756742a39a9e4b74fc089ff7c849bf829ac6f7",
+    "unsupported_assignments": 5,
+    "evidence": "docs/compositional-intent-graph-v1/CIG-02F_CURRENT_GOAL_SCOPE.md",
+    "classification": "AUTHORING_PUBLIC_SYNTHETIC_DEVELOPMENT_FAIL_NOT_CAPABILITY"
+  },
+  "exact_main_diagnostic": {
+    "format": "CIG02F_CURRENT_SCOPE_DIAGNOSTIC_V1",
+    "classification": "SAME_WRITER_PUBLIC_SYNTHETIC_ENGINEERING_NOT_CAPABILITY",
+    "provenance": {
+      "authored_after_baseline": "03756742a39a9e4b74fc089ff7c849bf829ac6f7",
+      "source_mask_sha256": "ae7c15af3915a96b2a0f358f58abc0c05c65db6b1495ff40096619b3109fa265",
+      "index_sha256": "7906c39bf34a3c932a41073cedf9d163c5c4060589d37129c2f8e6010dc53159",
+      "runtime_sha256": {
+        "runtime/compositional_intent_graph_v1/minimal_topic_router.mjs": "7898ae628cebec07c6bb73c5cc320f23e646d377b6deb90f1e1552759ebdc7f0",
+        "runtime/compositional_intent_graph_v1/frame_grounder.mjs": "30bf14ab6a1250157f9c9178b0cd9701908982c36881258b73fce690ddc3d1fe",
+        "runtime/compositional_intent_graph_v1/goal_parser.mjs": "df702bd27464cd6d73596ee0e2d5fd27edc05297810fb547f2944a94857f9f43",
+        "runtime/compositional_intent_graph_v1/current_goal_scope.mjs": "e9a120ba7fd7da71b31e45e16a15f0d17d3f505ba71810ac3b0c5a29bf1d7047"
+      }
+    },
+    "counts": {
+      "positive_direct": {
+        "ASSIGNED": 70,
+        "DEFER": 0
+      },
+      "negative_scope": {
+        "ASSIGNED": 0,
+        "DEFER": 350
+      },
+      "context_mismatches": 0,
+      "repeat_mismatches": 0
+    },
+    "index_bytes": 71972,
+    "source_mask_bytes": 35939,
+    "index_and_mask_bytes": 107911,
+    "router_plus_index_bytes": 117829,
+    "independent_gold_rows": 0,
+    "public_natural_dev_qualified": false,
+    "capability_floor_assessed": false,
+    "memory_or_latency_certified": false,
+    "cig02_frozen": false,
+    "cig03_started": false
+  },
+  "verdict": "FIVE_APPLICABLE_EXACT_HEAD_AND_EXACT_MAIN_CHECKS_PASS",
+  "cig02_frozen": false,
+  "cig03_started": false
+}

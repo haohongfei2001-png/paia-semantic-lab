@@ -1,0 +1,38 @@
+{
+  "format": "CIG02F_FROZEN_MASK_CAPABILITY_BOUND_V1",
+  "classification": "STRUCTURAL_UPPER_BOUND_NOT_MEASURED_CAPABILITY_OR_TEST",
+  "source_mask_path": "artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.json",
+  "source_mask_sha256": "ae7c15af3915a96b2a0f358f58abc0c05c65db6b1495ff40096619b3109fa265",
+  "topic_count": 144,
+  "readiness_counts": {
+    "READY": 0,
+    "SPARSE": 35,
+    "DEFER": 109
+  },
+  "max_topics_with_nonzero_recall": 35,
+  "forced_zero_recall_topics": 109,
+  "macro_recall_upper_bound": {
+    "numerator": 35,
+    "denominator": 144,
+    "value": 0.24305555555555555
+  },
+  "frozen_macro_recall_floor": 0.7,
+  "minimum_topics_with_nonzero_recall_needed_at_perfect_recall": 101,
+  "shortfall_at_perfect_recall": 66,
+  "conclusion": "FULL_CATALOG_MACRO_RECALL_FLOOR_UNREACHABLE_UNDER_CURRENT_MASK",
+  "assumptions": [
+    "The frozen mask forces DEFER for every DEFER Topic.",
+    "Formal Topic IDs are evaluated without substituting sibling or Domain labels.",
+    "Macro recall includes all 144 formal Topics, each with positive evaluation support."
+  ],
+  "scope_limits": [
+    "No new capability TEST was registered, consumed, scored or replayed.",
+    "This bound is not an observed capability FAIL and does not imply Semantic Lab termination.",
+    "Coverage depends on case distribution; this result makes no distribution-free coverage claim.",
+    "Same-writer synthetic PASS cannot override this structural limit."
+  ],
+  "cig02_frozen": false,
+  "cig03_started": false,
+  "product_contract_changed": false,
+  "protocol_changed": false
+}
