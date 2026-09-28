@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.1.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02_COMPLETE_FROZEN_AWAITING_INDEPENDENT_CIG03_CURATOR
+phase: CIG_03_INDEPENDENT_TEST_FROZEN_PRE_OPEN_ENGINEERING
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -323,14 +323,34 @@ rounds:
     next_substage: CIG_03_INDEPENDENT_BLIND_CURATION_AFTER_FREEZE_MERGE
   CIG-03:
     title: Fresh independent public capability test
-    execution_status: BLOCKED
-    blocked_on: Independent blind curator and committed new packet pre-open freeze
+    execution_status: IN_PROGRESS
+    execution_stage: INDEPENDENT_PACKET_AND_SCORER_FROZEN_PRE_OPEN_ENGINEERING
     candidate_readiness: CIG02_COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
-    curator_status: NOT_YET_ASSIGNED
-    owner_authorization: CONDITIONAL_AFTER_CIG02_COMPLETE_CURRENT_OWNER_DIRECTION
+    curator_status: COMPLETE_FROZEN
+    curator_identity: /root/cig03_blind_curator_v2
+    curator_authorship: SINGLE_ISOLATED_AGENT_SELF_ADJUDICATED_NOT_SECOND_PERSON
+    curator_pr: 83
+    curator_merged_main: 0561f5af9e75bf3f9e265f32b9c6dc57ac6e48ba
+    curator_exact_main_ci: ALL_APPLICABLE_CHECKS_PASS
+    curator_manifest: docs/compositional-intent-graph-v1/CIG-03_TEST_FREEZE_MANIFEST.json
+    pre_open_freeze: artifacts/compositional-intent-graph-v1/CIG-03_PRE_OPEN_FREEZE.json
+    execution_report: docs/compositional-intent-graph-v1/CIG-03_PRE_OPEN_ENGINEERING.md
+    owner_authorization: EXPLICIT_ISOLATED_CURATOR_AND_BLIND_TEST_AFTER_FREEZE
+    single_label_cases: 288
+    context_pairs: 72
+    controls: 36
+    formal_topic_count: 144
+    per_topic_single_label_cases: 2
+    candidate_writer_test_content_reads: 0
     test_started: false
+    test_consumed: false
+    evaluation_invocations: 0
+    packet_mutable: false
+    scorer_mutable: false
+    execution_arm_created: false
+    next_gate: EXACT_HEAD_AND_MAIN_PREFLIGHT_PASS_THEN_DEDICATED_ONE_SHOT_ARM
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Merge this evidence/freeze batch only after the CIG-02G candidate exact-main and freeze exact-head applicable checks all PASS; then verify the freeze exact-main without repeating DEV scoring. CIG-02 is frozen at the recorded full-144 DEV-ready candidate, not independent capability PASS. Proceed to the owner-authorized fresh independent blind CIG-03 only with an isolated independent curator and committed packet/scorer pre-open record; candidate writer must not self-author or inspect TEST. Preserve all old FAIL and nine DEV misses; no source expansion, consumed-TEST tuning, Topic deletion, floor reduction or product change."
+next_action: "Finish exact-head/main pre-open engineering checks without candidate TEST predictions. The isolated curator packet/scorer are immutable; current candidate writer remains blind to TEST rows/gold. After the committed pre-open manifest is merged and applicable CI passes, create the dedicated one-shot arm and immutable execution-ledger branch, evaluate once in Actions, record aggregate real PASS/FAIL, and verify stored result without replay. CIG-04 requires CIG-03 PASS. Preserve all historical FAIL and CIG-02 misses; no candidate tuning, Topic/floor/product changes or private/legacy/lockbox/archive/production access."

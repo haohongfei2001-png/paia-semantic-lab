@@ -1,0 +1,12 @@
+{
+  "format": "CIG03_CURATOR_CONTEXT_DISCARD_V1",
+  "discarded_agent": "/root/cig03_independent_curator",
+  "cause": "GitHub fetch_commit nested commit.diff was exposed despite top-level projection",
+  "contamination_class": "CIG02_DEV_RESULT_AND_REVIEW_EXPOSURE",
+  "test_created": false,
+  "repository_writes": 0,
+  "candidate_test_invocations": 0,
+  "action": "CONTEXT_DISCARDED_NEW_FORK_NONE_CURATOR",
+  "replacement_agent": "/root/cig03_blind_curator_v2",
+  "prevention": "metadata-only branches/main and git/commits APIs; ban diff-bearing fetch_commit/fetch_pr wrappers"
+}

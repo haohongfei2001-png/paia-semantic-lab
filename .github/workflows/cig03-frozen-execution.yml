@@ -1,0 +1,88 @@
+name: CIG03 Frozen Execution Engineering
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/cig03_*.mjs"
+      - "tests-js/cig03_*.test.mjs"
+      - ".github/workflows/cig03-frozen-execution.yml"
+      - "artifacts/compositional-intent-graph-v1/CIG-03_*"
+      - "docs/compositional-intent-graph-v1/CIG-03_*"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/cig03_*.mjs"
+      - "tests-js/cig03_*.test.mjs"
+      - ".github/workflows/cig03-frozen-execution.yml"
+      - "artifacts/compositional-intent-graph-v1/CIG-03_*"
+      - "docs/compositional-intent-graph-v1/CIG-03_*"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+permissions:
+  contents: read
+jobs:
+  cig03-frozen-execution-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Syntax and semantic-free adapter / execution guard units
+        run: |
+          node --check scripts/cig03_execute_once.mjs
+          node --check scripts/cig03_adapter.mjs
+          node --check scripts/cig03_execution_guard.mjs
+          node --test tests-js/cig03_adapter.test.mjs tests-js/cig03_execution_guard.test.mjs
+      - name: Compile fixed TRAIN without TEST access and verify byte identity
+        run: |
+          mv fixtures/cig_v1/cig03_independent_test_v1.json .cig03-test-isolated.json
+          node scripts/cig02e_compile.mjs
+          node scripts/cig02g_compile.mjs
+          cp .cig02g-index.json .cig03-index-without-test.json
+          mv .cig03-test-isolated.json fixtures/cig_v1/cig03_independent_test_v1.json
+          node scripts/cig02g_compile.mjs
+          cmp .cig03-index-without-test.json .cig02g-index.json
+      - name: Verify immutable pre-open or stored result without candidate TEST predictions
+        run: |
+          node scripts/cig03_execute_once.mjs --preflight
+          if [ -f artifacts/compositional-intent-graph-v1/CIG-03_TEST_RESULT.json ]; then
+            node scripts/cig03_execute_once.mjs --verify-result
+          fi
+  cig03-one-shot-capability:
+    needs: cig03-frozen-execution-preflight
+    if: github.event_name == 'push' && github.run_attempt == 1 && contains(toJSON(github.event.commits), 'artifacts/compositional-intent-graph-v1/CIG-03_EXECUTION_ARM.json')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    concurrency:
+      group: cig03-independent-test-v1-one-shot
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Compile fixed allowlisted TRAIN only
+        run: |
+          node scripts/cig02e_compile.mjs
+          node scripts/cig02g_compile.mjs
+      - name: Claim immutable ledger before one-shot blinded candidate execution
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/cig03_execute_once.mjs --score-once
+      - name: Preserve aggregate result only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cig03-one-shot-aggregate-result
+          path: artifacts/compositional-intent-graph-v1/CIG-03_TEST_RESULT.json
+          if-no-files-found: ignore
+          retention-days: 90
