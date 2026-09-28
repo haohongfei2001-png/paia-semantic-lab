@@ -1,0 +1,44 @@
+{
+  "schema_version": "cig03-pre-consumption-trigger-failure-v1",
+  "protocol_version": "1.1.0",
+  "source_main": "ca0e487dce9245eec3501dcfe322089c4d829bf4",
+  "source_tree": "098cfcb707fd07134fb0f3a9e2e4ebdbb79788a1",
+  "arm_pr": 85,
+  "arm_git_blob_sha": "7e820149f8c5c3cc29e7319e5a0d240c7544cad1",
+  "pre_open_git_blob_sha": "dfc333f1103300314553b6d30dc02465e27e2b88",
+  "actions_run_id": 36465528055,
+  "event": "push",
+  "run_attempt": 1,
+  "preflight": {
+    "job_id": 109074525513,
+    "conclusion": "success"
+  },
+  "one_shot": {
+    "job_id": 109074591180,
+    "conclusion": "skipped"
+  },
+  "observed_failure": "GENUINE_EXECUTION_TRIGGER_SKIPPED_BEFORE_CLAIM",
+  "scientific_result": "NOT_EVALUATED",
+  "test_started": false,
+  "test_consumed": false,
+  "evaluation_invocations": 0,
+  "native_candidate_calls": 0,
+  "ledger_observation": {
+    "branch": "cig03-execution-ledger",
+    "sha": "0561f5af9e75bf3f9e265f32b9c6dc57ac6e48ba",
+    "claim_path_present": false
+  },
+  "bounded_root_cause": {
+    "faulty_dependency": "Both workflow condition and runtime guard assumed event.commits added/modified file arrays.",
+    "evidence": "Push attempt1 and successful preflight, committed arm exists but one-shot skipped; predicate failure inferred, event payload not fetched.",
+    "remedy": "Dedicated arm-path push workflow plus first-parent Git filename guard; strict ancestry and immutable atomic claim retained."
+  },
+  "candidate_changed": false,
+  "packet_changed": false,
+  "scorer_changed": false,
+  "protocol_changed": false,
+  "original_run_rerun_allowed": false,
+  "preconsumption_execution_engineering_refreeze_allowed": true,
+  "consumed_test_repair_allowed": false,
+  "manager_test_row_gold_reads": 0
+}

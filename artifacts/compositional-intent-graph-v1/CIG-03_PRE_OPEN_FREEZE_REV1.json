@@ -11,12 +11,11 @@
   "packet_sha256": "8c3210ca3b0d5664e4f7d79e8b06f2848fc5f5b393ff33922f8a61b3799e4701",
   "engineering_git_blobs": {
     "scripts/cig03_adapter.mjs": "e9dec8c4f7b1f3942b18d8e47deb69b5a69d7749",
-    "scripts/cig03_execution_guard.mjs": "614d22b561a21db6766a5517d910bc9c0c13f647",
-    "scripts/cig03_execute_once.mjs": "c40a919cf62dbebf191b3a3a59fd88fcf6eb9f65",
+    "scripts/cig03_execution_guard.mjs": "a91a1c470c0c0e117a7c75e7898d046d7bce1faf",
+    "scripts/cig03_execute_once.mjs": "a773fc2ebe86468c375aeee8a2113e11afd804bd",
     "tests-js/cig03_adapter.test.mjs": "9d7e52507686fa765ffcea9ee2d9f64b903f19f8",
-    "tests-js/cig03_execution_guard.test.mjs": "84f2967100f961e5152dfcebf3a259ee7c934d07",
-    ".github/workflows/cig03-frozen-execution.yml": "259f0965d410b8acd98d80bfc7764310c05c24fd",
-    ".github/workflows/cig03-one-shot-test.yml": "0d6d0076f8cf717594de5eab9e25b9e34c4169b6"
+    "tests-js/cig03_execution_guard.test.mjs": "50fe8ad91a6f9e16627b2afd9c8d05a42b0660f5",
+    ".github/workflows/cig03-frozen-execution.yml": "800b07a10bba2c3c67b8233c8771ad60e749a67f"
   },
   "scoring_gates": {
     "assigned_precision": 0.95,
@@ -75,15 +74,5 @@
   "legacy_evaluation_reads": 0,
   "consumed_lockbox_reads": 0,
   "real_paia_archive_reads": 0,
-  "production_modified": false,
-  "engineering_revision": 2,
-  "supersedes_pre_open_git_blob_sha": "dfc333f1103300314553b6d30dc02465e27e2b88",
-  "previous_freeze_snapshot": "artifacts/compositional-intent-graph-v1/CIG-03_PRE_OPEN_FREEZE_REV1.json",
-  "preconsumption_trigger_failure": "artifacts/compositional-intent-graph-v1/CIG-03_PRE_CONSUMPTION_TRIGGER_FAILURE.json",
-  "execution_trigger": {
-    "workflow_filter": "PUSH_MAIN_EXACT_ARM_PATH",
-    "runtime_guard": "FIRST_PARENT_GIT_CHANGED_FILENAMES",
-    "run_attempt_max": 1,
-    "claim_required_before_candidate_access": true
-  }
+  "production_modified": false
 }
