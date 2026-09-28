@@ -1,0 +1,50 @@
+{
+  "format": "CIG02E_SPOKEN_ASSISTANT_SOURCE_FAMILY_METADATA_V1",
+  "classification": "PINNED_METADATA_FEASIBILITY_ONLY_NOT_ACQUIRED_NOT_GOLD_OR_CAPABILITY",
+  "base_main": "7a265ad281b467730e58a6a443bdf629c9594067",
+  "source_family": "SLURP_ENGLISH_BASE_WITH_MASSIVE_LOCALIZATIONS",
+  "slurp": {
+    "repository": "pswietojanski/slurp",
+    "commit": "8eb16545762be97ace75334109d73824217311f1",
+    "root_tree": "8d366577406450b9e1331ca991a9e9c48a907815",
+    "readme_blob": "3db862ad2ae887747ffab96154879de6f36db347",
+    "license_blob": "24f3edf8edddf3f9e9ac3eb34fe26c29578f1f4f",
+    "text_license_declared": "CC BY 4.0",
+    "audio_license_declared": "CC BY-NC 4.0",
+    "train_blob": "c7568b5661ea802c9e41204af3d30ef892dcd5c9",
+    "train_bytes": 12745012,
+    "dev_blob": "de034fadea8caa5a3c08c387b2a750f37737729d",
+    "dev_bytes": 2221203,
+    "test_blob_identity_only": "d98a6962767dd6a03cae20c31d03c7bf7e4c36af",
+    "test_payload_read": false,
+    "train_synthetic_blob_identity_only": "42a7c199979dcbceb3a83603dff1d3aaa14c70a4",
+    "train_synthetic_payload_read": false
+  },
+  "massive": {
+    "repository": "alexa/massive",
+    "commit": "f966f21846043aabef9b0f974fa7970027f43738",
+    "root_tree": "0571b1af95022f416c73fd8049219bb047bbaf13",
+    "readme_blob": "eb03f1f03985b648bd62c191d262e466dec73b83",
+    "notice_blob": "da0399c1a33bb7fba7bed437aa97cff87f0148b1",
+    "dataset_license_declared": "CC BY 4.0 per NOTICE; distributed dataset LICENSE not verified",
+    "source_relation": "LOCALIZED_FROM_SLURP_EN_US",
+    "readme_intents": 60,
+    "readme_languages": 52,
+    "github_dataset_rows_read": false
+  },
+  "holds": [
+    "SLURP text production authorship and direct-request independence not yet verified beyond README",
+    "Spoken assistant task domain cannot be assumed to cover 144 PAIA Topics",
+    "MASSIVE localizations share SLURP base IDs; languages are not independent source items",
+    "MASSIVE dataset archive LICENSE and source blob are outside GitHub; cannot acquire under GitHub-only tool boundary",
+    "No source row or topic gold adjudication"
+  ],
+  "verdict": "PROSPECTIVE_SUPPLEMENTAL_SOURCE_FAMILY_METADATA_ONLY_CANNOT_ESTABLISH_FULL_CATALOG_DEV",
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "candidate_predictions_read": 0,
+  "dev_scores_computed": 0,
+  "capability_test_rows_read": 0,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
