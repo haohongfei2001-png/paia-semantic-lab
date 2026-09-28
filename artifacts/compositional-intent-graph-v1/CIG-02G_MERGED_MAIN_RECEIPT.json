@@ -1,0 +1,112 @@
+{
+  "format": "CIG02G_MERGED_MAIN_RECEIPT_V1",
+  "pr": 81,
+  "exact_head": "2d9f26522925506f2810438870464e44ca8baa0f",
+  "merged_main": "81e3eea5b17a7a3e7a1d1d7714d974f0fe1681fe",
+  "head_checks": [
+    {
+      "name": "fresh-public-train-dev",
+      "check_id": 109035844651,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "check_id": 109035842804,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "check_id": 109035842612,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02g-authored-dev-engineering",
+      "check_id": 109035842607,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "check_id": 109035842525,
+      "conclusion": "success"
+    },
+    {
+      "name": "csl-public-pr-validation",
+      "check_id": 109035842304,
+      "conclusion": "success"
+    }
+  ],
+  "main_engineering_checks": [
+    {
+      "name": "fresh-public-train-dev",
+      "check_id": 109036908601,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "check_id": 109036905181,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "check_id": 109036904937,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "check_id": 109036904688,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02g-authored-dev-engineering",
+      "check_id": 109036904685,
+      "conclusion": "success"
+    }
+  ],
+  "main_full_validation": {
+    "check_id": 109036905738,
+    "requirement": "MUST_PASS_BEFORE_FREEZE_PR_MERGE",
+    "last_observed": "PASS",
+    "conclusion": "success"
+  },
+  "dev_result_path": "artifacts/compositional-intent-graph-v1/CIG-02G_DEV_RESULT.json",
+  "dev_result_git_blob_sha": "91e340addd437d5acbd396d3aeb17ed308532d8f",
+  "dev_run": 36454079377,
+  "dev_job": 109035842607,
+  "dev_readiness": "DEV_FLOOR_MET",
+  "independent_capability_verdict": "NOT_EVALUATED",
+  "synthetic_dev_rescored_on_main": false,
+  "ci_preserves_original_failure": true,
+  "main_applicable_checks": [
+    {
+      "name": "fresh-public-train-dev",
+      "check_id": 109036908601,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "check_id": 109036905738,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "check_id": 109036905181,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "check_id": 109036904937,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "check_id": 109036904688,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02g-authored-dev-engineering",
+      "check_id": 109036904685,
+      "conclusion": "success"
+    }
+  ],
+  "candidate_exact_main_verdict": "ALL_SIX_APPLICABLE_CHECKS_PASS"
+}

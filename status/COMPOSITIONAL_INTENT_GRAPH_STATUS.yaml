@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.1.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02G_AUTHORED_DEV_CAPABILITY_ENGINEERING
+phase: CIG_02_COMPLETE_FROZEN_AWAITING_INDEPENDENT_CIG03_CURATOR
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -33,14 +33,15 @@ rounds:
     evaluation_invocations: 1
   CIG-02:
     title: Public and isolated authored DEV capability engineering
-    execution_status: IN_PROGRESS
+    execution_status: COMPLETE
+    completion_verdict: COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
     dev_diagnostic: TYPED_GROUNDING_UNQUALIFIED
     dev_result: artifacts/compositional-intent-graph-v1/CIG-02_DEV_DIAGNOSTIC.json
     cig02b_execution_status: COMPLETE
     cig02b_verdict: DEV_UNQUALIFIED
     cig02b_result: artifacts/compositional-intent-graph-v1/CIG-02B_DEV_RESULT.json
     cig02b_report: docs/compositional-intent-graph-v1/CIG-02B_DEV_REPORT.md
-    cig02_frozen: false
+    cig02_frozen: true
     cig02b_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02B_MERGED_MAIN_RECEIPT.json
     cig02c_candidate: GLOBAL_EXACT_FORMAL_NAME_GATE
     cig02c_source_eligibility: PASS_576_OF_576_SOURCE_ONLY_NOT_CAPABILITY
@@ -296,7 +297,20 @@ rounds:
     cig02g_runtime: runtime/compositional_intent_graph_v1/authored_topic_router.mjs
     cig02g_compiler: scripts/cig02g_compile.mjs
     cig02g_dev_scorer: scripts/cig02g_dev.mjs
-    cig02g_dev_status: PENDING_REPAIRED_EXACT_HEAD_ACTIONS_NOT_CAPABILITY
+    cig02g_dev_status: DEV_FLOOR_MET_SAME_WRITER_NOT_CAPABILITY
+    cig02g_dev_result: artifacts/compositional-intent-graph-v1/CIG-02G_DEV_RESULT.json
+    cig02g_dev_report: docs/compositional-intent-graph-v1/CIG-02G_DEV_REVIEW_AND_FREEZE.md
+    cig02g_candidate_freeze: artifacts/compositional-intent-graph-v1/CIG-02G_CANDIDATE_FREEZE.json
+    cig02g_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02G_MERGED_MAIN_RECEIPT.json
+    cig02g_assigned_precision: 1.0
+    cig02g_coverage: 0.96875
+    cig02g_topic_macro_recall: 0.96875
+    cig02g_false_assignment_count: 0
+    cig02g_context_harm: 0
+    cig02g_determinism: PASS
+    cig02g_preserved_dev_misses: 9
+    cig02g_index_bytes: 76827
+    cig02g_router_plus_index_bytes: 86105
     cig02g_initial_engineering_failure: artifacts/compositional-intent-graph-v1/CIG-02G_ENGINEERING_FAILURE.json
     cig02g_initial_engineering_verdict: GENUINE_ENGINEERING_FAIL_CHINESE_LEXICAL_COMPOUND_NEGATION_FALSE_POSITIVE
     cig02g_natural_source_readiness_role: IMMUTABLE_PROVENANCE_NOT_RUNTIME_VETO
@@ -306,15 +320,17 @@ rounds:
     cig02g_safety_dev_count: 36
     cig02g_context_perturbation_pair_count: 72
     cig02g_authorship: SAME_WRITER_NOT_INDEPENDENT_NOT_BLIND
-    next_substage: CIG_02G_AUTHORED_DEV_CAPABILITY_ENGINEERING
+    next_substage: CIG_03_INDEPENDENT_BLIND_CURATION_AFTER_FREEZE_MERGE
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
-    blocked_on: CIG-02 completion and committed pre-open freeze with independent blind curator
+    blocked_on: Independent blind curator and committed new packet pre-open freeze
+    candidate_readiness: CIG02_COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
+    curator_status: NOT_YET_ASSIGNED
     owner_authorization: CONDITIONAL_AFTER_CIG02_COMPLETE_CURRENT_OWNER_DIRECTION
     test_started: false
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Review the coherent CIG-02G protocol/TRAIN/compiler/runtime/DEV batch from exact-head Actions. Record DEV metrics and failures without capability claims; perform bounded root-cause on misses before further repair. Freeze CIG-02 only after the unchanged full-144 floor and candidate review/digests. Then execute the owner-authorized fresh independent blind CIG-03 under a committed pre-open freeze. Stop public source search and repeated unchanged synthetic certification; preserve all old failures and product constraints."
+next_action: "Merge this evidence/freeze batch only after the CIG-02G candidate exact-main and freeze exact-head applicable checks all PASS; then verify the freeze exact-main without repeating DEV scoring. CIG-02 is frozen at the recorded full-144 DEV-ready candidate, not independent capability PASS. Proceed to the owner-authorized fresh independent blind CIG-03 only with an isolated independent curator and committed packet/scorer pre-open record; candidate writer must not self-author or inspect TEST. Preserve all old FAIL and nine DEV misses; no source expansion, consumed-TEST tuning, Topic deletion, floor reduction or product change."
