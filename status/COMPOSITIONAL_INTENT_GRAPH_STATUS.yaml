@@ -223,6 +223,11 @@ rounds:
     cig02e_offline_parse_diagnostics_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_OFFLINE_PARSE_DIAGNOSTICS_MERGED_MAIN_RECEIPT.json
     cig02e_source_readiness_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_READINESS_MERGED_MAIN_RECEIPT.json
     cig02e_spoken_assistant_source_family_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SPOKEN_SOURCE_METADATA_MERGED_MAIN_RECEIPT.json
+    cig02f_minimal_router: runtime/compositional_intent_graph_v1/minimal_topic_router.mjs
+    cig02f_minimal_router_tests: tests-js/cig02f_minimal_router.test.mjs
+    cig02f_minimal_router_diagnostic: scripts/cig02f_minimal_dev.mjs
+    cig02f_minimal_router_report: docs/compositional-intent-graph-v1/CIG-02F_MINIMAL_TOPIC_ROUTER.md
+    cig02f_diagnostic_status: IMPLEMENTED_SYNTHETIC_CI_PENDING_NOT_CAPABILITY
     cig02_source_readiness_freeze: artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.json
     cig02_source_readiness_freeze_report: docs/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.md
     cig02_source_readiness_status: SOURCE_ONLY_FROZEN_READY_0_SPARSE_35_DEFER_109
@@ -279,4 +284,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Implement minimal deterministic zero-model local-first Topic Router over the existing 144-Topic index and frozen source mask. SPARSE requires a unique exact formal name in the current goal; DEFER always DEFER; ambiguous/insufficient evidence DEFER. Evaluate once on fresh public/synthetic engineering DEV with same-source limitations, determinism, context harm and size checks. Do not reopen unbounded source exploration, modify formal Catalog, tune consumed DEV/TEST, lower floors, freeze CIG-02 or start owner-gated CIG-03. Preserve NI FAIL/no replay and zero gold."
+next_action: "Verify the minimal Router exact-head engineering CI and inspect its fresh source-derived synthetic diagnostic artifact. Report actual assignment/DEFER and context/determinism/size outcomes without capability claims or lowering original floors. SPARSE only with unique exact formal name, DEFER mask always DEFER, no formal Catalog mutation. Preserve source stop rule READY 0 / SPARSE 35 / DEFER 109 and NI genuine FAIL/no replay. CIG-02 remains unfrozen; CIG-03 independent capability TEST remains owner-gated and blocked."
