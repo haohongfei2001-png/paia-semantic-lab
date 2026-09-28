@@ -1,4 +1,5 @@
 import {createFrameGrounder} from './frame_grounder.mjs';
+import {currentGoalScopeReason} from './current_goal_scope.mjs';
 
 const defer=reason=>({topics:[],state:'DEFER',reason});
 export function createMinimalTopicRouter(index,readiness){
@@ -26,6 +27,8 @@ export function createMinimalTopicRouter(index,readiness){
   if(mask.size!==144||JSON.stringify(counted)!==JSON.stringify(readiness.counts))throw Error('source mask counts changed');
   const grounder=createFrameGrounder(index);
   function classify(input){
+    const scopeReason=currentGoalScopeReason(input?.current);
+    if(scopeReason)return defer(scopeReason);
     const result=grounder.classify(input);
     if(result.state!=='ASSIGNED')return result;
     if(result.topics.length!==1)return defer('COMPETING_TOPICS');
