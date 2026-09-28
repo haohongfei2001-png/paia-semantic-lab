@@ -219,10 +219,15 @@ rounds:
     cig02e_verified_train_intake_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_VERIFIED_TRAIN_INTAKE_MERGED_MAIN_OBSERVATION.json
     cig02e_verified_train_intake_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_verified_train_intake_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_VERIFIED_TRAIN_INTAKE_MERGED_MAIN_RECEIPT.json
+    cig02e_ni_definition_source_closure_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_NI_SOURCE_CLOSURE_MERGED_MAIN_RECEIPT.json
+    cig02e_offline_parse_diagnostics_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_OFFLINE_PARSE_DIAGNOSTICS_MERGED_MAIN_RECEIPT.json
+    cig02e_source_readiness_audit: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_READINESS_AUDIT.json
+    cig02e_source_readiness_report: docs/compositional-intent-graph-v1/CIG-02E_SOURCE_READINESS_AUDIT.md
+    cig02e_source_readiness_verdict: CIG02_FREEZE_NOT_READY_SOURCE_AND_ADJUDICATION_BLOCKERS
     cig02e_ni_definition_source_closure_main_observation: artifacts/compositional-intent-graph-v1/CIG-02E_NI_SOURCE_CLOSURE_MERGED_MAIN_OBSERVATION.json
-    cig02e_ni_definition_source_closure_exact_main_verdict: PENDING_ONE_APPLICABLE_CHECK_AT_SINGLE_SNAPSHOT
+    cig02e_ni_definition_source_closure_exact_main_verdict: SIX_APPLICABLE_CHECKS_PASS
     cig02e_offline_parse_diagnostics_report: docs/compositional-intent-graph-v1/CIG-02E_OFFLINE_PARSE_DIAGNOSTICS.md
-    cig02e_offline_parse_diagnostics_status: IMPLEMENTED_SYNTHETIC_CI_PENDING_NO_SOURCE_REPLAY
+    cig02e_offline_parse_diagnostics_status: SYNTHETIC_CI_AND_MERGED_MAIN_PASS_NO_SOURCE_REPLAY
     cig02e_ni_definition_source_failure: artifacts/compositional-intent-graph-v1/CIG-02E_NI_DEFINITION_SOURCE_FAILURE.json
     cig02e_ni_definition_source_failure_report: docs/compositional-intent-graph-v1/CIG-02E_NI_DEFINITION_SOURCE_FAILURE.md
     cig02e_ni_definition_source_run: 36346751629
@@ -265,4 +270,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Resolve PR #70 exact-main final receipt on restoration. Verify the sole offline diagnostic writer exact-head engineering CI, then merge passing candidate and take one exact-main snapshot. Source run 36346751629 remains genuine FAIL with undetermined root cause; disabled acquisition stays disabled and selected task payloads are not replayed. Diagnostic counters are prospective engineering observability, not reconstructed historical consumption. Continue bounded offline/schema investigation and qualified source/adjudication planning without new capability TEST, changed selection, guessed parser tuning or weakened floor. Zero gold; CIG-02 unfrozen, CIG-03 blocked/owner-gated; product/protocol unchanged."
+next_action: "CIG-02 is not freeze-ready: 109 Topics lack even prospective sources, independent gold and natural DEFER/context controls are zero/not registered. Continue bounded search for an independently authored direct-request public source family under the existing provenance/intake gate and adjudicate full inputs plus neighboring Topics before any scored DEV. Preserve fixed NI run 36346751629 FAIL with no replay, no claimed root cause. Do not lower floors, tune consumed DEV/TEST, open independent capability TEST or CIG-03. Zero-model/local-first/tiny and all forbidden-data/production boundaries unchanged."
