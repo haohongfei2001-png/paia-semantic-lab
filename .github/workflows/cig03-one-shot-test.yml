@@ -1,0 +1,44 @@
+name: CIG03 Arm Only Independent Blind TEST
+on:
+  push:
+    branches: [main]
+    paths:
+      - "artifacts/compositional-intent-graph-v1/CIG-03_EXECUTION_ARM.json"
+permissions:
+  contents: read
+jobs:
+  cig03-one-shot-capability:
+    if: github.event_name == 'push' && github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    concurrency:
+      group: cig03-independent-test-v1-one-shot
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Compile fixed allowlisted TRAIN only
+        run: |
+          node scripts/cig02e_compile.mjs
+          node scripts/cig02g_compile.mjs
+      - name: Verify committed identities and first-parent arm before claim
+        run: node scripts/cig03_execute_once.mjs --preflight
+      - name: Claim immutable ledger before one-shot blinded candidate execution
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/cig03_execute_once.mjs --score-once
+      - name: Preserve aggregate result only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cig03-one-shot-aggregate-result
+          path: artifacts/compositional-intent-graph-v1/CIG-03_TEST_RESULT.json
+          if-no-files-found: ignore
+          retention-days: 90

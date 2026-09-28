@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.1.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_03_ARMED_FOR_SINGLE_BLIND_ACTIONS_EXECUTION
+phase: CIG_03_PRE_CONSUMPTION_TRIGGER_REPAIR_REFREEZE
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -324,7 +324,7 @@ rounds:
   CIG-03:
     title: Fresh independent public capability test
     execution_status: IN_PROGRESS
-    execution_stage: ARMED_NOT_YET_CONSUMED
+    execution_stage: TRIGGER_SKIPPED_UNCONSUMED_REFREEZE
     candidate_readiness: CIG02_COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
     curator_status: COMPLETE_FROZEN
     curator_identity: /root/cig03_blind_curator_v2
@@ -350,9 +350,15 @@ rounds:
     execution_arm_created: true
     execution_arm: artifacts/compositional-intent-graph-v1/CIG-03_EXECUTION_ARM.json
     execution_ledger_branch: cig03-execution-ledger
-    next_gate: ONE_SHOT_ACTIONS_AGGREGATE_RESULT_NO_REPLAY
+    trigger_failure: artifacts/compositional-intent-graph-v1/CIG-03_PRE_CONSUMPTION_TRIGGER_FAILURE.json
+    trigger_failure_run: 36465528055
+    trigger_failure_verdict: GENUINE_TRIGGER_SKIPPED_NOT_EVALUATED
+    original_trigger_rerun_allowed: false
+    pre_open_engineering_revision: 2
+    execution_arm_matches_current_freeze: false
+    next_gate: REVISED_ENGINEERING_FREEZE_EXACT_HEAD_MAIN_PASS_THEN_CORRECTED_ARM
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Merge the dedicated arm only after the committed pre-open freeze exact-main and this arm exact-head applicable CI all PASS. First main push may claim the immutable ledger and execute the already frozen candidate/packet/scorer once. Read only aggregate Actions evidence, preserve true PASS/FAIL or evaluation error, and commit result/receipt/closure without candidate or TEST changes. No rerun or consumed-TEST tuning. CIG-04 requires CIG-03 PASS; all product/private/legacy/lockbox/archive/production boundaries remain fixed."
+next_action: "Complete the bounded pre-consumption trigger repair and revised engineering freeze with exact-head/main applicable CI PASS. Preserve run36465528055 SKIPPED, zero ledger claim and zero TEST consumption. Then a separate corrected arm must bind this previously committed freeze before the only permitted blind evaluation. No candidate/packet/scorer/protocol changes, old-run rerun, DEV rescore or TEST-based tuning. CIG-04 still requires genuine CIG-03 PASS."

@@ -5,7 +5,7 @@ import { pathToFileURL } from "node:url";
 import { GATES, score } from "./cig03_score.mjs";
 import { validatePacket } from "./cig03_validate.mjs";
 import { buildPredictions } from "./cig03_adapter.mjs";
-import { ARM_PATH, validateArm, validateTrigger } from "./cig03_execution_guard.mjs";
+import { ARM_PATH, changedArmPaths, validateArm, validateTrigger } from "./cig03_execution_guard.mjs";
 
 const DIR="artifacts/compositional-intent-graph-v1/";
 const PREOPEN=DIR+"CIG-03_PRE_OPEN_FREEZE.json";
@@ -110,18 +110,21 @@ function verifyResult(state) {
 async function main() {
  const mode=process.argv[2],state=identities();
  if(mode==="--preflight") {
-  // Once consumed, stored-result verification no longer depends on shallow Git history.
-  if(fs.existsSync(ARM_PATH)&&!fs.existsSync(RESULT))checkArm(state);
+  // Strict ancestry on arm changes; refreeze-only commits cannot execute a stale arm.
+  // After consumption, verification needs no old shallow Git ancestry.
+  const armChanged=!fs.existsSync(RESULT)&&changedArmPaths().includes(ARM_PATH);
+  if(armChanged)checkArm(state);
+  const armMatches=fs.existsSync(ARM_PATH)&&read(ARM_PATH).pre_open_git_blob_sha===state.pre_open_git_blob_sha;
   console.log("CIG03_PRE_OPEN_VERIFIED_JSON="+JSON.stringify({pre_open_git_blob_sha:state.pre_open_git_blob_sha,
    packet_sha256:state.m.packet_sha256,topic_count:144,index_bytes:state.index_bytes,
-   router_plus_index_bytes:state.router_plus_index_bytes,candidate_test_executed:false}));
+   router_plus_index_bytes:state.router_plus_index_bytes,execution_arm_changed:armChanged,
+   execution_arm_matches_freeze:armMatches,candidate_test_executed:false}));
   return;
  }
  if(mode==="--verify-result"){verifyResult(state);return;}
  requireTrue(mode==="--score-once","EXPLICIT_ONE_SHOT_MODE_REQUIRED");
  requireTrue(!fs.existsSync(RESULT),"CONSUMED_RESULT_ALREADY_PRESENT");
- const event=read(process.env.GITHUB_EVENT_PATH);
- validateTrigger(process.env,event);
+ validateTrigger(process.env,changedArmPaths());
  const arm=checkArm(state),claim=await claimOnce(arm,state);
  let executed=0,stage="PACKET_VALIDATE";
  const result={schema_version:"cig03-capability-result-v1",protocol_version:"1.1.0",
