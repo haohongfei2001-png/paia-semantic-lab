@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.1.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_03_INDEPENDENT_TEST_FROZEN_PRE_OPEN_ENGINEERING
+phase: CIG_03_ARMED_FOR_SINGLE_BLIND_ACTIONS_EXECUTION
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -324,7 +324,7 @@ rounds:
   CIG-03:
     title: Fresh independent public capability test
     execution_status: IN_PROGRESS
-    execution_stage: INDEPENDENT_PACKET_AND_SCORER_FROZEN_PRE_OPEN_ENGINEERING
+    execution_stage: ARMED_NOT_YET_CONSUMED
     candidate_readiness: CIG02_COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
     curator_status: COMPLETE_FROZEN
     curator_identity: /root/cig03_blind_curator_v2
@@ -347,10 +347,12 @@ rounds:
     evaluation_invocations: 0
     packet_mutable: false
     scorer_mutable: false
-    execution_arm_created: false
-    next_gate: EXACT_HEAD_AND_MAIN_PREFLIGHT_PASS_THEN_DEDICATED_ONE_SHOT_ARM
+    execution_arm_created: true
+    execution_arm: artifacts/compositional-intent-graph-v1/CIG-03_EXECUTION_ARM.json
+    execution_ledger_branch: cig03-execution-ledger
+    next_gate: ONE_SHOT_ACTIONS_AGGREGATE_RESULT_NO_REPLAY
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Finish exact-head/main pre-open engineering checks without candidate TEST predictions. The isolated curator packet/scorer are immutable; current candidate writer remains blind to TEST rows/gold. After the committed pre-open manifest is merged and applicable CI passes, create the dedicated one-shot arm and immutable execution-ledger branch, evaluate once in Actions, record aggregate real PASS/FAIL, and verify stored result without replay. CIG-04 requires CIG-03 PASS. Preserve all historical FAIL and CIG-02 misses; no candidate tuning, Topic/floor/product changes or private/legacy/lockbox/archive/production access."
+next_action: "Merge the dedicated arm only after the committed pre-open freeze exact-main and this arm exact-head applicable CI all PASS. First main push may claim the immutable ledger and execute the already frozen candidate/packet/scorer once. Read only aggregate Actions evidence, preserve true PASS/FAIL or evaluation error, and commit result/receipt/closure without candidate or TEST changes. No rerun or consumed-TEST tuning. CIG-04 requires CIG-03 PASS; all product/private/legacy/lockbox/archive/production boundaries remain fixed."
