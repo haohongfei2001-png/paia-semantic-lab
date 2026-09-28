@@ -1,0 +1,78 @@
+{
+  "schema_version": "cig03-pre-open-freeze-v1",
+  "package_id": "PAIA-COMPOSITIONAL-INTENT-GRAPH-v1",
+  "protocol_version": "1.1.0",
+  "topic_count": 144,
+  "candidate_freeze_source_ref": "2c218ccfb478f9538cc30b5e50e5f07291ae422b",
+  "independent_packet_merged_main": "0561f5af9e75bf3f9e265f32b9c6dc57ac6e48ba",
+  "curator_manifest_git_blob_sha": "0200b29397452f366835f674f7ad472ffd856b0e",
+  "candidate_freeze_git_blob_sha": "1cd1216d6ae1b6bf7ac81351d612099619df5fcd",
+  "index_sha256": "2448842ddd49614f7b0581b6584fb19d4eb3693d227c0b68d3887412d1eb3427",
+  "packet_sha256": "8c3210ca3b0d5664e4f7d79e8b06f2848fc5f5b393ff33922f8a61b3799e4701",
+  "engineering_git_blobs": {
+    "scripts/cig03_adapter.mjs": "e9dec8c4f7b1f3942b18d8e47deb69b5a69d7749",
+    "scripts/cig03_execution_guard.mjs": "a91a1c470c0c0e117a7c75e7898d046d7bce1faf",
+    "scripts/cig03_execute_once.mjs": "a773fc2ebe86468c375aeee8a2113e11afd804bd",
+    "tests-js/cig03_adapter.test.mjs": "9d7e52507686fa765ffcea9ee2d9f64b903f19f8",
+    "tests-js/cig03_execution_guard.test.mjs": "50fe8ad91a6f9e16627b2afd9c8d05a42b0660f5",
+    ".github/workflows/cig03-frozen-execution.yml": "800b07a10bba2c3c67b8233c8771ad60e749a67f"
+  },
+  "scoring_gates": {
+    "assigned_precision": 0.95,
+    "single_label_auto_coverage": 0.7,
+    "full144_macro_recall": 0.7,
+    "controls_false_assignment": 0.02,
+    "context_harm": 0
+  },
+  "deterministic_repeat_required": "PASS",
+  "allocation": {
+    "single_label": 288,
+    "context_pairs": 72,
+    "controls": 36,
+    "native_inputs": 468,
+    "native_calls_with_repeats": 936
+  },
+  "candidate_writer_test_content_reads": 0,
+  "test_started": false,
+  "test_consumed": false,
+  "evaluation_invocations": 0,
+  "curator_independence": "SINGLE_FRESH_CONTEXT_ISOLATED_AGENT_SELF_ADJUDICATED",
+  "candidate_writer_role": "EXECUTION_ENGINEERING_ONLY_NO_TEST_AUTHORING_OR_ROW_GOLD_ACCESS",
+  "packet_and_scorer_changes_allowed": false,
+  "candidate_changes_allowed": false,
+  "overlap_audit": {
+    "exact": 0,
+    "normalized": 0,
+    "template_skeleton": 0,
+    "scope": "MECHANICAL_EQUALITY_NOT_ZERO_LEXICAL_OR_SEMANTIC_OVERLAP"
+  },
+  "capability_result": "NOT_EVALUATED",
+  "resource_browser_certification": "NOT_EVALUATED_CIG04",
+  "curator_ci_receipt": {
+    "pr": 83,
+    "exact_head": "15a9c872f53ec8f041a684d2fd823f6dfce8ebc7",
+    "exact_head_applicable_checks": "ALL_PASS",
+    "merged_main": "0561f5af9e75bf3f9e265f32b9c6dc57ac6e48ba",
+    "exact_main_applicable_checks": "ALL_PASS",
+    "main_check_ids": [
+      109054338964,
+      109054339060
+    ]
+  },
+  "execution_order": [
+    "MERGE_PREFLIGHT_FREEZE_WITH_EXACT_HEAD_MAIN_PASS",
+    "DEDICATED_ARM_REFERENCES_PREVIOUS_COMMITTED_FREEZE",
+    "ATOMIC_IMMUTABLE_LEDGER_CLAIM",
+    "ONE_SHOT_CANDIDATE_THEN_FROZEN_SCORER",
+    "IMMUTABLE_AGGREGATE_RESULT_AND_STORED_VERIFICATION"
+  ],
+  "execution_ledger_branch": "cig03-execution-ledger",
+  "repeat_or_test_based_repair_allowed": false,
+  "product_constraints_changed": false,
+  "formal_catalog_modified": false,
+  "private_artifact_reads": 0,
+  "legacy_evaluation_reads": 0,
+  "consumed_lockbox_reads": 0,
+  "real_paia_archive_reads": 0,
+  "production_modified": false
+}
