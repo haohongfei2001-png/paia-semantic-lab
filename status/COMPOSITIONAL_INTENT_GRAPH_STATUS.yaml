@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.0.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_02E_TARGETED_SOURCE_ADJUDICATION
+phase: CIG_02F_MINIMAL_TOPIC_ROUTER_DEV
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -222,6 +222,11 @@ rounds:
     cig02e_ni_definition_source_closure_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_NI_SOURCE_CLOSURE_MERGED_MAIN_RECEIPT.json
     cig02e_offline_parse_diagnostics_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_OFFLINE_PARSE_DIAGNOSTICS_MERGED_MAIN_RECEIPT.json
     cig02e_source_readiness_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_READINESS_MERGED_MAIN_RECEIPT.json
+    cig02e_spoken_assistant_source_family_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_SPOKEN_SOURCE_METADATA_MERGED_MAIN_RECEIPT.json
+    cig02_source_readiness_freeze: artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.json
+    cig02_source_readiness_freeze_report: docs/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.md
+    cig02_source_readiness_status: SOURCE_ONLY_FROZEN_READY_0_SPARSE_35_DEFER_109
+    cig02_source_exploration_stop_rule: NO_MORE_UNBOUNDED_TOPIC_COVERAGE_SOURCE_SEARCH
     cig02e_spoken_assistant_source_family_metadata: artifacts/compositional-intent-graph-v1/CIG-02E_SPOKEN_ASSISTANT_SOURCE_FAMILY_METADATA.json
     cig02e_spoken_assistant_source_family_report: docs/compositional-intent-graph-v1/CIG-02E_SPOKEN_ASSISTANT_SOURCE_FAMILY.md
     cig02e_spoken_assistant_source_family_verdict: PROSPECTIVE_SUPPLEMENTAL_METADATA_ONLY_NOT_ACQUIRED
@@ -265,7 +270,7 @@ rounds:
     cig02e_compiler_design_merged_main_receipt: artifacts/compositional-intent-graph-v1/CIG-02E_COMPILER_DESIGN_MERGED_MAIN_RECEIPT.json
     cig02e_authored_topic_count: 144
     cig02e_candidate_status: UNSCORED_GLOBAL_RUNTIME_ENGINEERING_NOT_CAPABILITY
-    next_substage: CIG-02E_TARGETED_SOURCE_ADJUDICATION
+    next_substage: CIG_02F_MINIMAL_TOPIC_ROUTER_DEV
   CIG-03:
     title: Fresh independent public capability test
     execution_status: BLOCKED
@@ -274,4 +279,4 @@ rounds:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "CIG-02 remains source/adjudication blocked. The pinned SLURP/MASSIVE family is metadata-only and supplemental; verify direct-request authorship, complete text rights and formal Topic coverage before any separately registered public TRAIN/DEV pilot. MASSIVE external dataset archive is outside the GitHub-only boundary and its localizations share the SLURP base. Do not read TEST partitions, treat 52 languages as independent sources, replay failed NI run 36346751629, score unqualified DEV, freeze CIG-02 or start CIG-03. Preserve 41 nominations / 35 Topics / 109 missing / 28 unresolved / zero gold and unchanged product/protocol boundaries."
+next_action: "Implement minimal deterministic zero-model local-first Topic Router over the existing 144-Topic index and frozen source mask. SPARSE requires a unique exact formal name in the current goal; DEFER always DEFER; ambiguous/insufficient evidence DEFER. Evaluate once on fresh public/synthetic engineering DEV with same-source limitations, determinism, context harm and size checks. Do not reopen unbounded source exploration, modify formal Catalog, tune consumed DEV/TEST, lower floors, freeze CIG-02 or start owner-gated CIG-03. Preserve NI FAIL/no replay and zero gold."

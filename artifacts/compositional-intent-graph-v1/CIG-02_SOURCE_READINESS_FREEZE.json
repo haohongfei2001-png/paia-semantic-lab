@@ -1,0 +1,1262 @@
+{
+  "format": "CIG02_SOURCE_READINESS_FREEZE_V1",
+  "classification": "SOURCE_READINESS_ONLY_NOT_CAPABILITY",
+  "base_main": "7c9a47cff3485a316dd83fd05282ce8926cf5e33",
+  "source_evidence": "artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json",
+  "stop_rule": "NO_MORE_UNBOUNDED_TOPIC_COVERAGE_SOURCE_SEARCH",
+  "topic_count": 144,
+  "counts": {
+    "READY": 0,
+    "SPARSE": 35,
+    "DEFER": 109
+  },
+  "criteria": {
+    "READY": "Accepted independently adjudicated gold and unambiguous public source; none currently.",
+    "SPARSE": "Prospective source exists, but accepted independent gold remains zero.",
+    "DEFER": "No current prospective source."
+  },
+  "router_policy": {
+    "READY": "Conservative typed evidence after normal runtime checks.",
+    "SPARSE": "Unique exact formal Topic name in current goal only; typed phrase composition alone DEFER.",
+    "DEFER": "Always DEFER.",
+    "ambiguity": "Competing or underspecified Topics DEFER; formal Catalog unchanged."
+  },
+  "topics": [
+    {
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "domain_id": "D07",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:1015"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.coding_software_development",
+      "domain_id": "D07",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:5120"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.cybersecurity_privacy",
+      "domain_id": "D07",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:14298"
+      ],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.data_systems",
+      "domain_id": "D07",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:10560",
+        "dolly:4323"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.debugging_troubleshooting",
+      "domain_id": "D07",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:4970",
+        "dolly:10835"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.hardware_devices",
+      "domain_id": "D07",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.networking_connectivity",
+      "domain_id": "D07",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.ai_computing.prompt_workflows",
+      "domain_id": "D07",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.business_strategy",
+      "domain_id": "D16",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.customer_feedback",
+      "domain_id": "D16",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "domain_id": "D16",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:174"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.market_research",
+      "domain_id": "D16",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "domain_id": "D16",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:1338"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.operations_process",
+      "domain_id": "D16",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.partnerships",
+      "domain_id": "D16",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.business_entrepreneurship.sales",
+      "domain_id": "D16",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.applications",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.career_strategy",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.compensation_benefits",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.interviews",
+      "domain_id": "D05",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:2779"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.job_search",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.networking_professional",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.performance_growth",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.career_work.workplace_daily",
+      "domain_id": "D05",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.documents_reports",
+      "domain_id": "D12",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:490"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.email_messages",
+      "domain_id": "D12",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.negotiation_persuasion",
+      "domain_id": "D12",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.presentations",
+      "domain_id": "D12",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:13141",
+        "dolly:13129"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.public_posts",
+      "domain_id": "D12",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.speaking_conversation",
+      "domain_id": "D12",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:11358"
+      ],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.translation",
+      "domain_id": "D12",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.communication_writing.writing_editing",
+      "domain_id": "D12",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.branding_identity",
+      "domain_id": "D15",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:11804"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.creative_writing",
+      "domain_id": "D15",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.ideation_concepts",
+      "domain_id": "D15",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.illustration_image_creation",
+      "domain_id": "D15",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.photography",
+      "domain_id": "D15",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:7323"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.ux_ui_design",
+      "domain_id": "D15",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:10148"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.video_audio_creation",
+      "domain_id": "D15",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:3382"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.creative_design.visual_design",
+      "domain_id": "D15",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.academic_admin",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.academic_courses",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.exams_assessments",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.language_learning",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.learning_methods",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.reading_learning",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.skill_learning",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.education_learning.thesis_research",
+      "domain_id": "D04",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.caregiving_family_support",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.conflict_boundaries",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.friendships",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.parents_family",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.partner_relationship",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.pets",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.siblings",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.family_relationships.social_interaction",
+      "domain_id": "D02",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.banking_payments",
+      "domain_id": "D08",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:7308"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "domain_id": "D08",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:5405"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.debt_credit",
+      "domain_id": "D08",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:629"
+      ],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.investing",
+      "domain_id": "D08",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:11718",
+        "dolly:14478"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.major_purchases",
+      "domain_id": "D08",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.shopping_research",
+      "domain_id": "D08",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "domain_id": "D08",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.finance_purchases.taxes_insurance",
+      "domain_id": "D08",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.fitness",
+      "domain_id": "D03",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:12374"
+      ],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "domain_id": "D03",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.medication_treatment",
+      "domain_id": "D03",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 2,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "domain_id": "D03",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:13679"
+      ],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.nutrition",
+      "domain_id": "D03",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:12373"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.preventive_health",
+      "domain_id": "D03",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 2,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.sleep",
+      "domain_id": "D03",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.health_wellbeing.symptoms_conditions",
+      "domain_id": "D03",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.chores_cleaning",
+      "domain_id": "D09",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:6817",
+        "dolly:12031"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.home_improvement",
+      "domain_id": "D09",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.housing",
+      "domain_id": "D09",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 2,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.local_errands",
+      "domain_id": "D09",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.moving_relocation",
+      "domain_id": "D09",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:10181"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.possessions_organization",
+      "domain_id": "D09",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.transportation_ownership",
+      "domain_id": "D09",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.home_daily.utilities_services",
+      "domain_id": "D09",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.backup_export",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.files_documents_storage",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.journaling",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.memory_context",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.personal_archive",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.photos_media_archive",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.knowledge_memory.provenance_history",
+      "domain_id": "D18",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.civic_public_policy",
+      "domain_id": "D13",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:355"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.complaints_disputes",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.consumer_rights",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.contracts_agreements",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.government_services",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.identity_documents",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.immigration_residency",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.legal_civic.legal_questions",
+      "domain_id": "D13",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.art_culture",
+      "domain_id": "D11",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.books_literature",
+      "domain_id": "D11",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.film_tv",
+      "domain_id": "D11",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:3006"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.games",
+      "domain_id": "D11",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:2173",
+        "dolly:7881"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.live_events",
+      "domain_id": "D11",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:6777"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.music",
+      "domain_id": "D11",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:4191"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.news_media",
+      "domain_id": "D11",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.media_culture.online_culture",
+      "domain_id": "D11",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 2,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.habits_behavior",
+      "domain_id": "D01",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:10804"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.life_goals",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.life_planning",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.major_decisions",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_admin",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.personal_productivity",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.self_reflection",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.personal_direction.values_principles",
+      "domain_id": "D01",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.engineering_execution",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.launch_operations",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.product_requirements",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.product_strategy",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.project_planning",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.roadmap_prioritization",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.testing_quality",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.projects_products.ux_user_research",
+      "domain_id": "D06",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.biology_life_science",
+      "domain_id": "D14",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:12049"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.chemistry_materials",
+      "domain_id": "D14",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.computer_science",
+      "domain_id": "D14",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:14106"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.engineering",
+      "domain_id": "D14",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:4674"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.mathematics",
+      "domain_id": "D14",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.medicine_knowledge",
+      "domain_id": "D14",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.physics",
+      "domain_id": "D14",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.science_technical.statistics_data_analysis",
+      "domain_id": "D14",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.appointments_bookings",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.celebrations_holidays",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.life_events",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.plans_checklists",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.reminders_deadlines",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.routines_recurring",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.time_events.time_management",
+      "domain_id": "D17",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 2,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.attractions_activities",
+      "domain_id": "D10",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:3293"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.local_navigation",
+      "domain_id": "D10",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.lodging",
+      "domain_id": "D10",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.restaurants_travel",
+      "domain_id": "D10",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.transport_travel",
+      "domain_id": "D10",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 1,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.trip_planning",
+      "domain_id": "D10",
+      "readiness": "SPARSE",
+      "prospective_source_rows": [
+        "dolly:5031"
+      ],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.trip_records",
+      "domain_id": "D10",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    },
+    {
+      "topic_id": "sys.travel_places.visas_border",
+      "domain_id": "D10",
+      "readiness": "DEFER",
+      "prospective_source_rows": [],
+      "unresolved_nomination_count": 0,
+      "accepted_gold_rows": 0
+    }
+  ],
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "natural_defer_controls_status": "NOT_REGISTERED",
+  "natural_context_controls_status": "NOT_REGISTERED",
+  "source_only_frozen": true,
+  "cig02_frozen": false,
+  "cig03_started": false,
+  "capability_test_started": false
+}
