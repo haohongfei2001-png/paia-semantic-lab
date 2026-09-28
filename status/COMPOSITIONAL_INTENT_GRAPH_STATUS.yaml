@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.1.0
 package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_03_PRE_CONSUMPTION_TRIGGER_REPAIR_REFREEZE
+phase: CIG_03_ARMED_FOR_SINGLE_BLIND_ACTIONS_EXECUTION
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -324,7 +324,7 @@ rounds:
   CIG-03:
     title: Fresh independent public capability test
     execution_status: IN_PROGRESS
-    execution_stage: TRIGGER_SKIPPED_UNCONSUMED_REFREEZE
+    execution_stage: REVISED_ARM_NOT_YET_CONSUMED
     candidate_readiness: CIG02_COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
     curator_status: COMPLETE_FROZEN
     curator_identity: /root/cig03_blind_curator_v2
@@ -355,10 +355,10 @@ rounds:
     trigger_failure_verdict: GENUINE_TRIGGER_SKIPPED_NOT_EVALUATED
     original_trigger_rerun_allowed: false
     pre_open_engineering_revision: 2
-    execution_arm_matches_current_freeze: false
-    next_gate: REVISED_ENGINEERING_FREEZE_EXACT_HEAD_MAIN_PASS_THEN_CORRECTED_ARM
+    execution_arm_matches_current_freeze: true
+    next_gate: ONE_SHOT_ACTIONS_AGGREGATE_RESULT_NO_REPLAY
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
     blocked_on: CIG-03 PASS
-next_action: "Complete the bounded pre-consumption trigger repair and revised engineering freeze with exact-head/main applicable CI PASS. Preserve run36465528055 SKIPPED, zero ledger claim and zero TEST consumption. Then a separate corrected arm must bind this previously committed freeze before the only permitted blind evaluation. No candidate/packet/scorer/protocol changes, old-run rerun, DEV rescore or TEST-based tuning. CIG-04 still requires genuine CIG-03 PASS."
+next_action: "Merge the corrected revision2 arm only after previously committed freeze main262a744ed4e620f61bbbf34b25dbef6ec1a7e1d6 and this exact arm head applicable CI all PASS. Dedicated arm-path push workflow verifies first-parent Git filename evidence, fixed identities and atomic immutable ledger before the single blind evaluation. Preserve the earlier SKIPPED trigger as unconsumed NOT_EVALUATED. Read only aggregate Actions evidence; no manual rerun, packet/scorer/candidate changes or consumed TEST tuning. CIG-04 requires genuine CIG-03 PASS."
