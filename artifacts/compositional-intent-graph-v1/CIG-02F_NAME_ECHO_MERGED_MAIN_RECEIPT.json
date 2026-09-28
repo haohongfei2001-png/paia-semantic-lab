@@ -1,0 +1,95 @@
+{
+  "format": "CIG02F_NAME_ECHO_MERGED_MAIN_RECEIPT_V1",
+  "pr_number": 77,
+  "pr_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/pull/77",
+  "exact_head_sha": "535f4b0260b829ae6ad482cf93f5574d46723d96",
+  "merged_main_sha": "9e8f1edf734e977999682214932f37aaa9631a6d",
+  "exact_head_checks": [
+    {
+      "name": "cig02b-public-dev",
+      "job_id": 108862037092,
+      "conclusion": "success"
+    },
+    {
+      "name": "fresh-public-train-dev",
+      "job_id": 108862036567,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "job_id": 108862036508,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "job_id": 108862036484,
+      "conclusion": "success"
+    },
+    {
+      "name": "csl-public-pr-validation",
+      "job_id": 108862036431,
+      "conclusion": "success"
+    }
+  ],
+  "exact_main_checks": [
+    {
+      "name": "fresh-public-train-dev",
+      "job_id": 108881549720,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "job_id": 108881549365,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "job_id": 108881548948,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "job_id": 108881548488,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "job_id": 108881547840,
+      "conclusion": "success"
+    }
+  ],
+  "exact_head_diagnostic_run_id": 36402070231,
+  "exact_head_diagnostic_job_id": 108862037092,
+  "exact_head_diagnostic_artifact_url": "https://github.com/haohongfei2001-png/paia-semantic-lab/actions/runs/36402070231/artifacts/10960269201",
+  "result": {
+    "classification": "SAME_SOURCE_SYNTHETIC_ENGINEERING_NOT_CAPABILITY",
+    "name_free_role_probes": {
+      "ASSIGNED": 0,
+      "DEFER": 33
+    },
+    "formal_name_echo_role_probes": [
+      {
+        "topic_id": "sys.health_wellbeing.fitness",
+        "state": "ASSIGNED",
+        "evidence_rule": "EXACT_FORMAL_NAME"
+      },
+      {
+        "topic_id": "sys.media_culture.music",
+        "state": "ASSIGNED",
+        "evidence_rule": "EXACT_FORMAL_NAME"
+      }
+    ],
+    "masked_exact_defer_topics": {
+      "ASSIGNED": 0,
+      "DEFER": 109
+    },
+    "context_mismatches": 0,
+    "repeat_mismatches": 0,
+    "independent_gold_rows": 0,
+    "public_natural_dev_qualified": false,
+    "full_catalog_capability_floor_assessed": false
+  },
+  "source_exploration_stopped": true,
+  "cig02_frozen": false,
+  "cig03_started": false
+}
