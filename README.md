@@ -8,45 +8,24 @@ data unless an authority document explicitly changes that boundary.
 
 ## Current state
 
-The lightweight zero-model sparse baseline has closed:
+Canonical public package: **PAIA-COMPOSITIONAL-INTENT-GRAPH-v1**, protocol1.1.0.
 
-- PAIA-LIGHTWEIGHT-SEMANTIC-ROUTER-v1 / LSR-01 = COMPLETE/FAIL;
-- production footprint was very small, but source-separated semantic coverage
-  and recall were not credible;
-- the 80 private calibration records, 13 legacy evaluation records and consumed
-  35-case lockbox were not opened by LSR-01.
+- [Package plan](docs/compositional-intent-graph-v1/DEVELOPMENT_PLAN.md)
+- [Canonical STATUS](status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml)
+- [Independent CIG-03 closure](docs/compositional-intent-graph-v1/CIG-03_CLOSURE.md)
+- [Immutable aggregate result](artifacts/compositional-intent-graph-v1/CIG-03_TEST_RESULT.json)
 
-The next registered direction is:
+CIG-v1 is **PUBLIC_COMPLETE_FAIL**. Its once-consumed independent blind TEST covers all144 Topics: assigned precision100% on1 assignment, single coverage and full144 macro recall0.347222%, below the unchanged70% floor. Controls/context/determinism gates pass. CIG-04 remains blocked; no capability is promoted. Same-writer DEV96.875% is development evidence and did not establish independent capability.
 
-**PAIA-COMPILED-SEMANTIC-LEXICON-v1**
+LSR-01, CSL-03 and CSL-04 genuine FAIL remain preserved; CSL-v1 is also PUBLIC_COMPLETE_FAIL. These statuses close their research routes. Semantic Lab remains an ongoing research project; future directions use separate packages and evidence boundaries. No consumed TEST is reused for tuning or promotion.
 
-It tests whether a rich but compact **build-time generated static semantic
-lexicon** can supply the semantic knowledge missing from the sparse baseline
-while preserving a zero-model, zero-network, deterministic local PAIA runtime.
+## Execution and evidence boundary
 
-Canonical package:
-- `docs/compiled-semantic-lexicon-v1/`
-- `status/COMPILED_SEMANTIC_LEXICON_STATUS.yaml`
-
-CSL-00 is READY but NOT_STARTED. Registration alone does not authorize
-execution.
-
-## Public unattended execution
-
-After one explicit whole-public-package authorization, ChatGPT Work may execute
-CSL-00 through CSL-06 continuously, including ordinary implementation fixes,
-PR/CI/merge work and the predeclared CSL-03 -> CSL-04 failure path.
-
-Hard stops remain before:
-- CSL-07: existing 80 private calibration;
-- CSL-08: 13 legacy evaluation records;
-- CSL-09: PAIA production integration.
-
-The consumed 35-case SEM-07 lockbox remains forbidden for tuning/promotion.
+The manager uses GitHub remote/connector/Actions only. Ordinary public engineering proceeds under owner authorization and exact-head/exact-main CI discipline. Product constraints and frozen scoring rules remain fixed. No private80 calibration, legacy13 evaluation, consumed35 lockbox, real PAIA archive or production access is authorized in these public packages. CIG-03 packet/scorer/candidate were committed before its sole blinded evaluation; the candidate writer reads aggregates/hashes, never TEST text/gold/per-case results. Later CI verifies stored result integrity without TEST replay.
 
 ## Product constraints preserved
 
-The compiled-lexicon direction still requires:
+The public zero-model research contract requires:
 - 0-byte production neural model assets;
 - no semantic API/network dependency;
 - JS/browser-ready deterministic runtime;

@@ -1,7 +1,7 @@
 package_id: PAIA-COMPOSITIONAL-INTENT-GRAPH-v1
 package_version: 1.1.0
-package_status: PUBLIC_DIAGNOSTIC_IN_PROGRESS
-phase: CIG_03_ARMED_FOR_SINGLE_BLIND_ACTIONS_EXECUTION
+package_status: PUBLIC_COMPLETE_FAIL
+phase: CIG_03_COMPLETE_FAIL_PUBLIC_PACKAGE_CLOSED
 baseline_main_at_registration: 173a8f2657f145f8820ae6ecd0add05905cb32a3
 parent_evidence:
   lsr_01: COMPLETE_FAIL
@@ -323,8 +323,8 @@ rounds:
     next_substage: CIG_03_INDEPENDENT_BLIND_CURATION_AFTER_FREEZE_MERGE
   CIG-03:
     title: Fresh independent public capability test
-    execution_status: IN_PROGRESS
-    execution_stage: REVISED_ARM_NOT_YET_CONSUMED
+    execution_status: COMPLETE
+    execution_stage: ONE_SHOT_CONSUMED_CLOSED_FAIL
     candidate_readiness: CIG02_COMPLETE_FROZEN_DEV_READY_NOT_CAPABILITY
     curator_status: COMPLETE_FROZEN
     curator_identity: /root/cig03_blind_curator_v2
@@ -342,9 +342,9 @@ rounds:
     formal_topic_count: 144
     per_topic_single_label_cases: 2
     candidate_writer_test_content_reads: 0
-    test_started: false
-    test_consumed: false
-    evaluation_invocations: 0
+    test_started: true
+    test_consumed: true
+    evaluation_invocations: 1
     packet_mutable: false
     scorer_mutable: false
     execution_arm_created: true
@@ -356,9 +356,35 @@ rounds:
     original_trigger_rerun_allowed: false
     pre_open_engineering_revision: 2
     execution_arm_matches_current_freeze: true
-    next_gate: ONE_SHOT_ACTIONS_AGGREGATE_RESULT_NO_REPLAY
+    verdict: FAIL
+    result: artifacts/compositional-intent-graph-v1/CIG-03_TEST_RESULT.json
+    result_receipt: artifacts/compositional-intent-graph-v1/CIG-03_RESULT_RECEIPT.json
+    closure_report: docs/compositional-intent-graph-v1/CIG-03_CLOSURE.md
+    actions_run_id: 36470169862
+    actions_job_id: 109090133628
+    actions_run_attempt: 1
+    evaluation_source_sha: 38cd6e7e28d0522245e3e05fa9af8aa43ef405a2
+    native_candidate_calls: 936
+    result_sha256: 61b8b91bdf45204ab6eb13db70c523261e0c12fe16440c3667a818f49ff979c6
+    assigned_precision: 1.0
+    single_label_auto_coverage: 0.003472222222222222
+    full144_macro_recall: 0.003472222222222222
+    controls_false_assignment: 0
+    context_harm: 0
+    deterministic_repeat: PASS
+    single_assigned: 1
+    single_correct_assigned: 1
+    single_deferred: 287
+    failed_gates: [single_label_auto_coverage, full144_macro_recall]
+    capability_approved: false
+    test_replay_allowed: false
+    consumed_test_tuning_allowed: false
+    closure_ci_receipt: PR_BODY_EXACT_HEAD_AND_EXACT_MAIN
+    next_gate: NONE_PACKAGE_CLOSED_FAIL
   CIG-04:
     title: Consumer footprint and browser certification
     execution_status: BLOCKED
-    blocked_on: CIG-03 PASS
-next_action: "Merge the corrected revision2 arm only after previously committed freeze main262a744ed4e620f61bbbf34b25dbef6ec1a7e1d6 and this exact arm head applicable CI all PASS. Dedicated arm-path push workflow verifies first-parent Git filename evidence, fixed identities and atomic immutable ledger before the single blind evaluation. Preserve the earlier SKIPPED trigger as unconsumed NOT_EVALUATED. Read only aggregate Actions evidence; no manual rerun, packet/scorer/candidate changes or consumed TEST tuning. CIG-04 requires genuine CIG-03 PASS."
+    blocked_on: CIG-03 FAIL
+    started: false
+    capability_or_resource_certification_claimed: false
+next_action: "CIG-v1 is PUBLIC_COMPLETE_FAIL after the one-shot independent CIG-03 result; CIG-04 remains blocked and no capability is promoted. Verify only stored result bytes/units/verdict without TEST replay. Do not tune the frozen candidate using this consumed packet, weaken gates, remove Topics or restart this route. This closes the CIG-v1 package, while Semantic Lab remains an ongoing research project. Any future direction must be a separate package with its own evidence boundary and required owner gates."
