@@ -65,7 +65,8 @@
   "main_full_validation": {
     "check_id": 109036905738,
     "requirement": "MUST_PASS_BEFORE_FREEZE_PR_MERGE",
-    "last_observed": "IN_PROGRESS"
+    "last_observed": "PASS",
+    "conclusion": "success"
   },
   "dev_result_path": "artifacts/compositional-intent-graph-v1/CIG-02G_DEV_RESULT.json",
   "dev_result_git_blob_sha": "91e340addd437d5acbd396d3aeb17ed308532d8f",
@@ -74,5 +75,38 @@
   "dev_readiness": "DEV_FLOOR_MET",
   "independent_capability_verdict": "NOT_EVALUATED",
   "synthetic_dev_rescored_on_main": false,
-  "ci_preserves_original_failure": true
+  "ci_preserves_original_failure": true,
+  "main_applicable_checks": [
+    {
+      "name": "fresh-public-train-dev",
+      "check_id": 109036908601,
+      "conclusion": "success"
+    },
+    {
+      "name": "semantic-lab-validation",
+      "check_id": 109036905738,
+      "conclusion": "success"
+    },
+    {
+      "name": "pinned-dialogue-source-triage",
+      "check_id": 109036905181,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02b-public-dev",
+      "check_id": 109036904937,
+      "conclusion": "success"
+    },
+    {
+      "name": "source-separated-public-train-dev",
+      "check_id": 109036904688,
+      "conclusion": "success"
+    },
+    {
+      "name": "cig02g-authored-dev-engineering",
+      "check_id": 109036904685,
+      "conclusion": "success"
+    }
+  ],
+  "candidate_exact_main_verdict": "ALL_SIX_APPLICABLE_CHECKS_PASS"
 }
