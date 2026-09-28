@@ -1,0 +1,38 @@
+{
+  "format": "CIG02E_SOURCE_READINESS_AUDIT_V1",
+  "classification": "NECESSARY_SOURCE_AND_ADJUDICATION_GATES_NOT_CAPABILITY",
+  "base_main": "fd2d6fd3e5b53e37bcc92dfd1683920dec328ea9",
+  "evidence": [
+    "artifacts/compositional-intent-graph-v1/CIG-02E_SOURCE_COVERAGE_RECONCILIATION.json",
+    "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml",
+    "artifacts/compositional-intent-graph-v1/CIG-02E_NI_DEFINITION_SOURCE_FAILURE.json"
+  ],
+  "topic_count": 144,
+  "prospective_nominations": 41,
+  "prospective_topics": 35,
+  "topics_without_prospective_sources": 109,
+  "unresolved_nominations": 28,
+  "accepted_fixture_rows": 0,
+  "gold_rows_created": 0,
+  "natural_defer_controls_status": "NOT_REGISTERED",
+  "natural_context_controls_status": "NOT_REGISTERED",
+  "annotation_independence": "DEVELOPER_SOURCE_RECONCILIATION_NOT_INDEPENDENT_GOLD",
+  "independent_gold_ready": false,
+  "fixed_ni_source_attempt": {
+    "run_id": 36346751629,
+    "result": "FAIL_ROOT_CAUSE_UNDETERMINED",
+    "replay_allowed": false
+  },
+  "necessary_gates": {
+    "full_catalog_prospective_source_coverage": false,
+    "independent_gold": false,
+    "natural_defer_controls": false,
+    "natural_context_controls": false,
+    "source_provenance_for_new_family": "NOT_REGISTERED"
+  },
+  "verdict": "CIG02_FREEZE_NOT_READY_SOURCE_AND_ADJUDICATION_BLOCKERS",
+  "router_capability_measured": false,
+  "dev_score_computed": false,
+  "capability_test_started": false,
+  "floor_or_protocol_changed": false
+}
