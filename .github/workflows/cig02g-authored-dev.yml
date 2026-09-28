@@ -73,11 +73,14 @@ jobs:
           mv .cig02g-dev-isolated.json fixtures/cig_v1/cig02g_dev_v1.json
       - name: Targeted admission, full-Catalog and current-goal safety tests
         run: node --test tests-js/cig02g_isolation.test.mjs
-      - name: Score stable PR candidate on authored DEV only
-        if: github.event_name == 'pull_request'
-        env:
-          GITHUB_SHA: ${{ github.event.pull_request.head.sha }}
-        run: node scripts/cig02g_dev.mjs
+      - name: Verify recorded freeze or score unrecorded stable PR DEV
+        run: |
+          if [ -f artifacts/compositional-intent-graph-v1/CIG-02G_DEV_RESULT.json ]; then
+            node --check scripts/cig02g_verify_freeze.mjs
+            node scripts/cig02g_verify_freeze.mjs
+          elif [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            node scripts/cig02g_dev.mjs
+          fi
       - name: Preserve DEV evidence without a capability claim
         if: github.event_name == 'pull_request' && always()
         uses: actions/upload-artifact@v4
@@ -85,6 +88,7 @@ jobs:
           name: cig02g-authored-dev-evidence
           path: |
             .cig02g-dev-result.json
+            artifacts/compositional-intent-graph-v1/CIG-02G_DEV_RESULT.json
             .cig02g-index.json
           include-hidden-files: true
           if-no-files-found: error

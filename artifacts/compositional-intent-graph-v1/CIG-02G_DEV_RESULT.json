@@ -1,0 +1,124 @@
+{
+  "format": "CIG02G_AUTHORED_DEV_RESULT_V1",
+  "classification": "SAME_WRITER_AUTHORED_DEV_NOT_INDEPENDENT_CAPABILITY",
+  "github_sha": "654d1c2048046bb266120cf426869076a53290ca",
+  "topic_count": 144,
+  "single_label_cases": 288,
+  "safety_cases": 36,
+  "context_pairs": 72,
+  "authorship": "SAME_WRITER_AS_TRAIN_NOT_INDEPENDENT_NOT_BLIND",
+  "vocabulary_overlap_with_train": true,
+  "final_capability_test_started": false,
+  "capability_test_rows_read": 0,
+  "metrics": {
+    "assigned_precision": 1,
+    "auto_assignment_coverage": 0.96875,
+    "topic_macro_recall": 0.96875,
+    "insufficient_false_assignment": 0,
+    "context_harm": 0,
+    "nondeterministic_repeats": 0
+  },
+  "evidence_rules": {
+    "exact_formal_name_assignments": 5,
+    "typed_composition_assignments": 274,
+    "formal_name_present_cases": 6
+  },
+  "gates": {
+    "assigned_precision": true,
+    "auto_assignment_coverage": true,
+    "topic_macro_recall": true,
+    "insufficient_false_assignment": true,
+    "context_harm": true,
+    "deterministic_repeat": true
+  },
+  "dev_readiness": "DEV_FLOOR_MET",
+  "full_capability_verdict": "NOT_EVALUATED",
+  "index_bytes": 76827,
+  "router_plus_index_bytes": 86105,
+  "source_sha256": {
+    "index": "2448842ddd49614f7b0581b6584fb19d4eb3693d227c0b68d3887412d1eb3427",
+    "dev": "3f5eb16ac60d4570878b66c275e8ad88ef033f78fd533d1e33b5114ac46b4d6b",
+    "train": "6c6e6f1366ee72eff5ac779383e8644d45aa4445000a349a49203385edf3e35d",
+    "runtime": {
+      "runtime/compositional_intent_graph_v1/authored_topic_router.mjs": "4d55935949f92e2b51aad197825ee88607ede5b682e8a9e6025aab6f990a508e",
+      "runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs": "fa4655ca2fabfec0921358b3cee96e8a8cfc7371a9e12d6b32488e1dbc9bba35",
+      "runtime/compositional_intent_graph_v1/frame_grounder.mjs": "30bf14ab6a1250157f9c9178b0cd9701908982c36881258b73fce690ddc3d1fe",
+      "runtime/compositional_intent_graph_v1/goal_parser.mjs": "df702bd27464cd6d73596ee0e2d5fd27edc05297810fb547f2944a94857f9f43",
+      "runtime/compositional_intent_graph_v1/current_goal_scope.mjs": "e9a120ba7fd7da71b31e45e16a15f0d17d3f505ba71810ac3b0c5a29bf1d7047"
+    }
+  },
+  "failures": [
+    {
+      "id": "gdev.family_relationships.parents_family.1",
+      "gold": [
+        "sys.family_relationships.parents_family"
+      ],
+      "predicted": [],
+      "reason": "NEGATED_CURRENT_SCOPE"
+    },
+    {
+      "id": "gdev.health_wellbeing.preventive_health.2",
+      "gold": [
+        "sys.health_wellbeing.preventive_health"
+      ],
+      "predicted": [],
+      "reason": "REPORTED_CURRENT_SCOPE"
+    },
+    {
+      "id": "gdev.home_daily.home_improvement.1",
+      "gold": [
+        "sys.home_daily.home_improvement"
+      ],
+      "predicted": [],
+      "reason": "INSUFFICIENT_TYPED_EVIDENCE"
+    },
+    {
+      "id": "gdev.travel_places.attractions_activities.1",
+      "gold": [
+        "sys.travel_places.attractions_activities"
+      ],
+      "predicted": [],
+      "reason": "COMPETING_TYPED_FRAMES"
+    },
+    {
+      "id": "gdev.legal_civic.legal_questions.1",
+      "gold": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "predicted": [],
+      "reason": "CONDITIONAL_CURRENT_SCOPE"
+    },
+    {
+      "id": "gdev.legal_civic.immigration_residency.1",
+      "gold": [
+        "sys.legal_civic.immigration_residency"
+      ],
+      "predicted": [],
+      "reason": "COMPETING_TYPED_FRAMES"
+    },
+    {
+      "id": "gdev.time_events.plans_checklists.1",
+      "gold": [
+        "sys.time_events.plans_checklists"
+      ],
+      "predicted": [],
+      "reason": "INSUFFICIENT_TYPED_EVIDENCE"
+    },
+    {
+      "id": "gdev.knowledge_memory.notes_knowledge_management.1",
+      "gold": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "predicted": [],
+      "reason": "INSUFFICIENT_TYPED_EVIDENCE"
+    },
+    {
+      "id": "gdev.knowledge_memory.backup_export.1",
+      "gold": [
+        "sys.knowledge_memory.backup_export"
+      ],
+      "predicted": [],
+      "reason": "INSUFFICIENT_TYPED_EVIDENCE"
+    }
+  ]
+}
