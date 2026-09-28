@@ -1,0 +1,91 @@
+name: CIG-02G isolated authored DEV engineering
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02g-authored-dev.yml"
+      - "scripts/cig02g_*.mjs"
+      - "scripts/cig02e_compile.mjs"
+      - "runtime/compositional_intent_graph_v1/authored_topic_router.mjs"
+      - "runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs"
+      - "runtime/compositional_intent_graph_v1/frame_grounder.mjs"
+      - "runtime/compositional_intent_graph_v1/current_goal_scope.mjs"
+      - "runtime/compositional_intent_graph_v1/goal_parser.mjs"
+      - "tests-js/cig02g_*.test.mjs"
+      - "fixtures/cig_v1/cig02g_*.json"
+      - "semantic_frames/cig02e_v1/**"
+      - "semantic_profiles/v0.1/**"
+      - "catalog/system_topic_catalog_v0.2.yaml"
+      - "docs/compositional-intent-graph-v1/DEVELOPMENT_PLAN.md"
+      - "docs/compositional-intent-graph-v1/CIG-02G_*"
+      - "artifacts/compositional-intent-graph-v1/CIG-02G_*"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/cig02g-authored-dev.yml"
+      - "scripts/cig02g_*.mjs"
+      - "scripts/cig02e_compile.mjs"
+      - "runtime/compositional_intent_graph_v1/authored_topic_router.mjs"
+      - "runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs"
+      - "runtime/compositional_intent_graph_v1/frame_grounder.mjs"
+      - "runtime/compositional_intent_graph_v1/current_goal_scope.mjs"
+      - "runtime/compositional_intent_graph_v1/goal_parser.mjs"
+      - "tests-js/cig02g_*.test.mjs"
+      - "fixtures/cig_v1/cig02g_*.json"
+      - "semantic_frames/cig02e_v1/**"
+      - "semantic_profiles/v0.1/**"
+      - "catalog/system_topic_catalog_v0.2.yaml"
+      - "docs/compositional-intent-graph-v1/DEVELOPMENT_PLAN.md"
+      - "docs/compositional-intent-graph-v1/CIG-02G_*"
+      - "artifacts/compositional-intent-graph-v1/CIG-02G_*"
+      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
+permissions:
+  contents: read
+jobs:
+  cig02g-authored-dev-engineering:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check new source syntax
+        run: |
+          node --check scripts/cig02g_train_contract.mjs
+          node --check scripts/cig02g_compile.mjs
+          node --check scripts/cig02g_dev.mjs
+          node --check runtime/compositional_intent_graph_v1/authored_topic_router.mjs
+          node --check runtime/compositional_intent_graph_v1/authored_current_goal_scope.mjs
+      - name: Compile full Catalog from allowlisted TRAIN only
+        run: |
+          node scripts/cig02e_compile.mjs
+          node scripts/cig02g_compile.mjs
+      - name: Prove DEV removal cannot change compiler bytes
+        run: |
+          cp .cig02g-index.json .cig02g-index-baseline.json
+          mv fixtures/cig_v1/cig02g_dev_v1.json .cig02g-dev-isolated.json
+          node scripts/cig02g_compile.mjs
+          cmp .cig02g-index-baseline.json .cig02g-index.json
+          mv .cig02g-dev-isolated.json fixtures/cig_v1/cig02g_dev_v1.json
+      - name: Targeted admission, full-Catalog and current-goal safety tests
+        run: node --test tests-js/cig02g_isolation.test.mjs
+      - name: Score stable PR candidate on authored DEV only
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_SHA: ${{ github.event.pull_request.head.sha }}
+        run: node scripts/cig02g_dev.mjs
+      - name: Preserve DEV evidence without a capability claim
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cig02g-authored-dev-evidence
+          path: |
+            .cig02g-dev-result.json
+            .cig02g-index.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

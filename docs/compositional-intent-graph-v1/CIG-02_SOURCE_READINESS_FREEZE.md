@@ -17,3 +17,7 @@ Use the existing deterministic 144-Topic typed frame index and this source mask.
 Evaluate this engineering candidate on **fresh public/synthetic diagnostic inputs** for assignment/DEFER, context harm, determinism and footprint. Same-source authored inputs cannot establish the original full-Catalog DEV or capability floors; no scores from CIG-01, CIG-02B/C/D or consumed TEST are used for tuning. Keep all original thresholds/scoring rules. CIG-02 remains unfrozen and CIG-03 blocked/owner-gated.
 
 The stop rule bars further unbounded dataset searches purely to fill Topic coverage. A later narrowly justified provenance/adjudication check is separate from this freeze. Product constraints remain zero-model, local-first and tiny; forbidden evidence and PAIA production remain untouched.
+
+## CIG-02G amendment
+
+The owner subsequently authorized strictly isolated authored/synthetic TRAIN/DEV for all 144 Topics. This natural-source inventory and its READY/SPARSE/DEFER counts remain immutable provenance. The new [CIG-02G protocol](CIG-02G_AUTHORED_DEV_AMENDMENT.md) does not use natural-source readiness as a runtime veto or redefine these counts as capability readiness. No public source expansion is reopened.

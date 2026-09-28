@@ -21,3 +21,7 @@ A better scope parser or more synthetic controls cannot remove this ceiling whil
 The minimal Router's current engineering repair is complete. Source search remains stopped at READY 0 / SPARSE 35 / DEFER 109; the original product constraints, formal Catalog and full-Catalog capability protocol remain in force. CIG-02 is unfrozen and CIG-03 remains blocked.
 
 Further capability advancement requires owner direction: retain the full-Catalog protocol and stop this candidate's capability progression, or explicitly authorize a separately scoped limited-Topic research protocol while preserving all existing CIG evidence and full-Catalog gates. This document authorizes neither a narrower success criterion nor a new independent capability TEST. Semantic Lab itself is not terminated.
+
+## Owner-authorized successor
+
+The owner subsequently authorized isolated authored/synthetic TRAIN/DEV while retaining all 144 Topics, 70% capability floor and product constraints. [CIG-02G](CIG-02G_AUTHORED_DEV_AMENDMENT.md) removes the natural-source runtime veto for the new candidate. This report and its 35/144 bound remain historical evidence for the CIG-02F mask candidate; they do not bound CIG-02G and do not constitute a measured TEST FAIL.

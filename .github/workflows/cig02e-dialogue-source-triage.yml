@@ -6,14 +6,12 @@ on:
       - ".github/workflows/cig02e-dialogue-source-triage.yml"
       - "scripts/cig02e_dialogue_source_triage.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02E_DIALOGUE_SOURCE_TRIAGE.md"
-      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
   push:
     branches: [main]
     paths:
       - ".github/workflows/cig02e-dialogue-source-triage.yml"
       - "scripts/cig02e_dialogue_source_triage.mjs"
       - "docs/compositional-intent-graph-v1/CIG-02E_DIALOGUE_SOURCE_TRIAGE.md"
-      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
 permissions:
   contents: read
 jobs:

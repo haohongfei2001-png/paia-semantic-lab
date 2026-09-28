@@ -1,0 +1,3218 @@
+{
+  "format": "cig02g-authored-dev-v1",
+  "partition": "DEV",
+  "authorship": "SAME_WRITER_AS_TRAIN_NOT_INDEPENDENT_NOT_BLIND",
+  "use": "ITERATIVE_DEVELOPMENT_ONLY_NOT_CAPABILITY_TEST",
+  "vocabulary_overlap_with_train": true,
+  "source_search_expansion": false,
+  "single_label": [
+    {
+      "id": "gdev.personal_direction.life_goals.1",
+      "current": "Help me define my life ambitions for the next decade",
+      "gold": [
+        "sys.personal_direction.life_goals"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.life_goals.2",
+      "current": "I want to break down my personal aspirations into achievable milestones",
+      "gold": [
+        "sys.personal_direction.life_goals"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.values_principles.1",
+      "current": "Help me clarify my ethical commitments when choices feel uncomfortable",
+      "gold": [
+        "sys.personal_direction.values_principles"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.values_principles.2",
+      "current": "I want to weigh my guiding beliefs before choosing what matters most",
+      "gold": [
+        "sys.personal_direction.values_principles"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.major_decisions.1",
+      "current": "Help me weigh two life changing choices before I commit",
+      "gold": [
+        "sys.personal_direction.major_decisions"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.major_decisions.2",
+      "current": "Please compare the lasting consequences of these irreversible choices",
+      "gold": [
+        "sys.personal_direction.major_decisions"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.self_reflection.1",
+      "current": "Help me examine my motives behind seeking praise from others",
+      "gold": [
+        "sys.personal_direction.self_reflection"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.self_reflection.2",
+      "current": "I want to understand my reactions when plans go wrong",
+      "gold": [
+        "sys.personal_direction.self_reflection"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.habits_behavior.1",
+      "current": "Help me change my daily habits of putting tasks off",
+      "gold": [
+        "sys.personal_direction.habits_behavior"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.habits_behavior.2",
+      "current": "Please help me build consistency in this repeated behavior",
+      "gold": [
+        "sys.personal_direction.habits_behavior"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.personal_productivity.1",
+      "current": "Help me improve my task execution so I finish what I start",
+      "gold": [
+        "sys.personal_direction.personal_productivity"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.personal_productivity.2",
+      "current": "Please organize my personal workflow to reduce switching between tasks",
+      "gold": [
+        "sys.personal_direction.personal_productivity"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.life_planning.1",
+      "current": "Help me plan my future years across work and family commitments",
+      "gold": [
+        "sys.personal_direction.life_planning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.life_planning.2",
+      "current": "Please sequence my life stages into a realistic long term path",
+      "gold": [
+        "sys.personal_direction.life_planning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.personal_admin.1",
+      "current": "Help me organize my personal paperwork before the annual renewal",
+      "gold": [
+        "sys.personal_direction.personal_admin"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.personal_direction.personal_admin.2",
+      "current": "I need to complete my account administration and update registration details",
+      "gold": [
+        "sys.personal_direction.personal_admin"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.parents_family.1",
+      "current": "Help me discuss expectations with my parents without escalating tension",
+      "gold": [
+        "sys.family_relationships.parents_family"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.parents_family.2",
+      "current": "I want to improve how I relate to my family of origin",
+      "gold": [
+        "sys.family_relationships.parents_family"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.siblings.1",
+      "current": "Help me support my sister through our shared family responsibilities",
+      "gold": [
+        "sys.family_relationships.siblings"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.siblings.2",
+      "current": "I need to discuss our changing relationship with my brother",
+      "gold": [
+        "sys.family_relationships.siblings"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.partner_relationship.1",
+      "current": "Help me improve communication with my spouse about shared responsibilities",
+      "gold": [
+        "sys.family_relationships.partner_relationship"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.partner_relationship.2",
+      "current": "I want to discuss long term commitment with my partner",
+      "gold": [
+        "sys.family_relationships.partner_relationship"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.friendships.1",
+      "current": "Help me reconnect with old friends after several years apart",
+      "gold": [
+        "sys.family_relationships.friendships"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.friendships.2",
+      "current": "I want to maintain regular contact with my close friends",
+      "gold": [
+        "sys.family_relationships.friendships"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.social_interaction.1",
+      "current": "Help me practice joining group conversations at a community gathering",
+      "gold": [
+        "sys.family_relationships.social_interaction"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.social_interaction.2",
+      "current": "Please help me improve my social introductions around unfamiliar people",
+      "gold": [
+        "sys.family_relationships.social_interaction"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.conflict_boundaries.1",
+      "current": "Help me set interpersonal boundaries around unwanted requests for favors",
+      "gold": [
+        "sys.family_relationships.conflict_boundaries"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.conflict_boundaries.2",
+      "current": "I need to resolve an interpersonal conflict while protecting my own limits",
+      "gold": [
+        "sys.family_relationships.conflict_boundaries"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.caregiving_family_support.1",
+      "current": "Help me arrange family caregiving duties among relatives this month",
+      "gold": [
+        "sys.family_relationships.caregiving_family_support"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.caregiving_family_support.2",
+      "current": "Please coordinate elder care so the responsibility is shared fairly",
+      "gold": [
+        "sys.family_relationships.caregiving_family_support"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.pets.1",
+      "current": "Help me train my dog to settle calmly when guests arrive",
+      "gold": [
+        "sys.family_relationships.pets"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.family_relationships.pets.2",
+      "current": "I want to care for my cat through a new daily routine",
+      "gold": [
+        "sys.family_relationships.pets"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.medical_care.1",
+      "current": "Help me choose a clinic for an appointment with a clinician",
+      "gold": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.medical_care.2",
+      "current": "I need to arrange a doctor visit and prepare what to bring",
+      "gold": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.symptoms_conditions.1",
+      "current": "Help me track recurring headaches and when they tend to appear",
+      "gold": [
+        "sys.health_wellbeing.symptoms_conditions"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.symptoms_conditions.2",
+      "current": "I want to understand my physical symptoms before describing them at a consultation",
+      "gold": [
+        "sys.health_wellbeing.symptoms_conditions"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.medication_treatment.1",
+      "current": "Help me manage my prescribed doses and remember when to take them",
+      "gold": [
+        "sys.health_wellbeing.medication_treatment"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.medication_treatment.2",
+      "current": "I need to follow the treatment schedule my clinician provided",
+      "gold": [
+        "sys.health_wellbeing.medication_treatment"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.mental_wellbeing.1",
+      "current": "Help me manage anxious feelings that interrupt my ordinary day",
+      "gold": [
+        "sys.health_wellbeing.mental_wellbeing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.mental_wellbeing.2",
+      "current": "I want to reduce emotional stress and regain a sense of calm",
+      "gold": [
+        "sys.health_wellbeing.mental_wellbeing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.fitness.1",
+      "current": "Help me build physical strength through a gradual exercise routine",
+      "gold": [
+        "sys.health_wellbeing.fitness"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.fitness.2",
+      "current": "Please help me improve my endurance training over the next month",
+      "gold": [
+        "sys.health_wellbeing.fitness"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.nutrition.1",
+      "current": "Help me balance my nutrient intake across breakfast and dinner",
+      "gold": [
+        "sys.health_wellbeing.nutrition"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.nutrition.2",
+      "current": "I want to plan balanced meals that fit my dietary needs",
+      "gold": [
+        "sys.health_wellbeing.nutrition"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.sleep.1",
+      "current": "Help me adjust my bedtime to fit an earlier morning schedule",
+      "gold": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.sleep.2",
+      "current": "I want to improve my nightly rest and wake feeling refreshed",
+      "gold": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.preventive_health.1",
+      "current": "Help me arrange routine screening for health risks before symptoms appear",
+      "gold": [
+        "sys.health_wellbeing.preventive_health"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.health_wellbeing.preventive_health.2",
+      "current": "I want to plan preventive checkups according to my age and risk factors",
+      "gold": [
+        "sys.health_wellbeing.preventive_health"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.academic_courses.1",
+      "current": "Help me understand the course material from this semester",
+      "gold": [
+        "sys.education_learning.academic_courses"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.academic_courses.2",
+      "current": "I need to complete my course assignments and clarify what the instructor expects",
+      "gold": [
+        "sys.education_learning.academic_courses"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.exams_assessments.1",
+      "current": "Help me prepare for my final examination with a revision schedule",
+      "gold": [
+        "sys.education_learning.exams_assessments"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.exams_assessments.2",
+      "current": "Please help me practice assessment questions under timed conditions",
+      "gold": [
+        "sys.education_learning.exams_assessments"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.thesis_research.1",
+      "current": "Help me develop my thesis argument and narrow the research question",
+      "gold": [
+        "sys.education_learning.thesis_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.thesis_research.2",
+      "current": "I want to review research literature for my dissertation",
+      "gold": [
+        "sys.education_learning.thesis_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.reading_learning.1",
+      "current": "Help me follow a self study tutorial to explore a new subject",
+      "gold": [
+        "sys.education_learning.reading_learning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.reading_learning.2",
+      "current": "I want to organize and study my self study reading into a learning path",
+      "gold": [
+        "sys.education_learning.reading_learning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.language_learning.1",
+      "current": "Help me learn foreign vocabulary and retain it between lessons",
+      "gold": [
+        "sys.education_learning.language_learning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.language_learning.2",
+      "current": "I want to practice pronunciation exercises to become easier to understand",
+      "gold": [
+        "sys.education_learning.language_learning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.skill_learning.1",
+      "current": "Help me learn a new skill through short practical sessions",
+      "gold": [
+        "sys.education_learning.skill_learning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.skill_learning.2",
+      "current": "Please help me practice skill exercises until I can perform the task independently",
+      "gold": [
+        "sys.education_learning.skill_learning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.academic_admin.1",
+      "current": "Help me complete course registration before the university closes enrollment",
+      "gold": [
+        "sys.education_learning.academic_admin"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.academic_admin.2",
+      "current": "I need to arrange graduation paperwork with the registrar",
+      "gold": [
+        "sys.education_learning.academic_admin"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.learning_methods.1",
+      "current": "Help me improve my study strategy so I remember material longer",
+      "gold": [
+        "sys.education_learning.learning_methods"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.education_learning.learning_methods.2",
+      "current": "Please design retrieval practice around the concepts I tend to forget",
+      "gold": [
+        "sys.education_learning.learning_methods"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.job_search.1",
+      "current": "Help me find job openings that match my experience",
+      "gold": [
+        "sys.career_work.job_search"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.job_search.2",
+      "current": "I want to filter vacancies by location and required skills",
+      "gold": [
+        "sys.career_work.job_search"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.applications.1",
+      "current": "Help me prepare my job application for the role I selected",
+      "gold": [
+        "sys.career_work.applications"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.applications.2",
+      "current": "I need to submit my resume and the required application materials",
+      "gold": [
+        "sys.career_work.applications"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.interviews.1",
+      "current": "Help me prepare for a hiring conversation with the team manager",
+      "gold": [
+        "sys.career_work.interviews"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.interviews.2",
+      "current": "I want to practice interview answers about my past projects",
+      "gold": [
+        "sys.career_work.interviews"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.career_strategy.1",
+      "current": "Help me plan my career direction for the next several years",
+      "gold": [
+        "sys.career_work.career_strategy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.career_strategy.2",
+      "current": "I want to choose a professional path that fits my strengths",
+      "gold": [
+        "sys.career_work.career_strategy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.workplace_daily.1",
+      "current": "Help me coordinate colleague responsibilities during our regular work",
+      "gold": [
+        "sys.career_work.workplace_daily"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.workplace_daily.2",
+      "current": "I need to resolve workplace tension over how the team collaborates",
+      "gold": [
+        "sys.career_work.workplace_daily"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.compensation_benefits.1",
+      "current": "Help me negotiate my salary offer before accepting the role",
+      "gold": [
+        "sys.career_work.compensation_benefits"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.compensation_benefits.2",
+      "current": "Please compare employee benefits across the two offers",
+      "gold": [
+        "sys.career_work.compensation_benefits"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.performance_growth.1",
+      "current": "Help me improve my work performance using feedback from my manager",
+      "gold": [
+        "sys.career_work.performance_growth"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.performance_growth.2",
+      "current": "I want to plan promotion development against clear expectations",
+      "gold": [
+        "sys.career_work.performance_growth"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.networking_professional.1",
+      "current": "Help me build industry contacts while moving into a new field",
+      "gold": [
+        "sys.career_work.networking_professional"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.career_work.networking_professional.2",
+      "current": "I want to maintain professional connections with former colleagues",
+      "gold": [
+        "sys.career_work.networking_professional"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.project_planning.1",
+      "current": "Help me plan project milestones and the main delivery risks",
+      "gold": [
+        "sys.projects_products.project_planning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.project_planning.2",
+      "current": "Please allocate project resources before we begin the next phase",
+      "gold": [
+        "sys.projects_products.project_planning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.product_strategy.1",
+      "current": "Help me clarify product positioning and the value we offer",
+      "gold": [
+        "sys.projects_products.product_strategy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.product_strategy.2",
+      "current": "I want to choose target users before deciding the product direction",
+      "gold": [
+        "sys.projects_products.product_strategy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.product_requirements.1",
+      "current": "Help me define feature requirements for the next version",
+      "gold": [
+        "sys.projects_products.product_requirements"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.product_requirements.2",
+      "current": "Please draft acceptance criteria that describe the expected user outcome",
+      "gold": [
+        "sys.projects_products.product_requirements"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.ux_user_research.1",
+      "current": "Help me study user behavior through observation of actual tasks",
+      "gold": [
+        "sys.projects_products.ux_user_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.ux_user_research.2",
+      "current": "I want to interview usability participants about where the experience breaks down",
+      "gold": [
+        "sys.projects_products.ux_user_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.roadmap_prioritization.1",
+      "current": "Help me prioritize the release roadmap against limited resources",
+      "gold": [
+        "sys.projects_products.roadmap_prioritization"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.roadmap_prioritization.2",
+      "current": "Please sequence the feature backlog into the next releases",
+      "gold": [
+        "sys.projects_products.roadmap_prioritization"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.engineering_execution.1",
+      "current": "Help me implement the technical tasks already agreed for this iteration",
+      "gold": [
+        "sys.projects_products.engineering_execution"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.engineering_execution.2",
+      "current": "I need to deliver the delivery implementation against the project milestones",
+      "gold": [
+        "sys.projects_products.engineering_execution"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.testing_quality.1",
+      "current": "Help me investigate acceptance defects before we ship the feature",
+      "gold": [
+        "sys.projects_products.testing_quality"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.testing_quality.2",
+      "current": "Please validate feature quality against the agreed acceptance conditions",
+      "gold": [
+        "sys.projects_products.testing_quality"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.launch_operations.1",
+      "current": "Help me prepare the release rollout for our finished product",
+      "gold": [
+        "sys.projects_products.launch_operations"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.projects_products.launch_operations.2",
+      "current": "I want to monitor service operations after the launch",
+      "gold": [
+        "sys.projects_products.launch_operations"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.ai_models_tools.1",
+      "current": "Help me compare model capabilities for a local text task",
+      "gold": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.ai_models_tools.2",
+      "current": "I want to select assistant tools that fit the workflow requirements",
+      "gold": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.prompt_workflows.1",
+      "current": "Help me design prompt instructions for a repeatable assistant task",
+      "gold": [
+        "sys.ai_computing.prompt_workflows"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.prompt_workflows.2",
+      "current": "Please orchestrate an agent workflow with clear handoffs and context",
+      "gold": [
+        "sys.ai_computing.prompt_workflows"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.coding_software_development.1",
+      "current": "Help me implement an api endpoint for this application",
+      "gold": [
+        "sys.ai_computing.coding_software_development"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.coding_software_development.2",
+      "current": "I want to refactor a software module to simplify its interfaces",
+      "gold": [
+        "sys.ai_computing.coding_software_development"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.debugging_troubleshooting.1",
+      "current": "Help me diagnose a runtime error that appears during startup",
+      "gold": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.debugging_troubleshooting.2",
+      "current": "Please trace the exception stack to its underlying cause",
+      "gold": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.hardware_devices.1",
+      "current": "Help me compare laptop specifications for my computing needs",
+      "gold": [
+        "sys.ai_computing.hardware_devices"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.hardware_devices.2",
+      "current": "I need to configure computer peripherals so they work reliably",
+      "gold": [
+        "sys.ai_computing.hardware_devices"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.networking_connectivity.1",
+      "current": "Help me restore the wifi connection after the router restarted",
+      "gold": [
+        "sys.ai_computing.networking_connectivity"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.networking_connectivity.2",
+      "current": "Please diagnose the vpn connection dropping every few minutes",
+      "gold": [
+        "sys.ai_computing.networking_connectivity"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.cybersecurity_privacy.1",
+      "current": "Help me secure account access against unauthorized sign ins",
+      "gold": [
+        "sys.ai_computing.cybersecurity_privacy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.cybersecurity_privacy.2",
+      "current": "I need to restrict data permissions so personal information stays protected",
+      "gold": [
+        "sys.ai_computing.cybersecurity_privacy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.data_systems.1",
+      "current": "Help me design a database schema for these related records",
+      "gold": [
+        "sys.ai_computing.data_systems"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.ai_computing.data_systems.2",
+      "current": "I want to model a data pipeline from ingestion to storage",
+      "gold": [
+        "sys.ai_computing.data_systems"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.budgeting_cashflow.1",
+      "current": "Help me allocate monthly spending across essentials and savings",
+      "gold": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.budgeting_cashflow.2",
+      "current": "I want to track household cash flow and avoid a shortfall",
+      "gold": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.banking_payments.1",
+      "current": "Help me arrange a bank transfer between my accounts",
+      "gold": [
+        "sys.finance_purchases.banking_payments"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.banking_payments.2",
+      "current": "I need to resolve a card payment that was declined",
+      "gold": [
+        "sys.finance_purchases.banking_payments"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.investing.1",
+      "current": "Help me compare investment assets by their risk and return characteristics",
+      "gold": [
+        "sys.finance_purchases.investing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.investing.2",
+      "current": "I want to allocate an investment portfolio across different asset classes",
+      "gold": [
+        "sys.finance_purchases.investing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.debt_credit.1",
+      "current": "Help me plan loan repayment around the interest rates",
+      "gold": [
+        "sys.finance_purchases.debt_credit"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.debt_credit.2",
+      "current": "I want to reduce my credit balances and understand my obligations",
+      "gold": [
+        "sys.finance_purchases.debt_credit"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.taxes_insurance.1",
+      "current": "Help me prepare my tax return and organize the supporting records",
+      "gold": [
+        "sys.finance_purchases.taxes_insurance"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.taxes_insurance.2",
+      "current": "Please review insurance coverage and explain the claim process",
+      "gold": [
+        "sys.finance_purchases.taxes_insurance"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.subscriptions_recurring.1",
+      "current": "Help me track automatic renewals before I get charged again",
+      "gold": [
+        "sys.finance_purchases.subscriptions_recurring"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.subscriptions_recurring.2",
+      "current": "I want to cancel recurring bills for services I stopped using",
+      "gold": [
+        "sys.finance_purchases.subscriptions_recurring"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.shopping_research.1",
+      "current": "Help me compare product options by features and price",
+      "gold": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.shopping_research.2",
+      "current": "Please research shopping prices before I choose which item to buy",
+      "gold": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.major_purchases.1",
+      "current": "Help me evaluate an expensive purchase against its long term value",
+      "gold": [
+        "sys.finance_purchases.major_purchases"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.finance_purchases.major_purchases.2",
+      "current": "I want to weigh major spending against keeping the money available",
+      "gold": [
+        "sys.finance_purchases.major_purchases"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.housing.1",
+      "current": "Help me find rental apartments that fit my living needs",
+      "gold": [
+        "sys.home_daily.housing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.housing.2",
+      "current": "Please compare housing options before I decide where to live",
+      "gold": [
+        "sys.home_daily.housing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.home_improvement.1",
+      "current": "Help me repair damaged furniture so I can keep using it",
+      "gold": [
+        "sys.home_daily.home_improvement"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.home_improvement.2",
+      "current": "I want to renovate the home interior with a practical layout",
+      "gold": [
+        "sys.home_daily.home_improvement"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.utilities_services.1",
+      "current": "Help me arrange electricity service for my address",
+      "gold": [
+        "sys.home_daily.utilities_services"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.utilities_services.2",
+      "current": "I need to manage household utilities and contact the service provider",
+      "gold": [
+        "sys.home_daily.utilities_services"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.chores_cleaning.1",
+      "current": "Help me organize household cleaning across the week",
+      "gold": [
+        "sys.home_daily.chores_cleaning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.chores_cleaning.2",
+      "current": "Please organize laundry tasks so they fit our daily responsibilities",
+      "gold": [
+        "sys.home_daily.chores_cleaning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.possessions_organization.1",
+      "current": "Help me sort personal belongings into things to keep and donate",
+      "gold": [
+        "sys.home_daily.possessions_organization"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.possessions_organization.2",
+      "current": "I want to declutter storage boxes and make items easier to find",
+      "gold": [
+        "sys.home_daily.possessions_organization"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.local_errands.1",
+      "current": "Help me arrange nearby errands into a practical route",
+      "gold": [
+        "sys.home_daily.local_errands"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.local_errands.2",
+      "current": "I need to complete parcel pickup and a few local tasks",
+      "gold": [
+        "sys.home_daily.local_errands"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.transportation_ownership.1",
+      "current": "Help me maintain my bicycle so it remains safe to ride",
+      "gold": [
+        "sys.home_daily.transportation_ownership"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.transportation_ownership.2",
+      "current": "Please compare car maintenance options for my own vehicle",
+      "gold": [
+        "sys.home_daily.transportation_ownership"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.moving_relocation.1",
+      "current": "Help me organize moving boxes before the truck arrives",
+      "gold": [
+        "sys.home_daily.moving_relocation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.home_daily.moving_relocation.2",
+      "current": "I want to plan a residence change and prepare the belongings",
+      "gold": [
+        "sys.home_daily.moving_relocation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.trip_planning.1",
+      "current": "Help me plan a holiday itinerary for a week away",
+      "gold": [
+        "sys.travel_places.trip_planning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.trip_planning.2",
+      "current": "Please organize trip destinations into a sensible sequence",
+      "gold": [
+        "sys.travel_places.trip_planning"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.transport_travel.1",
+      "current": "Help me compare intercity tickets for the journey",
+      "gold": [
+        "sys.travel_places.transport_travel"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.transport_travel.2",
+      "current": "I want to book flight routes that fit my travel dates",
+      "gold": [
+        "sys.travel_places.transport_travel"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.lodging.1",
+      "current": "Help me choose a hotel room near the places we will visit",
+      "gold": [
+        "sys.travel_places.lodging"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.lodging.2",
+      "current": "I need to reserve overnight accommodation for our journey",
+      "gold": [
+        "sys.travel_places.lodging"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.restaurants_travel.1",
+      "current": "Help me find local eateries during our trip",
+      "gold": [
+        "sys.travel_places.restaurants_travel"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.restaurants_travel.2",
+      "current": "I want to choose travel dining options that suit our tastes",
+      "gold": [
+        "sys.travel_places.restaurants_travel"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.attractions_activities.1",
+      "current": "Help me plan sightseeing activities for our time at the destination",
+      "gold": [
+        "sys.travel_places.attractions_activities"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.attractions_activities.2",
+      "current": "Please choose attraction tickets that fit the day's itinerary",
+      "gold": [
+        "sys.travel_places.attractions_activities"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.visas_border.1",
+      "current": "Help me prepare entry documents before crossing the border on holiday",
+      "gold": [
+        "sys.travel_places.visas_border"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.visas_border.2",
+      "current": "I need to check visitor visa requirements for this trip",
+      "gold": [
+        "sys.travel_places.visas_border"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.local_navigation.1",
+      "current": "Help me find a walking route from the station to the museum",
+      "gold": [
+        "sys.travel_places.local_navigation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.local_navigation.2",
+      "current": "I want to navigate local transit to reach the address",
+      "gold": [
+        "sys.travel_places.local_navigation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.trip_records.1",
+      "current": "Help me document travel memories after returning from the journey",
+      "gold": [
+        "sys.travel_places.trip_records"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.travel_places.trip_records.2",
+      "current": "Please organize my trip journal with the places we visited",
+      "gold": [
+        "sys.travel_places.trip_records"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.music.1",
+      "current": "Help me discover songs similar to the ones I enjoy",
+      "gold": [
+        "sys.media_culture.music"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.music.2",
+      "current": "I want to listen to albums from a different musical era",
+      "gold": [
+        "sys.media_culture.music"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.film_tv.1",
+      "current": "Help me recommend a television series for a quiet evening",
+      "gold": [
+        "sys.media_culture.film_tv"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.film_tv.2",
+      "current": "I want to discuss screen plots and what the characters represent",
+      "gold": [
+        "sys.media_culture.film_tv"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.books_literature.1",
+      "current": "Help me discuss novel themes and the narrator's perspective",
+      "gold": [
+        "sys.media_culture.books_literature"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.books_literature.2",
+      "current": "I want to choose literary works to read for enjoyment",
+      "gold": [
+        "sys.media_culture.books_literature"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.games.1",
+      "current": "Help me learn gameplay rules before joining the session",
+      "gold": [
+        "sys.media_culture.games"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.games.2",
+      "current": "I want to compare boardgame strategies with other players",
+      "gold": [
+        "sys.media_culture.games"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.art_culture.1",
+      "current": "Help me explore cultural traditions and their meaning",
+      "gold": [
+        "sys.media_culture.art_culture"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.art_culture.2",
+      "current": "I want to understand art exhibitions from different historical periods",
+      "gold": [
+        "sys.media_culture.art_culture"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.news_media.1",
+      "current": "Help me understand current reporting about the recent event",
+      "gold": [
+        "sys.media_culture.news_media"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.news_media.2",
+      "current": "Please compare news coverage across different outlets",
+      "gold": [
+        "sys.media_culture.news_media"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.online_culture.1",
+      "current": "Help me explain internet memes circulating in the community",
+      "gold": [
+        "sys.media_culture.online_culture"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.online_culture.2",
+      "current": "I want to discuss platform subcultures and how people participate",
+      "gold": [
+        "sys.media_culture.online_culture"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.live_events.1",
+      "current": "Help me choose theater performances to attend this month",
+      "gold": [
+        "sys.media_culture.live_events"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.media_culture.live_events.2",
+      "current": "I want to attend a show and compare concert tickets",
+      "gold": [
+        "sys.media_culture.live_events"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.email_messages.1",
+      "current": "Help me draft an email explaining the revised arrangement",
+      "gold": [
+        "sys.communication_writing.email_messages"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.email_messages.2",
+      "current": "I need to reply to a chat message with a concise response",
+      "gold": [
+        "sys.communication_writing.email_messages"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.writing_editing.1",
+      "current": "Help me revise a prose passage so the argument flows clearly",
+      "gold": [
+        "sys.communication_writing.writing_editing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.writing_editing.2",
+      "current": "Please proofread the paragraph structure and improve its clarity",
+      "gold": [
+        "sys.communication_writing.writing_editing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.translation.1",
+      "current": "Help me translate a passage into another language while keeping its meaning",
+      "gold": [
+        "sys.communication_writing.translation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.translation.2",
+      "current": "I want to localize source wording for readers in another country",
+      "gold": [
+        "sys.communication_writing.translation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.presentations.1",
+      "current": "Help me build a slide deck with a clear narrative",
+      "gold": [
+        "sys.communication_writing.presentations"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.presentations.2",
+      "current": "Please structure a spoken briefing around the main findings",
+      "gold": [
+        "sys.communication_writing.presentations"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.documents_reports.1",
+      "current": "Help me draft a project report with evidence and recommendations",
+      "gold": [
+        "sys.communication_writing.documents_reports"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.documents_reports.2",
+      "current": "I need to structure a formal proposal for the reviewers",
+      "gold": [
+        "sys.communication_writing.documents_reports"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.public_posts.1",
+      "current": "Help me draft a social post announcing what we learned",
+      "gold": [
+        "sys.communication_writing.public_posts"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.public_posts.2",
+      "current": "I want to revise public copy before posting it to the platform",
+      "gold": [
+        "sys.communication_writing.public_posts"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.speaking_conversation.1",
+      "current": "Help me practice spoken answers for an ordinary conversation",
+      "gold": [
+        "sys.communication_writing.speaking_conversation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.speaking_conversation.2",
+      "current": "I want to improve live dialogue so I express my thoughts clearly",
+      "gold": [
+        "sys.communication_writing.speaking_conversation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.negotiation_persuasion.1",
+      "current": "Help me negotiate from a bargaining position while protecting our interests",
+      "gold": [
+        "sys.communication_writing.negotiation_persuasion"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.communication_writing.negotiation_persuasion.2",
+      "current": "I want to persuade the group toward stakeholder agreement",
+      "gold": [
+        "sys.communication_writing.negotiation_persuasion"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.legal_questions.1",
+      "current": "Help me clarify legal liability in this hypothetical situation",
+      "gold": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.legal_questions.2",
+      "current": "Please explain statutory obligations and what the terms mean",
+      "gold": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.contracts_agreements.1",
+      "current": "Help me review contract clauses before I sign",
+      "gold": [
+        "sys.legal_civic.contracts_agreements"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.contracts_agreements.2",
+      "current": "Please check agreement terms for obligations and possible risks",
+      "gold": [
+        "sys.legal_civic.contracts_agreements"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.complaints_disputes.1",
+      "current": "Help me file a formal complaint through the official procedure",
+      "gold": [
+        "sys.legal_civic.complaints_disputes"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.complaints_disputes.2",
+      "current": "I want to resolve an administrative dispute and understand the appeal route",
+      "gold": [
+        "sys.legal_civic.complaints_disputes"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.government_services.1",
+      "current": "Help me complete a municipal application for the local service",
+      "gold": [
+        "sys.legal_civic.government_services"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.government_services.2",
+      "current": "I need to arrange a public service procedure with the government office",
+      "gold": [
+        "sys.legal_civic.government_services"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.identity_documents.1",
+      "current": "Help me renew my identity card before it expires",
+      "gold": [
+        "sys.legal_civic.identity_documents"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.identity_documents.2",
+      "current": "I need to replace my personal passport after losing it",
+      "gold": [
+        "sys.legal_civic.identity_documents"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.immigration_residency.1",
+      "current": "Help me apply for permanent residence and organize the required documents",
+      "gold": [
+        "sys.legal_civic.immigration_residency"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.immigration_residency.2",
+      "current": "I want to plan long term residency in another country",
+      "gold": [
+        "sys.legal_civic.immigration_residency"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.civic_public_policy.1",
+      "current": "Help me analyze public policy and its impact on local residents",
+      "gold": [
+        "sys.legal_civic.civic_public_policy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.civic_public_policy.2",
+      "current": "I want to discuss institutional effects of the proposed regulation",
+      "gold": [
+        "sys.legal_civic.civic_public_policy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.consumer_rights.1",
+      "current": "Help me request a merchant refund for faulty goods",
+      "gold": [
+        "sys.legal_civic.consumer_rights"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.legal_civic.consumer_rights.2",
+      "current": "I need to assert consumer protections when a seller refuses a remedy",
+      "gold": [
+        "sys.legal_civic.consumer_rights"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.physics.1",
+      "current": "Help me derive force equations for a moving body",
+      "gold": [
+        "sys.science_technical.physics"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.physics.2",
+      "current": "Please explain electromagnetic fields and how they interact",
+      "gold": [
+        "sys.science_technical.physics"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.mathematics.1",
+      "current": "Help me prove algebraic identities step by step",
+      "gold": [
+        "sys.science_technical.mathematics"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.mathematics.2",
+      "current": "I want to solve a geometric theorem using a rigorous argument",
+      "gold": [
+        "sys.science_technical.mathematics"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.computer_science.1",
+      "current": "Help me analyze algorithm complexity for this abstract procedure",
+      "gold": [
+        "sys.science_technical.computer_science"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.computer_science.2",
+      "current": "Please explain operating system principles behind process scheduling",
+      "gold": [
+        "sys.science_technical.computer_science"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.engineering.1",
+      "current": "Help me design a mechanical structure under the given loads",
+      "gold": [
+        "sys.science_technical.engineering"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.engineering.2",
+      "current": "I want to analyze an electrical circuit and its governing principles",
+      "gold": [
+        "sys.science_technical.engineering"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.biology_life_science.1",
+      "current": "Help me explain cell processes during growth and division",
+      "gold": [
+        "sys.science_technical.biology_life_science"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.biology_life_science.2",
+      "current": "I want to study genetic inheritance across generations",
+      "gold": [
+        "sys.science_technical.biology_life_science"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.medicine_knowledge.1",
+      "current": "Help me explain disease mechanisms as an academic subject",
+      "gold": [
+        "sys.science_technical.medicine_knowledge"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.medicine_knowledge.2",
+      "current": "I want to study human anatomy and how organs function",
+      "gold": [
+        "sys.science_technical.medicine_knowledge"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.chemistry_materials.1",
+      "current": "Help me explain molecular reactions and their energy changes",
+      "gold": [
+        "sys.science_technical.chemistry_materials"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.chemistry_materials.2",
+      "current": "I want to analyze material properties from their molecular structure",
+      "gold": [
+        "sys.science_technical.chemistry_materials"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.statistics_data_analysis.1",
+      "current": "Help me interpret statistical estimates and their uncertainty",
+      "gold": [
+        "sys.science_technical.statistics_data_analysis"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.science_technical.statistics_data_analysis.2",
+      "current": "I want to fit regression models and check their assumptions",
+      "gold": [
+        "sys.science_technical.statistics_data_analysis"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.visual_design.1",
+      "current": "Help me design a graphic layout with clear visual hierarchy",
+      "gold": [
+        "sys.creative_design.visual_design"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.visual_design.2",
+      "current": "I want to adjust the color palette for the printed graphic",
+      "gold": [
+        "sys.creative_design.visual_design"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.ux_ui_design.1",
+      "current": "Help me design an interface flow that makes the task easier",
+      "gold": [
+        "sys.creative_design.ux_ui_design"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.ux_ui_design.2",
+      "current": "Please refine interaction components for consistent use",
+      "gold": [
+        "sys.creative_design.ux_ui_design"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.branding_identity.1",
+      "current": "Help me design a brand logo with a recognizable character",
+      "gold": [
+        "sys.creative_design.branding_identity"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.branding_identity.2",
+      "current": "I want to develop visual identity across our brand materials",
+      "gold": [
+        "sys.creative_design.branding_identity"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.photography.1",
+      "current": "Help me adjust camera exposure before taking the shot",
+      "gold": [
+        "sys.creative_design.photography"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.photography.2",
+      "current": "I want to compose a photograph with a stronger focal point",
+      "gold": [
+        "sys.creative_design.photography"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.illustration_image_creation.1",
+      "current": "Help me draw an illustrated scene with a consistent style",
+      "gold": [
+        "sys.creative_design.illustration_image_creation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.illustration_image_creation.2",
+      "current": "I want to create a digital image for the story concept",
+      "gold": [
+        "sys.creative_design.illustration_image_creation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.creative_writing.1",
+      "current": "Help me develop fictional characters with believable motivations",
+      "gold": [
+        "sys.creative_design.creative_writing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.creative_writing.2",
+      "current": "I want to write a story plot with a satisfying ending",
+      "gold": [
+        "sys.creative_design.creative_writing"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.video_audio_creation.1",
+      "current": "Help me edit a video sequence into a finished production",
+      "gold": [
+        "sys.creative_design.video_audio_creation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.video_audio_creation.2",
+      "current": "I want to record an audio track for the narrated piece",
+      "gold": [
+        "sys.creative_design.video_audio_creation"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.ideation_concepts.1",
+      "current": "Help me brainstorm creative concepts for the next project",
+      "gold": [
+        "sys.creative_design.ideation_concepts"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.creative_design.ideation_concepts.2",
+      "current": "I want to develop design ideas into several distinct directions",
+      "gold": [
+        "sys.creative_design.ideation_concepts"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.entrepreneurship.1",
+      "current": "Help me launch a startup venture from an early concept",
+      "gold": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.entrepreneurship.2",
+      "current": "I want to validate a founder idea before building a company",
+      "gold": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.business_strategy.1",
+      "current": "Help me choose business direction across our portfolio",
+      "gold": [
+        "sys.business_entrepreneurship.business_strategy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.business_strategy.2",
+      "current": "Please define competitive advantage for our long term growth",
+      "gold": [
+        "sys.business_entrepreneurship.business_strategy"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.market_research.1",
+      "current": "Help me estimate market demand before entering a segment",
+      "gold": [
+        "sys.business_entrepreneurship.market_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.market_research.2",
+      "current": "I want to analyze competitor landscape and industry trends",
+      "gold": [
+        "sys.business_entrepreneurship.market_research"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.marketing_growth.1",
+      "current": "Help me improve customer acquisition and conversion",
+      "gold": [
+        "sys.business_entrepreneurship.marketing_growth"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.marketing_growth.2",
+      "current": "I want to experiment with marketing channels for sustainable growth",
+      "gold": [
+        "sys.business_entrepreneurship.marketing_growth"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.sales.1",
+      "current": "Help me qualify sales leads before making an offer",
+      "gold": [
+        "sys.business_entrepreneurship.sales"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.sales.2",
+      "current": "I want to close customer deals through a clearer sales process",
+      "gold": [
+        "sys.business_entrepreneurship.sales"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.operations_process.1",
+      "current": "Help me improve business processes across the teams",
+      "gold": [
+        "sys.business_entrepreneurship.operations_process"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.operations_process.2",
+      "current": "I want to document operating procedures for routine execution",
+      "gold": [
+        "sys.business_entrepreneurship.operations_process"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.customer_feedback.1",
+      "current": "Help me respond to support tickets and close the service loop",
+      "gold": [
+        "sys.business_entrepreneurship.customer_feedback"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.customer_feedback.2",
+      "current": "I want to analyze customer comments to understand dissatisfaction",
+      "gold": [
+        "sys.business_entrepreneurship.customer_feedback"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.partnerships.1",
+      "current": "Help me build a commercial partnership around a joint initiative",
+      "gold": [
+        "sys.business_entrepreneurship.partnerships"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.business_entrepreneurship.partnerships.2",
+      "current": "I want to negotiate a channel alliance with another company",
+      "gold": [
+        "sys.business_entrepreneurship.partnerships"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.calendar_scheduling.1",
+      "current": "Help me reschedule meeting times to avoid conflicts",
+      "gold": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.calendar_scheduling.2",
+      "current": "Please coordinate calendar slots across the participants",
+      "gold": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.reminders_deadlines.1",
+      "current": "Help me track due dates before the items become overdue",
+      "gold": [
+        "sys.time_events.reminders_deadlines"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.reminders_deadlines.2",
+      "current": "Please remind me about a deadline when action is needed",
+      "gold": [
+        "sys.time_events.reminders_deadlines"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.time_management.1",
+      "current": "Help me allocate my time budget across competing demands",
+      "gold": [
+        "sys.time_events.time_management"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.time_management.2",
+      "current": "I want to protect focus blocks for the most valuable work",
+      "gold": [
+        "sys.time_events.time_management"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.routines_recurring.1",
+      "current": "Help me schedule repeated appointments at the same interval",
+      "gold": [
+        "sys.time_events.routines_recurring"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.routines_recurring.2",
+      "current": "I want to arrange recurring tasks on a regular cadence",
+      "gold": [
+        "sys.time_events.routines_recurring"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.celebrations_holidays.1",
+      "current": "Help me plan a birthday celebration with the family",
+      "gold": [
+        "sys.time_events.celebrations_holidays"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.celebrations_holidays.2",
+      "current": "I want to organize an anniversary gathering and choose gifts",
+      "gold": [
+        "sys.time_events.celebrations_holidays"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.life_events.1",
+      "current": "Help me prepare for a life transition and the changes it brings",
+      "gold": [
+        "sys.time_events.life_events"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.life_events.2",
+      "current": "I want to organize a graduation event marking the next stage",
+      "gold": [
+        "sys.time_events.life_events"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.appointments_bookings.1",
+      "current": "Help me reserve a service slot with the provider",
+      "gold": [
+        "sys.time_events.appointments_bookings"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.appointments_bookings.2",
+      "current": "I want to book an appointment slot that fits my availability",
+      "gold": [
+        "sys.time_events.appointments_bookings"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.plans_checklists.1",
+      "current": "Help me create an action checklist so I can track completion",
+      "gold": [
+        "sys.time_events.plans_checklists"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.time_events.plans_checklists.2",
+      "current": "I want to organize step lists for the tasks ahead",
+      "gold": [
+        "sys.time_events.plans_checklists"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.notes_knowledge_management.1",
+      "current": "Help me organize knowledge notes so I can retrieve ideas later",
+      "gold": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.notes_knowledge_management.2",
+      "current": "I want to connect entries in my knowledge base using useful tags",
+      "gold": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.personal_archive.1",
+      "current": "Help me preserve personal records over the long term",
+      "gold": [
+        "sys.knowledge_memory.personal_archive"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.personal_archive.2",
+      "current": "I want to archive personal history for future reference",
+      "gold": [
+        "sys.knowledge_memory.personal_archive"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.journaling.1",
+      "current": "Help me record daily experiences and how I felt",
+      "gold": [
+        "sys.knowledge_memory.journaling"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.journaling.2",
+      "current": "I want to reflect on diary entries to notice recurring patterns",
+      "gold": [
+        "sys.knowledge_memory.journaling"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.photos_media_archive.1",
+      "current": "Help me organize my photo collection for later retrieval",
+      "gold": [
+        "sys.knowledge_memory.photos_media_archive"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.photos_media_archive.2",
+      "current": "I want to index a media archive by date and subject",
+      "gold": [
+        "sys.knowledge_memory.photos_media_archive"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.files_documents_storage.1",
+      "current": "Help me organize document folders so paths are easy to navigate",
+      "gold": [
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.files_documents_storage.2",
+      "current": "I want to store digital files in a clear folder hierarchy",
+      "gold": [
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.backup_export.1",
+      "current": "Help me create a recovery copy so I can restore lost information",
+      "gold": [
+        "sys.knowledge_memory.backup_export"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.backup_export.2",
+      "current": "I want to export portable data to move it between systems",
+      "gold": [
+        "sys.knowledge_memory.backup_export"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.memory_context.1",
+      "current": "Help me manage assistant memory so recalled context stays relevant",
+      "gold": [
+        "sys.knowledge_memory.memory_context"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.memory_context.2",
+      "current": "I want to update long term context used by my assistant",
+      "gold": [
+        "sys.knowledge_memory.memory_context"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.provenance_history.1",
+      "current": "Help me trace source provenance through successive revisions",
+      "gold": [
+        "sys.knowledge_memory.provenance_history"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    },
+    {
+      "id": "gdev.knowledge_memory.provenance_history.2",
+      "current": "I want to audit change history and recover earlier versions",
+      "gold": [
+        "sys.knowledge_memory.provenance_history"
+      ],
+      "partition": "DEV",
+      "label_basis": "FORMAL_TOPIC_SCOPE_AND_AUTHORED_INTENT"
+    }
+  ],
+  "safety": [
+    {
+      "id": "gdev.safety.neutral.0",
+      "current": "Thanks, that is all for now",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEUTRAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.negated.0",
+      "current": "Please do not define life ambitions",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEGATED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.quoted.0",
+      "current": "Please classify the quote \"define life ambitions\"",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "QUOTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.reported.0",
+      "current": "My friend said I want to define life ambitions",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "REPORTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.conditional.0",
+      "current": "If I wanted to define life ambitions, what would happen?",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "CONDITIONAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.competing.0",
+      "current": "I want to define life ambitions and understand course assignments",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "COMPETING_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.neutral.1",
+      "current": "Thanks, that is all for now",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEUTRAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.negated.1",
+      "current": "Please do not understand course assignments",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEGATED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.quoted.1",
+      "current": "Please classify the quote \"understand course assignments\"",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "QUOTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.reported.1",
+      "current": "My friend said I want to understand course assignments",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "REPORTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.conditional.1",
+      "current": "If I wanted to understand course assignments, what would happen?",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "CONDITIONAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.competing.1",
+      "current": "I want to understand course assignments and compare model capabilities",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "COMPETING_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.neutral.2",
+      "current": "Thanks, that is all for now",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEUTRAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.negated.2",
+      "current": "Please do not compare model capabilities",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEGATED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.quoted.2",
+      "current": "Please classify the quote \"compare model capabilities\"",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "QUOTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.reported.2",
+      "current": "My friend said I want to compare model capabilities",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "REPORTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.conditional.2",
+      "current": "If I wanted to compare model capabilities, what would happen?",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "CONDITIONAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.competing.2",
+      "current": "I want to compare model capabilities and plan holiday itinerary",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "COMPETING_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.neutral.3",
+      "current": "Thanks, that is all for now",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEUTRAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.negated.3",
+      "current": "Please do not plan holiday itinerary",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEGATED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.quoted.3",
+      "current": "Please classify the quote \"plan holiday itinerary\"",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "QUOTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.reported.3",
+      "current": "My friend said I want to plan holiday itinerary",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "REPORTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.conditional.3",
+      "current": "If I wanted to plan holiday itinerary, what would happen?",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "CONDITIONAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.competing.3",
+      "current": "I want to plan holiday itinerary and clarify legal liability",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "COMPETING_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.neutral.4",
+      "current": "Thanks, that is all for now",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEUTRAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.negated.4",
+      "current": "Please do not clarify legal liability",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEGATED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.quoted.4",
+      "current": "Please classify the quote \"clarify legal liability\"",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "QUOTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.reported.4",
+      "current": "My friend said I want to clarify legal liability",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "REPORTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.conditional.4",
+      "current": "If I wanted to clarify legal liability, what would happen?",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "CONDITIONAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.competing.4",
+      "current": "I want to clarify legal liability and launch a startup venture",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "COMPETING_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.neutral.5",
+      "current": "Thanks, that is all for now",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEUTRAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.negated.5",
+      "current": "Please do not launch a startup venture",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "NEGATED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.quoted.5",
+      "current": "Please classify the quote \"launch a startup venture\"",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "QUOTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.reported.5",
+      "current": "My friend said I want to launch a startup venture",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "REPORTED_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.conditional.5",
+      "current": "If I wanted to launch a startup venture, what would happen?",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "CONDITIONAL_UNRESOLVED_CURRENT_GOAL"
+    },
+    {
+      "id": "gdev.safety.competing.5",
+      "current": "I want to launch a startup venture and define life ambitions",
+      "gold": [],
+      "partition": "DEV",
+      "label_basis": "COMPETING_UNRESOLVED_CURRENT_GOAL"
+    }
+  ],
+  "context_pairs": [
+    {
+      "id": "gdev.context.0",
+      "base_id": "gdev.personal_direction.life_goals.1",
+      "context": "Earlier topic: Travel Transport; the old request was separate."
+    },
+    {
+      "id": "gdev.context.1",
+      "base_id": "gdev.personal_direction.major_decisions.1",
+      "context": "Earlier topic: Lodging; the old request was separate."
+    },
+    {
+      "id": "gdev.context.2",
+      "base_id": "gdev.personal_direction.habits_behavior.1",
+      "context": "Earlier topic: Travel Dining; the old request was separate."
+    },
+    {
+      "id": "gdev.context.3",
+      "base_id": "gdev.personal_direction.life_planning.1",
+      "context": "Earlier topic: Attractions & Activities; the old request was separate."
+    },
+    {
+      "id": "gdev.context.4",
+      "base_id": "gdev.family_relationships.parents_family.1",
+      "context": "Earlier topic: Visas & Borders; the old request was separate."
+    },
+    {
+      "id": "gdev.context.5",
+      "base_id": "gdev.family_relationships.partner_relationship.1",
+      "context": "Earlier topic: Local Navigation; the old request was separate."
+    },
+    {
+      "id": "gdev.context.6",
+      "base_id": "gdev.family_relationships.social_interaction.1",
+      "context": "Earlier topic: Trip Records; the old request was separate."
+    },
+    {
+      "id": "gdev.context.7",
+      "base_id": "gdev.family_relationships.caregiving_family_support.1",
+      "context": "Earlier topic: Music; the old request was separate."
+    },
+    {
+      "id": "gdev.context.8",
+      "base_id": "gdev.health_wellbeing.medical_care.1",
+      "context": "Earlier topic: Film & TV; the old request was separate."
+    },
+    {
+      "id": "gdev.context.9",
+      "base_id": "gdev.health_wellbeing.medication_treatment.1",
+      "context": "Earlier topic: Books & Literature; the old request was separate."
+    },
+    {
+      "id": "gdev.context.10",
+      "base_id": "gdev.health_wellbeing.fitness.1",
+      "context": "Earlier topic: Games; the old request was separate."
+    },
+    {
+      "id": "gdev.context.11",
+      "base_id": "gdev.health_wellbeing.sleep.1",
+      "context": "Earlier topic: Arts & Culture; the old request was separate."
+    },
+    {
+      "id": "gdev.context.12",
+      "base_id": "gdev.education_learning.academic_courses.1",
+      "context": "Earlier topic: News & Media; the old request was separate."
+    },
+    {
+      "id": "gdev.context.13",
+      "base_id": "gdev.education_learning.thesis_research.1",
+      "context": "Earlier topic: Online Culture; the old request was separate."
+    },
+    {
+      "id": "gdev.context.14",
+      "base_id": "gdev.education_learning.language_learning.1",
+      "context": "Earlier topic: Live Cultural Events; the old request was separate."
+    },
+    {
+      "id": "gdev.context.15",
+      "base_id": "gdev.education_learning.academic_admin.1",
+      "context": "Earlier topic: Email & Messages; the old request was separate."
+    },
+    {
+      "id": "gdev.context.16",
+      "base_id": "gdev.career_work.job_search.1",
+      "context": "Earlier topic: Writing & Editing; the old request was separate."
+    },
+    {
+      "id": "gdev.context.17",
+      "base_id": "gdev.career_work.interviews.1",
+      "context": "Earlier topic: Translation; the old request was separate."
+    },
+    {
+      "id": "gdev.context.18",
+      "base_id": "gdev.career_work.workplace_daily.1",
+      "context": "Earlier topic: Presentations; the old request was separate."
+    },
+    {
+      "id": "gdev.context.19",
+      "base_id": "gdev.career_work.performance_growth.1",
+      "context": "Earlier topic: Documents & Reports; the old request was separate."
+    },
+    {
+      "id": "gdev.context.20",
+      "base_id": "gdev.projects_products.project_planning.1",
+      "context": "Earlier topic: Public Posts; the old request was separate."
+    },
+    {
+      "id": "gdev.context.21",
+      "base_id": "gdev.projects_products.product_requirements.1",
+      "context": "Earlier topic: Speaking & Conversation; the old request was separate."
+    },
+    {
+      "id": "gdev.context.22",
+      "base_id": "gdev.projects_products.roadmap_prioritization.1",
+      "context": "Earlier topic: Negotiation & Persuasion; the old request was separate."
+    },
+    {
+      "id": "gdev.context.23",
+      "base_id": "gdev.projects_products.testing_quality.1",
+      "context": "Earlier topic: Legal Questions; the old request was separate."
+    },
+    {
+      "id": "gdev.context.24",
+      "base_id": "gdev.ai_computing.ai_models_tools.1",
+      "context": "Earlier topic: Contracts & Agreements; the old request was separate."
+    },
+    {
+      "id": "gdev.context.25",
+      "base_id": "gdev.ai_computing.coding_software_development.1",
+      "context": "Earlier topic: Complaints & Disputes; the old request was separate."
+    },
+    {
+      "id": "gdev.context.26",
+      "base_id": "gdev.ai_computing.hardware_devices.1",
+      "context": "Earlier topic: Government Services; the old request was separate."
+    },
+    {
+      "id": "gdev.context.27",
+      "base_id": "gdev.ai_computing.cybersecurity_privacy.1",
+      "context": "Earlier topic: Identity Documents; the old request was separate."
+    },
+    {
+      "id": "gdev.context.28",
+      "base_id": "gdev.finance_purchases.budgeting_cashflow.1",
+      "context": "Earlier topic: Immigration & Residency; the old request was separate."
+    },
+    {
+      "id": "gdev.context.29",
+      "base_id": "gdev.finance_purchases.investing.1",
+      "context": "Earlier topic: Public Policy & Social Issues; the old request was separate."
+    },
+    {
+      "id": "gdev.context.30",
+      "base_id": "gdev.finance_purchases.taxes_insurance.1",
+      "context": "Earlier topic: Consumer Rights; the old request was separate."
+    },
+    {
+      "id": "gdev.context.31",
+      "base_id": "gdev.finance_purchases.shopping_research.1",
+      "context": "Earlier topic: Physics; the old request was separate."
+    },
+    {
+      "id": "gdev.context.32",
+      "base_id": "gdev.home_daily.housing.1",
+      "context": "Earlier topic: Mathematics; the old request was separate."
+    },
+    {
+      "id": "gdev.context.33",
+      "base_id": "gdev.home_daily.utilities_services.1",
+      "context": "Earlier topic: Computer Science; the old request was separate."
+    },
+    {
+      "id": "gdev.context.34",
+      "base_id": "gdev.home_daily.possessions_organization.1",
+      "context": "Earlier topic: Engineering; the old request was separate."
+    },
+    {
+      "id": "gdev.context.35",
+      "base_id": "gdev.home_daily.transportation_ownership.1",
+      "context": "Earlier topic: Biology & Life Science; the old request was separate."
+    },
+    {
+      "id": "gdev.context.36",
+      "base_id": "gdev.travel_places.trip_planning.1",
+      "context": "Earlier topic: Medical Knowledge; the old request was separate."
+    },
+    {
+      "id": "gdev.context.37",
+      "base_id": "gdev.travel_places.lodging.1",
+      "context": "Earlier topic: Chemistry & Materials; the old request was separate."
+    },
+    {
+      "id": "gdev.context.38",
+      "base_id": "gdev.travel_places.attractions_activities.1",
+      "context": "Earlier topic: Statistics & Data Analysis; the old request was separate."
+    },
+    {
+      "id": "gdev.context.39",
+      "base_id": "gdev.travel_places.local_navigation.1",
+      "context": "Earlier topic: Visual Design; the old request was separate."
+    },
+    {
+      "id": "gdev.context.40",
+      "base_id": "gdev.media_culture.music.1",
+      "context": "Earlier topic: UX/UI Design; the old request was separate."
+    },
+    {
+      "id": "gdev.context.41",
+      "base_id": "gdev.media_culture.books_literature.1",
+      "context": "Earlier topic: Branding & Identity; the old request was separate."
+    },
+    {
+      "id": "gdev.context.42",
+      "base_id": "gdev.media_culture.art_culture.1",
+      "context": "Earlier topic: Photography; the old request was separate."
+    },
+    {
+      "id": "gdev.context.43",
+      "base_id": "gdev.media_culture.online_culture.1",
+      "context": "Earlier topic: Illustration & Image Creation; the old request was separate."
+    },
+    {
+      "id": "gdev.context.44",
+      "base_id": "gdev.communication_writing.email_messages.1",
+      "context": "Earlier topic: Creative Writing; the old request was separate."
+    },
+    {
+      "id": "gdev.context.45",
+      "base_id": "gdev.communication_writing.translation.1",
+      "context": "Earlier topic: Video & Audio Creation; the old request was separate."
+    },
+    {
+      "id": "gdev.context.46",
+      "base_id": "gdev.communication_writing.documents_reports.1",
+      "context": "Earlier topic: Ideation & Concepts; the old request was separate."
+    },
+    {
+      "id": "gdev.context.47",
+      "base_id": "gdev.communication_writing.speaking_conversation.1",
+      "context": "Earlier topic: Entrepreneurship; the old request was separate."
+    },
+    {
+      "id": "gdev.context.48",
+      "base_id": "gdev.legal_civic.legal_questions.1",
+      "context": "Earlier topic: Business Strategy; the old request was separate."
+    },
+    {
+      "id": "gdev.context.49",
+      "base_id": "gdev.legal_civic.complaints_disputes.1",
+      "context": "Earlier topic: Market Research; the old request was separate."
+    },
+    {
+      "id": "gdev.context.50",
+      "base_id": "gdev.legal_civic.identity_documents.1",
+      "context": "Earlier topic: Marketing & Growth; the old request was separate."
+    },
+    {
+      "id": "gdev.context.51",
+      "base_id": "gdev.legal_civic.civic_public_policy.1",
+      "context": "Earlier topic: Sales; the old request was separate."
+    },
+    {
+      "id": "gdev.context.52",
+      "base_id": "gdev.science_technical.physics.1",
+      "context": "Earlier topic: Operations & Process; the old request was separate."
+    },
+    {
+      "id": "gdev.context.53",
+      "base_id": "gdev.science_technical.computer_science.1",
+      "context": "Earlier topic: Customer Feedback & Support; the old request was separate."
+    },
+    {
+      "id": "gdev.context.54",
+      "base_id": "gdev.science_technical.biology_life_science.1",
+      "context": "Earlier topic: Partnerships; the old request was separate."
+    },
+    {
+      "id": "gdev.context.55",
+      "base_id": "gdev.science_technical.chemistry_materials.1",
+      "context": "Earlier topic: Calendar & Scheduling; the old request was separate."
+    },
+    {
+      "id": "gdev.context.56",
+      "base_id": "gdev.creative_design.visual_design.1",
+      "context": "Earlier topic: Reminders & Deadlines; the old request was separate."
+    },
+    {
+      "id": "gdev.context.57",
+      "base_id": "gdev.creative_design.branding_identity.1",
+      "context": "Earlier topic: Time Management; the old request was separate."
+    },
+    {
+      "id": "gdev.context.58",
+      "base_id": "gdev.creative_design.illustration_image_creation.1",
+      "context": "Earlier topic: Recurring Routines; the old request was separate."
+    },
+    {
+      "id": "gdev.context.59",
+      "base_id": "gdev.creative_design.video_audio_creation.1",
+      "context": "Earlier topic: Celebrations & Holidays; the old request was separate."
+    },
+    {
+      "id": "gdev.context.60",
+      "base_id": "gdev.business_entrepreneurship.entrepreneurship.1",
+      "context": "Earlier topic: Life Events; the old request was separate."
+    },
+    {
+      "id": "gdev.context.61",
+      "base_id": "gdev.business_entrepreneurship.market_research.1",
+      "context": "Earlier topic: Appointments & Bookings; the old request was separate."
+    },
+    {
+      "id": "gdev.context.62",
+      "base_id": "gdev.business_entrepreneurship.sales.1",
+      "context": "Earlier topic: Plans & Checklists; the old request was separate."
+    },
+    {
+      "id": "gdev.context.63",
+      "base_id": "gdev.business_entrepreneurship.customer_feedback.1",
+      "context": "Earlier topic: Notes & Knowledge Management; the old request was separate."
+    },
+    {
+      "id": "gdev.context.64",
+      "base_id": "gdev.time_events.calendar_scheduling.1",
+      "context": "Earlier topic: Personal Archive; the old request was separate."
+    },
+    {
+      "id": "gdev.context.65",
+      "base_id": "gdev.time_events.time_management.1",
+      "context": "Earlier topic: Journaling; the old request was separate."
+    },
+    {
+      "id": "gdev.context.66",
+      "base_id": "gdev.time_events.celebrations_holidays.1",
+      "context": "Earlier topic: Photo & Media Archive; the old request was separate."
+    },
+    {
+      "id": "gdev.context.67",
+      "base_id": "gdev.time_events.appointments_bookings.1",
+      "context": "Earlier topic: File & Document Storage; the old request was separate."
+    },
+    {
+      "id": "gdev.context.68",
+      "base_id": "gdev.knowledge_memory.notes_knowledge_management.1",
+      "context": "Earlier topic: Backup & Export; the old request was separate."
+    },
+    {
+      "id": "gdev.context.69",
+      "base_id": "gdev.knowledge_memory.journaling.1",
+      "context": "Earlier topic: AI Memory & Context; the old request was separate."
+    },
+    {
+      "id": "gdev.context.70",
+      "base_id": "gdev.knowledge_memory.files_documents_storage.1",
+      "context": "Earlier topic: Provenance, Versions & History; the old request was separate."
+    },
+    {
+      "id": "gdev.context.71",
+      "base_id": "gdev.knowledge_memory.memory_context.1",
+      "context": "Earlier topic: Life Goals; the old request was separate."
+    }
+  ]
+}

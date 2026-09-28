@@ -1,0 +1,57 @@
+{
+  "format": "CIG02G_OWNER_PROTOCOL_AMENDMENT_V1",
+  "package": "PAIA-COMPOSITIONAL-INTENT-GRAPH-v1",
+  "protocol_version": "1.1.0",
+  "authority": "CURRENT_OWNER_DIRECTION_AUTHORED_DEV_THEN_INDEPENDENT_BLIND_TEST",
+  "baseline_main": "a419830371a8c78eac3c744db801061ae474a40f",
+  "formal_topic_count": 144,
+  "formal_catalog_modified": false,
+  "capability_gates": {
+    "assigned_precision_min": 0.95,
+    "coverage_min": 0.7,
+    "topic_macro_recall_min": 0.7,
+    "insufficient_false_assignment_max": 0.02,
+    "context_harm_max": 0,
+    "deterministic_repeat": "PASS"
+  },
+  "natural_source_readiness": {
+    "artifact": "artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.json",
+    "immutable": true,
+    "counts": {
+      "READY": 0,
+      "SPARSE": 35,
+      "DEFER": 109
+    },
+    "runtime_eligibility_veto": false
+  },
+  "dev": {
+    "train": "fixtures/cig_v1/cig02g_train_v1.json",
+    "evaluation": "fixtures/cig_v1/cig02g_dev_v1.json",
+    "same_writer": true,
+    "vocabulary_overlap": true,
+    "capability_test": false,
+    "iterative_development_authorized": true
+  },
+  "cig02_frozen": false,
+  "cig03_started": false,
+  "cig03_authorized_condition": "CIG02_COMPLETE_AND_COMMITTED_PRE_OPEN_FREEZE_WITH_INDEPENDENT_BLIND_CURATOR",
+  "source_search": "STOPPED",
+  "prohibited_evidence_reads": 0,
+  "production_modified": false,
+  "product_contract": {
+    "neural_assets_bytes_max": 0,
+    "semantic_network_calls_max": 0,
+    "index_bytes_max": 1048576,
+    "router_plus_index_bytes_max": 2097152,
+    "incremental_memory_bytes_max": 33554432,
+    "warm_p95_ms_max": 20,
+    "cold_init_ms_max": 100
+  },
+  "preserved_public_source_git_blobs": {
+    "catalog/system_topic_catalog_v0.2.yaml": "6bcdd2af66879d7ac098cf237b5586c3c9818aad",
+    "artifacts/compositional-intent-graph-v1/CIG-02_SOURCE_READINESS_FREEZE.json": "215494de9ad0f84afecf5d5a2e5cf34f67d502ad",
+    "runtime/compositional_intent_graph_v1/goal_parser.mjs": "d861436413793b8940526b7b1ddfd2b16f250d8d",
+    "runtime/compositional_intent_graph_v1/frame_grounder.mjs": "80a915d167b721d766501a3d83c0039a753c47ff",
+    "runtime/compositional_intent_graph_v1/current_goal_scope.mjs": "43dd77f568ddae03ceed3347ed292f7d46f70e61"
+  }
+}

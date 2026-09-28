@@ -9,7 +9,6 @@ on:
       - "fixtures/cig_v1/public_dev_cig02d_defer.json"
       - "docs/compositional-intent-graph-v1/CIG-02D_*"
       - "artifacts/compositional-intent-graph-v1/CIG-02D_*"
-      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
   push:
     branches: [main]
     paths:
@@ -19,7 +18,6 @@ on:
       - "fixtures/cig_v1/public_dev_cig02d_defer.json"
       - "docs/compositional-intent-graph-v1/CIG-02D_*"
       - "artifacts/compositional-intent-graph-v1/CIG-02D_*"
-      - "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml"
 permissions:
   contents: read
 jobs:
