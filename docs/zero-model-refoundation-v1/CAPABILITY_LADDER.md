@@ -2,6 +2,8 @@
 
 这是 evidence-gated 研究路线，不是代码任务清单。`研究阶段可继续`、`候选被晋级`、`产品可认证`是三种不同结论。任何候选的 capability promotion 始终需要 EVALUATION_PROTOCOL 的完整144类、70% floor及安全门。早期基线未过 floor 可被淘汰，并以失败证据开始下一已登记假设；不能将此写成能力通过。
 
+2026-09-29 owner standing authorization 允许独立数据未就绪时沿 ZMR-02–06 **开发轨**实现和比较候选；所有 same-writer/provisional 数据标记 `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`。下文各阶段的 Promotion gate 是**资格晋级**门，不阻断下一算法假设的开发。没有合格 AS/独立数据时，开发候选可记录 `DEV_ONLY`、淘汰或保留 anchor，但不能晋级 capability、资源认证或 saturation ceiling。所有候选仍保留 144 Topic、固定安全/资源约束和额度；失败按有界修复后自动换族。
+
 ## 共同规则
 
 预算 R0：产品硬预算见 RESOURCE_BUDGET，任何候选无豁免。开发一代最多6架构/12稳定配置、每候选2次语义修复、一次 sealed AS batch。工程轻测试不产生 capability 证据；重门只在输入闭包、代码、参数稳定后运行一次。准入数据始终来自 DATA_PROTOCOL；不存在的数据、缺少独立性或空分母为 INCONCLUSIVE/BLOCKED，不补假数据。普通工程修复自动进行；证据事故、权限/隐私/付费/产品约束按 EXECUTION_PROTOCOL 处理。

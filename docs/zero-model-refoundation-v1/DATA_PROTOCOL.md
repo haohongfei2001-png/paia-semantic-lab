@@ -2,6 +2,8 @@
 
 版本 `ZMR-DATA-1.0`。最终 TEST 内容不在本轮创建。本协议中的数量是前瞻最低准入设计，不是已经存在的数据。当前是否就绪只看 canonical STATUS。
 
+Owner 2026-09-29 standing authorization 增设**非独立开发轨**：candidate writer 可创建、修订和使用新 TRAIN/ordinary DEV/challenge DEV 及 provisional boundary 来推动 ZMR-02–06 的工程与候选比较。此类数据须明确标记 `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`、保留作者/来源/lineage/暴露记录，且只能支持开发判断。下文的全 144、语言、安全、作者/来源、双审、sealed AS 数量与独立性门仍是**数据资格**门；开发轨数据不抵扣这些 quota，也不产生能力晋级。开发时 144 个 Topic 始终在输出/评分空间，缺类须报告为数据不足。Catalog provisional boundary 可以作为开发假设，不能静默改变正式定义或冒充已仲裁 gold。
+
 ## 1. 标注目标先于作者写题和算法
 
 依据固定 Catalog 的 inclusion/exclusion/boundary 和当前输入的实际交流意图/主题焦点标注，不依据候选词表、形式名称是否出现或“看起来应该能命中”。Label 空间始终是全部 144 个固定 ID。请求前缀不是意图存在的充分或必要条件；有意义的陈述/残句也可能可路由。引用、过去事件或假设不能一律 DEFER：判断它们是否是当前待处理目标、必要对象或仅背景。formal Topic 边界不能由 annotator 为改善得分自行改写。
@@ -39,7 +41,7 @@ Candidate writer 不负责 AS/final 的创作或 gold。所有 sealed writer 只
 
 ## 4. 数据层与最低规模
 
-以下是完整数据资格门；可以分 coherent batches 采集，但未完成 144 类时只能报告 intake 进度，不跑缩小标签空间的能力测试。
+以下是完整数据资格门；可以分 coherent batches 采集。未完成时可在开发轨进行全 144 输出空间的诊断与实验，但只能报告 provisional、非独立结果和 intake 进度；不得跑缩小标签空间的资格测试。
 
 | 层 | 每 Topic 单标签 base cases | 语言最低分配（zh/en/mixed） | 用途/可见性 |
 |---|---:|---|---|

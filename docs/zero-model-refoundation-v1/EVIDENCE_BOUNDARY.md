@@ -9,6 +9,7 @@ Boundary ID：`ZMR-EB-001`。本 package 与 CIG、CSL、LSR 的旧证据边界�
 | formal Catalog（固定 144 ID/边界） | 允许 | 可作为公开先验，版本固定 | 决定标签宇宙，不是样本证据 |
 | CIG canonical STATUS / DEVELOPMENT_PLAN / closure aggregates | 允许 | 只用于问题级假设，不用于词面/Topic 定向修复 | 仅保留历史 FAIL |
 | freeze 前 generic source 与已公开 DEV review | 允许 bounded audit | 不导入旧 TRAIN/DEV/index/frame 作为新数据；不把旧得分当新泛化 | 不允许 |
+| 新 writer-created / same-writer provisional TRAIN、DEV、challenge 与 Topic boundary | 允许，仅显式开发轨 | 可用于有来源记录的开发拟合、诊断和消融；标记 `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE` | 不允许；不计入独立 quota、AS、final 或 saturation |
 | 新登记 TRAIN | 在准入后允许 | 允许编译；统计/特征选择仅在 TRAIN 或其内部 group folds 拟合 | 不允许 |
 | 新 ordinary DEV TUNE | 在数据资格通过后允许 | 可调结构/超参；每次访问记账 | 不允许 |
 | 新 ordinary DEV CAL | 在结构稳定后允许 | 只允许预登记低维阈值/校准；不能据其逐题内容补词或规则 | 不允许 |
@@ -35,7 +36,7 @@ Candidate writer、TRAIN authors、ordinary DEV authors、challenge authors、AS
 
 ## 防止“公开仓库里的 blind”
 
-新的 sealed AS/final packet 不放进 candidate writer 可读的 main、分支、PR、Actions logs、artifact 或 Library。base64、压缩、改名不是隔离。优先使用 curator 控制且 writer 无读取权限的存储和 runner；若现有工具无法提供隔离，则记录 `INDEPENDENCE_NOT_PROVISIONED`，继续不依赖该能力的公共工程，不伪造 blind 通过。只有需要新权限/连接/付费时才向 owner 请求相应权限，不要求 owner 临时逐题标注。
+新的 sealed AS/final packet 不放进 candidate writer 可读的 main、分支、PR、Actions logs、artifact 或 Library。base64、压缩、改名不是隔离。优先使用 curator 控制且 writer 无读取权限的存储和 runner；若现有工具无法提供隔离，则记录 `INDEPENDENCE_NOT_PROVISIONED`，冻结该资格路径，并按 owner standing authorization 继续 writer 可见的非独立 development track，不伪造 blind 通过。只有需要新权限/连接/付费时才向 owner 请求相应权限，不要求 owner 临时逐题标注。
 
 公开只放整包 hash、分配数量、时间、许可、作者隔离说明、freeze 身份、消费 ledger 和预登记 aggregate。不公开可字典反查的逐题裸 hash、样本 ID/长度列表、细粒度错误码或逐 Topic 小样本误差来指导后续调参。
 
