@@ -55,7 +55,7 @@
   "real_archive_reads": 0,
   "new_semantic_api_calls": 0,
   "new_runtime_implemented": true,
-  "new_runtime_scope": "ZMR_02_ZMR_03_ROUTER_ZMR_04_A5_A6_AND_ZMR_05_C1_A7_DEVELOPMENT_ONLY",
+  "new_runtime_scope": "ZMR_02_ZMR_03_ROUTER_ZMR_04_A5_A6_AND_ZMR_05_C1_A7_A4_DEVELOPMENT_ONLY",
   "generation_limits": {
     "max_development_generations": 6,
     "max_candidates_per_generation": 6,
@@ -435,8 +435,19 @@
       "a4_provisional_train_v01_unresolved_ambiguous_rows": 4,
       "a4_provisional_train_v01_independent_rows": 0,
       "a4_provisional_train_v01_data": "data/zero_model_refoundation/development/provisional_a4_train_v0.1.json",
-      "a4_provisional_train_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A4_TRAIN_V01_INTAKE.md"
+      "a4_provisional_train_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A4_TRAIN_V01_INTAKE.md",
+      "a4_pair_veto_engineering_status": "TRAIN_ONLY_FULL144_FALLBACK_STATIC_CAPS_PASS_NO_SEMANTIC_EVAL",
+      "a4_pair_veto_engineering_unit_tests": 1,
+      "a4_pair_veto_module": "packages/zero_model_refoundation/a4_pairwise.mjs",
+      "a4_pair_veto_compiler": "packages/zero_model_refoundation/a4_pair_compile.mjs",
+      "a4_pair_veto_report": "docs/zero-model-refoundation-v1/ZMR-05_A4_PAIR_VETO_ENGINEERING_DEV.md",
+      "a4_pair_veto_index_bytes": 9743,
+      "a4_pair_veto_total_index_bytes": 123866,
+      "a4_pair_veto_runtime_plus_total_index_bytes": 143652,
+      "a4_pair_veto_semantic_evaluations": 0,
+      "a4_pair_veto_resource_verdict": "NOT_QUALIFIED",
+      "a4_development_resolver_implemented": true
     }
   },
-  "next_action": "Build one bounded A4 pairwise development mechanism from pinned Catalog, existing Catalog-derived graph and designated public TRAIN v0.1 only (four pairs, 16 provisional positive/negative rows, four unresolved ambiguous rows without gold). Preserve all 144 Topics through a full-universe fallback, with fail-closed unsupported/conflicting evidence and explicit source trace; do not read or tune on consumed A4 triad challenge v0.1, A7 DEV v0.1, prior consumed public keys, AS or final/consumed TEST. Use light engineering tests; once stable, freeze fresh public challenge and one registered paired deletion ablation, then eliminate if no isolated safety-preserving gain. A4 TRAIN is same-candidate-writer NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, zero independent quota; ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED. Preserve 95% assigned precision, 70% coverage/macro, safety, budgets, local-first and zero neural/embedding/LLM/semantic API."
+  "next_action": "Freeze fresh public same-writer A4 challenge and safety data after the bounded pairwise negative-evidence veto engineering closure. The A4 compiler reads only pinned Catalog, Catalog-derived graph and designated A4 TRAIN v0.1; full144 A3 fallback remains, no pair may create a new assignment, conflicting/opposite evidence can only DEFER. Do not evaluate on consumed A4 triad v0.1 or any other consumed public key, CIG-v1 TEST, AS or final/consumed TEST. New challenge should include selected pair positive/negative cases, unresolved ambiguous cases kept unscored until review, and no-request controls with clear gold; provenance, lineage, source/license and overlap screened. Then register one paired A3 versus A4 comparison with deletion ablation and aggregate safety/coverage counts; if no isolated safety-preserving gain, eliminate the component automatically. Same-writer development evidence is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE with zero ZMR-01B quota; capability UNTESTED, resources NOT_QUALIFIED. Preserve full144, 95% precision, 70% coverage/macro, safety, budgets, local-first and zero neural/embedding/LLM/semantic API."
 }
