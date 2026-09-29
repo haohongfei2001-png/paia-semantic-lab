@@ -20,7 +20,7 @@ function overlap(a,b) {
   return common/(a.size+b.size-common||1);
 }
 
-test('fresh challenge v0.5 parts1-2 are same-writer, unrun and distinct',async()=>{
+test('fresh challenge v0.5 full144 is same-writer, unrun and distinct',async()=>{
   const catalog=await read('catalog/system_topic_catalog_v0.2.yaml');
   const catalogSha=createHash('sha256').update(catalog).digest('hex');
   const topics=parsePinnedCatalog(catalog);
@@ -29,9 +29,9 @@ test('fresh challenge v0.5 parts1-2 are same-writer, unrun and distinct',async()
   assert.equal(fresh.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
   assert.equal(fresh.catalog_sha256,catalogSha);
   assert.equal(fresh.qualification_credit_rows,0);
-  assert.equal(fresh.intake_status,'PARTIAL96_PUBLIC_DEV_UNRUN');
+  assert.equal(fresh.intake_status,'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
   assert.equal(fresh.evaluation_status,'UNRUN');
-  assert.equal(fresh.rows.length,96);
+  assert.equal(fresh.rows.length,144);
   const languages={zh:0,en:0,mixed:0},seen=new Set();
   let echoes=0;
   for(const [i,row] of fresh.rows.entries()) {
@@ -45,15 +45,16 @@ test('fresh challenge v0.5 parts1-2 are same-writer, unrun and distinct',async()
     assert.equal(row.review_status,'UNREVIEWED_PROVISIONAL');
     assert.equal(row.exposure,'PUBLIC_EXPOSED_CHALLENGE');
     assert.equal(row.authoring_batch,i<48?'ZMR-05-CHALLENGE-V05-P1-20260929':
-      'ZMR-05-CHALLENGE-V05-P2-20260929');
+      i<96?'ZMR-05-CHALLENGE-V05-P2-20260929':
+      'ZMR-05-CHALLENGE-V05-P3-20260929');
     assert.equal(row.title,'');assert.deepEqual(row.recent,[]);
     assert(row.current.trim().length>=10);
     assert(!seen.has(row.id));seen.add(row.id);
     languages[row.language]++;
     if([topics[i].name_zh,topics[i].name_en].some(name=>norm(row.current).includes(norm(name))))echoes++;
   }
-  assert.deepEqual(languages,{zh:48,en:33,mixed:15});
-  assert(echoes<=9);
+  assert.deepEqual(languages,{zh:72,en:51,mixed:21});
+  assert(echoes<=14);
   const priorNames=['provisional_train_v0.2','provisional_tune_v0.1','provisional_cal_v0.1',
     'provisional_challenge_v0.2','provisional_challenge_v0.3','provisional_challenge_v0.4',
     'provisional_safety_seed_v0.1','provisional_safety_seed_v0.2',
