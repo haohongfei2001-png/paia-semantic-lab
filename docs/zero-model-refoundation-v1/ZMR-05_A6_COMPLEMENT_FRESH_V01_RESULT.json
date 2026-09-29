@@ -1,0 +1,247 @@
+{
+  "schema": "ZMR-A6-COMPLEMENT-FRESH-COMPARISON-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "dc70e3265a50065a8cda346a6d328a6534529b3acbd27647f4d6e88658604502",
+  "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A6_COMPLEMENT_FRESH_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "4ed854525d625ea0cb518b616b97ff22077c3cff8958eca7115fdc4120b2e165",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "274de8f84009586e27e8e9ad84ed77aef417031a69b046d2c7725fe2fc00c530",
+    "train_sha256": "9a665ec70237b66a756b035e2c8060615b3a155a3e8c904340f24f8179def1b9",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "94b023c37da4cbf8be90a25625f608418ba6515f3a8c206860846f8ad0b688b3",
+    "scorer_sha256": "b624c1729b2989d082dab46cafe73b5859f0c14e9896f1bfb7baf71f75f7cdbd"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "challenge_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "labeled_rows": 20,
+  "control_rows": 8,
+  "ambiguous_unscored_rows": 4,
+  "fixed_config_count": 3,
+  "builds": {
+    "a3": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "a2": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14",
+      "index_bytes": 206821,
+      "runtime_plus_index_bytes": 218794,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A3_char_deletion_ablation": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 5,
+          "exact": 1
+        },
+        "CONTROL": {
+          "rows": 8,
+          "assigned": 3,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 12,
+      "labeled_exact": 1,
+      "labeled_wrong": 11,
+      "provisional_exact_set_precision": 0.08333333333333333,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A2_char_complement_likelihood": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 4,
+          "exact": 2
+        },
+        "CONTROL": {
+          "rows": 8,
+          "assigned": 1,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 8,
+      "labeled_exact": 3,
+      "labeled_wrong": 5,
+      "provisional_exact_set_precision": 0.375,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A6_complement_scope": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 5,
+          "exact": 2
+        },
+        "CONTROL": {
+          "rows": 8,
+          "assigned": 0,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 12,
+      "labeled_exact": 2,
+      "labeled_wrong": 10,
+      "provisional_exact_set_precision": 0.16666666666666666,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0
+    }
+  },
+  "paired": {
+    "A6_vs_A3": {
+      "labeled_exact_gained": 1,
+      "labeled_exact_lost": 0,
+      "wrong_avoided_by_defer": 1,
+      "wrong_added": 0,
+      "assigned_gained": 1,
+      "assigned_lost": 1,
+      "wrong_to_correct_switches": 0,
+      "correct_to_wrong_switches": 0,
+      "controls_false_avoided": 3,
+      "controls_false_added": 0,
+      "context_exact_gained": 0,
+      "context_exact_lost": 0,
+      "multi_exact_gained": 0,
+      "multi_exact_lost": 0,
+      "ambiguous_assignments_removed_unscored": 0,
+      "ambiguous_assignments_added_unscored": 0
+    },
+    "A6_vs_A2": {
+      "labeled_exact_gained": 1,
+      "labeled_exact_lost": 2,
+      "wrong_avoided_by_defer": 2,
+      "wrong_added": 7,
+      "assigned_gained": 8,
+      "assigned_lost": 4,
+      "wrong_to_correct_switches": 0,
+      "correct_to_wrong_switches": 0,
+      "controls_false_avoided": 1,
+      "controls_false_added": 0,
+      "context_exact_gained": 0,
+      "context_exact_lost": 0,
+      "multi_exact_gained": 0,
+      "multi_exact_lost": 0,
+      "ambiguous_assignments_removed_unscored": 0,
+      "ambiguous_assignments_added_unscored": 1
+    },
+    "A2_vs_A3": {
+      "labeled_exact_gained": 3,
+      "labeled_exact_lost": 1,
+      "wrong_avoided_by_defer": 7,
+      "wrong_added": 2,
+      "assigned_gained": 4,
+      "assigned_lost": 8,
+      "wrong_to_correct_switches": 1,
+      "correct_to_wrong_switches": 0,
+      "controls_false_avoided": 3,
+      "controls_false_added": 1,
+      "context_exact_gained": 0,
+      "context_exact_lost": 0,
+      "multi_exact_gained": 0,
+      "multi_exact_lost": 0,
+      "ambiguous_assignments_removed_unscored": 1,
+      "ambiguous_assignments_added_unscored": 0
+    }
+  },
+  "limitations": [
+    "same candidate writer and unreviewed provisional labels",
+    "four ambiguous rows have no gold and are unscored",
+    "focused public rows cannot qualify full144 capability or global safety",
+    "current-only Routers cannot establish context-required or multi-intent capability",
+    "static bytes do not measure browser memory or latency"
+  ]
+}
