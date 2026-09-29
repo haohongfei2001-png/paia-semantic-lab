@@ -665,8 +665,26 @@
       "a6_r2_repair_dev_v01_context_exact": 2,
       "a6_r2_repair_dev_v01_multi_exact": 1,
       "a6_r2_repair_dev_v01_evaluation_status": "REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE",
-      "a6_r2_disposition": "FRESH_PUBLIC_CHALLENGE_ELIGIBLE_ONLY_NO_CAPABILITY_PASS"
+      "a6_r2_disposition": "FRESH_PUBLIC_CHALLENGE_ELIGIBLE_ONLY_NO_CAPABILITY_PASS",
+      "a6_r2_challenge_v01_rows": 36,
+      "a6_r2_challenge_v01_counts": {
+        "single": 8,
+        "control": 12,
+        "later_request": 4,
+        "context_required": 4,
+        "multi": 4,
+        "ambiguous_unscored": 4
+      },
+      "a6_r2_challenge_v01_language_counts": {
+        "zh": 18,
+        "en": 18,
+        "mixed": 0
+      },
+      "a6_r2_challenge_v01_independent_rows": 0,
+      "a6_r2_challenge_v01_evaluation_status": "PUBLIC_CHALLENGE_FROZEN_UNRUN",
+      "a6_r2_challenge_v01_data": "data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json",
+      "a6_r2_challenge_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_CHALLENGE_V01_INTAKE.md"
     }
   },
-  "next_action": "A6-R2 is the second and final bounded mechanism repair. Its reused same-writer repair DEV inner-loop is not a fresh gate: 6/7 provisional assigned labels exact, 0/12 no-request false assignments, 2/4 context exact and 1/4 multi exact. Freeze a separate new source-separated public challenge with no-request/later-request, Catalog neighbor, context and two-goal probes; screen exact/near overlap and lineage against all prior public cohorts, with no Router output seen before freeze. Mark NON_INDEPENDENT_DEVELOPMENT_EVIDENCE and zero independent 01B credit. Register one fixed paired A2/A3/A6/A6-R1/A6-R2 comparison with full identity before any challenge scoring; then consume the new key once and decide on isolated safety-preserving gain. If R2 fails, retire this component and advance a distinct candidate, with no third repair. Do not tune or replay consumed A6, A4/A5/R1, older public, sealed AS/final TEST or CIG-v1 TEST keys. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED, no family or zero-model ceiling claim."
+  "next_action": "A6-R2 is the second and final bounded mechanism repair. A separate 36-row source-separated same-writer public challenge v0.1 is frozen UNRUN, screened against 1,846 prior public rows with zero exact/NFKC/lineage/near-overlap flags at 0.55, and has zero independent 01B credit. Register one fixed paired A2/A3/A6/A6-R1/A6-R2 comparison with full candidate, train, cohort and scorer identity before any challenge scoring; then consume the new key once and decide on isolated safety-preserving gain. The reused R1 repair DEV inner-loop is not a fresh gate. If R2 fails, retire this component and advance a distinct candidate, with no third repair. Do not tune or replay consumed A6, A4/A5/R1, older public, sealed AS/final TEST or CIG-v1 TEST keys. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED, no family or zero-model ceiling claim."
 }
