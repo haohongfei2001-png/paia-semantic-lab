@@ -1,0 +1,759 @@
+{
+  "schema": "ZMR-PROVISIONAL-ROLE-CHALLENGE-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "qualification_credit_rows": 0,
+  "independent_source_cohorts": 0,
+  "intake_status": "PUBLIC_ROLE_SCOPE_FROZEN_UNRUN",
+  "evaluation_status": "UNRUN",
+  "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+  "writer_note": "Same candidate writer authored all inputs and provisional labels after A1/A2/A3 results and A5 parser engineering. No independent gold or capability credit.",
+  "scenario_count": 6,
+  "row_count": 18,
+  "rows": [
+    {
+      "id": "role-v01-001",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "forbidden_topics": [
+        "sys.home_daily.moving_relocation"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "先核对每月结余，再决定搬家能承担多少租金。",
+      "title": "",
+      "recent": [],
+      "language": "zh",
+      "mechanism": "ROLE_GOAL_OBJECT_EXCHANGE",
+      "variant": "POSITIVE",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "provisional_rationale": "预算计算是当前任务；搬家租金是用途。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-01",
+      "scenario_family": "role-v01-scenario-01",
+      "template_family": "role-v01-original-01",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-01",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-002",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.home_daily.moving_relocation"
+      ],
+      "forbidden_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "先挑选搬家日期和装箱顺序，预算只作为限制。",
+      "title": "",
+      "recent": [],
+      "language": "zh",
+      "mechanism": "ROLE_GOAL_OBJECT_EXCHANGE",
+      "variant": "CONTRAST",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 3,
+          "end": 12
+        }
+      ],
+      "provisional_rationale": "搬家步骤是当前任务；预算仅限定范围。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-01",
+      "scenario_family": "role-v01-scenario-01",
+      "template_family": "role-v01-original-01",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-01",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-003",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "DEFER",
+      "gold_topics": [],
+      "forbidden_topics": [
+        "sys.home_daily.moving_relocation"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "这件事先处理一下。",
+      "title": "搬家预算",
+      "recent": [],
+      "language": "zh",
+      "mechanism": "ROLE_GOAL_OBJECT_EXCHANGE",
+      "variant": "AMBIGUOUS",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "provisional_rationale": "缺少指代对象；标题不能单独决定Topic。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-01",
+      "scenario_family": "role-v01-scenario-01",
+      "template_family": "role-v01-original-01",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-01",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-004",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "forbidden_topics": [
+        "sys.career_work.interviews"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "Draft an email to my manager asking when the interview starts.",
+      "title": "",
+      "recent": [],
+      "language": "en",
+      "mechanism": "ACTION_VS_BACKGROUND",
+      "variant": "POSITIVE",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 0,
+          "end": 14
+        }
+      ],
+      "provisional_rationale": "写邮件是当前任务，面试时间只是内容。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-02",
+      "scenario_family": "role-v01-scenario-02",
+      "template_family": "role-v01-original-02",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-02",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-005",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.career_work.interviews"
+      ],
+      "forbidden_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "Practice answers for the interview; the email can wait.",
+      "title": "",
+      "recent": [],
+      "language": "en",
+      "mechanism": "ACTION_VS_BACKGROUND",
+      "variant": "CONTRAST",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 0,
+          "end": 16
+        }
+      ],
+      "provisional_rationale": "准备面试是当前任务；邮件是延后背景。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-02",
+      "scenario_family": "role-v01-scenario-02",
+      "template_family": "role-v01-original-02",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-02",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-006",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "DEFER",
+      "gold_topics": [],
+      "forbidden_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "Can you handle the interview email?",
+      "title": "",
+      "recent": [],
+      "language": "en",
+      "mechanism": "ACTION_VS_BACKGROUND",
+      "variant": "AMBIGUOUS",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 8,
+          "end": 34
+        }
+      ],
+      "provisional_rationale": "handle未明确是起草邮件还是处理面试安排。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-02",
+      "scenario_family": "role-v01-scenario-02",
+      "template_family": "role-v01-original-02",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-02",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-007",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.projects_products.testing_quality"
+      ],
+      "forbidden_topics": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "不是 debug 登录错误；请整理 login flow 的测试用例。",
+      "title": "",
+      "recent": [],
+      "language": "mixed",
+      "mechanism": "NEGATION_CORRECTION",
+      "variant": "POSITIVE",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 30,
+          "end": 34
+        }
+      ],
+      "provisional_rationale": "明确否定debug；当前请求是测试设计。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-03",
+      "scenario_family": "role-v01-scenario-03",
+      "template_family": "role-v01-original-03",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-03",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-008",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.ai_computing.debugging_troubleshooting"
+      ],
+      "forbidden_topics": [
+        "sys.projects_products.testing_quality"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "Not test cases now; fix 登录失败的代码路径。",
+      "title": "",
+      "recent": [],
+      "language": "mixed",
+      "mechanism": "NEGATION_CORRECTION",
+      "variant": "CONTRAST",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 20,
+          "end": 28
+        }
+      ],
+      "provisional_rationale": "明确否定测试用例；当前请求是排错修复。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-03",
+      "scenario_family": "role-v01-scenario-03",
+      "template_family": "role-v01-original-03",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-03",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-009",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "DEFER",
+      "gold_topics": [],
+      "forbidden_topics": [
+        "sys.projects_products.testing_quality"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "登录这块先弄一下，test 还是 fix 我没决定。",
+      "title": "",
+      "recent": [],
+      "language": "mixed",
+      "mechanism": "NEGATION_CORRECTION",
+      "variant": "AMBIGUOUS",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 21,
+          "end": 25
+        }
+      ],
+      "provisional_rationale": "明确未决定测试或修复，不能猜多标签。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-03",
+      "scenario_family": "role-v01-scenario-03",
+      "template_family": "role-v01-original-03",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-03",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-010",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.travel_places.visas_border"
+      ],
+      "forbidden_topics": [
+        "sys.travel_places.transport_travel"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "文档里写着“立刻订机票”，但我现在只想比较签证所需材料。",
+      "title": "",
+      "recent": [],
+      "language": "zh",
+      "mechanism": "QUOTED_BACKGROUND",
+      "variant": "POSITIVE",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 21,
+          "end": 27
+        }
+      ],
+      "provisional_rationale": "机票在引用中；当前目标是签证材料。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-04",
+      "scenario_family": "role-v01-scenario-04",
+      "template_family": "role-v01-original-04",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-04",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-011",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.travel_places.transport_travel"
+      ],
+      "forbidden_topics": [
+        "sys.travel_places.visas_border"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "签证材料只是引用，我现在想安排去机场的交通。",
+      "title": "",
+      "recent": [],
+      "language": "zh",
+      "mechanism": "QUOTED_BACKGROUND",
+      "variant": "CONTRAST",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 15,
+          "end": 21
+        }
+      ],
+      "provisional_rationale": "签证材料被明确标为引用；当前目标是交通。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-04",
+      "scenario_family": "role-v01-scenario-04",
+      "template_family": "role-v01-original-04",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-04",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-012",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "DEFER",
+      "gold_topics": [],
+      "forbidden_topics": [
+        "sys.travel_places.visas_border"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "“签证和机票”是会议标题；请继续。",
+      "title": "",
+      "recent": [],
+      "language": "zh",
+      "mechanism": "QUOTED_BACKGROUND",
+      "variant": "AMBIGUOUS",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "provisional_rationale": "引用与标题不足以确定当前意图。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-04",
+      "scenario_family": "role-v01-scenario-04",
+      "template_family": "role-v01-original-04",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-04",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-013",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "forbidden_topics": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "Compare two laptop prices only to plan this month's spending ceiling.",
+      "title": "",
+      "recent": [],
+      "language": "en",
+      "mechanism": "GOAL_VS_QUALIFIER",
+      "variant": "POSITIVE",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 52,
+          "end": 68
+        }
+      ],
+      "provisional_rationale": "比较价格是手段；当前目标是月度支出上限。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-05",
+      "scenario_family": "role-v01-scenario-05",
+      "template_family": "role-v01-original-05",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-05",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-014",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "forbidden_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "Choose a laptop model; the spending ceiling is already fixed.",
+      "title": "",
+      "recent": [],
+      "language": "en",
+      "mechanism": "GOAL_VS_QUALIFIER",
+      "variant": "CONTRAST",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "provisional_rationale": "预算固定为限定条件；当前目标是选购。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-05",
+      "scenario_family": "role-v01-scenario-05",
+      "template_family": "role-v01-original-05",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-05",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-015",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "DEFER",
+      "gold_topics": [],
+      "forbidden_topics": [
+        "sys.finance_purchases.shopping_research"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "I have a laptop limit. What next?",
+      "title": "",
+      "recent": [],
+      "language": "en",
+      "mechanism": "GOAL_VS_QUALIFIER",
+      "variant": "AMBIGUOUS",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "provisional_rationale": "limit与提问不足以判定预算或选购目标。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-05",
+      "scenario_family": "role-v01-scenario-05",
+      "template_family": "role-v01-original-05",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-05",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-016",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "forbidden_topics": [
+        "sys.time_events.reminders_deadlines"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "晚上脑子总转不停，想把入睡前的安排重新定下来。sleep 这块先看。",
+      "title": "",
+      "recent": [],
+      "language": "mixed",
+      "mechanism": "NATURAL_PARAPHRASE_AND_TITLE_CONFLICT",
+      "variant": "POSITIVE",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "provisional_rationale": "当前讨论睡前困扰；不是创建提醒。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-06",
+      "scenario_family": "role-v01-scenario-06",
+      "template_family": "role-v01-original-06",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-06",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-017",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "ASSIGNED",
+      "gold_topics": [
+        "sys.time_events.reminders_deadlines"
+      ],
+      "forbidden_topics": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "今晚把提醒改到早上，sleep 只是旧标题。",
+      "title": "sleep",
+      "recent": [],
+      "language": "mixed",
+      "mechanism": "NATURAL_PARAPHRASE_AND_TITLE_CONFLICT",
+      "variant": "CONTRAST",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "provisional_rationale": "当前目标是修改提醒；sleep是旧标题。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-06",
+      "scenario_family": "role-v01-scenario-06",
+      "template_family": "role-v01-original-06",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-06",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    },
+    {
+      "id": "role-v01-018",
+      "split": "CHALLENGE_ROLE_PROVISIONAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "layer": "ROLE_SCOPE",
+      "expected_state": "DEFER",
+      "gold_topics": [],
+      "forbidden_topics": [
+        "sys.health_wellbeing.sleep"
+      ],
+      "gold_origin": "CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED",
+      "current": "sleep reminder 的那个事情继续。",
+      "title": "",
+      "recent": [],
+      "language": "mixed",
+      "mechanism": "NATURAL_PARAPHRASE_AND_TITLE_CONFLICT",
+      "variant": "AMBIGUOUS",
+      "evidence_spans": [
+        {
+          "source": "current",
+          "start": 16,
+          "end": 22
+        }
+      ],
+      "provisional_rationale": "缺少所指任务，不能从英语名词猜Topic。",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-role-v01-20260929",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "role-v01-scenario-06",
+      "scenario_family": "role-v01-scenario-06",
+      "template_family": "role-v01-original-06",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "contrast_family": "role-v01-contrast-06",
+      "exposure": "PUBLIC_EXPOSED_CHALLENGE",
+      "review_status": "UNREVIEWED_PROVISIONAL"
+    }
+  ]
+}
