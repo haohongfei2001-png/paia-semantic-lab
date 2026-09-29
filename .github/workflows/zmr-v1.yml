@@ -81,6 +81,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_COMPLEMENT_SCOPE_ENGINEERING_DEV.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_COMPLEMENT_CHALLENGE_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_COMPLEMENT_FRESH_V01_REGISTRATION.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -94,6 +95,7 @@ jobs:
             engineering.push('packages/zero_model_refoundation/a4_positive_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a6_complement_scope.mjs', 'packages/zero_model_refoundation/a6_complement_scope.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a6_complement_fresh_compare.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
@@ -103,6 +105,7 @@ jobs:
             development.push('data/zero_model_refoundation/development/provisional_a4_positive_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a6_complement_challenge_v0.1.json');
+            development.push('data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json');
             const resultA5FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json';
             const resultA5R1FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01_RESULT.json';
             const resultA4PositiveFreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01_RESULT.json';
