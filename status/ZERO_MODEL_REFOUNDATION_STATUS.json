@@ -421,11 +421,16 @@
       ],
       "a4_provisional_triads_v01_independent_rows": 0,
       "a4_provisional_triads_v01_qualified_triads": 0,
-      "a4_provisional_triads_v01_evaluation_status": "UNRUN",
+      "a4_provisional_triads_v01_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "a4_provisional_triads_v01_data": "data/zero_model_refoundation/development/provisional_a4_triads_v0.1.json",
       "a4_provisional_triads_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A4_TRIADS_V01_INTAKE.md",
-      "a4_resolver_activated": false
+      "a4_resolver_activated": false,
+      "a4_triad_v01_evaluation_key": "1f2fd248e005c1deb5beeca36c2ca4d06a53f24efe2efdb88e1e9c89dd71f5aa",
+      "a4_triad_v01_registration": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+      "a4_triad_v01_result": "docs/zero-model-refoundation-v1/ZMR-05_A4_TRIADS_V01_BASELINE_RESULT.json",
+      "a4_triad_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A4_TRIADS_V01_BASELINE.md",
+      "a4_semantic_evaluations": 1
     }
   },
-  "next_action": "Continue ZMR-05 A4 contrastive-boundary development from the fixed Catalog-derived graph and fresh same-writer provisional triads v0.1 (four preregistered graph ranks, eight provisional left/right labels and four unresolved ambiguous rows with no gold). Register one light baseline A1/A3 diagnostic on the eight labeled rows only; keep ambiguous members unscored and report aggregate pair counts without row predictions. Do not train/tune a resolver on this challenge cohort. A separate bounded resolver may use Catalog and designated new TRAIN evidence, then a fresh public challenge. All triads are NON_INDEPENDENT_DEVELOPMENT_EVIDENCE and give zero independent quota or qualified resolver evidence. Do not rerun consumed A7 DEV v0.1, v0.2-v0.6 public challenge/safety keys, CIG-v1 consumed TEST, AS or final/consumed TEST. Preserve full144, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API. ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED."
+  "next_action": "A4 provisional triads v0.1 public diagnostic is consumed under its registered key. Fixed A1/A3 char anchors each got only 1/8 provisional labeled rows correct and no complete pair; word anchors got 0/8. The four ambiguous rows had no gold and were never scored. Do not rerun or tune against this consumed triad cohort, A7 DEV v0.1, older consumed public keys, AS or final/consumed TEST. Create fresh designated public candidate-writer TRAIN evidence for the four fixed Catalog graph pairs with positive/negative/ambiguous lineage, provenance, license and overlap audit. Build a bounded A4 pairwise resolver only from Catalog and designated TRAIN, keep a full144 fallback and no reduced denominator, then create fresh challenge and registered deletion ablation. Eliminate if no isolated safety-preserving gain. All development data is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE with zero independent quota; ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED. Preserve 95% assigned precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API."
 }

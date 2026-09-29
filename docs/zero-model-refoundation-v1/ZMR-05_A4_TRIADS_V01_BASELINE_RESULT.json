@@ -1,0 +1,152 @@
+{
+  "schema": "ZMR-A4-TRIAD-BASELINE-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "1f2fd248e005c1deb5beeca36c2ca4d06a53f24efe2efdb88e1e9c89dd71f5aa",
+  "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A4_BOUNDARY_TRIADS_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "14ae8ccd337c561ea2598aa7a96cf7bc1ce26431d01ea5ec6007eb1c6dce6aa8",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "280f9efd6f5cda07d6cbed4497660630b9f87950d89068d62017347271ef0c2e",
+    "scorer_sha256": "6d0173788c8c716687ce5f24fa51b8e2df235b159d5e08109486d0c0ec89c2d1"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "triad_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "pair_count": 4,
+  "provisional_labeled_rows": 8,
+  "ambiguous_unscored_rows": 4,
+  "fixed_config_count": 5,
+  "builds": {
+    "A1_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+      "index_bytes": 932855,
+      "runtime_plus_index_bytes": 939747,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A3_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A1_word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "7c39cf2ffad4dbe64755e35da11a693c575cfc47d81feb58f887b1f89414d85b",
+      "index_bytes": 205561,
+      "runtime_plus_index_bytes": 212453,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A3_word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617",
+      "index_bytes": 116142,
+      "runtime_plus_index_bytes": 129760,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A0_defer": {
+      "labeled_rows": 8,
+      "labeled_assigned": 0,
+      "labeled_correct": 0,
+      "left_correct": 0,
+      "right_correct": 0,
+      "pairs_both_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": null
+    },
+    "A1_char_fixed": {
+      "labeled_rows": 8,
+      "labeled_assigned": 3,
+      "labeled_correct": 1,
+      "left_correct": 0,
+      "right_correct": 1,
+      "pairs_both_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 2,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": 0.3333333333333333
+    },
+    "A3_char_fixed": {
+      "labeled_rows": 8,
+      "labeled_assigned": 6,
+      "labeled_correct": 1,
+      "left_correct": 0,
+      "right_correct": 1,
+      "pairs_both_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 3,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": 0.16666666666666666
+    },
+    "A1_word_fixed": {
+      "labeled_rows": 8,
+      "labeled_assigned": 2,
+      "labeled_correct": 0,
+      "left_correct": 0,
+      "right_correct": 0,
+      "pairs_both_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": 0
+    },
+    "A3_word_fixed": {
+      "labeled_rows": 8,
+      "labeled_assigned": 3,
+      "labeled_correct": 0,
+      "left_correct": 0,
+      "right_correct": 0,
+      "pairs_both_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 1,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": 0
+    }
+  },
+  "limitations": [
+    "candidate-writer provisional labels only",
+    "four ambiguous rows have no gold",
+    "four graph pairs cannot qualify full144 or pairwise resolver safety"
+  ]
+}
