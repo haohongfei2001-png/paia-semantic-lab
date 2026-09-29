@@ -1,0 +1,9 @@
+# ZMR-04 A4 provisional lexical boundary graph
+
+This is a deterministic **development hypothesis generator**, not a Topic boundary qualification or a working resolver. It reads only the pinned 144-Topic Catalog and public candidate-writer TRAIN v0.2. It does not read challenge, CAL, AS, blind TEST, the consumed CIG-v1 TEST, private archives, or PAIA production data.
+
+The generator collects character n-grams from each Topic's names, aliases, and one provisional TRAIN text. It discards single-Topic terms and high-frequency boilerplate, ranks possible Topic pairs by weighted shared lexical features, and retains 64 pairs as a bounded review queue. Every graph edge is marked `UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE` with zero triad evidence. No routing decision can consume this graph. The source records remain `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`, so zero edges receive qualification credit.
+
+The graph covers 144 Topics as a universe and 83 distinct Topics among its 64 hypothesized pairs; omitted Topics remain eligible for the required global 144-class fallback. The highest lexical pair is `sys.projects_products.engineering_execution` versus `sys.science_technical.engineering`. Shared words can reveal useful review targets, but may also reflect similar names or candidate-writer templates. A pair absent from this list is not evidence of a clear boundary.
+
+Next, use fresh public development examples to test a small, preregistered subset with positive, negative, and ambiguous cases, then implement a bounded pairwise resolver only if the evidence supports a real mechanism. Compare that resolver against the same full144 fallback with a deletion ablation and natural paraphrases. This graph itself has no capability, safety, or resource verdict. ZMR-01B remains `NOT_QUALIFIED` and the 95% precision, 70% coverage/macro, 144-Topic, and resource constraints stay unchanged.

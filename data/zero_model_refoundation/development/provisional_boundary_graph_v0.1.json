@@ -1,0 +1,1682 @@
+{
+  "schema": "ZMR-A4-PROVISIONAL-BOUNDARY-GRAPH-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "qualification_credit_edges": 0,
+  "independent_source_cohorts": 0,
+  "source_paths": [
+    "catalog/system_topic_catalog_v0.2.yaml",
+    "data/zero_model_refoundation/development/provisional_train_v0.2.json"
+  ],
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+  "topic_count": 144,
+  "edge_limit": 64,
+  "edge_count": 64,
+  "method": "RARE_SHARED_CHAR_NGRAM_LEXICAL_HYPOTHESES_ONLY",
+  "no_resolver_activated": true,
+  "edges": [
+    {
+      "rank": 1,
+      "left_topic_id": "sys.projects_products.engineering_execution",
+      "right_topic_id": "sys.science_technical.engineering",
+      "lexical_score": 2.26493818,
+      "shared_feature_examples": [
+        "c2:工程",
+        "c3: 工程",
+        "c3:eng",
+        "c3:ngi"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:xe",
+        "c2:口、",
+        "c2:拆成",
+        "c2:接口"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:想核",
+        "c2:计算",
+        "c3:想核对",
+        "c3:，想核"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 2,
+      "left_topic_id": "sys.science_technical.medicine_knowledge",
+      "right_topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "lexical_score": 1.69874025,
+      "shared_feature_examples": [
+        "c2:kn",
+        "c2:wl",
+        "c3: kn",
+        "c3:kno"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:后的",
+        "c2:的作",
+        "c2:细胞",
+        "c4:ical"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:可回",
+        "c2:查的",
+        "c2:立可",
+        "c2:记与"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 3,
+      "left_topic_id": "sys.creative_design.visual_design",
+      "right_topic_id": "sys.creative_design.ux_ui_design",
+      "lexical_score": 1.63195347,
+      "shared_feature_examples": [
+        "c3:gn ",
+        "c4:ign ",
+        "c2:计 ",
+        "c3:des"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 视",
+        "c2:视觉",
+        "c2:重新",
+        "c3:n 视"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 手",
+        "c2:交互",
+        "c2:单的",
+        "c2:想调"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 4,
+      "left_topic_id": "sys.personal_direction.life_goals",
+      "right_topic_id": "sys.time_events.life_events",
+      "lexical_score": 1.52205815,
+      "shared_feature_examples": [
+        "c4:s 人生",
+        "c3: 人生",
+        "c3:s 人",
+        "c2: 人"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:先理",
+        "c2:理清",
+        "c2:的事",
+        "c2:里，"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:事件",
+        "c2:件 ",
+        "c2:体检",
+        "c2:和入"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 5,
+      "left_topic_id": "sys.education_learning.skill_learning",
+      "right_topic_id": "sys.education_learning.learning_methods",
+      "lexical_score": 1.48633492,
+      "shared_feature_examples": [
+        "c2:练习",
+        "c4: lea",
+        "c2:学习",
+        "c3: le"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:才能",
+        "c3:g 想",
+        "c4:ng 想",
+        "c2:习 "
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:不住",
+        "c2:住，",
+        "c2:方法",
+        "c2:能否"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 6,
+      "left_topic_id": "sys.travel_places.transport_travel",
+      "right_topic_id": "sys.travel_places.restaurants_travel",
+      "lexical_score": 1.45202777,
+      "shared_feature_examples": [
+        "c3:rav",
+        "c4:avel",
+        "c4:rave",
+        "c4:trav"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:交通",
+        "c2:以及",
+        "c2:有一",
+        "c2:转机"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:地点",
+        "c2:适合",
+        "c3:g 旅",
+        "c4: din"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 7,
+      "left_topic_id": "sys.education_learning.language_learning",
+      "right_topic_id": "sys.education_learning.skill_learning",
+      "lexical_score": 1.44539693,
+      "shared_feature_examples": [
+        "c2:习 ",
+        "c3:学习 ",
+        "c4: lea",
+        "c2:学习"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:表达",
+        "c3:gua",
+        "c3:，怎么",
+        "c4:peak"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:才能",
+        "c2:练习",
+        "c3:g 想",
+        "c4:ng 想"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 8,
+      "left_topic_id": "sys.communication_writing.writing_editing",
+      "right_topic_id": "sys.creative_design.creative_writing",
+      "lexical_score": 1.40914495,
+      "shared_feature_examples": [
+        "c2:wr",
+        "c2:写作",
+        "c3: wr",
+        "c3:wri"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:保持",
+        "c4: edi",
+        "c4:diti",
+        "c2:帮我"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:人物",
+        "c2:创意",
+        "c3: 创意",
+        "c4:ativ"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 9,
+      "left_topic_id": "sys.projects_products.product_strategy",
+      "right_topic_id": "sys.business_entrepreneurship.business_strategy",
+      "lexical_score": 1.3765985,
+      "shared_feature_examples": [
+        "c2:略 ",
+        "c3:egy",
+        "c3:teg",
+        "c4: str"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 产",
+        "c2:定位",
+        "c3: 产品",
+        "c4:t st"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 公",
+        "c2:公司",
+        "c2:市场",
+        "c2:路？"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 10,
+      "left_topic_id": "sys.career_work.networking_professional",
+      "right_topic_id": "sys.ai_computing.networking_connectivity",
+      "lexical_score": 1.36005762,
+      "shared_feature_examples": [
+        "c3:net",
+        "c3:rki",
+        "c4: net",
+        "c4:etwo"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 职",
+        "c2:的人",
+        "c2:职业",
+        "c2:认识"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 网",
+        "c2:排查",
+        "c2:正常",
+        "c2:经常"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 11,
+      "left_topic_id": "sys.career_work.career_strategy",
+      "right_topic_id": "sys.projects_products.product_strategy",
+      "lexical_score": 1.35217831,
+      "shared_feature_examples": [
+        "c2:产品",
+        "c3:egy",
+        "c3:teg",
+        "c4: str"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 职",
+        "c2:些经",
+        "c2:岗位",
+        "c2:年该"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 产",
+        "c2:定位",
+        "c2:略 ",
+        "c3: 产品"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 12,
+      "left_topic_id": "sys.projects_products.launch_operations",
+      "right_topic_id": "sys.business_entrepreneurship.operations_process",
+      "lexical_score": 1.31933361,
+      "shared_feature_examples": [
+        "c3: op",
+        "c3:ope",
+        "c4: ope",
+        "c4:oper"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:au",
+        "c3:& o",
+        "c3:h &",
+        "c4: & o"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:交接",
+        "c2:和交",
+        "c2:消息",
+        "c3: 每次"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 13,
+      "left_topic_id": "sys.personal_direction.personal_admin",
+      "right_topic_id": "sys.knowledge_memory.personal_archive",
+      "lexical_score": 1.29963695,
+      "shared_feature_examples": [
+        "c4:al a",
+        "c2: 个",
+        "c3: 个人",
+        "c3:l a"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:事务",
+        "c2:理。",
+        "c2:统一",
+        "c2:要统"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:以后",
+        "c2:件和",
+        "c2:归档",
+        "c3:hiv"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 14,
+      "left_topic_id": "sys.career_work.career_strategy",
+      "right_topic_id": "sys.business_entrepreneurship.business_strategy",
+      "lexical_score": 1.29551161,
+      "shared_feature_examples": [
+        "c3:egy",
+        "c3:teg",
+        "c4: str",
+        "c4:ateg"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 职",
+        "c2:些经",
+        "c2:岗位",
+        "c2:年该"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 公",
+        "c2:公司",
+        "c2:市场",
+        "c2:略 "
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 15,
+      "left_topic_id": "sys.projects_products.project_planning",
+      "right_topic_id": "sys.travel_places.trip_planning",
+      "lexical_score": 1.22762365,
+      "shared_feature_examples": [
+        "c3:ann",
+        "c3:nni",
+        "c4:anni",
+        "c4:lann"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:je",
+        "c2:oj",
+        "c2:把这",
+        "c2:拆成"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 只",
+        "c2:三天",
+        "c2:么排",
+        "c2:天的"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 16,
+      "left_topic_id": "sys.family_relationships.social_interaction",
+      "right_topic_id": "sys.ai_computing.networking_connectivity",
+      "lexical_score": 1.22756071,
+      "shared_feature_examples": [
+        "c3:nne",
+        "c3:net",
+        "c3:rki",
+        "c4: net"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 社",
+        "c2:交互",
+        "c2:天的",
+        "c2:的 "
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 网",
+        "c2:排查",
+        "c2:正常",
+        "c2:经常"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 17,
+      "left_topic_id": "sys.media_culture.news_media",
+      "right_topic_id": "sys.knowledge_memory.photos_media_archive",
+      "lexical_score": 1.19788365,
+      "shared_feature_examples": [
+        "c2:与媒",
+        "c3:dia",
+        "c3:ia ",
+        "c3:与媒体"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 新",
+        "c2:不同",
+        "c2:事件",
+        "c2:冲突"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 手",
+        "c2:归档",
+        "c2:手机",
+        "c2:照片"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 18,
+      "left_topic_id": "sys.family_relationships.social_interaction",
+      "right_topic_id": "sys.career_work.networking_professional",
+      "lexical_score": 1.18339539,
+      "shared_feature_examples": [
+        "c2:认识",
+        "c3:net",
+        "c3:rki",
+        "c4: net"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 社",
+        "c2:交互",
+        "c2:天的",
+        "c2:的 "
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 职",
+        "c2:的人",
+        "c2:职业",
+        "c3: 职业"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 19,
+      "left_topic_id": "sys.knowledge_memory.personal_archive",
+      "right_topic_id": "sys.knowledge_memory.photos_media_archive",
+      "lexical_score": 1.16083309,
+      "shared_feature_examples": [
+        "c2:归档",
+        "c3:hiv",
+        "c4: arc",
+        "c4:chiv"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:以后",
+        "c2:件和",
+        "c4:al a",
+        "c2: 个"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 手",
+        "c2:与媒",
+        "c2:手机",
+        "c2:照片"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 20,
+      "left_topic_id": "sys.media_culture.art_culture",
+      "right_topic_id": "sys.media_culture.live_events",
+      "lexical_score": 1.15446829,
+      "shared_feature_examples": [
+        "c3:与文化",
+        "c2:文化",
+        "c3:cul",
+        "c3:ltu"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:作品",
+        "c2:化 ",
+        "c2:城市",
+        "c3:bit"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:出，",
+        "c2:时段",
+        "c3: 下个",
+        "c3:l e"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 21,
+      "left_topic_id": "sys.education_learning.academic_courses",
+      "right_topic_id": "sys.education_learning.academic_admin",
+      "lexical_score": 1.14220763,
+      "shared_feature_examples": [
+        "c3:aca",
+        "c3:ade",
+        "c3:cad",
+        "c3:dem"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:的作",
+        "c2:阅读",
+        "c4:es 这",
+        "c2:习 "
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:y;",
+        "c2:事务",
+        "c3: ad",
+        "c3:d m"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 22,
+      "left_topic_id": "sys.personal_direction.personal_productivity",
+      "right_topic_id": "sys.knowledge_memory.personal_archive",
+      "lexical_score": 1.14123257,
+      "shared_feature_examples": [
+        "c2: 个",
+        "c3: 个人",
+        "c2:个人",
+        "c3:rso"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:才不",
+        "c2:换，",
+        "c2:时段",
+        "c2:每天"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:以后",
+        "c2:件和",
+        "c2:归档",
+        "c3:hiv"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 23,
+      "left_topic_id": "sys.health_wellbeing.medical_care",
+      "right_topic_id": "sys.science_technical.medicine_knowledge",
+      "lexical_score": 1.09983043,
+      "shared_feature_examples": [
+        "c4:ical",
+        "c3:dic",
+        "c4:dica",
+        "c4:edic"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:医生",
+        "c2:录整",
+        "c2:疗 ",
+        "c3:l c"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:kn",
+        "c2:wl",
+        "c2:后的",
+        "c2:的作"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 24,
+      "left_topic_id": "sys.finance_purchases.subscriptions_recurring",
+      "right_topic_id": "sys.time_events.routines_recurring",
+      "lexical_score": 1.03527242,
+      "shared_feature_examples": [
+        "c3:urr",
+        "c4:curr",
+        "c4:recu",
+        "c4:rrin"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 几",
+        "c2:bs",
+        "c2:不同",
+        "c2:出 "
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:排 ",
+        "c2:的安",
+        "c2:要核",
+        "c2:重复"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 25,
+      "left_topic_id": "sys.education_learning.language_learning",
+      "right_topic_id": "sys.education_learning.learning_methods",
+      "lexical_score": 1.01937807,
+      "shared_feature_examples": [
+        "c4: lea",
+        "c2:学习",
+        "c3: le",
+        "c3:arn"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:表达",
+        "c3:gua",
+        "c3:，怎么",
+        "c4:peak"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:不住",
+        "c2:住，",
+        "c2:方法",
+        "c2:练习"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 26,
+      "left_topic_id": "sys.science_technical.physics",
+      "right_topic_id": "sys.science_technical.mathematics",
+      "lexical_score": 1.00269309,
+      "shared_feature_examples": [
+        "c2:为什",
+        "c3:为什么",
+        "c2:cs",
+        "c3:cs "
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 物",
+        "c2:保持",
+        "c2:前后",
+        "c2:变？"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 数",
+        "c2:一步",
+        "c2:不能",
+        "c2:直接"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 27,
+      "left_topic_id": "sys.personal_direction.major_decisions",
+      "right_topic_id": "sys.travel_places.lodging",
+      "lexical_score": 0.9585353,
+      "shared_feature_examples": [
+        "c2:ff",
+        "c3:dif",
+        "c3:fer",
+        "c3:ffe"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 重",
+        "c2:aj",
+        "c2:b ",
+        "c2:ob"
+      ],
+      "right_distinctive_feature_examples": [
+        "c3:eni",
+        "c3:es.",
+        "c3:k d",
+        "c3:rms"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 28,
+      "left_topic_id": "sys.ai_computing.hardware_devices",
+      "right_topic_id": "sys.home_daily.home_improvement",
+      "lexical_score": 0.94967562,
+      "shared_feature_examples": [
+        "c2:先检",
+        "c2:查接",
+        "c3:先检查",
+        "c3:检查接"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 新",
+        "c2: 电",
+        "c2:sd",
+        "c2:口、"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:漏水",
+        "c2:直接",
+        "c2:维修",
+        "c3:hom"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 29,
+      "left_topic_id": "sys.personal_direction.personal_productivity",
+      "right_topic_id": "sys.personal_direction.personal_admin",
+      "lexical_score": 0.94399357,
+      "shared_feature_examples": [
+        "c2: 个",
+        "c3: 个人",
+        "c2:个人",
+        "c3:rso"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:才不",
+        "c2:换，",
+        "c2:时段",
+        "c2:每天"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:事务",
+        "c2:理。",
+        "c2:统一",
+        "c2:要统"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 30,
+      "left_topic_id": "sys.education_learning.reading_learning",
+      "right_topic_id": "sys.education_learning.skill_learning",
+      "lexical_score": 0.94175852,
+      "shared_feature_examples": [
+        "c3:arn",
+        "c4:arni",
+        "c4:earn",
+        "c3:rni"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:lf",
+        "c2:一套",
+        "c2:历史",
+        "c2:式。"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:才能",
+        "c2:练习",
+        "c3:g 想",
+        "c4:ng 想"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 31,
+      "left_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "right_topic_id": "sys.home_daily.housing",
+      "lexical_score": 0.93724077,
+      "shared_feature_examples": [
+        "c3:g 最",
+        "c4:g 最近",
+        "c4:ng 最",
+        "c2: 最"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:办法",
+        "c2:定一",
+        "c2:情绪",
+        "c2:法。"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:件和",
+        "c2:居住",
+        "c4:sing",
+        "c2:排。"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 32,
+      "left_topic_id": "sys.communication_writing.documents_reports",
+      "right_topic_id": "sys.knowledge_memory.files_documents_storage",
+      "lexical_score": 0.92841593,
+      "shared_feature_examples": [
+        "c2: 文",
+        "c2:文档",
+        "c3:cum",
+        "c3:doc"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:录整",
+        "c2:方法",
+        "c2:理成",
+        "c2:访谈"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:一套",
+        "c2:件与",
+        "c2:定一",
+        "c2:想定"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 33,
+      "left_topic_id": "sys.family_relationships.friendships",
+      "right_topic_id": "sys.business_entrepreneurship.partnerships",
+      "lexical_score": 0.9059697,
+      "shared_feature_examples": [
+        "c4:hips",
+        "c3:ips",
+        "c4:ips ",
+        "c2:ps"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:年没",
+        "c2:系 ",
+        "c2:重新",
+        "c3:nds"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:商务",
+        "c3: 商务",
+        "c3:rtn",
+        "c3:s 商"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 34,
+      "left_topic_id": "sys.health_wellbeing.sleep",
+      "right_topic_id": "sys.knowledge_memory.journaling",
+      "lexical_score": 0.89330301,
+      "shared_feature_examples": [
+        "c3: ni",
+        "c3:nig",
+        "c3:t n",
+        "c4: nig"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:. ",
+        "c2:.m",
+        "c2:p.",
+        "c2:ru"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:录 ",
+        "c2:记与",
+        "c3:a s",
+        "c3:apt"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 35,
+      "left_topic_id": "sys.home_daily.utilities_services",
+      "right_topic_id": "sys.legal_civic.government_services",
+      "lexical_score": 0.88536219,
+      "shared_feature_examples": [
+        "c3:服务 ",
+        "c4: ser",
+        "c4:rvic",
+        "c4:t se"
+      ],
+      "left_distinctive_feature_examples": [
+        "c3: ou",
+        "c3:bil",
+        "c3:cit",
+        "c3:hom"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:与公",
+        "c2:公共",
+        "c2:居住",
+        "c3: go"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 36,
+      "left_topic_id": "sys.ai_computing.coding_software_development",
+      "right_topic_id": "sys.communication_writing.speaking_conversation",
+      "lexical_score": 0.860258,
+      "shared_feature_examples": [
+        "c3:fac",
+        "c3:lle",
+        "c3:aki",
+        "c3:eak"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:开发",
+        "c2:程与",
+        "c3: er",
+        "c3:dev"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:表达",
+        "c3: mi",
+        "c3:ake",
+        "c3:col"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 37,
+      "left_topic_id": "sys.legal_civic.identity_documents",
+      "right_topic_id": "sys.time_events.reminders_deadlines",
+      "lexical_score": 0.85025302,
+      "shared_feature_examples": [
+        "c2: 护",
+        "c2:前要",
+        "c2:发材",
+        "c2:护照"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:件 ",
+        "c2:份与",
+        "c2:快到",
+        "c2:料？"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:期 ",
+        "c3:dea",
+        "c3:ind",
+        "c4: rem"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 38,
+      "left_topic_id": "sys.career_work.performance_growth",
+      "right_topic_id": "sys.business_entrepreneurship.marketing_growth",
+      "lexical_score": 0.84699351,
+      "shared_feature_examples": [
+        "c2:wt",
+        "c2:长 ",
+        "c3:& g",
+        "c3:owt"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:w?",
+        "c3:ays",
+        "c3:d m",
+        "c3:evi"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:实验",
+        "c2:很少",
+        "c2:用户",
+        "c3:eti"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 39,
+      "left_topic_id": "sys.communication_writing.documents_reports",
+      "right_topic_id": "sys.legal_civic.identity_documents",
+      "lexical_score": 0.82991343,
+      "shared_feature_examples": [
+        "c3:cum",
+        "c3:doc",
+        "c3:ocu",
+        "c4: doc"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 文",
+        "c2:录整",
+        "c2:文档",
+        "c2:方法"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 护",
+        "c2:件 ",
+        "c2:份与",
+        "c2:前要"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 40,
+      "left_topic_id": "sys.education_learning.reading_learning",
+      "right_topic_id": "sys.education_learning.learning_methods",
+      "lexical_score": 0.82354393,
+      "shared_feature_examples": [
+        "c3:arn",
+        "c4:arni",
+        "c4:earn",
+        "c3:rni"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:lf",
+        "c2:一套",
+        "c2:历史",
+        "c2:式。"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:不住",
+        "c2:住，",
+        "c2:方法",
+        "c2:练习"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 41,
+      "left_topic_id": "sys.media_culture.art_culture",
+      "right_topic_id": "sys.media_culture.online_culture",
+      "lexical_score": 0.80737024,
+      "shared_feature_examples": [
+        "c2:化 ",
+        "c3:文化 ",
+        "c2:文化",
+        "c3:cul"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:作品",
+        "c2:城市",
+        "c3:bit",
+        "c3:rts"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 网",
+        "c2:nl",
+        "c2:w?",
+        "c2:网络"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 42,
+      "left_topic_id": "sys.health_wellbeing.fitness",
+      "right_topic_id": "sys.career_work.workplace_daily",
+      "lexical_score": 0.80241201,
+      "shared_feature_examples": [
+        "c2:么调",
+        "c3:么调整",
+        "c3:怎么调",
+        "c4:怎么调整"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 5",
+        "c2:与体",
+        "c2:才不",
+        "c2:服，"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:议题",
+        "c3:e 工",
+        "c3:lac",
+        "c4:ace "
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 43,
+      "left_topic_id": "sys.travel_places.trip_planning",
+      "right_topic_id": "sys.travel_places.trip_records",
+      "lexical_score": 0.79969312,
+      "shared_feature_examples": [
+        "c4: tri",
+        "c4:rip ",
+        "c4:trip",
+        "c3:rip"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 只",
+        "c2:三天",
+        "c2:么排",
+        "c2:天的"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:了很",
+        "c2:可回",
+        "c2:录 ",
+        "c2:想整"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 44,
+      "left_topic_id": "sys.creative_design.photography",
+      "right_topic_id": "sys.knowledge_memory.photos_media_archive",
+      "lexical_score": 0.7978008,
+      "shared_feature_examples": [
+        "c3:hot",
+        "c3:oto",
+        "c4: pho",
+        "c4:hoto"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:想调",
+        "c3:aph",
+        "c3:phy",
+        "c3:rap"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 手",
+        "c2:与媒",
+        "c2:归档",
+        "c2:手机"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 45,
+      "left_topic_id": "sys.communication_writing.public_posts",
+      "right_topic_id": "sys.legal_civic.civic_public_policy",
+      "lexical_score": 0.78948035,
+      "shared_feature_examples": [
+        "c3:c p",
+        "c4:blic",
+        "c4:c po",
+        "c4:ic p"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 社",
+        "c2:与公",
+        "c2:地点",
+        "c2:开发"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 公",
+        "c2:bs",
+        "c2:公共",
+        "c2:议题"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 46,
+      "left_topic_id": "sys.personal_direction.values_principles",
+      "right_topic_id": "sys.projects_products.roadmap_prioritization",
+      "lexical_score": 0.78927722,
+      "shared_feature_examples": [
+        "c4:prin",
+        "c3:pri",
+        "c3:该怎样",
+        "c4: pri"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:与原",
+        "c2:我该",
+        "c2:让我",
+        "c2:这次"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 只",
+        "c2:t，",
+        "c2:za",
+        "c2:一个"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 47,
+      "left_topic_id": "sys.travel_places.trip_planning",
+      "right_topic_id": "sys.travel_places.restaurants_travel",
+      "lexical_score": 0.78864267,
+      "shared_feature_examples": [
+        "c3:g 旅",
+        "c4:g 旅行",
+        "c4:ng 旅",
+        "c2: 旅"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 只",
+        "c2:三天",
+        "c2:么排",
+        "c2:天的"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:地点",
+        "c2:适合",
+        "c3:rav",
+        "c4: din"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 48,
+      "left_topic_id": "sys.media_culture.live_events",
+      "right_topic_id": "sys.time_events.life_events",
+      "lexical_score": 0.78736101,
+      "shared_feature_examples": [
+        "c4: eve",
+        "c3: ev",
+        "c4:even",
+        "c4:vent"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:出，",
+        "c2:时段",
+        "c3: 下个",
+        "c3:l e"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:事件",
+        "c2:件 ",
+        "c2:体检",
+        "c2:和入"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 49,
+      "left_topic_id": "sys.science_technical.computer_science",
+      "right_topic_id": "sys.science_technical.biology_life_science",
+      "lexical_score": 0.78372902,
+      "shared_feature_examples": [
+        "c2:科学",
+        "c3:cie",
+        "c3:sci",
+        "c3:科学 "
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 计",
+        "c2:e?",
+        "c2:oe",
+        "c2:计算"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:变？",
+        "c2:物与",
+        "c2:细胞",
+        "c3:& l"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 50,
+      "left_topic_id": "sys.family_relationships.pets",
+      "right_topic_id": "sys.communication_writing.presentations",
+      "lexical_score": 0.77552494,
+      "shared_feature_examples": [
+        "c3:该怎样",
+        "c2:该怎",
+        "c2:怎样"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:物 ",
+        "c3:ets",
+        "c4:ets ",
+        "c2:最近"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:实验",
+        "c3:nta",
+        "c3:sen",
+        "c4:enta"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 51,
+      "left_topic_id": "sys.family_relationships.partner_relationship",
+      "right_topic_id": "sys.business_entrepreneurship.partnerships",
+      "lexical_score": 0.76966452,
+      "shared_feature_examples": [
+        "c3:rtn",
+        "c4:artn",
+        "c4:part",
+        "c4:rtne"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:系 ",
+        "c3: ab",
+        "c3:bou",
+        "c3:ela"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:商务",
+        "c3: 商务",
+        "c3:s 商",
+        "c3:s 想"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 52,
+      "left_topic_id": "sys.personal_direction.personal_admin",
+      "right_topic_id": "sys.education_learning.academic_admin",
+      "lexical_score": 0.76908149,
+      "shared_feature_examples": [
+        "c2:事务",
+        "c3: ad",
+        "c3:dmi",
+        "c3:nis"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:理。",
+        "c2:统一",
+        "c2:要统",
+        "c2:证件"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:y;",
+        "c3:aca",
+        "c3:ade",
+        "c3:cad"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 53,
+      "left_topic_id": "sys.time_events.time_management",
+      "right_topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "lexical_score": 0.76380404,
+      "shared_feature_examples": [
+        "c3:gem",
+        "c4:agem",
+        "c4:e ma",
+        "c4:geme"
+      ],
+      "left_distinctive_feature_examples": [
+        "c3: al",
+        "c3: ti",
+        "c3:ges",
+        "c3:h d"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:kn",
+        "c2:wl",
+        "c2:可回",
+        "c2:查的"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 54,
+      "left_topic_id": "sys.communication_writing.email_messages",
+      "right_topic_id": "sys.time_events.time_management",
+      "lexical_score": 0.76344108,
+      "shared_feature_examples": [
+        "c3:ges",
+        "c3:sag",
+        "c3:ssa",
+        "c4: mes"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:件与",
+        "c2:信，",
+        "c2:房东",
+        "c2:消息"
+      ],
+      "right_distinctive_feature_examples": [
+        "c3: al",
+        "c3: ti",
+        "c3:gem",
+        "c3:h d"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 55,
+      "left_topic_id": "sys.ai_computing.data_systems",
+      "right_topic_id": "sys.science_technical.statistics_data_analysis",
+      "lexical_score": 0.75547632,
+      "shared_feature_examples": [
+        "c2:数据",
+        "c3:ata",
+        "c3:ta ",
+        "c4:ata "
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 数",
+        "c2:与信",
+        "c2:的清",
+        "c2:立可"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:想知",
+        "c2:知道",
+        "c2:还能",
+        "c3:a a"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 56,
+      "left_topic_id": "sys.personal_direction.personal_productivity",
+      "right_topic_id": "sys.ai_computing.networking_connectivity",
+      "lexical_score": 0.75415694,
+      "shared_feature_examples": [
+        "c4:vity",
+        "c3:vit",
+        "c4:ctiv",
+        "c4:ivit"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:才不",
+        "c2:换，",
+        "c2:时段",
+        "c2:每天"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 网",
+        "c2:排查",
+        "c2:正常",
+        "c2:经常"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 57,
+      "left_topic_id": "sys.home_daily.transportation_ownership",
+      "right_topic_id": "sys.travel_places.transport_travel",
+      "lexical_score": 0.74562098,
+      "shared_feature_examples": [
+        "c2:交通",
+        "c3:l t",
+        "c3:nsp",
+        "c4:ansp"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:kl",
+        "c2:yc",
+        "c2:具 ",
+        "c3: ag"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:以及",
+        "c2:有一",
+        "c2:转机",
+        "c3:rav"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 58,
+      "left_topic_id": "sys.home_daily.transportation_ownership",
+      "right_topic_id": "sys.time_events.plans_checklists",
+      "lexical_score": 0.73574367,
+      "shared_feature_examples": [
+        "c2:kl",
+        "c3:ckl",
+        "c3:kli",
+        "c4:ckli"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:yc",
+        "c2:交通",
+        "c2:具 ",
+        "c3: ag"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 计",
+        "c2:一份",
+        "c2:与清",
+        "c2:东西"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 59,
+      "left_topic_id": "sys.science_technical.computer_science",
+      "right_topic_id": "sys.science_technical.chemistry_materials",
+      "lexical_score": 0.73517708,
+      "shared_feature_examples": [
+        "c2:oe",
+        "c3:doe",
+        "c3:oes",
+        "c3:why"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 计",
+        "c2:e?",
+        "c2:科学",
+        "c2:计算"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:yc",
+        "c3: cy",
+        "c3:cyc",
+        "c3:es?"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 60,
+      "left_topic_id": "sys.creative_design.illustration_image_creation",
+      "right_topic_id": "sys.creative_design.creative_writing",
+      "lexical_score": 0.73161449,
+      "shared_feature_examples": [
+        "c4:crea",
+        "c2:作 ",
+        "c4:reat",
+        "c3: cr"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:创作",
+        "c2:统一",
+        "c2:要给",
+        "c2:要统"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:wr",
+        "c2:人物",
+        "c2:写作",
+        "c2:创意"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 61,
+      "left_topic_id": "sys.family_relationships.siblings",
+      "right_topic_id": "sys.health_wellbeing.mental_wellbeing",
+      "lexical_score": 0.72723393,
+      "shared_feature_examples": [
+        "c2:办法",
+        "c2:法。",
+        "c3:办法。",
+        "c2:想找"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:东西",
+        "c3:gs ",
+        "c3:ibl",
+        "c3:sib"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:定一",
+        "c2:情绪",
+        "c2:能让",
+        "c2:让我"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 62,
+      "left_topic_id": "sys.education_learning.language_learning",
+      "right_topic_id": "sys.communication_writing.speaking_conversation",
+      "lexical_score": 0.72148901,
+      "shared_feature_examples": [
+        "c2:表达",
+        "c4:peak",
+        "c4:spea",
+        "c2:gu"
+      ],
+      "left_distinctive_feature_examples": [
+        "c3:gua",
+        "c3:，怎么",
+        "c2:习 ",
+        "c2:日常"
+      ],
+      "right_distinctive_feature_examples": [
+        "c3: mi",
+        "c3:ake",
+        "c3:col",
+        "c3:def"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 63,
+      "left_topic_id": "sys.science_technical.mathematics",
+      "right_topic_id": "sys.science_technical.statistics_data_analysis",
+      "lexical_score": 0.72128101,
+      "shared_feature_examples": [
+        "c4:tics",
+        "c3:tic",
+        "c2:cs",
+        "c3:cs "
+      ],
+      "left_distinctive_feature_examples": [
+        "c2: 数",
+        "c2:一步",
+        "c2:不能",
+        "c2:直接"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2:想知",
+        "c2:数据",
+        "c2:知道",
+        "c2:还能"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    },
+    {
+      "rank": 64,
+      "left_topic_id": "sys.personal_direction.personal_productivity",
+      "right_topic_id": "sys.projects_products.product_strategy",
+      "lexical_score": 0.71548658,
+      "shared_feature_examples": [
+        "c3:uct",
+        "c4:duct",
+        "c2:uc",
+        "c3:duc"
+      ],
+      "left_distinctive_feature_examples": [
+        "c2:才不",
+        "c2:换，",
+        "c2:时段",
+        "c2:每天"
+      ],
+      "right_distinctive_feature_examples": [
+        "c2: 产",
+        "c2:定位",
+        "c2:略 ",
+        "c3: 产品"
+      ],
+      "resolver_status": "UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE",
+      "triad_evidence_count": 0
+    }
+  ]
+}
