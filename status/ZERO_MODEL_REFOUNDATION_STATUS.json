@@ -9,7 +9,7 @@
   "initial_engineering_main": "795efbee70edca496a0e67df6e593ab8b92944e4",
   "package_status": "DUAL_TRACK_DEVELOPMENT_AUTHORIZED",
   "active_round": "ZMR-01B",
-  "development_round": "ZMR-04",
+  "development_round": "ZMR-05",
   "engineering_status": "FOUNDATION_EXACT_HEAD_AND_MAIN_PASS",
   "data_qualification": "NOT_QUALIFIED",
   "capability_verdict": "UNTESTED",
@@ -55,7 +55,7 @@
   "real_archive_reads": 0,
   "new_semantic_api_calls": 0,
   "new_runtime_implemented": true,
-  "new_runtime_scope": "ZMR_02_ZMR_03_ROUTER_AND_ZMR_04_A5_DIAGNOSTIC_A6_ROUTER_DEVELOPMENT_ONLY",
+  "new_runtime_scope": "ZMR_02_ZMR_03_ROUTER_ZMR_04_A5_A6_AND_ZMR_05_C1_DEVELOPMENT_ONLY",
   "generation_limits": {
     "max_development_generations": 6,
     "max_candidates_per_generation": 6,
@@ -214,7 +214,7 @@
       "a3_provisional_disposition": "CURRENT_CONFIGS_REJECTED_NO_FAMILY_CEILING"
     },
     "ZMR-04": {
-      "execution_status": "DEV_IN_PROGRESS",
+      "execution_status": "DEV_DIAGNOSTIC_COMPLETE_NO_PROMOTION",
       "qualification_status": "NOT_ELIGIBLE",
       "family": "A4_A5_CONTRASTIVE_AND_STRUCTURAL",
       "candidate_writer_count": 1,
@@ -276,9 +276,26 @@
       "a356_role_slice_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "a3_fixed_configs_disposition": "REJECTED_PUBLIC_POINT_FAILURE_NO_FAMILY_CEILING",
       "a6_fixed_configs_disposition": "REJECTED_HYBRID_NO_GAIN_NO_FAMILY_CEILING",
+      "a6_repair_spent": 0,
+      "a6_component_disposition": "RETIRED_NO_ISOLATED_GAIN",
       "semantic_evaluations": 1,
       "as_consumed": 0
+    },
+    "ZMR-05": {
+      "execution_status": "DEV_ENGINEERING_IN_PROGRESS",
+      "qualification_status": "NOT_ELIGIBLE",
+      "family": "C1_SOURCE_SEPARATED_CONTEXT_EXPLICIT_MULTI",
+      "candidate_writer_count": 1,
+      "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "anchor": "A3_FULL144_CURRENT_ONLY",
+      "hypothesis": "EXPLICIT_CONTINUATION_AND_TWO_GOAL_SPLIT_CAN_ADD_SUPPORTED_OUTPUTS_WITHOUT_STALE_CONTEXT_OVERRIDE",
+      "engineering_unit_tests": 5,
+      "engineering_status": "SYNTHETIC_INDEX_ONLY_NO_SEMANTIC_EVALUATION",
+      "semantic_evaluations": 0,
+      "as_consumed": 0,
+      "stable_candidate": false,
+      "report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CONTEXT_MULTI_ENGINEERING_DEV.md"
     }
   },
-  "next_action": "Continue ZMR-04/ZMR-05 development after fixed public A3/A6 v0.4 failure: diagnose HYBRID_NO_GAIN and unsafe controls using non-consumed development material, attempt at most two explained mechanism repairs on a changed closure and fresh public cohorts, then eliminate the no-gain component and move to a distinct zero-model family or context/multi-intent mechanism. Do not rerun the consumed v0.4 evaluation key or use v0.2/v0.3 keys; A4 lexical pairs stay unactivated without triad evidence. Independent ZMR-01B remains NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; writer data are NON_INDEPENDENT_DEVELOPMENT_EVIDENCE and AS/final/consumed TEST remain inaccessible."
+  "next_action": "Continue ZMR-05 C1 development: create fresh public same-writer context-required/invariance/multi/control challenge and a fresh full144 single-intent challenge, screen exact/near overlap and record provenance/lineage; keep UNRUN until C1 plus A3 anchor closure, fixed thresholds, scorer and one new evaluation key are registered. Use no consumed v0.2/v0.3/v0.4 key or AS/final/consumed TEST. Diagnose controls and context/multi mechanisms on fresh evidence, at most two explained repairs per candidate, then reject or continue according to CAPABILITY_LADDER. A6 focused-goal stage is retired with zero repair spent after no isolated gain; A4 lexical pairs stay unactivated without triad evidence. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
 }
