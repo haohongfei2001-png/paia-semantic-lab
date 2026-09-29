@@ -1,0 +1,9 @@
+# ZMR-04 fresh public safety v0.2 — development intake
+
+This batch adds 48 new public safety scenarios: 12 insufficient-evidence controls, 12 context-required pairs, 12 context-invariance pairs and 12 two-intent cases. Each layer has four zh, four en and four mixed rows. Paired variants remain within their scenario lineage and never count as separate independent cases. The new layer broadens old-title conflict, missing referent, missing attachment, booking, legal/consumer, science, design, business and archive mechanisms.
+
+All rows carry the pinned Catalog digest, original candidate-writer source/license declaration, scenario/template lineage and unreviewed provisional labels. Mechanical intake tests enforce layer structure, zero exact bundle/current NFKC overlap and no character-trigram Jaccard >=0.55 against prior public development rows and within this cohort. These screens pass; they do not establish semantic correctness, independent source diversity or reviewer agreement. Control DEFER choices and two-Topic boundaries still need independent adjudication.
+
+The same candidate writer authored these public rows after earlier diagnostics. `evaluation_status=UNRUN`, evidence is `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`, and independent qualification credit is zero. Together with v0.1 the public development material has 24 controls, 18 context-required pairs, 18 context-invariance pairs and 24 multi-intent rows, still below the DATA_PROTOCOL qualification minima and without independent cohorts. No predictions or safety scores have been generated. ZMR-01B remains `NOT_QUALIFIED`; capability `UNTESTED`; resources `NOT_QUALIFIED`.
+
+Next register changed A3/A5/A6 closures, fixed configurations, scorer and one evaluation key before a single public comparison that includes the frozen role slice. Preserve unchanged 144 Topic, precision, coverage, safety and resource limits. Do not use consumed v0.2/v0.3 keys or AS/final/consumed TEST.
