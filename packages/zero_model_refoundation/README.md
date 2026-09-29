@@ -32,3 +32,12 @@ node packages/zero_model_refoundation/a1_compile.mjs char
 ```
 
 `a1_dev_eval.mjs` is a same-writer diagnostic for a changed development closure, not a CI step or capability test; consult `ZMR-02_A1_DEV.md` for its first exposed result. The fixed compiler now reads only `provisional_train_v0.2.json`, which provides one writer-authored scenario per all 144 Topics; v0.1 remains an immutable public seed. The old v0.1 challenge is exposed and can only serve regression. These public provisional data files cannot satisfy independent TRAIN/DEV/AS quotas. The compiler never reads challenge content. The 6,000-feature char cap keeps this larger provisional index under the unchanged 1 MiB limit; static bytes are not a browser resource qualification.
+
+ZMR-03's unscored A2 engineering challenger is in `a2.mjs`, with an offline TRAIN-only compiler in `a2_compile.mjs`. Its smoothed class-vs-complement term evidence is finite and interpretable; it has no neural model, embedding, LLM or semantic API. The additional synthetic engineering units run with:
+
+```sh
+node --test packages/zero_model_refoundation/a2.test.mjs
+node packages/zero_model_refoundation/a2_compile.mjs char
+```
+
+The compiler's default output is a generated local artifact, not a tracked capability result. No A2 semantic comparison, browser resource qualification or independent evaluation is recorded. See `ZMR-03_A2_ENGINEERING_DEV.md`.

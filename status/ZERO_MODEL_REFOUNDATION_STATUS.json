@@ -9,7 +9,7 @@
   "initial_engineering_main": "795efbee70edca496a0e67df6e593ab8b92944e4",
   "package_status": "DUAL_TRACK_DEVELOPMENT_AUTHORIZED",
   "active_round": "ZMR-01B",
-  "development_round": "ZMR-02",
+  "development_round": "ZMR-03",
   "engineering_status": "FOUNDATION_EXACT_HEAD_AND_MAIN_PASS",
   "data_qualification": "NOT_QUALIFIED",
   "capability_verdict": "UNTESTED",
@@ -128,7 +128,23 @@
       },
       "provisional_train_source_cohorts": 0,
       "full144_train_report": "docs/zero-model-refoundation-v1/ZMR-02_FULL144_DEV_TRAIN.md"
+    },
+    "ZMR-03": {
+      "execution_status": "DEV_IN_PROGRESS",
+      "qualification_status": "NOT_ELIGIBLE",
+      "family": "A2_COMPILED_LIKELIHOOD",
+      "candidate_writer_count": 1,
+      "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "independent_train_rows": 0,
+      "ordinary_dev_full144": false,
+      "cal_full144": false,
+      "challenge_full144": false,
+      "a2_stable_candidate": false,
+      "semantic_evaluations": 0,
+      "as_consumed": 0,
+      "report": "docs/zero-model-refoundation-v1/ZMR-03_A2_ENGINEERING_DEV.md"
     }
   },
-  "next_action": "Continue ZMR-02: create separately versioned writer-visible ordinary DEV/TUNE, DEV/CAL and challenge with full144 Topic coverage and lineage; run only changed-closure provisional diagnostics, then bounded A1 repair/elimination and A2/A3. Independent ZMR-01B TRAIN/DEV/AS remain 0 accepted and NOT_QUALIFIED; no capability/resource PASS, AS/final, or consumed TEST access."
+  "next_action": "Continue development data intake: separately versioned writer-visible ordinary DEV/TUNE, DEV/CAL and challenge with full144 Topic coverage, distinct scenario/template lineages, then one changed-closure provisional A1/A2 comparison and bounded repair/elimination before A3/A4. A2 is engineering-only and unscored; independent ZMR-01B remains NOT_QUALIFIED with 0 accepted rows. Verify latest exact-main CI/receipt before next remote batch; no AS/final/consumed TEST access."
 }
