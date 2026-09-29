@@ -1,0 +1,7 @@
+# ZMR-05 fresh public challenge v0.5 — part 2 intake
+
+Part 2 adds one original provisional single-intent row for formal Topics 49–96: AI/computing, finance/purchases, home/daily life, travel/places, media/culture and communication/writing. Parts 1–2 cover 96 of 144 Topics with 48 zh, 33 en and 15 mixed requests. All rows retain the pinned Catalog digest, original candidate-writer source/license declaration, per-scenario lineage and unreviewed provisional labels.
+
+Mechanical screening finds zero exact bundle/current NFKC duplicates and zero character-trigram Jaccard flags at 0.55 against earlier public development rows and within the 96-row v0.5 cohort. The formal-name echo screen stays below the ten percent intake ceiling. This is an intake screen, not independent source, semantic gold or natural-expression evidence. The same candidate writer authored every row after C1 engineering; the entire file remains `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE` with zero qualification credit.
+
+Status is `PARTIAL96_PUBLIC_DEV_UNRUN`: **48 Topics still lack a v0.5 row**. No predictions, evaluation key or candidate comparison have been produced. Add Topics 97–144 and freeze the complete cohort before a single registered C1/A3 public comparison that also includes fresh safety v0.3. ZMR-01B remains `NOT_QUALIFIED`, capability `UNTESTED`, resources `NOT_QUALIFIED`; all product hard constraints and TEST boundaries remain unchanged.
