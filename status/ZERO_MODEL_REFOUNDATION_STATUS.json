@@ -143,8 +143,17 @@
       "a2_stable_candidate": false,
       "semantic_evaluations": 0,
       "as_consumed": 0,
-      "report": "docs/zero-model-refoundation-v1/ZMR-03_A2_ENGINEERING_DEV.md"
+      "report": "docs/zero-model-refoundation-v1/ZMR-03_A2_ENGINEERING_DEV.md",
+      "ordinary_tune_rows": 144,
+      "ordinary_tune_topics": 144,
+      "ordinary_tune_language_counts": {
+        "zh": 90,
+        "en": 36,
+        "mixed": 18
+      },
+      "ordinary_tune_independent_source_cohorts": 0,
+      "ordinary_tune_report": "docs/zero-model-refoundation-v1/ZMR-03_TUNE144_DEV.md"
     }
   },
-  "next_action": "Continue development data intake: separately versioned writer-visible ordinary DEV/TUNE, DEV/CAL and challenge with full144 Topic coverage, distinct scenario/template lineages, then one changed-closure provisional A1/A2 comparison and bounded repair/elimination before A3/A4. A2 is engineering-only and unscored; independent ZMR-01B remains NOT_QUALIFIED with 0 accepted rows. Verify latest exact-main CI/receipt before next remote batch; no AS/final/consumed TEST access."
+  "next_action": "Continue ZMR-03 development: author separately versioned writer-visible full144 DEV/CAL and challenge with new concrete scenario/template lineages; validate pre-prediction metadata, then run one changed-closure provisional A1/A2 comparison and bounded repair/elimination before A3/A4. The existing 144-row TUNE is same-writer, public and unreviewed; independent ZMR-01B remains NOT_QUALIFIED with zero accepted rows. No AS/final/consumed TEST access or capability/resource PASS claim."
 }
