@@ -1,0 +1,52 @@
+{
+  "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+  "protocol_version": "1.0.0",
+  "evidence_boundary": "ZMR-EB-001",
+  "canonical_source": "REMOTE_MAIN",
+  "baseline_main": "c98e65cfcddac138fad4d7368849638ff5478543",
+  "package_status": "REFOUNDATION_REGISTRATION",
+  "active_round": "ZMR-00",
+  "engineering_status": "PENDING_EXACT_HEAD_MAIN_CI",
+  "data_qualification": "NOT_REGISTERED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "product_contract": {
+    "topic_count": 144,
+    "single_precision_min": 0.95,
+    "single_coverage_min": 0.70,
+    "full144_macro_recall_min": 0.70,
+    "control_false_assignment_max": 0.02,
+    "context_harm_max": 0,
+    "neural_assets_bytes_max": 0,
+    "semantic_network_calls_max": 0,
+    "index_bytes_max": 1048576,
+    "router_plus_index_bytes_max": 2097152,
+    "incremental_memory_bytes_max": 33554432,
+    "warm_p95_ms_max": 20,
+    "cold_init_ms_max": 100,
+    "local_first": true,
+    "browser_js": true
+  },
+  "historical_pins": {
+    "catalog/system_topic_catalog_v0.2.yaml": "6bcdd2af66879d7ac098cf237b5586c3c9818aad",
+    "status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml": "2eada9313f99d23811f11e735267aa927b9bfba4",
+    "docs/compositional-intent-graph-v1/CIG-03_CLOSURE.md": "73dabf258d6b78fd4932b2ca0d3366ffdd026fe1"
+  },
+  "prior_cig_v1": "PUBLIC_COMPLETE_FAIL",
+  "prior_cig04": "BLOCKED",
+  "consumed_test_content_reads": 0,
+  "consumed_test_replays": 0,
+  "future_final_test_created": false,
+  "future_final_test_execution_authorized": false,
+  "production_paia_modified": false,
+  "real_archive_reads": 0,
+  "new_semantic_api_calls": 0,
+  "new_runtime_implemented": false,
+  "generation_limits": {"max_development_generations": 6, "max_candidates_per_generation": 6, "max_stable_configs_per_generation": 12, "max_semantic_repairs_per_candidate": 2, "max_as_batches_per_generation": 1, "max_final_major_generation_slots": 3},
+  "rounds": {
+    "ZMR-00": {"execution_status": "IN_PROGRESS", "scope": "DESIGN_AND_CANONICAL_REGISTRATION", "merge_verification": "EXACT_HEAD_AND_MAIN_REQUIRED"},
+    "ZMR-01A": {"execution_status": "READY_AFTER_ZMR00_MAIN_VERIFIED", "scope": "METADATA_METRIC_BUDGET_ENGINEERING_ONLY"},
+    "ZMR-01B": {"execution_status": "NOT_STARTED", "independent_cohorts": "NOT_PROVISIONED"}
+  },
+  "next_action": "Verify ZMR-00 exact-head CI, merge, reread remote main and verify applicable exact-main CI; only then start ZMR-01A minimal non-semantic engineering. Do not create final TEST, read consumed TEST or implement a semantic router before the data/evidence foundation."
+}
