@@ -52,6 +52,8 @@ Package: `PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1`（ZMR）；protocol `1.0.0
 | ZMR-07 | 未来 fresh independent final blind TEST | 另有执行权限且 freeze 后独立 curator 创作；本轮只设计 |
 | ZMR-08 | 资格报告/停止结论/仅研究 handoff | 科学 verdict 与浏览器资源证据齐备；仍不集成生产 |
 
+Owner 2026-09-29 standing authorization 将此表的“进入下一阶段”限定为**资格晋级**，另允许非独立 development track 在 ZMR-01B 未合格时持续实现和比较 ZMR-02–06。开发轨可以使用 writer-created/provisional TRAIN、DEV、challenge 与 Topic boundary，但必须标记 `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`，不能抵扣独立数据配额、声称 capability PASS 或形成 ceiling。见 EXECUTION_PROTOCOL 的最新授权段；产品全部硬约束和 AS/final 隔离不变。
+
 完整逐阶段 hypothesis、数据、指标、预算、repair allowance、failure class 和 stop rule 见 CAPABILITY_LADDER。ZMR-02 至 ZMR-05 是可并行比较的机制工作流，但只有一个实现 writer；不因阶段编号而强制给前一架构补规则。能力未过关的候选可被淘汰，算法族可以更换；产品 promotion 不可跳门。
 
 ## 5. 研究规模约束

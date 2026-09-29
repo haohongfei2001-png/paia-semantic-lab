@@ -8,6 +8,16 @@ Authority：本 package 的 DEVELOPMENT_PLAN、EVIDENCE_BOUNDARY、canonical `st
 
 “自动继续”是当前有执行能力的工作会话内的规则，不是后台任务承诺。会话/工具执行中断时留下可恢复 checkpoint 和下一安全动作，不伪报还在后台运行。工具缺少真正隔离 curator 能力时标记 INDEPENDENCE_NOT_PROVISIONED，继续不依赖该能力的工程；不得用同会话 self-author 伪造独立性。
 
+### Owner standing authorization — 2026-09-29
+
+Owner 现授权 ZMR 在连续 unattended Work 回合中默认推进，不以普通代码、测试、CI、性能、数据数量/质量、fixture、统计实现、算法失败或 merge 问题请求决策。当前 writer 自行诊断、有限修复、淘汰候选、切换预登记的下一家族/有互补证据的 hybrid。CI 异步时做可独立工作；没有独立工作时回合可自然结束，下一次从 remote main 的唯一 STATUS 恢复。此授权不承诺会话结束后仍有后台进程。
+
+**开发轨与资格轨分离。** Candidate writer 可自行创建与标注新的 TRAIN、ordinary DEV、challenge DEV、provisional Topic boundary，用于 zero-model Router 的持续开发、诊断、消融与资源优化。凡作者/来源/双审/隔离未满足 DATA_PROTOCOL 者一律记为 `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`，保留来源、lineage、暴露和版本，不计入 01B 的 independent quotas，不用作 sealed AS/final，不宣称 capability PASS 或 saturation ceiling。开发轨可在 01B 数据资格未通过时启动 ZMR-02，并沿 ZMR-03→04→05→06 的算法工作流前进；每一阶段的**资格晋级**仍须 CAPABILITY_LADDER、DATA_PROTOCOL 和 EVALUATION_PROTOCOL 的独立 full144、可靠性、资源、安全门。AS/最终 TEST 的内容、隔离和消费规则不变。开发用全 144 正式 Catalog 作为输出宇宙；某类缺少合格 gold 时报告缺口，不缩小分母或暗称覆盖。
+
+每个稳定开发候选仍登记假设、固定 anchor、配置/repair 额度、closure、静态预算、允许数据与暴露，按“诊断→最多两次有解释的语义修复→有限再评估→淘汰或保留→下一家族”执行。非独立 DEV 不可替代 AS，不能用它证明 95%/70% capability floor；无独立 AS 时只冻结 qualification path，继续非依赖开发轨。不得通过反复重跑 unchanged evaluation key 或增加模板来伪造新一代。最终 TEST 不因本授权自动 arm。
+
+真正 hard stop 仅限新外部账号/权限/隐私授权、付费、真实用户或 PAIA production 数据、修改产品硬约束、不可逆外部动作、或 canonical 明确需要 owner 选择的互斥产品方向。即使发生也只冻结依赖该决定的路径；其余已授权工作继续。144 Topic、70% coverage/macro floor、95% assigned precision、安全门、全部现有资源预算、0 neural/embedding/LLM/semantic API、local-first、旧 TEST 禁读/禁重跑均保持。此段取代本协议和 DEVELOPMENT_PLAN 中“01B 未独立合格就不得开始 Router 开发”的旧执行顺序，不改变资格门槛。
+
 ## 2. 每个 coherent batch
 
 1. 重读 remote main、ZMR STATUS、当前 stage gate、相关改动文件；以明确路径/ref读取，禁止全仓库全文搜索、clone、历史 packet/生成器/逐题日志读取。
@@ -33,7 +43,7 @@ stable配置定义：依赖闭包可重建、语法/单元通过、TRAIN/DEV权�
 
 语法、打包、trigger、schema、脚本路径、依赖固定和普通集成失败：自动修，保留失败run，证明无sealed数据接触；不得将工程失败改写成科学PASS。语义修复：每候选最多两次、只针对允许的公开DEV机制；超限淘汰。更换预登记候选、简化组件、放弃无增益的family无需owner选参数。
 
-达到重大fork才暂停寻求owner：新增权限/连接、隐私或真实生产数据访问、付费/新成本承诺、改变zero-model/local-first/144 Topic/70% floor/预算/正式Catalog、以及两条互斥产品方向确需owner选择。最终TEST从protocol进入执行也需要新明确权限。没有数据和没有独立curator是具体能力阻碍，应如实记录并继续可做的公开工程，不要求owner反复做语义标签。
+达到重大fork才暂停所依赖路径并寻求owner：新增权限/连接、隐私或真实生产数据访问、付费/新成本承诺、不可逆外部动作、改变zero-model/local-first/144 Topic/70% floor/预算/正式Catalog、以及两条互斥产品方向确需owner选择。最终TEST从protocol进入执行也需要新明确权限。没有独立数据和curator只阻断资格路径；开发轨持续使用明确标记的非独立证据，不要求owner反复做语义标签。
 
 证据泄漏或消费后崩溃不可当普通repair：立即封存该packet，按EVIDENCE_BOUNDARY记录INVALID_EVIDENCE或CONSUMED_EXECUTION_FAILURE；不复述泄漏内容，不回流TRAIN。其它未受影响工作可继续；需要新权限时才交owner。
 
