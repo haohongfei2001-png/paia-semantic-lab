@@ -27,7 +27,7 @@ jobs:
             }
             const before = await tree(base), after = await tree(head);
             const changed = [...new Set([...before.keys(), ...after.keys()])].filter(p => before.get(p) !== after.get(p));
-            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
+            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p.startsWith('data/zero_model_refoundation/development/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
             const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
             const hasZmr = changed.some(zmr);
             if (hasZmr && !changed.every(p => zmr(p) || shared.has(p))) throw Error('mixed ZMR/legacy batch: split the changes; do not read legacy fixtures');

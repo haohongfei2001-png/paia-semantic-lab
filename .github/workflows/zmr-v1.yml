@@ -6,6 +6,7 @@ on:
       - 'docs/zero-model-refoundation-v1/**'
       - 'status/ZERO_MODEL_REFOUNDATION_STATUS.json'
       - 'packages/zero_model_refoundation/**'
+      - 'data/zero_model_refoundation/development/**'
       - '.github/workflows/zmr-v1.yml'
       - '.github/workflows/semantic-lab-ci.yml'
       - 'README.md'
@@ -16,6 +17,7 @@ on:
       - 'docs/zero-model-refoundation-v1/**'
       - 'status/ZERO_MODEL_REFOUNDATION_STATUS.json'
       - 'packages/zero_model_refoundation/**'
+      - 'data/zero_model_refoundation/development/**'
       - '.github/workflows/zmr-v1.yml'
       - '.github/workflows/semantic-lab-ci.yml'
       - 'README.md'
@@ -49,13 +51,14 @@ jobs:
             }
             const before = await tree(base), after = await tree(head);
             const changed = [...new Set([...before.keys(), ...after.keys()])].filter(p => before.get(p)?.sha !== after.get(p)?.sha || before.get(p)?.mode !== after.get(p)?.mode);
-            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
+            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p.startsWith('data/zero_model_refoundation/development/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
             const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
             assert(changed.every(p => zmr(p) || shared.has(p)), 'mixed legacy batch forbidden');
-            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES', 'ZMR-01A_ENGINEERING', 'ZMR-01A_PRECISION_GUARD_CORRECTION', 'ZMR-01A_FOUNDATION_COMPLETION', 'ZMR-01B_ANNOTATION_GUIDELINE', 'ZMR-01B_READINESS'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
+            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES', 'ZMR-01A_ENGINEERING', 'ZMR-01A_PRECISION_GUARD_CORRECTION', 'ZMR-01A_FOUNDATION_COMPLETION', 'ZMR-01B_ANNOTATION_GUIDELINE', 'ZMR-01B_READINESS', 'ZMR-02_A1_DEV'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
             const statusPath = 'status/ZERO_MODEL_REFOUNDATION_STATUS.json';
-            const engineering = ['contracts.mjs', 'contracts.test.mjs', 'scoring.mjs', 'intake.mjs', 'fingerprints.mjs', 'uncertainty.mjs', 'ledger.mjs', 'foundation.test.mjs'].map(n => 'packages/zero_model_refoundation/' + n);
-            const allowed = new Set([...docs, statusPath, ...engineering]);
+            const engineering = ['contracts.mjs', 'contracts.test.mjs', 'scoring.mjs', 'intake.mjs', 'fingerprints.mjs', 'uncertainty.mjs', 'ledger.mjs', 'foundation.test.mjs', 'a1.mjs', 'a1_compile.mjs', 'a1_dev_eval.mjs', 'a1.test.mjs'].map(n => 'packages/zero_model_refoundation/' + n);
+            const development = ['catalog/system_topic_catalog_v0.2.yaml', 'data/zero_model_refoundation/development/provisional_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.1.json'];
+            const allowed = new Set([...docs, statusPath, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -81,7 +84,9 @@ jobs:
             assert.equal(s.production_paia_modified, false); assert.equal(s.real_archive_reads, 0);
             const present = engineering.filter(p => after.has(p));
             assert(present.length === 0 || present.length === engineering.length, 'partial engineering module');
-            for (const p of present) {
+            const inputs = development.filter(p => after.has(p));
+            assert(inputs.length === 0 || inputs.length === development.length, 'partial development input set');
+            for (const p of [...present, ...inputs]) {
               const bytes = await read(p);
               const target = path.join(process.env.GITHUB_WORKSPACE, p);
               fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
@@ -92,4 +97,4 @@ jobs:
         if: steps.safe.outputs.engineering == 'true'
         run: |
           for file in packages/zero_model_refoundation/*.mjs; do node --check "$file"; done
-          node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs
+          node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs packages/zero_model_refoundation/a1.test.mjs
