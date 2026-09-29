@@ -1,0 +1,89 @@
+{
+  "schema": "ZMR-A12-CHALLENGE-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_CHALLENGE_V02",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "0f31c33a3b78287c20011a8e5eb40017ab7285a3e06c506fa6b96b2b4f4e43f4",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "1eec9f8d32c2ce10ef96d6a9e1e72371ea073e6cf33a9c1e05b629d88987fcac",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "998dd508888a153bca9021727d84fcef27cb0da2d0830f3555983b5fb357eb22",
+    "scorer_sha256": "c2b11ea43d4741939176215e00d31779c5994bee7c345cbfe5c8b76d16105209"
+  },
+  "evaluation_key": "34401a17e57c2ce84c45aebf5561d82785e1d446b52eebc9f3e3af88fa0246ed",
+  "configs": [
+    {
+      "id": "A0_all_defer",
+      "family": "A0"
+    },
+    {
+      "id": "A0_name_only",
+      "family": "A0"
+    },
+    {
+      "id": "A1_char_tfidf",
+      "family": "A1",
+      "mode": "char",
+      "method": "tfidf",
+      "min_score": 0.15,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A1_char_bm25",
+      "family": "A1",
+      "mode": "char",
+      "method": "bm25",
+      "min_score": 1,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A1_word_tfidf",
+      "family": "A1",
+      "mode": "word",
+      "method": "tfidf",
+      "min_score": 0.15,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A1_word_bm25",
+      "family": "A1",
+      "mode": "word",
+      "method": "bm25",
+      "min_score": 1,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A2_char",
+      "family": "A2",
+      "mode": "char",
+      "alpha": 0.5,
+      "min_score": 0,
+      "min_margin": 0.5
+    },
+    {
+      "id": "A2_word",
+      "family": "A2",
+      "mode": "word",
+      "alpha": 0.5,
+      "min_score": 0,
+      "min_margin": 0.5
+    }
+  ],
+  "limits": {
+    "topic_count": 144,
+    "single_precision_min": 0.95,
+    "single_coverage_min": 0.7,
+    "full144_macro_recall_min": 0.7
+  },
+  "no_calibration": true,
+  "independent_rows": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "as_consumed": 0
+}
