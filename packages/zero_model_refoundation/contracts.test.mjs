@@ -106,3 +106,12 @@ test('prediction schema, unknown and duplicate labels fail closed', () => {
   }
   assert.throws(() => singlePointMetrics([{gold:'unknown',prediction:defer()}],ids));
 });
+
+test('mixed correct singles and mass over-assignment cannot hide in precision denominator', () => {
+  const mixed = ids.flatMap(id => [0,1,2,3].map(i => ({gold:id, prediction:{state:'ASSIGNED',topics:i<3?[id]:ids}})));
+  const r=singlePointMetrics(mixed,ids);
+  assert.equal(r.strict_single_precision,1); assert.equal(r.assigned_precision,0.75);
+  assert.equal(r.single_coverage,0.75); assert.equal(r.full144_macro_recall,0.75);
+  assert.equal(r.any_assigned,576); assert.equal(r.single_point_gates,false);
+  assert.equal(r.certification_allowed,false);
+});

@@ -116,13 +116,15 @@ export function singlePointMetrics(rows, ids) {
     }
   }
   const missing = ids.filter(id => counts.get(id).gold === 0);
-  const precision = assigned ? correct / assigned : null;
+  // All non-DEFER rows enter precision, including invalid over-assignment.
+  const precision = anyAssigned ? correct / anyAssigned : null;
   const coverage = rows.length ? assigned / rows.length : 0;
   const macro = [...counts.values()].reduce((s, c) => s + (c.gold ? c.correct / c.gold : 0), 0) / 144;
   return {
     classification: 'POINT_METRICS_ONLY_NOT_CAPABILITY', certification_allowed: false,
     data_status: rows.length && !missing.length ? 'SINGLE_UNIVERSE_PRESENT_ONLY' : 'DATA_INSUFFICIENT',
-    total: rows.length, assigned, correct, deferred: rows.length - anyAssigned,
+    total: rows.length, assigned, any_assigned: anyAssigned, correct, deferred: rows.length - anyAssigned,
+    strict_single_precision: assigned ? correct / assigned : null,
     missing_topics: missing, assigned_precision: precision, single_coverage: coverage,
     any_assignment_coverage: rows.length ? anyAssigned / rows.length : 0,
     full144_macro_recall: macro, unsupported_labels: unsupported,
