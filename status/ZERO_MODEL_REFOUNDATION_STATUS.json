@@ -446,8 +446,21 @@
       "a4_pair_veto_runtime_plus_total_index_bytes": 143652,
       "a4_pair_veto_semantic_evaluations": 0,
       "a4_pair_veto_resource_verdict": "NOT_QUALIFIED",
-      "a4_development_resolver_implemented": true
+      "a4_development_resolver_implemented": true,
+      "a4_fresh_challenge_v01_rows": 32,
+      "a4_fresh_challenge_v01_pair_labeled_rows": 16,
+      "a4_fresh_challenge_v01_ambiguous_unscored_rows": 4,
+      "a4_fresh_challenge_v01_control_rows": 12,
+      "a4_fresh_challenge_v01_independent_rows": 0,
+      "a4_fresh_challenge_v01_language_counts": {
+        "zh": 19,
+        "en": 13,
+        "mixed": 0
+      },
+      "a4_fresh_challenge_v01_evaluation_status": "UNRUN",
+      "a4_fresh_challenge_v01_data": "data/zero_model_refoundation/development/provisional_a4_challenge_v0.1.json",
+      "a4_fresh_challenge_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A4_FRESH_CHALLENGE_V01_INTAKE.md"
     }
   },
-  "next_action": "Freeze fresh public same-writer A4 challenge and safety data after the bounded pairwise negative-evidence veto engineering closure. The A4 compiler reads only pinned Catalog, Catalog-derived graph and designated A4 TRAIN v0.1; full144 A3 fallback remains, no pair may create a new assignment, conflicting/opposite evidence can only DEFER. Do not evaluate on consumed A4 triad v0.1 or any other consumed public key, CIG-v1 TEST, AS or final/consumed TEST. New challenge should include selected pair positive/negative cases, unresolved ambiguous cases kept unscored until review, and no-request controls with clear gold; provenance, lineage, source/license and overlap screened. Then register one paired A3 versus A4 comparison with deletion ablation and aggregate safety/coverage counts; if no isolated safety-preserving gain, eliminate the component automatically. Same-writer development evidence is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE with zero ZMR-01B quota; capability UNTESTED, resources NOT_QUALIFIED. Preserve full144, 95% precision, 70% coverage/macro, safety, budgets, local-first and zero neural/embedding/LLM/semantic API."
+  "next_action": "Register and execute one fixed paired A3-char versus bounded A4 negative-evidence veto comparison on freshly frozen public A4 focused challenge v0.1 (16 candidate-writer provisional labeled pair rows, four unresolved ambiguous unscored rows, 12 provisional no-request controls). A3 is the deletion ablation. Report only aggregate correct/assigned, control false-assignment, ambiguous assignment and coverage-loss counts; retain no row-level predictions. Do not tune or rerun the consumed A4 triad diagnostic, A7 DEV, v0.2-v0.6 public challenge/safety keys, CIG-v1 consumed TEST, AS or final/consumed TEST. If A4 lacks isolated safety-preserving gain, eliminate automatically and advance next candidate. This focused same-writer cohort is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, zero independent quota; 144 Topic, 95% assigned precision, 70% coverage/macro, safety, budgets, local-first and zero neural/embedding/LLM/semantic API stay fixed. ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED."
 }
