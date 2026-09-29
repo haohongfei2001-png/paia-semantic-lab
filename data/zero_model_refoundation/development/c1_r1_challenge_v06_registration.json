@@ -1,0 +1,104 @@
+{
+  "schema": "ZMR-C1-R1-CHALLENGE-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_FIRST_REPAIR_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_C1_R1_CHALLENGE_V06",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "97444a573081f8e2d6215775a2d41f8ad76ab072f85c832d4c2e9238a7f07457",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "9e3ac9568c02a086bc69fa16c3ba7965605b605a80d00962e5a077cd03c29553",
+    "scorer_sha256": "8a92f6360c3ea0817d91e82a790b9907ea2c7603b86f79658d8f1cb7192e0454"
+  },
+  "evaluation_key": "eb4c0b157c9a70104f8290df53981120a26294a00172c5c39bed7bda2a50e394",
+  "configs": [
+    {
+      "id": "A0_all_defer",
+      "family": "A0"
+    },
+    {
+      "id": "A3_char_fixed",
+      "family": "A3",
+      "mode": "char",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "C1_char_fixed",
+      "family": "C1",
+      "mode": "char",
+      "min_score": 0.02,
+      "min_margin": 0.02,
+      "context_min_score": 0.08,
+      "context_min_margin": 0.05,
+      "multi_min_score": 0.08,
+      "multi_min_margin": 0.05
+    },
+    {
+      "id": "C1R1_char_fixed",
+      "family": "C1R1",
+      "mode": "char",
+      "min_score": 0.02,
+      "min_margin": 0.02,
+      "context_min_score": 0.08,
+      "context_min_margin": 0.05,
+      "multi_min_score": 0.08,
+      "multi_min_margin": 0.05
+    },
+    {
+      "id": "A3_word_fixed",
+      "family": "A3",
+      "mode": "word",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "C1_word_fixed",
+      "family": "C1",
+      "mode": "word",
+      "min_score": 0.02,
+      "min_margin": 0.02,
+      "context_min_score": 0.08,
+      "context_min_margin": 0.05,
+      "multi_min_score": 0.08,
+      "multi_min_margin": 0.05
+    },
+    {
+      "id": "C1R1_word_fixed",
+      "family": "C1R1",
+      "mode": "word",
+      "min_score": 0.02,
+      "min_margin": 0.02,
+      "context_min_score": 0.08,
+      "context_min_margin": 0.05,
+      "multi_min_score": 0.08,
+      "multi_min_margin": 0.05
+    }
+  ],
+  "cohorts": [
+    "data/zero_model_refoundation/development/provisional_challenge_v0.6.json",
+    "data/zero_model_refoundation/development/provisional_safety_seed_v0.4.json"
+  ],
+  "limits": {
+    "topic_count": 144,
+    "single_precision_min": 0.95,
+    "single_coverage_min": 0.7,
+    "full144_macro_recall_min": 0.7,
+    "control_false_assignment_max": 0.02,
+    "context_harm_max": 0,
+    "context_required_exact_min": 0.7,
+    "multi_exact_set_min": 0.7,
+    "multi_set_precision_min": 0.95
+  },
+  "no_calibration": true,
+  "independent_rows": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "as_consumed": 0
+}
