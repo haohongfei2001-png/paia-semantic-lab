@@ -1,0 +1,225 @@
+{
+  "schema": "ZMR-A6-R1-REPAIR-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "cohort": "data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json",
+  "cohort_sha256": "7d9badca1d8ea117f902742603a39a4ce6324d46f4ec0e63661d1fc50f04ac91",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+  "a6_r1_module_sha256": "90db42bf0862f2b4832e3c4056bf94cb2c327f3b54405255cf7ee85779ec6d0c",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "topic_universe": 144,
+  "fixed_config_count": 4,
+  "labeled_rows": 20,
+  "control_rows": 12,
+  "ambiguous_unscored_rows": 4,
+  "builds": {
+    "a3_index_bytes": 114123,
+    "a2_index_bytes": 206821
+  },
+  "results": {
+    "A3": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 5,
+          "exact": 1
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 7,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 12,
+      "labeled_exact": 2,
+      "labeled_wrong": 10,
+      "provisional_exact_set_precision": 0.16666666666666666,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A2": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 4,
+          "exact": 2
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 4,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 2
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 8,
+      "labeled_exact": 4,
+      "labeled_wrong": 4,
+      "provisional_exact_set_precision": 0.5,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A6": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 4,
+          "exact": 1
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 2,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 11,
+      "labeled_exact": 2,
+      "labeled_wrong": 9,
+      "provisional_exact_set_precision": 0.18181818181818182,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A6_R1": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 3,
+          "exact": 2
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 1,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 2
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 6,
+      "labeled_exact": 5,
+      "labeled_wrong": 1,
+      "provisional_exact_set_precision": 0.8333333333333334,
+      "context_removal_output_changes": 4,
+      "deterministic_repeat_differences": 0
+    }
+  },
+  "paired": {
+    "A6_R1_vs_A2": {
+      "labeled_exact_gained": 2,
+      "labeled_exact_lost": 1,
+      "wrong_avoided_by_defer": 3,
+      "wrong_added": 0,
+      "controls_false_avoided": 3,
+      "controls_false_added": 0,
+      "context_exact_gained": 2,
+      "multi_exact_gained": 0
+    },
+    "A6_R1_vs_A6": {
+      "labeled_exact_gained": 3,
+      "labeled_exact_lost": 0,
+      "wrong_avoided_by_defer": 9,
+      "wrong_added": 1,
+      "controls_false_avoided": 1,
+      "controls_false_added": 0,
+      "context_exact_gained": 2,
+      "multi_exact_gained": 0
+    },
+    "A6_R1_vs_A3": {
+      "labeled_exact_gained": 3,
+      "labeled_exact_lost": 0,
+      "wrong_avoided_by_defer": 10,
+      "wrong_added": 1,
+      "controls_false_avoided": 6,
+      "controls_false_added": 0,
+      "context_exact_gained": 2,
+      "multi_exact_gained": 0
+    }
+  },
+  "limitations": [
+    "same-writer unreviewed provisional labels",
+    "36 focused public rows are not a full144 capability or safety gate",
+    "static index size is not browser resource qualification"
+  ]
+}

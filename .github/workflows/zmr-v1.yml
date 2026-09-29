@@ -84,6 +84,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_COMPLEMENT_FRESH_V01_REGISTRATION.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_COMPLEMENT_FRESH_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R1_REPAIR_DEV_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R1_REPAIR_DEV_V01.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -99,6 +100,8 @@ jobs:
             engineering.push('packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs');
             engineering.push('packages/zero_model_refoundation/a6_complement_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a6_r1_repair_dev.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a6_complement_r1.mjs', 'packages/zero_model_refoundation/a6_complement_r1.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a6_r1_repair_dev_diagnostic.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
@@ -114,7 +117,8 @@ jobs:
             const resultA5R1FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01_RESULT.json';
             const resultA4PositiveFreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01_RESULT.json';
             const resultA6ComplementFreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A6_COMPLEMENT_FRESH_V01_RESULT.json';
-            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, ...engineering, ...development]);
+            const resultA6R1RepairDevPath = 'docs/zero-model-refoundation-v1/ZMR-05_A6_R1_REPAIR_DEV_V01_RESULT.json';
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -320,6 +324,22 @@ jobs:
               assert.equal(result.as_consumed, 0);
               assert.equal(s.rounds['ZMR-05'].a6_complement_fresh_v01_evaluation_key, result.evaluation_key);
             }
+            if (after.has(resultA6R1RepairDevPath)) {
+              const result = JSON.parse((await read(resultA6R1RepairDevPath)).toString('utf8'));
+              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.topic_universe, 144);
+              assert.equal(result.labeled_rows, 20);
+              assert.equal(result.control_rows, 12);
+              assert.equal(result.fixed_config_count, 4);
+              assert.equal(result.results.A6_R1.labeled_exact, 5);
+              assert.equal(result.results.A6_R1.by_role.CONTROL.assigned, 1);
+              assert.equal(result.results.A6_R1.by_role.MULTI.exact, 0);
+              assert.equal(result.results.A6_R1.by_role.CONTEXT_REQUIRED.exact, 2);
+              assert.equal(result.capability_verdict, 'UNTESTED');
+              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(result.independent_rows, 0);
+              assert.equal(result.as_consumed, 0);
+            }
             if (after.has(resultA5FreshPath)) {
               const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_fresh_v01_registration.json')).toString('utf8'));
               const result = JSON.parse((await read(resultA5FreshPath)).toString('utf8'));
@@ -457,4 +477,4 @@ jobs:
         if: steps.safe.outputs.engineering == 'true'
         run: |
           for file in packages/zero_model_refoundation/*.mjs; do node --check "$file"; done
-          node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs packages/zero_model_refoundation/a1.test.mjs packages/zero_model_refoundation/a2.test.mjs packages/zero_model_refoundation/a3.test.mjs packages/zero_model_refoundation/provisional_data.test.mjs packages/zero_model_refoundation/provisional_safety.test.mjs packages/zero_model_refoundation/provisional_safety_v02.test.mjs packages/zero_model_refoundation/provisional_safety_v03.test.mjs packages/zero_model_refoundation/provisional_safety_v04.test.mjs packages/zero_model_refoundation/provisional_challenge_v03.test.mjs packages/zero_model_refoundation/a4_boundary_graph.test.mjs packages/zero_model_refoundation/a5_scope.test.mjs packages/zero_model_refoundation/a5_composition.test.mjs packages/zero_model_refoundation/a5_composition_r1.test.mjs packages/zero_model_refoundation/provisional_a5_challenge.test.mjs packages/zero_model_refoundation/provisional_a5_repair_dev.test.mjs packages/zero_model_refoundation/provisional_a5_r1_challenge.test.mjs packages/zero_model_refoundation/provisional_a4_positive_challenge.test.mjs packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs packages/zero_model_refoundation/provisional_a6_r1_repair_dev.test.mjs packages/zero_model_refoundation/provisional_role_challenge.test.mjs packages/zero_model_refoundation/a4_pair_positive.test.mjs packages/zero_model_refoundation/a6.test.mjs packages/zero_model_refoundation/a6_complement_scope.test.mjs packages/zero_model_refoundation/c1_context_multi.test.mjs packages/zero_model_refoundation/c1_r1_context_multi.test.mjs packages/zero_model_refoundation/a7_case_memory.test.mjs packages/zero_model_refoundation/a7_compile.test.mjs packages/zero_model_refoundation/provisional_a7_dev.test.mjs packages/zero_model_refoundation/provisional_a4_triads.test.mjs packages/zero_model_refoundation/provisional_a4_train.test.mjs packages/zero_model_refoundation/a4_pairwise.test.mjs packages/zero_model_refoundation/provisional_a4_challenge.test.mjs packages/zero_model_refoundation/provisional_challenge_v04.test.mjs packages/zero_model_refoundation/provisional_challenge_v05.test.mjs packages/zero_model_refoundation/provisional_challenge_v06.test.mjs
+          node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs packages/zero_model_refoundation/a1.test.mjs packages/zero_model_refoundation/a2.test.mjs packages/zero_model_refoundation/a3.test.mjs packages/zero_model_refoundation/provisional_data.test.mjs packages/zero_model_refoundation/provisional_safety.test.mjs packages/zero_model_refoundation/provisional_safety_v02.test.mjs packages/zero_model_refoundation/provisional_safety_v03.test.mjs packages/zero_model_refoundation/provisional_safety_v04.test.mjs packages/zero_model_refoundation/provisional_challenge_v03.test.mjs packages/zero_model_refoundation/a4_boundary_graph.test.mjs packages/zero_model_refoundation/a5_scope.test.mjs packages/zero_model_refoundation/a5_composition.test.mjs packages/zero_model_refoundation/a5_composition_r1.test.mjs packages/zero_model_refoundation/provisional_a5_challenge.test.mjs packages/zero_model_refoundation/provisional_a5_repair_dev.test.mjs packages/zero_model_refoundation/provisional_a5_r1_challenge.test.mjs packages/zero_model_refoundation/provisional_a4_positive_challenge.test.mjs packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs packages/zero_model_refoundation/provisional_a6_r1_repair_dev.test.mjs packages/zero_model_refoundation/provisional_role_challenge.test.mjs packages/zero_model_refoundation/a4_pair_positive.test.mjs packages/zero_model_refoundation/a6.test.mjs packages/zero_model_refoundation/a6_complement_scope.test.mjs packages/zero_model_refoundation/a6_complement_r1.test.mjs packages/zero_model_refoundation/c1_context_multi.test.mjs packages/zero_model_refoundation/c1_r1_context_multi.test.mjs packages/zero_model_refoundation/a7_case_memory.test.mjs packages/zero_model_refoundation/a7_compile.test.mjs packages/zero_model_refoundation/provisional_a7_dev.test.mjs packages/zero_model_refoundation/provisional_a4_triads.test.mjs packages/zero_model_refoundation/provisional_a4_train.test.mjs packages/zero_model_refoundation/a4_pairwise.test.mjs packages/zero_model_refoundation/provisional_a4_challenge.test.mjs packages/zero_model_refoundation/provisional_challenge_v04.test.mjs packages/zero_model_refoundation/provisional_challenge_v05.test.mjs packages/zero_model_refoundation/provisional_challenge_v06.test.mjs
