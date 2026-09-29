@@ -294,8 +294,19 @@
       "semantic_evaluations": 0,
       "as_consumed": 0,
       "stable_candidate": false,
-      "report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CONTEXT_MULTI_ENGINEERING_DEV.md"
+      "report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CONTEXT_MULTI_ENGINEERING_DEV.md",
+      "provisional_safety_v03_rows": 48,
+      "provisional_safety_v03_counts": {
+        "controls": 12,
+        "context_required_pairs": 12,
+        "context_invariance_pairs": 12,
+        "multi_intent": 12
+      },
+      "provisional_safety_v03_independent_rows": 0,
+      "provisional_safety_v03_evaluation_status": "UNRUN",
+      "provisional_safety_v03_data": "data/zero_model_refoundation/development/provisional_safety_seed_v0.3.json",
+      "provisional_safety_v03_report": "docs/zero-model-refoundation-v1/ZMR-05_SAFETY_V03_DEV.md"
     }
   },
-  "next_action": "Continue ZMR-05 C1 development: create fresh public same-writer context-required/invariance/multi/control challenge and a fresh full144 single-intent challenge, screen exact/near overlap and record provenance/lineage; keep UNRUN until C1 plus A3 anchor closure, fixed thresholds, scorer and one new evaluation key are registered. Use no consumed v0.2/v0.3/v0.4 key or AS/final/consumed TEST. Diagnose controls and context/multi mechanisms on fresh evidence, at most two explained repairs per candidate, then reject or continue according to CAPABILITY_LADDER. A6 focused-goal stage is retired with zero repair spent after no isolated gain; A4 lexical pairs stay unactivated without triad evidence. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
+  "next_action": "Continue ZMR-05 C1 development: safety v0.3 has 48 fresh public same-writer control/context/multi rows, overlap screened and UNRUN. Create a fresh full144 single-intent challenge in coherent intake batches, screen exact/near overlap and freeze full144 before scoring. Then register C1 plus A3 anchor closure, fixed thresholds, scorer and one new evaluation key for one public comparison including safety v0.3. Use no consumed v0.2/v0.3/v0.4 key or AS/final/consumed TEST. Diagnose controls/context/multi, at most two explained repairs per candidate, then reject or continue according to CAPABILITY_LADDER. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
 }

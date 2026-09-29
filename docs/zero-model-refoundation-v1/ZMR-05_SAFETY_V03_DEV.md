@@ -1,0 +1,9 @@
+# ZMR-05 fresh public safety v0.3 intake
+
+This cohort adds 48 original public development scenarios after C1 engineering: 12 insufficient-evidence controls, 12 context-required pairs, 12 context-invariance pairs and 12 two-intent rows. Each layer has four zh, four en and four mixed rows. The context variant remains inside the same scenario lineage and is not a second independent base case. The mechanisms include missing evidence, deictic continuations, old-title conflicts, explicit two-goal separators and natural dual requests, so the cohort can expose both supported paths and parser coverage cliffs.
+
+Every row records the pinned Catalog digest, original candidate-writer source/license declaration, scenario/template lineage and unreviewed provisional label. Mechanical intake screening finds zero exact bundle/current NFKC duplicates and zero character-trigram Jaccard flags at 0.55 against earlier public development rows and within v0.3. This screen does not prove semantic correctness, source independence, natural expression quality or reviewer agreement.
+
+The same candidate writer authored all inputs and gold after C1 implementation. The cohort is `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`, `evaluation_status=UNRUN` and has zero qualification credit. Together with public v0.1/v0.2, development material now totals 36 controls, 30 context-required pairs, 30 context-invariance pairs and 36 multi-intent cases, all still below DATA_PROTOCOL qualification minima and without independent cohorts. No candidate predictions, safety scores, AS or capability verdict result from this intake.
+
+Next create a fresh full144 single-intent public challenge before one fixed-key C1/A3 comparison. Do not rerun any consumed public v0.2/v0.3/v0.4 key, and do not access AS or consumed TEST. The 144 Topic, 95% assigned precision, 70% coverage/macro, safety and resource limits remain unchanged.
