@@ -130,7 +130,8 @@ test('complete fabricated metadata can satisfy quotas while data remains unquali
       reviews:['gold-reviewer-1','gold-reviewer-2'].map(reviewer_id=>({reviewer_id,state,topics,
         reviewed_at:'2026-01-02T00:00:00Z'})),
       fingerprints:{current_sha256:hash,nfc_sha256:hash,nfkc_sha256:hash,bundle_sha256:hash},
-      near_duplicate_screen:{status:'REVIEWED',reviewer_id:'duplicate-reviewer',method_version:'1'}
+      near_duplicate_screen:{status:'REVIEWED',reviewer_id:'duplicate-reviewer',method_version:'1',
+        reviewed_at:'2026-01-02T00:00:00Z'}
     });
   }
   for (const [split,allocation] of Object.entries({TRAIN:[12,8,4],DEV_TUNE:[3,2,1],
@@ -148,6 +149,26 @@ test('complete fabricated metadata can satisfy quotas while data remains unquali
   assert.deepEqual(result.issues,[]);
   assert.equal(result.metadata_gate,true);
   assert.equal(result.data_qualification,'NOT_QUALIFIED');
+});
+
+test('AS generation reuse and post-freeze source review are rejected', () => {
+  const catalog='a'.repeat(64), hash='b'.repeat(64);
+  const base={id:'one',split:'AS',generation_id:'G1',catalog_sha256:catalog,layer:'SINGLE',
+    language:'zh',gold_frozen_at:'2026-01-03T00:00:00Z',gold:{state:'ASSIGNED',topics:[ids[0]]},
+    mechanisms:['opaque'],name_echo:false,
+    lineage:Object.fromEntries(['writer','source','scenario','template','paraphrase','translation','contrast']
+      .map(k=>[k,['shared:'+k]])),
+    source_review:{source_id:'shared:source',license:'CC0',decision:'ACCEPT',reviewer_id:'sr',
+      evidence_ref:'e',reviewed_at:'2026-01-04T00:00:00Z'},
+    reviews:['r1','r2'].map(reviewer_id=>({reviewer_id,state:'ASSIGNED',topics:[ids[0]],
+      reviewed_at:'2026-01-02T00:00:00Z'})),
+    fingerprints:{current_sha256:hash,nfc_sha256:hash,nfkc_sha256:hash,bundle_sha256:hash},
+    near_duplicate_screen:{status:'REVIEWED',reviewer_id:'nr',method_version:'1',
+      reviewed_at:'2026-01-02T00:00:00Z'}};
+  const second=structuredClone(base); second.id='two'; second.generation_id='G2';
+  const result=auditIntake([base,second],ids,{catalog_sha256:catalog,approved_licenses:['CC0']});
+  assert(result.issues.some(x=>x.code==='AS_GENERATION_REUSE'));
+  assert(result.issues.some(x=>x.code==='SOURCE_REVIEW_MISSING'));
 });
 
 test('all-correct grouped bootstrap remains non-degenerate and independence is external', () => {
