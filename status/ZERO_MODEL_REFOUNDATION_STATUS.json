@@ -366,7 +366,7 @@
       "c1_r1_challenge_v06_result": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_CHALLENGE_V06_RESULT.json",
       "c1_r1_challenge_v06_report": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_CHALLENGE_V06.md",
       "c1_component_disposition": "RETIRED_NO_ISOLATED_SAFETY_PRESERVING_GAIN_NO_FAMILY_CEILING",
-      "next_candidate": "A6_CLASS_COMPLEMENT_EVIDENCE_PLUS_CURRENT_SCOPE_HYBRID",
+      "next_candidate": "H1_RECALL_SAFE_HIERARCHY_DEVELOPMENT_HYPOTHESIS",
       "a7_hypothesis": "FINITE_TRAIN_PROTOTYPE_MAX_SCORING_VERSUS_CLASS_AGGREGATION_AND_SPARSE_HINGE",
       "a7_engineering_status": "DEFAULT_PARTIAL_PUBLIC_DEV_REJECTED_NO_ISOLATED_CORRECT_GAIN",
       "a7_engineering_unit_tests": 4,
@@ -628,7 +628,7 @@
       "a6_complement_fresh_v01_vs_a3_exact_gain": 1,
       "a6_complement_fresh_v01_vs_a3_controls_false_avoided": 3,
       "a6_complement_repair_spent": 2,
-      "a6_complement_disposition": "NOT_PROMOTED_TWO_REPAIRS_SPENT_FRESH_PUBLIC_CHALLENGE_NEXT_NO_CAPABILITY_PASS",
+      "a6_complement_disposition": "ELIMINATED_TWO_REPAIRS_SPENT_NO_TRANSFERRED_CAPABILITY_GAIN_NO_FAMILY_CEILING",
       "a6_r1_repair_dev_v01_rows": 36,
       "a6_r1_repair_dev_v01_counts": {
         "single": 8,
@@ -665,7 +665,7 @@
       "a6_r2_repair_dev_v01_context_exact": 2,
       "a6_r2_repair_dev_v01_multi_exact": 1,
       "a6_r2_repair_dev_v01_evaluation_status": "REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE",
-      "a6_r2_disposition": "FRESH_PUBLIC_CHALLENGE_ELIGIBLE_ONLY_NO_CAPABILITY_PASS",
+      "a6_r2_disposition": "ELIMINATED_FRESH_PUBLIC_CONTROL_CONTEXT_MULTI_FAILURE_NO_CAPABILITY_PASS_NO_FAMILY_CEILING",
       "a6_r2_challenge_v01_rows": 36,
       "a6_r2_challenge_v01_counts": {
         "single": 8,
@@ -681,15 +681,24 @@
         "mixed": 0
       },
       "a6_r2_challenge_v01_independent_rows": 0,
-      "a6_r2_challenge_v01_evaluation_status": "PUBLIC_CHALLENGE_FROZEN_UNRUN",
+      "a6_r2_challenge_v01_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "a6_r2_challenge_v01_data": "data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json",
       "a6_r2_challenge_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_CHALLENGE_V01_INTAKE.md",
       "a6_r2_fresh_v01_evaluation_key": "31cc709d149f3a44d6122e9470ba2eae3285c62bfb1ef3fca55a73754f7c11a5",
       "a6_r2_fresh_v01_registration": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
       "a6_r2_fresh_v01_registration_report": "docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01_REGISTRATION.md",
       "a6_r2_fresh_v01_fixed_config_count": 5,
-      "a6_r2_fresh_v01_evaluation_status": "REGISTERED_UNRUN"
+      "a6_r2_fresh_v01_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+      "a6_r2_fresh_v01_result": "docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01_RESULT.json",
+      "a6_r2_fresh_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01.md",
+      "a6_r2_fresh_v01_labeled_exact": 2,
+      "a6_r2_fresh_v01_labeled_assigned": 4,
+      "a6_r2_fresh_v01_control_false_assignments": 3,
+      "a6_r2_fresh_v01_context_exact": 0,
+      "a6_r2_fresh_v01_multi_exact": 0,
+      "a6_r2_fresh_v01_vs_r1_exact_gain": 0,
+      "a6_r2_fresh_v01_vs_r1_controls_false_avoided": 1
     }
   },
-  "next_action": "A6-R2 fresh public comparison v0.1 is registered but UNRUN under key 31cc709d149f3a44d6122e9470ba2eae3285c62bfb1ef3fca55a73754f7c11a5. After exact-head CI validates the registration, execute the fixed A2/A3/A6/A6-R1/A6-R2 aggregate evaluator once and treat the key as consumed. Decide on isolated safety-preserving gain with the new 36-row source-separated public challenge, while keeping its same-writer NON_INDEPENDENT_DEVELOPMENT_EVIDENCE and zero independent 01B credit. If R2 fails, retire this component and advance a distinct candidate, with no third repair. Do not tune or replay consumed A6, A4/A5/R1, older public, sealed AS/final TEST or CIG-v1 TEST keys. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED, no family or zero-model ceiling claim."
+  "next_action": "A6-R2 fresh public evaluation key 31cc709d149f3a44d6122e9470ba2eae3285c62bfb1ef3fca55a73754f7c11a5 is consumed; never replay it. R2 had no exact-set gain over R1, 3/12 false no-request controls and 0/4 exact context and multi; two repairs are spent, so eliminate this A6 complement/scope component without a family or zero-model ceiling claim. Continue independent development with the canonical hierarchy attachment as a distinct H1 recall-safe hypothesis: derive finite domain-to-Topic evidence from pinned Catalog and fixed TRAIN only, compare domain top-k recall and full144 flat fallback under the same hard budgets, and never let a top-1 domain permanently exclude a Topic. First author and screen new source-separated candidate-writer public DEV before any H1 Router output on it, mark NON_INDEPENDENT_DEVELOPMENT_EVIDENCE with zero independent 01B quota; then implement a bounded H1 mechanism and light inner-loop, freezing a new challenge and registration only if stable. Do not tune or replay consumed A6, A4/A5/R1, older public, sealed AS/final TEST or CIG-v1 TEST keys. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED."
 }
