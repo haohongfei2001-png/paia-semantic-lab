@@ -499,8 +499,25 @@
       "a5_fresh_v01_result": "docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json",
       "a5_fresh_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01.md",
       "a5_composition_disposition": "DEV_ONLY_NARROW_PUBLIC_GAIN_NOT_PROMOTED_ABSOLUTE_SAFETY_AND_MULTI_FAIL",
-      "a5_composition_repair_spent": 0
+      "a5_composition_repair_spent": 0,
+      "a5_repair_dev_v01_rows": 32,
+      "a5_repair_dev_v01_counts": {
+        "controls": 12,
+        "multi": 8,
+        "correction": 4,
+        "quote": 4,
+        "ambiguous_unscored": 4
+      },
+      "a5_repair_dev_v01_language_counts": {
+        "zh": 16,
+        "en": 16,
+        "mixed": 0
+      },
+      "a5_repair_dev_v01_independent_rows": 0,
+      "a5_repair_dev_v01_evaluation_status": "UNRUN",
+      "a5_repair_dev_v01_data": "data/zero_model_refoundation/development/provisional_a5_repair_dev_v0.1.json",
+      "a5_repair_dev_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A5_REPAIR_DEV_V01_INTAKE.md"
     }
   },
-  "next_action": "Create a fresh public candidate-writer A5 repair DEV cohort after consuming v0.1, with explicit-request versus no-request controls, two-action clauses, corrections, quoted/background and unsupported multi cases. Record source/license and separate scenario/template lineage; screen overlap; freeze UNRUN with zero independent 01B quota. Diagnose only the aggregate v0.1 result: A5 gained two exact outputs and avoided two wrong assignments relative to A3, but absolute provisional controls failed 5/8 and multi exact was 1/8. Develop at most two bounded mechanism-level A5 repairs on fresh public DEV, preserving the full144 fallback and fixed product contract. Register one fixed paired ablation on a new challenge only after each candidate closure is stable; never replay the consumed A5 v0.1 key or older public DEV/AS/TEST or CIG-v1 consumed TEST. If no safety-preserving gain toward the hard gates, eliminate the component and advance the next distinct family/hybrid. Same-writer results are NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, not capability/resource/ceiling evidence; ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED."
+  "next_action": "Use fresh public A5 repair DEV v0.1 for one bounded mechanism-level repair of explicit-request/no-request gating and/or two-action composition, preserving full144 A3 fallback. Diagnose on this TRAIN/DEV-class public cohort with light inner-loop only, no consumed A5 challenge replay or per-row tuning. Record any mechanism changes, scope and repair count; then author a distinct fresh public challenge, screen lineage/overlap, freeze candidate and cohort, and register one paired A3/A5 repair evaluation key. At most two mechanism-level repairs for this A5 candidate; if no safety-preserving gain toward fixed gates, eliminate and advance next family/hybrid. Repair DEV v0.1 is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, zero 01B independent quota. Do not read/replay consumed public DEV, AS/final TEST or CIG-v1 consumed TEST. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED."
 }
