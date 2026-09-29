@@ -54,12 +54,13 @@ jobs:
             const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p.startsWith('data/zero_model_refoundation/development/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
             const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
             assert(changed.every(p => zmr(p) || shared.has(p)), 'mixed legacy batch forbidden');
-            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES', 'ZMR-01A_ENGINEERING', 'ZMR-01A_PRECISION_GUARD_CORRECTION', 'ZMR-01A_FOUNDATION_COMPLETION', 'ZMR-01B_ANNOTATION_GUIDELINE', 'ZMR-01B_READINESS', 'ZMR-02_A1_DEV', 'ZMR-02_FULL144_DEV_TRAIN', 'ZMR-03_A2_ENGINEERING_DEV', 'ZMR-03_TUNE144_DEV', 'ZMR-03_CAL144_DEV', 'ZMR-03_CHALLENGE144_DEV', 'ZMR-03_A1A2_CHALLENGE_V02', 'ZMR-03_A3_ENGINEERING_DEV', 'ZMR-03_SAFETY_SEED_DEV', 'ZMR-03_CHALLENGE_V03_PART1_DEV', 'ZMR-03_CHALLENGE_V03_PART2_DEV', 'ZMR-03_CHALLENGE_V03_FULL144_DEV'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
+            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES', 'ZMR-01A_ENGINEERING', 'ZMR-01A_PRECISION_GUARD_CORRECTION', 'ZMR-01A_FOUNDATION_COMPLETION', 'ZMR-01B_ANNOTATION_GUIDELINE', 'ZMR-01B_READINESS', 'ZMR-02_A1_DEV', 'ZMR-02_FULL144_DEV_TRAIN', 'ZMR-03_A2_ENGINEERING_DEV', 'ZMR-03_TUNE144_DEV', 'ZMR-03_CAL144_DEV', 'ZMR-03_CHALLENGE144_DEV', 'ZMR-03_A1A2_CHALLENGE_V02', 'ZMR-03_A3_ENGINEERING_DEV', 'ZMR-03_SAFETY_SEED_DEV', 'ZMR-03_CHALLENGE_V03_PART1_DEV', 'ZMR-03_CHALLENGE_V03_PART2_DEV', 'ZMR-03_CHALLENGE_V03_FULL144_DEV', 'ZMR-03_A123_CHALLENGE_V03'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
             const statusPath = 'status/ZERO_MODEL_REFOUNDATION_STATUS.json';
-            const engineering = ['contracts.mjs', 'contracts.test.mjs', 'scoring.mjs', 'intake.mjs', 'fingerprints.mjs', 'uncertainty.mjs', 'ledger.mjs', 'foundation.test.mjs', 'a1.mjs', 'a1_compile.mjs', 'a1_dev_eval.mjs', 'a1.test.mjs', 'a2.mjs', 'a2_compile.mjs', 'a2.test.mjs', 'provisional_data.test.mjs', 'a12_challenge_compare.mjs', 'a3.mjs', 'a3_compile.mjs', 'a3.test.mjs', 'provisional_safety.test.mjs', 'provisional_challenge_v03.test.mjs'].map(n => 'packages/zero_model_refoundation/' + n);
-            const development = ['catalog/system_topic_catalog_v0.2.yaml', 'data/zero_model_refoundation/development/provisional_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_train_v0.2.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.1.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.2.json', 'data/zero_model_refoundation/development/provisional_tune_v0.1.json', 'data/zero_model_refoundation/development/provisional_cal_v0.1.json', 'data/zero_model_refoundation/development/a12_challenge_v02_registration.json', 'data/zero_model_refoundation/development/provisional_safety_seed_v0.1.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.3.json'];
+            const engineering = ['contracts.mjs', 'contracts.test.mjs', 'scoring.mjs', 'intake.mjs', 'fingerprints.mjs', 'uncertainty.mjs', 'ledger.mjs', 'foundation.test.mjs', 'a1.mjs', 'a1_compile.mjs', 'a1_dev_eval.mjs', 'a1.test.mjs', 'a2.mjs', 'a2_compile.mjs', 'a2.test.mjs', 'provisional_data.test.mjs', 'a12_challenge_compare.mjs', 'a3.mjs', 'a3_compile.mjs', 'a3.test.mjs', 'provisional_safety.test.mjs', 'provisional_challenge_v03.test.mjs', 'a123_challenge_compare.mjs'].map(n => 'packages/zero_model_refoundation/' + n);
+            const development = ['catalog/system_topic_catalog_v0.2.yaml', 'data/zero_model_refoundation/development/provisional_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_train_v0.2.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.1.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.2.json', 'data/zero_model_refoundation/development/provisional_tune_v0.1.json', 'data/zero_model_refoundation/development/provisional_cal_v0.1.json', 'data/zero_model_refoundation/development/a12_challenge_v02_registration.json', 'data/zero_model_refoundation/development/provisional_safety_seed_v0.1.json', 'data/zero_model_refoundation/development/provisional_challenge_v0.3.json', 'data/zero_model_refoundation/development/a123_challenge_v03_registration.json'];
             const resultPath = 'docs/zero-model-refoundation-v1/ZMR-03_A1A2_CHALLENGE_V02_RESULT.json';
-            const allowed = new Set([...docs, statusPath, resultPath, ...engineering, ...development]);
+            const resultV03Path = 'docs/zero-model-refoundation-v1/ZMR-03_A123_CHALLENGE_V03_RESULT.json';
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -95,6 +96,18 @@ jobs:
               assert.equal(result.evaluation_key, registration.evaluation_key);
               assert.equal(result.challenge_rows, 144);
               assert.equal(result.fixed_config_count, 8);
+              assert.equal(result.capability_verdict, 'UNTESTED');
+              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(result.as_consumed, 0);
+            }
+            if (after.has(resultV03Path)) {
+              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a123_challenge_v03_registration.json')).toString('utf8'));
+              const result = JSON.parse((await read(resultV03Path)).toString('utf8'));
+              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.evaluation_key, registration.evaluation_key);
+              assert.equal(result.challenge_rows, 144);
+              assert.equal(result.fixed_config_count, 6);
               assert.equal(result.capability_verdict, 'UNTESTED');
               assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
               assert.equal(result.as_consumed, 0);

@@ -1,0 +1,298 @@
+{
+  "schema": "ZMR-A123-CHALLENGE-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "c2ce56b3bf74740f9fa79920d6d39c0a980f73ded74d2a7809c1dc591b1007cd",
+  "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "challenge_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "train_rows": 144,
+  "challenge_rows": 144,
+  "fixed_config_count": 6,
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_CHALLENGE_V03",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "bfd1b671afb6c1accbcc38d21951efd74c37bb7c0b78291c3e7f26391fd96cbf",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "8dbf40f9aa7cd456b0c8cb469520be6f64c32172378e0873bf6d17c19144ebf7",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "2bc4848a6e8209fe4cc9ab0cf9663d76aa47da6b842e2d6bca0c8176b47cd9f0",
+    "scorer_sha256": "c2b11ea43d4741939176215e00d31779c5994bee7c345cbfe5c8b76d16105209"
+  },
+  "builds": {
+    "A1_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+      "index_bytes": 932855,
+      "runtime_plus_index_bytes": 939747,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A2_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14",
+      "index_bytes": 206821,
+      "runtime_plus_index_bytes": 218794,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A3_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A3_word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617",
+      "index_bytes": 116142,
+      "runtime_plus_index_bytes": 129760,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A0_all_defer": {
+      "n": 144,
+      "any_assigned": 0,
+      "assigned": 0,
+      "correct": 0,
+      "assigned_precision": null,
+      "single_coverage": 0,
+      "full144_macro_recall": 0,
+      "missing_topics": 0,
+      "unsupported_labels": 0,
+      "by_language": {
+        "zh": {
+          "n": 72,
+          "assigned": 0,
+          "correct": 0
+        },
+        "en": {
+          "n": 48,
+          "assigned": 0,
+          "correct": 0
+        },
+        "mixed": {
+          "n": 24,
+          "assigned": 0,
+          "correct": 0
+        }
+      },
+      "defer_reasons": {
+        "A0_ALL_DEFER": 144
+      }
+    },
+    "A1_char_tfidf": {
+      "n": 144,
+      "any_assigned": 63,
+      "assigned": 63,
+      "correct": 31,
+      "assigned_precision": 0.49206349206349204,
+      "single_coverage": 0.4375,
+      "full144_macro_recall": 0.2152777777777778,
+      "missing_topics": 0,
+      "unsupported_labels": 32,
+      "by_language": {
+        "zh": {
+          "n": 72,
+          "assigned": 25,
+          "correct": 21
+        },
+        "en": {
+          "n": 48,
+          "assigned": 24,
+          "correct": 4
+        },
+        "mixed": {
+          "n": 24,
+          "assigned": 14,
+          "correct": 6
+        }
+      },
+      "defer_reasons": {
+        "LOW_OR_AMBIGUOUS_EVIDENCE": 81
+      }
+    },
+    "A1_char_bm25": {
+      "n": 144,
+      "any_assigned": 143,
+      "assigned": 143,
+      "correct": 42,
+      "assigned_precision": 0.2937062937062937,
+      "single_coverage": 0.9930555555555556,
+      "full144_macro_recall": 0.2916666666666667,
+      "missing_topics": 0,
+      "unsupported_labels": 101,
+      "by_language": {
+        "zh": {
+          "n": 72,
+          "assigned": 71,
+          "correct": 32
+        },
+        "en": {
+          "n": 48,
+          "assigned": 48,
+          "correct": 4
+        },
+        "mixed": {
+          "n": 24,
+          "assigned": 24,
+          "correct": 6
+        }
+      },
+      "defer_reasons": {
+        "LOW_OR_AMBIGUOUS_EVIDENCE": 1
+      }
+    },
+    "A2_char": {
+      "n": 144,
+      "any_assigned": 63,
+      "assigned": 63,
+      "correct": 36,
+      "assigned_precision": 0.5714285714285714,
+      "single_coverage": 0.4375,
+      "full144_macro_recall": 0.25,
+      "missing_topics": 0,
+      "unsupported_labels": 27,
+      "by_language": {
+        "zh": {
+          "n": 72,
+          "assigned": 50,
+          "correct": 30
+        },
+        "en": {
+          "n": 48,
+          "assigned": 0,
+          "correct": 0
+        },
+        "mixed": {
+          "n": 24,
+          "assigned": 13,
+          "correct": 6
+        }
+      },
+      "defer_reasons": {
+        "LOW_OR_AMBIGUOUS_EVIDENCE": 81
+      }
+    },
+    "A3_char": {
+      "n": 144,
+      "any_assigned": 97,
+      "assigned": 97,
+      "correct": 43,
+      "assigned_precision": 0.44329896907216493,
+      "single_coverage": 0.6736111111111112,
+      "full144_macro_recall": 0.2986111111111111,
+      "missing_topics": 0,
+      "unsupported_labels": 54,
+      "by_language": {
+        "zh": {
+          "n": 72,
+          "assigned": 45,
+          "correct": 31
+        },
+        "en": {
+          "n": 48,
+          "assigned": 36,
+          "correct": 8
+        },
+        "mixed": {
+          "n": 24,
+          "assigned": 16,
+          "correct": 4
+        }
+      },
+      "defer_reasons": {
+        "LOW_OR_AMBIGUOUS_EVIDENCE": 47
+      }
+    },
+    "A3_word": {
+      "n": 144,
+      "any_assigned": 52,
+      "assigned": 52,
+      "correct": 13,
+      "assigned_precision": 0.25,
+      "single_coverage": 0.3611111111111111,
+      "full144_macro_recall": 0.09027777777777778,
+      "missing_topics": 0,
+      "unsupported_labels": 39,
+      "by_language": {
+        "zh": {
+          "n": 72,
+          "assigned": 1,
+          "correct": 1
+        },
+        "en": {
+          "n": 48,
+          "assigned": 40,
+          "correct": 5
+        },
+        "mixed": {
+          "n": 24,
+          "assigned": 11,
+          "correct": 7
+        }
+      },
+      "defer_reasons": {
+        "OOV": 84,
+        "LOW_OR_AMBIGUOUS_EVIDENCE": 8
+      }
+    }
+  },
+  "paired": {
+    "A3_char_vs_A1_char_tfidf": {
+      "both_correct": 27,
+      "a3_only": 16,
+      "anchor_only": 4,
+      "neither": 97
+    },
+    "A3_char_vs_A1_char_bm25": {
+      "both_correct": 30,
+      "a3_only": 13,
+      "anchor_only": 12,
+      "neither": 89
+    },
+    "A3_char_vs_A2_char": {
+      "both_correct": 28,
+      "a3_only": 15,
+      "anchor_only": 8,
+      "neither": 93
+    }
+  },
+  "limitations": [
+    "same candidate writer authored all inputs and unreviewed labels",
+    "one single-intent case per Topic; no independent language quotas or safety layers",
+    "point counts and static index bytes do not qualify capability or resources"
+  ]
+}
