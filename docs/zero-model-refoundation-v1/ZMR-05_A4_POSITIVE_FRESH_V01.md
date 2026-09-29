@@ -1,0 +1,15 @@
+# ZMR-05 A4 positive-evidence fresh public comparison v0.1
+
+The fixed A3 char deletion-ablation, previously retired A4 negative veto and new A4 positive-evidence pair resolver were registered under evaluation key `62bb9421409ccfd9d0c7d27a9976412d40e7eb07182e0407ad60cf8293b10b3c` before the freshly frozen public challenge was scored. The key was consumed once. All variants used the unchanged 144-Topic Catalog and A3 public provisional TRAIN v0.2; both A4 variants used the separate designated pair TRAIN v0.1 and boundary graph. The evaluator retained aggregate counts only, with per-row predictions confined to ephemeral memory.
+
+| Fixed variant | Provisional pair labels assigned | Correct / 16 | Wrong assigned | Provisional assigned precision | No-request false assignments / 8 | Ambiguous assigned / 4, unscored |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| A3 char | 12 | 4 | 8 | 4/12 | 6 | 1 |
+| A4 negative veto | 12 | 4 | 8 | 4/12 | 6 | 1 |
+| A4 positive evidence | 12 | 4 | 8 | 4/12 | 6 | 1 |
+
+Each variant had two correct left and two correct right labels, zero complete four-case pairs and zero repeat-output differences. All paired deltas were zero: no correct gain or loss, wrong prevention or addition, Topic switch, assignment change, control false-assignment change or ambiguous-assignment change. The positive resolver did not trigger a switch on this fresh challenge. Its designated TRAIN feature lists have no observed isolated benefit under the frozen three-support/two-margin configuration. Rewriting those features or thresholds against this consumed cohort would be tuning on exposed results.
+
+The current A4 positive-evidence component is eliminated without a semantic repair. A pair-only switch cannot address the observed global no-request false assignments, and this cohort gives no isolated corrective signal for a bounded pair repair. This rejects the **current component and configuration** only; it does not establish an A4 family or zero-model ceiling. The next development candidate follows the canonical A6 bounded-hybrid path: test a distinct class-complement evidence objective with an explicit current-text no-request/scope guard and full144 fallback. Before scoring, document the mechanism and ablations, perform TRAIN-only engineering, freeze a new public challenge, and register a new key. Do not reconsume this or earlier public keys.
+
+The 16 labels and eight controls were authored by the candidate writer, remain unreviewed and are `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`; four ambiguous cases have no gold. They contribute zero independent ZMR-01B quota. These focused diagnostics cannot estimate full144 macro recall, all language floors, context/multi ability or resource/browser behavior. The 4/12 provisional precision and 6/8 control false assignments plainly fail the corresponding fixed point thresholds as development observations. Capability remains `UNTESTED`, data `NOT_QUALIFIED`, resources `NOT_QUALIFIED`, and AS/final TEST unconsumed. The 144 Topic, 95% precision, 70% coverage/macro, safety, resource, local-first and zero neural/embedding/LLM/semantic API constraints remain unchanged.
