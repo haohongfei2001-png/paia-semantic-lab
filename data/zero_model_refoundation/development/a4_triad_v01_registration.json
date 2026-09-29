@@ -1,0 +1,66 @@
+{
+  "schema": "ZMR-A4-TRIAD-BASELINE-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_PUBLIC_BOUNDARY_BASELINE_DIAGNOSTIC_ONLY",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A4_BOUNDARY_TRIADS_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "14ae8ccd337c561ea2598aa7a96cf7bc1ce26431d01ea5ec6007eb1c6dce6aa8",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "280f9efd6f5cda07d6cbed4497660630b9f87950d89068d62017347271ef0c2e",
+    "scorer_sha256": "6d0173788c8c716687ce5f24fa51b8e2df235b159d5e08109486d0c0ec89c2d1"
+  },
+  "evaluation_key": "1f2fd248e005c1deb5beeca36c2ca4d06a53f24efe2efdb88e1e9c89dd71f5aa",
+  "configs": [
+    {
+      "id": "A0_defer",
+      "family": "A0"
+    },
+    {
+      "id": "A1_char_fixed",
+      "family": "A1",
+      "mode": "char",
+      "method": "tfidf",
+      "min_score": 0.15,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A3_char_fixed",
+      "family": "A3",
+      "mode": "char",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A1_word_fixed",
+      "family": "A1",
+      "mode": "word",
+      "method": "tfidf",
+      "min_score": 0.15,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A3_word_fixed",
+      "family": "A3",
+      "mode": "word",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    }
+  ],
+  "triad_path": "data/zero_model_refoundation/development/provisional_a4_triads_v0.1.json",
+  "graph_path": "data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json",
+  "topic_universe": 144,
+  "provisional_labeled_rows": 8,
+  "ambiguous_unscored_rows": 4,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "no_calibration": true
+}
