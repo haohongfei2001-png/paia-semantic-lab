@@ -1,0 +1,53 @@
+{
+  "schema": "ZMR-A4-POSITIVE-FRESH-COMPARISON-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_FIXED_A3_A4_VETO_A4_POSITIVE_PUBLIC_PAIRED_DIAGNOSTIC",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A4_POSITIVE_FRESH_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "b7a0aab7af4eeff85c1dfd997dc3aab770e7e7df08069442c672c879f9ad42f1",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "4eaf88af301ce3e618dca699e154f0424a54698b333b5dc311b2856208921a2d",
+    "train_sha256": "21caef53be01fdfbb212a4d87fde627b60d3d6f5f25fd956edf231ba54ccffc2",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "e7cf908fbf39767ffce38005c95e0e24279c92ee76ca9abcdb9fa5a77f821729",
+    "scorer_sha256": "f9363692cd558a841f66d8df39d4684777a8ddf3c566ad151f3f93362ad01123"
+  },
+  "evaluation_key": "62bb9421409ccfd9d0c7d27a9976412d40e7eb07182e0407ad60cf8293b10b3c",
+  "configs": [
+    {
+      "id": "A3_char_deletion_ablation",
+      "family": "A3",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A4_char_pair_veto",
+      "family": "A4",
+      "base_min_score": 0.02,
+      "base_min_margin": 0.02,
+      "min_pair_support": 2
+    },
+    {
+      "id": "A4_positive_pair_evidence",
+      "family": "A4_POSITIVE",
+      "base_min_score": 0.02,
+      "base_min_margin": 0.02,
+      "min_positive_support": 3,
+      "min_positive_margin": 2
+    }
+  ],
+  "cohort": "data/zero_model_refoundation/development/provisional_a4_positive_challenge_v0.1.json",
+  "topic_universe": 144,
+  "provisional_labeled_pair_rows": 16,
+  "ambiguous_unscored_rows": 4,
+  "control_rows": 8,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "no_calibration": true
+}
