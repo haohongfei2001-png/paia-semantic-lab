@@ -162,8 +162,19 @@
       },
       "provisional_cal_independent_source_cohorts": 0,
       "provisional_calibration_status": "UNFITTED",
-      "provisional_cal_report": "docs/zero-model-refoundation-v1/ZMR-03_CAL144_DEV.md"
+      "provisional_cal_report": "docs/zero-model-refoundation-v1/ZMR-03_CAL144_DEV.md",
+      "provisional_challenge_rows": 144,
+      "provisional_challenge_topics": 144,
+      "provisional_challenge_language_counts": {
+        "zh": 90,
+        "en": 36,
+        "mixed": 18
+      },
+      "provisional_challenge_independent_source_cohorts": 0,
+      "provisional_challenge_evaluation_status": "UNRUN",
+      "provisional_challenge_safety_layers": "MISSING",
+      "provisional_challenge_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE144_DEV.md"
     }
   },
-  "next_action": "Continue ZMR-03 development: author a separately versioned writer-visible full144 challenge with new concrete scenario/template lineages, run pre-prediction metadata checks, then perform one changed-closure provisional A1/A2 comparison and bounded repair/elimination before A3/A4. TRAIN/TUNE/CAL have 144 same-writer public provisional rows each; CAL is UNFITTED. Independent ZMR-01B remains NOT_QUALIFIED with zero accepted rows; no AS/final/consumed TEST access or capability/resource PASS claim."
+  "next_action": "Continue ZMR-03: register one fixed changed-closure A1/A2 provisional single-label comparison on the public full144 challenge v0.2, then diagnose bounded repairs/elimination and proceed to A3/A4. Build missing provisional control/context/multi layers separately. TRAIN/TUNE/CAL/challenge v0.2 each have 144 same-writer public provisional single-intent rows; CAL is UNFITTED and challenge UNRUN. Independent ZMR-01B remains NOT_QUALIFIED with zero accepted rows. Do not claim capability/resource PASS or access AS/final/consumed TEST."
 }
