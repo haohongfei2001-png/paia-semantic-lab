@@ -92,6 +92,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_INTAKE.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -116,6 +117,7 @@ jobs:
             engineering.push('packages/zero_model_refoundation/provisional_h1_recall_dev.test.mjs');
             engineering.push('packages/zero_model_refoundation/h1_recall_initial.mjs', 'packages/zero_model_refoundation/h1_recall_safe.mjs', 'packages/zero_model_refoundation/h1_recall_safe.test.mjs', 'packages/zero_model_refoundation/h1_domain_compile.mjs', 'packages/zero_model_refoundation/h1_recall_dev_diagnostic.mjs', 'packages/zero_model_refoundation/h1_r1_dev_diagnostic.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_chart_dev.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a5_evidence_chart.mjs', 'packages/zero_model_refoundation/a5_evidence_chart.test.mjs', 'packages/zero_model_refoundation/a5_chart_dev_diagnostic.mjs', 'packages/zero_model_refoundation/a5_evidence_chart_r1.mjs', 'packages/zero_model_refoundation/a5_evidence_chart_r1.test.mjs', 'packages/zero_model_refoundation/a5_chart_r1_dev_diagnostic.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
@@ -140,7 +142,9 @@ jobs:
             const resultA6R2FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01_RESULT.json';
             const resultH1Path = 'docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_RESULT.json';
             const resultH1R1Path = 'docs/zero-model-refoundation-v1/ZMR-04_H1_R1_RECALL_DEV_V01_RESULT.json';
-            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, ...engineering, ...development]);
+            const resultA5ChartPath = 'docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_RESULT.json';
+            const resultA5ChartR1Path = 'docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_R1_DEV_V01_RESULT.json';
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -526,6 +530,28 @@ jobs:
               assert.equal(dev.qualification_credit_rows, 0);
               assert.equal(dev.independent_source_cohorts, 0);
             }
+            if (after.has(resultA5ChartPath) || after.has(resultA5ChartR1Path)) {
+              assert(after.has(resultA5ChartPath) && after.has(resultA5ChartR1Path), 'complete A5 chart diagnostic pair required');
+              const cohortBytes = await read('data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json');
+              const firstBytes = await read(resultA5ChartPath);
+              const first = JSON.parse(firstBytes.toString('utf8'));
+              const repair = JSON.parse((await read(resultA5ChartR1Path)).toString('utf8'));
+              assert.equal(first.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(repair.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(repair.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
+              assert.equal(first.cohort_sha256, crypto.createHash('sha256').update(cohortBytes).digest('hex'));
+              assert.equal(repair.cohort_sha256, first.cohort_sha256);
+              assert.equal(first.chart_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a5_evidence_chart.mjs')).digest('hex'));
+              assert.equal(repair.initial_result_sha256, crypto.createHash('sha256').update(firstBytes).digest('hex'));
+              assert.equal(repair.r1_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a5_evidence_chart_r1.mjs')).digest('hex'));
+              for (const value of [first, repair]) {
+                assert.equal(value.topic_universe, 144);
+                assert.equal(value.capability_verdict, 'UNTESTED');
+                assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
+                assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
+              }
+              assert.equal(s.rounds['ZMR-04'].a5_chart_component_disposition, 'RETIRED_NO_SAFETY_PRESERVING_NET_CORRECT_OR_MULTI_GAIN_NO_FAMILY_CEILING');
+            }
             if (after.has(resultH1Path) || after.has(resultH1R1Path)) {
               assert(after.has(resultH1Path) && after.has(resultH1R1Path), 'complete H1 diagnostic pair required');
               const cohortBytes = await read('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json');
@@ -607,3 +633,4 @@ jobs:
           node --test packages/zero_model_refoundation/provisional_h1_recall_dev.test.mjs
           node --test packages/zero_model_refoundation/h1_recall_safe.test.mjs
           node --test packages/zero_model_refoundation/provisional_a5_chart_dev.test.mjs
+          node --test packages/zero_model_refoundation/a5_evidence_chart.test.mjs packages/zero_model_refoundation/a5_evidence_chart_r1.test.mjs
