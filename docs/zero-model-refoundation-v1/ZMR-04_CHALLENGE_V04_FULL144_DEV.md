@@ -1,0 +1,9 @@
+# ZMR-04 fresh public full144 challenge v0.4 — intake closure
+
+Part 3 adds one provisional single-intent row for each formal Topic 97–144: law/civic life, science, creative work, business, time/events and personal knowledge. The three authoring batches now cover all 144 pinned Catalog Topics with 72 zh, 51 en and 21 mixed rows. The file is frozen as `FULL144_PUBLIC_DEV_FROZEN_UNRUN`; no predictions, evaluation key or candidate comparison have been produced.
+
+All rows have original candidate-writer source/license declarations, per-scenario lineage, the pinned Catalog digest, `CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED` labels and `PUBLIC_EXPOSED_CHALLENGE` exposure. The mechanical intake test screens exact bundle/current NFKC duplicates and character-trigram Jaccard >=0.55 against 774 earlier public development rows and within the 144-row cohort. It passes with zero flags and enforces the formal-name echo ceiling of 14/144. This is an intake screen only. It cannot establish independent authorship, natural-source diversity, semantic label correctness, reviewer agreement or blind generalization.
+
+The same candidate writer wrote all rows after seeing earlier public diagnostics. Therefore the cohort remains `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`, contributes **zero** independent source cohorts and qualification rows, and cannot arm ZMR-01B, AS, capability or resource gates. Capability remains `UNTESTED` and resources `NOT_QUALIFIED`. The 144 Topic, 95% assigned precision, 70% coverage/macro, safety and resource contracts remain unchanged.
+
+Next broaden fresh public control, context and multi-intent safety layers, then register changed A3/A5/A6 closures, fixed configurations, scorer and one evaluation key before a single public comparison that includes the frozen 18-row role slice. Do not replay consumed v0.2/v0.3 keys or access AS/final/consumed TEST.

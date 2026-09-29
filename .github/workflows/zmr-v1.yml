@@ -134,8 +134,8 @@ jobs:
             if (after.has('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')) {
               const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')).toString('utf8'));
               assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(challenge.rows.length, 96);
-              assert.equal(challenge.intake_status, 'PARTIAL96_PUBLIC_DEV_UNRUN');
+              assert.equal(challenge.rows.length, 144);
+              assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
               assert.equal(challenge.evaluation_status, 'UNRUN');
               assert.equal(challenge.qualification_credit_rows, 0);
             }
