@@ -1,0 +1,234 @@
+{
+  "schema": "ZMR-A7-PARTIAL-DEV-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "a18d99a65f244420536ab93546c2b1bbdf47f911959c808ae8d5b1b978d82624",
+  "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A7_PARTIAL_DIAGNOSTIC_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "14fa47579c415a49d52b418b8216d8c07c87348062e03c15b7e7e566d52acae0",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "4b40a89ea53e574ad666df45387175a0ad7e01e6ca21ecb594949d37857dd2de",
+    "train_sha256": "42320f7896316de7d22564bb6b51fd203d0c41633df0da791e14c3cd3744c2ce",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "27c7b1c43884cc0412dc7299b80d870b6da2c0645ecfb646f6cc43a9549e79aa",
+    "scorer_sha256": "599784ad9a09b75fd4974e861e22aebcf946e48fba402a9daa998aff704972f5"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "dev_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "covered_dev_topics": 48,
+  "control_rows": 12,
+  "fixed_config_count": 7,
+  "builds": {
+    "A1_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+      "index_bytes": 932855,
+      "runtime_plus_index_bytes": 939747,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A3_char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A7_char": {
+      "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "resource_verdict": "NOT_QUALIFIED",
+      "capability_verdict": "UNTESTED",
+      "topic_count": 144,
+      "train_rows": 288,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_a_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "train_b_sha256": "9031cc1d2438c3584d3aed740ad42a39999b2cceccf2921dcd035966babaa756",
+      "train_sha256": "936321e50bbefef09e474ba7dd68f7aeecf2bba70f987deea573c1ecee222aae",
+      "index_sha256": "d0ed330bd67e917732027f0ecda4d91547693fdc010b09d1ed1500506e5fc820",
+      "index_bytes": 616375,
+      "runtime_plus_index_bytes": 630891,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A1_word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "7c39cf2ffad4dbe64755e35da11a693c575cfc47d81feb58f887b1f89414d85b",
+      "index_bytes": 205561,
+      "runtime_plus_index_bytes": 212453,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A3_word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617",
+      "index_bytes": 116142,
+      "runtime_plus_index_bytes": 129760,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "A7_word": {
+      "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "resource_verdict": "NOT_QUALIFIED",
+      "capability_verdict": "UNTESTED",
+      "topic_count": 144,
+      "train_rows": 288,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_a_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "train_b_sha256": "9031cc1d2438c3584d3aed740ad42a39999b2cceccf2921dcd035966babaa756",
+      "train_sha256": "936321e50bbefef09e474ba7dd68f7aeecf2bba70f987deea573c1ecee222aae",
+      "index_sha256": "2fc2a8445687453ba51ff45a9bf223790ac85064b6896497ad1c962385eece88",
+      "index_bytes": 216170,
+      "runtime_plus_index_bytes": 230686,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A0_defer": {
+      "single_rows": 48,
+      "assigned": 0,
+      "correct": 0,
+      "assigned_precision": null,
+      "single_coverage": 0,
+      "full144_macro_recall": 0,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A1_char_fixed": {
+      "single_rows": 48,
+      "assigned": 19,
+      "correct": 3,
+      "assigned_precision": 0.15789473684210525,
+      "single_coverage": 0.3958333333333333,
+      "full144_macro_recall": 0.020833333333333332,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 3,
+      "deterministic_repeat_differences": 0
+    },
+    "A3_char_fixed": {
+      "single_rows": 48,
+      "assigned": 35,
+      "correct": 2,
+      "assigned_precision": 0.05714285714285714,
+      "single_coverage": 0.7291666666666666,
+      "full144_macro_recall": 0.013888888888888888,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 6,
+      "deterministic_repeat_differences": 0
+    },
+    "A7_char_default": {
+      "single_rows": 48,
+      "assigned": 0,
+      "correct": 0,
+      "assigned_precision": null,
+      "single_coverage": 0,
+      "full144_macro_recall": 0,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 0,
+      "deterministic_repeat_differences": 0
+    },
+    "A1_word_fixed": {
+      "single_rows": 48,
+      "assigned": 11,
+      "correct": 2,
+      "assigned_precision": 0.18181818181818182,
+      "single_coverage": 0.22916666666666666,
+      "full144_macro_recall": 0.013888888888888888,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 4,
+      "deterministic_repeat_differences": 0
+    },
+    "A3_word_fixed": {
+      "single_rows": 48,
+      "assigned": 16,
+      "correct": 2,
+      "assigned_precision": 0.125,
+      "single_coverage": 0.3333333333333333,
+      "full144_macro_recall": 0.013888888888888888,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 5,
+      "deterministic_repeat_differences": 0
+    },
+    "A7_word_default": {
+      "single_rows": 48,
+      "assigned": 1,
+      "correct": 1,
+      "assigned_precision": 1,
+      "single_coverage": 0.020833333333333332,
+      "full144_macro_recall": 0.006944444444444444,
+      "missing_topics": 96,
+      "controls": 12,
+      "control_false_assignments": 1,
+      "deterministic_repeat_differences": 0
+    }
+  },
+  "paired": {
+    "A7_vs_A1_char": {
+      "both_correct": 0,
+      "a7_only_correct": 0,
+      "anchor_only_correct": 3,
+      "control_false_delta": -3
+    },
+    "A7_vs_A3_char": {
+      "both_correct": 0,
+      "a7_only_correct": 0,
+      "anchor_only_correct": 2,
+      "control_false_delta": -6
+    },
+    "A7_vs_A1_word": {
+      "both_correct": 1,
+      "a7_only_correct": 0,
+      "anchor_only_correct": 1,
+      "control_false_delta": -3
+    },
+    "A7_vs_A3_word": {
+      "both_correct": 1,
+      "a7_only_correct": 0,
+      "anchor_only_correct": 1,
+      "control_false_delta": -4
+    }
+  },
+  "limitations": [
+    "one candidate writer and unreviewed gold",
+    "96 Topic strata absent in this diagnostic",
+    "12 controls and local static bytes do not qualify safety or browser resources",
+    "no context, multi-intent, independent AS or final TEST evidence"
+  ]
+}
