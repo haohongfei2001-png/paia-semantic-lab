@@ -1,0 +1,138 @@
+{
+  "schema": "ZMR-H1-RECALL-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "cohort": "data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json",
+  "cohort_sha256": "d760996f57c54d853f3bd1638326db96d0f5edaba463936d2d7aa81ae101d2c4",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "h1_module_sha256": "11fcb96a4724081fa66129272f1c5976bb77f3fc119baaffe6c190b7c7f0b950",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "topic_universe": 144,
+  "domain_universe": 18,
+  "labeled_rows": 48,
+  "control_rows": 12,
+  "builds": {
+    "a2_index_bytes": 206821,
+    "h1_runtime_plus_a2_index_bytes": 236284
+  },
+  "domain_recall": {
+    "single_rows": 36,
+    "top1": 17,
+    "top3": 22,
+    "flat_assigned_outside_top3": 0,
+    "domain_ranking_missing": 0
+  },
+  "results": {
+    "A2_FLAT": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 36,
+          "assigned": 14,
+          "exact": 11
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 2,
+          "exact": 0
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 6,
+          "assigned": 3,
+          "exact": 1
+        },
+        "MULTI": {
+          "rows": 6,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 48,
+      "labeled_assigned": 17,
+      "labeled_exact": 12,
+      "labeled_wrong": 5,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.7058823529411765
+    },
+    "A2_SCOPE": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 36,
+          "assigned": 14,
+          "exact": 11
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 1,
+          "exact": 0
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 6,
+          "assigned": 3,
+          "exact": 1
+        },
+        "MULTI": {
+          "rows": 6,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 48,
+      "labeled_assigned": 17,
+      "labeled_exact": 12,
+      "labeled_wrong": 5,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.7058823529411765
+    },
+    "H1_RECALL_SAFE": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 36,
+          "assigned": 14,
+          "exact": 11
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 1,
+          "exact": 0
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 6,
+          "assigned": 3,
+          "exact": 1
+        },
+        "MULTI": {
+          "rows": 6,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 48,
+      "labeled_assigned": 17,
+      "labeled_exact": 12,
+      "labeled_wrong": 5,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.7058823529411765
+    }
+  },
+  "paired": {
+    "H1_vs_A2_SCOPE": {
+      "exact_gained": 0,
+      "exact_lost": 0,
+      "wrong_avoided_by_defer": 0,
+      "wrong_added": 0,
+      "controls_false_avoided": 0,
+      "controls_false_added": 0,
+      "topic_switches": 0
+    }
+  },
+  "limitations": [
+    "same-writer unreviewed public DEV is not independent evidence",
+    "domain recall is diagnostic and cannot certify end-to-end Topic capability",
+    "static bytes do not measure browser latency or memory"
+  ]
+}
