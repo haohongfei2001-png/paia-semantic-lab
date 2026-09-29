@@ -31,6 +31,7 @@ export function auditIntake(rows, ids, {catalog_sha256, approved_licenses = [],
   }]));
   const fingerprints = new Map();
   const seenIds = new Set();
+  const asGenerations = new Map();
   for (const row of rows) {
     if (!row || !isToken(row.id) || seenIds.has(row.id) || !SPLITS.includes(row.split)) {
       add(issues, 'SCHEMA', 'invalid/duplicate row id or split'); continue;
@@ -50,8 +51,16 @@ export function auditIntake(rows, ids, {catalog_sha256, approved_licenses = [],
     const origin = row.source_review;
     if (!origin || origin.source_id !== source || !approved_licenses.includes(origin.license) ||
       origin.decision !== 'ACCEPT' || !isToken(origin.reviewer_id) || origin.reviewer_id === writer ||
-      !isToken(origin.evidence_ref) || !Number.isFinite(Date.parse(origin.reviewed_at)))
+      !isToken(origin.evidence_ref) || !Number.isFinite(Date.parse(origin.reviewed_at)) ||
+      Date.parse(origin.reviewed_at) > Date.parse(row.gold_frozen_at))
       add(issues, 'SOURCE_REVIEW_MISSING', row.id);
+    if (row.split === 'AS') for (const kind of ['writer','source','scenario','template','paraphrase','translation','contrast']) {
+      for (const value of row.lineage?.[kind] ?? []) {
+        const key=kind+':'+value, prior=asGenerations.get(key);
+        if (prior && prior !== row.generation_id) add(issues, 'AS_GENERATION_REUSE', key);
+        asGenerations.set(key,row.generation_id);
+      }
+    }
     if (!Array.isArray(row.mechanisms) || !row.mechanisms.length || !row.mechanisms.every(isToken) ||
       !unique(row.mechanisms)) add(issues, 'MECHANISM_MISSING', row.id);
     const gold = row.gold;
@@ -60,7 +69,8 @@ export function auditIntake(rows, ids, {catalog_sha256, approved_licenses = [],
       (gold.state === 'DEFER') !== (gold.topics.length === 0) ||
       (row.layer === 'SINGLE' && gold.topics.length !== 1) ||
       (row.layer === 'MULTI' && gold.topics.length < 2) ||
-      (row.layer === 'CONTROL' && gold.topics.length !== 0)) {
+      (row.layer === 'CONTROL' && gold.topics.length !== 0) ||
+      (['CONTEXT_REQUIRED','CONTEXT_INVARIANCE'].includes(row.layer) && gold.topics.length === 0)) {
       add(issues, 'GOLD_SCHEMA', row.id); continue;
     }
     const reviews = row.reviews;
@@ -110,7 +120,9 @@ export function auditIntake(rows, ids, {catalog_sha256, approved_licenses = [],
     if (!row.near_duplicate_screen || row.near_duplicate_screen.status !== 'REVIEWED' ||
       !isToken(row.near_duplicate_screen.reviewer_id) ||
       row.near_duplicate_screen.reviewer_id === writer ||
-      !isToken(row.near_duplicate_screen.method_version))
+      !isToken(row.near_duplicate_screen.method_version) ||
+      !Number.isFinite(Date.parse(row.near_duplicate_screen.reviewed_at)) ||
+      Date.parse(row.near_duplicate_screen.reviewed_at) > Date.parse(row.gold_frozen_at))
       add(issues, 'NEAR_DUPLICATE_REVIEW_MISSING', row.id);
   }
   const neededCohorts = {TRAIN: 3, DEV_TUNE: 1, DEV_CAL: 1, CHALLENGE_DEV: 2, AS: 3};

@@ -7,10 +7,10 @@
   "baseline_main": "c98e65cfcddac138fad4d7368849638ff5478543",
   "registration_main": "2e27c7e0f36b78e61df9c72659083c8162f0f323",
   "initial_engineering_main": "795efbee70edca496a0e67df6e593ab8b92944e4",
-  "package_status": "FOUNDATION_ENGINEERING_STARTED",
-  "active_round": "ZMR-01A",
-  "engineering_status": "FOUNDATION_LOCAL_PASS_PENDING_EXACT_HEAD_MAIN",
-  "data_qualification": "NOT_REGISTERED",
+  "package_status": "FOUNDATION_ENGINEERING_COMPLETE_DATA_INTAKE_IN_PROGRESS",
+  "active_round": "ZMR-01B",
+  "engineering_status": "FOUNDATION_EXACT_HEAD_AND_MAIN_PASS",
+  "data_qualification": "NOT_QUALIFIED",
   "capability_verdict": "UNTESTED",
   "resource_verdict": "NOT_QUALIFIED",
   "product_contract": {
@@ -48,8 +48,8 @@
   "generation_limits": {"max_development_generations": 6, "max_candidates_per_generation": 6, "max_stable_configs_per_generation": 12, "max_semantic_repairs_per_candidate": 2, "max_as_batches_per_generation": 1, "max_final_major_generation_slots": 3},
   "rounds": {
     "ZMR-00": {"execution_status": "COMPLETE", "scope": "DESIGN_AND_CANONICAL_REGISTRATION", "pr": 89, "exact_head": "72d614683379e74364a2fe6559db77f01516c7b3", "main": "2e27c7e0f36b78e61df9c72659083c8162f0f323", "exact_head_checks": "PASS", "exact_main_checks": "PASS", "receipt_comment_id": 5885362488},
-    "ZMR-01A": {"execution_status": "IN_PROGRESS", "scope": "METADATA_METRIC_BUDGET_ENGINEERING_ONLY", "initial_unit_tests": 16, "current_unit_tests": 30, "local_unit_verdict": "PASS", "full_stage_complete": false, "initial_pr": 90, "initial_receipt_comment_id": 5885455981, "report": "docs/zero-model-refoundation-v1/ZMR-01A_ENGINEERING.md", "correction_report": "docs/zero-model-refoundation-v1/ZMR-01A_PRECISION_GUARD_CORRECTION.md", "completion_report": "docs/zero-model-refoundation-v1/ZMR-01A_FOUNDATION_COMPLETION.md", "integration_receipt": "PENDING_EXACT_HEAD_AND_MAIN_CHECKS"},
-    "ZMR-01B": {"execution_status": "NOT_STARTED", "independent_cohorts": "NOT_PROVISIONED"}
+    "ZMR-01A": {"execution_status": "COMPLETE", "scope": "METADATA_METRIC_BUDGET_ENGINEERING_ONLY", "initial_unit_tests": 16, "current_unit_tests": 30, "local_unit_verdict": "PASS", "full_stage_complete": true, "initial_pr": 90, "initial_receipt_comment_id": 5885455981, "completion_pr": 92, "completion_exact_head": "7067ac0dc0bfd01d71e0c54f39fb8d76deb2f516", "completion_main": "b9d93e17663a1145dc30863084c21eca073adc1a", "completion_receipt_comment_id": 5885892467, "exact_head_checks": "PASS", "exact_main_checks": "PASS", "report": "docs/zero-model-refoundation-v1/ZMR-01A_ENGINEERING.md", "correction_report": "docs/zero-model-refoundation-v1/ZMR-01A_PRECISION_GUARD_CORRECTION.md", "completion_report": "docs/zero-model-refoundation-v1/ZMR-01A_FOUNDATION_COMPLETION.md", "integration_receipt": "PR92_EXACT_HEAD_AND_MAIN_CHECKS"},
+    "ZMR-01B": {"execution_status": "IN_PROGRESS", "independent_cohorts": "NOT_PROVISIONED", "accepted_train_rows": 0, "accepted_ordinary_dev_rows": 0, "accepted_challenge_dev_rows": 0, "accepted_as_rows": 0, "metadata_unit_tests": 31, "guideline": "docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md", "readiness_report": "docs/zero-model-refoundation-v1/ZMR-01B_READINESS.md", "boundary_graph": "LABEL_IDENTIFIABILITY_REVIEW_REQUIRED", "capability_gate": "NOT_ARMED"}
   },
-  "next_action": "Verify the ZMR-01A foundation batch at exact PR head and main. If green, mark 01A engineering COMPLETE and begin ZMR-01B full144 independent TRAIN/DEV/challenge/AS intake qualification. Do not implement the Router, self-author independent evidence, create final TEST, or read consumed TEST."
+  "next_action": "Continue ZMR-01B: obtain reasoned full144 neighbor boundaries and independently reviewed annotation guide, then source/license/author cohorts, double-review gold and curator-isolated AS with full quotas. Until genuine independence and data gates pass, remain at 01B; do not start ZMR-02, self-author AS/final evidence, create final TEST, or read consumed TEST."
 }
