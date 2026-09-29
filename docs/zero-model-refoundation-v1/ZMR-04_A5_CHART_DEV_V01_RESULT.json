@@ -1,0 +1,127 @@
+{
+  "schema": "ZMR-A5-CHART-PUBLIC-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "cohort": "data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json",
+  "cohort_sha256": "ca175938588dd0ccb6773871520d68522a068388ed67a9549ff6aefe7f483cb6",
+  "chart_module_sha256": "53b63005cd6e1c29a94be30bcb9228417c1cf0347c332e5231e710e3bab12973",
+  "a3_index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+  "fixed_config_count": 3,
+  "topic_universe": 144,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "results": {
+    "A3_FLAT": {
+      "by_role": {
+        "ROLE_SWAP": {
+          "rows": 6,
+          "assigned": 5,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 6,
+          "assigned": 4,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 6,
+          "assigned": 2,
+          "exact": 0
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 4,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 18,
+      "labeled_assigned": 11,
+      "labeled_exact": 1,
+      "control_false_assignments": 4,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.09090909090909091
+    },
+    "A3_SCOPE": {
+      "by_role": {
+        "ROLE_SWAP": {
+          "rows": 6,
+          "assigned": 5,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 6,
+          "assigned": 4,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 6,
+          "assigned": 2,
+          "exact": 0
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 18,
+      "labeled_assigned": 11,
+      "labeled_exact": 1,
+      "control_false_assignments": 0,
+      "context_removal_output_changes": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.09090909090909091
+    },
+    "A5_CHART": {
+      "by_role": {
+        "ROLE_SWAP": {
+          "rows": 6,
+          "assigned": 4,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 6,
+          "assigned": 5,
+          "exact": 1
+        },
+        "MULTI": {
+          "rows": 6,
+          "assigned": 3,
+          "exact": 0
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 18,
+      "labeled_assigned": 12,
+      "labeled_exact": 2,
+      "control_false_assignments": 0,
+      "context_removal_output_changes": 1,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.16666666666666666
+    }
+  },
+  "paired_A5_CHART_vs_A3_SCOPE": {
+    "exact_gained": 1,
+    "exact_lost": 0,
+    "wrong_avoided_by_defer": 3,
+    "wrong_added": 3,
+    "controls_false_avoided": 0,
+    "controls_false_added": 0,
+    "topic_set_switches": 2
+  },
+  "static_bytes": {
+    "a3_index": 114123,
+    "runtime_plus_index": 145629
+  },
+  "limitations": [
+    "same-writer public DEV is not independent evidence or a fresh gate",
+    "static bytes do not measure browser latency or memory"
+  ]
+}
