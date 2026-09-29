@@ -14,12 +14,20 @@
   "data_qualification": "NOT_QUALIFIED",
   "capability_verdict": "UNTESTED",
   "resource_verdict": "NOT_QUALIFIED",
-  "standing_authorization": {"source": "OWNER_2026-09-29", "protocol": "docs/zero-model-refoundation-v1/EXECUTION_PROTOCOL.md", "mode": "CONTINUOUS_UNATTENDED_SINGLE_WRITER", "development_track": "WRITER_CREATED_PROVISIONAL_DATA_ALLOWED", "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE", "qualification_track": "INDEPENDENT_AS_AND_GOLD_STILL_REQUIRED", "final_test_execution_authorized": false},
+  "standing_authorization": {
+    "source": "OWNER_2026-09-29",
+    "protocol": "docs/zero-model-refoundation-v1/EXECUTION_PROTOCOL.md",
+    "mode": "CONTINUOUS_UNATTENDED_SINGLE_WRITER",
+    "development_track": "WRITER_CREATED_PROVISIONAL_DATA_ALLOWED",
+    "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "qualification_track": "INDEPENDENT_AS_AND_GOLD_STILL_REQUIRED",
+    "final_test_execution_authorized": false
+  },
   "product_contract": {
     "topic_count": 144,
     "single_precision_min": 0.95,
-    "single_coverage_min": 0.70,
-    "full144_macro_recall_min": 0.70,
+    "single_coverage_min": 0.7,
+    "full144_macro_recall_min": 0.7,
     "control_false_assignment_max": 0.02,
     "context_harm_max": 0,
     "neural_assets_bytes_max": 0,
@@ -48,12 +56,79 @@
   "new_semantic_api_calls": 0,
   "new_runtime_implemented": true,
   "new_runtime_scope": "ZMR_02_DEVELOPMENT_PROTOTYPE_ONLY",
-  "generation_limits": {"max_development_generations": 6, "max_candidates_per_generation": 6, "max_stable_configs_per_generation": 12, "max_semantic_repairs_per_candidate": 2, "max_as_batches_per_generation": 1, "max_final_major_generation_slots": 3},
-  "rounds": {
-    "ZMR-00": {"execution_status": "COMPLETE", "scope": "DESIGN_AND_CANONICAL_REGISTRATION", "pr": 89, "exact_head": "72d614683379e74364a2fe6559db77f01516c7b3", "main": "2e27c7e0f36b78e61df9c72659083c8162f0f323", "exact_head_checks": "PASS", "exact_main_checks": "PASS", "receipt_comment_id": 5885362488},
-    "ZMR-01A": {"execution_status": "COMPLETE", "scope": "METADATA_METRIC_BUDGET_ENGINEERING_ONLY", "initial_unit_tests": 16, "current_unit_tests": 30, "local_unit_verdict": "PASS", "full_stage_complete": true, "initial_pr": 90, "initial_receipt_comment_id": 5885455981, "completion_pr": 92, "completion_exact_head": "7067ac0dc0bfd01d71e0c54f39fb8d76deb2f516", "completion_main": "b9d93e17663a1145dc30863084c21eca073adc1a", "completion_receipt_comment_id": 5885892467, "exact_head_checks": "PASS", "exact_main_checks": "PASS", "report": "docs/zero-model-refoundation-v1/ZMR-01A_ENGINEERING.md", "correction_report": "docs/zero-model-refoundation-v1/ZMR-01A_PRECISION_GUARD_CORRECTION.md", "completion_report": "docs/zero-model-refoundation-v1/ZMR-01A_FOUNDATION_COMPLETION.md", "integration_receipt": "PR92_EXACT_HEAD_AND_MAIN_CHECKS"},
-    "ZMR-01B": {"execution_status": "IN_PROGRESS", "independent_cohorts": "NOT_PROVISIONED", "accepted_train_rows": 0, "accepted_ordinary_dev_rows": 0, "accepted_challenge_dev_rows": 0, "accepted_as_rows": 0, "metadata_unit_tests": 31, "guideline": "docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md", "readiness_report": "docs/zero-model-refoundation-v1/ZMR-01B_READINESS.md", "boundary_graph": "LABEL_IDENTIFIABILITY_REVIEW_REQUIRED", "capability_gate": "NOT_ARMED"},
-    "ZMR-02": {"execution_status": "DEV_IN_PROGRESS", "qualification_status": "NOT_ELIGIBLE", "family": "A0_A1", "candidate_writer_count": 1, "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE", "provisional_train_rows": 18, "provisional_challenge_rows": 18, "challenge_missing_topics": 126, "a1_stable_candidate": false, "as_consumed": 0, "report": "docs/zero-model-refoundation-v1/ZMR-02_A1_DEV.md"}
+  "generation_limits": {
+    "max_development_generations": 6,
+    "max_candidates_per_generation": 6,
+    "max_stable_configs_per_generation": 12,
+    "max_semantic_repairs_per_candidate": 2,
+    "max_as_batches_per_generation": 1,
+    "max_final_major_generation_slots": 3
   },
-  "next_action": "Continue ZMR-02 development: expand provenance-tracked provisional TRAIN across full144 with varied mechanisms/languages and separate writer-visible DEV/CAL/challenge; preserve A1 compiler TRAIN-only closure, run only a new changed-closure diagnostic, perform bounded repair or eliminate A1, then enter A2/A3. Independent 01B qualification remains NOT_QUALIFIED; no AS/final/consumed TEST access or capability PASS claim."
+  "rounds": {
+    "ZMR-00": {
+      "execution_status": "COMPLETE",
+      "scope": "DESIGN_AND_CANONICAL_REGISTRATION",
+      "pr": 89,
+      "exact_head": "72d614683379e74364a2fe6559db77f01516c7b3",
+      "main": "2e27c7e0f36b78e61df9c72659083c8162f0f323",
+      "exact_head_checks": "PASS",
+      "exact_main_checks": "PASS",
+      "receipt_comment_id": 5885362488
+    },
+    "ZMR-01A": {
+      "execution_status": "COMPLETE",
+      "scope": "METADATA_METRIC_BUDGET_ENGINEERING_ONLY",
+      "initial_unit_tests": 16,
+      "current_unit_tests": 30,
+      "local_unit_verdict": "PASS",
+      "full_stage_complete": true,
+      "initial_pr": 90,
+      "initial_receipt_comment_id": 5885455981,
+      "completion_pr": 92,
+      "completion_exact_head": "7067ac0dc0bfd01d71e0c54f39fb8d76deb2f516",
+      "completion_main": "b9d93e17663a1145dc30863084c21eca073adc1a",
+      "completion_receipt_comment_id": 5885892467,
+      "exact_head_checks": "PASS",
+      "exact_main_checks": "PASS",
+      "report": "docs/zero-model-refoundation-v1/ZMR-01A_ENGINEERING.md",
+      "correction_report": "docs/zero-model-refoundation-v1/ZMR-01A_PRECISION_GUARD_CORRECTION.md",
+      "completion_report": "docs/zero-model-refoundation-v1/ZMR-01A_FOUNDATION_COMPLETION.md",
+      "integration_receipt": "PR92_EXACT_HEAD_AND_MAIN_CHECKS"
+    },
+    "ZMR-01B": {
+      "execution_status": "IN_PROGRESS",
+      "independent_cohorts": "NOT_PROVISIONED",
+      "accepted_train_rows": 0,
+      "accepted_ordinary_dev_rows": 0,
+      "accepted_challenge_dev_rows": 0,
+      "accepted_as_rows": 0,
+      "metadata_unit_tests": 31,
+      "guideline": "docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md",
+      "readiness_report": "docs/zero-model-refoundation-v1/ZMR-01B_READINESS.md",
+      "boundary_graph": "LABEL_IDENTIFIABILITY_REVIEW_REQUIRED",
+      "capability_gate": "NOT_ARMED"
+    },
+    "ZMR-02": {
+      "execution_status": "DEV_IN_PROGRESS",
+      "qualification_status": "NOT_ELIGIBLE",
+      "family": "A0_A1",
+      "candidate_writer_count": 1,
+      "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "provisional_train_rows": 144,
+      "provisional_challenge_rows": 18,
+      "challenge_missing_topics": 126,
+      "a1_stable_candidate": false,
+      "as_consumed": 0,
+      "report": "docs/zero-model-refoundation-v1/ZMR-02_A1_DEV.md",
+      "provisional_train_topics": 144,
+      "provisional_train_language_counts": {
+        "zh": 90,
+        "en": 36,
+        "mixed": 18
+      },
+      "provisional_train_source_cohorts": 0,
+      "full144_train_report": "docs/zero-model-refoundation-v1/ZMR-02_FULL144_DEV_TRAIN.md"
+    }
+  },
+  "next_action": "Continue ZMR-02: create separately versioned writer-visible ordinary DEV/TUNE, DEV/CAL and challenge with full144 Topic coverage and lineage; run only changed-closure provisional diagnostics, then bounded A1 repair/elimination and A2/A3. Independent ZMR-01B TRAIN/DEV/AS remain 0 accepted and NOT_QUALIFIED; no capability/resource PASS, AS/final, or consumed TEST access."
 }

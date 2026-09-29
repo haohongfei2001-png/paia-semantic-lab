@@ -7,7 +7,7 @@ import { compileA1 } from './a1.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const CATALOG = resolve(ROOT, 'catalog/system_topic_catalog_v0.2.yaml');
-const TRAIN = resolve(ROOT, 'data/zero_model_refoundation/development/provisional_train_v0.1.json');
+const TRAIN = resolve(ROOT, 'data/zero_model_refoundation/development/provisional_train_v0.2.json');
 const CATALOG_BLOB = '6bcdd2af66879d7ac098cf237b5586c3c9818aad';
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 const must = (ok, message) => { if (!ok) throw new Error(message); };
@@ -43,9 +43,10 @@ export function parsePinnedCatalog(bytes) {
 
 export function parseProvisionalTrain(bytes, catalogSha, ids) {
   const value=JSON.parse(bytes.toString('utf8'));
-  must(value && value.schema==='ZMR-PROVISIONAL-TRAIN-1' &&
+  must(value && value.schema==='ZMR-PROVISIONAL-TRAIN-2' &&
     value.evidence_class==='NON_INDEPENDENT_DEVELOPMENT_EVIDENCE' &&
-    value.catalog_sha256===catalogSha && Array.isArray(value.rows), 'invalid provisional TRAIN');
+    value.catalog_sha256===catalogSha && value.qualification_credit_rows===0 &&
+    value.exposure==='PUBLIC_TRAIN' && Array.isArray(value.rows), 'invalid provisional TRAIN');
   const seen=new Set(), universe=new Set(ids);
   for (const row of value.rows) {
     must(row && typeof row.id==='string' && row.id && !seen.has(row.id) &&
@@ -53,10 +54,18 @@ export function parseProvisionalTrain(bytes, catalogSha, ids) {
       typeof row.current==='string' && row.current &&
       typeof row.writer_id==='string' && row.writer_id &&
       typeof row.source_id==='string' && row.source_id &&
+      row.source_license_status==='ORIGINAL_CANDIDATE_WRITER_PROVISIONAL' &&
       typeof row.scenario_id==='string' && row.scenario_id &&
+      typeof row.scenario_family==='string' && row.scenario_family &&
+      typeof row.template_family==='string' && row.template_family &&
+      row.exposure==='PUBLIC_TRAIN' && row.generation_id==='G0_DEV' &&
+      ['zh','en','mixed'].includes(row.language) &&
       typeof row.mechanism==='string' && row.mechanism, 'invalid provisional row');
     seen.add(row.id);
   }
+  must(value.rows.length===144 &&
+    new Set(value.rows.map(row=>row.topic_id)).size===144,
+    'one provisional TRAIN row per full144 Topic required');
   return value.rows;
 }
 
@@ -70,7 +79,8 @@ export async function buildA1({mode='char', output=resolve(ROOT,'artifacts/zmr-v
     [...new Set([t.name_zh,t.name_en,...t.aliases_zh,...t.aliases_en])].join(' ')]));
   for (const row of rows) documents[row.topic_id]+=' '+row.current;
   const index=compileA1({topic_ids:topics.map(t=>t.id),documents,
-    catalog_sha256:catalogSha,train_sha256:sha256(trainBytes),mode});
+    catalog_sha256:catalogSha,train_sha256:sha256(trainBytes),mode,
+    max_features:mode==='char'?6000:12000});
   const bytes=Buffer.from(JSON.stringify(index)+'\n');
   const runtimeBytes=(await regular(resolve(ROOT,'packages/zero_model_refoundation/a1.mjs'))).length;
   must(bytes.length<=1048576, 'A1 index exceeds 1 MiB');
