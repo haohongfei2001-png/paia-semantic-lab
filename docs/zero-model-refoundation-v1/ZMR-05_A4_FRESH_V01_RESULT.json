@@ -1,0 +1,110 @@
+{
+  "schema": "ZMR-A4-FRESH-COMPARISON-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "ee28f0f0589d9f37baa93f32c2f04a2c8b700b81d3b2b90cc624273df2cc8e22",
+  "registration_path": "data/zero_model_refoundation/development/a4_fresh_v01_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A4_FRESH_PAIR_VETO_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "33e117fb5dd8f36b14c4bff57e943fbcfaef4e676f5516a8e82251c971a6d4bc",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "4eaf88af301ce3e618dca699e154f0424a54698b333b5dc311b2856208921a2d",
+    "train_sha256": "21caef53be01fdfbb212a4d87fde627b60d3d6f5f25fd956edf231ba54ccffc2",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "26fb45552c034a02eede1aa26872527b75bb914b600380fd3d4f760e571dd750",
+    "scorer_sha256": "007e51ffa5fdd8703aab0234a49b5c8c74176cbd4465327a8a81d4d1fe0beba4"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "challenge_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "provisional_labeled_pair_rows": 16,
+  "ambiguous_unscored_rows": 4,
+  "control_rows": 12,
+  "fixed_config_count": 2,
+  "builds": {
+    "base": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "pair": {
+      "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "capability_verdict": "UNTESTED",
+      "resource_verdict": "NOT_QUALIFIED",
+      "topic_count": 144,
+      "graph_pairs": 4,
+      "designated_train_rows": 20,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "graph_sha256": "c5b9138f85e084004f94b4c2630662ab47d1ab99246846f168fc7cad527ed830",
+      "pair_train_sha256": "e2715391a30ac0083cdd4114fafd2a62775b545635c8f4cb20e854d09daf5cef",
+      "base_train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "pair_index_sha256": "5638e15e02a6b7f55d73a8fcbdb19302dbe63f709f5baeed5c41e6f538b71b2e",
+      "pair_index_bytes": 9743,
+      "base_index_bytes": 114123,
+      "total_index_bytes": 123866,
+      "runtime_plus_total_index_bytes": 143652,
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A3_char_deletion_ablation": {
+      "provisional_labeled_pair_rows": 16,
+      "labeled_assigned": 13,
+      "labeled_correct": 4,
+      "labeled_wrong": 9,
+      "left_correct": 2,
+      "right_correct": 2,
+      "pairs_all_four_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 1,
+      "controls": 12,
+      "control_false_assignments": 8,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": 0.3076923076923077
+    },
+    "A4_char_pair_veto": {
+      "provisional_labeled_pair_rows": 16,
+      "labeled_assigned": 13,
+      "labeled_correct": 4,
+      "labeled_wrong": 9,
+      "left_correct": 2,
+      "right_correct": 2,
+      "pairs_all_four_correct": 0,
+      "ambiguous_unscored_rows": 4,
+      "ambiguous_assigned": 1,
+      "controls": 12,
+      "control_false_assignments": 8,
+      "deterministic_repeat_differences": 0,
+      "provisional_assigned_precision": 0.3076923076923077
+    }
+  },
+  "paired": {
+    "correct_lost_to_defer": 0,
+    "wrong_avoided_by_defer": 0,
+    "controls_false_avoided": 0,
+    "controls_false_added": 0,
+    "ambiguous_assignments_removed_unscored": 0,
+    "new_topic_assignments": 0
+  },
+  "limitations": [
+    "same candidate writer and unreviewed provisional labels",
+    "four ambiguous members have no gold and are unscored",
+    "focused 16-label/12-control data cannot qualify full144 capability or global safety",
+    "static bytes do not measure browser memory or latency"
+  ]
+}
