@@ -87,6 +87,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R1_REPAIR_DEV_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R2_REPAIR_DEV_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_CHALLENGE_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01_REGISTRATION.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -107,6 +108,7 @@ jobs:
             engineering.push('packages/zero_model_refoundation/a6_complement_r2.mjs', 'packages/zero_model_refoundation/a6_complement_r2.test.mjs');
             engineering.push('packages/zero_model_refoundation/a6_r2_repair_dev_diagnostic.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a6_r2_challenge.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a6_r2_fresh_compare.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
@@ -119,6 +121,7 @@ jobs:
             development.push('data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json');
             development.push('data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json');
+            development.push('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json');
             const resultA5FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json';
             const resultA5R1FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01_RESULT.json';
             const resultA4PositiveFreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01_RESULT.json';
@@ -452,6 +455,18 @@ jobs:
               assert.equal(challenge.evaluation_status, 'UNRUN');
               assert.equal(challenge.qualification_credit_rows, 0);
               assert.equal(challenge.independent_source_cohorts, 0);
+            }
+            if (after.has('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')) {
+              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')).toString('utf8'));
+              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(registration.topic_universe, 144);
+              assert.equal(registration.control_rows, 12);
+              assert.equal(registration.configs.length, 5);
+              assert.equal(registration.independent_rows, 0);
+              assert.equal(registration.as_consumed, 0);
+              assert.equal(registration.capability_verdict, 'UNTESTED');
+              assert.equal(registration.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(registration.evaluation_key, s.rounds['ZMR-05'].a6_r2_fresh_v01_evaluation_key);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')) {
               const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')).toString('utf8'));
