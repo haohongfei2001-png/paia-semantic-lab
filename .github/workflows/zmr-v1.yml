@@ -78,6 +78,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_ENGINEERING_DEV.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_CHALLENGE_V01_INTAKE.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01_REGISTRATION.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -99,7 +100,8 @@ jobs:
             development.push('data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json');
             const resultA5FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json';
             const resultA5R1FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01_RESULT.json';
-            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, ...engineering, ...development]);
+            const resultA4PositiveFreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01_RESULT.json';
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -252,6 +254,32 @@ jobs:
               assert.equal(result.as_consumed, 0);
               assert.deepEqual(result.paired, {correct_lost_to_defer:0,wrong_avoided_by_defer:0,controls_false_avoided:0,controls_false_added:0,ambiguous_assignments_removed_unscored:0,new_topic_assignments:0});
               assert.equal(s.rounds['ZMR-05'].a4_fresh_challenge_v01_evaluation_key, result.evaluation_key);
+            }
+            if (after.has(resultA4PositiveFreshPath)) {
+              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json')).toString('utf8'));
+              const result = JSON.parse((await read(resultA4PositiveFreshPath)).toString('utf8'));
+              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.evaluation_key, registration.evaluation_key);
+              assert.equal(result.topic_universe, 144);
+              assert.equal(result.provisional_labeled_pair_rows, 16);
+              assert.equal(result.ambiguous_unscored_rows, 4);
+              assert.equal(result.control_rows, 8);
+              assert.equal(result.fixed_config_count, 3);
+              for (const counts of Object.values(result.results)) {
+                assert.equal(counts.labeled_assigned, 12);
+                assert.equal(counts.labeled_correct, 4);
+                assert.equal(counts.labeled_wrong, 8);
+                assert.equal(counts.control_false_assignments, 6);
+                assert.equal(counts.deterministic_repeat_differences, 0);
+              }
+              for (const delta of Object.values(result.paired))
+                assert(Object.values(delta).every(value => value === 0));
+              assert.equal(result.capability_verdict, 'UNTESTED');
+              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(result.independent_rows, 0);
+              assert.equal(result.as_consumed, 0);
+              assert.equal(s.rounds['ZMR-05'].a4_positive_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has(resultA5FreshPath)) {
               const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_fresh_v01_registration.json')).toString('utf8'));
