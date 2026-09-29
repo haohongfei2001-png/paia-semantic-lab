@@ -219,12 +219,17 @@
       "family": "A4_A5_CONTRASTIVE_AND_STRUCTURAL",
       "candidate_writer_count": 1,
       "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
-      "provisional_boundary_graph": "NOT_STARTED",
+      "provisional_boundary_graph": "CATALOG_AND_SAME_WRITER_TRAIN_LEXICAL_HYPOTHESES_ONLY",
+      "provisional_boundary_graph_edge_count": 64,
+      "provisional_boundary_graph_topic_members": 83,
+      "provisional_boundary_graph_qualification_credit_edges": 0,
+      "provisional_boundary_graph_data": "data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json",
+      "provisional_boundary_graph_report": "docs/zero-model-refoundation-v1/ZMR-04_A4_BOUNDARY_GRAPH_DEV.md",
       "a4_stable_candidate": false,
       "a5_stable_candidate": false,
       "semantic_evaluations": 0,
       "as_consumed": 0
     }
   },
-  "next_action": "Continue ZMR-04 development: A1/A2/A3 fixed public v0.3 comparison is consumed once; current configurations are rejected without a family ceiling. Implement a bounded A4 contrastive boundary or A5 finite-state structural prototype using fixed Catalog and provisional TRAIN, with explicit 144-Topic fallback and no semantic API. Build only provisional Topic boundary hypotheses, clearly not independent gold, and expand public safety/role challenge mechanisms. Register fresh changed-closure public DEV before any new comparison; do not rerun v0.2/v0.3 consumed keys. Independent ZMR-01B stays NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; no AS/final/consumed TEST access."
+  "next_action": "Continue ZMR-04 development: the fixed Catalog and same-writer TRAIN yielded 64 provisional lexical boundary hypotheses, none active or independently qualified. Build a bounded A4 pairwise resolver only after fresh public positive/negative/ambiguous development triads, or continue A5 finite-state role/scope engineering; retain full144 fallback. Expand public safety/role challenge mechanisms, register a changed closure and fresh public DEV before any new comparison, and do not rerun consumed v0.2/v0.3 keys. Independent ZMR-01B stays NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; no AS/final/consumed TEST access."
 }
