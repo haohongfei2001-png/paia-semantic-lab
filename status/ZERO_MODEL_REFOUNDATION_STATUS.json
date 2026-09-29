@@ -172,7 +172,7 @@
       },
       "provisional_challenge_independent_source_cohorts": 0,
       "provisional_challenge_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
-      "provisional_challenge_safety_layers": "MISSING",
+      "provisional_challenge_safety_layers": "PARTIAL_SAME_WRITER_SEED_UNRUN",
       "provisional_challenge_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE144_DEV.md",
       "a1a2_challenge_v02_evaluation_key": "34401a17e57c2ce84c45aebf5561d82785e1d446b52eebc9f3e3af88fa0246ed",
       "a1a2_challenge_v02_report": "docs/zero-model-refoundation-v1/ZMR-03_A1A2_CHALLENGE_V02.md",
@@ -182,8 +182,18 @@
       "a3_stable_candidate": false,
       "a3_report": "docs/zero-model-refoundation-v1/ZMR-03_A3_ENGINEERING_DEV.md",
       "a3_static_char_index_bytes": 114123,
-      "a3_static_word_index_bytes": 116142
+      "a3_static_word_index_bytes": 116142,
+      "provisional_safety_seed_rows": 36,
+      "provisional_safety_seed_counts": {
+        "controls": 12,
+        "context_required_pairs": 6,
+        "context_invariance_pairs": 6,
+        "multi_intent": 12
+      },
+      "provisional_safety_independent_rows": 0,
+      "provisional_safety_evaluation_status": "UNRUN",
+      "provisional_safety_report": "docs/zero-model-refoundation-v1/ZMR-03_SAFETY_SEED_DEV.md"
     }
   },
-  "next_action": "Continue ZMR-03: A3 bounded multiclass hinge prototype is engineered but semantically UNTESTED. Build fresh public provisional challenge and separate control/context/multi layers with explicit same-writer provenance; register a changed-closure A3 comparison before scoring. The prior A1/A2 challenge v0.2/key is consumed and must not be rerun unchanged. Independent ZMR-01B stays NOT_QUALIFIED with zero accepted rows. No capability/resource PASS or AS/final/consumed TEST access."
+  "next_action": "Continue ZMR-03: public same-writer safety seed has 12 controls, six required-context pairs, six invariance pairs and 12 multi-intent rows, all UNRUN with zero qualification credit. Broaden natural safety mechanisms and create a fresh public full144 single-label challenge, then register a changed-closure A3 comparison. A3 remains engineering-only and prior A1/A2 public challenge v0.2 is consumed for development. Independent ZMR-01B stays NOT_QUALIFIED with zero accepted rows. No capability/resource PASS or AS/final/consumed TEST access."
 }
