@@ -111,3 +111,54 @@ test('public unfitted CAL is full144, visibly non-independent and exact-separate
   assert.equal(bundles.size,144);
   assert.deepEqual(Object.fromEntries(['zh','en','mixed'].map(x=>[x,cal.rows.filter(r=>r.language===x).length])),{zh:90,en:36,mixed:18});
 });
+
+test('new full144 challenge is exposed same-writer metadata, unrun and exact-separated',async()=>{
+  const catalog=await read('catalog/system_topic_catalog_v0.2.yaml');
+  const ids=parsePinnedCatalog(catalog).map(t=>t.id),catalogSha=sha256(catalog);
+  const filenames=['provisional_train_v0.2.json','provisional_tune_v0.1.json','provisional_cal_v0.1.json','provisional_challenge_v0.1.json'];
+  const previous=await Promise.all(filenames.map(async name=>JSON.parse((await read('data/zero_model_refoundation/development/'+name)).toString('utf8'))));
+  const challenge=JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.2.json')).toString('utf8'));
+  assert.equal(challenge.schema,'ZMR-PROVISIONAL-CHALLENGE-2');
+  assert.equal(challenge.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+  assert.equal(challenge.qualification_credit_rows,0);
+  assert.equal(challenge.catalog_sha256,catalogSha);
+  assert.equal(challenge.split,'CHALLENGE_PROVISIONAL');
+  assert.equal(challenge.exposure,'PUBLIC_EXPOSED_CHALLENGE');
+  assert.equal(challenge.evaluation_status,'UNRUN');
+  assert.equal(challenge.rows.length,144);
+  assert.deepEqual(new Set(challenge.rows.map(r=>r.topic_id)),new Set(ids));
+  const oldRows=previous.flatMap(x=>x.rows);
+  const priorHashes=['bundle_sha256','nfc_sha256','nfkc_sha256'].map(key=>new Set(oldRows.map(r=>fingerprint(r)[key])));
+  const priorScenarios=new Set(oldRows.map(r=>r.scenario_family).filter(Boolean));
+  const priorTemplates=new Set(oldRows.map(r=>r.template_family).filter(Boolean));
+  const rowIds=new Set(),scenarios=new Set(),templates=new Set(),bundles=new Set();
+  for(const row of challenge.rows){
+    assert.equal(row.split,'CHALLENGE_PROVISIONAL');
+    assert.equal(row.generation_id,'G0_DEV');
+    assert.equal(row.catalog_sha256,catalogSha);
+    assert.equal(row.expected_state,'ASSIGNED');
+    assert.deepEqual(row.gold_topics,[row.topic_id]);
+    assert.equal(row.gold_origin,'CANDIDATE_WRITER_PROVISIONAL_UNREVIEWED');
+    assert.equal(row.writer_id,'candidate-writer');
+    assert.equal(row.writer_cohort,'candidate-writer-G0');
+    assert.equal(row.source_id,'writer-challenge-v02-20260929');
+    assert.equal(row.source_family,'candidate-writer-G0');
+    assert.equal(row.source_license_status,'ORIGINAL_CANDIDATE_WRITER_PROVISIONAL');
+    assert.equal(row.review_status,'UNREVIEWED_PROVISIONAL');
+    assert.equal(row.exposure,'PUBLIC_EXPOSED_CHALLENGE');
+    assert(['zh','en','mixed'].includes(row.language));
+    assert(typeof row.mechanism==='string' && row.mechanism);
+    assert(typeof row.current==='string' && row.current && row.title==='' && Array.isArray(row.recent) && row.recent.length===0);
+    for(const [value,set] of [[row.id,rowIds],[row.scenario_family,scenarios],[row.template_family,templates]]){
+      assert(typeof value==='string' && value && !set.has(value)); set.add(value);
+    }
+    assert(!priorScenarios.has(row.scenario_family));
+    assert(!priorTemplates.has(row.template_family));
+    const fp=fingerprint(row);
+    assert(!bundles.has(fp.bundle_sha256)); bundles.add(fp.bundle_sha256);
+    for(const [i,key] of ['bundle_sha256','nfc_sha256','nfkc_sha256'].entries())
+      assert(!priorHashes[i].has(fp[key]),'exact predecessor/challenge overlap');
+  }
+  assert.equal(bundles.size,144);
+  assert.deepEqual(Object.fromEntries(['zh','en','mixed'].map(x=>[x,challenge.rows.filter(r=>r.language===x).length])),{zh:90,en:36,mixed:18});
+});
