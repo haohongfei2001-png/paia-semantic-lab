@@ -1,0 +1,374 @@
+{
+  "schema": "ZMR-C1-CHALLENGE-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "fc7a4e4a88453b7841bdc0dcef5f38595366938bfae8b0d8528b91bb0f772cdf",
+  "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_C1_CHALLENGE_V05",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "251102575b25ae3796a4db73f0cd0a9953c90b1080c99fbda2185434833a8b33",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "9ad483d4fd7292e49ad021390c87919e9fcff0f3ac4e365843138bad208b06df",
+    "scorer_sha256": "b49e0bd10c34b0eb328220646c22e0d9f3714d4a4bbbbb0fbe2283b840ad5c23"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "challenge_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "train_rows": 144,
+  "challenge_rows": 144,
+  "safety_rows": 48,
+  "fixed_config_count": 5,
+  "builds": {
+    "char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617",
+      "index_bytes": 116142,
+      "runtime_plus_index_bytes": 129760,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A0_all_defer": {
+      "single": {
+        "n": 144,
+        "assigned": 0,
+        "any_assigned": 0,
+        "correct": 0,
+        "assigned_precision": null,
+        "single_coverage": 0,
+        "full144_macro_recall": 0,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 0,
+            "correct": 0
+          },
+          "en": {
+            "n": 51,
+            "assigned": 0,
+            "correct": 0
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 0,
+            "correct": 0
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 0
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 12
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 0,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 0,
+          "predicted_labels": 0
+        }
+      },
+      "global_labels": {
+        "correct": 0,
+        "predicted": 0,
+        "precision": null
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "A3_char_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 103,
+        "any_assigned": 103,
+        "correct": 25,
+        "assigned_precision": 0.24271844660194175,
+        "single_coverage": 0.7152777777777778,
+        "full144_macro_recall": 0.1736111111111111,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 48,
+            "correct": 13
+          },
+          "en": {
+            "n": 51,
+            "assigned": 38,
+            "correct": 5
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 17,
+            "correct": 7
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 7
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 4
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 3,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 3,
+          "predicted_labels": 8
+        }
+      },
+      "global_labels": {
+        "correct": 28,
+        "predicted": 126,
+        "precision": 0.2222222222222222
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "C1_char_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 103,
+        "any_assigned": 103,
+        "correct": 25,
+        "assigned_precision": 0.24271844660194175,
+        "single_coverage": 0.7152777777777778,
+        "full144_macro_recall": 0.1736111111111111,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 48,
+            "correct": 13
+          },
+          "en": {
+            "n": 51,
+            "assigned": 38,
+            "correct": 5
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 17,
+            "correct": 7
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 7
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 4
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 3,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 2,
+          "true_labels": 5,
+          "predicted_labels": 14
+        }
+      },
+      "global_labels": {
+        "correct": 30,
+        "predicted": 132,
+        "precision": 0.22727272727272727
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "A3_word_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 39,
+        "any_assigned": 39,
+        "correct": 3,
+        "assigned_precision": 0.07692307692307693,
+        "single_coverage": 0.2708333333333333,
+        "full144_macro_recall": 0.020833333333333332,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 0,
+            "correct": 0
+          },
+          "en": {
+            "n": 51,
+            "assigned": 35,
+            "correct": 1
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 4,
+            "correct": 2
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 3
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 7
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 1,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 1,
+          "predicted_labels": 3
+        }
+      },
+      "global_labels": {
+        "correct": 4,
+        "predicted": 50,
+        "precision": 0.08
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "C1_word_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 39,
+        "any_assigned": 39,
+        "correct": 3,
+        "assigned_precision": 0.07692307692307693,
+        "single_coverage": 0.2708333333333333,
+        "full144_macro_recall": 0.020833333333333332,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 0,
+            "correct": 0
+          },
+          "en": {
+            "n": 51,
+            "assigned": 35,
+            "correct": 1
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 4,
+            "correct": 2
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 3
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 7
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 1,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 1,
+          "predicted_labels": 2
+        }
+      },
+      "global_labels": {
+        "correct": 4,
+        "predicted": 48,
+        "precision": 0.08333333333333333
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    }
+  },
+  "paired": {
+    "char": {
+      "single_correct_delta": 0,
+      "controls_false_delta": 0,
+      "context_required_base_delta": 0,
+      "context_required_without_delta": 0,
+      "context_invariance_harm_delta": 0,
+      "multi_exact_delta": 2
+    },
+    "word": {
+      "single_correct_delta": 0,
+      "controls_false_delta": 0,
+      "context_required_base_delta": 0,
+      "context_required_without_delta": 0,
+      "context_invariance_harm_delta": 0,
+      "multi_exact_delta": 0
+    }
+  },
+  "limitations": [
+    "same candidate writer authored both cohorts and unreviewed labels",
+    "one single-intent case per Topic and incomplete language/topic/safety quotas",
+    "public point counts and static bytes do not qualify capability or resources"
+  ]
+}
