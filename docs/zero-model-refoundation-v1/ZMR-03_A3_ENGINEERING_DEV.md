@@ -1,0 +1,11 @@
+# ZMR-03 A3 discriminative prototype engineering
+
+This batch adds the A3 sparse discriminative family after the fixed A1/A2 public diagnostic. The prototype uses the pinned 144-Topic Catalog and the same 144-row candidate-writer provisional TRAIN v0.2. It has no neural weights, embeddings, LLM, semantic API, network fallback, real archive data, curator input, AS or TEST access. Inputs and labels are `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`.
+
+## Mechanism
+
+`a3.mjs` trains deterministic multiclass hinge weights over bounded character or word features. Training compares the gold class with the highest-scoring rival and updates both class vectors only when their margin is below one. The compiler retains at most 48 coefficients per Topic, applies one global int16 scale, and stores sparse postings for all 144 Topics. This objective and decision boundary differ from A2 complement likelihood; the implementation is a genuine candidate family rather than another A2 threshold. The route function scores all 144 Topics, refuses Catalog mismatch/bad input/out-of-vocabulary input and abstains below uncalibrated global score/margin thresholds. It reads `current` only; context and multi-intent capability are absent.
+
+The fixed-path compiler reads only the pinned Catalog and provisional TRAIN, emits an ephemeral development index, and enforces the unchanged static 1 MiB index and 2 MiB runtime-plus-index limits. On the local development build, character index/runtime-plus-index bytes were 114,123/127,741; word bytes were 116,142/129,760. Those are static byte checks, **not** a browser memory, latency or resource qualification receipt. No semantic challenge was evaluated in this batch and no stable candidate is declared.
+
+Targeted engineering tests verify deterministic compilation, full144 output space, bounded static bytes, a separable synthetic case, Catalog mismatch, OOV and malformed input. The synthetic case is an implementation test only. The next comparison requires a new registration key, fresh public development challenge and separate provisional control/context/multi layers; existing public challenge v0.2 is already consumed for the fixed A1/A2 diagnostic. Independent ZMR-01B qualification remains frozen until genuinely isolated data and review exist.

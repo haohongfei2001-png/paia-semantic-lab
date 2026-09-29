@@ -55,7 +55,7 @@
   "real_archive_reads": 0,
   "new_semantic_api_calls": 0,
   "new_runtime_implemented": true,
-  "new_runtime_scope": "ZMR_02_DEVELOPMENT_PROTOTYPE_ONLY",
+  "new_runtime_scope": "ZMR_02_ZMR_03_DEVELOPMENT_PROTOTYPES_ONLY",
   "generation_limits": {
     "max_development_generations": 6,
     "max_candidates_per_generation": 6,
@@ -132,7 +132,7 @@
     "ZMR-03": {
       "execution_status": "DEV_IN_PROGRESS",
       "qualification_status": "NOT_ELIGIBLE",
-      "family": "A2_COMPILED_LIKELIHOOD",
+      "family": "A2_A3_COMPILED_STATISTICAL_AND_DISCRIMINATIVE",
       "candidate_writer_count": 1,
       "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
       "train_rows": 144,
@@ -177,8 +177,13 @@
       "a1a2_challenge_v02_evaluation_key": "34401a17e57c2ce84c45aebf5561d82785e1d446b52eebc9f3e3af88fa0246ed",
       "a1a2_challenge_v02_report": "docs/zero-model-refoundation-v1/ZMR-03_A1A2_CHALLENGE_V02.md",
       "a1a2_challenge_v02_result": "docs/zero-model-refoundation-v1/ZMR-03_A1A2_CHALLENGE_V02_RESULT.json",
-      "a1a2_provisional_disposition": "CURRENT_CONFIGS_NOT_PROMOTED_MECHANISM_FAILURES_OBSERVED"
+      "a1a2_provisional_disposition": "CURRENT_CONFIGS_NOT_PROMOTED_MECHANISM_FAILURES_OBSERVED",
+      "a3_engineering_status": "DEV_PROTOTYPE_ONLY_NOT_SEMANTICALLY_EVALUATED",
+      "a3_stable_candidate": false,
+      "a3_report": "docs/zero-model-refoundation-v1/ZMR-03_A3_ENGINEERING_DEV.md",
+      "a3_static_char_index_bytes": 114123,
+      "a3_static_word_index_bytes": 116142
     }
   },
-  "next_action": "Continue ZMR-03 development: A1/A2 fixed-key public challenge v0.2 comparison is consumed once and current configs are not promoted. Implement A3 family and build separate same-writer public provisional control/context/multi layers; register a changed closure and fresh public challenge before a new comparison. Independent ZMR-01B remains NOT_QUALIFIED with zero accepted rows. Do not claim capability/resource PASS or access AS/final/consumed TEST."
+  "next_action": "Continue ZMR-03: A3 bounded multiclass hinge prototype is engineered but semantically UNTESTED. Build fresh public provisional challenge and separate control/context/multi layers with explicit same-writer provenance; register a changed-closure A3 comparison before scoring. The prior A1/A2 challenge v0.2/key is consumed and must not be rerun unchanged. Independent ZMR-01B stays NOT_QUALIFIED with zero accepted rows. No capability/resource PASS or AS/final/consumed TEST access."
 }
