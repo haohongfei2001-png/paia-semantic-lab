@@ -10,7 +10,7 @@ const read=relative=>readFile(fileURLToPath(new URL('../../'+relative,import.met
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 const input=row=>({current:row.current,title:row.title??'',recent:row.recent??[]});
 
-test('fresh challenge v0.3 first 48 rows remain partial, public, unrun and same-writer',async()=>{
+test('fresh challenge v0.3 first 96 rows remain partial, public, unrun and same-writer',async()=>{
   const catalog=await read('catalog/system_topic_catalog_v0.2.yaml');
   const topics=parsePinnedCatalog(catalog),catalogSha=sha(catalog);
   const value=JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.3.json')).toString('utf8'));
@@ -18,14 +18,14 @@ test('fresh challenge v0.3 first 48 rows remain partial, public, unrun and same-
   assert.equal(value.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
   assert.equal(value.catalog_sha256,catalogSha);
   assert.equal(value.qualification_credit_rows,0);
-  assert.equal(value.intake_status,'PARTIAL_48_OF_144');
+  assert.equal(value.intake_status,'PARTIAL_96_OF_144');
   assert.equal(value.evaluation_status,'UNRUN');
-  assert.equal(value.rows.length,48);
-  assert.deepEqual(value.rows.map(r=>r.topic_id),topics.slice(0,48).map(t=>t.id));
+  assert.equal(value.rows.length,96);
+  assert.deepEqual(value.rows.map(r=>r.topic_id),topics.slice(0,96).map(t=>t.id));
   assert.deepEqual(Object.fromEntries(['zh','en','mixed'].map(x=>[x,value.rows.filter(r=>r.language===x).length])),
-    {zh:24,en:16,mixed:8});
+    {zh:48,en:32,mixed:16});
   const ids=new Set(),scenarios=new Set(),templates=new Set(),mechanisms=new Set();
-  for(const row of value.rows) {
+  for(const [i,row] of value.rows.entries()) {
     assert.equal(row.split,'CHALLENGE_PROVISIONAL');
     assert.equal(row.generation_id,'G0_DEV');
     assert.equal(row.catalog_sha256,catalogSha);
@@ -38,7 +38,10 @@ test('fresh challenge v0.3 first 48 rows remain partial, public, unrun and same-
     assert.equal(row.source_license_status,'ORIGINAL_CANDIDATE_WRITER_PROVISIONAL');
     assert.equal(row.review_status,'UNREVIEWED_PROVISIONAL');
     assert.equal(row.exposure,'PUBLIC_EXPOSED_CHALLENGE');
-    assert.equal(row.authoring_batch,'ZMR-03-CHALLENGE-V03-P1-20260929');
+    assert.equal(row.authoring_batch,i<48?'ZMR-03-CHALLENGE-V03-P1-20260929':
+      'ZMR-03-CHALLENGE-V03-P2-20260929');
+    assert.equal(row.source_id,i<48?'writer-challenge-v03-p1-20260929':
+      'writer-challenge-v03-p2-20260929');
     assert(typeof row.current==='string'&&row.current&&row.title===''&&
       Array.isArray(row.recent)&&row.recent.length===0);
     for(const [value,set] of [[row.id,ids],[row.scenario_family,scenarios],
@@ -59,4 +62,8 @@ test('fresh challenge v0.3 first 48 rows remain partial, public, unrun and same-
     ...value.rows.map((r,i)=>({id:'new-'+i,split:'NEW',input:input(r)}))],
     {threshold:.55,gram_size:3}).flags.filter(f=>f.cross_split);
   assert.equal(flags.length,0,'new/old near-duplicate flags need review');
+  const betweenParts=screenNearDuplicates(value.rows.map((r,i)=>({id:'row-'+i,
+    split:i<48?'PART1':'PART2',input:input(r)})),{threshold:.55,gram_size:3}).flags
+    .filter(f=>f.cross_split);
+  assert.equal(betweenParts.length,0,'part1/part2 near-duplicate flags need review');
 });
