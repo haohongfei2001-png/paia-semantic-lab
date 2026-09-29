@@ -1,0 +1,96 @@
+name: ZMR isolated package validation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/zero-model-refoundation-v1/**'
+      - 'status/ZERO_MODEL_REFOUNDATION_STATUS.json'
+      - 'packages/zero_model_refoundation/**'
+      - '.github/workflows/zmr-v1.yml'
+      - '.github/workflows/semantic-lab-ci.yml'
+      - 'README.md'
+      - 'AGENTS.md'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/zero-model-refoundation-v1/**'
+      - 'status/ZERO_MODEL_REFOUNDATION_STATUS.json'
+      - 'packages/zero_model_refoundation/**'
+      - '.github/workflows/zmr-v1.yml'
+      - '.github/workflows/semantic-lab-ci.yml'
+      - 'README.md'
+      - 'AGENTS.md'
+permissions:
+  contents: read
+jobs:
+  zmr-allowlist-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/github-script@v7
+        id: safe
+        with:
+          script: |
+            const fs = require('node:fs');
+            const path = require('node:path');
+            const crypto = require('node:crypto');
+            const assert = require('node:assert/strict');
+            const head = context.payload.pull_request?.head.sha || context.sha;
+            const base = context.payload.pull_request?.base.sha || context.payload.before;
+            assert.match(head, /^[a-f0-9]{40}$/);
+            assert.match(base, /^[a-f0-9]{40}$/);
+            async function tree(ref) {
+              const {data} = await github.rest.git.getTree({...context.repo, tree_sha: ref, recursive: '1'});
+              assert.equal(data.truncated, false, 'complete metadata required');
+              return new Map(data.tree.filter(x => x.type !== 'tree').map(x => [x.path, x]));
+            }
+            const before = await tree(base), after = await tree(head);
+            const changed = [...new Set([...before.keys(), ...after.keys()])].filter(p => before.get(p)?.sha !== after.get(p)?.sha || before.get(p)?.mode !== after.get(p)?.mode);
+            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
+            const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
+            assert(changed.every(p => zmr(p) || shared.has(p)), 'mixed legacy batch forbidden');
+            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
+            const statusPath = 'status/ZERO_MODEL_REFOUNDATION_STATUS.json';
+            const engineering = ['packages/zero_model_refoundation/contracts.mjs', 'packages/zero_model_refoundation/contracts.test.mjs'];
+            const allowed = new Set([...docs, statusPath, ...engineering]);
+            const reads = [];
+            async function read(p) {
+              assert(allowed.has(p), 'path not allowlisted');
+              assert.equal(after.get(p)?.mode, '100644', 'regular file required');
+              const {data} = await github.rest.repos.getContent({...context.repo, path: p, ref: head});
+              assert.equal(data.type, 'file'); assert.equal(data.encoding, 'base64');
+              assert.equal(data.sha, after.get(p).sha);
+              const bytes = Buffer.from(data.content, 'base64');
+              assert.equal(crypto.createHash('sha1').update(Buffer.from('blob ' + bytes.length + '\0')).update(bytes).digest('hex'), data.sha);
+              reads.push(p);
+              return bytes;
+            }
+            for (const p of docs) assert((await read(p)).length >= 200, 'missing substantive document');
+            const s = JSON.parse((await read(statusPath)).toString('utf8'));
+            assert.equal(s.package_id, 'PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1');
+            const expected = {topic_count:144, single_precision_min:0.95, single_coverage_min:0.70, full144_macro_recall_min:0.70, control_false_assignment_max:0.02, context_harm_max:0, neural_assets_bytes_max:0, semantic_network_calls_max:0, index_bytes_max:1048576, router_plus_index_bytes_max:2097152, incremental_memory_bytes_max:33554432, warm_p95_ms_max:20, cold_init_ms_max:100, local_first:true, browser_js:true};
+            assert.deepEqual(s.product_contract, expected);
+            const pins = {'catalog/system_topic_catalog_v0.2.yaml':'6bcdd2af66879d7ac098cf237b5586c3c9818aad', 'status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml':'2eada9313f99d23811f11e735267aa927b9bfba4', 'docs/compositional-intent-graph-v1/CIG-03_CLOSURE.md':'73dabf258d6b78fd4932b2ca0d3366ffdd026fe1'};
+            assert.deepEqual(s.historical_pins, pins);
+            for (const [p, sha] of Object.entries(pins)) assert.equal(after.get(p)?.sha, sha, 'historical source changed: ' + p);
+            assert.equal(s.consumed_test_content_reads, 0); assert.equal(s.consumed_test_replays, 0);
+            assert.equal(s.future_final_test_created, false); assert.equal(s.future_final_test_execution_authorized, false);
+            assert.equal(s.production_paia_modified, false); assert.equal(s.real_archive_reads, 0);
+            const present = engineering.filter(p => after.has(p));
+            assert(present.length === 0 || present.length === engineering.length, 'partial engineering module');
+            for (const p of present) {
+              const bytes = await read(p);
+              const target = path.join(process.env.GITHUB_WORKSPACE, p);
+              fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
+            }
+            core.setOutput('engineering', present.length ? 'true' : 'false');
+            core.info(JSON.stringify({classification:'ENGINEERING_ONLY_NOT_CAPABILITY', head, base, changed_paths:changed, content_read_allowlist:reads, historical_pins_verified_without_content:true}));
+      - name: Exact allowlisted engineering units only
+        if: steps.safe.outputs.engineering == 'true'
+        run: |
+          node --check packages/zero_model_refoundation/contracts.mjs
+          node --check packages/zero_model_refoundation/contracts.test.mjs
+          node --test packages/zero_model_refoundation/contracts.test.mjs

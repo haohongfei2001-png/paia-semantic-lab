@@ -7,8 +7,35 @@ on:
 permissions:
   contents: read
 jobs:
+  evidence-scope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      legacy: ${{ steps.scope.outputs.legacy }}
+    steps:
+      - uses: actions/github-script@v7
+        id: scope
+        with:
+          script: |
+            const head = context.payload.pull_request?.head.sha || context.sha;
+            const base = context.payload.pull_request?.base.sha || context.payload.before;
+            if (!/^[a-f0-9]{40}$/.test(head) || !/^[a-f0-9]{40}$/.test(base) || /^0+$/.test(base)) throw Error('missing exact commit identities');
+            async function tree(ref) {
+              const {data} = await github.rest.git.getTree({...context.repo, tree_sha: ref, recursive: '1'});
+              if (data.truncated) throw Error('incomplete tree metadata');
+              return new Map(data.tree.filter(x => x.type !== 'tree').map(x => [x.path, x.mode + ':' + x.sha]));
+            }
+            const before = await tree(base), after = await tree(head);
+            const changed = [...new Set([...before.keys(), ...after.keys()])].filter(p => before.get(p) !== after.get(p));
+            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
+            const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
+            const hasZmr = changed.some(zmr);
+            if (hasZmr && !changed.every(p => zmr(p) || shared.has(p))) throw Error('mixed ZMR/legacy batch: split the changes; do not read legacy fixtures');
+            core.setOutput('legacy', hasZmr ? 'false' : 'true');
+            core.info(JSON.stringify({base, head, changed_paths: changed, legacy_jobs_allowed: !hasZmr, content_reads: 0}));
   semantic-lab-validation:
-    if: github.event_name == 'push'
+    needs: evidence-scope
+    if: github.event_name == 'push' && needs.evidence-scope.outputs.legacy == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -140,7 +167,8 @@ jobs:
           name: semantic-lab-evidence
           path: artifacts/ci/*.json
   csl-public-pr-validation:
-    if: github.event_name == 'pull_request'
+    needs: evidence-scope
+    if: github.event_name == 'pull_request' && needs.evidence-scope.outputs.legacy == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

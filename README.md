@@ -1,39 +1,35 @@
 # PAIA Semantic Lab
 
-Independent R&D repository for **PAIA Semantic Engine**.
+Independent R&D repository for **PAIA's internal Semantic Router**, not a standalone AI/NLP product. PAIA is a personal AI Input Archive for ordinary users: preserve and organize Inputs, retrieve them, organize Topics and reuse context.
 
-Semantic Lab is isolated from PAIA production. It must not modify production
-runtime, schema, Reader, Thought Library, Capture, ANS status, or real archive
-data unless an authority document explicitly changes that boundary.
+Semantic Lab is isolated from PAIA production. It must not modify production runtime, schema, Reader, Thought Library, Capture, ANS status, or real archive data unless an authority document explicitly changes that boundary.
 
-## Current state
+## Current research package
 
-Canonical public package: **PAIA-COMPOSITIONAL-INTENT-GRAPH-v1**, protocol1.1.0.
+**PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1** (ZMR), protocol1.0.0. This is a separate long-horizon capability program, not a reopening of CIG-v1 and not a predetermined CIG-v2 implementation.
 
-- [Package plan](docs/compositional-intent-graph-v1/DEVELOPMENT_PLAN.md)
-- [Canonical STATUS](status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml)
-- [Independent CIG-03 closure](docs/compositional-intent-graph-v1/CIG-03_CLOSURE.md)
-- [Immutable aggregate result](artifacts/compositional-intent-graph-v1/CIG-03_TEST_RESULT.json)
+- [Development plan](docs/zero-model-refoundation-v1/DEVELOPMENT_PLAN.md)
+- [Canonical STATUS](status/ZERO_MODEL_REFOUNDATION_STATUS.json)
+- [Execution protocol](docs/zero-model-refoundation-v1/EXECUTION_PROTOCOL.md)
+- [Data and independence protocol](docs/zero-model-refoundation-v1/DATA_PROTOCOL.md)
+- [Evidence boundary](docs/zero-model-refoundation-v1/EVIDENCE_BOUNDARY.md)
+- [Capability ladder](docs/zero-model-refoundation-v1/CAPABILITY_LADDER.md)
+- [Saturation and stop rules](docs/zero-model-refoundation-v1/SATURATION_STOP_RULES.md)
 
-CIG-v1 is **PUBLIC_COMPLETE_FAIL**. Its once-consumed independent blind TEST covers all144 Topics: assigned precision100% on1 assignment, single coverage and full144 macro recall0.347222%, below the unchanged70% floor. Controls/context/determinism gates pass. CIG-04 remains blocked; no capability is promoted. Same-writer DEV96.875% is development evidence and did not establish independent capability.
+Target: current input + session title + bounded recent user context -> one or more of all144 versioned Topics, or DEFER. No reduced label universe or lower70% capability floor. Non-neural compiled statistics are permitted with reproducible provenance; no neural/embedding/LLM/remote semantic inference dependency. New capability remains UNTESTED until qualified independent evidence exists. This round designs, but does not create or execute, a future final blind TEST.
 
-LSR-01, CSL-03 and CSL-04 genuine FAIL remain preserved; CSL-v1 is also PUBLIC_COMPLETE_FAIL. These statuses close their research routes. Semantic Lab remains an ongoing research project; future directions use separate packages and evidence boundaries. No consumed TEST is reused for tuning or promotion.
+## Preserved historical closure
+
+Previous package **PAIA-COMPOSITIONAL-INTENT-GRAPH-v1** is **PUBLIC_COMPLETE_FAIL**. Its once-consumed independent blind TEST covers all144 Topics: assigned precision100% on1 assignment, single coverage and full144 macro recall0.347222%, below the unchanged70% floor. Controls/context/determinism gates pass. CIG-04 remains blocked; no capability is promoted. Same-writer DEV96.875% was development evidence, not independent capability.
+
+Historical [STATUS](status/COMPOSITIONAL_INTENT_GRAPH_STATUS.yaml), [DEVELOPMENT_PLAN](docs/compositional-intent-graph-v1/DEVELOPMENT_PLAN.md), [CIG-03 closure](docs/compositional-intent-graph-v1/CIG-03_CLOSURE.md) and immutable aggregate artifacts are preserved. LSR-01, CSL-03 and CSL-04 genuine FAIL remain preserved; CSL-v1 is also PUBLIC_COMPLETE_FAIL. These close their routes, not Semantic Lab as an ongoing research project. No consumed TEST is reused for tuning or promotion.
 
 ## Execution and evidence boundary
 
-The manager uses GitHub remote/connector/Actions only. Ordinary public engineering proceeds under owner authorization and exact-head/exact-main CI discipline. Product constraints and frozen scoring rules remain fixed. No private80 calibration, legacy13 evaluation, consumed35 lockbox, real PAIA archive or production access is authorized in these public packages. CIG-03 packet/scorer/candidate were committed before its sole blinded evaluation; the candidate writer reads aggregates/hashes, never TEST text/gold/per-case results. Later CI verifies stored result integrity without TEST replay.
+Remote main is canonical. ZMR uses explicit-path connector reads and allowlist-only Actions; no full-repository clone or legacy fixture builders for pure ZMR batches. One candidate writer, coherent batches, light inner-loop tests, stable-candidate heavy gates and exact-head/exact-main integration checks. Unchanged capability keys are not reevaluated. No private80 calibration, legacy13 evaluation, consumed35 lockbox, real PAIA archive or production access. Candidate writers never read consumed TEST text/gold/per-case results.
 
 ## Product constraints preserved
 
-The public zero-model research contract requires:
-- 0-byte production neural model assets;
-- no semantic API/network dependency;
-- JS/browser-ready deterministic runtime;
-- generated semantic index <= 1 MiB;
-- router + index <= 2 MiB;
-- incremental memory <= 32 MiB;
-- warm p95 <= 20 ms;
-- cold initialization <= 100 ms.
+0-byte production neural assets; no semantic API/network dependency; deterministic JS/browser-ready local runtime. Generated semantic index<=1MiB; router plus all runtime dependencies plus index<=2MiB; incremental memory<=32MiB; warm full-catalog p95<=20ms; cold initialization<=100ms. Current design retains all budgets; it does not claim browser/resource certification.
 
-Historical BGE-M3/Qwen/E5/Nomic work remains research-oracle evidence only and
-is not an automatic production fallback.
+Historical BGE-M3/Qwen/E5/Nomic work is research-oracle evidence only, not an automatic production fallback.
