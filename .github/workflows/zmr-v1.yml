@@ -67,8 +67,16 @@ jobs:
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
               assert.equal(after.get(p)?.mode, '100644', 'regular file required');
-              const {data} = await github.rest.repos.getContent({...context.repo, path: p, ref: head});
-              assert.equal(data.type, 'file'); assert.equal(data.encoding, 'base64');
+              let data;
+              for (let attempt = 0; attempt < 3; attempt++) {
+                try {
+                  ({data} = await github.rest.git.getBlob({...context.repo, file_sha: after.get(p).sha}));
+                  break;
+                } catch (error) {
+                  if (attempt === 2 || ![500, 502, 503, 504].includes(error.status)) throw error;
+                }
+              }
+              assert.equal(data.encoding, 'base64');
               assert.equal(data.sha, after.get(p).sha);
               const bytes = Buffer.from(data.content, 'base64');
               assert.equal(crypto.createHash('sha1').update(Buffer.from('blob ' + bytes.length + '\0')).update(bytes).digest('hex'), data.sha);
