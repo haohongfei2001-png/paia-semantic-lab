@@ -1,0 +1,69 @@
+{
+  "schema": "ZMR-H1-R1-REUSED-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_status": "REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE",
+  "cohort": "data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json",
+  "cohort_sha256": "d760996f57c54d853f3bd1638326db96d0f5edaba463936d2d7aa81ae101d2c4",
+  "initial_result_sha256": "5164e7e21568235bd69dc587efd01982fd2965f901c044be64a81c4e58f56a09",
+  "domain_index_sha256": "eb66b94901b71d0aca0f9aa2b3083a35c73f1a04de2eb40b91eba0319a8f7501",
+  "a2_index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "topic_universe": 144,
+  "domain_universe": 18,
+  "domain_recall": {
+    "single_rows": 36,
+    "top1": 13,
+    "top3": 25,
+    "ranking_missing": 0,
+    "flat_assigned_outside_top3": 2
+  },
+  "by_role": {
+    "SINGLE": {
+      "rows": 36,
+      "assigned": 14,
+      "exact": 11
+    },
+    "CONTROL": {
+      "rows": 12,
+      "assigned": 1,
+      "exact": 0
+    },
+    "CONTEXT_REQUIRED": {
+      "rows": 6,
+      "assigned": 3,
+      "exact": 1
+    },
+    "MULTI": {
+      "rows": 6,
+      "assigned": 0,
+      "exact": 0
+    }
+  },
+  "labeled_rows": 48,
+  "labeled_assigned": 17,
+  "labeled_exact": 12,
+  "provisional_exact_set_precision": 0.7058823529411765,
+  "context_removal_output_changes": 0,
+  "deterministic_repeat_differences": 0,
+  "paired_vs_A2_SCOPE": {
+    "exact_gained": 0,
+    "exact_lost": 0,
+    "wrong_avoided_by_defer": 0,
+    "wrong_added": 0,
+    "controls_false_avoided": 0,
+    "controls_false_added": 0,
+    "topic_switches": 0
+  },
+  "static_bytes": {
+    "a2_index": 206821,
+    "domain_index": 130320,
+    "runtime_plus_both_indexes": 370400
+  },
+  "limitations": [
+    "reused same-writer public DEV is exposed repair evidence, not a fresh gate",
+    "static bytes do not certify browser latency or memory"
+  ]
+}
