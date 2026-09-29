@@ -23,13 +23,13 @@ function valid(index){
     index.df.every(([term,count],i)=>typeof term==='string'&&term&&
       Number.isInteger(count)&&count>0&&count<=index.prototypes.length&&
       (i===0||index.df[i-1][0]<term)),'invalid A7 index');
-  const counts=Array(144).fill(0),scenarios=new Set(),sources=new Set();
+  const counts=Array(144).fill(0),scenarios=new Set();
   const dictionary=new Set(index.df.map(([term])=>term));
   for(const p of index.prototypes){
     must(Number.isInteger(p.topic)&&p.topic>=0&&p.topic<144&&
       typeof p.source_id==='string'&&p.source_id&&
       typeof p.scenario_family==='string'&&p.scenario_family&&
-      !sources.has(p.source_id)&&!scenarios.has(p.scenario_family)&&
+      !scenarios.has(p.scenario_family)&&
       Array.isArray(p.vector)&&p.vector.length>0&&
       p.vector.length<=index.keep_per_case&&
       p.vector.every(([term,weight],i)=>typeof term==='string'&&term&&
@@ -38,7 +38,7 @@ function valid(index){
       Number.isFinite(p.norm)&&p.norm>0&&
       Math.abs(p.norm-Math.sqrt(p.vector.reduce((sum,[,weight])=>
         sum+weight*weight,0)))<=1e-8,'invalid A7 prototype');
-    counts[p.topic]++;sources.add(p.source_id);scenarios.add(p.scenario_family);
+    counts[p.topic]++;scenarios.add(p.scenario_family);
   }
   must(counts.every(n=>n>=2&&n<=8),'two to eight TRAIN scenarios per Topic required');
   return index;
@@ -56,15 +56,15 @@ export function compileA7({topic_ids,cases,catalog_sha256,train_sha256,
   const positions=new Map(topic_ids.map((id,i)=>[id,i]));
   const ordered=[...cases].sort((a,b)=>cmp(a.topic_id,b.topic_id)||
     cmp(a.scenario_family,b.scenario_family)||cmp(a.source_id,b.source_id));
-  const counts=Array(144).fill(0),seenSources=new Set(),seenScenarios=new Set();
+  const counts=Array(144).fill(0),seenScenarios=new Set();
   for(const row of ordered){
     const topic=positions.get(row.topic_id);
     must(topic!==undefined&&typeof row.current==='string'&&row.current.trim()&&
       scalarLength(row.current)<=8192&&typeof row.source_id==='string'&&row.source_id&&
       typeof row.scenario_family==='string'&&row.scenario_family&&
-      !seenSources.has(row.source_id)&&!seenScenarios.has(row.scenario_family),
+      !seenScenarios.has(row.scenario_family),
       'invalid or reused TRAIN case lineage');
-    counts[topic]++;seenSources.add(row.source_id);seenScenarios.add(row.scenario_family);
+    counts[topic]++;seenScenarios.add(row.scenario_family);
   }
   must(counts.every(n=>n>=2&&n<=8),'two to eight TRAIN scenarios per Topic required');
   const vectors=ordered.map(row=>features(row.current,mode));

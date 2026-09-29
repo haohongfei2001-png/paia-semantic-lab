@@ -55,7 +55,7 @@
   "real_archive_reads": 0,
   "new_semantic_api_calls": 0,
   "new_runtime_implemented": true,
-  "new_runtime_scope": "ZMR_02_ZMR_03_ROUTER_ZMR_04_A5_A6_AND_ZMR_05_C1_DEVELOPMENT_ONLY",
+  "new_runtime_scope": "ZMR_02_ZMR_03_ROUTER_ZMR_04_A5_A6_AND_ZMR_05_C1_A7_DEVELOPMENT_ONLY",
   "generation_limits": {
     "max_development_generations": 6,
     "max_candidates_per_generation": 6,
@@ -368,13 +368,28 @@
       "c1_component_disposition": "RETIRED_NO_ISOLATED_SAFETY_PRESERVING_GAIN_NO_FAMILY_CEILING",
       "next_candidate": "A7_BOUNDED_PER_SCENARIO_CASE_MEMORY",
       "a7_hypothesis": "FINITE_TRAIN_PROTOTYPE_MAX_SCORING_VERSUS_CLASS_AGGREGATION_AND_SPARSE_HINGE",
-      "a7_engineering_status": "SYNTHETIC_ONLY_AWAIT_ADDITIVE_PUBLIC_TRAIN",
-      "a7_engineering_unit_tests": 3,
+      "a7_engineering_status": "PUBLIC_FULL144_TRAIN_COMPILED_STATIC_ONLY_AWAIT_FRESH_DEV",
+      "a7_engineering_unit_tests": 4,
       "a7_semantic_evaluations": 0,
       "a7_independent_rows": 0,
       "a7_module": "packages/zero_model_refoundation/a7_case_memory.mjs",
-      "a7_report": "docs/zero-model-refoundation-v1/ZMR-05_A7_CASE_MEMORY_ENGINEERING_DEV.md"
+      "a7_report": "docs/zero-model-refoundation-v1/ZMR-05_A7_CASE_MEMORY_ENGINEERING_DEV.md",
+      "a7_provisional_train_v03_rows": 144,
+      "a7_provisional_train_v03_topics": 144,
+      "a7_total_train_rows": 288,
+      "a7_provisional_train_v03_language_counts": {
+        "zh": 103,
+        "en": 38,
+        "mixed": 3
+      },
+      "a7_provisional_train_v03_independent_rows": 0,
+      "a7_provisional_train_v03_data": "data/zero_model_refoundation/development/provisional_train_v0.3.json",
+      "a7_provisional_train_v03_report": "docs/zero-model-refoundation-v1/ZMR-05_A7_TRAIN_V03_DEV.md",
+      "a7_compiler": "packages/zero_model_refoundation/a7_compile.mjs",
+      "a7_char_index_bytes": 616375,
+      "a7_word_index_bytes": 216170,
+      "a7_resource_verdict": "NOT_QUALIFIED"
     }
   },
-  "next_action": "Continue ZMR-05 A7 bounded per-scenario case-memory development. Engineering closure and three synthetic tests exist, but no real TRAIN build or semantic evaluation. Create an additive public candidate-writer TRAIN v0.3 with a second distinct scenario for each of all 144 Topics, preserving the existing TRAIN v0.2 rows only in TRAIN and screening lineage, provenance, source/license and overlap; mark all as NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, unreviewed and zero independent quota credit. Compile full144 A7 within unchanged static budgets; diagnose only on fresh non-consumed public DEV, then freeze a stable changed closure and fresh full144 challenge before one registered paired A3/A1/A7 comparison. C1 and C1-R1 are retired; do not rerun or tune against consumed v0.2-v0.6 keys, AS or final/consumed TEST. At most two explained A7 mechanism repairs; ordinary failures auto-fix or eliminate. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; synthetic or same-writer development PASS is not capability or saturation PASS."
+  "next_action": "Continue ZMR-05 A7 bounded case-memory development from the fixed Catalog plus public TRAIN v0.2+v0.3 input closure (288 same-writer rows; zero independent credit). The full144 char/word static indices compile within unchanged 1 MiB index and 2 MiB runtime+index caps; this is not browser resource qualification. Create fresh non-consumed public DEV/safety rows with provenance, lineage and overlap screening, then use a light A7 mechanism diagnostic against A3/A1 without reading or rerunning consumed v0.2-v0.6 challenge/safety keys, AS or final/consumed TEST. At most two explained A7 mechanism repairs; if stable, freeze a changed closure and fresh full144 challenge for one registered paired comparison; otherwise eliminate and move to the next distinct family. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources and zero neural/embedding/LLM/semantic API. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; same-writer evidence is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
 }
