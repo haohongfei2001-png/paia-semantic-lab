@@ -89,6 +89,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_CHALLENGE_V01_INTAKE.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01_REGISTRATION.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A6_R2_FRESH_V01.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_INTAKE.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -110,6 +111,7 @@ jobs:
             engineering.push('packages/zero_model_refoundation/a6_r2_repair_dev_diagnostic.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a6_r2_challenge.test.mjs');
             engineering.push('packages/zero_model_refoundation/a6_r2_fresh_compare.mjs');
+            engineering.push('packages/zero_model_refoundation/provisional_h1_recall_dev.test.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
@@ -123,6 +125,7 @@ jobs:
             development.push('data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json');
             development.push('data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json');
+            development.push('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json');
             const resultA5FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json';
             const resultA5R1FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01_RESULT.json';
             const resultA4PositiveFreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A4_POSITIVE_FRESH_V01_RESULT.json';
@@ -494,6 +497,17 @@ jobs:
               assert.equal(registration.resource_verdict, 'NOT_QUALIFIED');
               assert.equal(registration.evaluation_key, s.rounds['ZMR-05'].a6_r2_fresh_v01_evaluation_key);
             }
+            if (after.has('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json')) {
+              const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json')).toString('utf8'));
+              assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(dev.topic_universe, 144);
+              assert.equal(dev.domain_universe, 18);
+              assert.equal(dev.rows.length, 60);
+              assert.equal(dev.intake_status, 'PUBLIC_H1_DEV_FROZEN_UNRUN');
+              assert.equal(dev.evaluation_status, 'UNRUN');
+              assert.equal(dev.qualification_credit_rows, 0);
+              assert.equal(dev.independent_source_cohorts, 0);
+            }
             if (after.has('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')) {
               const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')).toString('utf8'));
               assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
@@ -551,3 +565,4 @@ jobs:
         run: |
           for file in packages/zero_model_refoundation/*.mjs; do node --check "$file"; done
           node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs packages/zero_model_refoundation/a1.test.mjs packages/zero_model_refoundation/a2.test.mjs packages/zero_model_refoundation/a3.test.mjs packages/zero_model_refoundation/provisional_data.test.mjs packages/zero_model_refoundation/provisional_safety.test.mjs packages/zero_model_refoundation/provisional_safety_v02.test.mjs packages/zero_model_refoundation/provisional_safety_v03.test.mjs packages/zero_model_refoundation/provisional_safety_v04.test.mjs packages/zero_model_refoundation/provisional_challenge_v03.test.mjs packages/zero_model_refoundation/a4_boundary_graph.test.mjs packages/zero_model_refoundation/a5_scope.test.mjs packages/zero_model_refoundation/a5_composition.test.mjs packages/zero_model_refoundation/a5_composition_r1.test.mjs packages/zero_model_refoundation/provisional_a5_challenge.test.mjs packages/zero_model_refoundation/provisional_a5_repair_dev.test.mjs packages/zero_model_refoundation/provisional_a5_r1_challenge.test.mjs packages/zero_model_refoundation/provisional_a4_positive_challenge.test.mjs packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs packages/zero_model_refoundation/provisional_a6_r1_repair_dev.test.mjs packages/zero_model_refoundation/provisional_a6_r2_challenge.test.mjs packages/zero_model_refoundation/provisional_role_challenge.test.mjs packages/zero_model_refoundation/a4_pair_positive.test.mjs packages/zero_model_refoundation/a6.test.mjs packages/zero_model_refoundation/a6_complement_scope.test.mjs packages/zero_model_refoundation/a6_complement_r1.test.mjs packages/zero_model_refoundation/a6_complement_r2.test.mjs packages/zero_model_refoundation/c1_context_multi.test.mjs packages/zero_model_refoundation/c1_r1_context_multi.test.mjs packages/zero_model_refoundation/a7_case_memory.test.mjs packages/zero_model_refoundation/a7_compile.test.mjs packages/zero_model_refoundation/provisional_a7_dev.test.mjs packages/zero_model_refoundation/provisional_a4_triads.test.mjs packages/zero_model_refoundation/provisional_a4_train.test.mjs packages/zero_model_refoundation/a4_pairwise.test.mjs packages/zero_model_refoundation/provisional_a4_challenge.test.mjs packages/zero_model_refoundation/provisional_challenge_v04.test.mjs packages/zero_model_refoundation/provisional_challenge_v05.test.mjs packages/zero_model_refoundation/provisional_challenge_v06.test.mjs
+          node --test packages/zero_model_refoundation/provisional_h1_recall_dev.test.mjs

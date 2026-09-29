@@ -279,7 +279,28 @@
       "a6_repair_spent": 0,
       "a6_component_disposition": "RETIRED_NO_ISOLATED_GAIN",
       "semantic_evaluations": 1,
-      "as_consumed": 0
+      "as_consumed": 0,
+      "h1_hypothesis": "RECALL_SAFE_DOMAIN_TO_TOPIC_WITH_FULL144_FLAT_FALLBACK",
+      "h1_recall_dev_v01_rows": 60,
+      "h1_recall_dev_v01_counts": {
+        "single": 36,
+        "control": 12,
+        "context_required": 6,
+        "multi": 6
+      },
+      "h1_recall_dev_v01_domain_count": 18,
+      "h1_recall_dev_v01_language_counts": {
+        "zh": 30,
+        "en": 30,
+        "mixed": 0
+      },
+      "h1_recall_dev_v01_independent_rows": 0,
+      "h1_recall_dev_v01_data": "data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json",
+      "h1_recall_dev_v01_report": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_INTAKE.md",
+      "h1_recall_dev_v01_evaluation_status": "PUBLIC_H1_DEV_FROZEN_UNRUN",
+      "h1_stable_candidate": false,
+      "h1_capability_verdict": "UNTESTED",
+      "h1_resource_verdict": "NOT_QUALIFIED"
     },
     "ZMR-05": {
       "execution_status": "DEV_ENGINEERING_IN_PROGRESS",
@@ -700,5 +721,5 @@
       "a6_r2_fresh_v01_vs_r1_controls_false_avoided": 1
     }
   },
-  "next_action": "A6-R2 fresh public evaluation key 31cc709d149f3a44d6122e9470ba2eae3285c62bfb1ef3fca55a73754f7c11a5 is consumed; never replay it. R2 had no exact-set gain over R1, 3/12 false no-request controls and 0/4 exact context and multi; two repairs are spent, so eliminate this A6 complement/scope component without a family or zero-model ceiling claim. Continue independent development with the canonical hierarchy attachment as a distinct H1 recall-safe hypothesis: derive finite domain-to-Topic evidence from pinned Catalog and fixed TRAIN only, compare domain top-k recall and full144 flat fallback under the same hard budgets, and never let a top-1 domain permanently exclude a Topic. First author and screen new source-separated candidate-writer public DEV before any H1 Router output on it, mark NON_INDEPENDENT_DEVELOPMENT_EVIDENCE with zero independent 01B quota; then implement a bounded H1 mechanism and light inner-loop, freezing a new challenge and registration only if stable. Do not tune or replay consumed A6, A4/A5/R1, older public, sealed AS/final TEST or CIG-v1 TEST keys. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED."
+  "next_action": "A6-R2 key 31cc709d149f3a44d6122e9470ba2eae3285c62bfb1ef3fca55a73754f7c11a5 is consumed and its component eliminated after two repairs; do not replay it. H1 recall-safe hierarchy public DEV v0.1 is now frozen before any H1 Router output: 60 candidate-writer rows covering all 18 Catalog domains, 30 zh/30 en, screened against 1,882 earlier public rows with no exact/NFKC/lineage/near-overlap flags at 0.55. It is NON_INDEPENDENT_DEVELOPMENT_EVIDENCE with zero independent 01B quota. Implement a finite H1 domain-to-Topic candidate using pinned Catalog and fixed TRAIN only. Measure correct-domain retention in bounded top-k and compare against a full144 flat fallback; never let top-1 domain permanently exclude a Topic. Keep engineering and public DEV inner-loop light, preserve source-separated context and per-goal evidence safety, and freeze a separate new public challenge with one registered fixed comparison only if H1 is stable. Apply at most two mechanism repairs, then retire on no isolated safety-preserving gain and continue another canonical hypothesis. Do not tune or replay consumed public keys, sealed AS/final TEST or CIG-v1 TEST. Preserve 144 Topic, 95% precision, 70% coverage/macro, safety, resources, local-first and zero neural/embedding/LLM/semantic API; capability UNTESTED and resources NOT_QUALIFIED, no family or zero-model ceiling claim."
 }
