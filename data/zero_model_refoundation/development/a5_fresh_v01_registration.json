@@ -1,0 +1,48 @@
+{
+  "schema": "ZMR-A5-FRESH-COMPARISON-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_FIXED_A3_DELETION_ABLATION_VERSUS_A5_PUBLIC_DIAGNOSTIC",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A5_FRESH_COMPOSITION_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "0d8228fd565f4d745836871053cad94e02ef25a6b4dcb186ac50f9fbe3b702dd",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "e0c3c1413089b5aa41bdd80d6c2e43455d37e28e990ffca1d37243fc905f4766",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "79d0943c18a2917b5f0ddff1f82775ab9651874b4b838a8301172e268e699861",
+    "scorer_sha256": "f9d5666640e57760ef46a3c1862f549660e04030d5709d7655796fb1207a58c0"
+  },
+  "evaluation_key": "60f3ea3f19334153b649b10404731aa8db6f78ed1a125994750dcebfd1aa1e70",
+  "configs": [
+    {
+      "id": "A3_char_deletion_ablation",
+      "family": "A3",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A5_finite_state_composition",
+      "family": "A5",
+      "full_min_score": 0.02,
+      "full_min_margin": 0.02,
+      "segment_min_score": 0.08,
+      "segment_min_margin": 0.05
+    }
+  ],
+  "cohort": "data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json",
+  "topic_universe": 144,
+  "correction_rows": 8,
+  "multi_rows": 8,
+  "quote_rows": 4,
+  "ambiguous_unscored_rows": 4,
+  "control_rows": 8,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "no_calibration": true
+}

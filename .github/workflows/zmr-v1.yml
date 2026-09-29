@@ -70,12 +70,16 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A4_FRESH_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_COMPOSITION_ENGINEERING_DEV.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_CHALLENGE_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a5_fresh_compare.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
-            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, ...engineering, ...development]);
+            development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
+            const resultA5FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json';
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -228,6 +232,28 @@ jobs:
               assert.equal(result.as_consumed, 0);
               assert.deepEqual(result.paired, {correct_lost_to_defer:0,wrong_avoided_by_defer:0,controls_false_avoided:0,controls_false_added:0,ambiguous_assignments_removed_unscored:0,new_topic_assignments:0});
               assert.equal(s.rounds['ZMR-05'].a4_fresh_challenge_v01_evaluation_key, result.evaluation_key);
+            }
+            if (after.has(resultA5FreshPath)) {
+              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_fresh_v01_registration.json')).toString('utf8'));
+              const result = JSON.parse((await read(resultA5FreshPath)).toString('utf8'));
+              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.evaluation_key, registration.evaluation_key);
+              assert.equal(result.topic_universe, 144);
+              assert.equal(result.labeled_rows, 20);
+              assert.equal(result.ambiguous_unscored_rows, 4);
+              assert.equal(result.control_rows, 8);
+              assert.equal(result.fixed_config_count, 2);
+              assert.equal(result.results.A3_char_deletion_ablation.labeled_exact, 2);
+              assert.equal(result.results.A5_finite_state_composition.labeled_exact, 4);
+              assert.equal(result.results.A5_finite_state_composition.control_false_assignments, 5);
+              assert.equal(result.paired.labeled_exact_gained, 2);
+              assert.equal(result.paired.labeled_wrong_avoided_by_defer, 2);
+              assert.equal(result.capability_verdict, 'UNTESTED');
+              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(result.independent_rows, 0);
+              assert.equal(result.as_consumed, 0);
+              assert.equal(s.rounds['ZMR-05'].a5_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')) {
               const graph = JSON.parse((await read('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')).toString('utf8'));
