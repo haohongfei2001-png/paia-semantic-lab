@@ -1,0 +1,57 @@
+{
+  "schema": "ZMR-A5-R1-FRESH-COMPARISON-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_FIXED_A3_A5_A5_R1_PUBLIC_PAIRED_DIAGNOSTIC",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A5_R1_FRESH_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "96f9a99440b2ef60246481179f0278f45cfcc995a85112515f54cc97db9da9f8",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "e0c3c1413089b5aa41bdd80d6c2e43455d37e28e990ffca1d37243fc905f4766",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "8eeb3bd72e9fc7900d3fe089072f49faa4ac62e47e25be16cd3663d55737811b",
+    "scorer_sha256": "e486c1c0a73102ac9455a87a745f47583377ee41c1126815e83102521e48dd1c"
+  },
+  "evaluation_key": "b784454fff5dde2b54003b1c99651424e22e403019763999054c263c77a3a5d6",
+  "configs": [
+    {
+      "id": "A3_char_deletion_ablation",
+      "family": "A3",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A5_original",
+      "family": "A5",
+      "full_min_score": 0.02,
+      "full_min_margin": 0.02,
+      "segment_min_score": 0.08,
+      "segment_min_margin": 0.05
+    },
+    {
+      "id": "A5_R1_no_request_guard",
+      "family": "A5_R1",
+      "full_min_score": 0.02,
+      "full_min_margin": 0.02,
+      "segment_min_score": 0.08,
+      "segment_min_margin": 0.05
+    }
+  ],
+  "cohort": "data/zero_model_refoundation/development/provisional_a5_r1_challenge_v0.1.json",
+  "topic_universe": 144,
+  "control_rows": 8,
+  "request_rows": 8,
+  "multi_rows": 4,
+  "correction_rows": 4,
+  "quote_rows": 4,
+  "ambiguous_unscored_rows": 4,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "no_calibration": true
+}
