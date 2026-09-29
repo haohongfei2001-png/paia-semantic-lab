@@ -1,0 +1,481 @@
+{
+  "schema": "ZMR-A356-CHALLENGE-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "d7f287127e46433190202b0237416f8f367b8a2afc313fa44fb7de77e06bcc3f",
+  "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A356_CHALLENGE_V04",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "bbd1442efd6d74d3c591fb3ecf119312aa8ebee5317d0ea03c4ff7d555256a23",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "4e3b9e930d074675b1078590504b945b4d0c9955ac87be52acb79ea7c93cb7b8",
+    "scorer_sha256": "d23101ed7dc7a517142a5fb05b32d3fc07174fa28d579b84fa9e0f76ee00556e"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "challenge_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "train_rows": 144,
+  "challenge_rows": 144,
+  "safety_rows": 48,
+  "role_rows": 18,
+  "fixed_config_count": 5,
+  "builds": {
+    "char": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+      "index_bytes": 114123,
+      "runtime_plus_index_bytes": 127741,
+      "mode": "char",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    },
+    "word": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_count": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617",
+      "index_bytes": 116142,
+      "runtime_plus_index_bytes": 129760,
+      "mode": "word",
+      "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+    }
+  },
+  "results": {
+    "A0_all_defer": {
+      "single": {
+        "n": 144,
+        "assigned": 0,
+        "any_assigned": 0,
+        "correct": 0,
+        "assigned_precision": null,
+        "single_coverage": 0,
+        "full144_macro_recall": 0,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 0,
+            "correct": 0
+          },
+          "en": {
+            "n": 51,
+            "assigned": 0,
+            "correct": 0
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 0,
+            "correct": 0
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 0
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 12
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 0,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 0,
+          "predicted_labels": 0
+        }
+      },
+      "global_labels": {
+        "correct": 0,
+        "predicted": 0,
+        "precision": null
+      },
+      "role": {
+        "n": 18,
+        "exact": 6,
+        "forbidden_labels": 0,
+        "by_variant": {
+          "POSITIVE": {
+            "n": 6,
+            "exact": 0,
+            "forbidden_labels": 0
+          },
+          "CONTRAST": {
+            "n": 6,
+            "exact": 0,
+            "forbidden_labels": 0
+          },
+          "AMBIGUOUS": {
+            "n": 6,
+            "exact": 6,
+            "forbidden_labels": 0
+          }
+        }
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "A3_char_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 96,
+        "any_assigned": 96,
+        "correct": 21,
+        "assigned_precision": 0.21875,
+        "single_coverage": 0.6666666666666666,
+        "full144_macro_recall": 0.14583333333333334,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 46,
+            "correct": 15
+          },
+          "en": {
+            "n": 51,
+            "assigned": 37,
+            "correct": 1
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 13,
+            "correct": 5
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 7
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 1,
+          "without_correct": 2
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 4,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 5,
+          "predicted_labels": 9
+        }
+      },
+      "global_labels": {
+        "correct": 27,
+        "predicted": 122,
+        "precision": 0.22131147540983606
+      },
+      "role": {
+        "n": 18,
+        "exact": 5,
+        "forbidden_labels": 3,
+        "by_variant": {
+          "POSITIVE": {
+            "n": 6,
+            "exact": 1,
+            "forbidden_labels": 1
+          },
+          "CONTRAST": {
+            "n": 6,
+            "exact": 1,
+            "forbidden_labels": 1
+          },
+          "AMBIGUOUS": {
+            "n": 6,
+            "exact": 3,
+            "forbidden_labels": 1
+          }
+        }
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "A6_char_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 96,
+        "any_assigned": 96,
+        "correct": 21,
+        "assigned_precision": 0.21875,
+        "single_coverage": 0.6666666666666666,
+        "full144_macro_recall": 0.14583333333333334,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 46,
+            "correct": 15
+          },
+          "en": {
+            "n": 51,
+            "assigned": 37,
+            "correct": 1
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 13,
+            "correct": 5
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 7
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 1,
+          "without_correct": 2
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 4,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 5,
+          "predicted_labels": 9
+        }
+      },
+      "global_labels": {
+        "correct": 27,
+        "predicted": 122,
+        "precision": 0.22131147540983606
+      },
+      "role": {
+        "n": 18,
+        "exact": 5,
+        "forbidden_labels": 3,
+        "by_variant": {
+          "POSITIVE": {
+            "n": 6,
+            "exact": 1,
+            "forbidden_labels": 1
+          },
+          "CONTRAST": {
+            "n": 6,
+            "exact": 1,
+            "forbidden_labels": 1
+          },
+          "AMBIGUOUS": {
+            "n": 6,
+            "exact": 3,
+            "forbidden_labels": 1
+          }
+        }
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "A3_word_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 47,
+        "any_assigned": 47,
+        "correct": 2,
+        "assigned_precision": 0.0425531914893617,
+        "single_coverage": 0.3263888888888889,
+        "full144_macro_recall": 0.013888888888888888,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 0,
+            "correct": 0
+          },
+          "en": {
+            "n": 51,
+            "assigned": 37,
+            "correct": 0
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 10,
+            "correct": 2
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 4
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 7
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 3,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 3,
+          "predicted_labels": 6
+        }
+      },
+      "global_labels": {
+        "correct": 5,
+        "predicted": 62,
+        "precision": 0.08064516129032258
+      },
+      "role": {
+        "n": 18,
+        "exact": 4,
+        "forbidden_labels": 2,
+        "by_variant": {
+          "POSITIVE": {
+            "n": 6,
+            "exact": 1,
+            "forbidden_labels": 0
+          },
+          "CONTRAST": {
+            "n": 6,
+            "exact": 0,
+            "forbidden_labels": 1
+          },
+          "AMBIGUOUS": {
+            "n": 6,
+            "exact": 3,
+            "forbidden_labels": 1
+          }
+        }
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    },
+    "A6_word_fixed": {
+      "single": {
+        "n": 144,
+        "assigned": 47,
+        "any_assigned": 47,
+        "correct": 2,
+        "assigned_precision": 0.0425531914893617,
+        "single_coverage": 0.3263888888888889,
+        "full144_macro_recall": 0.013888888888888888,
+        "missing_topics": 0,
+        "by_language": {
+          "zh": {
+            "n": 72,
+            "assigned": 0,
+            "correct": 0
+          },
+          "en": {
+            "n": 51,
+            "assigned": 37,
+            "correct": 0
+          },
+          "mixed": {
+            "n": 21,
+            "assigned": 10,
+            "correct": 2
+          }
+        }
+      },
+      "safety": {
+        "controls": {
+          "n": 12,
+          "false_assignments": 4
+        },
+        "context_required": {
+          "n": 12,
+          "base_exact": 0,
+          "without_correct": 7
+        },
+        "context_invariance": {
+          "n": 12,
+          "base_exact": 3,
+          "complete_output_harm": 0
+        },
+        "multi_intent": {
+          "n": 12,
+          "exact": 0,
+          "true_labels": 3,
+          "predicted_labels": 6
+        }
+      },
+      "global_labels": {
+        "correct": 5,
+        "predicted": 62,
+        "precision": 0.08064516129032258
+      },
+      "role": {
+        "n": 18,
+        "exact": 4,
+        "forbidden_labels": 2,
+        "by_variant": {
+          "POSITIVE": {
+            "n": 6,
+            "exact": 1,
+            "forbidden_labels": 0
+          },
+          "CONTRAST": {
+            "n": 6,
+            "exact": 0,
+            "forbidden_labels": 1
+          },
+          "AMBIGUOUS": {
+            "n": 6,
+            "exact": 3,
+            "forbidden_labels": 1
+          }
+        }
+      },
+      "deterministic_repeat_differences": 0,
+      "classification": "PUBLIC_POINT_DIAGNOSTIC_ONLY_NOT_CAPABILITY"
+    }
+  },
+  "paired": {
+    "char": {
+      "single_correct_delta": 0,
+      "role_exact_delta": 0,
+      "safety_control_false_delta": 0,
+      "context_harm_delta": 0
+    },
+    "word": {
+      "single_correct_delta": 0,
+      "role_exact_delta": 0,
+      "safety_control_false_delta": 0,
+      "context_harm_delta": 0
+    }
+  },
+  "limitations": [
+    "same candidate writer authored all cohorts and unreviewed labels",
+    "one single-intent case per Topic and incomplete language/topic/safety quotas",
+    "public point counts and static index bytes do not qualify capability or resources"
+  ]
+}

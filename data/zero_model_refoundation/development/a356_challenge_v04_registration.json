@@ -1,0 +1,76 @@
+{
+  "schema": "ZMR-A356-CHALLENGE-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A356_CHALLENGE_V04",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "bbd1442efd6d74d3c591fb3ecf119312aa8ebee5317d0ea03c4ff7d555256a23",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "4e3b9e930d074675b1078590504b945b4d0c9955ac87be52acb79ea7c93cb7b8",
+    "scorer_sha256": "d23101ed7dc7a517142a5fb05b32d3fc07174fa28d579b84fa9e0f76ee00556e"
+  },
+  "evaluation_key": "d7f287127e46433190202b0237416f8f367b8a2afc313fa44fb7de77e06bcc3f",
+  "configs": [
+    {
+      "id": "A0_all_defer",
+      "family": "A0"
+    },
+    {
+      "id": "A3_char_fixed",
+      "family": "A3",
+      "mode": "char",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A3_word_fixed",
+      "family": "A3",
+      "mode": "word",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A6_char_fixed",
+      "family": "A6",
+      "mode": "char",
+      "full_min_score": 0.02,
+      "full_min_margin": 0.02,
+      "goal_min_score": 0.08,
+      "goal_min_margin": 0.05
+    },
+    {
+      "id": "A6_word_fixed",
+      "family": "A6",
+      "mode": "word",
+      "full_min_score": 0.02,
+      "full_min_margin": 0.02,
+      "goal_min_score": 0.08,
+      "goal_min_margin": 0.05
+    }
+  ],
+  "cohorts": [
+    "data/zero_model_refoundation/development/provisional_challenge_v0.4.json",
+    "data/zero_model_refoundation/development/provisional_safety_seed_v0.2.json",
+    "data/zero_model_refoundation/development/provisional_role_challenge_v0.1.json"
+  ],
+  "limits": {
+    "topic_count": 144,
+    "single_precision_min": 0.95,
+    "single_coverage_min": 0.7,
+    "full144_macro_recall_min": 0.7,
+    "control_false_assignment_max": 0.02,
+    "context_harm_max": 0
+  },
+  "no_calibration": true,
+  "independent_rows": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "as_consumed": 0
+}
