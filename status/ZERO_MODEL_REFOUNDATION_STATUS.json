@@ -290,8 +290,8 @@
       "anchor": "A3_FULL144_CURRENT_ONLY",
       "hypothesis": "EXPLICIT_CONTINUATION_AND_TWO_GOAL_SPLIT_CAN_ADD_SUPPORTED_OUTPUTS_WITHOUT_STALE_CONTEXT_OVERRIDE",
       "engineering_unit_tests": 5,
-      "engineering_status": "SYNTHETIC_INDEX_ONLY_NO_SEMANTIC_EVALUATION",
-      "semantic_evaluations": 0,
+      "engineering_status": "PUBLIC_FIXED_CONFIG_REJECTED_CONTEXT_IGNORED_MULTI_OMISSION_UNSAFE_CONTROLS",
+      "semantic_evaluations": 1,
       "as_consumed": 0,
       "stable_candidate": false,
       "report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CONTEXT_MULTI_ENGINEERING_DEV.md",
@@ -303,7 +303,7 @@
         "multi_intent": 12
       },
       "provisional_safety_v03_independent_rows": 0,
-      "provisional_safety_v03_evaluation_status": "UNRUN",
+      "provisional_safety_v03_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "provisional_safety_v03_data": "data/zero_model_refoundation/development/provisional_safety_seed_v0.3.json",
       "provisional_safety_v03_report": "docs/zero-model-refoundation-v1/ZMR-05_SAFETY_V03_DEV.md",
       "provisional_challenge_v05_intake_status": "FULL144_PUBLIC_DEV_FROZEN_UNRUN",
@@ -316,12 +316,18 @@
         "mixed": 21
       },
       "provisional_challenge_v05_qualification_credit_rows": 0,
-      "provisional_challenge_v05_evaluation_status": "UNRUN",
+      "provisional_challenge_v05_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "provisional_challenge_v05_data": "data/zero_model_refoundation/development/provisional_challenge_v0.5.json",
       "provisional_challenge_v05_part1_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V05_PART1_DEV.md",
       "provisional_challenge_v05_part2_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V05_PART2_DEV.md",
-      "provisional_challenge_v05_full144_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V05_FULL144_DEV.md"
+      "provisional_challenge_v05_full144_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V05_FULL144_DEV.md",
+      "c1_challenge_v05_evaluation_key": "fc7a4e4a88453b7841bdc0dcef5f38595366938bfae8b0d8528b91bb0f772cdf",
+      "c1_challenge_v05_registration": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+      "c1_challenge_v05_result": "docs/zero-model-refoundation-v1/ZMR-05_C1_CHALLENGE_V05_RESULT.json",
+      "c1_challenge_v05_report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CHALLENGE_V05.md",
+      "c1_fixed_configs_disposition": "REJECTED_CONTEXT_IGNORED_MULTI_OMISSION_UNSAFE_CONTROLS_NO_FAMILY_CEILING",
+      "c1_repair_spent": 0
     }
   },
-  "next_action": "Continue ZMR-05 C1 development: fresh public challenge v0.5 is frozen full144 and UNRUN; fresh safety v0.3 is 48 UNRUN rows. Register C1 plus A3 anchor dependency closure, fixed thresholds, scorer and one new evaluation key, then run one public same-writer comparison and diagnose control/context/multi results. At most two explained mechanism repairs per candidate on changed closure and fresh public cohorts; reject or continue according to CAPABILITY_LADDER. No consumed v0.2/v0.3/v0.4 key or AS/final/consumed TEST. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
+  "next_action": "Continue ZMR-05 after fixed public C1 v0.5 failure: diagnose CONTEXT_IGNORED, MULTI_OMISSION and unsafe controls using non-consumed development material. A3/C1 character has 25/103 correct singles, 7/12 control false assignments, 0/12 context-required and C1 only 2/12 multi exact on same-writer public data; current configs rejected, no family ceiling. Attempt at most two explained mechanism-level repairs on changed closure and fresh public cohorts; if ineffective eliminate C1 component and move to a distinct zero-model mechanism automatically. Do not rerun consumed v0.2/v0.3/v0.4/v0.5 keys or use AS/final/consumed TEST. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
 }
