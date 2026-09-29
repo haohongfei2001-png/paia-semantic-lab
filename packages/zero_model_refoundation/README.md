@@ -23,3 +23,12 @@ node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_mo
 ```
 
 These are engineering guards only. `scorePointLayers` never certifies capability. `auditIntake` never certifies data independence, even when all metadata counts pass. `groupedRateBound` needs real independent-cohort attestation and remains conservative. `claimEvaluation` must run in curator-controlled persistent storage before any sealed packet read; its local unit test proves exclusive claim behavior, not operational role isolation. See `ZMR-01A_FOUNDATION_COMPLETION.md` for the evidence boundary and known limits.
+
+ZMR-02's A0/A1 development prototype is in `a1.mjs`. It is pure browser JavaScript, while `a1_compile.mjs` and `a1_dev_eval.mjs` are offline Node tools with explicit new-data paths. Build and unit-test without accessing historical fixtures:
+
+```sh
+node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs packages/zero_model_refoundation/a1.test.mjs
+node packages/zero_model_refoundation/a1_compile.mjs char
+```
+
+`a1_dev_eval.mjs` is a one-time same-writer diagnostic for a changed development closure, not a CI step or capability test; consult `ZMR-02_A1_DEV.md` for its recorded result. The two public provisional data files are development-only and cannot satisfy independent TRAIN/DEV/AS quotas. The compiler never reads challenge content.
