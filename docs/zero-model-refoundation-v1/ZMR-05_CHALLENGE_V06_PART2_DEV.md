@@ -1,0 +1,7 @@
+# ZMR-05 public challenge v0.6, intake part 2
+
+The candidate writer added one new provisional single-intent situation for each fixed Catalog Topic 49–96. The public v0.6 intake now covers 96 distinct Topics with 48 Chinese, 32 English and 16 mixed-language rows; Topics 97–144 remain missing. The new 48 cases were authored before any C1-R1 semantic comparison and carry the same source, license, scenario/contrast/template lineage, exposure and unreviewed-gold fields as part 1. One natural English Topic-name echo is present among 96 rows, below the 10% ceiling but with no qualification credit.
+
+Exact bundle, NFKC-normalized current and character-trigram screening at the fixed 0.55 review flag found zero exact or flagged near duplicates against 1,206 earlier public development rows and within the 96-row v0.6 intake. This is only an intake check; related ideas or boundary ambiguity can remain. No independent writer, curator, reviewer or sealed source has reviewed the data. All rows remain `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`, `UNRUN`, public, with provisional gold and zero ZMR-01B independent quota credit. No Router output was generated in this batch.
+
+Continue Topics 97–144, then freeze the full144 public cohort and register a single new comparison key for changed C1-R1, original C1 and fixed A3 anchors plus the fresh safety v0.4 cohort. Neither this intake nor future same-writer results can establish capability, resource or saturation PASS.
