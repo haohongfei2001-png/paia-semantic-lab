@@ -1,0 +1,66 @@
+{
+  "schema": "ZMR-A6-R2-REPAIR-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "public_dev_reused_for_inner_loop": true,
+  "fresh_gate": false,
+  "cohort": "data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json",
+  "cohort_sha256": "7d9badca1d8ea117f902742603a39a4ce6324d46f4ec0e63661d1fc50f04ac91",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "a6_r2_module_sha256": "d1d97cf8fbc97692e8afd2279974f5f61006eac8624933501168b1b2792d9d5a",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "topic_universe": 144,
+  "labeled_rows": 20,
+  "control_rows": 12,
+  "ambiguous_unscored_rows": 4,
+  "results": {
+    "A6_R2": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 8,
+          "assigned": 3,
+          "exact": 2
+        },
+        "CONTROL": {
+          "rows": 12,
+          "assigned": 0,
+          "exact": 0
+        },
+        "LATER_REQUEST": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 1
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 2
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 1
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 7,
+      "labeled_exact": 6,
+      "labeled_wrong": 1,
+      "context_removal_output_changes": 4,
+      "deterministic_repeat_differences": 0,
+      "provisional_exact_set_precision": 0.8571428571428571
+    }
+  },
+  "limitations": [
+    "same-writer reused public repair DEV is not a fresh gate",
+    "unreviewed provisional labels and only 36 focused rows",
+    "no browser resource qualification"
+  ]
+}
