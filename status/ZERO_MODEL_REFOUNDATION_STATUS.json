@@ -290,8 +290,8 @@
       "anchor": "A3_FULL144_CURRENT_ONLY",
       "hypothesis": "EXPLICIT_CONTINUATION_AND_TWO_GOAL_SPLIT_CAN_ADD_SUPPORTED_OUTPUTS_WITHOUT_STALE_CONTEXT_OVERRIDE",
       "engineering_unit_tests": 5,
-      "engineering_status": "PUBLIC_FIXED_CONFIG_REJECTED_CONTEXT_IGNORED_MULTI_OMISSION_UNSAFE_CONTROLS",
-      "semantic_evaluations": 1,
+      "engineering_status": "C1_AND_FIRST_REPAIR_REJECTED_CONTEXT_IGNORED_MULTI_OMISSION_UNSAFE_CONTROLS",
+      "semantic_evaluations": 2,
       "as_consumed": 0,
       "stable_candidate": false,
       "report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CONTEXT_MULTI_ENGINEERING_DEV.md",
@@ -327,7 +327,7 @@
       "c1_challenge_v05_report": "docs/zero-model-refoundation-v1/ZMR-05_C1_CHALLENGE_V05.md",
       "c1_fixed_configs_disposition": "REJECTED_CONTEXT_IGNORED_MULTI_OMISSION_UNSAFE_CONTROLS_NO_FAMILY_CEILING",
       "c1_repair_spent": 1,
-      "c1_r1_engineering_status": "ENGINEERING_ONLY_UNRUN_AWAIT_FRESH_PUBLIC_COHORT",
+      "c1_r1_engineering_status": "PUBLIC_FIXED_CONFIG_REJECTED_NO_ISOLATED_SAFETY_PRESERVING_GAIN",
       "c1_r1_engineering_unit_tests": 5,
       "c1_r1_module": "packages/zero_model_refoundation/c1_r1_context_multi.mjs",
       "c1_r1_report": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_ENGINEERING_DEV.md",
@@ -344,7 +344,7 @@
         "mixed": 16
       },
       "provisional_safety_v04_independent_rows": 0,
-      "provisional_safety_v04_evaluation_status": "UNRUN",
+      "provisional_safety_v04_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "provisional_safety_v04_data": "data/zero_model_refoundation/development/provisional_safety_seed_v0.4.json",
       "provisional_safety_v04_report": "docs/zero-model-refoundation-v1/ZMR-05_SAFETY_V04_DEV.md",
       "provisional_challenge_v06_intake_status": "FULL144_PUBLIC_DEV_FROZEN_UNRUN",
@@ -356,12 +356,17 @@
         "mixed": 24
       },
       "provisional_challenge_v06_qualification_credit_rows": 0,
-      "provisional_challenge_v06_evaluation_status": "UNRUN",
+      "provisional_challenge_v06_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "provisional_challenge_v06_data": "data/zero_model_refoundation/development/provisional_challenge_v0.6.json",
       "provisional_challenge_v06_part1_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V06_PART1_DEV.md",
       "provisional_challenge_v06_part2_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V06_PART2_DEV.md",
-      "provisional_challenge_v06_full144_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V06_FULL144_DEV.md"
+      "provisional_challenge_v06_full144_report": "docs/zero-model-refoundation-v1/ZMR-05_CHALLENGE_V06_FULL144_DEV.md",
+      "c1_r1_challenge_v06_evaluation_key": "eb4c0b157c9a70104f8290df53981120a26294a00172c5c39bed7bda2a50e394",
+      "c1_r1_challenge_v06_registration": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+      "c1_r1_challenge_v06_result": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_CHALLENGE_V06_RESULT.json",
+      "c1_r1_challenge_v06_report": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_CHALLENGE_V06.md",
+      "c1_component_disposition": "RETIRED_NO_ISOLATED_SAFETY_PRESERVING_GAIN_NO_FAMILY_CEILING"
     }
   },
-  "next_action": "Continue ZMR-05 C1 repair 1: fresh public single-intent challenge v0.6 is frozen full144 UNRUN and public safety v0.4 is frozen 48 rows UNRUN. Register changed C1-R1 closure, fixed A3/original-C1 anchors, thresholds, scorer, cohort digests and one new evaluation key before a single public paired comparison; judge isolated context/multi gain and control safety, not synthetic PASS. C1 repair slot 1 is spent; at most one further explained mechanism repair remains. If no isolated safety-preserving gain, retire C1 and move to a distinct zero-model family automatically. Never rerun consumed v0.2/v0.3/v0.4/v0.5 keys or use AS/final/consumed TEST. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
+  "next_action": "Continue ZMR-05 after C1 and C1-R1 public fixed-configuration rejection. Both v0.6 challenge and safety v0.4 are consumed public development cohorts; do not rerun or tune against key eb4c0b157c9a70104f8290df53981120a26294a00172c5c39bed7bda2a50e394 or older consumed keys. Retire the C1 component without claiming a zero-model family ceiling. Register and engineer a genuinely distinct zero-model source/evidence scoring hypothesis with A3 as honest failed anchor, full144 output, fixed safety/resource gates and fresh public same-writer TRAIN/DEV/challenge cohorts as needed. Keep first inner-loop synthetic or non-consumed development only; at most two explained mechanism repairs and one registered stable public comparison per changed closure. No AS/final/consumed TEST access. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer data NON_INDEPENDENT_DEVELOPMENT_EVIDENCE."
 }
