@@ -15,3 +15,11 @@ Implemented: full144 unique-ID guard; finite fixed resource observations guard; 
 The caller must supply genuine, canonicalized provenance. New names or IDs do not establish independent writers. Cross-generation freshness, source authenticity, reviewer quality and full language/mechanism quotas are not implemented by this initial helper. A path metadata validator is not an operating-system sandbox. The dedicated CI fetches exact allowed files and no legacy fixtures.
 
 `single_point_gates` refers only to single-label point thresholds. `certification_allowed` is always false: controls, multi-label/context metrics, uncertainty, independent data and device resource evidence still need the complete pipeline. `assertBudget` checks supplied numbers, it does not perform resource measurement. See docs/zero-model-refoundation-v1/ZMR-01A_ENGINEERING.md for the remaining stage scope.
+
+The ZMR-01A completion batch adds `scoring.mjs`, `intake.mjs`, `fingerprints.mjs`, `uncertainty.mjs`, and `ledger.mjs`. Run the two explicit safe unit files:
+
+```sh
+node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs
+```
+
+These are engineering guards only. `scorePointLayers` never certifies capability. `auditIntake` never certifies data independence, even when all metadata counts pass. `groupedRateBound` needs real independent-cohort attestation and remains conservative. `claimEvaluation` must run in curator-controlled persistent storage before any sealed packet read; its local unit test proves exclusive claim behavior, not operational role isolation. See `ZMR-01A_FOUNDATION_COMPLETION.md` for the evidence boundary and known limits.

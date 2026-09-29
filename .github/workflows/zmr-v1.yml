@@ -52,9 +52,9 @@ jobs:
             const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
             const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
             assert(changed.every(p => zmr(p) || shared.has(p)), 'mixed legacy batch forbidden');
-            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
+            const docs = ['DEVELOPMENT_PLAN', 'EXECUTION_PROTOCOL', 'STATUS', 'EVIDENCE_BOUNDARY', 'DATA_PROTOCOL', 'CAPABILITY_LADDER', 'ARCHITECTURE_CANDIDATES', 'EVALUATION_PROTOCOL', 'RESOURCE_BUDGET', 'SATURATION_STOP_RULES', 'CIG_V1_AGGREGATE_AUDIT', 'RESEARCH_REFERENCES', 'ZMR-01A_ENGINEERING', 'ZMR-01A_PRECISION_GUARD_CORRECTION', 'ZMR-01A_FOUNDATION_COMPLETION'].map(n => 'docs/zero-model-refoundation-v1/' + n + '.md');
             const statusPath = 'status/ZERO_MODEL_REFOUNDATION_STATUS.json';
-            const engineering = ['packages/zero_model_refoundation/contracts.mjs', 'packages/zero_model_refoundation/contracts.test.mjs'];
+            const engineering = ['contracts.mjs', 'contracts.test.mjs', 'scoring.mjs', 'intake.mjs', 'fingerprints.mjs', 'uncertainty.mjs', 'ledger.mjs', 'foundation.test.mjs'].map(n => 'packages/zero_model_refoundation/' + n);
             const allowed = new Set([...docs, statusPath, ...engineering]);
             const reads = [];
             async function read(p) {
@@ -91,6 +91,5 @@ jobs:
       - name: Exact allowlisted engineering units only
         if: steps.safe.outputs.engineering == 'true'
         run: |
-          node --check packages/zero_model_refoundation/contracts.mjs
-          node --check packages/zero_model_refoundation/contracts.test.mjs
-          node --test packages/zero_model_refoundation/contracts.test.mjs
+          for file in packages/zero_model_refoundation/*.mjs; do node --check "$file"; done
+          node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_model_refoundation/foundation.test.mjs
