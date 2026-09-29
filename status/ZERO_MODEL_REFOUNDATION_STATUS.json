@@ -9,7 +9,7 @@
   "initial_engineering_main": "795efbee70edca496a0e67df6e593ab8b92944e4",
   "package_status": "DUAL_TRACK_DEVELOPMENT_AUTHORIZED",
   "active_round": "ZMR-01B",
-  "development_round": "ZMR-03",
+  "development_round": "ZMR-04",
   "engineering_status": "FOUNDATION_EXACT_HEAD_AND_MAIN_PASS",
   "data_qualification": "NOT_QUALIFIED",
   "capability_verdict": "UNTESTED",
@@ -130,7 +130,7 @@
       "full144_train_report": "docs/zero-model-refoundation-v1/ZMR-02_FULL144_DEV_TRAIN.md"
     },
     "ZMR-03": {
-      "execution_status": "DEV_IN_PROGRESS",
+      "execution_status": "DEV_DIAGNOSTIC_COMPLETE_NOT_QUALIFIED",
       "qualification_status": "NOT_ELIGIBLE",
       "family": "A2_A3_COMPILED_STATISTICAL_AND_DISCRIMINATIVE",
       "candidate_writer_count": 1,
@@ -141,7 +141,7 @@
       "cal_full144": false,
       "challenge_full144": false,
       "a2_stable_candidate": false,
-      "semantic_evaluations": 1,
+      "semantic_evaluations": 2,
       "as_consumed": 0,
       "report": "docs/zero-model-refoundation-v1/ZMR-03_A2_ENGINEERING_DEV.md",
       "ordinary_tune_rows": 144,
@@ -193,7 +193,7 @@
       "provisional_safety_independent_rows": 0,
       "provisional_safety_evaluation_status": "UNRUN",
       "provisional_safety_report": "docs/zero-model-refoundation-v1/ZMR-03_SAFETY_SEED_DEV.md",
-      "provisional_challenge_v03_intake_status": "FULL144_PUBLIC_DEV_FROZEN_UNRUN",
+      "provisional_challenge_v03_intake_status": "FULL144_PUBLIC_DEV_FROZEN",
       "provisional_challenge_v03_rows": 144,
       "provisional_challenge_v03_topics": 144,
       "provisional_challenge_v03_missing_topics": 0,
@@ -202,13 +202,29 @@
         "en": 48,
         "mixed": 24
       },
-      "provisional_challenge_v03_evaluation_status": "UNRUN",
+      "provisional_challenge_v03_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "provisional_challenge_v03_independent_source_cohorts": 0,
       "provisional_challenge_v03_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE_V03_PART1_DEV.md",
       "provisional_challenge_v03_part2_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE_V03_PART2_DEV.md",
       "provisional_challenge_v03_full144_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE_V03_FULL144_DEV.md",
-      "a3_semantic_evaluations": 0
+      "a3_semantic_evaluations": 1,
+      "a123_challenge_v03_evaluation_key": "c2ce56b3bf74740f9fa79920d6d39c0a980f73ded74d2a7809c1dc591b1007cd",
+      "a123_challenge_v03_report": "docs/zero-model-refoundation-v1/ZMR-03_A123_CHALLENGE_V03.md",
+      "a123_challenge_v03_result": "docs/zero-model-refoundation-v1/ZMR-03_A123_CHALLENGE_V03_RESULT.json",
+      "a3_provisional_disposition": "CURRENT_CONFIGS_REJECTED_NO_FAMILY_CEILING"
+    },
+    "ZMR-04": {
+      "execution_status": "DEV_IN_PROGRESS",
+      "qualification_status": "NOT_ELIGIBLE",
+      "family": "A4_A5_CONTRASTIVE_AND_STRUCTURAL",
+      "candidate_writer_count": 1,
+      "development_evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "provisional_boundary_graph": "NOT_STARTED",
+      "a4_stable_candidate": false,
+      "a5_stable_candidate": false,
+      "semantic_evaluations": 0,
+      "as_consumed": 0
     }
   },
-  "next_action": "Continue ZMR-03: fresh public same-writer challenge v0.3 is frozen full144 (one provisional single-intent row per Topic), UNRUN with zero qualification credit. Register one fixed changed-closure A0/A1/A2/A3 development comparison on this public cohort; score once by evaluation_key, report full144 aggregate counts, diagnose bounded repair/elimination without capability/resource claims. Public safety controls/context/multi remain incomplete and UNRUN; independent ZMR-01B stays NOT_QUALIFIED. Do not rerun consumed public v0.2/key or access AS/final/consumed TEST."
+  "next_action": "Continue ZMR-04 development: A1/A2/A3 fixed public v0.3 comparison is consumed once; current configurations are rejected without a family ceiling. Implement a bounded A4 contrastive boundary or A5 finite-state structural prototype using fixed Catalog and provisional TRAIN, with explicit 144-Topic fallback and no semantic API. Build only provisional Topic boundary hypotheses, clearly not independent gold, and expand public safety/role challenge mechanisms. Register fresh changed-closure public DEV before any new comparison; do not rerun v0.2/v0.3 consumed keys. Independent ZMR-01B stays NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; no AS/final/consumed TEST access."
 }

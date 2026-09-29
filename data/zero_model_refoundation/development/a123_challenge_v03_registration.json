@@ -1,0 +1,75 @@
+{
+  "schema": "ZMR-A123-CHALLENGE-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_CHALLENGE_V03",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "bfd1b671afb6c1accbcc38d21951efd74c37bb7c0b78291c3e7f26391fd96cbf",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "8dbf40f9aa7cd456b0c8cb469520be6f64c32172378e0873bf6d17c19144ebf7",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "2bc4848a6e8209fe4cc9ab0cf9663d76aa47da6b842e2d6bca0c8176b47cd9f0",
+    "scorer_sha256": "c2b11ea43d4741939176215e00d31779c5994bee7c345cbfe5c8b76d16105209"
+  },
+  "evaluation_key": "c2ce56b3bf74740f9fa79920d6d39c0a980f73ded74d2a7809c1dc591b1007cd",
+  "configs": [
+    {
+      "id": "A0_all_defer",
+      "family": "A0"
+    },
+    {
+      "id": "A1_char_tfidf",
+      "family": "A1",
+      "mode": "char",
+      "method": "tfidf",
+      "min_score": 0.15,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A1_char_bm25",
+      "family": "A1",
+      "mode": "char",
+      "method": "bm25",
+      "min_score": 1,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A2_char",
+      "family": "A2",
+      "mode": "char",
+      "alpha": 0.5,
+      "min_score": 0,
+      "min_margin": 0.5
+    },
+    {
+      "id": "A3_char",
+      "family": "A3",
+      "mode": "char",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    },
+    {
+      "id": "A3_word",
+      "family": "A3",
+      "mode": "word",
+      "min_score": 0.02,
+      "min_margin": 0.02
+    }
+  ],
+  "limits": {
+    "topic_count": 144,
+    "single_precision_min": 0.95,
+    "single_coverage_min": 0.7,
+    "full144_macro_recall_min": 0.7
+  },
+  "no_calibration": true,
+  "independent_rows": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "as_consumed": 0
+}
