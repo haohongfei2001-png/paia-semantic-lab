@@ -23,7 +23,7 @@ export async function evaluateProvisionalA1() {
   const catalog=await safeRead('catalog/system_topic_catalog_v0.2.yaml');
   const topics=parsePinnedCatalog(catalog), ids=topics.map(t=>t.id);
   const catalogSha=sha256(catalog);
-  const train=await safeRead('data/zero_model_refoundation/development/provisional_train_v0.1.json');
+  const train=await safeRead('data/zero_model_refoundation/development/provisional_train_v0.2.json');
   const trainRows=parseProvisionalTrain(train,catalogSha,ids);
   const challenge=await safeRead('data/zero_model_refoundation/development/provisional_challenge_v0.1.json');
   const value=JSON.parse(challenge.toString('utf8'));

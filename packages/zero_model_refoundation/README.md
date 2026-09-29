@@ -31,4 +31,4 @@ node --test packages/zero_model_refoundation/contracts.test.mjs packages/zero_mo
 node packages/zero_model_refoundation/a1_compile.mjs char
 ```
 
-`a1_dev_eval.mjs` is a one-time same-writer diagnostic for a changed development closure, not a CI step or capability test; consult `ZMR-02_A1_DEV.md` for its recorded result. The two public provisional data files are development-only and cannot satisfy independent TRAIN/DEV/AS quotas. The compiler never reads challenge content.
+`a1_dev_eval.mjs` is a same-writer diagnostic for a changed development closure, not a CI step or capability test; consult `ZMR-02_A1_DEV.md` for its first exposed result. The fixed compiler now reads only `provisional_train_v0.2.json`, which provides one writer-authored scenario per all 144 Topics; v0.1 remains an immutable public seed. The old v0.1 challenge is exposed and can only serve regression. These public provisional data files cannot satisfy independent TRAIN/DEV/AS quotas. The compiler never reads challenge content. The 6,000-feature char cap keeps this larger provisional index under the unchanged 1 MiB limit; static bytes are not a browser resource qualification.

@@ -49,9 +49,9 @@ test('pinned Catalog parser and provisional TRAIN reject non-TRAIN input', async
   const topics=parsePinnedCatalog(catalog);
   assert.equal(topics.length,144);
   assert.equal(topics[0].id,'sys.personal_direction.life_goals');
-  const train=await readFile(fileURLToPath(new URL('../../data/zero_model_refoundation/development/provisional_train_v0.1.json',import.meta.url)));
+  const train=await readFile(fileURLToPath(new URL('../../data/zero_model_refoundation/development/provisional_train_v0.2.json',import.meta.url)));
   const sha='29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18';
-  assert.equal(parseProvisionalTrain(train,sha,topics.map(t=>t.id)).length,18);
+  assert.equal(parseProvisionalTrain(train,sha,topics.map(t=>t.id)).length,144);
   const bad=JSON.parse(train.toString()); bad.rows[0].split='AS';
   assert.throws(()=>parseProvisionalTrain(Buffer.from(JSON.stringify(bad)),sha,topics.map(t=>t.id)));
 });
@@ -66,7 +66,7 @@ test('offline fixed-path build stays under static byte caps and rebuilds identic
     assert.equal(first.index_sha256,second.index_sha256);
     assert.equal(first.index_bytes,bytes.length);
     assert(first.index_bytes<=1048576 && first.runtime_plus_index_bytes<=2097152);
-    assert.equal(first.train_rows,18);
+    assert.equal(first.train_rows,144);
     assert.equal(first.classification,'DEV_ONLY_NOT_RESOURCE_QUALIFIED');
   } finally { await rm(dir,{recursive:true,force:true}); }
 });
