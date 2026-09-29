@@ -141,7 +141,7 @@
       "cal_full144": false,
       "challenge_full144": false,
       "a2_stable_candidate": false,
-      "semantic_evaluations": 0,
+      "semantic_evaluations": 1,
       "as_consumed": 0,
       "report": "docs/zero-model-refoundation-v1/ZMR-03_A2_ENGINEERING_DEV.md",
       "ordinary_tune_rows": 144,
@@ -171,10 +171,14 @@
         "mixed": 18
       },
       "provisional_challenge_independent_source_cohorts": 0,
-      "provisional_challenge_evaluation_status": "UNRUN",
+      "provisional_challenge_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "provisional_challenge_safety_layers": "MISSING",
-      "provisional_challenge_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE144_DEV.md"
+      "provisional_challenge_report": "docs/zero-model-refoundation-v1/ZMR-03_CHALLENGE144_DEV.md",
+      "a1a2_challenge_v02_evaluation_key": "34401a17e57c2ce84c45aebf5561d82785e1d446b52eebc9f3e3af88fa0246ed",
+      "a1a2_challenge_v02_report": "docs/zero-model-refoundation-v1/ZMR-03_A1A2_CHALLENGE_V02.md",
+      "a1a2_challenge_v02_result": "docs/zero-model-refoundation-v1/ZMR-03_A1A2_CHALLENGE_V02_RESULT.json",
+      "a1a2_provisional_disposition": "CURRENT_CONFIGS_NOT_PROMOTED_MECHANISM_FAILURES_OBSERVED"
     }
   },
-  "next_action": "Continue ZMR-03: register one fixed changed-closure A1/A2 provisional single-label comparison on the public full144 challenge v0.2, then diagnose bounded repairs/elimination and proceed to A3/A4. Build missing provisional control/context/multi layers separately. TRAIN/TUNE/CAL/challenge v0.2 each have 144 same-writer public provisional single-intent rows; CAL is UNFITTED and challenge UNRUN. Independent ZMR-01B remains NOT_QUALIFIED with zero accepted rows. Do not claim capability/resource PASS or access AS/final/consumed TEST."
+  "next_action": "Continue ZMR-03 development: A1/A2 fixed-key public challenge v0.2 comparison is consumed once and current configs are not promoted. Implement A3 family and build separate same-writer public provisional control/context/multi layers; register a changed closure and fresh public challenge before a new comparison. Independent ZMR-01B remains NOT_QUALIFIED with zero accepted rows. Do not claim capability/resource PASS or access AS/final/consumed TEST."
 }
