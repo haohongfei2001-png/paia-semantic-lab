@@ -74,6 +74,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_REPAIR_DEV_V01_INTAKE.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_R1_ENGINEERING_DEV.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_CHALLENGE_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -81,13 +82,16 @@ jobs:
             engineering.push('packages/zero_model_refoundation/provisional_a5_repair_dev.test.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition_r1.mjs', 'packages/zero_model_refoundation/a5_composition_r1.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_r1_challenge.test.mjs');
+            engineering.push('packages/zero_model_refoundation/a5_r1_fresh_compare.mjs');
             development.push('data/zero_model_refoundation/development/a4_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json');
             development.push('data/zero_model_refoundation/development/a5_fresh_v01_registration.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_repair_dev_v0.1.json');
             development.push('data/zero_model_refoundation/development/provisional_a5_r1_challenge_v0.1.json');
+            development.push('data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json');
             const resultA5FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_FRESH_V01_RESULT.json';
-            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, ...engineering, ...development]);
+            const resultA5R1FreshPath = 'docs/zero-model-refoundation-v1/ZMR-05_A5_R1_FRESH_V01_RESULT.json';
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -262,6 +266,28 @@ jobs:
               assert.equal(result.independent_rows, 0);
               assert.equal(result.as_consumed, 0);
               assert.equal(s.rounds['ZMR-05'].a5_fresh_v01_evaluation_key, result.evaluation_key);
+            }
+            if (after.has(resultA5R1FreshPath)) {
+              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json')).toString('utf8'));
+              const result = JSON.parse((await read(resultA5R1FreshPath)).toString('utf8'));
+              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+              assert.equal(result.evaluation_key, registration.evaluation_key);
+              assert.equal(result.topic_universe, 144);
+              assert.equal(result.labeled_rows, 20);
+              assert.equal(result.ambiguous_unscored_rows, 4);
+              assert.equal(result.control_rows, 8);
+              assert.equal(result.fixed_config_count, 3);
+              assert.equal(result.results.A5_R1_no_request_guard.by_role.CONTROL.assigned, 3);
+              assert.equal(result.results.A5_R1_no_request_guard.by_role.MULTI.exact, 0);
+              assert.equal(result.results.A5_R1_no_request_guard.by_role.REQUEST.exact, 0);
+              assert.equal(result.paired.A5_R1_vs_A5.controls_false_avoided, 1);
+              assert.equal(result.paired.A5_R1_vs_A5.positive_request_assignments_lost, 0);
+              assert.equal(result.capability_verdict, 'UNTESTED');
+              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(result.independent_rows, 0);
+              assert.equal(result.as_consumed, 0);
+              assert.equal(s.rounds['ZMR-05'].a5_r1_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')) {
               const graph = JSON.parse((await read('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')).toString('utf8'));

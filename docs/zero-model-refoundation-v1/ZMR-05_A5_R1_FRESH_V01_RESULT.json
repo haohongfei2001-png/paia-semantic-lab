@@ -1,0 +1,206 @@
+{
+  "schema": "ZMR-A5-R1-FRESH-COMPARISON-RESULT-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_key": "b784454fff5dde2b54003b1c99651424e22e403019763999054c263c77a3a5d6",
+  "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+  "identity": {
+    "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+    "generation_id": "G0_DEV_PUBLIC_A5_R1_FRESH_V01",
+    "protocol_version": "ZMR-EVAL-1.0.1",
+    "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+    "environment": "node-26.8.2-darwin-arm64",
+    "candidate_closure_sha256": "96f9a99440b2ef60246481179f0278f45cfcc995a85112515f54cc97db9da9f8",
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "compiler_sha256": "e0c3c1413089b5aa41bdd80d6c2e43455d37e28e990ffca1d37243fc905f4766",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+    "cohort_sha256": "8eeb3bd72e9fc7900d3fe089072f49faa4ac62e47e25be16cd3663d55737811b",
+    "scorer_sha256": "e486c1c0a73102ac9455a87a745f47583377ee41c1126815e83102521e48dd1c"
+  },
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "data_qualification": "NOT_QUALIFIED",
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "challenge_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "topic_universe": 144,
+  "labeled_rows": 20,
+  "ambiguous_unscored_rows": 4,
+  "control_rows": 8,
+  "fixed_config_count": 3,
+  "build": {
+    "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "topic_count": 144,
+    "train_rows": 144,
+    "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+    "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+    "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+    "index_bytes": 114123,
+    "runtime_plus_index_bytes": 127741,
+    "mode": "char",
+    "output": "EPHEMERAL_DEVELOPMENT_INDEX"
+  },
+  "results": {
+    "A3_char_deletion_ablation": {
+      "by_role": {
+        "CONTROL": {
+          "rows": 8,
+          "assigned": 6,
+          "exact": 0
+        },
+        "REQUEST": {
+          "rows": 8,
+          "assigned": 5,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "CORRECTION": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 1
+        },
+        "QUOTE": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 1
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 14,
+      "labeled_exact": 2,
+      "labeled_wrong": 12,
+      "provisional_exact_set_precision": 0.14285714285714285,
+      "deterministic_repeat_differences": 0
+    },
+    "A5_original": {
+      "by_role": {
+        "CONTROL": {
+          "rows": 8,
+          "assigned": 4,
+          "exact": 0
+        },
+        "REQUEST": {
+          "rows": 8,
+          "assigned": 5,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "CORRECTION": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 1
+        },
+        "QUOTE": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 1
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 12,
+      "labeled_exact": 2,
+      "labeled_wrong": 10,
+      "provisional_exact_set_precision": 0.16666666666666666,
+      "deterministic_repeat_differences": 0
+    },
+    "A5_R1_no_request_guard": {
+      "by_role": {
+        "CONTROL": {
+          "rows": 8,
+          "assigned": 3,
+          "exact": 0
+        },
+        "REQUEST": {
+          "rows": 8,
+          "assigned": 5,
+          "exact": 0
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0
+        },
+        "CORRECTION": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 1
+        },
+        "QUOTE": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 1
+        },
+        "AMBIGUOUS": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 20,
+      "labeled_assigned": 12,
+      "labeled_exact": 2,
+      "labeled_wrong": 10,
+      "provisional_exact_set_precision": 0.16666666666666666,
+      "deterministic_repeat_differences": 0
+    }
+  },
+  "paired": {
+    "A5_R1_vs_A5": {
+      "labeled_exact_gained": 0,
+      "labeled_exact_lost": 0,
+      "wrong_avoided_by_defer": 0,
+      "wrong_added": 0,
+      "assigned_gained": 0,
+      "assigned_lost": 0,
+      "multi_exact_gained": 0,
+      "multi_exact_lost": 0,
+      "controls_false_avoided": 1,
+      "controls_false_added": 0,
+      "positive_request_correct_lost": 0,
+      "positive_request_assignments_lost": 0,
+      "ambiguous_assignments_removed_unscored": 1,
+      "ambiguous_assignments_added_unscored": 0
+    },
+    "A5_R1_vs_A3": {
+      "labeled_exact_gained": 0,
+      "labeled_exact_lost": 0,
+      "wrong_avoided_by_defer": 2,
+      "wrong_added": 0,
+      "assigned_gained": 0,
+      "assigned_lost": 2,
+      "multi_exact_gained": 0,
+      "multi_exact_lost": 0,
+      "controls_false_avoided": 3,
+      "controls_false_added": 0,
+      "positive_request_correct_lost": 0,
+      "positive_request_assignments_lost": 0,
+      "ambiguous_assignments_removed_unscored": 1,
+      "ambiguous_assignments_added_unscored": 0
+    }
+  },
+  "limitations": [
+    "same candidate writer and unreviewed provisional labels",
+    "four ambiguous rows have no gold and are unscored",
+    "focused data cannot qualify full144 capability or global safety",
+    "static bytes do not measure browser memory or latency"
+  ]
+}
