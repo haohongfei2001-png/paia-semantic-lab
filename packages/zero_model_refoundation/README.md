@@ -43,3 +43,5 @@ node packages/zero_model_refoundation/a2_compile.mjs char
 The compiler's default output is a generated local artifact, not a tracked capability result. No A2 semantic comparison, browser resource qualification or independent evaluation is recorded. See `ZMR-03_A2_ENGINEERING_DEV.md`.
 
 The writer-visible `provisional_tune_v0.1.json` adds one new provisional ordinary DEV/TUNE scenario for each of the 144 Topics. It shares a writer lineage with TRAIN and has unreviewed provisional labels, so it carries zero independent quota credit. `provisional_data.test.mjs` checks only full144 metadata, lineage declarations and exact normalized fingerprint separation; it makes no semantic or capability claim. See `ZMR-03_TUNE144_DEV.md`.
+
+The separately versioned `provisional_cal_v0.1.json` adds one public, unfitted, same-writer provisional DEV/CAL scenario per Topic. Its metadata and exact separation from TRAIN/TUNE are checked by the same lightweight test; no calibration or semantic score is run by CI. It cannot establish independent calibration reliability. See `ZMR-03_CAL144_DEV.md`.
