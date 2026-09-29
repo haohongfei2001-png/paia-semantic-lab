@@ -366,7 +366,7 @@
       "c1_r1_challenge_v06_result": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_CHALLENGE_V06_RESULT.json",
       "c1_r1_challenge_v06_report": "docs/zero-model-refoundation-v1/ZMR-05_C1_R1_CHALLENGE_V06.md",
       "c1_component_disposition": "RETIRED_NO_ISOLATED_SAFETY_PRESERVING_GAIN_NO_FAMILY_CEILING",
-      "next_candidate": "A7_BOUNDED_PER_SCENARIO_CASE_MEMORY",
+      "next_candidate": "A4_CONTRASTIVE_BOUNDARY_EVIDENCE_TRIADS",
       "a7_hypothesis": "FINITE_TRAIN_PROTOTYPE_MAX_SCORING_VERSUS_CLASS_AGGREGATION_AND_SPARSE_HINGE",
       "a7_engineering_status": "DEFAULT_PARTIAL_PUBLIC_DEV_REJECTED_NO_ISOLATED_CORRECT_GAIN",
       "a7_engineering_unit_tests": 4,
@@ -406,8 +406,12 @@
       "a7_dev_v01_registration": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
       "a7_dev_v01_result": "docs/zero-model-refoundation-v1/ZMR-05_A7_DEV_V01_RESULT.json",
       "a7_dev_v01_report": "docs/zero-model-refoundation-v1/ZMR-05_A7_DEV_V01.md",
-      "a7_repair_spent": 0
+      "a7_repair_spent": 0,
+      "a7_train_fold_probe": "docs/zero-model-refoundation-v1/ZMR-05_A7_TRAIN_FOLD_RESULT.json",
+      "a7_train_fold_report": "docs/zero-model-refoundation-v1/ZMR-05_A7_TRAIN_FOLD.md",
+      "a7_disposition": "ELIMINATED_DEFAULT_NO_ISOLATED_PUBLIC_GAIN_BOUNDED_TRAIN_PROBE_NOT_PROMOTED_NO_FAMILY_CEILING",
+      "a4_reentry_basis": "CATALOG_DERIVED_PROVISIONAL_GRAPH_NO_RESOLVER_ACTIVE"
     }
   },
-  "next_action": "A7 default case-memory failed its single registered public partial DEV diagnostic (char 0/48 correct and 0 assigned; word 1/48 correct with 1/12 false control; no isolated correct gain over A1/A3). The DEV v0.1 evaluation key is consumed; do not rerun or tune against it, nor any consumed v0.2-v0.6 challenge/safety keys, AS or final/consumed TEST. Diagnose the mechanism only with TRAIN v0.2+v0.3 grouped source/scenario folds, define at most one bounded A7-R1 mechanism repair if justified, then create fresh same-writer public DEV/safety with source/lineage/overlap screening and evaluate once. If no safety-preserving gain, eliminate A7 and advance to the next distinct zero-model family/hybrid. Do not create a full144 challenge for an unstable A7 default. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; all writer-created data remains NON_INDEPENDENT_DEVELOPMENT_EVIDENCE and cannot count as saturation ceiling."
+  "next_action": "A7 case-memory default is eliminated after one consumed public partial DEV diagnostic with no isolated correct gain and a bounded TRAIN-only authoring-batch holdout probe: restricted query normalization recovered at most 11/144 correct strict char cases per fold while mean best-rival score exceeded mean correct score. Do not rerun consumed A7 DEV v0.1 or any consumed v0.2-v0.6 public challenge/safety key, AS or final/consumed TEST. Continue the canonical A4 contrastive-boundary family from its Catalog-derived provisional graph: create fresh public candidate-writer positive/negative/ambiguous triads for selected neighboring Topic pairs, audit provenance/source/lineage/overlap, keep all 144 Topics in the Router universe and all triads NON_INDEPENDENT_DEVELOPMENT_EVIDENCE. Activate no pairwise resolver until enough fresh evidence and a separate mechanism closure; ordinary candidate failure auto-eliminates. Independent ZMR-01B NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED. Preserve 95% precision, 70% coverage/macro, safety, unchanged resource budgets, local-first and zero neural/embedding/LLM/semantic API."
 }
