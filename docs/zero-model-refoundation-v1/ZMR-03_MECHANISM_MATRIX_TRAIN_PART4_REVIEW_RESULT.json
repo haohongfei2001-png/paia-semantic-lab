@@ -1,0 +1,133 @@
+{
+ "schema": "ZMR-MECHANISM-MATRIX-PART4-WRITER-QA-RECEIPT-1",
+ "source_main": "da6301f29c2dc2b904d5a7e85f15febb460b8abb",
+ "source_tree": "0885e86fae4b137a92a402b949f800c06794e28b",
+ "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+ "input_pins": [
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+   "sha256": "8b05863e9b077a22f0ab08fea405bd1beab56764e6aeb14262f191ca6f9cc2ed"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+   "sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+   "sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+   "sha256": "b0e786aaa4c23d78837ccdcb82f26d28804a50d8fcbf0c41962008d2e01e77e3"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+   "sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_review_v0.1.json",
+   "sha256": "cff041adeb0c1d20f609391941b52d6fbbe52d94c9885f78a0bfb5ddbf66b7a1"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+   "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+   "sha256": "9004526809b15bf4d55e9a44d3da44d2bc5cb67929ddd6be586f2c16fc861e06"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/development_mechanism_matrix_plan_v0.1.json",
+   "sha256": "4663109cdfd3277994ecdc046fb23b6537367b5ce5e45042b99b92111e71b409"
+  },
+  {
+   "path": "catalog/system_topic_catalog_v0.2.yaml",
+   "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18"
+  }
+ ],
+ "code_pins": [
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_part4_review.mjs",
+   "sha256": "6b2bccfbe0a471db4ff4d86ca6721101f26adc87f688430f20a7dcdc9d377878"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_train_part4.mjs",
+   "sha256": "1e9517d97493b064ec973d7d8df33512e14d88a2a810a2eaa2db06c5049a429e"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_part3_review.mjs",
+   "sha256": "caf45f6eaf6d54c6af181a59687d85bc3911177ef87adbf918f6d0bc692e7043"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_train_part3.mjs",
+   "sha256": "8fd727a2513fd75c73d4b783227c51031048f52b6c568314636df95d78f21824"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_part2_review.mjs",
+   "sha256": "45cb27870b79e958bfc62e1e2adc7f7cefd1391f82651e15e9d40e70ac4a0c79"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_train_batch.mjs",
+   "sha256": "1f1f2a2c528324256483b5bf556af3b68815a0a328f2358f130a2639b0b10766"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_review.mjs",
+   "sha256": "d42cd7050d7673dbeaecf33f3191ded59ced74251b08daeb572ba292e3cadc46"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_seed.mjs",
+   "sha256": "10247a4ea60e938aef6347c0ddb3c87ed64ee3e17c960d61adaf6610a25d35b7"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_plan.mjs",
+   "sha256": "2e277be575fed61cb9f26f544a483e5cb43aec4999c42bd5ce0827d9fa3abf88"
+  },
+  {
+   "path": "packages/zero_model_refoundation/contracts.mjs",
+   "sha256": "ac3d29d395e9cc645e3138eb25b93d85adaceb726e569116a921fc78f368fb2c"
+  }
+ ],
+ "audit": {
+  "schema": "ZMR-MECHANISM-MATRIX-PART4-WRITER-QA-AUDIT-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "new_writer_reviewed_rows": 54,
+  "new_dispositions": {
+   "RETAIN_PROVISIONAL_WRITER_ONLY": 48,
+   "LABEL_IDENTIFIABILITY_HOLD": 6
+  },
+  "new_hold_ids": [
+   "ZMR-MATRIX-TRAIN-PART4-010",
+   "ZMR-MATRIX-TRAIN-PART4-011",
+   "ZMR-MATRIX-TRAIN-PART4-012",
+   "ZMR-MATRIX-TRAIN-PART4-040",
+   "ZMR-MATRIX-TRAIN-PART4-041",
+   "ZMR-MATRIX-TRAIN-PART4-042"
+  ],
+  "combined_writer_reviewed_rows": 216,
+  "combined_label_holds": 18,
+  "combined_source_topics": 72,
+  "full_topic_universe": 144,
+  "missing_topics": 72,
+  "original_inputs_gold_spans_preserved": true,
+  "source_input_revisions": 0,
+  "new_neighbor_cards": 18,
+  "new_neighbor_edges": 54,
+  "combined_provisional_neighbor_cards": 72,
+  "combined_provisional_neighbor_edges": 216,
+  "directional_source_cases": 0,
+  "adjudicated_edges": 0,
+  "qualified_heldout_family_count": null,
+  "independent_reviewers": 0,
+  "accepted_gold_rows": 0,
+  "independent_quota_credit": 0,
+  "source_license": "DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+  "candidate_predictions": 0,
+  "semantic_evaluations": 0,
+  "new_stable_allocations": 0,
+  "remaining_stable_allowance": null,
+  "data_qualification": "NOT_QUALIFIED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "saturation_ceiling_claim": false
+ }
+}
