@@ -40,6 +40,8 @@ Static byte counts are **not resource PASS**. Browser dependency closure, peak m
 
 Four focused engineering checks pass: registered settings and byte units; deterministic frozen full144 indices and output hashes; synthetic int16 half-step error bounds / routing / OOV / Catalog mismatch; corrupt coefficient/universe rejection. The four checks complete under one second locally. Compilation reproducibility does not consume semantic evaluation keys. Synthetic routing is only engineering evidence.
 
+PR175 initial isolated CI run36694019749 / job109817578414 failed because the receipt JSON was validated through the read allowlist but not materialized in the thin test workspace (`ENOENT`). The new full144 build test stopped before fitting. Repair explicitly materializes that same already-allowlisted receipt; no compiler, parameter, input or result identity changes, no removed assertion, no unchanged-head rerun. A thin workspace reproduction checks the corrected dependency set.
+
 All432 rows share **one writer/source-family lineage component**, even though five source batches exist. No independent grouped folds can be made from this closure. Independent01B credit is0, gold remains unreviewed, safety TRAIN quotas are missing. Independent curator/AS qualification remains frozen; offline development continues. Capability **UNTESTED**, resources **NOT_QUALIFIED**, no saturation or family ceiling claim.
 
 ## Next action
