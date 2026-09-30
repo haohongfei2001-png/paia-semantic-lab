@@ -1,0 +1,496 @@
+{
+  "schema": "ZMR-DEVELOPMENT-REVIEW-JOURNAL-1",
+  "registry_sha256": "5c9c0d38106a75b510404aa2236e5d914189764d0d2f8f9cd2f524509cf67645",
+  "batch_id": "ZMR-DEV-V04-TUNE-REVIEW-SIX-20260930",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "qualification_credit": 0,
+  "candidate_prediction_exposures": 0,
+  "semantic_evaluations": 0,
+  "source_packet_reads": 1,
+  "review_population": "FIRST_SIX_ROWS_OF_FIXED_UNPREDICTED_TUNE_SLICE1_NOT_RANDOM_SAMPLE",
+  "records": [
+    {
+      "review_id": "tune-v04-review-six-001",
+      "row_id": "tune-v04-s1-001",
+      "source_packet_path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "source_packet_sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "source_bundle_sha256": "59756c0f5ee2ed81b0f0f77e4f2acb6053cdd2b8c027153190f34fbcaa7d6bab",
+      "original_annotation_sha256": "fe9b739c2ab1a9ffb61b28e3742efb06bbf905d878028e28e05ebb1f33c0538c",
+      "source_split": "TUNE_PROVISIONAL",
+      "reviewer_id": "candidate-writer",
+      "reviewer_role": "CANDIDATE_WRITER",
+      "independent": false,
+      "qualification_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_evaluations": 0,
+      "reviewed_at": "2026-09-30T15:42:21Z",
+      "revision": 1,
+      "previous_row_review_sha256": null,
+      "previous_record_sha256": null,
+      "disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "rationale": "Current goal is to clarify long-term desired life, while employment location is past background. Life Goals is plausible, but the frozen generic boundaries do not operationally separate it from Life Planning or Values & Principles. Preserve original label/spans and flag the boundary hypothesis; do not union uncertain labels into multi-intent or admit calibration.",
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "original_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.personal_direction.life_goals"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 50,
+            "text": "原来把去哪里上班当成未来的全部，现在我更想先说清二十年后愿意过怎样的日子，哪些长期追求值得一直保留。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 24,
+            "end": 36,
+            "text": "二十年后愿意过怎样的日子"
+          }
+        ]
+      },
+      "proposed_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.personal_direction.life_goals"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 50,
+            "text": "原来把去哪里上班当成未来的全部，现在我更想先说清二十年后愿意过怎样的日子，哪些长期追求值得一直保留。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 24,
+            "end": 36,
+            "text": "二十年后愿意过怎样的日子"
+          }
+        ]
+      },
+      "source_license_review": "ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+      "boundary_hypotheses": [
+        "sys.personal_direction.life_planning",
+        "sys.personal_direction.values_principles"
+      ],
+      "boundary_adjudication": "UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE",
+      "mechanism_review": "CURRENT_SUBJECT_ONLY_NOT_HELD_OUT_MECHANISM_QUALIFICATION",
+      "review_population_warning": "SELECTED_FIRST_SIX_NOT_REPRESENTATIVE_OR_INDEPENDENT",
+      "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+      "record_sha256": "23b72d5d999527736ece1d6ab5ef73d2acd2ab408c65be9676e2d9cfd49cdc52"
+    },
+    {
+      "review_id": "tune-v04-review-six-002",
+      "row_id": "tune-v04-s1-002",
+      "source_packet_path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "source_packet_sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "source_bundle_sha256": "8146efcf218b84fa6b20a281c2942d573051f45618e356d95c470f1cfe4557f6",
+      "original_annotation_sha256": "da687ee29050e9ace4e3ba51e8b41752560ec04b1478fe58b0d777bfa9ef2d3d",
+      "source_split": "TUNE_PROVISIONAL",
+      "reviewer_id": "candidate-writer",
+      "reviewer_role": "CANDIDATE_WRITER",
+      "independent": false,
+      "qualification_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_evaluations": 0,
+      "reviewed_at": "2026-09-30T15:42:21Z",
+      "revision": 1,
+      "previous_row_review_sha256": null,
+      "previous_record_sha256": "23b72d5d999527736ece1d6ab5ef73d2acd2ab408c65be9676e2d9cfd49cdc52",
+      "disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "rationale": "The worthwhile-life destination is the present question; the yearly checklist is a contrast, not a second requested goal. Life Goals is plausible, yet the pinned Life Planning/Self Reflection definitions give no operational overlap rule. Keep original gold and record unadjudicated identifiability; no blanket DEFER for reflective statements.",
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "original_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.personal_direction.life_goals"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 146,
+            "text": "I keep putting off the question of what a worthwhile life would look like at sixty; the destination matters more to me than this year's checklist."
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 42,
+            "end": 57,
+            "text": "worthwhile life"
+          }
+        ]
+      },
+      "proposed_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.personal_direction.life_goals"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 146,
+            "text": "I keep putting off the question of what a worthwhile life would look like at sixty; the destination matters more to me than this year's checklist."
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 42,
+            "end": 57,
+            "text": "worthwhile life"
+          }
+        ]
+      },
+      "source_license_review": "ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+      "boundary_hypotheses": [
+        "sys.personal_direction.life_planning",
+        "sys.personal_direction.self_reflection"
+      ],
+      "boundary_adjudication": "UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE",
+      "mechanism_review": "CURRENT_SUBJECT_ONLY_NOT_HELD_OUT_MECHANISM_QUALIFICATION",
+      "review_population_warning": "SELECTED_FIRST_SIX_NOT_REPRESENTATIVE_OR_INDEPENDENT",
+      "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+      "record_sha256": "811614ea1a458c00a9ff0a816bed4c84d5f48c36b9414918b60931bf6aa65d73"
+    },
+    {
+      "review_id": "tune-v04-review-six-003",
+      "row_id": "tune-v04-s1-003",
+      "source_packet_path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "source_packet_sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "source_bundle_sha256": "0abfbcab46a20b82f14897687cb3cb354c64ea82628811e5e99fecd9dc2c3e11",
+      "original_annotation_sha256": "3129b40bb20d8d734a52cd86957347ddf96d021e3e4bb4699bff9a196534a0f2",
+      "source_split": "TUNE_PROVISIONAL",
+      "reviewer_id": "candidate-writer",
+      "reviewer_role": "CANDIDATE_WRITER",
+      "independent": false,
+      "qualification_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_evaluations": 0,
+      "reviewed_at": "2026-09-30T15:42:21Z",
+      "revision": 1,
+      "previous_row_review_sha256": null,
+      "previous_record_sha256": "811614ea1a458c00a9ff0a816bed4c84d5f48c36b9414918b60931bf6aa65d73",
+      "disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "rationale": "The hypothetical legacy question serves the current explicit goal of clarifying lifetime pursuits, so hypothetical wording alone does not force DEFER. The frozen Life Goals/Values & Principles/Life Planning boundaries remain generic. Preserve original label, do not resolve the neighbor dispute by writer fiat.",
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "original_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.personal_direction.life_goals"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 57,
+            "text": "如果只能留下一项 long-term legacy，我希望以后有人因哪件事记住我？想据此梳理一生真正想实现的追求。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 9,
+            "end": 25,
+            "text": "long-term legacy"
+          }
+        ]
+      },
+      "proposed_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.personal_direction.life_goals"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 57,
+            "text": "如果只能留下一项 long-term legacy，我希望以后有人因哪件事记住我？想据此梳理一生真正想实现的追求。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 9,
+            "end": 25,
+            "text": "long-term legacy"
+          }
+        ]
+      },
+      "source_license_review": "ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+      "boundary_hypotheses": [
+        "sys.personal_direction.values_principles",
+        "sys.personal_direction.life_planning"
+      ],
+      "boundary_adjudication": "UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE",
+      "mechanism_review": "CURRENT_SUBJECT_ONLY_NOT_HELD_OUT_MECHANISM_QUALIFICATION",
+      "review_population_warning": "SELECTED_FIRST_SIX_NOT_REPRESENTATIVE_OR_INDEPENDENT",
+      "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+      "record_sha256": "639c2e375b3fe513fc84f75baa2bcdc80b97300350f903f8f93a1079d2b5d9f6"
+    },
+    {
+      "review_id": "tune-v04-review-six-004",
+      "row_id": "tune-v04-s1-004",
+      "source_packet_path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "source_packet_sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "source_bundle_sha256": "5e1ea5ef5b9e72741216885b5f32399aaabcd9fd2745de0c1f7c61a724af0c30",
+      "original_annotation_sha256": "0534a787a836510edbcb610fdc2a05ea920a68811c3080d4d2f18bbdc4ddf019",
+      "source_split": "TUNE_PROVISIONAL",
+      "reviewer_id": "candidate-writer",
+      "reviewer_role": "CANDIDATE_WRITER",
+      "independent": false,
+      "qualification_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_evaluations": 0,
+      "reviewed_at": "2026-09-30T15:42:21Z",
+      "revision": 1,
+      "previous_row_review_sha256": null,
+      "previous_record_sha256": "639c2e375b3fe513fc84f75baa2bcdc80b97300350f903f8f93a1079d2b5d9f6",
+      "disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "rationale": "Mother-daughter boundary negotiation is the current goal; visits and relative selection are background, and talking is the means. Parents & Family of Origin and Conflict & Boundaries both plausibly cover that goal under the generic pinned contract. Keep original annotation; uncertainty is not a justified two-label union.",
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "original_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.family_relationships.parents_family"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 46,
+            "text": "每次回老家，妈妈都替我决定该见哪些亲戚，我想把我们母女之间这条界线谈清楚，别再靠沉默躲过去。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 23,
+            "end": 33,
+            "text": "我们母女之间这条界线"
+          }
+        ]
+      },
+      "proposed_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.family_relationships.parents_family"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 46,
+            "text": "每次回老家，妈妈都替我决定该见哪些亲戚，我想把我们母女之间这条界线谈清楚，别再靠沉默躲过去。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 23,
+            "end": 33,
+            "text": "我们母女之间这条界线"
+          }
+        ]
+      },
+      "source_license_review": "ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+      "boundary_hypotheses": [
+        "sys.family_relationships.conflict_boundaries"
+      ],
+      "boundary_adjudication": "UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE",
+      "mechanism_review": "CURRENT_SUBJECT_ONLY_NOT_HELD_OUT_MECHANISM_QUALIFICATION",
+      "review_population_warning": "SELECTED_FIRST_SIX_NOT_REPRESENTATIVE_OR_INDEPENDENT",
+      "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+      "record_sha256": "1c59b51c6d09ddc5bdf7f2117835a7feef6e341dc5e5f6604bdd4583da9d8958"
+    },
+    {
+      "review_id": "tune-v04-review-six-005",
+      "row_id": "tune-v04-s1-005",
+      "source_packet_path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "source_packet_sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "source_bundle_sha256": "9695fa908d42a571d6987a188d6bcfad8ef183aceffce668f146803dcfe84723",
+      "original_annotation_sha256": "ce2c54c54fc825e71d0ffd90be0f5c2ecc94b4b01894cf82594662368ca9a0fb",
+      "source_split": "TUNE_PROVISIONAL",
+      "reviewer_id": "candidate-writer",
+      "reviewer_role": "CANDIDATE_WRITER",
+      "independent": false,
+      "qualification_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_evaluations": 0,
+      "reviewed_at": "2026-09-30T15:42:21Z",
+      "revision": 1,
+      "previous_row_review_sha256": null,
+      "previous_record_sha256": "1c59b51c6d09ddc5bdf7f2117835a7feef6e341dc5e5f6604bdd4583da9d8958",
+      "disposition": "PROPOSE_REVISION",
+      "rationale": "Present goal is understanding an inherited household pattern, rather than conducting a separate negotiation or writing task. Propose a narrower goal span and mark the father/disloyalty statement as background. Retain the single provisional family label and object; no independently adjudicated exclusions or gold replacement.",
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "original_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.family_relationships.parents_family"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 127,
+            "text": "Dad treats any disagreement as disloyalty to the family. I need a way to understand that pattern in the household I grew up in."
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 104,
+            "end": 126,
+            "text": "household I grew up in"
+          }
+        ]
+      },
+      "proposed_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.family_relationships.parents_family"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 57,
+            "end": 126,
+            "text": "I need a way to understand that pattern in the household I grew up in"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 104,
+            "end": 126,
+            "text": "household I grew up in"
+          },
+          {
+            "role": "BACKGROUND",
+            "source": "current",
+            "start": 0,
+            "end": 56,
+            "text": "Dad treats any disagreement as disloyalty to the family."
+          }
+        ]
+      },
+      "source_license_review": "ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+      "boundary_hypotheses": [
+        "sys.family_relationships.conflict_boundaries",
+        "sys.personal_direction.self_reflection"
+      ],
+      "boundary_adjudication": "UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE",
+      "mechanism_review": "CURRENT_SUBJECT_ONLY_NOT_HELD_OUT_MECHANISM_QUALIFICATION",
+      "review_population_warning": "SELECTED_FIRST_SIX_NOT_REPRESENTATIVE_OR_INDEPENDENT",
+      "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+      "record_sha256": "c99ce13f58a73277896ec2ccfebce92b2c1ca822be512fa197a66f3365a35ee5"
+    },
+    {
+      "review_id": "tune-v04-review-six-006",
+      "row_id": "tune-v04-s1-006",
+      "source_packet_path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "source_packet_sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "source_bundle_sha256": "4c2524eaa926e344b9c623e00d2061a12dc772ea1401f5f858799fb85221b15a",
+      "original_annotation_sha256": "1d94174d48bb84f77a0aee74b57b0840f2bc2561424745514808ec0a8bb8c0c4",
+      "source_split": "TUNE_PROVISIONAL",
+      "reviewer_id": "candidate-writer",
+      "reviewer_role": "CANDIDATE_WRITER",
+      "independent": false,
+      "qualification_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_evaluations": 0,
+      "reviewed_at": "2026-09-30T15:42:21Z",
+      "revision": 1,
+      "previous_row_review_sha256": null,
+      "previous_record_sha256": "c99ce13f58a73277896ec2ccfebce92b2c1ca822be512fa197a66f3365a35ee5",
+      "disposition": "PROPOSE_REVISION",
+      "rationale": "Current focus is explaining family expectations and their effect on relations with parents; moving away is the parents' background interpretation. Propose focused goal/background spans, keeping the original parent-relationship object and tentative label. No inferred travel/moving intent, independent source/license certification or calibration credit.",
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "original_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.family_relationships.parents_family"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 0,
+            "end": 60,
+            "text": "父母觉得我离开故乡就是疏远家里，想理解这种 family expectation 从哪里来，以及它怎样影响我和父母相处。"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 53,
+            "end": 59,
+            "text": "我和父母相处"
+          }
+        ]
+      },
+      "proposed_annotation": {
+        "expected_state": "ASSIGNED",
+        "provisional_gold_topics": [
+          "sys.family_relationships.parents_family"
+        ],
+        "excluded_topics": [],
+        "provisional_evidence_spans": [
+          {
+            "role": "CURRENT_GOAL",
+            "source": "current",
+            "start": 16,
+            "end": 59,
+            "text": "想理解这种 family expectation 从哪里来，以及它怎样影响我和父母相处"
+          },
+          {
+            "role": "OBJECT",
+            "source": "current",
+            "start": 53,
+            "end": 59,
+            "text": "我和父母相处"
+          },
+          {
+            "role": "BACKGROUND",
+            "source": "current",
+            "start": 0,
+            "end": 15,
+            "text": "父母觉得我离开故乡就是疏远家里"
+          }
+        ]
+      },
+      "source_license_review": "ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+      "boundary_hypotheses": [
+        "sys.family_relationships.conflict_boundaries",
+        "sys.personal_direction.self_reflection"
+      ],
+      "boundary_adjudication": "UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE",
+      "mechanism_review": "CURRENT_SUBJECT_ONLY_NOT_HELD_OUT_MECHANISM_QUALIFICATION",
+      "review_population_warning": "SELECTED_FIRST_SIX_NOT_REPRESENTATIVE_OR_INDEPENDENT",
+      "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+      "record_sha256": "ecd246ca0abb5fa3e5d438f0d11cba4bb1849ef501ddd068d2517318c6cb0169"
+    }
+  ],
+  "source_main": "59768cde52f5c71fe9e144b69d036a21b0da0ec8",
+  "source_tree": "6b9fe34b70a416db97ede7f34d961a658161d70a"
+}
