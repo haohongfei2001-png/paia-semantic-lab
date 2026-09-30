@@ -158,6 +158,9 @@ jobs:
             const a1BalancedResults = ['docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_R1_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_V2_RESULT.json'];
             const a1FeatureAuditPath = 'docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_RESULT.json';
             const resultA4RolePaths = ['docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R2_DEV_V01_RESULT.json'];
+            docs.push('docs/zero-model-refoundation-v1/ZMR-02_TRAIN_V04_PLAN_SLICE1_INTAKE.md');
+            engineering.push('packages/zero_model_refoundation/provisional_train_v04_slice1.test.mjs');
+            development.push('data/zero_model_refoundation/development/provisional_train_v0.4_plan.json', 'data/zero_model_refoundation/development/provisional_train_v0.4_slice1.json');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
@@ -190,6 +193,24 @@ jobs:
             assert.equal(s.consumed_test_content_reads, 0); assert.equal(s.consumed_test_replays, 0);
             assert.equal(s.future_final_test_created, false); assert.equal(s.future_final_test_execution_authorized, false);
             assert.equal(s.production_paia_modified, false); assert.equal(s.real_archive_reads, 0);
+            const trainV04Plan = JSON.parse((await read('data/zero_model_refoundation/development/provisional_train_v0.4_plan.json')).toString('utf8'));
+            const trainV04Slice1 = JSON.parse((await read('data/zero_model_refoundation/development/provisional_train_v0.4_slice1.json')).toString('utf8'));
+            assert.equal(trainV04Plan.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(trainV04Plan.catalog_sha256, '29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18');
+            assert.equal(trainV04Plan.cards.length, 144);
+            assert.equal(trainV04Plan.target_original_base_scenarios, 432);
+            assert.equal(trainV04Plan.independent_quota_credit, 0);
+            assert.equal(trainV04Plan.compiler_admission, 'FULL144_NEW_TRAIN_FREEZE_REQUIRED_BEFORE_A2_A3_REENTRY');
+            assert.equal(trainV04Slice1.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(trainV04Slice1.rows.length, 54);
+            assert.equal(trainV04Slice1.topic_count, 18);
+            assert.equal(trainV04Slice1.missing_topics, 126);
+            assert.equal(trainV04Slice1.qualification_credit_rows, 0);
+            assert.equal(trainV04Slice1.evaluation_status, 'UNFIT_UNEVALUATED');
+            assert.equal(trainV04Slice1.intake_status, 'PUBLIC_TRAIN_V04_SLICE1_FROZEN_NOT_COMPILER_ADMITTED');
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_rows, 54);
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_independent_rows, 0);
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_remaining_rows, 378);
             const present = engineering.filter(p => after.has(p));
             assert(present.length === 0 || present.length === engineering.length, 'partial engineering module');
             const inputs = development.filter(p => after.has(p));
@@ -717,7 +738,7 @@ jobs:
               assert.equal(challenge.evaluation_status, 'UNRUN');
               assert.equal(challenge.qualification_credit_rows, 0);
             }
-            for (const p of [...present, ...inputs]) {
+            for (const p of [statusPath, ...present, ...inputs]) {
               const bytes = await read(p);
               const target = path.join(process.env.GITHUB_WORKSPACE, p);
               fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
@@ -744,3 +765,4 @@ jobs:
           node --check packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs
           node --check packages/zero_model_refoundation/a1_feature_survival_audit_v2.mjs
           node --test packages/zero_model_refoundation/a1_balanced.test.mjs packages/zero_model_refoundation/a1_balanced_r1.test.mjs
+          node --test packages/zero_model_refoundation/provisional_train_v04_slice1.test.mjs
