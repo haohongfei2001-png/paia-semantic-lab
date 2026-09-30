@@ -4,9 +4,9 @@
   "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
   "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
   "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
-  "source_main": "fb32085f6ec4a3aa3594e6a243c2dc5fb21fe854",
-  "status": "ORDINARY_TUNE_CAL_FULL144_SAFETY_INCOMPLETE_NOT_QUALIFIED",
-  "frozen_at": "2026-09-30T12:43:25Z",
+  "source_main": "9e5f3f71659f30cef025126de9c351f8ff5493fa",
+  "status": "DEVELOPMENT_AUTHORING_TARGET_FROZEN_ORDINARY_AND_SAFETY_NOT_QUALIFIED",
+  "frozen_at": "2026-09-30T13:03:38Z",
   "splits": {
     "TUNE_PROVISIONAL": {
       "rows": 432,
@@ -76,10 +76,10 @@
     }
   },
   "safety_rows": {
-    "control_rows": 24,
-    "context_required_pairs": 12,
-    "context_invariance_pairs": 12,
-    "multi_rows": 12
+    "control_rows": 96,
+    "context_required_pairs": 48,
+    "context_invariance_pairs": 48,
+    "multi_rows": 48
   },
   "semantic_evaluations": 0,
   "independent_rows": 0,
@@ -93,8 +93,9 @@
     "ORDINARY_QUOTA_SHORTFALL",
     "NO_INDEPENDENT_SOURCE_REVIEW",
     "NAME_ECHO_AND_HELD_OUT_MECHANISMS_NOT_ADJUDICATED",
-    "SAFETY_QUOTA_SHORTFALL",
-    "SAFETY_GOLD_AND_PUBLIC_SIMILARITY_FLAGS_UNREVIEWED"
+    "SAFETY_GOLD_AND_PUBLIC_SIMILARITY_FLAGS_UNREVIEWED",
+    "FORMAL_SAFETY_QUOTA_SHORTFALL",
+    "SINGLE_WRITER_PROVISIONAL_SOURCE_AND_MECHANISM_REVIEW_INCOMPLETE"
   ],
   "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
   "data_qualification": "NOT_QUALIFIED",
@@ -123,7 +124,7 @@
       "formal_name_echo_status": "NOT_ADJUDICATED_NO_PASS",
       "independent_review": false
     },
-    "safety_public_similarity_flags": 11
+    "safety_public_similarity_flags": 43
   },
   "stable_competition_admission": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
   "calibration_admission": "NOT_ADMITTED_PARTIAL_DATA",
@@ -235,18 +236,18 @@
   ],
   "safety_by_split": {
     "TUNE_PROVISIONAL": {
-      "rows": 42,
-      "control_rows": 12,
-      "context_required_pairs": 6,
-      "context_invariance_pairs": 6,
-      "multi_rows": 6
+      "rows": 168,
+      "control_rows": 48,
+      "context_required_pairs": 24,
+      "context_invariance_pairs": 24,
+      "multi_rows": 24
     },
     "CAL_PROVISIONAL": {
-      "rows": 42,
-      "control_rows": 12,
-      "context_required_pairs": 6,
-      "context_invariance_pairs": 6,
-      "multi_rows": 6
+      "rows": 168,
+      "control_rows": 48,
+      "context_required_pairs": 24,
+      "context_invariance_pairs": 24,
+      "multi_rows": 24
     }
   },
   "safety_slices": [
@@ -255,21 +256,27 @@
       "sha256": "7f9a5eaf074108e69b702bf395717d926502169ab5532c040373db7395bbacad",
       "rows": 84,
       "pairs": 24
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+      "sha256": "e6436903193c265e06394f2475cbf8aaac90c3f321fefda6323e6072f833ca25",
+      "rows": 252,
+      "pairs": 72
     }
   ],
   "safety_target_shortfall": {
     "TUNE_PROVISIONAL": {
-      "control_rows": 36,
-      "context_required_pairs": 18,
-      "context_invariance_pairs": 18,
-      "multi_rows": 18
+      "control_rows": 0,
+      "context_required_pairs": 0,
+      "context_invariance_pairs": 0,
+      "multi_rows": 0
     },
     "CAL_PROVISIONAL": {
-      "control_rows": 36,
-      "context_required_pairs": 18,
-      "context_invariance_pairs": 18,
-      "multi_rows": 18
+      "control_rows": 0,
+      "context_required_pairs": 0,
+      "context_invariance_pairs": 0,
+      "multi_rows": 0
     },
-    "remaining_physical_rows": 252
+    "remaining_physical_rows": 0
   }
 }
