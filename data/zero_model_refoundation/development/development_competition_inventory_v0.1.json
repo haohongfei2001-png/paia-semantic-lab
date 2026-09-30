@@ -1,0 +1,1055 @@
+{
+  "schema": "ZMR-DEVELOPMENT-COMPETITION-INVENTORY-1",
+  "batch_id": "ZMR-COMPETITION-ACCOUNTING-20260930",
+  "source_main": "77deb276bb68adb8f9b963ef124e266abf315e5d",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "scope": "13_EXPLICIT_PUBLIC_REGISTRATION_METADATA_FILES_PARTIAL_HISTORY_NO_SEMANTIC_REPLAY",
+  "accounting_status": "INCONCLUSIVE_HISTORICAL_STABLE_ALLOCATIONS_UNRECONCILED",
+  "raw_non_A0_parameter_signature_count": 25,
+  "stable_configuration_allowance_remaining": null,
+  "independent_generation_credit": 0,
+  "semantic_evaluations": 0,
+  "carried_repairs": [
+    {
+      "candidate_id": "ZMR-02:a1_balanced_selector",
+      "source_field": "rounds.ZMR-02.a1_balanced_selector_repair_spent",
+      "spent": 1,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-04:a6",
+      "source_field": "rounds.ZMR-04.a6_repair_spent",
+      "spent": 0,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-04:h1_r1",
+      "source_field": "rounds.ZMR-04.h1_r1_repair_spent",
+      "spent": 1,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-04:a5_chart",
+      "source_field": "rounds.ZMR-04.a5_chart_repair_spent",
+      "spent": 1,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-04:a4_role",
+      "source_field": "rounds.ZMR-04.a4_role_repair_spent",
+      "spent": 2,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-05:c1",
+      "source_field": "rounds.ZMR-05.c1_repair_spent",
+      "spent": 1,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-05:a7",
+      "source_field": "rounds.ZMR-05.a7_repair_spent",
+      "spent": 0,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-05:a4_pair_veto",
+      "source_field": "rounds.ZMR-05.a4_pair_veto_repair_spent",
+      "spent": 0,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-05:a5_composition",
+      "source_field": "rounds.ZMR-05.a5_composition_repair_spent",
+      "spent": 1,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-05:a4_positive",
+      "source_field": "rounds.ZMR-05.a4_positive_repair_spent",
+      "spent": 0,
+      "retirement_preserved": true
+    },
+    {
+      "candidate_id": "ZMR-05:a6_complement",
+      "source_field": "rounds.ZMR-05.a6_complement_repair_spent",
+      "spent": 2,
+      "retirement_preserved": true
+    }
+  ],
+  "registrations": [
+    {
+      "path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+      "git_blob": "0525225c1205b2571c1ebc8bff71a4e84eefa2f9",
+      "metadata": {
+        "schema": "ZMR-A12-CHALLENGE-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_CHALLENGE_V02",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "0f31c33a3b78287c20011a8e5eb40017ab7285a3e06c506fa6b96b2b4f4e43f4",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "1eec9f8d32c2ce10ef96d6a9e1e72371ea073e6cf33a9c1e05b629d88987fcac",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "998dd508888a153bca9021727d84fcef27cb0da2d0830f3555983b5fb357eb22",
+          "scorer_sha256": "c2b11ea43d4741939176215e00d31779c5994bee7c345cbfe5c8b76d16105209"
+        },
+        "evaluation_key": "34401a17e57c2ce84c45aebf5561d82785e1d446b52eebc9f3e3af88fa0246ed",
+        "configs": [
+          {
+            "id": "A0_all_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A0_name_only",
+            "family": "A0"
+          },
+          {
+            "id": "A1_char_tfidf",
+            "family": "A1",
+            "mode": "char",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A1_char_bm25",
+            "family": "A1",
+            "mode": "char",
+            "method": "bm25",
+            "min_score": 1,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A1_word_tfidf",
+            "family": "A1",
+            "mode": "word",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A1_word_bm25",
+            "family": "A1",
+            "mode": "word",
+            "method": "bm25",
+            "min_score": 1,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A2_char",
+            "family": "A2",
+            "mode": "char",
+            "alpha": 0.5,
+            "min_score": 0,
+            "min_margin": 0.5
+          },
+          {
+            "id": "A2_word",
+            "family": "A2",
+            "mode": "word",
+            "alpha": 0.5,
+            "min_score": 0,
+            "min_margin": 0.5
+          }
+        ],
+        "limits": {
+          "topic_count": 144,
+          "single_precision_min": 0.95,
+          "single_coverage_min": 0.7,
+          "full144_macro_recall_min": 0.7
+        },
+        "no_calibration": true,
+        "independent_rows": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "as_consumed": 0
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+      "git_blob": "d94bf697ba19729e70314e8d82ff612a9c1f660b",
+      "metadata": {
+        "schema": "ZMR-A123-CHALLENGE-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_CHALLENGE_V03",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "bfd1b671afb6c1accbcc38d21951efd74c37bb7c0b78291c3e7f26391fd96cbf",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "8dbf40f9aa7cd456b0c8cb469520be6f64c32172378e0873bf6d17c19144ebf7",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "2bc4848a6e8209fe4cc9ab0cf9663d76aa47da6b842e2d6bca0c8176b47cd9f0",
+          "scorer_sha256": "c2b11ea43d4741939176215e00d31779c5994bee7c345cbfe5c8b76d16105209"
+        },
+        "evaluation_key": "c2ce56b3bf74740f9fa79920d6d39c0a980f73ded74d2a7809c1dc591b1007cd",
+        "configs": [
+          {
+            "id": "A0_all_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A1_char_tfidf",
+            "family": "A1",
+            "mode": "char",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A1_char_bm25",
+            "family": "A1",
+            "mode": "char",
+            "method": "bm25",
+            "min_score": 1,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A2_char",
+            "family": "A2",
+            "mode": "char",
+            "alpha": 0.5,
+            "min_score": 0,
+            "min_margin": 0.5
+          },
+          {
+            "id": "A3_char",
+            "family": "A3",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A3_word",
+            "family": "A3",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          }
+        ],
+        "limits": {
+          "topic_count": 144,
+          "single_precision_min": 0.95,
+          "single_coverage_min": 0.7,
+          "full144_macro_recall_min": 0.7
+        },
+        "no_calibration": true,
+        "independent_rows": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "as_consumed": 0
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+      "git_blob": "f905632d961eee77491c7864923b6c193132c6fc",
+      "metadata": {
+        "schema": "ZMR-A356-CHALLENGE-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A356_CHALLENGE_V04",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "bbd1442efd6d74d3c591fb3ecf119312aa8ebee5317d0ea03c4ff7d555256a23",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "4e3b9e930d074675b1078590504b945b4d0c9955ac87be52acb79ea7c93cb7b8",
+          "scorer_sha256": "d23101ed7dc7a517142a5fb05b32d3fc07174fa28d579b84fa9e0f76ee00556e"
+        },
+        "evaluation_key": "d7f287127e46433190202b0237416f8f367b8a2afc313fa44fb7de77e06bcc3f",
+        "configs": [
+          {
+            "id": "A0_all_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A3_char_fixed",
+            "family": "A3",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A3_word_fixed",
+            "family": "A3",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A6_char_fixed",
+            "family": "A6",
+            "mode": "char",
+            "full_min_score": 0.02,
+            "full_min_margin": 0.02,
+            "goal_min_score": 0.08,
+            "goal_min_margin": 0.05
+          },
+          {
+            "id": "A6_word_fixed",
+            "family": "A6",
+            "mode": "word",
+            "full_min_score": 0.02,
+            "full_min_margin": 0.02,
+            "goal_min_score": 0.08,
+            "goal_min_margin": 0.05
+          }
+        ],
+        "cohorts": [
+          "data/zero_model_refoundation/development/provisional_challenge_v0.4.json",
+          "data/zero_model_refoundation/development/provisional_safety_seed_v0.2.json",
+          "data/zero_model_refoundation/development/provisional_role_challenge_v0.1.json"
+        ],
+        "limits": {
+          "topic_count": 144,
+          "single_precision_min": 0.95,
+          "single_coverage_min": 0.7,
+          "full144_macro_recall_min": 0.7,
+          "control_false_assignment_max": 0.02,
+          "context_harm_max": 0
+        },
+        "no_calibration": true,
+        "independent_rows": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "as_consumed": 0
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+      "git_blob": "d4a3c8c277c4236a891da466d3d434700d731615",
+      "metadata": {
+        "schema": "ZMR-C1-CHALLENGE-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_CHANGED_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_C1_CHALLENGE_V05",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "251102575b25ae3796a4db73f0cd0a9953c90b1080c99fbda2185434833a8b33",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "9ad483d4fd7292e49ad021390c87919e9fcff0f3ac4e365843138bad208b06df",
+          "scorer_sha256": "b49e0bd10c34b0eb328220646c22e0d9f3714d4a4bbbbb0fbe2283b840ad5c23"
+        },
+        "evaluation_key": "fc7a4e4a88453b7841bdc0dcef5f38595366938bfae8b0d8528b91bb0f772cdf",
+        "configs": [
+          {
+            "id": "A0_all_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A3_char_fixed",
+            "family": "A3",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "C1_char_fixed",
+            "family": "C1",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02,
+            "context_min_score": 0.08,
+            "context_min_margin": 0.05,
+            "multi_min_score": 0.08,
+            "multi_min_margin": 0.05
+          },
+          {
+            "id": "A3_word_fixed",
+            "family": "A3",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "C1_word_fixed",
+            "family": "C1",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02,
+            "context_min_score": 0.08,
+            "context_min_margin": 0.05,
+            "multi_min_score": 0.08,
+            "multi_min_margin": 0.05
+          }
+        ],
+        "cohorts": [
+          "data/zero_model_refoundation/development/provisional_challenge_v0.5.json",
+          "data/zero_model_refoundation/development/provisional_safety_seed_v0.3.json"
+        ],
+        "limits": {
+          "topic_count": 144,
+          "single_precision_min": 0.95,
+          "single_coverage_min": 0.7,
+          "full144_macro_recall_min": 0.7,
+          "control_false_assignment_max": 0.02,
+          "context_harm_max": 0,
+          "context_required_exact_min": 0.7,
+          "multi_exact_set_min": 0.7,
+          "multi_set_precision_min": 0.95
+        },
+        "no_calibration": true,
+        "independent_rows": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "as_consumed": 0
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+      "git_blob": "c9acf7a38ca016d3761e5b0919c266848969553a",
+      "metadata": {
+        "schema": "ZMR-C1-R1-CHALLENGE-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIRST_REPAIR_CLOSURE_PUBLIC_DEVELOPMENT_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_C1_R1_CHALLENGE_V06",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "97444a573081f8e2d6215775a2d41f8ad76ab072f85c832d4c2e9238a7f07457",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "9e3ac9568c02a086bc69fa16c3ba7965605b605a80d00962e5a077cd03c29553",
+          "scorer_sha256": "8a92f6360c3ea0817d91e82a790b9907ea2c7603b86f79658d8f1cb7192e0454"
+        },
+        "evaluation_key": "eb4c0b157c9a70104f8290df53981120a26294a00172c5c39bed7bda2a50e394",
+        "configs": [
+          {
+            "id": "A0_all_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A3_char_fixed",
+            "family": "A3",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "C1_char_fixed",
+            "family": "C1",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02,
+            "context_min_score": 0.08,
+            "context_min_margin": 0.05,
+            "multi_min_score": 0.08,
+            "multi_min_margin": 0.05
+          },
+          {
+            "id": "C1R1_char_fixed",
+            "family": "C1R1",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02,
+            "context_min_score": 0.08,
+            "context_min_margin": 0.05,
+            "multi_min_score": 0.08,
+            "multi_min_margin": 0.05
+          },
+          {
+            "id": "A3_word_fixed",
+            "family": "A3",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "C1_word_fixed",
+            "family": "C1",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02,
+            "context_min_score": 0.08,
+            "context_min_margin": 0.05,
+            "multi_min_score": 0.08,
+            "multi_min_margin": 0.05
+          },
+          {
+            "id": "C1R1_word_fixed",
+            "family": "C1R1",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02,
+            "context_min_score": 0.08,
+            "context_min_margin": 0.05,
+            "multi_min_score": 0.08,
+            "multi_min_margin": 0.05
+          }
+        ],
+        "cohorts": [
+          "data/zero_model_refoundation/development/provisional_challenge_v0.6.json",
+          "data/zero_model_refoundation/development/provisional_safety_seed_v0.4.json"
+        ],
+        "limits": {
+          "topic_count": 144,
+          "single_precision_min": 0.95,
+          "single_coverage_min": 0.7,
+          "full144_macro_recall_min": 0.7,
+          "control_false_assignment_max": 0.02,
+          "context_harm_max": 0,
+          "context_required_exact_min": 0.7,
+          "multi_exact_set_min": 0.7,
+          "multi_set_precision_min": 0.95
+        },
+        "no_calibration": true,
+        "independent_rows": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "as_consumed": 0
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+      "git_blob": "79728965f239204ceefc1ae925726c4b15c72a48",
+      "metadata": {
+        "schema": "ZMR-A7-PARTIAL-DEV-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_LIGHT_FIXED_CONFIG_MECHANISM_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A7_PARTIAL_DIAGNOSTIC_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "14fa47579c415a49d52b418b8216d8c07c87348062e03c15b7e7e566d52acae0",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "4b40a89ea53e574ad666df45387175a0ad7e01e6ca21ecb594949d37857dd2de",
+          "train_sha256": "42320f7896316de7d22564bb6b51fd203d0c41633df0da791e14c3cd3744c2ce",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "27c7b1c43884cc0412dc7299b80d870b6da2c0645ecfb646f6cc43a9549e79aa",
+          "scorer_sha256": "599784ad9a09b75fd4974e861e22aebcf946e48fba402a9daa998aff704972f5"
+        },
+        "evaluation_key": "a18d99a65f244420536ab93546c2b1bbdf47f911959c808ae8d5b1b978d82624",
+        "configs": [
+          {
+            "id": "A0_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A1_char_fixed",
+            "family": "A1",
+            "mode": "char",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A3_char_fixed",
+            "family": "A3",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A7_char_default",
+            "family": "A7",
+            "mode": "char",
+            "min_score": 0.25,
+            "min_margin": 0.05,
+            "min_matched_features": 2
+          },
+          {
+            "id": "A1_word_fixed",
+            "family": "A1",
+            "mode": "word",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A3_word_fixed",
+            "family": "A3",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A7_word_default",
+            "family": "A7",
+            "mode": "word",
+            "min_score": 0.25,
+            "min_margin": 0.05,
+            "min_matched_features": 2
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a7_dev_v0.1.json",
+        "topic_universe": 144,
+        "single_rows": 48,
+        "control_rows": 12,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+      "git_blob": "7165a856e64dcf2df7aeb8c71a8fecba9b70b255",
+      "metadata": {
+        "schema": "ZMR-A4-TRIAD-BASELINE-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_PUBLIC_BOUNDARY_BASELINE_DIAGNOSTIC_ONLY",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A4_BOUNDARY_TRIADS_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "14ae8ccd337c561ea2598aa7a96cf7bc1ce26431d01ea5ec6007eb1c6dce6aa8",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "85e7dd3c88c423280b2db79ba635d3e7f4957b4b57b8394ff405013ace024e8d",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "280f9efd6f5cda07d6cbed4497660630b9f87950d89068d62017347271ef0c2e",
+          "scorer_sha256": "6d0173788c8c716687ce5f24fa51b8e2df235b159d5e08109486d0c0ec89c2d1"
+        },
+        "evaluation_key": "1f2fd248e005c1deb5beeca36c2ca4d06a53f24efe2efdb88e1e9c89dd71f5aa",
+        "configs": [
+          {
+            "id": "A0_defer",
+            "family": "A0"
+          },
+          {
+            "id": "A1_char_fixed",
+            "family": "A1",
+            "mode": "char",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A3_char_fixed",
+            "family": "A3",
+            "mode": "char",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A1_word_fixed",
+            "family": "A1",
+            "mode": "word",
+            "method": "tfidf",
+            "min_score": 0.15,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A3_word_fixed",
+            "family": "A3",
+            "mode": "word",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          }
+        ],
+        "triad_path": "data/zero_model_refoundation/development/provisional_a4_triads_v0.1.json",
+        "graph_path": "data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json",
+        "topic_universe": 144,
+        "provisional_labeled_rows": 8,
+        "ambiguous_unscored_rows": 4,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a4_fresh_v01_registration.json",
+      "git_blob": "41037c062737278880c99f3e968bfd56907e378e",
+      "metadata": {
+        "schema": "ZMR-A4-FRESH-COMPARISON-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIXED_A3_DELETION_ABLATION_VERSUS_A4_PUBLIC_DIAGNOSTIC",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A4_FRESH_PAIR_VETO_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "33e117fb5dd8f36b14c4bff57e943fbcfaef4e676f5516a8e82251c971a6d4bc",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "4eaf88af301ce3e618dca699e154f0424a54698b333b5dc311b2856208921a2d",
+          "train_sha256": "21caef53be01fdfbb212a4d87fde627b60d3d6f5f25fd956edf231ba54ccffc2",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "26fb45552c034a02eede1aa26872527b75bb914b600380fd3d4f760e571dd750",
+          "scorer_sha256": "007e51ffa5fdd8703aab0234a49b5c8c74176cbd4465327a8a81d4d1fe0beba4"
+        },
+        "evaluation_key": "ee28f0f0589d9f37baa93f32c2f04a2c8b700b81d3b2b90cc624273df2cc8e22",
+        "configs": [
+          {
+            "id": "A3_char_deletion_ablation",
+            "family": "A3",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A4_char_pair_veto",
+            "family": "A4",
+            "base_min_score": 0.02,
+            "base_min_margin": 0.02,
+            "min_pair_support": 2
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a4_challenge_v0.1.json",
+        "topic_universe": 144,
+        "provisional_labeled_pair_rows": 16,
+        "ambiguous_unscored_rows": 4,
+        "control_rows": 12,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+      "git_blob": "6a27851d8e468f1ca65ecade508be7733e394584",
+      "metadata": {
+        "schema": "ZMR-A4-POSITIVE-FRESH-COMPARISON-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIXED_A3_A4_VETO_A4_POSITIVE_PUBLIC_PAIRED_DIAGNOSTIC",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A4_POSITIVE_FRESH_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "b7a0aab7af4eeff85c1dfd997dc3aab770e7e7df08069442c672c879f9ad42f1",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "4eaf88af301ce3e618dca699e154f0424a54698b333b5dc311b2856208921a2d",
+          "train_sha256": "21caef53be01fdfbb212a4d87fde627b60d3d6f5f25fd956edf231ba54ccffc2",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "e7cf908fbf39767ffce38005c95e0e24279c92ee76ca9abcdb9fa5a77f821729",
+          "scorer_sha256": "f9363692cd558a841f66d8df39d4684777a8ddf3c566ad151f3f93362ad01123"
+        },
+        "evaluation_key": "62bb9421409ccfd9d0c7d27a9976412d40e7eb07182e0407ad60cf8293b10b3c",
+        "configs": [
+          {
+            "id": "A3_char_deletion_ablation",
+            "family": "A3",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A4_char_pair_veto",
+            "family": "A4",
+            "base_min_score": 0.02,
+            "base_min_margin": 0.02,
+            "min_pair_support": 2
+          },
+          {
+            "id": "A4_positive_pair_evidence",
+            "family": "A4_POSITIVE",
+            "base_min_score": 0.02,
+            "base_min_margin": 0.02,
+            "min_positive_support": 3,
+            "min_positive_margin": 2
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a4_positive_challenge_v0.1.json",
+        "topic_universe": 144,
+        "provisional_labeled_pair_rows": 16,
+        "ambiguous_unscored_rows": 4,
+        "control_rows": 8,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a5_fresh_v01_registration.json",
+      "git_blob": "b352566b7a9fa8022a0116640fd81a9459893ecb",
+      "metadata": {
+        "schema": "ZMR-A5-FRESH-COMPARISON-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIXED_A3_DELETION_ABLATION_VERSUS_A5_PUBLIC_DIAGNOSTIC",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A5_FRESH_COMPOSITION_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "0d8228fd565f4d745836871053cad94e02ef25a6b4dcb186ac50f9fbe3b702dd",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "e0c3c1413089b5aa41bdd80d6c2e43455d37e28e990ffca1d37243fc905f4766",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "79d0943c18a2917b5f0ddff1f82775ab9651874b4b838a8301172e268e699861",
+          "scorer_sha256": "f9d5666640e57760ef46a3c1862f549660e04030d5709d7655796fb1207a58c0"
+        },
+        "evaluation_key": "60f3ea3f19334153b649b10404731aa8db6f78ed1a125994750dcebfd1aa1e70",
+        "configs": [
+          {
+            "id": "A3_char_deletion_ablation",
+            "family": "A3",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A5_finite_state_composition",
+            "family": "A5",
+            "full_min_score": 0.02,
+            "full_min_margin": 0.02,
+            "segment_min_score": 0.08,
+            "segment_min_margin": 0.05
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a5_challenge_v0.1.json",
+        "topic_universe": 144,
+        "correction_rows": 8,
+        "multi_rows": 8,
+        "quote_rows": 4,
+        "ambiguous_unscored_rows": 4,
+        "control_rows": 8,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+      "git_blob": "fb835d77e06aa515cab460ee0d9eeb313cddd240",
+      "metadata": {
+        "schema": "ZMR-A5-R1-FRESH-COMPARISON-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIXED_A3_A5_A5_R1_PUBLIC_PAIRED_DIAGNOSTIC",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A5_R1_FRESH_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "96f9a99440b2ef60246481179f0278f45cfcc995a85112515f54cc97db9da9f8",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "e0c3c1413089b5aa41bdd80d6c2e43455d37e28e990ffca1d37243fc905f4766",
+          "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "8eeb3bd72e9fc7900d3fe089072f49faa4ac62e47e25be16cd3663d55737811b",
+          "scorer_sha256": "e486c1c0a73102ac9455a87a745f47583377ee41c1126815e83102521e48dd1c"
+        },
+        "evaluation_key": "b784454fff5dde2b54003b1c99651424e22e403019763999054c263c77a3a5d6",
+        "configs": [
+          {
+            "id": "A3_char_deletion_ablation",
+            "family": "A3",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A5_original",
+            "family": "A5",
+            "full_min_score": 0.02,
+            "full_min_margin": 0.02,
+            "segment_min_score": 0.08,
+            "segment_min_margin": 0.05
+          },
+          {
+            "id": "A5_R1_no_request_guard",
+            "family": "A5_R1",
+            "full_min_score": 0.02,
+            "full_min_margin": 0.02,
+            "segment_min_score": 0.08,
+            "segment_min_margin": 0.05
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a5_r1_challenge_v0.1.json",
+        "topic_universe": 144,
+        "control_rows": 8,
+        "request_rows": 8,
+        "multi_rows": 4,
+        "correction_rows": 4,
+        "quote_rows": 4,
+        "ambiguous_unscored_rows": 4,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+      "git_blob": "7a3a74c9d02c2e1e92c0825aa024786a776118f9",
+      "metadata": {
+        "schema": "ZMR-A6-COMPLEMENT-FRESH-COMPARISON-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIXED_A3_A2_A6_PUBLIC_PAIRED_DIAGNOSTIC",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A6_COMPLEMENT_FRESH_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "4ed854525d625ea0cb518b616b97ff22077c3cff8958eca7115fdc4120b2e165",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "274de8f84009586e27e8e9ad84ed77aef417031a69b046d2c7725fe2fc00c530",
+          "train_sha256": "9a665ec70237b66a756b035e2c8060615b3a155a3e8c904340f24f8179def1b9",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "94b023c37da4cbf8be90a25625f608418ba6515f3a8c206860846f8ad0b688b3",
+          "scorer_sha256": "b624c1729b2989d082dab46cafe73b5859f0c14e9896f1bfb7baf71f75f7cdbd"
+        },
+        "evaluation_key": "dc70e3265a50065a8cda346a6d328a6534529b3acbd27647f4d6e88658604502",
+        "configs": [
+          {
+            "id": "A3_char_deletion_ablation",
+            "family": "A3",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A2_char_complement_likelihood",
+            "family": "A2",
+            "alpha": 0.5,
+            "min_score": 0,
+            "min_margin": 0.5
+          },
+          {
+            "id": "A6_complement_scope",
+            "family": "A6",
+            "a3_min_score": 0.02,
+            "a3_min_margin": 0.02,
+            "a2_alpha": 0.5,
+            "a2_min_score": 0,
+            "a2_min_margin": 0.5,
+            "rescue_min_score": 2,
+            "rescue_min_margin": 2
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a6_complement_challenge_v0.1.json",
+        "topic_universe": 144,
+        "single_rows": 8,
+        "control_rows": 8,
+        "later_request_rows": 4,
+        "context_required_rows": 4,
+        "multi_rows": 4,
+        "ambiguous_unscored_rows": 4,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    },
+    {
+      "path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+      "git_blob": "549f4998473462761a25a00b11157d049a694d88",
+      "metadata": {
+        "schema": "ZMR-A6-R2-FRESH-COMPARISON-REGISTRATION-1",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "purpose": "ONE_FIXED_A3_A2_A6_A6R1_A6R2_PUBLIC_PAIRED_DIAGNOSTIC",
+        "identity": {
+          "package_id": "PAIA-ZERO-MODEL-CAPABILITY-REFOUNDATION-v1",
+          "generation_id": "G0_DEV_PUBLIC_A6_R2_FRESH_V01",
+          "protocol_version": "ZMR-EVAL-1.0.1",
+          "resource_profile": "UNQUALIFIED_DEV_LOCAL_NODE_NO_BROWSER",
+          "environment": "node-26.8.2-darwin-arm64",
+          "candidate_closure_sha256": "b1e315da8fcaaf8b52a44f0cb5fd69048500cffb695be3a0f77b833490dc9ffa",
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "compiler_sha256": "274de8f84009586e27e8e9ad84ed77aef417031a69b046d2c7725fe2fc00c530",
+          "train_sha256": "9a665ec70237b66a756b035e2c8060615b3a155a3e8c904340f24f8179def1b9",
+          "calibration_sha256": "297b34cf7b46e9129539d2cb560412f0add8b5b398eaff4d4744afe16326d218",
+          "cohort_sha256": "c1dd86d0d01e4cece7e6b463722bd7f401daeadea323bb32eaf72df5d574d833",
+          "scorer_sha256": "b056e4d920f3f71e81a4b908e8c45fac92df9e6c51c9378d7fafbcab48a52619"
+        },
+        "evaluation_key": "31cc709d149f3a44d6122e9470ba2eae3285c62bfb1ef3fca55a73754f7c11a5",
+        "configs": [
+          {
+            "id": "A3_char_deletion_ablation",
+            "family": "A3",
+            "min_score": 0.02,
+            "min_margin": 0.02
+          },
+          {
+            "id": "A2_char_complement_likelihood",
+            "family": "A2",
+            "alpha": 0.5,
+            "min_score": 0,
+            "min_margin": 0.5
+          },
+          {
+            "id": "A6_complement_scope",
+            "family": "A6",
+            "a3_min_score": 0.02,
+            "a3_min_margin": 0.02,
+            "a2_alpha": 0.5,
+            "a2_min_score": 0,
+            "a2_min_margin": 0.5,
+            "rescue_min_score": 2,
+            "rescue_min_margin": 2
+          },
+          {
+            "id": "A6_R1_a2_primary",
+            "family": "A6_R1",
+            "a2_alpha": 0.5,
+            "a2_min_score": 0,
+            "a2_min_margin": 0.5,
+            "a3_min_score": 0.02,
+            "a3_min_margin": 0.02
+          },
+          {
+            "id": "A6_R2_final_repair",
+            "family": "A6_R2",
+            "a2_alpha": 0.5,
+            "a2_min_score": 0,
+            "a2_min_margin": 0.5,
+            "a3_min_score": 0.02,
+            "a3_min_margin": 0.02
+          }
+        ],
+        "cohort": "data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json",
+        "topic_universe": 144,
+        "single_rows": 8,
+        "control_rows": 12,
+        "later_request_rows": 4,
+        "context_required_rows": 4,
+        "multi_rows": 4,
+        "ambiguous_unscored_rows": 4,
+        "independent_rows": 0,
+        "as_consumed": 0,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "no_calibration": true
+      }
+    }
+  ],
+  "new_stable_competition": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
+  "allowed_tracks": [
+    "PROVISIONAL_DATA_INTAKE",
+    "SOURCE_REVIEW",
+    "METADATA_ENGINEERING",
+    "STATIC_RESOURCE_ENGINEERING"
+  ],
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED"
+}
