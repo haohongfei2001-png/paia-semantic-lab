@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {reviewDigest,validateDevelopmentReviewJournal} from './development_review_journal.mjs';
+const root=new URL('../../',import.meta.url),read=p=>readFile(new URL(p,root),'utf8'),json=async p=>JSON.parse(await read(p)),sha=s=>createHash('sha256').update(s).digest('hex');
+test('432 full144 source rows retain published324-record prefix; holds and focused role proposals stay non-independent and unaccepted',async()=>{
+ const registry=await json('data/zero_model_refoundation/development/development_review_registry_v0.1.json'),prefix=await json('data/zero_model_refoundation/development/development_review_journal_v0.5.json'),journal=await json('data/zero_model_refoundation/development/development_review_journal_v0.6.json'),result=await json('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE5_REVIEW_RESULT.json');
+ assert.deepEqual(journal.records.slice(0,324),prefix.records);assert.equal(journal.prefix_journal_sha256,reviewDigest(prefix));assert.equal(journal.prefix_tail_sha256,'c8b27c1b7687af60eb62aa37d82bf6b37949752bafed24e19d2c7abaa5b753cc');
+ const catalog=await read('catalog/system_topic_catalog_v0.2.yaml');assert.equal(sha(catalog),registry.catalog_sha256);const topics=[...catalog.matchAll(/^  - topic_id: (.+)$/gm)].map(x=>x[1]);
+ const paths=[1,2,3,4,5].map(n=>'data/zero_model_refoundation/development/provisional_tune_v0.4_slice'+n+'.json'),packets=await Promise.all(paths.map(async path=>({path,utf8:await read(path)}))),rows=packets.flatMap(p=>JSON.parse(p.utf8).rows);
+ const audit=validateDevelopmentReviewJournal({registry,journal,topics,packets});for(const [k,v] of Object.entries(audit))assert.deepEqual(result[k],v,k);
+ assert.equal(result.journal_sha256,reviewDigest(journal));assert.equal(result.preserved_prefix_journal_sha256,reviewDigest(prefix));assert.deepEqual(result.source_packet_pins,packets.map(p=>({path:p.path,sha256:sha(p.utf8)})));
+ assert.deepEqual(journal.records.map(r=>r.row_id),rows.map(r=>r.row_id));assert.equal(result.reviewed_rows,432);assert.equal(result.unreviewed_registered_rows,768);assert.equal(result.reviewed_topics,new Set(rows.map(r=>r.topic_id)).size);assert.equal(result.reviewed_topics,144);
+ const languages={};for(const r of rows)languages[r.language]=(languages[r.language]??0)+1;assert.deepEqual(result.reviewed_language_counts,languages);assert.deepEqual(audit.dispositions,{LABEL_IDENTIFIABILITY_HOLD:46,PROPOSE_REVISION:326,RETAIN_PROVISIONAL:60});
+ const byTopic=new Map();for(const r of rows){const languages=byTopic.get(r.topic_id)??[];languages.push(r.language);byTopic.set(r.topic_id,languages);}assert.equal(byTopic.size,144);for(const languages of byTopic.values())assert.deepEqual(languages.slice().sort(),['en','mixed','zh']);
+ const suffix=journal.records.slice(324),newDispositions={};for(const r of suffix)newDispositions[r.disposition]=(newDispositions[r.disposition]??0)+1;assert.deepEqual(result.new_dispositions,newDispositions);assert.equal(result.new_records,108);assert.equal(result.preserved_prefix_records,324);assert.equal(result.source_packet_reads,5);
+ assert(journal.records.every(r=>r.revision===1&&r.independent===false&&r.qualification_credit===0&&r.proposed_annotation.provisional_gold_topics.join()===r.original_annotation.provisional_gold_topics.join()&&r.boundary_hypotheses.every(t=>topics.includes(t))));
+ assert.deepEqual(suffix.filter(r=>r.disposition==='LABEL_IDENTIFIABILITY_HOLD').map(r=>r.row_id),[1,3,24,48,68,69,76,77,78,97,98,99].map(n=>'tune-v04-s5-'+String(n).padStart(3,'0')));
+ assert(suffix.every(r=>new Set(r.proposed_annotation.provisional_evidence_spans.map(reviewDigest)).size===r.proposed_annotation.provisional_evidence_spans.length));
+ assert(suffix.some(r=>r.proposed_annotation.provisional_evidence_spans.some(s=>s.role==='NEGATION')));assert.equal(audit.semantic_evaluations,0);assert.equal(audit.independent_reviews,0);assert.equal(audit.calibration_admission,'HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING');assert.equal(audit.capability_verdict,'UNTESTED');assert.equal(audit.resource_verdict,'NOT_QUALIFIED');
+});
