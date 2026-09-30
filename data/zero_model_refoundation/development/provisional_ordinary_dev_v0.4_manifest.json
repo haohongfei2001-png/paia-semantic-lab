@@ -4,19 +4,19 @@
   "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
   "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
   "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
-  "source_main": "74f7a05536a3ecf4ceff2d76244c04eaa947a475",
+  "source_main": "a26d9fbd63f04e65abaeefb9e7000beaa478211a",
   "status": "PARTIAL_INTAKE_NO_FULL144_OR_SAFETY_FREEZE",
-  "frozen_at": "2026-09-30T09:55:20Z",
+  "frozen_at": "2026-09-30T10:16:00Z",
   "splits": {
     "TUNE_PROVISIONAL": {
-      "rows": 54,
-      "topics": 18,
-      "missing_topics": 126,
-      "remaining_ordinary_rows": 378,
+      "rows": 108,
+      "topics": 36,
+      "missing_topics": 108,
+      "remaining_ordinary_rows": 324,
       "language_counts": {
-        "zh": 18,
-        "en": 18,
-        "mixed": 18
+        "zh": 36,
+        "en": 36,
+        "mixed": 36
       },
       "exposure": "PUBLIC_TUNE",
       "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
@@ -24,6 +24,11 @@
         {
           "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
           "sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+          "rows": 54
+        },
+        {
+          "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice2.json",
+          "sha256": "8f151986e57e3b2a2fdec23ec878e1a7587af8ada7121905ac6f812f935a777d",
           "rows": 54
         }
       ]
@@ -79,15 +84,28 @@
     "latent_scenario_distinctness": "UNREVIEWED",
     "independent_gold_review": "NOT_PROVISIONED"
   },
-  "public_overlap_screen": {
-    "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
-    "prior_explicit_public_rows": 2458,
-    "gram_size": 3,
-    "jaccard_review_flag_threshold": 0.55,
-    "flags": [],
-    "sealed_test_fingerprints_available": false,
-    "no_sealed_test_overlap_claim": false
-  },
   "stable_competition_admission": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
-  "calibration_admission": "NOT_ADMITTED_PARTIAL_DATA"
+  "calibration_admission": "NOT_ADMITTED_PARTIAL_DATA",
+  "public_overlap_screens": [
+    {
+      "slice": "slice1",
+      "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
+      "prior_explicit_public_rows": 2458,
+      "gram_size": 3,
+      "jaccard_review_flag_threshold": 0.55,
+      "flags": [],
+      "sealed_test_fingerprints_available": false,
+      "no_sealed_test_overlap_claim": false
+    },
+    {
+      "slice": "slice2",
+      "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
+      "prior_explicit_public_rows": 2512,
+      "gram_size": 3,
+      "jaccard_review_flag_threshold": 0.55,
+      "flags": [],
+      "sealed_test_fingerprints_available": false,
+      "no_sealed_test_overlap_claim": false
+    }
+  ]
 }
