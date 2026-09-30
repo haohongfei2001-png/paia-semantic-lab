@@ -4,19 +4,19 @@
   "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
   "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
   "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
-  "source_main": "209cd5ef76e807a48de037f836448faab2584f09",
+  "source_main": "f8c998bffed0e74ccd537502c1db057bca19fd28",
   "status": "PARTIAL_INTAKE_NO_FULL144_OR_SAFETY_FREEZE",
-  "frozen_at": "2026-09-30T10:42:00Z",
+  "frozen_at": "2026-09-30T11:03:00Z",
   "splits": {
     "TUNE_PROVISIONAL": {
-      "rows": 216,
-      "topics": 72,
-      "missing_topics": 72,
-      "remaining_ordinary_rows": 216,
+      "rows": 324,
+      "topics": 108,
+      "missing_topics": 36,
+      "remaining_ordinary_rows": 108,
       "language_counts": {
-        "zh": 72,
-        "en": 72,
-        "mixed": 72
+        "zh": 108,
+        "en": 108,
+        "mixed": 108
       },
       "exposure": "PUBLIC_TUNE",
       "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
@@ -34,6 +34,11 @@
         {
           "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice3.json",
           "sha256": "dc80858b254dd5d7b77949e81b559a94721b317801a1b24bcd8642b95728a4a6",
+          "rows": 108
+        },
+        {
+          "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice4.json",
+          "sha256": "0689ab4b5d91304f673af05da49ab26295bc601b8d3a2cdd34cd7eec2582deec",
           "rows": 108
         }
       ]
@@ -116,6 +121,16 @@
       "slice": "slice3",
       "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
       "prior_explicit_public_rows": 2566,
+      "gram_size": 3,
+      "jaccard_review_flag_threshold": 0.55,
+      "flags": [],
+      "sealed_test_fingerprints_available": false,
+      "no_sealed_test_overlap_claim": false
+    },
+    {
+      "slice": "slice4",
+      "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
+      "prior_explicit_public_rows": 2674,
       "gram_size": 3,
       "jaccard_review_flag_threshold": 0.55,
       "flags": [],
