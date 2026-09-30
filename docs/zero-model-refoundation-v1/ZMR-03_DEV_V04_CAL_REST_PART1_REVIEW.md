@@ -1,0 +1,29 @@
+# DEV-v0.4 CAL remaining part1 provisional source review
+
+Batch ZMR-DEV-V04-CAL-REST-PART1-REVIEW-20261001, sole writer, remote main 6de94cbf6957b165e77b8ef9f2aeac070be89852, tree 9fed99b3c2b576291fe9e48cb4c5b5fdbb8ac694. **NON_INDEPENDENT_DEVELOPMENT_EVIDENCE**. Ordinary pre-prediction source review; no Router prediction, fitting, threshold repair or candidate ranking.
+
+## Immutable source and append chain
+
+Registered data/zero_model_refoundation/development/provisional_cal_v0.4_remaining.json:Git blob23a9f741108ff3c263c850f5a36e0a0610560a3a,SHA25640b172104a2fd65b29457e01c92d788e38254af2d29963f366b0d445c5ebd94a. Review rows001–126:42Topics/first six domains/zh42-en42-mixed42. Current/title/recent,original positives/exclusions/states/OBJECT,fingerprints,writer/license declarations and original source bytes unchanged. Full144 Catalog remains the qualification universe.
+
+Registered CAL remaining packet's original pre-intake round1/max2 retained verbatim in the result with digest 2cb6a344451b3f81e5b7c10c587f6dbb45b000b26534855bc4c82fbf77885ec2. Its existing rejected374/public similarity history is source lineage,not a new rewrite or a refunded budget;no rejected historical packet or generator opened. New source intake revisions0,Router prediction exposures0. No qualification or calibration admission.
+
+v0.11 preserves822 v0.10 records and96 safety pair receipts. Prefix digest 6506782d537a3e614ca881156cfe150df1ae151076a2f9cc310edda721eddbbf,tail d7ad63e16e6df19488a4a22252132113641eddbeff82b1958ab22d8eefe0b063;new digest 7efc94a54a9d6e1165e5fb004784289a9b66aa9ec29ce4e9b17b9a516b9dab11,tail 5906b098b788c542f8a4578dc930084272d040761af4a694eacf59eabf155b7a. Every new row revision1/max2,original review ancestry preserved;no published record revised or truncated,accepted gold replacement,Catalog mutation,repair reset or new generation.
+
+## Manual source findings
+
+All126 current/title/recent and original annotations inspected before proposals.93 unaccepted complete-current-goal-suffix proposals preserve all following qualifiers/negation and original OBJECT;explicit NEGATION spans bind exact constraints. Background/frame text remains immutable current input;the proposal does not automatically assign an uninspected prefix role or turn it into another positive. Components/means within a single declared goal are not automatic multi-intent unions. Current reflection may use past circumstances;hypothetical current work does not automatically imply DEFER.
+
+22 meaningful entire-current annotations retained:003,006,015,017,018,027,030,036,066,075,077,081,083,084,087,092,093,102,105,111,117,123. No punctuation-only proposals or invented source exclusions.11 label holds:005 Major Decisions versus Career Strategy;031–033 Social Interaction versus Speaking & Conversation;035 Boundaries versus Friendships;070–072 Self Study versus Learning Methods;118–120 Software Engineering versus Software Development. Hypotheses preserve the original single positive,not an alternative-label union. Catalog boundaries are generic/provisional with no adjudicated operational tie-break. All other source labels remain unaccepted too.
+
+Fictional health/treatment/emotion/nutrition/sleep/checkup tasks explicitly retain professional uncertainty/no advice/no real records. Invented academic/application/work/compensation/product/research/launch situations authorize no real student/employer/participant/private/production access,contractual decisions,external deployment or messages. This is public writer data review,not product execution or a semantic API call.
+
+Cumulative948/full144/zh316-en316-mixed316:85 holds/585 unaccepted proposals/278 retained. Nine distinct original source paths. OrdinaryCAL180 reviewed/252 unreviewed;total CAL348 including168 safety,TUNE600. All336 safety sources/96 pair receipts/12 pair label holds/native parityUNTESTED preserved. Counts are writer processing evidence,not independent scenarios,accepted quotas or calibration eligibility.
+
+## Verification and next action
+
+Focused actual integrity test checks948 source memberships from nine byte-pinned registered packets,822-record/96-pair ancestry,published prefix digest/tail,full144 Catalog,UTF16 offsets/fingerprints/hash chain,126 ordered new CAL rows/42Topics/languages,11 holds,original OBJECT/label preservation,unique non-punctuation-only proposals,exact negations,and immutable original CAL pre-intake lineage. Minimal18-file delivery includes the new result/test;workflow explicitly materializes both and runs the focused test. source_packet_reads9 counts distinct reviewed original packet paths,not filesystem operations. These engineering checks cannot authenticate curator independence or qualify gold/licenses/mechanisms/native parity/capability/resources.
+
+Original43 structural source flags,1056 coarse ASSIGNED source goals and1200 empty exclusions unchanged because proposals are unaccepted. Writer-G0 TRAIN/TUNE/CAL conflict,ordinary quota deficit864,safety deficits204 controls/96 required pairs/96 invariance pairs/96 multi remain. Name-echo/held-out mechanisms and source/license qualification pending;independent curator/gold/AS not provisioned. Original seed and CAL remaining pre-intake round1 both retained. Competition consumption allocations unreconciled/remaining allowance null;no invented generation/refund/retired alias.144Topic/95%precision/70%floors/safety/resource budgets/local-first/zero-model constraints unchanged. CapabilityUNTESTED/resourceNOT_QUALIFIED/no saturation ceiling.
+
+Next:registered unpredicted CAL remaining rows127–378 (252 rows),then name-echo/held-out mechanism,source/license and static accounting engineering before Router predictions. Only dependent qualification/allocation paths held;other authorized development continues. No consumed CIG-v1 or future AS/TEST input/gold/output/generator read/replayed. Six owned paths:new journal,report,result,focused test,workflow,STATUS.
