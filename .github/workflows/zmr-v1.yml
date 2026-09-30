@@ -199,6 +199,9 @@ jobs:
             engineering.push('packages/zero_model_refoundation/provisional_dev_v04_safety_remaining.test.mjs');
             engineering.push('packages/zero_model_refoundation/development_source_audit.mjs');
             engineering.push('packages/zero_model_refoundation/development_source_audit.test.mjs');
+            engineering.push('packages/zero_model_refoundation/development_review_journal.mjs', 'packages/zero_model_refoundation/development_review_journal.test.mjs');
+            development.push('data/zero_model_refoundation/development/development_review_registry_v0.1.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_REVIEW_JOURNAL.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json');
             development.push('data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json');
@@ -904,3 +907,4 @@ jobs:
           node --test packages/zero_model_refoundation/historical_identity_audit.test.mjs
           node --test packages/zero_model_refoundation/later_diagnostic_audit.test.mjs
           node --test packages/zero_model_refoundation/historical_defaults_audit.test.mjs
+          node --test packages/zero_model_refoundation/development_review_journal.test.mjs
