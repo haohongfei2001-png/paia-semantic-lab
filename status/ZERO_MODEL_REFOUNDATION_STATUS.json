@@ -127,7 +127,15 @@
         "mixed": 18
       },
       "provisional_train_source_cohorts": 0,
-      "full144_train_report": "docs/zero-model-refoundation-v1/ZMR-02_FULL144_DEV_TRAIN.md"
+      "full144_train_report": "docs/zero-model-refoundation-v1/ZMR-02_FULL144_DEV_TRAIN.md",
+      "a1_feature_survival_audit": "TRAIN_CATALOG_ONLY_COMPLETE_NO_SEMANTIC_OUTPUT",
+      "a1_feature_survival_report": "docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT.md",
+      "a1_feature_survival_result": "docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_RESULT.json",
+      "a1_balanced_selector_hypothesis": "A1_TOPIC_LANGUAGE_FEATURE_RESERVATION",
+      "a1_balanced_selector_runtime_status": "NOT_IMPLEMENTED",
+      "a1_balanced_selector_semantic_evaluations": 0,
+      "a1_balanced_selector_independent_rows": 0,
+      "a1_balanced_selector_estimated_index_bytes": 890757
     },
     "ZMR-03": {
       "execution_status": "DEV_DIAGNOSTIC_COMPLETE_NOT_QUALIFIED",
@@ -793,5 +801,5 @@
       "a6_r2_fresh_v01_vs_r1_controls_false_avoided": 1
     }
   },
-  "next_action": "A4 requested-output contrast initial scorer and two bounded repairs are retired: initial 4/16 correct, R1/R2 5/16 correct with 11 assignments (45.45% provisional assigned precision), one false control in four and zero complete two-sided contrast pairs. R1 had one public DEV correct gain with no correct loss; R2 added no gain. This is same-writer failure evidence, not capability qualification or any ceiling. The retrieval+A3 index uses 1,046,978 bytes, only 1,598 below the fixed 1MiB cap. Continue a TRAIN-only A1 sparse feature-survival and byte-allocation audit using pinned Catalog and fixed public TRAIN v0.2: test whether high-document-frequency pruning loses rare action/object evidence across the full144 universe, compare a bounded Topic-balanced sparse selector without reading consumed public evaluation packets, and register a distinct hypothesis plus fresh provisional DEV before semantic scoring if the audit supports it. Do not reset retired A4 repair budgets or claim a new independent generation; reentry requires a materially different recorded mechanism. Keep one writer/coherent batch, light engineering, stable-only fresh registered comparisons. Qualification path remains frozen for real independent curator/AS; no consumed CIG-v1/final TEST or sealed AS access, no unchanged-key replay, all 144/95%/70%/safety/resource/local-first/zero-model constraints unchanged; capability UNTESTED, resources NOT_QUALIFIED, no saturation ceiling."
+  "next_action": "TRAIN-only A1 feature-survival audit is complete without Router output or DEV/AS/TEST reads. Exact pinned Catalog + TRAIN v0.2 document assembly yields 14,760 terms; current 6,000-frequency selection retains median 84.13% English and 27.78% Chinese Catalog features. Fixed 20-features/Topic/language reservation then frequency fill raises those medians to97.44%/100% and reconstructs an890,757-byte index vs932,855 current. This is engineering allocation evidence only, not capability/resource PASS. Continue registered A1_TOPIC_LANGUAGE_FEATURE_RESERVATION hypothesis: freeze distinct original same-writer provisional DEV with balanced language/domain evidence and no-request, ambiguous, context and multi slices, explicit provenance/lineage and overlap audit before any new selector semantic output; disclose missing full144 gold if a bounded subset is used. Then implement one fixed balanced selector and unchanged frequency anchor from pinned Catalog/fixed TRAIN only, full144 output/prototype closure, deterministic build and combined static budgets, and one light DEV diagnostic. At most two explained mechanism repairs; retire without safety-preserving gain. This is an A1 selector variant, not a new family/independent generation or reset of retired A4 (repair2/2); no consumed public-key replay, sealed AS/final/CIG-v1 TEST reads or tuning. Independent qualification path remains frozen, development continues. Keep single writer/coherent batch, stable-only heavy gate, all144/95%/70%/safety/resource/local-first/zero-neural/embedding/LLM/API constraints; capability UNTESTED/resources NOT_QUALIFIED/no ceiling."
 }
