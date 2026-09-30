@@ -173,6 +173,8 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-02_TRAIN_V04_FULL144_FREEZE.md');
             engineering.push('packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs', 'packages/zero_model_refoundation/train_v04.mjs', 'packages/zero_model_refoundation/train_v04.test.mjs');
             development.push('data/zero_model_refoundation/development/provisional_train_v0.4_slice5.json', 'data/zero_model_refoundation/development/provisional_train_v0.4_manifest.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE.md', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json');
+            engineering.push('packages/zero_model_refoundation/train_v04_compile.mjs', 'packages/zero_model_refoundation/train_v04_compile.test.mjs', 'packages/zero_model_refoundation/a1_v04_compact.mjs', 'packages/zero_model_refoundation/a1_v04_compact.test.mjs');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
@@ -264,6 +266,23 @@ jobs:
             assert.equal(trainV04Manifest.grouped_validation, 'UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT');
             assert.equal(trainV04Manifest.train_sha256, s.rounds['ZMR-02'].provisional_train_v04_sha256);
             assert.equal(s.rounds['ZMR-02'].provisional_train_v04_slice5_rows, 108);
+            const compiledV04 = JSON.parse((await read('docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json')).toString('utf8'));
+            assert.equal(compiledV04.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(compiledV04.semantic_evaluations, 0);
+            assert.equal(compiledV04.capability_verdict, 'UNTESTED');
+            assert.equal(compiledV04.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(s.rounds['ZMR-03'].train_v04_semantic_evaluations, 0);
+            assert.equal(s.rounds['ZMR-03'].train_v04_stable_candidates, 0);
+            assert.deepEqual(compiledV04.recipes.map(x => x.family), ['A1', 'A2', 'A3']);
+            for (const r of compiledV04.recipes) {
+              assert.equal(r.train_sha256, trainV04Manifest.train_sha256);
+              assert.equal(r.topic_count, 144); assert.equal(r.train_rows, 432);
+              assert.equal(r.independent_quota_credit, 0); assert.equal(r.lineage_component_count, 1);
+              assert.equal(r.semantic_evaluations, 0); assert.equal(r.stable_candidate, false);
+              assert.equal(r.resource_verdict, 'NOT_QUALIFIED');
+              assert(r.index_bytes <= expected.index_bytes_max && r.runtime_plus_index_bytes <= expected.router_plus_index_bytes_max);
+              assert.equal(r.index_bytes, s.rounds['ZMR-03'].train_v04_compiled_index_bytes[r.family]);
+            }
             const present = engineering.filter(p => after.has(p));
             assert(present.length === 0 || present.length === engineering.length, 'partial engineering module');
             const inputs = development.filter(p => after.has(p));
@@ -823,3 +842,4 @@ jobs:
           node --test packages/zero_model_refoundation/provisional_train_v04_slice3.test.mjs
           node --test packages/zero_model_refoundation/provisional_train_v04_slice4.test.mjs
           node --test packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs packages/zero_model_refoundation/train_v04.test.mjs
+          node --test packages/zero_model_refoundation/train_v04_compile.test.mjs packages/zero_model_refoundation/a1_v04_compact.test.mjs
