@@ -1,0 +1,13 @@
+# Sixth mechanism-matrix TRAIN source writer QA
+
+Registered source mainf817aef2c55533ed057700a045cf2fbdf893d759,treea5469eab151b6cd0339acf146fa47f7bdd6853d7,part6 SHA2561021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315. **NON_INDEPENDENT_DEVELOPMENT_EVIDENCE**.54 individually written source-writer comments:48provisional retains/6LABEL_IDENTIFIABILITY_HOLD(010/012skill-learning versus learning-methods;025/027errand versus planning/time;042medical evidence versus statistics;051life transition versus family relationship). All original source/gold/exclusions/roles/factors/fingerprints/freezes preserved. Competing hypotheses are not positive-label unions. Earlier270reviews/19holds unchanged;no accepted gold or independent reviewer.
+
+## Actual census and limitations
+
+Combined324writerreviews/299provisional retains/25holds/108rawTopics,36Topics absent/raw3132remaining. Three actual recent antecedents remain. Two unpublished ACTION proposal nouns were changed to actual request-verb substrings before source freeze;not a published source rewrite or resource/budget reset. Role semantics/nominal mechanism families/unseen combinations/source licenses/independent scenario counts remain unqualified. Literal-name proxy6/54 unchanged;adjudicated echo unknown/10%ceiling exact,no source deletion to fit proxy.
+
+Adds18provisional writer neighborcards/54edges,2same/1cross each,within6initialceiling. Combined108cards/324edges,36cards absent,positive/reverse/ambiguity source cases0,adjudicatedgold0. Boundary hypotheses do not mutate the formal Catalog or establish independent exclusion gold. Original five packets/reviews,oldv04,receipts,journal/intake/accounting unchanged.
+
+Three focused actual-source/pin/corruption/purity tests plus explicit30-file minimal delivery. Reject rewritten original bundles/gold/spans,positive unions,false independentquota/admission/budget and graph/family qualification. No compiler/Router predictions/CAL fitting/semantic/resource evaluation/newstableallocation;allowance null. All144/95%/70%/safety/1MiB/2MiB/32MiBincremental/20ms/100ms/local-first/zero-neural-embedding-LLM-semanticAPI exact;dataNOT_QUALIFIED,capabilityUNTESTED,resourceNOT_QUALIFIED,no ceiling.
+
+Next original TRAIN at seventh Topic per18domains by pinned Catalog order;full144/full24/12-8-4/8meaningfulfamily/factor/boundary/safety closure and linked directional sources. Preserve six original packets/reviews/25holds. Independentcurator/gold/AS unprovisioned freezes qualification only;source/license/lineage/publicstatic consumption accounting engineering continues,dependent stablecomparison held/nullallowance. No partialevaluation,newgeneration,refund,repairreset or retiredaliases;no private/production/paid access.
