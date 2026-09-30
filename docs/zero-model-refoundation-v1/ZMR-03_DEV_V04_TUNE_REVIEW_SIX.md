@@ -27,6 +27,8 @@ The journal registers its unchanged nine-packet registry digest and hash-links s
 
 `ZMR-03_DEV_V04_TUNE_REVIEW_SIX_RESULT.json` is an engineering validation receipt:6 inspected writer rows,4 identifiability holds,2 span proposals,1194 unreviewed registered rows; independent reviews0, qualification credit0, candidate semantic evaluations0 and Router prediction exposures0. A structural validator does not independently verify reviewer identity, licensing, semantic gold or undeclared external predictions.
 
+Initial isolated CI36740441134 at head eba58ffcb57ffd12bae6737aad5808078360c5ef failed because the result JSON was read-allowlisted but not materialized for the test. Adding that exact result path to the existing materialization list repairs delivery; no assertion, source packet or semantic mechanism changes. The failed run remains preserved, and the repaired head requires its own CI without rerunning the old head.
+
 One integration test reproduces the real packet byte pin, all144 Catalog IDs, original bundle/annotation snapshots, append ancestry, proposal/hold counts and the receipt digest. Its PASS is engineering integrity only. A scratch builder path typo was corrected before validation; it caused no packet mutation or Router execution. No historical diagnostic, consumed CIG-v1, AS or TEST content was read or replayed.
 
 Original source audit findings remain43 flagged relations/1056 coarse whole-current goal spans/1200 empty exclusion sets. Formal quota deficits and grouped-independence failure persist. Calibration remains HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING, data NOT_QUALIFIED, capability UNTESTED, resources NOT_QUALIFIED; no ceiling or cumulative budget refund is claimed.
