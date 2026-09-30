@@ -1,0 +1,13 @@
+# Fourth mechanism-matrix TRAIN writer QA
+
+Source main da6301f29c2dc2b904d5a7e85f15febb460b8abb,tree 0885e86fae4b137a92a402b949f800c06794e28b,part4 SHA2567a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd. **NON_INDEPENDENT_DEVELOPMENT_EVIDENCE**.54 individually written same-writer comments:48provisional retains/6LABEL_IDENTIFIABILITY_HOLD(010-012reading versus learning methods,040-042engineering versus physics). No accepted labels,positive union or exclusion proposals;all original inputs/gold/spans/factors/fingerprints/freeze retained. Earlier162 reviews/12holds remain unchanged.
+
+## Actual observations and limits
+
+Combined216 writerreviews/198provisional retains/18holds/72Topics,72Topics still absent/raw3240remaining. Three context sources retain actual recent antecedents. One UX OBJECT span includes a preposition;exact byte alignment is not role adjudication,and original annotation is retained pending gold review. Fragment/direct and other nominal families may overlap;no qualified semantic family/heldout/combination/independence claim. Literal-name3/54 proxy and unknown adjudicated echo fraction remain;10% ceiling unchanged. Source license declarations are not independent licensing evidence.
+
+Adds18provisional neighbor cards/54edges,each2same/1cross,three within initial6ceiling;combined72cards/216edges,72missingcards. Directional positive/reverse/ambiguity gold cases0/adjudicated edges0;formal Catalog unchanged. Current sourcewriter comments are author hypotheses,not independent reviewers. Oldv04/source packets/journal/intake/budget spending unchanged.
+
+Three focused actual-source/pin/corruption/purity checks plus explicit22-file minimal delivery pass;guards reject altered source/gold/spans,fake acceptance/independence/budget,hidden label union or boundary/family qualification. No compiler admission,Router predictions,CAL fitting,resource measure or stable allocation;allowance null. No real household/medical/financial/legal/production/private/paid/model access.
+
+Next genuinely original TRAIN at fifth Topic per18domains in pinned Catalog order,full144/full24/12-8-4/8meaningfulfamily/factor/boundary/safety matrices and linked directional sources. Preserve four source packets/reviews/18holds;independentcurator/gold/AS unavailable freezes dependent qualification only,stable accounting comparison held/null allowance. Continue source/license/lineage/publicstatic accounting engineering;no partialeval/newgeneration/repairreset/refund/retiredalias. All144/95%/70%/safety/1MiB/2MiB/32MiBincremental/20ms/100ms/local-first/zero-neural-embedding-LLM-semanticAPI exact;dataNOT_QUALIFIED,capabilityUNTESTED,resourceNOT_QUALIFIED,no ceiling.
