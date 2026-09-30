@@ -1,0 +1,625 @@
+{
+  "schema": "ZMR-TRAIN-V04-STATIC-COMPILE-RECEIPT-1",
+  "batch_id": "ZMR-TRAIN-V04-COMPILED-CLOSURE-20260930",
+  "train_freeze_main": "6e913eb8addad2bc4205e9b0949d2fd3960c40b2",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "original_a1_attempt": {
+    "status": "REJECTED_STATIC_RESOURCE_OVERFLOW",
+    "max_features": 1500,
+    "index_bytes": 1862872,
+    "resource_limit_bytes": 1048576,
+    "semantic_evaluations": 0
+  },
+  "engineering_storage_repair": {
+    "count": 1,
+    "mechanism": "PER_CHANNEL_GLOBAL_INT16_STORAGE",
+    "semantic_repairs": 0,
+    "scope": "STORAGE_ONLY_NO_FEATURE_BUDGET_REDUCTION"
+  },
+  "recipes": [
+    {
+      "schema": "ZMR-TRAIN-V04-COMPILE-1",
+      "family": "A1",
+      "recipe": {
+        "family": "A1",
+        "mode": "char",
+        "max_features": 1500,
+        "selector": "DOCUMENT_FREQUENCY_DESCENDING",
+        "objective": "TFIDF_AND_BM25_STATISTICS",
+        "quantization": "PER_CHANNEL_GLOBAL_INT16_STORAGE"
+      },
+      "recipe_sha256": "2d326c0773c7b30ccd830a6907662e557fc2bff14954e923fe64f6fa663f3a17",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "training_unit": "ONE_AGGREGATE_DOCUMENT_PER_TOPIC",
+      "topic_count": 144,
+      "train_rows": 432,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf",
+      "document_sha256": "68ced1550d9f84a52b60661e8dd5fe8baae0ce882598c82c6994cc6134ae7eda",
+      "index_sha256": "eaafd7e88c1a3b2765e335debd9b896df9434042e270e031cacef2d151a00c86",
+      "index_bytes": 711397,
+      "raw_index_bytes": 1471486,
+      "runtime": [
+        {
+          "path": "packages/zero_model_refoundation/a1.mjs",
+          "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+          "bytes": 6892
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+          "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+          "bytes": 3042
+        }
+      ],
+      "runtime_bytes": 9934,
+      "runtime_plus_index_bytes": 721331,
+      "static_status": "STATIC_BYTES_WITHIN_LIMITS_NOT_RESOURCE_QUALIFIED",
+      "compiler_dependencies": [
+        {
+          "path": "packages/zero_model_refoundation/train_v04_compile.mjs",
+          "sha256": "9ad28df996f7e774a127bebfb84c01e1ac5833ac056624bcd4725056e0d0af32",
+          "bytes": 6133
+        },
+        {
+          "path": "packages/zero_model_refoundation/train_v04.mjs",
+          "sha256": "4f31b03b02a2bac64532a354616ffc4a5ac67c2279ef03e89a54e29ace1a4ea4",
+          "bytes": 7745
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_compile.mjs",
+          "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+          "bytes": 5497
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1.mjs",
+          "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+          "bytes": 6892
+        },
+        {
+          "path": "packages/zero_model_refoundation/a2.mjs",
+          "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+          "bytes": 5081
+        },
+        {
+          "path": "packages/zero_model_refoundation/a3.mjs",
+          "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+          "bytes": 6726
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+          "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+          "bytes": 3042
+        },
+        {
+          "path": "packages/zero_model_refoundation/compiled_numbers.mjs",
+          "sha256": "e5c9adc7e0daf457b5fff489b06aee5ac553bc3cdb5b3a633de576299c1ab49c",
+          "bytes": 768
+        }
+      ],
+      "compiler_sha256": "23bc6e92d053dced61b232597c64a51228674e73c50850e20d3660d12ba2d55b",
+      "number_encoding": "FINITE_12_SIGNIFICANT_DIGITS_V1",
+      "independent_quota_credit": 0,
+      "lineage_component_count": 1,
+      "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+      "feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+      "semantic_evaluations": 0,
+      "stable_candidate": false,
+      "capability_verdict": "UNTESTED",
+      "resource_verdict": "NOT_QUALIFIED",
+      "measurement_exclusions": [
+        "browser_dependency_closure",
+        "cold_load",
+        "warm_latency",
+        "peak_memory",
+        "runtime_parity"
+      ],
+      "output": null
+    },
+    {
+      "schema": "ZMR-TRAIN-V04-COMPILE-1",
+      "family": "A2",
+      "recipe": {
+        "family": "A2",
+        "mode": "char",
+        "max_features": 3000,
+        "selector": "MID_FREQUENCY_DF_LOG",
+        "objective": "CLASS_COMPLEMENT_LOG_LIKELIHOOD"
+      },
+      "recipe_sha256": "0e8d4aa1b0db5a1adfd03a07a287bb8d006ff933f5b066d8771239df0f375183",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "training_unit": "ONE_AGGREGATE_DOCUMENT_PER_TOPIC",
+      "topic_count": 144,
+      "train_rows": 432,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf",
+      "document_sha256": "68ced1550d9f84a52b60661e8dd5fe8baae0ce882598c82c6994cc6134ae7eda",
+      "index_sha256": "be27bd3ba378e83b18c3c572fe1c04d4a078b1ac79ce6ebfea9ca07c0745fde6",
+      "index_bytes": 410819,
+      "raw_index_bytes": 410819,
+      "runtime": [
+        {
+          "path": "packages/zero_model_refoundation/a1.mjs",
+          "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+          "bytes": 6892
+        },
+        {
+          "path": "packages/zero_model_refoundation/a2.mjs",
+          "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+          "bytes": 5081
+        }
+      ],
+      "runtime_bytes": 11973,
+      "runtime_plus_index_bytes": 422792,
+      "static_status": "STATIC_BYTES_WITHIN_LIMITS_NOT_RESOURCE_QUALIFIED",
+      "compiler_dependencies": [
+        {
+          "path": "packages/zero_model_refoundation/train_v04_compile.mjs",
+          "sha256": "9ad28df996f7e774a127bebfb84c01e1ac5833ac056624bcd4725056e0d0af32",
+          "bytes": 6133
+        },
+        {
+          "path": "packages/zero_model_refoundation/train_v04.mjs",
+          "sha256": "4f31b03b02a2bac64532a354616ffc4a5ac67c2279ef03e89a54e29ace1a4ea4",
+          "bytes": 7745
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_compile.mjs",
+          "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+          "bytes": 5497
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1.mjs",
+          "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+          "bytes": 6892
+        },
+        {
+          "path": "packages/zero_model_refoundation/a2.mjs",
+          "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+          "bytes": 5081
+        },
+        {
+          "path": "packages/zero_model_refoundation/a3.mjs",
+          "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+          "bytes": 6726
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+          "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+          "bytes": 3042
+        },
+        {
+          "path": "packages/zero_model_refoundation/compiled_numbers.mjs",
+          "sha256": "e5c9adc7e0daf457b5fff489b06aee5ac553bc3cdb5b3a633de576299c1ab49c",
+          "bytes": 768
+        }
+      ],
+      "compiler_sha256": "23bc6e92d053dced61b232597c64a51228674e73c50850e20d3660d12ba2d55b",
+      "number_encoding": "FINITE_12_SIGNIFICANT_DIGITS_V1",
+      "independent_quota_credit": 0,
+      "lineage_component_count": 1,
+      "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+      "feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+      "semantic_evaluations": 0,
+      "stable_candidate": false,
+      "capability_verdict": "UNTESTED",
+      "resource_verdict": "NOT_QUALIFIED",
+      "measurement_exclusions": [
+        "browser_dependency_closure",
+        "cold_load",
+        "warm_latency",
+        "peak_memory",
+        "runtime_parity"
+      ],
+      "output": null
+    },
+    {
+      "schema": "ZMR-TRAIN-V04-COMPILE-1",
+      "family": "A3",
+      "recipe": {
+        "family": "A3",
+        "mode": "char",
+        "max_features": 3000,
+        "keep_per_topic": 48,
+        "epochs": 5,
+        "selector": "DOCUMENT_FREQUENCY_ASCENDING",
+        "objective": "MULTICLASS_HINGE",
+        "quantization": "GLOBAL_INT16"
+      },
+      "recipe_sha256": "64c4d630239ba8aac0e6fce2517ecee1df025e3fe26f22344d4e01c6e6f6bc74",
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "training_unit": "ONE_AGGREGATE_DOCUMENT_PER_TOPIC",
+      "topic_count": 144,
+      "train_rows": 432,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf",
+      "document_sha256": "68ced1550d9f84a52b60661e8dd5fe8baae0ce882598c82c6994cc6134ae7eda",
+      "index_sha256": "7e20ae42615d594f96b9bc6f93551391cd14959bebc5eb5d195dc9e76fbf0c8c",
+      "index_bytes": 87731,
+      "raw_index_bytes": 87731,
+      "runtime": [
+        {
+          "path": "packages/zero_model_refoundation/a1.mjs",
+          "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+          "bytes": 6892
+        },
+        {
+          "path": "packages/zero_model_refoundation/a3.mjs",
+          "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+          "bytes": 6726
+        }
+      ],
+      "runtime_bytes": 13618,
+      "runtime_plus_index_bytes": 101349,
+      "static_status": "STATIC_BYTES_WITHIN_LIMITS_NOT_RESOURCE_QUALIFIED",
+      "compiler_dependencies": [
+        {
+          "path": "packages/zero_model_refoundation/train_v04_compile.mjs",
+          "sha256": "9ad28df996f7e774a127bebfb84c01e1ac5833ac056624bcd4725056e0d0af32",
+          "bytes": 6133
+        },
+        {
+          "path": "packages/zero_model_refoundation/train_v04.mjs",
+          "sha256": "4f31b03b02a2bac64532a354616ffc4a5ac67c2279ef03e89a54e29ace1a4ea4",
+          "bytes": 7745
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_compile.mjs",
+          "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+          "bytes": 5497
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1.mjs",
+          "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+          "bytes": 6892
+        },
+        {
+          "path": "packages/zero_model_refoundation/a2.mjs",
+          "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+          "bytes": 5081
+        },
+        {
+          "path": "packages/zero_model_refoundation/a3.mjs",
+          "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+          "bytes": 6726
+        },
+        {
+          "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+          "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+          "bytes": 3042
+        },
+        {
+          "path": "packages/zero_model_refoundation/compiled_numbers.mjs",
+          "sha256": "e5c9adc7e0daf457b5fff489b06aee5ac553bc3cdb5b3a633de576299c1ab49c",
+          "bytes": 768
+        }
+      ],
+      "compiler_sha256": "23bc6e92d053dced61b232597c64a51228674e73c50850e20d3660d12ba2d55b",
+      "number_encoding": "FINITE_12_SIGNIFICANT_DIGITS_V1",
+      "independent_quota_credit": 0,
+      "lineage_component_count": 1,
+      "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+      "feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+      "semantic_evaluations": 0,
+      "stable_candidate": false,
+      "capability_verdict": "UNTESTED",
+      "resource_verdict": "NOT_QUALIFIED",
+      "measurement_exclusions": [
+        "browser_dependency_closure",
+        "cold_load",
+        "warm_latency",
+        "peak_memory",
+        "runtime_parity"
+      ],
+      "output": null
+    }
+  ],
+  "semantic_evaluations": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "pre_encoding_attempt": {
+    "receipt_sha256": "31367dceeb652e2f793925438026f62d3f540ac438842ac7678c8ad0993f7212",
+    "recipes": [
+      {
+        "schema": "ZMR-TRAIN-V04-COMPILE-1",
+        "family": "A1",
+        "recipe": {
+          "family": "A1",
+          "mode": "char",
+          "max_features": 1500,
+          "selector": "DOCUMENT_FREQUENCY_DESCENDING",
+          "objective": "TFIDF_AND_BM25_STATISTICS",
+          "quantization": "PER_CHANNEL_GLOBAL_INT16_STORAGE"
+        },
+        "recipe_sha256": "2d326c0773c7b30ccd830a6907662e557fc2bff14954e923fe64f6fa663f3a17",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+        "training_unit": "ONE_AGGREGATE_DOCUMENT_PER_TOPIC",
+        "topic_count": 144,
+        "train_rows": 432,
+        "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+        "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf",
+        "document_sha256": "68ced1550d9f84a52b60661e8dd5fe8baae0ce882598c82c6994cc6134ae7eda",
+        "index_sha256": "7693b06e18c501953088f7ecb3b6e46be6a98135a6c327529ddfe71e0bad901c",
+        "index_bytes": 718175,
+        "raw_index_bytes": 1862872,
+        "runtime": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "bytes": 6892
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+            "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+            "bytes": 3042
+          }
+        ],
+        "runtime_bytes": 9934,
+        "runtime_plus_index_bytes": 728109,
+        "static_status": "STATIC_BYTES_WITHIN_LIMITS_NOT_RESOURCE_QUALIFIED",
+        "compiler_dependencies": [
+          {
+            "path": "packages/zero_model_refoundation/train_v04_compile.mjs",
+            "sha256": "471eb0ed4253243f23bb6980a3043fb1c7a6825705a256f72d9b9be087d1174a",
+            "bytes": 5927
+          },
+          {
+            "path": "packages/zero_model_refoundation/train_v04.mjs",
+            "sha256": "4f31b03b02a2bac64532a354616ffc4a5ac67c2279ef03e89a54e29ace1a4ea4",
+            "bytes": 7745
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_compile.mjs",
+            "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+            "bytes": 5497
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "bytes": 6892
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+            "bytes": 5081
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+            "bytes": 6726
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+            "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+            "bytes": 3042
+          }
+        ],
+        "compiler_sha256": "453faa70177e9f5439fb7b1f72514aacbc4524c649f8b566c85107a3e8bd0c5f",
+        "independent_quota_credit": 0,
+        "lineage_component_count": 1,
+        "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+        "feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+        "semantic_evaluations": 0,
+        "stable_candidate": false,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "measurement_exclusions": [
+          "browser_dependency_closure",
+          "cold_load",
+          "warm_latency",
+          "peak_memory",
+          "runtime_parity"
+        ],
+        "output": null
+      },
+      {
+        "schema": "ZMR-TRAIN-V04-COMPILE-1",
+        "family": "A2",
+        "recipe": {
+          "family": "A2",
+          "mode": "char",
+          "max_features": 3000,
+          "selector": "MID_FREQUENCY_DF_LOG",
+          "objective": "CLASS_COMPLEMENT_LOG_LIKELIHOOD"
+        },
+        "recipe_sha256": "0e8d4aa1b0db5a1adfd03a07a287bb8d006ff933f5b066d8771239df0f375183",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+        "training_unit": "ONE_AGGREGATE_DOCUMENT_PER_TOPIC",
+        "topic_count": 144,
+        "train_rows": 432,
+        "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+        "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf",
+        "document_sha256": "68ced1550d9f84a52b60661e8dd5fe8baae0ce882598c82c6994cc6134ae7eda",
+        "index_sha256": "be27bd3ba378e83b18c3c572fe1c04d4a078b1ac79ce6ebfea9ca07c0745fde6",
+        "index_bytes": 410819,
+        "raw_index_bytes": 410819,
+        "runtime": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "bytes": 6892
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+            "bytes": 5081
+          }
+        ],
+        "runtime_bytes": 11973,
+        "runtime_plus_index_bytes": 422792,
+        "static_status": "STATIC_BYTES_WITHIN_LIMITS_NOT_RESOURCE_QUALIFIED",
+        "compiler_dependencies": [
+          {
+            "path": "packages/zero_model_refoundation/train_v04_compile.mjs",
+            "sha256": "471eb0ed4253243f23bb6980a3043fb1c7a6825705a256f72d9b9be087d1174a",
+            "bytes": 5927
+          },
+          {
+            "path": "packages/zero_model_refoundation/train_v04.mjs",
+            "sha256": "4f31b03b02a2bac64532a354616ffc4a5ac67c2279ef03e89a54e29ace1a4ea4",
+            "bytes": 7745
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_compile.mjs",
+            "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+            "bytes": 5497
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "bytes": 6892
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+            "bytes": 5081
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+            "bytes": 6726
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+            "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+            "bytes": 3042
+          }
+        ],
+        "compiler_sha256": "453faa70177e9f5439fb7b1f72514aacbc4524c649f8b566c85107a3e8bd0c5f",
+        "independent_quota_credit": 0,
+        "lineage_component_count": 1,
+        "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+        "feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+        "semantic_evaluations": 0,
+        "stable_candidate": false,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "measurement_exclusions": [
+          "browser_dependency_closure",
+          "cold_load",
+          "warm_latency",
+          "peak_memory",
+          "runtime_parity"
+        ],
+        "output": null
+      },
+      {
+        "schema": "ZMR-TRAIN-V04-COMPILE-1",
+        "family": "A3",
+        "recipe": {
+          "family": "A3",
+          "mode": "char",
+          "max_features": 3000,
+          "keep_per_topic": 48,
+          "epochs": 5,
+          "selector": "DOCUMENT_FREQUENCY_ASCENDING",
+          "objective": "MULTICLASS_HINGE",
+          "quantization": "GLOBAL_INT16"
+        },
+        "recipe_sha256": "64c4d630239ba8aac0e6fce2517ecee1df025e3fe26f22344d4e01c6e6f6bc74",
+        "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+        "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+        "training_unit": "ONE_AGGREGATE_DOCUMENT_PER_TOPIC",
+        "topic_count": 144,
+        "train_rows": 432,
+        "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+        "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf",
+        "document_sha256": "68ced1550d9f84a52b60661e8dd5fe8baae0ce882598c82c6994cc6134ae7eda",
+        "index_sha256": "b90603497e3b26ffbe791cfe6f4c42e0457676aadf485dd1d20ba9a1f1abc02d",
+        "index_bytes": 87736,
+        "raw_index_bytes": 87736,
+        "runtime": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "bytes": 6892
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+            "bytes": 6726
+          }
+        ],
+        "runtime_bytes": 13618,
+        "runtime_plus_index_bytes": 101354,
+        "static_status": "STATIC_BYTES_WITHIN_LIMITS_NOT_RESOURCE_QUALIFIED",
+        "compiler_dependencies": [
+          {
+            "path": "packages/zero_model_refoundation/train_v04_compile.mjs",
+            "sha256": "471eb0ed4253243f23bb6980a3043fb1c7a6825705a256f72d9b9be087d1174a",
+            "bytes": 5927
+          },
+          {
+            "path": "packages/zero_model_refoundation/train_v04.mjs",
+            "sha256": "4f31b03b02a2bac64532a354616ffc4a5ac67c2279ef03e89a54e29ace1a4ea4",
+            "bytes": 7745
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_compile.mjs",
+            "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+            "bytes": 5497
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "bytes": 6892
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866",
+            "bytes": 5081
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2",
+            "bytes": 6726
+          },
+          {
+            "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+            "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+            "bytes": 3042
+          }
+        ],
+        "compiler_sha256": "453faa70177e9f5439fb7b1f72514aacbc4524c649f8b566c85107a3e8bd0c5f",
+        "independent_quota_credit": 0,
+        "lineage_component_count": 1,
+        "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+        "feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+        "semantic_evaluations": 0,
+        "stable_candidate": false,
+        "capability_verdict": "UNTESTED",
+        "resource_verdict": "NOT_QUALIFIED",
+        "measurement_exclusions": [
+          "browser_dependency_closure",
+          "cold_load",
+          "warm_latency",
+          "peak_memory",
+          "runtime_parity"
+        ],
+        "output": null
+      }
+    ],
+    "ci_failure": {
+      "head": "1e21582290e778e78d02a30c700e51de80386f01",
+      "run": 36694573802,
+      "job": 109819345736,
+      "local_node": "26.8.2-darwin-arm64",
+      "ci_node_major": 22,
+      "linux_A1_index_bytes": 718174,
+      "linux_A1_index_sha256": "fc697e2ea6a6f0a7c4579c923791c085c989b67ced7a59a9395909a38718be45",
+      "linux_raw_index_bytes": 1862840,
+      "status": "REJECTED_CROSS_ENVIRONMENT_RECEIPT_MISMATCH",
+      "semantic_evaluations": 0
+    }
+  },
+  "number_encoding_engineering_repair": {
+    "encoding": "FINITE_12_SIGNIFICANT_DIGITS_V1",
+    "semantic_evaluations": 0,
+    "semantic_repairs": 0,
+    "original_receipt_preserved": true
+  }
+}

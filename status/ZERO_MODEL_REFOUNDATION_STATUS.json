@@ -288,7 +288,28 @@
       "a123_challenge_v03_evaluation_key": "c2ce56b3bf74740f9fa79920d6d39c0a980f73ded74d2a7809c1dc591b1007cd",
       "a123_challenge_v03_report": "docs/zero-model-refoundation-v1/ZMR-03_A123_CHALLENGE_V03.md",
       "a123_challenge_v03_result": "docs/zero-model-refoundation-v1/ZMR-03_A123_CHALLENGE_V03_RESULT.json",
-      "a3_provisional_disposition": "CURRENT_CONFIGS_REJECTED_NO_FAMILY_CEILING"
+      "a3_provisional_disposition": "CURRENT_CONFIGS_REJECTED_NO_FAMILY_CEILING",
+      "train_v04_compiled_status": "INPUT_CLOSURE_ENGINEERING_ONLY_UNEVALUATED",
+      "train_v04_compiler": "packages/zero_model_refoundation/train_v04_compile.mjs",
+      "train_v04_compiled_report": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE.md",
+      "train_v04_compiled_receipt": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json",
+      "train_v04_compiled_rows": 432,
+      "train_v04_compiled_topics": 144,
+      "train_v04_semantic_evaluations": 0,
+      "train_v04_stable_candidates": 0,
+      "train_v04_grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+      "train_v04_compiled_index_bytes": {
+        "A1": 711397,
+        "A2": 410819,
+        "A3": 87731
+      },
+      "train_v04_feature_comparison": "NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION",
+      "train_v04_resource_verdict": "NOT_QUALIFIED",
+      "train_v04_storage_engineering_repairs": 1,
+      "train_v04_recipe_registry_status": "ENGINEERING_ONLY_GENERATION_ACCOUNTING_REQUIRED_BEFORE_SEMANTIC_FREEZE",
+      "train_v04_number_encoding": "FINITE_12_SIGNIFICANT_DIGITS_V1",
+      "train_v04_cross_environment_initial_receipt": "REJECTED_MATH_SERIALIZATION_DIFFERENCE_PRESERVED",
+      "train_v04_compiled_engineering_unit_tests": 5
     },
     "ZMR-04": {
       "execution_status": "DEV_DIAGNOSTIC_COMPLETE_NO_PROMOTION",
@@ -870,5 +891,5 @@
       "a6_r2_fresh_v01_vs_r1_controls_false_avoided": 1
     }
   },
-  "next_action": "Full144 provisional TRAIN v0.4 positive closure frozen:432 original candidate-writer scenarios (one zh/en/mixed per Topic),5 immutable slices via strict frozen manifest. Independent01B quota0, gold unreviewed, safety TRAIN quotas absent; all432 rows share ONE writer/source-family lineage component, so valid independent grouped folds are unavailable and must not be fabricated. Continue nondependent development: register a bounded A2/A3 TRAIN-v0.4 closure hypothesis with full144 frequency/statistical anchor, fixed configurations and carried-forward retired budgets; implement new separate frozen-input compilers via train_v04 loader, deterministic synthetic/metadata units and static resource accounting. Do not modify old frozen compilers/receipts or run consumed public diagnostics as a fresh gate. No semantic comparison until distinct fresh provisional DEV is authored and frozen; any same-writer result remains NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, not independent grouped validation. Missing curator/AS freezes qualification only. No reset of retired A1/A4/A6 budgets, new independent generation, capability/resource PASS or ceiling claim. Single writer/coherent batch/light inner loop/stable-only heavy gates, no unchanged-key replay or CIG-v1/sealed AS/final TEST reads. All144/95%/70%/safety/resources/local-first/zero neural/embedding/LLM/API constraints unchanged; capability UNTESTED/resources NOT_QUALIFIED."
+  "next_action": "Frozen TRAIN v0.4 compiled offline into separate bounded full144 A1 frequency/int16 storage anchor, A2 likelihood and A3 sparse hinge engineering indices (432 same-writer rows, ONE lineage component). Five focused engineering checks pass; finite12-significant-digit artifact encoding preserves rejected cross-environment receipt; static index sizes 711397/410819/87731 bytes are not resource PASS; capability UNTESTED. Initial floating A1 index 1862872 bytes rejected by 1 MiB guard, preserved with one storage engineering repair; no feature-cap or product-budget reduction, no semantic evaluation. Continue nondependent development: audit candidate/configuration/repair registry against canonical generation limits before semantic freeze; carry all retired A1/A4/A6 counters forward. Author and freeze distinct fresh original provisional full144 DEV with explicit TUNE/CAL exposure and nonempty control/context/multi mechanisms; do not reuse consumed diagnostics as fresh gates. A1/A2/A3 native selectors and feature caps differ, so objective-level gain requires a separately registered matched-feature ablation; quantization also requires fresh DEV ablation. Independent grouped folds remain unavailable, independent01B quota0, gold unreviewed and safety TRAIN quotas absent; do not fabricate curator/group uncertainty. Freeze qualification only while continuing safe development. No new qualified generation, reset, capability/resource PASS or saturation ceiling; all144/95%/70%/safety/resources/local-first/zero neural/embedding/LLM/API constraints preserved; no CIG-v1 or sealed AS/final TEST reads/replays."
 }
