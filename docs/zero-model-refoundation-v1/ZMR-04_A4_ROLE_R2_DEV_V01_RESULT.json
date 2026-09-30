@@ -1,0 +1,101 @@
+{
+  "schema": "ZMR-A4-ROLE-R2-PUBLIC-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_status": "REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE",
+  "cohort": "data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json",
+  "cohort_sha256": "5cf3e13ca2488b4e6bf024c8be78b66e3e2ed14b39eab262bf79cbbfd25c87b9",
+  "role_module_sha256": "7b08c530ed6874dc704b75443f9b383a5580cbc0ae1f0fb69e208be353e13515",
+  "r2_module_sha256": "970b0d5104c1b7b881506b574505292b793bcf2667b7c16799dbcffb05d35b01",
+  "r1_module_sha256": "2a29ee7959fa6861628ace7294f1b651e618abe238bf8de6c2920f42af7052f2",
+  "a1_index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+  "a3_index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+  "fixed_config_count": 2,
+  "topic_universe": 144,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "role_projection_coverage": {
+    "projected_labeled": 16,
+    "labeled_total": 16
+  },
+  "results": {
+    "A4_ROLE_R1": {
+      "by_role": {
+        "ROLE_CONTRAST": {
+          "rows": 16,
+          "assigned": 11,
+          "exact": 5
+        },
+        "CONTROL": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 16,
+      "labeled_assigned": 11,
+      "labeled_exact": 5,
+      "control_false_assignments": 1,
+      "ambiguous_assignments": 0,
+      "deterministic_repeat_differences": 0,
+      "complete_contrast_pairs": 0,
+      "provisional_assigned_precision": 0.45454545454545453
+    },
+    "A4_ROLE_R2": {
+      "by_role": {
+        "ROLE_CONTRAST": {
+          "rows": 16,
+          "assigned": 11,
+          "exact": 5
+        },
+        "CONTROL": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 16,
+      "labeled_assigned": 11,
+      "labeled_exact": 5,
+      "control_false_assignments": 1,
+      "ambiguous_assignments": 0,
+      "deterministic_repeat_differences": 0,
+      "complete_contrast_pairs": 0,
+      "provisional_assigned_precision": 0.45454545454545453
+    }
+  },
+  "paired_A4_ROLE_R2_vs_A4_ROLE_R1": {
+    "exact_gained": 0,
+    "exact_lost": 0,
+    "wrong_avoided_by_defer": 0,
+    "wrong_added": 0,
+    "topic_switches": 0,
+    "controls_false_avoided": 0,
+    "controls_false_added": 0,
+    "ambiguous_assignments_avoided": 0,
+    "ambiguous_assignments_added": 0
+  },
+  "static_bytes": {
+    "a3_index": 114123,
+    "a1_index": 932855,
+    "total_index": 1046978,
+    "runtime_plus_index": 1079489
+  },
+  "limitations": [
+    "same-writer public DEV is not independent evidence or a fresh gate",
+    "ambiguous rows have no gold and are excluded from labeled precision",
+    "static bytes do not measure browser latency or memory"
+  ],
+  "prior_result_sha256": "a0e7893400e35db85d4f1e56833d1029f5442bb5c4b0034213059069492b1053"
+}

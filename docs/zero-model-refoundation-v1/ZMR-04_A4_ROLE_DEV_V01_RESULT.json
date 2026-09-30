@@ -1,0 +1,122 @@
+{
+  "schema": "ZMR-A4-ROLE-PUBLIC-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "cohort": "data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json",
+  "cohort_sha256": "5cf3e13ca2488b4e6bf024c8be78b66e3e2ed14b39eab262bf79cbbfd25c87b9",
+  "role_module_sha256": "7b08c530ed6874dc704b75443f9b383a5580cbc0ae1f0fb69e208be353e13515",
+  "a3_index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18",
+  "fixed_config_count": 3,
+  "topic_universe": 144,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "role_projection_coverage": {
+    "projected_labeled": 16,
+    "labeled_total": 16
+  },
+  "results": {
+    "A3_FLAT": {
+      "by_role": {
+        "ROLE_CONTRAST": {
+          "rows": 16,
+          "assigned": 12,
+          "exact": 4
+        },
+        "CONTROL": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 4,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 16,
+      "labeled_assigned": 12,
+      "labeled_exact": 4,
+      "control_false_assignments": 2,
+      "ambiguous_assignments": 4,
+      "deterministic_repeat_differences": 0,
+      "complete_contrast_pairs": 0,
+      "provisional_assigned_precision": 0.3333333333333333
+    },
+    "A3_SCOPE": {
+      "by_role": {
+        "ROLE_CONTRAST": {
+          "rows": 16,
+          "assigned": 12,
+          "exact": 4
+        },
+        "CONTROL": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 16,
+      "labeled_assigned": 12,
+      "labeled_exact": 4,
+      "control_false_assignments": 1,
+      "ambiguous_assignments": 0,
+      "deterministic_repeat_differences": 0,
+      "complete_contrast_pairs": 0,
+      "provisional_assigned_precision": 0.3333333333333333
+    },
+    "A4_ROLE": {
+      "by_role": {
+        "ROLE_CONTRAST": {
+          "rows": 16,
+          "assigned": 12,
+          "exact": 4
+        },
+        "CONTROL": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0
+        }
+      },
+      "labeled_rows": 16,
+      "labeled_assigned": 12,
+      "labeled_exact": 4,
+      "control_false_assignments": 1,
+      "ambiguous_assignments": 0,
+      "deterministic_repeat_differences": 0,
+      "complete_contrast_pairs": 0,
+      "provisional_assigned_precision": 0.3333333333333333
+    }
+  },
+  "paired_A4_ROLE_vs_A3_SCOPE": {
+    "exact_gained": 0,
+    "exact_lost": 0,
+    "wrong_avoided_by_defer": 1,
+    "wrong_added": 1,
+    "topic_switches": 1,
+    "controls_false_avoided": 0,
+    "controls_false_added": 0,
+    "ambiguous_assignments_avoided": 0,
+    "ambiguous_assignments_added": 0
+  },
+  "static_bytes": {
+    "a3_index": 114123,
+    "runtime_plus_index": 143984
+  },
+  "limitations": [
+    "same-writer public DEV is not independent evidence or a fresh gate",
+    "ambiguous rows have no gold and are excluded from labeled precision",
+    "static bytes do not measure browser latency or memory"
+  ]
+}
