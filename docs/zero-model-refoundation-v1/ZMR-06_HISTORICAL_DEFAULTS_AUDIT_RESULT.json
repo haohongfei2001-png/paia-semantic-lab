@@ -1,0 +1,2778 @@
+{
+  "schema": "ZMR-HISTORICAL-DEFAULTS-AUDIT-RECEIPT-1",
+  "source_main": "0e0ad8d4a45e1577661bf617038b5645dd4236de",
+  "source_tree": "ecaf4cc286ee0ab12f8f6bd239fa962bd464a53d",
+  "recipe_path": "data/zero_model_refoundation/development/historical_defaults_recipe_v0.1.json",
+  "recipe_sha256": "77a56805607f4b0a537afe05988b4f09f2b48ab72c50dc1c838be59defb34a8b",
+  "engineering_dependencies": [
+    {
+      "path": "packages/zero_model_refoundation/historical_defaults_audit.mjs",
+      "sha256": "32e9fc997e8fa13b50e2e75695340a15fde0e1c2cf7a1ed66ed820be39f2e373"
+    },
+    {
+      "path": "packages/zero_model_refoundation/contracts.mjs",
+      "sha256": "ac3d29d395e9cc645e3138eb25b93d85adaceb726e569116a921fc78f368fb2c"
+    }
+  ],
+  "audit": {
+    "schema": "ZMR-HISTORICAL-DEFAULTS-AUDIT-1",
+    "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "reviewed_runtime_entries": 14,
+    "non_A0_configuration_mentions": 53,
+    "raw_static_identity_count": 29,
+    "normalized_direct_route_index_options_identities": 23,
+    "default_parameter_values_applied": 0,
+    "configuration_mentions_with_omitted_feature_mode": 18,
+    "mentions": [
+      {
+        "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+        "config_id": "A1_char_tfidf",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "char",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "08b61c0beb95a56a18ac9d47f58bcc4c384fc3dffbbc38c9e63039b267d13a0a",
+        "original_execution_identity_sha256": "b25f050ca54ca79a6bd204547dabf156b93946abf693a11dc94f6a2614b3274d",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "ee7eed90ab04f9e3bb42869c21a2839f44cef97f9fcd470490ae86274994e76a",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+        "config_id": "A1_char_bm25",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "char",
+          "method": "bm25",
+          "min_score": 1,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "b0c1e92213c4fd5bd4f911108dd09242f53b2972a20e377db0d1218078635c52",
+        "original_execution_identity_sha256": "720dde9af48f292f408ea5e82092f5a1733fd1aae0ecd114413d3e6b30bde101",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "bm25",
+          "min_score": 1,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "3a9704cf85e7cc193d58665133541ce793516ed40b42b59c50e39d2e0ab35e52",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+        "config_id": "A1_word_tfidf",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "word",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "43b8343b56200ef314fed22ed4d865efc65b806d8c614985192ef52577276fa2",
+        "original_execution_identity_sha256": "0e4bbb031b453bfa7938d1125867ec7022e51a1adf3284d8bff77f2f03355eca",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "7c39cf2ffad4dbe64755e35da11a693c575cfc47d81feb58f887b1f89414d85b"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "5c8a0852e4413cb35f382916b62ea681ad8b9fd3941e32b447cdbe00ec1e1a55",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+        "config_id": "A1_word_bm25",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "word",
+          "method": "bm25",
+          "min_score": 1,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "2aa8068df9df1e3756b2265a578ce5b28d182e1b138129ccb73b82cf2fdb3587",
+        "original_execution_identity_sha256": "9b256a2830e2b77efbcb74915ef937718b402625f473bfd0d123d6f5881170bc",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "bm25",
+          "min_score": 1,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "7c39cf2ffad4dbe64755e35da11a693c575cfc47d81feb58f887b1f89414d85b"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fafc1afdacde74204f32fbd3e464c4eb2de37eec80ccc5aefcfb18b4dcf739dd",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+        "config_id": "A2_char",
+        "registered_family": "A2",
+        "raw_parameters": {
+          "family": "A2",
+          "mode": "char",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "original_route_identity_sha256": "04e03d75c7896ee59f7040d05fd5e8ac7feae4422c217ce08e64666bea9a6236",
+        "original_execution_identity_sha256": "7d22d366f5a7787ce10e5b642eafa391e2dbff39a1b5162f7e6941df5728acaf",
+        "route_root": "packages/zero_model_refoundation/a2.mjs",
+        "route_symbol": "routeA2",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "da425c294f5708220f1d65ccb06acdfff8a665898d672cb2bcd27a57bb054aac",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+        "config_id": "A2_word",
+        "registered_family": "A2",
+        "raw_parameters": {
+          "family": "A2",
+          "mode": "word",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "original_route_identity_sha256": "e8c1084fb47ccd0d466f259ab181d3773d11086880d1496c3ede2cc060fb535e",
+        "original_execution_identity_sha256": "7f7799319f98b038787b26f7633ce95956646dc8b4bd7d24d1937526ea4b5bf6",
+        "route_root": "packages/zero_model_refoundation/a2.mjs",
+        "route_symbol": "routeA2",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "722cd3cabeef430c784e3bb57a0cb7046ec78f23d04ed8665f2c11cd487e0d21"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "588fe5f931bcb82878741b44c145b12c67e57fd5aa99f519456b107b17781661",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+        "config_id": "A1_char_tfidf",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "char",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "08b61c0beb95a56a18ac9d47f58bcc4c384fc3dffbbc38c9e63039b267d13a0a",
+        "original_execution_identity_sha256": "c90df081116548c60d4f49164c9d31aa490b789c856f1f0d8c673d42f463efef",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "ee7eed90ab04f9e3bb42869c21a2839f44cef97f9fcd470490ae86274994e76a",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+        "config_id": "A1_char_bm25",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "char",
+          "method": "bm25",
+          "min_score": 1,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "b0c1e92213c4fd5bd4f911108dd09242f53b2972a20e377db0d1218078635c52",
+        "original_execution_identity_sha256": "1caa9502fd765d46483dd61576fb695dbab437545d26ab819498eea77e2178c5",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "bm25",
+          "min_score": 1,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "3a9704cf85e7cc193d58665133541ce793516ed40b42b59c50e39d2e0ab35e52",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+        "config_id": "A2_char",
+        "registered_family": "A2",
+        "raw_parameters": {
+          "family": "A2",
+          "mode": "char",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "original_route_identity_sha256": "04e03d75c7896ee59f7040d05fd5e8ac7feae4422c217ce08e64666bea9a6236",
+        "original_execution_identity_sha256": "88c3696bec2bfa5811968f8cef81866b63bd08901e35aca6c69f5f52bd085884",
+        "route_root": "packages/zero_model_refoundation/a2.mjs",
+        "route_symbol": "routeA2",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "da425c294f5708220f1d65ccb06acdfff8a665898d672cb2bcd27a57bb054aac",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+        "config_id": "A3_char",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "2855b6d4dbc35240b0c48ee05ea761ce6cec4da0cda6eb7de56d9a1c639ec0a8",
+        "original_execution_identity_sha256": "a0ff29baa96ec5e77117637ed1e28589a3fb79513af0cfc4d80bf97d005656d2",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+        "config_id": "A3_word",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "87740df138b43470763b2f68f5b7eee04ac222c0224931562ea1fc41a0b93a50",
+        "original_execution_identity_sha256": "4f831b3bc840fe692960842866042f100d40ae477092602c9147f09919c3a7f5",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+        "config_id": "A3_char_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "241c54a3f07f3128488245a279b6a48764c50569aa05fc0e86e63fabcc97e6a0",
+        "original_execution_identity_sha256": "26147ccff6dd8194cbbe5e96660a72b8f8853b0799375db466e03ce84e9a9ea2",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+        "config_id": "A3_word_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "c69a602557007a0ca4d5c159746e9267c12c5e9c810faf67e14f4c21a09d6829",
+        "original_execution_identity_sha256": "2671f91466c11dec9cd969b36b5dd3d5d4945080609a2508736fae35b1c4f5d2",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+        "config_id": "A6_char_fixed",
+        "registered_family": "A6",
+        "raw_parameters": {
+          "family": "A6",
+          "mode": "char",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "goal_min_score": 0.08,
+          "goal_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "ef39cbf7aae3b0eb197315df650526f67ee16953b904e0440b9f219492aeff28",
+        "original_execution_identity_sha256": "537d1cfdc2fcd0032b51eecba132413a556b4afea6ff6a4443dcaa921adff8f7",
+        "route_root": "packages/zero_model_refoundation/a6.mjs",
+        "route_symbol": "routeA6",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_scope.mjs",
+            "sha256": "c933dbf6e2e95aec3f0e698eefee6ecb92abe3e5124ee6f950d8ca29b4e86336"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6.mjs",
+            "sha256": "f53e29b6e5048c8431275709c5d2c3b1dd89fa898b7830e9da384344329b7d89"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "goal_min_score": 0.08,
+          "goal_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "83745703f2ac28d42bd8a67f6f0096944830638a8b6a741538a11f7273a1b01c",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+        "config_id": "A6_word_fixed",
+        "registered_family": "A6",
+        "raw_parameters": {
+          "family": "A6",
+          "mode": "word",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "goal_min_score": 0.08,
+          "goal_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "d9d9f89e61f97273a8693fef92558a716c4c3cec7eb282e47fb5ab1d911f5955",
+        "original_execution_identity_sha256": "16d2d90bcad6c665f2d4efb06d7c04d9193609f10b5c4a339a6709ad9a4cc957",
+        "route_root": "packages/zero_model_refoundation/a6.mjs",
+        "route_symbol": "routeA6",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_scope.mjs",
+            "sha256": "c933dbf6e2e95aec3f0e698eefee6ecb92abe3e5124ee6f950d8ca29b4e86336"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6.mjs",
+            "sha256": "f53e29b6e5048c8431275709c5d2c3b1dd89fa898b7830e9da384344329b7d89"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "goal_min_score": 0.08,
+          "goal_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "51df475b5de898f270e9417277e8388994de6d0c64f7f3300e47e4a54c435f17",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+        "config_id": "A3_char_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "241c54a3f07f3128488245a279b6a48764c50569aa05fc0e86e63fabcc97e6a0",
+        "original_execution_identity_sha256": "5525fc50c3d9909c3b39fb592a648dfb5068a4767b4ccc07290049d12649fdb1",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+        "config_id": "C1_char_fixed",
+        "registered_family": "C1",
+        "raw_parameters": {
+          "family": "C1",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "a9856337d907bd05196c1cc68c66ffc3b206861278a93906774b0f761762bd22",
+        "original_execution_identity_sha256": "175b50d2766221d0849280afaf9bac7fdb53c6294dd52c4a2bf38c28532701b0",
+        "route_root": "packages/zero_model_refoundation/c1_context_multi.mjs",
+        "route_symbol": "routeC1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/c1_context_multi.mjs",
+            "sha256": "5ebb2ab75aa0267b7ccd5489590c9e6ee6248ae957938d182725cc0762522447"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "81a2c740d9b7303791e667955994bda304ae5ced6b24bf1bee77e4ad8fcb398b",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+        "config_id": "A3_word_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "c69a602557007a0ca4d5c159746e9267c12c5e9c810faf67e14f4c21a09d6829",
+        "original_execution_identity_sha256": "3d895f121147ac6106f6237c817cbe9129ace07bd40e2324b64c0b815da35fad",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+        "config_id": "C1_word_fixed",
+        "registered_family": "C1",
+        "raw_parameters": {
+          "family": "C1",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "3e5a2d265fa38ed8c058443a63af4e19f2518e50df48c99a5512fd902f6e67e3",
+        "original_execution_identity_sha256": "9121f9f98bff81553202c99a41119dbe80e16e8894d61fcd6efc8d39f25500d6",
+        "route_root": "packages/zero_model_refoundation/c1_context_multi.mjs",
+        "route_symbol": "routeC1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/c1_context_multi.mjs",
+            "sha256": "5ebb2ab75aa0267b7ccd5489590c9e6ee6248ae957938d182725cc0762522447"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "a5ebf8a7c7f7b31876cddeeead7741ea1edd423c062760178a6e7d0f4663efe0",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+        "config_id": "A3_char_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "241c54a3f07f3128488245a279b6a48764c50569aa05fc0e86e63fabcc97e6a0",
+        "original_execution_identity_sha256": "48bbf0fbd128950eaa2e29db4ca07c6d5c0fd9ec01bd25a0c2848b19d1c54b83",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+        "config_id": "C1_char_fixed",
+        "registered_family": "C1",
+        "raw_parameters": {
+          "family": "C1",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "a9856337d907bd05196c1cc68c66ffc3b206861278a93906774b0f761762bd22",
+        "original_execution_identity_sha256": "a5272ce37989ce04ec973d24558b3bf1dc10d9c00f9e9237291fde9a484d1b3b",
+        "route_root": "packages/zero_model_refoundation/c1_context_multi.mjs",
+        "route_symbol": "routeC1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/c1_context_multi.mjs",
+            "sha256": "5ebb2ab75aa0267b7ccd5489590c9e6ee6248ae957938d182725cc0762522447"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "81a2c740d9b7303791e667955994bda304ae5ced6b24bf1bee77e4ad8fcb398b",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+        "config_id": "C1R1_char_fixed",
+        "registered_family": "C1R1",
+        "raw_parameters": {
+          "family": "C1R1",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "d72610f21efbc724fcad9fdfaa3f4d97ad70cde52b743fd8821980580d671ce5",
+        "original_execution_identity_sha256": "4a3ff00777e974bf87c7470d4aa854fd0db02aae94f7a9751de8bfaca8f8095c",
+        "route_root": "packages/zero_model_refoundation/c1_r1_context_multi.mjs",
+        "route_symbol": "routeC1R1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/c1_r1_context_multi.mjs",
+            "sha256": "76f8d149f2e50d0064ea62479a464f85f792274190fdba3e1c6dcfbb87e401e5"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "75477de522439e42db36aa182994348e7909684ae5bb4fac343582f3d2fa5ba3",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+        "config_id": "A3_word_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "c69a602557007a0ca4d5c159746e9267c12c5e9c810faf67e14f4c21a09d6829",
+        "original_execution_identity_sha256": "4adbb71aaee494de75f0e178e1ebb37ca4bd6c90420b0ea36b5e6bee5e8ca14e",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+        "config_id": "C1_word_fixed",
+        "registered_family": "C1",
+        "raw_parameters": {
+          "family": "C1",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "3e5a2d265fa38ed8c058443a63af4e19f2518e50df48c99a5512fd902f6e67e3",
+        "original_execution_identity_sha256": "6bd936c3988d2cd283cc37ef2c7d40ee57e0317c6b55cef95f05de8a80c0518a",
+        "route_root": "packages/zero_model_refoundation/c1_context_multi.mjs",
+        "route_symbol": "routeC1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/c1_context_multi.mjs",
+            "sha256": "5ebb2ab75aa0267b7ccd5489590c9e6ee6248ae957938d182725cc0762522447"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "a5ebf8a7c7f7b31876cddeeead7741ea1edd423c062760178a6e7d0f4663efe0",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+        "config_id": "C1R1_word_fixed",
+        "registered_family": "C1R1",
+        "raw_parameters": {
+          "family": "C1R1",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "d3172e7fde2ae76561d2e313bb69b3cae45f703fbf3ce886c53d6d2668865669",
+        "original_execution_identity_sha256": "d774c974ec8ecd590d43aa14c798d5616ca18a0fb4222fd8361504bbbd5daf13",
+        "route_root": "packages/zero_model_refoundation/c1_r1_context_multi.mjs",
+        "route_symbol": "routeC1R1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/c1_r1_context_multi.mjs",
+            "sha256": "76f8d149f2e50d0064ea62479a464f85f792274190fdba3e1c6dcfbb87e401e5"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02,
+          "context_min_score": 0.08,
+          "context_min_margin": 0.05,
+          "multi_min_score": 0.08,
+          "multi_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "13a3077b1dad85c2701554b5b1aa0879387e492e277f8631641b9aecdacc7f0d",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+        "config_id": "A1_char_fixed",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "char",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "08b61c0beb95a56a18ac9d47f58bcc4c384fc3dffbbc38c9e63039b267d13a0a",
+        "original_execution_identity_sha256": "f6021e9510efc8d2106a57ef5c975a13b28cebd9104f2db9f13de2e55152ae1b",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "ee7eed90ab04f9e3bb42869c21a2839f44cef97f9fcd470490ae86274994e76a",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+        "config_id": "A3_char_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "2855b6d4dbc35240b0c48ee05ea761ce6cec4da0cda6eb7de56d9a1c639ec0a8",
+        "original_execution_identity_sha256": "6bacd105e0840fc025b22e27d5298e2e48839131ea6450663b8698f96679d834",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+        "config_id": "A7_char_default",
+        "registered_family": "A7",
+        "raw_parameters": {
+          "family": "A7",
+          "mode": "char",
+          "min_score": 0.25,
+          "min_margin": 0.05,
+          "min_matched_features": 2
+        },
+        "original_route_identity_sha256": "638dae3abee0b32f40e24f78bbc28e1acc92ad1dcb099eddda394e5e0cfc84a3",
+        "original_execution_identity_sha256": "d7caafe17ddf0c03ad1234b5b12986256b9e069c49d7495eb9b8b400fe02a772",
+        "route_root": "packages/zero_model_refoundation/a7_case_memory.mjs",
+        "route_symbol": "routeA7",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a7_case_memory.mjs",
+            "sha256": "a9b6c5a55e8bb7e9f8df3d51c41891736cf6133cb98f91440ba4436d6c7d4013"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.25,
+          "min_margin": 0.05,
+          "min_matched_features": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "d0ed330bd67e917732027f0ecda4d91547693fdc010b09d1ed1500506e5fc820"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "f59f4eec7ebd7f2ad43e25a0ec94332e5398c51d7acad228c17d2228378d2670",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+        "config_id": "A1_word_fixed",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "word",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "43b8343b56200ef314fed22ed4d865efc65b806d8c614985192ef52577276fa2",
+        "original_execution_identity_sha256": "494cc9534b15c95a7bd7ae3fc94f42f060e7adb0d366605f95319cd8d5b9b3ec",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "7c39cf2ffad4dbe64755e35da11a693c575cfc47d81feb58f887b1f89414d85b"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "5c8a0852e4413cb35f382916b62ea681ad8b9fd3941e32b447cdbe00ec1e1a55",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+        "config_id": "A3_word_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "87740df138b43470763b2f68f5b7eee04ac222c0224931562ea1fc41a0b93a50",
+        "original_execution_identity_sha256": "280b91adb636e0bb8ae56bb87fa22980bc1203837b9f903f35179a43e28be5f8",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+        "config_id": "A7_word_default",
+        "registered_family": "A7",
+        "raw_parameters": {
+          "family": "A7",
+          "mode": "word",
+          "min_score": 0.25,
+          "min_margin": 0.05,
+          "min_matched_features": 2
+        },
+        "original_route_identity_sha256": "296420b9bdd1e53be072a0ab11163b6a39c8f0ce83debc7f41df0550bb0cb23e",
+        "original_execution_identity_sha256": "f2f071362715ef96289fc07fd7044e9a4509d02fda2ed1dafefea7d6003e40db",
+        "route_root": "packages/zero_model_refoundation/a7_case_memory.mjs",
+        "route_symbol": "routeA7",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a7_case_memory.mjs",
+            "sha256": "a9b6c5a55e8bb7e9f8df3d51c41891736cf6133cb98f91440ba4436d6c7d4013"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.25,
+          "min_margin": 0.05,
+          "min_matched_features": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "2fc2a8445687453ba51ff45a9bf223790ac85064b6896497ad1c962385eece88"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "76bdfe023b2a03f44100192e54503a961fa3ff4babf9aa29aeccdaa242514134",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+        "config_id": "A1_char_fixed",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "char",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "08b61c0beb95a56a18ac9d47f58bcc4c384fc3dffbbc38c9e63039b267d13a0a",
+        "original_execution_identity_sha256": "0242b9f988beda8712d22b2057e01e5a017e9f930a0e4304fa0f3cbf1fd9ee27",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "ee7eed90ab04f9e3bb42869c21a2839f44cef97f9fcd470490ae86274994e76a",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+        "config_id": "A3_char_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "char",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "2855b6d4dbc35240b0c48ee05ea761ce6cec4da0cda6eb7de56d9a1c639ec0a8",
+        "original_execution_identity_sha256": "b932d8c2e0851eee93bc761962133f39d970b80808af5eb8f11154d330684b26",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+        "config_id": "A1_word_fixed",
+        "registered_family": "A1",
+        "raw_parameters": {
+          "family": "A1",
+          "mode": "word",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "43b8343b56200ef314fed22ed4d865efc65b806d8c614985192ef52577276fa2",
+        "original_execution_identity_sha256": "9802a8b5b6f1cbedf41854a063089cfccb93cd5297c549297947e8ee1c376362",
+        "route_root": "packages/zero_model_refoundation/a1.mjs",
+        "route_symbol": "routeA1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "7c39cf2ffad4dbe64755e35da11a693c575cfc47d81feb58f887b1f89414d85b"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "5c8a0852e4413cb35f382916b62ea681ad8b9fd3941e32b447cdbe00ec1e1a55",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+        "config_id": "A3_word_fixed",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "mode": "word",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "87740df138b43470763b2f68f5b7eee04ac222c0224931562ea1fc41a0b93a50",
+        "original_execution_identity_sha256": "900cbda3c0f95d1ddb38c56262c988c844b1fdcc130b437fbf4d727605b6ee38",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "word",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "c15f3cccaa78c2c7deb13c3083150a66cd5b3d86b20b9afe4869003260712617"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_fresh_v01_registration.json",
+        "config_id": "A3_char_deletion_ablation",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "acab2559d97bbcdef20e0155b0a7cee548af19eaebfaac348016fa15775c49d6",
+        "original_execution_identity_sha256": "9cf8099cdfbcfe2748105fe8b84a50eccc1b37b314bac26effd8c9017b67a5f2",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_fresh_v01_registration.json",
+        "config_id": "A4_char_pair_veto",
+        "registered_family": "A4",
+        "raw_parameters": {
+          "family": "A4",
+          "base_min_score": 0.02,
+          "base_min_margin": 0.02,
+          "min_pair_support": 2
+        },
+        "original_route_identity_sha256": "e152a35cd67156196fa1eb88aff817c14f451606e5caac0edbb1a6a33853703a",
+        "original_execution_identity_sha256": "1c0b3bea730b71b07bed7a06a9c1bdc406b2d34b36b5c3babb1435d71a738cfd",
+        "route_root": "packages/zero_model_refoundation/a4_pairwise.mjs",
+        "route_symbol": "routeA4Pairs",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a4_pairwise.mjs",
+            "sha256": "0f1953760daeaf06fa69564fb1ccc1e508e58dce5f64815f29a289fc7382c6c0"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "base_min_score": 0.02,
+          "base_min_margin": 0.02,
+          "min_pair_support": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "pair_index_sha256",
+            "index_sha256": "5638e15e02a6b7f55d73a8fcbdb19302dbe63f709f5baeed5c41e6f538b71b2e"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "8168c3b81f846e1ac7a66e5b07e1fa96e25346ab43b22976c5cc3418df86918f",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+        "config_id": "A3_char_deletion_ablation",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "acab2559d97bbcdef20e0155b0a7cee548af19eaebfaac348016fa15775c49d6",
+        "original_execution_identity_sha256": "42de2331085dcf9dac510ac4e283c371c51f3a6f8693aa336c3fafd67edaacda",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+        "config_id": "A4_char_pair_veto",
+        "registered_family": "A4",
+        "raw_parameters": {
+          "family": "A4",
+          "base_min_score": 0.02,
+          "base_min_margin": 0.02,
+          "min_pair_support": 2
+        },
+        "original_route_identity_sha256": "e152a35cd67156196fa1eb88aff817c14f451606e5caac0edbb1a6a33853703a",
+        "original_execution_identity_sha256": "b8dcbf2b9661bb8662e17bc8f19d01de924475f8c95932fbfb56ff339b74ac18",
+        "route_root": "packages/zero_model_refoundation/a4_pairwise.mjs",
+        "route_symbol": "routeA4Pairs",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a4_pairwise.mjs",
+            "sha256": "0f1953760daeaf06fa69564fb1ccc1e508e58dce5f64815f29a289fc7382c6c0"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "base_min_score": 0.02,
+          "base_min_margin": 0.02,
+          "min_pair_support": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "pair_index_sha256",
+            "index_sha256": "5638e15e02a6b7f55d73a8fcbdb19302dbe63f709f5baeed5c41e6f538b71b2e"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "8168c3b81f846e1ac7a66e5b07e1fa96e25346ab43b22976c5cc3418df86918f",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+        "config_id": "A4_positive_pair_evidence",
+        "registered_family": "A4_POSITIVE",
+        "raw_parameters": {
+          "family": "A4_POSITIVE",
+          "base_min_score": 0.02,
+          "base_min_margin": 0.02,
+          "min_positive_support": 3,
+          "min_positive_margin": 2
+        },
+        "original_route_identity_sha256": "881787039dbb1e02d2457325cc54fdb6ac7cb56fe3095175d19864b35b63de75",
+        "original_execution_identity_sha256": "dfcb28bb9d09a1bd9b3442a3a914ce91e1f13e576c2a4e39f77efac9ae408125",
+        "route_root": "packages/zero_model_refoundation/a4_pair_positive.mjs",
+        "route_symbol": "routeA4PairPositive",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a4_pair_positive.mjs",
+            "sha256": "082fcdad73b4ef3cfba36518e9ffbaa351b1b0c48297d25b22a598550fd5c62b"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "base_min_score": 0.02,
+          "base_min_margin": 0.02,
+          "min_positive_support": 3,
+          "min_positive_margin": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "pair_index_sha256",
+            "index_sha256": "5638e15e02a6b7f55d73a8fcbdb19302dbe63f709f5baeed5c41e6f538b71b2e"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "69cf50a44734891750291ec2878bb5b89c04c9204b921d93ee2842baddeee982",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a5_fresh_v01_registration.json",
+        "config_id": "A3_char_deletion_ablation",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "9309b14217c8aa8d0c2e2911b558ad4c7e28bf96f2fec98ecaff616aac8338d5",
+        "original_execution_identity_sha256": "5c4f645a696973c1f0b50b5d9f3f0494f89c12e5fcaae243325793595c69a8a1",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a5_fresh_v01_registration.json",
+        "config_id": "A5_finite_state_composition",
+        "registered_family": "A5",
+        "raw_parameters": {
+          "family": "A5",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "segment_min_score": 0.08,
+          "segment_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "2155a4cfae5b627638c87cb5de0385de9868084d26e9767d06fc6391f84defc1",
+        "original_execution_identity_sha256": "dfd5795b05e8a11e501087823819dcfe3d8e2e92d914ac3893ae75e018806f0e",
+        "route_root": "packages/zero_model_refoundation/a5_composition.mjs",
+        "route_symbol": "routeA5Composition",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_composition.mjs",
+            "sha256": "98f485405b476e827bfe47a11ee71da3b9fe02941551f52e0b138fa303adb4fd"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_scope.mjs",
+            "sha256": "c933dbf6e2e95aec3f0e698eefee6ecb92abe3e5124ee6f950d8ca29b4e86336"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "segment_min_score": 0.08,
+          "segment_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "117b5b27e67f84e7ffe4bc6b5e5827b2711428afdac9a20aad4aded23b3fcb8a",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+        "config_id": "A3_char_deletion_ablation",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "9309b14217c8aa8d0c2e2911b558ad4c7e28bf96f2fec98ecaff616aac8338d5",
+        "original_execution_identity_sha256": "bd11f9283fc9e23119d726176c96723dea1d65ec17d25bfa459f1042fb3dde8c",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+        "config_id": "A5_original",
+        "registered_family": "A5",
+        "raw_parameters": {
+          "family": "A5",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "segment_min_score": 0.08,
+          "segment_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "2155a4cfae5b627638c87cb5de0385de9868084d26e9767d06fc6391f84defc1",
+        "original_execution_identity_sha256": "51d07590bfa577d2153e81df836414e53d7b9a6761d3c3cbf5ca4925db1a7cfa",
+        "route_root": "packages/zero_model_refoundation/a5_composition.mjs",
+        "route_symbol": "routeA5Composition",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_composition.mjs",
+            "sha256": "98f485405b476e827bfe47a11ee71da3b9fe02941551f52e0b138fa303adb4fd"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_scope.mjs",
+            "sha256": "c933dbf6e2e95aec3f0e698eefee6ecb92abe3e5124ee6f950d8ca29b4e86336"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "segment_min_score": 0.08,
+          "segment_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "117b5b27e67f84e7ffe4bc6b5e5827b2711428afdac9a20aad4aded23b3fcb8a",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+        "config_id": "A5_R1_no_request_guard",
+        "registered_family": "A5_R1",
+        "raw_parameters": {
+          "family": "A5_R1",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "segment_min_score": 0.08,
+          "segment_min_margin": 0.05
+        },
+        "original_route_identity_sha256": "113f2d3d7a3c250b5e6b57d0d571fb2f636a8b967aa4d7c21ce8f0befae1b24e",
+        "original_execution_identity_sha256": "6a6be0aeb2bc665fccf5187d2452dd39aa7a681c20509edb543265314a0e3384",
+        "route_root": "packages/zero_model_refoundation/a5_composition_r1.mjs",
+        "route_symbol": "routeA5CompositionR1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_composition.mjs",
+            "sha256": "98f485405b476e827bfe47a11ee71da3b9fe02941551f52e0b138fa303adb4fd"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_composition_r1.mjs",
+            "sha256": "a816be8bed0e6e08a06247f177b7be8ca3346db2d9eeb168065dbb3b0fce1fda"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a5_scope.mjs",
+            "sha256": "c933dbf6e2e95aec3f0e698eefee6ecb92abe3e5124ee6f950d8ca29b4e86336"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "full_min_score": 0.02,
+          "full_min_margin": 0.02,
+          "segment_min_score": 0.08,
+          "segment_min_margin": 0.05
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "5b6df19ca5aaa826c68ad47b89fe0690e8789228ab7d3f4461a98d4056b951c8",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+        "config_id": "A3_char_deletion_ablation",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "25f58b29e3de21a03049663eed5c86707d0af4ff3e1e72708ecbd0d2c6c4091f",
+        "original_execution_identity_sha256": "0013613ab5199cdfc850d1b15d3f1b8118541a746f00e2cb70fa70ef065b9417",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+        "config_id": "A2_char_complement_likelihood",
+        "registered_family": "A2",
+        "raw_parameters": {
+          "family": "A2",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "original_route_identity_sha256": "4dd16aa166d64810887dc4ce1bd650b9faa9f5a42832f673afabcea99aea1595",
+        "original_execution_identity_sha256": "8450d38b2c81e849598ac60bd1f8ae2b81f50369c43781387c089ab7ba122cda",
+        "route_root": "packages/zero_model_refoundation/a2.mjs",
+        "route_symbol": "routeA2",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "da425c294f5708220f1d65ccb06acdfff8a665898d672cb2bcd27a57bb054aac",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+        "config_id": "A6_complement_scope",
+        "registered_family": "A6",
+        "raw_parameters": {
+          "family": "A6",
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02,
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "rescue_min_score": 2,
+          "rescue_min_margin": 2
+        },
+        "original_route_identity_sha256": "3d231d5b68a184da719f64e72757f1e86c7a48442b25a65492e5aecfc3533836",
+        "original_execution_identity_sha256": "c45ce2913e22e8cfafeb64bc8089bc6f5fd7547ab84249ff4eba50e8fba651a3",
+        "route_root": "packages/zero_model_refoundation/a6_complement_scope.mjs",
+        "route_symbol": "routeA6ComplementScope",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_scope.mjs",
+            "sha256": "b30d2f01ed2277875c5170f7958cd773a3e9580e3ff229bcdcfa1b1897367c4f"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02,
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "rescue_min_score": 2,
+          "rescue_min_margin": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "d4c4eeb05fb01562fb1effa0f8431a0c591b74fbd06d38d865d3556a42625533",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+        "config_id": "A3_char_deletion_ablation",
+        "registered_family": "A3",
+        "raw_parameters": {
+          "family": "A3",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "original_route_identity_sha256": "25f58b29e3de21a03049663eed5c86707d0af4ff3e1e72708ecbd0d2c6c4091f",
+        "original_execution_identity_sha256": "e4a1280b3348db9a703ab4c34ff71cf9ac1918cdfcc905d0f26b26cfee2c7d3e",
+        "route_root": "packages/zero_model_refoundation/a3.mjs",
+        "route_symbol": "routeA3",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "min_score": 0.02,
+          "min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+        "config_id": "A2_char_complement_likelihood",
+        "registered_family": "A2",
+        "raw_parameters": {
+          "family": "A2",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "original_route_identity_sha256": "4dd16aa166d64810887dc4ce1bd650b9faa9f5a42832f673afabcea99aea1595",
+        "original_execution_identity_sha256": "f76a3cd77d91ea905121cf6a57b63a1ae4544c399f614eabf120ca6b8287d761",
+        "route_root": "packages/zero_model_refoundation/a2.mjs",
+        "route_symbol": "routeA2",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "alpha": 0.5,
+          "min_score": 0,
+          "min_margin": 0.5
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "da425c294f5708220f1d65ccb06acdfff8a665898d672cb2bcd27a57bb054aac",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+        "config_id": "A6_complement_scope",
+        "registered_family": "A6",
+        "raw_parameters": {
+          "family": "A6",
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02,
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "rescue_min_score": 2,
+          "rescue_min_margin": 2
+        },
+        "original_route_identity_sha256": "3d231d5b68a184da719f64e72757f1e86c7a48442b25a65492e5aecfc3533836",
+        "original_execution_identity_sha256": "2f4c0d4207b826bd013a05d9ab41ebbb161f911ec8d86faf9f1578256ebcb4e2",
+        "route_root": "packages/zero_model_refoundation/a6_complement_scope.mjs",
+        "route_symbol": "routeA6ComplementScope",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_scope.mjs",
+            "sha256": "b30d2f01ed2277875c5170f7958cd773a3e9580e3ff229bcdcfa1b1897367c4f"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02,
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "rescue_min_score": 2,
+          "rescue_min_margin": 2
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "d4c4eeb05fb01562fb1effa0f8431a0c591b74fbd06d38d865d3556a42625533",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+        "config_id": "A6_R1_a2_primary",
+        "registered_family": "A6_R1",
+        "raw_parameters": {
+          "family": "A6_R1",
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02
+        },
+        "original_route_identity_sha256": "a68d832a0df3a3927212bef25f4faeb99968d50f51c904745f0fd83d681cb29c",
+        "original_execution_identity_sha256": "088ebecb4759615a3ebc87e08b76ef68cef6c63ef1714a2c6041b36ff69f5683",
+        "route_root": "packages/zero_model_refoundation/a6_complement_r1.mjs",
+        "route_symbol": "routeA6R1",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_r1.mjs",
+            "sha256": "90db42bf0862f2b4832e3c4056bf94cb2c327f3b54405255cf7ee85779ec6d0c"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_scope.mjs",
+            "sha256": "b30d2f01ed2277875c5170f7958cd773a3e9580e3ff229bcdcfa1b1897367c4f"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "c2e98cebdadf8ac695cc36d0b876ce6e489ca9dc954d0b77816d561b305a1cd3",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      },
+      {
+        "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+        "config_id": "A6_R2_final_repair",
+        "registered_family": "A6_R2",
+        "raw_parameters": {
+          "family": "A6_R2",
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02
+        },
+        "original_route_identity_sha256": "126c5fcde93563eb63ccbc02f0c0894bcbd0318dcfb4820546ee91af84d246f6",
+        "original_execution_identity_sha256": "5b459ea6f27fdd8b7150e5c9ae498f262acb9329e5867545df96fae3159f3691",
+        "route_root": "packages/zero_model_refoundation/a6_complement_r2.mjs",
+        "route_symbol": "routeA6R2",
+        "runtime_pins": [
+          {
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a2.mjs",
+            "sha256": "98fe21d2364f55ac5e81e45a03f72d0e479008f297f6b0ca0e11c0cbe6391866"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a3.mjs",
+            "sha256": "8d7204eb15fa77537adff88a1f97a547ca8ff37d3b5f98b69341e91a299ff1c2"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_r1.mjs",
+            "sha256": "90db42bf0862f2b4832e3c4056bf94cb2c327f3b54405255cf7ee85779ec6d0c"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_r2.mjs",
+            "sha256": "d1d97cf8fbc97692e8afd2279974f5f61006eac8624933501168b1b2792d9d5a"
+          },
+          {
+            "path": "packages/zero_model_refoundation/a6_complement_scope.mjs",
+            "sha256": "b30d2f01ed2277875c5170f7958cd773a3e9580e3ff229bcdcfa1b1897367c4f"
+          }
+        ],
+        "effective_feature_mode": "char",
+        "effective_options": {
+          "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+          "a2_alpha": 0.5,
+          "a2_min_score": 0,
+          "a2_min_margin": 0.5,
+          "a3_min_score": 0.02,
+          "a3_min_margin": 0.02
+        },
+        "index_roles": [
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "digest_field": "index_sha256",
+            "index_sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "defaults_applied": [],
+        "normalized_static_identity_sha256": "1db014f60ddf0281f3e6e5ae4cd22830eb73dc7c6ec86dfe6bc0b7c8757b6fd5",
+        "alias_scope": "DIRECT_ROUTE_INDEX_OPTIONS_ONLY_NOT_COMPLETE_EXECUTION_OR_STABLE_ALLOCATION"
+      }
+    ],
+    "alias_groups": [
+      {
+        "sha256": "ee7eed90ab04f9e3bb42869c21a2839f44cef97f9fcd470490ae86274994e76a",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+            "config_id": "A1_char_tfidf",
+            "original_execution_identity_sha256": "b25f050ca54ca79a6bd204547dabf156b93946abf693a11dc94f6a2614b3274d"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+            "config_id": "A1_char_tfidf",
+            "original_execution_identity_sha256": "c90df081116548c60d4f49164c9d31aa490b789c856f1f0d8c673d42f463efef"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+            "config_id": "A1_char_fixed",
+            "original_execution_identity_sha256": "f6021e9510efc8d2106a57ef5c975a13b28cebd9104f2db9f13de2e55152ae1b"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+            "config_id": "A1_char_fixed",
+            "original_execution_identity_sha256": "0242b9f988beda8712d22b2057e01e5a017e9f930a0e4304fa0f3cbf1fd9ee27"
+          }
+        ]
+      },
+      {
+        "sha256": "3a9704cf85e7cc193d58665133541ce793516ed40b42b59c50e39d2e0ab35e52",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+            "config_id": "A1_char_bm25",
+            "original_execution_identity_sha256": "720dde9af48f292f408ea5e82092f5a1733fd1aae0ecd114413d3e6b30bde101"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+            "config_id": "A1_char_bm25",
+            "original_execution_identity_sha256": "1caa9502fd765d46483dd61576fb695dbab437545d26ab819498eea77e2178c5"
+          }
+        ]
+      },
+      {
+        "sha256": "5c8a0852e4413cb35f382916b62ea681ad8b9fd3941e32b447cdbe00ec1e1a55",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+            "config_id": "A1_word_tfidf",
+            "original_execution_identity_sha256": "0e4bbb031b453bfa7938d1125867ec7022e51a1adf3284d8bff77f2f03355eca"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+            "config_id": "A1_word_fixed",
+            "original_execution_identity_sha256": "494cc9534b15c95a7bd7ae3fc94f42f060e7adb0d366605f95319cd8d5b9b3ec"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+            "config_id": "A1_word_fixed",
+            "original_execution_identity_sha256": "9802a8b5b6f1cbedf41854a063089cfccb93cd5297c549297947e8ee1c376362"
+          }
+        ]
+      },
+      {
+        "sha256": "fafc1afdacde74204f32fbd3e464c4eb2de37eec80ccc5aefcfb18b4dcf739dd",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+            "config_id": "A1_word_bm25",
+            "original_execution_identity_sha256": "9b256a2830e2b77efbcb74915ef937718b402625f473bfd0d123d6f5881170bc"
+          }
+        ]
+      },
+      {
+        "sha256": "da425c294f5708220f1d65ccb06acdfff8a665898d672cb2bcd27a57bb054aac",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+            "config_id": "A2_char",
+            "original_execution_identity_sha256": "7d22d366f5a7787ce10e5b642eafa391e2dbff39a1b5162f7e6941df5728acaf"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+            "config_id": "A2_char",
+            "original_execution_identity_sha256": "88c3696bec2bfa5811968f8cef81866b63bd08901e35aca6c69f5f52bd085884"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+            "config_id": "A2_char_complement_likelihood",
+            "original_execution_identity_sha256": "8450d38b2c81e849598ac60bd1f8ae2b81f50369c43781387c089ab7ba122cda"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+            "config_id": "A2_char_complement_likelihood",
+            "original_execution_identity_sha256": "f76a3cd77d91ea905121cf6a57b63a1ae4544c399f614eabf120ca6b8287d761"
+          }
+        ]
+      },
+      {
+        "sha256": "588fe5f931bcb82878741b44c145b12c67e57fd5aa99f519456b107b17781661",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a12_challenge_v02_registration.json",
+            "config_id": "A2_word",
+            "original_execution_identity_sha256": "7f7799319f98b038787b26f7633ce95956646dc8b4bd7d24d1937526ea4b5bf6"
+          }
+        ]
+      },
+      {
+        "sha256": "fd9ad6013fe9a793d8ac5091653f29d1ed0c7a7839c9b4aae8213124022473b9",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+            "config_id": "A3_char",
+            "original_execution_identity_sha256": "a0ff29baa96ec5e77117637ed1e28589a3fb79513af0cfc4d80bf97d005656d2"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+            "config_id": "A3_char_fixed",
+            "original_execution_identity_sha256": "26147ccff6dd8194cbbe5e96660a72b8f8853b0799375db466e03ce84e9a9ea2"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+            "config_id": "A3_char_fixed",
+            "original_execution_identity_sha256": "5525fc50c3d9909c3b39fb592a648dfb5068a4767b4ccc07290049d12649fdb1"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+            "config_id": "A3_char_fixed",
+            "original_execution_identity_sha256": "48bbf0fbd128950eaa2e29db4ca07c6d5c0fd9ec01bd25a0c2848b19d1c54b83"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+            "config_id": "A3_char_fixed",
+            "original_execution_identity_sha256": "6bacd105e0840fc025b22e27d5298e2e48839131ea6450663b8698f96679d834"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+            "config_id": "A3_char_fixed",
+            "original_execution_identity_sha256": "b932d8c2e0851eee93bc761962133f39d970b80808af5eb8f11154d330684b26"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_fresh_v01_registration.json",
+            "config_id": "A3_char_deletion_ablation",
+            "original_execution_identity_sha256": "9cf8099cdfbcfe2748105fe8b84a50eccc1b37b314bac26effd8c9017b67a5f2"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+            "config_id": "A3_char_deletion_ablation",
+            "original_execution_identity_sha256": "42de2331085dcf9dac510ac4e283c371c51f3a6f8693aa336c3fafd67edaacda"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a5_fresh_v01_registration.json",
+            "config_id": "A3_char_deletion_ablation",
+            "original_execution_identity_sha256": "5c4f645a696973c1f0b50b5d9f3f0494f89c12e5fcaae243325793595c69a8a1"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+            "config_id": "A3_char_deletion_ablation",
+            "original_execution_identity_sha256": "bd11f9283fc9e23119d726176c96723dea1d65ec17d25bfa459f1042fb3dde8c"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+            "config_id": "A3_char_deletion_ablation",
+            "original_execution_identity_sha256": "0013613ab5199cdfc850d1b15d3f1b8118541a746f00e2cb70fa70ef065b9417"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+            "config_id": "A3_char_deletion_ablation",
+            "original_execution_identity_sha256": "e4a1280b3348db9a703ab4c34ff71cf9ac1918cdfcc905d0f26b26cfee2c7d3e"
+          }
+        ]
+      },
+      {
+        "sha256": "32e67260942ac0c75c761f2a7e46443478618998958899cc4de9fd22f6a31ce6",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a123_challenge_v03_registration.json",
+            "config_id": "A3_word",
+            "original_execution_identity_sha256": "4f831b3bc840fe692960842866042f100d40ae477092602c9147f09919c3a7f5"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+            "config_id": "A3_word_fixed",
+            "original_execution_identity_sha256": "2671f91466c11dec9cd969b36b5dd3d5d4945080609a2508736fae35b1c4f5d2"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+            "config_id": "A3_word_fixed",
+            "original_execution_identity_sha256": "3d895f121147ac6106f6237c817cbe9129ace07bd40e2324b64c0b815da35fad"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+            "config_id": "A3_word_fixed",
+            "original_execution_identity_sha256": "4adbb71aaee494de75f0e178e1ebb37ca4bd6c90420b0ea36b5e6bee5e8ca14e"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+            "config_id": "A3_word_fixed",
+            "original_execution_identity_sha256": "280b91adb636e0bb8ae56bb87fa22980bc1203837b9f903f35179a43e28be5f8"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_triad_v01_registration.json",
+            "config_id": "A3_word_fixed",
+            "original_execution_identity_sha256": "900cbda3c0f95d1ddb38c56262c988c844b1fdcc130b437fbf4d727605b6ee38"
+          }
+        ]
+      },
+      {
+        "sha256": "83745703f2ac28d42bd8a67f6f0096944830638a8b6a741538a11f7273a1b01c",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+            "config_id": "A6_char_fixed",
+            "original_execution_identity_sha256": "537d1cfdc2fcd0032b51eecba132413a556b4afea6ff6a4443dcaa921adff8f7"
+          }
+        ]
+      },
+      {
+        "sha256": "51df475b5de898f270e9417277e8388994de6d0c64f7f3300e47e4a54c435f17",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a356_challenge_v04_registration.json",
+            "config_id": "A6_word_fixed",
+            "original_execution_identity_sha256": "16d2d90bcad6c665f2d4efb06d7c04d9193609f10b5c4a339a6709ad9a4cc957"
+          }
+        ]
+      },
+      {
+        "sha256": "81a2c740d9b7303791e667955994bda304ae5ced6b24bf1bee77e4ad8fcb398b",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+            "config_id": "C1_char_fixed",
+            "original_execution_identity_sha256": "175b50d2766221d0849280afaf9bac7fdb53c6294dd52c4a2bf38c28532701b0"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+            "config_id": "C1_char_fixed",
+            "original_execution_identity_sha256": "a5272ce37989ce04ec973d24558b3bf1dc10d9c00f9e9237291fde9a484d1b3b"
+          }
+        ]
+      },
+      {
+        "sha256": "a5ebf8a7c7f7b31876cddeeead7741ea1edd423c062760178a6e7d0f4663efe0",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_challenge_v05_registration.json",
+            "config_id": "C1_word_fixed",
+            "original_execution_identity_sha256": "9121f9f98bff81553202c99a41119dbe80e16e8894d61fcd6efc8d39f25500d6"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+            "config_id": "C1_word_fixed",
+            "original_execution_identity_sha256": "6bd936c3988d2cd283cc37ef2c7d40ee57e0317c6b55cef95f05de8a80c0518a"
+          }
+        ]
+      },
+      {
+        "sha256": "75477de522439e42db36aa182994348e7909684ae5bb4fac343582f3d2fa5ba3",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+            "config_id": "C1R1_char_fixed",
+            "original_execution_identity_sha256": "4a3ff00777e974bf87c7470d4aa854fd0db02aae94f7a9751de8bfaca8f8095c"
+          }
+        ]
+      },
+      {
+        "sha256": "13a3077b1dad85c2701554b5b1aa0879387e492e277f8631641b9aecdacc7f0d",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json",
+            "config_id": "C1R1_word_fixed",
+            "original_execution_identity_sha256": "d774c974ec8ecd590d43aa14c798d5616ca18a0fb4222fd8361504bbbd5daf13"
+          }
+        ]
+      },
+      {
+        "sha256": "f59f4eec7ebd7f2ad43e25a0ec94332e5398c51d7acad228c17d2228378d2670",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+            "config_id": "A7_char_default",
+            "original_execution_identity_sha256": "d7caafe17ddf0c03ad1234b5b12986256b9e069c49d7495eb9b8b400fe02a772"
+          }
+        ]
+      },
+      {
+        "sha256": "76bdfe023b2a03f44100192e54503a961fa3ff4babf9aa29aeccdaa242514134",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a7_dev_v01_registration.json",
+            "config_id": "A7_word_default",
+            "original_execution_identity_sha256": "f2f071362715ef96289fc07fd7044e9a4509d02fda2ed1dafefea7d6003e40db"
+          }
+        ]
+      },
+      {
+        "sha256": "8168c3b81f846e1ac7a66e5b07e1fa96e25346ab43b22976c5cc3418df86918f",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_fresh_v01_registration.json",
+            "config_id": "A4_char_pair_veto",
+            "original_execution_identity_sha256": "1c0b3bea730b71b07bed7a06a9c1bdc406b2d34b36b5c3babb1435d71a738cfd"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+            "config_id": "A4_char_pair_veto",
+            "original_execution_identity_sha256": "b8dcbf2b9661bb8662e17bc8f19d01de924475f8c95932fbfb56ff339b74ac18"
+          }
+        ]
+      },
+      {
+        "sha256": "69cf50a44734891750291ec2878bb5b89c04c9204b921d93ee2842baddeee982",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json",
+            "config_id": "A4_positive_pair_evidence",
+            "original_execution_identity_sha256": "dfcb28bb9d09a1bd9b3442a3a914ce91e1f13e576c2a4e39f77efac9ae408125"
+          }
+        ]
+      },
+      {
+        "sha256": "117b5b27e67f84e7ffe4bc6b5e5827b2711428afdac9a20aad4aded23b3fcb8a",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a5_fresh_v01_registration.json",
+            "config_id": "A5_finite_state_composition",
+            "original_execution_identity_sha256": "dfd5795b05e8a11e501087823819dcfe3d8e2e92d914ac3893ae75e018806f0e"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+            "config_id": "A5_original",
+            "original_execution_identity_sha256": "51d07590bfa577d2153e81df836414e53d7b9a6761d3c3cbf5ca4925db1a7cfa"
+          }
+        ]
+      },
+      {
+        "sha256": "5b6df19ca5aaa826c68ad47b89fe0690e8789228ab7d3f4461a98d4056b951c8",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json",
+            "config_id": "A5_R1_no_request_guard",
+            "original_execution_identity_sha256": "6a6be0aeb2bc665fccf5187d2452dd39aa7a681c20509edb543265314a0e3384"
+          }
+        ]
+      },
+      {
+        "sha256": "d4c4eeb05fb01562fb1effa0f8431a0c591b74fbd06d38d865d3556a42625533",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json",
+            "config_id": "A6_complement_scope",
+            "original_execution_identity_sha256": "c45ce2913e22e8cfafeb64bc8089bc6f5fd7547ab84249ff4eba50e8fba651a3"
+          },
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+            "config_id": "A6_complement_scope",
+            "original_execution_identity_sha256": "2f4c0d4207b826bd013a05d9ab41ebbb161f911ec8d86faf9f1578256ebcb4e2"
+          }
+        ]
+      },
+      {
+        "sha256": "c2e98cebdadf8ac695cc36d0b876ce6e489ca9dc954d0b77816d561b305a1cd3",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+            "config_id": "A6_R1_a2_primary",
+            "original_execution_identity_sha256": "088ebecb4759615a3ebc87e08b76ef68cef6c63ef1714a2c6041b36ff69f5683"
+          }
+        ]
+      },
+      {
+        "sha256": "1db014f60ddf0281f3e6e5ae4cd22830eb73dc7c6ec86dfe6bc0b7c8757b6fd5",
+        "members": [
+          {
+            "registration_path": "data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json",
+            "config_id": "A6_R2_final_repair",
+            "original_execution_identity_sha256": "5b459ea6f27fdd8b7150e5c9ae498f262acb9329e5867545df96fae3159f3691"
+          }
+        ]
+      }
+    ],
+    "equivalence_scope": "FIXED_REVIEWED_DIRECT_ROUTE_OPTIONS_NOT_AST_EXECUTION_EQUIVALENCE_NOT_BUDGET_SPENDING",
+    "repair_aliases": "DIFFERENT_RUNTIME_ROOTS_AND_DEPENDENCY_PINS_NEVER_COLLAPSED_REPAIR_LEDGER_UNCHANGED",
+    "semantic_evaluations": 0,
+    "source_packet_reads": 0,
+    "independent_generation_credit": 0,
+    "stable_configuration_allowance_remaining": null,
+    "accounting_status": "INCONCLUSIVE_HISTORICAL_STABLE_ALLOCATIONS_UNRECONCILED",
+    "new_stable_competition": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "saturation_ceiling": "NOT_ESTABLISHED"
+  }
+}
