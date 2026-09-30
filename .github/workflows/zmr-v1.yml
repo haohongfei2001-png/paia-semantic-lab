@@ -191,6 +191,8 @@ jobs:
             development.push('data/zero_model_refoundation/development/provisional_tune_v0.4_slice5.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_ORDINARY_DEV_V04_CAL_SLICE1_INTAKE.md');
             development.push('data/zero_model_refoundation/development/provisional_cal_v0.4_slice1.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_ORDINARY_DEV_V04_CAL_FULL144_FREEZE.md');
+            development.push('data/zero_model_refoundation/development/provisional_cal_v0.4_remaining.json');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {

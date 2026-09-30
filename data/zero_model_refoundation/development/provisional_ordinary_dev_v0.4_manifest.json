@@ -4,9 +4,9 @@
   "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
   "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
   "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
-  "source_main": "6a4708e75ab8a2b9a8ce7dc14139c35984e06a2d",
-  "status": "PARTIAL_DEV_INTAKE_ORDINARY_TUNE_FULL144_CAL_SAFETY_INCOMPLETE",
-  "frozen_at": "2026-09-30T11:30:06Z",
+  "source_main": "8f29615ec5054801bf5c3eafc9190f3aa2056ae4",
+  "status": "ORDINARY_TUNE_CAL_FULL144_SAFETY_INCOMPLETE_NOT_QUALIFIED",
+  "frozen_at": "2026-09-30T12:12:51Z",
   "splits": {
     "TUNE_PROVISIONAL": {
       "rows": 432,
@@ -49,14 +49,14 @@
       ]
     },
     "CAL_PROVISIONAL": {
-      "rows": 54,
-      "topics": 18,
-      "missing_topics": 126,
-      "remaining_ordinary_rows": 378,
+      "rows": 432,
+      "topics": 144,
+      "missing_topics": 0,
+      "remaining_ordinary_rows": 0,
       "language_counts": {
-        "zh": 18,
-        "en": 18,
-        "mixed": 18
+        "zh": 144,
+        "en": 144,
+        "mixed": 144
       },
       "exposure": "PUBLIC_CAL",
       "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
@@ -65,6 +65,11 @@
           "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_slice1.json",
           "sha256": "37f960b2beb3788a8629f15be931e494a51f4d5dc3ab95458768c8d7d678b9e5",
           "rows": 54
+        },
+        {
+          "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_remaining.json",
+          "sha256": "40b172104a2fd65b29457e01c92d788e38254af2d29963f366b0d445c5ebd94a",
+          "rows": 378
         }
       ],
       "candidate_prediction_exposures": 0
@@ -87,7 +92,8 @@
     "GOLD_UNREVIEWED",
     "ORDINARY_QUOTA_SHORTFALL",
     "NO_SAFETY_ROWS",
-    "NO_INDEPENDENT_SOURCE_REVIEW"
+    "NO_INDEPENDENT_SOURCE_REVIEW",
+    "NAME_ECHO_AND_HELD_OUT_MECHANISMS_NOT_ADJUDICATED"
   ],
   "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
   "data_qualification": "NOT_QUALIFIED",
@@ -104,7 +110,18 @@
     "as_or_test_rows": 0,
     "license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
     "latent_scenario_distinctness": "UNREVIEWED",
-    "independent_gold_review": "NOT_PROVISIONED"
+    "independent_gold_review": "NOT_PROVISIONED",
+    "literal_formal_name_presence": {
+      "classification": "LITERAL_SUBSTRING_PROXY_INCLUDES_NATURAL_MENTIONS_NOT_ECHO_MECHANISM_ADJUDICATION",
+      "scope": "CAL_V04_CURRENT_ALL432_ALL144_FORMAL_ZH_EN_NAMES_NO_ALIASES",
+      "method": "NFKC_LOWERCASE_LITERAL_SUBSTRING_V1",
+      "rows": 432,
+      "literal_presence_rows": 142,
+      "fraction": 0.3287037037037037,
+      "formal_name_echo_limit": 0.1,
+      "formal_name_echo_status": "NOT_ADJUDICATED_NO_PASS",
+      "independent_review": false
+    }
   },
   "stable_competition_admission": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
   "calibration_admission": "NOT_ADMITTED_PARTIAL_DATA",
@@ -168,6 +185,33 @@
       "flags": [],
       "sealed_test_fingerprints_available": false,
       "no_sealed_test_overlap_claim": false
+    },
+    {
+      "slice": "cal-remaining",
+      "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
+      "prior_explicit_public_rows": 2944,
+      "gram_size": 3,
+      "jaccard_review_flag_threshold": 0.55,
+      "flags": [],
+      "sealed_test_fingerprints_available": false,
+      "no_sealed_test_overlap_claim": false
+    }
+  ],
+  "pre_intake_revisions": [
+    {
+      "data_path": "data/zero_model_refoundation/development/provisional_cal_v0.4_remaining.json",
+      "round": 1,
+      "original_sha256": "8834555f51b5ccfd9aa659ea7cd5d86f03aa04f311d40cfe116a0c964215db01",
+      "revised_sha256": "40b172104a2fd65b29457e01c92d788e38254af2d29963f366b0d445c5ebd94a",
+      "review_flag": {
+        "left": "tune-v04-s5-104",
+        "right": "cal-v04-rest-374",
+        "similarity": 0.6149732620320856,
+        "threshold": 0.55
+      },
+      "original_reconstruction": "RESTORE_VERSION_ALL_ROW_FREEZE_TIMES_AND_REJECTED_ROW_FROM_DATA_RECEIPT",
+      "predictions": 0,
+      "router_repairs_spent": 0
     }
   ]
 }
