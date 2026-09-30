@@ -44,11 +44,32 @@ jobs:
             const base = context.payload.pull_request?.base.sha || context.payload.before;
             assert.match(head, /^[a-f0-9]{40}$/);
             assert.match(base, /^[a-f0-9]{40}$/);
+            // BEGIN_PUBLIC_TREE_READER
             async function tree(ref) {
-              const {data} = await github.rest.git.getTree({...context.repo, tree_sha: ref, recursive: '1'});
+              assert.match(ref, /^[a-f0-9]{40}$/);
+              const url = 'https://api.github.com/repos/' + context.repo.owner + '/' + context.repo.repo + '/git/trees/' + ref + '?recursive=1';
+              const response = await fetch(url, {redirect:'error', credentials:'omit', headers:{accept:'application/vnd.github+json'}, signal:AbortSignal.timeout(30000)});
+              assert(response.ok, 'Pinned public tree HTTP ' + response.status);
+              const reader = response.body.getReader(), chunks = [];
+              let size = 0;
+              while (true) {
+                const {done, value} = await reader.read();
+                if (done) break;
+                size += value.byteLength;
+                if (size > 16 * 1024 * 1024) {
+                  await reader.cancel();
+                  throw new Error('tree metadata too large');
+                }
+                chunks.push(Buffer.from(value));
+              }
+              const data = JSON.parse(Buffer.concat(chunks, size).toString('utf8'));
+              assert.match(data.sha, /^[a-f0-9]{40}$/);
               assert.equal(data.truncated, false, 'complete metadata required');
+              assert(Array.isArray(data.tree), 'tree metadata required');
+              assert.equal(new Set(data.tree.map(x=>x.path)).size, data.tree.length, 'unique tree paths required');
               return new Map(data.tree.filter(x => x.type !== 'tree').map(x => [x.path, x]));
             }
+            // END_PUBLIC_TREE_READER
             const before = await tree(base), after = await tree(head);
             const changed = [...new Set([...before.keys(), ...after.keys()])].filter(p => before.get(p)?.sha !== after.get(p)?.sha || before.get(p)?.mode !== after.get(p)?.mode);
             const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p.startsWith('data/zero_model_refoundation/development/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
@@ -976,7 +997,7 @@ jobs:
               fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
             }
             core.setOutput('engineering', present.length ? 'true' : 'false');
-            core.info(JSON.stringify({classification:'ENGINEERING_ONLY_NOT_CAPABILITY', head, base, changed_paths:changed, content_read_allowlist:reads, historical_pins_verified_without_content:true, content_transport:'IMMUTABLE_PUBLIC_RAW_SHA1_VERIFIED', raw_fetches:rawFetches, unique_verified_blobs:byteCache.size, blob_rest_calls:0}));
+            core.info(JSON.stringify({classification:'ENGINEERING_ONLY_NOT_CAPABILITY', head, base, changed_paths:changed, content_read_allowlist:reads, historical_pins_verified_without_content:true, content_transport:'IMMUTABLE_PUBLIC_RAW_SHA1_VERIFIED', raw_fetches:rawFetches, unique_verified_blobs:byteCache.size, blob_rest_calls:0, public_tree_rest_calls:2, authenticated_rest_calls:0}));
       - name: Exact allowlisted engineering units only
         if: steps.safe.outputs.engineering == 'true'
         run: |

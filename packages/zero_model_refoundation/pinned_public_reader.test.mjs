@@ -66,3 +66,29 @@ test('wrong bytes, wrong length and HTTP errors never enter verified cache', asy
   await assert.rejects(transient.read('safe/file.mjs'),/HTTP 503/);
   assert.equal(calls,3); assert.equal(transient.stats().unique,0);
 });
+
+
+test('tree metadata uses two immutable public identities without token fallback', async () => {
+  const start='            // BEGIN_PUBLIC_TREE_READER', stop='            // END_PUBLIC_TREE_READER';
+  assert.equal(workflow.split(start).length,2); assert.equal(workflow.split(stop).length,2);
+  const body=workflow.slice(workflow.indexOf(start)+start.length,workflow.indexOf(stop));
+  const make=new AsyncFunction('context','fetch','assert','Buffer','AbortSignal',body+'\nreturn tree;');
+  const calls=[];
+  const fake=async(url,options)=>{calls.push({url,options});return new Response(JSON.stringify({sha:'2'.repeat(40),truncated:false,tree:[{path:'safe/file.mjs',...entry}]}));};
+  const tree=await make({repo:{owner:'example',repo:'public'}},fake,assert,Buffer,AbortSignal);
+  assert.equal((await tree(head)).get('safe/file.mjs').sha,sha);
+  await tree('3'.repeat(40));
+  assert.equal(calls.length,2); assert.equal(calls[0].url,`https://api.github.com/repos/example/public/git/trees/${head}?recursive=1`);
+  assert.equal(calls[0].options.credentials,'omit'); assert.equal(calls[0].options.redirect,'error');
+  assert.deepEqual(calls[0].options.headers,{accept:'application/vnd.github+json'});
+  await assert.rejects(tree('main')); assert.equal(calls.length,2);
+  for(const response of [
+    ()=>new Response('',{status:403}),
+    ()=>new Response(JSON.stringify({sha:head,truncated:true,tree:[]})),
+    ()=>new Response(JSON.stringify({sha:head,truncated:false,tree:[{path:'x'},{path:'x'}]})),
+  ]) {
+    let reads=0;
+    const denied=await make({repo:{owner:'example',repo:'public'}},async()=>{reads++;return response();},assert,Buffer,AbortSignal);
+    await assert.rejects(denied(head)); assert.equal(reads,1);
+  }
+});
