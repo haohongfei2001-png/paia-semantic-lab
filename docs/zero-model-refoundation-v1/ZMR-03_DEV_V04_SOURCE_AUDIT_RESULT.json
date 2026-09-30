@@ -1,0 +1,520 @@
+{
+  "schema": "ZMR-DEV-V04-FROZEN-SOURCE-AUDIT-1",
+  "batch_id": "ZMR-DEV-V04-SOURCE-AUDIT-20260930",
+  "source_main": "75e3f0c15a296d77ab97803490a01ec3bee7b01a",
+  "source_tree": "323a62c1297c2ce7604041c8297c3f743a44df87",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "scope": "FROZEN_PUBLIC_V04_ORDINARY_TUNE_CAL_AND_SAFETY_ONLY_NO_ROUTER",
+  "catalog": {
+    "path": "catalog/system_topic_catalog_v0.2.yaml",
+    "git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad",
+    "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18"
+  },
+  "source_packets": [
+    {
+      "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+      "sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+      "git_blob": "23cb582eb10616a0bd92140687ab0e3da5a86e70",
+      "rows": 54
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice2.json",
+      "sha256": "8f151986e57e3b2a2fdec23ec878e1a7587af8ada7121905ac6f812f935a777d",
+      "git_blob": "181ecca5c1e97646fc77b52914e34358b880f5c8",
+      "rows": 54
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice3.json",
+      "sha256": "dc80858b254dd5d7b77949e81b559a94721b317801a1b24bcd8642b95728a4a6",
+      "git_blob": "fd7e40c9dccb2ab2902f70c97aae998b899b7897",
+      "rows": 108
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice4.json",
+      "sha256": "0689ab4b5d91304f673af05da49ab26295bc601b8d3a2cdd34cd7eec2582deec",
+      "git_blob": "7373b53790c0d72d6eb4fd98ba4e6df17b7112f5",
+      "rows": 108
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice5.json",
+      "sha256": "f4b74e0de1f21db4abb0d9487d860943766136d1af729465ca409c12bd5cabf5",
+      "git_blob": "bc64d3cadf17a221465cf818f751348f36ab72d4",
+      "rows": 108
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_slice1.json",
+      "sha256": "37f960b2beb3788a8629f15be931e494a51f4d5dc3ab95458768c8d7d678b9e5",
+      "git_blob": "9b27993bea59372dc67d66add018e3f6f025a84a",
+      "rows": 54
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_remaining.json",
+      "sha256": "40b172104a2fd65b29457e01c92d788e38254af2d29963f366b0d445c5ebd94a",
+      "git_blob": "23a9f741108ff3c263c850f5a36e0a0610560a3a",
+      "rows": 378
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+      "sha256": "7f9a5eaf074108e69b702bf395717d926502169ab5532c040373db7395bbacad",
+      "git_blob": "3579cd1bd2274d8af8d539b642b63a60e28048f7",
+      "rows": 84
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+      "sha256": "e6436903193c265e06394f2475cbf8aaac90c3f321fefda6323e6072f833ca25",
+      "git_blob": "27706dad912c5b081a60dbb8f2a2a37c214dad52",
+      "rows": 252
+    }
+  ],
+  "engineering_dependencies": [
+    {
+      "path": "packages/zero_model_refoundation/development_source_audit.mjs",
+      "sha256": "90802d5e78408fa2bf116844ccd651d25dcd5886c8145e4a0ec73fa1944913d6"
+    },
+    {
+      "path": "packages/zero_model_refoundation/contracts.mjs",
+      "sha256": "ac3d29d395e9cc645e3138eb25b93d85adaceb726e569116a921fc78f368fb2c"
+    },
+    {
+      "path": "packages/zero_model_refoundation/fingerprints.mjs",
+      "sha256": "3f60ad249a0648221309cd76ae6f7eeb53d26f8db2e2d032a2eb021c6c36f55f"
+    }
+  ],
+  "audit": {
+    "schema": "ZMR-DEV-SOURCE-AUDIT-1",
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "classification": "STRUCTURAL_SOURCE_AUDIT_NOT_INDEPENDENT_REVIEW",
+    "rows": 1200,
+    "ordinary_rows": 864,
+    "safety_physical_rows": 336,
+    "context_pairs": 96,
+    "full144_ordinary_topics": 144,
+    "formal_ordinary_shortfall": {
+      "rows": 864,
+      "languages": {
+        "zh": 576,
+        "en": 288,
+        "mixed": 0
+      },
+      "required_per_topic": {
+        "per_topic": 12,
+        "zh": 6,
+        "en": 4,
+        "mixed": 2
+      }
+    },
+    "safety_counts": {
+      "control_rows": 96,
+      "context_required_pairs": 48,
+      "context_invariance_pairs": 48,
+      "multi_rows": 48
+    },
+    "formal_safety_shortfall": {
+      "control_rows": 204,
+      "context_required_pairs": 96,
+      "context_invariance_pairs": 96,
+      "multi_rows": 96
+    },
+    "declared_lineage_components": 1,
+    "cross_split_components": 1,
+    "declared_scenario_family_count": 1088,
+    "independent_scenarios_credited": 0,
+    "exact_normalized_bundle_duplicates": [],
+    "public_review_flags": 43,
+    "structurally_explained_pair_flags": 43,
+    "flag_relations": [
+      {
+        "left": "safety-v04-tune-027",
+        "right": "safety-v04-tune-028",
+        "pair_id": "safety-v04-tune-invariance-2",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-tune-029",
+        "right": "safety-v04-tune-030",
+        "pair_id": "safety-v04-tune-invariance-3",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-tune-031",
+        "right": "safety-v04-tune-032",
+        "pair_id": "safety-v04-tune-invariance-4",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-tune-033",
+        "right": "safety-v04-tune-034",
+        "pair_id": "safety-v04-tune-invariance-5",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-tune-035",
+        "right": "safety-v04-tune-036",
+        "pair_id": "safety-v04-tune-invariance-6",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-cal-025",
+        "right": "safety-v04-cal-026",
+        "pair_id": "safety-v04-cal-invariance-1",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-cal-027",
+        "right": "safety-v04-cal-028",
+        "pair_id": "safety-v04-cal-invariance-2",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-cal-029",
+        "right": "safety-v04-cal-030",
+        "pair_id": "safety-v04-cal-invariance-3",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-cal-031",
+        "right": "safety-v04-cal-032",
+        "pair_id": "safety-v04-cal-invariance-4",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-cal-033",
+        "right": "safety-v04-cal-034",
+        "pair_id": "safety-v04-cal-invariance-5",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-cal-035",
+        "right": "safety-v04-cal-036",
+        "pair_id": "safety-v04-cal-invariance-6",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-073",
+        "right": "safety-v04-rest-tune-074",
+        "pair_id": "safety-v04-rest-tune-context_invariance-1",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-075",
+        "right": "safety-v04-rest-tune-076",
+        "pair_id": "safety-v04-rest-tune-context_invariance-2",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-077",
+        "right": "safety-v04-rest-tune-078",
+        "pair_id": "safety-v04-rest-tune-context_invariance-3",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-081",
+        "right": "safety-v04-rest-tune-082",
+        "pair_id": "safety-v04-rest-tune-context_invariance-5",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-083",
+        "right": "safety-v04-rest-tune-084",
+        "pair_id": "safety-v04-rest-tune-context_invariance-6",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-085",
+        "right": "safety-v04-rest-tune-086",
+        "pair_id": "safety-v04-rest-tune-context_invariance-7",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-087",
+        "right": "safety-v04-rest-tune-088",
+        "pair_id": "safety-v04-rest-tune-context_invariance-8",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-089",
+        "right": "safety-v04-rest-tune-090",
+        "pair_id": "safety-v04-rest-tune-context_invariance-9",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-091",
+        "right": "safety-v04-rest-tune-092",
+        "pair_id": "safety-v04-rest-tune-context_invariance-10",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-093",
+        "right": "safety-v04-rest-tune-094",
+        "pair_id": "safety-v04-rest-tune-context_invariance-11",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-095",
+        "right": "safety-v04-rest-tune-096",
+        "pair_id": "safety-v04-rest-tune-context_invariance-12",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-101",
+        "right": "safety-v04-rest-tune-102",
+        "pair_id": "safety-v04-rest-tune-context_invariance-15",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-103",
+        "right": "safety-v04-rest-tune-104",
+        "pair_id": "safety-v04-rest-tune-context_invariance-16",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-105",
+        "right": "safety-v04-rest-tune-106",
+        "pair_id": "safety-v04-rest-tune-context_invariance-17",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-tune-107",
+        "right": "safety-v04-rest-tune-108",
+        "pair_id": "safety-v04-rest-tune-context_invariance-18",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-073",
+        "right": "safety-v04-rest-cal-074",
+        "pair_id": "safety-v04-rest-cal-context_invariance-1",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-075",
+        "right": "safety-v04-rest-cal-076",
+        "pair_id": "safety-v04-rest-cal-context_invariance-2",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-077",
+        "right": "safety-v04-rest-cal-078",
+        "pair_id": "safety-v04-rest-cal-context_invariance-3",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-079",
+        "right": "safety-v04-rest-cal-080",
+        "pair_id": "safety-v04-rest-cal-context_invariance-4",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-081",
+        "right": "safety-v04-rest-cal-082",
+        "pair_id": "safety-v04-rest-cal-context_invariance-5",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-083",
+        "right": "safety-v04-rest-cal-084",
+        "pair_id": "safety-v04-rest-cal-context_invariance-6",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-085",
+        "right": "safety-v04-rest-cal-086",
+        "pair_id": "safety-v04-rest-cal-context_invariance-7",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-087",
+        "right": "safety-v04-rest-cal-088",
+        "pair_id": "safety-v04-rest-cal-context_invariance-8",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-089",
+        "right": "safety-v04-rest-cal-090",
+        "pair_id": "safety-v04-rest-cal-context_invariance-9",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-091",
+        "right": "safety-v04-rest-cal-092",
+        "pair_id": "safety-v04-rest-cal-context_invariance-10",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-093",
+        "right": "safety-v04-rest-cal-094",
+        "pair_id": "safety-v04-rest-cal-context_invariance-11",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-095",
+        "right": "safety-v04-rest-cal-096",
+        "pair_id": "safety-v04-rest-cal-context_invariance-12",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-097",
+        "right": "safety-v04-rest-cal-098",
+        "pair_id": "safety-v04-rest-cal-context_invariance-13",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-099",
+        "right": "safety-v04-rest-cal-100",
+        "pair_id": "safety-v04-rest-cal-context_invariance-14",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-101",
+        "right": "safety-v04-rest-cal-102",
+        "pair_id": "safety-v04-rest-cal-context_invariance-15",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-103",
+        "right": "safety-v04-rest-cal-104",
+        "pair_id": "safety-v04-rest-cal-context_invariance-16",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      },
+      {
+        "left": "safety-v04-rest-cal-105",
+        "right": "safety-v04-rest-cal-106",
+        "pair_id": "safety-v04-rest-cal-context_invariance-17",
+        "packet_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "classification": "STRUCTURAL_PAIR_MATCH_ONLY_SEMANTIC_REVIEW_PENDING"
+      }
+    ],
+    "independent_semantic_flag_reviews": 0,
+    "whole_current_goal_span_rows": 1056,
+    "role_span_semantic_review": "NOT_PROVISIONED_NO_PASS",
+    "empty_excluded_set_rows": 1200,
+    "excluded_set_semantic_review": "NOT_PROVISIONED_NO_PASS",
+    "source_license_reviews": "NOT_PROVISIONED",
+    "independent_gold_reviews": 0,
+    "mechanism_holdout_review": "NOT_ADJUDICATED_NO_TRAIN_MECHANISM_JOIN",
+    "literal_name_presence": {
+      "TUNE_PROVISIONAL": {
+        "rows": 432,
+        "literal_presence_rows": 78,
+        "fraction": 0.18055555555555555,
+        "classification": "LITERAL_SUBSTRING_PROXY_INCLUDES_NATURAL_MENTIONS_NOT_ECHO_MECHANISM_ADJUDICATION",
+        "formal_name_echo_limit": 0.1,
+        "adjudication": "NOT_ADJUDICATED_NO_PASS"
+      },
+      "CAL_PROVISIONAL": {
+        "rows": 432,
+        "literal_presence_rows": 142,
+        "fraction": 0.3287037037037037,
+        "classification": "LITERAL_SUBSTRING_PROXY_INCLUDES_NATURAL_MENTIONS_NOT_ECHO_MECHANISM_ADJUDICATION",
+        "formal_name_echo_limit": 0.1,
+        "adjudication": "NOT_ADJUDICATED_NO_PASS"
+      }
+    },
+    "packet_exposure_claims": [
+      {
+        "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+        "rows": 54,
+        "prediction_exposure_claim": null,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice2.json",
+        "rows": 54,
+        "prediction_exposure_claim": null,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice3.json",
+        "rows": 108,
+        "prediction_exposure_claim": null,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice4.json",
+        "rows": 108,
+        "prediction_exposure_claim": null,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice5.json",
+        "rows": 108,
+        "prediction_exposure_claim": null,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_slice1.json",
+        "rows": 54,
+        "prediction_exposure_claim": 0,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_remaining.json",
+        "rows": 378,
+        "prediction_exposure_claim": 0,
+        "evaluation_status_claim": "UNRUN_NO_ROUTER_PREDICTIONS"
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+        "rows": 84,
+        "prediction_exposure_claim": 0,
+        "evaluation_status_claim": null
+      },
+      {
+        "path": "data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json",
+        "rows": 252,
+        "prediction_exposure_claim": 0,
+        "evaluation_status_claim": null
+      }
+    ],
+    "grouped_uncertainty": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+    "qualification_credit_rows": 0,
+    "semantic_evaluations": 0,
+    "calibration_admission": "HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING",
+    "data_qualification": "NOT_QUALIFIED",
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "sealed_fingerprints_available": false,
+    "no_sealed_overlap_claim": false
+  }
+}
