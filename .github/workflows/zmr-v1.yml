@@ -211,6 +211,9 @@ jobs:
             engineering.push('packages/zero_model_refoundation/development_review_slice2.test.mjs');
             development.push('data/zero_model_refoundation/development/development_review_journal_v0.3.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE2_REVIEW.md', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE2_REVIEW_RESULT.json');
+            engineering.push('packages/zero_model_refoundation/development_review_slice3.test.mjs');
+            development.push('data/zero_model_refoundation/development/development_review_journal_v0.4.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE3_REVIEW.md', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE3_REVIEW_RESULT.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json');
             development.push('data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json');
@@ -874,7 +877,7 @@ jobs:
               assert.equal(challenge.evaluation_status, 'UNRUN');
               assert.equal(challenge.qualification_credit_rows, 0);
             }
-            for (const p of [statusPath, 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_REVIEW_SIX_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE1_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE2_REVIEW_RESULT.json', ...accountingJoinFiles, ...identityAuditFiles, ...laterDiagnosticFiles, ...defaultsAuditFiles, ...present, ...inputs]) {
+            for (const p of [statusPath, 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_REVIEW_SIX_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE1_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE2_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE3_REVIEW_RESULT.json', ...accountingJoinFiles, ...identityAuditFiles, ...laterDiagnosticFiles, ...defaultsAuditFiles, ...present, ...inputs]) {
               const bytes = await read(p);
               const target = path.join(process.env.GITHUB_WORKSPACE, p);
               fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
@@ -920,3 +923,4 @@ jobs:
           node --test packages/zero_model_refoundation/development_review_receipt.test.mjs
           node --test packages/zero_model_refoundation/development_review_extension.test.mjs
           node --test packages/zero_model_refoundation/development_review_slice2.test.mjs
+          node --test packages/zero_model_refoundation/development_review_slice3.test.mjs
