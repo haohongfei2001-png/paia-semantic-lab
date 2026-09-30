@@ -1,0 +1,24 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {reviewDigest,validateDevelopmentReviewJournal} from './development_review_journal.mjs';
+const root=new URL('../../',import.meta.url),read=p=>readFile(new URL(p,root),'utf8'),json=async p=>JSON.parse(await read(p));
+const sha=s=>createHash('sha256').update(s).digest('hex');
+test('published six-row provisional review receipt preserves original bytes, ancestry and qualification holds',async()=>{
+ const registry=await json('data/zero_model_refoundation/development/development_review_registry_v0.1.json');
+ const journal=await json('data/zero_model_refoundation/development/development_review_journal_v0.1.json');
+ const result=await json('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_REVIEW_SIX_RESULT.json');
+ const catalog=await read('catalog/system_topic_catalog_v0.2.yaml');assert.equal(sha(catalog),registry.catalog_sha256);
+ const topics=[...catalog.matchAll(/^  - topic_id: (.+)$/gm)].map(x=>x[1]);assert.equal(topics.length,144);
+ const path='data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json',utf8=await read(path);
+ const audit=validateDevelopmentReviewJournal({registry,journal,topics,packets:[{path,utf8}]});
+ for(const [k,v] of Object.entries(audit))assert.deepEqual(result[k],v,k);
+ assert.equal(result.journal_sha256,reviewDigest(journal));assert.equal(result.source_packet_sha256,sha(utf8));assert.equal(result.catalog_sha256,sha(catalog));
+ assert.equal(journal.source_main,result.source_main);assert.equal(journal.source_tree,result.source_tree);
+ assert.deepEqual(journal.records.map(r=>r.row_id),JSON.parse(utf8).rows.slice(0,6).map(r=>r.row_id));
+ assert.equal(audit.reviewed_rows,6);assert.equal(result.unreviewed_registered_rows,1194);
+ assert.deepEqual(audit.dispositions,{LABEL_IDENTIFIABILITY_HOLD:4,PROPOSE_REVISION:2});assert.equal(audit.semantic_evaluations,0);assert.equal(audit.qualification_credit,0);
+ assert(journal.records.every(r=>r.source_license_review==='ORIGINAL_WRITER_DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED'&&r.boundary_adjudication==='UNADJUDICATED_NO_FORMAL_CATALOG_CHANGE'&&r.boundary_hypotheses.every(t=>topics.includes(t))));
+ assert.equal(audit.data_qualification,'NOT_QUALIFIED');assert.equal(audit.capability_verdict,'UNTESTED');assert.equal(audit.resource_verdict,'NOT_QUALIFIED');
+});
