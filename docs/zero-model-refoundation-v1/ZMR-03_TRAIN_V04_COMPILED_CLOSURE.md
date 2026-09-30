@@ -28,9 +28,9 @@ The initial A1 char1500 floating-point index was **1,862,872 bytes**, rejected b
 
 | Family | Index bytes | Runtime source + index bytes |
 | --- | ---: | ---: |
-| A1 compact | 718175 | 728109 |
+| A1 compact | 711397 | 721331 |
 | A2 | 410819 | 422792 |
-| A3 | 87736 | 101354 |
+| A3 | 87731 | 101349 |
 
 Runtime source hashes and exact compiler dependency hashes are in `ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json`. The CLI optionally writes only new files outside the repository; it rejects repository outputs, symlink parents reaching repository paths, existing targets and arbitrary input/settings overrides. No generated index is committed.
 
@@ -38,9 +38,11 @@ Static byte counts are **not resource PASS**. Browser dependency closure, peak m
 
 ## Verification and evidence limits
 
-Four focused engineering checks pass: registered settings and byte units; deterministic frozen full144 indices and output hashes; synthetic int16 half-step error bounds / routing / OOV / Catalog mismatch; corrupt coefficient/universe rejection. The four checks complete under one second locally. Compilation reproducibility does not consume semantic evaluation keys. Synthetic routing is only engineering evidence.
+Five focused engineering checks pass: finite compiled-number encoding; registered settings and byte units; deterministic frozen full144 indices and output hashes; synthetic int16 half-step error bounds / routing / OOV / Catalog mismatch; corrupt coefficient/universe rejection. The five checks complete under one second locally. Compilation reproducibility does not consume semantic evaluation keys. Synthetic routing is only engineering evidence.
 
 PR175 initial isolated CI run36694019749 / job109817578414 failed because the receipt JSON was validated through the read allowlist but not materialized in the thin test workspace (`ENOENT`). The new full144 build test stopped before fitting. Repair explicitly materializes that same already-allowlisted receipt; no compiler, parameter, input or result identity changes, no removed assertion, no unchanged-head rerun. A thin workspace reproduction checks the corrected dependency set.
+
+PR175 repaired-head run36694573802 / job109819345736 exposed a second engineering defect: identical closure and source hashes produced an A1 index of718174 bytes on Linux Node22 versus718175 on Darwin Node26. The raw floating index also differed by32 bytes. Strict receipt comparison rejected this; no semantic predictions occurred. The compiler now normalizes finite artifact floats to12 significant decimal digits, preserves integer counts/coefficients, rejects nonfinite values, and hashes the resulting exact JSON. The prior complete receipt and failed Linux identity are retained in the companion JSON under `pre_encoding_attempt`; no historical compiler or consumed result is changed. A1/A3 index identities change, and future fresh DEV must account for this numeric encoding. The strict pinned receipt and same-environment double-build assertions remain. This mitigates observed low-bit serialization differences; it does not certify all devices or guarantee all platform math routines agree. Exact Linux CI and local artifact hash parity remain required. The codec check includes the persisted numeric roundtrip and its bounded additional rounding error.
 
 All432 rows share **one writer/source-family lineage component**, even though five source batches exist. No independent grouped folds can be made from this closure. Independent01B credit is0, gold remains unreviewed, safety TRAIN quotas are missing. Independent curator/AS qualification remains frozen; offline development continues. Capability **UNTESTED**, resources **NOT_QUALIFIED**, no saturation or family ceiling claim.
 

@@ -5,6 +5,15 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {buildTrainV04,trainV04Recipe,assertTrainV04StaticBudget} from './train_v04_compile.mjs';
 import {trainV04Hash} from './train_v04.mjs';
+import {canonicalCompiledNumbers,COMPILED_NUMBER_ENCODING} from './compiled_numbers.mjs';
+
+test('compiled float encoding preserves integers and rejects nonfinite JSON instead of null',()=>{
+ assert.equal(COMPILED_NUMBER_ENCODING,'FINITE_12_SIGNIFICANT_DIGITS_V1');
+ assert.deepEqual(canonicalCompiledNumbers({weights:[1.23456789012345,1.2345678901234502,-0,32767]}),{weights:[1.23456789012,1.23456789012,0,32767]});
+ for(const x of [NaN,Infinity,-Infinity,undefined])assert.throws(()=>canonicalCompiledNumbers({weight:x}));
+ const encoded=canonicalCompiledNumbers({weight:1.23456789012345});
+ assert.deepEqual(canonicalCompiledNumbers(encoded),encoded);
+});
 
 test('fixed engineering recipes and hard byte units reject unsupported overrides',async()=>{
  assert.equal(trainV04Recipe('A1').max_features,1500);

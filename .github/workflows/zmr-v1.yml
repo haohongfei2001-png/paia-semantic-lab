@@ -174,7 +174,7 @@ jobs:
             engineering.push('packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs', 'packages/zero_model_refoundation/train_v04.mjs', 'packages/zero_model_refoundation/train_v04.test.mjs');
             development.push('data/zero_model_refoundation/development/provisional_train_v0.4_slice5.json', 'data/zero_model_refoundation/development/provisional_train_v0.4_manifest.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE.md', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json');
-            engineering.push('packages/zero_model_refoundation/train_v04_compile.mjs', 'packages/zero_model_refoundation/train_v04_compile.test.mjs', 'packages/zero_model_refoundation/a1_v04_compact.mjs', 'packages/zero_model_refoundation/a1_v04_compact.test.mjs');
+            engineering.push('packages/zero_model_refoundation/compiled_numbers.mjs', 'packages/zero_model_refoundation/train_v04_compile.mjs', 'packages/zero_model_refoundation/train_v04_compile.test.mjs', 'packages/zero_model_refoundation/a1_v04_compact.mjs', 'packages/zero_model_refoundation/a1_v04_compact.test.mjs');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
@@ -280,6 +280,7 @@ jobs:
               assert.equal(r.independent_quota_credit, 0); assert.equal(r.lineage_component_count, 1);
               assert.equal(r.semantic_evaluations, 0); assert.equal(r.stable_candidate, false);
               assert.equal(r.resource_verdict, 'NOT_QUALIFIED');
+              assert.equal(r.number_encoding, 'FINITE_12_SIGNIFICANT_DIGITS_V1');
               assert(r.index_bytes <= expected.index_bytes_max && r.runtime_plus_index_bytes <= expected.router_plus_index_bytes_max);
               assert.equal(r.index_bytes, s.rounds['ZMR-03'].train_v04_compiled_index_bytes[r.family]);
             }

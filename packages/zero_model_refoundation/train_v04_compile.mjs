@@ -7,6 +7,7 @@ import {compileA1} from './a1.mjs';
 import {compileA2} from './a2.mjs';
 import {compileA3} from './a3.mjs';
 import {packA1V04} from './a1_v04_compact.mjs';
+import {canonicalCompiledNumbers,COMPILED_NUMBER_ENCODING} from './compiled_numbers.mjs';
 const ROOT=new URL('../../',import.meta.url);
 const CLASS='NON_INDEPENDENT_DEVELOPMENT_EVIDENCE';
 const must=(ok,message)=>{if(!ok)throw new Error(message);};
@@ -46,10 +47,10 @@ export async function buildTrainV04(options={}){
  for(const row of closure.rows)documents[row.topic_id]+=' '+row.current;
  const document_sha256=trainV04Hash(JSON.stringify(documents));
  const raw=COMPILERS[family]({topic_ids:closure.topics.map(t=>t.id),documents,catalog_sha256:closure.catalog_sha256,train_sha256:closure.train_sha256,...recipe});
- const raw_index_bytes=Buffer.byteLength(JSON.stringify(raw)+'\n');
- const index=family==='A1'?packA1V04(raw):raw;
+ const raw_index_bytes=Buffer.byteLength(JSON.stringify(canonicalCompiledNumbers(raw))+'\n');
+ const index=canonicalCompiledNumbers(family==='A1'?packA1V04(raw):raw);
  const bytes=Buffer.from(JSON.stringify(index)+'\n'),runtime=await sourceClosure(RUNTIME[family]);
- const compiler_dependencies=await sourceClosure(['train_v04_compile.mjs','train_v04.mjs','a1_compile.mjs','a1.mjs','a2.mjs','a3.mjs','a1_v04_compact.mjs']);
+ const compiler_dependencies=await sourceClosure(['train_v04_compile.mjs','train_v04.mjs','a1_compile.mjs','a1.mjs','a2.mjs','a3.mjs','a1_v04_compact.mjs','compiled_numbers.mjs']);
  const runtime_bytes=runtime.reduce((n,x)=>n+x.bytes,0);
  const static_status=assertTrainV04StaticBudget(bytes.length,runtime_bytes);
  // Never overwrite the frozen input closure, existing runtime, or historical receipts.
@@ -63,7 +64,7 @@ export async function buildTrainV04(options={}){
   evidence_class:CLASS,classification:'DEV_ONLY_NOT_RESOURCE_QUALIFIED',training_unit:'ONE_AGGREGATE_DOCUMENT_PER_TOPIC',
   topic_count:144,train_rows:432,catalog_sha256:closure.catalog_sha256,train_sha256:closure.train_sha256,document_sha256,
   index_sha256:trainV04Hash(bytes),index_bytes:bytes.length,raw_index_bytes,runtime,runtime_bytes,runtime_plus_index_bytes:bytes.length+runtime_bytes,static_status,
-  compiler_dependencies,compiler_sha256:trainV04Hash(JSON.stringify(compiler_dependencies)),
+  compiler_dependencies,compiler_sha256:trainV04Hash(JSON.stringify(compiler_dependencies)),number_encoding:COMPILED_NUMBER_ENCODING,
   independent_quota_credit:0,lineage_component_count:1,grouped_validation:closure.grouped_validation,
   feature_comparison:'NATIVE_SELECTORS_DIFFER_NOT_MATCHED_FEATURE_OBJECTIVE_ABLATION',
   semantic_evaluations:0,stable_candidate:false,capability_verdict:'UNTESTED',resource_verdict:'NOT_QUALIFIED',
