@@ -1,0 +1,486 @@
+{
+  "schema": "ZMR-LATER-DIAGNOSTIC-AUDIT-RECEIPT-1",
+  "source_main": "5f2dec2d9da842c9f5095b5120731f01b10ee4c8",
+  "source_tree": "da4b9ba48c29a29bf4c82f70ebee7505a51c550e",
+  "recipe_path": "data/zero_model_refoundation/development/later_diagnostic_recipe_v0.1.json",
+  "recipe_sha256": "52880808b23159e773729678c2f8a8870a85c96a1bbd3025b144eb34ad15277b",
+  "engineering_dependencies": [
+    {
+      "path": "packages/zero_model_refoundation/later_diagnostic_audit.mjs",
+      "sha256": "88eb4daa4c6a6005325f98af2635a3845399e20e440c16e4bcf0aa54eaacdda8"
+    },
+    {
+      "path": "packages/zero_model_refoundation/competition_budget.mjs",
+      "sha256": "34f2f513eeda9a77362194f10ca74b01f0f5ed8ad34c40e2ee107bc241728bd9"
+    },
+    {
+      "path": "packages/zero_model_refoundation/contracts.mjs",
+      "sha256": "ac3d29d395e9cc645e3138eb25b93d85adaceb726e569116a921fc78f368fb2c"
+    }
+  ],
+  "audit": {
+    "schema": "ZMR-LATER-DIAGNOSTIC-AUDIT-1",
+    "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "events": [
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_RESULT.json",
+        "aggregate_sha256": "5164e7e21568235bd69dc587efd01982fd2965f901c044be64a81c4e58f56a09",
+        "candidate_id": "ZMR-04:h1_r1",
+        "repair_step": 0,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json",
+        "cohort_sha256": "d760996f57c54d853f3bd1638326db96d0f5edaba463936d2d7aa81ae101d2c4",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [
+          {
+            "field": "h1_module_sha256",
+            "path": "packages/zero_model_refoundation/h1_recall_initial.mjs",
+            "sha256": "11fcb96a4724081fa66129272f1c5976bb77f3fc119baaffe6c190b7c7f0b950",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "6808f57201f32369e6b773ed1680f7c5eeaaf200e25712e7685f37416784fd53",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [],
+        "prior_receipt": null,
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_R1_RECALL_DEV_V01_RESULT.json",
+        "aggregate_sha256": "5cae6608fc476b7e80639052b171372caf47ac4422134ef9845c535fb239182e",
+        "candidate_id": "ZMR-04:h1_r1",
+        "repair_step": 1,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json",
+        "cohort_sha256": "d760996f57c54d853f3bd1638326db96d0f5edaba463936d2d7aa81ae101d2c4",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [],
+        "current_diagnostic_sha256": "f2a60e505b58dc1c65a5137adb38f060233e1ad3ca5388a9c715ea6afddba774",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "domain_index_sha256",
+            "sha256": "eb66b94901b71d0aca0f9aa2b3083a35c73f1a04de2eb40b91eba0319a8f7501"
+          },
+          {
+            "field": "a2_index_sha256",
+            "sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "prior_receipt": {
+          "path": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_RESULT.json",
+          "field": "initial_result_sha256",
+          "sha256": "5164e7e21568235bd69dc587efd01982fd2965f901c044be64a81c4e58f56a09",
+          "classification": "REUSED_EXPOSED_PUBLIC_DEV_NOT_FRESH_GENERATION"
+        },
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_RESULT.json",
+        "aggregate_sha256": "c6f4ae51d12f7ec63141a06d7ac284c33df735580ce81692334c6084a2859334",
+        "candidate_id": "ZMR-04:a5_chart",
+        "repair_step": 0,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json",
+        "cohort_sha256": "ca175938588dd0ccb6773871520d68522a068388ed67a9549ff6aefe7f483cb6",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [
+          {
+            "field": "chart_module_sha256",
+            "path": "packages/zero_model_refoundation/a5_evidence_chart.mjs",
+            "sha256": "53b63005cd6e1c29a94be30bcb9228417c1cf0347c332e5231e710e3bab12973",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "8b913dc10df096ac87544cc07714a6a84036b9e6c7820ba3c6ea9a62f5c79617",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "a3_index_sha256",
+            "sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "prior_receipt": null,
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_R1_DEV_V01_RESULT.json",
+        "aggregate_sha256": "cc061243d3797776a9785f8bc5ed461f08955da42fa01ca68a8093b1dbf7e3c3",
+        "candidate_id": "ZMR-04:a5_chart",
+        "repair_step": 1,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json",
+        "cohort_sha256": "ca175938588dd0ccb6773871520d68522a068388ed67a9549ff6aefe7f483cb6",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [
+          {
+            "field": "r1_module_sha256",
+            "path": "packages/zero_model_refoundation/a5_evidence_chart_r1.mjs",
+            "sha256": "1a8d0abba88cc7f07d0bc8707b5204a332fe2333a4a62c994ee256057c3b1f05",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "353e93044c3b14fa4ee5970ff6c5abb6d6031ef6b4b891dc6d08b97203311fe6",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "a3_index_sha256",
+            "sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          },
+          {
+            "field": "a2_index_sha256",
+            "sha256": "b35229d699fd5a5af1b3f5dc88cc59a4198be7a71f8ac5c1cd5970ed79b42e14"
+          }
+        ],
+        "prior_receipt": {
+          "path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_RESULT.json",
+          "field": "initial_result_sha256",
+          "sha256": "c6f4ae51d12f7ec63141a06d7ac284c33df735580ce81692334c6084a2859334",
+          "classification": "REUSED_EXPOSED_PUBLIC_DEV_NOT_FRESH_GENERATION"
+        },
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json",
+        "aggregate_sha256": "0d923f265e360450270f343ad194f3e3f5af00c8bd03a1fc3f5274c98a2a057c",
+        "candidate_id": "ZMR-04:a4_role",
+        "repair_step": 0,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json",
+        "cohort_sha256": "5cf3e13ca2488b4e6bf024c8be78b66e3e2ed14b39eab262bf79cbbfd25c87b9",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [
+          {
+            "field": "role_module_sha256",
+            "path": "packages/zero_model_refoundation/a4_role_contrast.mjs",
+            "sha256": "7b08c530ed6874dc704b75443f9b383a5580cbc0ae1f0fb69e208be353e13515",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "ffdefd76c442e67756fbd2037c546d2333810dfe8e36e1f474843586c2388f8e",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "a3_index_sha256",
+            "sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "prior_receipt": null,
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json",
+        "aggregate_sha256": "a0e7893400e35db85d4f1e56833d1029f5442bb5c4b0034213059069492b1053",
+        "candidate_id": "ZMR-04:a4_role",
+        "repair_step": 1,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json",
+        "cohort_sha256": "5cf3e13ca2488b4e6bf024c8be78b66e3e2ed14b39eab262bf79cbbfd25c87b9",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [
+          {
+            "field": "role_module_sha256",
+            "path": "packages/zero_model_refoundation/a4_role_contrast.mjs",
+            "sha256": "7b08c530ed6874dc704b75443f9b383a5580cbc0ae1f0fb69e208be353e13515",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "r1_module_sha256",
+            "path": "packages/zero_model_refoundation/a4_role_contrast_r1.mjs",
+            "sha256": "2a29ee7959fa6861628ace7294f1b651e618abe238bf8de6c2920f42af7052f2",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "1c38ede2874428f9363187f7bf6fe6094e2258495f900873c34b796ad53fa681",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "a1_index_sha256",
+            "sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          },
+          {
+            "field": "a3_index_sha256",
+            "sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "prior_receipt": {
+          "path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json",
+          "field": "prior_result_sha256",
+          "sha256": "0d923f265e360450270f343ad194f3e3f5af00c8bd03a1fc3f5274c98a2a057c",
+          "classification": "REUSED_EXPOSED_PUBLIC_DEV_NOT_FRESH_GENERATION"
+        },
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R2_DEV_V01_RESULT.json",
+        "aggregate_sha256": "6deb25539b60d246771960434c49dc83bd048f85bc3854c4f56eb0dc21493063",
+        "candidate_id": "ZMR-04:a4_role",
+        "repair_step": 2,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json",
+        "cohort_sha256": "5cf3e13ca2488b4e6bf024c8be78b66e3e2ed14b39eab262bf79cbbfd25c87b9",
+        "original_evaluation_key": null,
+        "missing_key_policy": "MISSING_ORIGINAL_KEY_NOT_SYNTHESIZED_NOT_REPLAY_AUTHORIZATION",
+        "recorded_code_pins": [
+          {
+            "field": "role_module_sha256",
+            "path": "packages/zero_model_refoundation/a4_role_contrast.mjs",
+            "sha256": "7b08c530ed6874dc704b75443f9b383a5580cbc0ae1f0fb69e208be353e13515",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "r1_module_sha256",
+            "path": "packages/zero_model_refoundation/a4_role_contrast_r1.mjs",
+            "sha256": "2a29ee7959fa6861628ace7294f1b651e618abe238bf8de6c2920f42af7052f2",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "r2_module_sha256",
+            "path": "packages/zero_model_refoundation/a4_role_contrast_r2.mjs",
+            "sha256": "970b0d5104c1b7b881506b574505292b793bcf2667b7c16799dbcffb05d35b01",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "f55f058679c84106c6549a6a465effec75b83527924b12d49e7de02da8e4740f",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "a1_index_sha256",
+            "sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df"
+          },
+          {
+            "field": "a3_index_sha256",
+            "sha256": "bce9e41be0e39b0478c96c17bb8ff0d0222f817256729b8d9dcfd730e7a40d18"
+          }
+        ],
+        "prior_receipt": {
+          "path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json",
+          "field": "prior_result_sha256",
+          "sha256": "a0e7893400e35db85d4f1e56833d1029f5442bb5c4b0034213059069492b1053",
+          "classification": "REUSED_EXPOSED_PUBLIC_DEV_NOT_FRESH_GENERATION"
+        },
+        "explicit_configs": null,
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json",
+        "aggregate_sha256": "4f112f068d2df750be9f8389f69c290366a4bef1f989d5177299e0f8ff5f8ddb",
+        "candidate_id": "ZMR-02:a1_balanced_selector",
+        "repair_step": 0,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json",
+        "cohort_sha256": "8e207f1d173b30478e9548d4a4197aec6b5197c45abdf7afc63f9a736accbde2",
+        "original_evaluation_key": "535bd409ec85c31ed8c9a9fda7df109eb7a8e2d80288e8bdccd43748dce5c394",
+        "missing_key_policy": "ORIGINAL_RECORDED_KEY_RECONSTRUCTED_FROM_METADATA_ONLY",
+        "recorded_code_pins": [
+          {
+            "field": "dependency_hashes.a1.mjs",
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_compile.mjs",
+            "path": "packages/zero_model_refoundation/a1_compile.mjs",
+            "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_balanced.mjs",
+            "path": "packages/zero_model_refoundation/a1_balanced.mjs",
+            "sha256": "398fd246c353c8f9bdfa7b9749ac7a179a08a550e770afdd4589a355c428f108",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_balanced_compile.mjs",
+            "path": "packages/zero_model_refoundation/a1_balanced_compile.mjs",
+            "sha256": "1ff398fa28238f6a3c94108f93a7cf65c2f47f3315de2ec70cbc79016ddb3f22",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_balanced_dev_diagnostic.mjs",
+            "path": "packages/zero_model_refoundation/a1_balanced_dev_diagnostic.mjs",
+            "sha256": "eb2a0ce54e020f207b08f2df48b2aa65a3de4801915df9eee84484f364e1adeb",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "eb2a0ce54e020f207b08f2df48b2aa65a3de4801915df9eee84484f364e1adeb",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "builds.frequency.index_sha256",
+            "sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+            "recorded_bytes": 932855
+          },
+          {
+            "field": "builds.balanced.index_sha256",
+            "sha256": "8961e85f1c6c7eedd7f387c5cd40c2e131c026c52878c75c80e6f645af777678",
+            "recorded_bytes": 936102
+          }
+        ],
+        "prior_receipt": null,
+        "explicit_configs": {
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02,
+          "current_only": true
+        },
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      },
+      {
+        "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_R1_DEV_V01_RESULT.json",
+        "aggregate_sha256": "e79d976ea116ad4b4bf5802b0eeaed3675653d52bfe635e500db4b9468403f27",
+        "candidate_id": "ZMR-02:a1_balanced_selector",
+        "repair_step": 1,
+        "cohort_path": "data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json",
+        "cohort_sha256": "8e207f1d173b30478e9548d4a4197aec6b5197c45abdf7afc63f9a736accbde2",
+        "original_evaluation_key": "413493354eb6eaee2d2cef4d653dd0227a3848247ad638d8cb51419d48851ccf",
+        "missing_key_policy": "ORIGINAL_RECORDED_KEY_RECONSTRUCTED_FROM_METADATA_ONLY",
+        "recorded_code_pins": [
+          {
+            "field": "dependency_hashes.a1.mjs",
+            "path": "packages/zero_model_refoundation/a1.mjs",
+            "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_compile.mjs",
+            "path": "packages/zero_model_refoundation/a1_compile.mjs",
+            "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_balanced_r1.mjs",
+            "path": "packages/zero_model_refoundation/a1_balanced_r1.mjs",
+            "sha256": "b4e1abff5314a36dc66c4a529ba725a39ff1854cba2cc89408c24b19e544bb29",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_balanced_r1_compile.mjs",
+            "path": "packages/zero_model_refoundation/a1_balanced_r1_compile.mjs",
+            "sha256": "7058e52ebcc30dbaaaf05da2a224798b387e638f4f5f05cd52413a5cdd225fed",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          },
+          {
+            "field": "dependency_hashes.a1_balanced_r1_dev_diagnostic.mjs",
+            "path": "packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs",
+            "sha256": "47d9a9159d215236c276f5f530a675e22ff9348af6036f505747e7bec4391a2a",
+            "verification": "ORIGINAL_RECORDED_MODULE_DIGEST_MATCHED"
+          }
+        ],
+        "current_diagnostic_sha256": "47d9a9159d215236c276f5f530a675e22ff9348af6036f505747e7bec4391a2a",
+        "diagnostic_pin_scope": "CURRENT_SUPPLIED_SOURCE_NOT_COMPLETE_ORIGINAL_RUNTIME_CLOSURE",
+        "recorded_index_pins": [
+          {
+            "field": "builds.frequency.index_sha256",
+            "sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+            "recorded_bytes": 932855
+          },
+          {
+            "field": "builds.balanced.index_sha256",
+            "sha256": "bbbfb9f20fb111234271417800dc9401b3e1b43194ee8ebd20267797f0f8ee84",
+            "recorded_bytes": 935556
+          }
+        ],
+        "prior_receipt": {
+          "path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json",
+          "field": "initial_result_sha256",
+          "sha256": "4f112f068d2df750be9f8389f69c290366a4bef1f989d5177299e0f8ff5f8ddb",
+          "classification": "REUSED_EXPOSED_PUBLIC_DEV_NOT_FRESH_GENERATION"
+        },
+        "explicit_configs": {
+          "method": "tfidf",
+          "min_score": 0.15,
+          "min_margin": 0.02,
+          "current_only": true
+        },
+        "unrecorded_defaults": "NOT_INFERRED",
+        "stable_selection_event": "NOT_RECONSTRUCTED",
+        "generation_allocation": "NOT_RECONSTRUCTED"
+      }
+    ],
+    "preserved_groups": [
+      {
+        "candidate_id": "ZMR-04:h1_r1",
+        "repair_source_field": "rounds.ZMR-04.h1_r1_repair_spent",
+        "repair_spent": 1,
+        "disposition_source_field": "rounds.ZMR-04.h1_component_disposition",
+        "disposition": "RETIRED_NO_ISOLATED_END_TO_END_GAIN_NO_FAMILY_CEILING",
+        "report_source_field": "rounds.ZMR-04.h1_report",
+        "report_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01.md",
+        "allocation_identity": "CARRIED_SOURCE_ID_NOT_RECONCILED_MECHANISM_OR_GENERATION"
+      },
+      {
+        "candidate_id": "ZMR-04:a5_chart",
+        "repair_source_field": "rounds.ZMR-04.a5_chart_repair_spent",
+        "repair_spent": 1,
+        "disposition_source_field": "rounds.ZMR-04.a5_chart_component_disposition",
+        "disposition": "RETIRED_NO_SAFETY_PRESERVING_NET_CORRECT_OR_MULTI_GAIN_NO_FAMILY_CEILING",
+        "report_source_field": "rounds.ZMR-04.a5_chart_disposition_report",
+        "report_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01.md",
+        "allocation_identity": "CARRIED_SOURCE_ID_NOT_RECONCILED_MECHANISM_OR_GENERATION"
+      },
+      {
+        "candidate_id": "ZMR-04:a4_role",
+        "repair_source_field": "rounds.ZMR-04.a4_role_repair_spent",
+        "repair_spent": 2,
+        "disposition_source_field": "rounds.ZMR-04.a4_role_component_disposition",
+        "disposition": "RETIRED_TWO_REPAIRS_SPENT_ABSOLUTE_PRECISION_CONTROL_AND_CONTRAST_PAIR_FAILURE_NO_FAMILY_CEILING",
+        "report_source_field": "rounds.ZMR-04.a4_role_disposition_report",
+        "report_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01.md",
+        "allocation_identity": "CARRIED_SOURCE_ID_NOT_RECONCILED_MECHANISM_OR_GENERATION"
+      },
+      {
+        "candidate_id": "ZMR-02:a1_balanced_selector",
+        "repair_source_field": "rounds.ZMR-02.a1_balanced_selector_repair_spent",
+        "repair_spent": 1,
+        "disposition_source_field": "rounds.ZMR-02.a1_balanced_selector_disposition",
+        "disposition": "RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING",
+        "report_source_field": "rounds.ZMR-02.a1_balanced_selector_report",
+        "report_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01.md",
+        "allocation_identity": "CARRIED_SOURCE_ID_NOT_RECONCILED_MECHANISM_OR_GENERATION"
+      }
+    ],
+    "diagnostic_count": 9,
+    "original_public_keys_reconstructed": 2,
+    "missing_original_public_keys": 7,
+    "original_module_digest_mentions_verified": 19,
+    "diagnostics_without_original_code_digest": 1,
+    "original_index_digest_mentions": 14,
+    "distinct_original_recorded_index_digests": 6,
+    "diagnostics_without_original_index_digest": 1,
+    "repair_receipt_links_verified": 5,
+    "combined_recorded_key_count": 15,
+    "historical_scope": "PARTIAL_REGISTERED_AND_NINE_LATER_PUBLIC_DIAGNOSTICS_NOT_COMPLETE_CONSUMPTION_CENSUS",
+    "index_verification": "ORIGINAL_RECEIPT_METADATA_ONLY_NO_INDEX_REBUILD_OR_BYTE_REHASH",
+    "semantic_evaluations": 0,
+    "source_packet_reads": 0,
+    "independent_generation_credit": 0,
+    "stable_configuration_allowance_remaining": null,
+    "accounting_status": "INCONCLUSIVE_HISTORICAL_STABLE_ALLOCATIONS_UNRECONCILED",
+    "new_stable_competition": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "saturation_ceiling": "NOT_ESTABLISHED"
+  }
+}
