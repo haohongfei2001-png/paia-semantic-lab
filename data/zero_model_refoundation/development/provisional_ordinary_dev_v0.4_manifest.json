@@ -4,9 +4,9 @@
   "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
   "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
   "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
-  "source_main": "8f29615ec5054801bf5c3eafc9190f3aa2056ae4",
+  "source_main": "fb32085f6ec4a3aa3594e6a243c2dc5fb21fe854",
   "status": "ORDINARY_TUNE_CAL_FULL144_SAFETY_INCOMPLETE_NOT_QUALIFIED",
-  "frozen_at": "2026-09-30T12:12:51Z",
+  "frozen_at": "2026-09-30T12:43:25Z",
   "splits": {
     "TUNE_PROVISIONAL": {
       "rows": 432,
@@ -76,10 +76,10 @@
     }
   },
   "safety_rows": {
-    "control": 0,
-    "context_required": 0,
-    "context_invariance": 0,
-    "multi": 0
+    "control_rows": 24,
+    "context_required_pairs": 12,
+    "context_invariance_pairs": 12,
+    "multi_rows": 12
   },
   "semantic_evaluations": 0,
   "independent_rows": 0,
@@ -91,9 +91,10 @@
     "TRAIN_TUNE_CAL_SHARE_CANDIDATE_WRITER_G0",
     "GOLD_UNREVIEWED",
     "ORDINARY_QUOTA_SHORTFALL",
-    "NO_SAFETY_ROWS",
     "NO_INDEPENDENT_SOURCE_REVIEW",
-    "NAME_ECHO_AND_HELD_OUT_MECHANISMS_NOT_ADJUDICATED"
+    "NAME_ECHO_AND_HELD_OUT_MECHANISMS_NOT_ADJUDICATED",
+    "SAFETY_QUOTA_SHORTFALL",
+    "SAFETY_GOLD_AND_PUBLIC_SIMILARITY_FLAGS_UNREVIEWED"
   ],
   "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
   "data_qualification": "NOT_QUALIFIED",
@@ -121,7 +122,8 @@
       "formal_name_echo_limit": 0.1,
       "formal_name_echo_status": "NOT_ADJUDICATED_NO_PASS",
       "independent_review": false
-    }
+    },
+    "safety_public_similarity_flags": 11
   },
   "stable_competition_admission": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
   "calibration_admission": "NOT_ADMITTED_PARTIAL_DATA",
@@ -212,6 +214,62 @@
       "original_reconstruction": "RESTORE_VERSION_ALL_ROW_FREEZE_TIMES_AND_REJECTED_ROW_FROM_DATA_RECEIPT",
       "predictions": 0,
       "router_repairs_spent": 0
+    },
+    {
+      "data_path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+      "round": 1,
+      "original_sha256": "fb1d243d93a6fdf51bebf34ac1f3eee414a41b0be55da2f6fe2b469384ba0393",
+      "revised_sha256": "7f9a5eaf074108e69b702bf395717d926502169ab5532c040373db7395bbacad",
+      "review_flag": {
+        "left": "safety_seed_v0.1/safety-v01-001",
+        "right": "safety-v04-cal-001",
+        "cross_split": true,
+        "same_scenario": false,
+        "exact_form": "bundle_sha256",
+        "similarity": 1
+      },
+      "original_reconstruction": "RESTORE_VERSION_TOP_AND_ROW_FREEZE_TIMES_ORIGINAL_FLAGS_AND_REJECTED_ROW_FROM_RECEIPT",
+      "predictions": 0,
+      "router_repairs_spent": 0
     }
-  ]
+  ],
+  "safety_by_split": {
+    "TUNE_PROVISIONAL": {
+      "rows": 42,
+      "control_rows": 12,
+      "context_required_pairs": 6,
+      "context_invariance_pairs": 6,
+      "multi_rows": 6
+    },
+    "CAL_PROVISIONAL": {
+      "rows": 42,
+      "control_rows": 12,
+      "context_required_pairs": 6,
+      "context_invariance_pairs": 6,
+      "multi_rows": 6
+    }
+  },
+  "safety_slices": [
+    {
+      "path": "data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json",
+      "sha256": "7f9a5eaf074108e69b702bf395717d926502169ab5532c040373db7395bbacad",
+      "rows": 84,
+      "pairs": 24
+    }
+  ],
+  "safety_target_shortfall": {
+    "TUNE_PROVISIONAL": {
+      "control_rows": 36,
+      "context_required_pairs": 18,
+      "context_invariance_pairs": 18,
+      "multi_rows": 18
+    },
+    "CAL_PROVISIONAL": {
+      "control_rows": 36,
+      "context_required_pairs": 18,
+      "context_invariance_pairs": 18,
+      "multi_rows": 18
+    },
+    "remaining_physical_rows": 252
+  }
 }
