@@ -74,3 +74,7 @@ retired-mechanism reopening follows from this audit. Data NOT_QUALIFIED,
 capability UNTESTED, resources NOT_QUALIFIED, grouped uncertainty unavailable,
 CAL prediction exposure0 and no saturation ceiling. All144/95%/70%, safety,
 resource/local-first/zero neural/embedding/LLM/semantic API constraints remain.
+
+## Exact-head CI repair receipt
+
+Initial head `b6f7e03f8a85b33c6ac20854614e9eecce70464e` passed Semantic Lab CI run36723517884; isolated validation run36723517900 failed because the already allowlisted source-audit JSON derivative was read but not materialized in the sparse validation workspace. All four new tests failed with the same missing-file error, before audit execution. Add only this explicit JSON path to the materialization list; preserve the initial CI result, all source packets, engineering dependencies, derivative and hard constraints. No unchanged-head rerun or semantic repair. A minimal validation workspace checks the changed file delivery before the repaired head receives its own integration CI.
