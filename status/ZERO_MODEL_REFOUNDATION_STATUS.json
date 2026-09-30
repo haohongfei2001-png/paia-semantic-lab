@@ -128,14 +128,14 @@
       },
       "provisional_train_source_cohorts": 0,
       "full144_train_report": "docs/zero-model-refoundation-v1/ZMR-02_FULL144_DEV_TRAIN.md",
-      "a1_feature_survival_audit": "TRAIN_CATALOG_ONLY_COMPLETE_NO_SEMANTIC_OUTPUT",
+      "a1_feature_survival_audit": "V1_INVALID_STATIC_ESTIMATE_V2_CORRECTED_NO_SEMANTIC_OUTPUT",
       "a1_feature_survival_report": "docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT.md",
       "a1_feature_survival_result": "docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_RESULT.json",
       "a1_balanced_selector_hypothesis": "A1_TOPIC_LANGUAGE_FEATURE_RESERVATION",
-      "a1_balanced_selector_runtime_status": "NOT_IMPLEMENTED",
-      "a1_balanced_selector_semantic_evaluations": 0,
+      "a1_balanced_selector_runtime_status": "IMPLEMENTED_PUBLIC_VARIANT_RETIRED_AFTER_ONE_REPAIR",
+      "a1_balanced_selector_semantic_evaluations": 1,
       "a1_balanced_selector_independent_rows": 0,
-      "a1_balanced_selector_estimated_index_bytes": 890757,
+      "a1_balanced_selector_estimated_index_bytes": 936102,
       "a1_balanced_dev_v01_rows": 36,
       "a1_balanced_dev_v01_single_topics": 18,
       "a1_balanced_dev_v01_missing_single_topics": 126,
@@ -153,9 +153,21 @@
         "mixed": 0
       },
       "a1_balanced_dev_v01_independent_rows": 0,
-      "a1_balanced_dev_v01_evaluation_status": "PUBLIC_A1_BALANCED_DEV_FROZEN_UNRUN",
+      "a1_balanced_dev_v01_evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
       "a1_balanced_dev_v01_data": "data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json",
-      "a1_balanced_dev_v01_report": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_INTAKE.md"
+      "a1_balanced_dev_v01_report": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_INTAKE.md",
+      "a1_feature_survival_correction_result": "docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_V2_RESULT.json",
+      "a1_balanced_selector_repair_spent": 1,
+      "a1_balanced_selector_initial_result": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json",
+      "a1_balanced_selector_r1_result": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_R1_DEV_V01_RESULT.json",
+      "a1_balanced_selector_report": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01.md",
+      "a1_balanced_selector_disposition": "RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING",
+      "a1_balanced_selector_single_exact_anchor": 5,
+      "a1_balanced_selector_single_exact_initial": 2,
+      "a1_balanced_selector_single_exact_r1": 3,
+      "a1_balanced_selector_control_false_anchor": 2,
+      "a1_balanced_selector_control_false_initial": 4,
+      "a1_balanced_selector_control_false_r1": 3
     },
     "ZMR-03": {
       "execution_status": "DEV_DIAGNOSTIC_COMPLETE_NOT_QUALIFIED",
@@ -821,5 +833,5 @@
       "a6_r2_fresh_v01_vs_r1_controls_false_avoided": 1
     }
   },
-  "next_action": "A1_TOPIC_LANGUAGE_FEATURE_RESERVATION now has distinct public provisional DEV v0.1 frozen before balanced selector implementation or predictions:36 original candidate-writer rows,18 singles covering18 domains/18 Topics (126 single-Topic gold gaps),6 controls,4 context-required,4 multi,4 ambiguous-unscored;18zh/18en, zero independent01B quota. Metadata/duplicate/NFKC/lineage/trigram screening against1,990 prior public provisional rows passes at0.55. Implement one fixed bounded bilingual Topic selector (up to20 rare-first alias features per Topic/language then global frequency fill to6,000) from pinned Catalog/fixed public TRAIN v0.2 only; retain unchanged frequency anchor/full144 prototypes and output universe, deterministic closure, combined index/runtime caps. Fix TF-IDF .15/.02 current-only baseline before first light same-writer DEV comparison; contextual/multilabel gaps must be reported rather than counted as passes. At most two explained mechanism repairs; retire without safety-preserving gain. Do not claim this A1 selector variant is a new family/independent generation or reset retired A4 repair2/2. Only stable candidates get distinct fresh registered heavy comparison; never replay consumed public keys or read/tune sealed AS/final/CIG-v1 TEST. Independent qualification path remains frozen, development continues under single writer/coherent batch;144/95%/70%/safety/resource/local-first/zero-neural/embedding/LLM/API constraints unchanged; capability UNTESTED/resources NOT_QUALIFIED/no ceiling."
+  "next_action": "A1 bilingual Topic feature reservation and its one bounded frequency-backbone repair are retired: anchor5/18 single correct with2/6 false controls, initial2/18 with4/6, R1 3/18 with3/6; no gained correct item vs anchor, context and multi remain unqualified. V1 TRAIN-only byte audit was invalid for absent cross-alias features; preserved original receipt is superseded by V2 observed-feature filtering. Actual initial936,102-byte index exceeds the932,855-byte anchor; no savings or capability/resource PASS. Continue development through Catalog-driven TRAIN expression/factor coverage rather than another selector patch: register a bounded provisional TRAIN v0.4 expansion plan across full144 Topic mechanism cards, author an initial coherent slice of genuinely distinct bilingual base scenarios from Catalog only (no recycled DEV error text/consumed packet or template quota filling), retain explicit same-writer provenance/lineage/zero independent01B quota and audit against public provisional material. Freeze new TRAIN version before new A2/A3 closure implementation, use internal grouped development checks and distinct fresh provisional DEV for future semantic comparisons. Do not reset retired selector/A4 budgets, claim a new independent generation or family ceiling. Independent curator/AS qualification remains frozen while all nondependent work continues; single writer/coherent batch/light inner loop/stable-only heavy gate, no unchanged-key replay or CIG-v1/sealed AS/final TEST reads, all144/95%/70%/safety/resources/local-first/zero-neural/embedding/LLM/API constraints unchanged, capability UNTESTED/resources NOT_QUALIFIED."
 }

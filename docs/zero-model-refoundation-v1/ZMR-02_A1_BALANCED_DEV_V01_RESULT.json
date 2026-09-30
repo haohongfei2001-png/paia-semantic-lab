@@ -1,0 +1,172 @@
+{
+  "schema": "ZMR-A1-BALANCED-PUBLIC-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_status": "CONSUMED_FOR_PUBLIC_DEVELOPMENT_DIAGNOSTIC",
+  "evaluation_key": "535bd409ec85c31ed8c9a9fda7df109eb7a8e2d80288e8bdccd43748dce5c394",
+  "cohort": "data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json",
+  "cohort_sha256": "8e207f1d173b30478e9548d4a4197aec6b5197c45abdf7afc63f9a736accbde2",
+  "dependency_hashes": {
+    "a1.mjs": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+    "a1_compile.mjs": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+    "a1_balanced.mjs": "398fd246c353c8f9bdfa7b9749ac7a179a08a550e770afdd4589a355c428f108",
+    "a1_balanced_compile.mjs": "1ff398fa28238f6a3c94108f93a7cf65c2f47f3315de2ec70cbc79016ddb3f22",
+    "a1_balanced_dev_diagnostic.mjs": "eb2a0ce54e020f207b08f2df48b2aa65a3de4801915df9eee84484f364e1adeb"
+  },
+  "configs": {
+    "method": "tfidf",
+    "min_score": 0.15,
+    "min_margin": 0.02,
+    "current_only": true
+  },
+  "topic_universe": 144,
+  "single_gold_topics": 18,
+  "missing_single_gold_topics": 126,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "results": {
+    "FREQUENCY": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 18,
+          "assigned": 10,
+          "exact": 5,
+          "supported_labels": 5,
+          "output_labels": 10
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 2,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 2
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 1,
+          "supported_labels": 1,
+          "output_labels": 2
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0,
+          "supported_labels": 1,
+          "output_labels": 2
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 0
+        }
+      },
+      "single_rows": 18,
+      "single_assigned": 10,
+      "single_exact": 5,
+      "global_supported_labels": 7,
+      "global_output_labels": 16,
+      "ambiguous_assignments": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_single_assigned_precision": 0.5,
+      "provisional_single_coverage": 0.5555555555555556,
+      "provisional_single_exact_recall": 0.2777777777777778,
+      "global_label_micro_precision": 0.4375,
+      "full144_macro_recall_zero_contribution_diagnostic": 0.034722222222222224,
+      "full144_qualification": "DATA_INSUFFICIENT_126_SINGLE_TOPIC_GOLD_GAPS"
+    },
+    "BALANCED": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 18,
+          "assigned": 7,
+          "exact": 2,
+          "supported_labels": 2,
+          "output_labels": 7
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 4,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 4
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 1
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0,
+          "supported_labels": 1,
+          "output_labels": 3
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 2
+        }
+      },
+      "single_rows": 18,
+      "single_assigned": 7,
+      "single_exact": 2,
+      "global_supported_labels": 3,
+      "global_output_labels": 15,
+      "ambiguous_assignments": 2,
+      "deterministic_repeat_differences": 0,
+      "provisional_single_assigned_precision": 0.2857142857142857,
+      "provisional_single_coverage": 0.3888888888888889,
+      "provisional_single_exact_recall": 0.1111111111111111,
+      "global_label_micro_precision": 0.2,
+      "full144_macro_recall_zero_contribution_diagnostic": 0.013888888888888888,
+      "full144_qualification": "DATA_INSUFFICIENT_126_SINGLE_TOPIC_GOLD_GAPS"
+    }
+  },
+  "paired_BALANCED_vs_FREQUENCY": {
+    "single_exact_gained": 0,
+    "single_exact_lost": 3,
+    "single_wrong_added": 1,
+    "single_wrong_avoided": 1,
+    "control_false_added": 2,
+    "control_false_avoided": 0
+  },
+  "builds": {
+    "frequency": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+      "index_bytes": 932855,
+      "runtime_plus_index_bytes": 939747,
+      "mode": "char"
+    },
+    "balanced": {
+      "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_universe": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "8961e85f1c6c7eedd7f387c5cd40c2e131c026c52878c75c80e6f645af777678",
+      "index_bytes": 936102,
+      "runtime_plus_index_bytes": 943975
+    }
+  },
+  "limitations": [
+    "same-writer unreviewed gold; no independent qualification credit",
+    "current-only top1 deliberately cannot qualify context or multi layers",
+    "ambiguous rows have no gold and are excluded from all precision denominators",
+    "static bytes and deterministic builds do not qualify memory/latency or capability"
+  ]
+}
