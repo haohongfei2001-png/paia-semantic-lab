@@ -167,6 +167,9 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-02_TRAIN_V04_SLICE3_INTAKE.md');
             engineering.push('packages/zero_model_refoundation/provisional_train_v04_slice3.test.mjs');
             development.push('data/zero_model_refoundation/development/provisional_train_v0.4_slice3.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-02_TRAIN_V04_SLICE4_INTAKE.md');
+            engineering.push('packages/zero_model_refoundation/provisional_train_v04_slice4.test.mjs');
+            development.push('data/zero_model_refoundation/development/provisional_train_v0.4_slice4.json');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
@@ -214,17 +217,17 @@ jobs:
             assert.equal(trainV04Slice1.qualification_credit_rows, 0);
             assert.equal(trainV04Slice1.evaluation_status, 'UNFIT_UNEVALUATED');
             assert.equal(trainV04Slice1.intake_status, 'PUBLIC_TRAIN_V04_SLICE1_FROZEN_NOT_COMPILER_ADMITTED');
-            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_rows, 216);
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_rows, 324);
             assert.equal(s.rounds['ZMR-02'].provisional_train_v04_independent_rows, 0);
-            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_remaining_rows, 216);
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_remaining_rows, 108);
             const trainV04Slice2 = JSON.parse((await read('data/zero_model_refoundation/development/provisional_train_v0.4_slice2.json')).toString('utf8'));
             assert.equal(trainV04Slice2.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
             assert.equal(trainV04Slice2.rows.length, 54);
             assert.equal(trainV04Slice2.qualification_credit_rows, 0);
             assert.equal(trainV04Slice2.evaluation_status, 'UNFIT_UNEVALUATED');
             assert.equal(trainV04Slice2.intake_status, 'PUBLIC_TRAIN_V04_SLICE2_FROZEN_NOT_COMPILER_ADMITTED');
-            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_topics, 72);
-            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_missing_topics, 72);
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_topics, 108);
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_missing_topics, 36);
             assert.equal(s.rounds['ZMR-02'].provisional_train_v04_slice1_rows, 54);
             assert.equal(s.rounds['ZMR-02'].provisional_train_v04_slice2_rows, 54);
             const trainV04Slice3 = JSON.parse((await read('data/zero_model_refoundation/development/provisional_train_v0.4_slice3.json')).toString('utf8'));
@@ -236,6 +239,14 @@ jobs:
             assert.equal(trainV04Slice3.evaluation_status, 'UNFIT_UNEVALUATED');
             assert.equal(trainV04Slice3.intake_status, 'PUBLIC_TRAIN_V04_SLICE3_FROZEN_NOT_COMPILER_ADMITTED');
             assert.equal(s.rounds['ZMR-02'].provisional_train_v04_slice3_rows, 108);
+            const trainV04Slice4 = JSON.parse((await read('data/zero_model_refoundation/development/provisional_train_v0.4_slice4.json')).toString('utf8'));
+            assert.equal(trainV04Slice4.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(trainV04Slice4.rows.length, 108);
+            assert.equal(trainV04Slice4.topic_count, 36);
+            assert.equal(trainV04Slice4.qualification_credit_rows, 0);
+            assert.equal(trainV04Slice4.evaluation_status, 'UNFIT_UNEVALUATED');
+            assert.equal(trainV04Slice4.intake_status, 'PUBLIC_TRAIN_V04_SLICE4_FROZEN_NOT_COMPILER_ADMITTED');
+            assert.equal(s.rounds['ZMR-02'].provisional_train_v04_slice4_rows, 108);
             const present = engineering.filter(p => after.has(p));
             assert(present.length === 0 || present.length === engineering.length, 'partial engineering module');
             const inputs = development.filter(p => after.has(p));
@@ -793,3 +804,4 @@ jobs:
           node --test packages/zero_model_refoundation/provisional_train_v04_slice1.test.mjs
           node --test packages/zero_model_refoundation/provisional_train_v04_slice2.test.mjs
           node --test packages/zero_model_refoundation/provisional_train_v04_slice3.test.mjs
+          node --test packages/zero_model_refoundation/provisional_train_v04_slice4.test.mjs
