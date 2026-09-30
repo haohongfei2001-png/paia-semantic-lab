@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {reviewDigest,validateDevelopmentReviewJournal} from './development_review_journal.mjs';
+const root=new URL('../../',import.meta.url),read=p=>readFile(new URL(p,root),'utf8'),json=async p=>JSON.parse(await read(p)),sha=s=>createHash('sha256').update(s).digest('hex');
+test('216 source rows retain published108-record prefix; holds and focused role proposals stay non-independent and unaccepted',async()=>{
+ const registry=await json('data/zero_model_refoundation/development/development_review_registry_v0.1.json'),prefix=await json('data/zero_model_refoundation/development/development_review_journal_v0.3.json'),journal=await json('data/zero_model_refoundation/development/development_review_journal_v0.4.json'),result=await json('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE3_REVIEW_RESULT.json');
+ assert.deepEqual(journal.records.slice(0,108),prefix.records);assert.equal(journal.prefix_journal_sha256,reviewDigest(prefix));assert.equal(journal.prefix_tail_sha256,'716e5340d70b87add7256940901b9ddaefb287ea285e50740e714f8338b2d0af');
+ const catalog=await read('catalog/system_topic_catalog_v0.2.yaml');assert.equal(sha(catalog),registry.catalog_sha256);const topics=[...catalog.matchAll(/^  - topic_id: (.+)$/gm)].map(x=>x[1]);
+ const paths=[1,2,3].map(n=>'data/zero_model_refoundation/development/provisional_tune_v0.4_slice'+n+'.json'),packets=await Promise.all(paths.map(async path=>({path,utf8:await read(path)}))),rows=packets.flatMap(p=>JSON.parse(p.utf8).rows);
+ const audit=validateDevelopmentReviewJournal({registry,journal,topics,packets});for(const [k,v] of Object.entries(audit))assert.deepEqual(result[k],v,k);
+ assert.equal(result.journal_sha256,reviewDigest(journal));assert.equal(result.preserved_prefix_journal_sha256,reviewDigest(prefix));assert.deepEqual(result.source_packet_pins,packets.map(p=>({path:p.path,sha256:sha(p.utf8)})));
+ assert.deepEqual(journal.records.map(r=>r.row_id),rows.map(r=>r.row_id));assert.equal(result.reviewed_rows,216);assert.equal(result.unreviewed_registered_rows,984);assert.equal(result.reviewed_topics,new Set(rows.map(r=>r.topic_id)).size);assert.equal(result.reviewed_topics,72);
+ const languages={};for(const r of rows)languages[r.language]=(languages[r.language]??0)+1;assert.deepEqual(result.reviewed_language_counts,languages);assert.deepEqual(audit.dispositions,{LABEL_IDENTIFIABILITY_HOLD:22,PROPOSE_REVISION:170,RETAIN_PROVISIONAL:24});
+ const suffix=journal.records.slice(108),newDispositions={};for(const r of suffix)newDispositions[r.disposition]=(newDispositions[r.disposition]??0)+1;assert.deepEqual(result.new_dispositions,newDispositions);assert.equal(result.new_records,108);assert.equal(result.preserved_prefix_records,108);assert.equal(result.source_packet_reads,3);
+ assert(journal.records.every(r=>r.revision===1&&r.independent===false&&r.qualification_credit===0&&r.proposed_annotation.provisional_gold_topics.join()===r.original_annotation.provisional_gold_topics.join()&&r.boundary_hypotheses.every(t=>topics.includes(t))));
+ assert.deepEqual(suffix.filter(r=>r.disposition==='LABEL_IDENTIFIABILITY_HOLD').map(r=>r.row_id),[2,12,22,23,24,85,86,87,98].map(n=>'tune-v04-s3-'+String(n).padStart(3,'0')));
+ for(const n of [4,37])assert(suffix[n-1].proposed_annotation.provisional_evidence_spans.filter(s=>s.role==='OBJECT').every(s=>s.text!==suffix[n-1].original_annotation.provisional_evidence_spans.find(x=>x.role==='OBJECT').text));
+ assert(suffix[68].proposed_annotation.provisional_evidence_spans.some(s=>s.role==='ACTION'&&s.text==='把这句 source sentence 的委婉语气在译文里表达出来'));
+ assert(suffix.some(r=>r.proposed_annotation.provisional_evidence_spans.some(s=>s.role==='NEGATION')));assert.equal(audit.semantic_evaluations,0);assert.equal(audit.independent_reviews,0);assert.equal(audit.calibration_admission,'HOLD_SOURCE_GOLD_MECHANISM_REVIEW_AND_ACCOUNTING');assert.equal(audit.capability_verdict,'UNTESTED');assert.equal(audit.resource_verdict,'NOT_QUALIFIED');
+});
