@@ -175,6 +175,9 @@ jobs:
             development.push('data/zero_model_refoundation/development/provisional_train_v0.4_slice5.json', 'data/zero_model_refoundation/development/provisional_train_v0.4_manifest.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE.md', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json');
             engineering.push('packages/zero_model_refoundation/compiled_numbers.mjs', 'packages/zero_model_refoundation/train_v04_compile.mjs', 'packages/zero_model_refoundation/train_v04_compile.test.mjs', 'packages/zero_model_refoundation/a1_v04_compact.mjs', 'packages/zero_model_refoundation/a1_v04_compact.test.mjs');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-06_DEVELOPMENT_COMPETITION_ACCOUNTING.md');
+            engineering.push('packages/zero_model_refoundation/competition_budget.mjs', 'packages/zero_model_refoundation/competition_budget.test.mjs');
+            development.push('data/zero_model_refoundation/development/development_competition_inventory_v0.1.json');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
@@ -284,6 +287,14 @@ jobs:
               assert(r.index_bytes <= expected.index_bytes_max && r.runtime_plus_index_bytes <= expected.router_plus_index_bytes_max);
               assert.equal(r.index_bytes, s.rounds['ZMR-03'].train_v04_compiled_index_bytes[r.family]);
             }
+            const accounting = JSON.parse((await read('data/zero_model_refoundation/development/development_competition_inventory_v0.1.json')).toString('utf8'));
+            assert.equal(accounting.accounting_status, 'INCONCLUSIVE_HISTORICAL_STABLE_ALLOCATIONS_UNRECONCILED');
+            assert.equal(accounting.stable_configuration_allowance_remaining, null);
+            assert.equal(accounting.semantic_evaluations, 0);
+            assert.equal(accounting.independent_generation_credit, 0);
+            assert.equal(accounting.registrations.length, 13);
+            assert.equal(s.rounds['ZMR-06'].remaining_stable_configuration_allowance, null);
+            assert.equal(s.rounds['ZMR-06'].new_stable_competition, 'HOLD_PENDING_ACCOUNTING_RECONCILIATION');
             const present = engineering.filter(p => after.has(p));
             assert(present.length === 0 || present.length === engineering.length, 'partial engineering module');
             const inputs = development.filter(p => after.has(p));
@@ -844,3 +855,4 @@ jobs:
           node --test packages/zero_model_refoundation/provisional_train_v04_slice4.test.mjs
           node --test packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs packages/zero_model_refoundation/train_v04.test.mjs
           node --test packages/zero_model_refoundation/train_v04_compile.test.mjs packages/zero_model_refoundation/a1_v04_compact.test.mjs
+          node --test packages/zero_model_refoundation/competition_budget.test.mjs

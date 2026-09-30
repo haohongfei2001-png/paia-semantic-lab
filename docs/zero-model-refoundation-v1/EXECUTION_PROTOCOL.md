@@ -39,6 +39,8 @@ ZMR-00 使用 allowlist-only文档/元数据检查；ZMR-01A后仅在显式列�
 
 stable配置定义：依赖闭包可重建、语法/单元通过、TRAIN/DEV权限明确、参数及分母固定、资源静态计数合格、注册的假设和消融完整。没有这些条件不允许消耗AS。公开DEV使用情况记入exposure ledger；失败和撤销候选不能从账本消失。
 
+2026-09-30 pre-freeze accounting guard：新 stable competition freeze 前先重建累计 generation/candidate/config/repair 分配，用 `competition_budget.mjs` 校验6代/6候选/12稳定配置/2修复/1AS及已消费key。`NOT_QUALIFIED` 或 retired 不是额度归零证据，public packet 的新后缀不构成新独立generation。当前部分历史 inventory 的稳定分配尚未完整核对，remaining allowance 为null；仅冻结依赖该核对的新稳定比较，继续数据intake、来源/lineage工程、构建和资源优化。普通账本缺口由writer自动补证，不因此向owner升级、不伪造预算PASS。见ZMR-06_DEVELOPMENT_COMPETITION_ACCOUNTING.md；本补充不改变任何产品或研究预算，不授权sealed内容。
+
 ## 4. 自动修复、淘汰与真正需要owner的情况
 
 语法、打包、trigger、schema、脚本路径、依赖固定和普通集成失败：自动修，保留失败run，证明无sealed数据接触；不得将工程失败改写成科学PASS。语义修复：每候选最多两次、只针对允许的公开DEV机制；超限淘汰。更换预登记候选、简化组件、放弃无增益的family无需owner选参数。
