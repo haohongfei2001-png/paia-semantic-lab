@@ -1,0 +1,365 @@
+{
+  "schema": "ZMR-LATER-DIAGNOSTIC-RECIPE-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "source_main": "5f2dec2d9da842c9f5095b5120731f01b10ee4c8",
+  "source_tree": "da4b9ba48c29a29bf4c82f70ebee7505a51c550e",
+  "inventory_path": "data/zero_model_refoundation/development/development_competition_inventory_v0.1.json",
+  "inventory_git_blob": "e2f55571c3f0f221c582241de64e914ead8ecb14",
+  "inventory_sha256": "5626fbc9c89e8f5698a6ba0b434d4a566a59a11ec58f2e86f4164be7a4b588fa",
+  "source_status_git_blob": "bfd15df828378745fa7a7186b50b937efdde05e5",
+  "source_status_sha256": "2b442668cdd511ad4a2fb17acc7552ae30164791d41106b45e5f98c23e8558ed",
+  "historical_status_projection": {
+    "rounds": {
+      "ZMR-02": {
+        "a1_balanced_selector_repair_spent": 1,
+        "a1_balanced_selector_disposition": "RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING",
+        "a1_balanced_selector_report": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01.md"
+      },
+      "ZMR-04": {
+        "h1_r1_repair_spent": 1,
+        "h1_component_disposition": "RETIRED_NO_ISOLATED_END_TO_END_GAIN_NO_FAMILY_CEILING",
+        "h1_report": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01.md",
+        "a5_chart_repair_spent": 1,
+        "a5_chart_component_disposition": "RETIRED_NO_SAFETY_PRESERVING_NET_CORRECT_OR_MULTI_GAIN_NO_FAMILY_CEILING",
+        "a5_chart_disposition_report": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01.md",
+        "a4_role_repair_spent": 2,
+        "a4_role_component_disposition": "RETIRED_TWO_REPAIRS_SPENT_ABSOLUTE_PRECISION_CONTROL_AND_CONTRAST_PAIR_FAILURE_NO_FAMILY_CEILING",
+        "a4_role_disposition_report": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01.md"
+      }
+    }
+  },
+  "groups": [
+    {
+      "candidate_id": "ZMR-04:h1_r1",
+      "repair_source_field": "rounds.ZMR-04.h1_r1_repair_spent",
+      "repair_spent": 1,
+      "disposition_source_field": "rounds.ZMR-04.h1_component_disposition",
+      "disposition": "RETIRED_NO_ISOLATED_END_TO_END_GAIN_NO_FAMILY_CEILING",
+      "report_source_field": "rounds.ZMR-04.h1_report",
+      "report_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01.md"
+    },
+    {
+      "candidate_id": "ZMR-04:a5_chart",
+      "repair_source_field": "rounds.ZMR-04.a5_chart_repair_spent",
+      "repair_spent": 1,
+      "disposition_source_field": "rounds.ZMR-04.a5_chart_component_disposition",
+      "disposition": "RETIRED_NO_SAFETY_PRESERVING_NET_CORRECT_OR_MULTI_GAIN_NO_FAMILY_CEILING",
+      "report_source_field": "rounds.ZMR-04.a5_chart_disposition_report",
+      "report_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01.md"
+    },
+    {
+      "candidate_id": "ZMR-04:a4_role",
+      "repair_source_field": "rounds.ZMR-04.a4_role_repair_spent",
+      "repair_spent": 2,
+      "disposition_source_field": "rounds.ZMR-04.a4_role_component_disposition",
+      "disposition": "RETIRED_TWO_REPAIRS_SPENT_ABSOLUTE_PRECISION_CONTROL_AND_CONTRAST_PAIR_FAILURE_NO_FAMILY_CEILING",
+      "report_source_field": "rounds.ZMR-04.a4_role_disposition_report",
+      "report_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01.md"
+    },
+    {
+      "candidate_id": "ZMR-02:a1_balanced_selector",
+      "repair_source_field": "rounds.ZMR-02.a1_balanced_selector_repair_spent",
+      "repair_spent": 1,
+      "disposition_source_field": "rounds.ZMR-02.a1_balanced_selector_disposition",
+      "disposition": "RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING",
+      "report_source_field": "rounds.ZMR-02.a1_balanced_selector_report",
+      "report_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01.md"
+    }
+  ],
+  "records": [
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "6bb64fb4c5315b76f17a25d2ab78cb64af4d4343",
+      "aggregate_sha256": "5164e7e21568235bd69dc587efd01982fd2965f901c044be64a81c4e58f56a09",
+      "diagnostic_path": "packages/zero_model_refoundation/h1_recall_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:h1_r1",
+      "repair_step": 0,
+      "code_bindings": [
+        {
+          "field": "h1_module_sha256",
+          "path": "packages/zero_model_refoundation/h1_recall_initial.mjs"
+        }
+      ],
+      "prior_path": null,
+      "prior_field": null
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_R1_RECALL_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "597ab4ddbccff84bce88f6e69de2585a12d3f10b",
+      "aggregate_sha256": "5cae6608fc476b7e80639052b171372caf47ac4422134ef9845c535fb239182e",
+      "diagnostic_path": "packages/zero_model_refoundation/h1_r1_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:h1_r1",
+      "repair_step": 1,
+      "code_bindings": [],
+      "prior_path": "docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_RESULT.json",
+      "prior_field": "initial_result_sha256"
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "9b88b68896a6d2fbdd1c904b411b6cfcaca42ebe",
+      "aggregate_sha256": "c6f4ae51d12f7ec63141a06d7ac284c33df735580ce81692334c6084a2859334",
+      "diagnostic_path": "packages/zero_model_refoundation/a5_chart_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:a5_chart",
+      "repair_step": 0,
+      "code_bindings": [
+        {
+          "field": "chart_module_sha256",
+          "path": "packages/zero_model_refoundation/a5_evidence_chart.mjs"
+        }
+      ],
+      "prior_path": null,
+      "prior_field": null
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_R1_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "2bb1d56118fb50b91657ec1213f017680c28c9a2",
+      "aggregate_sha256": "cc061243d3797776a9785f8bc5ed461f08955da42fa01ca68a8093b1dbf7e3c3",
+      "diagnostic_path": "packages/zero_model_refoundation/a5_chart_r1_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:a5_chart",
+      "repair_step": 1,
+      "code_bindings": [
+        {
+          "field": "r1_module_sha256",
+          "path": "packages/zero_model_refoundation/a5_evidence_chart_r1.mjs"
+        }
+      ],
+      "prior_path": "docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_RESULT.json",
+      "prior_field": "initial_result_sha256"
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "4550f31f28d23a2eff51ad42401ca031068444fa",
+      "aggregate_sha256": "0d923f265e360450270f343ad194f3e3f5af00c8bd03a1fc3f5274c98a2a057c",
+      "diagnostic_path": "packages/zero_model_refoundation/a4_role_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:a4_role",
+      "repair_step": 0,
+      "code_bindings": [
+        {
+          "field": "role_module_sha256",
+          "path": "packages/zero_model_refoundation/a4_role_contrast.mjs"
+        }
+      ],
+      "prior_path": null,
+      "prior_field": null
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "87b3b2b160c1f0b943aa0e96abbdcc5fbc868acc",
+      "aggregate_sha256": "a0e7893400e35db85d4f1e56833d1029f5442bb5c4b0034213059069492b1053",
+      "diagnostic_path": "packages/zero_model_refoundation/a4_role_r1_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:a4_role",
+      "repair_step": 1,
+      "code_bindings": [
+        {
+          "field": "role_module_sha256",
+          "path": "packages/zero_model_refoundation/a4_role_contrast.mjs"
+        },
+        {
+          "field": "r1_module_sha256",
+          "path": "packages/zero_model_refoundation/a4_role_contrast_r1.mjs"
+        }
+      ],
+      "prior_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json",
+      "prior_field": "prior_result_sha256"
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R2_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "251739799574f625585ba8246a2662c7a0873435",
+      "aggregate_sha256": "6deb25539b60d246771960434c49dc83bd048f85bc3854c4f56eb0dc21493063",
+      "diagnostic_path": "packages/zero_model_refoundation/a4_role_r2_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-04:a4_role",
+      "repair_step": 2,
+      "code_bindings": [
+        {
+          "field": "role_module_sha256",
+          "path": "packages/zero_model_refoundation/a4_role_contrast.mjs"
+        },
+        {
+          "field": "r1_module_sha256",
+          "path": "packages/zero_model_refoundation/a4_role_contrast_r1.mjs"
+        },
+        {
+          "field": "r2_module_sha256",
+          "path": "packages/zero_model_refoundation/a4_role_contrast_r2.mjs"
+        }
+      ],
+      "prior_path": "docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json",
+      "prior_field": "prior_result_sha256"
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "0b3119fc59f6c1ec9718f777b0f28cbbab8f9422",
+      "aggregate_sha256": "4f112f068d2df750be9f8389f69c290366a4bef1f989d5177299e0f8ff5f8ddb",
+      "diagnostic_path": "packages/zero_model_refoundation/a1_balanced_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-02:a1_balanced_selector",
+      "repair_step": 0,
+      "code_bindings": [
+        {
+          "field": "dependency_hashes.a1.mjs",
+          "path": "packages/zero_model_refoundation/a1.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_compile.mjs",
+          "path": "packages/zero_model_refoundation/a1_compile.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_balanced.mjs",
+          "path": "packages/zero_model_refoundation/a1_balanced.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_balanced_compile.mjs",
+          "path": "packages/zero_model_refoundation/a1_balanced_compile.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_balanced_dev_diagnostic.mjs",
+          "path": "packages/zero_model_refoundation/a1_balanced_dev_diagnostic.mjs"
+        }
+      ],
+      "prior_path": null,
+      "prior_field": null
+    },
+    {
+      "aggregate_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_R1_DEV_V01_RESULT.json",
+      "aggregate_git_blob": "0f146be7eb57e98a9ec4ed872b386dc5fee55c02",
+      "aggregate_sha256": "e79d976ea116ad4b4bf5802b0eeaed3675653d52bfe635e500db4b9468403f27",
+      "diagnostic_path": "packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs",
+      "candidate_id": "ZMR-02:a1_balanced_selector",
+      "repair_step": 1,
+      "code_bindings": [
+        {
+          "field": "dependency_hashes.a1.mjs",
+          "path": "packages/zero_model_refoundation/a1.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_compile.mjs",
+          "path": "packages/zero_model_refoundation/a1_compile.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_balanced_r1.mjs",
+          "path": "packages/zero_model_refoundation/a1_balanced_r1.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_balanced_r1_compile.mjs",
+          "path": "packages/zero_model_refoundation/a1_balanced_r1_compile.mjs"
+        },
+        {
+          "field": "dependency_hashes.a1_balanced_r1_dev_diagnostic.mjs",
+          "path": "packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs"
+        }
+      ],
+      "prior_path": "docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json",
+      "prior_field": "initial_result_sha256"
+    }
+  ],
+  "code_dependencies": [
+    {
+      "path": "packages/zero_model_refoundation/h1_recall_dev_diagnostic.mjs",
+      "git_blob": "31510c02774ccfa6324c2a02eb901ed89107b003",
+      "sha256": "6808f57201f32369e6b773ed1680f7c5eeaaf200e25712e7685f37416784fd53"
+    },
+    {
+      "path": "packages/zero_model_refoundation/h1_r1_dev_diagnostic.mjs",
+      "git_blob": "c1412f01fd8ce7a911209600ded6eb03f753b411",
+      "sha256": "f2a60e505b58dc1c65a5137adb38f060233e1ad3ca5388a9c715ea6afddba774"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a5_chart_dev_diagnostic.mjs",
+      "git_blob": "3c0398c2cae783e8567289faafe4706664acfc89",
+      "sha256": "8b913dc10df096ac87544cc07714a6a84036b9e6c7820ba3c6ea9a62f5c79617"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a5_chart_r1_dev_diagnostic.mjs",
+      "git_blob": "9e60feb714df1baea29c9cd3605c3ff6154fce52",
+      "sha256": "353e93044c3b14fa4ee5970ff6c5abb6d6031ef6b4b891dc6d08b97203311fe6"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a4_role_dev_diagnostic.mjs",
+      "git_blob": "7e5fa1892fbc4e8811eb42389f479182979e3de6",
+      "sha256": "ffdefd76c442e67756fbd2037c546d2333810dfe8e36e1f474843586c2388f8e"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a4_role_r1_dev_diagnostic.mjs",
+      "git_blob": "d9ecb0d0f38b906ac7a97afb5a55dcf6a973b3c6",
+      "sha256": "1c38ede2874428f9363187f7bf6fe6094e2258495f900873c34b796ad53fa681"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a4_role_r2_dev_diagnostic.mjs",
+      "git_blob": "0614e6154a67ed854fd32be59c8b576cf204985d",
+      "sha256": "f55f058679c84106c6549a6a465effec75b83527924b12d49e7de02da8e4740f"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_balanced_dev_diagnostic.mjs",
+      "git_blob": "711e26c56c659170b94e2e2c470832ffc275c8cd",
+      "sha256": "eb2a0ce54e020f207b08f2df48b2aa65a3de4801915df9eee84484f364e1adeb"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs",
+      "git_blob": "ffa1839d4c5c02f43d5d2bd50c6f5269b1cabaff",
+      "sha256": "47d9a9159d215236c276f5f530a675e22ff9348af6036f505747e7bec4391a2a"
+    },
+    {
+      "path": "packages/zero_model_refoundation/h1_recall_initial.mjs",
+      "git_blob": "60a1510aa578c0a0c65dc971f453b53be1575a24",
+      "sha256": "11fcb96a4724081fa66129272f1c5976bb77f3fc119baaffe6c190b7c7f0b950"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a5_evidence_chart.mjs",
+      "git_blob": "545f4d015ae1334ead76093efdb63a09ce5538c4",
+      "sha256": "53b63005cd6e1c29a94be30bcb9228417c1cf0347c332e5231e710e3bab12973"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a5_evidence_chart_r1.mjs",
+      "git_blob": "014f858ccb8eb39ee4d903308901f6ccec12f34d",
+      "sha256": "1a8d0abba88cc7f07d0bc8707b5204a332fe2333a4a62c994ee256057c3b1f05"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a4_role_contrast.mjs",
+      "git_blob": "d5172753874bc11961c633569c0b67aad7b1d065",
+      "sha256": "7b08c530ed6874dc704b75443f9b383a5580cbc0ae1f0fb69e208be353e13515"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a4_role_contrast_r1.mjs",
+      "git_blob": "0b7fa4545c6d18f62ea23a9a1def4748f8c8dc7d",
+      "sha256": "2a29ee7959fa6861628ace7294f1b651e618abe238bf8de6c2920f42af7052f2"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a4_role_contrast_r2.mjs",
+      "git_blob": "461e1e12d631402fdff508004f7dc0883325e9c2",
+      "sha256": "970b0d5104c1b7b881506b574505292b793bcf2667b7c16799dbcffb05d35b01"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "git_blob": "4a88a345333aa7a2a7135c411548db8749601446",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_compile.mjs",
+      "git_blob": "139b3da3cdda9875fa18fbdbeaf94720ab14daec",
+      "sha256": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_balanced.mjs",
+      "git_blob": "bf92eb56d97b2e17558b368ba84a580f73d98f10",
+      "sha256": "398fd246c353c8f9bdfa7b9749ac7a179a08a550e770afdd4589a355c428f108"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_balanced_compile.mjs",
+      "git_blob": "1aacf1e9ae502de9a5f443bd520ba795cb81365f",
+      "sha256": "1ff398fa28238f6a3c94108f93a7cf65c2f47f3315de2ec70cbc79016ddb3f22"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_balanced_r1.mjs",
+      "git_blob": "74946c5d7ba8a0c2a0bd334a2544eedd5d63dcf5",
+      "sha256": "b4e1abff5314a36dc66c4a529ba725a39ff1854cba2cc89408c24b19e544bb29"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_balanced_r1_compile.mjs",
+      "git_blob": "bea9f26dd26c96c4d17c1a4ea39de94a6a6967ef",
+      "sha256": "7058e52ebcc30dbaaaf05da2a224798b387e638f4f5f05cd52413a5cdd225fed"
+    }
+  ],
+  "semantic_evaluations": 0,
+  "source_packet_reads": 0,
+  "qualification_credit": 0,
+  "stable_allocation": "UNRESOLVED"
+}
