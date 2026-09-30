@@ -7,6 +7,7 @@ import {fingerprintBundle} from './fingerprints.mjs';
 const ROOT=new URL('../../',import.meta.url),D='data/zero_model_refoundation/development/';
 const read=p=>readFile(new URL(p,ROOT));const json=async p=>JSON.parse(await read(p));
 const sha=b=>createHash('sha256').update(b).digest('hex');
+const PUBLIC_PRIOR=['train_v0.1','train_v0.2','train_v0.3','tune_v0.1','cal_v0.1','a7_dev_v0.1','a4_triads_v0.1','a4_train_v0.1','a4_challenge_v0.1','a4_positive_challenge_v0.1','a5_challenge_v0.1','a5_repair_dev_v0.1','a5_r1_challenge_v0.1','a6_complement_challenge_v0.1','a6_r1_repair_dev_v0.1','a6_r2_challenge_v0.1','challenge_v0.1','challenge_v0.2','challenge_v0.3','challenge_v0.4','challenge_v0.5','challenge_v0.6','safety_seed_v0.1','safety_seed_v0.2','safety_seed_v0.3','safety_seed_v0.4','role_challenge_v0.1','h1_recall_dev_v0.1','a5_chart_dev_v0.1','a4_role_dev_v0.1','a1_balanced_dev_v0.1','train_v0.4_slice1','train_v0.4_slice2','train_v0.4_slice3','train_v0.4_slice4','train_v0.4_slice5'];
 const norm=x=>x.normalize('NFKC').toLowerCase();
 const grams=x=>{const c=Array.from(norm(x)),s=new Set();for(let i=0;i+3<=c.length;i++)s.add(c.slice(i,i+3).join(''));return s;};
 const fp=r=>({id:r.id,hash:fingerprintBundle({current:r.current,title:r.title??'',recent:r.recent??[]}).bundle_sha256,current:norm(r.current),grams:grams(r.current),scenario:r.scenario_family,template:r.template_family});
@@ -24,14 +25,14 @@ test('DEV-v04 pins partial intake and refuses to credit unwritten full144 CAL/sa
  const domains=new Map();for(const t of topics){if(!domains.has(t.domain))domains.set(t.domain,t.id);}
  assert.deepEqual([...new Set(c.rows.map(x=>x.topic_id))],[...domains.values()]);
  for(const o of [p,m,c])assert.equal(o.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
- const s=m.splits.TUNE_PROVISIONAL;assert.equal(s.rows,54);assert.equal(c.rows.length,54);assert.equal(s.topics,18);assert.equal(s.missing_topics,126);assert.equal(s.remaining_ordinary_rows,378);
- assert.deepEqual(s.language_counts,{zh:18,en:18,mixed:18});assert.equal(m.splits.CAL_PROVISIONAL.rows,0);assert.equal(m.splits.CAL_PROVISIONAL.missing_topics,144);assert.deepEqual(m.splits.CAL_PROVISIONAL.slices,[]);
+ const s=m.splits.TUNE_PROVISIONAL;assert.equal(s.rows,108);assert.equal(c.rows.length,54);assert.equal(s.topics,36);assert.equal(s.missing_topics,108);assert.equal(s.remaining_ordinary_rows,324);
+ assert.deepEqual(s.language_counts,{zh:36,en:36,mixed:36});assert.equal(m.splits.CAL_PROVISIONAL.rows,0);assert.equal(m.splits.CAL_PROVISIONAL.missing_topics,144);assert.deepEqual(m.splits.CAL_PROVISIONAL.slices,[]);
  assert(Object.values(m.safety_rows).every(n=>n===0));assert.equal(m.semantic_evaluations,0);assert.equal(m.independent_rows,0);assert.equal(m.source_review.independent,false);
  assert.equal(m.source_review.latent_scenario_distinctness,'UNREVIEWED');assert.equal(m.source_review.independent_gold_review,'NOT_PROVISIONED');
  assert.equal(m.formal_cross_split_writer_conflict,true);assert.equal(m.lineage_component_count,1);assert.equal(m.grouped_validation,'UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT');
  assert.equal(m.stable_competition_admission,'HOLD_PENDING_ACCOUNTING_RECONCILIATION');assert.equal(m.calibration_admission,'NOT_ADMITTED_PARTIAL_DATA');
  assert.equal(m.data_qualification,'NOT_QUALIFIED');assert.equal(m.capability_verdict,'UNTESTED');assert.equal(m.resource_verdict,'NOT_QUALIFIED');
- const status=await json('status/ZERO_MODEL_REFOUNDATION_STATUS.json');assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_tune_rows,c.rows.length);assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_semantic_evaluations,0);assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_independent_rows,0);
+ const status=await json('status/ZERO_MODEL_REFOUNDATION_STATUS.json');assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_tune_rows,s.rows);assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_semantic_evaluations,0);assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_independent_rows,0);
  assert.equal(status.rounds['ZMR-06'].remaining_stable_configuration_allowance,null);assert.equal(status.capability_verdict,'UNTESTED');assert.equal(status.resource_verdict,'NOT_QUALIFIED');
 });
 
@@ -55,9 +56,9 @@ test('all54 inputs retain source/lineage, explicit unreviewed object spans and U
 });
 
 test('fresh TUNE public-only duplicate review flags are reproducible; blind overlap and independence remain unknown',async()=>{
- const names=['train_v0.1','train_v0.2','train_v0.3','tune_v0.1','cal_v0.1','a7_dev_v0.1','a4_triads_v0.1','a4_train_v0.1','a4_challenge_v0.1','a4_positive_challenge_v0.1','a5_challenge_v0.1','a5_repair_dev_v0.1','a5_r1_challenge_v0.1','a6_complement_challenge_v0.1','a6_r1_repair_dev_v0.1','a6_r2_challenge_v0.1','challenge_v0.1','challenge_v0.2','challenge_v0.3','challenge_v0.4','challenge_v0.5','challenge_v0.6','safety_seed_v0.1','safety_seed_v0.2','safety_seed_v0.3','safety_seed_v0.4','role_challenge_v0.1','h1_recall_dev_v0.1','a5_chart_dev_v0.1','a4_role_dev_v0.1','a1_balanced_dev_v0.1','train_v0.4_slice1','train_v0.4_slice2','train_v0.4_slice3','train_v0.4_slice4','train_v0.4_slice5'];
+ const names=PUBLIC_PRIOR;
  const seen=[];for(const n of names){const c=await json(D+'provisional_'+n+'.json');for(const r of c.rows??[])if(typeof r.current==='string')seen.push(fp(r));}
- const m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json');assert.equal(seen.length,2458);assert.equal(m.public_overlap_screen.prior_explicit_public_rows,seen.length);
+ const m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json');assert.equal(seen.length,2458);assert.equal(m.public_overlap_screens[0].prior_explicit_public_rows,seen.length);
  const flags=[];for(const r of (await json(D+'provisional_tune_v0.4_slice1.json')).rows){const now=fp(r);
   for(const old of seen){assert.notEqual(now.scenario,old.scenario);assert.notEqual(now.template,old.template);
    let common=0;for(const t of now.grams)if(old.grams.has(t))common++;
@@ -65,6 +66,28 @@ test('fresh TUNE public-only duplicate review flags are reproducible; blind over
    if(now.hash===old.hash||now.current===old.current||similarity>=.55)flags.push({left:old.id,right:now.id,similarity});
   }seen.push(now);
  }
- assert.deepEqual(flags,m.public_overlap_screen.flags);assert.deepEqual(flags,[]);
- assert.equal(m.public_overlap_screen.sealed_test_fingerprints_available,false);assert.equal(m.public_overlap_screen.no_sealed_test_overlap_claim,false);
+ assert.deepEqual(flags,m.public_overlap_screens[0].flags);assert.deepEqual(flags,[]);
+ assert.equal(m.public_overlap_screens[0].sealed_test_fingerprints_available,false);assert.equal(m.public_overlap_screens[0].no_sealed_test_overlap_claim,false);
+});
+
+test('slice2 adds54 source-tracked inputs without mutating frozen slice1 or claiming full coverage',async()=>{
+ const c=await json(D+'provisional_tune_v0.4_slice2.json'),m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json'),first=await json(D+'provisional_tune_v0.4_slice1.json');
+ assert.equal(m.splits.TUNE_PROVISIONAL.slices.length,2);assert.equal(m.splits.TUNE_PROVISIONAL.slices[0].sha256,'0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594');
+ const entry=m.splits.TUNE_PROVISIONAL.slices[1];assert.equal(entry.path,D+'provisional_tune_v0.4_slice2.json');assert.equal(entry.sha256,sha(await read(entry.path)));assert.equal(entry.rows,54);
+ const topics=parsePinnedCatalog(await read('catalog/system_topic_catalog_v0.2.yaml')),domains=new Map();for(const t of topics){const a=domains.get(t.domain)??[];a.push(t.id);domains.set(t.domain,a);}
+ assert.deepEqual([...new Set(c.rows.map(r=>r.topic_id))],[...domains.values()].map(a=>a[1]));
+ assert.equal(c.schema,'ZMR-PROVISIONAL-TUNE-V04-SLICE-2');assert.equal(c.row_count,54);assert.equal(c.rows.length,54);assert.equal(c.topic_count,18);assert.equal(c.missing_topics,126);
+ assert.equal(c.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');assert.equal(c.intake_status,'PARTIAL_PUBLIC_TUNE_V04_FROZEN_NOT_EVALUATION_ADMITTED');assert.equal(c.evaluation_status,'UNRUN_NO_ROUTER_PREDICTIONS');assert.equal(c.qualification_credit_rows,0);
+ const ids=new Set(first.rows.map(r=>r.id)),lang={};for(const r of c.rows){assert(!ids.has(r.id));ids.add(r.id);assert.equal(r.id,r.row_id);assert.equal(r.source_id,'writer-tune-v04-slice2-20260930');assert.equal(r.authoring_batch,'ZMR-DEV-V04-TUNE-SLICE2-20260930');
+  for(const field of ['split','exposure','writer_id','writer_cohort','source_family','source_license_status','generation_id','qualification_credit_rows','annotation_state','review_status','identifiability_state','boundary_review_status','span_offset_unit','catalog_sha256'])assert.equal(r[field],first.rows[0][field]);
+  assert.equal(r.scenario_id,r.id);assert.equal(r.scenario_family,r.id);assert.equal(r.template_family,r.id);assert.equal(r.translation_family,null);assert.equal(r.paraphrase_family,null);
+  assert.equal(r.expected_state,'ASSIGNED');assert.deepEqual(r.provisional_gold_topics,[r.topic_id]);assert.deepEqual(r.excluded_topics,[]);assert.equal(r.title,'');assert.deepEqual(r.recent,[]);assert(r.current.length>=30);
+  assert.equal(r.provisional_evidence_spans.length,2);for(const span of r.provisional_evidence_spans){assert.equal(span.source,'current');assert(span.start>=0&&span.end>span.start&&span.end<=r.current.length);assert.equal(r.current.slice(span.start,span.end),span.text);}
+  assert.deepEqual(r.fingerprints,fingerprintBundle({current:r.current,title:r.title,recent:r.recent}));assert(['zh','en','mixed'].includes(r.language));if(r.language==='mixed')assert(/\p{Script=Han}/u.test(r.current)&&/[A-Za-z]/u.test(r.current));lang[r.language]=(lang[r.language]??0)+1;
+ }
+ assert.deepEqual(lang,{zh:18,en:18,mixed:18});assert.deepEqual(lang,c.language_counts);
+ const all=[...first.rows,...c.rows];assert.equal(all.length,108);assert.equal(new Set(all.map(r=>r.topic_id)).size,36);const coverage=new Map();for(const r of all){const a=coverage.get(r.topic_id)??new Set();assert(!a.has(r.language));a.add(r.language);coverage.set(r.topic_id,a);}assert([...coverage.values()].every(s=>s.size===3));
+ const seen=[];for(const n of [...PUBLIC_PRIOR,'tune_v0.4_slice1'])for(const r of (await json(D+'provisional_'+n+'.json')).rows??[])if(typeof r.current==='string')seen.push(fp(r));assert.equal(seen.length,2512);
+ const flags=[];for(const r of c.rows){const now=fp(r);for(const old of seen){assert.notEqual(now.scenario,old.scenario);assert.notEqual(now.template,old.template);let common=0;for(const t of now.grams)if(old.grams.has(t))common++;const similarity=common/(now.grams.size+old.grams.size-common||1);if(now.hash===old.hash||now.current===old.current||similarity>=.55)flags.push({left:old.id,right:now.id,similarity});}seen.push(now);}
+ assert.deepEqual(flags,[]);const screen=m.public_overlap_screens[1];assert.equal(screen.prior_explicit_public_rows,2512);assert.deepEqual(screen.flags,flags);assert.equal(screen.sealed_test_fingerprints_available,false);assert.equal(screen.no_sealed_test_overlap_claim,false);
 });
