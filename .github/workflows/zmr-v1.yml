@@ -179,6 +179,10 @@ jobs:
             engineering.push('packages/zero_model_refoundation/historical_registration_join.mjs', 'packages/zero_model_refoundation/historical_registration_join.test.mjs');
             engineering.push('packages/zero_model_refoundation/historical_identity_audit.mjs', 'packages/zero_model_refoundation/historical_identity_audit.test.mjs');
             engineering.push('packages/zero_model_refoundation/later_diagnostic_audit.mjs', 'packages/zero_model_refoundation/later_diagnostic_audit.test.mjs');
+            engineering.push('packages/zero_model_refoundation/historical_defaults_audit.mjs', 'packages/zero_model_refoundation/historical_defaults_audit.test.mjs');
+            development.push('data/zero_model_refoundation/development/historical_defaults_recipe_v0.1.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_DEFAULTS_AUDIT.md', 'docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_DEFAULTS_AUDIT_RESULT.json');
+            const defaultsAuditFiles = ['docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_DEFAULTS_AUDIT_RESULT.json'];
             development.push('data/zero_model_refoundation/development/later_diagnostic_recipe_v0.1.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-06_LATER_DIAGNOSTIC_AUDIT.md', 'docs/zero-model-refoundation-v1/ZMR-06_LATER_DIAGNOSTIC_AUDIT_RESULT.json');
             const laterDiagnosticFiles = ["docs/zero-model-refoundation-v1/ZMR-06_LATER_DIAGNOSTIC_AUDIT_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_H1_RECALL_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_H1_R1_RECALL_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_R1_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R2_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json","docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_R1_DEV_V01_RESULT.json"];
@@ -858,7 +862,7 @@ jobs:
               assert.equal(challenge.evaluation_status, 'UNRUN');
               assert.equal(challenge.qualification_credit_rows, 0);
             }
-            for (const p of [statusPath, 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json', ...accountingJoinFiles, ...identityAuditFiles, ...laterDiagnosticFiles, ...present, ...inputs]) {
+            for (const p of [statusPath, 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json', ...accountingJoinFiles, ...identityAuditFiles, ...laterDiagnosticFiles, ...defaultsAuditFiles, ...present, ...inputs]) {
               const bytes = await read(p);
               const target = path.join(process.env.GITHUB_WORKSPACE, p);
               fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
@@ -899,3 +903,4 @@ jobs:
           node --test packages/zero_model_refoundation/historical_registration_join.test.mjs
           node --test packages/zero_model_refoundation/historical_identity_audit.test.mjs
           node --test packages/zero_model_refoundation/later_diagnostic_audit.test.mjs
+          node --test packages/zero_model_refoundation/historical_defaults_audit.test.mjs
