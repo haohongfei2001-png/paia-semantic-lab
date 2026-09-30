@@ -228,6 +228,8 @@ jobs:
             engineering.push('packages/zero_model_refoundation/development_review_cal_rest_part2.test.mjs');
             engineering.push('packages/zero_model_refoundation/development_review_cal_rest_part3.test.mjs');
             engineering.push('packages/zero_model_refoundation/development_mechanism_audit.mjs', 'packages/zero_model_refoundation/development_mechanism_audit.test.mjs');
+            engineering.push('packages/zero_model_refoundation/mechanism_matrix_plan.mjs', 'packages/zero_model_refoundation/mechanism_matrix_plan.test.mjs');
+            development.push('data/zero_model_refoundation/development/development_mechanism_matrix_plan_v0.1.json');
             development.push('data/zero_model_refoundation/development/development_review_journal_v0.7.json');
             development.push('data/zero_model_refoundation/development/development_review_journal_v0.8.json');
             development.push('data/zero_model_refoundation/development/development_review_journal_v0.9.json');
@@ -243,6 +245,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART2_REVIEW.md', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART2_REVIEW_RESULT.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART3_REVIEW.md', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART3_REVIEW_RESULT.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_MECHANISM_AUDIT.md', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_MECHANISM_AUDIT_RESULT.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_PLAN.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json');
             development.push('data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json');
@@ -963,3 +966,4 @@ jobs:
           node --test packages/zero_model_refoundation/development_review_cal_rest_part2.test.mjs
           node --test packages/zero_model_refoundation/development_review_cal_rest_part3.test.mjs
           node --test packages/zero_model_refoundation/development_mechanism_audit.test.mjs
+          node --test packages/zero_model_refoundation/mechanism_matrix_plan.test.mjs
