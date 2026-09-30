@@ -1,0 +1,3211 @@
+{
+  "schema": "ZMR-PROVISIONAL-CAL-V04-SLICE-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "topic_universe": 144,
+  "version": "0.4.0-cal-slice1",
+  "row_count": 54,
+  "topic_count": 18,
+  "missing_topics": 126,
+  "domain_count": 18,
+  "language_counts": {
+    "zh": 18,
+    "en": 18,
+    "mixed": 18
+  },
+  "qualification_credit_rows": 0,
+  "independent_source_cohorts": 0,
+  "intake_status": "PARTIAL_PUBLIC_CAL_V04_FROZEN_NOT_CALIBRATION_ADMITTED",
+  "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
+  "source_audit": "CANDIDATE_WRITER_DECLARATION_ONLY_NO_INDEPENDENT_REVIEW",
+  "rows": [
+    {
+      "id": "cal-v04-s1-001",
+      "row_id": "cal-v04-s1-001",
+      "topic_id": "sys.personal_direction.life_goals",
+      "provisional_gold_topics": [
+        "sys.personal_direction.life_goals"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "如果不再把别人的评价当尺度，我最希望这一生留下什么？我想先梳理长期追求，而不是列这个月的任务。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 47,
+          "text": "如果不再把别人的评价当尺度，我最希望这一生留下什么？我想先梳理长期追求，而不是列这个月的任务。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 31,
+          "end": 35,
+          "text": "长期追求"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-001",
+      "scenario_family": "cal-v04-s1-001",
+      "template_family": "cal-v04-s1-001",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "f1f6ad8188c2572311941de2b5ceaa448fccbc8d02d9abeba0c01d561ca6ed1b",
+        "nfc_sha256": "2cc930063ff187710d75cd32de7e1c6df7b20920c7e540a505852a3fe4c36ce2",
+        "nfkc_sha256": "b90a202dbba63daeca16529052144f8f22cb133bb2a55bf793d63a1fe7cebea9",
+        "bundle_sha256": "2cc930063ff187710d75cd32de7e1c6df7b20920c7e540a505852a3fe4c36ce2"
+      }
+    },
+    {
+      "id": "cal-v04-s1-002",
+      "row_id": "cal-v04-s1-002",
+      "topic_id": "sys.personal_direction.life_goals",
+      "provisional_gold_topics": [
+        "sys.personal_direction.life_goals"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "The achievements on my resume no longer tell me what I want my life to stand for. I would like to explore the enduring aims behind my choices.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 142,
+          "text": "The achievements on my resume no longer tell me what I want my life to stand for. I would like to explore the enduring aims behind my choices."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 110,
+          "end": 123,
+          "text": "enduring aims"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-002",
+      "scenario_family": "cal-v04-s1-002",
+      "template_family": "cal-v04-s1-002",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "b8b40627e3aa42b1d968748110730ef5a2567a383b7290db9f18f7933e0d8d10",
+        "nfc_sha256": "3f8e1625a7e15695297446981aac834c3fa8b6a6aa49fb6508ee04b3ee75801f",
+        "nfkc_sha256": "3f8e1625a7e15695297446981aac834c3fa8b6a6aa49fb6508ee04b3ee75801f",
+        "bundle_sha256": "3f8e1625a7e15695297446981aac834c3fa8b6a6aa49fb6508ee04b3ee75801f"
+      }
+    },
+    {
+      "id": "cal-v04-s1-003",
+      "row_id": "cal-v04-s1-003",
+      "topic_id": "sys.personal_direction.life_goals",
+      "provisional_gold_topics": [
+        "sys.personal_direction.life_goals"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "突然意识到自己一直追着短期成绩跑，我想重新讨论 life purpose：哪些人生目标即使没有奖励也值得坚持。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "突然意识到自己一直追着短期成绩跑，我想重新讨论 life purpose：哪些人生目标即使没有奖励也值得坚持。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 24,
+          "end": 36,
+          "text": "life purpose"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-003",
+      "scenario_family": "cal-v04-s1-003",
+      "template_family": "cal-v04-s1-003",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "171684cacda3528ed2eca7bf5ee55ccf17b64c0b27d9a89321f5ba69c1df0076",
+        "nfc_sha256": "e9eb77bfbede7ccb2ec370546c66a947bd352b5dddc76b872035a1b70f112cde",
+        "nfkc_sha256": "a40abe40f09335b81118ac5dd7412f67bb0d99381e04ff915d7cc522c96b0225",
+        "bundle_sha256": "e9eb77bfbede7ccb2ec370546c66a947bd352b5dddc76b872035a1b70f112cde"
+      }
+    },
+    {
+      "id": "cal-v04-s1-004",
+      "row_id": "cal-v04-s1-004",
+      "topic_id": "sys.family_relationships.parents_family",
+      "provisional_gold_topics": [
+        "sys.family_relationships.parents_family"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "父母总把我现在的生活与他们年轻时比较，我想理解这种家庭相处模式，以及原生家庭对我们谈话方式的影响。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "父母总把我现在的生活与他们年轻时比较，我想理解这种家庭相处模式，以及原生家庭对我们谈话方式的影响。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 34,
+          "end": 38,
+          "text": "原生家庭"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-004",
+      "scenario_family": "cal-v04-s1-004",
+      "template_family": "cal-v04-s1-004",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "6f4996e3127e709d559c151ab23f58ef447e5969b11ae65d3e3885d6222d39eb",
+        "nfc_sha256": "9e20d8e90d88b15f670136a00ca6d0b4dd9fdf6e9be3ed636024bd81e6efb4cc",
+        "nfkc_sha256": "89b9bcb4d25cb29af5fcc43c552774316faf7d56302cd0dc973deeb7168acdaa",
+        "bundle_sha256": "9e20d8e90d88b15f670136a00ca6d0b4dd9fdf6e9be3ed636024bd81e6efb4cc"
+      }
+    },
+    {
+      "id": "cal-v04-s1-005",
+      "row_id": "cal-v04-s1-005",
+      "topic_id": "sys.family_relationships.parents_family",
+      "provisional_gold_topics": [
+        "sys.family_relationships.parents_family"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "When I visit my parents, everyone slips into the roles we had during my childhood. Help me reflect on these family-of-origin dynamics.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 134,
+          "text": "When I visit my parents, everyone slips into the roles we had during my childhood. Help me reflect on these family-of-origin dynamics."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 108,
+          "end": 133,
+          "text": "family-of-origin dynamics"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-005",
+      "scenario_family": "cal-v04-s1-005",
+      "template_family": "cal-v04-s1-005",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a3f07a7380aa902fbfb915ce75c5ebb69597568d480002b3231b62aceeb6be19",
+        "nfc_sha256": "3a15d1356a7c34e175a8f68626b54fffdc39d34a0f7e47765994a913a737259a",
+        "nfkc_sha256": "3a15d1356a7c34e175a8f68626b54fffdc39d34a0f7e47765994a913a737259a",
+        "bundle_sha256": "3a15d1356a7c34e175a8f68626b54fffdc39d34a0f7e47765994a913a737259a"
+      }
+    },
+    {
+      "id": "cal-v04-s1-006",
+      "row_id": "cal-v04-s1-006",
+      "topic_id": "sys.family_relationships.parents_family",
+      "provisional_gold_topics": [
+        "sys.family_relationships.parents_family"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我想讨论与父亲成年后重新建立关系的经历，关注 family of origin 里长期形成的期待和相处方式。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 54,
+          "text": "我想讨论与父亲成年后重新建立关系的经历，关注 family of origin 里长期形成的期待和相处方式。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 23,
+          "end": 39,
+          "text": "family of origin"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-006",
+      "scenario_family": "cal-v04-s1-006",
+      "template_family": "cal-v04-s1-006",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "602ab7db0f266fac3ea6cd3459d2f3d8055751476ace28b4340f2aaf15a23158",
+        "nfc_sha256": "ed950d91b34e878c400c5e3f8145f6e182121c757468eabe308c3c88d258c7df",
+        "nfkc_sha256": "50f033ffac17f427a9f345e05944071c490144dd613a8dd3ca8fa8d0f67d265f",
+        "bundle_sha256": "ed950d91b34e878c400c5e3f8145f6e182121c757468eabe308c3c88d258c7df"
+      }
+    },
+    {
+      "id": "cal-v04-s1-007",
+      "row_id": "cal-v04-s1-007",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "provisional_gold_topics": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "故事人物准备第一次去专科门诊，我想整理就医过程需要带的记录、描述问题的顺序和留给医生的疑问，不判断疾病。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "故事人物准备第一次去专科门诊，我想整理就医过程需要带的记录、描述问题的顺序和留给医生的疑问，不判断疾病。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 23,
+          "text": "就医过程"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-007",
+      "scenario_family": "cal-v04-s1-007",
+      "template_family": "cal-v04-s1-007",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "d5909e684a4b71d39533892e5a54518dfc9328e885604a14ee91a872d7ecc246",
+        "nfc_sha256": "beaa2b9c7ffbaff1b7486241cbddf0a9c5c3e71b18ce600ad16a5038ed37d982",
+        "nfkc_sha256": "379e939e5fc8395fd1cf1b7298e38ab12bcec9b232c59226ddf8ff2e465e171d",
+        "bundle_sha256": "beaa2b9c7ffbaff1b7486241cbddf0a9c5c3e71b18ce600ad16a5038ed37d982"
+      }
+    },
+    {
+      "id": "cal-v04-s1-008",
+      "row_id": "cal-v04-s1-008",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "provisional_gold_topics": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For a fictional clinic visit, organize the patient's questions, previous care notes and follow-up instructions into a usable medical-care record, without treatment advice.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 171,
+          "text": "For a fictional clinic visit, organize the patient's questions, previous care notes and follow-up instructions into a usable medical-care record, without treatment advice."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 125,
+          "end": 144,
+          "text": "medical-care record"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-008",
+      "scenario_family": "cal-v04-s1-008",
+      "template_family": "cal-v04-s1-008",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "5cb5c6d6d0b968c3b7bf09993a5282e7c49d4f777c171c7cfbae6d3f02b20c8d",
+        "nfc_sha256": "10273799e9f08b46cb2365143441b3c34816ae2c4392f22c5d1095c31b76972b",
+        "nfkc_sha256": "10273799e9f08b46cb2365143441b3c34816ae2c4392f22c5d1095c31b76972b",
+        "bundle_sha256": "10273799e9f08b46cb2365143441b3c34816ae2c4392f22c5d1095c31b76972b"
+      }
+    },
+    {
+      "id": "cal-v04-s1-009",
+      "row_id": "cal-v04-s1-009",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "provisional_gold_topics": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "这是虚构 outpatient visit 的记录练习，想区分预约、诊间沟通和复诊事项，不使用真实病历或判断病情。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 57,
+          "text": "这是虚构 outpatient visit 的记录练习，想区分预约、诊间沟通和复诊事项，不使用真实病历或判断病情。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 5,
+          "end": 21,
+          "text": "outpatient visit"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-009",
+      "scenario_family": "cal-v04-s1-009",
+      "template_family": "cal-v04-s1-009",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "ec40760bbd7f170f1896329b30cc7fed65fef62a2e400a43c407d6a441e7c28b",
+        "nfc_sha256": "176f76de08d5207f40555e4ed54fb400d672d4a0fc0fb9a2b1659b29f3aca276",
+        "nfkc_sha256": "e335c988767a8f9a83f76a1008a238a54ad5c267481ffdb9773492080794c6e2",
+        "bundle_sha256": "176f76de08d5207f40555e4ed54fb400d672d4a0fc0fb9a2b1659b29f3aca276"
+      }
+    },
+    {
+      "id": "cal-v04-s1-010",
+      "row_id": "cal-v04-s1-010",
+      "topic_id": "sys.education_learning.academic_courses",
+      "provisional_gold_topics": [
+        "sys.education_learning.academic_courses"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "这门历史课的阅读材料跨度很大，我想按课程单元整理每周要理解的主题，以及课堂讨论和作业之间的联系。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "这门历史课的阅读材料跨度很大，我想按课程单元整理每周要理解的主题，以及课堂讨论和作业之间的联系。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 18,
+          "end": 22,
+          "text": "课程单元"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-010",
+      "scenario_family": "cal-v04-s1-010",
+      "template_family": "cal-v04-s1-010",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "709ffc24497fa1c99642a66f47fda402948ca2ef5ea7911c2dba358b6d1dd7c0",
+        "nfc_sha256": "2ae4625e1016f0691357eee7802d52f750c4b82583c2f7a0137234d46f49e02e",
+        "nfkc_sha256": "940dbe180be0eef61b2711cfc538d9b51f77630e00937917577d2819325eaa34",
+        "bundle_sha256": "2ae4625e1016f0691357eee7802d52f750c4b82583c2f7a0137234d46f49e02e"
+      }
+    },
+    {
+      "id": "cal-v04-s1-011",
+      "row_id": "cal-v04-s1-011",
+      "topic_id": "sys.education_learning.academic_courses",
+      "provisional_gold_topics": [
+        "sys.education_learning.academic_courses"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "My introductory economics course has several overlapping units. Help me map the course topics to lectures, readings and the questions each assignment addresses.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 160,
+          "text": "My introductory economics course has several overlapping units. Help me map the course topics to lectures, readings and the questions each assignment addresses."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 80,
+          "end": 93,
+          "text": "course topics"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-011",
+      "scenario_family": "cal-v04-s1-011",
+      "template_family": "cal-v04-s1-011",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "52930e0f4525b310634b3bb982d3fe363d3e28d87134c9531fbca13f86c1b129",
+        "nfc_sha256": "4afab3c92f1816a9fbd19befacd2cb95f6ededd66225b9cdea9c1f9215308d68",
+        "nfkc_sha256": "4afab3c92f1816a9fbd19befacd2cb95f6ededd66225b9cdea9c1f9215308d68",
+        "bundle_sha256": "4afab3c92f1816a9fbd19befacd2cb95f6ededd66225b9cdea9c1f9215308d68"
+      }
+    },
+    {
+      "id": "cal-v04-s1-012",
+      "row_id": "cal-v04-s1-012",
+      "topic_id": "sys.education_learning.academic_courses",
+      "provisional_gold_topics": [
+        "sys.education_learning.academic_courses"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我正在上艺术史课程，想把 weekly coursework 按时期和课堂问题串起来，便于跟上课程的学习进度。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "我正在上艺术史课程，想把 weekly coursework 按时期和课堂问题串起来，便于跟上课程的学习进度。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 13,
+          "end": 30,
+          "text": "weekly coursework"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-012",
+      "scenario_family": "cal-v04-s1-012",
+      "template_family": "cal-v04-s1-012",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "6e3545f33c6857aba1be656d973cf97ccb696269adb74b55a2f900dd817849cd",
+        "nfc_sha256": "cccb3aa3970204f4af484393471e522c273a92b8badf9a2e5f821cef1cd0138d",
+        "nfkc_sha256": "f6e258b2931e01fc076e286e2dea0dffc454ed5989c50c61b97d05d7da4ebf6d",
+        "bundle_sha256": "cccb3aa3970204f4af484393471e522c273a92b8badf9a2e5f821cef1cd0138d"
+      }
+    },
+    {
+      "id": "cal-v04-s1-013",
+      "row_id": "cal-v04-s1-013",
+      "topic_id": "sys.career_work.job_search",
+      "provisional_gold_topics": [
+        "sys.career_work.job_search"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "准备找第一份正式工作，却不知道从哪些岗位开始查找，我想整理求职方向、投递材料和申请进度的记录方式。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "准备找第一份正式工作，却不知道从哪些岗位开始查找，我想整理求职方向、投递材料和申请进度的记录方式。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 29,
+          "end": 33,
+          "text": "求职方向"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-013",
+      "scenario_family": "cal-v04-s1-013",
+      "template_family": "cal-v04-s1-013",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "fcf317ffe02f2bd5b60c4137325e5845d58b7e85cc629fde5b8a7d044be77f81",
+        "nfc_sha256": "82e58368e2abe7c8f77c21d6380b75ebb5ba4ada610b8562a4f7c3f94eb09675",
+        "nfkc_sha256": "c64d33a8d1cd34bc8fb81ff3ecdd1d06dc55f03677e5168bb913e434c06ebc80",
+        "bundle_sha256": "82e58368e2abe7c8f77c21d6380b75ebb5ba4ada610b8562a4f7c3f94eb09675"
+      }
+    },
+    {
+      "id": "cal-v04-s1-014",
+      "row_id": "cal-v04-s1-014",
+      "topic_id": "sys.career_work.job_search",
+      "provisional_gold_topics": [
+        "sys.career_work.job_search"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "I have a list of possible employers but no organized job-search process. Help me track roles, application requirements and the next action for each opening.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 156,
+          "text": "I have a list of possible employers but no organized job-search process. Help me track roles, application requirements and the next action for each opening."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 53,
+          "end": 71,
+          "text": "job-search process"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-014",
+      "scenario_family": "cal-v04-s1-014",
+      "template_family": "cal-v04-s1-014",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "2e8120785c4ee774a64944eccaa8b900edf2da163f2bbdc105d583b4c567c256",
+        "nfc_sha256": "635b718315863ec60b11e85b38f72473ef6b4375f3acbe3ec1d5b0e75f32a9d0",
+        "nfkc_sha256": "635b718315863ec60b11e85b38f72473ef6b4375f3acbe3ec1d5b0e75f32a9d0",
+        "bundle_sha256": "635b718315863ec60b11e85b38f72473ef6b4375f3acbe3ec1d5b0e75f32a9d0"
+      }
+    },
+    {
+      "id": "cal-v04-s1-015",
+      "row_id": "cal-v04-s1-015",
+      "topic_id": "sys.career_work.job_search",
+      "provisional_gold_topics": [
+        "sys.career_work.job_search"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我想把正在进行的 job hunt 理清楚，区分值得申请的岗位、已投递状态和需要补齐的求职材料。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "我想把正在进行的 job hunt 理清楚，区分值得申请的岗位、已投递状态和需要补齐的求职材料。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 9,
+          "end": 17,
+          "text": "job hunt"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-015",
+      "scenario_family": "cal-v04-s1-015",
+      "template_family": "cal-v04-s1-015",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "3d80f716965185e68b39de5f80a2ea7df327a3bd92e69d39797b771da2b9dacf",
+        "nfc_sha256": "50d2741839add643890fef7f9d143aa63408853d48395e52f558e1275088843f",
+        "nfkc_sha256": "1f1f379ec48689cefded2ce861931697f1530fdc6ef0862015e1b52d599f360a",
+        "bundle_sha256": "50d2741839add643890fef7f9d143aa63408853d48395e52f558e1275088843f"
+      }
+    },
+    {
+      "id": "cal-v04-s1-016",
+      "row_id": "cal-v04-s1-016",
+      "topic_id": "sys.projects_products.project_planning",
+      "provisional_gold_topics": [
+        "sys.projects_products.project_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "社区想办一个小型共享书架项目，我想先做项目规划，明确范围、参与人员、阶段目标和可能遇到的限制。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 47,
+          "text": "社区想办一个小型共享书架项目，我想先做项目规划，明确范围、参与人员、阶段目标和可能遇到的限制。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 23,
+          "text": "项目规划"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-016",
+      "scenario_family": "cal-v04-s1-016",
+      "template_family": "cal-v04-s1-016",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4f793c8ee9da2ce8023236ab6f9460b91d622ba3fb572cfa0eef7bce9ffbc977",
+        "nfc_sha256": "94a453d6948360eb26795750fda7e03c47810562ee6f5d560838f64733cb8067",
+        "nfkc_sha256": "c083006c4bd702176cdbcf238f86382fe4b8404e01f59a64e70614c3f9e2cdc3",
+        "bundle_sha256": "94a453d6948360eb26795750fda7e03c47810562ee6f5d560838f64733cb8067"
+      }
+    },
+    {
+      "id": "cal-v04-s1-017",
+      "row_id": "cal-v04-s1-017",
+      "topic_id": "sys.projects_products.project_planning",
+      "provisional_gold_topics": [
+        "sys.projects_products.project_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Before starting an imaginary school garden project, help define its scope, responsibilities, milestones and assumptions so the team can agree on a workable plan.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 161,
+          "text": "Before starting an imaginary school garden project, help define its scope, responsibilities, milestones and assumptions so the team can agree on a workable plan."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 36,
+          "end": 50,
+          "text": "garden project"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-017",
+      "scenario_family": "cal-v04-s1-017",
+      "template_family": "cal-v04-s1-017",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "f5e6ec280c007ec3c9000fb9f9f4ba12f341769ee6316fd4b934d4ad52353de2",
+        "nfc_sha256": "dfd5c3607446cdee9af28ac1fa56cf2fc3086a101809c666adbcacf15359078d",
+        "nfkc_sha256": "dfd5c3607446cdee9af28ac1fa56cf2fc3086a101809c666adbcacf15359078d",
+        "bundle_sha256": "dfd5c3607446cdee9af28ac1fa56cf2fc3086a101809c666adbcacf15359078d"
+      }
+    },
+    {
+      "id": "cal-v04-s1-018",
+      "row_id": "cal-v04-s1-018",
+      "topic_id": "sys.projects_products.project_planning",
+      "provisional_gold_topics": [
+        "sys.projects_products.project_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "一个小组打算做展览原型，我想写 project plan，先把交付物、阶段节点和协作责任说清楚。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "一个小组打算做展览原型，我想写 project plan，先把交付物、阶段节点和协作责任说清楚。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 28,
+          "text": "project plan"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-018",
+      "scenario_family": "cal-v04-s1-018",
+      "template_family": "cal-v04-s1-018",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "967c22dc99199e8a8090f9a384829965c45db7aba36c1665cb6e1c7ff5a9b4e7",
+        "nfc_sha256": "ad3221c8e76b7f003d340e4bf3620acb5483916e6e23cf45fceba5b7d5f143bf",
+        "nfkc_sha256": "23cc0fd1bd91e6d5bea050023e6ef209923144dca03b78323f4e2f4ec4a7c2df",
+        "bundle_sha256": "ad3221c8e76b7f003d340e4bf3620acb5483916e6e23cf45fceba5b7d5f143bf"
+      }
+    },
+    {
+      "id": "cal-v04-s1-019",
+      "row_id": "cal-v04-s1-019",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "provisional_gold_topics": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在写一份人工智能工具的概念介绍，想区分模型、应用界面和评估指标分别指什么，不调用任何模型或在线服务。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 51,
+          "text": "我在写一份人工智能工具的概念介绍，想区分模型、应用界面和评估指标分别指什么，不调用任何模型或在线服务。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 5,
+          "end": 11,
+          "text": "人工智能工具"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-019",
+      "scenario_family": "cal-v04-s1-019",
+      "template_family": "cal-v04-s1-019",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a670f185127de837c94b9cf0510999f8627db0e5ce5a5cf6913dd26cacde2be1",
+        "nfc_sha256": "6b7e886babe8590ac61734a0bf45880917bc9c8f068fae93c47abaaf9770597e",
+        "nfkc_sha256": "7fa8f4e3eafe506583ae9e5983f544c9b302641028a67516ca395fba180e7824",
+        "bundle_sha256": "6b7e886babe8590ac61734a0bf45880917bc9c8f068fae93c47abaaf9770597e"
+      }
+    },
+    {
+      "id": "cal-v04-s1-020",
+      "row_id": "cal-v04-s1-020",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "provisional_gold_topics": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For a classroom overview of AI tools, help distinguish a model's advertised capability from an application's interface and evaluation claims; this is a conceptual exercise only.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 177,
+          "text": "For a classroom overview of AI tools, help distinguish a model's advertised capability from an application's interface and evaluation claims; this is a conceptual exercise only."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 28,
+          "end": 36,
+          "text": "AI tools"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-020",
+      "scenario_family": "cal-v04-s1-020",
+      "template_family": "cal-v04-s1-020",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "e405b69a01b6b30bc04d2616f0eabb291c1163cf60818cd6616dc9b9cc7dc600",
+        "nfc_sha256": "1ba2a75c9bba416e6fff688d695da16986d96ba5ffa4e46801eddf8deeb612b3",
+        "nfkc_sha256": "1ba2a75c9bba416e6fff688d695da16986d96ba5ffa4e46801eddf8deeb612b3",
+        "bundle_sha256": "1ba2a75c9bba416e6fff688d695da16986d96ba5ffa4e46801eddf8deeb612b3"
+      }
+    },
+    {
+      "id": "cal-v04-s1-021",
+      "row_id": "cal-v04-s1-021",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "provisional_gold_topics": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我要整理 AI model documentation 的阅读问题，关注模型能力说明、工具限制和评估证据，不加载或运行模型。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 62,
+          "text": "我要整理 AI model documentation 的阅读问题，关注模型能力说明、工具限制和评估证据，不加载或运行模型。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 5,
+          "end": 27,
+          "text": "AI model documentation"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-021",
+      "scenario_family": "cal-v04-s1-021",
+      "template_family": "cal-v04-s1-021",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "f65d867cee94567a79bd0d1c70f4f9bb7f77b9afdefdc475ebfec9e757af20b1",
+        "nfc_sha256": "106e8e4bf930a4809836e7421f385ca597c315794d95a7246f95603b2431cf4c",
+        "nfkc_sha256": "ab8acaf75fb096a27df2a3365fd1e15ed4e0292bbbaf930e441a26bd750b4755",
+        "bundle_sha256": "106e8e4bf930a4809836e7421f385ca597c315794d95a7246f95603b2431cf4c"
+      }
+    },
+    {
+      "id": "cal-v04-s1-022",
+      "row_id": "cal-v04-s1-022",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "provisional_gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "这是虚构家庭的收支草稿，我想整理预算与现金流，区分预计收入、固定支出和月末剩余，不提供财务建议。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "这是虚构家庭的收支草稿，我想整理预算与现金流，区分预计收入、固定支出和月末剩余，不提供财务建议。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 22,
+          "text": "预算与现金流"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-022",
+      "scenario_family": "cal-v04-s1-022",
+      "template_family": "cal-v04-s1-022",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "56dcd30de545f6edac562f2efb94b113fbdbe8f99136c6c13115c515b9357210",
+        "nfc_sha256": "b5c650d4e1c593c3fb1dfc674f3169cdcbfcd8a5ec10c97d41ede52e42a57fcc",
+        "nfkc_sha256": "abf9780bd9f386d1a2006a63566d3a9e43e7afc0011fdafcef944f277773413e",
+        "bundle_sha256": "b5c650d4e1c593c3fb1dfc674f3169cdcbfcd8a5ec10c97d41ede52e42a57fcc"
+      }
+    },
+    {
+      "id": "cal-v04-s1-023",
+      "row_id": "cal-v04-s1-023",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "provisional_gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Using an invented cash-flow worksheet, help distinguish planned spending, payment timing and the balance carried into the following month without recommending investments.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 171,
+          "text": "Using an invented cash-flow worksheet, help distinguish planned spending, payment timing and the balance carried into the following month without recommending investments."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 18,
+          "end": 37,
+          "text": "cash-flow worksheet"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-023",
+      "scenario_family": "cal-v04-s1-023",
+      "template_family": "cal-v04-s1-023",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "20758a585cec9786d573ba5a6d07d8f4086a88489a079887863212e41a5a0ba1",
+        "nfc_sha256": "81ccdf3a4e6af1f0cf646a6defd91a7c23a987292429ed1ae2397ab96ee5491b",
+        "nfkc_sha256": "81ccdf3a4e6af1f0cf646a6defd91a7c23a987292429ed1ae2397ab96ee5491b",
+        "bundle_sha256": "81ccdf3a4e6af1f0cf646a6defd91a7c23a987292429ed1ae2397ab96ee5491b"
+      }
+    },
+    {
+      "id": "cal-v04-s1-024",
+      "row_id": "cal-v04-s1-024",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "provisional_gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "教学例子里每月收入时间不固定，我想做 budget tracking，把资金进出和预留支出分开记录。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 50,
+          "text": "教学例子里每月收入时间不固定，我想做 budget tracking，把资金进出和预留支出分开记录。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 34,
+          "text": "budget tracking"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-024",
+      "scenario_family": "cal-v04-s1-024",
+      "template_family": "cal-v04-s1-024",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "8c8384aa16bb8a865cee75dd0ca6926c9e5ec21729b556f3ff6571ef05c0da56",
+        "nfc_sha256": "dab9457240d4f99c48ed8436da6672a612ae21d8c82cdac3db6a0e9b86431c21",
+        "nfkc_sha256": "dd1d810870b4e72ae151146b45888af9f2e0ca512f67f48d0b1373c06c866c2e",
+        "bundle_sha256": "dab9457240d4f99c48ed8436da6672a612ae21d8c82cdac3db6a0e9b86431c21"
+      }
+    },
+    {
+      "id": "cal-v04-s1-025",
+      "row_id": "cal-v04-s1-025",
+      "topic_id": "sys.home_daily.housing",
+      "provisional_gold_topics": [
+        "sys.home_daily.housing"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "故事人物在比较两种居住环境，我想整理住房条件：采光、空间布局、安静程度和日常生活是否方便，不判断真实房产。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 53,
+          "text": "故事人物在比较两种居住环境，我想整理住房条件：采光、空间布局、安静程度和日常生活是否方便，不判断真实房产。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 18,
+          "end": 22,
+          "text": "住房条件"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-025",
+      "scenario_family": "cal-v04-s1-025",
+      "template_family": "cal-v04-s1-025",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a01cc13ad1c6001151135a723223070e32635e93dccb561d030f57f1bdf37249",
+        "nfc_sha256": "dc183fef8158f186cfaaa2c3984596b078dc1d8900bcb44ace965ad564931941",
+        "nfkc_sha256": "50dbfeb1e932773908f8da370880c02533b95f92d6daa2ee7d147d56116b414c",
+        "bundle_sha256": "dc183fef8158f186cfaaa2c3984596b078dc1d8900bcb44ace965ad564931941"
+      }
+    },
+    {
+      "id": "cal-v04-s1-026",
+      "row_id": "cal-v04-s1-026",
+      "topic_id": "sys.home_daily.housing",
+      "provisional_gold_topics": [
+        "sys.home_daily.housing"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For an invented housing comparison, organize observations about room layout, ventilation, shared spaces and how each home supports everyday living.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 147,
+          "text": "For an invented housing comparison, organize observations about room layout, ventilation, shared spaces and how each home supports everyday living."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 34,
+          "text": "housing comparison"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-026",
+      "scenario_family": "cal-v04-s1-026",
+      "template_family": "cal-v04-s1-026",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "acd892b26bd524767377259980767e380979650553668d2223c09bdefe68946d",
+        "nfc_sha256": "5682b77e5e950f4ea311c4391dcf298e8cf11c48998e65faebf200403a358658",
+        "nfkc_sha256": "5682b77e5e950f4ea311c4391dcf298e8cf11c48998e65faebf200403a358658",
+        "bundle_sha256": "5682b77e5e950f4ea311c4391dcf298e8cf11c48998e65faebf200403a358658"
+      }
+    },
+    {
+      "id": "cal-v04-s1-027",
+      "row_id": "cal-v04-s1-027",
+      "topic_id": "sys.home_daily.housing",
+      "provisional_gold_topics": [
+        "sys.home_daily.housing"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在写一个 living arrangement 示例，想比较独居与合住的住房条件和生活空间需求，不做真实租约选择。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 58,
+          "text": "我在写一个 living arrangement 示例，想比较独居与合住的住房条件和生活空间需求，不做真实租约选择。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 6,
+          "end": 24,
+          "text": "living arrangement"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-027",
+      "scenario_family": "cal-v04-s1-027",
+      "template_family": "cal-v04-s1-027",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a3c017d51af45a096d7eb52beeaa67fd596265115e7343761923497877101172",
+        "nfc_sha256": "806ec20ecc9a8ac291fd739fb0732871daaeddd9411b5cff0d04183068c5c14f",
+        "nfkc_sha256": "63c901fef415c35b7637a33e667c4455ecaf492e209821c43368859d2aad71f2",
+        "bundle_sha256": "806ec20ecc9a8ac291fd739fb0732871daaeddd9411b5cff0d04183068c5c14f"
+      }
+    },
+    {
+      "id": "cal-v04-s1-028",
+      "row_id": "cal-v04-s1-028",
+      "topic_id": "sys.travel_places.trip_planning",
+      "provisional_gold_topics": [
+        "sys.travel_places.trip_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "想象一次四天的山城旅行，我想先规划行程结构，分配每天的活动范围和休息时间，再列出需要核实的信息。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "想象一次四天的山城旅行，我想先规划行程结构，分配每天的活动范围和休息时间，再列出需要核实的信息。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 17,
+          "end": 21,
+          "text": "行程结构"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-028",
+      "scenario_family": "cal-v04-s1-028",
+      "template_family": "cal-v04-s1-028",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "547d9c061d5fe90219fcf22c9e300c39f2be4e581ab7d968031a9aca84b6d6d9",
+        "nfc_sha256": "1f32e712506800a55342891b62db0f15792f2b4a6559bd1c1f70e79d818b27c0",
+        "nfkc_sha256": "9139442e889cff8bce06c66b6e83fc5df1de49059590a2e82bd933cc90b36511",
+        "bundle_sha256": "1f32e712506800a55342891b62db0f15792f2b4a6559bd1c1f70e79d818b27c0"
+      }
+    },
+    {
+      "id": "cal-v04-s1-029",
+      "row_id": "cal-v04-s1-029",
+      "topic_id": "sys.travel_places.trip_planning",
+      "provisional_gold_topics": [
+        "sys.travel_places.trip_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For a fictional journey with two transfer days, help build a trip plan that balances time in each destination with travel buffers and flexible rest periods.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 156,
+          "text": "For a fictional journey with two transfer days, help build a trip plan that balances time in each destination with travel buffers and flexible rest periods."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 61,
+          "end": 70,
+          "text": "trip plan"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-029",
+      "scenario_family": "cal-v04-s1-029",
+      "template_family": "cal-v04-s1-029",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "bc05f0412c193cdac89749b82fab98d8be84f39b5723c716f4eed1366a25bfdf",
+        "nfc_sha256": "e28f5cd2dd52f91ceee6af1cf3d18c3c33b84be355cae242e54822fd73849c38",
+        "nfkc_sha256": "e28f5cd2dd52f91ceee6af1cf3d18c3c33b84be355cae242e54822fd73849c38",
+        "bundle_sha256": "e28f5cd2dd52f91ceee6af1cf3d18c3c33b84be355cae242e54822fd73849c38"
+      }
+    },
+    {
+      "id": "cal-v04-s1-030",
+      "row_id": "cal-v04-s1-030",
+      "topic_id": "sys.travel_places.trip_planning",
+      "provisional_gold_topics": [
+        "sys.travel_places.trip_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在设计 imaginary travel itinerary，想按天安排目的地停留顺序和备用活动，不查询票价或执行预订。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 61,
+          "text": "我在设计 imaginary travel itinerary，想按天安排目的地停留顺序和备用活动，不查询票价或执行预订。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 15,
+          "end": 31,
+          "text": "travel itinerary"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-030",
+      "scenario_family": "cal-v04-s1-030",
+      "template_family": "cal-v04-s1-030",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "ca0b61355f6fd8b152210337fe2118ac0cbbabe098ff1d1a04d27595331d87e6",
+        "nfc_sha256": "0b68b0928f425bf11d49f842127fe65c120807b3bdc881ae3d9e93b7ac9ccd83",
+        "nfkc_sha256": "deb42dfa006ec148b48532722b37806b1a5eb17ee6d01a6be78a6ead342f7702",
+        "bundle_sha256": "0b68b0928f425bf11d49f842127fe65c120807b3bdc881ae3d9e93b7ac9ccd83"
+      }
+    },
+    {
+      "id": "cal-v04-s1-031",
+      "row_id": "cal-v04-s1-031",
+      "topic_id": "sys.media_culture.music",
+      "provisional_gold_topics": [
+        "sys.media_culture.music"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "听一首虚构钢琴曲时，我注意到主题反复出现却气氛不同，想讨论音乐中的旋律、节奏和演奏表达。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 44,
+          "text": "听一首虚构钢琴曲时，我注意到主题反复出现却气氛不同，想讨论音乐中的旋律、节奏和演奏表达。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 29,
+          "end": 31,
+          "text": "音乐"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-031",
+      "scenario_family": "cal-v04-s1-031",
+      "template_family": "cal-v04-s1-031",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "fb20773127684b4433712ae17fce1adec5312dad5646d1bbe8c06ebe75a0b537",
+        "nfc_sha256": "e4cfe79582d55c2e21b220727df01d85841ca52381ed731dd48bc78829c787a1",
+        "nfkc_sha256": "f2881a67cff83243d7b3358454f6c8133c9da19a914fe87265e640502ee6ea68",
+        "bundle_sha256": "e4cfe79582d55c2e21b220727df01d85841ca52381ed731dd48bc78829c787a1"
+      }
+    },
+    {
+      "id": "cal-v04-s1-032",
+      "row_id": "cal-v04-s1-032",
+      "topic_id": "sys.media_culture.music",
+      "provisional_gold_topics": [
+        "sys.media_culture.music"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Help me discuss how an imagined jazz performance develops a musical theme through rhythm, harmony and improvisation, rather than planning a concert.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 148,
+          "text": "Help me discuss how an imagined jazz performance develops a musical theme through rhythm, harmony and improvisation, rather than planning a concert."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 60,
+          "end": 73,
+          "text": "musical theme"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-032",
+      "scenario_family": "cal-v04-s1-032",
+      "template_family": "cal-v04-s1-032",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "3aaca20df31d982fdbffc5bbf67d188eaebc292d5a1a2d90a2158ac8d53d19ce",
+        "nfc_sha256": "12b392fbe66bcc9ab3b79ca13a87d9393658d6f50bffedebe872b2412f3585aa",
+        "nfkc_sha256": "12b392fbe66bcc9ab3b79ca13a87d9393658d6f50bffedebe872b2412f3585aa",
+        "bundle_sha256": "12b392fbe66bcc9ab3b79ca13a87d9393658d6f50bffedebe872b2412f3585aa"
+      }
+    },
+    {
+      "id": "cal-v04-s1-033",
+      "row_id": "cal-v04-s1-033",
+      "topic_id": "sys.media_culture.music",
+      "provisional_gold_topics": [
+        "sys.media_culture.music"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在写 listening notes，想比较一段弦乐音乐的音色变化和乐句呼应，关注作品本身的音乐表达。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "我在写 listening notes，想比较一段弦乐音乐的音色变化和乐句呼应，关注作品本身的音乐表达。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 25,
+          "end": 29,
+          "text": "弦乐音乐"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-033",
+      "scenario_family": "cal-v04-s1-033",
+      "template_family": "cal-v04-s1-033",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "1762ed21a718eba7716031e523a274dce582c3da3cacb15578bff0a77446cd5a",
+        "nfc_sha256": "c291670cb8b7c611851aa777d1d7f300d5f9435932e981620486d55806cce61b",
+        "nfkc_sha256": "f5dd3ff9bfcca5f556845eb69613d1de916d24d2d961a535160cfa5f1c189a07",
+        "bundle_sha256": "c291670cb8b7c611851aa777d1d7f300d5f9435932e981620486d55806cce61b"
+      }
+    },
+    {
+      "id": "cal-v04-s1-034",
+      "row_id": "cal-v04-s1-034",
+      "topic_id": "sys.communication_writing.email_messages",
+      "provisional_gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "我需要给邻居写一封说明借物归还时间的消息，想让措辞清楚、礼貌，并把需要对方确认的内容放在最后。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 47,
+          "text": "我需要给邻居写一封说明借物归还时间的消息，想让措辞清楚、礼貌，并把需要对方确认的内容放在最后。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 18,
+          "end": 20,
+          "text": "消息"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-034",
+      "scenario_family": "cal-v04-s1-034",
+      "template_family": "cal-v04-s1-034",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "17ea605f04c227d841c997020141f06754a9bf33460a3f456fef5b9384217e9c",
+        "nfc_sha256": "fc036bc321984643bc880eda4fbdaa5d42c2a907f9ecc4f019adcb23496f1b08",
+        "nfkc_sha256": "f5acbbc759f22f74b923416fb88b4b22f2132db7db1ed2c45482f14b54ce1e37",
+        "bundle_sha256": "fc036bc321984643bc880eda4fbdaa5d42c2a907f9ecc4f019adcb23496f1b08"
+      }
+    },
+    {
+      "id": "cal-v04-s1-035",
+      "row_id": "cal-v04-s1-035",
+      "topic_id": "sys.communication_writing.email_messages",
+      "provisional_gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Help draft a brief email asking a volunteer coordinator to clarify an instruction, with a courteous opening and one specific request for confirmation.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 150,
+          "text": "Help draft a brief email asking a volunteer coordinator to clarify an instruction, with a courteous opening and one specific request for confirmation."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 13,
+          "end": 24,
+          "text": "brief email"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-035",
+      "scenario_family": "cal-v04-s1-035",
+      "template_family": "cal-v04-s1-035",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "2ac926c1f69cfd8173b26c0914772e5c1893ebaed66a3ddcd3bd2ab2efb69267",
+        "nfc_sha256": "e5c8d2b4bb87fddf802c0ed029d3ed9c37037989a7b4a4af4adbeacc1f226d14",
+        "nfkc_sha256": "e5c8d2b4bb87fddf802c0ed029d3ed9c37037989a7b4a4af4adbeacc1f226d14",
+        "bundle_sha256": "e5c8d2b4bb87fddf802c0ed029d3ed9c37037989a7b4a4af4adbeacc1f226d14"
+      }
+    },
+    {
+      "id": "cal-v04-s1-036",
+      "row_id": "cal-v04-s1-036",
+      "topic_id": "sys.communication_writing.email_messages",
+      "provisional_gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我准备回复一条普通 message，想用简短文字解释迟到原因和新的到达时间，避免让对方误解。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 46,
+          "text": "我准备回复一条普通 message，想用简短文字解释迟到原因和新的到达时间，避免让对方误解。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 10,
+          "end": 17,
+          "text": "message"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-036",
+      "scenario_family": "cal-v04-s1-036",
+      "template_family": "cal-v04-s1-036",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "06f6185086380d78437e391857fd6d4f376ddcb847b9dca282d0c214c8aa56af",
+        "nfc_sha256": "e6adde508d4a24e8d2fb6861a3c2716252e6b321b0158dbc13a064be3d2e89b6",
+        "nfkc_sha256": "f0fba959e65406d5200d38140dba04998c2a3648d5878d8d25b10863012de329",
+        "bundle_sha256": "e6adde508d4a24e8d2fb6861a3c2716252e6b321b0158dbc13a064be3d2e89b6"
+      }
+    },
+    {
+      "id": "cal-v04-s1-037",
+      "row_id": "cal-v04-s1-037",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "provisional_gold_topics": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "这是虚构法律咨询材料，我想把事实描述与法律问题分开，列出需要专业人士核实的责任和程序疑问，不给法律结论。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "这是虚构法律咨询材料，我想把事实描述与法律问题分开，列出需要专业人士核实的责任和程序疑问，不给法律结论。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 23,
+          "text": "法律问题"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-037",
+      "scenario_family": "cal-v04-s1-037",
+      "template_family": "cal-v04-s1-037",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "7e6dd8cfda2ca11bbb18a27024ffaef400ca983364d2889d3a5678927b5af536",
+        "nfc_sha256": "a8e259e4ec62810d274f5dea48abef286b26aa05d8caf2b3bbc63d2bff7a6f6c",
+        "nfkc_sha256": "8a3ec7780fa2ee69cc3caf6bed2f62e3818db69246bbc9a5eb9afcfd3542329f",
+        "bundle_sha256": "a8e259e4ec62810d274f5dea48abef286b26aa05d8caf2b3bbc63d2bff7a6f6c"
+      }
+    },
+    {
+      "id": "cal-v04-s1-038",
+      "row_id": "cal-v04-s1-038",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "provisional_gold_topics": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For an invented legal-question worksheet, distinguish the known facts from questions about duties and procedure that a qualified adviser would need to examine.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 159,
+          "text": "For an invented legal-question worksheet, distinguish the known facts from questions about duties and procedure that a qualified adviser would need to examine."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 40,
+          "text": "legal-question worksheet"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-038",
+      "scenario_family": "cal-v04-s1-038",
+      "template_family": "cal-v04-s1-038",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "eeb6898875e0da7f834ef6b63f6e286360d67d13ddad26b37a3fb08b06615579",
+        "nfc_sha256": "b62f49e323b95127987a05f47a528bb70a06e0958d777e1f4967def277e8b467",
+        "nfkc_sha256": "b62f49e323b95127987a05f47a528bb70a06e0958d777e1f4967def277e8b467",
+        "bundle_sha256": "b62f49e323b95127987a05f47a528bb70a06e0958d777e1f4967def277e8b467"
+      }
+    },
+    {
+      "id": "cal-v04-s1-039",
+      "row_id": "cal-v04-s1-039",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "provisional_gold_topics": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在做 legal consultation 的课堂练习，想组织待核实事实和法律疑问，不使用真实案件或现行法条。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 56,
+          "text": "我在做 legal consultation 的课堂练习，想组织待核实事实和法律疑问，不使用真实案件或现行法条。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 4,
+          "end": 22,
+          "text": "legal consultation"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-039",
+      "scenario_family": "cal-v04-s1-039",
+      "template_family": "cal-v04-s1-039",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "dd011a6f69f146ef087ab111bf3b35c4209daf709e180854f5e95c19bd996be6",
+        "nfc_sha256": "ff318e920706183ab0db71f90b14b8ba8795794c4363f8f457e9df0c01dda99d",
+        "nfkc_sha256": "b4311d0496d3702cfd4cbbb260f35b5af9b9ae663cd5d9f35db9c13f1c9bb19f",
+        "bundle_sha256": "ff318e920706183ab0db71f90b14b8ba8795794c4363f8f457e9df0c01dda99d"
+      }
+    },
+    {
+      "id": "cal-v04-s1-040",
+      "row_id": "cal-v04-s1-040",
+      "topic_id": "sys.science_technical.physics",
+      "provisional_gold_topics": [
+        "sys.science_technical.physics"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在复习物理概念，想理解波的传播、频率和能量这些量之间如何联系，用概念图整理而不涉及实验装置操作。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "我在复习物理概念，想理解波的传播、频率和能量这些量之间如何联系，用概念图整理而不涉及实验装置操作。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 4,
+          "end": 8,
+          "text": "物理概念"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-040",
+      "scenario_family": "cal-v04-s1-040",
+      "template_family": "cal-v04-s1-040",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a7c36adffec5598db5ac28a81007190342fe69714f54ab754e6c9c3040c7e1c6",
+        "nfc_sha256": "004221e8a2c1622a23bdee135598551e4f648b882f2a7888df5e064baccaf053",
+        "nfkc_sha256": "cbd2a7be8b89d86a54c23881c8303965f3335caa0c16c17ed21f70ec1fa45c27",
+        "bundle_sha256": "004221e8a2c1622a23bdee135598551e4f648b882f2a7888df5e064baccaf053"
+      }
+    },
+    {
+      "id": "cal-v04-s1-041",
+      "row_id": "cal-v04-s1-041",
+      "topic_id": "sys.science_technical.physics",
+      "provisional_gold_topics": [
+        "sys.science_technical.physics"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Help organize a physics study note on momentum and conservation, distinguishing the quantities involved from the conditions under which a principle applies.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 156,
+          "text": "Help organize a physics study note on momentum and conservation, distinguishing the quantities involved from the conditions under which a principle applies."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 34,
+          "text": "physics study note"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-041",
+      "scenario_family": "cal-v04-s1-041",
+      "template_family": "cal-v04-s1-041",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "59580a25631f162de8f418c76393c089ee9fafe36a118a129d9d16961f8e2a56",
+        "nfc_sha256": "ed6fd031ede063856315649e35ed8115b78199234eab3997b3091d34c6a6b63c",
+        "nfkc_sha256": "ed6fd031ede063856315649e35ed8115b78199234eab3997b3091d34c6a6b63c",
+        "bundle_sha256": "ed6fd031ede063856315649e35ed8115b78199234eab3997b3091d34c6a6b63c"
+      }
+    },
+    {
+      "id": "cal-v04-s1-042",
+      "row_id": "cal-v04-s1-042",
+      "topic_id": "sys.science_technical.physics",
+      "provisional_gold_topics": [
+        "sys.science_technical.physics"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我想讨论 electromagnetism 的基础概念，把电场、磁场和运动电荷之间的关系画成学习提纲。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 51,
+          "text": "我想讨论 electromagnetism 的基础概念，把电场、磁场和运动电荷之间的关系画成学习提纲。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 5,
+          "end": 21,
+          "text": "electromagnetism"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-042",
+      "scenario_family": "cal-v04-s1-042",
+      "template_family": "cal-v04-s1-042",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "cdb80b2917257de3b0cf4d5f604bbcb3bcbfcf6620158a326f70f625aada2b48",
+        "nfc_sha256": "5f0f71aa4bb0c7214d2352b42b30374699b20b215dace2aff3f99cfb4d9110b7",
+        "nfkc_sha256": "1dc0ba8e251764948f7c942f31c6f42775628499651950854ec82f0c43458f9c",
+        "bundle_sha256": "5f0f71aa4bb0c7214d2352b42b30374699b20b215dace2aff3f99cfb4d9110b7"
+      }
+    },
+    {
+      "id": "cal-v04-s1-043",
+      "row_id": "cal-v04-s1-043",
+      "topic_id": "sys.creative_design.visual_design",
+      "provisional_gold_topics": [
+        "sys.creative_design.visual_design"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在做一张教学海报的视觉设计，想调整信息层级、留白和字体比例，让读者先看到主题再看到细节。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 45,
+          "text": "我在做一张教学海报的视觉设计，想调整信息层级、留白和字体比例，让读者先看到主题再看到细节。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 10,
+          "end": 14,
+          "text": "视觉设计"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-043",
+      "scenario_family": "cal-v04-s1-043",
+      "template_family": "cal-v04-s1-043",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "1a772b2d6e5b65b0d466083d08eee55175f59b8820b9b20df1bccc66b5c9693d",
+        "nfc_sha256": "9da84fa498ba1cc8f5625efbe4232ed2b0a85e52e70a72f14af8707bc43dc819",
+        "nfkc_sha256": "1522ee93964d115e5ee61b9d5ec75bd88044363b3fee233df7994b65bda35a3c",
+        "bundle_sha256": "9da84fa498ba1cc8f5625efbe4232ed2b0a85e52e70a72f14af8707bc43dc819"
+      }
+    },
+    {
+      "id": "cal-v04-s1-044",
+      "row_id": "cal-v04-s1-044",
+      "topic_id": "sys.creative_design.visual_design",
+      "provisional_gold_topics": [
+        "sys.creative_design.visual_design"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For an imaginary exhibition panel, compare visual design arrangements using contrast, alignment and typography to guide the order in which information is noticed.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 162,
+          "text": "For an imaginary exhibition panel, compare visual design arrangements using contrast, alignment and typography to guide the order in which information is noticed."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 43,
+          "end": 69,
+          "text": "visual design arrangements"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-044",
+      "scenario_family": "cal-v04-s1-044",
+      "template_family": "cal-v04-s1-044",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "424a580b0a4a76df1b18283e34da75709455c69805ce7c0b1f755fb2b1437de4",
+        "nfc_sha256": "0ddd4b0070cc69c3ebbde41b06941873d4d784cda486e7f7ff8909724a8c0cd0",
+        "nfkc_sha256": "0ddd4b0070cc69c3ebbde41b06941873d4d784cda486e7f7ff8909724a8c0cd0",
+        "bundle_sha256": "0ddd4b0070cc69c3ebbde41b06941873d4d784cda486e7f7ff8909724a8c0cd0"
+      }
+    },
+    {
+      "id": "cal-v04-s1-045",
+      "row_id": "cal-v04-s1-045",
+      "topic_id": "sys.creative_design.visual_design",
+      "provisional_gold_topics": [
+        "sys.creative_design.visual_design"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "这个介绍页太拥挤，我想调整 visual hierarchy，把主标题、说明和配图组织成容易扫读的版式。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "这个介绍页太拥挤，我想调整 visual hierarchy，把主标题、说明和配图组织成容易扫读的版式。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 14,
+          "end": 30,
+          "text": "visual hierarchy"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-045",
+      "scenario_family": "cal-v04-s1-045",
+      "template_family": "cal-v04-s1-045",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "89b0f2bfd37fcce59847f0c1b7788869b0232a7638427142acf94ff913172b5f",
+        "nfc_sha256": "7af7c6b648228ed6828c0d4aa19e11dd24c3dfe76dfe222355e1cbc85e8c5a21",
+        "nfkc_sha256": "821471be9ac348e41501aa2ff4d43d856d6d307a2c7666486294e7bddda1536f",
+        "bundle_sha256": "7af7c6b648228ed6828c0d4aa19e11dd24c3dfe76dfe222355e1cbc85e8c5a21"
+      }
+    },
+    {
+      "id": "cal-v04-s1-046",
+      "row_id": "cal-v04-s1-046",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "provisional_gold_topics": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "虚构人物想创办一个修补工作室，我想梳理创业构想，说明服务对象、价值主张、启动条件和需要验证的假设。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "虚构人物想创办一个修补工作室，我想梳理创业构想，说明服务对象、价值主张、启动条件和需要验证的假设。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 23,
+          "text": "创业构想"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-046",
+      "scenario_family": "cal-v04-s1-046",
+      "template_family": "cal-v04-s1-046",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "e281de0956523994e038d964453360b9c6dee18d535edc4acb9e6640dde95537",
+        "nfc_sha256": "a07bc6df66976dc9fae6805523d76df5e0996e6701baafa91e727f92793e18bb",
+        "nfkc_sha256": "d8b350d20fecafcbab48b8addef052e60ab97a7c862034ba27c0adc3f2400c2f",
+        "bundle_sha256": "a07bc6df66976dc9fae6805523d76df5e0996e6701baafa91e727f92793e18bb"
+      }
+    },
+    {
+      "id": "cal-v04-s1-047",
+      "row_id": "cal-v04-s1-047",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "provisional_gold_topics": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For an invented entrepreneurship concept, outline who a small repair service would help, how it might sustain itself and which assumptions need early validation.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 161,
+          "text": "For an invented entrepreneurship concept, outline who a small repair service would help, how it might sustain itself and which assumptions need early validation."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 40,
+          "text": "entrepreneurship concept"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-047",
+      "scenario_family": "cal-v04-s1-047",
+      "template_family": "cal-v04-s1-047",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "0935f46c29a9fdf66a18f90d720600f8579060f86269956ecad64653c0f7be0d",
+        "nfc_sha256": "c281e3beabb077d2fa97beb714886f55bee067dda4882c813e3675b9dd5d5073",
+        "nfkc_sha256": "c281e3beabb077d2fa97beb714886f55bee067dda4882c813e3675b9dd5d5073",
+        "bundle_sha256": "c281e3beabb077d2fa97beb714886f55bee067dda4882c813e3675b9dd5d5073"
+      }
+    },
+    {
+      "id": "cal-v04-s1-048",
+      "row_id": "cal-v04-s1-048",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "provisional_gold_topics": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在写 startup idea 的练习稿，想把用户问题、商业可行性和最初验证步骤连起来，不进行真实投资。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 53,
+          "text": "我在写 startup idea 的练习稿，想把用户问题、商业可行性和最初验证步骤连起来，不进行真实投资。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 4,
+          "end": 16,
+          "text": "startup idea"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-048",
+      "scenario_family": "cal-v04-s1-048",
+      "template_family": "cal-v04-s1-048",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "41b55bda8c688b964bfd82d0bc7ad670a38726019cfbafe1efb1ae567174b50a",
+        "nfc_sha256": "5f5b9367e418af8cd3b6f75ba150db7ab6c8630b2094f89d922bb5d7befaa751",
+        "nfkc_sha256": "0782c5306445acd993d6ddae62d70aad987b4295e72ee9dc58ed92f360bfc7d4",
+        "bundle_sha256": "5f5b9367e418af8cd3b6f75ba150db7ab6c8630b2094f89d922bb5d7befaa751"
+      }
+    },
+    {
+      "id": "cal-v04-s1-049",
+      "row_id": "cal-v04-s1-049",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "provisional_gold_topics": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "下周几个虚构活动时间冲突，我想做日程排期，把固定时段、可调整事项和必要缓冲放在同一张时间表里。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 47,
+          "text": "下周几个虚构活动时间冲突，我想做日程排期，把固定时段、可调整事项和必要缓冲放在同一张时间表里。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 20,
+          "text": "日程排期"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-049",
+      "scenario_family": "cal-v04-s1-049",
+      "template_family": "cal-v04-s1-049",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "80e0105d5aece239320f0bf11531302ea94fd942e57b5b3ec794e45f5f09bec4",
+        "nfc_sha256": "404dc709000ec232de4038aec27ca8bb2102d18ce535d68cb305879488d3e50e",
+        "nfkc_sha256": "5c009cbf1baa722e4b975e811ea1839ea01e8873de41c6a6f7fb65cb13196575",
+        "bundle_sha256": "404dc709000ec232de4038aec27ca8bb2102d18ce535d68cb305879488d3e50e"
+      }
+    },
+    {
+      "id": "cal-v04-s1-050",
+      "row_id": "cal-v04-s1-050",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "provisional_gold_topics": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Help arrange an imaginary calendar schedule for several workshops, preserving fixed sessions and leaving enough transition time between them.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 141,
+          "text": "Help arrange an imaginary calendar schedule for several workshops, preserving fixed sessions and leaving enough transition time between them."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 26,
+          "end": 43,
+          "text": "calendar schedule"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-050",
+      "scenario_family": "cal-v04-s1-050",
+      "template_family": "cal-v04-s1-050",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4de27495c2a53598eba156851944aa8235914ea4bca03c4134d20397c0e2845b",
+        "nfc_sha256": "1af6ff4d3873c1dc19d721e60c997e5599727a723315aa00ad1d5e7864ccc9ef",
+        "nfkc_sha256": "1af6ff4d3873c1dc19d721e60c997e5599727a723315aa00ad1d5e7864ccc9ef",
+        "bundle_sha256": "1af6ff4d3873c1dc19d721e60c997e5599727a723315aa00ad1d5e7864ccc9ef"
+      }
+    },
+    {
+      "id": "cal-v04-s1-051",
+      "row_id": "cal-v04-s1-051",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "provisional_gold_topics": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我想整理一个示例 weekly schedule，把已确定的时间块与可以移动的安排分开，找出排期冲突。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 51,
+          "text": "我想整理一个示例 weekly schedule，把已确定的时间块与可以移动的安排分开，找出排期冲突。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 9,
+          "end": 24,
+          "text": "weekly schedule"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-051",
+      "scenario_family": "cal-v04-s1-051",
+      "template_family": "cal-v04-s1-051",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "adc8e241f21d5a5c651f1d3f02a408dbcd0601f3bf393369ddf79719fa07de52",
+        "nfc_sha256": "27f60c2b781a70c4660f997d7b154db1bb1acdee94bc809f12eb65d2ffcdc943",
+        "nfkc_sha256": "2f9372cf478c70008a98fb76b043f0bc05d8538d4e0b07a938f5bb7c0ed58bab",
+        "bundle_sha256": "27f60c2b781a70c4660f997d7b154db1bb1acdee94bc809f12eb65d2ffcdc943"
+      }
+    },
+    {
+      "id": "cal-v04-s1-052",
+      "row_id": "cal-v04-s1-052",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "provisional_gold_topics": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "我的虚构读书笔记越来越零散，我想设计知识管理方法，把概念联系、问题和可继续查证的线索组织成可检索的笔记。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "我的虚构读书笔记越来越零散，我想设计知识管理方法，把概念联系、问题和可继续查证的线索组织成可检索的笔记。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 18,
+          "end": 24,
+          "text": "知识管理方法"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-052",
+      "scenario_family": "cal-v04-s1-052",
+      "template_family": "cal-v04-s1-052",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "dc21fd9e41bf7c12ba7cc384f32c3e8e669b7d2549c30dad9a72eb664095f1a5",
+        "nfc_sha256": "efdf2ae82f3cdc47c10db4373ed8895a8195363dd1b73118436e616787b8cae1",
+        "nfkc_sha256": "f99511eac4e9fc98708f134de076102fe353477811c491d3eb4e1f7b25e6e181",
+        "bundle_sha256": "efdf2ae82f3cdc47c10db4373ed8895a8195363dd1b73118436e616787b8cae1"
+      }
+    },
+    {
+      "id": "cal-v04-s1-053",
+      "row_id": "cal-v04-s1-053",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "provisional_gold_topics": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For an invented collection of learning notes, plan a knowledge-management structure that links related ideas and keeps open questions visible without accessing real files.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 171,
+          "text": "For an invented collection of learning notes, plan a knowledge-management structure that links related ideas and keeps open questions visible without accessing real files."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 53,
+          "end": 83,
+          "text": "knowledge-management structure"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-053",
+      "scenario_family": "cal-v04-s1-053",
+      "template_family": "cal-v04-s1-053",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "6f71a47739f5cf4b63dfd42ece519d648caecf0016429598450c0884b67b4431",
+        "nfc_sha256": "e66c53ed4977ba4e49686c7f5ec0b7cf072704e9c452b44fd4aa46fe2f35513f",
+        "nfkc_sha256": "e66c53ed4977ba4e49686c7f5ec0b7cf072704e9c452b44fd4aa46fe2f35513f",
+        "bundle_sha256": "e66c53ed4977ba4e49686c7f5ec0b7cf072704e9c452b44fd4aa46fe2f35513f"
+      }
+    },
+    {
+      "id": "cal-v04-s1-054",
+      "row_id": "cal-v04-s1-054",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "provisional_gold_topics": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "CAL_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "我想重整一个教学用 personal knowledge base，把概念卡片、参考线索和自己的疑问连成可回看的笔记网络。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 61,
+          "text": "我想重整一个教学用 personal knowledge base，把概念卡片、参考线索和自己的疑问连成可回看的笔记网络。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 10,
+          "end": 33,
+          "text": "personal knowledge base"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-cal-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "cal-v04-s1-054",
+      "scenario_family": "cal-v04-s1-054",
+      "template_family": "cal-v04-s1-054",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_CAL",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T11:30:06Z",
+      "authoring_batch": "ZMR-DEV-V04-CAL-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "56cf4bc5bc66f62921e11f4e29c5f11b9e17e6a2c47f754181423f1b08e76a5d",
+        "nfc_sha256": "b9aeb74ef742e1d549c055412348473447d2ba53a43238b9459134323f44b6ff",
+        "nfkc_sha256": "3e95fb1d0e96e6fa525a73c7c9b6d65edffecd18743a11646c84f1f5a7eb69cb",
+        "bundle_sha256": "b9aeb74ef742e1d549c055412348473447d2ba53a43238b9459134323f44b6ff"
+      }
+    }
+  ],
+  "candidate_prediction_exposures": 0,
+  "exposure_policy": "PUBLIC_CAL original inputs visible to the candidate writer; no Router predictions before separate complete-data calibration registration. This is exposure bookkeeping, not independent qualification."
+}

@@ -4,9 +4,9 @@
   "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
   "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
   "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
-  "source_main": "da3829e0c57a52d1e6bf616c5768d310ae4d40d7",
+  "source_main": "6a4708e75ab8a2b9a8ce7dc14139c35984e06a2d",
   "status": "PARTIAL_DEV_INTAKE_ORDINARY_TUNE_FULL144_CAL_SAFETY_INCOMPLETE",
-  "frozen_at": "2026-09-30T11:15:31Z",
+  "frozen_at": "2026-09-30T11:30:06Z",
   "splits": {
     "TUNE_PROVISIONAL": {
       "rows": 432,
@@ -49,18 +49,25 @@
       ]
     },
     "CAL_PROVISIONAL": {
-      "rows": 0,
-      "topics": 0,
-      "missing_topics": 144,
-      "remaining_ordinary_rows": 432,
+      "rows": 54,
+      "topics": 18,
+      "missing_topics": 126,
+      "remaining_ordinary_rows": 378,
       "language_counts": {
-        "zh": 0,
-        "en": 0,
-        "mixed": 0
+        "zh": 18,
+        "en": 18,
+        "mixed": 18
       },
-      "exposure": "NOT_AUTHORED",
-      "evaluation_status": "NOT_AUTHORED",
-      "slices": []
+      "exposure": "PUBLIC_CAL",
+      "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
+      "slices": [
+        {
+          "path": "data/zero_model_refoundation/development/provisional_cal_v0.4_slice1.json",
+          "sha256": "37f960b2beb3788a8629f15be931e494a51f4d5dc3ab95458768c8d7d678b9e5",
+          "rows": 54
+        }
+      ],
+      "candidate_prediction_exposures": 0
     }
   },
   "safety_rows": {
@@ -146,6 +153,16 @@
       "slice": "slice5",
       "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
       "prior_explicit_public_rows": 2782,
+      "gram_size": 3,
+      "jaccard_review_flag_threshold": 0.55,
+      "flags": [],
+      "sealed_test_fingerprints_available": false,
+      "no_sealed_test_overlap_claim": false
+    },
+    {
+      "slice": "cal-slice1",
+      "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
+      "prior_explicit_public_rows": 2890,
       "gram_size": 3,
       "jaccard_review_flag_threshold": 0.55,
       "flags": [],
