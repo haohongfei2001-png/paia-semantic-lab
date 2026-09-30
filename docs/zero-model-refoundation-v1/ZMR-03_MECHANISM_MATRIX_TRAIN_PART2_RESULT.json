@@ -1,0 +1,268 @@
+{
+ "schema": "ZMR-MECHANISM-MATRIX-TRAIN-PART2-RECEIPT-1",
+ "source_main": "9320b8adb5c69ca0850a933856c7914d8d8f9066",
+ "source_tree": "8b95ef41c8e652970b7d4eddcfca74f6b57febf9",
+ "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+ "input_pins": [
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+   "sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+   "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+   "sha256": "9004526809b15bf4d55e9a44d3da44d2bc5cb67929ddd6be586f2c16fc861e06"
+  },
+  {
+   "path": "data/zero_model_refoundation/development/development_mechanism_matrix_plan_v0.1.json",
+   "sha256": "4663109cdfd3277994ecdc046fb23b6537367b5ce5e45042b99b92111e71b409"
+  },
+  {
+   "path": "catalog/system_topic_catalog_v0.2.yaml",
+   "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18"
+  }
+ ],
+ "code_pins": [
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_train_batch.mjs",
+   "sha256": "1f1f2a2c528324256483b5bf556af3b68815a0a328f2358f130a2639b0b10766"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_review.mjs",
+   "sha256": "d42cd7050d7673dbeaecf33f3191ded59ced74251b08daeb572ba292e3cadc46"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_seed.mjs",
+   "sha256": "10247a4ea60e938aef6347c0ddb3c87ed64ee3e17c960d61adaf6610a25d35b7"
+  },
+  {
+   "path": "packages/zero_model_refoundation/mechanism_matrix_plan.mjs",
+   "sha256": "2e277be575fed61cb9f26f544a483e5cb43aec4999c42bd5ce0827d9fa3abf88"
+  },
+  {
+   "path": "packages/zero_model_refoundation/contracts.mjs",
+   "sha256": "ac3d29d395e9cc645e3138eb25b93d85adaceb726e569116a921fc78f368fb2c"
+  }
+ ],
+ "rows_sha256": "c1b2a89ef8c8b4cc45999aac8495fcb6dedfdd5cf4bee83efdb200178ed1a9f0",
+ "audit": {
+  "schema": "ZMR-MECHANISM-MATRIX-TRAIN-BATCH-AUDIT-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "new_rows": 54,
+  "new_topics": 18,
+  "new_language_counts": {
+   "zh": 18,
+   "en": 18,
+   "mixed": 18
+  },
+  "combined_source_rows": 108,
+  "combined_source_topics": 36,
+  "combined_language_counts": {
+   "zh": 36,
+   "en": 36,
+   "mixed": 36
+  },
+  "full_topic_universe": 144,
+  "missing_topics": [
+   "sys.personal_direction.major_decisions",
+   "sys.personal_direction.self_reflection",
+   "sys.personal_direction.habits_behavior",
+   "sys.personal_direction.personal_productivity",
+   "sys.personal_direction.life_planning",
+   "sys.personal_direction.personal_admin",
+   "sys.family_relationships.partner_relationship",
+   "sys.family_relationships.friendships",
+   "sys.family_relationships.social_interaction",
+   "sys.family_relationships.conflict_boundaries",
+   "sys.family_relationships.caregiving_family_support",
+   "sys.family_relationships.pets",
+   "sys.health_wellbeing.medication_treatment",
+   "sys.health_wellbeing.mental_wellbeing",
+   "sys.health_wellbeing.fitness",
+   "sys.health_wellbeing.nutrition",
+   "sys.health_wellbeing.sleep",
+   "sys.health_wellbeing.preventive_health",
+   "sys.education_learning.thesis_research",
+   "sys.education_learning.reading_learning",
+   "sys.education_learning.language_learning",
+   "sys.education_learning.skill_learning",
+   "sys.education_learning.academic_admin",
+   "sys.education_learning.learning_methods",
+   "sys.career_work.interviews",
+   "sys.career_work.career_strategy",
+   "sys.career_work.workplace_daily",
+   "sys.career_work.compensation_benefits",
+   "sys.career_work.performance_growth",
+   "sys.career_work.networking_professional",
+   "sys.projects_products.product_requirements",
+   "sys.projects_products.ux_user_research",
+   "sys.projects_products.roadmap_prioritization",
+   "sys.projects_products.engineering_execution",
+   "sys.projects_products.testing_quality",
+   "sys.projects_products.launch_operations",
+   "sys.ai_computing.coding_software_development",
+   "sys.ai_computing.debugging_troubleshooting",
+   "sys.ai_computing.hardware_devices",
+   "sys.ai_computing.networking_connectivity",
+   "sys.ai_computing.cybersecurity_privacy",
+   "sys.ai_computing.data_systems",
+   "sys.finance_purchases.investing",
+   "sys.finance_purchases.debt_credit",
+   "sys.finance_purchases.taxes_insurance",
+   "sys.finance_purchases.subscriptions_recurring",
+   "sys.finance_purchases.shopping_research",
+   "sys.finance_purchases.major_purchases",
+   "sys.home_daily.utilities_services",
+   "sys.home_daily.chores_cleaning",
+   "sys.home_daily.possessions_organization",
+   "sys.home_daily.local_errands",
+   "sys.home_daily.transportation_ownership",
+   "sys.home_daily.moving_relocation",
+   "sys.travel_places.lodging",
+   "sys.travel_places.restaurants_travel",
+   "sys.travel_places.attractions_activities",
+   "sys.travel_places.visas_border",
+   "sys.travel_places.local_navigation",
+   "sys.travel_places.trip_records",
+   "sys.media_culture.books_literature",
+   "sys.media_culture.games",
+   "sys.media_culture.art_culture",
+   "sys.media_culture.news_media",
+   "sys.media_culture.online_culture",
+   "sys.media_culture.live_events",
+   "sys.communication_writing.translation",
+   "sys.communication_writing.presentations",
+   "sys.communication_writing.documents_reports",
+   "sys.communication_writing.public_posts",
+   "sys.communication_writing.speaking_conversation",
+   "sys.communication_writing.negotiation_persuasion",
+   "sys.legal_civic.complaints_disputes",
+   "sys.legal_civic.government_services",
+   "sys.legal_civic.identity_documents",
+   "sys.legal_civic.immigration_residency",
+   "sys.legal_civic.civic_public_policy",
+   "sys.legal_civic.consumer_rights",
+   "sys.science_technical.computer_science",
+   "sys.science_technical.engineering",
+   "sys.science_technical.biology_life_science",
+   "sys.science_technical.medicine_knowledge",
+   "sys.science_technical.chemistry_materials",
+   "sys.science_technical.statistics_data_analysis",
+   "sys.creative_design.branding_identity",
+   "sys.creative_design.photography",
+   "sys.creative_design.illustration_image_creation",
+   "sys.creative_design.creative_writing",
+   "sys.creative_design.video_audio_creation",
+   "sys.creative_design.ideation_concepts",
+   "sys.business_entrepreneurship.market_research",
+   "sys.business_entrepreneurship.marketing_growth",
+   "sys.business_entrepreneurship.sales",
+   "sys.business_entrepreneurship.operations_process",
+   "sys.business_entrepreneurship.customer_feedback",
+   "sys.business_entrepreneurship.partnerships",
+   "sys.time_events.time_management",
+   "sys.time_events.routines_recurring",
+   "sys.time_events.celebrations_holidays",
+   "sys.time_events.life_events",
+   "sys.time_events.appointments_bookings",
+   "sys.time_events.plans_checklists",
+   "sys.knowledge_memory.journaling",
+   "sys.knowledge_memory.photos_media_archive",
+   "sys.knowledge_memory.files_documents_storage",
+   "sys.knowledge_memory.backup_export",
+   "sys.knowledge_memory.memory_context",
+   "sys.knowledge_memory.provenance_history"
+  ],
+  "remaining_raw_train_rows": 3348,
+  "remaining_raw_language_rows": {
+   "zh": 1692,
+   "en": 1116,
+   "mixed": 540
+  },
+  "combined_nominal_family_language_matrix": {
+   "mf-direct-request": {
+    "zh": 4,
+    "en": 4,
+    "mixed": 4
+   },
+   "mf-constraint-first": {
+    "zh": 4,
+    "en": 4,
+    "mixed": 4
+   },
+   "mf-comparison-tradeoff": {
+    "zh": 3,
+    "en": 3,
+    "mixed": 4
+   },
+   "mf-context-continuation": {
+    "zh": 4,
+    "en": 4,
+    "mixed": 3
+   },
+   "mf-ellipsis-fragment": {
+    "zh": 4,
+    "en": 4,
+    "mixed": 3
+   },
+   "mf-indirect-need": {
+    "zh": 3,
+    "en": 4,
+    "mixed": 4
+   },
+   "mf-quotation-hypothesis-past": {
+    "zh": 4,
+    "en": 3,
+    "mixed": 3
+   },
+   "mf-goal-means-negation": {
+    "zh": 4,
+    "en": 4,
+    "mixed": 3
+   },
+   "mf-correction-override": {
+    "zh": 3,
+    "en": 3,
+    "mixed": 4
+   },
+   "mf-result-first": {
+    "zh": 3,
+    "en": 3,
+    "mixed": 4
+   }
+  },
+  "qualified_heldout_family_count": null,
+  "semantic_family_equivalence": "UNADJUDICATED_POSSIBLE_OVERLAP",
+  "prior_reviewed_rows": 54,
+  "prior_label_holds": 5,
+  "new_source_writer_qa": "PENDING",
+  "accepted_rows": 0,
+  "independent_quota_credit": 0,
+  "writer_lineage_components": 1,
+  "independent_scenario_count": null,
+  "new_continuation_source_rows": 4,
+  "own_literal_name_proxy": {
+   "rows": 2,
+   "ids": [
+    "ZMR-MATRIX-TRAIN-PART2-052",
+    "ZMR-MATRIX-TRAIN-PART2-054"
+   ],
+   "adjudicated_echo_fraction": null
+  },
+  "new_and_seed_near_duplicate_flags": [],
+  "screen_scope": "NEW54_PLUS_REGISTERED_SEED54_ONLY",
+  "old_v04_or_sealed_overlap_review": "NOT_PERFORMED_NO_OLD_OR_SEALED_READS",
+  "source_license": "DECLARATION_ONLY_NOT_INDEPENDENTLY_VERIFIED",
+  "candidate_predictions": 0,
+  "semantic_evaluations": 0,
+  "new_competition_generations": 0,
+  "remaining_stable_allowance": null,
+  "data_qualification": "NOT_QUALIFIED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "saturation_ceiling_claim": false
+ }
+}
