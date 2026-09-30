@@ -1,0 +1,173 @@
+{
+  "schema": "ZMR-A1-BALANCED-R1-PUBLIC-DEV-DIAGNOSTIC-1",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "evaluation_status": "REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE",
+  "evaluation_key": "413493354eb6eaee2d2cef4d653dd0227a3848247ad638d8cb51419d48851ccf",
+  "cohort": "data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json",
+  "cohort_sha256": "8e207f1d173b30478e9548d4a4197aec6b5197c45abdf7afc63f9a736accbde2",
+  "initial_result_sha256": "4f112f068d2df750be9f8389f69c290366a4bef1f989d5177299e0f8ff5f8ddb",
+  "dependency_hashes": {
+    "a1.mjs": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+    "a1_compile.mjs": "667bf9ff5927b13e9c94e726a7ae293af08fba89ac6eceeb379c992dfdbd7c92",
+    "a1_balanced_r1.mjs": "b4e1abff5314a36dc66c4a529ba725a39ff1854cba2cc89408c24b19e544bb29",
+    "a1_balanced_r1_compile.mjs": "7058e52ebcc30dbaaaf05da2a224798b387e638f4f5f05cd52413a5cdd225fed",
+    "a1_balanced_r1_dev_diagnostic.mjs": "47d9a9159d215236c276f5f530a675e22ff9348af6036f505747e7bec4391a2a"
+  },
+  "configs": {
+    "method": "tfidf",
+    "min_score": 0.15,
+    "min_margin": 0.02,
+    "current_only": true
+  },
+  "topic_universe": 144,
+  "single_gold_topics": 18,
+  "missing_single_gold_topics": 126,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "results": {
+    "FREQUENCY": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 18,
+          "assigned": 10,
+          "exact": 5,
+          "supported_labels": 5,
+          "output_labels": 10
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 2,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 2
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 1,
+          "supported_labels": 1,
+          "output_labels": 2
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0,
+          "supported_labels": 1,
+          "output_labels": 2
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 0,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 0
+        }
+      },
+      "single_rows": 18,
+      "single_assigned": 10,
+      "single_exact": 5,
+      "global_supported_labels": 7,
+      "global_output_labels": 16,
+      "ambiguous_assignments": 0,
+      "deterministic_repeat_differences": 0,
+      "provisional_single_assigned_precision": 0.5,
+      "provisional_single_coverage": 0.5555555555555556,
+      "provisional_single_exact_recall": 0.2777777777777778,
+      "global_label_micro_precision": 0.4375,
+      "full144_macro_recall_zero_contribution_diagnostic": 0.034722222222222224,
+      "full144_qualification": "DATA_INSUFFICIENT_126_SINGLE_TOPIC_GOLD_GAPS"
+    },
+    "BALANCED": {
+      "by_role": {
+        "SINGLE": {
+          "rows": 18,
+          "assigned": 8,
+          "exact": 3,
+          "supported_labels": 3,
+          "output_labels": 8
+        },
+        "CONTROL": {
+          "rows": 6,
+          "assigned": 3,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 3
+        },
+        "CONTEXT_REQUIRED": {
+          "rows": 4,
+          "assigned": 1,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 1
+        },
+        "MULTI": {
+          "rows": 4,
+          "assigned": 3,
+          "exact": 0,
+          "supported_labels": 1,
+          "output_labels": 3
+        },
+        "AMBIGUOUS_UNSCORED": {
+          "rows": 4,
+          "assigned": 2,
+          "exact": 0,
+          "supported_labels": 0,
+          "output_labels": 2
+        }
+      },
+      "single_rows": 18,
+      "single_assigned": 8,
+      "single_exact": 3,
+      "global_supported_labels": 4,
+      "global_output_labels": 15,
+      "ambiguous_assignments": 2,
+      "deterministic_repeat_differences": 0,
+      "provisional_single_assigned_precision": 0.375,
+      "provisional_single_coverage": 0.4444444444444444,
+      "provisional_single_exact_recall": 0.16666666666666666,
+      "global_label_micro_precision": 0.26666666666666666,
+      "full144_macro_recall_zero_contribution_diagnostic": 0.020833333333333332,
+      "full144_qualification": "DATA_INSUFFICIENT_126_SINGLE_TOPIC_GOLD_GAPS"
+    }
+  },
+  "paired_BALANCED_vs_FREQUENCY": {
+    "single_exact_gained": 0,
+    "single_exact_lost": 2,
+    "single_wrong_added": 1,
+    "single_wrong_avoided": 1,
+    "control_false_added": 1,
+    "control_false_avoided": 0
+  },
+  "builds": {
+    "frequency": {
+      "classification": "DEV_ONLY_NOT_RESOURCE_QUALIFIED",
+      "topic_count": 144,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "5d779f2ae83a3763645d13e78907d1358609a420412b6025f9e4a13e9d77e5df",
+      "index_bytes": 932855,
+      "runtime_plus_index_bytes": 939747,
+      "mode": "char"
+    },
+    "balanced": {
+      "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "topic_universe": 144,
+      "train_rows": 144,
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+      "index_sha256": "bbbfb9f20fb111234271417800dc9401b3e1b43194ee8ebd20267797f0f8ee84",
+      "index_bytes": 935556,
+      "runtime_plus_index_bytes": 943476
+    }
+  },
+  "limitations": [
+    "same-writer unreviewed gold; no independent qualification credit",
+    "current-only top1 deliberately cannot qualify context or multi layers",
+    "ambiguous rows have no gold and are excluded from all precision denominators",
+    "static bytes and deterministic builds do not qualify memory/latency or capability"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "ZMR-TRAIN-FEATURE-SURVIVAL-AUDIT-2",
+  "classification": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "topic_universe": 144,
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "train_sha256": "eb24fdffefb73eed22c207dcde3a26422696010e0eab35c72b8abd42ad339add",
+  "audit_module_sha256": "cc2ac460fc2a8c48b72e6b590c00974d8ad4ecc6c108b05930d7f76422886931",
+  "semantic_rows_scored": 0,
+  "independent_rows": 0,
+  "as_consumed": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "total_features": 14760,
+  "feature_cap": 6000,
+  "proposed_alias_reserved": 3964,
+  "frequency_selector": {
+    "df1_kept": 3170,
+    "en_catalog_feature_retention": {
+      "min": 0.6111111111111112,
+      "median": 0.8412698412698413,
+      "max": 0.971830985915493
+    },
+    "zh_catalog_feature_retention": {
+      "min": 0.25,
+      "median": 0.2777777777777778,
+      "max": 0.5
+    },
+    "reconstructed_index_bytes": 932855
+  },
+  "balanced_alias_selector": {
+    "df1_kept": 3170,
+    "en_catalog_feature_retention": {
+      "min": 0.8333333333333334,
+      "median": 0.972972972972973,
+      "max": 1
+    },
+    "zh_catalog_feature_retention": {
+      "min": 0.375,
+      "median": 0.6666666666666666,
+      "max": 1
+    },
+    "reconstructed_index_bytes": 936001
+  },
+  "limitations": [
+    "TRAIN/Catalog engineering audit only; no DEV, challenge, AS or TEST reads",
+    "reconstructed static bytes do not qualify latency/memory or a runnable candidate",
+    "fixed bilingual alias reservation 20 features per Topic/language, then global frequency fill; not fitted on DEV",
+    "catalog alias retention does not establish natural expression recall or safety"
+  ]
+}

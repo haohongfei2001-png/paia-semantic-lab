@@ -97,6 +97,7 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT.md');
             docs.push('docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_INTAKE.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01.md');
             engineering.push('packages/zero_model_refoundation/a4_fresh_compare.mjs');
             engineering.push('packages/zero_model_refoundation/a5_composition.mjs', 'packages/zero_model_refoundation/a5_composition.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_a5_challenge.test.mjs');
@@ -153,9 +154,11 @@ jobs:
             const resultA5ChartR1Path = 'docs/zero-model-refoundation-v1/ZMR-04_A5_CHART_R1_DEV_V01_RESULT.json';
             engineering.push('packages/zero_model_refoundation/a1_feature_survival_audit.mjs', 'packages/zero_model_refoundation/provisional_a1_balanced_dev.test.mjs');
             development.push('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json');
+            engineering.push('packages/zero_model_refoundation/a1_balanced.mjs', 'packages/zero_model_refoundation/a1_balanced_compile.mjs', 'packages/zero_model_refoundation/a1_balanced.test.mjs', 'packages/zero_model_refoundation/a1_balanced_dev_diagnostic.mjs', 'packages/zero_model_refoundation/a1_balanced_r1.mjs', 'packages/zero_model_refoundation/a1_balanced_r1_compile.mjs', 'packages/zero_model_refoundation/a1_balanced_r1.test.mjs', 'packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs', 'packages/zero_model_refoundation/a1_feature_survival_audit_v2.mjs');
+            const a1BalancedResults = ['docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-02_A1_BALANCED_R1_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_V2_RESULT.json'];
             const a1FeatureAuditPath = 'docs/zero-model-refoundation-v1/ZMR-02_A1_FEATURE_SURVIVAL_AUDIT_RESULT.json';
             const resultA4RolePaths = ['docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R1_DEV_V01_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-04_A4_ROLE_R2_DEV_V01_RESULT.json'];
-            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...resultA4RolePaths, ...engineering, ...development]);
+            const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
               assert(allowed.has(p), 'path not allowlisted');
@@ -560,6 +563,35 @@ jobs:
               assert.equal(value.intake_status, 'PUBLIC_A1_BALANCED_DEV_FROZEN_UNRUN'); assert.equal(value.evaluation_status, 'UNRUN');
               assert.deepEqual(value.role_counts, {SINGLE:18,CONTROL:6,CONTEXT_REQUIRED:4,MULTI:4,AMBIGUOUS_UNSCORED:4});
             }
+            if (a1BalancedResults.some(p => after.has(p))) {
+              assert(a1BalancedResults.every(p => after.has(p)), 'complete selector/audit correction receipts required');
+              const hash = b => crypto.createHash('sha256').update(b).digest('hex');
+              const firstBytes = await read(a1BalancedResults[0]);
+              for (let i=0; i<a1BalancedResults.length; i++) {
+                const value = JSON.parse((await read(a1BalancedResults[i])).toString('utf8'));
+                assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+                assert.equal(value.topic_universe, 144); assert.equal(value.independent_rows, 0);
+                assert.equal(value.as_consumed, 0); assert.equal(value.capability_verdict, 'UNTESTED');
+                assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
+                if (i<2) {
+                  assert.equal(value.cohort_sha256, hash(await read('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json')));
+                  for (const [name, digest] of Object.entries(value.dependency_hashes)) assert.equal(digest, hash(await read('packages/zero_model_refoundation/'+name)));
+                  assert(value.builds.balanced.index_bytes <= 1048576);
+                  assert(value.builds.balanced.runtime_plus_index_bytes <= 2097152);
+                  assert.equal(value.missing_single_gold_topics, 126);
+                } else {
+                  assert.equal(value.semantic_rows_scored, 0);
+                  assert.equal(value.audit_module_sha256, hash(await read('packages/zero_model_refoundation/a1_feature_survival_audit_v2.mjs')));
+                  assert.equal(value.balanced_alias_selector.reconstructed_index_bytes, 936001);
+                }
+                if (i===1) {
+                  assert.equal(value.initial_result_sha256, hash(firstBytes));
+                  assert.equal(value.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
+                }
+              }
+              assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_repair_spent, 1);
+              assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_disposition, 'RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING');
+            }
             if (after.has(a1FeatureAuditPath)) {
               const value = JSON.parse((await read(a1FeatureAuditPath)).toString('utf8'));
               assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
@@ -570,7 +602,7 @@ jobs:
               assert.equal(value.train_sha256, crypto.createHash('sha256').update(await read('data/zero_model_refoundation/development/provisional_train_v0.2.json')).digest('hex'));
               assert.equal(value.frequency_selector.reconstructed_index_bytes, 932855);
               assert(value.balanced_alias_selector.reconstructed_index_bytes <= 1048576);
-              assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_semantic_evaluations, 0);
+
             }
             if (resultA4RolePaths.some(p => after.has(p))) {
               assert(resultA4RolePaths.every(p => after.has(p)), 'complete A4 role diagnosis and repairs required');
@@ -708,3 +740,7 @@ jobs:
           node --test packages/zero_model_refoundation/a4_role_contrast.test.mjs packages/zero_model_refoundation/a4_role_repairs.test.mjs
           node --check packages/zero_model_refoundation/a1_feature_survival_audit.mjs
           node --test packages/zero_model_refoundation/provisional_a1_balanced_dev.test.mjs
+          node --check packages/zero_model_refoundation/a1_balanced_dev_diagnostic.mjs
+          node --check packages/zero_model_refoundation/a1_balanced_r1_dev_diagnostic.mjs
+          node --check packages/zero_model_refoundation/a1_feature_survival_audit_v2.mjs
+          node --test packages/zero_model_refoundation/a1_balanced.test.mjs packages/zero_model_refoundation/a1_balanced_r1.test.mjs
