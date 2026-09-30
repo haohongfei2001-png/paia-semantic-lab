@@ -1,0 +1,62 @@
+{
+  "schema": "ZMR-PROVISIONAL-TRAIN-V04-FREEZE-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "plan_sha256": "2089dfc3a39d3a455d770695a33253c4fc59f311b4144aeed3f2930b17a0b5ba",
+  "status": "FULL144_PUBLIC_TRAIN_FROZEN_DEVELOPMENT_ONLY",
+  "evaluation_status": "UNFIT_UNEVALUATED",
+  "compiler_admission": "DEVELOPMENT_TRAIN_ONLY_VIA_FROZEN_MANIFEST",
+  "row_count": 432,
+  "topic_count": 144,
+  "missing_topics": 0,
+  "language_counts": {
+    "zh": 144,
+    "en": 144,
+    "mixed": 144
+  },
+  "independent_quota_credit": 0,
+  "independent_source_cohorts": 0,
+  "writer_count": 1,
+  "source_batches": 5,
+  "lineage_component_count": 1,
+  "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+  "data_qualification": "NOT_QUALIFIED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "safety_rows": {
+    "control": 0,
+    "context_required": 0,
+    "context_invariance": 0,
+    "multi": 0
+  },
+  "frozen_at": "2026-09-30T08:34:36Z",
+  "slices": [
+    {
+      "path": "data/zero_model_refoundation/development/provisional_train_v0.4_slice1.json",
+      "sha256": "bfb9273387deee07f2c9268cd12af701f573794fe734dc1d0fa29393e569f23f",
+      "rows": 54
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_train_v0.4_slice2.json",
+      "sha256": "cb54370adb9c61df3f4c9a93690fd119ff65cb19182d285af01498b8c6303353",
+      "rows": 54
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_train_v0.4_slice3.json",
+      "sha256": "cd2ab01cae880604647593715abb4e6e36356b5cc47ef69b994d14c7ec946389",
+      "rows": 108
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_train_v0.4_slice4.json",
+      "sha256": "9d21654f01f14c76e62d798f2653ca4d987b366768077ba8269e5ac5312432f6",
+      "rows": 108
+    },
+    {
+      "path": "data/zero_model_refoundation/development/provisional_train_v0.4_slice5.json",
+      "sha256": "22de81e5a151db47a1afd653a454ebdbdb8065b10f6ad7d8bc0284841fcba647",
+      "rows": 108
+    }
+  ],
+  "rows_sha256": "157ff82166249d7446a48cd22e17f3dda1688624fdcc2efbea68c083b2ced638",
+  "train_sha256": "8306906142c708e0876f9a64f0ba486669d8186c3bda1d7ec7a525ff66b9b2bf"
+}
