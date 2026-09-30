@@ -25,8 +25,8 @@ test('DEV-v04 pins partial intake and refuses to credit unwritten full144 CAL/sa
  const domains=new Map();for(const t of topics){if(!domains.has(t.domain))domains.set(t.domain,t.id);}
  assert.deepEqual([...new Set(c.rows.map(x=>x.topic_id))],[...domains.values()]);
  for(const o of [p,m,c])assert.equal(o.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
- const s=m.splits.TUNE_PROVISIONAL;assert.equal(s.rows,108);assert.equal(c.rows.length,54);assert.equal(s.topics,36);assert.equal(s.missing_topics,108);assert.equal(s.remaining_ordinary_rows,324);
- assert.deepEqual(s.language_counts,{zh:36,en:36,mixed:36});assert.equal(m.splits.CAL_PROVISIONAL.rows,0);assert.equal(m.splits.CAL_PROVISIONAL.missing_topics,144);assert.deepEqual(m.splits.CAL_PROVISIONAL.slices,[]);
+ const s=m.splits.TUNE_PROVISIONAL;assert.equal(s.rows,216);assert.equal(c.rows.length,54);assert.equal(s.topics,72);assert.equal(s.missing_topics,72);assert.equal(s.remaining_ordinary_rows,216);
+ assert.deepEqual(s.language_counts,{zh:72,en:72,mixed:72});assert.equal(m.splits.CAL_PROVISIONAL.rows,0);assert.equal(m.splits.CAL_PROVISIONAL.missing_topics,144);assert.deepEqual(m.splits.CAL_PROVISIONAL.slices,[]);
  assert(Object.values(m.safety_rows).every(n=>n===0));assert.equal(m.semantic_evaluations,0);assert.equal(m.independent_rows,0);assert.equal(m.source_review.independent,false);
  assert.equal(m.source_review.latent_scenario_distinctness,'UNREVIEWED');assert.equal(m.source_review.independent_gold_review,'NOT_PROVISIONED');
  assert.equal(m.formal_cross_split_writer_conflict,true);assert.equal(m.lineage_component_count,1);assert.equal(m.grouped_validation,'UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT');
@@ -72,7 +72,7 @@ test('fresh TUNE public-only duplicate review flags are reproducible; blind over
 
 test('slice2 adds54 source-tracked inputs without mutating frozen slice1 or claiming full coverage',async()=>{
  const c=await json(D+'provisional_tune_v0.4_slice2.json'),m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json'),first=await json(D+'provisional_tune_v0.4_slice1.json');
- assert.equal(m.splits.TUNE_PROVISIONAL.slices.length,2);assert.equal(m.splits.TUNE_PROVISIONAL.slices[0].sha256,'0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594');
+ assert.equal(m.splits.TUNE_PROVISIONAL.slices.length,3);assert.equal(m.splits.TUNE_PROVISIONAL.slices[0].sha256,'0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594');
  const entry=m.splits.TUNE_PROVISIONAL.slices[1];assert.equal(entry.path,D+'provisional_tune_v0.4_slice2.json');assert.equal(entry.sha256,sha(await read(entry.path)));assert.equal(entry.rows,54);
  const topics=parsePinnedCatalog(await read('catalog/system_topic_catalog_v0.2.yaml')),domains=new Map();for(const t of topics){const a=domains.get(t.domain)??[];a.push(t.id);domains.set(t.domain,a);}
  assert.deepEqual([...new Set(c.rows.map(r=>r.topic_id))],[...domains.values()].map(a=>a[1]));
@@ -90,4 +90,29 @@ test('slice2 adds54 source-tracked inputs without mutating frozen slice1 or clai
  const seen=[];for(const n of [...PUBLIC_PRIOR,'tune_v0.4_slice1'])for(const r of (await json(D+'provisional_'+n+'.json')).rows??[])if(typeof r.current==='string')seen.push(fp(r));assert.equal(seen.length,2512);
  const flags=[];for(const r of c.rows){const now=fp(r);for(const old of seen){assert.notEqual(now.scenario,old.scenario);assert.notEqual(now.template,old.template);let common=0;for(const t of now.grams)if(old.grams.has(t))common++;const similarity=common/(now.grams.size+old.grams.size-common||1);if(now.hash===old.hash||now.current===old.current||similarity>=.55)flags.push({left:old.id,right:now.id,similarity});}seen.push(now);}
  assert.deepEqual(flags,[]);const screen=m.public_overlap_screens[1];assert.equal(screen.prior_explicit_public_rows,2512);assert.deepEqual(screen.flags,flags);assert.equal(screen.sealed_test_fingerprints_available,false);assert.equal(screen.no_sealed_test_overlap_claim,false);
+});
+
+test('slice3 adds108 original inputs for36 Topics; immutable prior slices, actual cumulative gaps and public screen remain honest',async()=>{
+ const c=await json(D+'provisional_tune_v0.4_slice3.json'),m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json'),first=await json(D+'provisional_tune_v0.4_slice1.json'),second=await json(D+'provisional_tune_v0.4_slice2.json');
+ const entries=m.splits.TUNE_PROVISIONAL.slices;assert.equal(entries.length,3);
+ assert.equal(entries[0].sha256,'0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594');assert.equal(entries[1].sha256,'8f151986e57e3b2a2fdec23ec878e1a7587af8ada7121905ac6f812f935a777d');
+ for(const e of entries)assert.equal(e.sha256,sha(await read(e.path)));assert.equal(entries[2].path,D+'provisional_tune_v0.4_slice3.json');assert.equal(entries[2].rows,108);
+ const topics=parsePinnedCatalog(await read('catalog/system_topic_catalog_v0.2.yaml')),domains=new Map();for(const t of topics){const a=domains.get(t.domain)??[];a.push(t.id);domains.set(t.domain,a);}
+ assert.deepEqual([...new Set(c.rows.map(r=>r.topic_id))],[...domains.values()].flatMap(a=>a.slice(2,4)));
+ assert.equal(c.schema,'ZMR-PROVISIONAL-TUNE-V04-SLICE-3');assert.equal(c.row_count,108);assert.equal(c.rows.length,108);assert.equal(c.topic_count,36);assert.equal(c.missing_topics,108);assert.equal(c.domain_count,18);assert.equal(c.topic_universe,144);
+ assert.equal(c.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');assert.equal(c.intake_status,'PARTIAL_PUBLIC_TUNE_V04_FROZEN_NOT_EVALUATION_ADMITTED');assert.equal(c.evaluation_status,'UNRUN_NO_ROUTER_PREDICTIONS');assert.equal(c.qualification_credit_rows,0);assert.equal(c.independent_source_cohorts,0);
+ const old=[...first.rows,...second.rows],ids=new Set(old.map(r=>r.id)),lang={};
+ for(const r of c.rows){assert(!ids.has(r.id));ids.add(r.id);assert.equal(r.id,r.row_id);assert.equal(r.source_id,'writer-tune-v04-slice3-20260930');assert.equal(r.authoring_batch,'ZMR-DEV-V04-TUNE-SLICE3-20260930');
+  for(const field of ['split','exposure','writer_id','writer_cohort','source_family','source_license_status','generation_id','qualification_credit_rows','annotation_state','review_status','identifiability_state','boundary_review_status','span_offset_unit','catalog_sha256'])assert.equal(r[field],first.rows[0][field]);
+  assert.equal(r.scenario_id,r.id);assert.equal(r.scenario_family,r.id);assert.equal(r.template_family,r.id);assert.equal(r.translation_family,null);assert.equal(r.paraphrase_family,null);
+  assert.equal(r.expected_state,'ASSIGNED');assert.deepEqual(r.provisional_gold_topics,[r.topic_id]);assert.deepEqual(r.excluded_topics,[]);assert.equal(r.title,'');assert.deepEqual(r.recent,[]);assert(r.current.length>=30);
+  assert.equal(r.provisional_evidence_spans.length,2);assert(r.provisional_evidence_spans.some(s=>s.role==='OBJECT'&&s.text.length<r.current.length));for(const span of r.provisional_evidence_spans){assert.equal(span.source,'current');assert(span.start>=0&&span.end>span.start&&span.end<=r.current.length);assert.equal(r.current.slice(span.start,span.end),span.text);}
+  assert.deepEqual(r.fingerprints,fingerprintBundle({current:r.current,title:r.title,recent:r.recent}));assert(['zh','en','mixed'].includes(r.language));if(r.language==='mixed')assert(/\p{Script=Han}/u.test(r.current)&&/[A-Za-z]/u.test(r.current));lang[r.language]=(lang[r.language]??0)+1;
+ }
+ assert.deepEqual(lang,{zh:36,en:36,mixed:36});assert.deepEqual(lang,c.language_counts);
+ const all=[...old,...c.rows],coverage=new Map(),counts={};for(const r of all){const set=coverage.get(r.topic_id)??new Set();assert(!set.has(r.language));set.add(r.language);coverage.set(r.topic_id,set);counts[r.language]=(counts[r.language]??0)+1;}
+ assert.equal(all.length,216);assert.equal(coverage.size,72);assert([...coverage.values()].every(s=>s.size===3));assert.deepEqual(counts,m.splits.TUNE_PROVISIONAL.language_counts);assert.equal(144-coverage.size,m.splits.TUNE_PROVISIONAL.missing_topics);assert.equal(432-all.length,m.splits.TUNE_PROVISIONAL.remaining_ordinary_rows);
+ const seen=[];for(const n of [...PUBLIC_PRIOR,'tune_v0.4_slice1','tune_v0.4_slice2'])for(const r of (await json(D+'provisional_'+n+'.json')).rows??[])if(typeof r.current==='string')seen.push(fp(r));assert.equal(seen.length,2566);
+ const flags=[];for(const r of c.rows){const now=fp(r);for(const old of seen){assert.notEqual(now.scenario,old.scenario);assert.notEqual(now.template,old.template);let common=0;for(const t of now.grams)if(old.grams.has(t))common++;const similarity=common/(now.grams.size+old.grams.size-common||1);if(now.hash===old.hash||now.current===old.current||similarity>=.55)flags.push({left:old.id,right:now.id,similarity});}seen.push(now);}
+ assert.deepEqual(flags,[]);const screen=m.public_overlap_screens[2];assert.equal(screen.prior_explicit_public_rows,2566);assert.deepEqual(screen.flags,flags);assert.equal(screen.sealed_test_fingerprints_available,false);assert.equal(screen.no_sealed_test_overlap_claim,false);
 });
