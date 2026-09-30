@@ -182,6 +182,10 @@ jobs:
             engineering.push('packages/zero_model_refoundation/provisional_ordinary_dev_v04.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_dev_v04_safety_seed.test.mjs');
             engineering.push('packages/zero_model_refoundation/provisional_dev_v04_safety_remaining.test.mjs');
+            engineering.push('packages/zero_model_refoundation/development_source_audit.mjs');
+            engineering.push('packages/zero_model_refoundation/development_source_audit.test.mjs');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT.md');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json');
             development.push('data/zero_model_refoundation/development/provisional_safety_v0.4_remaining.json');
             docs.push('docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SAFETY_FULL_TARGET_FREEZE.md');
             development.push('data/zero_model_refoundation/development/provisional_safety_v0.4_seed.json');
@@ -843,7 +847,7 @@ jobs:
               assert.equal(challenge.evaluation_status, 'UNRUN');
               assert.equal(challenge.qualification_credit_rows, 0);
             }
-            for (const p of [statusPath, 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', ...present, ...inputs]) {
+            for (const p of [statusPath, 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json', ...present, ...inputs]) {
               const bytes = await read(p);
               const target = path.join(process.env.GITHUB_WORKSPACE, p);
               fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
@@ -880,3 +884,4 @@ jobs:
           node --test packages/zero_model_refoundation/provisional_ordinary_dev_v04.test.mjs
           node --test packages/zero_model_refoundation/provisional_dev_v04_safety_seed.test.mjs
           node --test packages/zero_model_refoundation/provisional_dev_v04_safety_remaining.test.mjs
+          node --test packages/zero_model_refoundation/development_source_audit.test.mjs
