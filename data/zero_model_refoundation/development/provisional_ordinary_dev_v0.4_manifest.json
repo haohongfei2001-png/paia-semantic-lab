@@ -1,0 +1,93 @@
+{
+  "schema": "ZMR-PROVISIONAL-ORDINARY-DEV-V04-INTAKE-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "plan_path": "data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json",
+  "plan_sha256": "9cdbb57ffd50c369d95fa209ec0332b0fadaee0b32c1cf3c3fa7011010a44639",
+  "source_main": "74f7a05536a3ecf4ceff2d76244c04eaa947a475",
+  "status": "PARTIAL_INTAKE_NO_FULL144_OR_SAFETY_FREEZE",
+  "frozen_at": "2026-09-30T09:55:20Z",
+  "splits": {
+    "TUNE_PROVISIONAL": {
+      "rows": 54,
+      "topics": 18,
+      "missing_topics": 126,
+      "remaining_ordinary_rows": 378,
+      "language_counts": {
+        "zh": 18,
+        "en": 18,
+        "mixed": 18
+      },
+      "exposure": "PUBLIC_TUNE",
+      "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
+      "slices": [
+        {
+          "path": "data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json",
+          "sha256": "0f8206c34c0b401f5fe407e7cba16fc99ef1410f4c3afd582bd222847dd9e594",
+          "rows": 54
+        }
+      ]
+    },
+    "CAL_PROVISIONAL": {
+      "rows": 0,
+      "topics": 0,
+      "missing_topics": 144,
+      "remaining_ordinary_rows": 432,
+      "language_counts": {
+        "zh": 0,
+        "en": 0,
+        "mixed": 0
+      },
+      "exposure": "NOT_AUTHORED",
+      "evaluation_status": "NOT_AUTHORED",
+      "slices": []
+    }
+  },
+  "safety_rows": {
+    "control": 0,
+    "context_required": 0,
+    "context_invariance": 0,
+    "multi": 0
+  },
+  "semantic_evaluations": 0,
+  "independent_rows": 0,
+  "independent_source_cohorts": 0,
+  "writer_count": 1,
+  "lineage_component_count": 1,
+  "formal_cross_split_writer_conflict": true,
+  "qualification_conflicts": [
+    "TRAIN_TUNE_CAL_SHARE_CANDIDATE_WRITER_G0",
+    "GOLD_UNREVIEWED",
+    "ORDINARY_QUOTA_SHORTFALL",
+    "NO_SAFETY_ROWS",
+    "NO_INDEPENDENT_SOURCE_REVIEW"
+  ],
+  "grouped_validation": "UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT",
+  "data_qualification": "NOT_QUALIFIED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "source_review": {
+    "reviewer": "candidate-writer",
+    "independent": false,
+    "status": "DECLARATION_AND_METADATA_SCREEN_ONLY",
+    "origin": "ORIGINAL_FICTIONAL_CATALOG_GUIDED_CANDIDATE_WRITER",
+    "external_source_rows": 0,
+    "private_user_rows": 0,
+    "production_rows": 0,
+    "as_or_test_rows": 0,
+    "license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+    "latent_scenario_distinctness": "UNREVIEWED",
+    "independent_gold_review": "NOT_PROVISIONED"
+  },
+  "public_overlap_screen": {
+    "classification": "ENGINEERING_REVIEW_FLAGS_ONLY",
+    "prior_explicit_public_rows": 2458,
+    "gram_size": 3,
+    "jaccard_review_flag_threshold": 0.55,
+    "flags": [],
+    "sealed_test_fingerprints_available": false,
+    "no_sealed_test_overlap_claim": false
+  },
+  "stable_competition_admission": "HOLD_PENDING_ACCOUNTING_RECONCILIATION",
+  "calibration_admission": "NOT_ADMITTED_PARTIAL_DATA"
+}

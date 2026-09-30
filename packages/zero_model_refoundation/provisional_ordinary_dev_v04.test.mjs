@@ -1,0 +1,70 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {parsePinnedCatalog} from './a1_compile.mjs';
+import {fingerprintBundle} from './fingerprints.mjs';
+const ROOT=new URL('../../',import.meta.url),D='data/zero_model_refoundation/development/';
+const read=p=>readFile(new URL(p,ROOT));const json=async p=>JSON.parse(await read(p));
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const norm=x=>x.normalize('NFKC').toLowerCase();
+const grams=x=>{const c=Array.from(norm(x)),s=new Set();for(let i=0;i+3<=c.length;i++)s.add(c.slice(i,i+3).join(''));return s;};
+const fp=r=>({id:r.id,hash:fingerprintBundle({current:r.current,title:r.title??'',recent:r.recent??[]}).bundle_sha256,current:norm(r.current),grams:grams(r.current),scenario:r.scenario_family,template:r.template_family});
+
+test('DEV-v04 pins partial intake and refuses to credit unwritten full144 CAL/safety or independent qualification',async()=>{
+ const cb=await read('catalog/system_topic_catalog_v0.2.yaml'),topics=parsePinnedCatalog(cb);
+ const p=await json(D+'provisional_ordinary_dev_v0.4_plan.json'),m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json'),c=await json(D+'provisional_tune_v0.4_slice1.json');
+ assert.equal(p.catalog_sha256,sha(cb));assert.equal(m.catalog_sha256,sha(cb));assert.equal(c.catalog_sha256,sha(cb));
+ assert.equal(m.plan_sha256,sha(await read(m.plan_path)));assert.equal(m.splits.TUNE_PROVISIONAL.slices[0].sha256,sha(await read(m.splits.TUNE_PROVISIONAL.slices[0].path)));
+ assert.deepEqual(p.cards.map(x=>x.topic_id),topics.map(x=>x.id));assert.equal(p.cards.length,144);
+ assert(p.cards.every(x=>x.qualification_credit_rows===0&&x.split_assignments.length===2&&x.split_assignments.every(s=>s.languages.join(',')==='zh,en,mixed')));
+ assert.equal(p.target_ordinary_rows,864);assert.deepEqual(p.target_rows_by_split,{TUNE_PROVISIONAL:432,CAL_PROVISIONAL:432});
+ assert.equal(p.formal_ordinary_dev_quota_per_topic,12);assert.equal(p.development_ordinary_rows_per_topic,6);assert.equal(p.formal_quota_status,'NOT_SATISFIED_BY_THIS_DEVELOPMENT_TARGET');
+ assert.equal(p.target_safety_rows_total,336);assert.equal(p.safety_status,'PLANNED_NOT_AUTHORED');
+ const domains=new Map();for(const t of topics){if(!domains.has(t.domain))domains.set(t.domain,t.id);}
+ assert.deepEqual([...new Set(c.rows.map(x=>x.topic_id))],[...domains.values()]);
+ for(const o of [p,m,c])assert.equal(o.evidence_class,'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+ const s=m.splits.TUNE_PROVISIONAL;assert.equal(s.rows,54);assert.equal(c.rows.length,54);assert.equal(s.topics,18);assert.equal(s.missing_topics,126);assert.equal(s.remaining_ordinary_rows,378);
+ assert.deepEqual(s.language_counts,{zh:18,en:18,mixed:18});assert.equal(m.splits.CAL_PROVISIONAL.rows,0);assert.equal(m.splits.CAL_PROVISIONAL.missing_topics,144);assert.deepEqual(m.splits.CAL_PROVISIONAL.slices,[]);
+ assert(Object.values(m.safety_rows).every(n=>n===0));assert.equal(m.semantic_evaluations,0);assert.equal(m.independent_rows,0);assert.equal(m.source_review.independent,false);
+ assert.equal(m.source_review.latent_scenario_distinctness,'UNREVIEWED');assert.equal(m.source_review.independent_gold_review,'NOT_PROVISIONED');
+ assert.equal(m.formal_cross_split_writer_conflict,true);assert.equal(m.lineage_component_count,1);assert.equal(m.grouped_validation,'UNAVAILABLE_SINGLE_WRITER_LINEAGE_COMPONENT');
+ assert.equal(m.stable_competition_admission,'HOLD_PENDING_ACCOUNTING_RECONCILIATION');assert.equal(m.calibration_admission,'NOT_ADMITTED_PARTIAL_DATA');
+ assert.equal(m.data_qualification,'NOT_QUALIFIED');assert.equal(m.capability_verdict,'UNTESTED');assert.equal(m.resource_verdict,'NOT_QUALIFIED');
+ const status=await json('status/ZERO_MODEL_REFOUNDATION_STATUS.json');assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_tune_rows,c.rows.length);assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_semantic_evaluations,0);assert.equal(status.rounds['ZMR-03'].ordinary_dev_v04_independent_rows,0);
+ assert.equal(status.rounds['ZMR-06'].remaining_stable_configuration_allowance,null);assert.equal(status.capability_verdict,'UNTESTED');assert.equal(status.resource_verdict,'NOT_QUALIFIED');
+});
+
+test('all54 inputs retain source/lineage, explicit unreviewed object spans and UTF16 fingerprints before predictions',async()=>{
+ const c=await json(D+'provisional_tune_v0.4_slice1.json');const seen=new Set(),langs={},coverage=new Map();
+ for(const r of c.rows){assert.equal(r.id,r.row_id);assert(!seen.has(r.id));seen.add(r.id);
+  assert.equal(r.split,'TUNE_PROVISIONAL');assert.equal(r.exposure,'PUBLIC_TUNE');assert.equal(r.writer_id,'candidate-writer');assert.equal(r.writer_cohort,'candidate-writer-G0');assert.equal(r.source_family,'candidate-writer-G0');
+  assert.equal(r.source_id,'writer-tune-v04-slice1-20260930');assert.equal(r.source_license_status,'ORIGINAL_CANDIDATE_WRITER_PROVISIONAL');assert.equal(r.generation_id,'G0_DEV');assert.equal(r.qualification_credit_rows,0);
+  assert.equal(r.scenario_id,r.id);assert.equal(r.scenario_family,r.id);assert.equal(r.template_family,r.id);assert.equal(r.translation_family,null);assert.equal(r.paraphrase_family,null);
+  assert.equal(r.review_status,'UNREVIEWED_PROVISIONAL');assert.equal(r.annotation_state,'CANDIDATE_WRITER_UNREVIEWED');assert.equal(r.identifiability_state,'CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED');
+  assert.equal(r.expected_state,'ASSIGNED');assert.deepEqual(r.provisional_gold_topics,[r.topic_id]);assert.deepEqual(r.excluded_topics,[]);assert.equal(r.boundary_review_status,'NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED');
+  assert(r.current.length>=30);assert.equal(r.title,'');assert.deepEqual(r.recent,[]);assert.equal(r.span_offset_unit,'UTF16_CODE_UNITS');assert.equal(r.provisional_evidence_spans.length,2);
+  for(const span of r.provisional_evidence_spans){assert.equal(span.source,'current');assert(span.start>=0&&span.end>span.start&&span.end<=r.current.length);assert.equal(r.current.slice(span.start,span.end),span.text);}
+  assert(r.provisional_evidence_spans.some(s=>s.role==='OBJECT'&&s.text.length<r.current.length));
+  assert.deepEqual(r.fingerprints,fingerprintBundle({current:r.current,title:r.title,recent:r.recent}));
+  if(r.language==='mixed')assert(/\p{Script=Han}/u.test(r.current)&&/[A-Za-z]/u.test(r.current));
+  assert(['zh','en','mixed'].includes(r.language));langs[r.language]=(langs[r.language]??0)+1;
+  const set=coverage.get(r.topic_id)??new Set();assert(!set.has(r.language));set.add(r.language);coverage.set(r.topic_id,set);
+ }
+ assert.equal(coverage.size,18);assert([...coverage.values()].every(s=>s.size===3));assert.deepEqual(langs,c.language_counts);
+});
+
+test('fresh TUNE public-only duplicate review flags are reproducible; blind overlap and independence remain unknown',async()=>{
+ const names=['train_v0.1','train_v0.2','train_v0.3','tune_v0.1','cal_v0.1','a7_dev_v0.1','a4_triads_v0.1','a4_train_v0.1','a4_challenge_v0.1','a4_positive_challenge_v0.1','a5_challenge_v0.1','a5_repair_dev_v0.1','a5_r1_challenge_v0.1','a6_complement_challenge_v0.1','a6_r1_repair_dev_v0.1','a6_r2_challenge_v0.1','challenge_v0.1','challenge_v0.2','challenge_v0.3','challenge_v0.4','challenge_v0.5','challenge_v0.6','safety_seed_v0.1','safety_seed_v0.2','safety_seed_v0.3','safety_seed_v0.4','role_challenge_v0.1','h1_recall_dev_v0.1','a5_chart_dev_v0.1','a4_role_dev_v0.1','a1_balanced_dev_v0.1','train_v0.4_slice1','train_v0.4_slice2','train_v0.4_slice3','train_v0.4_slice4','train_v0.4_slice5'];
+ const seen=[];for(const n of names){const c=await json(D+'provisional_'+n+'.json');for(const r of c.rows??[])if(typeof r.current==='string')seen.push(fp(r));}
+ const m=await json(D+'provisional_ordinary_dev_v0.4_manifest.json');assert.equal(seen.length,2458);assert.equal(m.public_overlap_screen.prior_explicit_public_rows,seen.length);
+ const flags=[];for(const r of (await json(D+'provisional_tune_v0.4_slice1.json')).rows){const now=fp(r);
+  for(const old of seen){assert.notEqual(now.scenario,old.scenario);assert.notEqual(now.template,old.template);
+   let common=0;for(const t of now.grams)if(old.grams.has(t))common++;
+   const similarity=common/(now.grams.size+old.grams.size-common||1);
+   if(now.hash===old.hash||now.current===old.current||similarity>=.55)flags.push({left:old.id,right:now.id,similarity});
+  }seen.push(now);
+ }
+ assert.deepEqual(flags,m.public_overlap_screen.flags);assert.deepEqual(flags,[]);
+ assert.equal(m.public_overlap_screen.sealed_test_fingerprints_available,false);assert.equal(m.public_overlap_screen.no_sealed_test_overlap_claim,false);
+});

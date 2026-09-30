@@ -178,6 +178,9 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR-06_DEVELOPMENT_COMPETITION_ACCOUNTING.md');
             engineering.push('packages/zero_model_refoundation/competition_budget.mjs', 'packages/zero_model_refoundation/competition_budget.test.mjs');
             development.push('data/zero_model_refoundation/development/development_competition_inventory_v0.1.json');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-03_ORDINARY_DEV_V04_PLAN_TUNE_SLICE1_INTAKE.md');
+            engineering.push('packages/zero_model_refoundation/provisional_ordinary_dev_v04.test.mjs');
+            development.push('data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_plan.json', 'data/zero_model_refoundation/development/provisional_tune_v0.4_slice1.json', 'data/zero_model_refoundation/development/provisional_ordinary_dev_v0.4_manifest.json');
             const allowed = new Set([...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             const reads = [];
             async function read(p) {
@@ -856,3 +859,4 @@ jobs:
           node --test packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs packages/zero_model_refoundation/train_v04.test.mjs
           node --test packages/zero_model_refoundation/train_v04_compile.test.mjs packages/zero_model_refoundation/a1_v04_compact.test.mjs
           node --test packages/zero_model_refoundation/competition_budget.test.mjs
+          node --test packages/zero_model_refoundation/provisional_ordinary_dev_v04.test.mjs

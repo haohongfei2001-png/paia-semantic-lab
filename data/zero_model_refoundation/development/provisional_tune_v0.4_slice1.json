@@ -1,0 +1,3209 @@
+{
+  "schema": "ZMR-PROVISIONAL-TUNE-V04-SLICE-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+  "topic_universe": 144,
+  "version": "0.4.0-slice1",
+  "row_count": 54,
+  "topic_count": 18,
+  "missing_topics": 126,
+  "domain_count": 18,
+  "language_counts": {
+    "zh": 18,
+    "en": 18,
+    "mixed": 18
+  },
+  "qualification_credit_rows": 0,
+  "independent_source_cohorts": 0,
+  "intake_status": "PARTIAL_PUBLIC_TUNE_V04_FROZEN_NOT_EVALUATION_ADMITTED",
+  "evaluation_status": "UNRUN_NO_ROUTER_PREDICTIONS",
+  "source_audit": "CANDIDATE_WRITER_DECLARATION_ONLY_NO_INDEPENDENT_REVIEW",
+  "rows": [
+    {
+      "id": "tune-v04-s1-001",
+      "row_id": "tune-v04-s1-001",
+      "topic_id": "sys.personal_direction.life_goals",
+      "provisional_gold_topics": [
+        "sys.personal_direction.life_goals"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "原来把去哪里上班当成未来的全部，现在我更想先说清二十年后愿意过怎样的日子，哪些长期追求值得一直保留。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 50,
+          "text": "原来把去哪里上班当成未来的全部，现在我更想先说清二十年后愿意过怎样的日子，哪些长期追求值得一直保留。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 24,
+          "end": 36,
+          "text": "二十年后愿意过怎样的日子"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-001",
+      "scenario_family": "tune-v04-s1-001",
+      "template_family": "tune-v04-s1-001",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "ba6395d2ef1d441412a6417d427b8b0f7b161911dd671c20286e024caa650b1a",
+        "nfc_sha256": "59756c0f5ee2ed81b0f0f77e4f2acb6053cdd2b8c027153190f34fbcaa7d6bab",
+        "nfkc_sha256": "c5c0104c3cea55d99d1782d8136ae42ca7300cb491f6ad1866df34fda759473f",
+        "bundle_sha256": "59756c0f5ee2ed81b0f0f77e4f2acb6053cdd2b8c027153190f34fbcaa7d6bab"
+      }
+    },
+    {
+      "id": "tune-v04-s1-002",
+      "row_id": "tune-v04-s1-002",
+      "topic_id": "sys.personal_direction.life_goals",
+      "provisional_gold_topics": [
+        "sys.personal_direction.life_goals"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "I keep putting off the question of what a worthwhile life would look like at sixty; the destination matters more to me than this year's checklist.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 146,
+          "text": "I keep putting off the question of what a worthwhile life would look like at sixty; the destination matters more to me than this year's checklist."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 42,
+          "end": 57,
+          "text": "worthwhile life"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-002",
+      "scenario_family": "tune-v04-s1-002",
+      "template_family": "tune-v04-s1-002",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "20577ccadd31287723354fb37e67b0919f08dfa6893c160947e8fddf202f335b",
+        "nfc_sha256": "8146efcf218b84fa6b20a281c2942d573051f45618e356d95c470f1cfe4557f6",
+        "nfkc_sha256": "8146efcf218b84fa6b20a281c2942d573051f45618e356d95c470f1cfe4557f6",
+        "bundle_sha256": "8146efcf218b84fa6b20a281c2942d573051f45618e356d95c470f1cfe4557f6"
+      }
+    },
+    {
+      "id": "tune-v04-s1-003",
+      "row_id": "tune-v04-s1-003",
+      "topic_id": "sys.personal_direction.life_goals",
+      "provisional_gold_topics": [
+        "sys.personal_direction.life_goals"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "如果只能留下一项 long-term legacy，我希望以后有人因哪件事记住我？想据此梳理一生真正想实现的追求。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 57,
+          "text": "如果只能留下一项 long-term legacy，我希望以后有人因哪件事记住我？想据此梳理一生真正想实现的追求。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 9,
+          "end": 25,
+          "text": "long-term legacy"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-003",
+      "scenario_family": "tune-v04-s1-003",
+      "template_family": "tune-v04-s1-003",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "cb44ed208db6b650a059e3ea6ac6f8ca8e2e29c9562390efd720393952b0437c",
+        "nfc_sha256": "0abfbcab46a20b82f14897687cb3cb354c64ea82628811e5e99fecd9dc2c3e11",
+        "nfkc_sha256": "3be12a1d87f69ae297b3ec78d7d35f80be6765963625add28dcd03ec6ed88815",
+        "bundle_sha256": "0abfbcab46a20b82f14897687cb3cb354c64ea82628811e5e99fecd9dc2c3e11"
+      }
+    },
+    {
+      "id": "tune-v04-s1-004",
+      "row_id": "tune-v04-s1-004",
+      "topic_id": "sys.family_relationships.parents_family",
+      "provisional_gold_topics": [
+        "sys.family_relationships.parents_family"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "每次回老家，妈妈都替我决定该见哪些亲戚，我想把我们母女之间这条界线谈清楚，别再靠沉默躲过去。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 46,
+          "text": "每次回老家，妈妈都替我决定该见哪些亲戚，我想把我们母女之间这条界线谈清楚，别再靠沉默躲过去。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 23,
+          "end": 33,
+          "text": "我们母女之间这条界线"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-004",
+      "scenario_family": "tune-v04-s1-004",
+      "template_family": "tune-v04-s1-004",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "55bf1b3bd576859f9625447ee4848507b01a45f150c32aca1adffca4bf401763",
+        "nfc_sha256": "5e1ea5ef5b9e72741216885b5f32399aaabcd9fd2745de0c1f7c61a724af0c30",
+        "nfkc_sha256": "f0535bc6a88e054193c8c372a14e350cdc2ef8e93e4c082497b448024adb8660",
+        "bundle_sha256": "5e1ea5ef5b9e72741216885b5f32399aaabcd9fd2745de0c1f7c61a724af0c30"
+      }
+    },
+    {
+      "id": "tune-v04-s1-005",
+      "row_id": "tune-v04-s1-005",
+      "topic_id": "sys.family_relationships.parents_family",
+      "provisional_gold_topics": [
+        "sys.family_relationships.parents_family"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Dad treats any disagreement as disloyalty to the family. I need a way to understand that pattern in the household I grew up in.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 127,
+          "text": "Dad treats any disagreement as disloyalty to the family. I need a way to understand that pattern in the household I grew up in."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 104,
+          "end": 126,
+          "text": "household I grew up in"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-005",
+      "scenario_family": "tune-v04-s1-005",
+      "template_family": "tune-v04-s1-005",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "ea06b17b912d7ea88d360cd8bd7d84e9a6cfd9e1366613fcd475788ce8ef2ba6",
+        "nfc_sha256": "9695fa908d42a571d6987a188d6bcfad8ef183aceffce668f146803dcfe84723",
+        "nfkc_sha256": "9695fa908d42a571d6987a188d6bcfad8ef183aceffce668f146803dcfe84723",
+        "bundle_sha256": "9695fa908d42a571d6987a188d6bcfad8ef183aceffce668f146803dcfe84723"
+      }
+    },
+    {
+      "id": "tune-v04-s1-006",
+      "row_id": "tune-v04-s1-006",
+      "topic_id": "sys.family_relationships.parents_family",
+      "provisional_gold_topics": [
+        "sys.family_relationships.parents_family"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "父母觉得我离开故乡就是疏远家里，想理解这种 family expectation 从哪里来，以及它怎样影响我和父母相处。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 60,
+          "text": "父母觉得我离开故乡就是疏远家里，想理解这种 family expectation 从哪里来，以及它怎样影响我和父母相处。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 53,
+          "end": 59,
+          "text": "我和父母相处"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-006",
+      "scenario_family": "tune-v04-s1-006",
+      "template_family": "tune-v04-s1-006",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "fb1aa67d9ad5b35879a4cefbc1b473e57cf3947808a81551ee142c981c8e41ac",
+        "nfc_sha256": "4c2524eaa926e344b9c623e00d2061a12dc772ea1401f5f858799fb85221b15a",
+        "nfkc_sha256": "eb3b51d0c12d7b2227cb81a2d8a420db6c1cbfa0c6f995a0f9508bc90b0dcb99",
+        "bundle_sha256": "4c2524eaa926e344b9c623e00d2061a12dc772ea1401f5f858799fb85221b15a"
+      }
+    },
+    {
+      "id": "tune-v04-s1-007",
+      "row_id": "tune-v04-s1-007",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "provisional_gold_topics": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "门诊让我先去另一个科室做检查，但两张转诊单上的先后顺序不同，我需要整理下一次到医院时该向工作人员确认哪些步骤。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "门诊让我先去另一个科室做检查，但两张转诊单上的先后顺序不同，我需要整理下一次到医院时该向工作人员确认哪些步骤。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 18,
+          "end": 21,
+          "text": "转诊单"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-007",
+      "scenario_family": "tune-v04-s1-007",
+      "template_family": "tune-v04-s1-007",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "b18f45ed860815511bb1cca31387b8bcd11005b6cff4d6c5208c0ab36bf7d27c",
+        "nfc_sha256": "f7d6ce0deacc338c88ad1ab9e09d40078fb7383941a1fa7dba77320d6dc1f2e1",
+        "nfkc_sha256": "a7f14907cbafad8603b214a2c487562f60267297088d3e786d2cf8589ed313e6",
+        "bundle_sha256": "f7d6ce0deacc338c88ad1ab9e09d40078fb7383941a1fa7dba77320d6dc1f2e1"
+      }
+    },
+    {
+      "id": "tune-v04-s1-008",
+      "row_id": "tune-v04-s1-008",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "provisional_gold_topics": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "After a fictional hospital stay, I have a discharge summary and a follow-up instruction sheet. I need to organise the care visits that remain to be arranged.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 157,
+          "text": "After a fictional hospital stay, I have a discharge summary and a follow-up instruction sheet. I need to organise the care visits that remain to be arranged."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 118,
+          "end": 129,
+          "text": "care visits"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-008",
+      "scenario_family": "tune-v04-s1-008",
+      "template_family": "tune-v04-s1-008",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "3150ccc28fd71930c1aed9125fa72775460cd4342d9cb51488f12fac9f5307f2",
+        "nfc_sha256": "1fa5926c4f41d1c8610ef7e1204bca83470edb5c9e1c8c10a4d4b4227cba4452",
+        "nfkc_sha256": "1fa5926c4f41d1c8610ef7e1204bca83470edb5c9e1c8c10a4d4b4227cba4452",
+        "bundle_sha256": "1fa5926c4f41d1c8610ef7e1204bca83470edb5c9e1c8c10a4d4b4227cba4452"
+      }
+    },
+    {
+      "id": "tune-v04-s1-009",
+      "row_id": "tune-v04-s1-009",
+      "topic_id": "sys.health_wellbeing.medical_care",
+      "provisional_gold_topics": [
+        "sys.health_wellbeing.medical_care"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "这是虚构的 child patient 就诊记录，首次看儿科后还要回诊，想整理哪些就诊步骤已完成、哪些仍待确认。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 56,
+          "text": "这是虚构的 child patient 就诊记录，首次看儿科后还要回诊，想整理哪些就诊步骤已完成、哪些仍待确认。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 6,
+          "end": 19,
+          "text": "child patient"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-009",
+      "scenario_family": "tune-v04-s1-009",
+      "template_family": "tune-v04-s1-009",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a990609f0d7327ab1ceeee825e42e37e9499d9357fc54a5f4ea4d2d4145909e7",
+        "nfc_sha256": "1f2c22fdcb84f32a8b1fde8e989dc88bc63d715df2c64f687165607ec1627934",
+        "nfkc_sha256": "979ed77e9abb04ac5bb67799dd4c1602d505837c6f7b33034c5da161811c40d8",
+        "bundle_sha256": "1f2c22fdcb84f32a8b1fde8e989dc88bc63d715df2c64f687165607ec1627934"
+      }
+    },
+    {
+      "id": "tune-v04-s1-010",
+      "row_id": "tune-v04-s1-010",
+      "topic_id": "sys.education_learning.academic_courses",
+      "provisional_gold_topics": [
+        "sys.education_learning.academic_courses"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "这学期的实验课要求先交预习报告再进实验室，我总把课堂讲义和每周作业弄混，想把这门课的学习要求理顺。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "这学期的实验课要求先交预习报告再进实验室，我总把课堂讲义和每周作业弄混，想把这门课的学习要求理顺。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 38,
+          "end": 46,
+          "text": "这门课的学习要求"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-010",
+      "scenario_family": "tune-v04-s1-010",
+      "template_family": "tune-v04-s1-010",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "516564fee85e95fe02a97c471e18d4648ea1be6b5ee470f4c66a6545425f1ba7",
+        "nfc_sha256": "3e87aed4e041d01812ca93f4eed8ce9c94d9be3decf344666330d7c52af3e42b",
+        "nfkc_sha256": "53357ce6377ebff07cd2998ac21527154de37b77f042125742828f2f43a87f03",
+        "bundle_sha256": "3e87aed4e041d01812ca93f4eed8ce9c94d9be3decf344666330d7c52af3e42b"
+      }
+    },
+    {
+      "id": "tune-v04-s1-011",
+      "row_id": "tune-v04-s1-011",
+      "topic_id": "sys.education_learning.academic_courses",
+      "provisional_gold_topics": [
+        "sys.education_learning.academic_courses"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "The seminar assumes we have read the assigned chapter before class, but I cannot tell which exercises belong to this week's course unit.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 136,
+          "text": "The seminar assumes we have read the assigned chapter before class, but I cannot tell which exercises belong to this week's course unit."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 124,
+          "end": 135,
+          "text": "course unit"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-011",
+      "scenario_family": "tune-v04-s1-011",
+      "template_family": "tune-v04-s1-011",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4d637bbef102ba6e2e1d52b2daf61d3492e5910660ac25881ad578c89ee31caf",
+        "nfc_sha256": "83fac6717eaea750c058b2dd5ff57ec587b41d5268f519d7b8d259fa361b3240",
+        "nfkc_sha256": "83fac6717eaea750c058b2dd5ff57ec587b41d5268f519d7b8d259fa361b3240",
+        "bundle_sha256": "83fac6717eaea750c058b2dd5ff57ec587b41d5268f519d7b8d259fa361b3240"
+      }
+    },
+    {
+      "id": "tune-v04-s1-012",
+      "row_id": "tune-v04-s1-012",
+      "topic_id": "sys.education_learning.academic_courses",
+      "provisional_gold_topics": [
+        "sys.education_learning.academic_courses"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "下学期的 history course 用课堂讨论和期末论文评分，想看懂这门课各部分的学习任务与课程要求。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 53,
+          "text": "下学期的 history course 用课堂讨论和期末论文评分，想看懂这门课各部分的学习任务与课程要求。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 5,
+          "end": 19,
+          "text": "history course"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-012",
+      "scenario_family": "tune-v04-s1-012",
+      "template_family": "tune-v04-s1-012",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "03a307376a1dc899e943af49386f5846b0834ef6c78b2c4e003660c81844faf8",
+        "nfc_sha256": "f8c9f08a2f2c896586c077ab6ca69b180d14a249b716c3c7c0bf0544491605e4",
+        "nfkc_sha256": "718cab4d6120c35f05a142b767722a2aee01f5aa7c1dbd987315bf226e3b306b",
+        "bundle_sha256": "f8c9f08a2f2c896586c077ab6ca69b180d14a249b716c3c7c0bf0544491605e4"
+      }
+    },
+    {
+      "id": "tune-v04-s1-013",
+      "row_id": "tune-v04-s1-013",
+      "topic_id": "sys.career_work.job_search",
+      "provisional_gold_topics": [
+        "sys.career_work.job_search"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "招聘网站上的几个岗位都写着要求作品集，我还没投递，想先筛选哪些职位适合我的经历，再决定分别投给谁。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "招聘网站上的几个岗位都写着要求作品集，我还没投递，想先筛选哪些职位适合我的经历，再决定分别投给谁。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 29,
+          "end": 39,
+          "text": "哪些职位适合我的经历"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-013",
+      "scenario_family": "tune-v04-s1-013",
+      "template_family": "tune-v04-s1-013",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "c97b3730cc13192b673550677516ba718f3940c36ccbd3462e5f5d63d2c6c8a5",
+        "nfc_sha256": "2adf12a0fa2e617614481d1d38260aa22d393a344337ac135b812ebd5ccd5d08",
+        "nfkc_sha256": "54f1220b4777aa3ae50363624ec5f3aa0205b667212addd3cc99c7f77ff13674",
+        "bundle_sha256": "2adf12a0fa2e617614481d1d38260aa22d393a344337ac135b812ebd5ccd5d08"
+      }
+    },
+    {
+      "id": "tune-v04-s1-014",
+      "row_id": "tune-v04-s1-014",
+      "topic_id": "sys.career_work.job_search",
+      "provisional_gold_topics": [
+        "sys.career_work.job_search"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Three employers advertise entry-level analyst openings, and I need to decide where to apply rather than send the same application everywhere.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 141,
+          "text": "Three employers advertise entry-level analyst openings, and I need to decide where to apply rather than send the same application everywhere."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 77,
+          "end": 91,
+          "text": "where to apply"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-014",
+      "scenario_family": "tune-v04-s1-014",
+      "template_family": "tune-v04-s1-014",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a3b594ee4617b0314c45b749d7dfd24bc3a089333f9aa85dffd877ff230a14fc",
+        "nfc_sha256": "3e8939e0bf358fc1943fe80927868bb808a5863279a5a2d1806da4b308b2f393",
+        "nfkc_sha256": "3e8939e0bf358fc1943fe80927868bb808a5863279a5a2d1806da4b308b2f393",
+        "bundle_sha256": "3e8939e0bf358fc1943fe80927868bb808a5863279a5a2d1806da4b308b2f393"
+      }
+    },
+    {
+      "id": "tune-v04-s1-015",
+      "row_id": "tune-v04-s1-015",
+      "topic_id": "sys.career_work.job_search",
+      "provisional_gold_topics": [
+        "sys.career_work.job_search"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "暂停工作两年后准备重返职场，想从这些 return-to-work vacancies 中挑出可以投递的岗位。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "暂停工作两年后准备重返职场，想从这些 return-to-work vacancies 中挑出可以投递的岗位。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 43,
+          "text": "return-to-work vacancies"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-015",
+      "scenario_family": "tune-v04-s1-015",
+      "template_family": "tune-v04-s1-015",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "138cb733158a6de1bde6a6934aa348e65ce23d336635b05631d50af5dc421c6d",
+        "nfc_sha256": "dbb60bb1fbce74cd71bea548a67e7846c9d9ad10ffddbc2f3c901f45edfc2fef",
+        "nfkc_sha256": "b0ecdb8491fc5f1b1aa896bf4459540f8ac859b5a23e98e0a948c9247ea01992",
+        "bundle_sha256": "dbb60bb1fbce74cd71bea548a67e7846c9d9ad10ffddbc2f3c901f45edfc2fef"
+      }
+    },
+    {
+      "id": "tune-v04-s1-016",
+      "row_id": "tune-v04-s1-016",
+      "topic_id": "sys.projects_products.project_planning",
+      "provisional_gold_topics": [
+        "sys.projects_products.project_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "社团要办一次旧书交换活动，场地、招募和宣传都还没启动，我需要先列出项目范围、关键里程碑和任务之间的依赖。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "社团要办一次旧书交换活动，场地、招募和宣传都还没启动，我需要先列出项目范围、关键里程碑和任务之间的依赖。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 33,
+          "end": 37,
+          "text": "项目范围"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-016",
+      "scenario_family": "tune-v04-s1-016",
+      "template_family": "tune-v04-s1-016",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "a09cd56a6b62dc584c669725d548addf1934ac093959c4b686f5ef578ab6cedf",
+        "nfc_sha256": "df4eec0606c732457272b3c4c109d6510daa362677b151b0c96e1cccbfa8b03c",
+        "nfkc_sha256": "04acf5bfb06cff66ce30ede3bf391cfe7ff54018683ea7324e93485aad416d6d",
+        "bundle_sha256": "df4eec0606c732457272b3c4c109d6510daa362677b151b0c96e1cccbfa8b03c"
+      }
+    },
+    {
+      "id": "tune-v04-s1-017",
+      "row_id": "tune-v04-s1-017",
+      "topic_id": "sys.projects_products.project_planning",
+      "provisional_gold_topics": [
+        "sys.projects_products.project_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "Our museum cataloguing project has a deadline but no agreed scope. Before anyone starts, we need milestones and a sequence of dependent tasks.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 142,
+          "text": "Our museum cataloguing project has a deadline but no agreed scope. Before anyone starts, we need milestones and a sequence of dependent tasks."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 4,
+          "end": 30,
+          "text": "museum cataloguing project"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-017",
+      "scenario_family": "tune-v04-s1-017",
+      "template_family": "tune-v04-s1-017",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "51e5a40bfd88769cb15d8ecf29463345f215d004f9e1929f36b6fc1a016104d9",
+        "nfc_sha256": "6ec52d223b8dbb48cd27a27c1b785b1deba2747da390e1c105797b31929aab7e",
+        "nfkc_sha256": "6ec52d223b8dbb48cd27a27c1b785b1deba2747da390e1c105797b31929aab7e",
+        "bundle_sha256": "6ec52d223b8dbb48cd27a27c1b785b1deba2747da390e1c105797b31929aab7e"
+      }
+    },
+    {
+      "id": "tune-v04-s1-018",
+      "row_id": "tune-v04-s1-018",
+      "topic_id": "sys.projects_products.project_planning",
+      "provisional_gold_topics": [
+        "sys.projects_products.project_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "修复老剧场这个 project 还没动工，先划清一期交付范围，再列审批、采购与施工启动之间的依赖。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 49,
+          "text": "修复老剧场这个 project 还没动工，先划清一期交付范围，再列审批、采购与施工启动之间的依赖。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 24,
+          "end": 30,
+          "text": "一期交付范围"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-018",
+      "scenario_family": "tune-v04-s1-018",
+      "template_family": "tune-v04-s1-018",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "496d0edbcf0fa79e5d92eccb5700bb8929b519b004dfee003f2cbbb9b3dc20a9",
+        "nfc_sha256": "b05a07a920e3472713914394e493f7c915716780711ae8847bba0f63c168ce2d",
+        "nfkc_sha256": "cd087209953cc0815c9514fc29ff4610586719288000ec904cb33ff033766aa6",
+        "bundle_sha256": "b05a07a920e3472713914394e493f7c915716780711ae8847bba0f63c168ce2d"
+      }
+    },
+    {
+      "id": "tune-v04-s1-019",
+      "row_id": "tune-v04-s1-019",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "provisional_gold_topics": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "同一份虚构题目在两个文本生成工具中得到不同回答，我想比较这两款模型工具各自支持什么功能，以及怎样记录版本差异。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "同一份虚构题目在两个文本生成工具中得到不同回答，我想比较这两款模型工具各自支持什么功能，以及怎样记录版本差异。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 29,
+          "end": 35,
+          "text": "两款模型工具"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-019",
+      "scenario_family": "tune-v04-s1-019",
+      "template_family": "tune-v04-s1-019",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "fbdc6d570dcbafc4f0da6fb63992396736b7906b8a463505802c3b54682737a2",
+        "nfc_sha256": "dc3d8456069c396001ac146f78406d0168813c93f685771f89b962ccb6ac3680",
+        "nfkc_sha256": "a4fff4e0f11c2bb8ac88b2abdad6906848f574669f7bed498656dc5a128c670f",
+        "bundle_sha256": "dc3d8456069c396001ac146f78406d0168813c93f685771f89b962ccb6ac3680"
+      }
+    },
+    {
+      "id": "tune-v04-s1-020",
+      "row_id": "tune-v04-s1-020",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "provisional_gold_topics": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "I am documenting which capabilities are exposed by several text-generation assistants, including their supported input formats and version labels.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 146,
+          "text": "I am documenting which capabilities are exposed by several text-generation assistants, including their supported input formats and version labels."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 59,
+          "end": 85,
+          "text": "text-generation assistants"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-020",
+      "scenario_family": "tune-v04-s1-020",
+      "template_family": "tune-v04-s1-020",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4c8cec1eda3bed5db0249ed201593d857fc3bcd9d346f51b2636464632b781c9",
+        "nfc_sha256": "783a11afcaa975f36c9fe5bae4d5bc52f850e65a50e5f256f371c3997a8e061b",
+        "nfkc_sha256": "783a11afcaa975f36c9fe5bae4d5bc52f850e65a50e5f256f371c3997a8e061b",
+        "bundle_sha256": "783a11afcaa975f36c9fe5bae4d5bc52f850e65a50e5f256f371c3997a8e061b"
+      }
+    },
+    {
+      "id": "tune-v04-s1-021",
+      "row_id": "tune-v04-s1-021",
+      "topic_id": "sys.ai_computing.ai_models_tools",
+      "provisional_gold_topics": [
+        "sys.ai_computing.ai_models_tools"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "记录这款 code assistant 的模型工具功能边界，看看它支持哪些输入与操作，以及新旧版本的能力声明有什么不同。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 60,
+          "text": "记录这款 code assistant 的模型工具功能边界，看看它支持哪些输入与操作，以及新旧版本的能力声明有什么不同。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 21,
+          "end": 29,
+          "text": "模型工具功能边界"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-021",
+      "scenario_family": "tune-v04-s1-021",
+      "template_family": "tune-v04-s1-021",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "9eb381dc9b898080c0f801e72a0897f88efe14042987f05217f963b2d4706de5",
+        "nfc_sha256": "ade738c5a32514f041816bf9d3e3cc7ff71e005c7e4778eea13c5dd62b98455e",
+        "nfkc_sha256": "ed6b446c34b545411498f0c59194013e97c059b48cd4aec3f31d0fb09c94e89b",
+        "bundle_sha256": "ade738c5a32514f041816bf9d3e3cc7ff71e005c7e4778eea13c5dd62b98455e"
+      }
+    },
+    {
+      "id": "tune-v04-s1-022",
+      "row_id": "tune-v04-s1-022",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "provisional_gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "收入到账日在月中，房租却在月初扣款，我不是要挑投资产品，而是想把每个月何时有钱、何时要付款这条现金安排理清。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 54,
+          "text": "收入到账日在月中，房租却在月初扣款，我不是要挑投资产品，而是想把每个月何时有钱、何时要付款这条现金安排理清。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 47,
+          "end": 51,
+          "text": "现金安排"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-022",
+      "scenario_family": "tune-v04-s1-022",
+      "template_family": "tune-v04-s1-022",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "b88a31805e8c67a2ba921a2ce14e10ad47c89a5b78bbb96939988c7ae000d4ae",
+        "nfc_sha256": "1c92868ebc08e3f4adb530bddbc642333d937f403dedd8d290af1631e42bb09a",
+        "nfkc_sha256": "114fbeb62f47ea7e09a95b1eaf0e4fc2fc5f78d3719b098d074a2ce8076dbb43",
+        "bundle_sha256": "1c92868ebc08e3f4adb530bddbc642333d937f403dedd8d290af1631e42bb09a"
+      }
+    },
+    {
+      "id": "tune-v04-s1-023",
+      "row_id": "tune-v04-s1-023",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "provisional_gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "My hypothetical household has several bills due before its monthly income arrives. I want a month-by-month cash-in and cash-out plan.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 133,
+          "text": "My hypothetical household has several bills due before its monthly income arrives. I want a month-by-month cash-in and cash-out plan."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 107,
+          "end": 132,
+          "text": "cash-in and cash-out plan"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-023",
+      "scenario_family": "tune-v04-s1-023",
+      "template_family": "tune-v04-s1-023",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "d2007406d783da02221755823ab230bc99c575abf424d83bca840d242a5ec561",
+        "nfc_sha256": "7c9c52ab0e0fc90364788d890438e32ea95735d1bda342e9a95773fbfd16f9f2",
+        "nfkc_sha256": "7c9c52ab0e0fc90364788d890438e32ea95735d1bda342e9a95773fbfd16f9f2",
+        "bundle_sha256": "7c9c52ab0e0fc90364788d890438e32ea95735d1bda342e9a95773fbfd16f9f2"
+      }
+    },
+    {
+      "id": "tune-v04-s1-024",
+      "row_id": "tune-v04-s1-024",
+      "topic_id": "sys.finance_purchases.budgeting_cashflow",
+      "provisional_gold_topics": [
+        "sys.finance_purchases.budgeting_cashflow"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "虚构小摊每周收入不固定，做一份 weekly budget 分配日常支出和备用现金，避免某几周付不出固定账单。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "虚构小摊每周收入不固定，做一份 weekly budget 分配日常支出和备用现金，避免某几周付不出固定账单。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 29,
+          "text": "weekly budget"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-024",
+      "scenario_family": "tune-v04-s1-024",
+      "template_family": "tune-v04-s1-024",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "d3e99ab165f29d509115ec28d3b7013e2740fa8a8fee9cec7e397ca7c84330ca",
+        "nfc_sha256": "a9e6a3f9ddc69e54114b12257b0cbe81c4e680bd12ad5d9650326e286b7da583",
+        "nfkc_sha256": "6460c99eeedaed2baefce363e49668c0fd27d14157a338f536c34f2a5e21bc42",
+        "bundle_sha256": "a9e6a3f9ddc69e54114b12257b0cbe81c4e680bd12ad5d9650326e286b7da583"
+      }
+    },
+    {
+      "id": "tune-v04-s1-025",
+      "row_id": "tune-v04-s1-025",
+      "topic_id": "sys.home_daily.housing",
+      "provisional_gold_topics": [
+        "sys.home_daily.housing"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "新租的房子靠街的一侧很吵，另一间却没有足够采光，我想记录住在这里的实际感受，判断是否适合作为长期住所。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 51,
+          "text": "新租的房子靠街的一侧很吵，另一间却没有足够采光，我想记录住在这里的实际感受，判断是否适合作为长期住所。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 46,
+          "end": 50,
+          "text": "长期住所"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-025",
+      "scenario_family": "tune-v04-s1-025",
+      "template_family": "tune-v04-s1-025",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "482002fff25b478bba7c4a56ac363dc9ec7a0ebe69771902f5abb435c92af6aa",
+        "nfc_sha256": "ab518be0d7e30367953bcb16cf6792c942d78f170d1a88a9df505ca68f1b0507",
+        "nfkc_sha256": "0459f6c76c5602611f6a0b0065bd35f4dba21a3f3b2a2cfb036293d1b4fac254",
+        "bundle_sha256": "ab518be0d7e30367953bcb16cf6792c942d78f170d1a88a9df505ca68f1b0507"
+      }
+    },
+    {
+      "id": "tune-v04-s1-026",
+      "row_id": "tune-v04-s1-026",
+      "topic_id": "sys.home_daily.housing",
+      "provisional_gold_topics": [
+        "sys.home_daily.housing"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "I am comparing two places to live based on layout, daylight and everyday access, with the aim of choosing a home for the next few years.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 136,
+          "text": "I am comparing two places to live based on layout, daylight and everyday access, with the aim of choosing a home for the next few years."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 19,
+          "end": 33,
+          "text": "places to live"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-026",
+      "scenario_family": "tune-v04-s1-026",
+      "template_family": "tune-v04-s1-026",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "8a426921dfedcb8e9d5b749a99c412fcc45546108dc0dd5188bea34b35f50e5c",
+        "nfc_sha256": "6e5734b2bb703e11ffbbade951db47dace1f7792a24ea105a5297bae96850503",
+        "nfkc_sha256": "6e5734b2bb703e11ffbbade951db47dace1f7792a24ea105a5297bae96850503",
+        "bundle_sha256": "6e5734b2bb703e11ffbbade951db47dace1f7792a24ea105a5297bae96850503"
+      }
+    },
+    {
+      "id": "tune-v04-s1-027",
+      "row_id": "tune-v04-s1-027",
+      "topic_id": "sys.home_daily.housing",
+      "provisional_gold_topics": [
+        "sys.home_daily.housing"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "正在考虑搬进一处 shared house，想梳理厨房共用、储物空间和出入动线是否适合长期生活。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "正在考虑搬进一处 shared house，想梳理厨房共用、储物空间和出入动线是否适合长期生活。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 9,
+          "end": 21,
+          "text": "shared house"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-027",
+      "scenario_family": "tune-v04-s1-027",
+      "template_family": "tune-v04-s1-027",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "321bbfa5f30f246015f105e225e244a523a80d11181d89746e79a31d0eecd0fc",
+        "nfc_sha256": "1d0e823b2049144c2b30f3d2e1cca05a26085caa6206811c5532a3abb8f154a7",
+        "nfkc_sha256": "03806947345d0382dee86771bf06ed99910b372c9d232cbbac963059230032f0",
+        "bundle_sha256": "1d0e823b2049144c2b30f3d2e1cca05a26085caa6206811c5532a3abb8f154a7"
+      }
+    },
+    {
+      "id": "tune-v04-s1-028",
+      "row_id": "tune-v04-s1-028",
+      "topic_id": "sys.travel_places.trip_planning",
+      "provisional_gold_topics": [
+        "sys.travel_places.trip_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "假期只有五天，我想在海边小城停留而不每天换旅馆，先设计整个旅程的停留顺序和每天可安排的大致范围。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "假期只有五天，我想在海边小城停留而不每天换旅馆，先设计整个旅程的停留顺序和每天可安排的大致范围。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 27,
+          "end": 31,
+          "text": "整个旅程"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-028",
+      "scenario_family": "tune-v04-s1-028",
+      "template_family": "tune-v04-s1-028",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "2deb4f8124819a8e9dcccc83111558ba6bf043cee47dc3ad7ced7b2a68b45872",
+        "nfc_sha256": "c76a80e5e911b8004837a1b52ca4ba29350e271dece05ca527d066ebf4e33685",
+        "nfkc_sha256": "997458fa9e4418d8b2df86c4c97a719e4454024bce5cd79ffbf6d1ee8250e13e",
+        "bundle_sha256": "c76a80e5e911b8004837a1b52ca4ba29350e271dece05ca527d066ebf4e33685"
+      }
+    },
+    {
+      "id": "tune-v04-s1-029",
+      "row_id": "tune-v04-s1-029",
+      "topic_id": "sys.travel_places.trip_planning",
+      "provisional_gold_topics": [
+        "sys.travel_places.trip_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For a fictional five-day island holiday, I want an itinerary that leaves two unplanned afternoons instead of rushing between every town.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 136,
+          "text": "For a fictional five-day island holiday, I want an itinerary that leaves two unplanned afternoons instead of rushing between every town."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 16,
+          "end": 39,
+          "text": "five-day island holiday"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-029",
+      "scenario_family": "tune-v04-s1-029",
+      "template_family": "tune-v04-s1-029",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "ac255a6429211b8d483f5e6321569ae04aa6e792d2feed45d284f78c628563a1",
+        "nfc_sha256": "8a3056a1732ba6e1a48e5bfc6c3af5e7bb83d32eb904d4403c6d354cb7bc2ea6",
+        "nfkc_sha256": "8a3056a1732ba6e1a48e5bfc6c3af5e7bb83d32eb904d4403c6d354cb7bc2ea6",
+        "bundle_sha256": "8a3056a1732ba6e1a48e5bfc6c3af5e7bb83d32eb904d4403c6d354cb7bc2ea6"
+      }
+    },
+    {
+      "id": "tune-v04-s1-030",
+      "row_id": "tune-v04-s1-030",
+      "topic_id": "sys.travel_places.trip_planning",
+      "provisional_gold_topics": [
+        "sys.travel_places.trip_planning"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "给第一次独自去山城的 weekend visit 设计行程，只待两晚，先确定停留顺序和回程前的机动安排。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "给第一次独自去山城的 weekend visit 设计行程，只待两晚，先确定停留顺序和回程前的机动安排。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 11,
+          "end": 24,
+          "text": "weekend visit"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-030",
+      "scenario_family": "tune-v04-s1-030",
+      "template_family": "tune-v04-s1-030",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "ffba0d854741bdb89f9e11dd27a303e3c0f9f53418b7dd5ef166acb7f974b18e",
+        "nfc_sha256": "1ee34a95829fbe8d63c0589af058c77e0fe78dae89e8aeb2bab1e8378b14095c",
+        "nfkc_sha256": "8df5ac93f2a9372d321b2fe6b40b8f3befe8edecfbb2036c9f0472c7e4dfb9c9",
+        "bundle_sha256": "1ee34a95829fbe8d63c0589af058c77e0fe78dae89e8aeb2bab1e8378b14095c"
+      }
+    },
+    {
+      "id": "tune-v04-s1-031",
+      "row_id": "tune-v04-s1-031",
+      "topic_id": "sys.media_culture.music",
+      "provisional_gold_topics": [
+        "sys.media_culture.music"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "最近听的几首器乐作品没有歌词，旋律却很容易辨认，我想记下它们的节拍变化和乐器进入的顺序，再聊聊听感。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 50,
+          "text": "最近听的几首器乐作品没有歌词，旋律却很容易辨认，我想记下它们的节拍变化和乐器进入的顺序，再聊聊听感。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 6,
+          "end": 10,
+          "text": "器乐作品"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-031",
+      "scenario_family": "tune-v04-s1-031",
+      "template_family": "tune-v04-s1-031",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "7b850e921f920d4ebebdb07aad44711d6643519ab94e8d874326da386edf5502",
+        "nfc_sha256": "858f78a8f864aaeda64f0421e31f32645686f2abe348e3606f005fe17f9a885d",
+        "nfkc_sha256": "f4eda1f0ff510c3a41844005946ab3d30d7301845669326a36046e0192505d22",
+        "bundle_sha256": "858f78a8f864aaeda64f0421e31f32645686f2abe348e3606f005fe17f9a885d"
+      }
+    },
+    {
+      "id": "tune-v04-s1-032",
+      "row_id": "tune-v04-s1-032",
+      "topic_id": "sys.media_culture.music",
+      "provisional_gold_topics": [
+        "sys.media_culture.music"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "A choir enters the same tune at staggered intervals. I want to discuss how that canon is arranged and what it sounds like in a live performance.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 144,
+          "text": "A choir enters the same tune at staggered intervals. I want to discuss how that canon is arranged and what it sounds like in a live performance."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 80,
+          "end": 85,
+          "text": "canon"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-032",
+      "scenario_family": "tune-v04-s1-032",
+      "template_family": "tune-v04-s1-032",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "69598684acb8b28c75b329079bf41e275a10c7b1aaad53328613de1a10ee52bd",
+        "nfc_sha256": "d8fc7269ed85c6362f44dd92df568b7a112e61762d6f3b152b19dbd634ebbc18",
+        "nfkc_sha256": "d8fc7269ed85c6362f44dd92df568b7a112e61762d6f3b152b19dbd634ebbc18",
+        "bundle_sha256": "d8fc7269ed85c6362f44dd92df568b7a112e61762d6f3b152b19dbd634ebbc18"
+      }
+    },
+    {
+      "id": "tune-v04-s1-033",
+      "row_id": "tune-v04-s1-033",
+      "topic_id": "sys.media_culture.music",
+      "provisional_gold_topics": [
+        "sys.media_culture.music"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "听一场 live jazz 的录音，想讨论鼓手的节奏怎样和低音互动，以及这段即兴音乐的听感。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 46,
+          "text": "听一场 live jazz 的录音，想讨论鼓手的节奏怎样和低音互动，以及这段即兴音乐的听感。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 4,
+          "end": 13,
+          "text": "live jazz"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-033",
+      "scenario_family": "tune-v04-s1-033",
+      "template_family": "tune-v04-s1-033",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4ff6090397454762f24940f16f90fea19c6a809208960679f3c5285ece1f1a6b",
+        "nfc_sha256": "a8ba11181f02c802b3cbca3e668990573ea8348d65c17d5e7be7dd6eff00ebb9",
+        "nfkc_sha256": "8756a70d56c6cdfb94d182b9c562fad54b94fb3aaf7124f324d9cb8a13ae0fdc",
+        "bundle_sha256": "a8ba11181f02c802b3cbca3e668990573ea8348d65c17d5e7be7dd6eff00ebb9"
+      }
+    },
+    {
+      "id": "tune-v04-s1-034",
+      "row_id": "tune-v04-s1-034",
+      "topic_id": "sys.communication_writing.email_messages",
+      "provisional_gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "几封工作邮件的开头写得太长，我的目标是练习怎样把请求在邮件正文里说得简洁、礼貌，并设计清晰的主题行。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 50,
+          "text": "几封工作邮件的开头写得太长，我的目标是练习怎样把请求在邮件正文里说得简洁、礼貌，并设计清晰的主题行。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 27,
+          "end": 31,
+          "text": "邮件正文"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-034",
+      "scenario_family": "tune-v04-s1-034",
+      "template_family": "tune-v04-s1-034",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "46830352e020473aa1a48a0279c3ff2096c3629ebe6c840f79d11e2adb5240e6",
+        "nfc_sha256": "04ff6386af519ba41161505388c0c4f2c38a6516c9ecdbb6238b4e73523e3607",
+        "nfkc_sha256": "7a329fbcfa7f667c91da665c5e5107ee71198109a072cac1d0cdfbeae3871a55",
+        "bundle_sha256": "04ff6386af519ba41161505388c0c4f2c38a6516c9ecdbb6238b4e73523e3607"
+      }
+    },
+    {
+      "id": "tune-v04-s1-035",
+      "row_id": "tune-v04-s1-035",
+      "topic_id": "sys.communication_writing.email_messages",
+      "provisional_gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "I want to practice writing concise email openings and subject lines; the exercise is about the message format and tone itself.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 126,
+          "text": "I want to practice writing concise email openings and subject lines; the exercise is about the message format and tone itself."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 35,
+          "end": 49,
+          "text": "email openings"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-035",
+      "scenario_family": "tune-v04-s1-035",
+      "template_family": "tune-v04-s1-035",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "b3f405dbaa20b98ce43f77215f7a0ea6abb7b8b57d558f989eaa7f5663c58925",
+        "nfc_sha256": "f565f3ef3e203aaa327e789d2da3306f6feba2ab06abf6fa4e649c37ff202160",
+        "nfkc_sha256": "f565f3ef3e203aaa327e789d2da3306f6feba2ab06abf6fa4e649c37ff202160",
+        "bundle_sha256": "f565f3ef3e203aaa327e789d2da3306f6feba2ab06abf6fa4e649c37ff202160"
+      }
+    },
+    {
+      "id": "tune-v04-s1-036",
+      "row_id": "tune-v04-s1-036",
+      "topic_id": "sys.communication_writing.email_messages",
+      "provisional_gold_topics": [
+        "sys.communication_writing.email_messages"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "练习回复一封 email 的措辞，着重让拒绝的语气礼貌清楚，想学习邮件正文的表达方式。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 43,
+          "text": "练习回复一封 email 的措辞，着重让拒绝的语气礼貌清楚，想学习邮件正文的表达方式。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 33,
+          "end": 42,
+          "text": "邮件正文的表达方式"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-036",
+      "scenario_family": "tune-v04-s1-036",
+      "template_family": "tune-v04-s1-036",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4900b28b9ee193bc881a1544ee92885c9e7725f60d0973ec08e56a9910fc011e",
+        "nfc_sha256": "95b673b12ac618fb6aa37cb18f781ac906b111ebbd579eb3f58e97c91fb760ee",
+        "nfkc_sha256": "2b9370825f35e1b171bdce2dc2883591bb7ea91cc5ac7db39282b95102fe3b1c",
+        "bundle_sha256": "95b673b12ac618fb6aa37cb18f781ac906b111ebbd579eb3f58e97c91fb760ee"
+      }
+    },
+    {
+      "id": "tune-v04-s1-037",
+      "row_id": "tune-v04-s1-037",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "provisional_gold_topics": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "这份虚构协议里同时用了撤销和解除两个词，我想把需要向法律专业人士确认的含义问题列出来，不替我作实际案件判断。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 54,
+          "text": "这份虚构协议里同时用了撤销和解除两个词，我想把需要向法律专业人士确认的含义问题列出来，不替我作实际案件判断。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 11,
+          "end": 16,
+          "text": "撤销和解除"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-037",
+      "scenario_family": "tune-v04-s1-037",
+      "template_family": "tune-v04-s1-037",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "6849d864f2d666af2c17e4d270c78404a506d58610d12f1c95c1770c2e176663",
+        "nfc_sha256": "0a6b0a6aa92311579718bdce363cce3884de111184fa9b1ceed96548f8d2567f",
+        "nfkc_sha256": "58376c5b3422acc21808b80661c60a887844f11e44b92fccdad863549f40f078",
+        "bundle_sha256": "0a6b0a6aa92311579718bdce363cce3884de111184fa9b1ceed96548f8d2567f"
+      }
+    },
+    {
+      "id": "tune-v04-s1-038",
+      "row_id": "tune-v04-s1-038",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "provisional_gold_topics": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "For a fictional agreement, I am collecting questions about how the terms termination and rescission differ as legal concepts, without case-specific advice.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 155,
+          "text": "For a fictional agreement, I am collecting questions about how the terms termination and rescission differ as legal concepts, without case-specific advice."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 73,
+          "end": 99,
+          "text": "termination and rescission"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-038",
+      "scenario_family": "tune-v04-s1-038",
+      "template_family": "tune-v04-s1-038",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "2f64725970741beb6da709b62c5609986be070928b42eb046303473498a61935",
+        "nfc_sha256": "e62269b38557b91411afca3663bec49eb7e4d5d7087eea4503e6803027bb1e1b",
+        "nfkc_sha256": "e62269b38557b91411afca3663bec49eb7e4d5d7087eea4503e6803027bb1e1b",
+        "bundle_sha256": "e62269b38557b91411afca3663bec49eb7e4d5d7087eea4503e6803027bb1e1b"
+      }
+    },
+    {
+      "id": "tune-v04-s1-039",
+      "row_id": "tune-v04-s1-039",
+      "topic_id": "sys.legal_civic.legal_questions",
+      "provisional_gold_topics": [
+        "sys.legal_civic.legal_questions"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "虚构法条中的 shall 与 may 如何影响法律义务的理解？只整理 legal interpretation 概念问题，不对实际争议给结论。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 71,
+          "text": "虚构法条中的 shall 与 may 如何影响法律义务的理解？只整理 legal interpretation 概念问题，不对实际争议给结论。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 23,
+          "end": 27,
+          "text": "法律义务"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-039",
+      "scenario_family": "tune-v04-s1-039",
+      "template_family": "tune-v04-s1-039",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "eb131c86eaed6039d79e0506fdc1031d0992031ea1e1e1ffaa16c3de648dc4cc",
+        "nfc_sha256": "b49810aebe4bdbd9e67647ecc8413d422fae018ca5b4e2ee059a96ab326d09ea",
+        "nfkc_sha256": "7770ffb6b9cf70a658caba7564e747d72d374265fa35fbe809c9dcf7a518c736",
+        "bundle_sha256": "b49810aebe4bdbd9e67647ecc8413d422fae018ca5b4e2ee059a96ab326d09ea"
+      }
+    },
+    {
+      "id": "tune-v04-s1-040",
+      "row_id": "tune-v04-s1-040",
+      "topic_id": "sys.science_technical.physics",
+      "provisional_gold_topics": [
+        "sys.science_technical.physics"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "摆球在最高点短暂停住却还会往回运动，我想用力和能量的概念解释这个现象，并区分速度为零与受力为零。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "摆球在最高点短暂停住却还会往回运动，我想用力和能量的概念解释这个现象，并区分速度为零与受力为零。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 0,
+          "end": 2,
+          "text": "摆球"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-040",
+      "scenario_family": "tune-v04-s1-040",
+      "template_family": "tune-v04-s1-040",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "d24517700d14ec2241c09a8c4fa1373addbd5acc4c1dc34d4e392997ae77636e",
+        "nfc_sha256": "94001b1923998da1c517dd57c5e3fc684d571bf501a66f85684e1c942be7807a",
+        "nfkc_sha256": "99077b6b1308478487830ef8a927bacd2546f35eecce6966fca6d1ea8da7039f",
+        "bundle_sha256": "94001b1923998da1c517dd57c5e3fc684d571bf501a66f85684e1c942be7807a"
+      }
+    },
+    {
+      "id": "tune-v04-s1-041",
+      "row_id": "tune-v04-s1-041",
+      "topic_id": "sys.science_technical.physics",
+      "provisional_gold_topics": [
+        "sys.science_technical.physics"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "A toy train rolls farther on one surface than another after the same push. I want to explain the difference using friction and mechanical energy.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 145,
+          "text": "A toy train rolls farther on one surface than another after the same push. I want to explain the difference using friction and mechanical energy."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 2,
+          "end": 11,
+          "text": "toy train"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-041",
+      "scenario_family": "tune-v04-s1-041",
+      "template_family": "tune-v04-s1-041",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "347b2f62841a07532001997a7571881fd35dab95bfb1d3131c97d87c5655a3e7",
+        "nfc_sha256": "80e8b8d27bac9168f7eddce71e31b9dc6a5b4cd5a5ef22d1aa4630aead31d134",
+        "nfkc_sha256": "80e8b8d27bac9168f7eddce71e31b9dc6a5b4cd5a5ef22d1aa4630aead31d134",
+        "bundle_sha256": "80e8b8d27bac9168f7eddce71e31b9dc6a5b4cd5a5ef22d1aa4630aead31d134"
+      }
+    },
+    {
+      "id": "tune-v04-s1-042",
+      "row_id": "tune-v04-s1-042",
+      "topic_id": "sys.science_technical.physics",
+      "provisional_gold_topics": [
+        "sys.science_technical.physics"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "雨滴落到热金属板上蒸发很快，想用 heat transfer 和相变的物理概念解释这个过程。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 46,
+          "text": "雨滴落到热金属板上蒸发很快，想用 heat transfer 和相变的物理概念解释这个过程。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 32,
+          "end": 34,
+          "text": "相变"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-042",
+      "scenario_family": "tune-v04-s1-042",
+      "template_family": "tune-v04-s1-042",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "9dec1fa6a1d10209fb93608be2c5b6d9cefb5a4caabb1295d0eee7bd9454630c",
+        "nfc_sha256": "6a3e92c2901f5daf54c168e23dc549e3a6c10b639dea030c7b831c611e391c5c",
+        "nfkc_sha256": "6ed54514ea0d078427ed8bd6011e77711225b2487e3b1a16843830a1eaeb0190",
+        "bundle_sha256": "6a3e92c2901f5daf54c168e23dc549e3a6c10b639dea030c7b831c611e391c5c"
+      }
+    },
+    {
+      "id": "tune-v04-s1-043",
+      "row_id": "tune-v04-s1-043",
+      "topic_id": "sys.creative_design.visual_design",
+      "provisional_gold_topics": [
+        "sys.creative_design.visual_design"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "展览信息板远看时几个标题挤在一起，我要调整文字层级、留白和配色，让观众一眼分清主标题与分区说明。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 48,
+          "text": "展览信息板远看时几个标题挤在一起，我要调整文字层级、留白和配色，让观众一眼分清主标题与分区说明。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 0,
+          "end": 5,
+          "text": "展览信息板"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-043",
+      "scenario_family": "tune-v04-s1-043",
+      "template_family": "tune-v04-s1-043",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "cd3b38e0cac89c9fbed3a052bfca1141e03de51e329fd43c33004b4428672af7",
+        "nfc_sha256": "60b877d0881ee4a1a24eb899415f3a126211b9ea45581dfe3938c40ffbd1fb1e",
+        "nfkc_sha256": "6e4e315766dabe2311decdf047b8587abbe362b5a97faaaf66d46e1e97769de0",
+        "bundle_sha256": "60b877d0881ee4a1a24eb899415f3a126211b9ea45581dfe3938c40ffbd1fb1e"
+      }
+    },
+    {
+      "id": "tune-v04-s1-044",
+      "row_id": "tune-v04-s1-044",
+      "topic_id": "sys.creative_design.visual_design",
+      "provisional_gold_topics": [
+        "sys.creative_design.visual_design"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "The exhibition board needs a stronger visual hierarchy: its headings, colour contrast and spacing currently compete for attention.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 130,
+          "text": "The exhibition board needs a stronger visual hierarchy: its headings, colour contrast and spacing currently compete for attention."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 4,
+          "end": 20,
+          "text": "exhibition board"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-044",
+      "scenario_family": "tune-v04-s1-044",
+      "template_family": "tune-v04-s1-044",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "1c8eccf9ae169e11d3002c6d9db4bc075f24e16fd34bee20144e7ef7e2a054e0",
+        "nfc_sha256": "bd32f715df5ee2a3527080ac60c9987d408523c9765e9231b8831134f585c491",
+        "nfkc_sha256": "bd32f715df5ee2a3527080ac60c9987d408523c9765e9231b8831134f585c491",
+        "bundle_sha256": "bd32f715df5ee2a3527080ac60c9987d408523c9765e9231b8831134f585c491"
+      }
+    },
+    {
+      "id": "tune-v04-s1-045",
+      "row_id": "tune-v04-s1-045",
+      "topic_id": "sys.creative_design.visual_design",
+      "provisional_gold_topics": [
+        "sys.creative_design.visual_design"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "这套 navigation icons 大小一致却难以辨认，想调整轮廓、线条粗细和视觉风格，让整套图标更协调。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "这套 navigation icons 大小一致却难以辨认，想调整轮廓、线条粗细和视觉风格，让整套图标更协调。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 3,
+          "end": 19,
+          "text": "navigation icons"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-045",
+      "scenario_family": "tune-v04-s1-045",
+      "template_family": "tune-v04-s1-045",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "718d80c1f7de443ac9e27158985f52ec375857f53dbaa866d52fe26271bfb3a9",
+        "nfc_sha256": "4a14fc048956a0530083ac2333fb6b841fd55f9ea66d1e52836a0b655cedfed7",
+        "nfkc_sha256": "0519f40f11d99dfaa00f7c59e50a1782fa64b92a55ca4417c4e58b6bd93b5c38",
+        "bundle_sha256": "4a14fc048956a0530083ac2333fb6b841fd55f9ea66d1e52836a0b655cedfed7"
+      }
+    },
+    {
+      "id": "tune-v04-s1-046",
+      "row_id": "tune-v04-s1-046",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "provisional_gold_topics": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "我在构思一个为小店提供工具清洗服务的新生意，尚未开张，想先整理创业起步要验证的客户需求、收费方式和最小服务范围。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 56,
+          "text": "我在构思一个为小店提供工具清洗服务的新生意，尚未开张，想先整理创业起步要验证的客户需求、收费方式和最小服务范围。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 31,
+          "end": 35,
+          "text": "创业起步"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-046",
+      "scenario_family": "tune-v04-s1-046",
+      "template_family": "tune-v04-s1-046",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4dd43578ae254eee0d43d566c49d38837398339835dba117c44565bebd314a06",
+        "nfc_sha256": "7efb772ecdd68318b3f245371dc44df075d98a545a693759dff9793ddf622f12",
+        "nfkc_sha256": "e1b3144a5a09673a44daa76dcb0d23c119b700b094f9cb4d31803330f4dadc85",
+        "bundle_sha256": "7efb772ecdd68318b3f245371dc44df075d98a545a693759dff9793ddf622f12"
+      }
+    },
+    {
+      "id": "tune-v04-s1-047",
+      "row_id": "tune-v04-s1-047",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "provisional_gold_topics": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "A fictional founder wants to start a neighbourhood tool-cleaning service and is working out the initial business idea and customer need before launch.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 150,
+          "text": "A fictional founder wants to start a neighbourhood tool-cleaning service and is working out the initial business idea and customer need before launch."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 96,
+          "end": 117,
+          "text": "initial business idea"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-047",
+      "scenario_family": "tune-v04-s1-047",
+      "template_family": "tune-v04-s1-047",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "318a895817066df8762ee7ff42f2cfbfa19121d39a47a27ee92392026b9a66d9",
+        "nfc_sha256": "100da93e5edb14890b79b620f38cb3d1c0e98c30a8c4dc36376bc7f3f50e6bfc",
+        "nfkc_sha256": "100da93e5edb14890b79b620f38cb3d1c0e98c30a8c4dc36376bc7f3f50e6bfc",
+        "bundle_sha256": "100da93e5edb14890b79b620f38cb3d1c0e98c30a8c4dc36376bc7f3f50e6bfc"
+      }
+    },
+    {
+      "id": "tune-v04-s1-048",
+      "row_id": "tune-v04-s1-048",
+      "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+      "provisional_gold_topics": [
+        "sys.business_entrepreneurship.entrepreneurship"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "构思一个上门修补衣服的 micro-business，先梳理创业起步的服务边界、目标顾客与收费假设。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 50,
+          "text": "构思一个上门修补衣服的 micro-business，先梳理创业起步的服务边界、目标顾客与收费假设。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 30,
+          "end": 34,
+          "text": "创业起步"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-048",
+      "scenario_family": "tune-v04-s1-048",
+      "template_family": "tune-v04-s1-048",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "669bb64bcb21095782a072f24ae0ce4a474204a4aa2525c1d7251ca62361a9f4",
+        "nfc_sha256": "b471c6a87a4576c40b4472ac0add8df872e6bb486fdb44b807ee83357a87fd1c",
+        "nfkc_sha256": "8d17d80d24df0cc75a39947c4c87fcbf0a5461677113651c5ee98f627c224895",
+        "bundle_sha256": "b471c6a87a4576c40b4472ac0add8df872e6bb486fdb44b807ee83357a87fd1c"
+      }
+    },
+    {
+      "id": "tune-v04-s1-049",
+      "row_id": "tune-v04-s1-049",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "provisional_gold_topics": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "几个活动的时间已经确定，但其中两场有重叠，我想把日期与开始结束时刻排在同一张日历上，找出需要调整的安排。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 52,
+          "text": "几个活动的时间已经确定，但其中两场有重叠，我想把日期与开始结束时刻排在同一张日历上，找出需要调整的安排。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 38,
+          "end": 40,
+          "text": "日历"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-049",
+      "scenario_family": "tune-v04-s1-049",
+      "template_family": "tune-v04-s1-049",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "4741e1ae5910056d329ad3b71c82d571998ff87f554c39e6d01e4ecdd8c3d04a",
+        "nfc_sha256": "6b8c1e1df839411d804bef1b75b7dad6e4c78cecd3d93859bea1c2f033af1292",
+        "nfkc_sha256": "24d0830b0542bc39242d0ca01aeec3f2085eea34bcc404448016e5db397416ba",
+        "bundle_sha256": "6b8c1e1df839411d804bef1b75b7dad6e4c78cecd3d93859bea1c2f033af1292"
+      }
+    },
+    {
+      "id": "tune-v04-s1-050",
+      "row_id": "tune-v04-s1-050",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "provisional_gold_topics": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "I have several fixed appointments next week and need to reconcile overlapping time slots in a calendar without changing what each event is for.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 143,
+          "text": "I have several fixed appointments next week and need to reconcile overlapping time slots in a calendar without changing what each event is for."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 66,
+          "end": 88,
+          "text": "overlapping time slots"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-050",
+      "scenario_family": "tune-v04-s1-050",
+      "template_family": "tune-v04-s1-050",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "0bc91fcb3a9355aa38be19afa4ab6bba566a4edd9e545eebaba94698192c9f94",
+        "nfc_sha256": "a6d6eaec45e218616bc9d466f8538fcfad9b30f930ded7753a31d79eddcdd89b",
+        "nfkc_sha256": "a6d6eaec45e218616bc9d466f8538fcfad9b30f930ded7753a31d79eddcdd89b",
+        "bundle_sha256": "a6d6eaec45e218616bc9d466f8538fcfad9b30f930ded7753a31d79eddcdd89b"
+      }
+    },
+    {
+      "id": "tune-v04-s1-051",
+      "row_id": "tune-v04-s1-051",
+      "topic_id": "sys.time_events.calendar_scheduling",
+      "provisional_gold_topics": [
+        "sys.time_events.calendar_scheduling"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "一场 workshop 改期后撞上另一项已定活动，帮我把这些 calendar slots 放在一起调整排期。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 55,
+          "text": "一场 workshop 改期后撞上另一项已定活动，帮我把这些 calendar slots 放在一起调整排期。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 31,
+          "end": 45,
+          "text": "calendar slots"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-051",
+      "scenario_family": "tune-v04-s1-051",
+      "template_family": "tune-v04-s1-051",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "cbee557038f22ca7efdf3c0d61bf8a981b50492eafe71d3da14f3564fe725de6",
+        "nfc_sha256": "040c1b6bce61ceae672988d0acd4d1e82fb3d6e900be7ce4bfc878dacdd50fa0",
+        "nfkc_sha256": "5ab72170a1c2346aee0f2fe02ae22703ec375ac9394bf6973378c8c0b9211fc5",
+        "bundle_sha256": "040c1b6bce61ceae672988d0acd4d1e82fb3d6e900be7ce4bfc878dacdd50fa0"
+      }
+    },
+    {
+      "id": "tune-v04-s1-052",
+      "row_id": "tune-v04-s1-052",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "provisional_gold_topics": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "zh",
+      "mechanism": "ordinary-current-subject",
+      "current": "一段阅读摘录在三个笔记文件夹里各存了一份，我想确定以后怎样组织笔记的链接、索引和去重，方便再次找到原出处。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 53,
+          "text": "一段阅读摘录在三个笔记文件夹里各存了一份，我想确定以后怎样组织笔记的链接、索引和去重，方便再次找到原出处。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 31,
+          "end": 36,
+          "text": "笔记的链接"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-052",
+      "scenario_family": "tune-v04-s1-052",
+      "template_family": "tune-v04-s1-052",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "0ec37062cec9e8342726c40f01c438ff8db4cc221c2103da270671ab5d9605fb",
+        "nfc_sha256": "4ca76ecbb9cfd3c6a1cb42db78c7836c3f51ca2500c91327e06e60a0532e1007",
+        "nfkc_sha256": "39c75ab7e86132dbf180234b4c72c2ce24b4222320bf76a2a55aa452d421cc2e",
+        "bundle_sha256": "4ca76ecbb9cfd3c6a1cb42db78c7836c3f51ca2500c91327e06e60a0532e1007"
+      }
+    },
+    {
+      "id": "tune-v04-s1-053",
+      "row_id": "tune-v04-s1-053",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "provisional_gold_topics": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "en",
+      "mechanism": "ordinary-current-subject",
+      "current": "My fictional note collection repeats the same excerpt across several folders; I want a knowledge-organising method that keeps its source traceable.",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 147,
+          "text": "My fictional note collection repeats the same excerpt across several folders; I want a knowledge-organising method that keeps its source traceable."
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 87,
+          "end": 114,
+          "text": "knowledge-organising method"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-053",
+      "scenario_family": "tune-v04-s1-053",
+      "template_family": "tune-v04-s1-053",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "e40ce24951ce704375ee4d8a96dbe4c2c1caf63cad47af091698fb272750e073",
+        "nfc_sha256": "e93d295faa69f96e2321f32a2d87e0cef3484d3c78df6532cb1397af47ade857",
+        "nfkc_sha256": "e93d295faa69f96e2321f32a2d87e0cef3484d3c78df6532cb1397af47ade857",
+        "bundle_sha256": "e93d295faa69f96e2321f32a2d87e0cef3484d3c78df6532cb1397af47ade857"
+      }
+    },
+    {
+      "id": "tune-v04-s1-054",
+      "row_id": "tune-v04-s1-054",
+      "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+      "provisional_gold_topics": [
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "expected_state": "ASSIGNED",
+      "split": "TUNE_PROVISIONAL",
+      "language": "mixed",
+      "mechanism": "ordinary-current-subject",
+      "current": "有一批零散 lecture notes，想设计知识笔记的主题索引与相互链接，方便把新记录接进已有知识结构。",
+      "title": "",
+      "recent": [],
+      "provisional_evidence_spans": [
+        {
+          "role": "CURRENT_GOAL",
+          "source": "current",
+          "start": 0,
+          "end": 53,
+          "text": "有一批零散 lecture notes，想设计知识笔记的主题索引与相互链接，方便把新记录接进已有知识结构。"
+        },
+        {
+          "role": "OBJECT",
+          "source": "current",
+          "start": 6,
+          "end": 19,
+          "text": "lecture notes"
+        }
+      ],
+      "span_offset_unit": "UTF16_CODE_UNITS",
+      "identifiability_state": "CANDIDATE_WRITER_PROVISIONAL_NOT_ADJUDICATED",
+      "excluded_topics": [],
+      "boundary_review_status": "NEAR_NEIGHBOR_EXCLUSIONS_NOT_INDEPENDENTLY_REVIEWED",
+      "annotation_state": "CANDIDATE_WRITER_UNREVIEWED",
+      "review_status": "UNREVIEWED_PROVISIONAL",
+      "writer_id": "candidate-writer",
+      "writer_cohort": "candidate-writer-G0",
+      "source_id": "writer-tune-v04-slice1-20260930",
+      "source_family": "candidate-writer-G0",
+      "source_license_status": "ORIGINAL_CANDIDATE_WRITER_PROVISIONAL",
+      "scenario_id": "tune-v04-s1-054",
+      "scenario_family": "tune-v04-s1-054",
+      "template_family": "tune-v04-s1-054",
+      "paraphrase_family": null,
+      "translation_family": null,
+      "exposure": "PUBLIC_TUNE",
+      "generation_id": "G0_DEV",
+      "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "frozen_at": "2026-09-30T09:55:20Z",
+      "authoring_batch": "ZMR-DEV-V04-PLAN-TUNE-SLICE1-20260930",
+      "qualification_credit_rows": 0,
+      "fingerprints": {
+        "current_sha256": "373400e12f934f6ec967b094710d7ae34b474ed670b8bf49d63db68db18dbd0a",
+        "nfc_sha256": "cc7dd845f0d5344580200b9965cc48f626b52513e3539066fbfc52381916561f",
+        "nfkc_sha256": "2cd4a1085d0722968dd598d328146b968c62dd6085e4bfcf117fd65980f3fcea",
+        "bundle_sha256": "cc7dd845f0d5344580200b9965cc48f626b52513e3539066fbfc52381916561f"
+      }
+    }
+  ]
+}
