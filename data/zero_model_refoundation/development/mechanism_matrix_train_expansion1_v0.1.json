@@ -1,0 +1,4057 @@
+{
+ "schema": "ZMR-MECHANISM-MATRIX-QUOTA-EXPANSION-1",
+ "batch_id": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+ "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+ "registration_main": "3c52ea368881d14bd7b6403eb05dcd3dff81fc2f",
+ "registration_tree": "159bcc9b64dd99e01c90a402e1be98d29e2af5b8",
+ "plan_path": "data/zero_model_refoundation/development/development_mechanism_matrix_plan_v0.1.json",
+ "plan_sha256": "4663109cdfd3277994ecdc046fb23b6537367b5ce5e45042b99b92111e71b409",
+ "catalog_sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+ "baseline_part8_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_v0.1.json",
+ "baseline_part8_sha256": "4f66e9bbca830e4de2b400cd5adf3a3220be1799d7592989d6792502987c59e9",
+ "baseline_part8_review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_review_v0.1.json",
+ "baseline_part8_review_sha256": "54a2e6c92a0a67074bddd50eb014b89184d40b743793e7e790ab88ee0f8d6244",
+ "baseline_deficits_path": "docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_SOURCE_DEFICITS_RESULT.json",
+ "baseline_deficits_sha256": "781d0e8f21d030b84843e9a6d00d2e3c3b32cbeec89de83b7b512822287f1805",
+ "selection_basis": "PINNED_FIRST_TOPIC_PER_DOMAIN_FIRST_REMAINING_ALLOCATION_CELLS_NOT_CANDIDATE_ERRORS",
+ "status": "SOURCE_BYTES_FROZEN_DRAFT_UNACCEPTED_NO_COMPILER_ADMISSION",
+ "source_license": "ORIGINAL_CANDIDATE_WRITER_FICTIONAL_DECLARATION_NOT_INDEPENDENTLY_VERIFIED",
+ "generation_claim": "NONE_NO_STABLE_ALLOCATION_OR_BUDGET_RESET",
+ "writer_id": "candidate-writer",
+ "writer_cohort": "candidate-writer-G0",
+ "source_family": "candidate-writer-G0",
+ "frozen_at": "2026-10-01T00:50:56.058Z",
+ "independent_quota_credit": 0,
+ "accepted_rows": 0,
+ "candidate_prediction_exposures": 0,
+ "semantic_evaluations": 0,
+ "new_competition_generations": 0,
+ "source_intake_revision": 0,
+ "sealed_contents_created": false,
+ "data_qualification": "NOT_QUALIFIED",
+ "capability_verdict": "UNTESTED",
+ "resource_verdict": "NOT_QUALIFIED",
+ "saturation_ceiling_claim": false,
+ "near_duplicate_screen": {
+  "threshold": 0.55,
+  "scope": "NEW54_PLUS_REGISTERED_MATRIX432_ONLY",
+  "independent_review": false
+ },
+ "rows": [
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-001",
+   "topic_id": "sys.personal_direction.life_goals",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-001-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-001-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-001-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-001-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.personal_direction.life_goals"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "给虚构人物写一份未来生活愿景，把经济自主、与亲人保持联系和留出创作空间三项长期目标分列，先写愿望而不拆执行步骤。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "34d7ba9fec21608619fb5424806874454cf6eb1a9e227b6b63803948f2a483c6",
+   "normalized_current_sha256": "24c1fb66d064e72b5a40f6efdf86fbf10aefea5d8557abc4bcf729356f34c3b7",
+   "bundle_sha256": "1b2cbe451fd981a8bac7b17b456851e20932ddaca1646f0f91c32910bfe03a92",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 5,
+     "end": 6,
+     "text": "写"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 8,
+     "end": 14,
+     "text": "未来生活愿景"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 44,
+     "end": 55,
+     "text": "先写愿望而不拆执行步骤"
+    }
+   ],
+   "factors": {
+    "action": "写",
+    "object": "未来生活愿景",
+    "qualifier": "先写愿望而不拆执行步骤"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-002",
+   "topic_id": "sys.personal_direction.life_goals",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-002-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-002-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-002-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-002-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.personal_direction.life_goals"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Describe the long-term aspirations of an invented retired volunteer who wants a sense of contribution and room for original craft work;keep desired life outcomes separate from a weekly schedule.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "f49506c7d3fae1dc9f6c6ac846db8913d3e2eee8a135b804c034f943c47bfca9",
+   "normalized_current_sha256": "1f905e0fda51a9ee8b50e50b9f4f67c0387252c43bd5717dfcbadc848273e74d",
+   "bundle_sha256": "8dc49e902a3ccc1c23d7ca55bfa9371aa7d1a80dc838884a98485e101e2a0795",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 8,
+     "text": "Describe"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 13,
+     "end": 34,
+     "text": "long-term aspirations"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 135,
+     "end": 193,
+     "text": "keep desired life outcomes separate from a weekly schedule"
+    }
+   ],
+   "factors": {
+    "action": "Describe",
+    "object": "long-term aspirations",
+    "qualifier": "keep desired life outcomes separate from a weekly schedule"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-003",
+   "topic_id": "sys.personal_direction.life_goals",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-constraint-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-003-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-003-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-003-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-003-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.personal_direction.life_goals"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "假想人物收集了许多互相挤占时间的愿望，难以说清多年后想成为什么样的人；请提炼其中的生活目标，只保留本人提出的价值方向。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "d321e515433e7f00d6be2759d9b5556b2fe91f1db8e644879b99d399427c5506",
+   "normalized_current_sha256": "03f7b2d7074aca0f7cf46ebe4300f07ade77b2759d513cadf607ca328aea695f",
+   "bundle_sha256": "6a6c966ad46868d6832d4cb6379a06613104cd3fbdc2772abef5ec4d2de3bf04",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 36,
+     "end": 38,
+     "text": "提炼"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 41,
+     "end": 45,
+     "text": "生活目标"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 46,
+     "end": 58,
+     "text": "只保留本人提出的价值方向"
+    }
+   ],
+   "factors": {
+    "action": "提炼",
+    "object": "生活目标",
+    "qualifier": "只保留本人提出的价值方向"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-004",
+   "topic_id": "sys.family_relationships.parents_family",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-004-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-004-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-004-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-004-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.family_relationships.parents_family"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "接着虚构的父子交流片段，梳理父亲表达期待和成年孩子表达自主之间的关系，分别保留双方说过的话。",
+    "title": "",
+    "recent": [
+     "虚构父亲希望每月一起做一次饭，成年孩子希望探访时间提前商量；讨论只涉及他们的家庭相处。"
+    ]
+   },
+   "input_sha256": "32e0873d3f7768fde3f08ad2cec9fe964bfab1180a6903cd4133262007afdcd7",
+   "normalized_current_sha256": "7f45d8e76b2f4ebe2ca2e0b86e8b3a416b4d8f91903f67442b97d0663c3df094",
+   "bundle_sha256": "634480ff848a109749b4f5771d005c3faf0580bb7048377d8a08d90a0a6f3a15",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 12,
+     "end": 14,
+     "text": "梳理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 14,
+     "end": 34,
+     "text": "父亲表达期待和成年孩子表达自主之间的关系"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 35,
+     "end": 45,
+     "text": "分别保留双方说过的话"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 43,
+     "text": "虚构父亲希望每月一起做一次饭，成年孩子希望探访时间提前商量；讨论只涉及他们的家庭相处。"
+    }
+   ],
+   "factors": {
+    "action": "梳理",
+    "object": "父亲表达期待和成年孩子表达自主之间的关系",
+    "qualifier": "分别保留双方说过的话"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-005",
+   "topic_id": "sys.family_relationships.parents_family",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-005-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-005-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-005-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-005-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.family_relationships.parents_family"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Continue the invented parent-child discussion:explain how the mother and adult child could understand each other's expectations about a new family tradition,without deciding which person is right.",
+    "title": "",
+    "recent": [
+     "A fictional mother wants to keep a familiar holiday ritual,while her grown child proposes alternating it with a new shared activity;neither wants to end contact."
+    ]
+   },
+   "input_sha256": "2fc89bd968be293a7ee6baaa222b78c2dbce8448d69bf02a868547f006038035",
+   "normalized_current_sha256": "095ec566a9a665bfdcf4d7b98528b5d0dc732f24b0a8af3541f09a8953ddc9ef",
+   "bundle_sha256": "a19fd22b3eb3cac913cca5670213c03a8ac3e70acdd3b6fecbabc530d5d48174",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 46,
+     "end": 53,
+     "text": "explain"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 62,
+     "end": 127,
+     "text": "mother and adult child could understand each other's expectations"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 157,
+     "end": 195,
+     "text": "without deciding which person is right"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 161,
+     "text": "A fictional mother wants to keep a familiar holiday ritual,while her grown child proposes alternating it with a new shared activity;neither wants to end contact."
+    }
+   ],
+   "factors": {
+    "action": "explain",
+    "object": "mother and adult child could understand each other's expectations",
+    "qualifier": "without deciding which person is right"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-006",
+   "topic_id": "sys.family_relationships.parents_family",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-ellipsis-fragment",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-006-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-006-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-006-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-006-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.family_relationships.parents_family"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "自造亲子相处卡：家人的期待、成年后的自主、一起商量的界线。整理一段父母与孩子交流的结构，保留尚未达成一致的部分。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "f410828db0e251acb3e3fdf5b275054afbb132dc6c3ee0c7932e4801f6bb39ee",
+   "normalized_current_sha256": "90b9f94ca5510c6a294436928a506528521847b812b92957e802eb162e6cf367",
+   "bundle_sha256": "bb52ec0648a744459a18f5d56dc31c33b2cfdeb9fa521d1eea81fbab7791736c",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 29,
+     "end": 31,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 33,
+     "end": 43,
+     "text": "父母与孩子交流的结构"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 44,
+     "end": 55,
+     "text": "保留尚未达成一致的部分"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "父母与孩子交流的结构",
+    "qualifier": "保留尚未达成一致的部分"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-007",
+   "topic_id": "sys.health_wellbeing.medical_care",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-007-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-007-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-007-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-007-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.health_wellbeing.medical_care"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "假想服务培训材料写着“看诊就只是排队见医生”；解释这句话遗漏的预约、信息交接与后续联系环节，仅讨论就医服务流程。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "67903c7c742fc9157ced55d6e4d68b79932017d187121c977ec3538f7e923c6b",
+   "normalized_current_sha256": "855039818b9f438e29cb1021ab0bfd19797c4884b9a1951bfde222f66d1da998",
+   "bundle_sha256": "c10ba34780096acabe431c120d24cc55c504ecbd891d68443d3da8d0c8d54444",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 23,
+     "end": 25,
+     "text": "解释"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 31,
+     "end": 45,
+     "text": "预约、信息交接与后续联系环节"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 46,
+     "end": 55,
+     "text": "仅讨论就医服务流程"
+    }
+   ],
+   "factors": {
+    "action": "解释",
+    "object": "预约、信息交接与后续联系环节",
+    "qualifier": "仅讨论就医服务流程"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-008",
+   "topic_id": "sys.health_wellbeing.medical_care",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-008-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-008-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-008-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-008-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.health_wellbeing.medical_care"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "An invented clinic orientation says,\"A visit ends when the consultation ends.\" Explain how care access,record handoff and follow-up contact fit into the fictional service journey;do not infer an individual treatment plan.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "973b605c79920f26ee298a9bc2a80a15681d5930ea6fa7cf951f6d82cd742a3b",
+   "normalized_current_sha256": "00ec0ec0c1ff8686d54f6e1c42fe03f4de1d038274d7ad89173794a0cd05b610",
+   "bundle_sha256": "016fcee049c365db731790a8b5e3b665aaf18304dcba9680d9ca66b405d538cf",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 79,
+     "end": 86,
+     "text": "Explain"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 91,
+     "end": 139,
+     "text": "care access,record handoff and follow-up contact"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 179,
+     "end": 220,
+     "text": "do not infer an individual treatment plan"
+    }
+   ],
+   "factors": {
+    "action": "Explain",
+    "object": "care access,record handoff and follow-up contact",
+    "qualifier": "do not infer an individual treatment plan"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-009",
+   "topic_id": "sys.health_wellbeing.medical_care",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-goal-means-negation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-009-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-009-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-009-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-009-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.health_wellbeing.medical_care"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "为了理解自造诊所的就医安排，区分服务入口、咨询人员与后续联络的职责，不以疾病名称判断任何人的健康状况。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "fbf54cebdb3133a7cdf1a22a65e77ada2021a69c03b8c27e483ef48d3ef3c384",
+   "normalized_current_sha256": "a643f2fc5ec89d8761baa04d39bdd0119d96189a455443b7a17c9f4b218380fd",
+   "bundle_sha256": "58f033e53844a1a677cf0e712b6abe6d6fa828fb2ca9115e8982dc53cfecd4c5",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 14,
+     "end": 16,
+     "text": "区分"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 16,
+     "end": 33,
+     "text": "服务入口、咨询人员与后续联络的职责"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 34,
+     "end": 50,
+     "text": "不以疾病名称判断任何人的健康状况"
+    }
+   ],
+   "factors": {
+    "action": "区分",
+    "object": "服务入口、咨询人员与后续联络的职责",
+    "qualifier": "不以疾病名称判断任何人的健康状况"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-010",
+   "topic_id": "sys.education_learning.academic_courses",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-comparison-tradeoff",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-010-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-010-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-010-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-010-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.education_learning.academic_courses"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "比较两门虚构大学课程的内容结构：一门围绕原理讲解，另一门围绕材料分析；按知识主题和课程要求列出差别，不评价真实学校。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "df4c630afba20bb6f1e76fa4c0b733e413778a11df6ca7181942a9a6a9f3a0cd",
+   "normalized_current_sha256": "170a16337b2946a62f029c2ee9c58e095964a8c3baf35b5b5dcdbd162c7fabb9",
+   "bundle_sha256": "02627a3c6a1da0d82d56682961dc7fb78a6234e6e5f5bc596e082a75dfad4f14",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 2,
+     "text": "比较"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 2,
+     "end": 15,
+     "text": "两门虚构大学课程的内容结构"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 35,
+     "end": 49,
+     "text": "按知识主题和课程要求列出差别"
+    }
+   ],
+   "factors": {
+    "action": "比较",
+    "object": "两门虚构大学课程的内容结构",
+    "qualifier": "按知识主题和课程要求列出差别"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-011",
+   "topic_id": "sys.education_learning.academic_courses",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-comparison-tradeoff",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-011-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-011-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-011-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-011-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.education_learning.academic_courses"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Compare the fictional seminar syllabus on historical evidence with an invented survey course on institutions;separate the course subjects,required readings and assessed work without recommending a real university.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "5fc5ae95db6008cbe0cc9a6f1fa4b2b6ecf4dbe56ae988f9e81d9a720bdc80dd",
+   "normalized_current_sha256": "a3007428ac7da15fb1078571f67c10100a36b2e1b9956cd125dd543f6cd8da17",
+   "bundle_sha256": "a50fc05ca058baf963a9ffd89552b668ecd41639ccd3181e124698950bb7bc55",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 7,
+     "text": "Compare"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 12,
+     "end": 38,
+     "text": "fictional seminar syllabus"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 109,
+     "end": 173,
+     "text": "separate the course subjects,required readings and assessed work"
+    }
+   ],
+   "factors": {
+    "action": "Compare",
+    "object": "fictional seminar syllabus",
+    "qualifier": "separate the course subjects,required readings and assessed work"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-012",
+   "topic_id": "sys.education_learning.academic_courses",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-correction-override",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-012-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-012-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-012-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-012-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.education_learning.academic_courses"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "更正为梳理自造课程的学习内容，不讨论注册手续：把三章的核心概念、课内练习与章节联系排成课程概览，保留教材里尚未解释的术语。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "69fb3644551fcaeeffd1083d36924d035ee7dc91213c3decd597e65c4e8ca3ea",
+   "normalized_current_sha256": "d971bf05b5e57d2ffec922785ca75f1f604d5dc94522d9406f0ad4eeea6c5add",
+   "bundle_sha256": "0e9e940b4bc766f311cc1377b4c39b2be9a46063e1f35204522683a61a03f789",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 41,
+     "end": 43,
+     "text": "排成"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 43,
+     "end": 47,
+     "text": "课程概览"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 48,
+     "end": 60,
+     "text": "保留教材里尚未解释的术语"
+    }
+   ],
+   "factors": {
+    "action": "排成",
+    "object": "课程概览",
+    "qualifier": "保留教材里尚未解释的术语"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-013",
+   "topic_id": "sys.career_work.job_search",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-indirect-need",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-013-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-013-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-013-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-013-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.career_work.job_search"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "虚构求职者不知道从哪些渠道寻找合适机会，需要一份按职责类型与基本资格整理的职位搜索思路，先筛选机会而不制作申请材料。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "6d8afb48ccf2138f0713d7e37b74ae7fa2e144bc926925ae9d53bc0af3186333",
+   "normalized_current_sha256": "eb234cd928769e2a00c0b422091070582e9b846534c2ac3b047054063af904c8",
+   "bundle_sha256": "98ff53229e921011772331727e12d4e78487afdba65a7d835f3f6bcfb7a92bcc",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 20,
+     "end": 22,
+     "text": "需要"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 37,
+     "end": 43,
+     "text": "职位搜索思路"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 44,
+     "end": 57,
+     "text": "先筛选机会而不制作申请材料"
+    }
+   ],
+   "factors": {
+    "action": "需要",
+    "object": "职位搜索思路",
+    "qualifier": "先筛选机会而不制作申请材料"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-014",
+   "topic_id": "sys.career_work.job_search",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-indirect-need",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-014-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-014-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-014-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-014-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.career_work.job_search"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "An imaginary applicant has a target occupation but no organized way to find openings;I need a search approach that distinguishes employer listings,sector boards and referrals,using only invented opportunities.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "7fad451a0fe7fdaad0685b73477e7fae904ebac280734dab2bd1ab961f5ef16e",
+   "normalized_current_sha256": "e5705139b63b63a6c358251890e284063483d86809f90d97366a1858844d4042",
+   "bundle_sha256": "cee04d454fc52851c7266b485a0f095b67f0d64070f4b5d45ab1b59ee9e79551",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 87,
+     "end": 91,
+     "text": "need"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 94,
+     "end": 109,
+     "text": "search approach"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 175,
+     "end": 208,
+     "text": "using only invented opportunities"
+    }
+   ],
+   "factors": {
+    "action": "need",
+    "object": "search approach",
+    "qualifier": "using only invented opportunities"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-015",
+   "topic_id": "sys.career_work.job_search",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-result-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-015-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-015-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-015-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-015-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.career_work.job_search"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "最终希望虚构求职者得到一组可继续了解的岗位机会，整理搜索条件、机会来源与初步不匹配原因，不替他投递任何申请。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "67d261e33c1a75a701cf0b0a66b5a45b0552dc0579cf8b7190d660f82f7b5f90",
+   "normalized_current_sha256": "4950a50d173a181b63127b8f02abc53715885a160a405e606e7a40af2eb091e1",
+   "bundle_sha256": "01fa78085e4da1bab8733be8ec2af1d6f444aec687275154c0f3f4529449460f",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 24,
+     "end": 26,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 26,
+     "end": 43,
+     "text": "搜索条件、机会来源与初步不匹配原因"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 44,
+     "end": 53,
+     "text": "不替他投递任何申请"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "搜索条件、机会来源与初步不匹配原因",
+    "qualifier": "不替他投递任何申请"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-016",
+   "topic_id": "sys.projects_products.project_planning",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-016-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-016-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-016-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-016-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.projects_products.project_planning"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "规划一个自造社区展览项目的阶段，把征集、准备、布展与收尾的范围和依赖讲清，所有负责人都用虚构代号。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "51c9e784ba8bce1d964f44a7a7f9417feaba3ffeb3fcf593ba9483cfe57cc9ba",
+   "normalized_current_sha256": "e6b2323c465d837a25c519f9750bbc145308ec2fbb9f40b9c84e63ffd271a318",
+   "bundle_sha256": "8f3d217c6c6c7fa20a68af3e9127121199d74e439ba8093e0fdb688c20b57c1a",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 2,
+     "text": "规划"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 6,
+     "end": 15,
+     "text": "社区展览项目的阶段"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 37,
+     "end": 48,
+     "text": "所有负责人都用虚构代号"
+    }
+   ],
+   "factors": {
+    "action": "规划",
+    "object": "社区展览项目的阶段",
+    "qualifier": "所有负责人都用虚构代号"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-017",
+   "topic_id": "sys.projects_products.project_planning",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-017-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-017-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-017-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-017-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.projects_products.project_planning"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Plan the scope and milestones of an imaginary museum-label replacement project;show how research,approval and installation depend on each other,while leaving cost estimates unspecified.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "5c986fd9f6349c458438e399d80ee4f6755b2757dd555e3e2fa0e780feee0492",
+   "normalized_current_sha256": "36bd76747020b9ba97aee02e06907aaf2b0a9c5bf276ad129e3be001fa7833cc",
+   "bundle_sha256": "e27247e83199c2a2762b48d121bb20f87f06f770247fde1f25de68898e8bd183",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 4,
+     "text": "Plan"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 9,
+     "end": 29,
+     "text": "scope and milestones"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 150,
+     "end": 184,
+     "text": "leaving cost estimates unspecified"
+    }
+   ],
+   "factors": {
+    "action": "Plan",
+    "object": "scope and milestones",
+    "qualifier": "leaving cost estimates unspecified"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-018",
+   "topic_id": "sys.projects_products.project_planning",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-constraint-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-018-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-018-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-018-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-018-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.projects_products.project_planning"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "虚构团队只有两名志愿者，展览项目的任务比可用人手多；请重排阶段范围与交付顺序，明确哪些内容暂不进入本期。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "532b697b80429a54bf20e71cc67c6449f8a24726c0e6028d95a09fe37a4a915c",
+   "normalized_current_sha256": "80f5558a6ef02144e47cc902a97fbef582ab67310da2ecdafd62cdbaa44ad38f",
+   "bundle_sha256": "579ac69fc0503aece8c839703e6af2079eae28b276b67728c16387190b5e27d8",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 27,
+     "end": 29,
+     "text": "重排"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 29,
+     "end": 38,
+     "text": "阶段范围与交付顺序"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 39,
+     "end": 51,
+     "text": "明确哪些内容暂不进入本期"
+    }
+   ],
+   "factors": {
+    "action": "重排",
+    "object": "阶段范围与交付顺序",
+    "qualifier": "明确哪些内容暂不进入本期"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-019",
+   "topic_id": "sys.ai_computing.ai_models_tools",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-019-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-019-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-019-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-019-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.ai_computing.ai_models_tools"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "接着自造工具卡，解释两种假想智能工具的能力范围和输出限制，沿用前文的输入条件而不运行任何工具。",
+    "title": "",
+    "recent": [
+     "前文的虚构甲工具只做符号匹配，乙工具只返回规则解释；卡片用于理解智能工具概念，不代表真实产品或调用。"
+    ]
+   },
+   "input_sha256": "693f669700f79278d324777f2203d9eb2cea28631dbbcef743ac1f2c2b726228",
+   "normalized_current_sha256": "f134e1b8e7855e4a670d419d0ed14197a975c4eae9331c97b1ae35812ebb0ece",
+   "bundle_sha256": "6d31ea9a6ec4e4280fb1b429ad16cab251b75c515b037fb7d971ef81e8376461",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 8,
+     "end": 10,
+     "text": "解释"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 10,
+     "end": 28,
+     "text": "两种假想智能工具的能力范围和输出限制"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 29,
+     "end": 46,
+     "text": "沿用前文的输入条件而不运行任何工具"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 50,
+     "text": "前文的虚构甲工具只做符号匹配，乙工具只返回规则解释；卡片用于理解智能工具概念，不代表真实产品或调用。"
+    }
+   ],
+   "factors": {
+    "action": "解释",
+    "object": "两种假想智能工具的能力范围和输出限制",
+    "qualifier": "沿用前文的输入条件而不运行任何工具"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-020",
+   "topic_id": "sys.ai_computing.ai_models_tools",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-020-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-020-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-020-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-020-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.ai_computing.ai_models_tools"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Continue the invented intelligent-tool comparison:describe where each fictional system's declared capabilities stop,keeping uncertain results visible rather than treating them as verified answers.",
+    "title": "",
+    "recent": [
+     "The imaginary tool sheet describes a rule-based assistant that explains its matches and a fictional analytic tool that reports uncertainty;no engine is executed."
+    ]
+   },
+   "input_sha256": "7062b86e03bb55a761cbda53e13e09d1da34b6b4663f0dc0a6107e6e0c999d11",
+   "normalized_current_sha256": "1a216c8202d2b1b79e5ad011ff1054826d45eed4c84067447c7985171d613fb4",
+   "bundle_sha256": "90f9cc2ffd15c8f4ecec2ad6f3e30254a3b2ab943c0aabfd6414d88a9d42a55a",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 50,
+     "end": 58,
+     "text": "describe"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 70,
+     "end": 110,
+     "text": "fictional system's declared capabilities"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 116,
+     "end": 195,
+     "text": "keeping uncertain results visible rather than treating them as verified answers"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 161,
+     "text": "The imaginary tool sheet describes a rule-based assistant that explains its matches and a fictional analytic tool that reports uncertainty;no engine is executed."
+    }
+   ],
+   "factors": {
+    "action": "describe",
+    "object": "fictional system's declared capabilities",
+    "qualifier": "keeping uncertain results visible rather than treating them as verified answers"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-021",
+   "topic_id": "sys.ai_computing.ai_models_tools",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-ellipsis-fragment",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-021-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-021-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-021-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-021-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.ai_computing.ai_models_tools"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "假想智能工具说明：输入形式、能力声明、未知条件、输出限制。拟一张辨认工具适用范围的卡，只比较作者写明的声明。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "60b3aba12a280b34a95242995e8afa9206e8932c9540f841ec80cc03e4ec1982",
+   "normalized_current_sha256": "8b9951724a14d55faa0a256d184db8a6ace89747912baa5982e20a6c3c22180f",
+   "bundle_sha256": "cfebe3e6ac7ed58ff440e23990ea0bba4f2fc13348af30888aaed0112e539837",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 29,
+     "end": 30,
+     "text": "拟"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 32,
+     "end": 42,
+     "text": "辨认工具适用范围的卡"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 43,
+     "end": 53,
+     "text": "只比较作者写明的声明"
+    }
+   ],
+   "factors": {
+    "action": "拟",
+    "object": "辨认工具适用范围的卡",
+    "qualifier": "只比较作者写明的声明"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-022",
+   "topic_id": "sys.finance_purchases.budgeting_cashflow",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-022-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-022-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-022-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-022-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.finance_purchases.budgeting_cashflow"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "自造家庭账本旁写着“月底还有钱就不必分配”；解释虚构月度收支、预留款与可用余额之间的关系，所有金额只用占位数。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "47c84febf1eeb5bee11ec4c7e3a55460183b152008782fb560c404ed2c57918a",
+   "normalized_current_sha256": "61a1165df7baa5a50e977061262a0407df1b87b0b83e5acb3e16a023f748434b",
+   "bundle_sha256": "a52c1f5b9039373f168d6bb02a3a3d9699c7552a30318dc016605c98458abfdd",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 22,
+     "end": 24,
+     "text": "解释"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 26,
+     "end": 44,
+     "text": "月度收支、预留款与可用余额之间的关系"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 45,
+     "end": 54,
+     "text": "所有金额只用占位数"
+    }
+   ],
+   "factors": {
+    "action": "解释",
+    "object": "月度收支、预留款与可用余额之间的关系",
+    "qualifier": "所有金额只用占位数"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-023",
+   "topic_id": "sys.finance_purchases.budgeting_cashflow",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-023-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-023-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-023-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-023-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.finance_purchases.budgeting_cashflow"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "A fictional budget note claims,\"A yearly total explains every shortfall.\" Examine the difference between income timing,recurring expenses and a temporary cash gap in the invented ledger,without proposing a financial product.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "7e21ece01c2ecaa0e76ad2b1adbf11e0764d5cb0fdd1a966b89d44d4cdee3587",
+   "normalized_current_sha256": "d7f2eb7fcf3c3091304ab22159b3f96b6d4f4cc56623e788275c5855a2739748",
+   "bundle_sha256": "06f79e25f5aec66f67b89fb2aa4988648df5815dccf885f53f82d417bafdc539",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 74,
+     "end": 81,
+     "text": "Examine"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 105,
+     "end": 162,
+     "text": "income timing,recurring expenses and a temporary cash gap"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 186,
+     "end": 223,
+     "text": "without proposing a financial product"
+    }
+   ],
+   "factors": {
+    "action": "Examine",
+    "object": "income timing,recurring expenses and a temporary cash gap",
+    "qualifier": "without proposing a financial product"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-024",
+   "topic_id": "sys.finance_purchases.budgeting_cashflow",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-goal-means-negation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-024-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-024-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-024-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-024-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.finance_purchases.budgeting_cashflow"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "为了让自造家庭看清一月现金怎样流入和流出，整理收入时点、固定支出与机动余量，不把尚未收到的款项当作可用现金。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "cbe3c780d37834c7b91fc34d52db84ed045b7d1fb12df53766577e4e80973a83",
+   "normalized_current_sha256": "9030aa255affaf74e53a1fd6fe11c6d9cc1fc213baee2e1b9656988946f8ce32",
+   "bundle_sha256": "a418c4befb7e0b4b7e328d78c1deb8f3a2594e060d823d76c2150eff1547ab29",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 21,
+     "end": 23,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 23,
+     "end": 37,
+     "text": "收入时点、固定支出与机动余量"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 38,
+     "end": 53,
+     "text": "不把尚未收到的款项当作可用现金"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "收入时点、固定支出与机动余量",
+    "qualifier": "不把尚未收到的款项当作可用现金"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-025",
+   "topic_id": "sys.home_daily.housing",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-comparison-tradeoff",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-025-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-025-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-025-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-025-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.home_daily.housing"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "比较虚构的独居小屋与合住公寓是否适合假想住户，按私密性、公共空间和通勤条件分项讨论，不查房源或真实租金。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "5129645e52f55a8f7f8c6d80758636de4b5944d3f0172100c1d0debc14bff0dc",
+   "normalized_current_sha256": "359fab786029370b20e9dc77bafab7524bf233ba44f5dddcfbd0758b24d16e8a",
+   "bundle_sha256": "86a2cc7d368ef6a917c4aa21d60da1c9c32dc4fb29a234242a623dd014e0014d",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 2,
+     "text": "比较"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 5,
+     "end": 22,
+     "text": "独居小屋与合住公寓是否适合假想住户"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 23,
+     "end": 41,
+     "text": "按私密性、公共空间和通勤条件分项讨论"
+    }
+   ],
+   "factors": {
+    "action": "比较",
+    "object": "独居小屋与合住公寓是否适合假想住户",
+    "qualifier": "按私密性、公共空间和通勤条件分项讨论"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-026",
+   "topic_id": "sys.home_daily.housing",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-comparison-tradeoff",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-026-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-026-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-026-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-026-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.home_daily.housing"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Compare an invented ground-floor dwelling with an imaginary upper-floor apartment for a fictional resident;consider access,shared space and suitability separately,and leave actual property prices out.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "6c9093cb998bd715424db86a0cb5f4aa9a2ab944238fb367a3ddc190797060f6",
+   "normalized_current_sha256": "449aa8e9ccdd930b5d6ba1dc02a228fc7917f96ee614d0985794b7898e289e39",
+   "bundle_sha256": "9703420227c09ccc7e55e1bed92456e90d2c20079407d9ef3a5be01358ceab81",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 7,
+     "text": "Compare"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 20,
+     "end": 41,
+     "text": "ground-floor dwelling"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 107,
+     "end": 162,
+     "text": "consider access,shared space and suitability separately"
+    }
+   ],
+   "factors": {
+    "action": "Compare",
+    "object": "ground-floor dwelling",
+    "qualifier": "consider access,shared space and suitability separately"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-027",
+   "topic_id": "sys.home_daily.housing",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-correction-override",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-027-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-027-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-027-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-027-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.home_daily.housing"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "更正一下，先判断虚构住所适不适合长期居住，而不是安排搬运；整理空间需求、邻里环境与出入条件，保留未知的居住限制。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "5c0ec9cc44629d7097514e02e3a0fdc7a63be4a973433f5b3bafa5985f2e9b6a",
+   "normalized_current_sha256": "3451c7f18a07973050e6f119f3ad0d4a201e81afb7c7365b85a19365792e2f76",
+   "bundle_sha256": "5aeb751af9923e831101b1a7222a3e0bac1012c5fa893d5adddeb0c519b8aafb",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 29,
+     "end": 31,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 31,
+     "end": 45,
+     "text": "空间需求、邻里环境与出入条件"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 46,
+     "end": 55,
+     "text": "保留未知的居住限制"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "空间需求、邻里环境与出入条件",
+    "qualifier": "保留未知的居住限制"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-028",
+   "topic_id": "sys.travel_places.trip_planning",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-indirect-need",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-028-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-028-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-028-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-028-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.travel_places.trip_planning"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "假想旅行者知道想去的两座虚构城镇，却还没有完整的旅程安排；需要把出行目标、停留顺序和休息余量连成总体方案，不预订任何服务。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "7fa775792ebd981ad870000ef27ba4d184ad0e799d6fcd3ce52457e58693edd9",
+   "normalized_current_sha256": "9ec17f59a77f11f0464baaa399e25b50c5cd93246a7f7c57b822bae4dcb304f3",
+   "bundle_sha256": "c985c4588d3b539238bbf4ca3cd2e6a7cf43530f98b92f62c6f680938212641a",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 29,
+     "end": 31,
+     "text": "需要"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 32,
+     "end": 52,
+     "text": "出行目标、停留顺序和休息余量连成总体方案"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 53,
+     "end": 60,
+     "text": "不预订任何服务"
+    }
+   ],
+   "factors": {
+    "action": "需要",
+    "object": "出行目标、停留顺序和休息余量连成总体方案",
+    "qualifier": "不预订任何服务"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-029",
+   "topic_id": "sys.travel_places.trip_planning",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-indirect-need",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-029-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-029-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-029-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-029-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.travel_places.trip_planning"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "An imaginary traveler has a limited break and several fictional destinations but no coherent journey;I need a trip outline that relates priorities,overnight stops and spare time,without selecting real transport services.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "30f10b57b58f2098b76435e95bc5e6a4ec38fdd76e6d0affabdfeafbd8986f3a",
+   "normalized_current_sha256": "9639cb0de419cec011b97da46e4868683f6b63b14031e7a61a10649c750f0f6c",
+   "bundle_sha256": "e7fd50e5ff808c8cb014d4bca96d9169a0312e7b9805946a36375e2c61bde668",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 103,
+     "end": 107,
+     "text": "need"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 110,
+     "end": 122,
+     "text": "trip outline"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 178,
+     "end": 219,
+     "text": "without selecting real transport services"
+    }
+   ],
+   "factors": {
+    "action": "need",
+    "object": "trip outline",
+    "qualifier": "without selecting real transport services"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-030",
+   "topic_id": "sys.travel_places.trip_planning",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-result-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-030-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-030-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-030-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-030-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.travel_places.trip_planning"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "最终想得到一次虚构三日旅行的总体安排，梳理每天的主要地点、停留理由与可调整部分，先保留交通细节为空。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "2b1e2ba588805d9fcb2e9f85241110d488e50c7388efd97bd3e405457c0589d0",
+   "normalized_current_sha256": "2f7762066af5602b33bc365a091917dd854b888efe00b6764ee5b4e55c9664bd",
+   "bundle_sha256": "ca8b612b482e6c4b536a1c7534ad7dfab6a0a4113ff83f4ae2503813f4792a23",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 19,
+     "end": 21,
+     "text": "梳理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 21,
+     "end": 39,
+     "text": "每天的主要地点、停留理由与可调整部分"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 40,
+     "end": 49,
+     "text": "先保留交通细节为空"
+    }
+   ],
+   "factors": {
+    "action": "梳理",
+    "object": "每天的主要地点、停留理由与可调整部分",
+    "qualifier": "先保留交通细节为空"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-031",
+   "topic_id": "sys.media_culture.music",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-031-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-031-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-031-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-031-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.media_culture.music"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "说明一段自造乐曲里旋律、节奏和伴奏怎样共同组织听觉感受，仅用文字描述虚构片段而不播放真实录音。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "ee80274d641097e59c2bd6ab8d8f5788e109e89be1884196674a995e4a155e0c",
+   "normalized_current_sha256": "a47aac6b0acb5d7890d594e7c87bb6ca5337d1a18dbc776977cc8adee57f5cf5",
+   "bundle_sha256": "ec48b084e4fadf58cb5b1ac78ef921449832ac932ef90fcc82a7b1754ff8f335",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 2,
+     "text": "说明"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 9,
+     "end": 27,
+     "text": "旋律、节奏和伴奏怎样共同组织听觉感受"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 28,
+     "end": 38,
+     "text": "仅用文字描述虚构片段"
+    }
+   ],
+   "factors": {
+    "action": "说明",
+    "object": "旋律、节奏和伴奏怎样共同组织听觉感受",
+    "qualifier": "仅用文字描述虚构片段"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-032",
+   "topic_id": "sys.media_culture.music",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-032-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-032-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-032-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-032-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.media_culture.music"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Describe how melody,rhythm and instrumentation shape an invented piece of music;use an original verbal example and do not quote an existing song or recording.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "e7001cd865e3914f21dadd9ef28ad51cb441ebb2be8913203f910a150b216f40",
+   "normalized_current_sha256": "bd0d813b00a4997cbcee61b8e2256b34a171052bcbcb26b65cbbb0f7597b901f",
+   "bundle_sha256": "80aef2291b3bf1fac2ef73a92f04c3f47567508ac6b316a08d5a7f5b43f9f8ca",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 8,
+     "text": "Describe"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 13,
+     "end": 46,
+     "text": "melody,rhythm and instrumentation"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 80,
+     "end": 110,
+     "text": "use an original verbal example"
+    }
+   ],
+   "factors": {
+    "action": "Describe",
+    "object": "melody,rhythm and instrumentation",
+    "qualifier": "use an original verbal example"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-033",
+   "topic_id": "sys.media_culture.music",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-constraint-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-033-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-033-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-033-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-033-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.media_culture.music"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "虚构听乐笔记把速度变化和情绪变化混为一谈，难以说清音乐结构；请区分节奏推进、旋律重复与音色对比，只解释作者编造的片段。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "a0c4775d9192b3481640110500a758f715929dbaa1da62095b096a47c0e0d883",
+   "normalized_current_sha256": "bd4f02898d9eb4ffe9b4ef34a1b0b0fbeacc501178baa1d6fd5cc0e0751eb3b1",
+   "bundle_sha256": "411759874110095144fc5e00aa6ef77212959e2dd6ee91836723e33fa2b86457",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 31,
+     "end": 33,
+     "text": "区分"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 33,
+     "end": 47,
+     "text": "节奏推进、旋律重复与音色对比"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 48,
+     "end": 58,
+     "text": "只解释作者编造的片段"
+    }
+   ],
+   "factors": {
+    "action": "区分",
+    "object": "节奏推进、旋律重复与音色对比",
+    "qualifier": "只解释作者编造的片段"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-034",
+   "topic_id": "sys.communication_writing.email_messages",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-034-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-034-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-034-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-034-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.communication_writing.email_messages"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "接着虚构的邮件草稿，写一段向对方确认借用物品归还安排的正文，保留未确认的时间为占位符。",
+    "title": "",
+    "recent": [
+     "前文的假想发信人借了一件虚构道具，想询问对方何时方便接收；收发人、物品和日期都没有真实对应。"
+    ]
+   },
+   "input_sha256": "f66823566af5323a70d5071c044d2551440e9b420941f65576d2d2b1f2caeb83",
+   "normalized_current_sha256": "d58a5f9d0dd42b08208bbceb8de2f76d5f0323b039ae18ed19209cbb81053456",
+   "bundle_sha256": "ee9ba6ba52cb3f5371b015e62ce385b5f46c0066c2ce5224a618915699ff6c3f",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 10,
+     "end": 11,
+     "text": "写"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 16,
+     "end": 29,
+     "text": "确认借用物品归还安排的正文"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 30,
+     "end": 42,
+     "text": "保留未确认的时间为占位符"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 46,
+     "text": "前文的假想发信人借了一件虚构道具，想询问对方何时方便接收；收发人、物品和日期都没有真实对应。"
+    }
+   ],
+   "factors": {
+    "action": "写",
+    "object": "确认借用物品归还安排的正文",
+    "qualifier": "保留未确认的时间为占位符"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-035",
+   "topic_id": "sys.communication_writing.email_messages",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-035-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-035-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-035-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-035-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.communication_writing.email_messages"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Continue the invented email exchange:compose a courteous reply acknowledging the draft agenda and asking which discussion item needs clarification,with no real recipient or transmission.",
+    "title": "",
+    "recent": [
+     "A fictional correspondent sent a made-up agenda for a hypothetical committee discussion and requested comments;all names and meeting details are placeholders."
+    ]
+   },
+   "input_sha256": "d19eacc72c15d8864d444b93f155189a32f83195666035950e3b9ca04efc5299",
+   "normalized_current_sha256": "f87a9556ffddcb8ca09c0e4c751b6cc43a3a53747e351303c9b6e024339933cd",
+   "bundle_sha256": "ed8a875dbbcd5dd8bc0447c49eae6f401ddf520edb34c1a40152fe37c2ef35ae",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 37,
+     "end": 44,
+     "text": "compose"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 47,
+     "end": 62,
+     "text": "courteous reply"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 147,
+     "end": 185,
+     "text": "with no real recipient or transmission"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 158,
+     "text": "A fictional correspondent sent a made-up agenda for a hypothetical committee discussion and requested comments;all names and meeting details are placeholders."
+    }
+   ],
+   "factors": {
+    "action": "compose",
+    "object": "courteous reply",
+    "qualifier": "with no real recipient or transmission"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-036",
+   "topic_id": "sys.communication_writing.email_messages",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-ellipsis-fragment",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-036-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-036-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-036-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-036-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.communication_writing.email_messages"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "自造消息要点：已收到资料、还有一处不明、请对方补一句说明。拟一段简短回复，保留疑问而不替对方断言结论。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "d39afaea7cbad5455574510dd459888e16c542d63f4abddd0af331b7f7eb6bff",
+   "normalized_current_sha256": "f05b4432aaae550934bf09633a9a9cd20a692f402a169b24acc4a66ef8bfe8ee",
+   "bundle_sha256": "7a62655cc6e2e2416f9dd7c7e3f8e1044d48ec4fb4c780fcb9f90d78261db584",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 29,
+     "end": 30,
+     "text": "拟"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 32,
+     "end": 36,
+     "text": "简短回复"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 37,
+     "end": 50,
+     "text": "保留疑问而不替对方断言结论"
+    }
+   ],
+   "factors": {
+    "action": "拟",
+    "object": "简短回复",
+    "qualifier": "保留疑问而不替对方断言结论"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-037",
+   "topic_id": "sys.legal_civic.legal_questions",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-037-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-037-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-037-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-037-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.legal_civic.legal_questions"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "虚构法律课堂引用“口头约定永远没有讨论价值”；说明自造规则中事实、证据与规则适用的问题怎样区分，不给真人案件结论。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "4ebaedc7db0b28faa7b8aaa2e5f1ece12161b13429c229b9fb9ac31e6339d36f",
+   "normalized_current_sha256": "bfdf685dfe7a6a5fd192b4dbbf4a546882181796bdaad0003529ba5d6062ea3a",
+   "bundle_sha256": "6b40ec12027606a95cd553e6e96fa5ff63380a5c92d62e2facf60b2e9cb00201",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 23,
+     "end": 25,
+     "text": "说明"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 30,
+     "end": 47,
+     "text": "事实、证据与规则适用的问题怎样区分"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 48,
+     "end": 56,
+     "text": "不给真人案件结论"
+    }
+   ],
+   "factors": {
+    "action": "说明",
+    "object": "事实、证据与规则适用的问题怎样区分",
+    "qualifier": "不给真人案件结论"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-038",
+   "topic_id": "sys.legal_civic.legal_questions",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-038-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-038-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-038-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-038-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.legal_civic.legal_questions"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "An invented civics exercise quotes,\"Every broken promise is automatically unlawful.\" Explain how a legal question separates alleged facts,the stated rule and missing information,without applying actual law to a real dispute.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "6487d3ad52bf8cba1c5bef5d419188ab2a6ea4f6ca256d696f9b642b22aad83c",
+   "normalized_current_sha256": "634432ad54bec56a13fe9dd3403d5a3ba6fd57e5f8c1c30852494241526358a7",
+   "bundle_sha256": "3867642d333102f6e53c0c841792a44cb9ac045df7885485b6a1c92d73792935",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 85,
+     "end": 92,
+     "text": "Explain"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 99,
+     "end": 177,
+     "text": "legal question separates alleged facts,the stated rule and missing information"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 178,
+     "end": 223,
+     "text": "without applying actual law to a real dispute"
+    }
+   ],
+   "factors": {
+    "action": "Explain",
+    "object": "legal question separates alleged facts,the stated rule and missing information",
+    "qualifier": "without applying actual law to a real dispute"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-039",
+   "topic_id": "sys.legal_civic.legal_questions",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-goal-means-negation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-039-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-039-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-039-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-039-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.legal_civic.legal_questions"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "为了看懂自造法律问题的论证结构，分开假设事实、规则条件与待证明事项，仅使用作者自编规则而不宣称现实法律要求。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "fdb8e38708c7ee861d6435729bd0f670c92a4754b95324ceea3343d7a65ea827",
+   "normalized_current_sha256": "4314293370d87da10bc46e8f0bd0c76b7f2f64ac7c55b1580fcc72d5f1156333",
+   "bundle_sha256": "07516a8e8263dc6708a3473878e72802c7b0df32b0394b38faec2ef54b66a727",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 16,
+     "end": 18,
+     "text": "分开"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 18,
+     "end": 33,
+     "text": "假设事实、规则条件与待证明事项"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 34,
+     "end": 43,
+     "text": "仅使用作者自编规则"
+    }
+   ],
+   "factors": {
+    "action": "分开",
+    "object": "假设事实、规则条件与待证明事项",
+    "qualifier": "仅使用作者自编规则"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-040",
+   "topic_id": "sys.science_technical.physics",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-comparison-tradeoff",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-040-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-040-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-040-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-040-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.science_technical.physics"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "比较自造物理课堂中的匀速运动与速度改变，说明位置、时间和速度关系怎样不同，只讨论理想化场景。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "718d663ad255f08588f63cf5a0cf05d727a9ad561a2f19fa43443ae1590d9cd3",
+   "normalized_current_sha256": "17d80479db14e4bd6992e08edad876eae5246dffb9dbd056d0c27b599670e6df",
+   "bundle_sha256": "397890286e15d88a8b4d15fab10bcbc985689e3027b7dd60a9fed0cc055ac844",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 2,
+     "text": "比较"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 10,
+     "end": 19,
+     "text": "匀速运动与速度改变"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 37,
+     "end": 45,
+     "text": "只讨论理想化场景"
+    }
+   ],
+   "factors": {
+    "action": "比较",
+    "object": "匀速运动与速度改变",
+    "qualifier": "只讨论理想化场景"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-041",
+   "topic_id": "sys.science_technical.physics",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-comparison-tradeoff",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-041-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-041-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-041-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-041-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.science_technical.physics"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Compare an imaginary frictionless glide with an invented slowing motion;explain the physical roles of force and velocity without presenting measured experimental results.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "b5ec1efe622a76b5fb3da46821edb4ed740625058bbb5cdd399b78232501caea",
+   "normalized_current_sha256": "d1b9e5175197455f1c1b514bf30be9e0432a78d73df6bc2b0d6869a48b74e498",
+   "bundle_sha256": "fbf0d647671bafb1c071374b2d87f728f568328c9f949b7f267969fd510dc7fb",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 7,
+     "text": "Compare"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 21,
+     "end": 39,
+     "text": "frictionless glide"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 121,
+     "end": 169,
+     "text": "without presenting measured experimental results"
+    }
+   ],
+   "factors": {
+    "action": "Compare",
+    "object": "frictionless glide",
+    "qualifier": "without presenting measured experimental results"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-042",
+   "topic_id": "sys.science_technical.physics",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-correction-override",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-042-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-042-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-042-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-042-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.science_technical.physics"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "更正为解释理想化物理过程，不是计算真实设备性能；梳理热量传递、温度变化与边界条件，只用自造课堂情景。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "0f8581c66e43491f9ae3f76e78bb45b4a00ac6085063f267a8851dd4a2b8cf39",
+   "normalized_current_sha256": "4c96aa3dc176772a570431001952eb57f8d2c2d7439a59176b96dd0d79692af4",
+   "bundle_sha256": "37dfbabd8dfd3639ed22b555bb409cce0c88f37e8fa1becdbc05a827c10f5da6",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 24,
+     "end": 26,
+     "text": "梳理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 26,
+     "end": 40,
+     "text": "热量传递、温度变化与边界条件"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 41,
+     "end": 49,
+     "text": "只用自造课堂情景"
+    }
+   ],
+   "factors": {
+    "action": "梳理",
+    "object": "热量传递、温度变化与边界条件",
+    "qualifier": "只用自造课堂情景"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-043",
+   "topic_id": "sys.creative_design.visual_design",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-indirect-need",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-043-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-043-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-043-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-043-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.creative_design.visual_design"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "虚构海报把每段文字放得一样醒目，看不出主次，需要一套安排层级、间距与对比的视觉说明，不借用现有品牌样式。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "3a64385286ad42d39fdaea7ccd2799c847f2ef46260cdba728a620ac78881032",
+   "normalized_current_sha256": "20f704bc53b8aae2ce509597aa0ac20b9a1b6bc6f406e1fd57f2416e69810a1f",
+   "bundle_sha256": "5f1cde102caff983a2d8d3a596d13b39c76044d0951edf2ef972a80fda0813b0",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 22,
+     "end": 24,
+     "text": "需要"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 26,
+     "end": 41,
+     "text": "安排层级、间距与对比的视觉说明"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 42,
+     "end": 51,
+     "text": "不借用现有品牌样式"
+    }
+   ],
+   "factors": {
+    "action": "需要",
+    "object": "安排层级、间距与对比的视觉说明",
+    "qualifier": "不借用现有品牌样式"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-044",
+   "topic_id": "sys.creative_design.visual_design",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-indirect-need",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-044-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-044-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-044-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-044-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.creative_design.visual_design"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "An invented notice board has crowded labels and no reading order;I need a visual composition approach that clarifies hierarchy,alignment and negative space,using an original fictional layout.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "e33b2ee3fad304f53d49ae2600156ffcd7fe8501fd8fbfd7d04759b1c2d4028d",
+   "normalized_current_sha256": "49737767f6adbbba58e2842cbcc1c3990fc7c98c96274529adb74401dcd4beea",
+   "bundle_sha256": "faa5a6b20567486e9498b5032d9f90dd4a8b91e72505140e3442eedb04d9377d",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 67,
+     "end": 71,
+     "text": "need"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 74,
+     "end": 101,
+     "text": "visual composition approach"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 156,
+     "end": 190,
+     "text": "using an original fictional layout"
+    }
+   ],
+   "factors": {
+    "action": "need",
+    "object": "visual composition approach",
+    "qualifier": "using an original fictional layout"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-045",
+   "topic_id": "sys.creative_design.visual_design",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-result-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-045-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-045-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-045-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-045-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.creative_design.visual_design"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "最终希望自造说明卡的读者能先看到重点，再读补充内容，整理字体层级、留白与色彩对比的关系，不制作真实品牌资产。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "985e9d2948cf8a2a37dbed911f0ae6fb3071394ca819c519621e8f361adf807f",
+   "normalized_current_sha256": "7b860d2b566455d8e64d23d97ce426d98af3894b387a2d9c325123eaf628868c",
+   "bundle_sha256": "a9f389827339fddac67145bf4b09fb635f1259b4f5e1d5e0b4ebfa274dd13e86",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 26,
+     "end": 28,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 28,
+     "end": 43,
+     "text": "字体层级、留白与色彩对比的关系"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 44,
+     "end": 53,
+     "text": "不制作真实品牌资产"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "字体层级、留白与色彩对比的关系",
+    "qualifier": "不制作真实品牌资产"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-046",
+   "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-046-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-046-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-046-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-046-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.business_entrepreneurship.entrepreneurship"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "梳理一家虚构新创组织从问题假设到初步成立需要考虑的事项，区分服务对象、价值主张与尚未验证的风险，不办理真实注册。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "8b97cdd4b493450c2c08e31e6efc1ea29ee393f0d8d2156d2cb6606df05e02dd",
+   "normalized_current_sha256": "8c22758243d8e7a583186361d35b3a5ef1c5825d61f186beef792401cee1338f",
+   "bundle_sha256": "522253ac2fc0483fad1b17a772b130b5e4073f6e71c44833f4682ad1eb660473",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 2,
+     "text": "梳理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 6,
+     "end": 27,
+     "text": "新创组织从问题假设到初步成立需要考虑的事项"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 28,
+     "end": 47,
+     "text": "区分服务对象、价值主张与尚未验证的风险"
+    }
+   ],
+   "factors": {
+    "action": "梳理",
+    "object": "新创组织从问题假设到初步成立需要考虑的事项",
+    "qualifier": "区分服务对象、价值主张与尚未验证的风险"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-047",
+   "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-direct-request",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-047-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-047-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-047-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-047-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.business_entrepreneurship.entrepreneurship"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Outline the founding questions for an imaginary venture based on an original repair-exchange idea;distinguish who it serves,what it offers and what remains unverified before any launch.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "6f7e7a8046794775abaafa2eb0d4ee2447b0890c53e03ba144417cf12c2c8f78",
+   "normalized_current_sha256": "0a7fd1993a98fd02a2eb4a71d65ae34bae55eb35d4f5c7dc05a3d3dbe4cc0fb8",
+   "bundle_sha256": "a63ccf65d0f5bafe718f8f570a6c53ab4f113f14af0cf2e36b2bf357bd277e09",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 0,
+     "end": 7,
+     "text": "Outline"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 12,
+     "end": 30,
+     "text": "founding questions"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 98,
+     "end": 166,
+     "text": "distinguish who it serves,what it offers and what remains unverified"
+    }
+   ],
+   "factors": {
+    "action": "Outline",
+    "object": "founding questions",
+    "qualifier": "distinguish who it serves,what it offers and what remains unverified"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-048",
+   "topic_id": "sys.business_entrepreneurship.entrepreneurship",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-constraint-first",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-048-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-048-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-048-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-048-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.business_entrepreneurship.entrepreneurship"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "假想创业者只有一个模糊点子，还不能说明为什么要成立组织；请整理起步假设、最小验证与成立条件，不把猜测写成商业事实。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "8dc226c8a48850cbdf9aa466f5e42fd94bd22336b26bcb63b314e1b4282b6e2e",
+   "normalized_current_sha256": "1f6922408a53bc38824dbbf0d03efdcc2a40c1bbb7114f6582973844dc5981a2",
+   "bundle_sha256": "82d4a197564acedfe354ceb3e524fe180b90fd50d730d5455ed204df5e11ad45",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 29,
+     "end": 31,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 31,
+     "end": 45,
+     "text": "起步假设、最小验证与成立条件"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 46,
+     "end": 56,
+     "text": "不把猜测写成商业事实"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "起步假设、最小验证与成立条件",
+    "qualifier": "不把猜测写成商业事实"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-049",
+   "topic_id": "sys.time_events.calendar_scheduling",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-049-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-049-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-049-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-049-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.time_events.calendar_scheduling"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "接着自造时间安排卡，把那两项讨论放进虚构一周的空档，沿用已说明的先后限制而不创建真实日历事件。",
+    "title": "",
+    "recent": [
+     "虚构小组的资料讨论应先于方案讨论；前者有一个占位时段，后者可选两个自造时间，均无真实参会人。"
+    ]
+   },
+   "input_sha256": "8112ddeef748c48c478cb93e71a393a2eb7c52d297dbe4d9af52f3ce858183b3",
+   "normalized_current_sha256": "20988bfb8e7cdb349d5cf9aad47062c15ecdb306a35d3bf51ca647666d6535ee",
+   "bundle_sha256": "4258d7a353fdd6f02012fc5fa103665633bfc065ee3a7dc17e6f74944a66a489",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 16,
+     "end": 18,
+     "text": "放进"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 12,
+     "end": 25,
+     "text": "两项讨论放进虚构一周的空档"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 26,
+     "end": 46,
+     "text": "沿用已说明的先后限制而不创建真实日历事件"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 46,
+     "text": "虚构小组的资料讨论应先于方案讨论；前者有一个占位时段，后者可选两个自造时间，均无真实参会人。"
+    }
+   ],
+   "factors": {
+    "action": "放进",
+    "object": "两项讨论放进虚构一周的空档",
+    "qualifier": "沿用已说明的先后限制而不创建真实日历事件"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-050",
+   "topic_id": "sys.time_events.calendar_scheduling",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-context-continuation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-050-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-050-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-050-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-050-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.time_events.calendar_scheduling"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "Continue the invented scheduling note:arrange the rehearsal and review in the fictional available slots,keeping their stated order and leaving unconfirmed times marked tentative.",
+    "title": "",
+    "recent": [
+     "The imaginary calendar has two made-up afternoon windows;the rehearsal must happen before the review,but neither time has been confirmed."
+    ]
+   },
+   "input_sha256": "22d0f93a1b519b7c8cfd6d1b75a57010e90520b0dc3606e8a67dbd7bb6ba66f4",
+   "normalized_current_sha256": "f956c7c895799895fa7d807676b6af7a8ed7ce8245cc55cdb7abf0f9a5108fc6",
+   "bundle_sha256": "1e378f3c845ff662143bced39ba2dfe2388cb75e8393701d75e62286c1da09f0",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 38,
+     "end": 45,
+     "text": "arrange"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 50,
+     "end": 70,
+     "text": "rehearsal and review"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 104,
+     "end": 130,
+     "text": "keeping their stated order"
+    },
+    {
+     "role": "ANTECEDENT",
+     "field": "recent.0",
+     "start": 0,
+     "end": 137,
+     "text": "The imaginary calendar has two made-up afternoon windows;the rehearsal must happen before the review,but neither time has been confirmed."
+    }
+   ],
+   "factors": {
+    "action": "arrange",
+    "object": "rehearsal and review",
+    "qualifier": "keeping their stated order"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-051",
+   "topic_id": "sys.time_events.calendar_scheduling",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-ellipsis-fragment",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-051-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-051-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-051-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-051-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.time_events.calendar_scheduling"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "自造周安排：两个可用下午、一次小组讨论、一次回顾。整理时间分配表，仍把未确认时段写成待定。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "99301f4a8341d80720db9004936855d19a3f603ca68cdbe8eaf0fd7ac9b4fe89",
+   "normalized_current_sha256": "7ce133a3c4eb071bc11d4f0d291de7bbf55f2483e8e86a4f9c6403e25270e8e3",
+   "bundle_sha256": "921750cb46d23af8f386fcbdd5286934387d9408ca886110c50fd710af20623f",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 25,
+     "end": 27,
+     "text": "整理"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 27,
+     "end": 32,
+     "text": "时间分配表"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 33,
+     "end": 44,
+     "text": "仍把未确认时段写成待定"
+    }
+   ],
+   "factors": {
+    "action": "整理",
+    "object": "时间分配表",
+    "qualifier": "仍把未确认时段写成待定"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-052",
+   "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-052-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-052-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-052-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-052-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.knowledge_memory.notes_knowledge_management"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "自造笔记指导语写着“把每句话都存下就算知识整理”；说明主题归纳、关联和可追溯引用各解决什么问题，保留原始文字的出处。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "15d519107487142e87a295f9551619cb25d438c89876a32efca5720461ab5c71",
+   "normalized_current_sha256": "6c834c386850c5639b49ec0aea0867d8f13a5e467711ee77ec6a8e88259bb967",
+   "bundle_sha256": "ba25d26800f9d29e9dec1d9b847b1a7e5b18ce0a432d56032f399b3ffbbe96aa",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 25,
+     "end": 27,
+     "text": "说明"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 27,
+     "end": 47,
+     "text": "主题归纳、关联和可追溯引用各解决什么问题"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 48,
+     "end": 57,
+     "text": "保留原始文字的出处"
+    }
+   ],
+   "factors": {
+    "action": "说明",
+    "object": "主题归纳、关联和可追溯引用各解决什么问题",
+    "qualifier": "保留原始文字的出处"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-053",
+   "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+   "split": "TRAIN",
+   "language": "en",
+   "mechanism_family": "mf-quotation-hypothesis-past",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-053-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-053-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-053-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-053-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.knowledge_memory.notes_knowledge_management"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "An invented notebook guide claims,\"A long list is already an organized knowledge base.\" Examine how themes,links and retrieval cues help structure fictional notes,without treating a derived summary as the original source.",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "4a6712ec88e6df32022e312164d00fe7dd013b2e4c6f445a610bcd321117482d",
+   "normalized_current_sha256": "17f64ce7de0534a7b74b5e87be66eedb838d234dd4ef66e143c5f76a7881632a",
+   "bundle_sha256": "166c0ff8e75a63a8a2d630e8cfd03d4f409db6e3a91575c255f7312513b6fca2",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 88,
+     "end": 95,
+     "text": "Examine"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 100,
+     "end": 131,
+     "text": "themes,links and retrieval cues"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 163,
+     "end": 220,
+     "text": "without treating a derived summary as the original source"
+    }
+   ],
+   "factors": {
+    "action": "Examine",
+    "object": "themes,links and retrieval cues",
+    "qualifier": "without treating a derived summary as the original source"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  },
+  {
+   "id": "ZMR-MATRIX-TRAIN-EXPANSION1-054",
+   "topic_id": "sys.knowledge_memory.notes_knowledge_management",
+   "split": "TRAIN",
+   "language": "zh",
+   "mechanism_family": "mf-goal-means-negation",
+   "writer_id": "candidate-writer",
+   "writer_cohort": "candidate-writer-G0",
+   "source_family": "candidate-writer-G0",
+   "source_id": "ZMR-MATRIX-TRAIN-EXPANSION1-054-original",
+   "scenario_id": "ZMR-MATRIX-TRAIN-EXPANSION1-054-scenario",
+   "lineage": {
+    "writer": "candidate-writer-G0",
+    "source": "ZMR-MATRIX-TRAIN-EXPANSION1-054-original",
+    "scenario": "ZMR-MATRIX-TRAIN-EXPANSION1-054-scenario",
+    "shared_authoring_run": "ZMR-MECHANISM-MATRIX-TRAIN-EXPANSION1-20261001",
+    "template_review": "UNREVIEWED_POSSIBLE_SHARED_SKELETONS",
+    "translation_family": null,
+    "paraphrase_family": null,
+    "contrast_family": null
+   },
+   "source_status": "ORIGINAL_FICTIONAL_WRITER_DRAFT_NOT_INDEPENDENT_SOURCE",
+   "label_status": "PROVISIONAL_WRITER_LABEL_UNACCEPTED",
+   "reviewer_id": "candidate-writer",
+   "independent_reviewer_count": 0,
+   "independent_quota_credit": 0,
+   "provisional_gold": {
+    "expected_state": "ASSIGNED",
+    "topics": [
+     "sys.knowledge_memory.notes_knowledge_management"
+    ],
+    "excluded_topics": []
+   },
+   "identifiability": "PENDING_BOUNDARY_AND_INDEPENDENT_ADJUDICATION",
+   "writer_rationale": "Original fictional base scenario at fixed Catalog Topic/missing allocation cell;current action/object/qualifier and optional antecedent proposed by the source writer,not translations,independent gold or semantic qualification.",
+   "input": {
+    "current": "为了让自造阅读笔记能在以后找回，拟一个主题索引、关联说明与待核查问题的组织结构，不以自动摘要替换原文。",
+    "title": "",
+    "recent": []
+   },
+   "input_sha256": "36186eac325263ffa804b50fca5e96c3f46573818d596cecaaa89eb4949732ac",
+   "normalized_current_sha256": "511c80e50f2174c90d3e12cc04eecd86b51a94583be3826b1d25bb56ff918d6b",
+   "bundle_sha256": "cf91016b6140dd0d2fb971264a503ddffd8671e4df35c94592f0650918e0fef2",
+   "spans": [
+    {
+     "role": "ACTION",
+     "field": "current",
+     "start": 16,
+     "end": 17,
+     "text": "拟"
+    },
+    {
+     "role": "OBJECT",
+     "field": "current",
+     "start": 19,
+     "end": 39,
+     "text": "主题索引、关联说明与待核查问题的组织结构"
+    },
+    {
+     "role": "QUALIFIER",
+     "field": "current",
+     "start": 40,
+     "end": 50,
+     "text": "不以自动摘要替换原文"
+    }
+   ],
+   "factors": {
+    "action": "拟",
+    "object": "主题索引、关联说明与待核查问题的组织结构",
+    "qualifier": "不以自动摘要替换原文"
+   },
+   "frozen_at": "2026-10-01T00:50:56.058Z"
+  }
+ ],
+ "rows_sha256": "536cdb3aa78f43d8d843f28b686ae7e793c6df326764699a2b8bc05354ec6a0b"
+}
