@@ -1,0 +1,24 @@
+/** Source-writer QA on registered sources;no independent adjudication or Router. */
+import {canonicalJSON} from './contracts.mjs';
+import {seedHash} from './mechanism_matrix_seed.mjs';
+import {auditMechanismMatrixTrainExpansion6} from './mechanism_matrix_train_expansion6.mjs';
+const must=(v,m)=>{if(!v)throw Error(m);};
+export function auditMechanismMatrixExpansion6Review(input){
+ const base=auditMechanismMatrixTrainExpansion6(input),{sixthSourceReview:q,sixthPacket:p,sixthPacketUtf8,topicIds}=input;
+ must(q.schema==='ZMR-MECHANISM-MATRIX-EXPANSION6-WRITER-REVIEW-1'&&q.evidence_class==='NON_INDEPENDENT_DEVELOPMENT_EVIDENCE','expansion QA evidence');
+ must(q.source_path==='data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json'&&q.source_sha256===seedHash(sixthPacketUtf8)&&q.source_rows_sha256===p.rows_sha256&&q.source_main==='15316f5685bffb46c6482dcae7e7bba804c19cbf'&&q.source_tree==='4b0ca23dba6f3a3e477c6157bb8f94a950fa27b8','expansion QA registered source');
+ must(q.reviewer_id==='candidate-writer'&&q.reviewer_is_source_writer===true&&q.independent_reviewers===0&&q.independent_quota_credit===0&&q.accepted_gold_rows===0&&q.accepted_role_rows===0,'expansion QA no independent acceptance');
+ must(q.source_input_revisions===0&&q.candidate_predictions===0&&q.semantic_evaluations===0&&q.new_stable_allocations===0&&q.remaining_stable_allowance===null&&q.compiler_admission==='HOLD_SOURCE_MECHANISM_BOUNDARY_AND_COMPETITION_ACCOUNTING','expansion QA no admission/evaluation/budget');
+ must(q.data_qualification==='NOT_QUALIFIED'&&q.capability_verdict==='UNTESTED'&&q.resource_verdict==='NOT_QUALIFIED'&&q.saturation_ceiling_claim===false,'expansion QA qualification');
+ must(q.records.length===54&&q.records_sha256===seedHash(canonicalJSON(q.records)),'expansion QA records');
+ const counts={RETAIN_PROVISIONAL_WRITER_ONLY:0,LABEL_IDENTIFIABILITY_HOLD:0},holds=[],roles=[];
+ for(const [i,r]of q.records.entries()){
+  const s=p.rows[i];must(r.id===s.id&&r.original_current_sha256===s.input_sha256&&r.original_bundle_sha256===s.bundle_sha256&&r.original_gold_sha256===seedHash(canonicalJSON(s.provisional_gold))&&r.original_spans_sha256===seedHash(canonicalJSON(s.spans)),'expansion QA original bytes/gold/spans');
+  must(r.reviewer_id==='candidate-writer'&&r.independent===false&&r.reviewed_at===q.reviewed_at&&Number.isFinite(Date.parse(r.reviewed_at))&&Date.parse(r.reviewed_at)>=Date.parse(p.frozen_at),'expansion QA writer/freeze provenance');
+  must(Object.hasOwn(counts,r.disposition)&&r.writer_comment.length>=30&&r.proposed_positive_labels===null&&r.proposed_exclusions===null&&r.proposed_role_replacements===null&&r.original_positive_labels_preserved===true&&r.source_input_revisions===0&&r.accepted_gold===false&&r.candidate_prediction_exposures===0&&r.formal_catalog_mutation===false,'expansion QA no silent source/gold/role mutation');
+  must(Array.isArray(r.competing_topic_hypotheses)&&new Set(r.competing_topic_hypotheses).size===r.competing_topic_hypotheses.length&&r.competing_topic_hypotheses.every(t=>topicIds.includes(t)&&t!==s.topic_id)&&(r.disposition==='LABEL_IDENTIFIABILITY_HOLD'?r.competing_topic_hypotheses.length>0:r.competing_topic_hypotheses.length===0),'expansion QA hold explanation');
+  must(['PROVISIONAL_WRITER_ROLE_RETAIN','ROLE_IDENTIFIABILITY_HOLD'].includes(r.role_review_disposition)&&r.role_review_comment.length>=30,'expansion QA frozen role review');counts[r.disposition]++;if(r.disposition==='LABEL_IDENTIFIABILITY_HOLD')holds.push(r.id);if(r.role_review_disposition==='ROLE_IDENTIFIABILITY_HOLD')roles.push(r.id);
+ }
+ must(q.new_neighbor_cards===0&&q.new_neighbor_edges===0&&q.directional_source_cases===0&&q.adjudicated_edges===0&&q.family_equivalence==='UNADJUDICATED_POSSIBLE_OVERLAP'&&q.qualified_heldout_family_count===null,'expansion QA no graph/family qualification');
+ return {schema:'ZMR-MECHANISM-MATRIX-EXPANSION6-WRITER-QA-AUDIT-1',evidence_class:q.evidence_class,new_writer_reviewed_rows:54,new_dispositions:counts,new_label_hold_ids:holds,new_role_hold_ids:roles,combined_writer_reviewed_rows:756,combined_label_hold_ids:[...base.prior_label_holds,...holds],combined_role_hold_ids:[...base.prior_role_holds,...roles],older_roles_without_explicit_disposition:378,raw_topics:144,full_topic_universe:144,raw_rows:756,original_inputs_gold_roles_preserved:true,source_input_revisions:0,new_neighbor_cards:0,new_neighbor_edges:0,combined_provisional_neighbor_cards:144,combined_provisional_neighbor_edges:432,directional_source_cases:0,adjudicated_edges:0,independent_reviewers:0,accepted_gold_rows:0,accepted_role_rows:0,independent_quota_credit:0,candidate_predictions:0,semantic_evaluations:0,new_stable_allocations:0,remaining_stable_allowance:null,qualified_meaningful_families:null,qualified_heldout_family_count:null,data_qualification:'NOT_QUALIFIED',capability_verdict:'UNTESTED',resource_verdict:'NOT_QUALIFIED',saturation_ceiling_claim:false};
+}
