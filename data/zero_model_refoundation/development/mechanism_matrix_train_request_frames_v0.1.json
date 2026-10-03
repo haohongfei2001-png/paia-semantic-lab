@@ -1,0 +1,1406 @@
+{
+  "schema": "ZMR-WRITER-REQUEST-FRAMES-1",
+  "status": "VERSIONED_WRITER_FRAMES_UNACCEPTED_QUALIFICATION_HOLD_RETAINED",
+  "source_main": "e9063bdeb1c1062f9bda20b7cbdd3bf2ca20b394",
+  "publication_dependency_pr": 250,
+  "publication_dependency_head": "2dc19d2b6ccf3f67c6b62020213aeb8e2b5cc862",
+  "dependency_actual_main_verified": true,
+  "prior_proposal_path": "data/zero_model_refoundation/development/mechanism_matrix_train_older_role_proposals_v0.1.json",
+  "prior_proposal_sha256": "a41c3cf18788cdb22fbc1514133fdb65936db9d32810bfd95e31b802445ccbf8",
+  "annotation_guideline_git_blob": "7d3cbc929c05cf6f935c08a4a8b49d2eddd30ca0",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "writer_decisions": 19,
+  "actual_source_rows_read": 19,
+  "unaccepted_frame_proposals": 19,
+  "policy_hold_clearance": 0,
+  "combined_writer_role_holds": 78,
+  "label_holds": 41,
+  "older_explicit_proposals_preserved": 27,
+  "known_role_proposals_preserved": 5,
+  "new_samples": 0,
+  "candidate_predictions": 0,
+  "semantic_evaluations": 0,
+  "new_stable_allocations": 0,
+  "accepted_role_rows": 0,
+  "accepted_gold_rows": 0,
+  "independent_quota_credit": 0,
+  "remaining_stable_allowance": null,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "semantic_judgment_certified": false,
+  "saturation_ceiling_claim": false,
+  "records": [
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-005",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_bundle_sha256": "9dbec306c977bd37f9e31e962fea1609bbd3e5be319b42c15612e7687bd410ee",
+      "original_gold_sha256": "8e384b6bd9cf5b9341e425942777d980db98d1a8df0683f40f56945b755f3ed6",
+      "original_spans_sha256": "36d40f68b08948555fae2c1e153b59ef7000e5171822e3bb54437e41f7e44e6f",
+      "prior_proposal_record_sha256": "4af23e263b5660eb8162eb6ffa8cda738bbea080ade9a7762280d7b13fc1c43e",
+      "request_form": "NOMINAL_INTERPRETATION",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 67,
+          "end": 127,
+          "text": "The meaning of that pattern in our father-child relationship"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 82,
+          "end": 94,
+          "text": "that pattern"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 102,
+          "end": 127,
+          "text": "father-child relationship"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 66,
+          "text": "Dad's habit of praising my brother and then comparing me with him."
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 129,
+          "end": 168,
+          "text": "rather than wording for a confrontation"
+        }
+      ],
+      "writer_reason": "名词meaning指向同一父子互动模式，不把背景praising/comparing或未说出的understand当当前操作。该目标可以有意义；非祈使形态本身不构成DEFER，原角色资格仍未接受。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-020",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_bundle_sha256": "caee79c9c90465a27fab65109cd055be73caef8c826b2f328c9a584a7aa70ff8",
+      "original_gold_sha256": "faf54f1fc416242180297b6a0b0c1543df67496aea190e83577d3eb30f464150",
+      "original_spans_sha256": "f98e8aae3c1aa9454172bbdf4c5f453e1d02ef7d1a9efdb8329cc6b2e1544d36",
+      "prior_proposal_record_sha256": "5d0da11c60e2b691b869c047c0d8a5b16b4b407a6806447957c0d4b5143ae331",
+      "request_form": "NOMINAL_COMPARISON",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 0,
+          "end": 117,
+          "text": "A speech-to-text assistant versus a text generator: their capabilities, model limitations and deployment requirements"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 0,
+          "end": 50,
+          "text": "A speech-to-text assistant versus a text generator"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 52,
+          "end": 117,
+          "text": "their capabilities, model limitations and deployment requirements"
+        },
+        {
+          "kind": "QUALIFIER",
+          "field": "current",
+          "start": 119,
+          "end": 146,
+          "text": "for a paper comparison only"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 148,
+          "end": 167,
+          "text": "with no service use"
+        }
+      ],
+      "writer_reason": "versus和paper comparison明示纸面比较目标，comparison是名词而非原文缺失的compare命令；禁止实际服务使用，不将模型/工具名当作调用授权或新增语义接口。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-035",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_bundle_sha256": "ecf856c189c28b8c03c8c5a1baae4a61324feddef07d86e1f0d26122c40e036c",
+      "original_gold_sha256": "ff7ac0cde562d1f5aed922ebce9a928fe8b233a97c4badcd10f28f9014686d97",
+      "original_spans_sha256": "2887324bbee90fa8e5ffe364a20847f0dae6ebf101c9efc1439fa9b633be7014",
+      "prior_proposal_record_sha256": "918d8a5aaa8d93601085d31a2b504afd0da92b93af195005ac02b8990dd793a4",
+      "request_form": "NOMINAL_OUTPUT_ARTIFACT",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 0,
+          "end": 31,
+          "text": "A two-line reply to the courier"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 45,
+          "end": 64,
+          "text": "the missed delivery"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 74,
+          "end": 98,
+          "text": "a safe redelivery window"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 33,
+          "end": 64,
+          "text": "acknowledge the missed delivery"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 69,
+          "end": 98,
+          "text": "give a safe redelivery window"
+        },
+        {
+          "kind": "RECIPIENT",
+          "field": "current",
+          "start": 20,
+          "end": 31,
+          "text": "the courier"
+        },
+        {
+          "kind": "QUALIFIER",
+          "field": "current",
+          "start": 100,
+          "end": 106,
+          "text": "polite"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 111,
+          "end": 139,
+          "text": "without inventing an address"
+        }
+      ],
+      "writer_reason": "所求两行reply是写作产物；acknowledge/give是回复应包含的内容操作，courier是收件对象，不把写稿改成真实物流安排或发送。保留礼貌、安全窗口和不编地址限制。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-036",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_bundle_sha256": "9044786b863291592596761c35e8c36823c4d86029ca3a2b82f56a92c56cc455",
+      "original_gold_sha256": "ff7ac0cde562d1f5aed922ebce9a928fe8b233a97c4badcd10f28f9014686d97",
+      "original_spans_sha256": "3b784352e52b6e131f76fa9134f5159db852aacb24eb1a5272d8058a35d05a70",
+      "prior_proposal_record_sha256": "d8446d167507ab2c910390661bf09501eed1f9e36278de22fa0171a68a469963",
+      "request_form": "MODAL_OUTPUT_ARTIFACT",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 15,
+          "end": 18,
+          "text": "只需要"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 18,
+          "end": 34,
+          "text": "一条 short message"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 3,
+          "end": 9,
+          "text": "会议链接改动"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 13,
+          "text": "我得把会议链接改动告诉同事"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 35,
+          "end": 42,
+          "text": "承认旧链接失效"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 43,
+          "end": 51,
+          "text": "给出新的占位链接"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 52,
+          "end": 55,
+          "text": "不代发"
+        }
+      ],
+      "writer_reason": "当前但只需要限定目标为一条消息；背景告诉同事说明用途，承认/给出是消息内容。需要是需求情态，不补写draft算子，不由消息草稿推断已实际通知；不代发限制保持。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-041",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_bundle_sha256": "673df8a021ec98826c1faf8b04600b5dc48ea610bd1578670855c2c0d321d018",
+      "original_gold_sha256": "cfab573ae12272bde18de2a1639745235661dc9e73e9b70502d47197d2b717c1",
+      "original_spans_sha256": "26871fb3d94c4d2f46944e81a098673053cc78e0fc7c2e0a12e5e2a05227a10e",
+      "prior_proposal_record_sha256": "b3c1bae76c7be45674dde0fa13eab2ebbb501c4db013fb2644e4168787f84b37",
+      "request_form": "MODAL_INTERPRETATION_CORRECTION",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 41,
+          "end": 47,
+          "text": "I want"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 48,
+          "end": 143,
+          "text": "the physical reason instead: why does a spinning skater turn faster when pulling in their arms?"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 77,
+          "end": 143,
+          "text": "why does a spinning skater turn faster when pulling in their arms?"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 35,
+          "text": "I initially asked for a calculation"
+        },
+        {
+          "kind": "QUALIFIER",
+          "field": "current",
+          "start": 144,
+          "end": 162,
+          "text": "Keep it conceptual"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 164,
+          "end": 192,
+          "text": "without a numerical exercise"
+        }
+      ],
+      "writer_reason": "当前instead及why问题把目标从此前计算纠正为物理原因。want是需求情态，why是解释内容，不能造Explain动作，也不能恢复过去calculation；概念讨论与不做数值练习分别保留。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-050",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_bundle_sha256": "5439eb875795bd0274e4a57799eebadf7960b4a890cebf3ec82103cbf1d23f73",
+      "original_gold_sha256": "b31d148901cd1be41b3fd63a36111a10ce88b6d37ea47c22dab6acd717a8f175",
+      "original_spans_sha256": "3ab576919fb659628da4eaca9d85331ae604c319afbbec08732a5fa88da6145a",
+      "prior_proposal_record_sha256": "e2c4366bd326cfcb20127cee3fb541267664de4802fc0b9955e1a5e39f3ce6f3",
+      "request_form": "NOMINAL_SCHEDULING_GOAL",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 0,
+          "end": 42,
+          "text": "A conflict-free slot for a weekly check-in"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 25,
+          "end": 42,
+          "text": "a weekly check-in"
+        },
+        {
+          "kind": "QUALIFIER",
+          "field": "current",
+          "start": 44,
+          "end": 81,
+          "text": "Tuesday morning or Thursday afternoon"
+        },
+        {
+          "kind": "QUALIFIER",
+          "field": "current",
+          "start": 126,
+          "end": 169,
+          "text": "A calendar arrangement, not an agenda draft"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 83,
+          "end": 124,
+          "text": "excluding the already reserved lunch hour"
+        }
+      ],
+      "writer_reason": "conflict-free slot是排期目标名词，不虚构schedule操作。周二/周四是候选，午餐已占用是不冲突条件；不能据当前文本宣布可用时间或已创建日历，agenda draft是排除项。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-004",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_bundle_sha256": "e13109d731039d2d9e7b2e39b5f7eb62b939bb70b0a5263feb7b60259d90e1d5",
+      "original_gold_sha256": "67fff076ed5733cf0739df411d589a74ad06cc905cdc3c11ef0dd902cad8d445",
+      "original_spans_sha256": "5514380f94df0c16fa4eebf8b40450b9c33348c6aaa0b4163ab432bfac629b50",
+      "prior_proposal_record_sha256": "83673f31114fc13325152ba9e0e5358f41cdd2c20e92c1d7c3f58c72eca739e0",
+      "request_form": "NOMINAL_INTERPRETATION_QUESTION",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 18,
+          "end": 47,
+          "text": "我们三人之间的相处模式，重点是手足间为何会有不同的权力位置"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 18,
+          "end": 29,
+          "text": "我们三人之间的相处模式"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 17,
+          "text": "姐姐总替我决定小事，弟弟却从不商量"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 30,
+          "end": 36,
+          "text": "重点是手足间"
+        }
+      ],
+      "writer_reason": "为何权力位置是要讨论的关系模式内容，不是ACTION。前句姐姐/弟弟行为解释所问模式的背景，重点是手足间限定对象；名词加问题形式不应为补ACTION而改成新样本或DEFER。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-019",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_bundle_sha256": "01d03f29915bb2a2645938caae06c6c48964f5cdae00b5a7ff9f0065c99c9546",
+      "original_gold_sha256": "005a238828c2694bde3c877b63df8c01de46cbb1797a42aef1d9c654665dc9a3",
+      "original_spans_sha256": "cc430844e25d40e440e62ba2be4df7f138219b5ed41ae1fb8352940014b2966e",
+      "prior_proposal_record_sha256": "16558a0d12aaa39628612e4f51d209d529177b0afb7c8c1c6a31be9518fc1956",
+      "request_form": "NOMINAL_DESIGN_WITH_EXPLANATORY_MEANS",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 26,
+          "end": 38,
+          "text": "这个分阶段提示流程的设计"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 28,
+          "end": 35,
+          "text": "分阶段提示流程"
+        },
+        {
+          "kind": "MEANS",
+          "field": "current",
+          "start": 39,
+          "end": 56,
+          "text": "用纸面例子说明失败时怎么返回上一步"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 0,
+          "end": 25,
+          "text": "让虚构助手先提澄清问题、再给草稿、最后让使用者核对"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 39,
+          "end": 44,
+          "text": "用纸面例子"
+        }
+      ],
+      "writer_reason": "设计是当前名词式产物目标，前句列出流程内容，后句纸面例子说明回退是呈现设计的方法。说明可作为方法层动作证据，不挤占设计主目标；不实际驱动任何助手或调用模型。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-034",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_bundle_sha256": "e3403b74108464f96f3987fd34cd2cc0ee9048f01778cfae3bd076a9b7114532",
+      "original_gold_sha256": "5ba2b1dc1fbe7b25a25551f2125e51205f6ecd5699e50a9c8321e4315839f5ca",
+      "original_spans_sha256": "249e287a8fd8785a8f165cf7f3a781555b73256048f1ae9c273de6345f748943",
+      "prior_proposal_record_sha256": "29089085c63b4c526c1e9f2a213739a8fe7f2097678c99dcec96673381f0c53d",
+      "request_form": "NOMINAL_EDITING_GOAL",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 26,
+          "end": 37,
+          "text": "段落的连贯性和措辞调整"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 0,
+          "end": 8,
+          "text": "这段虚构人物介绍"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 9,
+          "end": 25,
+          "text": "开头重复、代词指向不明、结尾突兀"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 38,
+          "end": 44,
+          "text": "保留原本事实"
+        }
+      ],
+      "writer_reason": "连贯性与措辞调整是并列编辑目标而非一项OBJECT一项ACTION。背景列问题，保留事实是约束；当前缺正文不影响识别编辑目标，但不能声称已完成编辑或补造未给段落。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-042",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_bundle_sha256": "e9fb9e34346086743504dfbd3fc18fa1e64176a88095fa6bdfcd9b4ee2d835aa",
+      "original_gold_sha256": "b3adf7afc3b1e1c36b6ba4becfc1db25365583ae8571529d17529a9dcc03c377",
+      "original_spans_sha256": "db38fc4804a65b676324251a2e4e626d2704146180f4169a1c383d23fb54e106",
+      "prior_proposal_record_sha256": "0f708363b5eacf12058798ac6494c9eae1b4bf9bb03f43a6ef4c272b9f19cb0f",
+      "request_form": "NOMINAL_CONCEPTUAL_QUESTION",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 0,
+          "end": 41,
+          "text": "一元一次方程的 transformation：移项为何保持解集、哪些运算不能随便做"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 0,
+          "end": 22,
+          "text": "一元一次方程的 transformation"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 42,
+          "end": 47,
+          "text": "纯代数讨论"
+        }
+      ],
+      "writer_reason": "移项为何保持解集及哪些运算不能做是同一代数对象的概念问题，不将why片段当ACTION，不补解释动词。纯代数范围保留；两内容分句不是凭空多Topic或实际解方程操作。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-047",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_bundle_sha256": "3277bdcb33e4056d8b98db1f615dd284d54006fc6a9f8537ccf35678ebd4c053",
+      "original_gold_sha256": "7f838b469826374ef7ce146df2fb8315639a2ef9bc63fa4c9acee84e48f9f062",
+      "original_spans_sha256": "94e3dc732cd13e22c6d6a12d5dcef67ed18b68e173e037ca8f493ef6a2a207a9",
+      "prior_proposal_record_sha256": "6c17111dfe27a7ba81ad9486a4e0ec102e2497572d1b90b16546ba1df96d8f2e",
+      "request_form": "MODAL_STRATEGIC_DIRECTION",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 115,
+          "end": 121,
+          "text": "I want"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 122,
+          "end": 188,
+          "text": "a strategic direction before a marketing campaign or staffing plan"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 59,
+          "end": 113,
+          "text": "the clients it serves and the advantage it competes on"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 114,
+          "text": "An established imaginary studio needs a clear choice about the clients it serves and the advantage it competes on."
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 144,
+          "end": 188,
+          "text": "before a marketing campaign or staffing plan"
+        }
+      ],
+      "writer_reason": "当前I want明确所求战略方向；clear choice在工作室需求背景，不是当前命令。客户/竞争优势为战略内容，before marketing/staffing限定阶段；不把方向名词替成已执行营销或人员安排。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-049",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_bundle_sha256": "0df4404d56acaf76fc58f8a9a9c73b3abaa466b836c5e815731925ee1ab38c1f",
+      "original_gold_sha256": "8925cf23a82112ee4bccf4c5879b14f10cd71db21255f5cf3ddea44c9f21e96f",
+      "original_spans_sha256": "8f650f42e97969ad6f34b2418623593b1f01ca17e845a42e86060598177089b4",
+      "prior_proposal_record_sha256": "56f2f25d317aaf4c31cc25fbc6c08c06c0fd1e03671b97f6876587e63f91f97e",
+      "request_form": "NOMINAL_RULE_DRAFT",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 27,
+          "end": 39,
+          "text": "提醒条件和截止约束的草案"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 2,
+          "end": 11,
+          "text": "证件续期在月底截止"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 11,
+          "text": "虚构证件续期在月底截止"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 12,
+          "end": 18,
+          "text": "提前一周提醒"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 19,
+          "end": 26,
+          "text": "当天再核对一次"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 40,
+          "end": 47,
+          "text": "不实际设置通知"
+        }
+      ],
+      "writer_reason": "当前提醒条件和截止约束草案是产物请求，提前一周/当天核对是草案里的时间内容操作。月末截止是背景事件事实；不实际设置通知保留，不能因提醒词就执行外部动作。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-009",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_bundle_sha256": "a1ec78dc4dff91fb3e2b287bf383c4a81d7fce7358ab08709a8f29b9f495448d",
+      "original_gold_sha256": "957cb38057c45dbda450bf07a024457e64c0c8e8c4ec8eb0d04387f8a1950afa",
+      "original_spans_sha256": "4bc49613bac33836cd0691214a8cb21ee4b6da6a29b3fe17c2cd8ff6b462424d",
+      "prior_proposal_record_sha256": "8487045f665a1f0fb92caad4a9f8ac66de9c282b61d4b4998142a90bd7670613",
+      "request_form": "MODAL_OUTPUT_FRAMEWORK",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 27,
+          "end": 29,
+          "text": "需要"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 29,
+          "end": 57,
+          "text": "一个 medication questions 记录框架"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 32,
+          "end": 52,
+          "text": "medication questions"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 26,
+          "text": "虚构护理练习里，人物不知道怎样记录治疗期间的用药疑问"
+        },
+        {
+          "kind": "QUALIFIER",
+          "field": "current",
+          "start": 66,
+          "end": 73,
+          "text": "不提供治疗方案"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 58,
+          "end": 65,
+          "text": "仅用于课堂案例"
+        }
+      ],
+      "writer_reason": "人物不知道怎样记录是背景问题，首个记录不是当前写作操作；所求是用药疑问记录框架，需要是情态。课堂用途与不提供治疗方案同时保留，不以选对词出现位置宣称角色已资格。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-020",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_bundle_sha256": "2d98c229c7330942a28d35feb6615621d2a7330ee7e25020e925c13b39a9d343",
+      "original_gold_sha256": "40b6d24dd57a48daf26527a833328df1b2695046c18c9dfa3102c742efc5f791",
+      "original_spans_sha256": "eb6bb1339d37c46144354f0a98e309f37e3a20dc431ad738ab290d17e37f9238",
+      "prior_proposal_record_sha256": "3854a11159959d6593dcdd2001c9ff7615c59aec5631bbbdeae1f38846bb72a5",
+      "request_form": "MODAL_PROCEDURAL_ARTIFACT",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 60,
+          "end": 66,
+          "text": "I need"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 67,
+          "end": 154,
+          "text": "a troubleshooting sequence that narrows the cause by checking scope and execution order"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 37,
+          "end": 58,
+          "text": "an undefined variable"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 59,
+          "text": "A toy program intermittently reports an undefined variable."
+        },
+        {
+          "kind": "MEANS",
+          "field": "current",
+          "start": 117,
+          "end": 154,
+          "text": "by checking scope and execution order"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 155,
+          "end": 185,
+          "text": "no real repository is involved"
+        }
+      ],
+      "writer_reason": "当前需求是排障序列，checking是该序列定位原因的方法；OBJECT仅scope/order会漏掉所求序列层。need只登记需求锚点，不虚构编制动词或真实仓库诊断；原不涉及真实repo的约束保留。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-050",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_bundle_sha256": "692ab7ac78b6d2951773baeb02578dd86e7f53ebcb416bd70c368f37df9868dd",
+      "original_gold_sha256": "e294a813a5d1339841c16b5172e2e367c09e6042f5c4b925de64c85f8a7d1826",
+      "original_spans_sha256": "dac64662660afbaa13024d93b3ffc2acebea6c21786dd1e70e14ec0551f972e4",
+      "prior_proposal_record_sha256": "b38e0fed81c50ca7442b1387deab0952c91b861cf0c83e2b54bfff766824f7bf",
+      "request_form": "MODAL_RECURRING_RULE",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 66,
+          "end": 72,
+          "text": "I need"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 73,
+          "end": 178,
+          "text": "a recurring schedule rule that says when the routine repeats and what happens if the date falls on a trip"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 43,
+          "end": 64,
+          "text": "monthly meter reading"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 65,
+          "text": "An invented household keeps forgetting its monthly meter reading."
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 109,
+          "end": 178,
+          "text": "when the routine repeats and what happens if the date falls on a trip"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 64,
+          "text": "monthly meter reading"
+        }
+      ],
+      "writer_reason": "所求是循环排期规则，says只引出规则应表达的内容，不能充当用户当前ACTION。忘读表背景、循环时间和旅行异常条件保留；need为需求情态，不据此实际设置日程或提醒。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART5-012",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "source_git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272",
+      "original_bundle_sha256": "4ff8e7e82e81420f847e1cfcba9c31242d894494ce6dcfaee14f2ce1a2b2911e",
+      "original_gold_sha256": "4521bece5348c9ca15511772ac37ee6e5ceaf3e522dc470bccb05dc8cf0727c7",
+      "original_spans_sha256": "148663b0f029aabff0fde84bd21699efd11a3605ef7d4ea1657287bf7f590d06",
+      "prior_proposal_record_sha256": "3f73706b5a1edf3cb1acb91be7580ccd8a75c7a0a2bf3965ac57ca2affa7d3e4",
+      "request_form": "MODAL_PRACTICE_FRAMEWORK",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 15,
+          "end": 17,
+          "text": "需要"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 17,
+          "end": 50,
+          "text": "一个 French speaking practice 的练习框架"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 20,
+          "end": 44,
+          "text": "French speaking practice"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 14,
+          "text": "虚构学习者能认单词却不会接话"
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 51,
+          "end": 60,
+          "text": "先学表达意图与回应"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 61,
+          "end": 67,
+          "text": "限于课堂演练"
+        }
+      ],
+      "writer_reason": "口语练习框架为当前所求，能认词不接话是背景缺口，先意图回应为框架内容。需要不是设计命令，课堂限定不授权真实教学执行；保留language学习对象而不按框架输出格式改标签。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-008",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_bundle_sha256": "49a4efa572827e137df0d97926b46bbc3de8fa57e16cef4c69477d7fa259fced",
+      "original_gold_sha256": "f3ccf372c77bda309cad3e1ce5c1e9cb4317029aeace92a281f04024e59c2002",
+      "original_spans_sha256": "28691bd78bf7f568ec8e2212305e29a7d8b19004df96bf12126faeef4dc926e1",
+      "prior_proposal_record_sha256": "332b7afec68385ff4e88e42d67adf2dce659f682405ef80d84eb4dd2ef2fb2dc",
+      "request_form": "MODAL_EXPLANATION_WITH_EMBEDDED_METHOD",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 71,
+          "end": 77,
+          "text": "I need"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 78,
+          "end": 161,
+          "text": "an explanation of how to organize the nutrition information into a clear comparison"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 112,
+          "end": 137,
+          "text": "the nutrition information"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 70,
+          "text": "An invented student sees many nutrient terms on a classroom food card."
+        },
+        {
+          "kind": "CONTENT",
+          "field": "current",
+          "start": 96,
+          "end": 161,
+          "text": "how to organize the nutrition information into a clear comparison"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 162,
+          "end": 201,
+          "text": "without recommending an individual diet"
+        }
+      ],
+      "writer_reason": "所求是如何组织营养信息的explanation，organize内嵌于解释内容而非当前直接命令。需求情态与解释名词分层，营养对象/比较产物/不推荐个体饮食保留，不宣布已实际整理或提供饮食建议。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-038",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_bundle_sha256": "6976cd26091337266e5aea298c1b7262a7adb2eb82b2477df45d5094710fd02d",
+      "original_gold_sha256": "1d65f501922b9093ba3dce24eba8e33edf33050b3ab4dba481ee67dfd74823b1",
+      "original_spans_sha256": "dd62c7a8551398a56d36d1f00618fde3b2ec2b4776885290e3f2f8dda5b74a1c",
+      "prior_proposal_record_sha256": "e44294502118f800174ca2737b1e8b9d1ad2cc9053844ae505e0361f1b96329f",
+      "request_form": "MODAL_CONCEPTUAL_COMPARISON",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 81,
+          "end": 87,
+          "text": "I need"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 88,
+          "end": 149,
+          "text": "a conceptual comparison under a wholly fictional legal system"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 31,
+          "end": 79,
+          "text": "a short visit permission with a residence status"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 80,
+          "text": "An invented character confuses a short visit permission with a residence status."
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 150,
+          "end": 192,
+          "text": "without checking real eligibility or rules"
+        }
+      ],
+      "writer_reason": "当前需要概念比较，前句混淆的许可/居留状态说明比较对象，不能单取背景OBJECT而遗漏当前comparison层。need是需求锚点，纯虚构体系/不查真实规则和资格不变，不实际申请或更改身份。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-053",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_bundle_sha256": "979675829d448b970ff57f0a2f5170438be8ffd70e3d7f246bc7386f1665159c",
+      "original_gold_sha256": "cd2393e004ed10bcdc5af93fad5f8b9938915bd5f0d378d3e3877e3048924c40",
+      "original_spans_sha256": "61d6ce52b5c9458c44d9f3bae97c3135a8999acb609f738f4fad6ee67dcf8492",
+      "prior_proposal_record_sha256": "a0ff1110bb5bd3621dc08bae1f5bd2c832dda298cba5bca6a4f45f9e699f41f5",
+      "request_form": "MODAL_OUTPUT_CHECKLIST",
+      "operation_evidence_state": "NO_UNIQUE_EXPLICIT_MAIN_OPERATION_IN_SOURCE",
+      "explicit_main_operation_spans": [],
+      "proposed_request_frame": [
+        {
+          "kind": "DEMAND",
+          "field": "current",
+          "start": 87,
+          "end": 93,
+          "text": "I need"
+        },
+        {
+          "kind": "GOAL",
+          "field": "current",
+          "start": 94,
+          "end": 150,
+          "text": "an export-and-restore checklist using invented filenames"
+        },
+        {
+          "kind": "SUBJECT",
+          "field": "current",
+          "start": 94,
+          "end": 125,
+          "text": "an export-and-restore checklist"
+        },
+        {
+          "kind": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 86,
+          "text": "An imaginary archive needs a portable copy that can later be checked for completeness."
+        },
+        {
+          "kind": "MEANS",
+          "field": "current",
+          "start": 126,
+          "end": 150,
+          "text": "using invented filenames"
+        },
+        {
+          "kind": "ORIGINAL_QUALIFIER",
+          "field": "current",
+          "start": 151,
+          "end": 180,
+          "text": "without reading a real backup"
+        }
+      ],
+      "writer_reason": "背景archive needs里的need子串不是当前请求。当前I need锚点与checklist产物分开，using filenames为手段；不生成缺失export命令、不执行备份恢复，不读真实backup，字节修正不等于语义资格。",
+      "policy_decision": "UNACCEPTED_NONIMPERATIVE_FRAME_PROPOSAL_HOLD_RETAINED",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_roles": false,
+      "accepted_gold": false,
+      "qualification_hold_retained": true,
+      "automatic_gold_state_change": false,
+      "automatic_topic_change": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "release_conditions": [
+        "Actual semantic review of these exact demand/goal/subject/content-method-background distinctions; no invented main operator and no automatic DEFER from sentence form.",
+        "Label boundary and lineage accepted through the applicable real review process; historical allocation reconciled before any stable comparison; independent qualification is separate."
+      ]
+    }
+  ],
+  "records_sha256": "38925643c47d1501fc8f238e627c8a2b13877a43cbba962cee1b580c91c51c68",
+  "batch_id": "ZMR-WRITER-REQUEST-FRAMES-20261003",
+  "source_tree": "66a0089af09b671596a4197492fe6be83b88f302",
+  "dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37125452596_ZMR37125452587",
+  "input_pins": [
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353",
+      "git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+      "git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+      "git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "sha256": "4b42effc9f87dbcb4e8177d1a4b80160d4745af6fa15faede8464d608ffcc57a",
+      "git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+      "git_blob": "03011e40e47f7bff59dff6d282121ff38515e447"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+      "git_blob": "157e08af47967e63a98d701274d7f25004e03f75"
+    },
+    {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_older_role_proposals_v0.1.json",
+      "sha256": "a41c3cf18788cdb22fbc1514133fdb65936db9d32810bfd95e31b802445ccbf8",
+      "git_blob": "cd04e9443b56921772159b2d77816206641c0eac"
+    },
+    {
+      "path": "docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md",
+      "sha256": "250df34d1b3cfe8f08cfaf6612ae32058f7f9e2b585864e8301a22888dcb4660",
+      "git_blob": "7d3cbc929c05cf6f935c08a4a8b49d2eddd30ca0"
+    }
+  ],
+  "independent_reviewers": 0,
+  "source_input_revisions": 0,
+  "data_qualification": "NOT_QUALIFIED",
+  "compiler_admission": "HOLD_UNACCEPTED_LABELS_ROLES_AND_ACCOUNTING"
+}
