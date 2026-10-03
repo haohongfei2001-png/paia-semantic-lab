@@ -11,3 +11,7 @@ Next exact remaining registered mechanism-family/language cells across ALL144Top
 ## Pre-prediction clerical amendment
 
 Initial v0.1 review and INITIAL_RESULT remain frozen byte-for-byte. v0.2 explicitly supersedes SHA2568da114069edb168ebf6f2b9d471526f46eb684a12fdd985fc7bfc623335d7ddb:chemistry-materials rolehold is111,initial index115 was branding-identity. Corrected8 newholds/32 combined;source/gold/spans/factors and24 priorholds unchanged. Zero predictions/accepted gold/independent credit;no semantic repair or allowance reset. New head integration required;earlier head CI is retained and not rerun.
+
+## CI materialization repair
+
+Head44b83af0a2858f0c158409b4f90694b8733c1c75 ZMR37112687513 shard2job111173527005 FAILED with165PASS/1FAIL:INITIAL_RESULT registered in docs but absent from actual materialization loop. Shard1job111173526742 PASS. Earlier manual minimal102-file delivery included the receipt and therefore did not expose this transport gap. New workflow explicitly materializes the frozen INITIAL_RESULT before units. Existing124unit paths/order/assertions,2serialshards,max2workers,5-minute jobs andpublic SHA/type/size/allowlist guards unchanged. No oldhead rerun,no source/review/code/semantic mutation,no budget reset. Newhead CI required.
