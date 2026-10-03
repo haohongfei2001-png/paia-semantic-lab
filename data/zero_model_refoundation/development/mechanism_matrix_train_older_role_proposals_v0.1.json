@@ -1,0 +1,3493 @@
+{
+  "source_main": "52e1f1a8a540f40bd1d696b611af62bf914aadc6",
+  "source_tree": "26457af1ef2bf8e2132a0b1ab3f1a9928b7f3486",
+  "source_disposition_path": "data/zero_model_refoundation/development/mechanism_matrix_train_older_role_dispositions_v0.1.json",
+  "source_disposition_sha256": "9077a962d7246c1711ca3f7239deb856cc6e9d1515bf086e847acb32dc651d8c",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "specific_role_policy_holds": 19,
+  "partial_occurrence_only_proposals": 1,
+  "all_qualification_holds_retained": true,
+  "accepted_gold_rows": 0,
+  "accepted_role_rows": 0,
+  "independent_quota_credit": 0,
+  "candidate_predictions": 0,
+  "new_stable_allocations": 0,
+  "remaining_stable_allowance": null,
+  "semantic_judgment_certified": false,
+  "records": [
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-004",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "b8404ae00ad97a7e4a97b253cb30a7c07f3f2d2e92d77d1cc75e7d948f3da319",
+      "original_bundle_sha256": "8856e8546412dcf8dd4c8fa8b124e9c72e733774ac5dbbdd9de17d80de4b6cc8",
+      "original_gold_sha256": "8e384b6bd9cf5b9341e425942777d980db98d1a8df0683f40f56945b755f3ed6",
+      "original_spans_sha256": "be8086916388b519ba98dc00af92b73c355e56d983fff2e8774bdd3b0d1811ff",
+      "prior_role_disposition_sha256": "98365a29aeb9e2f6ff74184a05ff403a39e295a3c415fc6208474ba5d7eed417",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 9,
+          "end": 11,
+          "text": "弄清"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 36,
+          "end": 43,
+          "text": "多年的亲子关系"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 44,
+          "end": 48,
+          "text": "不拟回复"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 25,
+          "text": "我和母亲已经多年不住一起，她仍会评价我的每个选择。"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "将OBJECT对准弄清后的why问题；亲子关系主题移作背景，保留母亲recent及不拟回复。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 9,
+          "end": 11,
+          "text": "弄清"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 11,
+          "end": 31,
+          "text": "自己为什么每次收到那位长辈的肯定都不踏实"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 44,
+          "end": 48,
+          "text": "不拟回复"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 25,
+          "text": "我和母亲已经多年不住一起，她仍会评价我的每个选择。"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 9,
+          "end": 31,
+          "text": "弄清自己为什么每次收到那位长辈的肯定都不踏实"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 36,
+          "end": 43,
+          "text": "多年的亲子关系"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-005",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "2988a701936087358764441f2c31b4545fbfacd6dc868b4c78e9e1d95fe51ee0",
+      "original_bundle_sha256": "9dbec306c977bd37f9e31e962fea1609bbd3e5be319b42c15612e7687bd410ee",
+      "original_gold_sha256": "8e384b6bd9cf5b9341e425942777d980db98d1a8df0683f40f56945b755f3ed6",
+      "original_spans_sha256": "36d40f68b08948555fae2c1e153b59ef7000e5171822e3bb54437e41f7e44e6f",
+      "prior_role_disposition_sha256": "61a31258cee4aca6ff5efc0b2bd19c169a5db0c1f1fac87b8b67b92ba98a7735",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 67,
+          "end": 78,
+          "text": "The meaning"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 102,
+          "end": 127,
+          "text": "father-child relationship"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 129,
+          "end": 168,
+          "text": "rather than wording for a confrontation"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "纯名词意义请求没有唯一明示操作；可保留meaning为CURRENT_GOAL，ACTION槽是否允许名词仍需writer规则，不虚构understand。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-008",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "45ceb79c30a83a211d07fa647b2ec6c74ced9ade35ec0de33a49de6fa9bc4f7a",
+      "original_bundle_sha256": "cf5114932162714abb436e39185165b8a21d5bc01d19c55e07288aa1f0a265b4",
+      "original_gold_sha256": "dbaa192a7362f0e76b5edf71a532c4987bced4307855d68dd72ab602c61d4463",
+      "original_spans_sha256": "0359dc4b2d196eb0552c682272b398841d493b70d104b8958c9a7cac4eb8dc98",
+      "prior_role_disposition_sha256": "4122ecd8e56c3279184cf88a8e7942df07579d586226fa4662ec4ebe3111f4ac",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 0,
+          "end": 16,
+          "text": "Make a checklist"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 84,
+          "end": 100,
+          "text": "a hospital visit"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 132,
+          "end": 170,
+          "text": "not as a request to interpret symptoms"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "分开Make操作与checklist产物；hospital visit仅用途背景，文件/记录是内容，非症状解释。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 0,
+          "end": 4,
+          "text": "Make"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 5,
+          "end": 16,
+          "text": "a checklist"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 132,
+          "end": 170,
+          "text": "not as a request to interpret symptoms"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 50,
+          "end": 80,
+          "text": "the right referral and records"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 0,
+          "end": 100,
+          "text": "Make a checklist so a fictional patient can bring the right referral and records to a hospital visit"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 84,
+          "end": 100,
+          "text": "a hospital visit"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-010",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "cf317c2d05b3df0166c50a6773c6d2c4669f2562273b59732dd805e15ad055a0",
+      "original_bundle_sha256": "c715e6c3b22960107d357a1483e8c4d50ef488f7a490dc4bc545562869260cd6",
+      "original_gold_sha256": "16c8c06d5edad7db1dfc0e872063ecc64f9ea96b5398c6e484eb1ca26f78df8c",
+      "original_spans_sha256": "7597d7adac4c5153a451297fc56a37fd9c259164e1eac57aedb4c9807587f2f3",
+      "prior_role_disposition_sha256": "363a58b2f04667a4943439b8150438b039268e677d3ee7bd7359f32281c51d83",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 32,
+          "end": 34,
+          "text": "比较"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 43,
+          "end": 52,
+          "text": "这门力学课程的内容"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 53,
+          "end": 60,
+          "text": "不安排考试冲刺"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "比较对象取紧接比较的两种方式，力学课程为适用范围；原标签hold保留。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 32,
+          "end": 34,
+          "text": "比较"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 34,
+          "end": 40,
+          "text": "两种跟课方式"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 53,
+          "end": 60,
+          "text": "不安排考试冲刺"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 32,
+          "end": 40,
+          "text": "比较两种跟课方式"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 41,
+          "end": 52,
+          "text": "限于这门力学课程的内容"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-020",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "59f8ef4fbb207caedf659fb5564f96bdd855c98de6855dfe078f6da1dfd93ad0",
+      "original_bundle_sha256": "caee79c9c90465a27fab65109cd055be73caef8c826b2f328c9a584a7aa70ff8",
+      "original_gold_sha256": "faf54f1fc416242180297b6a0b0c1543df67496aea190e83577d3eb30f464150",
+      "original_spans_sha256": "f98e8aae3c1aa9454172bbdf4c5f453e1d02ef7d1a9efdb8329cc6b2e1544d36",
+      "prior_role_disposition_sha256": "dfe268d9579bcbb331983be6864d5407b19e1f801cc1f2ccf910095cea6ce4a9",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 131,
+          "end": 141,
+          "text": "comparison"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 52,
+          "end": 117,
+          "text": "their capabilities, model limitations and deployment requirements"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 148,
+          "end": 167,
+          "text": "with no service use"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "paper comparison是目的名词，versus表达比较意图；不能插compare verb，保留名词请求策略HOLD。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-028",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "c520f8638ddf2e9e84d968aa54ab17c466628b65eb398ee373b74f6b803f8be9",
+      "original_bundle_sha256": "850c0ee3ae811608f3ae895e6b0e2233dbe361863c5b4503622f2bd746debcb2",
+      "original_gold_sha256": "338d2d974217d24050e2d73c0ff75ffd7cce0400d1d3ca2458764a3bfeee1505",
+      "original_spans_sha256": "c9225462ce4163aea8af6394f87db540e06e76c87755bd509122c9a1bcc631e6",
+      "prior_role_disposition_sha256": "d171c9eff45283089660c7f62c475a04072ca7ee81a1f9b92417c539f78cf900",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 28,
+          "end": 30,
+          "text": "串成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 36,
+          "end": 42,
+          "text": "完整出游方案"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 47,
+          "text": "不先订票"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "串成的输入为两个小城，方案是转换结果；四天/不赶路/顺序未定和不订票继续。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 28,
+          "end": 30,
+          "text": "串成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 22,
+          "end": 28,
+          "text": "沿海两个小城"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 47,
+          "text": "不先订票"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 19,
+          "end": 42,
+          "text": "需要把沿海两个小城串成一次不赶路的完整出游方案"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 36,
+          "end": 42,
+          "text": "完整出游方案"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 0,
+          "end": 18,
+          "text": "只知道假期有四天，目的地和顺序都没定"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-029",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "df2e9bd8a401f583c18f0cfd6289736e9266fc6fa7e8b0405e9c02b88e6ae841",
+      "original_bundle_sha256": "aa3ffa6531865559676de88cc30cb6c6ee2ef2b323290b8ddecacdbe10c2798f",
+      "original_gold_sha256": "338d2d974217d24050e2d73c0ff75ffd7cce0400d1d3ca2458764a3bfeee1505",
+      "original_spans_sha256": "dccf2766275b95160e2415f432e9758983e57dc82c4dcf5889e733847abdc797",
+      "prior_role_disposition_sha256": "5e368a195ff01705b98a4d852f88251daeeff5bc2165c97aeec5b5c213d785c3",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 69,
+          "end": 75,
+          "text": "choose"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 76,
+          "end": 108,
+          "text": "a route and distribute rest days"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 109,
+          "end": 155,
+          "text": "before looking at individual hotels or tickets"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "choose路线与distribute休息日分别成对但属于同一平衡行程goal；不新增Topic或实际订票。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 69,
+          "end": 75,
+          "text": "choose"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 76,
+          "end": 83,
+          "text": "a route"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 109,
+          "end": 155,
+          "text": "before looking at individual hotels or tickets"
+        },
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 88,
+          "end": 98,
+          "text": "distribute"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 99,
+          "end": 108,
+          "text": "rest days"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 18,
+          "end": 67,
+          "text": "a balanced outline for six days away with a child"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-034",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "d0e75bb7c7b2e83db25843782921d028da4f4ef35ff8353376d6a04285c35489",
+      "original_bundle_sha256": "928d3b4deb4f440886d9611c2f6e8a69ad84bad739d1bfc9d5c48c86904d11d1",
+      "original_gold_sha256": "ff7ac0cde562d1f5aed922ebce9a928fe8b233a97c4badcd10f28f9014686d97",
+      "original_spans_sha256": "1dd72d76547997521f68881fa4b6e0feec4b76431638f1047ca80498cdcecdc3",
+      "prior_role_disposition_sha256": "c9386c17409f9c7c0172c65e2306c22d4ffcbb11e33e7ee5b74a1aebb2c1c611",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 11,
+          "end": 18,
+          "text": "写一条简短回复"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 7,
+          "end": 11,
+          "text": "这位邻居"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 35,
+          "end": 41,
+          "text": "不润色长文章"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 31,
+          "text": "虚构邻居发消息问能否借我的植物图鉴三天，我同意但周日必须拿回。"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "邻居为接收者而非内容对象；写回复产物操作分开，确认借书/说明归还及recent周日必须拿回不丢。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 11,
+          "end": 12,
+          "text": "写"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 12,
+          "end": 18,
+          "text": "一条简短回复"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 35,
+          "end": 41,
+          "text": "不润色长文章"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 31,
+          "text": "虚构邻居发消息问能否借我的植物图鉴三天，我同意但周日必须拿回。"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 11,
+          "end": 34,
+          "text": "写一条简短回复，确认收到借书请求并说明归还时间"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 7,
+          "end": 11,
+          "text": "这位邻居"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-035",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "51cc21830a07db1e3434d75456de40a33e607df6f2de071c354a69cc7c955d76",
+      "original_bundle_sha256": "ecf856c189c28b8c03c8c5a1baae4a61324feddef07d86e1f0d26122c40e036c",
+      "original_gold_sha256": "ff7ac0cde562d1f5aed922ebce9a928fe8b233a97c4badcd10f28f9014686d97",
+      "original_spans_sha256": "2887324bbee90fa8e5ffe364a20847f0dae6ebf101c9efc1439fa9b633be7014",
+      "prior_role_disposition_sha256": "98c8c9df88efd3181f0706ce55bfca9592ef7e4990c0108e8cb5ea2f09375a0d",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 0,
+          "end": 16,
+          "text": "A two-line reply"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 20,
+          "end": 31,
+          "text": "the courier"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 111,
+          "end": 139,
+          "text": "without inventing an address"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "two-line reply产物与acknowledge/give内容操作如何分层尚未唯一；保留两行/礼貌/安全窗口/不造地址。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-036",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "a691de0e6c390020d1290476399781966c01ab5e76b009277909147eb3c36a3d",
+      "original_bundle_sha256": "9044786b863291592596761c35e8c36823c4d86029ca3a2b82f56a92c56cc455",
+      "original_gold_sha256": "ff7ac0cde562d1f5aed922ebce9a928fe8b233a97c4badcd10f28f9014686d97",
+      "original_spans_sha256": "3b784352e52b6e131f76fa9134f5159db852aacb24eb1a5272d8058a35d05a70",
+      "prior_role_disposition_sha256": "4cefdc1b2eece10fd647e9c259adf842b176c94096b205652dadb198ab51c3d6",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 9,
+          "end": 11,
+          "text": "告诉"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 11,
+          "end": 13,
+          "text": "同事"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 52,
+          "end": 55,
+          "text": "不代发"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "背景告诉同事与当前只要short message区分明确，但未明示draft动词；不把告诉变实际发送，保留间接产物ACTION策略HOLD。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-037",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "7d9d0638076447d9fe70f929f61a2ae00a3bf81cd7a7e92cebd8c19d61e42ec3",
+      "original_bundle_sha256": "76ec701a20f42b8e72af9830f23edcff54fc1e822d0a17d7f56e3f7e2bfdafbc",
+      "original_gold_sha256": "76548fbbfc17b8a2db3abe944387476b54dae18815f4f50909a9ee5a4eeb534b",
+      "original_spans_sha256": "159df2a8bfcb10d2719788b8e73ba80e542cae06cfba88fa5d950b4988faabd6",
+      "prior_role_disposition_sha256": "7707d2feeec2468a93749e5d8a159073c62d998a46bf857a9ce007a9b41d2f66",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 31,
+          "end": 33,
+          "text": "解释"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 25,
+          "end": 31,
+          "text": "法律概念问题"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 63,
+          "end": 69,
+          "text": "不判具体案件"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "解释具体条件命题而非泛称法律问题；引用保留为被讨论假设，不定案件。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 31,
+          "end": 33,
+          "text": "解释"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 34,
+          "end": 53,
+          "text": "通常需要哪些条件才可能构成可执行的承诺"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 63,
+          "end": 69,
+          "text": "不判具体案件"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 19,
+          "end": 53,
+          "text": "把这句话作为法律概念问题解释：通常需要哪些条件才可能构成可执行的承诺"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 18,
+          "text": "假设有人说「口头承诺一定没有约束力」"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 54,
+          "end": 62,
+          "text": "只做一般知识讨论"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-041",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "378f815aabe9d1d2cb2a21553f8c9946aa585c1c857e881447a7c4dd54ebe5c1",
+      "original_bundle_sha256": "673df8a021ec98826c1faf8b04600b5dc48ea610bd1578670855c2c0d321d018",
+      "original_gold_sha256": "cfab573ae12272bde18de2a1639745235661dc9e73e9b70502d47197d2b717c1",
+      "original_spans_sha256": "26871fb3d94c4d2f46944e81a098673053cc78e0fc7c2e0a12e5e2a05227a10e",
+      "prior_role_disposition_sha256": "636b55c504ad5ae2d8ac1b7b4586d02f7683eb3f359ff12eb095041ed18d6fae",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 43,
+          "end": 47,
+          "text": "want"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 48,
+          "end": 67,
+          "text": "the physical reason"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 164,
+          "end": 192,
+          "text": "without a numerical exercise"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "want情态后physical reason加why问题是解释需求，无明示解释算子；不恢复calculation，不插Explain。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-050",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "source_git_blob": "157e08af47967e63a98d701274d7f25004e03f75",
+      "original_current_sha256": "edbab9b6a487fb714be0b4c7e05d20498b468d1c4f39364686a3fd8ec9554410",
+      "original_bundle_sha256": "5439eb875795bd0274e4a57799eebadf7960b4a890cebf3ec82103cbf1d23f73",
+      "original_gold_sha256": "b31d148901cd1be41b3fd63a36111a10ce88b6d37ea47c22dab6acd717a8f175",
+      "original_spans_sha256": "3ab576919fb659628da4eaca9d85331ae604c319afbbec08732a5fa88da6145a",
+      "prior_role_disposition_sha256": "2ea068d2a03006cf23fcadc9ac211fa873730eec634c95ffaf89851530a65aa1",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 0,
+          "end": 20,
+          "text": "A conflict-free slot"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 25,
+          "end": 42,
+          "text": "a weekly check-in"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 83,
+          "end": 124,
+          "text": "excluding the already reserved lunch hour"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "conflict-free slot是calendar目标，不是明示调度操作；候选周二/周四及午餐已占用保留，不假定空闲。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-004",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "d90ef21a29dfd1ff64b92901aee4c0595da7e207407fab5b26f7bd8b6aeb3d47",
+      "original_bundle_sha256": "e13109d731039d2d9e7b2e39b5f7eb62b939bb70b0a5263feb7b60259d90e1d5",
+      "original_gold_sha256": "67fff076ed5733cf0739df411d589a74ad06cc905cdc3c11ef0dd902cad8d445",
+      "original_spans_sha256": "5514380f94df0c16fa4eebf8b40450b9c33348c6aaa0b4163ab432bfac629b50",
+      "prior_role_disposition_sha256": "be903b524e703addf28bb8f96cdbfc43ba7c501f7ea3e2cef80525442399f930",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 36,
+          "end": 47,
+          "text": "为何会有不同的权力位置"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 18,
+          "end": 29,
+          "text": "我们三人之间的相处模式"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 30,
+          "end": 36,
+          "text": "重点是手足间"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "why权力位置是内容疑问，非操作动词；名词/问式相处请求有效，操作锚点待规则。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-011",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "d7dc310d9b3f480baeeda9491774e91c90704152a8fe9babc2ee9a8095d3ba8a",
+      "original_bundle_sha256": "7389f941c99ceceeeb15c610bd1ecb4c66e0e3ee9ebc8829f0619a64c6bc0f5d",
+      "original_gold_sha256": "3496bdaf71374431302194fec6b579fd737f8ec67debd2c56877be450a9d766a",
+      "original_spans_sha256": "8a0c5ac1c1f0e4145b06a70db290a81581b29d30423ead85b0d0adad39a014a1",
+      "prior_role_disposition_sha256": "3e69c35771639f39ce9c4c0bed80781f315e7e345293d09ff7b1bbd789969422",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 102,
+          "end": 119,
+          "text": "planning practice"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 124,
+          "end": 146,
+          "text": "an upcoming assessment"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 147,
+          "end": 167,
+          "text": "with timed questions"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "检视复读一次即准备好判断，计划练习是方法；引用仍不认可，timed条件保留。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 80,
+          "end": 87,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 88,
+          "end": 98,
+          "text": "that claim"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 147,
+          "end": 167,
+          "text": "with timed questions"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 102,
+          "end": 167,
+          "text": "planning practice for an upcoming assessment with timed questions"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 80,
+          "end": 167,
+          "text": "Examine that claim by planning practice for an upcoming assessment with timed questions"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 26,
+          "end": 78,
+          "text": "If I reread the slides once,I am ready for the test."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-019",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "aa92574c21d273085049ef2aa135432117b7d6f900b9570dd4def7902beb7620",
+      "original_bundle_sha256": "01d03f29915bb2a2645938caae06c6c48964f5cdae00b5a7ff9f0065c99c9546",
+      "original_gold_sha256": "005a238828c2694bde3c877b63df8c01de46cbb1797a42aef1d9c654665dc9a3",
+      "original_spans_sha256": "cc430844e25d40e440e62ba2be4df7f138219b5ed41ae1fb8352940014b2966e",
+      "prior_role_disposition_sha256": "305960abdcb7d923bdf5d8ba4a6cae3185d3ed4ec45a4a6cb877175d6d48030d",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 33,
+          "end": 38,
+          "text": "流程的设计"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 28,
+          "end": 35,
+          "text": "分阶段提示流程"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 39,
+          "end": 44,
+          "text": "用纸面例子"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "流程的设计名词与说明失败回退明示动作服务同一设计goal；先明确设计产物/示例说明层而不换成只有说明。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-025",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "4057f3190bdca2890917109b3143231b1fe737bc4783bc4e938513571298c6e4",
+      "original_bundle_sha256": "94df65ddae57005b072660c13472df225d809185b5f26b6cefd169c1af0b7188",
+      "original_gold_sha256": "40d9a19b79c7b31b14321955c973560e15399741f89b14eb2f35c3416c824e83",
+      "original_spans_sha256": "62f5ec4e9f34c1620c289f20070ef2192daebafbe930db3006478c22cf929f82",
+      "prior_role_disposition_sha256": "37f079c6c23d2fe7c0ab9300afe25e3a84c9cf064876b0473bc7ebf0a069469d",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 22,
+          "end": 24,
+          "text": "改善"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 26,
+          "end": 40,
+          "text": "晃动的书架固定、修好松动把手"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 41,
+          "end": 57,
+          "text": "先分出简单维修和需专业处理的工作"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "当前操作为讨论，改善/固定/修把手是讨论内容；专业/简单工作区分保留，不实际施工。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 14,
+          "end": 16,
+          "text": "讨论"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 16,
+          "end": 24,
+          "text": "虚构房间怎么改善"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 41,
+          "end": 57,
+          "text": "先分出简单维修和需专业处理的工作"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 14,
+          "end": 40,
+          "text": "讨论虚构房间怎么改善：把晃动的书架固定、修好松动把手"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-026",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "93a1bf28fe4fbef65776d49d5233a45340351c0d6a14ae28919fb65423902e67",
+      "original_bundle_sha256": "c7134b5d7a206d8cb18062202cf7afbabb2200d9007792598d1c196ada398b57",
+      "original_gold_sha256": "40d9a19b79c7b31b14321955c973560e15399741f89b14eb2f35c3416c824e83",
+      "original_spans_sha256": "6e3ae1d6e93548bef268444eb582cea65a88d839deb696b2341149ad74c6c159",
+      "prior_role_disposition_sha256": "a1dbbd232e8135ebe1c864475473302f860adef79a63da4393e97e7258808645",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 103,
+          "end": 120,
+          "text": "planning a repair"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 142,
+          "end": 170,
+          "text": "the source of a wall problem"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 177,
+          "end": 214,
+          "text": "without diagnosing an actual building"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Discuss后完整why命题为对象，repair是内嵌任务；先找源/不诊实际建筑保留。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 91,
+          "end": 98,
+          "text": "Discuss"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 99,
+          "end": 176,
+          "text": "why planning a repair requires identifying the source of a wall problem first"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 177,
+          "end": 214,
+          "text": "without diagnosing an actual building"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 91,
+          "end": 176,
+          "text": "Discuss why planning a repair requires identifying the source of a wall problem first"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 47,
+          "end": 89,
+          "text": "Painting over the stain solves everything."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-034",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "5cfb33b13266999d028bbe9b76a5486c5e738ff17bbbeccb50ff2a3766161035",
+      "original_bundle_sha256": "e3403b74108464f96f3987fd34cd2cc0ee9048f01778cfae3bd076a9b7114532",
+      "original_gold_sha256": "5ba2b1dc1fbe7b25a25551f2125e51205f6ecd5699e50a9c8321e4315839f5ca",
+      "original_spans_sha256": "249e287a8fd8785a8f165cf7f3a781555b73256048f1ae9c273de6345f748943",
+      "prior_role_disposition_sha256": "9cf2fa474eab1f3d0488a9c5f27612fc3ac4ceeac4b10e4d042b3b79e1c000ab",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 33,
+          "end": 37,
+          "text": "措辞调整"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 26,
+          "end": 32,
+          "text": "段落的连贯性"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 38,
+          "end": 44,
+          "text": "保留原本事实"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "连贯性与措辞调整并列名词编辑目标，不能仅动作化一项丢另一项，且无原段落全文；保留事实约束HOLD。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-041",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "79298b514a584e095e1d4c6b45d0494440fd7357a0e1a2d67e44b49f9156d092",
+      "original_bundle_sha256": "bc19f643a69d59ecf5e5c054c0e621c016bd466d03891f4e67ba100d2b1cf339",
+      "original_gold_sha256": "b3adf7afc3b1e1c36b6ba4becfc1db25365583ae8571529d17529a9dcc03c377",
+      "original_spans_sha256": "a882225f11c3c09d78a9b497f61187f6d5c7037b15f7dd8b7572d9e22950e148",
+      "prior_role_disposition_sha256": "3ba04512347822e7a060f6ff6ad5677c2c5749f3a6e2cac48f649ea71593dfe1",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 89,
+          "end": 96,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 138,
+          "end": 174,
+          "text": "the algebraic meaning of an identity"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 112,
+          "end": 133,
+          "text": "using counterexamples"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Examine针对一个输入相等就恒等断言，反例/恒等意义是方法，非自动认可数学判断。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 89,
+          "end": 96,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 97,
+          "end": 111,
+          "text": "that assertion"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 112,
+          "end": 133,
+          "text": "using counterexamples"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 112,
+          "end": 174,
+          "text": "using counterexamples and the algebraic meaning of an identity"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 89,
+          "end": 174,
+          "text": "Examine that assertion using counterexamples and the algebraic meaning of an identity"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 29,
+          "end": 87,
+          "text": "If two expressions agree for one input,they are identical."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-042",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "c2d2ccfb3eeff5c78ff688b3df0356bfe0ea83dfb4ded84b1169c3ecd5a615a3",
+      "original_bundle_sha256": "e9fb9e34346086743504dfbd3fc18fa1e64176a88095fa6bdfcd9b4ee2d835aa",
+      "original_gold_sha256": "b3adf7afc3b1e1c36b6ba4becfc1db25365583ae8571529d17529a9dcc03c377",
+      "original_spans_sha256": "db38fc4804a65b676324251a2e4e626d2704146180f4169a1c383d23fb54e106",
+      "prior_role_disposition_sha256": "9c9dc3f2d62d40cdabd212141b1d45b37f809bd8ce85dd7fb9109eff57919f49",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 25,
+          "end": 31,
+          "text": "为何保持解集"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 0,
+          "end": 22,
+          "text": "一元一次方程的 transformation"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 42,
+          "end": 47,
+          "text": "纯代数讨论"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "为何保持解集是问式目标，原文无解释动词；保留移项/不可随便运算两内容，不插操作。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-047",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "0540a9d6bcd59fdc5a98446294a3b8686aed449aaa10d804ab7db1f5bf805f7a",
+      "original_bundle_sha256": "3277bdcb33e4056d8b98db1f615dd284d54006fc6a9f8537ccf35678ebd4c053",
+      "original_gold_sha256": "7f838b469826374ef7ce146df2fb8315639a2ef9bc63fa4c9acee84e48f9f062",
+      "original_spans_sha256": "94e3dc732cd13e22c6d6a12d5dcef67ed18b68e173e037ca8f493ef6a2a207a9",
+      "prior_role_disposition_sha256": "2c598720f7d1c04f664eb7f34d5a538939b50df8db70bf367a6905f122e278a6",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 38,
+          "end": 52,
+          "text": "a clear choice"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 59,
+          "end": 113,
+          "text": "the clients it serves and the advantage it competes on"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 144,
+          "end": 188,
+          "text": "before a marketing campaign or staffing plan"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "clear choice在studio needs背景，当前I want战略方向是产物请求；先界定情态/goal表示，不能假装实际战略已决定。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-049",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "source_git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982",
+      "original_current_sha256": "a075d399cbd59e1e727fe487cd8d1b5cd76d836a3878e5c97b77453cf28bdfa6",
+      "original_bundle_sha256": "0df4404d56acaf76fc58f8a9a9c73b3abaa466b836c5e815731925ee1ab38c1f",
+      "original_gold_sha256": "8925cf23a82112ee4bccf4c5879b14f10cd71db21255f5cf3ddea44c9f21e96f",
+      "original_spans_sha256": "8f650f42e97969ad6f34b2418623593b1f01ca17e845a42e86060598177089b4",
+      "prior_role_disposition_sha256": "7118013697db04194e35126e4a5e5771a892edaba91c9b3444167eeb5ef9c601",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 27,
+          "end": 39,
+          "text": "提醒条件和截止约束的草案"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 2,
+          "end": 11,
+          "text": "证件续期在月底截止"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 40,
+          "end": 47,
+          "text": "不实际设置通知"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "提醒草案是当前所求产物，原文禁止设通知；提前一周/当天核对/月末deadline不可自动执行。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-002",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_current_sha256": "da49fd53b64b2cabb3027cef18969c9c2ca8b08da7018a100bc9a17045a1bd63",
+      "original_bundle_sha256": "baf6b28bd5b940771aef87c580b6adc478b12646280379a043ff2abaef83d34c",
+      "original_gold_sha256": "7dda1dc809de1a68f2a52811447625b28a97c2e6ee3c0781ea678fbbfa98d20a",
+      "original_spans_sha256": "b111e3dd884f2351e3cdc803767ec1ca6e8f6274020e3f9042f29bbb5f4f4a9e",
+      "prior_role_disposition_sha256": "f1ab59881be657e93a594ab7c2337d5adbf5090d6db1906648db92901967be87",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 82,
+          "end": 89,
+          "text": "Compare"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 46,
+          "end": 80,
+          "text": "taking a year away from university"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 149,
+          "end": 172,
+          "text": "use an invented student"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Compare后可逆与关闭未来选项是实际比较维度；休学一年为决策背景，保留框架goal。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 82,
+          "end": 89,
+          "text": "Compare"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 90,
+          "end": 147,
+          "text": "what can be reversed with what would close future options"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 149,
+          "end": 172,
+          "text": "use an invented student"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 21,
+          "end": 80,
+          "text": "a decision framework for taking a year away from university"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 46,
+          "end": 80,
+          "text": "taking a year away from university"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-009",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_current_sha256": "2c56b605c00460e20376fdecb616438e849d01918a2d4ef84c020bff1f8f6e06",
+      "original_bundle_sha256": "a1ec78dc4dff91fb3e2b287bf383c4a81d7fce7358ab08709a8f29b9f495448d",
+      "original_gold_sha256": "957cb38057c45dbda450bf07a024457e64c0c8e8c4ec8eb0d04387f8a1950afa",
+      "original_spans_sha256": "4bc49613bac33836cd0691214a8cb21ee4b6da6a29b3fe17c2cd8ff6b462424d",
+      "prior_role_disposition_sha256": "efdb1ae274716ccc456a741d712182bc64d2c62d5d5170f4c42c9a43a4c054f1",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 15,
+          "end": 17,
+          "text": "记录"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 32,
+          "end": 52,
+          "text": "medication questions"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 58,
+          "end": 65,
+          "text": "仅用于课堂案例"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "首个记录是人物不知道如何记录的背景；当前需要记录框架，无明确创建动词，保留正确occurrence与间接请求策略HOLD。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-016",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_current_sha256": "8f6a3e986a79db30679924d0fe64ae7a2c54df3c60386f2f335e9e3dc74a2620",
+      "original_bundle_sha256": "70d85c2db99428ab30b281166c3bceeb9f86e8d396b4b16dcfa8c5c7d47f6792",
+      "original_gold_sha256": "3a2d5da9839e25436db8be5f3e21fc0abd046b91f15ea41c153b02469cae8290",
+      "original_spans_sha256": "1576fb001d959dc9d0ba2e757eaf98358260ed68a1bb1f6239a058e370ead425",
+      "prior_role_disposition_sha256": "bd45e36ee119a970fe773e5618991aa08c09df94b15013d8baa89d88bd7d8f17",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 42,
+          "end": 44,
+          "text": "写成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 44,
+          "end": 50,
+          "text": "可验收的需求"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 51,
+          "end": 58,
+          "text": "暂不谈技术方案"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "写成的输入是借还任务，可验收需求为结果；保留验收目的/暂不技术，不只抽artifact。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 42,
+          "end": 44,
+          "text": "写成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 31,
+          "end": 42,
+          "text": "使用者要完成的借还任务"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 51,
+          "end": 58,
+          "text": "暂不谈技术方案"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 28,
+          "end": 50,
+          "text": "需要把使用者要完成的借还任务写成可验收的需求"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 44,
+          "end": 50,
+          "text": "可验收的需求"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-020",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_current_sha256": "81dd034ad79381e3a19f9097b596801f8e09834956b1da38b2acc412a89e09be",
+      "original_bundle_sha256": "b0511dd5bac8e0c54ebfb6af6075a63485a872039e16ca6be1da61cd5bbfd8ff",
+      "original_gold_sha256": "603e4b3c055f352eac1f2f6bda0aa749aa8542aab75b713c136da6fa92d9255c",
+      "original_spans_sha256": "c093501bfdb5711d3b27c4773c5ea616e548adc0f0b72f58f7d6fa0fe53c21d5",
+      "prior_role_disposition_sha256": "9502a1d266dc531be7f2a01315d7256a30eb0b2dd6f1c8608023506d440f9d8a",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 45,
+          "end": 48,
+          "text": "fix"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 49,
+          "end": 83,
+          "text": "a loop that skips the last element"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 0,
+          "end": 31,
+          "text": "Use an in-memory toy array only"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Show是演示请求，fix在how内容；解释代码change和toy内存约束留全，无真实repo执行。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 33,
+          "end": 37,
+          "text": "Show"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 38,
+          "end": 83,
+          "text": "how to fix a loop that skips the last element"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 0,
+          "end": 31,
+          "text": "Use an in-memory toy array only"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 33,
+          "end": 155,
+          "text": "Show how to fix a loop that skips the last element in a fictional program, explaining the code change with a small example"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-052",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_current_sha256": "58cd297b9043e5b0ee5ff09d94dc9d746ba79ab93f5d75c14ddd7009f4a73aca",
+      "original_bundle_sha256": "6661fed3de35ce1dca2f2a7fe6c26654318e27aa3e29f95ac5dcbb2884de4a0c",
+      "original_gold_sha256": "fa1e0e2068261c6ea2c779040439faea1ccbec961e03b9f5a465cf3f888f98ae",
+      "original_spans_sha256": "c79a733718603da69b43f7250b40534ed6eb4de17f233b1c3cd434f68842e00b",
+      "prior_role_disposition_sha256": "bf9d9693743453d164c3ea4b992b0e4857dc59555940f932328ef8a655f160b3",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 21,
+          "end": 23,
+          "text": "写成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 23,
+          "end": 30,
+          "text": "一小段当日日记"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 42,
+          "end": 49,
+          "text": "不转成待办清单"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 36,
+          "text": "小说人物今天在公交上与老同学短聊，回家后发现心情轻松了，但还不清楚原因。"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "写成input想法，日记为output；recent短聊/轻松但不清楚原因保留，不转待办。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 21,
+          "end": 23,
+          "text": "写成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 13,
+          "end": 21,
+          "text": "那次谈话后的想法"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 42,
+          "end": 49,
+          "text": "不转成待办清单"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 36,
+          "text": "小说人物今天在公交上与老同学短聊，回家后发现心情轻松了，但还不清楚原因。"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 12,
+          "end": 30,
+          "text": "把那次谈话后的想法写成一小段当日日记"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 23,
+          "end": 30,
+          "text": "一小段当日日记"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 31,
+          "end": 41,
+          "text": "保留尚未想明白的地方"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-054",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "source_git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a",
+      "original_current_sha256": "9a68c8e107deb527628cc64a421590b20cd464e29729e6ec30be1d83e2296797",
+      "original_bundle_sha256": "8de4e40f778b57bc3450fe0d65ba438ffeb83a48afef22a8828be498057209db",
+      "original_gold_sha256": "fa1e0e2068261c6ea2c779040439faea1ccbec961e03b9f5a465cf3f888f98ae",
+      "original_spans_sha256": "a394e1eaf70760b12f98dee6f72145683be26112201259826c1b22bf5c174628",
+      "prior_role_disposition_sha256": "3df3a8a82b10ef8c91e553e6b8ef3d77928771a922bfcdb7f6a356be7088dd27",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 36,
+          "end": 39,
+          "text": "整理成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 40,
+          "end": 58,
+          "text": "reflective journal"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 59,
+          "end": 69,
+          "text": "允许情绪没有明确结论"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "整理成input小片段，reflective journal为output；允许无情绪结论，不发明原因。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 36,
+          "end": 39,
+          "text": "整理成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 28,
+          "end": 36,
+          "text": "今天的一个小片段"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 59,
+          "end": 69,
+          "text": "允许情绪没有明确结论"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 25,
+          "end": 58,
+          "text": "需要把今天的一个小片段整理成 reflective journal"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 40,
+          "end": 58,
+          "text": "reflective journal"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-011",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "930de8d5aaea7771ce3a36b580c3a6f387798089923ce085b98043b628b896b1",
+      "original_bundle_sha256": "749b808a0e8a0ffc7ffbd640b64babdff7d219c2e0a672d31926df366b5501c7",
+      "original_gold_sha256": "c497b432b815cbc619ea5004dfdd0516cf4eba31d84e910dd95262ea3fada4de",
+      "original_spans_sha256": "a665c18da287b2200a01674af7adbc31b78ab25efaa3ff9fa897b6a8e8f06bc2",
+      "prior_role_disposition_sha256": "8ac3317c8a19f604c390138a3c2fde78a4c86e5dc3b2f9ac2d3d46f10319151e",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 43,
+          "end": 47,
+          "text": "turn"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 48,
+          "end": 109,
+          "text": "the confusing passages into questions and a short explanation"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 137,
+          "end": 173,
+          "text": "using only the invented text outline"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 101,
+          "text": "A fictional learner is reading a made-up essay about urban trees and has marked three unclear claims."
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "turn输入段落与questions/explanation输出分开；recent三处不清主张和learner own words保留，标签hold仍在。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 43,
+          "end": 47,
+          "text": "turn"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 48,
+          "end": 70,
+          "text": "the confusing passages"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 137,
+          "end": 173,
+          "text": "using only the invented text outline"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 101,
+          "text": "A fictional learner is reading a made-up essay about urban trees and has marked three unclear claims."
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 43,
+          "end": 136,
+          "text": "turn the confusing passages into questions and a short explanation in the learner's own words"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-014",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "c693daccbe61b0ef428cec5a309757368394395abe873944252d1704880d279c",
+      "original_bundle_sha256": "cc372a797608af0e27ee21572c05fb6b6890fada5296c3892da6e0e54afb44d9",
+      "original_gold_sha256": "f511fe20fdc2e3f95e94855b340cc8e1ef8d154372d9d0801c231f1e63dbdff2",
+      "original_spans_sha256": "55f0825c38a5a4fa9e746fd022cb0ee8678e0dff83cefaaa26ca6abfa3822318",
+      "prior_role_disposition_sha256": "45ef50210fd16dba5b5ec6e583bb4e95942b3c53afdd21c3be894c46fdbec9b5",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 58,
+          "end": 65,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 83,
+          "end": 121,
+          "text": "mapping a longer-term career direction"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 127,
+          "end": 168,
+          "text": "may favor specialist work over management"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Examine升职必进步信念，职业方向为目的/方法；专家vs管理的保留条件继续。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 58,
+          "end": 65,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 66,
+          "end": 77,
+          "text": "that belief"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 127,
+          "end": 168,
+          "text": "may favor specialist work over management"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 83,
+          "end": 121,
+          "text": "mapping a longer-term career direction"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 58,
+          "end": 168,
+          "text": "Examine that belief when mapping a longer-term career direction that may favor specialist work over management"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 30,
+          "end": 56,
+          "text": "Any promotion is progress."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-016",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "37cb67630767f442174d0671723c38f478bb4d5e9ab0896e02e9c9bfef926f68",
+      "original_bundle_sha256": "6ded4b01f1082f8fc7b4c935783a52cbab303785ad129f89c83201bac725a502",
+      "original_gold_sha256": "3bfdd983501121c0f14dc20bdaa63acac7377d70d90787430f395358adb77b05",
+      "original_spans_sha256": "78d49cf69c33d88b083c0a11bb86660d8669330488255baefcfd54f212de816b",
+      "prior_role_disposition_sha256": "65e99a1e36bdf5626b2c367007cd2008ecb169683785208cfc0e37bdbad50f72",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 34,
+          "end": 35,
+          "text": "拟"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 23,
+          "end": 34,
+          "text": "围绕用户怎样找书和续借"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 46,
+          "end": 51,
+          "text": "不招募真人"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "拟后观察问题是产物，找书续借为研究内容；只设计/不招募，无实际借书操作。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 34,
+          "end": 35,
+          "text": "拟"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 35,
+          "end": 39,
+          "text": "观察问题"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 46,
+          "end": 51,
+          "text": "不招募真人"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 23,
+          "end": 34,
+          "text": "围绕用户怎样找书和续借"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 23,
+          "end": 39,
+          "text": "围绕用户怎样找书和续借拟观察问题"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-020",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "1b7207df5c1d8b9eb3200dab8a6c5a7114f1dd476f5bf62b9d40c3e90062b1c8",
+      "original_bundle_sha256": "2d98c229c7330942a28d35feb6615621d2a7330ee7e25020e925c13b39a9d343",
+      "original_gold_sha256": "40b6d24dd57a48daf26527a833328df1b2695046c18c9dfa3102c742efc5f791",
+      "original_spans_sha256": "eb6bb1339d37c46144354f0a98e309f37e3a20dc431ad738ab290d17e37f9238",
+      "prior_role_disposition_sha256": "d5dd2216b37843675bde97499deda3496d8b02ab2aabe94c1dbcb20061e425fd",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 120,
+          "end": 128,
+          "text": "checking"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 129,
+          "end": 154,
+          "text": "scope and execution order"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 155,
+          "end": 185,
+          "text": "no real repository is involved"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "checking是rule缩小原因的内嵌方法，need troubleshooting sequence是当前artifact需求；无明示设计算子，不插新动词。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-029",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "df025782da6f4ba7602d30c4cf19ada76c6da9cdf267055c44b816f84b8c3b4b",
+      "original_bundle_sha256": "942e82746eab9a12287cc322a106f6eb9d81a5b6ae1e06d1da71c435b15fa248",
+      "original_gold_sha256": "2fadf14361d2631c5c4a9c2ce2a7e9fe4a99dd1cc6b1ae332e1b6df1ae74be09",
+      "original_spans_sha256": "08d6bfb49cffe9080faa39f318d6044e8a383b80ccd99ced4df40c68c61a0faa",
+      "prior_role_disposition_sha256": "9366555cc8401e302254a8b0ad4334d6e46933e65d6f75662dbf0d37d5c4bb0d",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 82,
+          "end": 92,
+          "text": "Reconsider"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 108,
+          "end": 164,
+          "text": "choosing dining arrangements for a fictional family trip"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 165,
+          "end": 184,
+          "text": "with early bedtimes"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Reconsider名菜中心论，安排餐饮是应用场景；early bedtimes保留，无真实餐厅材料要求。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 82,
+          "end": 92,
+          "text": "Reconsider"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 93,
+          "end": 102,
+          "text": "that view"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 165,
+          "end": 184,
+          "text": "with early bedtimes"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 108,
+          "end": 164,
+          "text": "choosing dining arrangements for a fictional family trip"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 82,
+          "end": 184,
+          "text": "Reconsider that view when choosing dining arrangements for a fictional family trip with early bedtimes"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 30,
+          "end": 80,
+          "text": "Every meal should be planned around famous dishes."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-044",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "61878f52a1d0d6d196c28a08808859f435a6607fc8ca68d6079a0acc75fb7cf8",
+      "original_bundle_sha256": "f509a6c7bfc74759c3441e3fdc56e87f78c8689e36f4f27f3236fe64888452b7",
+      "original_gold_sha256": "a3cb4970703644befcc1d526ae951fd0c68554f55a508463b51f63ff2dfcba27",
+      "original_spans_sha256": "30999dc8bd0f59ae7cb48bf127baf31d74e54e810759f30fe73e083a5f2e9210",
+      "prior_role_disposition_sha256": "cd5bccc5757f42de650b90a1f1c6603e72945a81c35d8ae599be765d959ed57b",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 74,
+          "end": 81,
+          "text": "Discuss"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 101,
+          "end": 130,
+          "text": "choices of focus and exposure"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 131,
+          "end": 167,
+          "text": "for an invented moving-subject scene"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Discuss越清晰越好主张，focus/exposure为解释材料；虚构移动主体不真机操作。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 74,
+          "end": 81,
+          "text": "Discuss"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 82,
+          "end": 92,
+          "text": "that claim"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 131,
+          "end": 167,
+          "text": "for an invented moving-subject scene"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 101,
+          "end": 130,
+          "text": "choices of focus and exposure"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 74,
+          "end": 167,
+          "text": "Discuss that claim through choices of focus and exposure for an invented moving-subject scene"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 31,
+          "end": 72,
+          "text": "A sharper photo is always a better photo."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-050",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "source_git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e",
+      "original_current_sha256": "a6013d6a2c08c385201824966e390508245f69acdbc8ede179d9b643fefde2d3",
+      "original_bundle_sha256": "692ab7ac78b6d2951773baeb02578dd86e7f53ebcb416bd70c368f37df9868dd",
+      "original_gold_sha256": "e294a813a5d1339841c16b5172e2e367c09e6042f5c4b925de64c85f8a7d1826",
+      "original_spans_sha256": "dac64662660afbaa13024d93b3ffc2acebea6c21786dd1e70e14ec0551f972e4",
+      "prior_role_disposition_sha256": "76c1c6949e7bf0b0e66cbe521ae69f33d82bc061921504f8af482d86a9922ecb",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 104,
+          "end": 108,
+          "text": "says"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 109,
+          "end": 178,
+          "text": "when the routine repeats and what happens if the date falls on a trip"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 64,
+          "text": "monthly meter reading"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "says关系从句描述规则，need是当前需求情态；规则产物/循环/遇旅行条件全部保留，ACTION策略HOLD。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART5-012",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "source_git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272",
+      "original_current_sha256": "abbe0c43e53fd67cc2c26f6882760ad09d7480b586baf5d5ad3ecec2a3b85f41",
+      "original_bundle_sha256": "4ff8e7e82e81420f847e1cfcba9c31242d894494ce6dcfaee14f2ce1a2b2911e",
+      "original_gold_sha256": "4521bece5348c9ca15511772ac37ee6e5ceaf3e522dc470bccb05dc8cf0727c7",
+      "original_spans_sha256": "148663b0f029aabff0fde84bd21699efd11a3605ef7d4ea1657287bf7f590d06",
+      "prior_role_disposition_sha256": "38965a8bf624a44c105cd7a0f08d27bd588768208e41546a20d9b53f723d0945",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 15,
+          "end": 17,
+          "text": "需要"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 20,
+          "end": 50,
+          "text": "French speaking practice 的练习框架"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 61,
+          "end": 67,
+          "text": "限于课堂演练"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "需要框架有效且非真实French课执行，但需求情态不等于设计算子；保留课堂/先意图回应，待规范。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART5-034",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "source_git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272",
+      "original_current_sha256": "200a217631886098fef590d9500b6757dba7d2c72a31defe8e17e72b00e20398",
+      "original_bundle_sha256": "d6e4e67591f49af21e6fb4d38efcd65f391b68340de08d7fc1a8837b6e8195f3",
+      "original_gold_sha256": "c99ea4d89ee3d828ea354063b26fc5bea083b8f6ec99fd6b5dbb12047a116a8c",
+      "original_spans_sha256": "1aea14e3f3d3672dcf7613d17ad2a01f39db240ed7bf1e5f820a0cd9d638c8dc",
+      "prior_role_disposition_sha256": "6e47781b4563595039d93ad9e30036c62da0510d8272a38aeb701d1c78c8a268",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 19,
+          "end": 22,
+          "text": "整理成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 22,
+          "end": 31,
+          "text": "一份结构清楚的报告"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 50,
+          "text": "不编造调查数据"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "整理成输入代词它回指分散便条的调查结论；报告为产物，发现/证据/限制及不编数据留全。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 19,
+          "end": 22,
+          "text": "整理成"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 18,
+          "end": 19,
+          "text": "它"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 50,
+          "text": "不编造调查数据"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 14,
+          "end": 42,
+          "text": "我需要把它整理成一份结构清楚的报告，区分发现、证据和限制"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 0,
+          "end": 13,
+          "text": "虚构调查结论散在几页便条里"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 22,
+          "end": 31,
+          "text": "一份结构清楚的报告"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART5-035",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "source_git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272",
+      "original_current_sha256": "842e850d72a742ff08f4897435d99671aa045e5efcf2f9c0adec91e631439902",
+      "original_bundle_sha256": "fb1de545cae70f3ef5e3d9276818da887460bd7dbb3113e018a32b8e4ee9aca8",
+      "original_gold_sha256": "c99ea4d89ee3d828ea354063b26fc5bea083b8f6ec99fd6b5dbb12047a116a8c",
+      "original_spans_sha256": "8e11ee1ff87409f5af2fb8dc9e44bf29e8024dde1998f303c2c92a1eb575917e",
+      "prior_role_disposition_sha256": "6f8a0edbb3600e0844467c4d3d4f9e0fdb396b2acb81fa87eaa53db61858e052",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 73,
+          "end": 81,
+          "text": "Organize"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 82,
+          "end": 141,
+          "text": "the invented material into purpose,findings and limitations"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 142,
+          "end": 185,
+          "text": "keeping unsupported claims visibly separate"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Organize输入材料与目的/发现/限制结构分开；报告goal与支持不足项分离保留。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 73,
+          "end": 81,
+          "text": "Organize"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 82,
+          "end": 103,
+          "text": "the invented material"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 142,
+          "end": 185,
+          "text": "keeping unsupported claims visibly separate"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 73,
+          "end": 185,
+          "text": "Organize the invented material into purpose,findings and limitations,keeping unsupported claims visibly separate"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART5-051",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "source_git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272",
+      "original_current_sha256": "d94c38342639aec940e28de7e895340ad5415d08b653cb9019b9435d20278fa4",
+      "original_bundle_sha256": "d290d60b50a899b8510dd5d36475238291eb1947a17a2095535a410ae744e5f6",
+      "original_gold_sha256": "089fdd89882980e1bb04eebe8eb1519c056d1eaf1be7eb71073867c0190aa725",
+      "original_spans_sha256": "a657f6b0d193487c14a146e125da3aa1e47c0f2e502fddb8fe09d1ca63d5ecfc",
+      "prior_role_disposition_sha256": "63879262bc295c7c591c73c508560d24e7f2c917af69ec87b5123f5c31dc4b91",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 19,
+          "end": 21,
+          "text": "检视"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 31,
+          "end": 63,
+          "text": "holiday celebration 怎样同时保留传统与参与感"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 64,
+          "end": 72,
+          "text": "不做真实活动预订"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "检视只能惯例过的假设，holiday命题作讨论方式；引用非接受，不真预订。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 19,
+          "end": 21,
+          "text": "检视"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 21,
+          "end": 25,
+          "text": "这项假设"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 64,
+          "end": 72,
+          "text": "不做真实活动预订"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 31,
+          "end": 63,
+          "text": "holiday celebration 怎样同时保留传统与参与感"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 19,
+          "end": 63,
+          "text": "检视这项假设，讨论一种 holiday celebration 怎样同时保留传统与参与感"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 9,
+          "end": 17,
+          "text": "节日只能照惯例过"
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-002",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_current_sha256": "8f3e7d41f0fe6f889d71f004f7775a93b067d22f2537bafc391aa5ed6ed3f7ee",
+      "original_bundle_sha256": "7a81295bb370c0b8ca912d1ff396b176f6a0138c91526e015806594c20d0bb19",
+      "original_gold_sha256": "43537722bffb9cf14b209f8f91ce1300be7eaad70eb66c681d890ed2915ac904",
+      "original_spans_sha256": "953d33563ce751cfbd50e06e55e45647f2d7107c4fbff761a8cdaec24302adea",
+      "prior_role_disposition_sha256": "d04c218cea9fd7e8a3fa597de4a7a617853e93d11c55f21ee95885c53ee90871",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 88,
+          "end": 95,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 123,
+          "end": 169,
+          "text": "how to finish meaningful work with less rework"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 170,
+          "end": 207,
+          "text": "without proposing a calendar schedule"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Examine即时回复即效率信念，少返工是方法；不日历计划，引用不是效率证据。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 88,
+          "end": 95,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 96,
+          "end": 107,
+          "text": "that belief"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 170,
+          "end": 207,
+          "text": "without proposing a calendar schedule"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 111,
+          "end": 169,
+          "text": "considering how to finish meaningful work with less rework"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 88,
+          "end": 169,
+          "text": "Examine that belief by considering how to finish meaningful work with less rework"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 33,
+          "end": 86,
+          "text": "Answering everything immediately makes me productive."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-008",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_current_sha256": "c5c36ab10d835354e75d0bf26990a3c398efe9fddedd06888475495eba7418fc",
+      "original_bundle_sha256": "49a4efa572827e137df0d97926b46bbc3de8fa57e16cef4c69477d7fa259fced",
+      "original_gold_sha256": "f3ccf372c77bda309cad3e1ce5c1e9cb4317029aeace92a281f04024e59c2002",
+      "original_spans_sha256": "28691bd78bf7f568ec8e2212305e29a7d8b19004df96bf12126faeef4dc926e1",
+      "prior_role_disposition_sha256": "88794f11cb91fa39501722ba5f4aec44c704f9160a5e47cc68f08e16b0cf07ad",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 103,
+          "end": 111,
+          "text": "organize"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 112,
+          "end": 161,
+          "text": "the nutrition information into a clear comparison"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 162,
+          "end": 201,
+          "text": "without recommending an individual diet"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "explanation of how组织营养是解释goal而非实际整理；need情态和explanation名词无法唯一操作槽，保留营养/比较层。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-017",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_current_sha256": "a3b5d908c0fe6d5b13a85b9d35f114b4934c3e7935f1c5fe696afa902405ec6a",
+      "original_bundle_sha256": "eee0b3692a3bf3840da83f54a66e0bcb81eed3c6801c079aa0463ec9726d454f",
+      "original_gold_sha256": "d87f78ce13e07b7eedbb7631f46e6c6fe3601bee475468d4d6315d8afab83927",
+      "original_spans_sha256": "52205a16ae294c6c40459e7534d18bb36f8610fa18f8ab86e3c3f699bfe6d610",
+      "prior_role_disposition_sha256": "623019c448c9a8ecfcea89af4f91a011b340a1647b8b3d85131aa4a44d23d08e",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 92,
+          "end": 99,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 122,
+          "end": 163,
+          "text": "integration and delivery responsibilities"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 164,
+          "end": 199,
+          "text": "for an invented engineering project"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Examine个人完成就结束的claim，集成交付责任为方法；不实部署，不改已冻结gold。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 92,
+          "end": 99,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 100,
+          "end": 110,
+          "text": "that claim"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 164,
+          "end": 199,
+          "text": "for an invented engineering project"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 114,
+          "end": 163,
+          "text": "mapping integration and delivery responsibilities"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 92,
+          "end": 199,
+          "text": "Examine that claim by mapping integration and delivery responsibilities for an invented engineering project"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 28,
+          "end": 90,
+          "text": "Implementation ends when each person finishes their own piece."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-038",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_current_sha256": "479e0f875c687433fc78816efb1fdfacc0b546e6096d08d0e2b8f7c44a95562b",
+      "original_bundle_sha256": "6976cd26091337266e5aea298c1b7262a7adb2eb82b2477df45d5094710fd02d",
+      "original_gold_sha256": "1d65f501922b9093ba3dce24eba8e33edf33050b3ab4dba481ee67dfd74823b1",
+      "original_spans_sha256": "dd62c7a8551398a56d36d1f00618fde3b2ec2b4776885290e3f2f8dda5b74a1c",
+      "prior_role_disposition_sha256": "a578701919087cab82264fe989b58b4a5d0d73df29887abfe6a0d910f2b8bd88",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 83,
+          "end": 87,
+          "text": "need"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 31,
+          "end": 79,
+          "text": "a short visit permission with a residence status"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 150,
+          "end": 192,
+          "text": "without checking real eligibility or rules"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "背景confuses两许可和当前conceptual comparison关联，但need情态/比较产物层待规则；不当作改变法律/身份。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-047",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_current_sha256": "515cdf94254f0724ab14ca1527e3a2b46ba6d6428fe6f0a3afbdcc8b51c96a8c",
+      "original_bundle_sha256": "ba37e06407c06d1ee4610010f073b17aed55346ec78a39944df19708c2f8489f",
+      "original_gold_sha256": "2ad20058ceb831ec62110f93cfda1d36dd42501f4a66c47970ef6f679ecd9ab4",
+      "original_spans_sha256": "f2e7b18aaa367af939e2d41786a9747bbe5dfbbb9703a792bae063bfe2924eb3",
+      "prior_role_disposition_sha256": "b5648f7caddd8ffa6be0ded38c153a848ca0a0d891cc3cf04c6f9b98406875da",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 78,
+          "end": 85,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 109,
+          "end": 152,
+          "text": "fulfillment handoffs and exception handling"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 153,
+          "end": 177,
+          "text": "for an invented business"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "UNACCEPTED_SPAN_REPAIR_DRAFT_QUALIFICATION_HOLD",
+      "writer_reason": "Examine付费即结束idea，履约交接/异常为方法；仅虚构业务，无真订单。",
+      "proposed_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 78,
+          "end": 85,
+          "text": "Examine"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 86,
+          "end": 95,
+          "text": "that idea"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 153,
+          "end": 177,
+          "text": "for an invented business"
+        },
+        {
+          "role": "MEANS",
+          "field": "current",
+          "start": 99,
+          "end": 152,
+          "text": "outlining fulfillment handoffs and exception handling"
+        },
+        {
+          "role": "CURRENT_GOAL",
+          "field": "current",
+          "start": 78,
+          "end": 177,
+          "text": "Examine that idea by outlining fulfillment handoffs and exception handling for an invented business"
+        },
+        {
+          "role": "BACKGROUND",
+          "field": "current",
+          "start": 29,
+          "end": 76,
+          "text": "Once the order is paid,the process is finished."
+        }
+      ],
+      "automatic_hold_clearance": false,
+      "proposal_scope": "FOCUSED_CURRENT_REQUEST_WITH_INPUT_OUTPUT_METHOD_BACKGROUND_AND_QUOTE_LAYERS_PRESERVED"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-053",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "source_git_blob": "03011e40e47f7bff59dff6d282121ff38515e447",
+      "original_current_sha256": "32a1095835993338cd5b82e08bd1c60a9bb63cfce2a6ee01c60a39084059c709",
+      "original_bundle_sha256": "979675829d448b970ff57f0a2f5170438be8ffd70e3d7f246bc7386f1665159c",
+      "original_gold_sha256": "cd2393e004ed10bcdc5af93fad5f8b9938915bd5f0d378d3e3877e3048924c40",
+      "original_spans_sha256": "61d6ce52b5c9458c44d9f3bae97c3135a8999acb609f738f4fad6ee67dcf8492",
+      "prior_role_disposition_sha256": "27ef0fdd9d9cd15f17055f6868a28c33a47ad8fdd7ef434dc8eefe9800d93aa1",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "candidate_predictions": 0,
+      "new_stable_allocations": 0,
+      "independent_quota_credit": 0,
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "qualification_hold_retained": true,
+      "original_role_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 21,
+          "end": 25,
+          "text": "need"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 94,
+          "end": 125,
+          "text": "an export-and-restore checklist"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 151,
+          "end": 180,
+          "text": "without reading a real backup"
+        }
+      ],
+      "offset_encoding": "UTF16_CODE_UNITS",
+      "proposal_revision": 1,
+      "disposition": "ROLE_POLICY_HOLD_NO_UNSPOKEN_OPERATOR",
+      "writer_reason": "原ACTION21:25实际在背景archive needs内；当前I need的位置可更正但仍是需求情态，不能仅字节更正宣布ACTION资格。",
+      "proposed_role_spans": null,
+      "automatic_hold_clearance": false,
+      "partial_occurrence_only_proposal": {
+        "accepted": false,
+        "modality_policy_pending": true,
+        "original_action": {
+          "role": "ACTION",
+          "field": "current",
+          "start": 21,
+          "end": 25,
+          "text": "need"
+        },
+        "proposed_action": {
+          "role": "ACTION",
+          "field": "current",
+          "start": 89,
+          "end": 93,
+          "text": "need"
+        }
+      }
+    }
+  ],
+  "schema": "ZMR-OLDER-TRAIN-ROLE-PROPOSALS-1",
+  "status": "VERSIONED_WRITER_PROPOSALS_AND_POLICY_HOLDS_QUALIFICATION_HOLD_RETAINED",
+  "batch_id": "ZMR-OLDER-TRAIN-ROLE-PROPOSALS-20261003",
+  "publication_dependency_pr": 249,
+  "publication_dependency_head": "01ba17dd2f6162bfba0c82064e8a53dd74ebee5a",
+  "input_pins": [
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353",
+      "git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+      "git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+      "git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "sha256": "4b42effc9f87dbcb4e8177d1a4b80160d4745af6fa15faede8464d608ffcc57a",
+      "git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+      "git_blob": "03011e40e47f7bff59dff6d282121ff38515e447"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+      "git_blob": "157e08af47967e63a98d701274d7f25004e03f75"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_older_role_dispositions_v0.1.json",
+      "sha256": "9077a962d7246c1711ca3f7239deb856cc6e9d1515bf086e847acb32dc651d8c",
+      "git_blob": "9476d784d76c458f8ae7b93d2a53306e5a2fc363"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_hold_dispositions_v0.1.json",
+      "sha256": "b900e24967181e07f8fbe8483e0d9d47b4a826ed6f2496aa9bc3bb8169522b8d",
+      "git_blob": "20f06d84001980cded9b20d67ee005925c4039b7"
+    },
+    {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad"
+    }
+  ],
+  "writer_decisions": 46,
+  "actual_source_rows_read": 46,
+  "unaccepted_span_repair_proposals": 27,
+  "combined_writer_role_holds": 78,
+  "prior_label_holds": 41,
+  "prior_known_unaccepted_proposals": 5,
+  "source_input_revisions": 0,
+  "independent_reviewers": 0,
+  "semantic_evaluations": 0,
+  "qualification_holds_cleared": 0,
+  "data_qualification": "NOT_QUALIFIED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "saturation_ceiling_claim": false,
+  "compiler_admission": "HOLD_UNACCEPTED_LABELS_ROLES_AND_ACCOUNTING",
+  "goal_scope_revision_reason": "Focused current-goal spans exclude preceding background and separately preserve quoted claims,method layers,input/output artifacts and original qualifier/antecedent spans;no source/gold change or semantic certification.",
+  "dependency_actual_main_ci": "SUCCESS_ATTEMPT_1_37123626102",
+  "records_sha256": "2c43aad8e48512e2c9e290be87725ce7d3d0c7b5ca4140d422826e4bed76cb75"
+}
