@@ -1,0 +1,935 @@
+{
+  "schema": "ZMR-WRITER-LABEL-REVIEW-CARDS-1",
+  "status": "VERSIONED_WRITER_REVIEW_CARDS_RECORDED_ALL_QUALIFICATION_HOLDS_RETAINED",
+  "source_main": "d926bf81c5c97d6e3e2678deda50e5d86f293f48",
+  "publication_dependency_pr": 252,
+  "publication_dependency_head": "51f52299a76c556226df68d7f5d20b3a7c6a1d22",
+  "dependency_actual_main_verified": true,
+  "parent_journal_path": "data/zero_model_refoundation/development/mechanism_matrix_train_label_proposals_v0.1.json",
+  "parent_journal_sha256": "ea076defbd3ab2fe679565ba2eb38a9c4d42fee5811bf05ce242168e10ccdd63",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "finite_cards": 9,
+  "original_inputs_gold_spans_preserved": true,
+  "all41_label_qualification_holds_retained": true,
+  "all78_role_qualification_holds_retained": true,
+  "independent_reviewers": 0,
+  "accepted": 0,
+  "clearance": 0,
+  "new_samples": 0,
+  "predictions": 0,
+  "semantic_evaluations": 0,
+  "allocations": 0,
+  "remaining_allowance": null,
+  "semantic_judgment_certified": false,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "saturation_ceiling_claim": false,
+  "records": [
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-045",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+        "source_packet_sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+        "review_git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34",
+        "review_records_sha256": "c0e1cdb764d188134762c2fad6402aa4ab02be227f348e0069edfdd9f7b100aa",
+        "current_sha256": "b4363421bb66dccdff09da096263055f3ac9cb59b3bc0c26bd6eec807ea8af1d",
+        "bundle_sha256": "915dc5f728a3052a36390ebadcbb5b7cbc8fd70601454ac9e28871a7643ef9ef",
+        "gold_sha256": "ee7c29070c23b00ab0f6b465520f1ad93099c7523dfe6871166611be633c5ed5",
+        "spans_sha256": "7c314bc48325c518b94036b29bebf584db0cc611054294fc4dd1b92c8a7e40c8"
+      },
+      "parent_record_sha256": "ffa078d948e5fa950ea11f6edfa3eb0a8c8d76055ed8f6dc525be9e82b9a7877",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.creative_design.visual_design"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "设想评审说「logo 必须塞满所有寓意」，讨论这个观点并指出图形简化与识别度如何取舍；不制定品牌市场策略。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 21,
+          "end": 23,
+          "text": "讨论"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 30,
+          "end": 42,
+          "text": "图形简化与识别度如何取舍"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 43,
+          "end": 52,
+          "text": "不制定品牌市场策略"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.creative_design.visual_design",
+        "sys.creative_design.branding_identity"
+      ],
+      "actual_formal_cards": {
+        "sys.creative_design.visual_design": "  - topic_id: sys.creative_design.visual_design\n    name: { zh: \"视觉设计\", en: \"Visual Design\" }\n    definition: \"面向用户长期生活、工作或项目中与“视觉设计”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“视觉设计”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“视觉设计”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“视觉设计”归属。\"]\n    aliases: { zh: [\"视觉设计\"], en: [\"Visual Design\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“视觉设计”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D15\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.creative_design.branding_identity": "  - topic_id: sys.creative_design.branding_identity\n    name: { zh: \"品牌与视觉识别\", en: \"Branding & Identity\" }\n    definition: \"面向用户长期生活、工作或项目中与“品牌与视觉识别”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“品牌与视觉识别”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“品牌与视觉识别”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“品牌与视觉识别”归属。\"]\n    aliases: { zh: [\"品牌与视觉识别\"], en: [\"Branding & Identity\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“品牌与视觉识别”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D15\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 30,
+          "end": 42,
+          "text": "图形简化与识别度如何取舍"
+        }
+      ],
+      "current_matter": "讨论logo寓意密度、图形简化和识别度的取舍；不是制定市场策略。",
+      "interpretations": [
+        "把图形形态、简化和可辨性作为主要当前对象，可暂偏visual_design。",
+        "把持续身份标记的识别功能作为主要当前对象，可暂偏branding_identity。"
+      ],
+      "missing": "当前未说明识别度是单张图形的视觉可辨性，还是跨场景品牌身份关联；两者也可能共同成立，现正式卡无排他规则。",
+      "non_discriminators": [
+        "出现logo不独占identity。",
+        "不制定市场策略不等于排除品牌身份设计。",
+        "是否真的发布或经营品牌不是这两个Topic的必要条件。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-SEED-045：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-SEED-045：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-040",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "184663b3886b261a2db26abefad5b73aa08a59f43aead6e913faee4d5284565f",
+        "bundle_sha256": "8a26dff600e0f5a087478f568c6e22dd694e8e7588101b4c11c6769c086088ce",
+        "gold_sha256": "7b82d099f169098762806b496e026282ea24b0d91b2922fd1442f92e5e47f966",
+        "spans_sha256": "69679b87ed644097a94ac22a1121baec8d13401e24772b4307d92ed5ef91188f"
+      },
+      "parent_record_sha256": "d78b25dec6bad17b3dae32f8a6f6211dd42d44f276715c4921d808756bf93c09",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.science_technical.engineering"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "为了理解虚构小桥为何需要支撑，解释载荷路径与结构稳定的基本关系，不给可直接施工的设计或承重数值。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 15,
+          "end": 17,
+          "text": "解释"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 17,
+          "end": 31,
+          "text": "载荷路径与结构稳定的基本关系"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 32,
+          "end": 47,
+          "text": "不给可直接施工的设计或承重数值"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.science_technical.engineering",
+        "sys.science_technical.physics"
+      ],
+      "actual_formal_cards": {
+        "sys.science_technical.engineering": "  - topic_id: sys.science_technical.engineering\n    name: { zh: \"工程技术\", en: \"Engineering\" }\n    definition: \"面向用户长期生活、工作或项目中与“工程技术”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“工程技术”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“工程技术”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“工程技术”归属。\"]\n    aliases: { zh: [\"工程技术\"], en: [\"Engineering\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“工程技术”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.science_technical.physics": "  - topic_id: sys.science_technical.physics\n    name: { zh: \"物理\", en: \"Physics\" }\n    definition: \"面向用户长期生活、工作或项目中与“物理”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“物理”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“物理”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“物理”归属。\"]\n    aliases: { zh: [\"物理\"], en: [\"Physics\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“物理”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 15,
+          "end": 31,
+          "text": "解释载荷路径与结构稳定的基本关系"
+        }
+      ],
+      "current_matter": "解释虚构小桥支撑、载荷路径与结构稳定的关系。",
+      "interpretations": [
+        "把结构系统内载荷如何经部件传递及支撑关系作为当前对象，可暂偏engineering。",
+        "把支撑中一般力学原理作为当前持续对象，可暂偏physics。"
+      ],
+      "missing": "原文同时支持系统关系与力学原理；没有预先审定的粒度/主对象边界，不能把系统实例本身作为排他证据。",
+      "non_discriminators": [
+        "虚构/不施工不排除工程知识。",
+        "不给承重数值不排除物理。",
+        "支撑、载荷等共享术语不提供单独的互斥标签证据。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-PART4-040：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-PART4-040：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-041",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "50eccf493e5f67ae055166976db3a09c5aeeca1a4b9092b33733be4a689e8014",
+        "bundle_sha256": "03eaae0114aebf6d9ede601e6d030fac076e147545db606f2fa40809f0d9d153",
+        "gold_sha256": "7b82d099f169098762806b496e026282ea24b0d91b2922fd1442f92e5e47f966",
+        "spans_sha256": "4af74e159ee4dcae4e2192aa8cc30d934b71f770352f700a792a5801b25035b4"
+      },
+      "parent_record_sha256": "ff6a9816084037248dee97876c1c6be7241728b366011b1d12930569f83882cc",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.science_technical.engineering"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "Continue the paper engineering example: explain how this mechanism transfers motion and where friction matters,using only the toy diagram description.",
+        "title": "",
+        "recent": [
+          "The fictional diagram shows a hand crank driving two gears and a sliding block;it is a classroom mechanism,not machinery to build."
+        ]
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 40,
+          "end": 47,
+          "text": "explain"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 48,
+          "end": 110,
+          "text": "how this mechanism transfers motion and where friction matters"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 111,
+          "end": 149,
+          "text": "using only the toy diagram description"
+        },
+        {
+          "role": "ANTECEDENT",
+          "field": "recent.0",
+          "start": 0,
+          "end": 130,
+          "text": "The fictional diagram shows a hand crank driving two gears and a sliding block;it is a classroom mechanism,not machinery to build."
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.science_technical.engineering",
+        "sys.science_technical.physics"
+      ],
+      "actual_formal_cards": {
+        "sys.science_technical.engineering": "  - topic_id: sys.science_technical.engineering\n    name: { zh: \"工程技术\", en: \"Engineering\" }\n    definition: \"面向用户长期生活、工作或项目中与“工程技术”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“工程技术”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“工程技术”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“工程技术”归属。\"]\n    aliases: { zh: [\"工程技术\"], en: [\"Engineering\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“工程技术”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.science_technical.physics": "  - topic_id: sys.science_technical.physics\n    name: { zh: \"物理\", en: \"Physics\" }\n    definition: \"面向用户长期生活、工作或项目中与“物理”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“物理”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“物理”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“物理”归属。\"]\n    aliases: { zh: [\"物理\"], en: [\"Physics\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“物理”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 40,
+          "end": 110,
+          "text": "explain how this mechanism transfers motion and where friction matters"
+        }
+      ],
+      "current_matter": "接续课堂手摇齿轮滑块示意，解释机构运动传递与摩擦。",
+      "interpretations": [
+        "机构部件之间的传动关系作为持续对象，可暂偏engineering。",
+        "运动与摩擦的物理机制作为持续对象，可暂偏physics。"
+      ],
+      "missing": "current引用机制，recent提供部件与课堂约束，但未给独立排除物理或工程的主对象证据；保留两层解释，不虚构设计任务。",
+      "non_discriminators": [
+        "paper engineering名称不是gold代理。",
+        "课堂示意与不建机器不排除工程。",
+        "摩擦一词不独占physics；不能把recent中的完整部件关系删掉。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-PART4-041：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-PART4-041：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-042",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "eac79f82567e5c1e49be661b0b86f05fed1ab3f03d93a09592578af76f1576f6",
+        "bundle_sha256": "d34dae0755da0577c248c5d6e85b06d9d424fa2dde01fc80fc990012a8752a7d",
+        "gold_sha256": "7b82d099f169098762806b496e026282ea24b0d91b2922fd1442f92e5e47f966",
+        "spans_sha256": "bb0ddb356aeefb7bd1a035cc3e10592a000b82bdc9b0c47c318b4f15f083a0fa"
+      },
+      "parent_record_sha256": "b268913fd95fb45fec175fdc8c49c3beba2161071db2a4b51dd91e4eea99dac0",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.science_technical.engineering"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "只用纸面简图，讲清虚构换热装置中 fluid flow 与热量传递的工程关系，不提出生产设备改造建议。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 7,
+          "end": 9,
+          "text": "讲清"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 17,
+          "end": 38,
+          "text": "fluid flow 与热量传递的工程关系"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 39,
+          "end": 50,
+          "text": "不提出生产设备改造建议"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.science_technical.engineering",
+        "sys.science_technical.physics"
+      ],
+      "actual_formal_cards": {
+        "sys.science_technical.engineering": "  - topic_id: sys.science_technical.engineering\n    name: { zh: \"工程技术\", en: \"Engineering\" }\n    definition: \"面向用户长期生活、工作或项目中与“工程技术”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“工程技术”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“工程技术”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“工程技术”归属。\"]\n    aliases: { zh: [\"工程技术\"], en: [\"Engineering\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“工程技术”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.science_technical.physics": "  - topic_id: sys.science_technical.physics\n    name: { zh: \"物理\", en: \"Physics\" }\n    definition: \"面向用户长期生活、工作或项目中与“物理”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“物理”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“物理”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“物理”归属。\"]\n    aliases: { zh: [\"物理\"], en: [\"Physics\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“物理”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 17,
+          "end": 38,
+          "text": "fluid flow 与热量传递的工程关系"
+        }
+      ],
+      "current_matter": "解释纸面换热装置内流动与热传递之间的关系。",
+      "interpretations": [
+        "装置耦合机制/系统关系作为持续对象，可暂偏engineering。",
+        "流体与热传递的一般原理作为持续对象，可暂偏physics。"
+      ],
+      "missing": "工程关系措辞和流动传热原理同时出现；Catalog未规定其单标签边界，不能依据其中一个术语强制排另一个。",
+      "non_discriminators": [
+        "禁止生产设备改造不排除工程知识。",
+        "纸面简图不使物理自动成为唯一目标。",
+        "不补效率、尺寸、温度或装置参数。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-PART4-042：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-PART4-042：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-042",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "5d15832f0a90aa957d4b6be0d050ba643cca8316f41706ffb254685ee6597423",
+        "bundle_sha256": "8ab44ef6a1f5a217a00a51e784a886fbd71be583da9c7d0c0fdbb1eaf6e72aaf",
+        "gold_sha256": "ca58e717d1ca9e804808a1467f3ac026b82c281aad8a8c385d04e317b146d834",
+        "spans_sha256": "6cb8e3e8a1498cd542ff6baf3cc5fb71ee10d3d8c22ad53d756a97cf83fb4ec9"
+      },
+      "parent_record_sha256": "130aa8e7d5ed1d0954b02f0dfc07f108ec33f734f77ba0ae2076753d1407d0a6",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.science_technical.medicine_knowledge"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "希望最终理解虚构课程里的 medical evidence 框架，梳理观察、假设与待核实信息的关系，不据此判断任何真实病情。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 33,
+          "end": 35,
+          "text": "梳理"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 35,
+          "end": 49,
+          "text": "观察、假设与待核实信息的关系"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 50,
+          "end": 61,
+          "text": "不据此判断任何真实病情"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.science_technical.medicine_knowledge",
+        "sys.science_technical.statistics_data_analysis"
+      ],
+      "actual_formal_cards": {
+        "sys.science_technical.medicine_knowledge": "  - topic_id: sys.science_technical.medicine_knowledge\n    name: { zh: \"医学知识\", en: \"Medical Knowledge\" }\n    definition: \"面向用户长期生活、工作或项目中与“医学知识”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“医学知识”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“医学知识”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“医学知识”归属。\"]\n    aliases: { zh: [\"医学知识\"], en: [\"Medical Knowledge\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“医学知识”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.science_technical.statistics_data_analysis": "  - topic_id: sys.science_technical.statistics_data_analysis\n    name: { zh: \"统计与数据分析\", en: \"Statistics & Data Analysis\" }\n    definition: \"面向用户长期生活、工作或项目中与“统计与数据分析”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“统计与数据分析”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“统计与数据分析”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“统计与数据分析”归属。\"]\n    aliases: { zh: [\"统计与数据分析\"], en: [\"Statistics & Data Analysis\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“统计与数据分析”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D14\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 33,
+          "end": 49,
+          "text": "梳理观察、假设与待核实信息的关系"
+        }
+      ],
+      "current_matter": "理解虚构医学课程证据框架中观察、假设及待核实信息的关系。",
+      "interpretations": [
+        "医学知识及其证据结构作为当前持续对象，可暂偏medicine_knowledge。",
+        "观察与假设之间的分析推理方法作为当前持续对象，可暂偏statistics_data_analysis。"
+      ],
+      "missing": "医学对象与一般分析方法层同时受当前请求支持；未给数据或量化不自动排除分析方法，亦不能补临床内容以维护医学标签。",
+      "non_discriminators": [
+        "medical evidence不是充分标签证据。",
+        "没有数字不等于无分析方法。",
+        "禁止真实病情判断是使用范围，不是两Topic的排他边界。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-PART6-042：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-PART6-042：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART7-054",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+        "source_packet_sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_review_v0.1.json",
+        "review_git_blob": "a3fecc5461a872180241da2a63d1436ba309b9ff",
+        "review_records_sha256": "48e2e7fd4ad5be8d6af659665ccd35bdb31f8e73f31f754562f5b5b3006f50a1",
+        "current_sha256": "7738796de1b9b1d9ee579b55a16a75ca3edb6bea4c5e1285ddd0f8e7c075fcd2",
+        "bundle_sha256": "cab2febc71fce27fa984869f773010675db4ddc196fce1bdc8b79154b17cd473",
+        "gold_sha256": "87a1df8d85e645d0bcf9e3e11c0ae163e233850cd12d3fdbebc72ad3006a19d3",
+        "spans_sha256": "575aab32ab1812865542407b36f4531e884ea4cdfcec4e967646e5259df1207c"
+      },
+      "parent_record_sha256": "1e21dc13f6bf1e425dd28e5ad6c545f47e84b72be136fe9c51c23cabf2013405",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.knowledge_memory.memory_context"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "虚构笔记曾断言“摘要里没有写的就从未发生”。检视这个假设，说明 memory context 怎样保留来源与不确定性，不把重建摘要当原始事实。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 29,
+          "end": 31,
+          "text": "说明"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 32,
+          "end": 58,
+          "text": "memory context 怎样保留来源与不确定性"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 59,
+          "end": 70,
+          "text": "不把重建摘要当原始事实"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.knowledge_memory.memory_context",
+        "sys.knowledge_memory.provenance_history"
+      ],
+      "actual_formal_cards": {
+        "sys.knowledge_memory.memory_context": "  - topic_id: sys.knowledge_memory.memory_context\n    name: { zh: \"AI记忆与上下文\", en: \"AI Memory & Context\" }\n    definition: \"面向用户长期生活、工作或项目中与“AI记忆与上下文”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“AI记忆与上下文”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“AI记忆与上下文”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“AI记忆与上下文”归属。\"]\n    aliases: { zh: [\"AI记忆与上下文\"], en: [\"AI Memory & Context\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“AI记忆与上下文”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D18\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.knowledge_memory.provenance_history": "  - topic_id: sys.knowledge_memory.provenance_history\n    name: { zh: \"来源、版本与历史\", en: \"Provenance, Versions & History\" }\n    definition: \"面向用户长期生活、工作或项目中与“来源、版本与历史”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“来源、版本与历史”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“来源、版本与历史”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“来源、版本与历史”归属。\"]\n    aliases: { zh: [\"来源、版本与历史\"], en: [\"Provenance, Versions & History\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“来源、版本与历史”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D18\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"\n"
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 47,
+          "end": 58,
+          "text": "怎样保留来源与不确定性"
+        }
+      ],
+      "current_matter": "检视摘要未写不等于从未发生的假设，保留来源与不确定性。",
+      "interpretations": [
+        "上下文保留、缺失与不确定性的表示作为持续对象，可暂偏memory_context。",
+        "事实来源及记录与实际发生的关系作为持续对象，可暂偏provenance_history。"
+      ],
+      "missing": "当前确实同时检视记忆上下文和来源可靠性；正式卡没有提供二者粒度/层级排他规则，不从摘要缺失补事实。",
+      "non_discriminators": [
+        "memory context字面不是排他证明。",
+        "缺记录既不证明没发生，也不证明一定发生。",
+        "重建摘要永久不变成原始事实。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-PART7-054：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-PART7-054：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION6-051",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json",
+        "source_packet_sha256": "ead1135aaff9f2a99e5c76785cf9cad5be471070d8b3c45de5238fe1a2cc7ac2",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_review_v0.1.json",
+        "review_git_blob": "0f18e76df4cb61ea571548687c7136b94fef7ad7",
+        "review_records_sha256": "c3d74ac654de68d816b0a6acfb6f81905b328ae0071c758360273cd683688ed5",
+        "current_sha256": "f849f4794f372102d998029c414fe8a78fcc04e5b8c46ca50409266f1cc32b23",
+        "bundle_sha256": "0959d013735ed40977c43f8d46b1595600d80a55c5bc43215965e856c25ea0c7",
+        "gold_sha256": "01bb8488a930767e4daaccd1ed17ad9e4ec1653f3adaae5276854b71404d6c5e",
+        "spans_sha256": "4ed26b2fc29c3d95df9c8717afb6e71d9b14095fc7aea54279b9eb732d1da8ee"
+      },
+      "parent_record_sha256": "25ffa7a8240885d41138e349f37183cf2c15b95914e3094518ce342d0a7e67a9",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.time_events.life_events"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "比较自造搬迁故事中先交接旧安排与先适应新环境两种顺序，按生活事件的影响与未知条件讨论，不替真实家庭制定决定。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 0,
+          "end": 2,
+          "text": "比较"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 9,
+          "end": 26,
+          "text": "先交接旧安排与先适应新环境两种顺序"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 27,
+          "end": 42,
+          "text": "按生活事件的影响与未知条件讨论"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.time_events.life_events",
+        "sys.home_daily.moving_relocation"
+      ],
+      "actual_formal_cards": {
+        "sys.time_events.life_events": "  - topic_id: sys.time_events.life_events\n    name: { zh: \"人生事件\", en: \"Life Events\" }\n    definition: \"面向用户长期生活、工作或项目中与“人生事件”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“人生事件”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“人生事件”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“人生事件”归属。\"]\n    aliases: { zh: [\"人生事件\"], en: [\"Life Events\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“人生事件”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D17\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.home_daily.moving_relocation": "  - topic_id: sys.home_daily.moving_relocation\n    name: { zh: \"搬家与迁居\", en: \"Moving & Relocation\" }\n    definition: \"面向用户长期生活、工作或项目中与“搬家与迁居”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“搬家与迁居”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“搬家与迁居”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“搬家与迁居”归属。\"]\n    aliases: { zh: [\"搬家与迁居\"], en: [\"Moving & Relocation\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“搬家与迁居”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D09\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 9,
+          "end": 26,
+          "text": "先交接旧安排与先适应新环境两种顺序"
+        }
+      ],
+      "current_matter": "比较搬迁故事里旧安排交接和新环境适应的顺序，讨论生活事件影响及未知条件。",
+      "interpretations": [
+        "生活事件转变的影响及适应次序作为持续对象，可暂偏life_events。",
+        "搬迁安排及其交接/适应关系作为持续对象，可暂偏moving_relocation。"
+      ],
+      "missing": "搬迁与生活事件影响都被当前比较明确引用；不能任意把任一层降成偶然背景，尚无独立的主对象判定。",
+      "non_discriminators": [
+        "故事虚构不排除搬迁事项。",
+        "life event措辞不自动覆盖搬迁Topic。",
+        "不是为真人做决定不证明两者互斥或无有效current intent。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-EXPANSION6-051：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-EXPANSION6-051：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION8-026",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+        "source_packet_sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+        "review_git_blob": "4ac2041716df81ce067317e31719449090bb6b57",
+        "review_records_sha256": "d81cf1fb7bf0fead7bdc12f683d5ffe3d3d9b48d69641183eab78e9b0002166f",
+        "current_sha256": "100d6e844ccf8ea83c30658ab8ae1aba6b776cb44009cbf47702c44a1b5c86d4",
+        "bundle_sha256": "0bc4a914c26774754698371bc67db836831a6b227fa98f602bae0208a4c21b73",
+        "gold_sha256": "05fb5be5148b6d5b16f7848b095c152fd8a10212df8f87ac797d4ff1a1229beb",
+        "spans_sha256": "31ef837a3696ad43ab099d4f9e5a6cde0f76ee277ac3ac4969bea916fb20feee"
+      },
+      "parent_record_sha256": "ce216868b8c10e283f389d0e26c0af46fa86160627deb28409e66c76d69be2fa",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.home_daily.moving_relocation"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "Using only an imaginary room-to-room relocation sketch,describe the packing sequence,handoff questions and arrival checks,without booking movers or accessing a real address.",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 55,
+          "end": 63,
+          "text": "describe"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 68,
+          "end": 121,
+          "text": "packing sequence,handoff questions and arrival checks"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 0,
+          "end": 54,
+          "text": "Using only an imaginary room-to-room relocation sketch"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.home_daily.moving_relocation",
+        "sys.home_daily.possessions_organization"
+      ],
+      "actual_formal_cards": {
+        "sys.home_daily.moving_relocation": "  - topic_id: sys.home_daily.moving_relocation\n    name: { zh: \"搬家与迁居\", en: \"Moving & Relocation\" }\n    definition: \"面向用户长期生活、工作或项目中与“搬家与迁居”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“搬家与迁居”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“搬家与迁居”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“搬家与迁居”归属。\"]\n    aliases: { zh: [\"搬家与迁居\"], en: [\"Moving & Relocation\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“搬家与迁居”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D09\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.home_daily.possessions_organization": "  - topic_id: sys.home_daily.possessions_organization\n    name: { zh: \"物品整理\", en: \"Possessions & Organization\" }\n    definition: \"面向用户长期生活、工作或项目中与“物品整理”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“物品整理”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“物品整理”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“物品整理”归属。\"]\n    aliases: { zh: [\"物品整理\"], en: [\"Possessions & Organization\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“物品整理”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D09\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 24,
+          "end": 54,
+          "text": "room-to-room relocation sketch"
+        }
+      ],
+      "current_matter": "在虚构room-to-room迁移草图范围内描述打包、交接问题与到达检查。",
+      "interpretations": [
+        "以物品从一处向另一处迁移的流程作为持续对象，可暂偏moving_relocation。",
+        "以物品安排、整理及交接位置作为持续对象，可暂偏possessions_organization。"
+      ],
+      "missing": "原文没有地址尺度或收纳目的；不能补城市/住处，或反向规定搬迁必须跨城市。尺度仅待查信息，现正式Catalog没有这样的必要门。",
+      "non_discriminators": [
+        "room-to-room不独占同宅整理，也不证明跨住宅搬迁。",
+        "打包/到达词面都可能共享。",
+        "禁止订搬家公司或访问地址不排除知识性搬迁讨论。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-EXPANSION8-026：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-EXPANSION8-026：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-104",
+      "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "41303b12d20bdc1e2c1301d696184810e6fdcdd7e7fa3be97debac029ceddacc",
+        "bundle_sha256": "4f68fb3fa6d7786266f4a537bdecfb6ec33424ed6f8bed71a7f53e5cc7a2fffc",
+        "gold_sha256": "6df23e08fe5f620a003218632b61031b81d108493d9333d13958098b76af0307",
+        "spans_sha256": "8ba592a35e19dfa45328c0daf622a6fd3a274325882d12357ca7c36124803fae"
+      },
+      "parent_record_sha256": "ba948ab96e0b108205eac77360dbd7ee288c81190050d3fe324ba6c6e893607e",
+      "original_gold": {
+        "expected_state": "ASSIGNED",
+        "topics": [
+          "sys.legal_civic.consumer_rights"
+        ],
+        "excluded_topics": []
+      },
+      "original_input": {
+        "current": "商品瑕疵与交付延迟的维权说明有什么不同？比较虚构消费争议的事实类型、请求范围与待核对规则，不把练习推断写成适用于真人的法律建议。",
+        "title": "",
+        "recent": []
+      },
+      "original_spans": [
+        {
+          "role": "ACTION",
+          "field": "current",
+          "start": 20,
+          "end": 22,
+          "text": "比较"
+        },
+        {
+          "role": "OBJECT",
+          "field": "current",
+          "start": 22,
+          "end": 44,
+          "text": "虚构消费争议的事实类型、请求范围与待核对规则"
+        },
+        {
+          "role": "QUALIFIER",
+          "field": "current",
+          "start": 45,
+          "end": 63,
+          "text": "不把练习推断写成适用于真人的法律建议"
+        }
+      ],
+      "competing_topic_ids": [
+        "sys.legal_civic.consumer_rights",
+        "sys.legal_civic.complaints_disputes"
+      ],
+      "actual_formal_cards": {
+        "sys.legal_civic.consumer_rights": "  - topic_id: sys.legal_civic.consumer_rights\n    name: { zh: \"消费者权益\", en: \"Consumer Rights\" }\n    definition: \"面向用户长期生活、工作或项目中与“消费者权益”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“消费者权益”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“消费者权益”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“消费者权益”归属。\"]\n    aliases: { zh: [\"消费者权益\"], en: [\"Consumer Rights\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“消费者权益”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D13\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\"",
+        "sys.legal_civic.complaints_disputes": "  - topic_id: sys.legal_civic.complaints_disputes\n    name: { zh: \"投诉与纠纷\", en: \"Complaints & Disputes\" }\n    definition: \"面向用户长期生活、工作或项目中与“投诉与纠纷”直接相关的持续性信息、问题、决策、资料和行动。\"\n    inclusion_boundary: [\"输入的主要语义目标、持续事项或需要追踪的对象明确属于“投诉与纠纷”。\"]\n    exclusion_boundary: [\"仅在背景中偶然提及“投诉与纠纷”，而主要意图属于其他主题。\", \"只因发生在同一会话、时间窗口或项目中，不构成“投诉与纠纷”归属。\"]\n    aliases: { zh: [\"投诉与纠纷\"], en: [\"Complaints & Disputes\"] }\n    representative_examples: [\"持续讨论、比较、记录或执行与“投诉与纠纷”直接相关的事项。\"]\n    confusing_neighbor_topic_ids: []\n    internal_domain: D13\n    lifecycle: ACTIVE\n    boundary_status: PROVISIONAL\n    introduced_in: \"0.2.0\""
+      },
+      "current_goal_evidence": [
+        {
+          "field": "current",
+          "start": 20,
+          "end": 44,
+          "text": "比较虚构消费争议的事实类型、请求范围与待核对规则"
+        }
+      ],
+      "current_matter": "比较商品瑕疵和交付延迟争议的事实类型、请求范围及需核对规则。",
+      "interpretations": [
+        "消费者权利、规则与请求范围作为持续对象，可暂偏consumer_rights。",
+        "争议事实及应对请求的比较作为持续对象，可暂偏complaints_disputes。"
+      ],
+      "missing": "同一比较目标同时涉及权利和争议处理；未审定边界不能把它拆成两独立当前目标或猜测并集。",
+      "non_discriminators": [
+        "消费争议不独占投诉纠纷。",
+        "仅出现维权字面不能证明消费者权益的排他归属。",
+        "不适用于真人/不实际申诉不排除问题性争议讨论。"
+      ],
+      "provisional_hypothesis_status": "REVERSIBLE_WRITER_REVIEW_HYPOTHESES_NOT_FORMAL_BOUNDARY_OR_RUNTIME_RULE",
+      "outcome": "SPECIFIC_LABEL_IDENTIFIABILITY_HOLD",
+      "proposed_gold": null,
+      "formal_boundary_changed": false,
+      "source_input_revisions": 0,
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "independent": false,
+      "independent_quota_credit": 0,
+      "qualification_hold_cleared": false,
+      "candidate_predictions": 0,
+      "semantic_evaluations": 0,
+      "new_stable_allocations": 0,
+      "review_exit_condition": "ZMR-MATRIX-TRAIN-EXPANSION9-104：以现有原文、正式定义与明确主对象/目标完成真实审查裁决；若仍不能辨别，保留本条缺项和HOLD，不能补写事实、自动并集或降低标准来清空。",
+      "no_expansion_stop_condition": "ZMR-MATRIX-TRAIN-EXPANSION9-104：本卡不生成新题；停止于两种可审查解释、已知非区分条件与明确缺项。今后只有已证缺口、比较用途/split、有限cap和语义验收/停止条件预登记后才可补公开开发样本，稳定比较仍受未知额度阻塞。"
+    }
+  ],
+  "records_sha256": "c406b8e979d1bd88bb02d2a78377787f84596e04f7afcadda0d36dbb037f185e",
+  "batch_id": "ZMR-TRAIN-LABEL9-REVIEW-CARDS-20261003",
+  "source_tree": "9744860cbe44bb47d9b281fe70e970c56d447a3c",
+  "dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37130483022_ZMR37130483044",
+  "compiler_admission": "HOLD_UNACCEPTED_LABELS_ROLES_AND_ACCOUNTING",
+  "data_qualification": "NOT_QUALIFIED",
+  "formal_catalog_mutation": false,
+  "stop_rule": "FINITE_NINE_EXISTING_SEMANTIC_HOLDS_NO_NEW_ROWS_PREDICTIONS_OR_FORMAL_BOUNDARY_MUTATION",
+  "input_pins": [
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json",
+      "sha256": "ead1135aaff9f2a99e5c76785cf9cad5be471070d8b3c45de5238fe1a2cc7ac2",
+      "git_blob": "7026a936739368b948f0c684192e16e9dbdc17ef"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+      "sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+      "git_blob": "d88fd4aeb4315d2e43f6e8e70c054593bd84ced0"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+      "sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+      "git_blob": "f102e9ad20c6f3f1cd2ece0509ba0dd95e635ca3"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+      "git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+      "git_blob": "03011e40e47f7bff59dff6d282121ff38515e447"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+      "sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+      "git_blob": "ba1d59b8ca6c4d72e96e0ba135634171160b9371"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+      "git_blob": "157e08af47967e63a98d701274d7f25004e03f75"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_label_proposals_v0.1.json",
+      "sha256": "ea076defbd3ab2fe679565ba2eb38a9c4d42fee5811bf05ce242168e10ccdd63",
+      "git_blob": "2b47a5c0b4bd0dde33fbf661d31998576030b85c"
+    },
+    {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad"
+    },
+    {
+      "path": "docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md",
+      "sha256": "250df34d1b3cfe8f08cfaf6612ae32058f7f9e2b585864e8301a22888dcb4660",
+      "git_blob": "7d3cbc929c05cf6f935c08a4a8b49d2eddd30ca0"
+    }
+  ]
+}
