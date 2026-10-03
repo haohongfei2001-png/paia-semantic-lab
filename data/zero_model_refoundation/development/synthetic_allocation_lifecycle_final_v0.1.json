@@ -1,0 +1,691 @@
+{
+  "schema": "ZMR-SYNTHETIC-ALLOCATION-LIFECYCLE-UNREGISTERED-PREPARATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "registered": false,
+  "profiles": [
+    {
+      "id": "STRUCTURE_3X3",
+      "terms": 3,
+      "hitsPerTerm": 3
+    },
+    {
+      "id": "STRUCTURE_128X3",
+      "terms": 128,
+      "hitsPerTerm": 3
+    },
+    {
+      "id": "STRUCTURE_BOUND_1500X144",
+      "terms": 1500,
+      "hitsPerTerm": 144
+    }
+  ],
+  "child_runs": 6,
+  "serial": true,
+  "attempts_per_profile_representation": 1,
+  "post_init_snapshot_is_peak": false,
+  "collection": "ONE_EVENT_LOOP_TURN_DRAIN_THEN_TWO_EXPLICIT_GC_PER_RETAINED_STAGE_NOT_ROUTING_LATENCY",
+  "measurements": "ONE_PROCESS_PER_SYNTHETIC_PROFILE_REPRESENTATION_NO_CONFIDENCE_INTERVAL_OR_DEVICE_QUALIFICATION",
+  "raw_observations": [
+    {
+      "profile": {
+        "id": "STRUCTURE_3X3",
+        "terms": 3,
+        "hitsPerTerm": 3
+      },
+      "representation": "eager",
+      "node": "v26.8.2",
+      "v8": "14.6.202.34-node.28",
+      "platform": "darwin",
+      "arch": "arm64",
+      "execArgv": [
+        "--expose-gc"
+      ],
+      "logicalCpuCount": 10,
+      "cpuModel": "Apple M5",
+      "totalPhysicalMemory": 25769803776,
+      "encoded_json_bytes": 4028,
+      "summaries": {
+        "normSum": 1.4203612714260294,
+        "full_structure_topics": 144,
+        "terms": 3,
+        "encoded_hits": 9,
+        "norm_typed_array_bytes": 0,
+        "expanded_posting_arrays_retained": null
+      },
+      "stages": [
+        {
+          "stage": "MODULES_WARM_BLANK_BASELINE",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3752304,
+          "heapTotal": 5128192,
+          "external": 1642160,
+          "arrayBuffers": 137593,
+          "rss": 41271296
+        },
+        {
+          "stage": "IMMUTABLE_ENCODED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3773368,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41451520
+        },
+        {
+          "stage": "POST_INIT_BEFORE_GC_NOT_PEAK",
+          "collection": "NO_GC_SINGLE_POST_INIT_SNAPSHOT_NOT_PEAK",
+          "heapUsed": 3824440,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41500672
+        },
+        {
+          "stage": "ENCODED_PLUS_DECODED_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3791336,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41533440
+        },
+        {
+          "stage": "DECODED_RELEASED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3798320,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41566208
+        },
+        {
+          "stage": "INPUT_AND_DECODED_RELEASED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3791032,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41598976
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": "STRUCTURE_3X3",
+        "terms": 3,
+        "hitsPerTerm": 3
+      },
+      "representation": "view",
+      "node": "v26.8.2",
+      "v8": "14.6.202.34-node.28",
+      "platform": "darwin",
+      "arch": "arm64",
+      "execArgv": [
+        "--expose-gc"
+      ],
+      "logicalCpuCount": 10,
+      "cpuModel": "Apple M5",
+      "totalPhysicalMemory": 25769803776,
+      "encoded_json_bytes": 4028,
+      "summaries": {
+        "normSum": 1.4203612714260294,
+        "full_structure_topics": 144,
+        "terms": 3,
+        "encoded_hits": 9,
+        "norm_typed_array_bytes": 1152,
+        "expanded_posting_arrays_retained": 0
+      },
+      "stages": [
+        {
+          "stage": "MODULES_WARM_BLANK_BASELINE",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3752304,
+          "heapTotal": 5128192,
+          "external": 1642160,
+          "arrayBuffers": 137593,
+          "rss": 41467904
+        },
+        {
+          "stage": "IMMUTABLE_ENCODED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3773368,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41680896
+        },
+        {
+          "stage": "POST_INIT_BEFORE_GC_NOT_PEAK",
+          "collection": "NO_GC_SINGLE_POST_INIT_SNAPSHOT_NOT_PEAK",
+          "heapUsed": 4444048,
+          "heapTotal": 5390336,
+          "external": 1643352,
+          "arrayBuffers": 138745,
+          "rss": 41811968
+        },
+        {
+          "stage": "ENCODED_PLUS_DECODED_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3805184,
+          "heapTotal": 5128192,
+          "external": 1643352,
+          "arrayBuffers": 138745,
+          "rss": 41893888
+        },
+        {
+          "stage": "DECODED_RELEASED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3814608,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41910272
+        },
+        {
+          "stage": "INPUT_AND_DECODED_RELEASED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3807400,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41910272
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": "STRUCTURE_128X3",
+        "terms": 128,
+        "hitsPerTerm": 3
+      },
+      "representation": "eager",
+      "node": "v26.8.2",
+      "v8": "14.6.202.34-node.28",
+      "platform": "darwin",
+      "arch": "arm64",
+      "execArgv": [
+        "--expose-gc"
+      ],
+      "logicalCpuCount": 10,
+      "cpuModel": "Apple M5",
+      "totalPhysicalMemory": 25769803776,
+      "encoded_json_bytes": 11122,
+      "summaries": {
+        "normSum": 315.3759112131836,
+        "full_structure_topics": 144,
+        "terms": 128,
+        "encoded_hits": 384,
+        "norm_typed_array_bytes": 0,
+        "expanded_posting_arrays_retained": null
+      },
+      "stages": [
+        {
+          "stage": "MODULES_WARM_BLANK_BASELINE",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3752312,
+          "heapTotal": 4603904,
+          "external": 1642160,
+          "arrayBuffers": 137593,
+          "rss": 41320448
+        },
+        {
+          "stage": "IMMUTABLE_ENCODED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3828680,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41648128
+        },
+        {
+          "stage": "POST_INIT_BEFORE_GC_NOT_PEAK",
+          "collection": "NO_GC_SINGLE_POST_INIT_SNAPSHOT_NOT_PEAK",
+          "heapUsed": 4138552,
+          "heapTotal": 5390336,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41697280
+        },
+        {
+          "stage": "ENCODED_PLUS_DECODED_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3898720,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41811968
+        },
+        {
+          "stage": "DECODED_RELEASED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3859704,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41811968
+        },
+        {
+          "stage": "INPUT_AND_DECODED_RELEASED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3800416,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41828352
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": "STRUCTURE_128X3",
+        "terms": 128,
+        "hitsPerTerm": 3
+      },
+      "representation": "view",
+      "node": "v26.8.2",
+      "v8": "14.6.202.34-node.28",
+      "platform": "darwin",
+      "arch": "arm64",
+      "execArgv": [
+        "--expose-gc"
+      ],
+      "logicalCpuCount": 10,
+      "cpuModel": "Apple M5",
+      "totalPhysicalMemory": 25769803776,
+      "encoded_json_bytes": 11122,
+      "summaries": {
+        "normSum": 315.3759112131836,
+        "full_structure_topics": 144,
+        "terms": 128,
+        "encoded_hits": 384,
+        "norm_typed_array_bytes": 1152,
+        "expanded_posting_arrays_retained": 0
+      },
+      "stages": [
+        {
+          "stage": "MODULES_WARM_BLANK_BASELINE",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3752312,
+          "heapTotal": 4603904,
+          "external": 1642160,
+          "arrayBuffers": 137593,
+          "rss": 41369600
+        },
+        {
+          "stage": "IMMUTABLE_ENCODED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3828680,
+          "heapTotal": 5128192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 41648128
+        },
+        {
+          "stage": "POST_INIT_BEFORE_GC_NOT_PEAK",
+          "collection": "NO_GC_SINGLE_POST_INIT_SNAPSHOT_NOT_PEAK",
+          "heapUsed": 3933816,
+          "heapTotal": 6176768,
+          "external": 1643352,
+          "arrayBuffers": 138745,
+          "rss": 42745856
+        },
+        {
+          "stage": "ENCODED_PLUS_DECODED_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3875256,
+          "heapTotal": 5914624,
+          "external": 1643352,
+          "arrayBuffers": 138745,
+          "rss": 42827776
+        },
+        {
+          "stage": "DECODED_RELEASED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3881208,
+          "heapTotal": 5914624,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 42827776
+        },
+        {
+          "stage": "INPUT_AND_DECODED_RELEASED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3822000,
+          "heapTotal": 5914624,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 42827776
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": "STRUCTURE_BOUND_1500X144",
+        "terms": 1500,
+        "hitsPerTerm": 144
+      },
+      "representation": "eager",
+      "node": "v26.8.2",
+      "v8": "14.6.202.34-node.28",
+      "platform": "darwin",
+      "arch": "arm64",
+      "execArgv": [
+        "--expose-gc"
+      ],
+      "logicalCpuCount": 10,
+      "cpuModel": "Apple M5",
+      "totalPhysicalMemory": 25769803776,
+      "encoded_json_bytes": 3066522,
+      "summaries": {
+        "normSum": 647218.7791942451,
+        "full_structure_topics": 144,
+        "terms": 1500,
+        "encoded_hits": 216000,
+        "norm_typed_array_bytes": 0,
+        "expanded_posting_arrays_retained": null
+      },
+      "stages": [
+        {
+          "stage": "MODULES_WARM_BLANK_BASELINE",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3752328,
+          "heapTotal": 4603904,
+          "external": 1642160,
+          "arrayBuffers": 137593,
+          "rss": 41238528
+        },
+        {
+          "stage": "IMMUTABLE_ENCODED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 21326592,
+          "heapTotal": 40517632,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 93847552
+        },
+        {
+          "stage": "POST_INIT_BEFORE_GC_NOT_PEAK",
+          "collection": "NO_GC_SINGLE_POST_INIT_SNAPSHOT_NOT_PEAK",
+          "heapUsed": 44509352,
+          "heapTotal": 72499200,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 125501440
+        },
+        {
+          "stage": "ENCODED_PLUS_DECODED_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 38820400,
+          "heapTotal": 72761344,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 126304256
+        },
+        {
+          "stage": "DECODED_RELEASED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 21356488,
+          "heapTotal": 54935552,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 126337024
+        },
+        {
+          "stage": "INPUT_AND_DECODED_RELEASED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3806104,
+          "heapTotal": 37109760,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 126353408
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": "STRUCTURE_BOUND_1500X144",
+        "terms": 1500,
+        "hitsPerTerm": 144
+      },
+      "representation": "view",
+      "node": "v26.8.2",
+      "v8": "14.6.202.34-node.28",
+      "platform": "darwin",
+      "arch": "arm64",
+      "execArgv": [
+        "--expose-gc"
+      ],
+      "logicalCpuCount": 10,
+      "cpuModel": "Apple M5",
+      "totalPhysicalMemory": 25769803776,
+      "encoded_json_bytes": 3066522,
+      "summaries": {
+        "normSum": 647218.7791942451,
+        "full_structure_topics": 144,
+        "terms": 1500,
+        "encoded_hits": 216000,
+        "norm_typed_array_bytes": 1152,
+        "expanded_posting_arrays_retained": 0
+      },
+      "stages": [
+        {
+          "stage": "MODULES_WARM_BLANK_BASELINE",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3752328,
+          "heapTotal": 4603904,
+          "external": 1642160,
+          "arrayBuffers": 137593,
+          "rss": 41238528
+        },
+        {
+          "stage": "IMMUTABLE_ENCODED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 21326592,
+          "heapTotal": 39993344,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 92749824
+        },
+        {
+          "stage": "POST_INIT_BEFORE_GC_NOT_PEAK",
+          "collection": "NO_GC_SINGLE_POST_INIT_SNAPSHOT_NOT_PEAK",
+          "heapUsed": 47057552,
+          "heapTotal": 74334208,
+          "external": 1643352,
+          "arrayBuffers": 138745,
+          "rss": 124780544
+        },
+        {
+          "stage": "ENCODED_PLUS_DECODED_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 21422648,
+          "heapTotal": 55984128,
+          "external": 1643352,
+          "arrayBuffers": 138745,
+          "rss": 106577920
+        },
+        {
+          "stage": "DECODED_RELEASED_INPUT_RETAINED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 21374840,
+          "heapTotal": 55984128,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 106594304
+        },
+        {
+          "stage": "INPUT_AND_DECODED_RELEASED",
+          "collection": "TWO_EXPLICIT_GC",
+          "heapUsed": 3824656,
+          "heapTotal": 37896192,
+          "external": 1642200,
+          "arrayBuffers": 137593,
+          "rss": 106610688
+        }
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "profile": "STRUCTURE_3X3",
+      "representation": "eager",
+      "decoded_minus_encoded": {
+        "heapUsed": 17968,
+        "external": 0,
+        "arrayBuffers": 0
+      },
+      "released_minus_blank": {
+        "heapUsed": 38728,
+        "external": 40,
+        "arrayBuffers": 0
+      }
+    },
+    {
+      "profile": "STRUCTURE_3X3",
+      "representation": "view",
+      "decoded_minus_encoded": {
+        "heapUsed": 31816,
+        "external": 1152,
+        "arrayBuffers": 1152
+      },
+      "released_minus_blank": {
+        "heapUsed": 55096,
+        "external": 40,
+        "arrayBuffers": 0
+      }
+    },
+    {
+      "profile": "STRUCTURE_128X3",
+      "representation": "eager",
+      "decoded_minus_encoded": {
+        "heapUsed": 70040,
+        "external": 0,
+        "arrayBuffers": 0
+      },
+      "released_minus_blank": {
+        "heapUsed": 48104,
+        "external": 40,
+        "arrayBuffers": 0
+      }
+    },
+    {
+      "profile": "STRUCTURE_128X3",
+      "representation": "view",
+      "decoded_minus_encoded": {
+        "heapUsed": 46576,
+        "external": 1152,
+        "arrayBuffers": 1152
+      },
+      "released_minus_blank": {
+        "heapUsed": 69688,
+        "external": 40,
+        "arrayBuffers": 0
+      }
+    },
+    {
+      "profile": "STRUCTURE_BOUND_1500X144",
+      "representation": "eager",
+      "decoded_minus_encoded": {
+        "heapUsed": 17493808,
+        "external": 0,
+        "arrayBuffers": 0
+      },
+      "released_minus_blank": {
+        "heapUsed": 53776,
+        "external": 40,
+        "arrayBuffers": 0
+      }
+    },
+    {
+      "profile": "STRUCTURE_BOUND_1500X144",
+      "representation": "view",
+      "decoded_minus_encoded": {
+        "heapUsed": 96056,
+        "external": 1152,
+        "arrayBuffers": 1152
+      },
+      "released_minus_blank": {
+        "heapUsed": 72328,
+        "external": 40,
+        "arrayBuffers": 0
+      }
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+    }
+  ],
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "allowance": null,
+  "stable_candidate_constructed": false,
+  "actual_candidate_index_rebuilt": false,
+  "real_train_inputs": 0,
+  "fitting": 0,
+  "router_calls": 0,
+  "predictions": 0,
+  "new_semantic_samples": 0,
+  "stable_allocations": 0,
+  "semantic_candidate_repairs_charged": 0,
+  "allowance_refunds": 0,
+  "independent_quota_credit": 0,
+  "new_paid_calls": 0,
+  "new_permissions": 0,
+  "consumed_as_test_reads": 0,
+  "final_blind_execution": 0,
+  "saturation_ceiling": false,
+  "stop_rule": "Finite six diagnostic observations complete; no retry/unchanged repeats. Register only after current writer exact-head/main/ownedbytes-tree integration and fresh canonical/source pins; no actual consumer resource claim",
+  "harness_pin": {
+    "path": "outputs/allocation-lifecycle-preparation/allocation_lifecycle_diagnostic.mjs",
+    "sha256": "4763ae8f806582bd0fa49c3f20ea1cc46dc001285c72945b994a80d611d15ff2",
+    "utf8_bytes": 6936
+  },
+  "publication_dependency": {
+    "pr": 257,
+    "head": "a050c0518442bc1b240f53b60fe518f14a2dc10a",
+    "actual_main_integration": "PENDING_NOT_PUBLISHED"
+  },
+  "measurement_validity": "FINITE_NODE_ENGINEERING_DIAGNOSTIC_ONLY_SINGLE_OBSERVATION_PER_PAIR_NO_STATISTICAL_OR_CONSUMER_QUALIFICATION",
+  "failure_records": [
+    {
+      "kind": "MEASUREMENT_PHASE_TRANSIENT_ROOT_CONFOUND_NOT_SEMANTIC_FAILURE",
+      "initial_result": "outputs/allocation-lifecycle-preparation/INITIAL_RESULT.json",
+      "initial_result_sha256": "8c8287890301cd39bab6761dc3413b48e88f7685c4fc620204d4d98d6593fca2",
+      "initial_measurement_validity": "INCONCLUSIVE_GC_PHASE_STACK_NOT_DRAINED",
+      "diagnosis": "Same module-stack snapshots retained phase temporaries; dense release-minus-blank residue approximately17MiB and negative view retained delta cannot be interpreted as gain/leak",
+      "repair": "Drain one event-loop turn before each of the same explicit-GC retained snapshots; no wait on CI, no retry of unchanged harness, all six fixed profile/representation pairs retained",
+      "methodology_repairs": 1,
+      "semantic_candidate_repairs_charged": 0,
+      "allowance_refunds": 0
+    }
+  ],
+  "total_preparation_child_runs": 12,
+  "encoded_json_bytes_by_profile": {
+    "STRUCTURE_3X3": 4028,
+    "STRUCTURE_128X3": 11122,
+    "STRUCTURE_BOUND_1500X144": 3066522
+  },
+  "interpretation": "Small3x3 view heap observation exceeds eager; bounded1500x144 view retains fewer incremental heap bytes in this single GC-drained synthetic process pair, including1152 norm arrayBuffer bytes. No confidence interval, true peak/init latency, real candidate/index, browser or device budget measurement; no quantified algorithm gain or global memory-saving claim.",
+  "synthetic_asset_scope": {
+    "largest_encoded_json_bytes": 3066522,
+    "index_hard_limit_bytes": 1048576,
+    "largest_structure_within_published_index_budget": false,
+    "classification": "OVERSIZED_SYNTHETIC_STRUCTURE_STRESS_ONLY_NOT_AN_ELIGIBLE_CANDIDATE_INDEX_OR_RESOURCE_PASS"
+  },
+  "source_path_normalization": {
+    "operation": "THREE_ABSOLUTE_LOCAL_SOURCE_METADATA_PATHS_TO_CANONICAL_REPOSITORY_PATHS_ONLY",
+    "original_unpublished_receipt_sha256": "7b0de9c6d3368a7db76d7ed5b8ae51ac9f25a285a3529053c64fd17c21ddac0d",
+    "observation_numeric_fields_changed": false,
+    "independence_claim": false
+  }
+}
