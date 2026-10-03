@@ -1803,7 +1803,7 @@
       "historical_budget_new_semantic_evaluations": 0
     }
   },
-  "next_action": "唯一优先任务：对既有41条TRAIN标签hold完成基于原始current/recent与固定144Catalog inclusion/exclusion/boundary的版本化gold修正提案或具体HOLD；分清当前持续对象/产物形式/方法背景，禁止并集猜测或改正式Topic。完成标准是41条可追溯边界判断/提案或剩余HOLD，不以测试PASS/清空疑点/数量增长代替语义正确。19条名词式/间接/情态请求已形成未接受writer frame提案（104UTF16片段/10当前需求锚点），不虚构ACTION，不因非祈使句自动DEFER，保留27完整span提案与既有5提案、41标签hold/78角色hold；原始source/gold/roles与378旧角色独立未资格不变，accepted/independentcredit/hold clearance为0。历史额度有限审计INCONCLUSIVE，原始stable allocation未恢复，complete/reconciled=false、allowance=null；禁止新的稳定能力比较/重置/退款/重放，只在有具体新原始账本时补证。source12仍未登记未冻结；新增样本必须预登记已证能力缺口、比较身份/机制/消融与split、有限cap、语义验收和停止扩充条件，数量不等于算法收益。独立curator/AS资格路径冻结，继续可独立执行开发；full144/95%/70%/安全/资源/local-first/zero-model不变，无付费/新权限/私有production/consumedTEST/finalblindTEST。",
+  "next_action": "唯一优先任务：对9条具体标签语义HOLD建立有限writer边界审查卡，逐项列出当前持续对象/目标、竞争解释、实际区分证据或缺项、多意图可分性/范围判断与停止条件；不改正式144 Catalog、不重写原文/gold、不新增样本或运行稳定比较。完成标准是9条可追溯审查卡或明确剩余条件，不以数量/测试PASS/清空HOLD代替语义正确。既有41标签争议已形成26原标偏好/5替代提案/1未接受MULTI解释/9具体writer HOLD，所有41资格标签HOLD和78角色HOLD保留；43实际完整PROVISIONAL卡、43UTF16原文证据片段，27完整span/19request frame/5旧提案与378旧角色独立未资格不变，accepted/independentcredit/qualification clearance为0。历史allocation尚未恢复，complete/reconciled=false、allowance=null，稳定比较HOLD，禁止重置/退款/重放，只有具体新原始账本时补证。source12仍未登记未冻结；未来新增样本先登记已证能力缺口、比较候选/机制/消融及split、有限cap、语义验收和停止扩充条件；数量不等于算法收益。独立curator/AS路径仅冻结资格，继续非依赖工程；full144/95%/70%/安全/资源/local-first/zero-model保持，无付费/新权限/私有production/consumedTEST/finalblindTEST。",
   "engineering_ci_transport": {
     "classification": "ENGINEERING_ONLY_NOT_CAPABILITY",
     "incident_main": "226dca7eedae33c098b49b4abaf5d6905e83a019",
@@ -2184,5 +2184,47 @@
       "actual_main_ci": "PENDING",
       "semantic_judgment_certified": false
     }
+  },
+  "train_label_proposals": {
+    "schema": "ZMR-WRITER-LABEL-PROPOSALS-AUDIT-1",
+    "classification": "ENGINEERING_IMMUTABLE_WRITER_PROPOSALS_NOT_LABEL_ROLE_OR_CAPABILITY_TRUTH",
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "writer_decisions": 41,
+    "actual_source_packets": 14,
+    "full_catalog_topics": 144,
+    "formal_provisional_cards": 43,
+    "exact_utf16_evidence_spans": 43,
+    "original_preferences": 26,
+    "alternative_preferences": 5,
+    "unaccepted_multi_interpretations": 1,
+    "specific_writer_label_holds": 9,
+    "label_qualification_holds_retained": 41,
+    "role_qualification_holds_retained": 78,
+    "unaccepted_full_span_proposals_preserved": 27,
+    "unaccepted_request_frames_preserved": 19,
+    "older_role_proposals_preserved": 5,
+    "new_samples": 0,
+    "accepted_gold_rows": 0,
+    "accepted_role_rows": 0,
+    "independent_quota_credit": 0,
+    "qualification_holds_cleared": 0,
+    "candidate_predictions": 0,
+    "semantic_evaluations": 0,
+    "new_stable_allocations": 0,
+    "remaining_stable_allowance": null,
+    "semantic_judgment_certified": false,
+    "compiler_admission": "HOLD_UNACCEPTED_LABELS_ROLES_AND_ACCOUNTING",
+    "data_qualification": "NOT_QUALIFIED",
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "saturation_ceiling_claim": false,
+    "source_main": "a99cc98aaf9c2b0f3103270bbb5cac7a9014b2b3",
+    "source_tree": "94e49e6a6c5176e70e727ff4f3133a6107573fe0",
+    "journal_path": "data/zero_model_refoundation/development/mechanism_matrix_train_label_proposals_v0.1.json",
+    "journal_sha256": "ea076defbd3ab2fe679565ba2eb38a9c4d42fee5811bf05ce242168e10ccdd63",
+    "report": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_LABEL_PROPOSALS.md",
+    "result": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_LABEL_PROPOSALS_RESULT.json",
+    "integration_verdict": "PENDING_EXACT_HEAD_AND_ACTUAL_MAIN_CI",
+    "dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37128685015_ZMR37128685093"
   }
 }
