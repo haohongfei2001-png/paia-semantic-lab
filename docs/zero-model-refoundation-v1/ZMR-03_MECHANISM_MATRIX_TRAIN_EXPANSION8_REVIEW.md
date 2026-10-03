@@ -1,0 +1,9 @@
+# Eighth quota-expansion source writer QA
+
+Registered source main6113e3de19875fd0af2f53a53060d085cff55668/tree449d4cf82109c4206d4e81dddf9d5f5d4e79fb5c,sourceSHA256b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1. **NON_INDEPENDENT_DEVELOPMENT_EVIDENCE**.54actual source-writer comments:53provisional retains/1newLABEL_IDENTIFIABILITY_HOLD(026room-to-room relocation versus possessions organization)/4newROLE_IDENTIFIABILITY_HOLD(009/024/039/054OBJECT action clauses). All original input/gold/span/factor bytes retained;no positive unions/role replacements. Earlier810reviews/33labelholds/16roleholds intact;378older roles unqualified.
+
+Combined864writerreviews/830provisionalretains/34labelholds/20explicitroleholds/full144rawTopics/zh432-en288-mixed144/all144Topics6rawrows. RawTRAINgap2592(zh1296/en864/mixed432),accepted/independentquota0/qualifiedgap3456. Existing144neighborcards/432edges,0new/directional/adjudicatedgold. Fouractualsourceantecedents/literalnameproxy1/54 retained;echo unadjudicated/10% ceiling exact. Source licenses/meaningful families/role-factor-equivalence/heldout novelty/grouped independent uncertainty still unqualified.
+
+Threefocused actual-source/input-code pin,corruption/purity tests PASS;same3in88explicit-file minimal delivery. No Router/compiler/CALfit/semantic/resource gate/newstableallocation/refund/repairreset;allowance null. Full144/95%/70%/safety/1MiB/2MiB/32MiB incremental/20ms/100ms/local-first/zero-neural-embedding-LLM-semanticAPI exact;dataNOT_QUALIFIED,capabilityUNTESTED,resourceNOT_QUALIFIED,noceiling.
+
+Next exact remaining registered mechanism-family/language allocation cells across full144Topics;no ninthTopic per18domains exists. Continue full24/12-8-4/8meaningfulfamilies/source/factor/role/boundary/safety/separateordinary/challengeDEV/publicstatic accounting. Preserve all34labelholds/20roleholds/oldpins. Independentqualification/AS/stablecomparison held only;development continues.
