@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 const workflow=readFileSync(new URL('../../.github/workflows/zmr-v1.yml',import.meta.url),'utf8');
 const begin='            // BEGIN_BOUNDED_PUBLIC_PREFETCH',end='            // END_BOUNDED_PUBLIC_PREFETCH';
 assert.equal(workflow.split(begin).length,2);assert.equal(workflow.split(end).length,2);
@@ -38,5 +39,10 @@ test('empty queue reads nothing and workflow retains serial assertions and two t
  assert(workflow.includes("for (const p of docs) assert((await read(p)).length >= 200"));
  const command=workflow.split('\n').find(line=>line.startsWith('          node packages/zero_model_refoundation/ci_test_scheduler.mjs '));
  assert(command);assert(command.includes('--shard=${{ matrix.shard }} --test-concurrency=2 '));
- assert(workflow.includes("shard: ['1/2', '2/2']"));assert(workflow.includes('max-parallel: 1'));assert(workflow.includes('timeout-minutes: 5'));
+ assert(workflow.includes("shard: ['1/3', '2/3', '3/3']"));
+ const repair=JSON.parse(readFileSync(new URL('../../docs/zero-model-refoundation-v1/ZMR_CI_THREE_SERIAL_SHARDS_REPAIR_RESULT.json',import.meta.url),'utf8'));
+ assert.equal(repair.matrix_fixture_followup.preserved_failed_run.workflow_verdict,'FAILURE_NOT_INTEGRATION_PASS');
+ assert.equal(repair.matrix_fixture_followup.code_pins.length,2);
+ for(const pin of repair.matrix_fixture_followup.code_pins)assert.equal(createHash('sha256').update(readFileSync(new URL('../../'+pin.path,import.meta.url))).digest('hex'),pin.sha256,pin.path);
+ assert.equal(repair.matrix_fixture_followup.semantic_judgment_certified,false);assert(workflow.includes('max-parallel: 1'));assert(workflow.includes('timeout-minutes: 5'));
 });
