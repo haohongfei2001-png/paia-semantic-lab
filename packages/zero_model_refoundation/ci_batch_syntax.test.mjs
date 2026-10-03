@@ -61,7 +61,7 @@ test('missing files, duplicate/empty/nonengineering arguments and missing VM fla
   const missing = child(root, [relative('missing')]); assert.equal(missing.status, 1); assert.equal(receipt(missing).errors[0].name, 'Error');
   const unavailable = child(root, [file], []); assert.equal(unavailable.status, 1); assert.match(unavailable.stderr, /experimental-vm-modules required/);
   const workflow = await readFile(new URL('../../.github/workflows/zmr-v1.yml', import.meta.url), 'utf8');
-  assert(workflow.includes('timeout-minutes: 5')); assert(workflow.includes('max-parallel: 1')); assert(workflow.includes("shard: ['1/2', '2/2']"));
+  assert(workflow.includes('timeout-minutes: 5')); assert(workflow.includes('max-parallel: 1')); assert(workflow.includes("shard: ['1/3', '2/3', '3/3']"));
   assert(workflow.includes('node --experimental-vm-modules packages/zero_model_refoundation/ci_batch_syntax.mjs packages/zero_model_refoundation/*.mjs'));
   const line = workflow.split('\n').find(l => l.startsWith('          node packages/zero_model_refoundation/ci_test_scheduler.mjs '));
   const units = line.trim().split(/\s+/).filter(p => p.endsWith('.test.mjs'));

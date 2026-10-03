@@ -292,7 +292,159 @@ export const CI_TIMING_REFERENCE=Object.freeze({
 })
 });
 
-export function estimatedUnitCost(path){
+export const CURRENT_MAIN_CI_TIMING_REFERENCE=Object.freeze({
+  "evidence_class": "ENGINEERING_SCHEDULING_HINTS_ONLY",
+  "head": "e21605fde5c38ce6d182f502fb63faf4f48a9fbb",
+  "run_id": 37143155357,
+  "attempt": 1,
+  "jobs": [
+    111261588885,
+    111261589043
+  ],
+  "run_verdict": "SUCCESS_NOT_RESOURCE_OR_STABILITY_CERTIFICATION",
+  "units": 136,
+ unit_ms:Object.freeze({
+  "packages/zero_model_refoundation/a1_balanced_r1.test.mjs": 664,
+  "packages/zero_model_refoundation/a1_balanced.test.mjs": 198,
+  "packages/zero_model_refoundation/a1_v04_compact.test.mjs": 261,
+  "packages/zero_model_refoundation/a1.test.mjs": 427,
+  "packages/zero_model_refoundation/a2.test.mjs": 329,
+  "packages/zero_model_refoundation/a3.test.mjs": 739,
+  "packages/zero_model_refoundation/a4_boundary_graph.test.mjs": 185,
+  "packages/zero_model_refoundation/a4_pair_positive.test.mjs": 553,
+  "packages/zero_model_refoundation/a4_pairwise.test.mjs": 582,
+  "packages/zero_model_refoundation/a4_role_contrast.test.mjs": 145,
+  "packages/zero_model_refoundation/a4_role_repairs.test.mjs": 159,
+  "packages/zero_model_refoundation/a5_composition_r1.test.mjs": 112,
+  "packages/zero_model_refoundation/a5_composition.test.mjs": 104,
+  "packages/zero_model_refoundation/a5_evidence_chart_r1.test.mjs": 146,
+  "packages/zero_model_refoundation/a5_evidence_chart.test.mjs": 145,
+  "packages/zero_model_refoundation/a5_scope.test.mjs": 109,
+  "packages/zero_model_refoundation/a6_complement_r1.test.mjs": 465,
+  "packages/zero_model_refoundation/a6_complement_r2.test.mjs": 451,
+  "packages/zero_model_refoundation/a6_complement_scope.test.mjs": 476,
+  "packages/zero_model_refoundation/a6.test.mjs": 106,
+  "packages/zero_model_refoundation/a7_case_memory.test.mjs": 297,
+  "packages/zero_model_refoundation/a7_compile.test.mjs": 676,
+  "packages/zero_model_refoundation/c1_context_multi.test.mjs": 110,
+  "packages/zero_model_refoundation/c1_r1_context_multi.test.mjs": 117,
+  "packages/zero_model_refoundation/ci_batch_syntax.test.mjs": 766,
+  "packages/zero_model_refoundation/ci_test_scheduler.test.mjs": 900,
+  "packages/zero_model_refoundation/ci_test_shards.test.mjs": 629,
+  "packages/zero_model_refoundation/competition_budget.test.mjs": 122,
+  "packages/zero_model_refoundation/contracts.test.mjs": 134,
+  "packages/zero_model_refoundation/development_mechanism_audit.test.mjs": 1822,
+  "packages/zero_model_refoundation/development_review_cal_rest_part1.test.mjs": 449,
+  "packages/zero_model_refoundation/development_review_cal_rest_part2.test.mjs": 511,
+  "packages/zero_model_refoundation/development_review_cal_rest_part3.test.mjs": 483,
+  "packages/zero_model_refoundation/development_review_cal_slice1.test.mjs": 390,
+  "packages/zero_model_refoundation/development_review_extension.test.mjs": 132,
+  "packages/zero_model_refoundation/development_review_journal.test.mjs": 132,
+  "packages/zero_model_refoundation/development_review_receipt.test.mjs": 119,
+  "packages/zero_model_refoundation/development_review_safety_rest_cal.test.mjs": 430,
+  "packages/zero_model_refoundation/development_review_safety_rest_tune.test.mjs": 393,
+  "packages/zero_model_refoundation/development_review_safety_seed.test.mjs": 342,
+  "packages/zero_model_refoundation/development_review_slice2.test.mjs": 163,
+  "packages/zero_model_refoundation/development_review_slice3.test.mjs": 202,
+  "packages/zero_model_refoundation/development_review_slice4.test.mjs": 252,
+  "packages/zero_model_refoundation/development_review_slice5.test.mjs": 287,
+  "packages/zero_model_refoundation/development_source_audit.test.mjs": 1007,
+  "packages/zero_model_refoundation/foundation.test.mjs": 516,
+  "packages/zero_model_refoundation/h1_recall_safe.test.mjs": 588,
+  "packages/zero_model_refoundation/historical_defaults_audit.test.mjs": 212,
+  "packages/zero_model_refoundation/historical_identity_audit.test.mjs": 264,
+  "packages/zero_model_refoundation/historical_registration_join.test.mjs": 166,
+  "packages/zero_model_refoundation/later_diagnostic_audit.test.mjs": 232,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion1_review.test.mjs": 15909,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion10_review.test.mjs": 59246,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion11_review.test.mjs": 69335,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion2_review.test.mjs": 17632,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion3_review.test.mjs": 19511,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion4_review.test.mjs": 22391,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion5_review.test.mjs": 24190,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion6_review.test.mjs": 27762,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion7_review.test.mjs": 30479,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion8_review.test.mjs": 33614,
+  "packages/zero_model_refoundation/mechanism_matrix_expansion9_review.test.mjs": 44535,
+  "packages/zero_model_refoundation/mechanism_matrix_part2_review.test.mjs": 2034,
+  "packages/zero_model_refoundation/mechanism_matrix_part3_review.test.mjs": 3102,
+  "packages/zero_model_refoundation/mechanism_matrix_part4_review.test.mjs": 4443,
+  "packages/zero_model_refoundation/mechanism_matrix_part5_review.test.mjs": 6260,
+  "packages/zero_model_refoundation/mechanism_matrix_part6_review.test.mjs": 7879,
+  "packages/zero_model_refoundation/mechanism_matrix_part7_review.test.mjs": 10190,
+  "packages/zero_model_refoundation/mechanism_matrix_part8_review.test.mjs": 13303,
+  "packages/zero_model_refoundation/mechanism_matrix_plan.test.mjs": 190,
+  "packages/zero_model_refoundation/mechanism_matrix_review.test.mjs": 1467,
+  "packages/zero_model_refoundation/mechanism_matrix_seed.test.mjs": 574,
+  "packages/zero_model_refoundation/mechanism_matrix_source_deficits.test.mjs": 3049,
+  "packages/zero_model_refoundation/mechanism_matrix_train_batch.test.mjs": 1471,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion1.test.mjs": 17424,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion10.test.mjs": 80889,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion11.test.mjs": 102392,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion2.test.mjs": 22068,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion3.test.mjs": 25583,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion4.test.mjs": 30124,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion5.test.mjs": 35414,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion6.test.mjs": 40804,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion7.test.mjs": 43984,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion8.test.mjs": 52268,
+  "packages/zero_model_refoundation/mechanism_matrix_train_expansion9.test.mjs": 68462,
+  "packages/zero_model_refoundation/mechanism_matrix_train_part3.test.mjs": 2500,
+  "packages/zero_model_refoundation/mechanism_matrix_train_part4.test.mjs": 3720,
+  "packages/zero_model_refoundation/mechanism_matrix_train_part5.test.mjs": 5407,
+  "packages/zero_model_refoundation/mechanism_matrix_train_part6.test.mjs": 7178,
+  "packages/zero_model_refoundation/mechanism_matrix_train_part7.test.mjs": 9849,
+  "packages/zero_model_refoundation/mechanism_matrix_train_part8.test.mjs": 12525,
+  "packages/zero_model_refoundation/pinned_public_prefetch.test.mjs": 104,
+  "packages/zero_model_refoundation/pinned_public_reader.test.mjs": 142,
+  "packages/zero_model_refoundation/provisional_a1_balanced_dev.test.mjs": 524,
+  "packages/zero_model_refoundation/provisional_a4_challenge.test.mjs": 333,
+  "packages/zero_model_refoundation/provisional_a4_positive_challenge.test.mjs": 358,
+  "packages/zero_model_refoundation/provisional_a4_role_dev.test.mjs": 370,
+  "packages/zero_model_refoundation/provisional_a4_train.test.mjs": 268,
+  "packages/zero_model_refoundation/provisional_a4_triads.test.mjs": 258,
+  "packages/zero_model_refoundation/provisional_a5_challenge.test.mjs": 402,
+  "packages/zero_model_refoundation/provisional_a5_chart_dev.test.mjs": 351,
+  "packages/zero_model_refoundation/provisional_a5_r1_challenge.test.mjs": 409,
+  "packages/zero_model_refoundation/provisional_a5_repair_dev.test.mjs": 365,
+  "packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs": 398,
+  "packages/zero_model_refoundation/provisional_a6_r1_repair_dev.test.mjs": 517,
+  "packages/zero_model_refoundation/provisional_a6_r2_challenge.test.mjs": 492,
+  "packages/zero_model_refoundation/provisional_a7_dev.test.mjs": 374,
+  "packages/zero_model_refoundation/provisional_challenge_v03.test.mjs": 751,
+  "packages/zero_model_refoundation/provisional_challenge_v04.test.mjs": 321,
+  "packages/zero_model_refoundation/provisional_challenge_v05.test.mjs": 358,
+  "packages/zero_model_refoundation/provisional_challenge_v06.test.mjs": 424,
+  "packages/zero_model_refoundation/provisional_data.test.mjs": 181,
+  "packages/zero_model_refoundation/provisional_dev_v04_safety_remaining.test.mjs": 12917,
+  "packages/zero_model_refoundation/provisional_dev_v04_safety_seed.test.mjs": 10908,
+  "packages/zero_model_refoundation/provisional_h1_recall_dev.test.mjs": 504,
+  "packages/zero_model_refoundation/provisional_ordinary_dev_v04.test.mjs": 7557,
+  "packages/zero_model_refoundation/provisional_role_challenge.test.mjs": 110,
+  "packages/zero_model_refoundation/provisional_safety_v02.test.mjs": 206,
+  "packages/zero_model_refoundation/provisional_safety_v03.test.mjs": 225,
+  "packages/zero_model_refoundation/provisional_safety_v04.test.mjs": 263,
+  "packages/zero_model_refoundation/provisional_safety.test.mjs": 134,
+  "packages/zero_model_refoundation/provisional_train_v04_slice1.test.mjs": 519,
+  "packages/zero_model_refoundation/provisional_train_v04_slice2.test.mjs": 602,
+  "packages/zero_model_refoundation/provisional_train_v04_slice3.test.mjs": 932,
+  "packages/zero_model_refoundation/provisional_train_v04_slice4.test.mjs": 839,
+  "packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs": 1050,
+  "packages/zero_model_refoundation/train_hold_dispositions.test.mjs": 1491,
+  "packages/zero_model_refoundation/train_label_proposals.test.mjs": 1159,
+  "packages/zero_model_refoundation/train_label_review_cards.test.mjs": 673,
+  "packages/zero_model_refoundation/train_older_role_dispositions.test.mjs": 901,
+  "packages/zero_model_refoundation/train_older_role_proposals.test.mjs": 528,
+  "packages/zero_model_refoundation/train_request_frames.test.mjs": 437,
+  "packages/zero_model_refoundation/train_review_admission.test.mjs": 2432,
+  "packages/zero_model_refoundation/train_review_compiler_adapter.test.mjs": 966,
+  "packages/zero_model_refoundation/train_v04_compile.test.mjs": 1645,
+  "packages/zero_model_refoundation/train_v04.test.mjs": 237
+})
+});
+
+export function estimatedUnitCost(path,timing=CI_TIMING_REFERENCE){
+ if(Object.hasOwn(timing.unit_ms,path))return timing.unit_ms[path];
  if(Object.hasOwn(CI_TIMING_REFERENCE.unit_ms,path))return CI_TIMING_REFERENCE.unit_ms[path];
  const intake=path.match(/\/mechanism_matrix_train_expansion(\d+)\.test\.mjs$/);
  const review=path.match(/\/mechanism_matrix_expansion(\d+)_review\.test\.mjs$/);
@@ -303,18 +455,20 @@ export function estimatedUnitCost(path){
  if(part)return 500+200*Number(part[1])**2;
  return 1000;
 }
-export function planTestLanes(paths){
+export function planTestLanes(paths,{shards=2,timing=CI_TIMING_REFERENCE}={}){
+ if(![2,3].includes(shards))throw Error("explicit two or three serial shards required");
+ if(![CI_TIMING_REFERENCE,CURRENT_MAIN_CI_TIMING_REFERENCE].includes(timing))throw Error("registered timing hints required");
  if(!Array.isArray(paths)||!paths.length||new Set(paths).size!==paths.length||paths.some(p=>typeof p!=='string'||!/^packages\/zero_model_refoundation\/[a-z0-9_]+\.test\.mjs$/.test(p)))throw Error('explicit unique engineering units required');
- const lanes=Array.from({length:4},()=>({estimated_ms:0,paths:[]}));
- for(const path of [...paths].sort((a,b)=>estimatedUnitCost(b)-estimatedUnitCost(a)||a.localeCompare(b,'en'))){
-  let index=0;for(let i=1;i<4;i++)if(lanes[i].estimated_ms<lanes[index].estimated_ms)index=i;
-  lanes[index].paths.push(path);lanes[index].estimated_ms+=estimatedUnitCost(path);
+ const lanes=Array.from({length:shards*2},()=>({estimated_ms:0,paths:[]}));
+ for(const path of [...paths].sort((a,b)=>estimatedUnitCost(b,timing)-estimatedUnitCost(a,timing)||a.localeCompare(b,'en'))){
+  let index=0;for(let i=1;i<lanes.length;i++)if(lanes[i].estimated_ms<lanes[index].estimated_ms)index=i;
+  lanes[index].paths.push(path);lanes[index].estimated_ms+=estimatedUnitCost(path,timing);
  }
- return [lanes.slice(0,2),lanes.slice(2,4)];
+ return Array.from({length:shards},(_,i)=>lanes.slice(i*2,i*2+2));
 }
 export function selectTestLanes(paths,shard){
- if(!['1/2','2/2'].includes(shard))throw Error('exactly two serial CI shards required');
- return planTestLanes(paths)[Number(shard[0])-1];
+ if(!['1/2','2/2','1/3','2/3','3/3'].includes(shard))throw Error('explicit two or three serial CI shards required');
+ return planTestLanes(paths,{shards:Number(shard[2]),timing:shard[2]==='3'?CURRENT_MAIN_CI_TIMING_REFERENCE:CI_TIMING_REFERENCE})[Number(shard[0])-1];
 }
 export async function executeTestLanes(lanes,runUnit){
  if(!Array.isArray(lanes)||lanes.length!==2||typeof runUnit!=='function')throw Error('exactly two workers required');
