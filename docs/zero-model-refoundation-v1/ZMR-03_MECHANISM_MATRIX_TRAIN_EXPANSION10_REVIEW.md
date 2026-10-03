@@ -1,0 +1,17 @@
+# Full144 source10 writer QA
+
+Actual registered source10 main090422dd2ea2cf597d5751acf2fbc012dca6b03e/treebdf9fc82f9585c3391886f915a687b7438ae7113,sourceSHA25648740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca. **NON_INDEPENDENT_DEVELOPMENT_EVIDENCE**. 144 actual source-writer comments:142 provisional retains/2 new LABEL_IDENTIFIABILITY_HOLD (089 email-editing vs writing-editing;136 departure-checklist vs trip-planning) and8 new ROLE_IDENTIFIABILITY_HOLD (017/027/081/091/111/117/127/141 OBJECT question or action clauses). Frozen source/gold/spans/factors preserved;no positive union, exclusions, role replacement or accepted gold. Earlier1008 writer reviews/39 labelholds/24 roleholds intact;378 older roles unqualified.
+
+Combined1152 writerreviews/1111 provisionalretains/41 labelholds/32 explicitroleholds,full144 rawTopics,zh720-en288-mixed144,all144Topics8 rawrows. RawTRAINgap2304(zh1008/en864/mixed432);accepted/independentquota0/qualifiedgap3456. Existing144neighborcards/432edges,0new/directional/adjudicatedgold. Fourteen actual antecedents/literalnameproxy11/144 preserved;echo unadjudicated/10%ceiling exact. Licenses,meaningfulfamilies,role-factor-equivalence,heldoutnovelty and grouped independent uncertainty remain unqualified.
+
+Three focused actual-source/input-code pin,corruption/purity tests and same3 in102 explicit-file minimal delivery;outcomes recorded in PR receipt after execution. Existing123 CI units preserved plusoneQA unit;two serialshards/max-parallel1/two workers/five-minute per-job limit retained. No Router/compiler/CALfit/semantic-resource gate/newstableallocation/refund/repairreset;allowance null. Full144/95%/70%/safety/1MiB/2MiB/32MiB incremental/20ms/100ms/local-first/zero-neural-embedding-LLM-semanticAPI exact. DataNOT_QUALIFIED/capabilityUNTESTED/resourceNOT_QUALIFIED/noceiling.
+
+Next exact remaining registered mechanism-family/language cells across ALL144Topics. Source-only preparation2160remainingcells/2304missingrows,next144zhselection,originals not authored/no quota credit. Continue full24/12-8-4/8meaningfulfamilies/source/factor/role/boundary/safety,separateordinary/challengeDEV/publicstatic accounting. Preserve41labelholds/32roleholds/oldpins;independentqualification/AS/stablecomparison held only.
+
+## Pre-prediction clerical amendment
+
+Initial v0.1 review and INITIAL_RESULT remain frozen byte-for-byte. v0.2 explicitly supersedes SHA2568da114069edb168ebf6f2b9d471526f46eb684a12fdd985fc7bfc623335d7ddb:chemistry-materials rolehold is111,initial index115 was branding-identity. Corrected8 newholds/32 combined;source/gold/spans/factors and24 priorholds unchanged. Zero predictions/accepted gold/independent credit;no semantic repair or allowance reset. New head integration required;earlier head CI is retained and not rerun.
+
+## CI materialization repair
+
+Head44b83af0a2858f0c158409b4f90694b8733c1c75 ZMR37112687513 shard2job111173527005 FAILED with165PASS/1FAIL:INITIAL_RESULT registered in docs but absent from actual materialization loop. Shard1job111173526742 PASS. Earlier manual minimal102-file delivery included the receipt and therefore did not expose this transport gap. New workflow explicitly materializes the frozen INITIAL_RESULT before units. Existing124unit paths/order/assertions,2serialshards,max2workers,5-minute jobs andpublic SHA/type/size/allowlist guards unchanged. No oldhead rerun,no source/review/code/semantic mutation,no budget reset. Newhead CI required.
