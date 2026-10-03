@@ -1,0 +1,11 @@
+# Full144 source11 writer QA
+
+Actual source11mainfe13fae833698132e1ec386add5135b1e3051211/tree0a08ff1c298154ec1359e3c3f6b96887e7618021,sourceSHA256ac50d7b9a5a494eeff38f3f4ba7e781a8fbd58881ee75716860a32fc7c975ab3. **NON_INDEPENDENT_DEVELOPMENT_EVIDENCE**.144actual source-writer comments/144provisionalretains/0newlabelholds/0newexplicitroleholds. Every role remains writer-proposed/unaccepted;zero newhold is not rolequalification or low ambiguity proof. Frozen source/gold/spans/factors andinitial/correctedQA10reviews/receipts preserved;no positive union/exclusions/role replacement. Earlier1152reviews/41labelholds/32roleholds intact;378olderrolesunqualified.
+
+Combined1296writerreviews/1255provisionalretains/41labelholds/32explicitroleholds,full144rawTopics/zh864-en288-mixed144/all144Topics9rawrows/rawTRAINgap2160(zh864/en864/mixed432). Accepted/independentquota0/qualifiedgap3456;144existingneighborcards/432edges/0new-drectional-adjudicatedgold.14actualantecedents/literalproxy11/144 unchanged,source-license/family/template/scenario/echo/roles/heldoutnovelty/groupedindependent uncertainty unqualified.
+
+3focused actualsource/input-code pins,corruption/puritytests andsame3in108explicit-file minimaldelivery;outcomes inPRreceipt afterexecution. Prior125CIunits unchanged+oneQAunit;2serialshards/max2workers/5minuteperjob limit retained. Realworkflow receiptmaterialization checked beforepublication. No compiler/CALfit/Routerpredictions/semantic-resource gate/newstableallocation/refund/reset/retiredalias,allowancenull.144/95%/70%/safety/allproductresourcebudgets/local-first/zero-neural-embedding-LLM-semanticAPI exact. DataNOT_QUALIFIED/capabilityUNTESTED/resourceNOT_QUALIFIED/noceiling.
+
+Nextexact registeredmissingfull144family-languagecells:source-onlyselection2016remainingcells/2160missingrows,next144en,48/144unregisterednewscenario drafts/96missing/noquota credit. Continuefull24/12-8-4/8meaningfulfamily/source/factor/role/boundary/safety/separateordinary-challengeDEV/publicstatic accounting. Onlydependentindependentqualification/AS/stablecomparison held.
+
+Unregistered source12preparation48Englishdrafts/144exactspans/4antecedents. Initial24drafts rejected beforefreeze for excessive source11scenario reuse,retained separately/0credit. No source12packet frozen or registered;source11/QA11 raw andqualification counts unchanged.
