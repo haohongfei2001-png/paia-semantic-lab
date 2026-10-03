@@ -134,5 +134,40 @@
     "node_host_parity_not_claimed": true,
     "semantic_judgment_certified": false
   },
-  "dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37130483022_ZMR37130483044"
+  "dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37130483022_ZMR37130483044",
+  "preserved_ci_failure": {
+    "schema": "ZMR-CI-CANCELLED-HEAD-OBSERVATION-1",
+    "head": "734e8e835cb3266df3500c5ac9f289b9714d6cf6",
+    "tree": "0a6ea96a820d847247f046d7c0bf3a652f584ea1",
+    "base": "d926bf81c5c97d6e3e2678deda50e5d86f293f48",
+    "run_id": 37132637753,
+    "attempt": 1,
+    "workflow_verdict": "CANCELLED_NOT_INTEGRATION_PASS",
+    "semantic_run_id": 37132637730,
+    "semantic_verdict": "SUCCESS_ATTEMPT1",
+    "cancellation_reason": "NOT_EXPLICIT_IN_LOGS_DEADLINE_PROXIMITY_ONLY",
+    "jobs": [
+      {
+        "job_id": 111230629752,
+        "shard": "1/2",
+        "verdict": "CANCELLED",
+        "completed_units": 65,
+        "unit_failures": 0,
+        "unit_exit_code": 0,
+        "setup_to_schedule_ms": 38859,
+        "scheduled_units_ms": 262906
+      },
+      {
+        "job_id": 111230629917,
+        "shard": "2/2",
+        "verdict": "SUCCESS",
+        "completed_units": 68,
+        "unit_failures": 0,
+        "unit_exit_code": 0,
+        "setup_to_schedule_ms": 25617,
+        "scheduled_units_ms": 257388
+      }
+    ]
+  },
+  "ci_engineering_repair_result": "docs/zero-model-refoundation-v1/ZMR_CI_BYTECODE_REPORTING_REPAIR_RESULT.json"
 }

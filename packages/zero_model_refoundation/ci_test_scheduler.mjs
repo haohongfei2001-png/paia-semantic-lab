@@ -2,6 +2,9 @@
 import {spawn} from 'node:child_process';
 import {pathToFileURL} from 'node:url';
 import {resolve} from 'node:path';
+import {mkdtemp,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
 
 /** Prior exact-head engineering durations;not candidate resource measurements. */
 export const PREVIOUS_CI_TIMING_REFERENCE=Object.freeze({
@@ -325,12 +328,21 @@ export async function executeTestLanes(lanes,runUnit){
  }));
  return {results,exit_code:results.every(r=>r.passed)?0:1};
 }
-export function runNodeUnit(path){
+/** Fresh per-invocation bytecode cache only; no test results, data or cross-head artifacts. */
+export async function withEphemeralCompileCache(run){
+ if(typeof run!=='function')throw Error('cache callback required');
+ const directory=await mkdtemp(join(tmpdir(),'zmr-engineering-bytecode-'));
+ try{return await run(directory);}finally{await rm(directory,{recursive:true,force:true});}
+}
+export function runNodeUnit(path,{reporter='tap',compileCacheDirectory}={}){
+ if(!['tap','spec'].includes(reporter))throw Error('explicit engineering reporter required');
+ if(compileCacheDirectory!==undefined&&(typeof compileCacheDirectory!=='string'||!compileCacheDirectory.length))throw Error('explicit bytecode directory required');
  return new Promise((done,reject)=>{
-  const env={...process.env};delete env.NODE_TEST_CONTEXT;
+  const env={...process.env};delete env.NODE_TEST_CONTEXT;delete env.NODE_COMPILE_CACHE;
+  if(compileCacheDirectory!==undefined)env.NODE_COMPILE_CACHE=compileCacheDirectory;
   console.log('ZMR_UNIT_START '+path);const started=performance.now();
   // Each child admits one explicit file and one test worker;two lane children maximum.
-  const child=spawn(process.execPath,['--test','--test-concurrency=1','--test-reporter=tap',path],{env,stdio:'inherit'});
+  const child=spawn(process.execPath,['--test','--test-concurrency=1','--test-reporter='+reporter,path],{env,stdio:'inherit'});
   child.once('error',reject);child.once('close',(code,signal)=>{
    console.log('ZMR_UNIT_END '+JSON.stringify({path,code,signal,duration_ms:performance.now()-started}));done(code===0&&signal===null?0:1);
   });
@@ -341,5 +353,9 @@ if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).hr
  if(!shardArg?.startsWith('--shard=')||workersArg!=='--test-concurrency=2')throw Error('bounded explicit scheduler arguments required');
  const lanes=selectTestLanes(paths,shardArg.slice(8));
  console.log('ZMR_TEST_SCHEDULE '+JSON.stringify({shard:shardArg.slice(8),workers:2,units:lanes.reduce((n,l)=>n+l.paths.length,0),estimated_lane_ms:lanes.map(l=>l.estimated_ms),estimates_are_resource_pass:false}));
- const outcome=await executeTestLanes(lanes,runNodeUnit);console.log('ZMR_TEST_SCHEDULE_RESULT '+JSON.stringify(outcome));process.exitCode=outcome.exit_code;
+ const outcome=await withEphemeralCompileCache(async compileCacheDirectory=>{
+  console.log('ZMR_BYTECODE_CACHE '+JSON.stringify({scope:'FRESH_JOB_INVOCATION_ONLY',test_result_cache:false,reporter:'spec',assertions_unchanged:true}));
+  return executeTestLanes(lanes,path=>runNodeUnit(path,{reporter:'spec',compileCacheDirectory}));
+ });
+ console.log('ZMR_TEST_SCHEDULE_RESULT '+JSON.stringify(outcome));process.exitCode=outcome.exit_code;
 }

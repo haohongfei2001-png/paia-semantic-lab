@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtemp,writeFile,rm,readFile} from 'node:fs/promises';
+import {mkdtemp,writeFile,rm,readFile,access,readdir} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {planTestLanes,selectTestLanes,executeTestLanes,estimatedUnitCost,CI_TIMING_REFERENCE,PREVIOUS_CI_TIMING_REFERENCE} from './ci_test_scheduler.mjs';
+import {planTestLanes,selectTestLanes,executeTestLanes,estimatedUnitCost,CI_TIMING_REFERENCE,PREVIOUS_CI_TIMING_REFERENCE,withEphemeralCompileCache,runNodeUnit} from './ci_test_scheduler.mjs';
 const unit=n=>'packages/zero_model_refoundation/'+n+'.test.mjs';
 test('cancelled-run timing hints cover the complete actual list and reserve setup time inside the unchanged job budget',async()=>{
  const workflow=await readFile(new URL('../../.github/workflows/zmr-v1.yml',import.meta.url),'utf8');
@@ -57,4 +57,27 @@ test('completed worker drains remaining work across lane boundaries while a long
  assert.deepEqual(seen,['long','left1','left2','short']);
  assert.equal(outcome.results.length,4);assert.equal(outcome.exit_code,0);
  assert.deepEqual(outcome.results.map(r=>r.path),['long','left1','left2','short']);
+});
+
+test('fresh bytecode cache retains compact failure diagnostics,reruns assertions and invalidates changed source',{timeout:10000},async()=>{
+ const root=await mkdtemp(join(tmpdir(),'zmr-bytecode-proof-')),file=join(root,'changing.test.mjs');let cache;
+ try{
+  await withEphemeralCompileCache(async directory=>{
+   cache=directory;assert.deepEqual(await readdir(directory),[]);
+   const writes=v=>writeFile(file,"import test from 'node:test';import assert from 'node:assert/strict';test('bytecode-proof-changing',()=>assert.equal("+v+",1));\n");
+   const child=()=>{
+    const script="import {runNodeUnit} from "+JSON.stringify(new URL('./ci_test_scheduler.mjs',import.meta.url).href)+";const r=await runNodeUnit("+JSON.stringify(file)+",{reporter:'spec',compileCacheDirectory:"+JSON.stringify(directory)+"});process.exitCode=r;";
+    const env={...process.env};delete env.NODE_TEST_CONTEXT;
+    return spawnSync(process.execPath,['--input-type=module','-e',script],{env,encoding:'utf8',timeout:30000,maxBuffer:1024*1024});
+   };
+   await writes(1);const first=child();assert.equal(first.error,undefined);assert.equal(first.status,0);assert(first.stdout.includes('bytecode-proof-changing'));assert((await readdir(directory)).length>0);
+   await writes(2);const changed=child();assert.equal(changed.error,undefined);assert.equal(changed.status,1);assert(changed.stdout.includes('AssertionError'));assert(changed.stdout.includes('bytecode-proof-changing'));
+   const unchangedFailure=child();assert.equal(unchangedFailure.error,undefined);assert.equal(unchangedFailure.status,1);assert(unchangedFailure.stdout.includes('AssertionError'));
+   await writes(1);assert.equal(child().status,0);
+  });
+  await assert.rejects(access(cache),/ENOENT/);
+  let failedCache;await assert.rejects(withEphemeralCompileCache(async directory=>{failedCache=directory;throw Error('fixture failure');}),/fixture failure/);await assert.rejects(access(failedCache),/ENOENT/);
+  await assert.rejects(withEphemeralCompileCache(null),/callback/);
+  assert.throws(()=>runNodeUnit(file,{reporter:'invented'}),/reporter/);assert.throws(()=>runNodeUnit(file,{compileCacheDirectory:''}),/directory/);
+ }finally{await rm(root,{recursive:true,force:true});}
 });
