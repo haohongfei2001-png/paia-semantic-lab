@@ -1,0 +1,3157 @@
+{
+  "schema": "ZMR-KNOWN-TRAIN-HOLD-DISPOSITIONS-1",
+  "source_main": "1ee73115fc1727308f6940c1f535c309f2c4a5cc",
+  "publication_dependency_pr": 247,
+  "status": "VERSIONED_WRITER_DISPOSITIONS_RECORDED_QUALIFICATION_HOLD_RETAINED",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "catalog_path": "catalog/system_topic_catalog_v0.2.yaml",
+  "catalog_git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad",
+  "unique_held_rows": 72,
+  "label_holds": 41,
+  "explicit_role_holds": 32,
+  "overlap_rows": 1,
+  "older_roles_without_disposition": 378,
+  "actual_source_rows_read": 72,
+  "versioned_writer_dispositions": 72,
+  "unaccepted_role_proposals": 5,
+  "independent_reviewers": 0,
+  "accepted_gold_rows": 0,
+  "accepted_roles": 0,
+  "all_original_source_gold_spans_factors_preserved": true,
+  "semantic_judgment_certified": false,
+  "data_qualification": "NOT_QUALIFIED",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "remaining_stable_allowance": null,
+  "candidate_predictions": 0,
+  "new_semantic_evaluations": 0,
+  "new_stable_allocations": 0,
+  "saturation_ceiling_claim": false,
+  "records": [
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-010",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+        "source_packet_sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+        "review_git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34",
+        "review_records_sha256": "c0e1cdb764d188134762c2fad6402aa4ab02be227f348e0069edfdd9f7b100aa",
+        "current_sha256": "cf317c2d05b3df0166c50a6773c6d2c4669f2562273b59732dd805e15ad055a0",
+        "bundle_sha256": "c715e6c3b22960107d357a1483e8c4d50ef488f7a490dc4bc545562869260cd6",
+        "gold_sha256": "16c8c06d5edad7db1dfc0e872063ecc64f9ea96b5398c6e484eb1ca26f78df8c",
+        "spans_sha256": "7597d7adac4c5153a451297fc56a37fd9c259164e1eac57aedb4c9807587f2f3"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "请求比较按章节听课做题与每周同步讲义，两者是学习方法；力学课程是适用范围。课程内容和课程跟进方法的主目标边界尚未给出，不能用课程名直接定标。",
+      "competing_label_hypotheses": [
+        "sys.education_learning.academic_courses",
+        "sys.education_learning.learning_methods"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-018",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+        "source_packet_sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+        "review_git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34",
+        "review_records_sha256": "c0e1cdb764d188134762c2fad6402aa4ab02be227f348e0069edfdd9f7b100aa",
+        "current_sha256": "dfc8c9f884d4cdc8cfd1b298f2efa8f188977793ef82e34186ade512dbd4c34a",
+        "bundle_sha256": "613593ab357fe9da9ca93e3c15472e50fa6ff3b35a19ea71df57048ed8c39847",
+        "gold_sha256": "40d7dfb886627ffb2337eb9b8ad64b9a4dd4c4b24d485391f59a378575b59b02",
+        "spans_sha256": "eed48595d4f5199f382e8a87b2e0bcba0d9567e740350f562e5c45893b6b077d"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "展览准备的并行与分阶段方案涉及依赖和风险；没有明确给出目标优先级或取舍。需区分项目执行安排与路线优先级规划。",
+      "competing_label_hypotheses": [
+        "sys.projects_products.project_planning",
+        "sys.projects_products.roadmap_prioritization"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-045",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+        "source_packet_sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+        "review_git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34",
+        "review_records_sha256": "c0e1cdb764d188134762c2fad6402aa4ab02be227f348e0069edfdd9f7b100aa",
+        "current_sha256": "b4363421bb66dccdff09da096263055f3ac9cb59b3bc0c26bd6eec807ea8af1d",
+        "bundle_sha256": "915dc5f728a3052a36390ebadcbb5b7cbc8fd70601454ac9e28871a7643ef9ef",
+        "gold_sha256": "ee7c29070c23b00ab0f6b465520f1ad93099c7523dfe6871166611be633c5ed5",
+        "spans_sha256": "7c314bc48325c518b94036b29bebf584db0cc611054294fc4dd1b92c8a7e40c8"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "简化标志又保留识别性同时涉及视觉形式和身份表达；排除营销宣传不能排除 branding identity。需说明判断对象是版式造型还是识别系统。",
+      "competing_label_hypotheses": [
+        "sys.creative_design.visual_design",
+        "sys.creative_design.branding_identity"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-046",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+        "source_packet_sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+        "review_git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34",
+        "review_records_sha256": "c0e1cdb764d188134762c2fad6402aa4ab02be227f348e0069edfdd9f7b100aa",
+        "current_sha256": "10051312aee5818b6eef772e8878b5da7b5bc6dc74e1d6d41c1355b96b95a22d",
+        "bundle_sha256": "aedbe53f9483c138eeaa057b7624fbd1b58ba215c81da6ad06098f8feea02914",
+        "gold_sha256": "7c76688c8c636806ff4bb4377c10f8669212ad2264ab4d6f20af83d01432d4a8",
+        "spans_sha256": "86d4c5855617c62955445934ba274ae10f24e6a6420a803890d0ede3dab8e185"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "创办项目的可行性、分工和风险涉及创业也涉及经营战略；排除广告不会消除两者重叠。需要创办阶段任务与一般经营决策的边界。",
+      "competing_label_hypotheses": [
+        "sys.business_entrepreneurship.entrepreneurship",
+        "sys.business_entrepreneurship.business_strategy"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-SEED-054",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+        "source_packet_sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+        "review_git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34",
+        "review_records_sha256": "c0e1cdb764d188134762c2fad6402aa4ab02be227f348e0069edfdd9f7b100aa",
+        "current_sha256": "a8de824674f4279b81224ed6570211f6b7d0c40a357dcbb5b085ad0b1c9d30a4",
+        "bundle_sha256": "5c2fd3c63238993ec21efb136a140a66b59cd5f2950b6bb701d3a4591bb76eae",
+        "gold_sha256": "3304017b010a1d611c913a118e41fec2a40029d61c7b3d4b38b2405b5700005d",
+        "spans_sha256": "0b3bab8cf42272488731a78a4cdcff6edca525d1b34cddd5dbddbdfcff70b66f"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "按主题查找并保留来源链接既可组织知识，也可组织文件。目录形式不是独占标签证据，需区分知识关系与存储检索操作。",
+      "competing_label_hypotheses": [
+        "sys.knowledge_memory.notes_knowledge_management",
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-052",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+        "source_packet_sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_review_v0.1.json",
+        "review_git_blob": "c66b4714436e25bc47404fa7b4aa11bd42713281",
+        "review_records_sha256": "7e53658c9301e7edc961c9287e74261600e03924568a9489764ab0b1c0099c18",
+        "current_sha256": "743e83cfb945e5d28e80e63f840182027e3dedc752f4f72dffb97a6591bd58fe",
+        "bundle_sha256": "7705bb5369462b6578cbd16ce1726ec0a0a3721c53ea8d751f500ea36ec9d5af",
+        "gold_sha256": "4c51b25fd13d22daa4e230e2186cfa6cb313360a37c325f125ca28752b02fb33",
+        "spans_sha256": "5d465061cc3fe0fc2de397fba7e7966de266ff435acdbb59cbdf034b100ea290"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "旧信件、活动凭证和个人资料的来源、时间及关联对象提示个人档案，但同样可以是文件存储元数据。生命周期归档目的与一般存储需要明示边界。",
+      "competing_label_hypotheses": [
+        "sys.knowledge_memory.personal_archive",
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART2-054",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+        "source_packet_sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_review_v0.1.json",
+        "review_git_blob": "c66b4714436e25bc47404fa7b4aa11bd42713281",
+        "review_records_sha256": "7e53658c9301e7edc961c9287e74261600e03924568a9489764ab0b1c0099c18",
+        "current_sha256": "8b22f012f57067b78e63c74214b77f0f4fade25deefe30bd5217e26bef4c33a0",
+        "bundle_sha256": "7d3cb80709832dffcdec2fc01ae62d7f4b880658099b1aecdc7ce9d32545f78c",
+        "gold_sha256": "4c51b25fd13d22daa4e230e2186cfa6cb313360a37c325f125ca28752b02fb33",
+        "spans_sha256": "2febb46da47039784c6efbe360bbd7dac0097dcc47e841394a978593b3b36b29"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "按人生阶段建目录提示个人档案，不只是按格式分类；但目录组织仍是存储行为。不能凭人生措辞自动排除文件存储。",
+      "competing_label_hypotheses": [
+        "sys.knowledge_memory.personal_archive",
+        "sys.knowledge_memory.files_documents_storage"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-001",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+        "source_packet_sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+        "review_git_blob": "a4b9ed88bf77fb4afdb77a25923705d4f892442b",
+        "review_records_sha256": "a6122abdd15c8f627cd49f0411c21b2a56135e3b3dbf3a7c0e4a7ec4d0910be9",
+        "current_sha256": "194cb81a19192c76544967d4b1f2fba20e7f44e0dd13c23d48207724bfc9cf2e",
+        "bundle_sha256": "aaf3bb26838a55e5acdcd5f3d03d35c2f09dd85f2b78fceb9e7fc6baa9601957",
+        "gold_sha256": "7dda1dc809de1a68f2a52811447625b28a97c2e6ee3c0781ea678fbbfa98d20a",
+        "spans_sha256": "ee4f309a4262c569965b79aabbc3a720ff099589975262bf6cfd4e041abd8900"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "换城市并照顾家人的成本和选项是重大抉择，不是已经决定搬迁的执行清单；城市变动仍与搬迁 Topic 重叠。保持选择未定，不补成搬家任务。",
+      "competing_label_hypotheses": [
+        "sys.personal_direction.major_decisions",
+        "sys.home_daily.moving_relocation"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-002",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+        "source_packet_sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+        "review_git_blob": "a4b9ed88bf77fb4afdb77a25923705d4f892442b",
+        "review_records_sha256": "a6122abdd15c8f627cd49f0411c21b2a56135e3b3dbf3a7c0e4a7ec4d0910be9",
+        "current_sha256": "da49fd53b64b2cabb3027cef18969c9c2ca8b08da7018a100bc9a17045a1bd63",
+        "bundle_sha256": "baf6b28bd5b940771aef87c580b6adc478b12646280379a043ff2abaef83d34c",
+        "gold_sha256": "7dda1dc809de1a68f2a52811447625b28a97c2e6ee3c0781ea678fbbfa98d20a",
+        "spans_sha256": "b111e3dd884f2351e3cdc803767ec1ca6e8f6274020e3f9042f29bbb5f4f4a9e"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "是否休学一年、可逆性和替代选项是决定目标，大学手续只是环境。需区分决策权衡与学籍办理；不得把讨论替换成实际休学申请。",
+      "competing_label_hypotheses": [
+        "sys.personal_direction.major_decisions",
+        "sys.education_learning.academic_admin"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-049",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+        "source_packet_sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+        "review_git_blob": "a4b9ed88bf77fb4afdb77a25923705d4f892442b",
+        "review_records_sha256": "a6122abdd15c8f627cd49f0411c21b2a56135e3b3dbf3a7c0e4a7ec4d0910be9",
+        "current_sha256": "7d91213f5f637dc65f941f509bdd197fe0b390bf5b462718f3eb80d942f2dbb5",
+        "bundle_sha256": "c06a394a81c2e0941ff48db02618da6376af4e224a591c450cd3e89ac5c8e8b1",
+        "gold_sha256": "fb1f42db56c9c6d0ea1d939bdbb3cd528a210812ba4abcd42473d3d155acdcbf",
+        "spans_sha256": "3a3def9bc7c110f339b35d339a579facbf355d38f8d07abc9041af28d942586a"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "时间区段的安排与个人效率策略同时出现。需要区分分配可用时间和提高做事效率，不能只凭 time block 用词定标。",
+      "competing_label_hypotheses": [
+        "sys.time_events.time_management",
+        "sys.personal_direction.personal_productivity"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-050",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+        "source_packet_sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+        "review_git_blob": "a4b9ed88bf77fb4afdb77a25923705d4f892442b",
+        "review_records_sha256": "a6122abdd15c8f627cd49f0411c21b2a56135e3b3dbf3a7c0e4a7ec4d0910be9",
+        "current_sha256": "1f7a8ed2b90362849263bc8ac17f57a16042dd639241318dc7562985e617a541",
+        "bundle_sha256": "52443be7a416dc83423c8bf6cb4514f8cfbaf3eb805636f4be3dd85ff17814da",
+        "gold_sha256": "fb1f42db56c9c6d0ea1d939bdbb3cd528a210812ba4abcd42473d3d155acdcbf",
+        "spans_sha256": "5844f05631287f60918ac44194146af593f22d120b364e1f70f5d6e9510dfdec"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "两段集中工作、日常消息和缓冲时间是明确的时间分配约束，也可属于效率改进。不能凭消息或专注词定标；需按分配输出及两段上限裁决。",
+      "competing_label_hypotheses": [
+        "sys.time_events.time_management",
+        "sys.personal_direction.personal_productivity"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART3-051",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+        "source_packet_sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+        "review_git_blob": "a4b9ed88bf77fb4afdb77a25923705d4f892442b",
+        "review_records_sha256": "a6122abdd15c8f627cd49f0411c21b2a56135e3b3dbf3a7c0e4a7ec4d0910be9",
+        "current_sha256": "b3b168b09485f32e9781f117307c6c0b140419ac383a3239b89a54183f589fbd",
+        "bundle_sha256": "c06a9af44d97a56ae875e68556523962df5907e2bb18bb24547f75fda5b111a6",
+        "gold_sha256": "fb1f42db56c9c6d0ea1d939bdbb3cd528a210812ba4abcd42473d3d155acdcbf",
+        "spans_sha256": "92fcdb89bca59c35193061f04d36781db2ea544ea246e3a39173965781d79cff"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "恢复注意力和调整安排跨越时间分配与效率策略。恢复目的不能抹掉原有时间限制；需能解释两种标签的互斥或重叠范围。",
+      "competing_label_hypotheses": [
+        "sys.time_events.time_management",
+        "sys.personal_direction.personal_productivity"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-010",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "5102c49298f070e4f1754c62bced7a088b2d1775783d69eb6dffb15620c53e90",
+        "bundle_sha256": "5936ffa181967fc6438198dae3b7ddf1dda0992a80bfef5d39ee2396ccedada0",
+        "gold_sha256": "c497b432b815cbc619ea5004dfdd0516cf4eba31d84e910dd95262ea3fada4de",
+        "spans_sha256": "9ce3ecdae2ccba3deb588a9227b43a554cde7cc25f4511bdb219fcaced037a30"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "阅读前提问是阅读活动中的学习方法，reading learning 与 learning methods 均有直接支持。需按当前目标定义可复核边界。",
+      "competing_label_hypotheses": [
+        "sys.education_learning.reading_learning",
+        "sys.education_learning.learning_methods"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-011",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "930de8d5aaea7771ce3a36b580c3a6f387798089923ce085b98043b628b896b1",
+        "bundle_sha256": "749b808a0e8a0ffc7ffbd640b64babdff7d219c2e0a672d31926df366b5501c7",
+        "gold_sha256": "c497b432b815cbc619ea5004dfdd0516cf4eba31d84e910dd95262ea3fada4de",
+        "spans_sha256": "a665c18da287b2200a01674af7adbc31b78ab25efaa3ff9fa897b6a8e8f06bc2"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "最近上下文的虚构学习者标出三条不清楚的论断，当前需要理解或复述；是阅读理解还是一般学习方法未定。三条不清楚不能补为已经学会。",
+      "competing_label_hypotheses": [
+        "sys.education_learning.reading_learning",
+        "sys.education_learning.learning_methods"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-012",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "143ed82b0461a867696c4cdaff4cbdda507ef255680b5c5c18cd2fa9bc1b8f3b",
+        "bundle_sha256": "2d0172885699a65966be2fa325ddfc3142d11765b8a2f8f4909f6b30fb476955",
+        "gold_sha256": "c497b432b815cbc619ea5004dfdd0516cf4eba31d84e910dd95262ea3fada4de",
+        "spans_sha256": "4828d4078877dc1d3a083efffb0e9eb63a1ced53093330e1bad827a80af3a802"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "自学阅读的步骤及复述属于阅读过程和学习策略交叉区。需区分内容理解任务与可迁移学习方法；自学一词不足以定标。",
+      "competing_label_hypotheses": [
+        "sys.education_learning.reading_learning",
+        "sys.education_learning.learning_methods"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-040",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "184663b3886b261a2db26abefad5b73aa08a59f43aead6e913faee4d5284565f",
+        "bundle_sha256": "8a26dff600e0f5a087478f568c6e22dd694e8e7588101b4c11c6769c086088ce",
+        "gold_sha256": "7b82d099f169098762806b496e026282ea24b0d91b2922fd1442f92e5e47f966",
+        "spans_sha256": "69679b87ed644097a94ac22a1121baec8d13401e24772b4307d92ed5ef91188f"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "桥梁受力路径可作为物理原理例题，也可作为工程分析；没有实际建造目标。器件名不能独自证明工程标签。",
+      "competing_label_hypotheses": [
+        "sys.science_technical.engineering",
+        "sys.science_technical.physics"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-041",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "50eccf493e5f67ae055166976db3a09c5aeeca1a4b9092b33733be4a689e8014",
+        "bundle_sha256": "03eaae0114aebf6d9ede601e6d030fac076e147545db606f2fa40809f0d9d153",
+        "gold_sha256": "7b82d099f169098762806b496e026282ea24b0d91b2922fd1442f92e5e47f966",
+        "spans_sha256": "4af74e159ee4dcae4e2192aa8cc30d934b71f770352f700a792a5801b25035b4"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "齿轮运动与摩擦同时涉及物理机理和工程应用；当前没有实物设计或施工。需说明解释机理与设计应用的边界。",
+      "competing_label_hypotheses": [
+        "sys.science_technical.engineering",
+        "sys.science_technical.physics"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART4-042",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+        "source_packet_sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+        "review_git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18",
+        "review_records_sha256": "58d47de159d1adf06dbeb8cdcff68220914c6d80f0013cea3e4f810a71a65cb8",
+        "current_sha256": "eac79f82567e5c1e49be661b0b86f05fed1ab3f03d93a09592578af76f1576f6",
+        "bundle_sha256": "d34dae0755da0577c248c5d6e85b06d9d424fa2dde01fc80fc990012a8752a7d",
+        "gold_sha256": "7b82d099f169098762806b496e026282ea24b0d91b2922fd1442f92e5e47f966",
+        "spans_sha256": "bb0ddb356aeefb7bd1a035cc3e10592a000b82bdc9b0c47c318b4f15f083a0fa"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "热和流体的解释用设备作为例子，不能据此排除 physics。工程系统分析与一般原理解释仍需边界裁决。",
+      "competing_label_hypotheses": [
+        "sys.science_technical.engineering",
+        "sys.science_technical.physics"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART5-037",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+        "source_packet_sha256": "4b42effc9f87dbcb4e8177d1a4b80160d4745af6fa15faede8464d608ffcc57a",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_review_v0.1.json",
+        "review_git_blob": "40e179f56590b00b73271e6ec6e8061cbbe02505",
+        "review_records_sha256": "455166bf536f3031661cb8df837e4acf4032bec751b05be1ff5cd50486297644",
+        "current_sha256": "dc5f06e1d6e8555073dc8d7148a026ca9665164afc6fc75cdc02056b240137dd",
+        "bundle_sha256": "20abb368d85a13de729e52689bbf1c6e065ea17684294786b42911fffc69ed1f",
+        "gold_sha256": "c5962850d9da0df36e82892f4c6f6f71f38d1ab42ae766112db735c77a5b659e",
+        "spans_sha256": "5fe497d7b20691155fb3fe6b891d77d86fc6fb3208c8b3b57d6203ce92cf4480"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "遗失证件后补办的材料和程序同时支持身份文件与政府服务。要区分证件对象专属任务和行政流程，不能把材料齐全视为标签正确。",
+      "competing_label_hypotheses": [
+        "sys.legal_civic.identity_documents",
+        "sys.legal_civic.government_services"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-010",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "f59b3658cd89173f3df8480d19ccc8a7064dec2e0d2e146e713b55322c086135",
+        "bundle_sha256": "c6856c550ca233a2302e18d40d2e5617c34bb8be87fc4195641c16633f817ac6",
+        "gold_sha256": "a9029b905f4cd004b8908b986efa2c843bd2ce73b1ad8ab6fe42847a628eda09",
+        "spans_sha256": "604c08d2321f2fb8656a2703b1e5e264273d5ca899ed6bf9fd9dad3162fd3875"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "绳结学习明确涉及学习过程，既可能是技能习得，也可能是学习方法。具体技能对象与方法输出需一同判断。",
+      "competing_label_hypotheses": [
+        "sys.education_learning.skill_learning",
+        "sys.education_learning.learning_methods"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-012",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "f20d39b312bc44c1b24a28a94106ba51ef1311f7a639a89176ea64ef9fa3aecb",
+        "bundle_sha256": "461ed13d0b94c98249c68aa9b444de2e21d3b3b1a9b7b5c7da10db197661d908",
+        "gold_sha256": "a9029b905f4cd004b8908b986efa2c843bd2ce73b1ad8ab6fe42847a628eda09",
+        "spans_sha256": "c8fbc1fe930119b7f3ca1bcdfda426b324ccb9c09152f7e8d3aab9d33a969c38"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "泛指新技能和反馈，缺少具体技能对象；学习方法的证据不弱于 skill learning。不能为配合目标标签虚构一个技能。",
+      "competing_label_hypotheses": [
+        "sys.education_learning.skill_learning",
+        "sys.education_learning.learning_methods"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-025",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "e58dcb04331518d9ce1c220248254f0ff3de0d26eeb93c396d93dcdb4b962212",
+        "bundle_sha256": "05d63290b037a5ae404514a18abff26905d901e64598b45b3d257dc2abe1cbea",
+        "gold_sha256": "3f6b07a4d1764b63abf97b9f765697e7112d9b104127bdf1e4186fab4c48ed80",
+        "spans_sha256": "8d98e48f8ae7eb20d96cf5598deae8ffee92854a1397c1cb1a62d26ba6200756"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "取包裹、维修和购物合并为一趟并排序，是外出办事，也涉及时间管理和计划清单。需保留三个事项，不缩成单项或仅行程词。",
+      "competing_label_hypotheses": [
+        "sys.home_daily.local_errands",
+        "sys.time_events.time_management",
+        "sys.time_events.plans_checklists"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-027",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "1bcb66699d18488ee820a9c1044f83abf41eb32afba24ff48b50d45c51c4b58e",
+        "bundle_sha256": "b9be122641bc4ef1686b684188fcee252877f2c2c18561e81d13223e4c93addd",
+        "gold_sha256": "3f6b07a4d1764b63abf97b9f765697e7112d9b104127bdf1e4186fab4c48ed80",
+        "spans_sha256": "6ed214d118c1b133d6f0317da5c8958bed0aadc590a299c590ccc8b65b512d4d"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "一趟外出办理事项的步骤、材料和收据支持 local errands，也支持 plans checklists。要以具体办事对象与可完成步骤区别标签。",
+      "competing_label_hypotheses": [
+        "sys.home_daily.local_errands",
+        "sys.time_events.plans_checklists"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-042",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "5d15832f0a90aa957d4b6be0d050ba643cca8316f41706ffb254685ee6597423",
+        "bundle_sha256": "8ab44ef6a1f5a217a00a51e784a886fbd71be583da9c7d0c0fdbb1eaf6e72aaf",
+        "gold_sha256": "ca58e717d1ca9e804808a1467f3ac026b82c281aad8a8c385d04e317b146d834",
+        "spans_sha256": "6cb8e3e8a1498cd542ff6baf3cc5fb71ee10d3d8c22ad53d756a97cf83fb4ec9"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "观察、假设和核验框架本身是数据分析方法，医学情境不足以使 medicine knowledge 独占。不得补入诊断或医疗结论。",
+      "competing_label_hypotheses": [
+        "sys.science_technical.medicine_knowledge",
+        "sys.science_technical.statistics_data_analysis"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART6-051",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+        "source_packet_sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+        "review_git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc",
+        "review_records_sha256": "9b95a4bd14098f9db6084d9238ce891a998a3378d5aaa74ae27f13a77388a9fc",
+        "current_sha256": "9173efae33c7c765825ae5aeb13e65adb999cd4df10ad3b2c6c31252f6483ffe",
+        "bundle_sha256": "648762f2644838520635363046eefa682ede933e406f8869d4426abeaebd682d",
+        "gold_sha256": "01bb8488a930767e4daaccd1ed17ad9e4ec1653f3adaae5276854b71404d6c5e",
+        "spans_sha256": "a89182ed70cbecb45ceb0c50307030be1d433a20a8d46e09a37d65e99e75ecb2"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "新家庭成员带来的阶段转变同时是人生事件和家庭安排。需区分事件阶段规划与持续家庭关系，不能因新成员措辞自动判定。",
+      "competing_label_hypotheses": [
+        "sys.time_events.life_events",
+        "sys.family_relationships.parents_family"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART7-042",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+        "source_packet_sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_review_v0.1.json",
+        "review_git_blob": "a3fecc5461a872180241da2a63d1436ba309b9ff",
+        "review_records_sha256": "48e2e7fd4ad5be8d6af659665ccd35bdb31f8e73f31f754562f5b5b3006f50a1",
+        "current_sha256": "52a7ed173acb8f2ac4f6dc98e331eb42f9a76b706ca63e5e86643a6f8950b212",
+        "bundle_sha256": "1a0c3152f857c4cc4487746cd4aaa9e811ce56ccaccc5ce121fd565c7114db2d",
+        "gold_sha256": "693b61933cc8c809014aedabc3fad03d3545aadba1c8ebb21a65ececb5d41f27",
+        "spans_sha256": "4a02847ddff60d6cd6137944305d843c191a2f8b277ab8f3fcd4190ce4fc9b5f"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "弯折、吸收等材料性质与用途限制同时涉及材料科学和工程。性质解释与实际选材应用边界未定。",
+      "competing_label_hypotheses": [
+        "sys.science_technical.chemistry_materials",
+        "sys.science_technical.engineering"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART7-053",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+        "source_packet_sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_review_v0.1.json",
+        "review_git_blob": "a3fecc5461a872180241da2a63d1436ba309b9ff",
+        "review_records_sha256": "48e2e7fd4ad5be8d6af659665ccd35bdb31f8e73f31f754562f5b5b3006f50a1",
+        "current_sha256": "5cf853276be3d2e67c54c67d32050352f63bbdfc050ade5a28c51e6ef8dba766",
+        "bundle_sha256": "81e3615904076a440f41482472bac06975861b81c46036470e503c95505dc5a6",
+        "gold_sha256": "87a1df8d85e645d0bcf9e3e11c0ae163e233850cd12d3fdbebc72ad3006a19d3",
+        "spans_sha256": "e2538c53cea43f13943c4182ffe18a5adfce30bf596df85f433516bdcceedbd0"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "当前要求虚构持续讨论的上下文摘要，区分保留背景、假设与现有问题；没有 recent 内容可恢复。既涉及上下文记忆，也涉及笔记组织，不能以摘要结构直接定标。",
+      "competing_label_hypotheses": [
+        "sys.knowledge_memory.memory_context",
+        "sys.knowledge_memory.notes_knowledge_management"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART7-054",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+        "source_packet_sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_review_v0.1.json",
+        "review_git_blob": "a3fecc5461a872180241da2a63d1436ba309b9ff",
+        "review_records_sha256": "48e2e7fd4ad5be8d6af659665ccd35bdb31f8e73f31f754562f5b5b3006f50a1",
+        "current_sha256": "7738796de1b9b1d9ee579b55a16a75ca3edb6bea4c5e1285ddd0f8e7c075fcd2",
+        "bundle_sha256": "cab2febc71fce27fa984869f773010675db4ddc196fce1bdc8b79154b17cd473",
+        "gold_sha256": "87a1df8d85e645d0bcf9e3e11c0ae163e233850cd12d3fdbebc72ad3006a19d3",
+        "spans_sha256": "575aab32ab1812865542407b36f4531e884ea4cdfcec4e967646e5259df1207c"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": null,
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "摘要没写到的事情不等于没发生，涉及上下文完整性和来源历史。需区分记忆恢复与证据溯源；不把缺失记录推成事实否定。",
+      "competing_label_hypotheses": [
+        "sys.knowledge_memory.memory_context",
+        "sys.knowledge_memory.provenance_history"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART8-026",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_v0.1.json",
+        "source_packet_sha256": "4f66e9bbca830e4de2b400cd5adf3a3220be1799d7592989d6792502987c59e9",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_review_v0.1.json",
+        "review_git_blob": "1d3e8f53378e7f1ecc86d7ff9599348ffef81eb4",
+        "review_records_sha256": "4aa1294f6c48cd9ce42b29eebe13d731c45d6ac94c79e71a1f954cd68563a4b9",
+        "current_sha256": "2ccce5f52dcafbf30645c395cafb77bbb9f78972cfa13a725280a86e6a44c89a",
+        "bundle_sha256": "d927af8b37bc81ac462aadfc111b9f50b260d516a77e55a07fae5b8218df2efa",
+        "gold_sha256": "05fb5be5148b6d5b16f7848b095c152fd8a10212df8f87ac797d4ff1a1229beb",
+        "spans_sha256": "80a37503ecb97ebef7cb836494e86c2ca546ab7e94a3ee93b978a8ebd4edf5e8"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "ACTION separates 位于 plan that separates 的关系从句，描述想要的计划；主请求是 I need a relocation plan 的间接请求。需规定隐含规划请求与计划内容的角色表示，不能直接把描述动词当主行动。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART8-037",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_v0.1.json",
+        "source_packet_sha256": "4f66e9bbca830e4de2b400cd5adf3a3220be1799d7592989d6792502987c59e9",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_review_v0.1.json",
+        "review_git_blob": "1d3e8f53378e7f1ecc86d7ff9599348ffef81eb4",
+        "review_records_sha256": "4aa1294f6c48cd9ce42b29eebe13d731c45d6ac94c79e71a1f954cd68563a4b9",
+        "current_sha256": "5745d0e14f31512e798913f1be6ec600325d0cfa312477bc29e3a2dc14737983",
+        "bundle_sha256": "9ee44b913c78dbd33539a3c6a4d13a3fa73f344b42b627de36dc8d8e7c513ba0",
+        "gold_sha256": "6df23e08fe5f620a003218632b61031b81d108493d9333d13958098b76af0307",
+        "spans_sha256": "2b5d14f468d5129c57893e6464756a4e5664c19e5fbeb2df4c0a79866aefc9d9"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "退货条件、责任及申诉准备同时涉及消费者权益和投诉争议；不实际提交投诉仍可讨论争议。负向限定不能自动排除 complaints。",
+      "competing_label_hypotheses": [
+        "sys.legal_civic.consumer_rights",
+        "sys.legal_civic.complaints_disputes"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-PART8-039",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_v0.1.json",
+        "source_packet_sha256": "4f66e9bbca830e4de2b400cd5adf3a3220be1799d7592989d6792502987c59e9",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_review_v0.1.json",
+        "review_git_blob": "1d3e8f53378e7f1ecc86d7ff9599348ffef81eb4",
+        "review_records_sha256": "4aa1294f6c48cd9ce42b29eebe13d731c45d6ac94c79e71a1f954cd68563a4b9",
+        "current_sha256": "af11963e708ac589c40f2aceb1e8c55bd4aca9c34e78db2be9b101f880470a79",
+        "bundle_sha256": "2e66dc2e7cf5c09219e73a86813612dbdc0a5d06252562471288387fd097e770",
+        "gold_sha256": "6df23e08fe5f620a003218632b61031b81d108493d9333d13958098b76af0307",
+        "spans_sha256": "5f372fe9b5cfc8a89b4031bbd4af3120268397f15112d4d7d58800170f1d5521"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "证据、补救与规则的条件属于消费者权利及争议分析交叉区。需区分权利说明与个案争议处理，不能据未执行退款消除重叠。",
+      "competing_label_hypotheses": [
+        "sys.legal_civic.consumer_rights",
+        "sys.legal_civic.complaints_disputes"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION1-018",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion1_v0.1.json",
+        "source_packet_sha256": "9334b10cda8591792cd01bcb032c71a24b8131624b22c27767c639743aa688d5",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion1_review_v0.1.json",
+        "review_git_blob": "515e7a0dfec08865f9354f06926e90fb2d25f471",
+        "review_records_sha256": "b0c73fffdbd75ff234901c3a2faf722bc94c8ef7e33306e7010cdbf9fc7883ed",
+        "current_sha256": "532b697b80429a54bf20e71cc67c6449f8a24726c0e6028d95a09fe37a4a915c",
+        "bundle_sha256": "579ac69fc0503aece8c839703e6af2079eae28b276b67728c16387190b5e27d8",
+        "gold_sha256": "40d7dfb886627ffb2337eb9b8ad64b9a4dd4c4b24d485391f59a378575b59b02",
+        "spans_sha256": "0a8c14d06c6816aea9729e392d190c616b968ba8b3ff792ab0bbc504ccc53596"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "两位志愿者与有限资源下重排阶段、选择不做事项，直接涉及优先级取舍。保留 roadmap 候选；需要项目排程与目标取舍的版本边界，不能只依原标签。",
+      "competing_label_hypotheses": [
+        "sys.projects_products.project_planning",
+        "sys.projects_products.roadmap_prioritization"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION1-049",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion1_v0.1.json",
+        "source_packet_sha256": "9334b10cda8591792cd01bcb032c71a24b8131624b22c27767c639743aa688d5",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion1_review_v0.1.json",
+        "review_git_blob": "515e7a0dfec08865f9354f06926e90fb2d25f471",
+        "review_records_sha256": "b0c73fffdbd75ff234901c3a2faf722bc94c8ef7e33306e7010cdbf9fc7883ed",
+        "current_sha256": "8112ddeef748c48c478cb93e71a393a2eb7c52d297dbe4d9af52f3ce858183b3",
+        "bundle_sha256": "4258d7a353fdd6f02012fc5fa103665633bfc065ee3a7dc17e6f74944a66a489",
+        "gold_sha256": "b31d148901cd1be41b3fd63a36111a10ce88b6d37ea47c22dab6acd717a8f175",
+        "spans_sha256": "247cbd28c7fd40b0a40084bf1f750488f3e70191fbe9bd378cecff7fcbdda8c4"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "把两项讨论放入有限时段是需要安排的命题；OBJECT 可以保留该命题，而不能因包含放进就宣判不合法。最近上下文的先后约束必须保留；分槽方案待角色规则裁决。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION2-027",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion2_v0.1.json",
+        "source_packet_sha256": "36e35906b06ba2571f56149f8403895b01df84088a0a2a83802493c04e3729e8",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion2_review_v0.1.json",
+        "review_git_blob": "c12647ee1cc663e78f2da86c1a98633fcebb0203",
+        "review_records_sha256": "7e281d910c254b55d3484fdf2d697444c1f6b81a8ee059fb0b490689061c3e72",
+        "current_sha256": "ad9bbe1583fdb9278d23c66e5b89a4c8fcc3c62ba66dbf27b8a33b198bd8d7b2",
+        "bundle_sha256": "dbc6885c4de8c2f2126d932d1a2417201e1856a04e5754ce5e2d9645302b0333",
+        "gold_sha256": "40d9a19b79c7b31b14321955c973560e15399741f89b14eb2f35c3416c824e83",
+        "spans_sha256": "a6166f46966674c9e7939884b80eb9941c96c84485c9b06432faefd6da11bf10"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "评估增加柜子是否合适涉及空间、通行与取物，也涉及物品组织；尚未决定实际改造。需区分改造评估与摆放收纳，不能把考虑柜子补成施工。",
+      "competing_label_hypotheses": [
+        "sys.home_daily.home_improvement",
+        "sys.home_daily.possessions_organization"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION3-034",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_v0.1.json",
+        "source_packet_sha256": "e70fef8e4ab0a58b12bce91385a5de2a96e807e15b2690ce99d90f5be90b34f5",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_review_v0.1.json",
+        "review_git_blob": "becd469704e3c1dc7ba3991092a53936451b6c89",
+        "review_records_sha256": "a2b77993a2f85e5cbc2670cdb4905b8f9cdbbd8217d7fb24482081768d2b6e07",
+        "current_sha256": "7eeae3765a4bc788fb58929b1c22afd5e3904dc293a673646753a1af13483d87",
+        "bundle_sha256": "2bb5a7f76f31b32deeb4868ab8f1e0e8514d4aeb37362b722baee0e195e149c6",
+        "gold_sha256": "4de50f848a5cdc9ee281f3ceaf6b9809eccd77dba5d7e2f1a0bbb81b311635dd",
+        "spans_sha256": "27d14f497fead3299a900fd0eaf6d6ac17753dad7c423cccf14016b739ff5290"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释如何保留翻译含义中的内嵌动作是解释对象，不是额外执行翻译请求。OBJECT 含动作从句不自动违规；要保留对应关系及限制条件。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION3-049",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_v0.1.json",
+        "source_packet_sha256": "e70fef8e4ab0a58b12bce91385a5de2a96e807e15b2690ce99d90f5be90b34f5",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_review_v0.1.json",
+        "review_git_blob": "becd469704e3c1dc7ba3991092a53936451b6c89",
+        "review_records_sha256": "a2b77993a2f85e5cbc2670cdb4905b8f9cdbbd8217d7fb24482081768d2b6e07",
+        "current_sha256": "e698dccdc0d85a0631ca11c2fcdf3cb2e4cc8426720b3f6cd39c8d75d74a099f",
+        "bundle_sha256": "89e94bfc8cc70eee8c77ae6ead713076094499cd73e29a3d44641c2e03a0c1f5",
+        "gold_sha256": "fb1f42db56c9c6d0ea1d939bdbb3cd528a210812ba4abcd42473d3d155acdcbf",
+        "spans_sha256": "4ae73fddaa1a5f3042efc94cc30d9b243a8e0b2f8d03372384f1147be168f60b"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "整理虚构人物如何分配有限时间，命题对象可包含分配动作；不能把整理任务误拆成执行多个安排。注意力消耗、任务切换、休息余量和不排具体会议均须保留。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION3-050",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_v0.1.json",
+        "source_packet_sha256": "e70fef8e4ab0a58b12bce91385a5de2a96e807e15b2690ce99d90f5be90b34f5",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_review_v0.1.json",
+        "review_git_blob": "becd469704e3c1dc7ba3991092a53936451b6c89",
+        "review_records_sha256": "a2b77993a2f85e5cbc2670cdb4905b8f9cdbbd8217d7fb24482081768d2b6e07",
+        "current_sha256": "a3780fc90ac4c976f1d703a710bdf1af9d8836124933e5ebf36396aca39919ea",
+        "bundle_sha256": "fbe5f52596c83bf6fd6a6bce6adad8c273b11de75d7509f774b21b5006341601",
+        "gold_sha256": "fb1f42db56c9c6d0ea1d939bdbb3cd528a210812ba4abcd42473d3d155acdcbf",
+        "spans_sha256": "3f9b4673257ba6bbe3936570e09008e2dc40df57c20a0fdd633ef0954c49e4d0"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "Explain 是当前解释操作，有限注意力在专注工作、例行任务和休息之间的分配命题是 OBJECT。嵌入 allocates 不构成额外执行指令，calendar appointments 明确在范围外。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION4-012",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_v0.1.json",
+        "source_packet_sha256": "0ce47d9e8bc2fbb8610b3f38bbc4a70aaf1f84d63fcb0d2f64174e1bcaacb9c4",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_review_v0.1.json",
+        "review_git_blob": "0f8155fd072816416f0d7a60eedd1bb84d45e653",
+        "review_records_sha256": "ae69fb2bdf27cb0a26a1fb0b86414bda80f34025c300926a5800be1570702bae",
+        "current_sha256": "7b4b33972dc290ce14e6b41a4646deab058ad492d387ac920f2c947538cc4d85",
+        "bundle_sha256": "bcadeb346d0a60b75b8a42202691db4e09c115ad74f9a32cdf3039dc944672ba",
+        "gold_sha256": "c497b432b815cbc619ea5004dfdd0516cf4eba31d84e910dd95262ea3fada4de",
+        "spans_sha256": "1c1512d5df11283939e4c4c40ffa03af0eb3acdd92c01349ef183b9815d53fe5"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释概念关系时，最近上下文指出条件与结论之间的论证缺口。该关系是解释对象；不能补成已证明结论，也不能仅因关系从句否定角色。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION4-024",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_v0.1.json",
+        "source_packet_sha256": "0ce47d9e8bc2fbb8610b3f38bbc4a70aaf1f84d63fcb0d2f64174e1bcaacb9c4",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_review_v0.1.json",
+        "review_git_blob": "0f8155fd072816416f0d7a60eedd1bb84d45e653",
+        "review_records_sha256": "ae69fb2bdf27cb0a26a1fb0b86414bda80f34025c300926a5800be1570702bae",
+        "current_sha256": "ec4b36dfa0978705e0bb20d64a9a9cbb8f703cf19058c260e2ec0e3b123d2f7b",
+        "bundle_sha256": "89ed708b2e19dd41e4117479348512a7884029e4052749a70aa32e9861f765b8",
+        "gold_sha256": "b6fa6df671f6f15607a11f4e6046abd32db0d513aa35325b5f942a0b30a6160d",
+        "spans_sha256": "2bee73911daf47d99371c2c29385e132cb4c2c450137eedc7c6df6168e693a62"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释本金、费用与还款责任如何区分是说明目标；未提供的合同条件仍未知。嵌入区分动作不是授权进行贷款或改约。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION4-030",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_v0.1.json",
+        "source_packet_sha256": "0ce47d9e8bc2fbb8610b3f38bbc4a70aaf1f84d63fcb0d2f64174e1bcaacb9c4",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_review_v0.1.json",
+        "review_git_blob": "0f8155fd072816416f0d7a60eedd1bb84d45e653",
+        "review_records_sha256": "ae69fb2bdf27cb0a26a1fb0b86414bda80f34025c300926a5800be1570702bae",
+        "current_sha256": "d519c4e55ea77c24097d002819bb03fbdc772c1e7428180d7cf2fef44b7e0d46",
+        "bundle_sha256": "f3fcb4c23ad5b019e7c166328102d10e86c7bc6d95a07d6ca25dd3d15d78645e",
+        "gold_sha256": "2fadf14361d2631c5c4a9c2ce2a7e9fe4a99dd1cc6b1ae332e1b6df1ae74be09",
+        "spans_sha256": "3c11e58439f25d0c046515f52160f5724336ee8ee0e294343edea794e95ddb81"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释时间、饮食限制及同行者需要对用餐体验的影响是当前目标；引用的名气只是背景。OBJECT 中的影响关系不构成额外行动，不能引入真实餐厅评价。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION4-036",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_v0.1.json",
+        "source_packet_sha256": "0ce47d9e8bc2fbb8610b3f38bbc4a70aaf1f84d63fcb0d2f64174e1bcaacb9c4",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_review_v0.1.json",
+        "review_git_blob": "0f8155fd072816416f0d7a60eedd1bb84d45e653",
+        "review_records_sha256": "ae69fb2bdf27cb0a26a1fb0b86414bda80f34025c300926a5800be1570702bae",
+        "current_sha256": "0a4a650e1df1f4f5dadcbdc7ae70c0b137b4c0f5c103263ee4f49706a9922286",
+        "bundle_sha256": "9f0bffb5b56bf49c70d0f589a7c2e5550dfc27f3eba5aee7b7fb9bd2ad3b8bd9",
+        "gold_sha256": "894c9dabecdc0f9d0339b9d1bee5e52188087adde74c3f89e173f9cd4371b843",
+        "spans_sha256": "149dd101369af6b1a0969158047e32f5f036b0bb96fd3ad170bcda0d13072b89"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "原 ACTION 需要 的18:20确实逐字匹配，但它属于听众需要的主线这一背景从句；主请求是第二个需要一份展示提纲。提出未接受的第二处 span，保留原片段及不增添结论约束。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": {
+        "kind": "CORRECT_OCCURRENCE_ONLY_MODAL_POLICY_PENDING",
+        "offset_encoding": "UTF16",
+        "spans": [
+          {
+            "role": "ACTION",
+            "field": "current",
+            "start": 24,
+            "end": 26,
+            "text": "需要"
+          },
+          {
+            "role": "OBJECT",
+            "field": "current",
+            "start": 28,
+            "end": 44,
+            "text": "连接重点、证据和下一步的展示提纲"
+          },
+          {
+            "role": "QUALIFIER",
+            "field": "current",
+            "start": 45,
+            "end": 54,
+            "text": "不增加未给出的结论"
+          }
+        ],
+        "original_modality": null,
+        "accepted": false
+      },
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION4-054",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_v0.1.json",
+        "source_packet_sha256": "0ce47d9e8bc2fbb8610b3f38bbc4a70aaf1f84d63fcb0d2f64174e1bcaacb9c4",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_review_v0.1.json",
+        "review_git_blob": "0f8155fd072816416f0d7a60eedd1bb84d45e653",
+        "review_records_sha256": "ae69fb2bdf27cb0a26a1fb0b86414bda80f34025c300926a5800be1570702bae",
+        "current_sha256": "e127ffe0265676b813a996ef6e9ee77a6429bf4c41824b52325ce2d0f9b561a4",
+        "bundle_sha256": "0a3f40d8f59d38a1d49858124be594e3d74e30e547187fe6619d88494878e727",
+        "gold_sha256": "5876790b3ceac3a83a5e5fd44877b931cd9eab2ecb9f264875e383aac5ecfa4a",
+        "spans_sha256": "2c57f3a7e783efa6f86ef8d4a6548246808f9d63c1a93426dc79889f293d35fc"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释自造照片或音频如何按事件、类型及原说明归档，归档命题可作为解释对象；没有真实原始元数据。不得把虚构说明认证成真实档案或独立来源。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION5-010",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion5_v0.1.json",
+        "source_packet_sha256": "03d941a88aac8ee247cda20b66f2dd8b50837b0579c378078eb90380f0167dcd",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion5_review_v0.1.json",
+        "review_git_blob": "70eafdda85152619f715e97ceca86356ce9735a0",
+        "review_records_sha256": "f3b916e98fb4bd550fc0aec9dc5b7a7f3524545363fb9d8c61ae9cf1c40c1567",
+        "current_sha256": "259e1c2fb2e46f25981cfb269757737666ac9525da2b49d5842151c323a18cb1",
+        "bundle_sha256": "da60f24ec68f181fb4ebfa469016e6a4aedd1ab23bcb61ededcd17cd8adde05c",
+        "gold_sha256": "4521bece5348c9ca15511772ac37ee6e5ceaf3e522dc470bccb05dc8cf0727c7",
+        "spans_sha256": "59ec69e72881c252c494ab890deac16afa16715d107e775957ef98302e397e62"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "当前那两个发音差异与最近上下文一个未理解的发音区别数量不一致；两组符号不能直接推成两个差异。保留上下文证据不足的 HOLD，不虚构第二个差异或改写原文。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION6-051",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json",
+        "source_packet_sha256": "ead1135aaff9f2a99e5c76785cf9cad5be471070d8b3c45de5238fe1a2cc7ac2",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_review_v0.1.json",
+        "review_git_blob": "0f18e76df4cb61ea571548687c7136b94fef7ad7",
+        "review_records_sha256": "c3d74ac654de68d816b0a6acfb6f81905b328ae0071c758360273cd683688ed5",
+        "current_sha256": "f849f4794f372102d998029c414fe8a78fcc04e5b8c46ca50409266f1cc32b23",
+        "bundle_sha256": "0959d013735ed40977c43f8d46b1595600d80a55c5bc43215965e856c25ea0c7",
+        "gold_sha256": "01bb8488a930767e4daaccd1ed17ad9e4ec1653f3adaae5276854b71404d6c5e",
+        "spans_sha256": "4ed26b2fc29c3d95df9c8717afb6e71d9b14095fc7aea54279b9eb732d1da8ee"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "搬迁交接及适应顺序是具体事件内容，life events 与 moving relocation 有重叠。泛指人生转变不能替代当前具体搬迁任务的边界。",
+      "competing_label_hypotheses": [
+        "sys.time_events.life_events",
+        "sys.home_daily.moving_relocation"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION7-004",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_v0.1.json",
+        "source_packet_sha256": "55eda41da845f829c77f8979046dbd2868a8261c887a4379ca34417c78f74817",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_review_v0.1.json",
+        "review_git_blob": "392273a9cddd56ac8096ec9b00467c6d83dc5b55",
+        "review_records_sha256": "e3668394f1f5f040e08cef56beaf2c1fef31d8dff7c0ad818f8ea811a0a52b17",
+        "current_sha256": "2ad150ea4106ce89f2eaa580cfcdff99b72f9bb3423c603e8adb32bfb69a3b63",
+        "bundle_sha256": "f4f98cf9777de715b69f1de2ef5fd751352666336be9b17c0b6321b435585748",
+        "gold_sha256": "ba7f82cdd9f96ab76e6c5d370f3147d24f11c692fa6c93dd88d40aec299e832c",
+        "spans_sha256": "cf4d03acac0f6451ef64e61eb3af233e9f6513e21ae8f927190eee728c14f22c"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较由一位照料者陪伴或亲属轮流支持，两种行动方案是比较对象，当前 ACTION 是比较；不是授权同时执行照料安排。需保留支持对象、连续性及限制。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION7-019",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_v0.1.json",
+        "source_packet_sha256": "55eda41da845f829c77f8979046dbd2868a8261c887a4379ca34417c78f74817",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_review_v0.1.json",
+        "review_git_blob": "392273a9cddd56ac8096ec9b00467c6d83dc5b55",
+        "review_records_sha256": "e3668394f1f5f040e08cef56beaf2c1fef31d8dff7c0ad818f8ea811a0a52b17",
+        "current_sha256": "df33d9aac4a8d0fe83fd34845dec525fcbb31cfb132400edeccc03e48a46d278",
+        "bundle_sha256": "f1485fe9ee249bee5c11b88859d00eaec1bba7e9e09cc15892cd048a7ecbfcf6",
+        "gold_sha256": "06f75e9dfa214382bf5c9b5b3af35daba52025dd4e972be06fa1cf3d30eca920",
+        "spans_sha256": "7737a3f303e59d766b65fe3ca8ebc09bbfe157d9f63a612fa5616d1035dd8c28"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较直接公开与限制查看范围，分享动作是备选方案对象；没有实际账户操作。不能把备选动作变成多意图执行，也不能删去查看范围。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION7-034",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_v0.1.json",
+        "source_packet_sha256": "55eda41da845f829c77f8979046dbd2868a8261c887a4379ca34417c78f74817",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_review_v0.1.json",
+        "review_git_blob": "392273a9cddd56ac8096ec9b00467c6d83dc5b55",
+        "review_records_sha256": "e3668394f1f5f040e08cef56beaf2c1fef31d8dff7c0ad818f8ea811a0a52b17",
+        "current_sha256": "b6a0c38d86aa5e6b42657d8cd5174e46ba5bf25d3ece12a801bf1f9c3d7198c8",
+        "bundle_sha256": "dc4fd0adabf183183f088b41b9d60ea9e40ece1f3dc18188cb1be6d65c86a394",
+        "gold_sha256": "61be9b0374f3ca4c0395d6736a52808bc360aae2186b2376b638d585a9f3e538",
+        "spans_sha256": "bace8de13eb1bdbc13445da0a8cb565c509b3f4f7a82bf69021ae085a8236822"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较先给例子与先给定义的口头说明顺序，两种说明步骤是比较对象。OBJECT 含行为词本身不违规，保留口头表达目标及条件。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION7-049",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_v0.1.json",
+        "source_packet_sha256": "55eda41da845f829c77f8979046dbd2868a8261c887a4379ca34417c78f74817",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_review_v0.1.json",
+        "review_git_blob": "392273a9cddd56ac8096ec9b00467c6d83dc5b55",
+        "review_records_sha256": "e3668394f1f5f040e08cef56beaf2c1fef31d8dff7c0ad818f8ea811a0a52b17",
+        "current_sha256": "455ad5b5db8bb1077c5e0fc1793da6b228bcafb9417d62f6cd8ce987654eb83f",
+        "bundle_sha256": "b9fc3b74683aeec38d863c6d176201498db67d00c41643a4c8e0c69de7fe9da1",
+        "gold_sha256": "138127546a2500ec0d9fc2dfe1b0559b33055ca7a39b18802ffcc6f4a0ec568d",
+        "spans_sha256": "d9a4a5e6f6cb7def1cabb659ebd8193c27d5bec1fa75d91cd21741792939bf44"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较先确认时段与先说明变更条件的流程；说明变更条件不等于实际修改条件或改约。保留可用时间、取消风险及不向真实服务方下单的限定。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION7-050",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_v0.1.json",
+        "source_packet_sha256": "55eda41da845f829c77f8979046dbd2868a8261c887a4379ca34417c78f74817",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_review_v0.1.json",
+        "review_git_blob": "392273a9cddd56ac8096ec9b00467c6d83dc5b55",
+        "review_records_sha256": "e3668394f1f5f040e08cef56beaf2c1fef31d8dff7c0ad818f8ea811a0a52b17",
+        "current_sha256": "85214b04382b33460ace7dfc595c60e00838d0c59b19316847c4773349247132",
+        "bundle_sha256": "88581c5dc8e513e530892721f1a86237910c1ed7db4739329c0a115c419b51b4",
+        "gold_sha256": "138127546a2500ec0d9fc2dfe1b0559b33055ca7a39b18802ffcc6f4a0ec568d",
+        "spans_sha256": "6aa1af13095ead12dc7371d40f4025d379e631514e6ac5fcebeadd74fea01c76"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "Compare 请求暂定时间窗与进入候补名单，两项请求行为是被比较方案，不是实际预约授权。需区分选择分析与执行，保持原限制。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION8-009",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+        "source_packet_sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+        "review_git_blob": "4ac2041716df81ce067317e31719449090bb6b57",
+        "review_records_sha256": "d81cf1fb7bf0fead7bdc12f683d5ffe3d3d9b48d69641183eab78e9b0002166f",
+        "current_sha256": "2fffe96e10c329a649a3ce8f061a75e2f0b7f7fc998a0ae09db3d9910d0d683a",
+        "bundle_sha256": "af41a9ffd48d11506abb5cd6540803f7efab8ff8d84b66de3aeeee2785017783",
+        "gold_sha256": "7773107bb67fcf874c837912b3151b2866341902bcba85483fc5dce245ea63ef",
+        "spans_sha256": "595ad273644ec2e0932649527aa61e59684ae8348eed16e6e02b30eccf62db9e"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较查看健康记录与准备问题清单是就诊准备方案比较；不是医疗诊断或读取真实病历授权。保留记录与问题这两个对象及其用途。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION8-024",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+        "source_packet_sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+        "review_git_blob": "4ac2041716df81ce067317e31719449090bb6b57",
+        "review_records_sha256": "d81cf1fb7bf0fead7bdc12f683d5ffe3d3d9b48d69641183eab78e9b0002166f",
+        "current_sha256": "e4cd271b0e427c0aed08a214f7b4d6074d1b94555f1590a6d6da7767198d99ae",
+        "bundle_sha256": "3799137d45b445deae7004848532c7e12801a1879c5715a8f339b133bf5db81d",
+        "gold_sha256": "c19191529550e601ed219092e6ac7f3cbc2a95182ea3cef016036e760ef733bc",
+        "spans_sha256": "e8d155227615c3f69b5723482a2b27b1c9342153acda2f4330b6645bbff7fc60"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较一次购入与分阶段购入的采购方案，不是分期付款。保留长期负担及未知维护需求，两个购买行为是比较对象，没有实际订购授权。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION8-026",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+        "source_packet_sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+        "review_git_blob": "4ac2041716df81ce067317e31719449090bb6b57",
+        "review_records_sha256": "d81cf1fb7bf0fead7bdc12f683d5ffe3d3d9b48d69641183eab78e9b0002166f",
+        "current_sha256": "100d6e844ccf8ea83c30658ab8ae1aba6b776cb44009cbf47702c44a1b5c86d4",
+        "bundle_sha256": "0bc4a914c26774754698371bc67db836831a6b227fa98f602bae0208a4c21b73",
+        "gold_sha256": "05fb5be5148b6d5b16f7848b095c152fd8a10212df8f87ac797d4ff1a1229beb",
+        "spans_sha256": "31ef837a3696ad43ab099d4f9e5a6cde0f76ee277ac3ac4969bea916fb20feee"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "从一个房间搬到另一房间可能是同一住宅内整理；打包和到达不足以证明跨住处搬迁。moving relocation 与 possessions organization 边界需裁决，不能补成换城市。",
+      "competing_label_hypotheses": [
+        "sys.home_daily.moving_relocation",
+        "sys.home_daily.possessions_organization"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION8-039",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+        "source_packet_sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+        "review_git_blob": "4ac2041716df81ce067317e31719449090bb6b57",
+        "review_records_sha256": "d81cf1fb7bf0fead7bdc12f683d5ffe3d3d9b48d69641183eab78e9b0002166f",
+        "current_sha256": "5cebbf7dc7f7eee2583cf9ea49c6467e3d854c9334dc90386cdb1da81e3264a7",
+        "bundle_sha256": "717d90dc3e99b7d08cb68fffd21bc5acc95c66be6ebdcbcd7a2fe972544c863a",
+        "gold_sha256": "6df23e08fe5f620a003218632b61031b81d108493d9333d13958098b76af0307",
+        "spans_sha256": "e30eaa43528aaf6bee3d5653d529544bed6e115d5e20f54a4e95c5f8f37a2fa4"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较增加交易证据与明确补救要求，二者属于处理争议的备选步骤；没有实际提交退款请求。需保留证据和诉求两个维度。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION8-054",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+        "source_packet_sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+        "review_git_blob": "4ac2041716df81ce067317e31719449090bb6b57",
+        "review_records_sha256": "d81cf1fb7bf0fead7bdc12f683d5ffe3d3d9b48d69641183eab78e9b0002166f",
+        "current_sha256": "9ced767a45fab47dd43e4b2d2025eb0e37badf6f74b01db6cd33c72dd8dcfde8",
+        "bundle_sha256": "207b1360cab81e6fb2c6a3eddbef14a3548369bb69f6ea0cd28594d75c23a247",
+        "gold_sha256": "3bcf1baf7e2da7b201575dfade961a9158cd41e02174d8f0dd1210c8199b317b",
+        "spans_sha256": "5403c38e18f3e704310616a7618e28cd87d127692415a985528bb3a3ebdc5825"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较按来源或按版本追踪，两种追踪方式是比较对象；记录格式不是可靠性证明。不得把来源或版本标记写成真实已验证信任证据。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-002",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "8792d622787f84b8d37c9dbfd6afcc84c29f48c6ce5b04e4b7289f7bcee431a9",
+        "bundle_sha256": "7f9859d354c6cbadf7b0831d09799078903e3fb782353e628f7b98b67e4657c5",
+        "gold_sha256": "9df86cafb2a62bc9fbff46bb2f807d314a38ac450822afc06713713ae87284d8",
+        "spans_sha256": "150b1af82bc925fec2f03170ad721130e17189e1d87d92842f5ef45726d61e3e"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "理解承诺、公平等原则保护什么是解释性内嵌问题；原则作用可作为 OBJECT，不是执行承诺的额外指令。保留被问的保护关系。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-017",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "dda97747d76e3bfa5b206d3d72ff12b2f04e2fa480b7d994e9db97ad7a91f65f",
+        "bundle_sha256": "3bff092157a60c1583649d308bc6206f2a743c802fda16007a97f1f5f42193ee",
+        "gold_sha256": "dbaa192a7362f0e76b5edf71a532c4987bced4307855d68dd72ab602c61d4463",
+        "spans_sha256": "a6e2c6d4da626e4b4802bde7b41cfd5eaf19722e954465d396cfc20d32ab48cd"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "就诊准备涵盖预约、材料与问题，medical care 和 appointments 均有证据，主目标尚未明确。不能只凭门诊背景排除预约或补入医疗判断。",
+      "competing_label_hypotheses": [
+        "sys.health_wellbeing.medical_care",
+        "sys.time_events.appointments_bookings"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-018",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "b1c5afa04a3de843f28e6115f77b702a6bbe12c183fa3900516e724e48225411",
+        "bundle_sha256": "96991e80d15a34acde37f51cd1cdb014c271dc03fb6ddbba0a6642e2d107e3a5",
+        "gold_sha256": "1ec58ebe26f39e85aa7ebb2275e5f238a605149f556f868b12bed2dc2bccd9c4",
+        "spans_sha256": "3387cc0137e8dcc53c9769e48ecf82b808183c322a3e575b6caf939efbd7f385"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "最近上下文明确三次夜间咳嗽及一次白天嗓子不适，但占位日期的确切顺序、每次时长与其他表现的共现关系仍缺失。说明应保留已知次数并指出未知，不能补成确诊。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-068",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "fa7b6c879b24e6a7644c75a40827b35e5d05eda6c525300457b6f327cabbfadd",
+        "bundle_sha256": "1d720ff9d70cc03c60c3ecf9150161daeb7f8a0322bef12a12500e4a87f991d3",
+        "gold_sha256": "04c4a2530a5105219069f963b6a997ecde1bc4555cb1fa459d9334da2f74caea",
+        "spans_sha256": "5867bf1f907caea0eb5804ac8dd0d5601de7d12000f76c68e738e274be9be54f"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "最近上下文同时提供厨房台面清洁与餐具柜整理的任务线索；这些是虚构计划，不是真实完成记录。清洁与收纳都需保留，不能据清洁词抹掉整理。",
+      "competing_label_hypotheses": [
+        "sys.home_daily.chores_cleaning",
+        "sys.home_daily.possessions_organization"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-076",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "d16d24c68cc979d9dd4b3a52910d2734d812bb8eb5a7c168947ff871fd14715a",
+        "bundle_sha256": "a977cc716525e0cec7097da727dd67afb9261f67b0c34318fe3850035465ab46",
+        "gold_sha256": "2fadf14361d2631c5c4a9c2ce2a7e9fe4a99dd1cc6b1ae332e1b6df1ae74be09",
+        "spans_sha256": "ddf2b6f787f9d20c86c530ad7f71628471f64eeaa444f79b854bb07ba52bb353"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "现有 ACTION 分析、OBJECT 位置/用餐时段/饮食限制、QUALIFIER 不编造评价与当前虚构分析请求一致。原 role HOLD 理由仅说没有真实评价，并未指出角色错误；该理由需更正，不能因虚构来源就要求真实店铺数据。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-100",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "708a80e6772484607e4fb7865299fa4cd8673625ea3b0b562374162d71e4e51f",
+        "bundle_sha256": "c1353c03b12d77232200aeb6a8d2c0b94b1965a47497175b72b1ecdcb57d3e64",
+        "gold_sha256": "4432e3cf22b5a22c72a3359fb56de8f37b000a28297b50c672e2794e01e230d6",
+        "spans_sha256": "ac266ae842e016c95c656cfda36238b8155386360bfd3f56d960bc44a0120b62"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "公共服务申请未给出具体机关或职权；公共服务一词及不冒充政府答复的约束不足以定为 government services。与 personal admin 的边界需依据办事对象，不编造政府身份。",
+      "competing_label_hypotheses": [
+        "sys.legal_civic.government_services",
+        "sys.personal_direction.personal_admin"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-104",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "41303b12d20bdc1e2c1301d696184810e6fdcdd7e7fa3be97debac029ceddacc",
+        "bundle_sha256": "4f68fb3fa6d7786266f4a537bdecfb6ec33424ed6f8bed71a7f53e5cc7a2fffc",
+        "gold_sha256": "6df23e08fe5f620a003218632b61031b81d108493d9333d13958098b76af0307",
+        "spans_sha256": "8ba592a35e19dfa45328c0daf622a6fd3a274325882d12357ca7c36124803fae"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "比较商品缺陷与延误争议中的证据、补救和规则，消费者权益及投诉争议均有直接支持。比较方案里的动作不是实际申诉授权。",
+      "competing_label_hypotheses": [
+        "sys.legal_civic.consumer_rights",
+        "sys.legal_civic.complaints_disputes"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION9-118",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+        "source_packet_sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+        "review_git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f",
+        "review_records_sha256": "4d3b039d4a44f79f8a5a8e84f427beef7e595ec34525c9e03835fe871f92cf18",
+        "current_sha256": "673a0330c37458107026f1eeee0567e003ee5a8a725ff1d11aa853b74da90f9c",
+        "bundle_sha256": "7e325493c4c3e16080d85be3e777e61929b105742738c93dfdba7b63405996dd",
+        "gold_sha256": "34d350841e57dc1b9a6f8ae401cd883f3ec9e84cfc76d3b26b3995d70b03651f",
+        "spans_sha256": "3e3761ca8aac68c82a88470e0f0e4f652f791c802fef9d279a6999e92ca334dd"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": true,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "梳理短篇转折如何回应先前选择同时涉及创意写作与文字编辑；recent 只有拒绝离开故乡和收到陌生邀请，邀请内容及决定未知。关系从句可作分析对象，不能据含动作词否定角色或补出结局。",
+      "competing_label_hypotheses": [
+        "sys.creative_design.creative_writing",
+        "sys.communication_writing.writing_editing"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-017",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "dc9afbbaaea7c70e487ad1dc2606de3610816d75de3ec97f2ff2f81c202c8513",
+        "bundle_sha256": "94983c78229236107b98dbc3d7ec8241668e2b0ac3aa72e6a97095a8a649aee5",
+        "gold_sha256": "dbaa192a7362f0e76b5edf71a532c4987bced4307855d68dd72ab602c61d4463",
+        "spans_sha256": "26c39c18b2febbecd080c3dea6d6a8af0eca3a2bccb137336462706be655fbce"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "区分两份医疗记录支持哪些询问及还缺什么确认，recent 的转诊说明缺接收条件，咨询摘要缺原始日期。内嵌问题是区分对象，不能把缺口变成已确认事实或实际治疗任务。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-027",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "c7bef4f6d7a4750faa0589d1c16f63bfded74c7c6b7f923b1d2faffee3f07b8b",
+        "bundle_sha256": "5f2da3cd3d47e5fd230b2ec9b9d796929f9baef7ac7eae06b3bf788c14b3aab2",
+        "gold_sha256": "7dfb2fb72befca3ab30a5be4874bba668a4b4dae042f7f793c819286912bfd40",
+        "spans_sha256": "bfd9fedf13476f662bcecaff919044eea3e9a0c466bf6d29948938266c764192"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释未收集论文证据如何影响范围，是解释命题而非实际收集任务。保留证据未得的状态，不能把空缺当成反证或已完成研究。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-081",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "be8324ae178382431f41269d32aa8e54d83f2b7e4194d44d12c0744160c21efd",
+        "bundle_sha256": "5372c461175fda8a1b953b29ddb400ef4a884a77c77e80c982abf48381f23334",
+        "gold_sha256": "2788c7514f5ed7a1947a28d13495f23fecaa03dae4ab2bc86176ceda6615e23c",
+        "spans_sha256": "2abbe35d5fa6a1c51c469b91e6b31099b9934049ddb26bcab7ca71b93e407a81"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "需要是需求情态，解释才是实际要求的论述操作。提出把解释标 ACTION、主题重复/段落/听感依据标 OBJECT 的未接受版本；保留不播放音乐/不引用真实歌词。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": {
+        "kind": "REQUEST_OPERATOR_PROPOSAL_MODALITY_PRESERVED",
+        "offset_encoding": "UTF16",
+        "spans": [
+          {
+            "role": "ACTION",
+            "field": "current",
+            "start": 29,
+            "end": 31,
+            "text": "解释"
+          },
+          {
+            "role": "OBJECT",
+            "field": "current",
+            "start": 31,
+            "end": 51,
+            "text": "虚构乐曲讨论里的主题重复、段落和听感依据"
+          },
+          {
+            "role": "QUALIFIER",
+            "field": "current",
+            "start": 52,
+            "end": 64,
+            "text": "不播放音乐或引用真实歌词"
+          }
+        ],
+        "original_modality": "需要",
+        "accepted": false
+      },
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-089",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "4dce2d28f057af031154586cbd24510aaef9f6bd16e112ce801ecc91c1d3c038",
+        "bundle_sha256": "0f6fd64f816c10a362e952c73911d813656784beeb5c3f389c5aab6e672bf44e",
+        "gold_sha256": "ff7ac0cde562d1f5aed922ebce9a928fe8b233a97c4badcd10f28f9014686d97",
+        "spans_sha256": "a3f4a751d23849acac9a253bd9964db9cdafd7ccadf0cb0d6be17b31fb2283ee"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "重排缺席说明、改期和结束语是邮件编辑任务，email messages 与 writing editing 均有证据。媒介与编辑操作边界需明确，不把邮件形式当唯一标签。",
+      "competing_label_hypotheses": [
+        "sys.communication_writing.email_messages",
+        "sys.communication_writing.writing_editing"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-091",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "ff65c4964445abbcac38c7d5522f19c27e3bc4d07453045e19042766d3d85536",
+        "bundle_sha256": "13ccef9edfe9a2dc4e2d2f957858976c200417c6e7b03649720f5fcd8e249e39",
+        "gold_sha256": "4de50f848a5cdc9ee281f3ceaf6b9809eccd77dba5d7e2f1a0bbb81b311635dd",
+        "spans_sha256": "55c8d3b2602f23627b7ef0a14a53489d6edd6c2bf2ee49e6845ee5678928f016"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "需要表情态，说明是当前操作；提出未接受的 ACTION 说明及译文对应范围/条件/歧义 OBJECT。不能将任一译稿补成必然忠实原文。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": {
+        "kind": "REQUEST_OPERATOR_PROPOSAL_MODALITY_PRESERVED",
+        "offset_encoding": "UTF16",
+        "spans": [
+          {
+            "role": "ACTION",
+            "field": "current",
+            "start": 26,
+            "end": 28,
+            "text": "说明"
+          },
+          {
+            "role": "OBJECT",
+            "field": "current",
+            "start": 28,
+            "end": 45,
+            "text": "虚构译文的对应范围、限定条件与歧义"
+          },
+          {
+            "role": "QUALIFIER",
+            "field": "current",
+            "start": 46,
+            "end": 59,
+            "text": "不假设其中一种必然忠实原文"
+          }
+        ],
+        "original_modality": "需要",
+        "accepted": false
+      },
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-111",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "dca177484f654613bcf39847ea51f36132564e18fa3236971eddeb9e3124659f",
+        "bundle_sha256": "ca0ae83ed0b52d74dc78a5ffe63c8faa307f55f2544b343274656019d4c5afe7",
+        "gold_sha256": "693b61933cc8c809014aedabc3fad03d3545aadba1c8ebb21a65ececb5d41f27",
+        "spans_sha256": "7aa487ac80a35a16e48b1f4ca9d1365148b82bab2ae04caa6330fd8f9179ec7d"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "需要表情态，厘清是当前操作；提出未接受的 ACTION 厘清及反应假设/变量/解释边界 OBJECT。观察仅有颜色变化，不能补成分或实验步骤。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": {
+        "kind": "REQUEST_OPERATOR_PROPOSAL_MODALITY_PRESERVED",
+        "offset_encoding": "UTF16",
+        "spans": [
+          {
+            "role": "ACTION",
+            "field": "current",
+            "start": 25,
+            "end": 27,
+            "text": "厘清"
+          },
+          {
+            "role": "OBJECT",
+            "field": "current",
+            "start": 27,
+            "end": 49,
+            "text": "虚构化学材料练习中的反应假设、变量和解释边界"
+          },
+          {
+            "role": "QUALIFIER",
+            "field": "current",
+            "start": 50,
+            "end": 63,
+            "text": "不给实际实验步骤或危险配方"
+          }
+        ],
+        "original_modality": "需要",
+        "accepted": false
+      },
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-117",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "6c3fad2cc19b760ce80bfed68bf28c050431d80482bde1116f4164d62d29cfdf",
+        "bundle_sha256": "2f31a94d8d7263c41bb08bc4c77e40b42fe01a6ddbab65311317cd7069e43a7f",
+        "gold_sha256": "1d838bf65797bf04b06656745262d7a09950c827992c0332f1f91b3d80083d2d",
+        "spans_sha256": "c1acc94d893c093cabea1df626f9f1703fe27507efd3e44b3c052270c2b61b2d"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释插图布局怎样支撑虚构故事，最近上下文只有暗门和亮路等线索。支持关系是解释对象，不能因含动词拆成生成图片指令或编造画面。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-127",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "cd8fdc1de593ae468998a06a86ef78e2e90983d0491342c19c595ec2dfd34d0f",
+        "bundle_sha256": "f96c744a84553695b76975ef59239d56fc30657a7f6c9cfb5a62786e85606179",
+        "gold_sha256": "1f67c0d32ea2c00699019084070b89e17fd4050aee8993f559f0ec08cd6970b2",
+        "spans_sha256": "40301baab576d1285e1cd127e89524a5909d79198144e67a2281a8728fd4d0d4"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "解释两项客户抱怨支持什么问题假设与缺失证据，是带来源限制的分析命题。不能推成所有用户结论或把假设写成已验证需求。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-136",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "841d7ae86da437239308b83164cc25d1ad445495b478bd57936efe82342a96ca",
+        "bundle_sha256": "366c34671500dd237d8dc6981a0d7745a0393c8e7312441561f653b7d36ff2fa",
+        "gold_sha256": "fae9dc6317975746953116148d957cff67f928d41308a0c05305f5e4e173e24a",
+        "spans_sha256": "3d6242f6a877555dfca244bd6d45b3ee06101fcd56bb7c95577a3906fe72e4ea"
+      },
+      "prior_label_disposition": "LABEL_IDENTIFIABILITY_HOLD",
+      "prior_role_disposition": "PROVISIONAL_WRITER_ROLE_RETAIN",
+      "label_hold": true,
+      "role_hold": false,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "出发准备的清单没有明确旅行场景，plans checklists 与 trip planning 边界未定。保留步骤依赖及完成证据，不凭出发两字补出目的地或行程。",
+      "competing_label_hypotheses": [
+        "sys.time_events.plans_checklists",
+        "sys.travel_places.trip_planning"
+      ],
+      "unaccepted_role_proposal": null,
+      "release_conditions": [
+        "版本化边界应明确当前目标、对象和邻居区分；逐条裁决，不能以算法分数挑选 gold。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    },
+    {
+      "id": "ZMR-MATRIX-TRAIN-EXPANSION10-141",
+      "reviewer_id": "candidate-writer",
+      "independent": false,
+      "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+      "source_row_read": true,
+      "original_pins": {
+        "source_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+        "source_packet_sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+        "review_path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+        "review_git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845",
+        "review_records_sha256": "e1ae765bf3cc76d26cf95b0f9d5401ad736a1e0f64976eb6742fc07fc1ca83d7",
+        "current_sha256": "279d88cb6b1ace425f3de4c7d4d8b25741c55be4a203ea024981d578f622b276",
+        "bundle_sha256": "f72805021745c365633ab9ff3c139b7c2f9942262d7fd5d360430cbe523f610b",
+        "gold_sha256": "c0d746c3a3f827dd6d1a0f9d436ec70c02654acf46e9b21261ce1a88c6f70a32",
+        "spans_sha256": "fa95b29349ae1242ec23f2ae50f9dc6b1c8acc71b8169db9f92de008a0e33d73"
+      },
+      "prior_label_disposition": "RETAIN_PROVISIONAL_WRITER_ONLY",
+      "prior_role_disposition": "ROLE_IDENTIFIABILITY_HOLD",
+      "label_hold": false,
+      "role_hold": true,
+      "writer_disposition": "VERSIONED_WRITER_ANALYSIS_COMPLETE_QUALIFICATION_HOLD_RETAINED",
+      "semantic_reason": "需要表情态，解释是当前操作；提出未接受的 ACTION 解释和命名/版本链/查找条件 OBJECT。保留不打开真实文件内容，不把版本链写成已验证来源。",
+      "competing_label_hypotheses": null,
+      "unaccepted_role_proposal": {
+        "kind": "REQUEST_OPERATOR_PROPOSAL_MODALITY_PRESERVED",
+        "offset_encoding": "UTF16",
+        "spans": [
+          {
+            "role": "ACTION",
+            "field": "current",
+            "start": 32,
+            "end": 34,
+            "text": "解释"
+          },
+          {
+            "role": "OBJECT",
+            "field": "current",
+            "start": 34,
+            "end": 51,
+            "text": "虚构文件库的命名、版本链和查找条件"
+          },
+          {
+            "role": "QUALIFIER",
+            "field": "current",
+            "start": 52,
+            "end": 61,
+            "text": "不打开真实文件内容"
+          }
+        ],
+        "original_modality": "需要",
+        "accepted": false
+      },
+      "release_conditions": [
+        "按完整当前请求和最近上下文确定角色；内嵌行动方案不自动变为额外执行意图；任何替代 span 仅为 writer 提案，不能自动接受。",
+        "独立资格须真实独立审查；writer 本记录不提供独立 gold 或 quota。"
+      ],
+      "accepted_gold": false,
+      "accepted_roles": false,
+      "source_input_revisions": 0,
+      "formal_catalog_mutation": false,
+      "independent_quota_credit": 0,
+      "candidate_prediction_exposures": 0,
+      "semantic_judgment_certified": false
+    }
+  ],
+  "semantic_source_read_checks": "ACTUAL_ALL72_CURRENT_RECENT_ACTION_AND_NOTES_RECHECKED_WITH_WRITER_CORRECTIONS",
+  "source_tree": "2b634364b3ad9e21a4dc7e4ed5e0f8858a613b31",
+  "reviewed_at": "2026-10-03T11:43:45Z",
+  "batch_id": "ZMR-KNOWN-TRAIN-HOLD-DISPOSITIONS-20261003",
+  "input_pins": [
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_review_v0.2.json",
+      "sha256": "2912888d92eb1714ccad4107f2b1e1cd3cf10a1749793c168f3b1b343c0652a7",
+      "git_blob": "b38d92f3eb026b65c40706e0f9e40d76a52b9845"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion11_review_v0.1.json",
+      "sha256": "6f185af5921099bb6e438d08e0f81df9ef92fef82164267e18d2a1c0f56a83c7",
+      "git_blob": "07d9d63c657866215132f2bbc564778b00273fe0"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion1_review_v0.1.json",
+      "sha256": "c493af3c9b6ceedc17c44b08f93795b57faacf1f86fd3b1ac6252595523ae9eb",
+      "git_blob": "515e7a0dfec08865f9354f06926e90fb2d25f471"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion2_review_v0.1.json",
+      "sha256": "436c848a606fc0a07624698b40ed9a8ee069639b4df402ca51d1d6b7c3f37c85",
+      "git_blob": "c12647ee1cc663e78f2da86c1a98633fcebb0203"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_review_v0.1.json",
+      "sha256": "d86a38775a1f80f424a79acabc009b82c12e57cae760e43e9b2c05d7d5399f93",
+      "git_blob": "becd469704e3c1dc7ba3991092a53936451b6c89"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_review_v0.1.json",
+      "sha256": "31b6cde91a4282232b76f8e302a022c845d5dbba55fd30d5573c5431148750e9",
+      "git_blob": "0f8155fd072816416f0d7a60eedd1bb84d45e653"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion5_review_v0.1.json",
+      "sha256": "9cb333e27eb1660e1194db9089cc2f220f4ce31b079405396407b3404e0b4d54",
+      "git_blob": "70eafdda85152619f715e97ceca86356ce9735a0"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_review_v0.1.json",
+      "sha256": "660a2bb8ea63210a14f108454e6f6c501a91e1e551be558a679030cdb5150711",
+      "git_blob": "0f18e76df4cb61ea571548687c7136b94fef7ad7"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_review_v0.1.json",
+      "sha256": "2db5207836e09bdbfc5650663adcf5d2efa355abd8385c5bd9168d96e70a5a82",
+      "git_blob": "392273a9cddd56ac8096ec9b00467c6d83dc5b55"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_review_v0.1.json",
+      "sha256": "bd19ad23e69cafff97e4ebab23dcd6c469381bddf7a4e523a32581cc592a31c0",
+      "git_blob": "4ac2041716df81ce067317e31719449090bb6b57"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_review_v0.1.json",
+      "sha256": "365b9cdaa5269679c52b831da609be790b418c78b7093dec4ad68af7d49bfbfd",
+      "git_blob": "0088c26f25436b5b623d1e8c9a55e2b35363d90f"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_review_v0.1.json",
+      "sha256": "cff041adeb0c1d20f609391941b52d6fbbe52d94c9885f78a0bfb5ddbf66b7a1",
+      "git_blob": "c66b4714436e25bc47404fa7b4aa11bd42713281"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_review_v0.1.json",
+      "sha256": "b0e786aaa4c23d78837ccdcb82f26d28804a50d8fcbf0c41962008d2e01e77e3",
+      "git_blob": "a4b9ed88bf77fb4afdb77a25923705d4f892442b"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_review_v0.1.json",
+      "sha256": "8b05863e9b077a22f0ab08fea405bd1beab56764e6aeb14262f191ca6f9cc2ed",
+      "git_blob": "013d568cef2b2bae8a2aa52e91cb51ae8cdf6b18"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_review_v0.1.json",
+      "sha256": "1e3f8dcdbf59bd7bff7572413defdb8963326ed277f9480282aa4dcab1f763f7",
+      "git_blob": "40e179f56590b00b73271e6ec6e8061cbbe02505"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_review_v0.1.json",
+      "sha256": "71cc5589964f653c6d8aa4b158f3261659f09c7d4be90e2e37a9756c3b0f75d1",
+      "git_blob": "51fda74ef2fda412aaed3efbb7289964313390cc"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_review_v0.1.json",
+      "sha256": "7bc5bfe6b41aea7d1109e9ced3ec1c41cf09408f6d68f8d779d804783d08c228",
+      "git_blob": "a3fecc5461a872180241da2a63d1436ba309b9ff"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_review_v0.1.json",
+      "sha256": "54a2e6c92a0a67074bddd50eb014b89184d40b743793e7e790ab88ee0f8d6244",
+      "git_blob": "1d3e8f53378e7f1ecc86d7ff9599348ffef81eb4"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_review_v0.1.json",
+      "sha256": "9004526809b15bf4d55e9a44d3da44d2bc5cb67929ddd6be586f2c16fc861e06",
+      "git_blob": "69c0915c26b6c8e296cf12e5dcd2ee2b93c89c34"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+      "git_blob": "157e08af47967e63a98d701274d7f25004e03f75"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part2_v0.1.json",
+      "sha256": "323483c9745127f1837484264a18f1d4cf89d8d531474049fe3de306fa984353",
+      "git_blob": "06b4b0e6f70ee7961a24e8279e23ea1fd8510982"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part3_v0.1.json",
+      "sha256": "9f9308f0d2b88b86212078a81f58fb78eda3261f28301477ee68c4f3915d432d",
+      "git_blob": "dcf788c501856ac5b04da0da1f96544a719e8e8a"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+      "git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part5_v0.1.json",
+      "sha256": "4b42effc9f87dbcb4e8177d1a4b80160d4745af6fa15faede8464d608ffcc57a",
+      "git_blob": "b869d1cbedacc321da4e47dd468b05d5a5dcf272"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+      "git_blob": "03011e40e47f7bff59dff6d282121ff38515e447"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+      "sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+      "git_blob": "ba1d59b8ca6c4d72e96e0ba135634171160b9371"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part8_v0.1.json",
+      "sha256": "4f66e9bbca830e4de2b400cd5adf3a3220be1799d7592989d6792502987c59e9",
+      "git_blob": "58185b5e93228cab9f3b9018864fa847f00c4686"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion1_v0.1.json",
+      "sha256": "9334b10cda8591792cd01bcb032c71a24b8131624b22c27767c639743aa688d5",
+      "git_blob": "65820c7b99448c527d51e1f9eeadc9d425edccab"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion2_v0.1.json",
+      "sha256": "36e35906b06ba2571f56149f8403895b01df84088a0a2a83802493c04e3729e8",
+      "git_blob": "277744edc77add1349706bb790d85c7da6ab6ac7"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion3_v0.1.json",
+      "sha256": "e70fef8e4ab0a58b12bce91385a5de2a96e807e15b2690ce99d90f5be90b34f5",
+      "git_blob": "8f5ff6f49043b71747d6ed4159563ae2647dd142"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion4_v0.1.json",
+      "sha256": "0ce47d9e8bc2fbb8610b3f38bbc4a70aaf1f84d63fcb0d2f64174e1bcaacb9c4",
+      "git_blob": "690d019cd51bdef2ee382bcd1737c07605a96519"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion5_v0.1.json",
+      "sha256": "03d941a88aac8ee247cda20b66f2dd8b50837b0579c378078eb90380f0167dcd",
+      "git_blob": "a6c857c3dc98233038c1a09e6c50a4a2d7c34dcc"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json",
+      "sha256": "ead1135aaff9f2a99e5c76785cf9cad5be471070d8b3c45de5238fe1a2cc7ac2",
+      "git_blob": "7026a936739368b948f0c684192e16e9dbdc17ef"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion7_v0.1.json",
+      "sha256": "55eda41da845f829c77f8979046dbd2868a8261c887a4379ca34417c78f74817",
+      "git_blob": "65810ef516d155dc2b1036e22a811c960fc5abb2"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+      "sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+      "git_blob": "d88fd4aeb4315d2e43f6e8e70c054593bd84ced0"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+      "sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+      "git_blob": "f102e9ad20c6f3f1cd2ece0509ba0dd95e635ca3"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion10_v0.1.json",
+      "sha256": "48740ee57f80449ea63390d574e3850074548c873538c0b40613df5cb9387cca",
+      "git_blob": "4d1433990b1441d8a0a288b1e49f64dff2eb0571"
+    },
+    {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad"
+    }
+  ]
+}
