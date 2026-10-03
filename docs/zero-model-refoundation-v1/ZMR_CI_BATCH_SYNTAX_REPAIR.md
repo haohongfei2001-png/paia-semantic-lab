@@ -1,0 +1,21 @@
+# ZMR CI batch syntax engineering repair
+
+## Preserved failure and scope
+
+PR255 original writer715e5183e0b224a4938681f73a51129461827667/tree5002ff9372fcae26055ba014b71716164a9f0f1e. Semantic37140060023 SUCCESS attempt1, ZMR37140060021 CANCELLED attempt1. Job111252441437 (1/2) SUCCESS with67 unit exits0; job111252441518 (2/2) CANCELLED with68 unit exits0. All135 explicit unit ends report code0/signalnull; this is NOT workflow/integration PASS. Cancellation reason not explicitly established in logs; deadline proximity is an observation only. First-unit starts were17:19:34.751 after step17:19:28 and17:24:31.727 after step17:24:24; startup/syntax interval is not wholly attributed to parsing. Preserve original failed head/run/attempt and observed135-unit timing metadata in RESULT. No unchanged-head rerun or budget refund.
+
+This ordinary repair only replaces a Node subprocess per package syntax file with one explicit-file ESM parsing process. It uses Node22 SourceTextModule construction with the required experimental VM flag; never calls link/evaluate, loads imports, changes source, caches test results or fits a candidate. Unsupported runtime/flag, missing/duplicate/empty/nonengineering paths and parse errors fail closed. Every supplied file is accounted as parsed or error and any error exits1 with diagnostics.
+
+## Verification and constraints
+
+Initial eleven targeted tests passed683.059583ms. Actual module-scope checks exposed an initial regex excluding original .test.mjs files; two local validation attempts failed before publication. Retain the original test-module suffix and add its direct syntax regression, record the failure without semantic charge/refund. Final eleven targeted tests passed628.723833ms, zero failures/skips. All265 existing allowlisted package modules parsed without linking/evaluation and inline workflow syntax passed without execution. Synthetic fixtures compare individual node --check status to batch syntax for valid/invalid ESM, shebang/import attributes/top-level await, duplicate declarations/invalid import/top-level return. Unresolved imports and filesystem/throw/await side effects prove sources never execute. Missing flag/missing file/invalid arguments and changed or unchanged wrong source must remain failures. Actual seven-file isolated materialization also passed all eleven checks623.268041ms, zero failures/skips. HostNode26.8.2 is not CI22/device parity; real CI still required.
+
+Full package syntax scope remains the original materialized *.mjs set. All135 prior unit arguments/order/assertions remain, append one136th parser proof. Two serial five-minute/two-worker jobs, maxparallel1/four raw prefetch/two public-tree/zeroBlobREST/ephemeral bytecode cache and compact reporter unchanged. Only batch syntax avoids subprocess startup; no heavy unit, data validation, role assertion or gate skipped. Old code/data/receipts frozen; current compiler adapter/source manifest unchanged. Code pins bind this repair module/test/workflow; future coherent workflow changes do not relabel this historical receipt. Improvement is a hypothesis until actual new-head/main evidence, no resource or long-term stability PASS.
+
+## Scientific limits and continuation
+
+NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, semantic-free engineering only.41 label/global78 role qualification HOLDs/nine semantic HOLDs/32 unaccepted preferences preserved. No samples/accepted data/independent credit/predictions/stable configuration/allocation/semantic repair charge/refund. Historical incomplete-unreconciled allowance null/stable comparison HOLD; no repeated unchanged audit or consumed AS/TEST. Capability UNTESTED, resource NOT_QUALIFIED, no ceiling. Do not mistake parser parity or all unit exits0 for gold/role correctness or CI PASS.
+
+After amended exact-head SUCCESS and actual-main owned-byte/tree/CI proof, continue the already registered finite versioned compile-plan successor, without fitting/evaluation or budget release. Full144/95%/70%/safety/product resources/local-first/zero neural-embedding-LLM-semantic API unchanged. No paid/new permissions/private production data/final blind TEST.
+
+Implementation uses construction/parsing only as documented by [Node22 VM documentation](https://nodejs.org/download/release/v22.14.0/docs/api/vm.html#class-vmsourcetextmodule); it is not a security sandbox or runtime Router.
