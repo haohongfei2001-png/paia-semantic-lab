@@ -1,0 +1,216 @@
+{
+  "schema": "ZMR-SYNTHETIC-ALLOCATION-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "prepared_only": false,
+  "publication_dependency_pr": 257,
+  "publication_dependency_head": "a050c0518442bc1b240f53b60fe518f14a2dc10a",
+  "publication_dependency_main": "75d9d20b88b1a8b77574afb56524e4c7eddbfba6",
+  "publication_dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37152362621_ZMR37152362632",
+  "expected_profiles": [
+    {
+      "id": "STRUCTURE_3X3",
+      "terms": 3,
+      "hitsPerTerm": 3
+    },
+    {
+      "id": "STRUCTURE_128X3",
+      "terms": 128,
+      "hitsPerTerm": 3
+    },
+    {
+      "id": "STRUCTURE_BOUND_1500X144",
+      "terms": 1500,
+      "hitsPerTerm": 144
+    }
+  ],
+  "public_input_pins": [
+    {
+      "path": "data/zero_model_refoundation/development/synthetic_allocation_lifecycle_initial_v0.1.json",
+      "sha256": "d1b2ca039f7d2923ce3ccc35fad599bbee7f7f859d8a615780fbaec42f2b8cb0",
+      "original_sha256": "8c8287890301cd39bab6761dc3413b48e88f7685c4fc620204d4d98d6593fca2"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/synthetic_allocation_lifecycle_final_v0.1.json",
+      "sha256": "dd24e432c853192e1e9aaa32483fe2dbf11fe93a35e73cc9876d6f3af4cde682",
+      "original_sha256": "7b0de9c6d3368a7db76d7ed5b8ae51ac9f25a285a3529053c64fd17c21ddac0d"
+    }
+  ],
+  "source_pins": [
+    {
+      "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318"
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+    }
+  ],
+  "harness_sha256": "4763ae8f806582bd0fa49c3f20ea1cc46dc001285c72945b994a80d611d15ff2",
+  "measurement_timestamp": null,
+  "timestamp_recoverable": false,
+  "context_heartbeat": "2026-10-03T20:08:28.760Z",
+  "recorded_observations_not_reexecuted": true,
+  "true_peak_or_latency_measured": false,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "allowance": null,
+  "actual_candidate_index_rebuilt": false,
+  "stable_candidate_constructed": false,
+  "largest_structure_scope": "OVERSIZED_SYNTHETIC_STRESS_NOT_ELIGIBLE_DEPLOYABLE_INDEX",
+  "semantic_candidate_repairs_charged": 0,
+  "allowance_refunds": 0,
+  "sample_additions": 0,
+  "independent_quota_credit": 0,
+  "stop_rule": "Register original two finite receipt sets and pure rejection/arithmetic/provenance verifier, without reexecuting measurements; stop after bounded proof and exact-head/main integration",
+  "local_validator_verification": {
+    "pass": 3,
+    "fail": 0,
+    "skip": 0,
+    "ms": 52.013375,
+    "child_measurements_reexecuted": 0,
+    "capability_or_resource_certified": false
+  },
+  "prepared_code_pins": [
+    {
+      "path": "allocation_lifecycle_diagnostic.mjs",
+      "sha256": "4763ae8f806582bd0fa49c3f20ea1cc46dc001285c72945b994a80d611d15ff2",
+      "utf8_bytes": 6936
+    },
+    {
+      "path": "allocation_lifecycle_receipt.mjs",
+      "sha256": "a3bb58163bda87a61714644b00e046de3a92867d0567346dba0285d106c09301",
+      "utf8_bytes": 6079
+    },
+    {
+      "path": "allocation_lifecycle_receipt.test.mjs",
+      "sha256": "aa4aa55b21d19b34dc39a83cadc739887b8a4425ee7e6646bd4c84a05854228f",
+      "utf8_bytes": 2518
+    }
+  ],
+  "registration_state": "PUBLISHED_ARTIFACT_PENDING_ENGINEERING_INTEGRATION",
+  "batch_id": "ZMR-SYNTHETIC-ALLOCATION-LIFECYCLE-20261004",
+  "expected_base_sha": "75d9d20b88b1a8b77574afb56524e4c7eddbfba6",
+  "source_main": "75d9d20b88b1a8b77574afb56524e4c7eddbfba6",
+  "source_tree": "d5321d4ff96aeb2942fbb8e0e087d6a87f96fb9b",
+  "publication_dependency_exact_head_ci": "SUCCESS_ATTEMPT1_SEMANTIC37151105005_ZMR37151104930",
+  "publication_dependency_owned_bytes_tree_verified": true,
+  "publication_dependency_receipt_comment": 5973173682,
+  "engineering_status": "REGISTERED_RECEIPT_TARGETED_ISOLATED_SCOPE_HASH_SYNTAX_PASS_PENDING_CI",
+  "integration_verdict": "PENDING_EXACT_HEAD_ACTUAL_MAIN_CI",
+  "semantic_judgment_certified": false,
+  "saturation_ceiling_claim": false,
+  "measurements_reexecuted": 0,
+  "stable_allocations": 0,
+  "fitting": 0,
+  "router_calls": 0,
+  "predictions": 0,
+  "consumed_as_test_reads": 0,
+  "final_blind_execution": 0,
+  "new_paid_calls": 0,
+  "new_permissions": 0,
+  "report": "docs/zero-model-refoundation-v1/ZMR-06_SYNTHETIC_ALLOCATION_LIFECYCLE.md",
+  "result": "docs/zero-model-refoundation-v1/ZMR-06_SYNTHETIC_ALLOCATION_LIFECYCLE_RESULT.json",
+  "owned_paths": [
+    ".github/workflows/zmr-v1.yml",
+    "status/ZERO_MODEL_REFOUNDATION_STATUS.json",
+    "packages/zero_model_refoundation/allocation_lifecycle_diagnostic.mjs",
+    "packages/zero_model_refoundation/allocation_lifecycle_receipt.mjs",
+    "packages/zero_model_refoundation/allocation_lifecycle_receipt.test.mjs",
+    "data/zero_model_refoundation/development/synthetic_allocation_lifecycle_initial_v0.1.json",
+    "data/zero_model_refoundation/development/synthetic_allocation_lifecycle_final_v0.1.json",
+    "docs/zero-model-refoundation-v1/ZMR-06_SYNTHETIC_ALLOCATION_LIFECYCLE.md",
+    "docs/zero-model-refoundation-v1/ZMR-06_SYNTHETIC_ALLOCATION_LIFECYCLE_RESULT.json"
+  ],
+  "hypothesis": "A finite paired synthetic memory receipt must retain initial confound, exact source/engine/phase/delta provenance and explicit limits; neither scalar deltas nor a structural stress fixture establish eligible index/device resources or ability",
+  "code_pins": [
+    {
+      "path": ".github/workflows/zmr-v1.yml",
+      "sha256": "4dce5cd7b8f89a1696bc51287d10591f61fbff827f6dfb61dfb86656d3caa14d",
+      "utf8_bytes": 149679
+    },
+    {
+      "path": "packages/zero_model_refoundation/allocation_lifecycle_diagnostic.mjs",
+      "sha256": "4763ae8f806582bd0fa49c3f20ea1cc46dc001285c72945b994a80d611d15ff2",
+      "utf8_bytes": 6936
+    },
+    {
+      "path": "packages/zero_model_refoundation/allocation_lifecycle_receipt.mjs",
+      "sha256": "a3bb58163bda87a61714644b00e046de3a92867d0567346dba0285d106c09301",
+      "utf8_bytes": 6079
+    },
+    {
+      "path": "packages/zero_model_refoundation/allocation_lifecycle_receipt.test.mjs",
+      "sha256": "c2deb9abf6908f02d2e2446c2e3bc5597c9986e521e981849beb044fbc40e5af",
+      "utf8_bytes": 2689
+    },
+    {
+      "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0",
+      "utf8_bytes": 3812
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+      "utf8_bytes": 3042
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+      "utf8_bytes": 6892
+    }
+  ],
+  "registered_local_verification": {
+    "pass": 3,
+    "fail": 0,
+    "skip": 0,
+    "ms": 46.911291,
+    "measurements_reexecuted": 0,
+    "local_node": "26.8.2",
+    "ci_node": "22",
+    "device_or_ci_parity_claim": false,
+    "full_historical_local_suite": false
+  },
+  "isolated_materialization_verification": {
+    "files": 10,
+    "pass": 3,
+    "fail": 0,
+    "skip": 0,
+    "ms": 41.58975,
+    "measurements_reexecuted": 0,
+    "full_historical_local_suite": false
+  },
+  "workflow_verification": {
+    "inline_workflow_syntax": "PASS_NOT_EXECUTED",
+    "explicit_materialization": "PASS_TEN_FILE_CLOSURE",
+    "changed_result_guard": "PASS_SEVEN_CODE_TWO_INPUT_HASHES_ZERO_OPERATIONS",
+    "changed_ESM_syntax": "PASS_THREE_FILES_NOT_LINKED_OR_EVALUATED",
+    "previous_unit_count": 138,
+    "unit_count": 139,
+    "previous_units_order": "BYTE_IDENTICAL_ALL138_ARGUMENTS",
+    "diagnostic_measurement_harness_executed": false,
+    "forecast_lane_ms": [
+      176117,
+      176019,
+      176115,
+      176014,
+      176013,
+      176013
+    ],
+    "forecast_only_not_resource_or_stability_pass": true,
+    "serial_jobs": 3,
+    "unit_workers": 2,
+    "max_parallel": 1,
+    "timeout_minutes": 5,
+    "setup_reserve_ms": 40000
+  },
+  "numeric_observations_unchanged_by_registration": true,
+  "raw_producer_receipts_remain_registered_false": true,
+  "largest_synthetic_encoded_json_bytes": 3066522,
+  "largest_structure_within_index_budget": false,
+  "norm_typed_array_component_bytes": 1152,
+  "actual_total_memory_gain_or_consumer_resource_pass": false
+}
