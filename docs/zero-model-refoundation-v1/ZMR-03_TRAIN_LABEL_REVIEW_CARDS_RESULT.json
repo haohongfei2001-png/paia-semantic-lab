@@ -1,0 +1,173 @@
+{
+  "schema": "ZMR-WRITER-LABEL-REVIEW-CARDS-RESULT-1",
+  "source_main": "d926bf81c5c97d6e3e2678deda50e5d86f293f48",
+  "source_tree": "9744860cbe44bb47d9b281fe70e970c56d447a3c",
+  "publication_dependency_pr": 252,
+  "journal_path": "data/zero_model_refoundation/development/mechanism_matrix_train_label_review_cards_v0.1.json",
+  "journal_sha256": "ab16c7e00f09981c6a4dc8b1df1d0db2440a07f519f5e296d213536e8e412f09",
+  "input_pins": [
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion6_v0.1.json",
+      "sha256": "ead1135aaff9f2a99e5c76785cf9cad5be471070d8b3c45de5238fe1a2cc7ac2",
+      "git_blob": "7026a936739368b948f0c684192e16e9dbdc17ef"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion8_v0.1.json",
+      "sha256": "b8c6616b3b7eb57e803899ee2935b9023a715ea11da6c507ef0e06b6e4a3ede1",
+      "git_blob": "d88fd4aeb4315d2e43f6e8e70c054593bd84ced0"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_expansion9_v0.1.json",
+      "sha256": "decfda82a145b0c914c8f8c92f8709716c4e74dfbdbd8cc79cf7d486384becb6",
+      "git_blob": "f102e9ad20c6f3f1cd2ece0509ba0dd95e635ca3"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part4_v0.1.json",
+      "sha256": "7a7d4f5dfa54c4fca7d22e162ca4562a25c8c5ef0cd6c9b38d6f43a75a406fbd",
+      "git_blob": "217f75acb88e84cc0837ad3ff3ca7533396daf8e"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part6_v0.1.json",
+      "sha256": "1021a38d726d5cbc7817bea8cf77c74bd4dc1cecd7990f98546adc2152ad8315",
+      "git_blob": "03011e40e47f7bff59dff6d282121ff38515e447"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_part7_v0.1.json",
+      "sha256": "2264ab3384d5595725e3e66745a86e1aaac2503820055573e5855b814764277c",
+      "git_blob": "ba1d59b8ca6c4d72e96e0ba135634171160b9371"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_seed_v0.1.json",
+      "sha256": "4377ecd423c38bbf4755113fffc844eb71f0e285901f921bd039d398573a0080",
+      "git_blob": "157e08af47967e63a98d701274d7f25004e03f75"
+    },
+    {
+      "path": "data/zero_model_refoundation/development/mechanism_matrix_train_label_proposals_v0.1.json",
+      "sha256": "ea076defbd3ab2fe679565ba2eb38a9c4d42fee5811bf05ce242168e10ccdd63",
+      "git_blob": "2b47a5c0b4bd0dde33fbf661d31998576030b85c"
+    },
+    {
+      "path": "catalog/system_topic_catalog_v0.2.yaml",
+      "sha256": "29c617a20053042205a9a04e181de95cc000d8b9b137321d0c30a5149f4cff18",
+      "git_blob": "6bcdd2af66879d7ac098cf237b5586c3c9818aad"
+    },
+    {
+      "path": "docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md",
+      "sha256": "250df34d1b3cfe8f08cfaf6612ae32058f7f9e2b585864e8301a22888dcb4660",
+      "git_blob": "7d3cbc929c05cf6f935c08a4a8b49d2eddd30ca0"
+    }
+  ],
+  "code_pins": [
+    {
+      "path": "packages/zero_model_refoundation/train_label_review_cards.mjs",
+      "sha256": "2072f095c93a528595edfda9eb4d344a3f8eaf25d6bebec98f6f7393c0d3bc37"
+    },
+    {
+      "path": "packages/zero_model_refoundation/train_label_review_cards.test.mjs",
+      "sha256": "8c2c016f5fa1bf8e6dd02e0698df59cf56420b778a72d47763d7c6c8408a6fda"
+    },
+    {
+      "path": "packages/zero_model_refoundation/contracts.mjs",
+      "sha256": "ac3d29d395e9cc645e3138eb25b93d85adaceb726e569116a921fc78f368fb2c"
+    }
+  ],
+  "audit": {
+    "schema": "ZMR-WRITER-LABEL-REVIEW-CARDS-AUDIT-1",
+    "classification": "ENGINEERING_IMMUTABLE_WRITER_CARDS_NOT_SEMANTIC_BOUNDARY_OR_LABEL_TRUTH",
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "cards": 9,
+    "actual_source_packets": 7,
+    "full_catalog_topics": 144,
+    "actual_formal_provisional_cards": 13,
+    "exact_utf16_goal_spans": 9,
+    "writer_interpretations": 18,
+    "known_non_discriminators": 27,
+    "specific_semantic_holds_retained": 9,
+    "label_qualification_holds_retained": 41,
+    "role_qualification_holds_retained": 78,
+    "new_samples": 0,
+    "accepted": 0,
+    "clearance": 0,
+    "independent_reviewers": 0,
+    "independent_quota_credit": 0,
+    "predictions": 0,
+    "semantic_evaluations": 0,
+    "allocations": 0,
+    "remaining_allowance": null,
+    "semantic_judgment_certified": false,
+    "formal_catalog_mutation": false,
+    "compiler_admission": "HOLD_UNACCEPTED_LABELS_ROLES_AND_ACCOUNTING",
+    "data_qualification": "NOT_QUALIFIED",
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "saturation_ceiling_claim": false
+  },
+  "verification_kind": "REGISTERED_BYTE_AND_CARD_COMPLETENESS_NOT_SEMANTIC_OR_LABEL_CERTIFICATION",
+  "integration_verdict": "PENDING_EXACT_HEAD_AND_ACTUAL_MAIN_CI",
+  "qualification": "HOLD_ALL_LABELS_ROLES_ACCOUNTING_AND_INDEPENDENCE",
+  "preserved_local_engineering_failure": {
+    "cause": "One non-discriminator sentence was11characters,below unchanged12character representation guard;result materialization stopped;initial unit pass3/fail1 ENOENT",
+    "initial_test_duration_ms": 183.23275,
+    "semantic_correctness_inferred_from_initial_negative_passes": false,
+    "repair": "Clarify original writer wording to say that the isolated维权word does not prove an exclusive consumer-rights boundary;preserve minimum guard and original input/gold/formal cards",
+    "semantic_evaluations": 0,
+    "new_stable_allocations": 0,
+    "semantic_candidate_repair_charge": 0,
+    "refunds": 0,
+    "budget_resets": 0
+  },
+  "local_verification": {
+    "targeted_tests_pass": 4,
+    "targeted_tests_fail": 0,
+    "targeted_tests_skipped": 0,
+    "targeted_duration_ms": 180.058834,
+    "isolated_required_files": 15,
+    "isolated_tests_pass": 4,
+    "isolated_tests_fail": 0,
+    "isolated_duration_ms": 183.662583,
+    "old132_unit_arguments_and_order_unchanged": true,
+    "new_unit_count": 133,
+    "workflow_compiles_without_execution": true,
+    "materialized_card_and_frame_dependencies_checked": true,
+    "local_node": "26.8.2",
+    "ci_node": "22",
+    "node_host_parity_not_claimed": true,
+    "semantic_judgment_certified": false
+  },
+  "dependency_actual_main_ci": "SUCCESS_ATTEMPT1_SEMANTIC37130483022_ZMR37130483044",
+  "preserved_ci_failure": {
+    "schema": "ZMR-CI-CANCELLED-HEAD-OBSERVATION-1",
+    "head": "734e8e835cb3266df3500c5ac9f289b9714d6cf6",
+    "tree": "0a6ea96a820d847247f046d7c0bf3a652f584ea1",
+    "base": "d926bf81c5c97d6e3e2678deda50e5d86f293f48",
+    "run_id": 37132637753,
+    "attempt": 1,
+    "workflow_verdict": "CANCELLED_NOT_INTEGRATION_PASS",
+    "semantic_run_id": 37132637730,
+    "semantic_verdict": "SUCCESS_ATTEMPT1",
+    "cancellation_reason": "NOT_EXPLICIT_IN_LOGS_DEADLINE_PROXIMITY_ONLY",
+    "jobs": [
+      {
+        "job_id": 111230629752,
+        "shard": "1/2",
+        "verdict": "CANCELLED",
+        "completed_units": 65,
+        "unit_failures": 0,
+        "unit_exit_code": 0,
+        "setup_to_schedule_ms": 38859,
+        "scheduled_units_ms": 262906
+      },
+      {
+        "job_id": 111230629917,
+        "shard": "2/2",
+        "verdict": "SUCCESS",
+        "completed_units": 68,
+        "unit_failures": 0,
+        "unit_exit_code": 0,
+        "setup_to_schedule_ms": 25617,
+        "scheduled_units_ms": 257388
+      }
+    ]
+  },
+  "ci_engineering_repair_result": "docs/zero-model-refoundation-v1/ZMR_CI_BYTECODE_REPORTING_REPAIR_RESULT.json"
+}
