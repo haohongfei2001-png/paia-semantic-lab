@@ -36,5 +36,7 @@ test('empty queue reads nothing and workflow retains serial assertions and two t
  let calls=0;const prefetch=await make([],async()=>{calls++;});await prefetch([]);assert.equal(calls,0);
  assert(workflow.includes('await prefetch([...allowed].filter(p => after.has(p)));'));
  assert(workflow.includes("for (const p of docs) assert((await read(p)).length >= 200"));
- assert(workflow.includes('node --test --test-concurrency=2 '));assert(workflow.includes('timeout-minutes: 5'));
+ const command=workflow.split('\n').find(line=>line.startsWith('          node packages/zero_model_refoundation/ci_test_scheduler.mjs '));
+ assert(command);assert(command.includes('--shard=${{ matrix.shard }} --test-concurrency=2 '));
+ assert(workflow.includes("shard: ['1/2', '2/2']"));assert(workflow.includes('max-parallel: 1'));assert(workflow.includes('timeout-minutes: 5'));
 });
