@@ -9,3 +9,13 @@ Combined1296writerreviews/1255provisionalretains/41labelholds/32explicitrolehold
 Nextexact registeredmissingfull144family-languagecells:source-onlyselection2016remainingcells/2160missingrows,next144en,48/144unregisterednewscenario drafts/96missing/noquota credit. Continuefull24/12-8-4/8meaningfulfamily/source/factor/role/boundary/safety/separateordinary-challengeDEV/publicstatic accounting. Onlydependentindependentqualification/AS/stablecomparison held.
 
 Unregistered source12preparation48Englishdrafts/144exactspans/4antecedents. Initial24drafts rejected beforefreeze for excessive source11scenario reuse,retained separately/0credit. No source12packet frozen or registered;source11/QA11 raw andqualification counts unchanged.
+
+## CI scheduling repair after the first exact-head integration
+
+Head84dc8509a1b7fc19457c1e6810a42493dee2f5bd:Semantic37115050622 SUCCESS attempt1;ZMR37115050667 CANCELLED attempt1. Shard1 job111180131879 reached the existing five-minute job limit during engineering units;shard2 job111180131983 completed168assertions with0fail/0skip in246045.148663ms. Source11main ZMR37114820077 also CANCELLED;neither run is PASS. These ordinary engineering outcomes do not consume a semantic repair or stable allocation. No unchanged-head retry.
+
+The automatic alphabetical native partition accumulated expensive recursive source audits near the end of one shard. Replace its execution scheduling with four deterministic cost-ordered lanes,two lanes per serial shard. Two concurrent explicit single-unit Node test workers maximum;five-minute per-job limit,two serial jobs,max-parallel1 and fail-fastfalse unchanged. All original126explicit unit paths/order are hash-guarded and still execute once;one additional scheduler unit provides failure/error/concurrency proofs. Every older source/module/receipt/code pin and every existing assertion is unchanged except the CI partition proof itself,which now tests the real scheduler. New scheduling estimates are engineering ordering hints,never resource PASS or candidate measurements.
+
+Focused5scheduler/partition assertions PASS434.098584ms;four-file isolated materialization repeats the same5assertions PASS389.931458ms. Final five assertions including the original126-path hash guard PASS434.045292ms. No broad local rerun,Router prediction,old-v04 source screen,consumed TEST,AS or private data. Full integration is pending the amended PR head.
+
+Next source12 English drafts are now144/144 with432exact current spans/14antecedents and0scoped Dice>=.55 flags against registered1296rows. Initial24derivative drafts were rejected before freeze. All source12 drafts remain unregistered/nonfrozen/0quota;freeze requires this QA11 actualmerged main/tree/bytes verification.
