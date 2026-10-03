@@ -1803,7 +1803,7 @@
       "historical_budget_new_semantic_evaluations": 0
     }
   },
-  "next_action": "唯一优先任务：补齐既有378条TRAIN旧记录缺失的角色审查，先锁定current目标/背景从句/内嵌比较与解释对象/情态-操作分工的writer审查规则，再逐条读取原始source/recent/spans并记录理由。完成标准是378条均有可追溯版本化writer处置或明确HOLD，原始source/gold/roles不改、独立credit为0；不以测试PASS自动接受角色。既有72条争议处置已记录（41labelhold/32rolehold/1重叠），5个角色修正仅为未接受提案，资格hold仍保留。有限历史预算审计已闭账为INCONCLUSIVE：原始allocation未恢复，history.complete/reconciled=false，allowance=null，禁止稳定能力比较/重置/退款/重放；只在有具体新原始账本时补证。source12未登记未冻结；新增样本必须预登记已知能力缺口、比较身份与用途、有限语义停止条件，不把数量增长当算法增益。独立curator/AS与full144/95%/70%/安全/资源/local-first/zero-model gate不变，无付费/权限扩张/私有production/consumedTEST或finalblindTEST。",
+  "next_action": "唯一优先任务：为新识别的46条旧TRAIN角色疑点完成保留原文的版本化修正提案或明确HOLD，先明确当前操作/间接产物请求/引用主张/方法从句的角色层级。优先核对PART4-020/050及PART6-002/017/038/047当前goal配对；所有修正仅未接受writer proposal，保留原始source/gold/spans、既有5个提案与41标签hold/32旧角色hold。完成标准为46条逐项有原文上下文依据、精确UTF16片段和层级理由；歧义继续HOLD，不以清空hold/测试PASS/数量增长替代正确。378旧角色writer审查已完整记录（332暂保留/46新疑点）；旧writer漏审0但独立未资格378，现combined角色疑点78，独立credit0。历史额度有限审计仍INCONCLUSIVE/complete=false/reconciled=false/allowance=null，禁止新的稳定能力比较、重置、退款或重放；仅具体新原始账本补证。source12仍未登记未冻结；新增样本先登记已证能力缺口、比较身份/用途、有限语义验收和停止条件。继续独立可执行开发，独立curator/AS资格路径冻结；full144/95%/70%/安全/资源/local-first/zero-model不变，无付费/权限扩张/私有production/consumedTEST或finalblindTEST。",
   "engineering_ci_transport": {
     "classification": "ENGINEERING_ONLY_NOT_CAPABILITY",
     "incident_main": "226dca7eedae33c098b49b4abaf5d6905e83a019",
@@ -1876,13 +1876,19 @@
       "sha256": "9a1f54b3eb5ac9eca7139c68001fd6a54005f84f684b96f123c812cba34851af",
       "reason": "Known TRAIN dispute writer dispositions recorded without clearing qualification holds",
       "text": "唯一优先任务：为既有41条TRAIN标签hold与32条显式角色hold建立保留原始证据的版本化逐项处置日志；378条旧角色缺失仍单列保留。逐项说明Topic边界/action-object-current-goal-context依据；无法裁定则继续HOLD，修正只能提交writer proposal，不能自封独立gold。完成标准是既有缺口无遗漏且可追溯，不以测试PASS或清空hold数替代判断正确。有限历史额度审计已完成：26条已知实验/39指定路径/24原始提交及PR；15原始key，11记录无原始key，累计stable allocation仍未恢复，complete=false/reconciled=false/allowance=null/new stable comparisons HOLD。仅具体新原始账本证据可恢复该路径，不重复空查、不重置/退款/重放。source12继续未冻结草稿；所有新增样本先登记能力缺口、拟比较机制、有限语义验收及停止扩充条件。独立数据/curator/AS及全部144/95%/70%/安全/资源/local-first/zero-model gate不变，无付费/权限扩张/私有生产数据/盲测。"
+    },
+    {
+      "head": "043d11004afde54deca207e6302eba954c5d1153",
+      "sha256": "a6f60a480148e4b4610772599896571909acfb6ca2459084e0274b217be80e73",
+      "reason": "All378older writer role dispositions recorded;independent roles and every qualification hold remain",
+      "text": "唯一优先任务：补齐既有378条TRAIN旧记录缺失的角色审查，先锁定current目标/背景从句/内嵌比较与解释对象/情态-操作分工的writer审查规则，再逐条读取原始source/recent/spans并记录理由。完成标准是378条均有可追溯版本化writer处置或明确HOLD，原始source/gold/roles不改、独立credit为0；不以测试PASS自动接受角色。既有72条争议处置已记录（41labelhold/32rolehold/1重叠），5个角色修正仅为未接受提案，资格hold仍保留。有限历史预算审计已闭账为INCONCLUSIVE：原始allocation未恢复，history.complete/reconciled=false，allowance=null，禁止稳定能力比较/重置/退款/重放；只在有具体新原始账本时补证。source12未登记未冻结；新增样本必须预登记已知能力缺口、比较身份与用途、有限语义停止条件，不把数量增长当算法增益。独立curator/AS与full144/95%/70%/安全/资源/local-first/zero-model gate不变，无付费/权限扩张/私有production/consumedTEST或finalblindTEST。"
     }
   ],
   "critical_path_audit": {
     "source_main": "1edeac0e018c17f72fd5865318b1f19adfdfb9ef",
     "writer_pr": 247,
     "prior_writer_head": "2f6d05ef4bf9bf0ade8a8ff189ae32109d3d6add",
-    "unique_priority": "OLDER_TRAIN_ROLE_DISPOSITIONS_378",
+    "unique_priority": "BOUNDED_PROPOSAL_OR_HOLD_FOR46_OLDER_TRAIN_ROLE_CONCERNS",
     "ci_prerequisite": "VERIFY_NEW_DISPOSITION_BATCH_EXACT_HEAD_THEN_ACTUAL_MAIN",
     "ci_prior_run": 37118392470,
     "ci_prior_verdict": "CANCELLED_WITH_ALL127_UNIT_EXIT0_NOT_WORKFLOW_PASS",
@@ -1917,10 +1923,13 @@
     "semantic_review_gaps_preserved": {
       "train_label_holds": 41,
       "train_explicit_role_holds": 32,
-      "older_train_roles_without_disposition": 378,
+      "older_train_roles_without_disposition": 0,
       "dev_v04_label_holds": 100,
       "dev_v04_unaccepted_span_proposals": 782,
-      "independent_reviewers": 0
+      "independent_reviewers": 0,
+      "older_train_roles_independently_unqualified": 378,
+      "train_new_older_role_holds": 46,
+      "train_combined_writer_role_holds": 78
     },
     "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
     "final_blind_test_run": false,
@@ -1931,14 +1940,15 @@
     "known_experiment_records": 26,
     "allowance": null,
     "budget_path": "HOLD_NO_ALLOCATION_OR_KEY_FABRICATION",
-    "next_review_completion": "All378older missing-role records receive immutable source/review pins and a versioned writer judgment or HOLD;no independent acceptance or original rewriting",
+    "next_review_completion": "All46new older-role concerns receive exact original-context writer proposal-or-HOLD decisions; preserve prior5proposals/41labelholds/32roleholds;no independent acceptance or source rewrite",
     "qa11_actual_main": "1edeac0e018c17f72fd5865318b1f19adfdfb9ef",
     "qa11_exact_head": "4d3e405e625982bcc084295c282f6c92e4d27d6f",
     "qa11_head_semantic_run": 37117543654,
     "qa11_head_zmr_run": 37117543674,
     "qa11_exact_head_ci": "SUCCESS_ATTEMPT1_ENGINEERING_ONLY",
     "known_train_disposition_result": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_HOLD_DISPOSITIONS_RESULT.json",
-    "known_disposition_batch_id": "ZMR-KNOWN-TRAIN-HOLD-DISPOSITIONS-20261003"
+    "known_disposition_batch_id": "ZMR-KNOWN-TRAIN-HOLD-DISPOSITIONS-20261003",
+    "older_role_disposition_result": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_OLDER_ROLE_DISPOSITIONS_RESULT.json"
   },
   "engineering_ci_work_stealing": {
     "classification": "ENGINEERING_ONLY_NOT_CAPABILITY",
@@ -1997,6 +2007,32 @@
     "candidate_predictions": 0,
     "new_stable_allocations": 0,
     "remaining_stable_allowance": null,
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "data_qualification": "NOT_QUALIFIED",
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "saturation_ceiling_claim": false,
+    "integration_verdict": "SOURCE_BATCH_PR248_EXACT_HEAD_AND_ACTUAL_MAIN_CI_SUCCESS_ATTEMPT1_ENGINEERING_ONLY"
+  },
+  "older_train_role_dispositions": {
+    "source_main": "043d11004afde54deca207e6302eba954c5d1153",
+    "source_tree": "54b4f9ccab5a2cef0daaa661133d4ecf20135501",
+    "journal_path": "data/zero_model_refoundation/development/mechanism_matrix_train_older_role_dispositions_v0.1.json",
+    "result": "docs/zero-model-refoundation-v1/ZMR-03_TRAIN_OLDER_ROLE_DISPOSITIONS_RESULT.json",
+    "writer_disposition_records": 378,
+    "writer_provisional_retains": 332,
+    "new_writer_role_holds": 46,
+    "prior_explicit_role_holds": 32,
+    "combined_writer_role_holds": 78,
+    "older_roles_without_writer_disposition": 0,
+    "older_roles_independently_unqualified": 378,
+    "accepted_gold_rows": 0,
+    "accepted_role_rows": 0,
+    "independent_quota_credit": 0,
+    "candidate_predictions": 0,
+    "new_stable_allocations": 0,
+    "remaining_stable_allowance": null,
+    "semantic_judgment_certified": false,
     "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
     "data_qualification": "NOT_QUALIFIED",
     "capability_verdict": "UNTESTED",
