@@ -1873,13 +1873,13 @@
     }
   ],
   "critical_path_audit": {
-    "source_main": "fe13fae833698132e1ec386add5135b1e3051211",
-    "writer_pr": 246,
+    "source_main": "1edeac0e018c17f72fd5865318b1f19adfdfb9ef",
+    "writer_pr": 247,
     "prior_writer_head": "2f6d05ef4bf9bf0ade8a8ff189ae32109d3d6add",
     "unique_priority": "VERSIONED_KNOWN_TRAIN_LABEL_AND_ROLE_DISPOSITIONS",
-    "ci_prerequisite": "FIX_ORDINARY_ENGINEERING_AND_VERIFY_EXACT_HEAD_THEN_ACTUAL_MAIN",
-    "ci_prior_run": 37116129462,
-    "ci_prior_verdict": "CANCELLED_WITH_PREFETCH_ASSERTION_FAILURE_NOT_PASS",
+    "ci_prerequisite": "VERIFY_AMENDED_PR247_SCHEDULER_HEAD_THEN_ACTUAL_MAIN",
+    "ci_prior_run": 37118392470,
+    "ci_prior_verdict": "CANCELLED_WITH_ALL127_UNIT_EXIT0_NOT_WORKFLOW_PASS",
     "ci_prior_units_completed": 127,
     "ci_unchanged_head_reruns": 0,
     "engineering_repair_semantic_budget_charge": 0,
@@ -1931,5 +1931,33 @@
     "qa11_head_semantic_run": 37117543654,
     "qa11_head_zmr_run": 37117543674,
     "qa11_exact_head_ci": "SUCCESS_ATTEMPT1_ENGINEERING_ONLY"
+  },
+  "engineering_ci_work_stealing": {
+    "classification": "ENGINEERING_ONLY_NOT_CAPABILITY",
+    "incident_head": "027e4f2e98e3cec418b082a72db7e3fd9f93363e",
+    "incident_run": 37118392470,
+    "attempt": 1,
+    "shard_jobs": [
+      111189535287,
+      111189535218
+    ],
+    "workflow_verdict": "CANCELLED_NOT_PASS",
+    "all_explicit_units_exited_zero": 127,
+    "cancellation_reason_receipt": "NOT_EXPLICIT_IN_JOB_LOGS_DEADLINE_PROXIMITY_ONLY",
+    "repair": "SHARED_EXPLICIT_WORK_QUEUE_WITHIN_EACH_TWO_WORKER_SERIAL_SHARD",
+    "per_job_minutes": 5,
+    "serial_shards": 2,
+    "max_parallel_jobs": 1,
+    "max_unit_workers_per_job": 2,
+    "existing_units_removed": 0,
+    "existing_assertions_skipped": 0,
+    "unchanged_head_reruns": 0,
+    "integration_verdict": "PENDING_AMENDED_HEAD",
+    "engineering_repair_semantic_budget_charge": 0,
+    "candidate_predictions": 0,
+    "remaining_stable_allowance": null,
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "receipt": "docs/zero-model-refoundation-v1/ZMR_CI_SERIAL_TEST_SHARDS.md"
   }
 }

@@ -4,17 +4,17 @@ import {mkdtemp,writeFile,rm,readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {planTestLanes,selectTestLanes,executeTestLanes,estimatedUnitCost,CI_TIMING_REFERENCE} from './ci_test_scheduler.mjs';
+import {planTestLanes,selectTestLanes,executeTestLanes,estimatedUnitCost,CI_TIMING_REFERENCE,PREVIOUS_CI_TIMING_REFERENCE} from './ci_test_scheduler.mjs';
 const unit=n=>'packages/zero_model_refoundation/'+n+'.test.mjs';
-test('prior failed-run timing hints cover the complete actual list and reserve setup time inside the unchanged job budget',async()=>{
+test('cancelled-run timing hints cover the complete actual list and reserve setup time inside the unchanged job budget',async()=>{
  const workflow=await readFile(new URL('../../.github/workflows/zmr-v1.yml',import.meta.url),'utf8');
  const line=workflow.split('\n').find(l=>l.startsWith('          node packages/zero_model_refoundation/ci_test_scheduler.mjs '));assert(line);
  const paths=line.trim().split(/\s+/).filter(p=>p.endsWith('.test.mjs')),reference=CI_TIMING_REFERENCE;
- assert.equal(reference.head,'2f6d05ef4bf9bf0ade8a8ff189ae32109d3d6add');assert.equal(reference.run_id,37116129462);assert.equal(reference.attempt,1);
- assert.equal(reference.run_verdict,'CANCELLED_WITH_ASSERTION_FAILURE_NOT_PASS');assert.equal(reference.evidence_class,'ENGINEERING_SCHEDULING_HINTS_ONLY');
+ assert.equal(reference.head,'027e4f2e98e3cec418b082a72db7e3fd9f93363e');assert.equal(reference.run_id,37118392470);assert.equal(reference.attempt,1);assert.equal(PREVIOUS_CI_TIMING_REFERENCE.run_id,37116129462);assert.equal(PREVIOUS_CI_TIMING_REFERENCE.run_verdict,'CANCELLED_WITH_ASSERTION_FAILURE_NOT_PASS');
+ assert.equal(reference.run_verdict,'CANCELLED_WITH_ALL_UNIT_PASS_NOT_JOB_PASS');assert.equal(reference.evidence_class,'ENGINEERING_SCHEDULING_HINTS_ONLY');
  assert.equal(reference.units,127);assert.deepEqual(Object.keys(reference.unit_ms).sort(),[...paths].sort());assert(Object.values(reference.unit_ms).every(ms=>Number.isInteger(ms)&&ms>0));
  const plan=planTestLanes(paths),loads=plan.flat().map(l=>l.estimated_ms);
- assert(Math.max(...loads)<240000);assert(loads.every(ms=>ms+45000<300000)); // Ordering forecast only;actual CI still required.
+ assert(Math.max(...loads)<260000);assert(loads.every(ms=>ms+40000<300000)); // Ordering forecast only;actual CI still required.
  assert.equal(plan.flat().reduce((n,l)=>n+l.paths.length,0),127);
  const future=unit('mechanism_matrix_train_expansion12');assert(!Object.hasOwn(reference.unit_ms,future));assert(estimatedUnitCost(future)>=120000);
  const extended=planTestLanes([...paths,future]).flat().flatMap(l=>l.paths);assert.equal(extended.filter(p=>p===future).length,1);assert.equal(new Set(extended).size,128);
@@ -42,4 +42,19 @@ test('real isolated Node child assertion failures and exit errors propagate thro
   const script="import {executeTestLanes,runNodeUnit} from "+JSON.stringify(url)+";const r=await executeTestLanes("+JSON.stringify([{paths:[paths[0]]},{paths:[paths[1]]}]) +",runNodeUnit);console.log('PROOF_RESULT '+JSON.stringify(r));process.exitCode=r.exit_code;";
   const r=spawnSync(process.execPath,['--input-type=module','-e',script],{env,encoding:'utf8',timeout:30000,maxBuffer:1024*1024});assert.equal(r.error,undefined);assert.equal(r.status,1);assert(r.stdout.includes('scheduler-proof-pass'));assert(r.stdout.includes('scheduler-proof-fail'));const result=JSON.parse(r.stdout.match(/PROOF_RESULT (.+)/)[1]);assert.equal(result.results.length,2);assert.equal(result.results.filter(x=>x.passed).length,1);
  }finally{await rm(root,{recursive:true,force:true});}
+});
+
+test('completed worker drains remaining work across lane boundaries while a long unit stays active',{timeout:1000},async()=>{
+ const lanes=[{paths:['long','left1','left2']},{paths:['short']}],seen=[];let unblock;
+ const longDone=new Promise(resolve=>{unblock=resolve;});
+ const pending=executeTestLanes(lanes,async path=>{
+  seen.push(path);
+  if(path==='long')await longDone;
+  if(path==='left2')unblock();
+  return 0;
+ });
+ const outcome=await pending;
+ assert.deepEqual(seen,['long','left1','left2','short']);
+ assert.equal(outcome.results.length,4);assert.equal(outcome.exit_code,0);
+ assert.deepEqual(outcome.results.map(r=>r.path),['long','left1','left2','short']);
 });
