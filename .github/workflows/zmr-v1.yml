@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - D + '**'
+      - 'docs/zero-model-refoundation-v1/**'
       - 'status/ZERO_MODEL_REFOUNDATION_STATUS.json'
       - 'packages/zero_model_refoundation/**'
       - 'data/zero_model_refoundation/development/**'
@@ -14,7 +14,7 @@ on:
   push:
     branches: [main]
     paths:
-      - D + '**'
+      - 'docs/zero-model-refoundation-v1/**'
       - 'status/ZERO_MODEL_REFOUNDATION_STATUS.json'
       - 'packages/zero_model_refoundation/**'
       - 'data/zero_model_refoundation/development/**'
@@ -105,7 +105,7 @@ jobs:
             // END_PUBLIC_TREE_READER
             const before = await tree(base), after = await tree(head);
             const changed = [...new Set([...before.keys(), ...after.keys()])].filter(p => before.get(p)?.sha !== after.get(p)?.sha || before.get(p)?.mode !== after.get(p)?.mode);
-            const zmr = p => p.startsWith(D + '') || p.startsWith('packages/zero_model_refoundation/') || p.startsWith('data/zero_model_refoundation/development/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
+            const zmr = p => p.startsWith('docs/zero-model-refoundation-v1/') || p.startsWith('packages/zero_model_refoundation/') || p.startsWith('data/zero_model_refoundation/development/') || p === 'status/ZERO_MODEL_REFOUNDATION_STATUS.json' || p === '.github/workflows/zmr-v1.yml';
             const shared = new Set(['README.md', 'AGENTS.md', '.github/workflows/semantic-lab-ci.yml']);
             assert(changed.every(p => zmr(p) || shared.has(p)), 'mixed legacy batch forbidden');
             const D = 'docs/zero-model-refoundation-v1/';
