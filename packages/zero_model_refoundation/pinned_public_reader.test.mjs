@@ -19,7 +19,7 @@ const entry = {mode:'100644', type:'blob', size:bytes.length, sha};
 const head = '1'.repeat(40);
 async function reader(fetchImpl, entries = [['safe/file.mjs', entry]], paths = ['safe/file.mjs'], clock = Date, events = [], signals = AbortSignal) {
   const make = new AsyncFunction('allowed', 'after', 'head', 'context', 'fetch', 'assert', 'crypto', 'Buffer', 'AbortSignal', 'Date', 'core', source + '\nreturn {read, tree, transportStats:()=>({attempts:publicTransportAttempts,retries:publicTransportRetries,treeFetches:publicTreeFetches}), stats:()=>({reads:[...reads], rawFetches, unique:byteCache.size})};');
-  return make(new Set(paths), new Map(entries), head, {repo:{owner:'example', repo:'public'}}, fetchImpl, assert, crypto, Buffer, signals, clock, {info:s=>events.push(JSON.parse(s))});
+  return make(new Set(paths), new Map(entries), head, {repo:{owner:'example', repo:'public'}}, fetchImpl, assert, crypto, Buffer, signals, clock, {info:s=>events.push(JSON.parse(s)),getInput:name=>{assert.equal(name,'github-token');return 'existing-read-token';}});
 }
 
 test('immutable public URL, no credentials, digest cache and defensive copies', async () => {
@@ -70,19 +70,19 @@ test('wrong bytes, wrong length and HTTP errors never enter verified cache', asy
 });
 
 
-test('tree metadata uses two immutable public identities without token fallback', async () => {
+test('tree metadata uses existing read permission at primary immutable endpoint without token fallback', async () => {
   const start='            // BEGIN_PUBLIC_TREE_READER', stop='            // END_PUBLIC_TREE_READER';
   assert.equal(workflow.split(start).length,2); assert.equal(workflow.split(stop).length,2);
   const body=workflow.slice(workflow.indexOf(start)+start.length,workflow.indexOf(stop));
   const make=new AsyncFunction('context','fetch','assert','Buffer','AbortSignal','Date','core',body+'\nreturn tree;');
   const calls=[];
   const fake=async(url,options)=>{calls.push({url,options});return new Response(JSON.stringify({sha:'2'.repeat(40),truncated:false,tree:[{path:'safe/file.mjs',...entry}]}));};
-  const tree=await make({repo:{owner:'example',repo:'public'}},fake,assert,Buffer,AbortSignal,Date,{info:()=>{}});
+  const tree=await make({repo:{owner:'example',repo:'public'}},fake,assert,Buffer,AbortSignal,Date,{info:()=>{},getInput:()=> 'existing-read-token'});
   assert.equal((await tree(head)).get('safe/file.mjs').sha,sha);
   await tree('3'.repeat(40));
   assert.equal(calls.length,2); assert.equal(calls[0].url,`https://api.github.com/repos/example/public/git/trees/${head}?recursive=1`);
   assert.equal(calls[0].options.credentials,'omit'); assert.equal(calls[0].options.redirect,'error');
-  assert.deepEqual(calls[0].options.headers,{accept:'application/vnd.github+json'});
+  assert.deepEqual(calls[0].options.headers,{accept:'application/vnd.github+json',authorization:'Bearer existing-read-token'});
   await assert.rejects(tree('main')); assert.equal(calls.length,2);
   for(const response of [
     ()=>new Response('',{status:403}),
@@ -90,7 +90,7 @@ test('tree metadata uses two immutable public identities without token fallback'
     ()=>new Response(JSON.stringify({sha:head,truncated:false,tree:[{path:'x'},{path:'x'}]})),
   ]) {
     let reads=0;
-    const denied=await make({repo:{owner:'example',repo:'public'}},async()=>{reads++;return response();},assert,Buffer,AbortSignal,Date,{info:()=>{}});
+    const denied=await make({repo:{owner:'example',repo:'public'}},async()=>{reads++;return response();},assert,Buffer,AbortSignal,Date,{info:()=>{},getInput:()=> 'existing-read-token'});
     await assert.rejects(denied(head)); assert.equal(reads,1);
   }
 });

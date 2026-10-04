@@ -50,7 +50,8 @@ jobs:
             assert.match(head, /^[a-f0-9]{40}$/);
             assert.match(base, /^[a-f0-9]{40}$/);
             // BEGIN_PUBLIC_TREE_READER
-            // One shared retry token and request deadline per job; no sleeps/token fallback.
+            // Existing contents:read action token authenticates tree metadata only; raw blobs stay credential-free.
+            // One shared retry token and deadline; no sleeps, new scope or permission fallback.
             const publicTransportDeadline = Date.now() + 35000;
             let publicTransportAttempts = 0, publicTransportRetries = 0, publicTreeFetches = 0;
             const transientTransport = error => error?.name === 'TimeoutError' || error?.name === 'AbortError' || (error?.name === 'TypeError' && error?.message === 'fetch failed' && ['ECONNRESET','ETIMEDOUT','EAI_AGAIN','UND_ERR_CONNECT_TIMEOUT','UND_ERR_SOCKET'].includes(error.cause?.code));
@@ -81,7 +82,7 @@ jobs:
             async function tree(ref) {
               assert.match(ref, /^[a-f0-9]{40}$/);
               const url = 'https://api.github.com/repos/' + context.repo.owner + '/' + context.repo.repo + '/git/trees/' + ref + '?recursive=1';
-              return boundedPublicTransport(url, {redirect:'error', credentials:'omit', headers:{accept:'application/vnd.github+json'}}, async response => {
+              return boundedPublicTransport(url, {redirect:'error', credentials:'omit', headers:{accept:'application/vnd.github+json',authorization:'Bearer ' + core.getInput('github-token', {required:true})}}, async response => {
               const reader = response.body.getReader(), chunks = [];
               let size = 0;
               while (true) {
@@ -558,7 +559,9 @@ jobs:
             // END_BOUNDED_PUBLIC_PREFETCH
             // BEGIN_MINIMAL_EPOCH_GOVERNANCE_GATE
             const governancePaths = ['CAPABILITY_LADDER','DEVELOPMENT_PLAN','EXECUTION_PROTOCOL','SATURATION_STOP_RULES','ZMR-06_DEVELOPMENT_COMPETITION_ACCOUNTING'].map(n => D + n + '.md').concat(statusPath);
-            if (changed.some(p => governancePaths.includes(p)) && changed.every(p => governancePaths.includes(p) || p === workflowPath)) {
+            const readerTestPath = 'packages/zero_model_refoundation/pinned_public_reader.test.mjs';
+            const metadataRepair = changed.includes(workflowPath) && changed.every(p => p === workflowPath || p === readerTestPath);
+            if ((changed.some(p => governancePaths.includes(p)) && changed.every(p => governancePaths.includes(p) || p === workflowPath)) || metadataRepair) {
               const governanceReads = [...new Set([...governancePaths, ...['EVIDENCE_BOUNDARY','DATA_PROTOCOL','EVALUATION_PROTOCOL','RESOURCE_BUDGET'].map(n => D + n + '.md'), workflowPath])];
               await prefetch(governanceReads);
               for (const p of governanceReads) assert((await read(p)).length >= 200, 'substantive governance file required');
@@ -583,8 +586,12 @@ jobs:
               assert.equal(e.readiness.status, 'NOT_READY'); assert.equal(e.readiness.all_gates_satisfied, false); assert.deepEqual(e.readiness.receipts, []);
               assert.equal(e.prospective_ledger.anchor, null); assert.equal(e.prospective_ledger.candidate, null);
               for (const v of Object.values(e.prospective_ledger)) if (Array.isArray(v)) assert.deepEqual(v, [], 'no allocation/consumption');
+              if (metadataRepair) {
+                for (const p of [workflowPath,readerTestPath]) { const bytes = await read(p); const target = path.join(process.env.GITHUB_WORKSPACE,p); fs.mkdirSync(path.dirname(target),{recursive:true}); fs.writeFileSync(target,bytes); }
+                core.setOutput('transport_test', 'true');
+              }
               core.setOutput('engineering', 'false');
-              core.info(JSON.stringify({classification:'MINIMAL_EPOCH_GOVERNANCE_ONLY_NOT_CAPABILITY',head,base,changed_paths:changed,content_read_allowlist:reads,engineering_units:0,semantic_evaluations:0,as_claims:0,raw_fetches:rawFetches,historical_tree_and_status_preserved:true,AS_execution_authorized:false}));
+              core.info(JSON.stringify({classification:'MINIMAL_EPOCH_GOVERNANCE_ONLY_NOT_CAPABILITY',head,base,changed_paths:changed,content_read_allowlist:reads,engineering_units:0,semantic_evaluations:0,as_claims:0,raw_fetches:rawFetches,historical_tree_and_status_preserved:true,AS_execution_authorized:false,authenticated_tree_calls:publicTreeFetches}));
               return;
             }
             // END_MINIMAL_EPOCH_GOVERNANCE_GATE
@@ -1419,7 +1426,10 @@ jobs:
             fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
             }
             core.setOutput('engineering', present.length ? 'true' : 'false');
-            core.info(JSON.stringify({classification:'ENGINEERING_ONLY_NOT_CAPABILITY', head, base, changed_paths:changed, content_read_allowlist:reads, historical_pins_verified_without_content:true, content_transport:'IMMUTABLE_PUBLIC_RAW_SHA1_VERIFIED', raw_fetches:rawFetches, unique_verified_blobs:byteCache.size, blob_rest_calls:0, public_tree_rest_calls:publicTreeFetches, public_transport_attempts:publicTransportAttempts, public_transport_retries:publicTransportRetries, public_transport_deadline_ms:35000, public_transport_attempt_ms:5000, authenticated_rest_calls:0}));
+            core.info(JSON.stringify({classification:'ENGINEERING_ONLY_NOT_CAPABILITY', head, base, changed_paths:changed, content_read_allowlist:reads, historical_pins_verified_without_content:true, content_transport:'IMMUTABLE_PUBLIC_RAW_SHA1_VERIFIED', raw_fetches:rawFetches, unique_verified_blobs:byteCache.size, blob_rest_calls:0, public_tree_rest_calls:publicTreeFetches, public_transport_attempts:publicTransportAttempts, public_transport_retries:publicTransportRetries, public_transport_deadline_ms:35000, public_transport_attempt_ms:5000, authenticated_rest_calls:publicTreeFetches}));
+      - name: Exact metadata transport proof only
+        if: steps.safe.outputs.transport_test == 'true'
+        run: node --test packages/zero_model_refoundation/pinned_public_reader.test.mjs
       - name: Exact allowlisted engineering units only
         if: steps.safe.outputs.engineering == 'true'
         run: |
