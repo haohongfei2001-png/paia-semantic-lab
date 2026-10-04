@@ -3955,8 +3955,8 @@
   "code_pins": [
     {
       "path": ".github/workflows/zmr-v1.yml",
-      "sha256": "6aaf97aa1dc71cd6dc3aabefb77a3efbfd81d4117640f724800d6c5195576c79",
-      "bytes": 159865
+      "sha256": "182b90a7d747b6568c3cc9c3190136e561a4f9808ba46dc4e8dc373a30ad3398",
+      "bytes": 152851
     },
     {
       "path": "packages/zero_model_refoundation/streaming_allocation_diagnostic.mjs",
@@ -4055,7 +4055,55 @@
     "historical_evaluation_blocks_executed": false,
     "full_historical_local_suite": false,
     "actual_network_calls": 0,
+    "action_script_utf8_bytes": 125130,
+    "static_action_script_bound_bytes": 126000,
+    "resolved_materialized_paths_order": "BYTE_VALUE_IDENTICAL_ALL521",
+    "resolved_docs": "BYTE_VALUE_IDENTICAL_ALL268",
     "measurement_children_executed": 0,
     "tampered_resource_phase_pair_rejected": 3
+  },
+  "ci_packaging_repair": {
+    "failed_run": 37182463213,
+    "attempt": 1,
+    "head": "99df735eb53ed8f8c3c81d0770c060d759d34937",
+    "failed_jobs": [
+      111377615060,
+      111377615278,
+      111377615286
+    ],
+    "failure": "ACTION_PROCESS_START_ARGUMENT_LIST_TOO_LONG_BEFORE_SCRIPT_OR_UNITS",
+    "completed_units": 0,
+    "original_inline_utf8_bytes": 132144,
+    "repaired_inline_utf8_bytes": 125130,
+    "registration_size_bound_bytes": 126000,
+    "explicit_doc_literal_references": 75,
+    "resolution_order_required": "EXACT_BYTE_VALUE_EQUALITY_TO_ORIGINAL_MATERIALIZED_PATH_LIST",
+    "transport_segments_unchanged": true,
+    "all140_unit_arguments_unchanged": true,
+    "measurements_reexecuted": 0,
+    "semantic_budget_charge": 0,
+    "refund": 0,
+    "unchanged_head_ci_rerun": false,
+    "mechanism": "Same explicit docs array indexed in materialization list instead of duplicated full path literals; leading source indentation outside fixed transport extraction segments compacted. No multiline template or escaped line continuation in script. No assertions or file identities removed.",
+    "safe_engineering_log_pins": [
+      {
+        "job_id": 111377615060,
+        "utf8_bytes": 136206,
+        "sha256": "1fe3ebb768c261cfb16b9a5b7fecbf752387648f0cda67e93f8f1314fb861abc",
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      },
+      {
+        "job_id": 111377615278,
+        "utf8_bytes": 136206,
+        "sha256": "dc8252f30929e5a1267aecc2651373a49061e41792812585c808d335a0fa33b5",
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      },
+      {
+        "job_id": 111377615286,
+        "utf8_bytes": 136201,
+        "sha256": "e56b6ab0d02f3f49e0827dd3c0bc46284852ac86d72b34db2fc9c1a5293e884d",
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      }
+    ]
   }
 }
