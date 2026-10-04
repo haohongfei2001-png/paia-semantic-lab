@@ -67,3 +67,24 @@ Owner 2026-09-29 standing authorization 将此表的“进入下一阶段”限�
 EXECUTION_PROTOCOL 规定写入及连续工作；EVIDENCE_BOUNDARY 规定准入与禁读；DATA_PROTOCOL 规定数据设计；CAPABILITY_LADDER 规定晋级；ARCHITECTURE_CANDIDATES 规定候选及消融；EVALUATION_PROTOCOL 规定度量、pre-blind 和最终 TEST；RESOURCE_BUDGET 规定测量；SATURATION_STOP_RULES 规定停止；STATUS.md 指向唯一状态。
 
 每个稳定批次只需要一个 manifest、一个结果记录和一个 PR receipt，不为每次 CI 产生递归 receipt-only PR。结果必须把 `engineering_status`、`data_qualification`、`capability_verdict`、`resource_verdict` 分开。工程 COMPLETE 不等于科学 PASS。所有新结果默认 `NOT_PRODUCTION_CERTIFIED`。
+
+## 7. Owner-approved minimal restart epoch — 2026-10-04
+
+Authority: EXECUTION_PROTOCOL "Owner minimal research epoch authorization"; epoch `ZMR-MINIMAL-RESEARCH-EPOCH-20261004-01`. This is a separately authorized prospective budget scope, not a reset of the historical6-generation competition. The old competition remains permanently `complete=false`, `reconciled=false`, `remaining_allowance=null`, with failures/UNKNOWNs/repair/retirement/consumed keys preserved. Section5's historic limits remain historical facts, not newly available slots. The current narrow authorization supersedes automatic family progression and broader same-writer development for this epoch.
+
+| Prospective cap | Approved limit |
+|---|---:|
+| Development generations | 1 |
+| Router identities | Fixed anchor + 1 unique candidate |
+| Stable configurations total | 3: anchor, candidate initial, candidate repaired |
+| Candidate semantic repairs | 1; anchor repairs0 |
+| Candidate public-DEV stable gates | 2 maximum; unique keys, no repeats |
+| Pre-prediction data-admission revision rounds | 2 maximum |
+| Sealed AS preparation | One future batch; **execution/claim not authorized** |
+| Final TEST creation / execution / slots | 0 |
+
+Register every allocation before work and every exposure/repair/key without deleting rejected identities. New epoch budget accounting is separate; it never supplies a numeric old remaining allowance. Anchor/candidate are presently unselected; grant != allocation != independent-generation credit. Epoch-aware admission guard is a future prerequisite, not implemented by this governance batch.
+
+Shortest path is independent provisioning inventory -> pre-prediction boundary/role/gold review -> DATA_PROTOCOL-qualified full144 TRAIN/ordinary TUNE-CAL/challenge/isolated AS -> bounded one-candidate development and freeze -> real consumer resource prequalification -> all readiness receipts -> `AS_READY` -> **stop and report**. TRAIN3456/ordinary1728/challenge1728/AS1152 single-label base scenarios, their language quotas and all additional safety/mechanism/source/lineage minima remain unchanged. Old same-writer samples/HOLD/proposals remain non-independent; no relabeling or renaming earns quota. New sample batches must name the evidenced gap, intended comparison/ablation/split, finite cap, actual independent semantic acceptance and stopping-to-validation conditions; quantity is not algorithm gain.
+
+Current batch is governance/status registration only. The next unique task is the independent-provisioning admission inventory/contract; no candidate comparison in this batch. No payment, new permissions/accounts, private or production data, formal Topic changes or final blind TEST is granted. Preserve full144, all95%/70% gates, safety, all resource limits, local-first and zero neural/embedding/LLM/API. At `AS_READY`, no AS claim/read by the candidate or execution may occur without a new explicit owner execution authorization.
