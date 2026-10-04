@@ -49,3 +49,11 @@ S6：没有未解释的label identifiability、source不足、CI/scorer单位错
 ## 5. 推翻ceiling结论的合格反证
 
 新许可的数据来源/更可靠标注显著扩展了先前未覆盖的表达机制；本质不同且可在相同预算部署的算法；或在fresh独立development cohorts上对冻结incumbent有>=MIE的可靠安全增益，均可支持登记新的package。不能用旧TEST过拟合、新名字、更多同源模板或偷偷提高预算来声称推翻。
+
+## 6. Minimal epoch stop override — owner 2026-10-04
+
+For `ZMR-MINIMAL-RESEARCH-EPOCH-20261004-01`, EXECUTION_PROTOCOL's owner amendment is the current execution authority: one development generation, fixed anchor plus one candidate, three stable configs total, one candidate semantic repair, at most two public-DEV candidate stable gates, two pre-prediction data admission revisions. This does not refill/reset/refund historical allowance or permit retired candidate resurrection. Historical competition remains permanently unreconciled with allowance=null and immutable failures/UNKNOWNs retained.
+
+Do not automatically enter another family/candidate/generation when this prospective budget fails or runs out. Before AS, only one public-DEV mechanism repair is available; unsuccessful/no-gain repair or inability to satisfy safety/resource/admission gates ends this epoch as CANDIDATE_REJECTED/INCONCLUSIVE, never ceiling. Data/independence failure after the bounded admission revisions yields DATA_OR_INDEPENDENCE_INSUFFICIENT. Absence of actual independent providers is a preparation checkpoint, not a license to make synthetic quota or resume finished engineering.
+
+AS preparation is authorized, execution/claim is not. Once every data, resource, frozen-identity, epoch-admission, independent curator/review/runner/store and atomic-consumption readiness gate has immutable supporting receipts, set AS_READY and stop to report to owner. AS_READY does not execute/arm the packet. Final TEST creation/execution/slots=0. A future separately authorized AS failure, consumed crash or inconclusive result closes this epoch; no same-packet repair/replay, new AS allocation or next generation is granted. S1-S6 remain unchanged; this minimal epoch cannot establish saturation or final capability qualification.

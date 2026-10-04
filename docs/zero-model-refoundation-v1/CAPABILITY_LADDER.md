@@ -4,6 +4,10 @@
 
 2026-09-29 owner standing authorization 允许独立数据未就绪时沿 ZMR-02–06 **开发轨**实现和比较候选；所有 same-writer/provisional 数据标记 `NON_INDEPENDENT_DEVELOPMENT_EVIDENCE`。下文各阶段的 Promotion gate 是**资格晋级**门，不阻断下一算法假设的开发。没有合格 AS/独立数据时，开发候选可记录 `DEV_ONLY`、淘汰或保留 anchor，但不能晋级 capability、资源认证或 saturation ceiling。所有候选仍保留 144 Topic、固定安全/资源约束和额度；失败按有界修复后自动换族。
 
+## Current execution override — owner 2026-10-04
+
+The current minimal epoch `ZMR-MINIMAL-RESEARCH-EPOCH-20261004-01` is governed by EXECUTION_PROTOCOL's owner amendment. The broader ladder below retains scientific gates, but does not authorize another family/candidate or generation now. Current caps:1 generation, fixed anchor+1 unique candidate,3 stable configs total,1 candidate semantic repair; no retired resurrection, no historical reset/refund. Independent data/curator/review/runner/store/atomic-consumption preparation is allowed. No sealed AS claim/execution and no final TEST creation/execution is authorized. Set AS_READY only when all independent data, resource, freeze and readiness gates have actual immutable receipts; then stop/report for separate owner AS authority. This registration batch performs no candidate comparison; next unique task is independent-provisioning admission inventory/contract.
+
 ## 共同规则
 
 预算 R0：产品硬预算见 RESOURCE_BUDGET，任何候选无豁免。开发一代最多6架构/12稳定配置、每候选2次语义修复、一次 sealed AS batch。工程轻测试不产生 capability 证据；重门只在输入闭包、代码、参数稳定后运行一次。准入数据始终来自 DATA_PROTOCOL；不存在的数据、缺少独立性或空分母为 INCONCLUSIVE/BLOCKED，不补假数据。普通工程修复自动进行；证据事故、权限/隐私/付费/产品约束按 EXECUTION_PROTOCOL 处理。
