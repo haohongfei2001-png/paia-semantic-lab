@@ -483,6 +483,8 @@ jobs:
             docs.push('docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR.md', 'docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR_RESULT.json');
             engineering.push('packages/zero_model_refoundation/streaming_numeric_accumulator.mjs', 'packages/zero_model_refoundation/streaming_numeric_accumulator.test.mjs');
             docs.push('docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR.md', 'docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR_RESULT.json');
+            engineering.push('packages/zero_model_refoundation/streaming_allocation_diagnostic.mjs');
+            docs.push('docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC.md', 'docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC_RESULT.json');
             const workflowPath = '.github/workflows/zmr-v1.yml';
             const allowed = new Set([workflowPath, ...docs, statusPath, resultPath, resultV03Path, resultV04Path, resultV05Path, resultV06Path, resultA7DevPath, resultA7FoldPath, resultA4TriadPath, resultA4FreshPath, resultA5FreshPath, resultA5R1FreshPath, resultA4PositiveFreshPath, resultA6ComplementFreshPath, resultA6R1RepairDevPath, resultA6R2RepairDevPath, resultA6R2FreshPath, resultH1Path, resultH1R1Path, resultA5ChartPath, resultA5ChartR1Path, a1FeatureAuditPath, ...a1BalancedResults, ...resultA4RolePaths, ...engineering, ...development]);
             // BEGIN_PINNED_PUBLIC_READER
@@ -632,14 +634,14 @@ jobs:
             assert.equal(s.rounds['ZMR-03'].train_v04_stable_candidates, 0);
             assert.deepEqual(compiledV04.recipes.map(x => x.family), ['A1', 'A2', 'A3']);
             for (const r of compiledV04.recipes) {
-              assert.equal(r.train_sha256, trainV04Manifest.train_sha256);
-              assert.equal(r.topic_count, 144); assert.equal(r.train_rows, 432);
-              assert.equal(r.independent_quota_credit, 0); assert.equal(r.lineage_component_count, 1);
-              assert.equal(r.semantic_evaluations, 0); assert.equal(r.stable_candidate, false);
-              assert.equal(r.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(r.number_encoding, 'FINITE_12_SIGNIFICANT_DIGITS_V1');
-              assert(r.index_bytes <= expected.index_bytes_max && r.runtime_plus_index_bytes <= expected.router_plus_index_bytes_max);
-              assert.equal(r.index_bytes, s.rounds['ZMR-03'].train_v04_compiled_index_bytes[r.family]);
+            assert.equal(r.train_sha256, trainV04Manifest.train_sha256);
+            assert.equal(r.topic_count, 144); assert.equal(r.train_rows, 432);
+            assert.equal(r.independent_quota_credit, 0); assert.equal(r.lineage_component_count, 1);
+            assert.equal(r.semantic_evaluations, 0); assert.equal(r.stable_candidate, false);
+            assert.equal(r.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(r.number_encoding, 'FINITE_12_SIGNIFICANT_DIGITS_V1');
+            assert(r.index_bytes <= expected.index_bytes_max && r.runtime_plus_index_bytes <= expected.router_plus_index_bytes_max);
+            assert.equal(r.index_bytes, s.rounds['ZMR-03'].train_v04_compiled_index_bytes[r.family]);
             }
             const accounting = JSON.parse((await read('data/zero_model_refoundation/development/development_competition_inventory_v0.1.json')).toString('utf8'));
             assert.equal(accounting.accounting_status, 'INCONCLUSIVE_HISTORICAL_STABLE_ALLOCATIONS_UNRECONCILED');
@@ -654,702 +656,733 @@ jobs:
             const inputs = development.filter(p => after.has(p));
             assert(inputs.length === 0 || inputs.length === development.length, 'partial development input set');
             if (after.has(resultPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a12_challenge_v02_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.challenge_rows, 144);
-              assert.equal(result.fixed_config_count, 8);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a12_challenge_v02_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.challenge_rows, 144);
+            assert.equal(result.fixed_config_count, 8);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultV03Path)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a123_challenge_v03_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultV03Path)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.challenge_rows, 144);
-              assert.equal(result.fixed_config_count, 6);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a123_challenge_v03_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultV03Path)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.challenge_rows, 144);
+            assert.equal(result.fixed_config_count, 6);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultV04Path)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a356_challenge_v04_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultV04Path)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.challenge_rows, 144);
-              assert.equal(result.safety_rows, 48);
-              assert.equal(result.role_rows, 18);
-              assert.equal(result.fixed_config_count, 5);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a356_challenge_v04_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultV04Path)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.challenge_rows, 144);
+            assert.equal(result.safety_rows, 48);
+            assert.equal(result.role_rows, 18);
+            assert.equal(result.fixed_config_count, 5);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultV05Path)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/c1_challenge_v05_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultV05Path)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.challenge_rows, 144);
-              assert.equal(result.safety_rows, 48);
-              assert.equal(result.fixed_config_count, 5);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/c1_challenge_v05_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultV05Path)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.challenge_rows, 144);
+            assert.equal(result.safety_rows, 48);
+            assert.equal(result.fixed_config_count, 5);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultV06Path)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultV06Path)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.challenge_rows, 144);
-              assert.equal(result.safety_rows, 48);
-              assert.equal(result.fixed_config_count, 7);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/c1_r1_challenge_v06_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultV06Path)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.challenge_rows, 144);
+            assert.equal(result.safety_rows, 48);
+            assert.equal(result.fixed_config_count, 7);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultA7DevPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a7_dev_v01_registration.json', 'data/zero_model_refoundation/development/provisional_a4_triads_v0.1.json', 'data/zero_model_refoundation/development/a4_triad_v01_registration.json', 'data/zero_model_refoundation/development/provisional_a4_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_a4_challenge_v0.1.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA7DevPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.covered_dev_topics, 48);
-              assert.equal(result.control_rows, 12);
-              assert.equal(result.fixed_config_count, 7);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a7_dev_v01_registration.json', 'data/zero_model_refoundation/development/provisional_a4_triads_v0.1.json', 'data/zero_model_refoundation/development/a4_triad_v01_registration.json', 'data/zero_model_refoundation/development/provisional_a4_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_a4_challenge_v0.1.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA7DevPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.covered_dev_topics, 48);
+            assert.equal(result.control_rows, 12);
+            assert.equal(result.fixed_config_count, 7);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultA7FoldPath)) {
-              const result = JSON.parse((await read(resultA7FoldPath)).toString('utf8'));
-              assert.equal(result.classification, 'TRAIN_INTERNAL_NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.folds, 'TWO_AUTHORING_BATCH_HOLDOUTS_SAME_CANDIDATE_WRITER');
-              assert.equal(Object.keys(result.results).length, 4);
-              assert(Object.values(result.results).every(x => x.baseline.queries === 144 && x.bounded_probe.queries === 144));
+            const result = JSON.parse((await read(resultA7FoldPath)).toString('utf8'));
+            assert.equal(result.classification, 'TRAIN_INTERNAL_NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.folds, 'TWO_AUTHORING_BATCH_HOLDOUTS_SAME_CANDIDATE_WRITER');
+            assert.equal(Object.keys(result.results).length, 4);
+            assert(Object.values(result.results).every(x => x.baseline.queries === 144 && x.bounded_probe.queries === 144));
             }
             if (after.has(resultA4TriadPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_triad_v01_registration.json', 'data/zero_model_refoundation/development/provisional_a4_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_a4_challenge_v0.1.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA4TriadPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.pair_count, 4);
-              assert.equal(result.provisional_labeled_rows, 8);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.fixed_config_count, 5);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.as_consumed, 0);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_triad_v01_registration.json', 'data/zero_model_refoundation/development/provisional_a4_train_v0.1.json', 'data/zero_model_refoundation/development/provisional_a4_challenge_v0.1.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA4TriadPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.pair_count, 4);
+            assert.equal(result.provisional_labeled_rows, 8);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.fixed_config_count, 5);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultA4FreshPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_fresh_v01_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA4FreshPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.provisional_labeled_pair_rows, 16);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.control_rows, 12);
-              assert.equal(result.fixed_config_count, 2);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
-              assert.deepEqual(result.paired, {correct_lost_to_defer:0,wrong_avoided_by_defer:0,controls_false_avoided:0,controls_false_added:0,ambiguous_assignments_removed_unscored:0,new_topic_assignments:0});
-              assert.equal(s.rounds['ZMR-05'].a4_fresh_challenge_v01_evaluation_key, result.evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_fresh_v01_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA4FreshPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.provisional_labeled_pair_rows, 16);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.control_rows, 12);
+            assert.equal(result.fixed_config_count, 2);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
+            assert.deepEqual(result.paired, {correct_lost_to_defer:0,wrong_avoided_by_defer:0,controls_false_avoided:0,controls_false_added:0,ambiguous_assignments_removed_unscored:0,new_topic_assignments:0});
+            assert.equal(s.rounds['ZMR-05'].a4_fresh_challenge_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has(resultA4PositiveFreshPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA4PositiveFreshPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.provisional_labeled_pair_rows, 16);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.control_rows, 8);
-              assert.equal(result.fixed_config_count, 3);
-              for (const counts of Object.values(result.results)) {
-                assert.equal(counts.labeled_assigned, 12);
-                assert.equal(counts.labeled_correct, 4);
-                assert.equal(counts.labeled_wrong, 8);
-                assert.equal(counts.control_false_assignments, 6);
-                assert.equal(counts.deterministic_repeat_differences, 0);
-              }
-              for (const delta of Object.values(result.paired))
-                assert(Object.values(delta).every(value => value === 0));
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
-              assert.equal(s.rounds['ZMR-05'].a4_positive_fresh_v01_evaluation_key, result.evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a4_positive_fresh_v01_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA4PositiveFreshPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.provisional_labeled_pair_rows, 16);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.control_rows, 8);
+            assert.equal(result.fixed_config_count, 3);
+            for (const counts of Object.values(result.results)) {
+            assert.equal(counts.labeled_assigned, 12);
+            assert.equal(counts.labeled_correct, 4);
+            assert.equal(counts.labeled_wrong, 8);
+            assert.equal(counts.control_false_assignments, 6);
+            assert.equal(counts.deterministic_repeat_differences, 0);
+            }
+            for (const delta of Object.values(result.paired))
+            assert(Object.values(delta).every(value => value === 0));
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
+            assert.equal(s.rounds['ZMR-05'].a4_positive_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has(resultA6ComplementFreshPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA6ComplementFreshPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.labeled_rows, 20);
-              assert.equal(result.control_rows, 8);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.fixed_config_count, 3);
-              assert.equal(result.results.A3_char_deletion_ablation.labeled_exact, 1);
-              assert.equal(result.results.A2_char_complement_likelihood.labeled_exact, 3);
-              assert.equal(result.results.A6_complement_scope.labeled_exact, 2);
-              assert.equal(result.results.A6_complement_scope.by_role.CONTROL.assigned, 0);
-              assert.equal(result.results.A6_complement_scope.by_role.CONTEXT_REQUIRED.exact, 0);
-              assert.equal(result.results.A6_complement_scope.by_role.MULTI.exact, 0);
-              assert.equal(result.paired.A6_vs_A3.labeled_exact_gained, 1);
-              assert.equal(result.paired.A6_vs_A3.controls_false_avoided, 3);
-              assert.equal(result.paired.A6_vs_A3.wrong_added, 0);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
-              assert.equal(s.rounds['ZMR-05'].a6_complement_fresh_v01_evaluation_key, result.evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_complement_fresh_v01_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA6ComplementFreshPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.labeled_rows, 20);
+            assert.equal(result.control_rows, 8);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.fixed_config_count, 3);
+            assert.equal(result.results.A3_char_deletion_ablation.labeled_exact, 1);
+            assert.equal(result.results.A2_char_complement_likelihood.labeled_exact, 3);
+            assert.equal(result.results.A6_complement_scope.labeled_exact, 2);
+            assert.equal(result.results.A6_complement_scope.by_role.CONTROL.assigned, 0);
+            assert.equal(result.results.A6_complement_scope.by_role.CONTEXT_REQUIRED.exact, 0);
+            assert.equal(result.results.A6_complement_scope.by_role.MULTI.exact, 0);
+            assert.equal(result.paired.A6_vs_A3.labeled_exact_gained, 1);
+            assert.equal(result.paired.A6_vs_A3.controls_false_avoided, 3);
+            assert.equal(result.paired.A6_vs_A3.wrong_added, 0);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
+            assert.equal(s.rounds['ZMR-05'].a6_complement_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has(resultA6R1RepairDevPath)) {
-              const result = JSON.parse((await read(resultA6R1RepairDevPath)).toString('utf8'));
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.labeled_rows, 20);
-              assert.equal(result.control_rows, 12);
-              assert.equal(result.fixed_config_count, 4);
-              assert.equal(result.results.A6_R1.labeled_exact, 5);
-              assert.equal(result.results.A6_R1.by_role.CONTROL.assigned, 1);
-              assert.equal(result.results.A6_R1.by_role.MULTI.exact, 0);
-              assert.equal(result.results.A6_R1.by_role.CONTEXT_REQUIRED.exact, 2);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
+            const result = JSON.parse((await read(resultA6R1RepairDevPath)).toString('utf8'));
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.labeled_rows, 20);
+            assert.equal(result.control_rows, 12);
+            assert.equal(result.fixed_config_count, 4);
+            assert.equal(result.results.A6_R1.labeled_exact, 5);
+            assert.equal(result.results.A6_R1.by_role.CONTROL.assigned, 1);
+            assert.equal(result.results.A6_R1.by_role.MULTI.exact, 0);
+            assert.equal(result.results.A6_R1.by_role.CONTEXT_REQUIRED.exact, 2);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultA6R2RepairDevPath)) {
-              const result = JSON.parse((await read(resultA6R2RepairDevPath)).toString('utf8'));
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.public_dev_reused_for_inner_loop, true);
-              assert.equal(result.fresh_gate, false);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.labeled_rows, 20);
-              assert.equal(result.control_rows, 12);
-              assert.equal(result.results.A6_R2.labeled_exact, 6);
-              assert.equal(result.results.A6_R2.by_role.CONTROL.assigned, 0);
-              assert.equal(result.results.A6_R2.by_role.MULTI.exact, 1);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
+            const result = JSON.parse((await read(resultA6R2RepairDevPath)).toString('utf8'));
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.public_dev_reused_for_inner_loop, true);
+            assert.equal(result.fresh_gate, false);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.labeled_rows, 20);
+            assert.equal(result.control_rows, 12);
+            assert.equal(result.results.A6_R2.labeled_exact, 6);
+            assert.equal(result.results.A6_R2.by_role.CONTROL.assigned, 0);
+            assert.equal(result.results.A6_R2.by_role.MULTI.exact, 1);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
             }
             if (after.has(resultA6R2FreshPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA6R2FreshPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.labeled_rows, 20);
-              assert.equal(result.control_rows, 12);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.fixed_config_count, 5);
-              assert.equal(result.results.A6_R2_final_repair.labeled_exact, 2);
-              assert.equal(result.results.A6_R2_final_repair.labeled_assigned, 4);
-              assert.equal(result.results.A6_R2_final_repair.by_role.CONTROL.assigned, 3);
-              assert.equal(result.results.A6_R2_final_repair.by_role.CONTEXT_REQUIRED.exact, 0);
-              assert.equal(result.results.A6_R2_final_repair.by_role.MULTI.exact, 0);
-              assert.equal(result.paired.A6_R2_vs_A6_R1.labeled_exact_gained, 0);
-              assert.equal(result.paired.A6_R2_vs_A6_R1.controls_false_avoided, 1);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
-              assert.equal(s.rounds['ZMR-05'].a6_r2_fresh_v01_evaluation_key, result.evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA6R2FreshPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.labeled_rows, 20);
+            assert.equal(result.control_rows, 12);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.fixed_config_count, 5);
+            assert.equal(result.results.A6_R2_final_repair.labeled_exact, 2);
+            assert.equal(result.results.A6_R2_final_repair.labeled_assigned, 4);
+            assert.equal(result.results.A6_R2_final_repair.by_role.CONTROL.assigned, 3);
+            assert.equal(result.results.A6_R2_final_repair.by_role.CONTEXT_REQUIRED.exact, 0);
+            assert.equal(result.results.A6_R2_final_repair.by_role.MULTI.exact, 0);
+            assert.equal(result.paired.A6_R2_vs_A6_R1.labeled_exact_gained, 0);
+            assert.equal(result.paired.A6_R2_vs_A6_R1.controls_false_avoided, 1);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
+            assert.equal(s.rounds['ZMR-05'].a6_r2_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has(resultA5FreshPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_fresh_v01_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA5FreshPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.labeled_rows, 20);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.control_rows, 8);
-              assert.equal(result.fixed_config_count, 2);
-              assert.equal(result.results.A3_char_deletion_ablation.labeled_exact, 2);
-              assert.equal(result.results.A5_finite_state_composition.labeled_exact, 4);
-              assert.equal(result.results.A5_finite_state_composition.control_false_assignments, 5);
-              assert.equal(result.paired.labeled_exact_gained, 2);
-              assert.equal(result.paired.labeled_wrong_avoided_by_defer, 2);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
-              assert.equal(s.rounds['ZMR-05'].a5_fresh_v01_evaluation_key, result.evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_fresh_v01_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA5FreshPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.labeled_rows, 20);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.control_rows, 8);
+            assert.equal(result.fixed_config_count, 2);
+            assert.equal(result.results.A3_char_deletion_ablation.labeled_exact, 2);
+            assert.equal(result.results.A5_finite_state_composition.labeled_exact, 4);
+            assert.equal(result.results.A5_finite_state_composition.control_false_assignments, 5);
+            assert.equal(result.paired.labeled_exact_gained, 2);
+            assert.equal(result.paired.labeled_wrong_avoided_by_defer, 2);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
+            assert.equal(s.rounds['ZMR-05'].a5_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has(resultA5R1FreshPath)) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json')).toString('utf8'));
-              const result = JSON.parse((await read(resultA5R1FreshPath)).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(result.evaluation_key, registration.evaluation_key);
-              assert.equal(result.topic_universe, 144);
-              assert.equal(result.labeled_rows, 20);
-              assert.equal(result.ambiguous_unscored_rows, 4);
-              assert.equal(result.control_rows, 8);
-              assert.equal(result.fixed_config_count, 3);
-              assert.equal(result.results.A5_R1_no_request_guard.by_role.CONTROL.assigned, 3);
-              assert.equal(result.results.A5_R1_no_request_guard.by_role.MULTI.exact, 0);
-              assert.equal(result.results.A5_R1_no_request_guard.by_role.REQUEST.exact, 0);
-              assert.equal(result.paired.A5_R1_vs_A5.controls_false_avoided, 1);
-              assert.equal(result.paired.A5_R1_vs_A5.positive_request_assignments_lost, 0);
-              assert.equal(result.capability_verdict, 'UNTESTED');
-              assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(result.independent_rows, 0);
-              assert.equal(result.as_consumed, 0);
-              assert.equal(s.rounds['ZMR-05'].a5_r1_fresh_v01_evaluation_key, result.evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a5_r1_fresh_v01_registration.json')).toString('utf8'));
+            const result = JSON.parse((await read(resultA5R1FreshPath)).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(result.evaluation_key, registration.evaluation_key);
+            assert.equal(result.topic_universe, 144);
+            assert.equal(result.labeled_rows, 20);
+            assert.equal(result.ambiguous_unscored_rows, 4);
+            assert.equal(result.control_rows, 8);
+            assert.equal(result.fixed_config_count, 3);
+            assert.equal(result.results.A5_R1_no_request_guard.by_role.CONTROL.assigned, 3);
+            assert.equal(result.results.A5_R1_no_request_guard.by_role.MULTI.exact, 0);
+            assert.equal(result.results.A5_R1_no_request_guard.by_role.REQUEST.exact, 0);
+            assert.equal(result.paired.A5_R1_vs_A5.controls_false_avoided, 1);
+            assert.equal(result.paired.A5_R1_vs_A5.positive_request_assignments_lost, 0);
+            assert.equal(result.capability_verdict, 'UNTESTED');
+            assert.equal(result.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(result.independent_rows, 0);
+            assert.equal(result.as_consumed, 0);
+            assert.equal(s.rounds['ZMR-05'].a5_r1_fresh_v01_evaluation_key, result.evaluation_key);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')) {
-              const graph = JSON.parse((await read('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')).toString('utf8'));
-              assert.equal(graph.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(graph.topic_count, 144);
-              assert(graph.edge_count <= 64);
-              assert.equal(graph.qualification_credit_edges, 0);
-              assert.equal(graph.independent_source_cohorts, 0);
-              assert.equal(graph.no_resolver_activated, true);
-              assert(graph.edges.every(edge => edge.triad_evidence_count === 0 && edge.resolver_status === 'UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE'));
+            const graph = JSON.parse((await read('data/zero_model_refoundation/development/provisional_boundary_graph_v0.1.json')).toString('utf8'));
+            assert.equal(graph.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(graph.topic_count, 144);
+            assert(graph.edge_count <= 64);
+            assert.equal(graph.qualification_credit_edges, 0);
+            assert.equal(graph.independent_source_cohorts, 0);
+            assert.equal(graph.no_resolver_activated, true);
+            assert(graph.edges.every(edge => edge.triad_evidence_count === 0 && edge.resolver_status === 'UNACTIVATED_REQUIRES_POSITIVE_NEGATIVE_AMBIGUOUS_EVIDENCE'));
             }
             if (after.has('data/zero_model_refoundation/development/provisional_role_challenge_v0.1.json')) {
-              const role = JSON.parse((await read('data/zero_model_refoundation/development/provisional_role_challenge_v0.1.json')).toString('utf8'));
-              assert.equal(role.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(role.row_count, 18);
-              assert.equal(role.scenario_count, 6);
-              assert.equal(role.evaluation_status, 'UNRUN');
-              assert.equal(role.qualification_credit_rows, 0);
-              assert.equal(role.independent_source_cohorts, 0);
+            const role = JSON.parse((await read('data/zero_model_refoundation/development/provisional_role_challenge_v0.1.json')).toString('utf8'));
+            assert.equal(role.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(role.row_count, 18);
+            assert.equal(role.scenario_count, 6);
+            assert.equal(role.evaluation_status, 'UNRUN');
+            assert.equal(role.qualification_credit_rows, 0);
+            assert.equal(role.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_a6_complement_challenge_v0.1.json')) {
-              const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a6_complement_challenge_v0.1.json')).toString('utf8'));
-              assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(challenge.rows.length, 32);
-              assert.equal(challenge.intake_status, 'PUBLIC_CHALLENGE_FROZEN_UNRUN');
-              assert.equal(challenge.evaluation_status, 'UNRUN');
-              assert.equal(challenge.qualification_credit_rows, 0);
-              assert.equal(challenge.independent_source_cohorts, 0);
+            const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a6_complement_challenge_v0.1.json')).toString('utf8'));
+            assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(challenge.rows.length, 32);
+            assert.equal(challenge.intake_status, 'PUBLIC_CHALLENGE_FROZEN_UNRUN');
+            assert.equal(challenge.evaluation_status, 'UNRUN');
+            assert.equal(challenge.qualification_credit_rows, 0);
+            assert.equal(challenge.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json')) {
-              const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json')).toString('utf8'));
-              assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(dev.rows.length, 36);
-              assert.equal(dev.intake_status, 'PUBLIC_REPAIR_DEV_FROZEN_UNRUN');
-              assert.equal(dev.evaluation_status, 'UNRUN');
-              assert.equal(dev.qualification_credit_rows, 0);
-              assert.equal(dev.independent_source_cohorts, 0);
+            const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a6_r1_repair_dev_v0.1.json')).toString('utf8'));
+            assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(dev.rows.length, 36);
+            assert.equal(dev.intake_status, 'PUBLIC_REPAIR_DEV_FROZEN_UNRUN');
+            assert.equal(dev.evaluation_status, 'UNRUN');
+            assert.equal(dev.qualification_credit_rows, 0);
+            assert.equal(dev.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json')) {
-              const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json')).toString('utf8'));
-              assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(challenge.rows.length, 36);
-              assert.equal(challenge.intake_status, 'PUBLIC_CHALLENGE_FROZEN_UNRUN');
-              assert.equal(challenge.evaluation_status, 'UNRUN');
-              assert.equal(challenge.qualification_credit_rows, 0);
-              assert.equal(challenge.independent_source_cohorts, 0);
+            const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a6_r2_challenge_v0.1.json')).toString('utf8'));
+            assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(challenge.rows.length, 36);
+            assert.equal(challenge.intake_status, 'PUBLIC_CHALLENGE_FROZEN_UNRUN');
+            assert.equal(challenge.evaluation_status, 'UNRUN');
+            assert.equal(challenge.qualification_credit_rows, 0);
+            assert.equal(challenge.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')) {
-              const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')).toString('utf8'));
-              assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(registration.topic_universe, 144);
-              assert.equal(registration.control_rows, 12);
-              assert.equal(registration.configs.length, 5);
-              assert.equal(registration.independent_rows, 0);
-              assert.equal(registration.as_consumed, 0);
-              assert.equal(registration.capability_verdict, 'UNTESTED');
-              assert.equal(registration.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(registration.evaluation_key, s.rounds['ZMR-05'].a6_r2_fresh_v01_evaluation_key);
+            const registration = JSON.parse((await read('data/zero_model_refoundation/development/a6_r2_fresh_v01_registration.json')).toString('utf8'));
+            assert.equal(registration.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(registration.topic_universe, 144);
+            assert.equal(registration.control_rows, 12);
+            assert.equal(registration.configs.length, 5);
+            assert.equal(registration.independent_rows, 0);
+            assert.equal(registration.as_consumed, 0);
+            assert.equal(registration.capability_verdict, 'UNTESTED');
+            assert.equal(registration.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(registration.evaluation_key, s.rounds['ZMR-05'].a6_r2_fresh_v01_evaluation_key);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json')) {
-              const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json')).toString('utf8'));
-              assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(dev.topic_universe, 144);
-              assert.equal(dev.domain_universe, 18);
-              assert.equal(dev.rows.length, 60);
-              assert.equal(dev.intake_status, 'PUBLIC_H1_DEV_FROZEN_UNRUN');
-              assert.equal(dev.evaluation_status, 'UNRUN');
-              assert.equal(dev.qualification_credit_rows, 0);
-              assert.equal(dev.independent_source_cohorts, 0);
+            const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json')).toString('utf8'));
+            assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(dev.topic_universe, 144);
+            assert.equal(dev.domain_universe, 18);
+            assert.equal(dev.rows.length, 60);
+            assert.equal(dev.intake_status, 'PUBLIC_H1_DEV_FROZEN_UNRUN');
+            assert.equal(dev.evaluation_status, 'UNRUN');
+            assert.equal(dev.qualification_credit_rows, 0);
+            assert.equal(dev.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json')) {
-              const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json')).toString('utf8'));
-              assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(dev.topic_universe, 144);
-              assert.equal(dev.rows.length, 24);
-              assert.deepEqual(dev.role_counts, {ROLE_SWAP:6, CONTEXT_REQUIRED:6, MULTI:6, CONTROL:6});
-              assert.equal(dev.intake_status, 'PUBLIC_A5_CHART_DEV_FROZEN_UNRUN');
-              assert.equal(dev.evaluation_status, 'UNRUN');
-              assert.equal(dev.qualification_credit_rows, 0);
-              assert.equal(dev.independent_source_cohorts, 0);
+            const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json')).toString('utf8'));
+            assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(dev.topic_universe, 144);
+            assert.equal(dev.rows.length, 24);
+            assert.deepEqual(dev.role_counts, {ROLE_SWAP:6, CONTEXT_REQUIRED:6, MULTI:6, CONTROL:6});
+            assert.equal(dev.intake_status, 'PUBLIC_A5_CHART_DEV_FROZEN_UNRUN');
+            assert.equal(dev.evaluation_status, 'UNRUN');
+            assert.equal(dev.qualification_credit_rows, 0);
+            assert.equal(dev.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json')) {
-              const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json')).toString('utf8'));
-              assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(dev.topic_universe, 144);
-              assert.equal(dev.rows.length, 24);
-              assert.deepEqual(dev.role_counts, {ROLE_CONTRAST:16, CONTROL:4, AMBIGUOUS_UNSCORED:4});
-              assert.equal(dev.intake_status, 'PUBLIC_A4_ROLE_DEV_FROZEN_UNRUN');
-              assert.equal(dev.evaluation_status, 'UNRUN');
-              assert.equal(dev.qualification_credit_rows, 0);
-              assert.equal(dev.independent_source_cohorts, 0);
+            const dev = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json')).toString('utf8'));
+            assert.equal(dev.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(dev.topic_universe, 144);
+            assert.equal(dev.rows.length, 24);
+            assert.deepEqual(dev.role_counts, {ROLE_CONTRAST:16, CONTROL:4, AMBIGUOUS_UNSCORED:4});
+            assert.equal(dev.intake_status, 'PUBLIC_A4_ROLE_DEV_FROZEN_UNRUN');
+            assert.equal(dev.evaluation_status, 'UNRUN');
+            assert.equal(dev.qualification_credit_rows, 0);
+            assert.equal(dev.independent_source_cohorts, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json')) {
-              const value = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json')).toString('utf8'));
-              assert.equal(value.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(value.topic_universe, 144); assert.equal(value.rows.length, 36);
-              assert.equal(value.qualification_credit_rows, 0); assert.equal(value.independent_source_cohorts, 0);
-              assert.equal(value.intake_status, 'PUBLIC_A1_BALANCED_DEV_FROZEN_UNRUN'); assert.equal(value.evaluation_status, 'UNRUN');
-              assert.deepEqual(value.role_counts, {SINGLE:18,CONTROL:6,CONTEXT_REQUIRED:4,MULTI:4,AMBIGUOUS_UNSCORED:4});
+            const value = JSON.parse((await read('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json')).toString('utf8'));
+            assert.equal(value.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(value.topic_universe, 144); assert.equal(value.rows.length, 36);
+            assert.equal(value.qualification_credit_rows, 0); assert.equal(value.independent_source_cohorts, 0);
+            assert.equal(value.intake_status, 'PUBLIC_A1_BALANCED_DEV_FROZEN_UNRUN'); assert.equal(value.evaluation_status, 'UNRUN');
+            assert.deepEqual(value.role_counts, {SINGLE:18,CONTROL:6,CONTEXT_REQUIRED:4,MULTI:4,AMBIGUOUS_UNSCORED:4});
             }
             if (a1BalancedResults.some(p => after.has(p))) {
-              assert(a1BalancedResults.every(p => after.has(p)), 'complete selector/audit correction receipts required');
-              const hash = b => crypto.createHash('sha256').update(b).digest('hex');
-              const firstBytes = await read(a1BalancedResults[0]);
-              for (let i=0; i<a1BalancedResults.length; i++) {
-                const value = JSON.parse((await read(a1BalancedResults[i])).toString('utf8'));
-                assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-                assert.equal(value.topic_universe, 144); assert.equal(value.independent_rows, 0);
-                assert.equal(value.as_consumed, 0); assert.equal(value.capability_verdict, 'UNTESTED');
-                assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
-                if (i<2) {
-                  assert.equal(value.cohort_sha256, hash(await read('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json')));
-                  for (const [name, digest] of Object.entries(value.dependency_hashes)) assert.equal(digest, hash(await read('packages/zero_model_refoundation/'+name)));
-                  assert(value.builds.balanced.index_bytes <= 1048576);
-                  assert(value.builds.balanced.runtime_plus_index_bytes <= 2097152);
-                  assert.equal(value.missing_single_gold_topics, 126);
-                } else {
-                  assert.equal(value.semantic_rows_scored, 0);
-                  assert.equal(value.audit_module_sha256, hash(await read('packages/zero_model_refoundation/a1_feature_survival_audit_v2.mjs')));
-                  assert.equal(value.balanced_alias_selector.reconstructed_index_bytes, 936001);
-                }
-                if (i===1) {
-                  assert.equal(value.initial_result_sha256, hash(firstBytes));
-                  assert.equal(value.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
-                }
-              }
-              assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_repair_spent, 1);
-              assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_disposition, 'RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING');
+            assert(a1BalancedResults.every(p => after.has(p)), 'complete selector/audit correction receipts required');
+            const hash = b => crypto.createHash('sha256').update(b).digest('hex');
+            const firstBytes = await read(a1BalancedResults[0]);
+            for (let i=0; i<a1BalancedResults.length; i++) {
+            const value = JSON.parse((await read(a1BalancedResults[i])).toString('utf8'));
+            assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(value.topic_universe, 144); assert.equal(value.independent_rows, 0);
+            assert.equal(value.as_consumed, 0); assert.equal(value.capability_verdict, 'UNTESTED');
+            assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
+            if (i<2) {
+            assert.equal(value.cohort_sha256, hash(await read('data/zero_model_refoundation/development/provisional_a1_balanced_dev_v0.1.json')));
+            for (const [name, digest] of Object.entries(value.dependency_hashes)) assert.equal(digest, hash(await read('packages/zero_model_refoundation/'+name)));
+            assert(value.builds.balanced.index_bytes <= 1048576);
+            assert(value.builds.balanced.runtime_plus_index_bytes <= 2097152);
+            assert.equal(value.missing_single_gold_topics, 126);
+            } else {
+            assert.equal(value.semantic_rows_scored, 0);
+            assert.equal(value.audit_module_sha256, hash(await read('packages/zero_model_refoundation/a1_feature_survival_audit_v2.mjs')));
+            assert.equal(value.balanced_alias_selector.reconstructed_index_bytes, 936001);
+            }
+            if (i===1) {
+            assert.equal(value.initial_result_sha256, hash(firstBytes));
+            assert.equal(value.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
+            }
+            }
+            assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_repair_spent, 1);
+            assert.equal(s.rounds['ZMR-02'].a1_balanced_selector_disposition, 'RETIRED_NO_SAFETY_PRESERVING_GAIN_AFTER_ONE_REPAIR_NO_FAMILY_CEILING');
             }
             if (after.has(a1FeatureAuditPath)) {
-              const value = JSON.parse((await read(a1FeatureAuditPath)).toString('utf8'));
-              assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(value.topic_universe, 144); assert.equal(value.semantic_rows_scored, 0);
-              assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
-              assert.equal(value.capability_verdict, 'UNTESTED'); assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(value.audit_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a1_feature_survival_audit.mjs')).digest('hex'));
-              assert.equal(value.train_sha256, crypto.createHash('sha256').update(await read('data/zero_model_refoundation/development/provisional_train_v0.2.json')).digest('hex'));
-              assert.equal(value.frequency_selector.reconstructed_index_bytes, 932855);
-              assert(value.balanced_alias_selector.reconstructed_index_bytes <= 1048576);
+            const value = JSON.parse((await read(a1FeatureAuditPath)).toString('utf8'));
+            assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(value.topic_universe, 144); assert.equal(value.semantic_rows_scored, 0);
+            assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
+            assert.equal(value.capability_verdict, 'UNTESTED'); assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(value.audit_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a1_feature_survival_audit.mjs')).digest('hex'));
+            assert.equal(value.train_sha256, crypto.createHash('sha256').update(await read('data/zero_model_refoundation/development/provisional_train_v0.2.json')).digest('hex'));
+            assert.equal(value.frequency_selector.reconstructed_index_bytes, 932855);
+            assert(value.balanced_alias_selector.reconstructed_index_bytes <= 1048576);
 
             }
             if (resultA4RolePaths.some(p => after.has(p))) {
-              assert(resultA4RolePaths.every(p => after.has(p)), 'complete A4 role diagnosis and repairs required');
-              const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
-              const cohortHash = hash(await read('data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json'));
-              let priorBytes;
-              for (let i=0; i<resultA4RolePaths.length; i++) {
-                const bytes = await read(resultA4RolePaths[i]), value = JSON.parse(bytes.toString('utf8'));
-                assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-                assert.equal(value.topic_universe, 144); assert.equal(value.independent_rows, 0);
-                assert.equal(value.as_consumed, 0); assert.equal(value.capability_verdict, 'UNTESTED');
-                assert.equal(value.resource_verdict, 'NOT_QUALIFIED'); assert.equal(value.cohort_sha256, cohortHash);
-                assert.equal(value.role_module_sha256, hash(await read('packages/zero_model_refoundation/a4_role_contrast.mjs')));
-                assert(value.static_bytes.runtime_plus_index <= 2097152);
-                assert((value.static_bytes.total_index ?? value.static_bytes.a3_index) <= 1048576);
-                if (i>0) {
-                  assert.equal(value.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
-                  assert.equal(value.prior_result_sha256, hash(priorBytes));
-                  assert.equal(value.r1_module_sha256, hash(await read('packages/zero_model_refoundation/a4_role_contrast_r1.mjs')));
-                }
-                if (i===2) assert.equal(value.r2_module_sha256, hash(await read('packages/zero_model_refoundation/a4_role_contrast_r2.mjs')));
-                priorBytes = bytes;
-              }
-              assert.equal(s.rounds['ZMR-04'].a4_role_repair_spent, 2);
-              assert.equal(s.rounds['ZMR-04'].a4_role_component_disposition, 'RETIRED_TWO_REPAIRS_SPENT_ABSOLUTE_PRECISION_CONTROL_AND_CONTRAST_PAIR_FAILURE_NO_FAMILY_CEILING');
+            assert(resultA4RolePaths.every(p => after.has(p)), 'complete A4 role diagnosis and repairs required');
+            const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+            const cohortHash = hash(await read('data/zero_model_refoundation/development/provisional_a4_role_dev_v0.1.json'));
+            let priorBytes;
+            for (let i=0; i<resultA4RolePaths.length; i++) {
+            const bytes = await read(resultA4RolePaths[i]), value = JSON.parse(bytes.toString('utf8'));
+            assert.equal(value.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(value.topic_universe, 144); assert.equal(value.independent_rows, 0);
+            assert.equal(value.as_consumed, 0); assert.equal(value.capability_verdict, 'UNTESTED');
+            assert.equal(value.resource_verdict, 'NOT_QUALIFIED'); assert.equal(value.cohort_sha256, cohortHash);
+            assert.equal(value.role_module_sha256, hash(await read('packages/zero_model_refoundation/a4_role_contrast.mjs')));
+            assert(value.static_bytes.runtime_plus_index <= 2097152);
+            assert((value.static_bytes.total_index ?? value.static_bytes.a3_index) <= 1048576);
+            if (i>0) {
+            assert.equal(value.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
+            assert.equal(value.prior_result_sha256, hash(priorBytes));
+            assert.equal(value.r1_module_sha256, hash(await read('packages/zero_model_refoundation/a4_role_contrast_r1.mjs')));
+            }
+            if (i===2) assert.equal(value.r2_module_sha256, hash(await read('packages/zero_model_refoundation/a4_role_contrast_r2.mjs')));
+            priorBytes = bytes;
+            }
+            assert.equal(s.rounds['ZMR-04'].a4_role_repair_spent, 2);
+            assert.equal(s.rounds['ZMR-04'].a4_role_component_disposition, 'RETIRED_TWO_REPAIRS_SPENT_ABSOLUTE_PRECISION_CONTROL_AND_CONTRAST_PAIR_FAILURE_NO_FAMILY_CEILING');
             }
             if (after.has(resultA5ChartPath) || after.has(resultA5ChartR1Path)) {
-              assert(after.has(resultA5ChartPath) && after.has(resultA5ChartR1Path), 'complete A5 chart diagnostic pair required');
-              const cohortBytes = await read('data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json');
-              const firstBytes = await read(resultA5ChartPath);
-              const first = JSON.parse(firstBytes.toString('utf8'));
-              const repair = JSON.parse((await read(resultA5ChartR1Path)).toString('utf8'));
-              assert.equal(first.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(repair.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(repair.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
-              assert.equal(first.cohort_sha256, crypto.createHash('sha256').update(cohortBytes).digest('hex'));
-              assert.equal(repair.cohort_sha256, first.cohort_sha256);
-              assert.equal(first.chart_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a5_evidence_chart.mjs')).digest('hex'));
-              assert.equal(repair.initial_result_sha256, crypto.createHash('sha256').update(firstBytes).digest('hex'));
-              assert.equal(repair.r1_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a5_evidence_chart_r1.mjs')).digest('hex'));
-              for (const value of [first, repair]) {
-                assert.equal(value.topic_universe, 144);
-                assert.equal(value.capability_verdict, 'UNTESTED');
-                assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
-                assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
-              }
-              assert.equal(s.rounds['ZMR-04'].a5_chart_component_disposition, 'RETIRED_NO_SAFETY_PRESERVING_NET_CORRECT_OR_MULTI_GAIN_NO_FAMILY_CEILING');
+            assert(after.has(resultA5ChartPath) && after.has(resultA5ChartR1Path), 'complete A5 chart diagnostic pair required');
+            const cohortBytes = await read('data/zero_model_refoundation/development/provisional_a5_chart_dev_v0.1.json');
+            const firstBytes = await read(resultA5ChartPath);
+            const first = JSON.parse(firstBytes.toString('utf8'));
+            const repair = JSON.parse((await read(resultA5ChartR1Path)).toString('utf8'));
+            assert.equal(first.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(repair.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(repair.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
+            assert.equal(first.cohort_sha256, crypto.createHash('sha256').update(cohortBytes).digest('hex'));
+            assert.equal(repair.cohort_sha256, first.cohort_sha256);
+            assert.equal(first.chart_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a5_evidence_chart.mjs')).digest('hex'));
+            assert.equal(repair.initial_result_sha256, crypto.createHash('sha256').update(firstBytes).digest('hex'));
+            assert.equal(repair.r1_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/a5_evidence_chart_r1.mjs')).digest('hex'));
+            for (const value of [first, repair]) {
+            assert.equal(value.topic_universe, 144);
+            assert.equal(value.capability_verdict, 'UNTESTED');
+            assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
+            }
+            assert.equal(s.rounds['ZMR-04'].a5_chart_component_disposition, 'RETIRED_NO_SAFETY_PRESERVING_NET_CORRECT_OR_MULTI_GAIN_NO_FAMILY_CEILING');
             }
             if (after.has(resultH1Path) || after.has(resultH1R1Path)) {
-              assert(after.has(resultH1Path) && after.has(resultH1R1Path), 'complete H1 diagnostic pair required');
-              const cohortBytes = await read('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json');
-              const first = JSON.parse((await read(resultH1Path)).toString('utf8'));
-              const repair = JSON.parse((await read(resultH1R1Path)).toString('utf8'));
-              assert.equal(first.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(repair.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(repair.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
-              assert.equal(first.cohort_sha256, crypto.createHash('sha256').update(cohortBytes).digest('hex'));
-              assert.equal(repair.cohort_sha256, first.cohort_sha256);
-              assert.equal(first.h1_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/h1_recall_initial.mjs')).digest('hex'));
-              assert.equal(repair.initial_result_sha256, crypto.createHash('sha256').update(await read(resultH1Path)).digest('hex'));
-              assert.equal(first.topic_universe, 144); assert.equal(repair.topic_universe, 144);
-              assert.equal(first.domain_universe, 18); assert.equal(repair.domain_universe, 18);
-              for (const value of [first, repair]) {
-                assert.equal(value.capability_verdict, 'UNTESTED');
-                assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
-                assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
-              }
-              assert.equal(s.rounds['ZMR-04'].h1_component_disposition, 'RETIRED_NO_ISOLATED_END_TO_END_GAIN_NO_FAMILY_CEILING');
+            assert(after.has(resultH1Path) && after.has(resultH1R1Path), 'complete H1 diagnostic pair required');
+            const cohortBytes = await read('data/zero_model_refoundation/development/provisional_h1_recall_dev_v0.1.json');
+            const first = JSON.parse((await read(resultH1Path)).toString('utf8'));
+            const repair = JSON.parse((await read(resultH1R1Path)).toString('utf8'));
+            assert.equal(first.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(repair.classification, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(repair.evaluation_status, 'REUSED_PUBLIC_DEV_INNER_LOOP_NOT_FRESH_GATE');
+            assert.equal(first.cohort_sha256, crypto.createHash('sha256').update(cohortBytes).digest('hex'));
+            assert.equal(repair.cohort_sha256, first.cohort_sha256);
+            assert.equal(first.h1_module_sha256, crypto.createHash('sha256').update(await read('packages/zero_model_refoundation/h1_recall_initial.mjs')).digest('hex'));
+            assert.equal(repair.initial_result_sha256, crypto.createHash('sha256').update(await read(resultH1Path)).digest('hex'));
+            assert.equal(first.topic_universe, 144); assert.equal(repair.topic_universe, 144);
+            assert.equal(first.domain_universe, 18); assert.equal(repair.domain_universe, 18);
+            for (const value of [first, repair]) {
+            assert.equal(value.capability_verdict, 'UNTESTED');
+            assert.equal(value.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(value.independent_rows, 0); assert.equal(value.as_consumed, 0);
+            }
+            assert.equal(s.rounds['ZMR-04'].h1_component_disposition, 'RETIRED_NO_ISOLATED_END_TO_END_GAIN_NO_FAMILY_CEILING');
             }
             if (after.has('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')) {
-              const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')).toString('utf8'));
-              assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(challenge.rows.length, 144);
-              assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
-              assert.equal(challenge.evaluation_status, 'UNRUN');
-              assert.equal(challenge.qualification_credit_rows, 0);
+            const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.4.json')).toString('utf8'));
+            assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(challenge.rows.length, 144);
+            assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
+            assert.equal(challenge.evaluation_status, 'UNRUN');
+            assert.equal(challenge.qualification_credit_rows, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_safety_seed_v0.2.json')) {
-              const safety = JSON.parse((await read('data/zero_model_refoundation/development/provisional_safety_seed_v0.2.json')).toString('utf8'));
-              assert.equal(safety.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(safety.rows.length, 48);
-              assert.equal(safety.evaluation_status, 'UNRUN');
-              assert.equal(safety.qualification_credit_rows, 0);
+            const safety = JSON.parse((await read('data/zero_model_refoundation/development/provisional_safety_seed_v0.2.json')).toString('utf8'));
+            assert.equal(safety.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(safety.rows.length, 48);
+            assert.equal(safety.evaluation_status, 'UNRUN');
+            assert.equal(safety.qualification_credit_rows, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_safety_seed_v0.3.json')) {
-              const safety = JSON.parse((await read('data/zero_model_refoundation/development/provisional_safety_seed_v0.3.json')).toString('utf8'));
-              assert.equal(safety.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(safety.rows.length, 48);
-              assert.equal(safety.evaluation_status, 'UNRUN');
-              assert.equal(safety.qualification_credit_rows, 0);
+            const safety = JSON.parse((await read('data/zero_model_refoundation/development/provisional_safety_seed_v0.3.json')).toString('utf8'));
+            assert.equal(safety.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(safety.rows.length, 48);
+            assert.equal(safety.evaluation_status, 'UNRUN');
+            assert.equal(safety.qualification_credit_rows, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_safety_seed_v0.4.json')) {
-              const safety = JSON.parse((await read('data/zero_model_refoundation/development/provisional_safety_seed_v0.4.json')).toString('utf8'));
-              assert.equal(safety.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(safety.rows.length, 48);
-              assert.equal(safety.evaluation_status, 'UNRUN');
-              assert.equal(safety.qualification_credit_rows, 0);
+            const safety = JSON.parse((await read('data/zero_model_refoundation/development/provisional_safety_seed_v0.4.json')).toString('utf8'));
+            assert.equal(safety.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(safety.rows.length, 48);
+            assert.equal(safety.evaluation_status, 'UNRUN');
+            assert.equal(safety.qualification_credit_rows, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_challenge_v0.5.json')) {
-              const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.5.json')).toString('utf8'));
-              assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(challenge.rows.length, 144);
-              assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
-              assert.equal(challenge.evaluation_status, 'UNRUN');
-              assert.equal(challenge.qualification_credit_rows, 0);
+            const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.5.json')).toString('utf8'));
+            assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(challenge.rows.length, 144);
+            assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
+            assert.equal(challenge.evaluation_status, 'UNRUN');
+            assert.equal(challenge.qualification_credit_rows, 0);
             }
             if (after.has('data/zero_model_refoundation/development/provisional_challenge_v0.6.json')) {
-              const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.6.json')).toString('utf8'));
-              assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(challenge.rows.length, 144);
-              assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
-              assert.equal(challenge.evaluation_status, 'UNRUN');
-              assert.equal(challenge.qualification_credit_rows, 0);
+            const challenge = JSON.parse((await read('data/zero_model_refoundation/development/provisional_challenge_v0.6.json')).toString('utf8'));
+            assert.equal(challenge.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(challenge.rows.length, 144);
+            assert.equal(challenge.intake_status, 'FULL144_PUBLIC_DEV_FROZEN_UNRUN');
+            assert.equal(challenge.evaluation_status, 'UNRUN');
+            assert.equal(challenge.qualification_credit_rows, 0);
             }
             if (after.has('docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_BUDGET_CLOSURE_RESULT.json')) {
-              const auditBytes = await read('docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_BUDGET_CLOSURE_RESULT.json');
-              const audit = JSON.parse(auditBytes.toString('utf8'));
-              assert.equal(crypto.createHash('sha256').update(auditBytes).digest('hex'), s.rounds['ZMR-06'].historical_budget_closure_result_sha256);
-              assert.equal(audit.schema, 'ZMR-HISTORICAL-BUDGET-CLOSURE-1');
-              assert.equal(audit.history_complete, false); assert.equal(audit.history_reconciled, false);
-              assert.equal(audit.allocations, null); assert.equal(audit.stable_configuration_allowance_remaining, null);
-              assert.equal(audit.new_stable_competition, 'HOLD_PENDING_ACCOUNTING_RECONCILIATION');
-              assert.equal(audit.events.length, 26); assert.equal(new Set(audit.events.map(e => e.aggregate_path)).size, 26);
-              assert.equal(audit.events.filter(e => e.original_evaluation_key).length, 15);
-              assert.equal(audit.events.filter(e => e.original_evaluation_key === null).length, 11);
-              assert.equal(audit.path_histories.length, 39); assert.equal(audit.original_provenance.length, 24);
-              for (const event of audit.events) { assert.equal(event.stable_selection_event, 'NOT_RECONSTRUCTED'); assert.equal(event.generation_allocation, 'NOT_RECONSTRUCTED'); }
-              for (const field of ['new_semantic_evaluations', 'consumed_input_reads', 'consumed_test_replays', 'new_stable_allocations', 'refunds', 'budget_resets', 'new_paid_calls', 'new_permissions']) assert.equal(audit[field], 0);
-              assert.equal(audit.capability_verdict, 'UNTESTED'); assert.equal(audit.resource_verdict, 'NOT_QUALIFIED'); assert.equal(audit.saturation_ceiling, false);
-              assert.equal(s.rounds['ZMR-06'].remaining_stable_configuration_allowance, null);
+            const auditBytes = await read('docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_BUDGET_CLOSURE_RESULT.json');
+            const audit = JSON.parse(auditBytes.toString('utf8'));
+            assert.equal(crypto.createHash('sha256').update(auditBytes).digest('hex'), s.rounds['ZMR-06'].historical_budget_closure_result_sha256);
+            assert.equal(audit.schema, 'ZMR-HISTORICAL-BUDGET-CLOSURE-1');
+            assert.equal(audit.history_complete, false); assert.equal(audit.history_reconciled, false);
+            assert.equal(audit.allocations, null); assert.equal(audit.stable_configuration_allowance_remaining, null);
+            assert.equal(audit.new_stable_competition, 'HOLD_PENDING_ACCOUNTING_RECONCILIATION');
+            assert.equal(audit.events.length, 26); assert.equal(new Set(audit.events.map(e => e.aggregate_path)).size, 26);
+            assert.equal(audit.events.filter(e => e.original_evaluation_key).length, 15);
+            assert.equal(audit.events.filter(e => e.original_evaluation_key === null).length, 11);
+            assert.equal(audit.path_histories.length, 39); assert.equal(audit.original_provenance.length, 24);
+            for (const event of audit.events) { assert.equal(event.stable_selection_event, 'NOT_RECONSTRUCTED'); assert.equal(event.generation_allocation, 'NOT_RECONSTRUCTED'); }
+            for (const field of ['new_semantic_evaluations', 'consumed_input_reads', 'consumed_test_replays', 'new_stable_allocations', 'refunds', 'budget_resets', 'new_paid_calls', 'new_permissions']) assert.equal(audit[field], 0);
+            assert.equal(audit.capability_verdict, 'UNTESTED'); assert.equal(audit.resource_verdict, 'NOT_QUALIFIED'); assert.equal(audit.saturation_ceiling, false);
+            assert.equal(s.rounds['ZMR-06'].remaining_stable_configuration_allowance, null);
             }
-            const materializedPaths = [workflowPath, statusPath, 'docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-06_SYNTHETIC_ALLOCATION_LIFECYCLE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-06_LOSSLESS_POSTING_VIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR_CI_THREE_SERIAL_SHARDS_REPAIR_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_COMPILE_PLAN_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR_CI_BATCH_SYNTAX_REPAIR_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_REVIEW_COMPILER_ADAPTER_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_REVIEW_ADMISSION_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR_CI_BYTECODE_REPORTING_REPAIR_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_LABEL_REVIEW_CARDS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-01B_ANNOTATION_GUIDELINE.md', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_LABEL_PROPOSALS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_REQUEST_FRAMES_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_OLDER_ROLE_PROPOSALS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_OLDER_ROLE_DISPOSITIONS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_HOLD_DISPOSITIONS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-06_HISTORICAL_BUDGET_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION11_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION11_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION10_REVIEW_INITIAL_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION10_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION10_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION9_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION9_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION8_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION8_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION7_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION7_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION6_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION6_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION5_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION5_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION4_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION4_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION3_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION3_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION2_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION2_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION1_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_EXPANSION1_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_SOURCE_DEFICITS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART8_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART8_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART7_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART7_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART6_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART6_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART5_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART5_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART4_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART4_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART3_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART3_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART2_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_PART2_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_SEED_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_MECHANISM_MATRIX_TRAIN_SEED_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_V04_COMPILED_CLOSURE_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SOURCE_AUDIT_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_REVIEW_SIX_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE1_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE2_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE3_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE4_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_TUNE_SLICE5_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SAFETY_SEED_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SAFETY_REST_TUNE_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_SAFETY_REST_CAL_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_SLICE1_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART1_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART2_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_CAL_REST_PART3_REVIEW_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_DEV_V04_MECHANISM_AUDIT_RESULT.json', ...accountingJoinFiles, ...identityAuditFiles, ...laterDiagnosticFiles, ...defaultsAuditFiles, ...present, ...inputs];
+            const materializedPaths = [workflowPath, statusPath, docs[267], docs[265], docs[263], docs[261], docs[259], docs[257], docs[255], docs[251], docs[249], docs[247], docs[253], docs[245], docs[15], docs[243], docs[140], docs[142], docs[144], docs[146], docs[138], docs[123], docs[125], docs[126], docs[128], docs[130], docs[132], docs[134], docs[136], docs[148], docs[151], docs[153], docs[155], docs[157], docs[159], docs[161], docs[163], docs[165], docs[167], docs[170], docs[172], docs[174], docs[176], docs[178], docs[180], docs[182], docs[184], docs[186], docs[188], docs[190], docs[192], docs[194], docs[196], docs[198], docs[200], docs[202], docs[204], docs[206], docs[208], docs[210], docs[212], docs[98], docs[231], docs[111], docs[113], docs[115], docs[117], docs[119], docs[121], docs[214], docs[216], docs[218], docs[220], docs[222], docs[224], docs[226], docs[228], ...accountingJoinFiles, ...identityAuditFiles, ...laterDiagnosticFiles, ...defaultsAuditFiles, ...present, ...inputs];
             for (const writerResultPath of ['docs/zero-model-refoundation-v1/ZMR-03_TRAIN_REQUEST_FRAMES_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_LABEL_PROPOSALS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_LABEL_REVIEW_CARDS_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_REVIEW_ADMISSION_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_REVIEW_COMPILER_ADAPTER_RESULT.json', 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_COMPILE_PLAN_RESULT.json']) {
-              if (after.has(writerResultPath)) {
-                const writerResult = JSON.parse((await read(writerResultPath)).toString('utf8'));
-                const materialized = new Set(materializedPaths);
-                for (const p of [writerResultPath, writerResult.journal_path || writerResult.manifest_path, ...writerResult.input_pins.map(x => x.path), ...writerResult.code_pins.map(x => x.path)]) {
-                  assert(allowed.has(p) && materialized.has(p), 'writer-review dependency must be allowlisted and materialized: ' + p);
-                }
-              }
+            if (after.has(writerResultPath)) {
+            const writerResult = JSON.parse((await read(writerResultPath)).toString('utf8'));
+            const materialized = new Set(materializedPaths);
+            for (const p of [writerResultPath, writerResult.journal_path || writerResult.manifest_path, ...writerResult.input_pins.map(x => x.path), ...writerResult.code_pins.map(x => x.path)]) {
+            assert(allowed.has(p) && materialized.has(p), 'writer-review dependency must be allowlisted and materialized: ' + p);
+            }
+            }
             }
             const compilePlanResultPath = 'docs/zero-model-refoundation-v1/ZMR-03_TRAIN_COMPILE_PLAN_RESULT.json';
             if (after.has(compilePlanResultPath)) {
-              const planResult = JSON.parse((await read(compilePlanResultPath)).toString('utf8'));
-              assert.equal(planResult.schema, 'ZMR-TRAIN-COMPILE-PLAN-RESULT-1');
-              assert.equal(planResult.full_catalog_topics, 144); assert.equal(planResult.disputed_rows, 41);
-              assert.equal(planResult.executable, false); assert.equal(planResult.remaining_allowance, null);
-              assert.equal(planResult.capability_verdict, 'UNTESTED'); assert.equal(planResult.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(planResult.semantic_judgment_certified, false);
-              for (const k of ['compiler_callbacks', 'fitted_features', 'index_bytes_created', 'predictions', 'new_samples', 'stable_allocations', 'accepted', 'independent_quota_credit']) assert.equal(planResult[k], 0);
-              assert.equal(planResult.input_pins.length, 21); assert.equal(planResult.code_pins.length, 5);
-              for (const pin of [...planResult.input_pins, ...planResult.code_pins, {path:planResult.manifest_path, sha256:planResult.manifest_sha256}]) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'compile plan closure');
-                assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
-              }
+            const planResult = JSON.parse((await read(compilePlanResultPath)).toString('utf8'));
+            assert.equal(planResult.schema, 'ZMR-TRAIN-COMPILE-PLAN-RESULT-1');
+            assert.equal(planResult.full_catalog_topics, 144); assert.equal(planResult.disputed_rows, 41);
+            assert.equal(planResult.executable, false); assert.equal(planResult.remaining_allowance, null);
+            assert.equal(planResult.capability_verdict, 'UNTESTED'); assert.equal(planResult.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(planResult.semantic_judgment_certified, false);
+            for (const k of ['compiler_callbacks', 'fitted_features', 'index_bytes_created', 'predictions', 'new_samples', 'stable_allocations', 'accepted', 'independent_quota_credit']) assert.equal(planResult[k], 0);
+            assert.equal(planResult.input_pins.length, 21); assert.equal(planResult.code_pins.length, 5);
+            for (const pin of [...planResult.input_pins, ...planResult.code_pins, {path:planResult.manifest_path, sha256:planResult.manifest_sha256}]) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'compile plan closure');
+            assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
+            }
+            }
+            const streamAllocationPath = 'docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC_RESULT.json';
+            if (changed.includes(streamAllocationPath)) {
+            const r = JSON.parse((await read(streamAllocationPath)).toString('utf8'));
+            assert.equal(r.schema, 'ZMR-STREAMING-ALLOCATION-DIAGNOSTIC-REGISTRATION-1');
+            assert.equal(r.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(r.capability_verdict, 'UNTESTED'); assert.equal(r.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(r.allowance, null); assert.equal(r.semantic_judgment_certified, false);
+            assert.equal(r.peak_measured, false); assert.equal(r.latency_measured, false);
+            assert.equal(r.initial_receipt.observations.length, 2); assert.equal(r.initial_receipt.failures.length, 1);
+            assert.equal(r.final_receipt.observations.length, 6); assert.equal(r.final_receipt.failures.length, 0);
+            assert.equal(r.total_child_processes_started, 9); assert.equal(r.engineering_fixture_repairs, 1);
+            assert.equal(r.original_measurements_reexecuted_during_registration, 0);
+            assert.equal(r.code_pins.length, 6);
+            assert.equal(crypto.createHash('sha256').update(r.initial_harness_utf8).digest('hex'), r.initial_harness_sha256);
+            for (const o of r.final_receipt.observations) {
+            assert.equal(o.full144_numeric_slots, 144); assert.equal(o.calls, 64);
+            assert.equal(o.snapshots.length, 7); assert.equal(o.post_call_snapshots.length, 64);
+            assert.equal(o.peak_measured, false); assert.equal(o.latency_measured, false);
+            for (const x of [...o.snapshots, ...o.post_call_snapshots]) for (const k of ['heapUsed','arrayBuffers']) assert(Number.isSafeInteger(x[k]) && x[k] >= 0);
+            }
+            for (let i = 0; i < 6; i += 2) {
+            const a = r.final_receipt.observations[i], b = r.final_receipt.observations[i + 1];
+            assert.deepEqual(a.profile, b.profile); assert.equal(a.input_hash, b.input_hash); assert.equal(a.weights_hash, b.weights_hash);
+            assert.deepEqual(a.arithmetic_digests, b.arithmetic_digests);
+            }
+            for (const k of ['stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','new_semantic_samples','independent_quota_credit','fitting','router_calls','predictions','consumed_as_test_reads','final_blind_execution','new_paid_calls','new_permissions']) assert.equal(r[k], 0);
+            for (const pin of r.code_pins) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'streaming allocation diagnostic closure');
+            assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
+            }
             }
             const numericResultPath = 'docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR_RESULT.json';
             if (changed.includes(numericResultPath)) {
-              const numeric = JSON.parse((await read(numericResultPath)).toString('utf8'));
-              assert.equal(numeric.schema, 'ZMR-STREAMING-NUMERIC-ACCUMULATOR-REGISTRATION-1');
-              assert.equal(numeric.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(numeric.capability_verdict, 'UNTESTED'); assert.equal(numeric.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(numeric.allowance, null); assert.equal(numeric.semantic_judgment_certified, false);
-              assert.equal(numeric.stable_candidate_constructed, false); assert.equal(numeric.actual_candidate_index_rebuilt, false);
-              assert.equal(numeric.finite_equivalence_cases, 90); assert.equal(numeric.numeric_slots, 144);
-              assert.equal(numeric.accumulator_component_bytes, 1152); assert.equal(numeric.component_not_total_memory, true);
-              assert.equal(numeric.peak_memory_measured, false); assert.equal(numeric.routing_latency_measured, false);
-              assert.equal(numeric.code_pins.length, 6);
-              for (const k of ['actual_train_inputs','fitting','router_calls','predictions','new_semantic_samples','stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','independent_quota_credit','consumed_as_test_reads','final_blind_execution','new_paid_calls','new_permissions']) assert.equal(numeric[k], 0);
-              for (const pin of numeric.code_pins) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'synthetic numeric accumulator closure');
-                assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
-              }
+            const numeric = JSON.parse((await read(numericResultPath)).toString('utf8'));
+            assert.equal(numeric.schema, 'ZMR-STREAMING-NUMERIC-ACCUMULATOR-REGISTRATION-1');
+            assert.equal(numeric.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(numeric.capability_verdict, 'UNTESTED'); assert.equal(numeric.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(numeric.allowance, null); assert.equal(numeric.semantic_judgment_certified, false);
+            assert.equal(numeric.stable_candidate_constructed, false); assert.equal(numeric.actual_candidate_index_rebuilt, false);
+            assert.equal(numeric.finite_equivalence_cases, 90); assert.equal(numeric.numeric_slots, 144);
+            assert.equal(numeric.accumulator_component_bytes, 1152); assert.equal(numeric.component_not_total_memory, true);
+            assert.equal(numeric.peak_memory_measured, false); assert.equal(numeric.routing_latency_measured, false);
+            assert.equal(numeric.code_pins.length, 6);
+            for (const k of ['actual_train_inputs','fitting','router_calls','predictions','new_semantic_samples','stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','independent_quota_credit','consumed_as_test_reads','final_blind_execution','new_paid_calls','new_permissions']) assert.equal(numeric[k], 0);
+            for (const pin of numeric.code_pins) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'synthetic numeric accumulator closure');
+            assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
+            }
             }
             const transportResultPath = 'docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR_RESULT.json';
             if (changed.includes(transportResultPath)) {
-              const repair = JSON.parse((await read(transportResultPath)).toString('utf8'));
-              assert.equal(repair.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(repair.capability_verdict, 'UNTESTED'); assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(repair.remaining_allowance, null); assert.equal(repair.semantic_judgment_certified, false);
-              assert.equal(repair.preserved_failed_run.conclusion, 'FAILURE_NOT_INTEGRATION_PASS');
-              assert.equal(repair.preserved_failed_run.run, 37155918962); assert.equal(repair.preserved_failed_run.observed_units.length, 93);
-              assert.equal(repair.preserved_failed_run.failed_shard_units, 0); assert.equal(repair.preserved_failed_run.all_units_executed, false);
-              assert.equal(repair.shared_retry_tokens, 1); assert.equal(repair.max_attempts_per_request, 2);
-              assert.equal(repair.request_deadline_ms, 35000); assert.equal(repair.per_attempt_timeout_ms, 5000);
-              assert.equal(repair.timeout_minutes, 5); assert.equal(repair.unit_workers, 2); assert.equal(repair.max_parallel, 1);
-              assert.equal(repair.authenticated_rest_calls, 0); assert.equal(repair.unit_count, 139); assert.equal(repair.unit_order_changed, false);
-              for (const k of ['stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','new_semantic_samples','fitting','router_calls','predictions','measurements_reexecuted','consumed_as_test_reads','final_blind_execution']) assert.equal(repair[k], 0);
-              assert.equal(repair.code_pins.length, 2);
-              for (const pin of repair.code_pins) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'bounded public transport repair closure');
-                assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
-              }
+            const repair = JSON.parse((await read(transportResultPath)).toString('utf8'));
+            assert.equal(repair.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(repair.capability_verdict, 'UNTESTED'); assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(repair.remaining_allowance, null); assert.equal(repair.semantic_judgment_certified, false);
+            assert.equal(repair.preserved_failed_run.conclusion, 'FAILURE_NOT_INTEGRATION_PASS');
+            assert.equal(repair.preserved_failed_run.run, 37155918962); assert.equal(repair.preserved_failed_run.observed_units.length, 93);
+            assert.equal(repair.preserved_failed_run.failed_shard_units, 0); assert.equal(repair.preserved_failed_run.all_units_executed, false);
+            assert.equal(repair.shared_retry_tokens, 1); assert.equal(repair.max_attempts_per_request, 2);
+            assert.equal(repair.request_deadline_ms, 35000); assert.equal(repair.per_attempt_timeout_ms, 5000);
+            assert.equal(repair.timeout_minutes, 5); assert.equal(repair.unit_workers, 2); assert.equal(repair.max_parallel, 1);
+            assert.equal(repair.authenticated_rest_calls, 0); assert.equal(repair.unit_count, 139); assert.equal(repair.unit_order_changed, false);
+            for (const k of ['stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','new_semantic_samples','fitting','router_calls','predictions','measurements_reexecuted','consumed_as_test_reads','final_blind_execution']) assert.equal(repair[k], 0);
+            assert.equal(repair.code_pins.length, 2);
+            for (const pin of repair.code_pins) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'bounded public transport repair closure');
+            assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
+            }
             }
             const allocationResultPath = 'docs/zero-model-refoundation-v1/ZMR-06_SYNTHETIC_ALLOCATION_LIFECYCLE_RESULT.json';
             if (changed.includes(allocationResultPath)) {
-              const allocation = JSON.parse((await read(allocationResultPath)).toString('utf8'));
-              assert.equal(allocation.schema, 'ZMR-SYNTHETIC-ALLOCATION-REGISTRATION-1');
-              assert.equal(allocation.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(allocation.capability_verdict, 'UNTESTED'); assert.equal(allocation.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(allocation.allowance, null); assert.equal(allocation.measurement_timestamp, null); assert.equal(allocation.timestamp_recoverable, false);
-              assert.equal(allocation.true_peak_or_latency_measured, false); assert.equal(allocation.stable_candidate_constructed, false);
-              for (const k of ['measurements_reexecuted','stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','sample_additions','independent_quota_credit','fitting','router_calls','predictions','consumed_as_test_reads','final_blind_execution']) assert.equal(allocation[k],0);
-              assert.equal(allocation.code_pins.length, 7); assert.equal(allocation.public_input_pins.length, 2);
-              for (const pin of [...allocation.code_pins, ...allocation.public_input_pins]) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'synthetic allocation registration closure');
-                assert.equal(pin.sha256,crypto.createHash('sha256').update(await read(pin.path)).digest('hex'),pin.path);
-              }
+            const allocation = JSON.parse((await read(allocationResultPath)).toString('utf8'));
+            assert.equal(allocation.schema, 'ZMR-SYNTHETIC-ALLOCATION-REGISTRATION-1');
+            assert.equal(allocation.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(allocation.capability_verdict, 'UNTESTED'); assert.equal(allocation.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(allocation.allowance, null); assert.equal(allocation.measurement_timestamp, null); assert.equal(allocation.timestamp_recoverable, false);
+            assert.equal(allocation.true_peak_or_latency_measured, false); assert.equal(allocation.stable_candidate_constructed, false);
+            for (const k of ['measurements_reexecuted','stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','sample_additions','independent_quota_credit','fitting','router_calls','predictions','consumed_as_test_reads','final_blind_execution']) assert.equal(allocation[k],0);
+            assert.equal(allocation.code_pins.length, 7); assert.equal(allocation.public_input_pins.length, 2);
+            for (const pin of [...allocation.code_pins, ...allocation.public_input_pins]) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'synthetic allocation registration closure');
+            assert.equal(pin.sha256,crypto.createHash('sha256').update(await read(pin.path)).digest('hex'),pin.path);
+            }
             }
             const postingViewResultPath = 'docs/zero-model-refoundation-v1/ZMR-06_LOSSLESS_POSTING_VIEW_RESULT.json';
             if (changed.includes(postingViewResultPath)) {
-              const viewResult = JSON.parse((await read(postingViewResultPath)).toString('utf8'));
-              assert.equal(viewResult.schema, 'ZMR-LOSSLESS-POSTING-VIEW-RESULT-1');
-              assert.equal(viewResult.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
-              assert.equal(viewResult.full_structure_topics, 144); assert.equal(viewResult.synthetic_scale_cases, 3);
-              assert.equal(viewResult.capability_verdict, 'UNTESTED'); assert.equal(viewResult.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(viewResult.remaining_allowance, null); assert.equal(viewResult.semantic_judgment_certified, false);
-              assert.equal(viewResult.stable_candidate_constructed, false); assert.equal(viewResult.total_memory_gain_or_latency_measured, false);
-              for (const k of ['real_train_inputs','fitting','router_calls','predictions','new_samples','stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','independent_quota_credit','consumed_as_test_reads','final_blind_execution']) assert.equal(viewResult[k],0);
-              assert.equal(viewResult.code_pins.length, 6);
-              for (const pin of viewResult.code_pins) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'lossless view closure');
-                assert.equal(pin.sha256,crypto.createHash('sha256').update(await read(pin.path)).digest('hex'),pin.path);
-              }
+            const viewResult = JSON.parse((await read(postingViewResultPath)).toString('utf8'));
+            assert.equal(viewResult.schema, 'ZMR-LOSSLESS-POSTING-VIEW-RESULT-1');
+            assert.equal(viewResult.evidence_class, 'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE');
+            assert.equal(viewResult.full_structure_topics, 144); assert.equal(viewResult.synthetic_scale_cases, 3);
+            assert.equal(viewResult.capability_verdict, 'UNTESTED'); assert.equal(viewResult.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(viewResult.remaining_allowance, null); assert.equal(viewResult.semantic_judgment_certified, false);
+            assert.equal(viewResult.stable_candidate_constructed, false); assert.equal(viewResult.total_memory_gain_or_latency_measured, false);
+            for (const k of ['real_train_inputs','fitting','router_calls','predictions','new_samples','stable_allocations','semantic_candidate_repairs_charged','allowance_refunds','independent_quota_credit','consumed_as_test_reads','final_blind_execution']) assert.equal(viewResult[k],0);
+            assert.equal(viewResult.code_pins.length, 6);
+            for (const pin of viewResult.code_pins) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'lossless view closure');
+            assert.equal(pin.sha256,crypto.createHash('sha256').update(await read(pin.path)).digest('hex'),pin.path);
+            }
             }
             const threeShardRepairPath = 'docs/zero-model-refoundation-v1/ZMR_CI_THREE_SERIAL_SHARDS_REPAIR_RESULT.json';
             if (changed.includes(threeShardRepairPath)) {
-              const repair = JSON.parse((await read(threeShardRepairPath)).toString('utf8'));
-              assert.equal(repair.schema, 'ZMR-CI-THREE-SERIAL-SHARDS-REPAIR-1');
-              assert.equal(repair.preserved_failed_run.workflow_verdict, 'FAILURE_NOT_INTEGRATION_PASS');
-              assert.equal(repair.preserved_failed_run.observed_units.length, 137);
-              assert.equal(repair.preserved_failed_run.observed_units.filter(x=>x.code!==0||x.signal!==null).length, 1);
-              assert.equal(repair.current_unit_count, 137); assert.equal(repair.unit_paths_unchanged, true);
-              assert.equal(repair.timeout_minutes, 5); assert.equal(repair.unit_workers, 2); assert.equal(repair.max_parallel, 1);
-              assert.equal(repair.setup_reserve_ms, 40000); assert.equal(repair.serial_jobs, 3);
-              assert.equal(repair.semantic_judgment_certified, false);
-              assert.equal(repair.capability_verdict, 'UNTESTED'); assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(repair.remaining_allowance, null); assert.equal(repair.test_result_cache, false);
-              for (const k of ['new_samples','predictions','semantic_candidate_repairs_charged','stable_allocations','allowance_refunds','independent_quota_credit']) assert.equal(repair[k],0);
-              assert.equal(repair.code_pins.length,6);
-              for (const pin of repair.code_pins) {
-                assert(allowed.has(pin.path)&&materializedPaths.includes(pin.path),'three-shard repair closure');
-                assert.equal(pin.sha256,crypto.createHash('sha256').update(await read(pin.path)).digest('hex'),pin.path);
-              }
+            const repair = JSON.parse((await read(threeShardRepairPath)).toString('utf8'));
+            assert.equal(repair.schema, 'ZMR-CI-THREE-SERIAL-SHARDS-REPAIR-1');
+            assert.equal(repair.preserved_failed_run.workflow_verdict, 'FAILURE_NOT_INTEGRATION_PASS');
+            assert.equal(repair.preserved_failed_run.observed_units.length, 137);
+            assert.equal(repair.preserved_failed_run.observed_units.filter(x=>x.code!==0||x.signal!==null).length, 1);
+            assert.equal(repair.current_unit_count, 137); assert.equal(repair.unit_paths_unchanged, true);
+            assert.equal(repair.timeout_minutes, 5); assert.equal(repair.unit_workers, 2); assert.equal(repair.max_parallel, 1);
+            assert.equal(repair.setup_reserve_ms, 40000); assert.equal(repair.serial_jobs, 3);
+            assert.equal(repair.semantic_judgment_certified, false);
+            assert.equal(repair.capability_verdict, 'UNTESTED'); assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(repair.remaining_allowance, null); assert.equal(repair.test_result_cache, false);
+            for (const k of ['new_samples','predictions','semantic_candidate_repairs_charged','stable_allocations','allowance_refunds','independent_quota_credit']) assert.equal(repair[k],0);
+            assert.equal(repair.code_pins.length,6);
+            for (const pin of repair.code_pins) {
+            assert(allowed.has(pin.path)&&materializedPaths.includes(pin.path),'three-shard repair closure');
+            assert.equal(pin.sha256,crypto.createHash('sha256').update(await read(pin.path)).digest('hex'),pin.path);
+            }
             }
             const ciRepairResultPath = 'docs/zero-model-refoundation-v1/ZMR_CI_BYTECODE_REPORTING_REPAIR_RESULT.json';
             if (changed.includes(ciRepairResultPath)) {
-              const repair = JSON.parse((await read(ciRepairResultPath)).toString('utf8'));
-              assert.equal(repair.schema, 'ZMR-CI-BYTECODE-REPORTING-ENGINEERING-REPAIR-1');
-              assert.equal(repair.preserved_failed_run.workflow_verdict, 'CANCELLED_NOT_INTEGRATION_PASS');
-              assert.equal(repair.preserved_failed_run.observed_units.length, 133);
-              assert(repair.preserved_failed_run.observed_units.every(x => x.code === 0 && x.signal === null));
-              assert.equal(repair.test_result_cache, false);
-              assert.equal(repair.semantic_judgment_certified, false);
-              assert.equal(repair.capability_verdict, 'UNTESTED');
-              assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(repair.remaining_allowance, null);
-              for (const k of ['new_samples', 'predictions', 'semantic_evaluations', 'stable_allocations', 'allowance_refunds', 'independent_quota_credit']) assert.equal(repair[k], 0);
-              assert.equal(repair.code_pins.length, 3);
-              for (const pin of repair.code_pins) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'repair code closure');
-                assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
-              }
+            const repair = JSON.parse((await read(ciRepairResultPath)).toString('utf8'));
+            assert.equal(repair.schema, 'ZMR-CI-BYTECODE-REPORTING-ENGINEERING-REPAIR-1');
+            assert.equal(repair.preserved_failed_run.workflow_verdict, 'CANCELLED_NOT_INTEGRATION_PASS');
+            assert.equal(repair.preserved_failed_run.observed_units.length, 133);
+            assert(repair.preserved_failed_run.observed_units.every(x => x.code === 0 && x.signal === null));
+            assert.equal(repair.test_result_cache, false);
+            assert.equal(repair.semantic_judgment_certified, false);
+            assert.equal(repair.capability_verdict, 'UNTESTED');
+            assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(repair.remaining_allowance, null);
+            for (const k of ['new_samples', 'predictions', 'semantic_evaluations', 'stable_allocations', 'allowance_refunds', 'independent_quota_credit']) assert.equal(repair[k], 0);
+            assert.equal(repair.code_pins.length, 3);
+            for (const pin of repair.code_pins) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'repair code closure');
+            assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
+            }
             }
             const batchSyntaxResultPath = 'docs/zero-model-refoundation-v1/ZMR_CI_BATCH_SYNTAX_REPAIR_RESULT.json';
             if (changed.includes(batchSyntaxResultPath)) {
-              const repair = JSON.parse((await read(batchSyntaxResultPath)).toString('utf8'));
-              assert.equal(repair.schema, 'ZMR-CI-BATCH-SYNTAX-REPAIR-RESULT-1');
-              assert.equal(repair.preserved_failed_run.workflow_verdict, 'CANCELLED_NOT_INTEGRATION_PASS');
-              assert.equal(repair.preserved_failed_run.observed_units.length, 135);
-              assert(repair.preserved_failed_run.observed_units.every(x => x.code === 0 && x.signal === null));
-              assert.equal(repair.test_result_cache, false);
-              assert.equal(repair.sources_evaluated, 0);
-              assert.equal(repair.imports_linked, 0);
-              assert.equal(repair.semantic_judgment_certified, false);
-              assert.equal(repair.capability_verdict, 'UNTESTED');
-              assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
-              assert.equal(repair.remaining_allowance, null);
-              assert.equal(repair.code_pins.length, 3);
-              for (const pin of repair.code_pins) {
-                assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'batch syntax code closure');
-                assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
-              }
+            const repair = JSON.parse((await read(batchSyntaxResultPath)).toString('utf8'));
+            assert.equal(repair.schema, 'ZMR-CI-BATCH-SYNTAX-REPAIR-RESULT-1');
+            assert.equal(repair.preserved_failed_run.workflow_verdict, 'CANCELLED_NOT_INTEGRATION_PASS');
+            assert.equal(repair.preserved_failed_run.observed_units.length, 135);
+            assert(repair.preserved_failed_run.observed_units.every(x => x.code === 0 && x.signal === null));
+            assert.equal(repair.test_result_cache, false);
+            assert.equal(repair.sources_evaluated, 0);
+            assert.equal(repair.imports_linked, 0);
+            assert.equal(repair.semantic_judgment_certified, false);
+            assert.equal(repair.capability_verdict, 'UNTESTED');
+            assert.equal(repair.resource_verdict, 'NOT_QUALIFIED');
+            assert.equal(repair.remaining_allowance, null);
+            assert.equal(repair.code_pins.length, 3);
+            for (const pin of repair.code_pins) {
+            assert(allowed.has(pin.path) && materializedPaths.includes(pin.path), 'batch syntax code closure');
+            assert.equal(pin.sha256, crypto.createHash('sha256').update(await read(pin.path)).digest('hex'), pin.path);
+            }
             }
             for (const p of materializedPaths) {
-              const bytes = await read(p);
-              const target = path.join(process.env.GITHUB_WORKSPACE, p);
-              fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
+            const bytes = await read(p);
+            const target = path.join(process.env.GITHUB_WORKSPACE, p);
+            fs.mkdirSync(path.dirname(target), {recursive:true}); fs.writeFileSync(target, bytes);
             }
             core.setOutput('engineering', present.length ? 'true' : 'false');
             core.info(JSON.stringify({classification:'ENGINEERING_ONLY_NOT_CAPABILITY', head, base, changed_paths:changed, content_read_allowlist:reads, historical_pins_verified_without_content:true, content_transport:'IMMUTABLE_PUBLIC_RAW_SHA1_VERIFIED', raw_fetches:rawFetches, unique_verified_blobs:byteCache.size, blob_rest_calls:0, public_tree_rest_calls:publicTreeFetches, public_transport_attempts:publicTransportAttempts, public_transport_retries:publicTransportRetries, public_transport_deadline_ms:35000, public_transport_attempt_ms:5000, authenticated_rest_calls:0}));

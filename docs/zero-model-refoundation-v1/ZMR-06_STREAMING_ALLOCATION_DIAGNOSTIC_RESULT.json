@@ -1,0 +1,4109 @@
+{
+  "schema": "ZMR-STREAMING-ALLOCATION-DIAGNOSTIC-REGISTRATION-1",
+  "batch_id": "ZMR-STREAMING-ALLOCATION-DIAGNOSTIC-20261004",
+  "expected_base_sha": "72e15ffb6bc645c8c3a299496197ebd0c6f2886c",
+  "source_main": "72e15ffb6bc645c8c3a299496197ebd0c6f2886c",
+  "source_tree": "fce0994d7c7f5243305493c0269ed189624366ae",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "hypothesis": "Finite paired synthetic arithmetic can expose representation/call/release allocation components without assuming1152-byte accumulator or numeric equality proves deployment resources",
+  "owned_paths": [
+    ".github/workflows/zmr-v1.yml",
+    "status/ZERO_MODEL_REFOUNDATION_STATUS.json",
+    "packages/zero_model_refoundation/streaming_allocation_diagnostic.mjs",
+    "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC.md",
+    "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC_RESULT.json"
+  ],
+  "bounded_closure": [
+    ".github/workflows/zmr-v1.yml",
+    "packages/zero_model_refoundation/streaming_allocation_diagnostic.mjs",
+    "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+    "packages/zero_model_refoundation/lossless_posting_view.mjs",
+    "packages/zero_model_refoundation/a1_v04_compact.mjs",
+    "packages/zero_model_refoundation/a1.mjs",
+    "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC_RESULT.json"
+  ],
+  "publication_dependency": {
+    "pr": 260,
+    "head": "fd7945d623e45a41e917caf74fecb52668ea3fe0",
+    "main": "72e15ffb6bc645c8c3a299496197ebd0c6f2886c",
+    "tree": "fce0994d7c7f5243305493c0269ed189624366ae",
+    "head_semantic_run": 37167862351,
+    "head_zmr_run": 37167862338,
+    "main_semantic_run": 37169131647,
+    "main_zmr_run": 37169131633,
+    "applicable_checks": "SUCCESS_ATTEMPT1",
+    "owned_files": 6,
+    "owned_bytes_tree_verified": true,
+    "receipt_comment": 5975399878
+  },
+  "initial_receipt": {
+    "schema": "ZMR-STREAMING-ALLOCATION-UNREGISTERED-PREPARATION-1",
+    "registered": false,
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "profiles": [
+      {
+        "terms": 3,
+        "hits_per_term": 3
+      },
+      {
+        "terms": 128,
+        "hits_per_term": 3
+      },
+      {
+        "terms": 1500,
+        "hits_per_term": 144
+      }
+    ],
+    "observations": [
+      {
+        "profile": {
+          "terms": 3,
+          "hits_per_term": 3
+        },
+        "kind": "eager",
+        "input_hash": "21700ccf3d5c6884fd82f1d402bb7e5e5c9559d0b9aa144a49baff36a104de14",
+        "weights_hash": "75df8fd5cb1f1c6fb9969e374db7ee9216a44b59346910295379cad7a5ee9cc8",
+        "encoded_bytes": 4220,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "eb0ff61f9161c4466a58b8da9c670705eca45b28244459092db4bf1d68ef71a0"
+          },
+          {
+            "method": "bm25",
+            "sha256": "7280ecad3eabc74867ada95309ed298cf5ce532457a35b4e0fb40514b9f33d60"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350752,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 45006848
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 4378432,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45432832
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4397264,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45547520
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 4679960,
+            "external": 2094764,
+            "arrayBuffers": 156409,
+            "rss": 46792704
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4435672,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 46972928
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4436320,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 47120384
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4444688,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 47202304
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 4423808,
+            "arrayBuffers": 144889
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 4877936,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 4898024,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 4496384,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 4516472,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 4536560,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 4556880,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 4578048,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 4598344,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 4618448,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 4638552,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 4658656,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 4678760,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 4698864,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 4718968,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 4739072,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 4759176,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 4779280,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 4799744,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 4819848,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 4839952,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 4860056,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 4880160,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 4900264,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 4920368,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 4940472,
+            "arrayBuffers": 173689
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 5485128,
+            "arrayBuffers": 174841
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 5505264,
+            "arrayBuffers": 175993
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 5525520,
+            "arrayBuffers": 177145
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 5545640,
+            "arrayBuffers": 178297
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 5565760,
+            "arrayBuffers": 179449
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 5585880,
+            "arrayBuffers": 180601
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 5617048,
+            "arrayBuffers": 181753
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 5634480,
+            "arrayBuffers": 182905
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 5651912,
+            "arrayBuffers": 184057
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 5160816,
+            "arrayBuffers": 185209
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 5178248,
+            "arrayBuffers": 186361
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 5195680,
+            "arrayBuffers": 187513
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 5213112,
+            "arrayBuffers": 188665
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 5230544,
+            "arrayBuffers": 189817
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 5247976,
+            "arrayBuffers": 190969
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 5265408,
+            "arrayBuffers": 192121
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 5282840,
+            "arrayBuffers": 193273
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 5300272,
+            "arrayBuffers": 194425
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 5318376,
+            "arrayBuffers": 195577
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 5335808,
+            "arrayBuffers": 196729
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 5353240,
+            "arrayBuffers": 197881
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 5370672,
+            "arrayBuffers": 199033
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 5388104,
+            "arrayBuffers": 200185
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 5405536,
+            "arrayBuffers": 201337
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 5422968,
+            "arrayBuffers": 202489
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 5440400,
+            "arrayBuffers": 203641
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 5457832,
+            "arrayBuffers": 204793
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 5475264,
+            "arrayBuffers": 205945
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 4510312,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 4527744,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 4545176,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 4562608,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 4580040,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 4597472,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 4614904,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 4632336,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 4649768,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 4667200,
+            "arrayBuffers": 156409
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:15:58.670Z",
+        "peak_measured": false,
+        "latency_measured": false
+      },
+      {
+        "profile": {
+          "terms": 3,
+          "hits_per_term": 3
+        },
+        "kind": "stream",
+        "input_hash": "21700ccf3d5c6884fd82f1d402bb7e5e5c9559d0b9aa144a49baff36a104de14",
+        "weights_hash": "75df8fd5cb1f1c6fb9969e374db7ee9216a44b59346910295379cad7a5ee9cc8",
+        "encoded_bytes": 4220,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "eb0ff61f9161c4466a58b8da9c670705eca45b28244459092db4bf1d68ef71a0"
+          },
+          {
+            "method": "bm25",
+            "sha256": "7280ecad3eabc74867ada95309ed298cf5ce532457a35b4e0fb40514b9f33d60"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350752,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 44859392
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 4378432,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45268992
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4410368,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 45498368
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 5056512,
+            "external": 2112044,
+            "arrayBuffers": 173689,
+            "rss": 47480832
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4471184,
+            "external": 2084396,
+            "arrayBuffers": 146041,
+            "rss": 47988736
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4484432,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 48201728
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4484456,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 48283648
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 5057520,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 4507440,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 4535008,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 4562432,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 4589776,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 4618376,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 5227488,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 4673032,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 4698328,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 4723432,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 4748536,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 4773640,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 4798744,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 4823848,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 4848952,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 4874056,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 4899160,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 4924264,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 4949728,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 4974832,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 4999936,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 5025040,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 5050144,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 5075248,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 5100352,
+            "arrayBuffers": 173689
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 5125456,
+            "arrayBuffers": 174841
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 5732376,
+            "arrayBuffers": 175993
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 5757512,
+            "arrayBuffers": 177145
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 5782768,
+            "arrayBuffers": 178297
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 5807888,
+            "arrayBuffers": 179449
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 5833008,
+            "arrayBuffers": 180601
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 5858128,
+            "arrayBuffers": 181753
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 5329144,
+            "arrayBuffers": 182905
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 5351576,
+            "arrayBuffers": 184057
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 5374008,
+            "arrayBuffers": 185209
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 5396440,
+            "arrayBuffers": 186361
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 5418872,
+            "arrayBuffers": 187513
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 5441304,
+            "arrayBuffers": 188665
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 5463736,
+            "arrayBuffers": 189817
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 5486168,
+            "arrayBuffers": 190969
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 5508600,
+            "arrayBuffers": 192121
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 4548968,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 4571400,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 4593832,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 4616936,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 4639368,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 4661800,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 4684232,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 4706664,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 4729096,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 4751656,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 4774088,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 4796520,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 4818952,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 4841384,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 4863816,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 4886248,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 4908680,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 4931112,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 4953544,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 4975976,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 4998888,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 5021320,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 5043752,
+            "arrayBuffers": 173689
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:15:58.720Z",
+        "peak_measured": false,
+        "latency_measured": false
+      }
+    ],
+    "failures": [
+      {
+        "profile": {
+          "terms": 128,
+          "hits_per_term": 3
+        },
+        "kind": "eager",
+        "error": "file://[PUBLIC_DIAGNOSTIC_ROOT]/packages/zero_model_refoundation/a1_v04_compact.mjs:3\nconst must=(ok,message)=>{if(!ok)throw new Error(message);};\n                                       ^\n\nError: invalid compact A1 coefficients\n    at must (file://[PUBLIC_DIAGNOSTIC_ROOT]/packages/zero_model_refoundation/a1_v04_compact.mjs:3:40)\n    at valid (file://[PUBLIC_DIAGNOSTIC_ROOT]/packages/zero_model_refoundation/a1_v04_compact.mjs:12:2)\n    at unpackA1V04 (file://[PUBLIC_DIAGNOSTIC_ROOT]/packages/zero_model_refoundation/a1_v04_compact.mjs:25:2)\n    at file://[PUBLIC_DIAGNOSTIC_ROOT]/[eval1]:17:77\n\nNode.js v26.8.2\n",
+        "status": 1,
+        "signal": null
+      }
+    ],
+    "verdict": "INCONCLUSIVE",
+    "source_pins": [
+      {
+        "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+        "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0"
+      },
+      {
+        "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+        "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318"
+      },
+      {
+        "path": "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+        "sha256": "edbb1ee66f7b834227907a9741791915f1c19cd2f9d4f3900446c3241153c611"
+      },
+      {
+        "path": "packages/zero_model_refoundation/a1.mjs",
+        "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+      }
+    ],
+    "peak_measured": false,
+    "latency_measured": false,
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "allowance": null,
+    "stable_allocations": 0,
+    "router_calls": 0,
+    "predictions": 0,
+    "fitting": 0,
+    "new_samples": 0,
+    "independent_quota_credit": 0,
+    "paid_calls": 0,
+    "new_permissions": 0,
+    "consumed_as_test_reads": 0,
+    "final_blind_execution": 0,
+    "stop_rule": "Six finite observations or INCONCLUSIVE; no automatic retry/unchanged replay. Sampled post-call memory is not true peak; one pair per profile has no interval or consumer-device certification. Oversized stress is not eligible index."
+  },
+  "final_receipt": {
+    "schema": "ZMR-STREAMING-ALLOCATION-UNREGISTERED-PREPARATION-1",
+    "registered": false,
+    "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+    "profiles": [
+      {
+        "terms": 3,
+        "hits_per_term": 3
+      },
+      {
+        "terms": 128,
+        "hits_per_term": 3
+      },
+      {
+        "terms": 1500,
+        "hits_per_term": 144
+      }
+    ],
+    "observations": [
+      {
+        "profile": {
+          "terms": 3,
+          "hits_per_term": 3
+        },
+        "kind": "eager",
+        "input_hash": "64eeb242af7f0a7484bbba3a576a93a23270c8b95f573c932951fe626759672f",
+        "weights_hash": "6d8e534c7c0cee3bffe7e289b75869eca8bf08eed7b7a62fe4cdb7d1611a14cb",
+        "encoded_bytes": 4229,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "eb0ff61f9161c4466a58b8da9c670705eca45b28244459092db4bf1d68ef71a0"
+          },
+          {
+            "method": "bm25",
+            "sha256": "7280ecad3eabc74867ada95309ed298cf5ce532457a35b4e0fb40514b9f33d60"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350848,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 44908544
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 4378696,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45301760
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4397528,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45416448
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 4679704,
+            "external": 2094764,
+            "arrayBuffers": 156409,
+            "rss": 46727168
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4435912,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 46923776
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4436560,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 47038464
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4444848,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 47071232
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 4630752,
+            "arrayBuffers": 144889
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 4653456,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 4476512,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 4496648,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 4516736,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 4536824,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 4557144,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 4578312,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 4598608,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 4618712,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 4638816,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 4658920,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 4679024,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 4699128,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 4719232,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 4739336,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 4759440,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 4779544,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 4800008,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 4820112,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 4840216,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 4860320,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 4880424,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 4900528,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 4920632,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 4940736,
+            "arrayBuffers": 173689
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 5349248,
+            "arrayBuffers": 174841
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 5369384,
+            "arrayBuffers": 175993
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 5389640,
+            "arrayBuffers": 177145
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 5409760,
+            "arrayBuffers": 178297
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 5429880,
+            "arrayBuffers": 179449
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 5450000,
+            "arrayBuffers": 180601
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 5481168,
+            "arrayBuffers": 181753
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 5498600,
+            "arrayBuffers": 182905
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 5516032,
+            "arrayBuffers": 184057
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 5161080,
+            "arrayBuffers": 185209
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 5178512,
+            "arrayBuffers": 186361
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 5195944,
+            "arrayBuffers": 187513
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 5213376,
+            "arrayBuffers": 188665
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 5230808,
+            "arrayBuffers": 189817
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 5248240,
+            "arrayBuffers": 190969
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 5265672,
+            "arrayBuffers": 192121
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 5283104,
+            "arrayBuffers": 193273
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 5300536,
+            "arrayBuffers": 194425
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 5318640,
+            "arrayBuffers": 195577
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 5336072,
+            "arrayBuffers": 196729
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 5353504,
+            "arrayBuffers": 197881
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 5370936,
+            "arrayBuffers": 199033
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 5388368,
+            "arrayBuffers": 200185
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 5405800,
+            "arrayBuffers": 201337
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 5423232,
+            "arrayBuffers": 202489
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 5440664,
+            "arrayBuffers": 203641
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 5458096,
+            "arrayBuffers": 204793
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 5475528,
+            "arrayBuffers": 205945
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 4510056,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 4527488,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 4544920,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 4562352,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 4579784,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 4597216,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 4614648,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 4632080,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 4649512,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 4666944,
+            "arrayBuffers": 156409
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:32:44.444Z",
+        "peak_measured": false,
+        "latency_measured": false
+      },
+      {
+        "profile": {
+          "terms": 3,
+          "hits_per_term": 3
+        },
+        "kind": "stream",
+        "input_hash": "64eeb242af7f0a7484bbba3a576a93a23270c8b95f573c932951fe626759672f",
+        "weights_hash": "6d8e534c7c0cee3bffe7e289b75869eca8bf08eed7b7a62fe4cdb7d1611a14cb",
+        "encoded_bytes": 4229,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "eb0ff61f9161c4466a58b8da9c670705eca45b28244459092db4bf1d68ef71a0"
+          },
+          {
+            "method": "bm25",
+            "sha256": "7280ecad3eabc74867ada95309ed298cf5ce532457a35b4e0fb40514b9f33d60"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350848,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 45006848
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 4378696,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45416448
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4410632,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 45645824
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 5056776,
+            "external": 2112044,
+            "arrayBuffers": 173689,
+            "rss": 47742976
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4471424,
+            "external": 2084396,
+            "arrayBuffers": 146041,
+            "rss": 48103424
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4484672,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 48398336
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4484696,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 48480256
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 5005168,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 4507704,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 4535272,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 4562696,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 4590040,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 4618640,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 4648288,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 4673296,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 4698592,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 4723696,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 4748800,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 4773904,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 4799008,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 4824112,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 4849216,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 4874320,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 4899424,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 4924528,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 4949992,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 4975096,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 5000200,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 5025304,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 5050408,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 5075512,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 5100616,
+            "arrayBuffers": 173689
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 5125720,
+            "arrayBuffers": 174841
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 5679936,
+            "arrayBuffers": 175993
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 5705072,
+            "arrayBuffers": 177145
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 5730328,
+            "arrayBuffers": 178297
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 5755448,
+            "arrayBuffers": 179449
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 5780568,
+            "arrayBuffers": 180601
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 5293240,
+            "arrayBuffers": 181753
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 5329408,
+            "arrayBuffers": 182905
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 5351840,
+            "arrayBuffers": 184057
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 5374272,
+            "arrayBuffers": 185209
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 5396704,
+            "arrayBuffers": 186361
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 5419136,
+            "arrayBuffers": 187513
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 5441568,
+            "arrayBuffers": 188665
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 5464000,
+            "arrayBuffers": 189817
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 5486432,
+            "arrayBuffers": 190969
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 5508864,
+            "arrayBuffers": 192121
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 4549232,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 4571664,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 4594096,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 4617200,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 4639632,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 4662064,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 4684496,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 4706928,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 4729360,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 4751920,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 4774352,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 4796784,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 4819216,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 4841648,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 4864080,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 4886512,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 4908944,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 4931376,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 4953808,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 4976240,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 4999152,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 5021584,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 5044016,
+            "arrayBuffers": 173689
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:32:44.488Z",
+        "peak_measured": false,
+        "latency_measured": false
+      },
+      {
+        "profile": {
+          "terms": 128,
+          "hits_per_term": 3
+        },
+        "kind": "eager",
+        "input_hash": "92639440d6893b8f30c8b9fa0465bc868067fad5f0d7292b7c122e84273bc660",
+        "weights_hash": "23ea18797c366320d826942f465b9222c92c185b1a068b3d8d329e080066bfae",
+        "encoded_bytes": 14114,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "88b71519fd45a381b6732c7a0390ed00ebab225cb02948698083d0addcad61e7"
+          },
+          {
+            "method": "bm25",
+            "sha256": "d336bd39c7d832847b99704f515b954c696824cdce12f9c33294f2907e9f0425"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350848,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 44793856
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 4464280,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45334528
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4537872,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45563904
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 5271496,
+            "external": 2090156,
+            "arrayBuffers": 151801,
+            "rss": 49266688
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4592344,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 49250304
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4592992,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 49283072
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4432592,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 49283072
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 4721496,
+            "arrayBuffers": 144889
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 4893664,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 5063464,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 5233336,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 5810560,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 5980360,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 4761440,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 4931168,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 5101184,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 5271000,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 5440816,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 4630816,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 4800632,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 4970472,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 5140320,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 5310136,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 5479960,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 4717872,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 4862576,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 5006936,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 5151312,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 5295656,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 5440040,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 5584384,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 4747888,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 4892232,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 5370456,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 5514872,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 5659368,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 5803728,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 5948088,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 4794968,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 4947360,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 5086008,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 5224688,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 5363336,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 5502024,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 5640672,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 4798944,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 4937632,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 5076280,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 5214928,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 5353576,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 5492248,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 5631568,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 4790736,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 4929400,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 5068048,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 5206712,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 5345360,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 5484024,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 5622672,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 4747784,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 4886432,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 5025096,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 5163744,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 5302392,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 5441072,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 5579720,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 4704128,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 4842776,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 4981424,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 5120072,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 5258736,
+            "arrayBuffers": 151801
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:32:44.534Z",
+        "peak_measured": false,
+        "latency_measured": false
+      },
+      {
+        "profile": {
+          "terms": 128,
+          "hits_per_term": 3
+        },
+        "kind": "stream",
+        "input_hash": "92639440d6893b8f30c8b9fa0465bc868067fad5f0d7292b7c122e84273bc660",
+        "weights_hash": "23ea18797c366320d826942f465b9222c92c185b1a068b3d8d329e080066bfae",
+        "encoded_bytes": 14114,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "88b71519fd45a381b6732c7a0390ed00ebab225cb02948698083d0addcad61e7"
+          },
+          {
+            "method": "bm25",
+            "sha256": "d336bd39c7d832847b99704f515b954c696824cdce12f9c33294f2907e9f0425"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350848,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 44810240
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 4464280,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 45350912
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4505608,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 46022656
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 5615592,
+            "external": 2089004,
+            "arrayBuffers": 150649,
+            "rss": 52494336
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4614360,
+            "external": 2084396,
+            "arrayBuffers": 146041,
+            "rss": 52707328
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 4615008,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 52723712
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4561968,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 52838400
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 4921160,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 5298888,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 4691424,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 5050872,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 5398064,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 4760744,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 5103296,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 5445456,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 4810192,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 5152600,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 5494888,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 4854784,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 5235608,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 5552488,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 4888048,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 5204928,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 5521776,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 4859024,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 5176256,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 5495352,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 4830152,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 5147168,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 5464048,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 4766464,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 5083344,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 5400208,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 4719136,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 5036016,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 5353056,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 5669984,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 5004192,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 5321072,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 5668400,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 5020584,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 5354176,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 4707680,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 5041272,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 5374856,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 4696456,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 5030072,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 5363680,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 4685408,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 5019024,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 5352624,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 5699464,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 5065864,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 5375440,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 5684976,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 5014872,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 5324408,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 5634072,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 4931704,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 5241264,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 5550816,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 4845824,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 5155384,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 5464920,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 4759872,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 5069432,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 5379000,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 5688672,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 4983728,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 5293296,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 5602832,
+            "arrayBuffers": 150649
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:32:44.583Z",
+        "peak_measured": false,
+        "latency_measured": false
+      },
+      {
+        "profile": {
+          "terms": 1500,
+          "hits_per_term": 144
+        },
+        "kind": "eager",
+        "input_hash": "5170da5053faf5bcbf9984bd5d800425513d6a6479b2ebeb3304053a83db2448",
+        "weights_hash": "6702f4dab1397b8f5aaaf46e1d915cd83b288911acfba64670ffcb36caee2ee1",
+        "encoded_bytes": 3627346,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "68ada1b94faf8b10f94e4ba8a308f27a09d9102dfcf5404627c3a4348b552bb8"
+          },
+          {
+            "method": "bm25",
+            "sha256": "8ad1194c090229b5f7d79c368e65e788d5fb373c287203e8fb115402b5504084"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350856,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 44924928
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 22228680,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 106020864
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 39773856,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 138854400
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 44582768,
+            "external": 2098220,
+            "arrayBuffers": 156409,
+            "rss": 140558336
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 39750224,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 140820480
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 39750872,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 140836864
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4438640,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 140869632
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 44938152,
+            "arrayBuffers": 144889
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 50097880,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 42567016,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 51745984,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 44184104,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 53363008,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 45799320,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 55002152,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 42155688,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 46050776,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 49989720,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 42382304,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 51485296,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 43845384,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 52948352,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 45308528,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 54411504,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 46771696,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 55875056,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 48235592,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 40596168,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 49699144,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 42059248,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 51162224,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 43522424,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 52625400,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 45001632,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 54104664,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 46497544,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 55600560,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 47993464,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 40353688,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 46251984,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 52134160,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 41339008,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 47221192,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 53103408,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 42280432,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 48162616,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 54044792,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 43184344,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 49066528,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 54948712,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 44088272,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 49971416,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 55853600,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 44993824,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 50876000,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 40016152,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 45898328,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 51780512,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 40952488,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 46835040,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 52717216,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 41856800,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 47739088,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 53621280,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 42760824,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 48643120,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 54525304,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 43664856,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 49547128,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 55429320,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 44568864,
+            "arrayBuffers": 156409
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:32:44.802Z",
+        "peak_measured": false,
+        "latency_measured": false
+      },
+      {
+        "profile": {
+          "terms": 1500,
+          "hits_per_term": 144
+        },
+        "kind": "stream",
+        "input_hash": "5170da5053faf5bcbf9984bd5d800425513d6a6479b2ebeb3304053a83db2448",
+        "weights_hash": "6702f4dab1397b8f5aaaf46e1d915cd83b288911acfba64670ffcb36caee2ee1",
+        "encoded_bytes": 3627346,
+        "arithmetic_digests": [
+          {
+            "method": "tfidf",
+            "sha256": "68ada1b94faf8b10f94e4ba8a308f27a09d9102dfcf5404627c3a4348b552bb8"
+          },
+          {
+            "method": "bm25",
+            "sha256": "8ad1194c090229b5f7d79c368e65e788d5fb373c287203e8fb115402b5504084"
+          }
+        ],
+        "calls": 64,
+        "full144_numeric_slots": 144,
+        "snapshots": [
+          {
+            "phase": "WARM_MODULE_BLANK",
+            "gc": true,
+            "heapUsed": 4350856,
+            "external": 2082052,
+            "arrayBuffers": 143737,
+            "rss": 44957696
+          },
+          {
+            "phase": "ENCODED_AND_MANUAL_WEIGHTS_RETAINED",
+            "gc": true,
+            "heapUsed": 22228680,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 106020864
+          },
+          {
+            "phase": "REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 22315984,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 115032064
+          },
+          {
+            "phase": "AFTER_FINITE_CALLS_NO_GC_NOT_PEAK",
+            "gc": false,
+            "heapUsed": 23949016,
+            "external": 2156972,
+            "arrayBuffers": 218617,
+            "rss": 116801536
+          },
+          {
+            "phase": "LAST_ARRAY_PLUS_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 22316256,
+            "external": 2084396,
+            "arrayBuffers": 146041,
+            "rss": 116785152
+          },
+          {
+            "phase": "ARRAY_RELEASED_REPRESENTATION_RETAINED",
+            "gc": true,
+            "heapUsed": 22316904,
+            "external": 2083244,
+            "arrayBuffers": 144889,
+            "rss": 116785152
+          },
+          {
+            "phase": "REPRESENTATION_AND_INPUT_RELEASED",
+            "gc": true,
+            "heapUsed": 4476736,
+            "external": 2082092,
+            "arrayBuffers": 143737,
+            "rss": 116801536
+          }
+        ],
+        "post_call_snapshots": [
+          {
+            "method": "tfidf",
+            "iteration": 0,
+            "heapUsed": 29995048,
+            "arrayBuffers": 146041
+          },
+          {
+            "method": "tfidf",
+            "iteration": 1,
+            "heapUsed": 25458680,
+            "arrayBuffers": 147193
+          },
+          {
+            "method": "tfidf",
+            "iteration": 2,
+            "heapUsed": 37661192,
+            "arrayBuffers": 148345
+          },
+          {
+            "method": "tfidf",
+            "iteration": 3,
+            "heapUsed": 33090160,
+            "arrayBuffers": 149497
+          },
+          {
+            "method": "tfidf",
+            "iteration": 4,
+            "heapUsed": 28552256,
+            "arrayBuffers": 150649
+          },
+          {
+            "method": "tfidf",
+            "iteration": 5,
+            "heapUsed": 24093920,
+            "arrayBuffers": 151801
+          },
+          {
+            "method": "tfidf",
+            "iteration": 6,
+            "heapUsed": 25720904,
+            "arrayBuffers": 152953
+          },
+          {
+            "method": "tfidf",
+            "iteration": 7,
+            "heapUsed": 27404112,
+            "arrayBuffers": 154105
+          },
+          {
+            "method": "tfidf",
+            "iteration": 8,
+            "heapUsed": 36312560,
+            "arrayBuffers": 155257
+          },
+          {
+            "method": "tfidf",
+            "iteration": 9,
+            "heapUsed": 28445392,
+            "arrayBuffers": 156409
+          },
+          {
+            "method": "tfidf",
+            "iteration": 10,
+            "heapUsed": 37321496,
+            "arrayBuffers": 157561
+          },
+          {
+            "method": "tfidf",
+            "iteration": 11,
+            "heapUsed": 29453584,
+            "arrayBuffers": 158713
+          },
+          {
+            "method": "tfidf",
+            "iteration": 12,
+            "heapUsed": 38329040,
+            "arrayBuffers": 159865
+          },
+          {
+            "method": "tfidf",
+            "iteration": 13,
+            "heapUsed": 30461072,
+            "arrayBuffers": 161017
+          },
+          {
+            "method": "tfidf",
+            "iteration": 14,
+            "heapUsed": 22594336,
+            "arrayBuffers": 162169
+          },
+          {
+            "method": "tfidf",
+            "iteration": 15,
+            "heapUsed": 31470232,
+            "arrayBuffers": 163321
+          },
+          {
+            "method": "tfidf",
+            "iteration": 16,
+            "heapUsed": 23603232,
+            "arrayBuffers": 164473
+          },
+          {
+            "method": "tfidf",
+            "iteration": 17,
+            "heapUsed": 32479024,
+            "arrayBuffers": 165625
+          },
+          {
+            "method": "tfidf",
+            "iteration": 18,
+            "heapUsed": 24612200,
+            "arrayBuffers": 166777
+          },
+          {
+            "method": "tfidf",
+            "iteration": 19,
+            "heapUsed": 33489248,
+            "arrayBuffers": 167929
+          },
+          {
+            "method": "tfidf",
+            "iteration": 20,
+            "heapUsed": 25622224,
+            "arrayBuffers": 169081
+          },
+          {
+            "method": "tfidf",
+            "iteration": 21,
+            "heapUsed": 34498272,
+            "arrayBuffers": 170233
+          },
+          {
+            "method": "tfidf",
+            "iteration": 22,
+            "heapUsed": 26631408,
+            "arrayBuffers": 171385
+          },
+          {
+            "method": "tfidf",
+            "iteration": 23,
+            "heapUsed": 35507080,
+            "arrayBuffers": 172537
+          },
+          {
+            "method": "tfidf",
+            "iteration": 24,
+            "heapUsed": 27639784,
+            "arrayBuffers": 173689
+          },
+          {
+            "method": "tfidf",
+            "iteration": 25,
+            "heapUsed": 36515328,
+            "arrayBuffers": 174841
+          },
+          {
+            "method": "tfidf",
+            "iteration": 26,
+            "heapUsed": 28665800,
+            "arrayBuffers": 175993
+          },
+          {
+            "method": "tfidf",
+            "iteration": 27,
+            "heapUsed": 37541752,
+            "arrayBuffers": 177145
+          },
+          {
+            "method": "tfidf",
+            "iteration": 28,
+            "heapUsed": 29674888,
+            "arrayBuffers": 178297
+          },
+          {
+            "method": "tfidf",
+            "iteration": 29,
+            "heapUsed": 38551064,
+            "arrayBuffers": 179449
+          },
+          {
+            "method": "tfidf",
+            "iteration": 30,
+            "heapUsed": 30683712,
+            "arrayBuffers": 180601
+          },
+          {
+            "method": "tfidf",
+            "iteration": 31,
+            "heapUsed": 22816760,
+            "arrayBuffers": 181753
+          },
+          {
+            "method": "bm25",
+            "iteration": 0,
+            "heapUsed": 31880840,
+            "arrayBuffers": 182905
+          },
+          {
+            "method": "bm25",
+            "iteration": 1,
+            "heapUsed": 24063400,
+            "arrayBuffers": 184057
+          },
+          {
+            "method": "bm25",
+            "iteration": 2,
+            "heapUsed": 32988784,
+            "arrayBuffers": 185209
+          },
+          {
+            "method": "bm25",
+            "iteration": 3,
+            "heapUsed": 25171032,
+            "arrayBuffers": 186361
+          },
+          {
+            "method": "bm25",
+            "iteration": 4,
+            "heapUsed": 34096400,
+            "arrayBuffers": 187513
+          },
+          {
+            "method": "bm25",
+            "iteration": 5,
+            "heapUsed": 26278296,
+            "arrayBuffers": 188665
+          },
+          {
+            "method": "bm25",
+            "iteration": 6,
+            "heapUsed": 35204416,
+            "arrayBuffers": 189817
+          },
+          {
+            "method": "bm25",
+            "iteration": 7,
+            "heapUsed": 27387320,
+            "arrayBuffers": 190969
+          },
+          {
+            "method": "bm25",
+            "iteration": 8,
+            "heapUsed": 36312352,
+            "arrayBuffers": 192121
+          },
+          {
+            "method": "bm25",
+            "iteration": 9,
+            "heapUsed": 28494528,
+            "arrayBuffers": 193273
+          },
+          {
+            "method": "bm25",
+            "iteration": 10,
+            "heapUsed": 37419952,
+            "arrayBuffers": 194425
+          },
+          {
+            "method": "bm25",
+            "iteration": 11,
+            "heapUsed": 29602176,
+            "arrayBuffers": 195577
+          },
+          {
+            "method": "bm25",
+            "iteration": 12,
+            "heapUsed": 38529560,
+            "arrayBuffers": 196729
+          },
+          {
+            "method": "bm25",
+            "iteration": 13,
+            "heapUsed": 30711456,
+            "arrayBuffers": 197881
+          },
+          {
+            "method": "bm25",
+            "iteration": 14,
+            "heapUsed": 22893640,
+            "arrayBuffers": 199033
+          },
+          {
+            "method": "bm25",
+            "iteration": 15,
+            "heapUsed": 31818768,
+            "arrayBuffers": 200185
+          },
+          {
+            "method": "bm25",
+            "iteration": 16,
+            "heapUsed": 24000656,
+            "arrayBuffers": 201337
+          },
+          {
+            "method": "bm25",
+            "iteration": 17,
+            "heapUsed": 32925992,
+            "arrayBuffers": 202489
+          },
+          {
+            "method": "bm25",
+            "iteration": 18,
+            "heapUsed": 25107864,
+            "arrayBuffers": 203641
+          },
+          {
+            "method": "bm25",
+            "iteration": 19,
+            "heapUsed": 34033224,
+            "arrayBuffers": 204793
+          },
+          {
+            "method": "bm25",
+            "iteration": 20,
+            "heapUsed": 26215528,
+            "arrayBuffers": 205945
+          },
+          {
+            "method": "bm25",
+            "iteration": 21,
+            "heapUsed": 35140520,
+            "arrayBuffers": 207097
+          },
+          {
+            "method": "bm25",
+            "iteration": 22,
+            "heapUsed": 27322344,
+            "arrayBuffers": 208249
+          },
+          {
+            "method": "bm25",
+            "iteration": 23,
+            "heapUsed": 36247800,
+            "arrayBuffers": 209401
+          },
+          {
+            "method": "bm25",
+            "iteration": 24,
+            "heapUsed": 28431384,
+            "arrayBuffers": 210553
+          },
+          {
+            "method": "bm25",
+            "iteration": 25,
+            "heapUsed": 37356456,
+            "arrayBuffers": 211705
+          },
+          {
+            "method": "bm25",
+            "iteration": 26,
+            "heapUsed": 29538328,
+            "arrayBuffers": 212857
+          },
+          {
+            "method": "bm25",
+            "iteration": 27,
+            "heapUsed": 38463328,
+            "arrayBuffers": 214009
+          },
+          {
+            "method": "bm25",
+            "iteration": 28,
+            "heapUsed": 30645256,
+            "arrayBuffers": 215161
+          },
+          {
+            "method": "bm25",
+            "iteration": 29,
+            "heapUsed": 22827792,
+            "arrayBuffers": 216313
+          },
+          {
+            "method": "bm25",
+            "iteration": 30,
+            "heapUsed": 31753224,
+            "arrayBuffers": 217465
+          },
+          {
+            "method": "bm25",
+            "iteration": 31,
+            "heapUsed": 23935064,
+            "arrayBuffers": 218617
+          }
+        ],
+        "node": "v26.8.2",
+        "v8": "14.6.202.34-node.28",
+        "platform": "darwin",
+        "arch": "arm64",
+        "measurement_time_iso": "2026-10-04T02:32:45.737Z",
+        "peak_measured": false,
+        "latency_measured": false
+      }
+    ],
+    "failures": [],
+    "verdict": "FINITE_SYNTHETIC_COMPONENT_OBSERVATIONS_ONLY",
+    "source_pins": [
+      {
+        "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+        "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0"
+      },
+      {
+        "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+        "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318"
+      },
+      {
+        "path": "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+        "sha256": "edbb1ee66f7b834227907a9741791915f1c19cd2f9d4f3900446c3241153c611"
+      },
+      {
+        "path": "packages/zero_model_refoundation/a1.mjs",
+        "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203"
+      }
+    ],
+    "peak_measured": false,
+    "latency_measured": false,
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "allowance": null,
+    "stable_allocations": 0,
+    "router_calls": 0,
+    "predictions": 0,
+    "fitting": 0,
+    "new_samples": 0,
+    "independent_quota_credit": 0,
+    "paid_calls": 0,
+    "new_permissions": 0,
+    "consumed_as_test_reads": 0,
+    "final_blind_execution": 0,
+    "stop_rule": "Six finite observations or INCONCLUSIVE; no automatic retry/unchanged replay. Sampled post-call memory is not true peak; one pair per profile has no interval or consumer-device certification. Oversized stress is not eligible index."
+  },
+  "original_raw_receipt_sha256": {
+    "STREAMING_ALLOCATION_INITIAL_RESULT.json": "b2ed4863efd1703b0aa962a8ab4f01b3ff985a1e186e7ad04f1e49a5e4465402",
+    "STREAMING_ALLOCATION_FINAL_RESULT.json": "33d71e2f7be4244dab5a83494131f554a85a676497d4ae7620f61534a2a146d2"
+  },
+  "public_receipt_normalization": "source pin/error path roots only; all numeric observations, identities, measurement times, registered=false and failure facts preserved; original raw hashes are not hashes of normalized embedded JSON",
+  "initial_harness_utf8": "/** Unregistered synthetic numeric allocation preparation. Run only after dependency integration. */\nimport {spawnSync} from 'node:child_process';\nimport {readFileSync,writeFileSync} from 'node:fs';\nimport {createHash} from 'node:crypto';\nimport {resolve} from 'node:path';\nimport {pathToFileURL} from 'node:url';\nconst profiles=[{terms:3,hits_per_term:3},{terms:128,hits_per_term:3},{terms:1500,hits_per_term:144}];\nconst child=String.raw`\nimport {createLosslessPostingView} from '__VIEW__';\nimport {unpackA1V04} from '__CODEC__';\nimport {accumulateSyntheticWeights} from '__ACCUMULATOR__';\nimport {setImmediate as drain} from 'node:timers/promises';\nimport {createHash} from 'node:crypto';\nconst p=JSON.parse(process.argv[1]),kind=process.argv[2];\nif(typeof global.gc!=='function'||!['eager','stream'].includes(kind))throw Error('explicit diagnostic process required');\nconst freeze=x=>{if(x&&typeof x==='object'){Object.values(x).forEach(freeze);Object.freeze(x);}return x;};\nconst held={encoded:null,representation:null,table:null,weights:null,last:null},snapshots=[];\nasync function sample(phase,gc=true){if(gc){await drain();global.gc();global.gc();}const m=process.memoryUsage();snapshots.push({phase,gc,heapUsed:m.heapUsed,external:m.external,arrayBuffers:m.arrayBuffers,rss:m.rss});}\nfunction fixture(){return freeze({schema:'ZMR-A1-V04-INT16-DEV-1',evidence_class:'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE',catalog_sha256:'0'.repeat(64),train_sha256:'1'.repeat(64),mode:'char',max_features:1500,topic_ids:Array.from({length:144},(_,i)=>'SYNTHETIC_OFFSET_'+i),topic_lengths:Array(144).fill(10),average_length:10,tfidf_scale:.125,bm25_scale:.25,postings:Array.from({length:p.terms},(_,n)=>['SYNTHETIC_TERM_'+n,1+n/2000,Array.from({length:p.hits_per_term},(_,j)=>[p.hits_per_term===3?[0,72,143][j]:j,(n*97+j*31)%32768,(n*131+j*29+1)%32768])])});}\nfunction eager(weights,method){const values=new Float64Array(144);let squared=0;for(const[t,w]of weights){const hits=held.table.get(t);if(!hits)continue;squared+=w*w;for(const[i,a,b]of hits)values[i]+=method==='tfidf'?w*a:b;}if(method==='tfidf')for(let i=0;i<144;i++)values[i]=held.representation.topic_norms[i]&&squared?values[i]/(held.representation.topic_norms[i]*Math.sqrt(squared)):0;return values;}\nawait sample('WARM_MODULE_BLANK');held.encoded=fixture();held.weights=freeze(Array.from({length:p.terms},(_,i)=>['SYNTHETIC_TERM_'+(p.terms-i-1),1+(i%7)/10]));\nconst encoded_bytes=Buffer.byteLength(JSON.stringify(held.encoded)),input_hash=createHash('sha256').update(JSON.stringify(held.encoded)).digest('hex'),weights_hash=createHash('sha256').update(JSON.stringify(held.weights)).digest('hex');\nawait sample('ENCODED_AND_MANUAL_WEIGHTS_RETAINED');\nheld.representation=kind==='stream'?createLosslessPostingView(held.encoded):unpackA1V04(held.encoded);\nif(kind==='eager')held.table=new Map(held.representation.postings.map(([term,idf,hits])=>[term,hits]));\nawait sample('REPRESENTATION_RETAINED');const arithmetic_digests=[],post_call_snapshots=[];\nfor(const method of ['tfidf','bm25']){for(let i=0;i<32;i++){held.last=kind==='stream'?accumulateSyntheticWeights(held.representation,held.weights,method).values:eager(held.weights,method);if(held.last.length!==144||Array.from(held.last).some(v=>!Number.isFinite(v)))throw Error('finite144 numeric slots required');const m=process.memoryUsage();post_call_snapshots.push({method,iteration:i,heapUsed:m.heapUsed,arrayBuffers:m.arrayBuffers});}arithmetic_digests.push({method,sha256:createHash('sha256').update(JSON.stringify(Array.from(held.last))).digest('hex')});}\nawait sample('AFTER_FINITE_CALLS_NO_GC_NOT_PEAK',false);await sample('LAST_ARRAY_PLUS_REPRESENTATION_RETAINED');held.last=null;await sample('ARRAY_RELEASED_REPRESENTATION_RETAINED');held.representation=null;held.table=null;held.weights=null;held.encoded=null;await sample('REPRESENTATION_AND_INPUT_RELEASED');\nconsole.log(JSON.stringify({profile:p,kind,input_hash,weights_hash,encoded_bytes,arithmetic_digests,calls:64,full144_numeric_slots:144,snapshots,post_call_snapshots,node:process.version,v8:process.versions.v8,platform:process.platform,arch:process.arch,measurement_time_iso:new Date().toISOString(),peak_measured:false,latency_measured:false}));\n`;\nconst root=resolve(process.argv[2]||'.'),output=resolve(process.argv[3]||'streaming_allocation_preparation_result.json');\nconst sourcePaths=['lossless_posting_view.mjs','a1_v04_compact.mjs','streaming_numeric_accumulator.mjs','a1.mjs'].map(n=>resolve(root,'packages/zero_model_refoundation/'+n));\nconst source=child.replace('__VIEW__',pathToFileURL(sourcePaths[0]).href).replace('__CODEC__',pathToFileURL(sourcePaths[1]).href).replace('__ACCUMULATOR__',pathToFileURL(sourcePaths[2]).href);\nconst observations=[],failures=[];\ndiagnostic: for(const profile of profiles)for(const kind of ['eager','stream']){\n const env={...process.env};delete env.NODE_TEST_CONTEXT;delete env.NODE_COMPILE_CACHE;\n const run=spawnSync(process.execPath,['--expose-gc','--input-type=module','-e',source,JSON.stringify(profile),kind],{env,encoding:'utf8',timeout:15000,maxBuffer:65536});\n if(run.error||run.status!==0){failures.push({profile,kind,error:String(run.error||run.stderr),status:run.status,signal:run.signal});break diagnostic;}\n const record=JSON.parse(run.stdout.trim());if(record.calls!==64||record.full144_numeric_slots!==144||record.snapshots.length!==7||record.post_call_snapshots.length!==64)throw Error('incomplete diagnostic observation');observations.push(record);\n}\nfor(let i=0;i+1<observations.length;i+=2){const a=observations[i],b=observations[i+1];if(a.input_hash!==b.input_hash||a.weights_hash!==b.weights_hash||JSON.stringify(a.arithmetic_digests)!==JSON.stringify(b.arithmetic_digests))failures.push({profile:a.profile,kind:'PAIR_ARITHMETIC_OR_INPUT_MISMATCH'});}\nconst result={schema:'ZMR-STREAMING-ALLOCATION-UNREGISTERED-PREPARATION-1',registered:false,evidence_class:'NON_INDEPENDENT_DEVELOPMENT_EVIDENCE',profiles,observations,failures,verdict:failures.length||observations.length!==6?'INCONCLUSIVE':'FINITE_SYNTHETIC_COMPONENT_OBSERVATIONS_ONLY',source_pins:sourcePaths.map(path=>({path,sha256:createHash('sha256').update(readFileSync(path)).digest('hex')})),peak_measured:false,latency_measured:false,capability_verdict:'UNTESTED',resource_verdict:'NOT_QUALIFIED',allowance:null,stable_allocations:0,router_calls:0,predictions:0,fitting:0,new_samples:0,independent_quota_credit:0,paid_calls:0,new_permissions:0,consumed_as_test_reads:0,final_blind_execution:0,stop_rule:'Six finite observations or INCONCLUSIVE; no automatic retry/unchanged replay. Sampled post-call memory is not true peak; one pair per profile has no interval or consumer-device certification. Oversized stress is not eligible index.'};\nwriteFileSync(output,JSON.stringify(result,null,2)+'\\n');console.log(JSON.stringify({output,observations:observations.length,failures:failures.length,verdict:result.verdict,capability:'UNTESTED',resource:'NOT_QUALIFIED'}));\n",
+  "initial_harness_sha256": "1b7e519d702ae5341555a13315bb07344371e1abd81ed44040ea66a5b0f73455",
+  "code_pins": [
+    {
+      "path": ".github/workflows/zmr-v1.yml",
+      "sha256": "182b90a7d747b6568c3cc9c3190136e561a4f9808ba46dc4e8dc373a30ad3398",
+      "bytes": 152851
+    },
+    {
+      "path": "packages/zero_model_refoundation/streaming_allocation_diagnostic.mjs",
+      "sha256": "af7a6fa9d7ab5801258111c52d2ea68c015c561561190cc095f7b58aec02f035",
+      "bytes": 7016
+    },
+    {
+      "path": "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+      "sha256": "edbb1ee66f7b834227907a9741791915f1c19cd2f9d4f3900446c3241153c611",
+      "bytes": 2526
+    },
+    {
+      "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0",
+      "bytes": 3812
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+      "bytes": 3042
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+      "bytes": 6892
+    }
+  ],
+  "total_child_processes_started": 9,
+  "initial_child_processes_started": 3,
+  "final_child_processes_started": 6,
+  "engineering_fixture_repairs": 1,
+  "repair": "Zero-pad all synthetic term and manual-weight suffixes to satisfy existing strict lexical order; changed all profile input/weight hashes. No schema relaxation or algorithm change. Original fixture failure retained; no unchanged input replay",
+  "methodological_lifecycle_repairs": 0,
+  "original_measurements_reexecuted_during_registration": 0,
+  "final_numeric_pairs_exact": 3,
+  "formulas": [
+    "tfidf",
+    "bm25"
+  ],
+  "finite_calls_per_formula_child": 32,
+  "peak_measured": false,
+  "latency_measured": false,
+  "consumer_device_resource_pass": false,
+  "largest_synthetic_encoded_bytes": 3627346,
+  "largest_structure_within_index_budget": false,
+  "small_representation_release_buffer_inconclusive": true,
+  "semantic_judgment_certified": false,
+  "stable_candidate_constructed": false,
+  "actual_candidate_index_rebuilt": false,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "allowance": null,
+  "saturation_ceiling": false,
+  "integration_verdict": "PENDING_EXACT_HEAD_ACTUAL_MAIN_CI",
+  "engineering_status": "FINITE_RECEIPTS_ISOLATED_GUARD_HASH_SYNTAX_PASS_PENDING_CI",
+  "stop_rule": "Finite observed components and fixture failure retained. No repeat measurement, true-peak/latency/total-gain claim, new samples, stable candidate construction or capability/resource gate. Complete exact-head/actual-main integration then stop this engineering item; if no new ledger or independent accepted evidence enables another concrete track, quiet checkpoint without repeated state rebuild.",
+  "stable_allocations": 0,
+  "semantic_candidate_repairs_charged": 0,
+  "allowance_refunds": 0,
+  "new_semantic_samples": 0,
+  "independent_quota_credit": 0,
+  "fitting": 0,
+  "router_calls": 0,
+  "predictions": 0,
+  "consumed_as_test_reads": 0,
+  "final_blind_execution": 0,
+  "new_paid_calls": 0,
+  "new_permissions": 0,
+  "workflow_verification": {
+    "inline_workflow_syntax": "PASS_NOT_EXECUTED",
+    "changed_ESM_syntax": "ONE_HARNESS_AND_EMBEDDED_CHILD_PASS_NOT_LINKED_OR_EVALUATED",
+    "materialization": "PASS_SEVEN_FILE_CLOSURE",
+    "guard": "PASS_SIX_CURRENT_CODE_HASHES_ZERO_SEMANTIC_OPERATIONS",
+    "read_paths": [
+      "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_ALLOCATION_DIAGNOSTIC_RESULT.json",
+      ".github/workflows/zmr-v1.yml",
+      "packages/zero_model_refoundation/streaming_allocation_diagnostic.mjs",
+      "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+      "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "packages/zero_model_refoundation/a1.mjs"
+    ],
+    "previous_unit_count": 140,
+    "unit_count": 140,
+    "previous_unit_order": "BYTE_IDENTICAL_ALL140_ARGUMENTS_NO_MEASUREMENT_EXECUTION",
+    "forecast_lane_ms": [
+      176165,
+      176164,
+      176164,
+      176267,
+      176265,
+      176266
+    ],
+    "forecast_not_actual_resource_or_stability_pass": true,
+    "full_workflow_executed": false,
+    "historical_evaluation_blocks_executed": false,
+    "full_historical_local_suite": false,
+    "actual_network_calls": 0,
+    "action_script_utf8_bytes": 125130,
+    "static_action_script_bound_bytes": 126000,
+    "resolved_materialized_paths_order": "BYTE_VALUE_IDENTICAL_ALL521",
+    "resolved_docs": "BYTE_VALUE_IDENTICAL_ALL268",
+    "measurement_children_executed": 0,
+    "tampered_resource_phase_pair_rejected": 3
+  },
+  "ci_packaging_repair": {
+    "failed_run": 37182463213,
+    "attempt": 1,
+    "head": "99df735eb53ed8f8c3c81d0770c060d759d34937",
+    "failed_jobs": [
+      111377615060,
+      111377615278,
+      111377615286
+    ],
+    "failure": "ACTION_PROCESS_START_ARGUMENT_LIST_TOO_LONG_BEFORE_SCRIPT_OR_UNITS",
+    "completed_units": 0,
+    "original_inline_utf8_bytes": 132144,
+    "repaired_inline_utf8_bytes": 125130,
+    "registration_size_bound_bytes": 126000,
+    "explicit_doc_literal_references": 75,
+    "resolution_order_required": "EXACT_BYTE_VALUE_EQUALITY_TO_ORIGINAL_MATERIALIZED_PATH_LIST",
+    "transport_segments_unchanged": true,
+    "all140_unit_arguments_unchanged": true,
+    "measurements_reexecuted": 0,
+    "semantic_budget_charge": 0,
+    "refund": 0,
+    "unchanged_head_ci_rerun": false,
+    "mechanism": "Same explicit docs array indexed in materialization list instead of duplicated full path literals; leading source indentation outside fixed transport extraction segments compacted. No multiline template or escaped line continuation in script. No assertions or file identities removed.",
+    "safe_engineering_log_pins": [
+      {
+        "job_id": 111377615060,
+        "utf8_bytes": 136206,
+        "sha256": "1fe3ebb768c261cfb16b9a5b7fecbf752387648f0cda67e93f8f1314fb861abc",
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      },
+      {
+        "job_id": 111377615278,
+        "utf8_bytes": 136206,
+        "sha256": "dc8252f30929e5a1267aecc2651373a49061e41792812585c808d335a0fa33b5",
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      },
+      {
+        "job_id": 111377615286,
+        "utf8_bytes": 136201,
+        "sha256": "e56b6ab0d02f3f49e0827dd3c0bc46284852ac86d72b34db2fc9c1a5293e884d",
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      }
+    ]
+  }
+}
