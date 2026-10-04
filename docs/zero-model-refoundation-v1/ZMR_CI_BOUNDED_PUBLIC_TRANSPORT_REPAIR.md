@@ -1,0 +1,32 @@
+# ZMR CI — bounded public transport repair
+
+## Failure and critical path
+PR258 exact head a617ed36ea5b2823a58adf2fbf575a92d9a43299 passed Semantic37154954017/ZMR37154954058 attempt1. Its actual main1bd86b613d8d959b94044a7adbc788be4dc89d38 has matching owned bytes/tree21c22b39dda2d691bcf7c986ce9212746b586d7e, but ZMR37155918962 failed attempt1. Semantic37155918980 SUCCESS does not replace full integration.
+
+Two successful shards have93 unique unit-END records, all code0/signalnull; third shard111299144313 failed in allowlisted public read materialization with TimeoutError after about30 seconds, unit step skipped. The original log has no specific request/ref/path instrumentation, so the exact transport request is UNKNOWN; do not invent a culprit or a139-unit PASS. Preserve the original failure and all93 END records plus hashes of the three exact public engineering logs in RESULT. Successful shard setup observations33083ms/13767ms and695 verified raw blobs each are engineering context, not device resources or future timing guarantees.
+
+The unique priority is this ordinary CI repair and exact-head/actual-main integration. Numeric accumulator registration remains dependent and unpublished; original bounded preparation remains intact, with no unchanged preparation replay. Historical stable allowance null/incomplete/unreconciled still freezes stable comparison. No new original historical ledger evidence; no reset, refund, retired alias or unchanged audit rerun.
+
+## Bounded mechanism
+Use the same immutable public tree or allowlisted public raw URL, same credential omission/redirect refusal and all existing mode/path/length/digest checks. Per job: one shared transient retry token across tree and blob reads, at most two attempts for one request,5 seconds per attempt capped by a35-second shared request deadline. No sleep, external account, token fallback or unchanged-head CI rerun. Concurrent prefetch stays four workers, drains active workers and stops queued reads on terminal failure.
+
+Retry only timed-out/aborted transport, named transient fetch-network causes andHTTP500/502/503/504. HTTP401/403/404/429, redirects/certificate/unidentified causes, malformed/truncated/duplicate tree data, wrong bytes/length/digest and invalid allowlist/path/mode stay immediate failure. Partial body chunks are discarded; bytes enter cache only after exact digest/length checks. A successful retry still runs every assertion/unit; no fabricated success or cached test outcome. Diagnostic events expose only the allowed public request label/attempt/error/remaining budget, not semantic row content.
+
+Keep139 unit arguments/order unchanged, three serial5-minute jobs, maxparallel1/two unit workers,40-second setup reserve and260000ms forecast ceiling. The request deadline is an engineering fail-fast bound inside the existing schedule, not a consumer resource-budget adjustment or proof of CI stability. Both previous successful setup observations fit that reserve; mocks and forecasts cannot establish future network availability.
+
+## Finite proof and preserved local failure
+Initial targeted reader/prefetch invocation11 PASS/1 FAIL/0 SKIP72.197917ms. The new test fixture supplied non-JSON bytes while expecting a tree-schema assertion; actual SyntaxError was correctly terminal. Fix the fake response to valid JSON with invalid tree shape; preserve the fixture failure, no semantic charge/refund. Corrected changed reader8 PASS/0 FAIL/0 SKIP51.764ms. Four-file isolated reader/prefetch closure12 PASS/0 FAIL/0 SKIP52.971875ms. No network, actual timeout wait, historical suite, diagnostic measurement or Router execution.
+
+Finite checks cover exact immutable URL/no credentials/digest cache/defensive copy; allowlist/traversal/symlink/metadata denial before network; HTTP/integrity/schema terminal errors; timeout/body recovery and partial disposal; shared metadata/blob and concurrent retry cap; per-attempt remaining time, expired deadline and exhausted attempt limits; named network causes only; existing prefetch scope validation/unique blob overlap/terminal drain/serial scheduling. Stop after current source/guard/syntax/materialization/139-unit identity checks and one necessary new repair-head CI plus actual-main verification. Do not broaden local testing or repeat unchanged preparation.
+
+## Scientific boundaries
+NON_INDEPENDENT_DEVELOPMENT_EVIDENCE, capabilityUNTESTED/resourceNOT_QUALIFIED/no ceiling. Labels41/globalroles78, nine boundary HOLDs/32 unaccepted writer preferences, all original role/frame/source records and source12 unregistered/unfrozen remain; tests do not accept semantic labels or roles. Independent curator/AS qualification remains frozen, other allowed development work can continue.
+
+New semantic samples/fitting/Router predictions/stable allocations/semantic repair charges/refunds/independent quota credit/measurements/consumed AS-TEST reads/final blind/paid calls/permissions all0. Actual capability comparison still needs reconciled historical allocation, accepted labels/roles/source/lineage, frozen full144 anchor/compiler/scorer/calibration, atomic isolated consumption, real independent curator/data/AS and safety/grouped uncertainty/consumer resources. Future sample batches require known gap, comparison/ablation/split, finite cap, true semantic acceptance and stop-to-validation; volume is not effect.
+
+Full144,95% assigned/global precision,70% coverage/macro/language floors,safety,1MiB index/2MiB router+index/32MiB incremental memory/20ms warm full144p95/100ms cold/local-first and zero neural/embedding/LLM/semanticAPI unchanged. No production or private-data access.
+
+## Integration state
+Current repair exact-head and actual-main checks remain pending. The original failed main is not certified. Final receipts belong to this repair PR comment/body, avoiding recursive receipt-only commits.
+
+Current workflow inline syntax constructed without execution; changed ESM test parsed without linking/evaluation. Explicit five-file reader/prefetch/result closure and changed-result guard/two current code hashes verified. All139 unit command arguments/order byte-identical. Isolated test extraction hashes for tree/raw/prefetch sources match the final workflow; other registration declarations/guard added after isolated proof have separate syntax/scope/hash verification. No claim that the entire earlier isolated workflow bytes equal final publication bytes; their hashes are preserved separately in RESULT. No additional network or unit replay.

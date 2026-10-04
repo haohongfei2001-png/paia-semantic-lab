@@ -1,0 +1,780 @@
+{
+  "schema": "ZMR-CI-BOUNDED-PUBLIC-TRANSPORT-REPAIR-1",
+  "batch_id": "ZMR-CI-BOUNDED-PUBLIC-TRANSPORT-REPAIR-20261004",
+  "expected_base_sha": "1bd86b613d8d959b94044a7adbc788be4dc89d38",
+  "source_main": "1bd86b613d8d959b94044a7adbc788be4dc89d38",
+  "source_tree": "21c22b39dda2d691bcf7c986ce9212746b586d7e",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "engineering_status": "TARGETED_AND_ISOLATED_FAKE_TRANSPORT_PASS_PENDING_CI",
+  "integration_verdict": "PENDING_EXACT_HEAD_ACTUAL_MAIN_CI",
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "remaining_allowance": null,
+  "semantic_judgment_certified": false,
+  "saturation_ceiling": false,
+  "preserved_failed_run": {
+    "run": 37155918962,
+    "attempt": 1,
+    "head": "1bd86b613d8d959b94044a7adbc788be4dc89d38",
+    "conclusion": "FAILURE_NOT_INTEGRATION_PASS",
+    "failing_job": 111299144313,
+    "failing_step": "actions/github-script public allowlisted materialization; unit step skipped",
+    "error": "TimeoutError: The operation was aborted due to timeout",
+    "phase": "UNKNOWN_NO_REQUEST_OR_PATH_DIAGNOSTIC",
+    "request_or_blob_identified": false,
+    "elapsed_to_abort_ms": 30182,
+    "successful_shards": [
+      {
+        "id": 111299144509,
+        "units": 46,
+        "nonzero": 0,
+        "setup_ms": 33083,
+        "raw_fetches": 695,
+        "unique_blobs": 695,
+        "scope": "ENGINEERING_ONLY_NOT_CAPABILITY"
+      },
+      {
+        "id": 111299144527,
+        "units": 47,
+        "nonzero": 0,
+        "setup_ms": 13767,
+        "raw_fetches": 695,
+        "unique_blobs": 695,
+        "scope": "ENGINEERING_ONLY_NOT_CAPABILITY"
+      }
+    ],
+    "observed_units": [
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion10.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 82648.79637
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion11.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 102894.382763
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_expansion8_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 32764.643591
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion4.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 29789.340973
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_expansion4_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 21740.440862000003
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_part8_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 13052.22893100002
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 17995.175904000003
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_part6_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 8023.083079000004
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_part7.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 9859.51566199999
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_part6.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 7118.428588999988
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_ordinary_dev_v04.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 6971.202286000014
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_source_deficits.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 3073.194875999994
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_mechanism_audit.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 1867.5691290000104
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_compile_plan.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 1355.2297820000094
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 1433.3770990000048
+      },
+      {
+        "path": "packages/zero_model_refoundation/train_older_role_proposals.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 521.0123420000018
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_train_v04_slice5.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 954.3656020000053
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_train_v04_slice4.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 852.8164340000076
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_train_v04_slice3.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 831.1659799999907
+      },
+      {
+        "path": "packages/zero_model_refoundation/a3.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 710.3646579999768
+      },
+      {
+        "path": "packages/zero_model_refoundation/a1_balanced_r1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 706.9813429999922
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_cal_rest_part3.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 475.6267919999955
+      },
+      {
+        "path": "packages/zero_model_refoundation/a6_complement_r1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 416.80210299999453
+      },
+      {
+        "path": "packages/zero_model_refoundation/h1_recall_safe.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 512.6939549999952
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_train_v04_slice1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 449.9715290000022
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_cal_rest_part2.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 428.7197879999876
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a5_challenge.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 347.7587899999926
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_safety_rest_cal.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 421.7839340000064
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a6_complement_challenge.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 388.07334699999774
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a5_repair_dev.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 399.8354570000083
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_safety_seed.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 301.41578700000537
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_cal_slice1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 384.2104929999914
+      },
+      {
+        "path": "packages/zero_model_refoundation/a1_v04_compact.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 233.3877039999934
+      },
+      {
+        "path": "packages/zero_model_refoundation/a7_case_memory.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 275.86309999998775
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_slice5.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 257.5335480000067
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_safety_v02.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 197.75603400002
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_plan.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 163.54467000000295
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_safety_v03.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 194.48423200001707
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_slice3.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 181.13874799999758
+      },
+      {
+        "path": "packages/zero_model_refoundation/a5_evidence_chart_r1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 140.37673599997652
+      },
+      {
+        "path": "packages/zero_model_refoundation/pinned_public_reader.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 146.89592700000503
+      },
+      {
+        "path": "packages/zero_model_refoundation/contracts.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 128.59460599999875
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_extension.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 123.83357600000454
+      },
+      {
+        "path": "packages/zero_model_refoundation/c1_r1_context_multi.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 106.53936300001806
+      },
+      {
+        "path": "packages/zero_model_refoundation/pinned_public_prefetch.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 96.26525100000435
+      },
+      {
+        "path": "packages/zero_model_refoundation/c1_context_multi.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 101.48261700000148
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion9.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 64928.788641
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_expansion11_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 67282.15276499999
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion5.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 34708.515629
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion6.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 39643.450818000005
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_expansion3.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 25779.14197299999
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_expansion5_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 24534.75838700001
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_expansion1_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 15632.908366000003
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_expansion3_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 19840.2007
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_dev_v04_safety_seed.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 12188.417762999976
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_part7_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 9882.153889000008
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_part5.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 5199.38025799999
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_part5_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 6041.0536080000165
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_part2_review.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 2113.0115039999946
+      },
+      {
+        "path": "packages/zero_model_refoundation/mechanism_matrix_train_part3.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 2578.8473330000124
+      },
+      {
+        "path": "packages/zero_model_refoundation/train_v04_compile.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 1608.4871039999998
+      },
+      {
+        "path": "packages/zero_model_refoundation/train_hold_dispositions.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 1606.9100990000006
+      },
+      {
+        "path": "packages/zero_model_refoundation/allocation_lifecycle_receipt.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 117.26930399998673
+      },
+      {
+        "path": "packages/zero_model_refoundation/train_older_role_dispositions.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 869.8826969999936
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_source_audit.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 1088.7739189999993
+      },
+      {
+        "path": "packages/zero_model_refoundation/ci_test_shards.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 730.458501999994
+      },
+      {
+        "path": "packages/zero_model_refoundation/a4_pair_positive.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 591.9148489999934
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_h1_recall_dev.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 534.1896030000062
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a1_balanced_dev.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 518.3522780000058
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_train_v04_slice2.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 545.9149310000066
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a6_r2_challenge.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 410.27239699999336
+      },
+      {
+        "path": "packages/zero_model_refoundation/a6_complement_r2.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 470.4956559999846
+      },
+      {
+        "path": "packages/zero_model_refoundation/a6_complement_scope.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 444.1270770000119
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a5_r1_challenge.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 419.31974599999376
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_safety_rest_tune.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 393.92107700000633
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a7_dev.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 351.78450099998736
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a4_challenge.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 330.53063799999654
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a4_role_dev.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 351.7471690000093
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_challenge_v04.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 328.13220699998783
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_a4_train.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 274.80528299999423
+      },
+      {
+        "path": "packages/zero_model_refoundation/ci_test_scheduler.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 899.8148199999996
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_slice4.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 240.18313599997782
+      },
+      {
+        "path": "packages/zero_model_refoundation/provisional_safety_v04.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 258.6257329999935
+      },
+      {
+        "path": "packages/zero_model_refoundation/later_diagnostic_audit.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 228.0799030000053
+      },
+      {
+        "path": "packages/zero_model_refoundation/a4_boundary_graph.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 195.91230399999768
+      },
+      {
+        "path": "packages/zero_model_refoundation/a5_evidence_chart.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 164.212383999984
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_slice2.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 166.18152699997881
+      },
+      {
+        "path": "packages/zero_model_refoundation/historical_registration_join.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 166.97492099998635
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_journal.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 134.23948499999824
+      },
+      {
+        "path": "packages/zero_model_refoundation/a6.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 115.15209099999629
+      },
+      {
+        "path": "packages/zero_model_refoundation/development_review_receipt.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 117.23666699999012
+      },
+      {
+        "path": "packages/zero_model_refoundation/a5_composition_r1.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 113.9417989999929
+      },
+      {
+        "path": "packages/zero_model_refoundation/a5_composition.test.mjs",
+        "code": 0,
+        "signal": null,
+        "duration_ms": 111.22290500000236
+      }
+    ],
+    "failed_shard_units": 0,
+    "scheduled_units": 139,
+    "all_units_executed": false,
+    "unchanged_head_rerun": false,
+    "capability_verdict": "UNTESTED",
+    "resource_verdict": "NOT_QUALIFIED",
+    "safe_engineering_log_pins": [
+      {
+        "job_id": 111299144313,
+        "raw_log_sha256": "e65228cb868ab13aba42f87e524db4ec0fb1cbc6745e876aca7afdcce0f0314c",
+        "utf8_bytes": 127165,
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      },
+      {
+        "job_id": 111299144509,
+        "raw_log_sha256": "77de42a2b24c2d42bb5e55013074c2068abfa0d56787fd17f3ca982afe7e6c6c",
+        "utf8_bytes": 326486,
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      },
+      {
+        "job_id": 111299144527,
+        "raw_log_sha256": "e7492e32520171db930613578df90cb5fcfe1aeb1f55920039590268acf6ba7b",
+        "utf8_bytes": 326440,
+        "scope": "EXACT_PUBLIC_ZMR_ENGINEERING_JOB_ONLY"
+      }
+    ]
+  },
+  "initial_local_failure": {
+    "pass": 11,
+    "fail": 1,
+    "skip": 0,
+    "duration_ms": 72.197917,
+    "failure": "test fixture expected /tree metadata/ but fake metadata response was non-JSON bytes, yielding SyntaxError; transport did not retry it",
+    "scope": "reader and prefetch only",
+    "semantic_repairs": 0
+  },
+  "local_verification": {
+    "pass": 8,
+    "fail": 0,
+    "skip": 0,
+    "duration_ms": 51.764,
+    "scope": "changed exact workflow public reader factory and fake transport only",
+    "new_network_calls": 0
+  },
+  "isolated_verification": {
+    "files": 4,
+    "pass": 12,
+    "fail": 0,
+    "skip": 0,
+    "duration_ms": 52.971875,
+    "network_calls": 0,
+    "full_historical_suite": false
+  },
+  "shared_retry_tokens": 1,
+  "max_attempts_per_request": 2,
+  "request_deadline_ms": 35000,
+  "per_attempt_timeout_ms": 5000,
+  "timeout_minutes": 5,
+  "unit_workers": 2,
+  "max_parallel": 1,
+  "prefetch_workers": 4,
+  "setup_reserve_ms": 40000,
+  "forecast_ceiling_ms": 260000,
+  "unit_count": 139,
+  "unit_order_changed": false,
+  "unit_result_cache": false,
+  "authenticated_rest_calls": 0,
+  "token_fallback": false,
+  "redirects": "error",
+  "credentials": "omit",
+  "transport_request_scope": "same immutable public tree/ref or allowlisted raw blob URL only",
+  "retryable": [
+    "TimeoutError",
+    "AbortError",
+    "500",
+    "502",
+    "503",
+    "504",
+    "fetch failed with named transient ECONNRESET/ETIMEDOUT/EAI_AGAIN/UND_ERR_CONNECT_TIMEOUT/UND_ERR_SOCKET cause"
+  ],
+  "never_retry": [
+    "401",
+    "403",
+    "404",
+    "429",
+    "redirect error",
+    "certificate error",
+    "unidentified network cause",
+    "invalid schema/truncated tree/duplicate paths",
+    "length/digest mismatch",
+    "unallowlisted/traversal/symlink/invalid metadata"
+  ],
+  "stable_allocations": 0,
+  "semantic_candidate_repairs_charged": 0,
+  "allowance_refunds": 0,
+  "new_semantic_samples": 0,
+  "independent_quota_credit": 0,
+  "fitting": 0,
+  "router_calls": 0,
+  "predictions": 0,
+  "measurements_reexecuted": 0,
+  "consumed_as_test_reads": 0,
+  "final_blind_execution": 0,
+  "new_paid_calls": 0,
+  "new_permissions": 0,
+  "owned_paths": [
+    ".github/workflows/zmr-v1.yml",
+    "packages/zero_model_refoundation/pinned_public_reader.test.mjs",
+    "status/ZERO_MODEL_REFOUNDATION_STATUS.json",
+    "docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR.md",
+    "docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR_RESULT.json"
+  ],
+  "hypothesis": "Recover at most one transient public metadata/blob timeout within a finite per-job request budget, preserve immutable bytes/scope and refusal rules, log the failing request identity; terminal schema/permission/integrity errors never gain a retry or false PASS.",
+  "stop_rule": "Stop after changed reader/fake timeout/concurrency/deadline/refusal cases, exact four-file isolated proof, original139 unit list and scope/hash/syntax checks, one new repair-head CI and actual-main integration; no unchanged-head rerun or semantic evaluation.",
+  "code_pins": [
+    {
+      "path": ".github/workflows/zmr-v1.yml",
+      "sha256": "f9bf71dc389c85d38a4611ba6f51a3f3b39a0a5080ae302f4ca9946b4cc6aa27",
+      "utf8_bytes": 154140
+    },
+    {
+      "path": "packages/zero_model_refoundation/pinned_public_reader.test.mjs",
+      "sha256": "307ce3442a6cf96e0de0e6952c6594f5524c7f19fd3be319842258d5d158f4ea",
+      "utf8_bytes": 10980
+    }
+  ],
+  "prior_semantic_main_ci": {
+    "run_id": 37155918980,
+    "attempt": 1,
+    "conclusion": "SUCCESS_NOT_FULL_INTEGRATION"
+  },
+  "prior_exact_head_ci": {
+    "head": "a617ed36ea5b2823a58adf2fbf575a92d9a43299",
+    "Semantic": 37154954017,
+    "ZMR": 37154954058,
+    "attempt": 1,
+    "conclusion": "SUCCESS_NOT_ACTUAL_MAIN_PASS"
+  },
+  "report": "docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR.md",
+  "result": "docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR_RESULT.json",
+  "workflow_verification": {
+    "inline_workflow_syntax": "PASS_NOT_EXECUTED",
+    "changed_ESM_syntax": "PASS_ONE_FILE_NOT_LINKED_OR_EVALUATED",
+    "unit_command": "BYTE_IDENTICAL_ALL139_ARGUMENTS_ORDER",
+    "unit_count": 139,
+    "materialization": "PASS_FIVE_FILE_ENGINEERING_CLOSURE",
+    "guard": "PASS_TWO_PINS_AND_FAILED_RECORD_NO_HISTORICAL_EVALUATION",
+    "read_paths": [
+      "docs/zero-model-refoundation-v1/ZMR_CI_BOUNDED_PUBLIC_TRANSPORT_REPAIR_RESULT.json",
+      ".github/workflows/zmr-v1.yml",
+      "packages/zero_model_refoundation/pinned_public_reader.test.mjs"
+    ],
+    "isolated_extracted_transport_sources": "BYTE_IDENTICAL_TO_CURRENT_WORKFLOW",
+    "isolated_segments": [
+      {
+        "marker": "PUBLIC_TREE_READER",
+        "sha256": "a013a097b5d2f133d5cd544d789bdaf3816565dd22ef830f583ad7e08e17d96b"
+      },
+      {
+        "marker": "PINNED_PUBLIC_READER",
+        "sha256": "fa9c8c1f7b710a5226b071fa26ccc612633c3a0e5eab8226ed8178ec473257c1"
+      },
+      {
+        "marker": "BOUNDED_PUBLIC_PREFETCH",
+        "sha256": "5f95882ee48a275ca4005b609a7b6f053000ea141f7d0343897b315cb3f23d8e"
+      }
+    ],
+    "isolated_full_workflow_sha256": "11e7ae3b63f7c90e4139680cdd94f29c5ce4c48695c42187beb77bf7405ed805",
+    "full_workflow_not_executed": true,
+    "actual_network_calls": 0
+  },
+  "local_node": "v26.8.2",
+  "ci_node": "22",
+  "ci_or_device_parity_claim": false
+}
