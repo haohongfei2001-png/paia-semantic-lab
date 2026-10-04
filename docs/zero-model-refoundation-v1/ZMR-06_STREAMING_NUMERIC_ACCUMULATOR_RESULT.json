@@ -1,0 +1,231 @@
+{
+  "schema": "ZMR-STREAMING-NUMERIC-ACCUMULATOR-REGISTRATION-1",
+  "evidence_class": "NON_INDEPENDENT_DEVELOPMENT_EVIDENCE",
+  "registered": true,
+  "prepared_only": false,
+  "publication_dependency_pr": 259,
+  "publication_dependency_head": "b76556780a00b09c517a305a27e9da1445f9f553",
+  "publication_dependency_actual_main": "670e2eba0eaacb79a58984c7795f06cc388338c0",
+  "source_main": "670e2eba0eaacb79a58984c7795f06cc388338c0",
+  "source_pins": [
+    {
+      "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0",
+      "bytes": 3812
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+      "bytes": 3042
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+      "bytes": 6892
+    }
+  ],
+  "source_contains_imported_router_but_router_never_called": true,
+  "scope": "manual positive precomputed synthetic weights; registered eager numeric formula before ranking only; no text/features/fitting/thresholds/decisions",
+  "profiles": [
+    {
+      "terms": 3,
+      "hits_per_term": 3
+    },
+    {
+      "terms": 128,
+      "hits_per_term": 3
+    },
+    {
+      "terms": 128,
+      "hits_per_term": 144
+    }
+  ],
+  "scales": [
+    1e-09,
+    0.125,
+    2.002
+  ],
+  "query_sets_per_profile_scale": 5,
+  "methods": [
+    "tfidf",
+    "bm25"
+  ],
+  "finite_equivalence_cases": 90,
+  "numeric_slots": 144,
+  "comparison": "exact eager decoder/manual-weight numeric loop equality in same input and iteration order",
+  "synthetic_ids_not_catalog_gold": true,
+  "new_semantic_samples": 0,
+  "actual_train_inputs": 0,
+  "fitting": 0,
+  "actual_candidate_index_rebuilt": false,
+  "stable_candidate_constructed": false,
+  "stable_allocations": 0,
+  "router_calls": 0,
+  "predictions": 0,
+  "allowance": null,
+  "allowance_refunds": 0,
+  "semantic_candidate_repairs_charged": 0,
+  "independent_quota_credit": 0,
+  "consumed_as_test_reads": 0,
+  "final_blind_execution": 0,
+  "new_paid_calls": 0,
+  "new_permissions": 0,
+  "capability_verdict": "UNTESTED",
+  "resource_verdict": "NOT_QUALIFIED",
+  "saturation_ceiling": false,
+  "peak_memory_measured": false,
+  "routing_latency_measured": false,
+  "accumulator_component_bytes": 1152,
+  "component_not_total_memory": true,
+  "expanded_posting_arrays_retained": 0,
+  "targeted_verification": {
+    "pass": 4,
+    "fail": 0,
+    "skip": 0,
+    "duration_ms": 228.852208,
+    "local_node": "v26.8.2",
+    "runs": 1,
+    "full_historical_suite": false,
+    "ci_or_device_parity": false
+  },
+  "stop_rule": "Stop after finite90 synthetic numeric equalities, input/numeric refusal, fresh array ownership, explicit seven-file isolated materialization and exact-head/actual-main CI. No resource timing, new semantic samples, fitting, Router call, stable freeze/allocation or blind gate.",
+  "prepared_code_pins": [
+    {
+      "path": "streaming_numeric_accumulator.mjs",
+      "sha256": "9beab3cc5e10b0da4b27a9a07310df62a41a134842970304e3cc6c7e74988200",
+      "utf8_bytes": 2541
+    },
+    {
+      "path": "streaming_numeric_accumulator.test.mjs",
+      "sha256": "8cf26a5a50111c0f1ff55dbff3b10921512cdefb2e4eea9cef7ce471f3bff84f",
+      "utf8_bytes": 5240
+    }
+  ],
+  "registration_state": "PUBLISHED_ARTIFACT_PENDING_ENGINEERING_INTEGRATION",
+  "batch_id": "ZMR-STREAMING-NUMERIC-ACCUMULATOR-20261004",
+  "expected_base_sha": "670e2eba0eaacb79a58984c7795f06cc388338c0",
+  "source_tree": "b75f5f0db1a318e785bbbfedfaadc42611fc8458",
+  "publication_dependency_ci": "SUCCESS_ATTEMPT1",
+  "publication_dependency_owned_bytes_tree_verified": true,
+  "hypothesis": "Stream matched decoded coefficients directly into a fresh full144 numeric accumulator without retaining expanded postings; preserve eager manual-weight arithmetic and refusal behavior before any ranking.",
+  "semantic_judgment_certified": false,
+  "owned_paths": [
+    ".github/workflows/zmr-v1.yml",
+    "status/ZERO_MODEL_REFOUNDATION_STATUS.json",
+    "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+    "packages/zero_model_refoundation/streaming_numeric_accumulator.test.mjs",
+    "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR.md",
+    "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR_RESULT.json"
+  ],
+  "bounded_closure": [
+    ".github/workflows/zmr-v1.yml",
+    "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+    "packages/zero_model_refoundation/streaming_numeric_accumulator.test.mjs",
+    "packages/zero_model_refoundation/lossless_posting_view.mjs",
+    "packages/zero_model_refoundation/a1_v04_compact.mjs",
+    "packages/zero_model_refoundation/a1.mjs",
+    "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR_RESULT.json"
+  ],
+  "integration_verdict": "PENDING_EXACT_HEAD_ACTUAL_MAIN_CI",
+  "engineering_status": "FINITE_NUMERIC_ISOLATED_PROOF_PASS_PENDING_CI",
+  "code_pins": [
+    {
+      "path": ".github/workflows/zmr-v1.yml",
+      "sha256": "a04034d52e302f49e8bbfde67fdee1a7da9cabebd41e309e37b1c1543f5d8144",
+      "bytes": 156562
+    },
+    {
+      "path": "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+      "sha256": "edbb1ee66f7b834227907a9741791915f1c19cd2f9d4f3900446c3241153c611",
+      "bytes": 2526
+    },
+    {
+      "path": "packages/zero_model_refoundation/streaming_numeric_accumulator.test.mjs",
+      "sha256": "8cf26a5a50111c0f1ff55dbff3b10921512cdefb2e4eea9cef7ce471f3bff84f",
+      "bytes": 5240
+    },
+    {
+      "path": "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "sha256": "c8551a7a1303b8c2697268eb34627e2ae888edd9ccc42f686a305ae4ab1cc5f0",
+      "bytes": 3812
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "sha256": "b794d1d9af1d6fb681006df7d2f92d64769648c2ade0736b9f895a6f82d33318",
+      "bytes": 3042
+    },
+    {
+      "path": "packages/zero_model_refoundation/a1.mjs",
+      "sha256": "ec169f4ac299e60710a544f66fc8403c350ffe4e65215cb1c22c98583e80c203",
+      "bytes": 6892
+    }
+  ],
+  "publication_dependency": {
+    "pr": 259,
+    "head": "b76556780a00b09c517a305a27e9da1445f9f553",
+    "main": "670e2eba0eaacb79a58984c7795f06cc388338c0",
+    "tree": "b75f5f0db1a318e785bbbfedfaadc42611fc8458",
+    "head_semantic_run": 37164300813,
+    "head_zmr_run": 37164300838,
+    "main_semantic_run": 37166998532,
+    "main_zmr_run": 37166998518,
+    "applicable_checks": "SUCCESS_ATTEMPT1",
+    "owned_files": 5,
+    "owned_bytes_tree_verified": true,
+    "receipt_comment": 5975264057,
+    "original_failure_preserved": 37155918962,
+    "unchanged_head_rerun": false
+  },
+  "prior_preparation_preserved_not_rerun": true,
+  "isolated_materialization_verification": {
+    "files": 7,
+    "pass": 4,
+    "fail": 0,
+    "skip": 0,
+    "duration_ms": 217.216959,
+    "runs": 1,
+    "scope": "CHANGED_REGISTRATION_LOCATION_SEVEN_FILE_CLOSURE_ONLY",
+    "actual_router_calls": 0,
+    "full_historical_suite": false,
+    "ci_or_device_parity_claim": false
+  },
+  "next_engineering_task": {
+    "priority": "BOUNDED_SYNTHETIC_STREAMING_ACCUMULATION_ALLOCATION_DIAGNOSTIC",
+    "known_gap": "Numeric equivalence and1152-byte array do not establish per-call retained/temporary allocation of the view plus accumulator; no actual Router or resource gate has been measured",
+    "scope": "Manual synthetic weights only; compare registered eager manual arithmetic with streamed accumulation on identical synthetic structures, isolate lifecycle and retain failures; no semantic fit/prediction/stable allocation",
+    "finite_cap": "Three synthetic structural profiles; one finite paired diagnostic; at most one explained lifecycle-method repair preserving initial evidence; no unchanged measurement replay",
+    "stop": "Register finite component/lifecycle observation or INCONCLUSIVE with exact method limits; no consumer-resource PASS or capability claim",
+    "publication_requires": "This registration exact-head and actual-main applicable CI plus owned bytes/tree verified"
+  },
+  "workflow_verification": {
+    "inline_workflow_syntax": "PASS_NOT_EXECUTED",
+    "changed_ESM_syntax": "TWO_FILES_PASS_NOT_LINKED_OR_EVALUATED",
+    "materialization": "PASS_SEVEN_FILE_CLOSURE",
+    "guard": "PASS_SIX_CURRENT_CODE_HASHES_ZERO_SEMANTIC_OPERATIONS",
+    "read_paths": [
+      "docs/zero-model-refoundation-v1/ZMR-06_STREAMING_NUMERIC_ACCUMULATOR_RESULT.json",
+      ".github/workflows/zmr-v1.yml",
+      "packages/zero_model_refoundation/streaming_numeric_accumulator.mjs",
+      "packages/zero_model_refoundation/streaming_numeric_accumulator.test.mjs",
+      "packages/zero_model_refoundation/lossless_posting_view.mjs",
+      "packages/zero_model_refoundation/a1_v04_compact.mjs",
+      "packages/zero_model_refoundation/a1.mjs"
+    ],
+    "previous_unit_count": 139,
+    "unit_count": 140,
+    "previous_unit_order": "BYTE_IDENTICAL_ALL139_ARGUMENTS_APPEND_ONE_PURE_NUMERIC_UNIT",
+    "forecast_lane_ms": [
+      176165,
+      176164,
+      176164,
+      176267,
+      176265,
+      176266
+    ],
+    "forecast_not_actual_resource_or_stability_pass": true,
+    "full_workflow_executed": false,
+    "historical_evaluation_blocks_executed": false,
+    "full_historical_local_suite": false,
+    "actual_network_calls": 0
+  }
+}
