@@ -1,5 +1,15 @@
 # Semantic Lab Agent Rules
 
+## Scoped PAIA product-boundary clarification — 2026-10-07
+
+Read [PAIA_INTEGRATION_BOUNDARY.md](PAIA_INTEGRATION_BOUNDARY.md) for any statement about PAIA integration, and follow its link to PAIA's single canonical Personal Topic contract. PAIA production organization/retrieval/Context does not depend on the 18/144 taxonomy. System Topics and Personal Topics are independent; this Lab's formal Topic creation bans and full Catalog evaluation apply to research, not a veto on PAIA's approved Personal Topic formation. No mandatory parent, systemTopicId/domainId or System Catalog user directory is permitted by an integration assumption.
+
+The rules below retain their research scope and evidence/permission restrictions. This clarification supersedes only an interpretation that formal/system/custom Topic rules 8/9/19/25 or an internal-Router description govern PAIA's Personal Topic directory or require shipping this Router. It changes no Catalog, gold, state, research allowance, zero-model constraint, quality floor, resource budget or historical result.
+
+Before any future optional production proposal, compare no-taxonomy, 18-Domain and 144-Topic signals on actual downstream goals with comparable evidence, model, scope and budgets. Human corrections, duplicate/wrong-merge/identity errors, retrieval misses/noise, Context relevance, latency, cost and permission/human-intent violations determine utility; classifier accuracy alone is insufficient. Integration still requires explicit PAIA authorization. This documentation task authorizes no runtime implementation, research experiment, AS/final test access, paid call, private data or production code/schema writes. The existing ZMR STATUS remains the only research state; this boundary adds no queue.
+
+## Preserved research rules
+
 1. Remote GitHub `main` in this repository is canonical.
 2. Never modify PAIA production repository/runtime/schema/Reader/Thought Library/Capture/ANS state.
 3. Never read a real PAIA archive unless a future round explicitly authorizes an export/snapshot.
